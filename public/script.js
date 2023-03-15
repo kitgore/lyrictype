@@ -17,7 +17,7 @@ var jsonData
 var preloadJson
 let incorrectTotal = 0;
 
-const baseURL = 'https://weak-puce-sea-urchin-robe.cyclic.app/'
+const baseURL = 'https://lyrictype.cyclic.app/'
 
 artistInputTabIndex();
 
