@@ -44,7 +44,7 @@
     <button class="scroll-arrow" on:click={scrollUp}>
         <!-- Inline SVG for the up arrow -->
         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="{$themeColors.primary}"/>
+          <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="{$themeColors.primary}" stroke-width="1"/>
         </svg>
     </button>
     <button class="track">
@@ -53,7 +53,7 @@
     <button class="scroll-arrow" on:click={scrollDown}>
         <!-- Inline SVG for the down arrow, use the same SVG as the up arrow and rotate it -->
         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow down">
-            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="{$themeColors.primary}"/>
+            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="{$themeColors.primary}" stroke-width="1"/>
         </svg>
     </button>
 </div>

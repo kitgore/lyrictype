@@ -308,18 +308,20 @@ export const windowActions = {
             const dimensions = windowData.id ? 
                 calculateResponsiveDimensions(state.screenDimensions.width, state.screenDimensions.height, windowData.id) : windowData.dimensions
            
+            // If window already exists, just make it active
             if (existingWindow) {
                 return {
                     ...state,
-                    activeWindowId: windowData.id,
+                    activeWindowId: windowData.id, // Set as active window
                     windowStates: state.windowStates.map(w => ({
                         ...w,
-                        isActive: w.id === windowData.id,
+                        isActive: w.id === windowData.id, // Make only this window active
                         dimensions: w.id === windowData.id ? dimensions : w.dimensions
                     }))
                 };
             }
 
+            // Add new window
             const newNextZIndex = state.nextZIndex + 1;
             const newWindow = {
                 ...windowData,
@@ -334,7 +336,7 @@ export const windowActions = {
                 activeWindowId: windowData.id,
                 nextZIndex: newNextZIndex,
                 windowStates: state.windowStates
-                    .map(w => ({...w, isActive: false}))
+                    .map(w => ({...w, isActive: false})) // Deactivate all other windows
                     .concat(newWindow)
             };
         });
@@ -352,7 +354,7 @@ export const windowActions = {
                 nextZIndex: state.nextZIndex,
                 windowStates: filteredWindows.map(w => ({
                     ...w,
-                    isActive: w.id === lastWindow?.id
+                    isActive: w.id === lastWindow?.id // Make last window active
                 }))
             };
         });
@@ -365,7 +367,7 @@ export const windowActions = {
             ...state,
             windowStates: state.windowStates.map(window =>
                 window.id === id
-                    ? { ...window, position: newPosition }
+                    ? { ...window, position: newPosition } // Update position of window with matching id
                     : window
             )
         }));
@@ -375,7 +377,7 @@ export const windowActions = {
         windowStore.update(state => ({
             ...state,
             screenDimensions: { width, height },
-            windowStates: state.windowStates.map(window => ({
+            windowStates: state.windowStates.map(window => ({ // Update dimensions of all windows based on new screen size and their id
                 ...window,
                 dimensions: window.id ? calculateResponsiveDimensions(width, height, window.id) : window.dimensions
             }))
@@ -431,11 +433,10 @@ function calculateResponsiveDimensions(width, height, windowId) {
     }
 }
 
+// TODO: stop using html tabindex and create a custom focus system
 export const tabIndexStore = derived(windowStore, ($windowStore) => {
-    // Sort windows by z-index to determine tab order
     const sortedWindows = [...$windowStore.windowStates].sort((a, b) => a.zIndex - b.zIndex);
     
-    // Create a map of window IDs to their base tab index
     const tabIndexMap = new Map();
     let baseTabIndex = 1; // Start from 1 since 0 is typically for main navigation
     

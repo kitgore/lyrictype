@@ -203,7 +203,7 @@
 
     .albumArt {
         margin: 0;
-        width: 90%;        /* Change from height to width */
+        width: 85%;        /* Change from height to width */
         aspect-ratio: 1/1; /* Add this */
         object-fit: cover;  /* Change from contain to cover */
         display: block;

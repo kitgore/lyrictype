@@ -3,7 +3,7 @@
     import { themeColors } from '$lib/services/store.js';
 </script>
 
-<svg class={className} width="145" height="34" viewBox="0 0 145 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class={className} height=100% viewBox="0 0 145 34" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Frame 1">
     <g id="earth and computer">
     <g id="computer" clip-path="url(#clip0_1_3)">

@@ -9,6 +9,9 @@
     import { windowStore, windowActions } from '$lib/services/store.js';
     import CustomScrollbar from './CustomScrollbar.svelte';
     import { onMount, onDestroy, setContext } from 'svelte';
+
+    $: screenDimensions = $windowStore.screenDimensions;
+    $: padding = screenDimensions.height * 0.01;
     
     let contentElement;
     let isDragging = false;
@@ -121,26 +124,30 @@
     "
 >
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div class="title-bar" style:height="{dimensions.height*0.05}px" on:mousedown|preventDefault={onDragStart}>
-        <div class="lines-container">
-            <svg 
-                width="100%" 
-                height="60%" 
-                viewBox="0 0 100 24" 
-                preserveAspectRatio="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="lines-svg"
-            >
-                <line x1="0" y1="2" x2="100%" y2="2" stroke="var(--primary-color)" stroke-width="1.5"/>
-                <line x1="0" y1="6" x2="100%" y2="6" stroke="var(--primary-color)" stroke-width="1.5"/>
-                <line x1="0" y1="10" x2="100%" y2="10" stroke="var(--primary-color)" stroke-width="1.5"/>
-                <line x1="0" y1="14" x2="100%" y2="14" stroke="var(--primary-color)" stroke-width="1.5"/>
-                <line x1="0" y1="18" x2="100%" y2="18" stroke="var(--primary-color)" stroke-width="1.5"/>
-                <line x1="0" y1="22" x2="100%" y2="22" stroke="var(--primary-color)" stroke-width="1.5"/>
-            </svg>
-        </div>
-        <div class="title-text" style:font-size="{dimensions.height*0.036}px">{title}</div>
-        <button class="close-button" on:click={onClose} style:right="{dimensions.height*0.04}px"></button>
+    <div class="title-bar" style:height="{screenDimensions.height*0.038}px" on:mousedown|preventDefault={onDragStart}>
+            <div style="padding:0 {screenDimensions.height*0.01}px; display:flex; height: 100%; width: 100%;">
+                <div class="lines-container" >
+                    <svg 
+                        width="100%" 
+                        height="60%" 
+                        viewBox="0 0 100 24" 
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="lines-svg"
+                        >
+                        <line x1="0" y1="2" x2="100%" y2="2" stroke="var(--primary-color)" stroke-width="1.5"/>
+                        <line x1="0" y1="6" x2="100%" y2="6" stroke="var(--primary-color)" stroke-width="1.5"/>
+                        <line x1="0" y1="10" x2="100%" y2="10" stroke="var(--primary-color)" stroke-width="1.5"/>
+                        <line x1="0" y1="14" x2="100%" y2="14" stroke="var(--primary-color)" stroke-width="1.5"/>
+                        <line x1="0" y1="18" x2="100%" y2="18" stroke="var(--primary-color)" stroke-width="1.5"/>
+                        <line x1="0" y1="22" x2="100%" y2="22" stroke="var(--primary-color)" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </div>
+            
+
+        <div class="title-text" style:font-size="{screenDimensions.height*0.026}px">{title}</div>
+        <button class="close-button" style="width:{screenDimensions.height * .028}px; height:{screenDimensions.height * .028}px;" on:click={onClose} style:right="{screenDimensions.height*0.04}px"></button>
     </div>
     <div class="window-content" bind:this={contentElement}>
         <div class="content-area">
@@ -182,9 +189,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 100%;
     height: 100%;
-    position: absolute;
+    /* padding: 0 10px; */
+    /* position: absolute; */
 }
 
 .lines-svg {
