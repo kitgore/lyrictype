@@ -2,9 +2,10 @@
     import { themeColors, windowStore } from '$lib/services/store.js';
     
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'aboutDisplayWindow')?.dimensions?.height;
-    $: titleSize = windowHeight * 0.026;
+    $: titleSize = windowHeight * 0.03;
     $: textSize = windowHeight * 0.026;
-    $: indentSize = windowHeight * 0.05;
+    $: titleIndent = windowHeight * 0.05;
+    $: pIndent = windowHeight * 0.1;
 </script>
 
 <div class="page-container">
@@ -27,27 +28,38 @@
                 </svg>
             </div>
             <div class="body">
-                <div class="items">
-                    <h3 style:font-size="{titleSize}px">System:</h3>
+                <div class="items" style="font-size:{textSize}px;">
+                    <h3 style="font-size:{titleSize}px; text-indent:{titleIndent}px;">System:</h3>
                     <div class="system-info">
-                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;">pixlGardenOS</p>
-                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Version 0.0.1</p>
+                        <p style="font-size:{textSize}px; text-indent:{pIndent}px;">pixlGardenOS</p>
+                        <p style="font-size:{textSize}px; text-indent:{pIndent}px;">Version 0.0.1</p>
                     </div>
-                    <h3 style:font-size="{titleSize}px">Authors:</h3>
+                    <h3 style="font-size:{titleSize}px; text-indent:{titleIndent}px;">Authors:</h3>
                     <div class="registered-info">
-                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kitgore">kitgore</a></p>
-                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/4444est">4444est</a></p>
+                        <p style="font-size:{textSize}px; text-indent:{pIndent}px;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kitgore">kitgore</a></p>
+                        <p style="font-size:{textSize}px; text-indent:{pIndent}px;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/4444est">4444est</a></p>
                     </div>
-                    <h3 style:font-size="{titleSize}px">Stats:</h3>
+                    <h3 style="font-size:{titleSize}px; text-indent:{titleIndent}px;">External:</h3>
+                    <div class="registered-info">
+                        <p style="font-size:{textSize}px; text-indent:{pIndent}px;"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kitgore/lyrictype">Git Repository</a></p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p style="font-size:{textSize}px; text-indent:{pIndent}px;">updates coming soon :&gt;</p>
+                    <!-- <h3 style="font-size:{titleSize}px; text-indent:{titleIndent}px;">Stats:</h3>
                     <div class="stats">
                         <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Accuracy: %0</p>
                         <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Average WPM: 0</p>
                         <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Best WPM: 0</p>
                         <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Worst WPM: 0</p>
                         <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Games Played: 0</p>
-                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Most Played Artist: </p>
-                        <!-- <button class="button">Reset Stats</button> -->
-                    </div>
+                        <p style="font-size:{textSize}px; text-indent:{indentSize}px;">Most Played Artist: </p>>
+                    </div> -->
                 </div>
             </div>
         </div>

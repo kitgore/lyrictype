@@ -156,36 +156,7 @@
 			focusInput();
 		}, 0);
 	}
-
-	// Gets the total length up to a specific word and character
-// Gets the total length up to a specific word and character
-// Modify getCursorPosition to include debugging
-
-// Add logging to getLengthUpTo
-function getLengthUpTo(formattedLyrics, targetWordIndex, targetCharIndex) {
-  let totalLength = 0;
-  
-  for (let i = 0; i < targetWordIndex; i++) {
-    const item = formattedLyrics[i];
-    if (item.type === 'word') {
-      totalLength += item.chars.length;
-      console.log(`Word ${i}: Adding ${item.chars.length} chars`);
-    } else {
-      totalLength += 1;
-      console.log(`Space ${i}: Adding 1`);
-    }
-  }
-
-  // Add characters in current word up to target index
-  const currentItem = formattedLyrics[targetWordIndex];
-  if (currentItem?.type === 'word') {
-    totalLength += targetCharIndex;
-    console.log(`Current word ${targetWordIndex}: Adding ${targetCharIndex} chars`);
-  }
-  
-  console.log(`Total length up to word ${targetWordIndex}, char ${targetCharIndex}: ${totalLength}`);
-  return totalLength;
-}
+	
 // Helper function to get total length (for end cursor)
 function getTotalLength(formattedLyrics) {
   return formattedLyrics.reduce((total, item) => {
@@ -372,6 +343,9 @@ $: {
 
 
 	$: cursorPosition = userInput.length;
+	$: cursorWidth = windowHeight * 0.004;
+	$: cursorPadding = windowHeight * 0.000;
+	$: cursorHeight = windowHeight * 0.004;
 
 	$: if ($ditherImages || $imageColors) {
 		preloadAndDitherImage(imageUrl);
@@ -406,40 +380,44 @@ $: {
 	/>
 {:else}
 	<div class="quote-display" role="button" tabindex="0" on:click={focusInput} on:keydown={focusInput} 
-	style="line-height:{windowHeight*0.07}px; font-size: 0px">
+	style="line-height:{windowHeight*0.06}px; font-size: 0px">
 	{#each formattedLyrics as item, wordIndex}
 	{#if item.type === 'word'}
 	  <span class="word" style="display: inline-block; white-space: nowrap;">
 		<!-- Check for cursor at start of word -->
-		{#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === 0}
-		  <span class="blinking-cursor" 
-				style:height="{windowHeight*0.04}px"
-				style:width="{windowHeight*0.002}px">
-		  </span>
-		  {:else}
-		  <span class="cursor-placeholder" 
-			  style:height="{windowHeight*0.04}px"
-			  style:width="{windowHeight*0.002}px">
-		  </span>
-		{/if}
+
 		
 		{#each item.chars as charInfo, charIndex}
+		{#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === charIndex && cursorInfo.charIndex === 0}
+			<span class="blinking-cursor" 
+				style:height="{windowHeight*0.04}px"
+				style:width="{cursorWidth}px"
+				style:margin="0 {cursorPadding}px">
+			</span>
+		{:else if wordIndex === 0 && charIndex === 0}
+			<span class="cursor-placeholder" 
+				style:height="{windowHeight*0.04}px"
+				style:width="{cursorWidth}px"
+				style:margin="0 {cursorPadding}px">
+			</span>
+		{/if}
 		  <span class={typingState.classes[wordIndex]?.chars?.[charIndex] || ''} 
 				style="font-size:{windowHeight*0.04}px; 
-					   height:{windowHeight*0.04}px; 
-					   letter-spacing:-{windowHeight*0.002}px">
+					   height:{windowHeight*0.04}px;">
 			{charInfo.char}
 		  </span>
 		  <!-- Check for cursor after each character -->
 		  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === (charIndex + 1)}
 			<span class="blinking-cursor" 
 				  style:height="{windowHeight*0.04}px"
-				  style:width="{windowHeight*0.002}px">
+				  style:width="{cursorWidth}px"
+				  style:margin="0 {cursorPadding}px">
 			</span>
 			{:else}
 			<span class="cursor-placeholder" 
 				style:height="{windowHeight*0.04}px"
-				style:width="{windowHeight*0.002}px">
+				style:width="{cursorWidth}px"
+				style:margin="0 {cursorPadding}px">
 			</span>
 		  {/if}
 		{/each}
@@ -449,29 +427,32 @@ $: {
 	  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === 0}
 		<span class="blinking-cursor" 
 			  style:height="{windowHeight*0.04}px"
-			  style:width="{windowHeight*0.002}px">
+			  style:width="{cursorWidth}px"
+			  style:margin="0 {cursorPadding}px">
 		</span>
 		{:else}
 		<span class="cursor-placeholder" 
 			style:height="{windowHeight*0.04}px"
-			style:width="{windowHeight*0.002}px">
+			style:width="{cursorWidth}px"
+			style:margin="0 {cursorPadding}px">
 		</span>
 	  {/if}
 	  <span class={typingState.classes[wordIndex]?.class || ''} 
 			style="font-size:{windowHeight*0.04}px; 
-				   height:{windowHeight*0.04}px; 
-				   letter-spacing:-{windowHeight*0.001}px">
+				   height:{windowHeight*0.04}px;">
 		{item.char}
 	  </span>
 	  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === 1}
 		<span class="blinking-cursor" 
 			  style:height="{windowHeight*0.04}px"
-			  style:width="{windowHeight*0.002}px">
+			  style:width="{cursorWidth}px"
+			  style:margin="0 {cursorPadding}px">
 		</span>
 		{:else}
 		<span class="cursor-placeholder" 
 			style:height="{windowHeight*0.04}px"
-			style:width="{windowHeight*0.002}px">
+			style:width="{cursorWidth}px"
+			style:margin="0 {cursorPadding}px">
 		</span>
 	  {/if}
 	{/if}
@@ -480,7 +461,8 @@ $: {
   {#if cursorPosition === getTotalLength(formattedLyrics)}
 	<span class="blinking-cursor" 
 		style:height="{windowHeight*0.04}px"
-		style:width="{windowHeight*0.002}px">
+		style:width="{cursorWidth}px"
+		style:margin="0 {cursorPadding}px">
 	</span>
   {/if}
 		<input 
