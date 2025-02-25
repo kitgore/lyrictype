@@ -23,6 +23,7 @@
 	let preloadedImage;
 	let ditheredImageUrl = '';
 	let normalizedLyrics;
+	let blink = false;
   
 	$: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 	
@@ -61,6 +62,13 @@
 
 	function focusInput() {
 		if(inputElement) inputElement.focus();
+		blink = true;
+	}
+
+	function blurInput() {
+		if(inputElement) inputElement.blur();
+		console.log("BLURRING")
+		blink = false;
 	}
 	
 	$: document.documentElement.style.setProperty('--correct-color', $correctionColors.correct);
@@ -98,7 +106,6 @@
 	$: normalizedLyrics = customNormalize(lyrics);
 
 	function handleInput(event) {
-		console.log("Cursor Position: ", cursorPosition)
 		const newValue = event.target.value;
 		const normalizedNextChar = normalizeDiacritics(String([lyrics[userInput.length]]));
 		const normalizedLastChar = normalizeDiacritics(String([newValue[newValue.length - 1]]));
@@ -128,24 +135,43 @@
 
   	// Function to end the test and calculate WPM and accuracy
 	  function endTest() {
-  endTime = new Date();
-  const durationInMinutes = (endTime - startTime) / 60000;
-  const charactersTyped = userInput.length;
-  wpm = (charactersTyped / 5) / durationInMinutes;
+		endTime = new Date();
+		const durationInMinutes = (endTime - startTime) / 60000;
+		const charactersTyped = userInput.length;
+		wpm = (charactersTyped / 5) / durationInMinutes;
 
-  const incorrectChars = formattedLyrics.reduce((acc, item) => {
-    if (item.type === 'word') {
-      return acc + item.chars.reduce((wordAcc, char) => 
-        wordAcc + (char.class === 'incorrect' ? 1 : 0), 0);
-    }
-    return acc + (item.class === 'incorrect' ? 1 : 0);
-  }, 0);
-  
-  accuracy = ((charactersTyped - incorrectChars) / lyrics.length) * 100;
-  showResults = true;
+		// Calculate incorrect characters by looking at the proper structure in typingState.classes
+		let incorrectChars = 0;
+		
+		// Go through each item in classes
+		typingState.classes.forEach(item => {
+			if (item.type === 'word') {
+			// For words, check each character's class
+			item.chars.forEach(charClass => {
+				if (charClass === 'incorrect') {
+				incorrectChars++;
+				}
+			});
+			} else if (item.class === 'incorrect') {
+			// For spaces, check the class directly
+			incorrectChars++;
+			}
+		});
+		
+		// Calculate accuracy
+		accuracy = ((charactersTyped - incorrectChars) / charactersTyped) * 100;
+		
+		// Ensure accuracy is between 0 and 100
+		accuracy = Math.max(0, Math.min(100, accuracy));
 
-  console.log(`WPM: ${wpm.toFixed(2)}, Accuracy: ${accuracy.toFixed(2)}%`);
-}
+		wpm = Math.max(wpm - (incorrectChars * 3), 0);
+		
+		showResults = true;
+
+		console.log(`WPM: ${wpm.toFixed(2)}, Accuracy: ${accuracy.toFixed(2)}%`);
+		console.log('Typed characters:', charactersTyped);
+		console.log('Incorrect characters:', incorrectChars);
+	}
   
 	$: if (lyrics) {
 		// Reset state and focus when lyrics change
@@ -182,7 +208,6 @@ function formatLyricsIntoWords(text) {
           char: char,
           class: ''
         }));
-        console.log('Adding word with chars:', wordChars);
         result.push({
           type: 'word',
           chars: wordChars
@@ -207,7 +232,6 @@ function formatLyricsIntoWords(text) {
       char: char,
       class: ''
     }));
-    console.log('Adding final word with chars:', wordChars);
     result.push({
       type: 'word',
       chars: wordChars
@@ -220,8 +244,6 @@ function formatLyricsIntoWords(text) {
 // Add this to store cursor position information
 let cursorInfo = { wordIndex: 0, charIndex: 0 };
 
-// Update cursor info whenever position changes
-// Update cursor info whenever position changes
 // Update cursor info whenever position changes
 $: {
   let totalChars = 0;
@@ -242,19 +264,19 @@ $: {
       for (let charIndex = 0; charIndex < item.chars.length; charIndex++) {
         totalChars++;
         if (totalChars === cursorPosition) {
-          cursorInfo = { wordIndex, charIndex: charIndex + 1 };
+			cursorInfo = { wordIndex, charIndex: charIndex + 1 };
           found = true;
           break;
         }
       }
     } else { // space
       if (totalChars === cursorPosition) {
-        cursorInfo = { wordIndex, charIndex: 0 };
+		  cursorInfo = { wordIndex, charIndex: 0 };
         found = true;
       }
       totalChars++; // Count the space
       if (totalChars === cursorPosition && !found) {
-        cursorInfo = { wordIndex, charIndex: 1 };
+		  cursorInfo = { wordIndex, charIndex: 0 };
         found = true;
       }
     }
@@ -269,13 +291,6 @@ $: {
         formattedLyrics[lastIndex].chars.length : 1
     };
   }
-  
-  console.log('Cursor info updated:', cursorInfo, 'Position:', cursorPosition);
-}
-
-// Modify getCursorPosition to use cursorInfo
-function getCursorPosition(wordIndex, charIndex) {
-  return cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === charIndex;
 }
 
 // First, let's make formattedLyrics only depend on lyrics
@@ -343,9 +358,10 @@ $: {
 
 
 	$: cursorPosition = userInput.length;
-	$: cursorWidth = windowHeight * 0.004;
-	$: cursorPadding = windowHeight * 0.000;
-	$: cursorHeight = windowHeight * 0.004;
+	$: cursorWidth = windowHeight * 0.002;
+	$: cursorPadding = windowHeight * -0.0005;
+	$: cursorHeight = windowHeight * 0.038;
+	$: cursorYOffset = -windowHeight * 0.002;
 
 	$: if ($ditherImages || $imageColors) {
 		preloadAndDitherImage(imageUrl);
@@ -353,8 +369,6 @@ $: {
 	else{
 		ditheredImageUrl = imageUrl;
 	}
-
-	$: console.log('ditherImages value:', $ditherImages);
 
 	function replaySongInner() {
 		showResults = false;
@@ -368,111 +382,87 @@ $: {
 </script>
 
 {#if showResults && preloadedImage}
-	<ResultsDisplay
-		{wpm}
-		{accuracy}
-		{songTitle}
-		{artistName}
-		imageUrl={ditheredImageUrl}
-		{continueFromQueue}
-		replaySong={replaySongInner}
-		{geniusUrl}
-	/>
+    <ResultsDisplay
+        {wpm}
+        {accuracy}
+        {songTitle}
+        {artistName}
+        imageUrl={ditheredImageUrl}
+        {continueFromQueue}
+        replaySong={replaySongInner}
+        {geniusUrl}
+    />
 {:else}
-	<div class="quote-display" role="button" tabindex="0" on:click={focusInput} on:keydown={focusInput} 
-	style="line-height:{windowHeight*0.06}px; font-size: 0px">
+    <div 
+        class="quote-display" 
+        role="button" 
+        tabindex="0" 
+        on:click={focusInput} 
+        on:keydown={focusInput}
+		on:blur={blurInput}
+        style="line-height:{windowHeight*0.06}px; font-size: 0px"
+    >
 	{#each formattedLyrics as item, wordIndex}
-	{#if item.type === 'word'}
-	  <span class="word" style="display: inline-block; white-space: nowrap;">
-		<!-- Check for cursor at start of word -->
-
-		
-		{#each item.chars as charInfo, charIndex}
-		{#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === charIndex && cursorInfo.charIndex === 0}
-			<span class="blinking-cursor" 
-				style:height="{windowHeight*0.04}px"
-				style:width="{cursorWidth}px"
-				style:margin="0 {cursorPadding}px">
-			</span>
-		{:else if wordIndex === 0 && charIndex === 0}
-			<span class="cursor-placeholder" 
-				style:height="{windowHeight*0.04}px"
-				style:width="{cursorWidth}px"
-				style:margin="0 {cursorPadding}px">
-			</span>
-		{/if}
-		  <span class={typingState.classes[wordIndex]?.chars?.[charIndex] || ''} 
-				style="font-size:{windowHeight*0.04}px; 
-					   height:{windowHeight*0.04}px;">
-			{charInfo.char}
-		  </span>
-		  <!-- Check for cursor after each character -->
-		  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === (charIndex + 1)}
-			<span class="blinking-cursor" 
-				  style:height="{windowHeight*0.04}px"
-				  style:width="{cursorWidth}px"
-				  style:margin="0 {cursorPadding}px">
-			</span>
+	{@const cursorAtBeginning = (cursorInfo.wordIndex === 0 && wordIndex === 0) && cursorInfo.charIndex === 0}
+    {@const cursorAtWordStart = cursorInfo.wordIndex + 1 === wordIndex}
+    {@const cursorStyle = `height:${cursorHeight}px; width:${Math.ceil(cursorWidth)}px; margin:0 ${cursorPadding}px; margin-bottom: ${cursorYOffset}px`}
+    {@const textStyle = `font-size:${windowHeight*0.04}px; height:${windowHeight*0.04}px`}
+    
+    
+    {#if item.type === 'word'}
+        <span class="word" style="display: inline-block; white-space: prewrap;">
+			{#if cursorAtWordStart || cursorAtBeginning && blink}			
+			<span class="blinking-cursor" style={cursorStyle}></span>
 			{:else}
-			<span class="cursor-placeholder" 
-				style:height="{windowHeight*0.04}px"
-				style:width="{cursorWidth}px"
-				style:margin="0 {cursorPadding}px">
-			</span>
-		  {/if}
-		{/each}
-	  </span>
-	{:else}
-	  <!-- Space handling -->
-	  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === 0}
-		<span class="blinking-cursor" 
-			  style:height="{windowHeight*0.04}px"
-			  style:width="{cursorWidth}px"
-			  style:margin="0 {cursorPadding}px">
-		</span>
-		{:else}
-		<span class="cursor-placeholder" 
-			style:height="{windowHeight*0.04}px"
-			style:width="{cursorWidth}px"
-			style:margin="0 {cursorPadding}px">
-		</span>
-	  {/if}
-	  <span class={typingState.classes[wordIndex]?.class || ''} 
-			style="font-size:{windowHeight*0.04}px; 
-				   height:{windowHeight*0.04}px;">
-		{item.char}
-	  </span>
-	  {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === 1}
-		<span class="blinking-cursor" 
-			  style:height="{windowHeight*0.04}px"
-			  style:width="{cursorWidth}px"
-			  style:margin="0 {cursorPadding}px">
-		</span>
-		{:else}
-		<span class="cursor-placeholder" 
-			style:height="{windowHeight*0.04}px"
-			style:width="{cursorWidth}px"
-			style:margin="0 {cursorPadding}px">
-		</span>
-	  {/if}
-	{/if}
-  {/each}
-  
-  {#if cursorPosition === getTotalLength(formattedLyrics)}
-	<span class="blinking-cursor" 
-		style:height="{windowHeight*0.04}px"
-		style:width="{cursorWidth}px"
-		style:margin="0 {cursorPadding}px">
-	</span>
-  {/if}
-		<input 
-			bind:this={inputElement} 
-			class="quote-input" 
-			type="text" 
-			on:input={handleInput}
-			bind:value={userInput} 
-		/>
-	</div>
+				<span class="cursor-placeholder" style={cursorStyle}></span>
+			{/if}
+            {#each item.chars as charInfo, charIndex}
+                <span
+                    class={typingState.classes[wordIndex]?.chars?.[charIndex] || ''}
+                    style={textStyle}
+                >
+                    {charInfo.char}
+                </span>
+                
+                {#if cursorInfo.wordIndex === wordIndex && cursorInfo.charIndex === (charIndex + 1) && blink}
+                    <span class="blinking-cursor" style={cursorStyle}></span>
+                {:else}
+                    <span class="cursor-placeholder" style={cursorStyle}></span>
+                {/if}
+            {/each}
+
+            <!-- Check if this is followed by a space, and if so, include it -->
+            {#if wordIndex < formattedLyrics.length - 1 && formattedLyrics[wordIndex + 1].type === 'space'}
+                <!-- Include trailing space in the same word span -->
+                <span
+                    class={typingState.classes[wordIndex + 1]?.class || ''}
+                    style={textStyle}
+                >
+                    {formattedLyrics[wordIndex + 1].char === ' ' ? ' ' : formattedLyrics[wordIndex + 1].char}
+                </span>
+            {/if}
+        </span>
+    {:else if item.type === 'space' && item.char === '\n'}
+        <!-- Handle only newlines separately -->
+        <span class="newline">
+			{"\n"}
+        </span>
+    {/if}
+{/each}
+        
+        {#if cursorPosition === getTotalLength(formattedLyrics) && blink}
+            <span class="blinking-cursor" style={`height:${windowHeight*0.04}px; width:${cursorWidth}px; margin:0 ${cursorPadding}px`}></span>
+        {/if}
+        
+        <input
+            bind:this={inputElement}
+            class="quote-input"
+            type="text"
+            on:input={handleInput}
+            bind:value={userInput}
+			on:blur={blurInput}
+        />
+    </div>
 {/if}
 
 <style>

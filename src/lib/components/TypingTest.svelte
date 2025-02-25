@@ -169,7 +169,7 @@
             <div class="currentArtistContainer">
                 <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>       
             </div>
-            <div class="musicIconContainer" style:width="{windowHeight*0.048}px" style:height="{windowHeight*0.048}px">
+            <div class="musicIconContainer" style:width="{windowHeight*0.05}px" style:height="{windowHeight*0.040}px">
                 <svg class="musicIcon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.6779 0.220394C18.4735 0.0457943 18.2035 -0.0307252 17.9372 0.0112826L6.29208 1.84998C5.84528 1.92052 5.51616 2.30568 5.51616 2.75804V6.43547V12.258H3.67743C1.6497 12.2581 0 13.7703 0 15.629C0 17.4878 1.6497 19 3.67743 19C5.70516 19 7.35485 17.4878 7.35485 15.629V13.1774V7.22104L17.1613 5.67265V10.7258H15.3226C13.2949 10.7258 11.6452 12.238 11.6452 14.0968C11.6452 15.9555 13.2949 17.4678 15.3226 17.4678C17.3503 17.4678 19 15.9555 19 14.0968V11.6451V4.59678V0.919349C19 0.650492 18.8822 0.395068 18.6779 0.220394Z" fill="{$themeColors.primary}"/>
                 </svg>      
@@ -207,7 +207,7 @@
                     {:else}
                         {#if loading}
                             <div class="loadingAnimationContainer">
-                                <div style="height:{windowHeight*.2}px; width: 100%; justify-content:center; display: flex;">
+                                <div style="height:{windowHeight*.15}px; width: 100%; justify-content:center; display: flex;">
                                     <LoadingAnimation className={"loadingAnimation"}/>
                                 </div>
                             </div>
