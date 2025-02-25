@@ -220,7 +220,7 @@
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div class="inputContainer" on:click={focusInput} on:keydown={handleKeydown}>
         <div class="inputLabel" style:font-size="{windowHeight*0.04}px">Artist Name:</div>
-        <div class="inputField" on:click={focusInput} on:keydown={handleKeydown}>
+        <div class="inputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.032}px">
             {#each artistInput.split('') as char, i}
                 <span class="inputChar">{char}</span>
             {/each}
