@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
 	import { applyDitheringToImage } from '$lib/services/dither-utils';
-	import { ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
+	import { ditherImages, imageColors, correctionColors, windowStore, capitalization, punctuation } from '$lib/services/store.js';
 	import { normalizeDiacritics } from 'normalize-text';
 	export let lyrics;
 	export let songTitle;
@@ -101,23 +101,44 @@
 		"—": "-",
 	};
 
+	function lyricsToPreferences(text){
+		let normalized = text;
+		// Handle capitalization based on store value
+		if (!$capitalization) {
+			console.log("lowercasing")
+			normalized = normalized.toLowerCase();
+		}
+		
+		// Handle punctuation based on store value
+		if (!$punctuation) {
+			// Remove all punctuation - keep only letters, numbers, and spaces
+			normalized = normalized.replace(/[^\p{L}\p{N}\s]/gu, '');
+		}
+		return normalized;
+	}
+
 	// Helper function to apply both normalize-text and our custom mappings
 	function customNormalize(text) {
 		// Ensure we're working with a string
 		let normalized = String(text || '');
+		
 		// Apply custom replacements
 		Object.entries(customCharMap).forEach(([from, to]) => {
-		normalized = normalized.replace(new RegExp(from, 'g'), to);
+			normalized = normalized.replace(new RegExp(from, 'g'), to);
 		});
+		
 		// Apply diacritic normalization
-		return normalizeDiacritics(normalized);
+		normalized = normalizeDiacritics(normalized);
+		
+		return normalized;
 	}
 
-	$: normalizedLyrics = customNormalize(lyrics);
+	$: modifiedLyrics = lyricsToPreferences(lyrics);
+	$: normalizedLyrics = customNormalize(modifiedLyrics);
 
 	function handleInput(event) {
 		const newValue = event.target.value;
-		const normalizedNextChar = normalizeDiacritics(String([lyrics[userInput.length]]));
+		const normalizedNextChar = normalizeDiacritics(String([modifiedLyrics[userInput.length]]));
 		const normalizedLastChar = normalizeDiacritics(String([newValue[newValue.length - 1]]));
 		
 		if (newValue.length > userInput.length) {
@@ -182,7 +203,7 @@
 		console.log('Incorrect characters:', incorrectChars);
 	}
   
-	$: if (lyrics) {
+	$: if (modifiedLyrics) {
 		// Reset state and focus when lyrics change
 		showResults = false;
 		userInput = '';
@@ -293,7 +314,7 @@ $: {
 }
 
 // First, let's make formattedLyrics only depend on lyrics
-$: formattedLyrics = lyrics ? formatLyricsIntoWords(lyrics) : [];
+$: formattedLyrics = modifiedLyrics ? formatLyricsIntoWords(modifiedLyrics) : [];
 
 // Then, let's create a separate reactive statement for classes
 $: typingState = {
@@ -338,7 +359,7 @@ $: {
 		}
 		});
 
-		if (userInput.length === lyrics.length) endTest();
+		if (userInput.length === modifiedLyrics.length) endTest();
 	} else {
 		typingState.classes = formattedLyrics.map(item => {
 		if (item.type === 'word') {
