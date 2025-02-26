@@ -161,6 +161,8 @@ export const imageColors = writable({
 export const correctionColors = writable(defaultCorrection);
 
 export const ditherImages = writable(true);
+export const capitalization = writable(true);
+export const punctuation = writable(true);
 export const recentArtists = writable([]);
 
 recentArtists.subscribe(artists => {
@@ -197,12 +199,16 @@ cookiesAccepted.subscribe(accepted => {
         const savedColors = Cookies.get('themeColors');
         const savedBackground = Cookies.get('backgroundColor');
         const savedDither = Cookies.get('ditherImages');
+        const savedCapitalization = Cookies.get('capitalization');
+        const savedPunctuation = Cookies.get('punctuation');
         const savedArtists = Cookies.get('recentArtists');
 
         if (savedTheme) currentTheme.set(JSON.parse(savedTheme));
         if (savedColors) themeColors.set(JSON.parse(savedColors));
         if (savedBackground) backgroundColors.set(JSON.parse(savedBackground));
         if (savedDither) ditherImages.set(JSON.parse(savedDither));
+        if (savedCapitalization) capitalization.set(JSON.parse(savedCapitalization));
+        if (savedPunctuation) punctuation.set(JSON.parse(savedPunctuation));
         if (savedArtists) recentArtists.set(JSON.parse(savedArtists));
 
         currentTheme.subscribe(value => {
@@ -236,6 +242,12 @@ cookiesAccepted.subscribe(accepted => {
         ditherImages.subscribe(value => {
             Cookies.set('ditherImages', JSON.stringify(value));
         });
+        capitalization.subscribe(value => {
+            Cookies.set('capitalization', JSON.stringify(value));
+        });
+        punctuation.subscribe(value => {
+            Cookies.set('punctuation', JSON.stringify(value));
+        });
         imageColors.subscribe(value => {
             Cookies.set('imageColors', JSON.stringify(value));
         });
@@ -256,6 +268,8 @@ cookiesAccepted.subscribe(accepted => {
         Cookies.remove('themeColors');
         Cookies.remove('backgroundColor');
         Cookies.remove('ditherImages');
+        Cookies.remove('capitalization');
+        Cookies.remove('punctuation');
         Cookies.remove('recentArtists');
         Cookies.remove('cookiesAccepted');
     }
