@@ -147,9 +147,11 @@ async function getSongsById(artistId, seenSongs) {
         // Parse the page with load
         const $ = cheerio.load(songPageHtml);
         let lyricsHtml = '';
+        
 
         // Select the container that includes the lyrics and retrieve the HTML
-        const lyricsContainer = $('[class^="Lyrics-"]');
+        // Try this updated selector
+        const lyricsContainer = $('div[class*="Lyrics__Container"]');
         if (lyricsContainer.length > 0) {
             lyricsHtml = lyricsContainer.html();
         } else {
@@ -174,6 +176,8 @@ async function getSongsById(artistId, seenSongs) {
 
         // Decode HTML entities
         lyrics = $('<textarea/>').html(lyrics).text();
+
+        console.log("LYRICS: ", lyrics)
 
         // Trim the final string to remove any leading/trailing whitespace
         lyrics = lyrics.trim();

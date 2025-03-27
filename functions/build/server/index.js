@@ -1,6 +1,6 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from './chunks/ssr-Dc5PIG1W.js';
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component } from './chunks/ssr-3VKeYgbN.js';
 import { d as decode_pathname, h as has_data_suffix, s as strip_data_suffix, a as decode_params, n as normalize_path, b as disable_search, c as add_data_suffix, m as make_trackable, r as resolve } from './chunks/exports-DuWZopOC.js';
-import { r as readable, w as writable } from './chunks/index-_ySieBs9.js';
+import { r as readable, w as writable } from './chunks/index-Dy20jgFe.js';
 
 let base = "";
 let assets = base;
@@ -182,7 +182,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1i8j03j"
+  version_hash: "e2frrz"
 };
 async function get_hooks() {
   return {};
