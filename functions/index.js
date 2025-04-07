@@ -158,9 +158,22 @@ async function getSongsById(artistId, seenSongs) {
             lyricsHtml = "Lyrics not found.";
         }
 
-
+        // Clean the lyrics HTML more thoroughly
+        // First, remove all button elements and their contents
+        lyrics = lyricsHtml.replace(/<button[^>]*>[\s\S]*?<\/button>/gi, '');
+        
+        // Remove all SVG elements and their contents
+        lyrics = lyrics.replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '');
+        
+        // Remove all ul and li elements
+        lyrics = lyrics.replace(/<ul[^>]*>[\s\S]*?<\/ul>/gi, '');
+        lyrics = lyrics.replace(/<li[^>]*>[\s\S]*?<\/li>/gi, '');
+        
+        // Remove all h2 elements
+        lyrics = lyrics.replace(/<h2[^>]*>[\s\S]*?<\/h2>/gi, '');
+        
         // Replace <br> tags with \n to maintain formatting
-        lyrics = lyricsHtml.replace(/<br\s*\/?>/gi, '\n');
+        lyrics = lyrics.replace(/<br\s*\/?>/gi, '\n');
 
         // Remove any script or style elements entirely
         lyrics = lyrics.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '');
@@ -173,6 +186,9 @@ async function getSongsById(artistId, seenSongs) {
         lyrics = lyrics.replace(/<\/div>/gi, '');     // Remove end div tags
         lyrics = lyrics.replace(/\[.*?\]/g, '');      // Remove text within square brackets
         lyrics = lyrics.replace(/<\/?(i|b)>/gi, '');  // Remove italic and bold tags
+        
+        // Remove any remaining HTML tags
+        lyrics = lyrics.replace(/<[^>]*>/g, '');
 
         // Decode HTML entities
         lyrics = $('<textarea/>').html(lyrics).text();
