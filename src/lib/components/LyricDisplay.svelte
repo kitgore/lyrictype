@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
 	import { applyDitheringToImage } from '$lib/services/dither-utils';
-	import { ditherImages, imageColors, correctionColors, windowStore, capitalization, punctuation } from '$lib/services/store.js';
+	import { ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
 	import { normalizeDiacritics } from 'normalize-text';
 	export let lyrics;
 	export let songTitle;
@@ -11,10 +11,18 @@
 	export let continueFromQueue;
 	export let replaySong;
 	export let geniusUrl;
+	export let isPaused = false;
+	export let capitalization = true;
+	export let punctuation = true;
 	let userInput = '';
 	let startTime = null;
 	let endTime = null;
 	let testStarted = false;
+	let pauseStartTime = null;
+	let totalPauseTime = 0;
+
+	// let lastCapitalization = $capitalization;
+	// let lastPunctuation = $punctuation;
 	let cursorPosition = 0;
 	let inputElement;
 	let showResults = false;
@@ -87,6 +95,44 @@
 	onMount(() => {
 		focusInput();
 		if (imageUrl) preloadAndDitherImage(imageUrl);
+		
+		// Listen for restart test events
+		const handleRestartTest = (event) => {
+			// Reset all typing test state
+			showResults = false;
+			userInput = '';
+			testStarted = false;
+			startTime = null;
+			endTime = null;
+			cursorPosition = 0;
+			totalPauseTime = 0;
+			pauseStartTime = null;
+			
+			// Reset typing state classes
+			typingState.classes = [];
+			
+			// Focus the input after a short delay to ensure DOM is updated
+			setTimeout(() => {
+				focusInput();
+			}, 0);
+		};
+		
+		// Listen for unpause events
+		const handleUnpauseTest = () => {
+			// Restore focus and make cursor blink when unpausing
+			setTimeout(() => {
+				focusInput();
+			}, 0);
+		};
+		
+		window.addEventListener('restartTest', handleRestartTest);
+		window.addEventListener('unpauseTest', handleUnpauseTest);
+		
+		// Cleanup on unmount
+		return () => {
+			window.removeEventListener('restartTest', handleRestartTest);
+			window.removeEventListener('unpauseTest', handleUnpauseTest);
+		};
 	});
 
 	// Mappings for characters that aren't handled by normalize-text
@@ -104,16 +150,19 @@
 	function lyricsToPreferences(text){
 		let normalized = text;
 		// Handle capitalization based on store value
-		if (!$capitalization) {
-			console.log("lowercasing")
+		if (!capitalization) {
+			console.log("lowercasing lyrics");
 			normalized = normalized.toLowerCase();
 		}
 		
 		// Handle punctuation based on store value
-		if (!$punctuation) {
+		if (!punctuation) {
+			console.log("removing punctuation from lyrics");
 			// Remove all punctuation - keep only letters, numbers, and spaces
 			normalized = normalized.replace(/[^\p{L}\p{N}\s]/gu, '');
 		}
+		console.log("Original lyrics:", text?.substring(0, 100));
+		console.log("Modified lyrics:", normalized?.substring(0, 100));
 		return normalized;
 	}
 
@@ -133,10 +182,43 @@
 		return normalized;
 	}
 
-	$: modifiedLyrics = lyricsToPreferences(lyrics);
-	$: normalizedLyrics = customNormalize(modifiedLyrics);
+	// Derived lyrics based on toggles
+	$: transformedLyrics = (() => {
+    let out = lyrics ? (capitalization ? lyrics : lyrics.toLowerCase()) : '';
+    if (!punctuation) out = out.replace(/[^\p{L}\p{N}\s]/gu, '');
+    return out;
+})();
 
-	function handleInput(event) {
+// Reset test when toggles change
+let lastCap = capitalization;
+let lastPunct = punctuation;
+
+$: if ((capitalization !== lastCap || punctuation !== lastPunct) && (userInput.length > 0 || testStarted)) {
+    // Reset test state
+    showResults = false;
+    userInput = '';
+    testStarted = false;
+    startTime = null;
+    endTime = null;
+    totalPauseTime = 0;
+    pauseStartTime = null;
+    cursorPosition = 0;
+    typingState.classes = [];
+
+    // Update last known values
+    lastCap = capitalization;
+    lastPunct = punctuation;
+
+    setTimeout(() => {
+        focusInput();
+    }, 0);
+}
+
+// Use transformedLyrics everywhere instead of lyrics
+$: modifiedLyrics = transformedLyrics;
+$: normalizedLyrics = customNormalize(modifiedLyrics);
+
+function handleInput(event) {
 		const newValue = event.target.value;
 		const normalizedNextChar = normalizeDiacritics(String([modifiedLyrics[userInput.length]]));
 		const normalizedLastChar = normalizeDiacritics(String([newValue[newValue.length - 1]]));
@@ -167,7 +249,9 @@
   	// Function to end the test and calculate WPM and accuracy
 	function endTest() {
 		endTime = new Date();
-		const durationInMinutes = (endTime - startTime) / 60000;
+		// Calculate actual typing time by subtracting pause time
+		const actualDuration = (endTime - startTime) - totalPauseTime;
+		const durationInMinutes = actualDuration / 60000;
 		const charactersTyped = userInput.length;
 		wpm = (charactersTyped / 5) / durationInMinutes;
 
@@ -203,14 +287,27 @@
 		console.log('Incorrect characters:', incorrectChars);
 	}
   
-	$: if (modifiedLyrics) {
-		// Reset state and focus when lyrics change
+	$: if (lyrics && !userInput && !testStarted) {
+		// Only reset when lyrics change and there's no active test
 		showResults = false;
 		userInput = '';
 		testStarted = false;
+		totalPauseTime = 0;
+		pauseStartTime = null;
 		setTimeout(() => { // Wait for the DOM to update before focusing the input
 			focusInput();
 		}, 0);
+	}
+
+	// Handle pause state changes
+	$: if (isPaused && testStarted && !pauseStartTime) {
+		// Pause started
+		pauseStartTime = new Date();
+	} else if (!isPaused && pauseStartTime) {
+		// Pause ended
+		const pauseEndTime = new Date();
+		totalPauseTime += (pauseEndTime - pauseStartTime);
+		pauseStartTime = null;
 	}
 	
 
@@ -412,6 +509,15 @@ $: {
 		on:blur={blurInput}
         style="line-height:{windowHeight*0.06}px; font-size: 0px"
     >
+        {#if isPaused}
+            <div class="pause-overlay">
+                <div class="pause-message" style="width: {windowHeight * 0.20}px; height: {windowHeight * 0.20}px; font-size: {windowHeight * 0.03}px; padding: {windowHeight * 0.02}px; border-width: {windowHeight * 0.015}px; border-radius: {windowHeight * 0.008}px;">
+                    <svg viewBox="0 0 24 24" fill="white" style="width: 90%; height: 90%;">
+                        <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z"/>
+                    </svg>
+                </div>
+            </div>
+        {/if}
 		{#each formattedLyrics as item, wordIndex}
 			{@const cursorAtBeginning = (cursorInfo.wordIndex === 0 && wordIndex === 0) && cursorInfo.charIndex === 0}
 			{@const cursorAtWordStart = cursorInfo.wordIndex + 1 === wordIndex}
@@ -470,6 +576,7 @@ $: {
 			on:input={handleInput}
 			bind:value={userInput}
 			on:blur={blurInput}
+			disabled={isPaused}
 		/>
     </div>
 {/if}
@@ -506,6 +613,39 @@ $: {
 		font-family: "Geneva", sans-serif;
 		font-weight: 500;
 		color: var(--primary-color);
+		position: relative;
+	}
+
+	.pause-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-size: 2px 2px;
+		background-image:
+			linear-gradient(45deg, var(--primary-color) 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color));
+		outline: none;
+	}
+
+	.pause-message {
+		font-family: "Geneva", sans-serif;
+		font-size: 2em;
+		font-weight: bold;
+		color: var(--seconday-color);
+		padding: 20px;
+		border: 10px solid var(--secondary-color);
+		border-radius: 8px;
+		aspect-ratio: 1/1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 15vh;
+		height: 15vh;
 	}
 
 	.quote-input {

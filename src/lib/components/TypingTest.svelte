@@ -14,6 +14,13 @@
     $: inputTabIndex = getElementTabIndex(id, 10);
     $: buttonTabIndex = getElementTabIndex(id, 2);
 
+    const PLAY_D  = "M8 5V19L19 12L8 5Z";
+    const PAUSE_D = "M6 4H10V20H6V4ZM14 4H18V20H14V4Z";
+
+    // reactive declaration: whenever `isPaused` flips,
+    // re-compute `controlPath`
+    $: controlPath = isPaused ? PLAY_D : PAUSE_D;
+
     let artistInput = '';
     let songTitle = '';
     let artistName = '';
@@ -29,6 +36,7 @@
     let displayedArtist = 'Artist';
     let loading = false;
     let currentSong;
+    let isPaused = false;
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
@@ -86,8 +94,15 @@
     }
 
     function continueFromQueue(){
+        isPaused = false;
         const currentArtistId = $recentArtists[0].artistId;
         playNextFromQueue(currentArtistId);
+
+        // Add this to reset the test in LyricDisplay
+        const restartEvent = new CustomEvent('restartTest', {
+            detail: { songData: currentSong }
+        });
+        window.dispatchEvent(restartEvent);
     }
 
     function replaySong(){
@@ -137,6 +152,48 @@
         console.log($recentArtists);
     }
 
+    function playPreviousSong() {
+        // TODO: Implement previous song functionality
+        isPaused = false;
+        console.log("Previous song clicked");
+    }
+
+    function playNextSong() {
+        // Use the existing continueFromQueue function
+        isPaused = false;
+        continueFromQueue();
+
+        const restartEvent = new CustomEvent('restartTest', {
+            detail: { songData: currentSong }
+        });
+        window.dispatchEvent(restartEvent);
+    }
+
+    function restartSong() {
+        isPaused = false;
+        // Reset the current song by calling the existing replaySong function
+        replaySong();
+        
+        // Reset typing test state by dispatching a custom event
+        // This will be handled by LyricDisplay to reset the test
+        const restartEvent = new CustomEvent('restartTest', {
+            detail: { songData: currentSong }
+        });
+        window.dispatchEvent(restartEvent);
+    }
+
+    function togglePause() {
+        isPaused = !isPaused;
+        
+        // When unpausing, restore focus to lyrics and make cursor blink
+        if (!isPaused) {
+            const unpauseEvent = new CustomEvent('unpauseTest');
+            window.dispatchEvent(unpauseEvent);
+        }
+        
+        console.log("Pause toggled:", isPaused);
+    }
+
     function focusInput() {
         inputElement.focus();
         blink = true;
@@ -167,10 +224,10 @@
             <div class="sidebarTitle">
                 <h3 style:font-size="{windowHeight*0.03}px">Recently Played</h3>
             </div>
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
-            <div class="headerInputContainer" on:click={focusInput} on:keydown={handleKeydown}>
-                <div class="headerInputLabel" style:font-size="{windowHeight*0.025}px">Artist:</div>
-                <div class="headerInputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.02}px">
+                         <!-- svelte-ignore a11y-no-static-element-interactions -->
+             <div class="headerInputContainer" on:click={focusInput} on:keydown={handleKeydown}>
+                 <div class="headerInputLabel" style:font-size="{windowHeight*0.03}px">Artist:</div>
+                 <div class="headerInputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.03}px">
                     {#each artistInput.split('') as char, i}
                         <span class="headerInputChar">{char}</span>
                     {/each}
@@ -221,6 +278,9 @@
                             {continueFromQueue}
                             {replaySong} 
                             {geniusUrl}
+                            {isPaused}
+                            capitalization={$capitalization}
+                            punctuation={$punctuation}
                         />
                     {:else}
                         {#if loading}
@@ -243,8 +303,25 @@
                 </div>
                 <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>
                 {#if songTitle}
-                    <div class="songTitle" style:font-size="{windowHeight*0.032}px"> - {songTitle}</div>
+                    <div class="songTitle" style:font-size="{windowHeight*0.034}px"> - {songTitle}</div>
                 {/if}
+            </div>
+            <div class="musicControls">
+                <button class="controlButton" on:click={restartSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                <button class="controlButton" on:click={togglePause} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                        <path d={controlPath}/>
+                    </svg>
+                </button>
+                <button class="controlButton" on:click={playNextSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                    </svg>
+                </button>
             </div>
         </div>
      </div>
@@ -299,10 +376,50 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         justify-content: center;
+         justify-content: space-around;
+
          height: 13%;
          padding: 0 3%;
      }
+
+     .musicControls {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         flex-shrink: 0;
+         margin-left: 20px;
+     }
+
+     .controlButton {
+        font-size: 2em;
+        /* padding: 0.5em 1em; */
+        border: 2px solid var(--primary-color);
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        border-radius: 4px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s ease;
+    }
+
+    .controlButton:hover,
+    .controlButton:active,
+    .controlButton:focus {
+        background-size: 2px 2px; /* Size of the checker squares */
+        background-image:
+            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
+            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+        outline: none
+    }
+
+
+     .controlIcon {
+        height: 75%;
+        aspect-ratio: 1/1;
+    }
 
     /* Header Section */
     .headerRow {
@@ -354,7 +471,8 @@
          padding-left: 20%;
          gap: .5em;
          font-size: 2vh;
-         max-width: 60%;  /* Maximum allowed width */
+         flex: 1;
+         min-width: 0;
      }
          .musicIconContainer {
          display: flex;
@@ -407,9 +525,10 @@
          display: inline-block;
          width: 2px;
          height: 80%;
-         margin-left: -2px;
+         margin-left: -4px;
          position: absolute;
-         top: 10%;
+         top: 50%;
+         transform: translateY(-60%);
          background-color: currentColor;
          animation: blink-animation 1s steps(1) infinite;
          color: var(--primary-color);
