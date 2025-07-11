@@ -167,19 +167,31 @@
             <div class="sidebarTitle">
                 <h3 style:font-size="{windowHeight*0.03}px">Recently Played</h3>
             </div>
-            <div class="currentArtistContainer">
-                <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>       
-            </div>
-            <div class="musicIconContainer" style:width="{windowHeight*0.05}px" style:height="{windowHeight*0.040}px">
-                <svg class="musicIcon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.6779 0.220394C18.4735 0.0457943 18.2035 -0.0307252 17.9372 0.0112826L6.29208 1.84998C5.84528 1.92052 5.51616 2.30568 5.51616 2.75804V6.43547V12.258H3.67743C1.6497 12.2581 0 13.7703 0 15.629C0 17.4878 1.6497 19 3.67743 19C5.70516 19 7.35485 17.4878 7.35485 15.629V13.1774V7.22104L17.1613 5.67265V10.7258H15.3226C13.2949 10.7258 11.6452 12.238 11.6452 14.0968C11.6452 15.9555 13.2949 17.4678 15.3226 17.4678C17.3503 17.4678 19 15.9555 19 14.0968V11.6451V4.59678V0.919349C19 0.650492 18.8822 0.395068 18.6779 0.220394Z" fill="{$themeColors.primary}"/>
-                </svg>      
-            </div>
-                <div class="typingToggleButtons" style:position="absolute" style:right={windowHeight * 0.2 + 'px'} style:gap={windowHeight * 0.007 + 'px'}>
-                    <ToggleButton bind:isToggled={$capitalization} displayText="Aa" buttonSize={windowHeight*.05}/>
-                    <ToggleButton bind:isToggled={$punctuation} displayText="!?" buttonSize={windowHeight*.05}/>
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <div class="headerInputContainer" on:click={focusInput} on:keydown={handleKeydown}>
+                <div class="headerInputLabel" style:font-size="{windowHeight*0.025}px">Artist:</div>
+                <div class="headerInputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.02}px">
+                    {#each artistInput.split('') as char, i}
+                        <span class="headerInputChar">{char}</span>
+                    {/each}
+                    {#if blink}
+                        <span class="headerCursor"></span>
+                    {/if}
                 </div>
-
+                <input  
+                    bind:this={inputElement} 
+                    class="headerHiddenInput" 
+                    type="textbox"
+                    bind:value={artistInput}
+                    on:focus={focusInput}
+                    on:blur={blurInput}
+                    tabindex={inputTabIndex}
+                />
+            </div>
+            <div class="typingToggleButtons" style:gap={windowHeight * 0.007 + 'px'}>
+                <ToggleButton bind:isToggled={$capitalization} displayText="Aa" buttonSize={windowHeight*.05}/>
+                <ToggleButton bind:isToggled={$punctuation} displayText="!?" buttonSize={windowHeight*.05}/>
+            </div>
         </div>
         <div class="contentLayout">
             <div class="sidebar">
@@ -222,29 +234,21 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div class="inputContainer" on:click={focusInput} on:keydown={handleKeydown}>
-        <div class="inputLabel" style:font-size="{windowHeight*0.04}px">Artist Name:</div>
-        <div class="inputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.032}px">
-            {#each artistInput.split('') as char, i}
-                <span class="inputChar">{char}</span>
-            {/each}
-            {#if blink}
-                <span class="cursor"></span>
-            {/if}
+        <div class="bottomArtistRow">
+            <div class="currentArtistContainer">
+                <div class="musicIconContainer" style:width="{windowHeight*0.05}px" style:height="{windowHeight*0.040}px">
+                    <svg class="musicIcon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6779 0.220394C18.4735 0.0457943 18.2035 -0.0307252 17.9372 0.0112826L6.29208 1.84998C5.84528 1.92052 5.51616 2.30568 5.51616 2.75804V6.43547V12.258H3.67743C1.6497 12.2581 0 13.7703 0 15.629C0 17.4878 1.6497 19 3.67743 19C5.70516 19 7.35485 17.4878 7.35485 15.629V13.1774V7.22104L17.1613 5.67265V10.7258H15.3226C13.2949 10.7258 11.6452 12.238 11.6452 14.0968C11.6452 15.9555 13.2949 17.4678 15.3226 17.4678C17.3503 17.4678 19 15.9555 19 14.0968V11.6451V4.59678V0.919349C19 0.650492 18.8822 0.395068 18.6779 0.220394Z" fill="{$themeColors.primary}"/>
+                    </svg>      
+                </div>
+                <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>
+                {#if songTitle}
+                    <div class="songTitle" style:font-size="{windowHeight*0.032}px"> - {songTitle}</div>
+                {/if}
+            </div>
         </div>
-        <input  
-            bind:this={inputElement} 
-            class="hiddenInput" 
-            type="textbox"
-            bind:value={artistInput}
-            on:focus={focusInput}
-            on:blur={blurInput}
-            tabindex={inputTabIndex}
-        />
-    </div>
-</div>
+     </div>
+ </div>
 
 <style>
     * {
@@ -272,7 +276,7 @@
 
     .mainSection {
         display: flex;
-        height: 87%;
+        height: 100%;
         width: 100%;
         flex-direction: column;
     }
@@ -280,15 +284,25 @@
     .contentLayout {
         display: flex;
         flex-direction: row;
-        height: 100%;
+        flex: 1;
     }
 
-    .loadingAnimationContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
+         .loadingAnimationContainer {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+     }
+
+     /* Bottom Artist Row */
+     .bottomArtistRow {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         height: 13%;
+         padding: 0 3%;
+     }
 
     /* Header Section */
     .headerRow {
@@ -308,33 +322,108 @@
         color: var(--primary-color);
     }
 
-    .currentArtist {
-        font-family: "Geneva", sans-serif;
-        line-height: 150%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: fit-content;  /* Only take up as much space as needed */
-        min-width: 0;  /* Allow text truncation */
-        font-size: 3vh;
-        font-weight: 600;
-        color: var(--primary-color);
-    }
-    .currentArtistContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 3%;
-        gap: .5em;
-        font-size: 2vh;
-        max-width: 60%;  /* Maximum allowed width */
-    }
-    .musicIconContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 1%;
-    }
+         .currentArtist {
+         font-family: "Geneva", sans-serif;
+         line-height: 150%;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         width: fit-content;  /* Only take up as much space as needed */
+         min-width: 0;  /* Allow text truncation */
+         font-size: 3vh;
+         font-weight: 600;
+         color: var(--primary-color);
+     }
+
+     .songTitle {
+         font-family: "Geneva", sans-serif;
+         line-height: 150%;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         width: fit-content;
+         min-width: 0;
+         font-weight: 400;
+         color: var(--primary-color);
+         opacity: 0.8;
+     }
+         .currentArtistContainer {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding-left: 20%;
+         gap: .5em;
+         font-size: 2vh;
+         max-width: 60%;  /* Maximum allowed width */
+     }
+         .musicIconContainer {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-left: 1%;
+     }
+
+     /* Header Input Styles */
+     .headerInputContainer {
+         display: flex;
+         align-items: center;
+         margin-left: 2%;
+         height: 60%;
+         border: 2px solid var(--primary-color);
+         background-color: var(--secondary-color);
+         border-radius: 4px;
+         padding: 0 8px;
+         flex: 1;
+         margin-right: 2%;
+     }
+
+     .headerInputLabel {
+         font-family: "Geneva", sans-serif;
+         color: var(--primary-color);
+         margin-right: 8px;
+         white-space: nowrap;
+     }
+
+     .headerInputField {
+         flex: 1;
+         white-space: pre-wrap;
+         letter-spacing: -.05em;
+         font-family: "Geneva", sans-serif;
+         line-height: 130%;
+         font-weight: 400;
+         color: var(--primary-color);
+         min-width: 120px;
+         position: relative;
+     }
+
+     .headerInputChar {
+         display: inline-block;
+         font-family: "Geneva", sans-serif;
+         font-weight: 200;
+         color: var(--primary-color);
+     }
+
+     .headerCursor {
+         display: inline-block;
+         width: 2px;
+         height: 80%;
+         margin-left: -2px;
+         position: absolute;
+         top: 10%;
+         background-color: currentColor;
+         animation: blink-animation 1s steps(1) infinite;
+         color: var(--primary-color);
+     }
+
+     .headerHiddenInput {
+         position: absolute;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         height: 0;
+         width: 0;
+         pointer-events: none;
+     }
 
     /* Sidebar */
     .sidebar {
@@ -365,71 +454,7 @@
         border-radius: .2em;
     }
 
-    /* Input Section */
-    .inputContainer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 8%;
-        position: relative;
-        margin: 3% 0;
-    }
-
-    .inputLabel {
-        flex: 0 0 17%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Geneva", sans-serif;
-        color: var(--primary-color);
-    }
-
-    .inputField {
-        flex: 0 0 83%;
-        white-space: pre-wrap;
-        padding: .5%;
-        padding-left: 5px;
-        letter-spacing: -.05em;
-        font-family: "Geneva", sans-serif;
-        font-size: 2.5vh;
-        line-height: 130%;
-        font-weight: 400;
-        border: 2px solid var(--primary-color);
-        background-color: var(--secondary-color);
-        height: 100%;
-        color: var(--primary-color);
-    }
-
-    .inputChar {
-        display: inline-block;
-        font-family: "Geneva", sans-serif;
-        font-size: 1.3em;
-        font-weight: 200;
-        color: var(--primary-color);
-    }
-
-    .cursor {
-        display: inline-block;
-        width: 2.5px;
-        line-height: 80%;
-        height: 65%;
-        margin-left: -4px;
-        position: absolute;
-        top: 16%;
-        background-color: currentColor;
-        animation: blink-animation 1s steps(1) infinite;
-        color: var(--primary-color);
-    }
-
-    .hiddenInput {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        pointer-events: none;
-    }
+    
 
     /* Typography */
     h3 {
