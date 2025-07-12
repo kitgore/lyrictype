@@ -1,0 +1,4513 @@
+{
+  "letter": "K",
+  "timestamp": "2025-07-11T09:43:40.466Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Kai Angel",
+        "url": "https://genius.com/artists/Kai-angel",
+        "type": "popular",
+        "id": "1714694"
+      },
+      {
+        "name": "Kali Uchis",
+        "url": "https://genius.com/artists/Kali-uchis",
+        "type": "popular",
+        "id": "160041"
+      },
+      {
+        "name": "Kamehameha Schools Children's Chorus",
+        "url": "https://genius.com/artists/Kamehameha-schools-childrens-chorus",
+        "type": "popular",
+        "id": "993749"
+      },
+      {
+        "name": "Kanye West",
+        "url": "https://genius.com/artists/Kanye-west",
+        "type": "popular",
+        "id": "72"
+      },
+      {
+        "name": "Karan Aujla",
+        "url": "https://genius.com/artists/Karan-aujla",
+        "type": "popular",
+        "id": "1464474"
+      },
+      {
+        "name": "KAROL G",
+        "url": "https://genius.com/artists/Karol-g",
+        "type": "popular",
+        "id": "530703"
+      },
+      {
+        "name": "KATSEYE",
+        "url": "https://genius.com/artists/Katseye",
+        "type": "popular",
+        "id": "3740381"
+      },
+      {
+        "name": "Katy Perry",
+        "url": "https://genius.com/artists/Katy-perry",
+        "type": "popular",
+        "id": "1195"
+      },
+      {
+        "name": "Kehlani",
+        "url": "https://genius.com/artists/Kehlani",
+        "type": "popular",
+        "id": "80125"
+      },
+      {
+        "name": "Ken Carson",
+        "url": "https://genius.com/artists/Ken-carson",
+        "type": "popular",
+        "id": "1812129"
+      },
+      {
+        "name": "Kendrick Lamar",
+        "url": "https://genius.com/artists/Kendrick-lamar",
+        "type": "popular",
+        "id": "1421"
+      },
+      {
+        "name": "Kesha",
+        "url": "https://genius.com/artists/Kesha",
+        "type": "popular",
+        "id": "1519"
+      },
+      {
+        "name": "Kevin Abstract",
+        "url": "https://genius.com/artists/Kevin-abstract",
+        "type": "popular",
+        "id": "14225"
+      },
+      {
+        "name": "Kevin Woo",
+        "url": "https://genius.com/artists/Kevin-woo",
+        "type": "popular",
+        "id": "2000217"
+      },
+      {
+        "name": "The Killers",
+        "url": "https://genius.com/artists/The-killers",
+        "type": "popular",
+        "id": "599"
+      },
+      {
+        "name": "КИНО (KINO)",
+        "url": "https://genius.com/artists/Kino",
+        "type": "popular",
+        "id": "1045284"
+      },
+      {
+        "name": "Kishore Kumar",
+        "url": "https://genius.com/artists/Kishore-kumar",
+        "type": "popular",
+        "id": "181342"
+      },
+      {
+        "name": "kizaru",
+        "url": "https://genius.com/artists/Kizaru",
+        "type": "popular",
+        "id": "566548"
+      },
+      {
+        "name": "Kneecap",
+        "url": "https://genius.com/artists/Kneecap",
+        "type": "popular",
+        "id": "1428591"
+      },
+      {
+        "name": "Kodak Black",
+        "url": "https://genius.com/artists/Kodak-black",
+        "type": "popular",
+        "id": "162126"
+      }
+    ],
+    "regular": [
+      {
+        "name": "K",
+        "url": "https://genius.com/artists/K",
+        "type": "regular",
+        "id": "10437"
+      },
+      {
+        "name": "K1llbrady",
+        "url": "https://genius.com/artists/K1llbrady",
+        "type": "regular",
+        "id": "3327299"
+      },
+      {
+        "name": "K3",
+        "url": "https://genius.com/artists/K3",
+        "type": "regular",
+        "id": "344779"
+      },
+      {
+        "name": "K-391",
+        "url": "https://genius.com/artists/K-391",
+        "type": "regular",
+        "id": "456566"
+      },
+      {
+        "name": "k3 (USA)",
+        "url": "https://genius.com/artists/K3-usa",
+        "type": "regular",
+        "id": "4040286"
+      },
+      {
+        "name": "K4OS",
+        "url": "https://genius.com/artists/K4os",
+        "type": "regular",
+        "id": "3835902"
+      },
+      {
+        "name": "Ka",
+        "url": "https://genius.com/artists/Ka",
+        "type": "regular",
+        "id": "6365"
+      },
+      {
+        "name": "Kaaktaal",
+        "url": "https://genius.com/artists/Kaaktaal",
+        "type": "regular",
+        "id": "3159180"
+      },
+      {
+        "name": "K.A.A.N.",
+        "url": "https://genius.com/artists/Kaan",
+        "type": "regular",
+        "id": "52318"
+      },
+      {
+        "name": "Kaan Boşnak",
+        "url": "https://genius.com/artists/Kaan-bosnak",
+        "type": "regular",
+        "id": "1198684"
+      },
+      {
+        "name": "Kaaris",
+        "url": "https://genius.com/artists/Kaaris",
+        "type": "regular",
+        "id": "14693"
+      },
+      {
+        "name": "Kaash Paige",
+        "url": "https://genius.com/artists/Kaash-paige",
+        "type": "regular",
+        "id": "1651322"
+      },
+      {
+        "name": "Kaavish",
+        "url": "https://genius.com/artists/Kaavish",
+        "type": "regular",
+        "id": "380856"
+      },
+      {
+        "name": "Kabe",
+        "url": "https://genius.com/artists/Kabe",
+        "type": "regular",
+        "id": "1645753"
+      },
+      {
+        "name": "Kabir Cafe",
+        "url": "https://genius.com/artists/Kabir-cafe",
+        "type": "regular",
+        "id": "2596694"
+      },
+      {
+        "name": "Kabza De Small",
+        "url": "https://genius.com/artists/Kabza-de-small",
+        "type": "regular",
+        "id": "1832270"
+      },
+      {
+        "name": "Kacey Musgraves",
+        "url": "https://genius.com/artists/Kacey-musgraves",
+        "type": "regular",
+        "id": "53023"
+      },
+      {
+        "name": "Kacper Blonsky",
+        "url": "https://genius.com/artists/Kacper-blonsky",
+        "type": "regular",
+        "id": "1967692"
+      },
+      {
+        "name": "Kacperczyk",
+        "url": "https://genius.com/artists/Kacperczyk",
+        "type": "regular",
+        "id": "1743288"
+      },
+      {
+        "name": "Kadebostany",
+        "url": "https://genius.com/artists/Kadebostany",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Kaden MacKay",
+        "url": "https://genius.com/artists/Kaden-mackay",
+        "type": "regular",
+        "id": "2589198"
+      },
+      {
+        "name": "Kadim Al Sahir - كاظم الساهر",
+        "url": "https://genius.com/artists/Kadim-al-sahir",
+        "type": "regular",
+        "id": "529917"
+      },
+      {
+        "name": "Kado",
+        "url": "https://genius.com/artists/Kado",
+        "type": "regular",
+        "id": "1875341"
+      },
+      {
+        "name": "kaestrings",
+        "url": "https://genius.com/artists/Kaestrings",
+        "type": "regular",
+        "id": "2580898"
+      },
+      {
+        "name": "Kae Tempest",
+        "url": "https://genius.com/artists/Kae-tempest",
+        "type": "regular",
+        "id": "196091"
+      },
+      {
+        "name": "Kagiso Lediga",
+        "url": "https://genius.com/artists/Kagiso-lediga",
+        "type": "regular",
+        "id": "4222173"
+      },
+      {
+        "name": "Kahitna",
+        "url": "https://genius.com/artists/Kahitna",
+        "type": "regular",
+        "id": "343953"
+      },
+      {
+        "name": "Kah-Lo",
+        "url": "https://genius.com/artists/Kah-lo",
+        "type": "regular",
+        "id": "640313"
+      },
+      {
+        "name": "Kahraman Deniz",
+        "url": "https://genius.com/artists/Kahraman-deniz",
+        "type": "regular",
+        "id": "1716014"
+      },
+      {
+        "name": "KAIA",
+        "url": "https://genius.com/artists/Kaia",
+        "type": "regular",
+        "id": "2970019"
+      },
+      {
+        "name": "KAI (EXO)",
+        "url": "https://genius.com/artists/Kai-exo",
+        "type": "regular",
+        "id": "1177119"
+      },
+      {
+        "name": "Кай Гетц (Kai Getz)",
+        "url": "https://genius.com/artists/Kai-getz",
+        "type": "regular",
+        "id": "4317864"
+      },
+      {
+        "name": "Kaija Koo",
+        "url": "https://genius.com/artists/Kaija-koo",
+        "type": "regular",
+        "id": "357539"
+      },
+      {
+        "name": "Kailash Kher",
+        "url": "https://genius.com/artists/Kailash-kher",
+        "type": "regular",
+        "id": "374950"
+      },
+      {
+        "name": "Kairo Keyz",
+        "url": "https://genius.com/artists/Kairo-keyz",
+        "type": "regular",
+        "id": "2810302"
+      },
+      {
+        "name": "Kaiser Chiefs",
+        "url": "https://genius.com/artists/Kaiser-chiefs",
+        "type": "regular",
+        "id": "68784"
+      },
+      {
+        "name": "Kai Swervo",
+        "url": "https://genius.com/artists/Kai-swervo",
+        "type": "regular",
+        "id": "3974788"
+      },
+      {
+        "name": "Kaitlin Butts",
+        "url": "https://genius.com/artists/Kaitlin-butts",
+        "type": "regular",
+        "id": "1050681"
+      },
+      {
+        "name": "Kai Wachi",
+        "url": "https://genius.com/artists/Kai-wachi",
+        "type": "regular",
+        "id": "670155"
+      },
+      {
+        "name": "Kaizers Orchestra",
+        "url": "https://genius.com/artists/Kaizers-orchestra",
+        "type": "regular",
+        "id": "48451"
+      },
+      {
+        "name": "KAJ",
+        "url": "https://genius.com/artists/Kaj",
+        "type": "regular",
+        "id": "523676"
+      },
+      {
+        "name": "Kaka (IND)",
+        "url": "https://genius.com/artists/Kaka-ind",
+        "type": "regular",
+        "id": "2415121"
+      },
+      {
+        "name": "Kaśka Sochacka",
+        "url": "https://genius.com/artists/Kaska-sochacka",
+        "type": "regular",
+        "id": "2690294"
+      },
+      {
+        "name": "КАКАЯ РАЗНИЦА (KAKAYA RAZNITSA)",
+        "url": "https://genius.com/artists/Kakaya-raznitsa",
+        "type": "regular",
+        "id": "2885062"
+      },
+      {
+        "name": "Kake Randelin",
+        "url": "https://genius.com/artists/Kake-randelin",
+        "type": "regular",
+        "id": "452735"
+      },
+      {
+        "name": "KALAM INK",
+        "url": "https://genius.com/artists/Kalam-ink",
+        "type": "regular",
+        "id": "2906049"
+      },
+      {
+        "name": "Kalan.FrFr",
+        "url": "https://genius.com/artists/Kalanfrfr",
+        "type": "regular",
+        "id": "1046252"
+      },
+      {
+        "name": "Kalash",
+        "url": "https://genius.com/artists/Kalash",
+        "type": "regular",
+        "id": "33290"
+      },
+      {
+        "name": "Kalash Criminel",
+        "url": "https://genius.com/artists/Kalash-criminel",
+        "type": "regular",
+        "id": "592670"
+      },
+      {
+        "name": "Kalben",
+        "url": "https://genius.com/artists/Kalben",
+        "type": "regular",
+        "id": "1235673"
+      },
+      {
+        "name": "Kaleb Cohen",
+        "url": "https://genius.com/artists/Kaleb-cohen",
+        "type": "regular",
+        "id": "3368290"
+      },
+      {
+        "name": "Kaleb J",
+        "url": "https://genius.com/artists/Kaleb-j",
+        "type": "regular",
+        "id": "2867552"
+      },
+      {
+        "name": "Kaleida",
+        "url": "https://genius.com/artists/Kaleida",
+        "type": "regular",
+        "id": "406642"
+      },
+      {
+        "name": "KALEO",
+        "url": "https://genius.com/artists/Kaleo",
+        "type": "regular",
+        "id": "534092"
+      },
+      {
+        "name": "Kaliber 44",
+        "url": "https://genius.com/artists/Kaliber-44",
+        "type": "regular",
+        "id": "26243"
+      },
+      {
+        "name": "Kaliii",
+        "url": "https://genius.com/artists/Kaliii",
+        "type": "regular",
+        "id": "2729706"
+      },
+      {
+        "name": "KALIM",
+        "url": "https://genius.com/artists/Kalim",
+        "type": "regular",
+        "id": "36373"
+      },
+      {
+        "name": "Kali (POL)",
+        "url": "https://genius.com/artists/Kali-pol",
+        "type": "regular",
+        "id": "59081"
+      },
+      {
+        "name": "Kalmi",
+        "url": "https://genius.com/artists/Kalmi",
+        "type": "regular",
+        "id": "2074718"
+      },
+      {
+        "name": "Kalosha - كلوشة",
+        "url": "https://genius.com/artists/Kalosha",
+        "type": "regular",
+        "id": "2894076"
+      },
+      {
+        "name": "Kalyanji–Anandji",
+        "url": "https://genius.com/artists/Kalyanjianandji",
+        "type": "regular",
+        "id": "1077228"
+      },
+      {
+        "name": "Kamada",
+        "url": "https://genius.com/artists/Kamada",
+        "type": "regular",
+        "id": "1154078"
+      },
+      {
+        "name": "Kamaiyah",
+        "url": "https://genius.com/artists/Kamaiyah",
+        "type": "regular",
+        "id": "619473"
+      },
+      {
+        "name": "Kamal.",
+        "url": "https://genius.com/artists/Kamal",
+        "type": "regular",
+        "id": "1929855"
+      },
+      {
+        "name": "KAMAUU",
+        "url": "https://genius.com/artists/Kamauu",
+        "type": "regular",
+        "id": "642601"
+      },
+      {
+        "name": "Kamazz",
+        "url": "https://genius.com/artists/Kamazz",
+        "type": "regular",
+        "id": "1718175"
+      },
+      {
+        "name": "Kambulat",
+        "url": "https://genius.com/artists/Kambulat",
+        "type": "regular",
+        "id": "2112559"
+      },
+      {
+        "name": "Kam Carter",
+        "url": "https://genius.com/artists/Kam-carter",
+        "type": "regular",
+        "id": "2496618"
+      },
+      {
+        "name": "Kamel Messaoudi - كمال مسعودي",
+        "url": "https://genius.com/artists/Kamel-messaoudi",
+        "type": "regular",
+        "id": "1465882"
+      },
+      {
+        "name": "Kamelot",
+        "url": "https://genius.com/artists/Kamelot",
+        "type": "regular",
+        "id": "359385"
+      },
+      {
+        "name": "Kameron Marlowe",
+        "url": "https://genius.com/artists/Kameron-marlowe",
+        "type": "regular",
+        "id": "1856279"
+      },
+      {
+        "name": "Kamikazee",
+        "url": "https://genius.com/artists/Kamikazee",
+        "type": "regular",
+        "id": "63414"
+      },
+      {
+        "name": "Kami Kehoe",
+        "url": "https://genius.com/artists/Kami-kehoe",
+        "type": "regular",
+        "id": "3323888"
+      },
+      {
+        "name": "Kamiyada+",
+        "url": "https://genius.com/artists/Kamiyada",
+        "type": "regular",
+        "id": "670101"
+      },
+      {
+        "name": "KAMRAD",
+        "url": "https://genius.com/artists/Kamrad",
+        "type": "regular",
+        "id": "1232316"
+      },
+      {
+        "name": "Kamuran Akkor",
+        "url": "https://genius.com/artists/Kamuran-akkor",
+        "type": "regular",
+        "id": "2782199"
+      },
+      {
+        "name": "KAMZ0NER",
+        "url": "https://genius.com/artists/Kamz0ner",
+        "type": "regular",
+        "id": "3480439"
+      },
+      {
+        "name": "KANDYTOWN",
+        "url": "https://genius.com/artists/Kandytown",
+        "type": "regular",
+        "id": "2637771"
+      },
+      {
+        "name": "Kane Brown",
+        "url": "https://genius.com/artists/Kane-brown",
+        "type": "regular",
+        "id": "524190"
+      },
+      {
+        "name": "KANEDA7",
+        "url": "https://genius.com/artists/Kaneda7",
+        "type": "regular",
+        "id": "2859734"
+      },
+      {
+        "name": "カネコアヤノ (Kaneko Ayano)",
+        "url": "https://genius.com/artists/Kaneko-ayano",
+        "type": "regular",
+        "id": "2170141"
+      },
+      {
+        "name": "Kane Rodriguez",
+        "url": "https://genius.com/artists/Kane-rodriguez",
+        "type": "regular",
+        "id": "3916489"
+      },
+      {
+        "name": "Kane Sucks",
+        "url": "https://genius.com/artists/Kane-sucks",
+        "type": "regular",
+        "id": "4093302"
+      },
+      {
+        "name": "KANGDANIEL (강다니엘)",
+        "url": "https://genius.com/artists/Kangdaniel",
+        "type": "regular",
+        "id": "1154504"
+      },
+      {
+        "name": "Канги (Kangimusic)",
+        "url": "https://genius.com/artists/Kangimusic",
+        "type": "regular",
+        "id": "1941369"
+      },
+      {
+        "name": "Kanii",
+        "url": "https://genius.com/artists/Kanii",
+        "type": "regular",
+        "id": "2788579"
+      },
+      {
+        "name": "Kankan",
+        "url": "https://genius.com/artists/Kankan",
+        "type": "regular",
+        "id": "803704"
+      },
+      {
+        "name": "KA (NLD)",
+        "url": "https://genius.com/artists/Ka-nld",
+        "type": "regular",
+        "id": "1623407"
+      },
+      {
+        "name": "Kano",
+        "url": "https://genius.com/artists/Kano",
+        "type": "regular",
+        "id": "1432"
+      },
+      {
+        "name": "Kanonenfieber",
+        "url": "https://genius.com/artists/Kanonenfieber",
+        "type": "regular",
+        "id": "2615048"
+      },
+      {
+        "name": "Kansas",
+        "url": "https://genius.com/artists/Kansas",
+        "type": "regular",
+        "id": "27011"
+      },
+      {
+        "name": "Kanye East",
+        "url": "https://genius.com/artists/Kanye-east",
+        "type": "regular",
+        "id": "1109128"
+      },
+      {
+        "name": "Kany García",
+        "url": "https://genius.com/artists/Kany-garcia",
+        "type": "regular",
+        "id": "402444"
+      },
+      {
+        "name": "Kaonashi",
+        "url": "https://genius.com/artists/Kaonashi",
+        "type": "regular",
+        "id": "1657673"
+      },
+      {
+        "name": "Kapelyo - קפליו",
+        "url": "https://genius.com/artists/Kapelyo",
+        "type": "regular",
+        "id": "4329966"
+      },
+      {
+        "name": "Kapena",
+        "url": "https://genius.com/artists/Kapena",
+        "type": "regular",
+        "id": "386277"
+      },
+      {
+        "name": "kapjav",
+        "url": "https://genius.com/artists/Kapjav",
+        "type": "regular",
+        "id": "2629760"
+      },
+      {
+        "name": "Kapo",
+        "url": "https://genius.com/artists/Kapo",
+        "type": "regular",
+        "id": "3161110"
+      },
+      {
+        "name": "Karaçalı",
+        "url": "https://genius.com/artists/Karacal",
+        "type": "regular",
+        "id": "195904"
+      },
+      {
+        "name": "Karamel19",
+        "url": "https://genius.com/artists/Karamel19",
+        "type": "regular",
+        "id": "390382"
+      },
+      {
+        "name": "Karate Andi",
+        "url": "https://genius.com/artists/Karate-andi",
+        "type": "regular",
+        "id": "81779"
+      },
+      {
+        "name": "Karate Team",
+        "url": "https://genius.com/artists/Karate-team",
+        "type": "regular",
+        "id": "4239853"
+      },
+      {
+        "name": "KARD",
+        "url": "https://genius.com/artists/Kard",
+        "type": "regular",
+        "id": "1044834"
+      },
+      {
+        "name": "KARDO",
+        "url": "https://genius.com/artists/Kardo",
+        "type": "regular",
+        "id": "2902453"
+      },
+      {
+        "name": "Kareem Kalokoh",
+        "url": "https://genius.com/artists/Kareem-kalokoh",
+        "type": "regular",
+        "id": "511578"
+      },
+      {
+        "name": "Karen Clark Sheard",
+        "url": "https://genius.com/artists/Karen-clark-sheard",
+        "type": "regular",
+        "id": "348250"
+      },
+      {
+        "name": "Karen O",
+        "url": "https://genius.com/artists/Karen-o",
+        "type": "regular",
+        "id": "19767"
+      },
+      {
+        "name": "Karen Olivo",
+        "url": "https://genius.com/artists/Karen-olivo",
+        "type": "regular",
+        "id": "576584"
+      },
+      {
+        "name": "Karen Peck & New River",
+        "url": "https://genius.com/artists/Karen-peck-and-new-river",
+        "type": "regular",
+        "id": "457489"
+      },
+      {
+        "name": "Karen Skladany",
+        "url": "https://genius.com/artists/Karen-skladany",
+        "type": "regular",
+        "id": "1893706"
+      },
+      {
+        "name": "Kari Jobe",
+        "url": "https://genius.com/artists/Kari-jobe",
+        "type": "regular",
+        "id": "99817"
+      },
+      {
+        "name": "Karim Cristiano - كريم كريستيانو",
+        "url": "https://genius.com/artists/Karim-cristiano",
+        "type": "regular",
+        "id": "3244505"
+      },
+      {
+        "name": "Karim Osama - كريم أسامة",
+        "url": "https://genius.com/artists/Karim-osama",
+        "type": "regular",
+        "id": "3464141"
+      },
+      {
+        "name": "Karina (ESP)",
+        "url": "https://genius.com/artists/Karina-esp",
+        "type": "regular",
+        "id": "155847"
+      },
+      {
+        "name": "Karina y Marina",
+        "url": "https://genius.com/artists/Karina-y-marina",
+        "type": "regular",
+        "id": "4124832"
+      },
+      {
+        "name": "Kari Tapio",
+        "url": "https://genius.com/artists/Kari-tapio",
+        "type": "regular",
+        "id": "453453"
+      },
+      {
+        "name": "Karlo",
+        "url": "https://genius.com/artists/Karlo",
+        "type": "regular",
+        "id": "317006"
+      },
+      {
+        "name": "Karma",
+        "url": "https://genius.com/artists/Karma",
+        "type": "regular",
+        "id": "2196772"
+      },
+      {
+        "name": "Karmate",
+        "url": "https://genius.com/artists/Karmate",
+        "type": "regular",
+        "id": "455391"
+      },
+      {
+        "name": "Karmen (FRA)",
+        "url": "https://genius.com/artists/Karmen-fra",
+        "type": "regular",
+        "id": "99842"
+      },
+      {
+        "name": "Karnalh",
+        "url": "https://genius.com/artists/Karnalh",
+        "type": "regular",
+        "id": "3145344"
+      },
+      {
+        "name": "Karna.val",
+        "url": "https://genius.com/artists/Karnaval",
+        "type": "regular",
+        "id": "2340516"
+      },
+      {
+        "name": "Karnivool",
+        "url": "https://genius.com/artists/Karnivool",
+        "type": "regular",
+        "id": "60136"
+      },
+      {
+        "name": "Karpe",
+        "url": "https://genius.com/artists/Karpe",
+        "type": "regular",
+        "id": "17974"
+      },
+      {
+        "name": "KARRAHBOOO",
+        "url": "https://genius.com/artists/Karrahbooo",
+        "type": "regular",
+        "id": "3509252"
+      },
+      {
+        "name": "Karri",
+        "url": "https://genius.com/artists/Karri",
+        "type": "regular",
+        "id": "2673391"
+      },
+      {
+        "name": "Karthik",
+        "url": "https://genius.com/artists/Karthik",
+        "type": "regular",
+        "id": "479834"
+      },
+      {
+        "name": "Kartky",
+        "url": "https://genius.com/artists/Kartky",
+        "type": "regular",
+        "id": "106293"
+      },
+      {
+        "name": "Kartonii",
+        "url": "https://genius.com/artists/Kartonii",
+        "type": "regular",
+        "id": "3053278"
+      },
+      {
+        "name": "Karun (IND)",
+        "url": "https://genius.com/artists/Karun-ind",
+        "type": "regular",
+        "id": "2047513"
+      },
+      {
+        "name": "Karyn White",
+        "url": "https://genius.com/artists/Karyn-white",
+        "type": "regular",
+        "id": "88891"
+      },
+      {
+        "name": "Kasabian",
+        "url": "https://genius.com/artists/Kasabian",
+        "type": "regular",
+        "id": "20020"
+      },
+      {
+        "name": "Kasango",
+        "url": "https://genius.com/artists/Kasango",
+        "type": "regular",
+        "id": "2137108"
+      },
+      {
+        "name": "Kase.O",
+        "url": "https://genius.com/artists/Kaseo",
+        "type": "regular",
+        "id": "27132"
+      },
+      {
+        "name": "Kasey Chambers",
+        "url": "https://genius.com/artists/Kasey-chambers",
+        "type": "regular",
+        "id": "140535"
+      },
+      {
+        "name": "KA$HDAMI",
+        "url": "https://genius.com/artists/Ka-hdami",
+        "type": "regular",
+        "id": "1561259"
+      },
+      {
+        "name": "Kash Doll",
+        "url": "https://genius.com/artists/Kash-doll",
+        "type": "regular",
+        "id": "331400"
+      },
+      {
+        "name": "Kashus Culpepper",
+        "url": "https://genius.com/artists/Kashus-culpepper",
+        "type": "regular",
+        "id": "3776219"
+      },
+      {
+        "name": "Kasi",
+        "url": "https://genius.com/artists/Kasi",
+        "type": "regular",
+        "id": "3466011"
+      },
+      {
+        "name": "Kaskade",
+        "url": "https://genius.com/artists/Kaskade",
+        "type": "regular",
+        "id": "20775"
+      },
+      {
+        "name": "Каспийский Груз (Kaspiyskiy Gruz)",
+        "url": "https://genius.com/artists/Kaspiyskiy-gruz",
+        "type": "regular",
+        "id": "1042099"
+      },
+      {
+        "name": "Kassimi",
+        "url": "https://genius.com/artists/Kassimi",
+        "type": "regular",
+        "id": "3180400"
+      },
+      {
+        "name": "Каста (Kasta)",
+        "url": "https://genius.com/artists/Kasta",
+        "type": "regular",
+        "id": "234245"
+      },
+      {
+        "name": "Katanacss",
+        "url": "https://genius.com/artists/Katanacss",
+        "type": "regular",
+        "id": "1825247"
+      },
+      {
+        "name": "Katarina Živković",
+        "url": "https://genius.com/artists/Katarina-zivkovic",
+        "type": "regular",
+        "id": "1093970"
+      },
+      {
+        "name": "Katarsis",
+        "url": "https://genius.com/artists/Katarsis",
+        "type": "regular",
+        "id": "2507917"
+      },
+      {
+        "name": "Katatonia",
+        "url": "https://genius.com/artists/Katatonia",
+        "type": "regular",
+        "id": "326056"
+      },
+      {
+        "name": "Katchafire",
+        "url": "https://genius.com/artists/Katchafire",
+        "type": "regular",
+        "id": "378453"
+      },
+      {
+        "name": "Kat DeLuna",
+        "url": "https://genius.com/artists/Kat-deluna",
+        "type": "regular",
+        "id": "8607"
+      },
+      {
+        "name": "Kate Bush",
+        "url": "https://genius.com/artists/Kate-bush",
+        "type": "regular",
+        "id": "39200"
+      },
+      {
+        "name": "Kate Fisher",
+        "url": "https://genius.com/artists/Kate-fisher",
+        "type": "regular",
+        "id": "2679958"
+      },
+      {
+        "name": "Kate Linn",
+        "url": "https://genius.com/artists/Kate-linn",
+        "type": "regular",
+        "id": "657069"
+      },
+      {
+        "name": "Kate Nash",
+        "url": "https://genius.com/artists/Kate-nash",
+        "type": "regular",
+        "id": "11414"
+      },
+      {
+        "name": "Κατερίνα Λιόλιου (Katerina Lioliou)",
+        "url": "https://genius.com/artists/Katerina-lioliou",
+        "type": "regular",
+        "id": "1717223"
+      },
+      {
+        "name": "Kate Rusby",
+        "url": "https://genius.com/artists/Kate-rusby",
+        "type": "regular",
+        "id": "357488"
+      },
+      {
+        "name": "Kate Shindle",
+        "url": "https://genius.com/artists/Kate-shindle",
+        "type": "regular",
+        "id": "998564"
+      },
+      {
+        "name": "Kate Smith",
+        "url": "https://genius.com/artists/Kate-smith",
+        "type": "regular",
+        "id": "150052"
+      },
+      {
+        "name": "Ка тет (Ka tet)",
+        "url": "https://genius.com/artists/Ka-tet",
+        "type": "regular",
+        "id": "610554"
+      },
+      {
+        "name": "Kate Wetherhead",
+        "url": "https://genius.com/artists/Kate-wetherhead",
+        "type": "regular",
+        "id": "532303"
+      },
+      {
+        "name": "Katharina Bongard",
+        "url": "https://genius.com/artists/Katharina-bongard",
+        "type": "regular",
+        "id": "3498379"
+      },
+      {
+        "name": "Katharine Lee Bates",
+        "url": "https://genius.com/artists/Katharine-lee-bates",
+        "type": "regular",
+        "id": "27324"
+      },
+      {
+        "name": "Katharine McPhee",
+        "url": "https://genius.com/artists/Katharine-mcphee",
+        "type": "regular",
+        "id": "326223"
+      },
+      {
+        "name": "Kathleen Edwards",
+        "url": "https://genius.com/artists/Kathleen-edwards",
+        "type": "regular",
+        "id": "43624"
+      },
+      {
+        "name": "Kathryn Beaumont",
+        "url": "https://genius.com/artists/Kathryn-beaumont",
+        "type": "regular",
+        "id": "384701"
+      },
+      {
+        "name": "Kathryn Hahn",
+        "url": "https://genius.com/artists/Kathryn-hahn",
+        "type": "regular",
+        "id": "1702350"
+      },
+      {
+        "name": "Kathy Mattea",
+        "url": "https://genius.com/artists/Kathy-mattea",
+        "type": "regular",
+        "id": "331904"
+      },
+      {
+        "name": "Kathy Najimy",
+        "url": "https://genius.com/artists/Kathy-najimy",
+        "type": "regular",
+        "id": "1233941"
+      },
+      {
+        "name": "Kathy Troccoli",
+        "url": "https://genius.com/artists/Kathy-troccoli",
+        "type": "regular",
+        "id": "343577"
+      },
+      {
+        "name": "Katie Gavin",
+        "url": "https://genius.com/artists/Katie-gavin",
+        "type": "regular",
+        "id": "1263686"
+      },
+      {
+        "name": "Katie Gregson-MacLeod",
+        "url": "https://genius.com/artists/Katie-gregson-macleod",
+        "type": "regular",
+        "id": "3242513"
+      },
+      {
+        "name": "Katie Jane Garside",
+        "url": "https://genius.com/artists/Katie-jane-garside",
+        "type": "regular",
+        "id": "1486225"
+      },
+      {
+        "name": "Katie Ladner",
+        "url": "https://genius.com/artists/Katie-ladner",
+        "type": "regular",
+        "id": "634906"
+      },
+      {
+        "name": "Katie Lopez",
+        "url": "https://genius.com/artists/Katie-lopez",
+        "type": "regular",
+        "id": "139442"
+      },
+      {
+        "name": "Katie Melua",
+        "url": "https://genius.com/artists/Katie-melua",
+        "type": "regular",
+        "id": "47943"
+      },
+      {
+        "name": "Katie Sky",
+        "url": "https://genius.com/artists/Katie-sky",
+        "type": "regular",
+        "id": "166111"
+      },
+      {
+        "name": "KATI K",
+        "url": "https://genius.com/artists/Kati-k",
+        "type": "regular",
+        "id": "2231428"
+      },
+      {
+        "name": "Katozai",
+        "url": "https://genius.com/artists/Katozai",
+        "type": "regular",
+        "id": "2550846"
+      },
+      {
+        "name": "Katri Helena",
+        "url": "https://genius.com/artists/Katri-helena",
+        "type": "regular",
+        "id": "379538"
+      },
+      {
+        "name": "Katrina and the Waves",
+        "url": "https://genius.com/artists/Katrina-and-the-waves",
+        "type": "regular",
+        "id": "105726"
+      },
+      {
+        "name": "Katteyes",
+        "url": "https://genius.com/artists/Katteyes",
+        "type": "regular",
+        "id": "3451312"
+      },
+      {
+        "name": "KAT (Vocaloid)",
+        "url": "https://genius.com/artists/Kat-vocaloid",
+        "type": "regular",
+        "id": "3629554"
+      },
+      {
+        "name": "Катя Лель (Katya Lel)",
+        "url": "https://genius.com/artists/Katya-lel",
+        "type": "regular",
+        "id": "2056262"
+      },
+      {
+        "name": "Катя Самбука (Katya Sambuca)",
+        "url": "https://genius.com/artists/Katya-sambuca",
+        "type": "regular",
+        "id": "3162675"
+      },
+      {
+        "name": "Katy Garbi",
+        "url": "https://genius.com/artists/Katy-garbi",
+        "type": "regular",
+        "id": "491751"
+      },
+      {
+        "name": "Katy Nichole",
+        "url": "https://genius.com/artists/Katy-nichole",
+        "type": "regular",
+        "id": "3007884"
+      },
+      {
+        "name": "KAUKUA",
+        "url": "https://genius.com/artists/Kaukua",
+        "type": "regular",
+        "id": "2903117"
+      },
+      {
+        "name": "Kauta",
+        "url": "https://genius.com/artists/Kauta",
+        "type": "regular",
+        "id": "3796651"
+      },
+      {
+        "name": "​kavabanga Depo kolibri",
+        "url": "https://genius.com/artists/Kavabanga-depo-kolibri",
+        "type": "regular",
+        "id": "1197853"
+      },
+      {
+        "name": "Kaviano",
+        "url": "https://genius.com/artists/Kaviano",
+        "type": "regular",
+        "id": "3920506"
+      },
+      {
+        "name": "Kavinsky",
+        "url": "https://genius.com/artists/Kavinsky",
+        "type": "regular",
+        "id": "15639"
+      },
+      {
+        "name": "Kavita Krishnamurthy",
+        "url": "https://genius.com/artists/Kavita-krishnamurthy",
+        "type": "regular",
+        "id": "1258747"
+      },
+      {
+        "name": "Kavo",
+        "url": "https://genius.com/artists/Kavo",
+        "type": "regular",
+        "id": "1599459"
+      },
+      {
+        "name": "Kawai Sprite",
+        "url": "https://genius.com/artists/Kawai-sprite",
+        "type": "regular",
+        "id": "2547930"
+      },
+      {
+        "name": "Kawayan",
+        "url": "https://genius.com/artists/Kawayan",
+        "type": "regular",
+        "id": "3294127"
+      },
+      {
+        "name": "KayArchon",
+        "url": "https://genius.com/artists/Kayarchon",
+        "type": "regular",
+        "id": "3169300"
+      },
+      {
+        "name": "KayCyy",
+        "url": "https://genius.com/artists/Kaycyy",
+        "type": "regular",
+        "id": "1213600"
+      },
+      {
+        "name": "Kaydy Cain",
+        "url": "https://genius.com/artists/Kaydy-cain",
+        "type": "regular",
+        "id": "589212"
+      },
+      {
+        "name": "Kay Flock",
+        "url": "https://genius.com/artists/Kay-flock",
+        "type": "regular",
+        "id": "2729733"
+      },
+      {
+        "name": "Kay Glizz",
+        "url": "https://genius.com/artists/Kay-glizz",
+        "type": "regular",
+        "id": "3621750"
+      },
+      {
+        "name": "Kayla Shyx",
+        "url": "https://genius.com/artists/Kayla-shyx",
+        "type": "regular",
+        "id": "3288287"
+      },
+      {
+        "name": "KayMuni",
+        "url": "https://genius.com/artists/Kaymuni",
+        "type": "regular",
+        "id": "3585344"
+      },
+      {
+        "name": "Kay One",
+        "url": "https://genius.com/artists/Kay-one",
+        "type": "regular",
+        "id": "14238"
+      },
+      {
+        "name": "Kayra",
+        "url": "https://genius.com/artists/Kayra",
+        "type": "regular",
+        "id": "330275"
+      },
+      {
+        "name": "KAYTRAMINÉ",
+        "url": "https://genius.com/artists/Kaytramine",
+        "type": "regular",
+        "id": "3492650"
+      },
+      {
+        "name": "KAYTRANADA",
+        "url": "https://genius.com/artists/Kaytranada",
+        "type": "regular",
+        "id": "33699"
+      },
+      {
+        "name": "Kay Trinidad",
+        "url": "https://genius.com/artists/Kay-trinidad",
+        "type": "regular",
+        "id": "1053415"
+      },
+      {
+        "name": "Kaz Bałagane",
+        "url": "https://genius.com/artists/Kaz-baagane",
+        "type": "regular",
+        "id": "214617"
+      },
+      {
+        "name": "Kaze",
+        "url": "https://genius.com/artists/Kaze",
+        "type": "regular",
+        "id": "1062440"
+      },
+      {
+        "name": "Kazi Ploae",
+        "url": "https://genius.com/artists/Kazi-ploae",
+        "type": "regular",
+        "id": "41686"
+      },
+      {
+        "name": "Kazım Koyuncu",
+        "url": "https://genius.com/artists/Kazm-koyuncu",
+        "type": "regular",
+        "id": "479255"
+      },
+      {
+        "name": "kazui",
+        "url": "https://genius.com/artists/Kazui",
+        "type": "regular",
+        "id": "3753352"
+      },
+      {
+        "name": "二宮和也 (Kazunari Ninomiya)",
+        "url": "https://genius.com/artists/Kazunari-ninomiya",
+        "type": "regular",
+        "id": "2841846"
+      },
+      {
+        "name": "Қазыбек Құрайыш (Kazybek Kuraiysh)",
+        "url": "https://genius.com/artists/Kazybek-kuraiysh",
+        "type": "regular",
+        "id": "4089802"
+      },
+      {
+        "name": "KB",
+        "url": "https://genius.com/artists/Kb",
+        "type": "regular",
+        "id": "5153"
+      },
+      {
+        "name": "КУБОК МЦ (KBK MC)",
+        "url": "https://genius.com/artists/Kbk-mc",
+        "type": "regular",
+        "id": "1755161"
+      },
+      {
+        "name": "K CAMP",
+        "url": "https://genius.com/artists/K-camp",
+        "type": "regular",
+        "id": "20742"
+      },
+      {
+        "name": "KC and the Sunshine Band",
+        "url": "https://genius.com/artists/Kc-and-the-sunshine-band",
+        "type": "regular",
+        "id": "69362"
+      },
+      {
+        "name": "K Carbon",
+        "url": "https://genius.com/artists/K-carbon",
+        "type": "regular",
+        "id": "2393211"
+      },
+      {
+        "name": "K-Ci & JoJo",
+        "url": "https://genius.com/artists/K-ci-and-jojo",
+        "type": "regular",
+        "id": "23809"
+      },
+      {
+        "name": "K-Clique",
+        "url": "https://genius.com/artists/K-clique",
+        "type": "regular",
+        "id": "1592388"
+      },
+      {
+        "name": "KC Rebell",
+        "url": "https://genius.com/artists/Kc-rebell",
+        "type": "regular",
+        "id": "20442"
+      },
+      {
+        "name": "k.d. lang",
+        "url": "https://genius.com/artists/Kd-lang",
+        "type": "regular",
+        "id": "47550"
+      },
+      {
+        "name": "Keala Settle",
+        "url": "https://genius.com/artists/Keala-settle",
+        "type": "regular",
+        "id": "687008"
+      },
+      {
+        "name": "Keane",
+        "url": "https://genius.com/artists/Keane",
+        "type": "regular",
+        "id": "44187"
+      },
+      {
+        "name": "Keaton Henson",
+        "url": "https://genius.com/artists/Keaton-henson",
+        "type": "regular",
+        "id": "83991"
+      },
+      {
+        "name": "KeBlack",
+        "url": "https://genius.com/artists/Keblack",
+        "type": "regular",
+        "id": "328799"
+      },
+      {
+        "name": "Keb' Mo'",
+        "url": "https://genius.com/artists/Keb-mo",
+        "type": "regular",
+        "id": "180723"
+      },
+      {
+        "name": "KEDR",
+        "url": "https://genius.com/artists/Kedr",
+        "type": "regular",
+        "id": "1225236"
+      },
+      {
+        "name": "Keenan Te",
+        "url": "https://genius.com/artists/Keenan-te",
+        "type": "regular",
+        "id": "2445162"
+      },
+      {
+        "name": "Kee Nola",
+        "url": "https://genius.com/artists/Kee-nola",
+        "type": "regular",
+        "id": "4077929"
+      },
+      {
+        "name": "KeepitEZ_",
+        "url": "https://genius.com/artists/Keepitez",
+        "type": "regular",
+        "id": "2961282"
+      },
+      {
+        "name": "keepsecrets",
+        "url": "https://genius.com/artists/Keepsecrets",
+        "type": "regular",
+        "id": "3549986"
+      },
+      {
+        "name": "Keeqaid",
+        "url": "https://genius.com/artists/Keeqaid",
+        "type": "regular",
+        "id": "3006210"
+      },
+      {
+        "name": "kefo",
+        "url": "https://genius.com/artists/Kefo",
+        "type": "regular",
+        "id": "3284899"
+      },
+      {
+        "name": "Keişan",
+        "url": "https://genius.com/artists/Keisan",
+        "type": "regular",
+        "id": "667965"
+      },
+      {
+        "name": "岡部啓一 (Keiichi Okabe)",
+        "url": "https://genius.com/artists/Keiichi-okabe",
+        "type": "regular",
+        "id": "440103"
+      },
+      {
+        "name": "KEIJU",
+        "url": "https://genius.com/artists/Keiju",
+        "type": "regular",
+        "id": "2349838"
+      },
+      {
+        "name": "Keinemusik",
+        "url": "https://genius.com/artists/Keinemusik",
+        "type": "regular",
+        "id": "2515697"
+      },
+      {
+        "name": "Keith & Kristyn Getty",
+        "url": "https://genius.com/artists/Keith-and-kristyn-getty",
+        "type": "regular",
+        "id": "351197"
+      },
+      {
+        "name": "Keith Ape",
+        "url": "https://genius.com/artists/Keith-ape",
+        "type": "regular",
+        "id": "234440"
+      },
+      {
+        "name": "Keith David",
+        "url": "https://genius.com/artists/Keith-david",
+        "type": "regular",
+        "id": "6572"
+      },
+      {
+        "name": "Keith Green",
+        "url": "https://genius.com/artists/Keith-green",
+        "type": "regular",
+        "id": "102999"
+      },
+      {
+        "name": "Keith Power",
+        "url": "https://genius.com/artists/Keith-power",
+        "type": "regular",
+        "id": "1594983"
+      },
+      {
+        "name": "Keith Sweat",
+        "url": "https://genius.com/artists/Keith-sweat",
+        "type": "regular",
+        "id": "3391"
+      },
+      {
+        "name": "Keith Urban",
+        "url": "https://genius.com/artists/Keith-urban",
+        "type": "regular",
+        "id": "22760"
+      },
+      {
+        "name": "Keith Whitley",
+        "url": "https://genius.com/artists/Keith-whitley",
+        "type": "regular",
+        "id": "363133"
+      },
+      {
+        "name": "Kejs",
+        "url": "https://genius.com/artists/Kejs",
+        "type": "regular",
+        "id": "2779849"
+      },
+      {
+        "name": "Keke Palmer",
+        "url": "https://genius.com/artists/Keke-palmer",
+        "type": "regular",
+        "id": "8545"
+      },
+      {
+        "name": "Kekra",
+        "url": "https://genius.com/artists/Kekra",
+        "type": "regular",
+        "id": "649966"
+      },
+      {
+        "name": "Kelela",
+        "url": "https://genius.com/artists/Kelela",
+        "type": "regular",
+        "id": "81381"
+      },
+      {
+        "name": "Kelis",
+        "url": "https://genius.com/artists/Kelis",
+        "type": "regular",
+        "id": "144"
+      },
+      {
+        "name": "Kelly Clarkson",
+        "url": "https://genius.com/artists/Kelly-clarkson",
+        "type": "regular",
+        "id": "11714"
+      },
+      {
+        "name": "The Kelly Family",
+        "url": "https://genius.com/artists/The-kelly-family",
+        "type": "regular",
+        "id": "354619"
+      },
+      {
+        "name": "Kelly Price",
+        "url": "https://genius.com/artists/Kelly-price",
+        "type": "regular",
+        "id": "4304"
+      },
+      {
+        "name": "Kelly Rowland",
+        "url": "https://genius.com/artists/Kelly-rowland",
+        "type": "regular",
+        "id": "1302"
+      },
+      {
+        "name": "Kelsea Ballerini",
+        "url": "https://genius.com/artists/Kelsea-ballerini",
+        "type": "regular",
+        "id": "338045"
+      },
+      {
+        "name": "Kelsey Grammer",
+        "url": "https://genius.com/artists/Kelsey-grammer",
+        "type": "regular",
+        "id": "69741"
+      },
+      {
+        "name": "Kelvin Harrison Jr.",
+        "url": "https://genius.com/artists/Kelvin-harrison-jr",
+        "type": "regular",
+        "id": "2243377"
+      },
+      {
+        "name": "Kelvin Momo",
+        "url": "https://genius.com/artists/Kelvin-momo",
+        "type": "regular",
+        "id": "2298137"
+      },
+      {
+        "name": "Kem",
+        "url": "https://genius.com/artists/Kem",
+        "type": "regular",
+        "id": "14629"
+      },
+      {
+        "name": "Kemal Malovčić",
+        "url": "https://genius.com/artists/Kemal-malovcic",
+        "type": "regular",
+        "id": "1734168"
+      },
+      {
+        "name": "Kempel",
+        "url": "https://genius.com/artists/Kempel",
+        "type": "regular",
+        "id": "1833769"
+      },
+      {
+        "name": "Kenan",
+        "url": "https://genius.com/artists/Kenan",
+        "type": "regular",
+        "id": "3412633"
+      },
+      {
+        "name": "Kenan Doğulu",
+        "url": "https://genius.com/artists/Kenan-dogulu",
+        "type": "regular",
+        "id": "479509"
+      },
+      {
+        "name": "Ken Ashcorp",
+        "url": "https://genius.com/artists/Ken-ashcorp",
+        "type": "regular",
+        "id": "21224"
+      },
+      {
+        "name": "Kendo Kaponi",
+        "url": "https://genius.com/artists/Kendo-kaponi",
+        "type": "regular",
+        "id": "29047"
+      },
+      {
+        "name": "Kenia OS",
+        "url": "https://genius.com/artists/Kenia-os",
+        "type": "regular",
+        "id": "1631138"
+      },
+      {
+        "name": "Kenita Miller",
+        "url": "https://genius.com/artists/Kenita-miller",
+        "type": "regular",
+        "id": "3479180"
+      },
+      {
+        "name": "Keni Titus",
+        "url": "https://genius.com/artists/Keni-titus",
+        "type": "regular",
+        "id": "3573655"
+      },
+      {
+        "name": "Kenji",
+        "url": "https://genius.com/artists/Kenji",
+        "type": "regular",
+        "id": "549043"
+      },
+      {
+        "name": "Kenny Allstar",
+        "url": "https://genius.com/artists/Kenny-allstar",
+        "type": "regular",
+        "id": "1017825"
+      },
+      {
+        "name": "Kenny B",
+        "url": "https://genius.com/artists/Kenny-b",
+        "type": "regular",
+        "id": "258202"
+      },
+      {
+        "name": "Kenny Beats",
+        "url": "https://genius.com/artists/Kenny-beats",
+        "type": "regular",
+        "id": "46806"
+      },
+      {
+        "name": "Kenny Chesney",
+        "url": "https://genius.com/artists/Kenny-chesney",
+        "type": "regular",
+        "id": "13443"
+      },
+      {
+        "name": "Kenny Die",
+        "url": "https://genius.com/artists/Kenny-die",
+        "type": "regular",
+        "id": "2302514"
+      },
+      {
+        "name": "Kenny Loggins",
+        "url": "https://genius.com/artists/Kenny-loggins",
+        "type": "regular",
+        "id": "1897"
+      },
+      {
+        "name": "Kenny Mason",
+        "url": "https://genius.com/artists/Kenny-mason",
+        "type": "regular",
+        "id": "679839"
+      },
+      {
+        "name": "Kenny Muney",
+        "url": "https://genius.com/artists/Kenny-muney",
+        "type": "regular",
+        "id": "1412249"
+      },
+      {
+        "name": "Kenny Rogers",
+        "url": "https://genius.com/artists/Kenny-rogers",
+        "type": "regular",
+        "id": "11192"
+      },
+      {
+        "name": "Kenny Segal",
+        "url": "https://genius.com/artists/Kenny-segal",
+        "type": "regular",
+        "id": "52048"
+      },
+      {
+        "name": "KennyTheLyr1c1st",
+        "url": "https://genius.com/artists/Kennythelyr1c1st",
+        "type": "regular",
+        "id": "3359187"
+      },
+      {
+        "name": "Kenny Wayne Shepherd",
+        "url": "https://genius.com/artists/Kenny-wayne-shepherd",
+        "type": "regular",
+        "id": "74189"
+      },
+      {
+        "name": "米津玄師 (Kenshi Yonezu)",
+        "url": "https://genius.com/artists/Kenshi-yonezu",
+        "type": "regular",
+        "id": "1090113"
+      },
+      {
+        "name": "Kensington",
+        "url": "https://genius.com/artists/Kensington",
+        "type": "regular",
+        "id": "344436"
+      },
+      {
+        "name": "​kent",
+        "url": "https://genius.com/artists/Kent",
+        "type": "regular",
+        "id": "133596"
+      },
+      {
+        "name": "KenTheMan",
+        "url": "https://genius.com/artists/Kentheman",
+        "type": "regular",
+        "id": "1180925"
+      },
+      {
+        "name": "Kent Henry",
+        "url": "https://genius.com/artists/Kent-henry",
+        "type": "regular",
+        "id": "387183"
+      },
+      {
+        "name": "Kent Jones",
+        "url": "https://genius.com/artists/Kent-jones",
+        "type": "regular",
+        "id": "34532"
+      },
+      {
+        "name": "KENTUKKI",
+        "url": "https://genius.com/artists/Kentukki",
+        "type": "regular",
+        "id": "2936211"
+      },
+      {
+        "name": "Ken-Y",
+        "url": "https://genius.com/artists/Ken-y",
+        "type": "regular",
+        "id": "153198"
+      },
+      {
+        "name": "Kenya Grace",
+        "url": "https://genius.com/artists/Kenya-grace",
+        "type": "regular",
+        "id": "2458958"
+      },
+      {
+        "name": "Kenyon Dixon",
+        "url": "https://genius.com/artists/Kenyon-dixon",
+        "type": "regular",
+        "id": "50443"
+      },
+      {
+        "name": "kenzie",
+        "url": "https://genius.com/artists/Kenzie",
+        "type": "regular",
+        "id": "607656"
+      },
+      {
+        "name": "Kenzo Balla",
+        "url": "https://genius.com/artists/Kenzo-balla",
+        "type": "regular",
+        "id": "2950926"
+      },
+      {
+        "name": "Keo (UK)",
+        "url": "https://genius.com/artists/Keo-uk",
+        "type": "regular",
+        "id": "4361430"
+      },
+      {
+        "name": "Kep1er (케플러)",
+        "url": "https://genius.com/artists/Kep1er",
+        "type": "regular",
+        "id": "2929709"
+      },
+      {
+        "name": "Keri Hilson",
+        "url": "https://genius.com/artists/Keri-hilson",
+        "type": "regular",
+        "id": "759"
+      },
+      {
+        "name": "Kermit the Frog",
+        "url": "https://genius.com/artists/Kermit-the-frog",
+        "type": "regular",
+        "id": "39474"
+      },
+      {
+        "name": "Kermo Murel",
+        "url": "https://genius.com/artists/Kermo-murel",
+        "type": "regular",
+        "id": "4325055"
+      },
+      {
+        "name": "KERO",
+        "url": "https://genius.com/artists/Kero",
+        "type": "regular",
+        "id": "3253216"
+      },
+      {
+        "name": "Kero Kero Bonito",
+        "url": "https://genius.com/artists/Kero-kero-bonito",
+        "type": "regular",
+        "id": "231956"
+      },
+      {
+        "name": "Kerry Butler",
+        "url": "https://genius.com/artists/Kerry-butler",
+        "type": "regular",
+        "id": "484833"
+      },
+      {
+        "name": "Kerry Ellis",
+        "url": "https://genius.com/artists/Kerry-ellis",
+        "type": "regular",
+        "id": "367262"
+      },
+      {
+        "name": "Kerser",
+        "url": "https://genius.com/artists/Kerser",
+        "type": "regular",
+        "id": "23267"
+      },
+      {
+        "name": "Kery James",
+        "url": "https://genius.com/artists/Kery-james",
+        "type": "regular",
+        "id": "1273"
+      },
+      {
+        "name": "KERZA",
+        "url": "https://genius.com/artists/Kerza",
+        "type": "regular",
+        "id": "3064665"
+      },
+      {
+        "name": "Kes",
+        "url": "https://genius.com/artists/Kes",
+        "type": "regular",
+        "id": "1216107"
+      },
+      {
+        "name": "keshi",
+        "url": "https://genius.com/artists/Keshi",
+        "type": "regular",
+        "id": "1260507"
+      },
+      {
+        "name": "KESI",
+        "url": "https://genius.com/artists/Kesi",
+        "type": "regular",
+        "id": "24620"
+      },
+      {
+        "name": "Keskin",
+        "url": "https://genius.com/artists/Keskin",
+        "type": "regular",
+        "id": "1086952"
+      },
+      {
+        "name": "Ketama126",
+        "url": "https://genius.com/artists/Ketama126",
+        "type": "regular",
+        "id": "605105"
+      },
+      {
+        "name": "kets4eki",
+        "url": "https://genius.com/artists/Kets4eki",
+        "type": "regular",
+        "id": "3291166"
+      },
+      {
+        "name": "KETTAMA",
+        "url": "https://genius.com/artists/Kettama",
+        "type": "regular",
+        "id": "1907219"
+      },
+      {
+        "name": "Kevian Kraemer",
+        "url": "https://genius.com/artists/Kevian-kraemer",
+        "type": "regular",
+        "id": "3247370"
+      },
+      {
+        "name": "Kevin",
+        "url": "https://genius.com/artists/Kevin",
+        "type": "regular",
+        "id": "31279"
+      },
+      {
+        "name": "Kevin AMF",
+        "url": "https://genius.com/artists/Kevin-amf",
+        "type": "regular",
+        "id": "3761366"
+      },
+      {
+        "name": "Kevin Atwater",
+        "url": "https://genius.com/artists/Kevin-atwater",
+        "type": "regular",
+        "id": "2366558"
+      },
+      {
+        "name": "Kevin Bloody Wilson",
+        "url": "https://genius.com/artists/Kevin-bloody-wilson",
+        "type": "regular",
+        "id": "348695"
+      },
+      {
+        "name": "Kevin Gates",
+        "url": "https://genius.com/artists/Kevin-gates",
+        "type": "regular",
+        "id": "30192"
+      },
+      {
+        "name": "Kevin Kaarl",
+        "url": "https://genius.com/artists/Kevin-kaarl",
+        "type": "regular",
+        "id": "1709872"
+      },
+      {
+        "name": "Kevin Lyttle",
+        "url": "https://genius.com/artists/Kevin-lyttle",
+        "type": "regular",
+        "id": "35394"
+      },
+      {
+        "name": "Kevin MacLeod",
+        "url": "https://genius.com/artists/Kevin-macleod",
+        "type": "regular",
+        "id": "31739"
+      },
+      {
+        "name": "Kevin Manthei",
+        "url": "https://genius.com/artists/Kevin-manthei",
+        "type": "regular",
+        "id": "1090991"
+      },
+      {
+        "name": "Kevin Olusola",
+        "url": "https://genius.com/artists/Kevin-olusola",
+        "type": "regular",
+        "id": "64760"
+      },
+      {
+        "name": "Kevin Quinn",
+        "url": "https://genius.com/artists/Kevin-quinn",
+        "type": "regular",
+        "id": "1034419"
+      },
+      {
+        "name": "Kevin Rudolf",
+        "url": "https://genius.com/artists/Kevin-rudolf",
+        "type": "regular",
+        "id": "1406"
+      },
+      {
+        "name": "Kevin Sherwood",
+        "url": "https://genius.com/artists/Kevin-sherwood",
+        "type": "regular",
+        "id": "46289"
+      },
+      {
+        "name": "Key & Peele",
+        "url": "https://genius.com/artists/Key-and-peele",
+        "type": "regular",
+        "id": "29016"
+      },
+      {
+        "name": "KEYBLADE",
+        "url": "https://genius.com/artists/Keyblade",
+        "type": "regular",
+        "id": "615117"
+      },
+      {
+        "name": "Key Glock",
+        "url": "https://genius.com/artists/Key-glock",
+        "type": "regular",
+        "id": "1158427"
+      },
+      {
+        "name": "Keyshia Cole",
+        "url": "https://genius.com/artists/Keyshia-cole",
+        "type": "regular",
+        "id": "782"
+      },
+      {
+        "name": "key vs. locket",
+        "url": "https://genius.com/artists/Key-vs-locket",
+        "type": "regular",
+        "id": "4270862"
+      },
+      {
+        "name": "K.Flay",
+        "url": "https://genius.com/artists/Kflay",
+        "type": "regular",
+        "id": "1751"
+      },
+      {
+        "name": "KÖFN",
+        "url": "https://genius.com/artists/Kofn",
+        "type": "regular",
+        "id": "2072688"
+      },
+      {
+        "name": "Khaid",
+        "url": "https://genius.com/artists/Khaid",
+        "type": "regular",
+        "id": "3045078"
+      },
+      {
+        "name": "khai ​​dreams",
+        "url": "https://genius.com/artists/Khai-dreams",
+        "type": "regular",
+        "id": "1202250"
+      },
+      {
+        "name": "Khaila Wilcoxon",
+        "url": "https://genius.com/artists/Khaila-wilcoxon",
+        "type": "regular",
+        "id": "2492156"
+      },
+      {
+        "name": "Khaled - خالد",
+        "url": "https://genius.com/artists/Khaled",
+        "type": "regular",
+        "id": "72734"
+      },
+      {
+        "name": "Khaleel Mandel",
+        "url": "https://genius.com/artists/Khaleel-mandel",
+        "type": "regular",
+        "id": "4046737"
+      },
+      {
+        "name": "Khali",
+        "url": "https://genius.com/artists/Khali",
+        "type": "regular",
+        "id": "223778"
+      },
+      {
+        "name": "Khalid",
+        "url": "https://genius.com/artists/Khalid",
+        "type": "regular",
+        "id": "9932"
+      },
+      {
+        "name": "Khalid (BGD)",
+        "url": "https://genius.com/artists/Khalid-bgd",
+        "type": "regular",
+        "id": "3896985"
+      },
+      {
+        "name": "方大同 (Khalil Fong)",
+        "url": "https://genius.com/artists/Khalil-fong",
+        "type": "regular",
+        "id": "1285641"
+      },
+      {
+        "name": "Khamari",
+        "url": "https://genius.com/artists/Khamari",
+        "type": "regular",
+        "id": "1859406"
+      },
+      {
+        "name": "Khantrast",
+        "url": "https://genius.com/artists/Khantrast",
+        "type": "regular",
+        "id": "1037341"
+      },
+      {
+        "name": "Khắc Hưng",
+        "url": "https://genius.com/artists/Khac-hung",
+        "type": "regular",
+        "id": "1155475"
+      },
+      {
+        "name": "KHEA",
+        "url": "https://genius.com/artists/Khea",
+        "type": "regular",
+        "id": "1196714"
+      },
+      {
+        "name": "Khel Pangilinan",
+        "url": "https://genius.com/artists/Khel-pangilinan",
+        "type": "regular",
+        "id": "479519"
+      },
+      {
+        "name": "Khia",
+        "url": "https://genius.com/artists/Khia",
+        "type": "regular",
+        "id": "140"
+      },
+      {
+        "name": "Khloe Rose",
+        "url": "https://genius.com/artists/Khloe-rose",
+        "type": "regular",
+        "id": "3201448"
+      },
+      {
+        "name": "Kholby Wardell",
+        "url": "https://genius.com/artists/Kholby-wardell",
+        "type": "regular",
+        "id": "2733920"
+      },
+      {
+        "name": "Khontkar",
+        "url": "https://genius.com/artists/Khontkar",
+        "type": "regular",
+        "id": "59532"
+      },
+      {
+        "name": "Khruangbin",
+        "url": "https://genius.com/artists/Khruangbin",
+        "type": "regular",
+        "id": "672700"
+      },
+      {
+        "name": "Христина Соловій (Khrystyna Soloviy)",
+        "url": "https://genius.com/artists/Khrystyna-soloviy",
+        "type": "regular",
+        "id": "2886414"
+      },
+      {
+        "name": "Kiana Ledé",
+        "url": "https://genius.com/artists/Kiana-lede",
+        "type": "regular",
+        "id": "1133247"
+      },
+      {
+        "name": "Kiana V.",
+        "url": "https://genius.com/artists/Kiana-v",
+        "type": "regular",
+        "id": "1088724"
+      },
+      {
+        "name": "Kianush",
+        "url": "https://genius.com/artists/Kianush",
+        "type": "regular",
+        "id": "50299"
+      },
+      {
+        "name": "KIARABABA",
+        "url": "https://genius.com/artists/Kiarababa",
+        "type": "regular",
+        "id": "4389008"
+      },
+      {
+        "name": "Kibariye",
+        "url": "https://genius.com/artists/Kibariye",
+        "type": "regular",
+        "id": "480169"
+      },
+      {
+        "name": "KickFlip (킥플립)",
+        "url": "https://genius.com/artists/Kickflip",
+        "type": "regular",
+        "id": "4205617"
+      },
+      {
+        "name": "Kida",
+        "url": "https://genius.com/artists/Kida",
+        "type": "regular",
+        "id": "1232480"
+      },
+      {
+        "name": "Kid Cudi",
+        "url": "https://genius.com/artists/Kid-cudi",
+        "type": "regular",
+        "id": "68"
+      },
+      {
+        "name": "Kidd G",
+        "url": "https://genius.com/artists/Kidd-g",
+        "type": "regular",
+        "id": "1966635"
+      },
+      {
+        "name": "Kidd (GRC)",
+        "url": "https://genius.com/artists/Kidd-grc",
+        "type": "regular",
+        "id": "3296359"
+      },
+      {
+        "name": "KIDD KAWAKI",
+        "url": "https://genius.com/artists/Kidd-kawaki",
+        "type": "regular",
+        "id": "3040510"
+      },
+      {
+        "name": "Kidd Keo",
+        "url": "https://genius.com/artists/Kidd-keo",
+        "type": "regular",
+        "id": "614962"
+      },
+      {
+        "name": "The Kidd (Music)",
+        "url": "https://genius.com/artists/The-kidd-music",
+        "type": "regular",
+        "id": "1852978"
+      },
+      {
+        "name": "Kidd Voodoo",
+        "url": "https://genius.com/artists/Kidd-voodoo",
+        "type": "regular",
+        "id": "2753688"
+      },
+      {
+        "name": "Kid Ink",
+        "url": "https://genius.com/artists/Kid-ink",
+        "type": "regular",
+        "id": "1631"
+      },
+      {
+        "name": "The Kid LAROI",
+        "url": "https://genius.com/artists/The-kid-laroi",
+        "type": "regular",
+        "id": "1546645"
+      },
+      {
+        "name": "Kid Milli (키드밀리)",
+        "url": "https://genius.com/artists/Kid-milli",
+        "type": "regular",
+        "id": "1190171"
+      },
+      {
+        "name": "Kid Rock",
+        "url": "https://genius.com/artists/Kid-rock",
+        "type": "regular",
+        "id": "1566"
+      },
+      {
+        "name": "KIDZ BOP Kids",
+        "url": "https://genius.com/artists/Kidz-bop-kids",
+        "type": "regular",
+        "id": "353676"
+      },
+      {
+        "name": "Kids Learning Tube",
+        "url": "https://genius.com/artists/Kids-learning-tube",
+        "type": "regular",
+        "id": "1321238"
+      },
+      {
+        "name": "Kids music",
+        "url": "https://genius.com/artists/Kids-music",
+        "type": "regular",
+        "id": "491827"
+      },
+      {
+        "name": "KIDS SEE GHOSTS",
+        "url": "https://genius.com/artists/Kids-see-ghosts",
+        "type": "regular",
+        "id": "1464821"
+      },
+      {
+        "name": "Kids United",
+        "url": "https://genius.com/artists/Kids-united",
+        "type": "regular",
+        "id": "991645"
+      },
+      {
+        "name": "Kidwild",
+        "url": "https://genius.com/artists/Kidwild",
+        "type": "regular",
+        "id": "2994949"
+      },
+      {
+        "name": "Kid Yugi",
+        "url": "https://genius.com/artists/Kid-yugi",
+        "type": "regular",
+        "id": "2850008"
+      },
+      {
+        "name": "Kieran the Light",
+        "url": "https://genius.com/artists/Kieran-the-light",
+        "type": "regular",
+        "id": "2587554"
+      },
+      {
+        "name": "Kierra Sheard",
+        "url": "https://genius.com/artists/Kierra-sheard",
+        "type": "regular",
+        "id": "211680"
+      },
+      {
+        "name": "Kiesza",
+        "url": "https://genius.com/artists/Kiesza",
+        "type": "regular",
+        "id": "168212"
+      },
+      {
+        "name": "Kiiara",
+        "url": "https://genius.com/artists/Kiiara",
+        "type": "regular",
+        "id": "499971"
+      },
+      {
+        "name": "KIID",
+        "url": "https://genius.com/artists/Kiid",
+        "type": "regular",
+        "id": "128696"
+      },
+      {
+        "name": "KiiiKiii (키키)",
+        "url": "https://genius.com/artists/Kiiikiii",
+        "type": "regular",
+        "id": "4313178"
+      },
+      {
+        "name": "KIIRAS (키라스)",
+        "url": "https://genius.com/artists/Kiiras",
+        "type": "regular",
+        "id": "4435625"
+      },
+      {
+        "name": "Kiki Dee",
+        "url": "https://genius.com/artists/Kiki-dee",
+        "type": "regular",
+        "id": "350681"
+      },
+      {
+        "name": "Kiki Rockwell",
+        "url": "https://genius.com/artists/Kiki-rockwell",
+        "type": "regular",
+        "id": "2923482"
+      },
+      {
+        "name": "きくお (Kikuo)",
+        "url": "https://genius.com/artists/Kikuo",
+        "type": "regular",
+        "id": "639680"
+      },
+      {
+        "name": "The Kilans",
+        "url": "https://genius.com/artists/The-kilans",
+        "type": "regular",
+        "id": "3949410"
+      },
+      {
+        "name": "Kiliana",
+        "url": "https://genius.com/artists/Kiliana",
+        "type": "regular",
+        "id": "4001918"
+      },
+      {
+        "name": "kili (USA)",
+        "url": "https://genius.com/artists/Kili-usa",
+        "type": "regular",
+        "id": "4362300"
+      },
+      {
+        "name": "Killa",
+        "url": "https://genius.com/artists/Killa",
+        "type": "regular",
+        "id": "2691"
+      },
+      {
+        "name": "Killa Fonic",
+        "url": "https://genius.com/artists/Killa-fonic",
+        "type": "regular",
+        "id": "578322"
+      },
+      {
+        "name": "Killa Hakan",
+        "url": "https://genius.com/artists/Killa-hakan",
+        "type": "regular",
+        "id": "20892"
+      },
+      {
+        "name": "Killah Priest",
+        "url": "https://genius.com/artists/Killah-priest",
+        "type": "regular",
+        "id": "946"
+      },
+      {
+        "name": "Kill Bill: The Rapper",
+        "url": "https://genius.com/artists/Kill-bill-the-rapper",
+        "type": "regular",
+        "id": "201919"
+      },
+      {
+        "name": "Kill Dyll",
+        "url": "https://genius.com/artists/Kill-dyll",
+        "type": "regular",
+        "id": "3088086"
+      },
+      {
+        "name": "Killer Mike",
+        "url": "https://genius.com/artists/Killer-mike",
+        "type": "regular",
+        "id": "547"
+      },
+      {
+        "name": "Kill Eva",
+        "url": "https://genius.com/artists/Kill-eva",
+        "type": "regular",
+        "id": "3446699"
+      },
+      {
+        "name": "Killing Joke",
+        "url": "https://genius.com/artists/Killing-joke",
+        "type": "regular",
+        "id": "130613"
+      },
+      {
+        "name": "Killing Me Inside",
+        "url": "https://genius.com/artists/Killing-me-inside",
+        "type": "regular",
+        "id": "367440"
+      },
+      {
+        "name": "KILL KARL",
+        "url": "https://genius.com/artists/Kill-karl",
+        "type": "regular",
+        "id": "4349399"
+      },
+      {
+        "name": "блэйзи? (killmeblazze)",
+        "url": "https://genius.com/artists/Killmeblazze",
+        "type": "regular",
+        "id": "4328032"
+      },
+      {
+        "name": "KiLLOWEN",
+        "url": "https://genius.com/artists/Killowen",
+        "type": "regular",
+        "id": "1950880"
+      },
+      {
+        "name": "The Kills",
+        "url": "https://genius.com/artists/The-kills",
+        "type": "regular",
+        "id": "19135"
+      },
+      {
+        "name": "Killstation",
+        "url": "https://genius.com/artists/Killstation",
+        "type": "regular",
+        "id": "272192"
+      },
+      {
+        "name": "Killswitch Engage",
+        "url": "https://genius.com/artists/Killswitch-engage",
+        "type": "regular",
+        "id": "44034"
+      },
+      {
+        "name": "KILLY",
+        "url": "https://genius.com/artists/Killy",
+        "type": "regular",
+        "id": "1085634"
+      },
+      {
+        "name": "Kilo Kish",
+        "url": "https://genius.com/artists/Kilo-kish",
+        "type": "regular",
+        "id": "12245"
+      },
+      {
+        "name": "Kiltro",
+        "url": "https://genius.com/artists/Kiltro",
+        "type": "regular",
+        "id": "1927245"
+      },
+      {
+        "name": "Kimberly Cole",
+        "url": "https://genius.com/artists/Kimberly-cole",
+        "type": "regular",
+        "id": "21307"
+      },
+      {
+        "name": "Kimberly Marable",
+        "url": "https://genius.com/artists/Kimberly-marable",
+        "type": "regular",
+        "id": "2492157"
+      },
+      {
+        "name": "Kim Carnes",
+        "url": "https://genius.com/artists/Kim-carnes",
+        "type": "regular",
+        "id": "141663"
+      },
+      {
+        "name": "Kim Chiu",
+        "url": "https://genius.com/artists/Kim-chiu",
+        "type": "regular",
+        "id": "387553"
+      },
+      {
+        "name": "Kim Crosby",
+        "url": "https://genius.com/artists/Kim-crosby",
+        "type": "regular",
+        "id": "454968"
+      },
+      {
+        "name": "Kim Dracula",
+        "url": "https://genius.com/artists/Kim-dracula",
+        "type": "regular",
+        "id": "2418351"
+      },
+      {
+        "name": "Kim (FRA)",
+        "url": "https://genius.com/artists/Kim-fra",
+        "type": "regular",
+        "id": "2981980"
+      },
+      {
+        "name": "Kim Gordon",
+        "url": "https://genius.com/artists/Kim-gordon",
+        "type": "regular",
+        "id": "170852"
+      },
+      {
+        "name": "Kimiko Glenn",
+        "url": "https://genius.com/artists/Kimiko-glenn",
+        "type": "regular",
+        "id": "683372"
+      },
+      {
+        "name": "Kim Larsen",
+        "url": "https://genius.com/artists/Kim-larsen",
+        "type": "regular",
+        "id": "344450"
+      },
+      {
+        "name": "Kim Larsen & Bellami",
+        "url": "https://genius.com/artists/Kim-larsen-and-bellami",
+        "type": "regular",
+        "id": "1063054"
+      },
+      {
+        "name": "Kim Petras",
+        "url": "https://genius.com/artists/Kim-petras",
+        "type": "regular",
+        "id": "1142862"
+      },
+      {
+        "name": "Kim Walker-Smith",
+        "url": "https://genius.com/artists/Kim-walker-smith",
+        "type": "regular",
+        "id": "374299"
+      },
+      {
+        "name": "Kim Wilde",
+        "url": "https://genius.com/artists/Kim-wilde",
+        "type": "regular",
+        "id": "251704"
+      },
+      {
+        "name": "Kimya Dawson",
+        "url": "https://genius.com/artists/Kimya-dawson",
+        "type": "regular",
+        "id": "30554"
+      },
+      {
+        "name": "Kina",
+        "url": "https://genius.com/artists/Kina",
+        "type": "regular",
+        "id": "1421033"
+      },
+      {
+        "name": "Kinderen voor Kinderen",
+        "url": "https://genius.com/artists/Kinderen-voor-kinderen",
+        "type": "regular",
+        "id": "343696"
+      },
+      {
+        "name": "Kinderlieder",
+        "url": "https://genius.com/artists/Kinderlieder",
+        "type": "regular",
+        "id": "111720"
+      },
+      {
+        "name": "Kinderlil",
+        "url": "https://genius.com/artists/Kinderlil",
+        "type": "regular",
+        "id": "3176088"
+      },
+      {
+        "name": "KindlyNxsh",
+        "url": "https://genius.com/artists/Kindlynxsh",
+        "type": "regular",
+        "id": "1776394"
+      },
+      {
+        "name": "Kind of Like Spitting",
+        "url": "https://genius.com/artists/Kind-of-like-spitting",
+        "type": "regular",
+        "id": "24790"
+      },
+      {
+        "name": "King",
+        "url": "https://genius.com/artists/King",
+        "type": "regular",
+        "id": "2047810"
+      },
+      {
+        "name": "KING 810",
+        "url": "https://genius.com/artists/King-810",
+        "type": "regular",
+        "id": "290009"
+      },
+      {
+        "name": "King Chip",
+        "url": "https://genius.com/artists/King-chip",
+        "type": "regular",
+        "id": "23681"
+      },
+      {
+        "name": "King Combs",
+        "url": "https://genius.com/artists/King-combs",
+        "type": "regular",
+        "id": "1060937"
+      },
+      {
+        "name": "King Crimson",
+        "url": "https://genius.com/artists/King-crimson",
+        "type": "regular",
+        "id": "14986"
+      },
+      {
+        "name": "King Diamond (Band)",
+        "url": "https://genius.com/artists/King-diamond-band",
+        "type": "regular",
+        "id": "47336"
+      },
+      {
+        "name": "Kingdom of Giants",
+        "url": "https://genius.com/artists/Kingdom-of-giants",
+        "type": "regular",
+        "id": "327956"
+      },
+      {
+        "name": "Kingfishr",
+        "url": "https://genius.com/artists/Kingfishr",
+        "type": "regular",
+        "id": "3469198"
+      },
+      {
+        "name": "King Geedorah",
+        "url": "https://genius.com/artists/King-geedorah",
+        "type": "regular",
+        "id": "708"
+      },
+      {
+        "name": "King Gizzard & The Lizard Wizard",
+        "url": "https://genius.com/artists/King-gizzard-and-the-lizard-wizard",
+        "type": "regular",
+        "id": "482418"
+      },
+      {
+        "name": "King Gnu",
+        "url": "https://genius.com/artists/King-gnu",
+        "type": "regular",
+        "id": "1564830"
+      },
+      {
+        "name": "King Harvest",
+        "url": "https://genius.com/artists/King-harvest",
+        "type": "regular",
+        "id": "30389"
+      },
+      {
+        "name": "King Iso",
+        "url": "https://genius.com/artists/King-iso",
+        "type": "regular",
+        "id": "149318"
+      },
+      {
+        "name": "King Krule",
+        "url": "https://genius.com/artists/King-krule",
+        "type": "regular",
+        "id": "25028"
+      },
+      {
+        "name": "King Lil G",
+        "url": "https://genius.com/artists/King-lil-g",
+        "type": "regular",
+        "id": "25528"
+      },
+      {
+        "name": "King Los",
+        "url": "https://genius.com/artists/King-los",
+        "type": "regular",
+        "id": "640"
+      },
+      {
+        "name": "KiNG MALA",
+        "url": "https://genius.com/artists/King-mala",
+        "type": "regular",
+        "id": "2083257"
+      },
+      {
+        "name": "KINGMOSTWANTED",
+        "url": "https://genius.com/artists/Kingmostwanted",
+        "type": "regular",
+        "id": "1976464"
+      },
+      {
+        "name": "King of the Dot",
+        "url": "https://genius.com/artists/King-of-the-dot",
+        "type": "regular",
+        "id": "117146"
+      },
+      {
+        "name": "King Orgasmus One",
+        "url": "https://genius.com/artists/King-orgasmus-one",
+        "type": "regular",
+        "id": "13055"
+      },
+      {
+        "name": "Kingpin Skinny Pimp",
+        "url": "https://genius.com/artists/Kingpin-skinny-pimp",
+        "type": "regular",
+        "id": "7174"
+      },
+      {
+        "name": "King Princess",
+        "url": "https://genius.com/artists/King-princess",
+        "type": "regular",
+        "id": "1401213"
+      },
+      {
+        "name": "СД (King SD)",
+        "url": "https://genius.com/artists/King-sd",
+        "type": "regular",
+        "id": "1039745"
+      },
+      {
+        "name": "Kings Kaleidoscope",
+        "url": "https://genius.com/artists/Kings-kaleidoscope",
+        "type": "regular",
+        "id": "454286"
+      },
+      {
+        "name": "The Kingsmen",
+        "url": "https://genius.com/artists/The-kingsmen",
+        "type": "regular",
+        "id": "44952"
+      },
+      {
+        "name": "Kings of Convenience",
+        "url": "https://genius.com/artists/Kings-of-convenience",
+        "type": "regular",
+        "id": "51056"
+      },
+      {
+        "name": "Kings of Leon",
+        "url": "https://genius.com/artists/Kings-of-leon",
+        "type": "regular",
+        "id": "1174"
+      },
+      {
+        "name": "The Kingston Trio",
+        "url": "https://genius.com/artists/The-kingston-trio",
+        "type": "regular",
+        "id": "301098"
+      },
+      {
+        "name": "KINGS (USA)",
+        "url": "https://genius.com/artists/Kings-usa",
+        "type": "regular",
+        "id": "3147491"
+      },
+      {
+        "name": "King Von",
+        "url": "https://genius.com/artists/King-von",
+        "type": "regular",
+        "id": "1488337"
+      },
+      {
+        "name": "King Willonius",
+        "url": "https://genius.com/artists/King-willonius",
+        "type": "regular",
+        "id": "3939901"
+      },
+      {
+        "name": "The Kinks",
+        "url": "https://genius.com/artists/The-kinks",
+        "type": "regular",
+        "id": "887"
+      },
+      {
+        "name": "Kinny Zimmer",
+        "url": "https://genius.com/artists/Kinny-zimmer",
+        "type": "regular",
+        "id": "1803861"
+      },
+      {
+        "name": "Кипелов (Kipelov)",
+        "url": "https://genius.com/artists/Kipelov",
+        "type": "regular",
+        "id": "1171654"
+      },
+      {
+        "name": "Kip Moore",
+        "url": "https://genius.com/artists/Kip-moore",
+        "type": "regular",
+        "id": "20961"
+      },
+      {
+        "name": "Kira7",
+        "url": "https://genius.com/artists/Kira7",
+        "type": "regular",
+        "id": "2756232"
+      },
+      {
+        "name": "Kiran + Nivi",
+        "url": "https://genius.com/artists/Kiran-nivi",
+        "type": "regular",
+        "id": "1976437"
+      },
+      {
+        "name": "KIRA (Producer)",
+        "url": "https://genius.com/artists/Kira-producer",
+        "type": "regular",
+        "id": "1825928"
+      },
+      {
+        "name": "Kira Stone",
+        "url": "https://genius.com/artists/Kira-stone",
+        "type": "regular",
+        "id": "1539489"
+      },
+      {
+        "name": "KirbLaGoop",
+        "url": "https://genius.com/artists/Kirblagoop",
+        "type": "regular",
+        "id": "378700"
+      },
+      {
+        "name": "KIRBY",
+        "url": "https://genius.com/artists/Kirby",
+        "type": "regular",
+        "id": "5807"
+      },
+      {
+        "name": "Kirka",
+        "url": "https://genius.com/artists/Kirka",
+        "type": "regular",
+        "id": "381419"
+      },
+      {
+        "name": "Kirk Franklin",
+        "url": "https://genius.com/artists/Kirk-franklin",
+        "type": "regular",
+        "id": "8090"
+      },
+      {
+        "name": "Kirko Bangz",
+        "url": "https://genius.com/artists/Kirko-bangz",
+        "type": "regular",
+        "id": "2236"
+      },
+      {
+        "name": "Kishi Bashi",
+        "url": "https://genius.com/artists/Kishi-bashi",
+        "type": "regular",
+        "id": "24012"
+      },
+      {
+        "name": "Кишлак (Kishlak)",
+        "url": "https://genius.com/artists/Kishlak",
+        "type": "regular",
+        "id": "2362933"
+      },
+      {
+        "name": "прыгай киска (kiska)",
+        "url": "https://genius.com/artists/Kiska",
+        "type": "regular",
+        "id": "984895"
+      },
+      {
+        "name": "кис-кис (kiskisnotdead)",
+        "url": "https://genius.com/artists/Kiskisnotdead",
+        "type": "regular",
+        "id": "1648006"
+      },
+      {
+        "name": "KISS",
+        "url": "https://genius.com/artists/Kiss",
+        "type": "regular",
+        "id": "33338"
+      },
+      {
+        "name": "KISS OF LIFE",
+        "url": "https://genius.com/artists/Kiss-of-life",
+        "type": "regular",
+        "id": "3562293"
+      },
+      {
+        "name": "Kitchie Nadal",
+        "url": "https://genius.com/artists/Kitchie-nadal",
+        "type": "regular",
+        "id": "358629"
+      },
+      {
+        "name": "KITSCHKRIEG",
+        "url": "https://genius.com/artists/Kitschkrieg",
+        "type": "regular",
+        "id": "634529"
+      },
+      {
+        "name": "Kitsui Akira",
+        "url": "https://genius.com/artists/Kitsui-akira",
+        "type": "regular",
+        "id": "3402851"
+      },
+      {
+        "name": "KittenSneeze",
+        "url": "https://genius.com/artists/Kittensneeze",
+        "type": "regular",
+        "id": "1985500"
+      },
+      {
+        "name": "Kittie",
+        "url": "https://genius.com/artists/Kittie",
+        "type": "regular",
+        "id": "356775"
+      },
+      {
+        "name": "Kit Walters",
+        "url": "https://genius.com/artists/Kit-walters",
+        "type": "regular",
+        "id": "64090"
+      },
+      {
+        "name": "Kiyo",
+        "url": "https://genius.com/artists/Kiyo",
+        "type": "regular",
+        "id": "1437011"
+      },
+      {
+        "name": "Kiyo (MEX)",
+        "url": "https://genius.com/artists/Kiyo-mex",
+        "type": "regular",
+        "id": "4102243"
+      },
+      {
+        "name": "K.I.Z",
+        "url": "https://genius.com/artists/Kiz",
+        "type": "regular",
+        "id": "1304"
+      },
+      {
+        "name": "Kizo",
+        "url": "https://genius.com/artists/Kizo",
+        "type": "regular",
+        "id": "1012840"
+      },
+      {
+        "name": "Kizz Daniel",
+        "url": "https://genius.com/artists/Kizz-daniel",
+        "type": "regular",
+        "id": "1482302"
+      },
+      {
+        "name": "Kjartan Lauritzen",
+        "url": "https://genius.com/artists/Kjartan-lauritzen",
+        "type": "regular",
+        "id": "684862"
+      },
+      {
+        "name": "KJ Burkhauser",
+        "url": "https://genius.com/artists/Kj-burkhauser",
+        "type": "regular",
+        "id": "4011187"
+      },
+      {
+        "name": "KęKę",
+        "url": "https://genius.com/artists/Keke",
+        "type": "regular",
+        "id": "60686"
+      },
+      {
+        "name": "K.Keed",
+        "url": "https://genius.com/artists/Kkeed",
+        "type": "regular",
+        "id": "1693351"
+      },
+      {
+        "name": "KKevin",
+        "url": "https://genius.com/artists/Kkevin",
+        "type": "regular",
+        "id": "2937054"
+      },
+      {
+        "name": "KK (IND)",
+        "url": "https://genius.com/artists/Kk-ind",
+        "type": "regular",
+        "id": "1186384"
+      },
+      {
+        "name": "Klamydia",
+        "url": "https://genius.com/artists/Klamydia",
+        "type": "regular",
+        "id": "344745"
+      },
+      {
+        "name": "Klangkuenstler",
+        "url": "https://genius.com/artists/Klangkuenstler",
+        "type": "regular",
+        "id": "1065790"
+      },
+      {
+        "name": "Klarisse",
+        "url": "https://genius.com/artists/Klarisse",
+        "type": "regular",
+        "id": "481687"
+      },
+      {
+        "name": "Klash - كلاش",
+        "url": "https://genius.com/artists/Klash",
+        "type": "regular",
+        "id": "366907"
+      },
+      {
+        "name": "Klassik Frescobar",
+        "url": "https://genius.com/artists/Klassik-frescobar",
+        "type": "regular",
+        "id": "486924"
+      },
+      {
+        "name": "Клава Кока (Klava Coca)",
+        "url": "https://genius.com/artists/Klava-coca",
+        "type": "regular",
+        "id": "1660096"
+      },
+      {
+        "name": "Klavdia",
+        "url": "https://genius.com/artists/Klavdia",
+        "type": "regular",
+        "id": "3391734"
+      },
+      {
+        "name": "Klavdia Petrivna",
+        "url": "https://genius.com/artists/Klavdia-petrivna",
+        "type": "regular",
+        "id": "3632202"
+      },
+      {
+        "name": "The KLF",
+        "url": "https://genius.com/artists/The-klf",
+        "type": "regular",
+        "id": "176112"
+      },
+      {
+        "name": "Klijent",
+        "url": "https://genius.com/artists/Klijent",
+        "type": "regular",
+        "id": "653512"
+      },
+      {
+        "name": "Klinac",
+        "url": "https://genius.com/artists/Klinac",
+        "type": "regular",
+        "id": "1004014"
+      },
+      {
+        "name": "K’lma - كلمة",
+        "url": "https://genius.com/artists/Klma",
+        "type": "regular",
+        "id": "1616096"
+      },
+      {
+        "name": "КлоуКома (KlouKoma)",
+        "url": "https://genius.com/artists/Kloukoma",
+        "type": "regular",
+        "id": "1596651"
+      },
+      {
+        "name": "Âşık Mahzuni Şerif",
+        "url": "https://genius.com/artists/Ask-mahzuni-serif",
+        "type": "regular",
+        "id": "1352658"
+      },
+      {
+        "name": "Kman 6ixx",
+        "url": "https://genius.com/artists/Kman-6ixx",
+        "type": "regular",
+        "id": "3529706"
+      },
+      {
+        "name": "KMD",
+        "url": "https://genius.com/artists/Kmd",
+        "type": "regular",
+        "id": "2758"
+      },
+      {
+        "name": "KMFDM",
+        "url": "https://genius.com/artists/Kmfdm",
+        "type": "regular",
+        "id": "343293"
+      },
+      {
+        "name": "K. Michelle",
+        "url": "https://genius.com/artists/K-michelle",
+        "type": "regular",
+        "id": "13346"
+      },
+      {
+        "name": "kmoe",
+        "url": "https://genius.com/artists/Kmoe",
+        "type": "regular",
+        "id": "1905277"
+      },
+      {
+        "name": "K'naan",
+        "url": "https://genius.com/artists/Knaan",
+        "type": "regular",
+        "id": "481"
+      },
+      {
+        "name": "The Knack",
+        "url": "https://genius.com/artists/The-knack",
+        "type": "regular",
+        "id": "30910"
+      },
+      {
+        "name": "Knak",
+        "url": "https://genius.com/artists/Knak",
+        "type": "regular",
+        "id": "1717575"
+      },
+      {
+        "name": "Kng Ego",
+        "url": "https://genius.com/artists/Kng-ego",
+        "type": "regular",
+        "id": "3777317"
+      },
+      {
+        "name": "The Knife",
+        "url": "https://genius.com/artists/The-knife",
+        "type": "regular",
+        "id": "23598"
+      },
+      {
+        "name": "KNIGGHT",
+        "url": "https://genius.com/artists/Knigght",
+        "type": "regular",
+        "id": "3829647"
+      },
+      {
+        "name": "Knocked Loose",
+        "url": "https://genius.com/artists/Knocked-loose",
+        "type": "regular",
+        "id": "531998"
+      },
+      {
+        "name": "The Knocks",
+        "url": "https://genius.com/artists/The-knocks",
+        "type": "regular",
+        "id": "84077"
+      },
+      {
+        "name": "Knorkator",
+        "url": "https://genius.com/artists/Knorkator",
+        "type": "regular",
+        "id": "83299"
+      },
+      {
+        "name": "Knox",
+        "url": "https://genius.com/artists/Knox",
+        "type": "regular",
+        "id": "26384"
+      },
+      {
+        "name": "Knuckle Puck",
+        "url": "https://genius.com/artists/Knuckle-puck",
+        "type": "regular",
+        "id": "179867"
+      },
+      {
+        "name": "Knucks",
+        "url": "https://genius.com/artists/Knucks",
+        "type": "regular",
+        "id": "657206"
+      },
+      {
+        "name": "Knumears",
+        "url": "https://genius.com/artists/Knumears",
+        "type": "regular",
+        "id": "3608427"
+      },
+      {
+        "name": "Knutsen & Ludvigsen",
+        "url": "https://genius.com/artists/Knutsen-and-ludvigsen",
+        "type": "regular",
+        "id": "380563"
+      },
+      {
+        "name": "Knxwledge",
+        "url": "https://genius.com/artists/Knxwledge",
+        "type": "regular",
+        "id": "30574"
+      },
+      {
+        "name": "K.O",
+        "url": "https://genius.com/artists/Ko",
+        "type": "regular",
+        "id": "201409"
+      },
+      {
+        "name": "Koba LaD",
+        "url": "https://genius.com/artists/Koba-lad",
+        "type": "regular",
+        "id": "1247832"
+      },
+      {
+        "name": "Kobo Kanaeru",
+        "url": "https://genius.com/artists/Kobo-kanaeru",
+        "type": "regular",
+        "id": "3109470"
+      },
+      {
+        "name": "Koby DJ",
+        "url": "https://genius.com/artists/Koby-dj",
+        "type": "regular",
+        "id": "4371630"
+      },
+      {
+        "name": "Kobzx2z",
+        "url": "https://genius.com/artists/Kobzx2z",
+        "type": "regular",
+        "id": "2517181"
+      },
+      {
+        "name": "こっちのけんと (Kocchi No Kento)",
+        "url": "https://genius.com/artists/Kocchi-no-kento",
+        "type": "regular",
+        "id": "3505541"
+      },
+      {
+        "name": "Kocky Ka",
+        "url": "https://genius.com/artists/Kocky-ka",
+        "type": "regular",
+        "id": "2506458"
+      },
+      {
+        "name": "Kodaline",
+        "url": "https://genius.com/artists/Kodaline",
+        "type": "regular",
+        "id": "28458"
+      },
+      {
+        "name": "Kodi Rhianne",
+        "url": "https://genius.com/artists/Kodi-rhianne",
+        "type": "regular",
+        "id": "4107291"
+      },
+      {
+        "name": "Kody Redwing and The Broken Hearts",
+        "url": "https://genius.com/artists/Kody-redwing-and-the-broken-hearts",
+        "type": "regular",
+        "id": "4339927"
+      },
+      {
+        "name": "Koes Plus",
+        "url": "https://genius.com/artists/Koes-plus",
+        "type": "regular",
+        "id": "377967"
+      },
+      {
+        "name": "Koe Wetzel",
+        "url": "https://genius.com/artists/Koe-wetzel",
+        "type": "regular",
+        "id": "1291802"
+      },
+      {
+        "name": "Koffi Olomidé",
+        "url": "https://genius.com/artists/Koffi-olomide",
+        "type": "regular",
+        "id": "404999"
+      },
+      {
+        "name": "Kofi Owusu Peprah",
+        "url": "https://genius.com/artists/Kofi-owusu-peprah",
+        "type": "regular",
+        "id": "4301838"
+      },
+      {
+        "name": "Kofs",
+        "url": "https://genius.com/artists/Kofs",
+        "type": "regular",
+        "id": "566498"
+      },
+      {
+        "name": "KOHH",
+        "url": "https://genius.com/artists/Kohh",
+        "type": "regular",
+        "id": "251776"
+      },
+      {
+        "name": "Kohjiya",
+        "url": "https://genius.com/artists/Kohjiya",
+        "type": "regular",
+        "id": "2645135"
+      },
+      {
+        "name": "Koinoi Thnitoi",
+        "url": "https://genius.com/artists/Koinoi-thnitoi",
+        "type": "regular",
+        "id": "2009367"
+      },
+      {
+        "name": "Kolera",
+        "url": "https://genius.com/artists/Kolera",
+        "type": "regular",
+        "id": "20769"
+      },
+      {
+        "name": "Kolja Goldstein",
+        "url": "https://genius.com/artists/Kolja-goldstein",
+        "type": "regular",
+        "id": "2502959"
+      },
+      {
+        "name": "Kollegah",
+        "url": "https://genius.com/artists/Kollegah",
+        "type": "regular",
+        "id": "12077"
+      },
+      {
+        "name": "Kolohe Kai",
+        "url": "https://genius.com/artists/Kolohe-kai",
+        "type": "regular",
+        "id": "370167"
+      },
+      {
+        "name": "The Kolors",
+        "url": "https://genius.com/artists/The-kolors",
+        "type": "regular",
+        "id": "479785"
+      },
+      {
+        "name": "Комната Культуры (Komnata Kultury)",
+        "url": "https://genius.com/artists/Komnata-kultury",
+        "type": "regular",
+        "id": "3952199"
+      },
+      {
+        "name": "Комсомольск (Komsomolsk)",
+        "url": "https://genius.com/artists/Komsomolsk",
+        "type": "regular",
+        "id": "1296747"
+      },
+      {
+        "name": "Кондрашов (Kondrashov)",
+        "url": "https://genius.com/artists/Kondrashov",
+        "type": "regular",
+        "id": "1748090"
+      },
+      {
+        "name": "​конец солнечных дней (konec solnechnyh dney)",
+        "url": "https://genius.com/artists/Konec-solnechnyh-dney",
+        "type": "regular",
+        "id": "2635012"
+      },
+      {
+        "name": "Koneser",
+        "url": "https://genius.com/artists/Koneser",
+        "type": "regular",
+        "id": "1337792"
+      },
+      {
+        "name": "Konfuz",
+        "url": "https://genius.com/artists/Konfuz",
+        "type": "regular",
+        "id": "2611068"
+      },
+      {
+        "name": "Konshens",
+        "url": "https://genius.com/artists/Konshens",
+        "type": "regular",
+        "id": "17735"
+      },
+      {
+        "name": "Konsta",
+        "url": "https://genius.com/artists/Konsta",
+        "type": "regular",
+        "id": "1704795"
+      },
+      {
+        "name": "Константин Меладзе (Konstantin Meladze)",
+        "url": "https://genius.com/artists/Konstantin-meladze",
+        "type": "regular",
+        "id": "1107863"
+      },
+      {
+        "name": "Konstantinos Argiros",
+        "url": "https://genius.com/artists/Konstantinos-argiros",
+        "type": "regular",
+        "id": "1502900"
+      },
+      {
+        "name": "Константин Ступин (Konstantin Stupin)",
+        "url": "https://genius.com/artists/Konstantin-stupin",
+        "type": "regular",
+        "id": "2517050"
+      },
+      {
+        "name": "Kontra K",
+        "url": "https://genius.com/artists/Kontra-k",
+        "type": "regular",
+        "id": "31792"
+      },
+      {
+        "name": "The Kooks",
+        "url": "https://genius.com/artists/The-kooks",
+        "type": "regular",
+        "id": "25678"
+      },
+      {
+        "name": "Kool & the Gang",
+        "url": "https://genius.com/artists/Kool-and-the-gang",
+        "type": "regular",
+        "id": "19153"
+      },
+      {
+        "name": "Kool G Rap",
+        "url": "https://genius.com/artists/Kool-g-rap",
+        "type": "regular",
+        "id": "847"
+      },
+      {
+        "name": "Kool Keith",
+        "url": "https://genius.com/artists/Kool-keith",
+        "type": "regular",
+        "id": "1692"
+      },
+      {
+        "name": "Kool Savas",
+        "url": "https://genius.com/artists/Kool-savas",
+        "type": "regular",
+        "id": "11830"
+      },
+      {
+        "name": "Koopsta Knicca",
+        "url": "https://genius.com/artists/Koopsta-knicca",
+        "type": "regular",
+        "id": "6971"
+      },
+      {
+        "name": "Koorosh",
+        "url": "https://genius.com/artists/Koorosh",
+        "type": "regular",
+        "id": "974623"
+      },
+      {
+        "name": "Korban Baxter",
+        "url": "https://genius.com/artists/Korban-baxter",
+        "type": "regular",
+        "id": "1644617"
+      },
+      {
+        "name": "Kordhell",
+        "url": "https://genius.com/artists/Kordhell",
+        "type": "regular",
+        "id": "2987028"
+      },
+      {
+        "name": "Korea Girl",
+        "url": "https://genius.com/artists/Korea-girl",
+        "type": "regular",
+        "id": "377961"
+      },
+      {
+        "name": "Korean Comic",
+        "url": "https://genius.com/artists/Korean-comic",
+        "type": "regular",
+        "id": "3422126"
+      },
+      {
+        "name": "Korelon",
+        "url": "https://genius.com/artists/Korelon",
+        "type": "regular",
+        "id": "3177538"
+      },
+      {
+        "name": "Кореш (koreshzy)",
+        "url": "https://genius.com/artists/Koreshzy",
+        "type": "regular",
+        "id": "2870394"
+      },
+      {
+        "name": "Korn",
+        "url": "https://genius.com/artists/Korn",
+        "type": "regular",
+        "id": "6578"
+      },
+      {
+        "name": "Корни (Korny)",
+        "url": "https://genius.com/artists/Korny",
+        "type": "regular",
+        "id": "2192256"
+      },
+      {
+        "name": "Король и Шут (Korol I Shut)",
+        "url": "https://genius.com/artists/Korol-i-shut",
+        "type": "regular",
+        "id": "1381291"
+      },
+      {
+        "name": "Kory Miller",
+        "url": "https://genius.com/artists/Kory-miller",
+        "type": "regular",
+        "id": "1760698"
+      },
+      {
+        "name": "КОСМОНАВТОВ НЕТ (KOSMONAVTOV NET)",
+        "url": "https://genius.com/artists/Kosmonavtov-net",
+        "type": "regular",
+        "id": "1690031"
+      },
+      {
+        "name": "Коста Лакоста (Kosta Lakosta)",
+        "url": "https://genius.com/artists/Kosta-lakosta",
+        "type": "regular",
+        "id": "1671602"
+      },
+      {
+        "name": "Kostek [YT]",
+        "url": "https://genius.com/artists/Kostek-yt",
+        "type": "regular",
+        "id": "3495440"
+      },
+      {
+        "name": "星野康太 (Kota Hoshino)",
+        "url": "https://genius.com/artists/Kota-hoshino",
+        "type": "regular",
+        "id": "2500544"
+      },
+      {
+        "name": "Kota the Friend",
+        "url": "https://genius.com/artists/Kota-the-friend",
+        "type": "regular",
+        "id": "305188"
+      },
+      {
+        "name": "Кот Балу (Kot Balu)",
+        "url": "https://genius.com/artists/Kot-balu",
+        "type": "regular",
+        "id": "1764566"
+      },
+      {
+        "name": "Koushino",
+        "url": "https://genius.com/artists/Koushino",
+        "type": "regular",
+        "id": "2064385"
+      },
+      {
+        "name": "Kouz1",
+        "url": "https://genius.com/artists/Kouz1",
+        "type": "regular",
+        "id": "1178103"
+      },
+      {
+        "name": "Koven Wei",
+        "url": "https://genius.com/artists/Koven-wei",
+        "type": "regular",
+        "id": "1471904"
+      },
+      {
+        "name": "Koza",
+        "url": "https://genius.com/artists/Koza",
+        "type": "regular",
+        "id": "1120565"
+      },
+      {
+        "name": "Kozmos",
+        "url": "https://genius.com/artists/Kozmos",
+        "type": "regular",
+        "id": "1120510"
+      },
+      {
+        "name": "Kıraç",
+        "url": "https://genius.com/artists/Krac",
+        "type": "regular",
+        "id": "2142897"
+      },
+      {
+        "name": "Kraantje Pappie",
+        "url": "https://genius.com/artists/Kraantje-pappie",
+        "type": "regular",
+        "id": "33146"
+      },
+      {
+        "name": "Kraff Gad",
+        "url": "https://genius.com/artists/Kraff-gad",
+        "type": "regular",
+        "id": "3387666"
+      },
+      {
+        "name": "Kraftklub",
+        "url": "https://genius.com/artists/Kraftklub",
+        "type": "regular",
+        "id": "18691"
+      },
+      {
+        "name": "Kraftwerk",
+        "url": "https://genius.com/artists/Kraftwerk",
+        "type": "regular",
+        "id": "84923"
+      },
+      {
+        "name": "Kraliçe Yas",
+        "url": "https://genius.com/artists/Kralice-yas",
+        "type": "regular",
+        "id": "2563219"
+      },
+      {
+        "name": "Kranium",
+        "url": "https://genius.com/artists/Kranium",
+        "type": "regular",
+        "id": "332642"
+      },
+      {
+        "name": "Krankšvester",
+        "url": "https://genius.com/artists/Kranksvester",
+        "type": "regular",
+        "id": "1547122"
+      },
+      {
+        "name": "Красная Плесень (Krasnaya Plesen’)",
+        "url": "https://genius.com/artists/Krasnaya-plesen",
+        "type": "regular",
+        "id": "1189578"
+      },
+      {
+        "name": "Красное Дерево (Krasnoe Derevo)",
+        "url": "https://genius.com/artists/Krasnoe-derevo",
+        "type": "regular",
+        "id": "1777450"
+      },
+      {
+        "name": "The Kratt Brothers",
+        "url": "https://genius.com/artists/The-kratt-brothers",
+        "type": "regular",
+        "id": "1748019"
+      },
+      {
+        "name": "Кравц (Kravz)",
+        "url": "https://genius.com/artists/Kravz",
+        "type": "regular",
+        "id": "1058835"
+      },
+      {
+        "name": "Krayzie Bone",
+        "url": "https://genius.com/artists/Krayzie-bone",
+        "type": "regular",
+        "id": "350"
+      },
+      {
+        "name": "Krúbi",
+        "url": "https://genius.com/artists/Krubi",
+        "type": "regular",
+        "id": "1264477"
+      },
+      {
+        "name": "KRBK",
+        "url": "https://genius.com/artists/Krbk",
+        "type": "regular",
+        "id": "2620384"
+      },
+      {
+        "name": "Kreamly",
+        "url": "https://genius.com/artists/Kreamly",
+        "type": "regular",
+        "id": "2457084"
+      },
+      {
+        "name": "Kreator",
+        "url": "https://genius.com/artists/Kreator",
+        "type": "regular",
+        "id": "192383"
+      },
+      {
+        "name": "Kreayshawn",
+        "url": "https://genius.com/artists/Kreayshawn",
+        "type": "regular",
+        "id": "11716"
+      },
+      {
+        "name": "KREC",
+        "url": "https://genius.com/artists/Krec",
+        "type": "regular",
+        "id": "1045867"
+      },
+      {
+        "name": "Крематорий (Krematoriy)",
+        "url": "https://genius.com/artists/Krematoriy",
+        "type": "regular",
+        "id": "2387525"
+      },
+      {
+        "name": "Krewella",
+        "url": "https://genius.com/artists/Krewella",
+        "type": "regular",
+        "id": "47472"
+      },
+      {
+        "name": "Käärijä",
+        "url": "https://genius.com/artists/Kaarija",
+        "type": "regular",
+        "id": "1570607"
+      },
+      {
+        "name": "K-Rino",
+        "url": "https://genius.com/artists/K-rino",
+        "type": "regular",
+        "id": "3045"
+      },
+      {
+        "name": "Krisko",
+        "url": "https://genius.com/artists/Krisko",
+        "type": "regular",
+        "id": "19278"
+      },
+      {
+        "name": "Kris Kristofferson",
+        "url": "https://genius.com/artists/Kris-kristofferson",
+        "type": "regular",
+        "id": "39554"
+      },
+      {
+        "name": "Kris Kross",
+        "url": "https://genius.com/artists/Kris-kross",
+        "type": "regular",
+        "id": "7259"
+      },
+      {
+        "name": "Kris Kross Amsterdam",
+        "url": "https://genius.com/artists/Kris-kross-amsterdam",
+        "type": "regular",
+        "id": "511008"
+      },
+      {
+        "name": "Kris (Malaysia)",
+        "url": "https://genius.com/artists/Kris-malaysia",
+        "type": "regular",
+        "id": "1689696"
+      },
+      {
+        "name": "KrispyLife Kidd",
+        "url": "https://genius.com/artists/Krispylife-kidd",
+        "type": "regular",
+        "id": "2081313"
+      },
+      {
+        "name": "Kris R.",
+        "url": "https://genius.com/artists/Kris-r",
+        "type": "regular",
+        "id": "1459243"
+      },
+      {
+        "name": "Krissy & Ericka",
+        "url": "https://genius.com/artists/Krissy-and-ericka",
+        "type": "regular",
+        "id": "459509"
+      },
+      {
+        "name": "Kristen Anderson-Lopez",
+        "url": "https://genius.com/artists/Kristen-anderson-lopez",
+        "type": "regular",
+        "id": "137598"
+      },
+      {
+        "name": "Kristen Bell",
+        "url": "https://genius.com/artists/Kristen-bell",
+        "type": "regular",
+        "id": "133480"
+      },
+      {
+        "name": "KRISTIEE",
+        "url": "https://genius.com/artists/Kristiee",
+        "type": "regular",
+        "id": "3898267"
+      },
+      {
+        "name": "Kristina (ESP)",
+        "url": "https://genius.com/artists/Kristina-esp",
+        "type": "regular",
+        "id": "3099342"
+      },
+      {
+        "name": "Кристина Орбакайте (Kristina Orbakaite)",
+        "url": "https://genius.com/artists/Kristina-orbakaite",
+        "type": "regular",
+        "id": "1682208"
+      },
+      {
+        "name": "Kristina Si",
+        "url": "https://genius.com/artists/Kristina-si",
+        "type": "regular",
+        "id": "621588"
+      },
+      {
+        "name": "Kristin Chenoweth",
+        "url": "https://genius.com/artists/Kristin-chenoweth",
+        "type": "regular",
+        "id": "33243"
+      },
+      {
+        "name": "Kristle Edwards",
+        "url": "https://genius.com/artists/Kristle-edwards",
+        "type": "regular",
+        "id": "158574"
+      },
+      {
+        "name": "Kristolyn Lloyd",
+        "url": "https://genius.com/artists/Kristolyn-lloyd",
+        "type": "regular",
+        "id": "1025235"
+      },
+      {
+        "name": "Kronkel Dom",
+        "url": "https://genius.com/artists/Kronkel-dom",
+        "type": "regular",
+        "id": "1038375"
+      },
+      {
+        "name": "Kronno Zomber",
+        "url": "https://genius.com/artists/Kronno-zomber",
+        "type": "regular",
+        "id": "1101091"
+      },
+      {
+        "name": "кровь из носа (krov' iz nosa)",
+        "url": "https://genius.com/artists/Krov-iz-nosa",
+        "type": "regular",
+        "id": "3059965"
+      },
+      {
+        "name": "Кровосток (Krovostok)",
+        "url": "https://genius.com/artists/Krovostok",
+        "type": "regular",
+        "id": "233193"
+      },
+      {
+        "name": "KR$NA",
+        "url": "https://genius.com/artists/Kr-na",
+        "type": "regular",
+        "id": "179673"
+      },
+      {
+        "name": "KRS-One",
+        "url": "https://genius.com/artists/Krs-one",
+        "type": "regular",
+        "id": "1269"
+      },
+      {
+        "name": "КруЭлла (KruElla)",
+        "url": "https://genius.com/artists/Kruella",
+        "type": "regular",
+        "id": "2890185"
+      },
+      {
+        "name": "KryFuZe",
+        "url": "https://genius.com/artists/Kryfuze",
+        "type": "regular",
+        "id": "1496877"
+      },
+      {
+        "name": "Krystina Alabado",
+        "url": "https://genius.com/artists/Krystina-alabado",
+        "type": "regular",
+        "id": "1056745"
+      },
+      {
+        "name": "KSB muzic",
+        "url": "https://genius.com/artists/Ksb-muzic",
+        "type": "regular",
+        "id": "3337775"
+      },
+      {
+        "name": "K.S. Chithra",
+        "url": "https://genius.com/artists/Ks-chithra",
+        "type": "regular",
+        "id": "404302"
+      },
+      {
+        "name": "Ксения Собчак (Ksenia Sobchak)",
+        "url": "https://genius.com/artists/Ksenia-sobchak",
+        "type": "regular",
+        "id": "1855481"
+      },
+      {
+        "name": "Ksenon",
+        "url": "https://genius.com/artists/Ksenon",
+        "type": "regular",
+        "id": "1984261"
+      },
+      {
+        "name": "KSHMR",
+        "url": "https://genius.com/artists/Kshmr",
+        "type": "regular",
+        "id": "327217"
+      },
+      {
+        "name": "KSI",
+        "url": "https://genius.com/artists/Ksi",
+        "type": "regular",
+        "id": "39248"
+      },
+      {
+        "name": "KSLV Noh",
+        "url": "https://genius.com/artists/Kslv-noh",
+        "type": "regular",
+        "id": "2956190"
+      },
+      {
+        "name": "K”st",
+        "url": "https://genius.com/artists/Kst",
+        "type": "regular",
+        "id": "1097786"
+      },
+      {
+        "name": "KZ Tandingan",
+        "url": "https://genius.com/artists/Kz-tandingan",
+        "type": "regular",
+        "id": "377237"
+      },
+      {
+        "name": "K Suave",
+        "url": "https://genius.com/artists/K-suave",
+        "type": "regular",
+        "id": "1702893"
+      },
+      {
+        "name": "​ksuuvi",
+        "url": "https://genius.com/artists/Ksuuvi",
+        "type": "regular",
+        "id": "3020530"
+      },
+      {
+        "name": "K/DA",
+        "url": "https://genius.com/artists/K-da",
+        "type": "regular",
+        "id": "1626547"
+      },
+      {
+        "name": "K-Trap",
+        "url": "https://genius.com/artists/K-trap",
+        "type": "regular",
+        "id": "661054"
+      },
+      {
+        "name": "KT Tunstall",
+        "url": "https://genius.com/artists/Kt-tunstall",
+        "type": "regular",
+        "id": "193435"
+      },
+      {
+        "name": "Kuban",
+        "url": "https://genius.com/artists/Kuban",
+        "type": "regular",
+        "id": "113667"
+      },
+      {
+        "name": "КуБа (KuBa) (RUS)",
+        "url": "https://genius.com/artists/Kuba-rus",
+        "type": "regular",
+        "id": "3019372"
+      },
+      {
+        "name": "Kubi Producent",
+        "url": "https://genius.com/artists/Kubi-producent",
+        "type": "regular",
+        "id": "189755"
+      },
+      {
+        "name": "Kublai Khan TX",
+        "url": "https://genius.com/artists/Kublai-khan-tx",
+        "type": "regular",
+        "id": "456223"
+      },
+      {
+        "name": "KUDOKUSHI",
+        "url": "https://genius.com/artists/Kudokushi",
+        "type": "regular",
+        "id": "2855579"
+      },
+      {
+        "name": "kugakrewceo",
+        "url": "https://genius.com/artists/Kugakrewceo",
+        "type": "regular",
+        "id": "3988621"
+      },
+      {
+        "name": "KUINA",
+        "url": "https://genius.com/artists/Kuina",
+        "type": "regular",
+        "id": "3765289"
+      },
+      {
+        "name": "Kuki",
+        "url": "https://genius.com/artists/Kuki",
+        "type": "regular",
+        "id": "997023"
+      },
+      {
+        "name": "Kukon",
+        "url": "https://genius.com/artists/Kukon",
+        "type": "regular",
+        "id": "176619"
+      },
+      {
+        "name": "Кукрыниксы (Kukryniksy)",
+        "url": "https://genius.com/artists/Kukryniksy",
+        "type": "regular",
+        "id": "2387445"
+      },
+      {
+        "name": "KUKU$",
+        "url": "https://genius.com/artists/Kuku",
+        "type": "regular",
+        "id": "674924"
+      },
+      {
+        "name": "Kult",
+        "url": "https://genius.com/artists/Kult",
+        "type": "regular",
+        "id": "142394"
+      },
+      {
+        "name": "kulturr",
+        "url": "https://genius.com/artists/Kulturr",
+        "type": "regular",
+        "id": "2889959"
+      },
+      {
+        "name": "Kum",
+        "url": "https://genius.com/artists/Kum",
+        "type": "regular",
+        "id": "2628131"
+      },
+      {
+        "name": "Kumar Sanu",
+        "url": "https://genius.com/artists/Kumar-sanu",
+        "type": "regular",
+        "id": "393771"
+      },
+      {
+        "name": "野間久美子 (Kumiko Noma)",
+        "url": "https://genius.com/artists/Kumiko-noma",
+        "type": "regular",
+        "id": "226036"
+      },
+      {
+        "name": "Kummer",
+        "url": "https://genius.com/artists/Kummer",
+        "type": "regular",
+        "id": "566905"
+      },
+      {
+        "name": "Kundo",
+        "url": "https://genius.com/artists/Kundo",
+        "type": "regular",
+        "id": "3436457"
+      },
+      {
+        "name": "Kunmie",
+        "url": "https://genius.com/artists/Kunmie",
+        "type": "regular",
+        "id": "4326727"
+      },
+      {
+        "name": "Kunteynir",
+        "url": "https://genius.com/artists/Kunteynir",
+        "type": "regular",
+        "id": "325707"
+      },
+      {
+        "name": "Kunto Aji",
+        "url": "https://genius.com/artists/Kunto-aji",
+        "type": "regular",
+        "id": "1144477"
+      },
+      {
+        "name": "​kuqe 2115",
+        "url": "https://genius.com/artists/Kuqe-2115",
+        "type": "regular",
+        "id": "669443"
+      },
+      {
+        "name": "Kur",
+        "url": "https://genius.com/artists/Kur",
+        "type": "regular",
+        "id": "127638"
+      },
+      {
+        "name": "Kurdo",
+        "url": "https://genius.com/artists/Kurdo",
+        "type": "regular",
+        "id": "20337"
+      },
+      {
+        "name": "Курган (Kurhan)",
+        "url": "https://genius.com/artists/Kurhan",
+        "type": "regular",
+        "id": "3623478"
+      },
+      {
+        "name": "kurokov",
+        "url": "https://genius.com/artists/Kurokov",
+        "type": "regular",
+        "id": "3891574"
+      },
+      {
+        "name": "kurtains",
+        "url": "https://genius.com/artists/Kurtains",
+        "type": "regular",
+        "id": "2138584"
+      },
+      {
+        "name": "Kurtalan Ekspres",
+        "url": "https://genius.com/artists/Kurtalan-ekspres",
+        "type": "regular",
+        "id": "483508"
+      },
+      {
+        "name": "Kurt Carr",
+        "url": "https://genius.com/artists/Kurt-carr",
+        "type": "regular",
+        "id": "380815"
+      },
+      {
+        "name": "Kurt Cobain",
+        "url": "https://genius.com/artists/Kurt-cobain",
+        "type": "regular",
+        "id": "23665"
+      },
+      {
+        "name": "Kurt Fick",
+        "url": "https://genius.com/artists/Kurt-fick",
+        "type": "regular",
+        "id": "1202166"
+      },
+      {
+        "name": "Kurt Russell",
+        "url": "https://genius.com/artists/Kurt-russell",
+        "type": "regular",
+        "id": "210737"
+      },
+      {
+        "name": "Kurt Vile",
+        "url": "https://genius.com/artists/Kurt-vile",
+        "type": "regular",
+        "id": "37902"
+      },
+      {
+        "name": "kuru",
+        "url": "https://genius.com/artists/Kuru",
+        "type": "regular",
+        "id": "1146656"
+      },
+      {
+        "name": "Kurupt",
+        "url": "https://genius.com/artists/Kurupt",
+        "type": "regular",
+        "id": "170"
+      },
+      {
+        "name": "Kushagra",
+        "url": "https://genius.com/artists/Kushagra",
+        "type": "regular",
+        "id": "1275059"
+      },
+      {
+        "name": "kushbabykeys",
+        "url": "https://genius.com/artists/Kushbabykeys",
+        "type": "regular",
+        "id": "3431198"
+      },
+      {
+        "name": "Kutless",
+        "url": "https://genius.com/artists/Kutless",
+        "type": "regular",
+        "id": "215912"
+      },
+      {
+        "name": "Kuty",
+        "url": "https://genius.com/artists/Kuty",
+        "type": "regular",
+        "id": "2324913"
+      },
+      {
+        "name": "KUUMAA",
+        "url": "https://genius.com/artists/Kuumaa",
+        "type": "regular",
+        "id": "1164340"
+      },
+      {
+        "name": "Кузнецкий Сквад (Kuznetsky Squad)",
+        "url": "https://genius.com/artists/Kuznetsky-squad",
+        "type": "regular",
+        "id": "1149464"
+      },
+      {
+        "name": "Kıvırcık Ali",
+        "url": "https://genius.com/artists/Kvrck-ali",
+        "type": "regular",
+        "id": "2215302"
+      },
+      {
+        "name": "Kwam.E",
+        "url": "https://genius.com/artists/Kwame",
+        "type": "regular",
+        "id": "1212725"
+      },
+      {
+        "name": "Kwengface",
+        "url": "https://genius.com/artists/Kwengface",
+        "type": "regular",
+        "id": "1275714"
+      },
+      {
+        "name": "Kwesi Arthur",
+        "url": "https://genius.com/artists/Kwesi-arthur",
+        "type": "regular",
+        "id": "1189869"
+      },
+      {
+        "name": "Kwesta",
+        "url": "https://genius.com/artists/Kwesta",
+        "type": "regular",
+        "id": "46327"
+      },
+      {
+        "name": "kwn",
+        "url": "https://genius.com/artists/Kwn",
+        "type": "regular",
+        "id": "2486250"
+      },
+      {
+        "name": "Kx5",
+        "url": "https://genius.com/artists/Kx5",
+        "type": "regular",
+        "id": "3078868"
+      },
+      {
+        "name": "KXLLSWXTCH",
+        "url": "https://genius.com/artists/Kxllswxtch",
+        "type": "regular",
+        "id": "1246589"
+      },
+      {
+        "name": "Kyan",
+        "url": "https://genius.com/artists/Kyan",
+        "type": "regular",
+        "id": "2018938"
+      },
+      {
+        "name": "K y B",
+        "url": "https://genius.com/artists/K-y-b",
+        "type": "regular",
+        "id": "3114275"
+      },
+      {
+        "name": "kyeskii",
+        "url": "https://genius.com/artists/Kyeskii",
+        "type": "regular",
+        "id": "4436008"
+      },
+      {
+        "name": "Kygo",
+        "url": "https://genius.com/artists/Kygo",
+        "type": "regular",
+        "id": "278311"
+      },
+      {
+        "name": "Kyla (PHL)",
+        "url": "https://genius.com/artists/Kyla-phl",
+        "type": "regular",
+        "id": "1805045"
+      },
+      {
+        "name": "KYLE",
+        "url": "https://genius.com/artists/Kyle",
+        "type": "regular",
+        "id": "6412"
+      },
+      {
+        "name": "Kyle Alessandro",
+        "url": "https://genius.com/artists/Kyle-alessandro",
+        "type": "regular",
+        "id": "2842526"
+      },
+      {
+        "name": "Kyle Allen Music",
+        "url": "https://genius.com/artists/Kyle-allen-music",
+        "type": "regular",
+        "id": "1107601"
+      },
+      {
+        "name": "Kyle Dion",
+        "url": "https://genius.com/artists/Kyle-dion",
+        "type": "regular",
+        "id": "187285"
+      },
+      {
+        "name": "Kylee Russell",
+        "url": "https://genius.com/artists/Kylee-russell",
+        "type": "regular",
+        "id": "1050686"
+      },
+      {
+        "name": "Kyle Exum",
+        "url": "https://genius.com/artists/Kyle-exum",
+        "type": "regular",
+        "id": "1047751"
+      },
+      {
+        "name": "Kyle Gordon",
+        "url": "https://genius.com/artists/Kyle-gordon",
+        "type": "regular",
+        "id": "1702315"
+      },
+      {
+        "name": "Kyle Hume",
+        "url": "https://genius.com/artists/Kyle-hume",
+        "type": "regular",
+        "id": "2293425"
+      },
+      {
+        "name": "Kyle Richh",
+        "url": "https://genius.com/artists/Kyle-richh",
+        "type": "regular",
+        "id": "3031029"
+      },
+      {
+        "name": "Kylie Cantrall",
+        "url": "https://genius.com/artists/Kylie-cantrall",
+        "type": "regular",
+        "id": "1816874"
+      },
+      {
+        "name": "Kylie Minogue",
+        "url": "https://genius.com/artists/Kylie-minogue",
+        "type": "regular",
+        "id": "20574"
+      },
+      {
+        "name": "Kym Karath",
+        "url": "https://genius.com/artists/Kym-karath",
+        "type": "regular",
+        "id": "2268471"
+      },
+      {
+        "name": "Kyo",
+        "url": "https://genius.com/artists/Kyo",
+        "type": "regular",
+        "id": "41684"
+      },
+      {
+        "name": "kyu",
+        "url": "https://genius.com/artists/Kyu",
+        "type": "regular",
+        "id": "4202547"
+      },
+      {
+        "name": "KYUJIN",
+        "url": "https://genius.com/artists/Kyujin",
+        "type": "regular",
+        "id": "3046017"
+      },
+      {
+        "name": "Kyuss",
+        "url": "https://genius.com/artists/Kyuss",
+        "type": "regular",
+        "id": "211273"
+      },
+      {
+        "name": "KZA",
+        "url": "https://genius.com/artists/Kza",
+        "type": "regular",
+        "id": "531431"
+      }
+    ]
+  }
+}

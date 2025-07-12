@@ -1,0 +1,3985 @@
+{
+  "letter": "U",
+  "timestamp": "2025-07-11T12:39:50.892Z",
+  "totalArtists": 662,
+  "popularCount": 20,
+  "regularCount": 642,
+  "artists": {
+    "popular": [
+      {
+        "name": "U2",
+        "url": "https://genius.com/artists/U2",
+        "type": "popular",
+        "id": "23895"
+      },
+      {
+        "name": "UB40",
+        "url": "https://genius.com/artists/Ub40",
+        "type": "popular",
+        "id": "35250"
+      },
+      {
+        "name": "Udit Narayan",
+        "url": "https://genius.com/artists/Udit-narayan",
+        "type": "popular",
+        "id": "389216"
+      },
+      {
+        "name": "UGK",
+        "url": "https://genius.com/artists/Ugk",
+        "type": "popular",
+        "id": "401"
+      },
+      {
+        "name": "uglystephan",
+        "url": "https://genius.com/artists/Uglystephan",
+        "type": "popular",
+        "id": "2317886"
+      },
+      {
+        "name": "Umair",
+        "url": "https://genius.com/artists/Umair",
+        "type": "popular",
+        "id": "1871313"
+      },
+      {
+        "name": "underscores",
+        "url": "https://genius.com/artists/Underscores",
+        "type": "popular",
+        "id": "1431511"
+      },
+      {
+        "name": "Underworld",
+        "url": "https://genius.com/artists/Underworld",
+        "type": "popular",
+        "id": "23442"
+      },
+      {
+        "name": "uniqe",
+        "url": "https://genius.com/artists/Uniqe",
+        "type": "popular",
+        "id": "2856665"
+      },
+      {
+        "name": "Unknown Artist",
+        "url": "https://genius.com/artists/Unknown-artist",
+        "type": "popular",
+        "id": "40152"
+      },
+      {
+        "name": "Unknown Author",
+        "url": "https://genius.com/artists/Unknown-author",
+        "type": "popular",
+        "id": "59137"
+      },
+      {
+        "name": "УННВ (UNNV)",
+        "url": "https://genius.com/artists/Unnv",
+        "type": "popular",
+        "id": "1009318"
+      },
+      {
+        "name": "untiljapan",
+        "url": "https://genius.com/artists/Untiljapan",
+        "type": "popular",
+        "id": "2478402"
+      },
+      {
+        "name": "Up Dharma Down",
+        "url": "https://genius.com/artists/Up-dharma-down",
+        "type": "popular",
+        "id": "363832"
+      },
+      {
+        "name": "UPPERROOM",
+        "url": "https://genius.com/artists/Upperroom",
+        "type": "popular",
+        "id": "1314469"
+      },
+      {
+        "name": "урал гайсин (ural gaysin)",
+        "url": "https://genius.com/artists/Ural-gaysin",
+        "type": "popular",
+        "id": "3637249"
+      },
+      {
+        "name": "USA For Africa",
+        "url": "https://genius.com/artists/Usa-for-africa",
+        "type": "popular",
+        "id": "370890"
+      },
+      {
+        "name": "USHER",
+        "url": "https://genius.com/artists/Usher",
+        "type": "popular",
+        "id": "132"
+      },
+      {
+        "name": "Usimamane",
+        "url": "https://genius.com/artists/Usimamane",
+        "type": "popular",
+        "id": "3626881"
+      },
+      {
+        "name": "UZI",
+        "url": "https://genius.com/artists/Uzi",
+        "type": "popular",
+        "id": "1715254"
+      }
+    ],
+    "regular": [
+      {
+        "name": "U4EA",
+        "url": "https://genius.com/artists/U4ea",
+        "type": "regular",
+        "id": "1071869"
+      },
+      {
+        "name": "U96",
+        "url": "https://genius.com/artists/U96",
+        "type": "regular",
+        "id": "380757"
+      },
+      {
+        "name": "UADA",
+        "url": "https://genius.com/artists/Uada",
+        "type": "regular",
+        "id": "1182663"
+      },
+      {
+        "name": "U. A. Fanthorpe",
+        "url": "https://genius.com/artists/U-a-fanthorpe",
+        "type": "regular",
+        "id": "173625"
+      },
+      {
+        "name": "Яu-a (Japan)",
+        "url": "https://genius.com/artists/U-a-japan",
+        "type": "regular",
+        "id": "4267442"
+      },
+      {
+        "name": "Uamee",
+        "url": "https://genius.com/artists/Uamee",
+        "type": "regular",
+        "id": "1231956"
+      },
+      {
+        "name": "Мюслі UA (Musli UA)",
+        "url": "https://genius.com/artists/Ua-musli-ua",
+        "type": "regular",
+        "id": "3146445"
+      },
+      {
+        "name": "UANA",
+        "url": "https://genius.com/artists/Uana",
+        "type": "regular",
+        "id": "2949759"
+      },
+      {
+        "name": "Uaral",
+        "url": "https://genius.com/artists/Uaral",
+        "type": "regular",
+        "id": "371852"
+      },
+      {
+        "name": "UAU",
+        "url": "https://genius.com/artists/Uau",
+        "type": "regular",
+        "id": "4398581"
+      },
+      {
+        "name": "диктатор UAV",
+        "url": "https://genius.com/artists/Uav",
+        "type": "regular",
+        "id": "1154120"
+      },
+      {
+        "name": "UBAQ",
+        "url": "https://genius.com/artists/Ubaq",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "U.BAR.E",
+        "url": "https://genius.com/artists/Ubare",
+        "type": "regular",
+        "id": "4390431"
+      },
+      {
+        "name": "UBEL",
+        "url": "https://genius.com/artists/Ubel",
+        "type": "regular",
+        "id": "3363607"
+      },
+      {
+        "name": "UBI",
+        "url": "https://genius.com/artists/Ubi",
+        "type": "regular",
+        "id": "19232"
+      },
+      {
+        "name": "Убийцы (Ubici)",
+        "url": "https://genius.com/artists/Ubici",
+        "type": "regular",
+        "id": "1378867"
+      },
+      {
+        "name": "Убитый Счастьем (Ubityi Schast’em)",
+        "url": "https://genius.com/artists/Ubityi-schastem",
+        "type": "regular",
+        "id": "3153400"
+      },
+      {
+        "name": "Uboa",
+        "url": "https://genius.com/artists/Uboa",
+        "type": "regular",
+        "id": "1892442"
+      },
+      {
+        "name": "Çubuklu Yaşar",
+        "url": "https://genius.com/artists/Cubuklu-yasar",
+        "type": "regular",
+        "id": "2505958"
+      },
+      {
+        "name": "U Calabrisi",
+        "url": "https://genius.com/artists/U-calabrisi",
+        "type": "regular",
+        "id": "4406102"
+      },
+      {
+        "name": "UCB",
+        "url": "https://genius.com/artists/Ucb",
+        "type": "regular",
+        "id": "1056433"
+      },
+      {
+        "name": "Uchana Amit",
+        "url": "https://genius.com/artists/Uchana-amit",
+        "type": "regular",
+        "id": "2044841"
+      },
+      {
+        "name": "UCHCHASH RAW",
+        "url": "https://genius.com/artists/Uchchash-raw",
+        "type": "regular",
+        "id": "3962254"
+      },
+      {
+        "name": "打首獄門同好会 (Uchikubi Gokumon Doukoukai)",
+        "url": "https://genius.com/artists/Uchikubi-gokumon-doukoukai",
+        "type": "regular",
+        "id": "1649241"
+      },
+      {
+        "name": "Uchitayy",
+        "url": "https://genius.com/artists/Uchitayy",
+        "type": "regular",
+        "id": "2922407"
+      },
+      {
+        "name": "宇宙ネコ子 (Uchu Nekoko)",
+        "url": "https://genius.com/artists/Uchu-nekoko",
+        "type": "regular",
+        "id": "2248023"
+      },
+      {
+        "name": "UCLÃ",
+        "url": "https://genius.com/artists/Ucla",
+        "type": "regular",
+        "id": "1277816"
+      },
+      {
+        "name": "UDAY",
+        "url": "https://genius.com/artists/Uday",
+        "type": "regular",
+        "id": "2924284"
+      },
+      {
+        "name": "Uday Bagri",
+        "url": "https://genius.com/artists/Uday-bagri",
+        "type": "regular",
+        "id": "3743033"
+      },
+      {
+        "name": "Uday Majumdar",
+        "url": "https://genius.com/artists/Uday-majumdar",
+        "type": "regular",
+        "id": "2646034"
+      },
+      {
+        "name": "Ude Af Kontrol",
+        "url": "https://genius.com/artists/Ude-af-kontrol",
+        "type": "regular",
+        "id": "525550"
+      },
+      {
+        "name": "Uden Filter",
+        "url": "https://genius.com/artists/Uden-filter",
+        "type": "regular",
+        "id": "1814570"
+      },
+      {
+        "name": "Udeyfa",
+        "url": "https://genius.com/artists/Udeyfa",
+        "type": "regular",
+        "id": "3142980"
+      },
+      {
+        "name": "U.D.O.",
+        "url": "https://genius.com/artists/Udo",
+        "type": "regular",
+        "id": "344760"
+      },
+      {
+        "name": "Udo Jürgens",
+        "url": "https://genius.com/artists/Udo-jurgens",
+        "type": "regular",
+        "id": "173239"
+      },
+      {
+        "name": "Udo Lindenberg",
+        "url": "https://genius.com/artists/Udo-lindenberg",
+        "type": "regular",
+        "id": "70375"
+      },
+      {
+        "name": "U.D.R",
+        "url": "https://genius.com/artists/Udr",
+        "type": "regular",
+        "id": "60294"
+      },
+      {
+        "name": "UDTT (우당탕탕 소녀단)",
+        "url": "https://genius.com/artists/Udtt",
+        "type": "regular",
+        "id": "4222314"
+      },
+      {
+        "name": "UDubb Network",
+        "url": "https://genius.com/artists/Udubb-network",
+        "type": "regular",
+        "id": "145096"
+      },
+      {
+        "name": "UEFA Champions League",
+        "url": "https://genius.com/artists/Uefa-champions-league",
+        "type": "regular",
+        "id": "65023"
+      },
+      {
+        "name": "UEFES",
+        "url": "https://genius.com/artists/Uefes",
+        "type": "regular",
+        "id": "3726900"
+      },
+      {
+        "name": "Uffie",
+        "url": "https://genius.com/artists/Uffie",
+        "type": "regular",
+        "id": "1140"
+      },
+      {
+        "name": "UFO",
+        "url": "https://genius.com/artists/Ufo",
+        "type": "regular",
+        "id": "126361"
+      },
+      {
+        "name": "Ufo361",
+        "url": "https://genius.com/artists/Ufo361",
+        "type": "regular",
+        "id": "192744"
+      },
+      {
+        "name": "UFO Fev",
+        "url": "https://genius.com/artists/Ufo-fev",
+        "type": "regular",
+        "id": "619675"
+      },
+      {
+        "name": "​ufo ufo",
+        "url": "https://genius.com/artists/Ufo-ufo",
+        "type": "regular",
+        "id": "1669345"
+      },
+      {
+        "name": "UFO Yepha",
+        "url": "https://genius.com/artists/Ufo-yepha",
+        "type": "regular",
+        "id": "454516"
+      },
+      {
+        "name": "Ufuk Çalışkan",
+        "url": "https://genius.com/artists/Ufuk-calskan",
+        "type": "regular",
+        "id": "521108"
+      },
+      {
+        "name": "Ufuk Beydemir",
+        "url": "https://genius.com/artists/Ufuk-beydemir",
+        "type": "regular",
+        "id": "1613840"
+      },
+      {
+        "name": "УГАДАЙКТО (UGADAIKTO)",
+        "url": "https://genius.com/artists/Ugadaikto",
+        "type": "regular",
+        "id": "1499062"
+      },
+      {
+        "name": "宇垣秀成 (Ugaki Hidenari)",
+        "url": "https://genius.com/artists/Ugaki-hidenari",
+        "type": "regular",
+        "id": "2344971"
+      },
+      {
+        "name": "UGCrowns",
+        "url": "https://genius.com/artists/Ugcrowns",
+        "type": "regular",
+        "id": "180405"
+      },
+      {
+        "name": "Uggly",
+        "url": "https://genius.com/artists/Uggly",
+        "type": "regular",
+        "id": "2109903"
+      },
+      {
+        "name": "Ugh Oufwey",
+        "url": "https://genius.com/artists/Ugh-oufwey",
+        "type": "regular",
+        "id": "3905808"
+      },
+      {
+        "name": "Žugi & Flowdeep",
+        "url": "https://genius.com/artists/Zugi-and-flowdeep",
+        "type": "regular",
+        "id": "1022393"
+      },
+      {
+        "name": "UGLENTA",
+        "url": "https://genius.com/artists/Uglenta",
+        "type": "regular",
+        "id": "4164205"
+      },
+      {
+        "name": "UGLY",
+        "url": "https://genius.com/artists/Ugly",
+        "type": "regular",
+        "id": "1831044"
+      },
+      {
+        "name": "ugly&bad",
+        "url": "https://genius.com/artists/Ugly-bad",
+        "type": "regular",
+        "id": "3167372"
+      },
+      {
+        "name": "Ugly Andz",
+        "url": "https://genius.com/artists/Ugly-andz",
+        "type": "regular",
+        "id": "3133098"
+      },
+      {
+        "name": "uglyassocho",
+        "url": "https://genius.com/artists/Uglyassocho",
+        "type": "regular",
+        "id": "2920537"
+      },
+      {
+        "name": "UGLY BANTLING",
+        "url": "https://genius.com/artists/Ugly-bantling",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "UGLYBOY (RUS)",
+        "url": "https://genius.com/artists/Uglyboy-rus",
+        "type": "regular",
+        "id": "2671730"
+      },
+      {
+        "name": "Ugly Casanova",
+        "url": "https://genius.com/artists/Ugly-casanova",
+        "type": "regular",
+        "id": "160045"
+      },
+      {
+        "name": "Ugly Duck",
+        "url": "https://genius.com/artists/Ugly-duck",
+        "type": "regular",
+        "id": "182692"
+      },
+      {
+        "name": "Ugly Duckling",
+        "url": "https://genius.com/artists/Ugly-duckling",
+        "type": "regular",
+        "id": "1483"
+      },
+      {
+        "name": "UglyFace",
+        "url": "https://genius.com/artists/Uglyface",
+        "type": "regular",
+        "id": "2619723"
+      },
+      {
+        "name": "Ugly God",
+        "url": "https://genius.com/artists/Ugly-god",
+        "type": "regular",
+        "id": "571062"
+      },
+      {
+        "name": "Ugly Heroes",
+        "url": "https://genius.com/artists/Ugly-heroes",
+        "type": "regular",
+        "id": "49510"
+      },
+      {
+        "name": "Ugly Kid Joe",
+        "url": "https://genius.com/artists/Ugly-kid-joe",
+        "type": "regular",
+        "id": "209911"
+      },
+      {
+        "name": "Uglynever",
+        "url": "https://genius.com/artists/Uglynever",
+        "type": "regular",
+        "id": "3675897"
+      },
+      {
+        "name": "Ugly (UK)",
+        "url": "https://genius.com/artists/Ugly-uk",
+        "type": "regular",
+        "id": "1574344"
+      },
+      {
+        "name": "ugly (USA)",
+        "url": "https://genius.com/artists/Ugly-usa",
+        "type": "regular",
+        "id": "4131369"
+      },
+      {
+        "name": "Ugo Borghetti",
+        "url": "https://genius.com/artists/Ugo-borghetti",
+        "type": "regular",
+        "id": "1037394"
+      },
+      {
+        "name": "Ugo Crepa",
+        "url": "https://genius.com/artists/Ugo-crepa",
+        "type": "regular",
+        "id": "2295560"
+      },
+      {
+        "name": "U-God",
+        "url": "https://genius.com/artists/U-god",
+        "type": "regular",
+        "id": "1060"
+      },
+      {
+        "name": "Ugolino (ITA)",
+        "url": "https://genius.com/artists/Ugolino-ita",
+        "type": "regular",
+        "id": "2290831"
+      },
+      {
+        "name": "Ugovhb",
+        "url": "https://genius.com/artists/Ugovhb",
+        "type": "regular",
+        "id": "2164479"
+      },
+      {
+        "name": "Ugress",
+        "url": "https://genius.com/artists/Ugress",
+        "type": "regular",
+        "id": "128687"
+      },
+      {
+        "name": "UHD",
+        "url": "https://genius.com/artists/Uhd",
+        "type": "regular",
+        "id": "3673662"
+      },
+      {
+        "name": "Uh Huh Her",
+        "url": "https://genius.com/artists/Uh-huh-her",
+        "type": "regular",
+        "id": "361998"
+      },
+      {
+        "name": "Uhm Jung Hwa (엄정화)",
+        "url": "https://genius.com/artists/Uhm-jung-hwa",
+        "type": "regular",
+        "id": "653541"
+      },
+      {
+        "name": "UhOhSlater",
+        "url": "https://genius.com/artists/Uhohslater",
+        "type": "regular",
+        "id": "2420454"
+      },
+      {
+        "name": "UISMA",
+        "url": "https://genius.com/artists/Uisma",
+        "type": "regular",
+        "id": "3753107"
+      },
+      {
+        "name": "UJU",
+        "url": "https://genius.com/artists/Uju",
+        "type": "regular",
+        "id": "1668824"
+      },
+      {
+        "name": "U.K.",
+        "url": "https://genius.com/artists/Uk",
+        "type": "regular",
+        "id": "360387"
+      },
+      {
+        "name": "UK Apache",
+        "url": "https://genius.com/artists/Uk-apache",
+        "type": "regular",
+        "id": "388237"
+      },
+      {
+        "name": "ukauka",
+        "url": "https://genius.com/artists/Ukauka",
+        "type": "regular",
+        "id": "4213041"
+      },
+      {
+        "name": "Ukays",
+        "url": "https://genius.com/artists/Ukays",
+        "type": "regular",
+        "id": "1298716"
+      },
+      {
+        "name": "UK Decay",
+        "url": "https://genius.com/artists/Uk-decay",
+        "type": "regular",
+        "id": "386124"
+      },
+      {
+        "name": "DA (UK Drill)",
+        "url": "https://genius.com/artists/Da-uk-drill",
+        "type": "regular",
+        "id": "2059801"
+      },
+      {
+        "name": "Ukeboy",
+        "url": "https://genius.com/artists/Ukeboy",
+        "type": "regular",
+        "id": "2017204"
+      },
+      {
+        "name": "Ukendt Kunstner",
+        "url": "https://genius.com/artists/Ukendt-kunstner",
+        "type": "regular",
+        "id": "20933"
+      },
+      {
+        "name": "Ukić",
+        "url": "https://genius.com/artists/Ukic",
+        "type": "regular",
+        "id": "3107851"
+      },
+      {
+        "name": "UKISS",
+        "url": "https://genius.com/artists/Ukiss",
+        "type": "regular",
+        "id": "358725"
+      },
+      {
+        "name": "Uki Violeta",
+        "url": "https://genius.com/artists/Uki-violeta",
+        "type": "regular",
+        "id": "3070955"
+      },
+      {
+        "name": "U-KNOW",
+        "url": "https://genius.com/artists/U-know",
+        "type": "regular",
+        "id": "1225791"
+      },
+      {
+        "name": "尾上右近 (Ukon Onoe)",
+        "url": "https://genius.com/artists/Ukon-onoe",
+        "type": "regular",
+        "id": "4241460"
+      },
+      {
+        "name": "Ukoo Flani Mau Mau",
+        "url": "https://genius.com/artists/Ukoo-flani-mau-mau",
+        "type": "regular",
+        "id": "1107351"
+      },
+      {
+        "name": "Український народ (Ukrainian folk)",
+        "url": "https://genius.com/artists/Ukrainian-folk",
+        "type": "regular",
+        "id": "3224113"
+      },
+      {
+        "name": "U škripcu",
+        "url": "https://genius.com/artists/U-skripcu",
+        "type": "regular",
+        "id": "3033011"
+      },
+      {
+        "name": "UkrTrashDub 2.0",
+        "url": "https://genius.com/artists/Ukrtrashdub-20",
+        "type": "regular",
+        "id": "1433129"
+      },
+      {
+        "name": "UK Subs",
+        "url": "https://genius.com/artists/Uk-subs",
+        "type": "regular",
+        "id": "212478"
+      },
+      {
+        "name": "Ukte",
+        "url": "https://genius.com/artists/Ukte",
+        "type": "regular",
+        "id": "2614540"
+      },
+      {
+        "name": "U.L.A.Ş (TUR)",
+        "url": "https://genius.com/artists/Ulas-tur",
+        "type": "regular",
+        "id": "165541"
+      },
+      {
+        "name": "Ulcerate",
+        "url": "https://genius.com/artists/Ulcerate",
+        "type": "regular",
+        "id": "354515"
+      },
+      {
+        "name": "ULD",
+        "url": "https://genius.com/artists/Uld",
+        "type": "regular",
+        "id": "4022214"
+      },
+      {
+        "name": "Ulepuschkinrose",
+        "url": "https://genius.com/artists/Ulepuschkinrose",
+        "type": "regular",
+        "id": "2144031"
+      },
+      {
+        "name": "Ulf Leo Sommer",
+        "url": "https://genius.com/artists/Ulf-leo-sommer",
+        "type": "regular",
+        "id": "1016299"
+      },
+      {
+        "name": "Ulf Lundell",
+        "url": "https://genius.com/artists/Ulf-lundell",
+        "type": "regular",
+        "id": "361981"
+      },
+      {
+        "name": "Ulf Peder Olrog",
+        "url": "https://genius.com/artists/Ulf-peder-olrog",
+        "type": "regular",
+        "id": "1230873"
+      },
+      {
+        "name": "ウルフルズ (Ulfuls)",
+        "url": "https://genius.com/artists/Ulfuls",
+        "type": "regular",
+        "id": "2028151"
+      },
+      {
+        "name": "​uli",
+        "url": "https://genius.com/artists/Uli",
+        "type": "regular",
+        "id": "3391321"
+      },
+      {
+        "name": "Ulices Chaidez",
+        "url": "https://genius.com/artists/Ulices-chaidez",
+        "type": "regular",
+        "id": "1064469"
+      },
+      {
+        "name": "Ulices Chaidez Y Sus Plebes",
+        "url": "https://genius.com/artists/Ulices-chaidez-y-sus-plebes",
+        "type": "regular",
+        "id": "1064468"
+      },
+      {
+        "name": "Ulige Numre",
+        "url": "https://genius.com/artists/Ulige-numre",
+        "type": "regular",
+        "id": "177049"
+      },
+      {
+        "name": "Uli K",
+        "url": "https://genius.com/artists/Uli-k",
+        "type": "regular",
+        "id": "588639"
+      },
+      {
+        "name": "Ulises Bueno",
+        "url": "https://genius.com/artists/Ulises-bueno",
+        "type": "regular",
+        "id": "1504461"
+      },
+      {
+        "name": "ULITSA BATTLE",
+        "url": "https://genius.com/artists/Ulitsa-battle",
+        "type": "regular",
+        "id": "3463459"
+      },
+      {
+        "name": "Улица Восток (Ulitsa Vostok)",
+        "url": "https://genius.com/artists/Ulitsa-vostok",
+        "type": "regular",
+        "id": "2514370"
+      },
+      {
+        "name": "Ульяна Каракоз (Uliyana Karakoz)",
+        "url": "https://genius.com/artists/Uliyana-karakoz",
+        "type": "regular",
+        "id": "2727529"
+      },
+      {
+        "name": "Ullah",
+        "url": "https://genius.com/artists/Ullah",
+        "type": "regular",
+        "id": "4278406"
+      },
+      {
+        "name": "Ulpu",
+        "url": "https://genius.com/artists/Ulpu",
+        "type": "regular",
+        "id": "249499"
+      },
+      {
+        "name": "Ulrich Schnauss",
+        "url": "https://genius.com/artists/Ulrich-schnauss",
+        "type": "regular",
+        "id": "365361"
+      },
+      {
+        "name": "Ulrika lundkvist",
+        "url": "https://genius.com/artists/Ulrika-lundkvist",
+        "type": "regular",
+        "id": "453205"
+      },
+      {
+        "name": "Ulrika Spacek",
+        "url": "https://genius.com/artists/Ulrika-spacek",
+        "type": "regular",
+        "id": "1535805"
+      },
+      {
+        "name": "Ulrikke",
+        "url": "https://genius.com/artists/Ulrikke",
+        "type": "regular",
+        "id": "1092717"
+      },
+      {
+        "name": "Ulrik Munther",
+        "url": "https://genius.com/artists/Ulrik-munther",
+        "type": "regular",
+        "id": "371580"
+      },
+      {
+        "name": "Ultar",
+        "url": "https://genius.com/artists/Ultar",
+        "type": "regular",
+        "id": "1462592"
+      },
+      {
+        "name": "Ul'Team Atom",
+        "url": "https://genius.com/artists/Ulteam-atom",
+        "type": "regular",
+        "id": "18418"
+      },
+      {
+        "name": "Ultha",
+        "url": "https://genius.com/artists/Ultha",
+        "type": "regular",
+        "id": "1179728"
+      },
+      {
+        "name": "Ultima Frontiera",
+        "url": "https://genius.com/artists/Ultima-frontiera",
+        "type": "regular",
+        "id": "2226951"
+      },
+      {
+        "name": "Ultimate Heroes",
+        "url": "https://genius.com/artists/Ultimate-heroes",
+        "type": "regular",
+        "id": "529249"
+      },
+      {
+        "name": "Ultimate Painting",
+        "url": "https://genius.com/artists/Ultimate-painting",
+        "type": "regular",
+        "id": "1244697"
+      },
+      {
+        "name": "Ultimate Spinach",
+        "url": "https://genius.com/artists/Ultimate-spinach",
+        "type": "regular",
+        "id": "383488"
+      },
+      {
+        "name": "Ultima Thule",
+        "url": "https://genius.com/artists/Ultima-thule",
+        "type": "regular",
+        "id": "353580"
+      },
+      {
+        "name": "Ultimo",
+        "url": "https://genius.com/artists/Ultimo",
+        "type": "regular",
+        "id": "1098915"
+      },
+      {
+        "name": "Ultra",
+        "url": "https://genius.com/artists/Ultra",
+        "type": "regular",
+        "id": "9579"
+      },
+      {
+        "name": "Ultrabeat",
+        "url": "https://genius.com/artists/Ultrabeat",
+        "type": "regular",
+        "id": "367788"
+      },
+      {
+        "name": "Ultra Bra",
+        "url": "https://genius.com/artists/Ultra-bra",
+        "type": "regular",
+        "id": "344707"
+      },
+      {
+        "name": "Ultraflex",
+        "url": "https://genius.com/artists/Ultraflex",
+        "type": "regular",
+        "id": "2230510"
+      },
+      {
+        "name": "Ultraista",
+        "url": "https://genius.com/artists/Ultraista",
+        "type": "regular",
+        "id": "31395"
+      },
+      {
+        "name": "Ultraje a Rigor",
+        "url": "https://genius.com/artists/Ultraje-a-rigor",
+        "type": "regular",
+        "id": "358001"
+      },
+      {
+        "name": "Ultralágrima",
+        "url": "https://genius.com/artists/Ultralagrima",
+        "type": "regular",
+        "id": "3532217"
+      },
+      {
+        "name": "Ultraligera",
+        "url": "https://genius.com/artists/Ultraligera",
+        "type": "regular",
+        "id": "3619203"
+      },
+      {
+        "name": "ultralone",
+        "url": "https://genius.com/artists/Ultralone",
+        "type": "regular",
+        "id": "3508982"
+      },
+      {
+        "name": "Ultramagnetic MC's",
+        "url": "https://genius.com/artists/Ultramagnetic-mcs",
+        "type": "regular",
+        "id": "7155"
+      },
+      {
+        "name": "Ultra Naté",
+        "url": "https://genius.com/artists/Ultra-nate",
+        "type": "regular",
+        "id": "354311"
+      },
+      {
+        "name": "Ultra Q",
+        "url": "https://genius.com/artists/Ultra-q",
+        "type": "regular",
+        "id": "1137490"
+      },
+      {
+        "name": "Ultras Ahlawy",
+        "url": "https://genius.com/artists/Ultras-ahlawy",
+        "type": "regular",
+        "id": "2423886"
+      },
+      {
+        "name": "Ultras Eagles 06",
+        "url": "https://genius.com/artists/Ultras-eagles-06",
+        "type": "regular",
+        "id": "1648213"
+      },
+      {
+        "name": "Ultras Fanatic Reds",
+        "url": "https://genius.com/artists/Ultras-fanatic-reds",
+        "type": "regular",
+        "id": "3949821"
+      },
+      {
+        "name": "Ultras GreenBoys 2005",
+        "url": "https://genius.com/artists/Ultras-greenboys-2005",
+        "type": "regular",
+        "id": "2862370"
+      },
+      {
+        "name": "Ultras Inferno",
+        "url": "https://genius.com/artists/Ultras-inferno",
+        "type": "regular",
+        "id": "1677085"
+      },
+      {
+        "name": "Ultras L'Emkachkhines - ألتراس لمكشخين",
+        "url": "https://genius.com/artists/Ultras-lemkachkhines",
+        "type": "regular",
+        "id": "1858410"
+      },
+      {
+        "name": "Ultraspank",
+        "url": "https://genius.com/artists/Ultraspank",
+        "type": "regular",
+        "id": "369684"
+      },
+      {
+        "name": "ULTRA SUNN",
+        "url": "https://genius.com/artists/Ultra-sunn",
+        "type": "regular",
+        "id": "3347857"
+      },
+      {
+        "name": "Ultras Winners 2005",
+        "url": "https://genius.com/artists/Ultras-winners-2005",
+        "type": "regular",
+        "id": "1491671"
+      },
+      {
+        "name": "Ultra Vivid Scene",
+        "url": "https://genius.com/artists/Ultra-vivid-scene",
+        "type": "regular",
+        "id": "353692"
+      },
+      {
+        "name": "Ultra Vomit",
+        "url": "https://genius.com/artists/Ultra-vomit",
+        "type": "regular",
+        "id": "357842"
+      },
+      {
+        "name": "Ultravox",
+        "url": "https://genius.com/artists/Ultravox",
+        "type": "regular",
+        "id": "44801"
+      },
+      {
+        "name": "Ulukmanapo",
+        "url": "https://genius.com/artists/Ulukmanapo",
+        "type": "regular",
+        "id": "2024231"
+      },
+      {
+        "name": "Ulukmanapo & BALLER",
+        "url": "https://genius.com/artists/Ulukmanapo-and-baller",
+        "type": "regular",
+        "id": "3947405"
+      },
+      {
+        "name": "Ulukmanapo & BAPAY",
+        "url": "https://genius.com/artists/Ulukmanapo-and-bapay",
+        "type": "regular",
+        "id": "3909688"
+      },
+      {
+        "name": "Ulukmanapo & Бегиш (Begish)",
+        "url": "https://genius.com/artists/Ulukmanapo-and-begish",
+        "type": "regular",
+        "id": "3589850"
+      },
+      {
+        "name": "Ulukmanapo & FREEMAN 996",
+        "url": "https://genius.com/artists/Ulukmanapo-and-freeman-996",
+        "type": "regular",
+        "id": "4206172"
+      },
+      {
+        "name": "Ulver",
+        "url": "https://genius.com/artists/Ulver",
+        "type": "regular",
+        "id": "362145"
+      },
+      {
+        "name": "Ульяна Столярова (Ulyana Stolyarova)",
+        "url": "https://genius.com/artists/Ulyana-stolyarova",
+        "type": "regular",
+        "id": "3486966"
+      },
+      {
+        "name": "Ulysse",
+        "url": "https://genius.com/artists/Ulysse",
+        "type": "regular",
+        "id": "1031347"
+      },
+      {
+        "name": "Ulysse (FRA)",
+        "url": "https://genius.com/artists/Ulysse-fra",
+        "type": "regular",
+        "id": "4148891"
+      },
+      {
+        "name": "​ulysse (RU)",
+        "url": "https://genius.com/artists/Ulysse-ru",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Uma",
+        "url": "https://genius.com/artists/Uma",
+        "type": "regular",
+        "id": "2103729"
+      },
+      {
+        "name": "Uma2rman",
+        "url": "https://genius.com/artists/Uma2rman",
+        "type": "regular",
+        "id": "355538"
+      },
+      {
+        "name": "Uma2rman & Ума Кристовская (Uma Kristovskaya)",
+        "url": "https://genius.com/artists/Uma2rman-and-uma-kristovskaya",
+        "type": "regular",
+        "id": "4232550"
+      },
+      {
+        "name": "Umair Butt",
+        "url": "https://genius.com/artists/Umair-butt",
+        "type": "regular",
+        "id": "3966374"
+      },
+      {
+        "name": "Uma Juma",
+        "url": "https://genius.com/artists/Uma-juma",
+        "type": "regular",
+        "id": "530432"
+      },
+      {
+        "name": "Uma Kompton",
+        "url": "https://genius.com/artists/Uma-kompton",
+        "type": "regular",
+        "id": "624674"
+      },
+      {
+        "name": "Umami Tsunami",
+        "url": "https://genius.com/artists/Umami-tsunami",
+        "type": "regular",
+        "id": "3398988"
+      },
+      {
+        "name": "Umanji",
+        "url": "https://genius.com/artists/Umanji",
+        "type": "regular",
+        "id": "2241624"
+      },
+      {
+        "name": "UMARUCHAN OP",
+        "url": "https://genius.com/artists/Umaruchan-op",
+        "type": "regular",
+        "id": "1551285"
+      },
+      {
+        "name": "Uma Thurman",
+        "url": "https://genius.com/artists/Uma-thurman",
+        "type": "regular",
+        "id": "44731"
+      },
+      {
+        "name": "Umay Shahab",
+        "url": "https://genius.com/artists/Umay-shahab",
+        "type": "regular",
+        "id": "3961813"
+      },
+      {
+        "name": "Um Barril de Rap",
+        "url": "https://genius.com/artists/Um-barril-de-rap",
+        "type": "regular",
+        "id": "507600"
+      },
+      {
+        "name": "Umberto Balsamo",
+        "url": "https://genius.com/artists/Umberto-balsamo",
+        "type": "regular",
+        "id": "382738"
+      },
+      {
+        "name": "Umberto Bindi",
+        "url": "https://genius.com/artists/Umberto-bindi",
+        "type": "regular",
+        "id": "364658"
+      },
+      {
+        "name": "Umberto Tozzi",
+        "url": "https://genius.com/artists/Umberto-tozzi",
+        "type": "regular",
+        "id": "354463"
+      },
+      {
+        "name": "Umbra Et Imago",
+        "url": "https://genius.com/artists/Umbra-et-imago",
+        "type": "regular",
+        "id": "355723"
+      },
+      {
+        "name": "UmbraticForest",
+        "url": "https://genius.com/artists/Umbraticforest",
+        "type": "regular",
+        "id": "1633235"
+      },
+      {
+        "name": "The UMC's",
+        "url": "https://genius.com/artists/The-umcs",
+        "type": "regular",
+        "id": "11061"
+      },
+      {
+        "name": "梅田サイファー (Umedacypher)",
+        "url": "https://genius.com/artists/Umedacypher",
+        "type": "regular",
+        "id": "2580045"
+      },
+      {
+        "name": "Umer Anjum",
+        "url": "https://genius.com/artists/Umer-anjum",
+        "type": "regular",
+        "id": "2770811"
+      },
+      {
+        "name": "UMERTVIE",
+        "url": "https://genius.com/artists/Umertvie",
+        "type": "regular",
+        "id": "2111946"
+      },
+      {
+        "name": "梅とら (Umetora)",
+        "url": "https://genius.com/artists/Umetora",
+        "type": "regular",
+        "id": "1010427"
+      },
+      {
+        "name": "UMI",
+        "url": "https://genius.com/artists/Umi",
+        "type": "regular",
+        "id": "1303282"
+      },
+      {
+        "name": "Ум и Хрум (Um I Hrum)",
+        "url": "https://genius.com/artists/Um-i-hrum",
+        "type": "regular",
+        "id": "4250032"
+      },
+      {
+        "name": "Umiso",
+        "url": "https://genius.com/artists/Umiso",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Um Jammer Lammy",
+        "url": "https://genius.com/artists/Um-jammer-lammy",
+        "type": "regular",
+        "id": "1137435"
+      },
+      {
+        "name": "Um, Jennifer?",
+        "url": "https://genius.com/artists/Um-jennifer",
+        "type": "regular",
+        "id": "3593575"
+      },
+      {
+        "name": "Ummet Ozcan",
+        "url": "https://genius.com/artists/Ummet-ozcan",
+        "type": "regular",
+        "id": "259093"
+      },
+      {
+        "name": "Umm Kulthum - أم كلثوم",
+        "url": "https://genius.com/artists/Umm-kulthum",
+        "type": "regular",
+        "id": "401136"
+      },
+      {
+        "name": "Umphrey's McGee",
+        "url": "https://genius.com/artists/Umphreys-mcgee",
+        "type": "regular",
+        "id": "61586"
+      },
+      {
+        "name": "​umru",
+        "url": "https://genius.com/artists/Umru",
+        "type": "regular",
+        "id": "672136"
+      },
+      {
+        "name": "Umse",
+        "url": "https://genius.com/artists/Umse",
+        "type": "regular",
+        "id": "27169"
+      },
+      {
+        "name": "UMSY",
+        "url": "https://genius.com/artists/Umsy",
+        "type": "regular",
+        "id": "1684685"
+      },
+      {
+        "name": "Umtrillest",
+        "url": "https://genius.com/artists/Umtrillest",
+        "type": "regular",
+        "id": "1989135"
+      },
+      {
+        "name": "Umut Capone",
+        "url": "https://genius.com/artists/Umut-capone",
+        "type": "regular",
+        "id": "2082425"
+      },
+      {
+        "name": "Umut Kaya",
+        "url": "https://genius.com/artists/Umut-kaya",
+        "type": "regular",
+        "id": "484131"
+      },
+      {
+        "name": "Umut Timur",
+        "url": "https://genius.com/artists/Umut-timur",
+        "type": "regular",
+        "id": "1181804"
+      },
+      {
+        "name": "UmYull (음율)",
+        "url": "https://genius.com/artists/Umyull",
+        "type": "regular",
+        "id": "4063345"
+      },
+      {
+        "name": "Unabomber",
+        "url": "https://genius.com/artists/Unabomber",
+        "type": "regular",
+        "id": "42937"
+      },
+      {
+        "name": "Unaii",
+        "url": "https://genius.com/artists/Unaii",
+        "type": "regular",
+        "id": "4096490"
+      },
+      {
+        "name": "Unamused Dave",
+        "url": "https://genius.com/artists/Unamused-dave",
+        "type": "regular",
+        "id": "2300904"
+      },
+      {
+        "name": "Unantastbar",
+        "url": "https://genius.com/artists/Unantastbar",
+        "type": "regular",
+        "id": "356483"
+      },
+      {
+        "name": "Una Rams",
+        "url": "https://genius.com/artists/Una-rams",
+        "type": "regular",
+        "id": "415597"
+      },
+      {
+        "name": "Una Torfa",
+        "url": "https://genius.com/artists/Una-torfa",
+        "type": "regular",
+        "id": "3423460"
+      },
+      {
+        "name": "​unavailable (Producer)",
+        "url": "https://genius.com/artists/Unavailable-producer",
+        "type": "regular",
+        "id": "1320760"
+      },
+      {
+        "name": "Unavantaluna",
+        "url": "https://genius.com/artists/Unavantaluna",
+        "type": "regular",
+        "id": "3646524"
+      },
+      {
+        "name": "UNAVERAGE GANG",
+        "url": "https://genius.com/artists/Unaverage-gang",
+        "type": "regular",
+        "id": "1036543"
+      },
+      {
+        "name": "Unbekannter Verfasser",
+        "url": "https://genius.com/artists/Unbekannter-verfasser",
+        "type": "regular",
+        "id": "157079"
+      },
+      {
+        "name": "Unbelievable Truth",
+        "url": "https://genius.com/artists/Unbelievable-truth",
+        "type": "regular",
+        "id": "364297"
+      },
+      {
+        "name": "Unbreakable Kimmy Schmidt",
+        "url": "https://genius.com/artists/Unbreakable-kimmy-schmidt",
+        "type": "regular",
+        "id": "341098"
+      },
+      {
+        "name": "Unbroken",
+        "url": "https://genius.com/artists/Unbroken",
+        "type": "regular",
+        "id": "360016"
+      },
+      {
+        "name": "Unbunny",
+        "url": "https://genius.com/artists/Unbunny",
+        "type": "regular",
+        "id": "343829"
+      },
+      {
+        "name": "Uncle Acid & The Deadbeats",
+        "url": "https://genius.com/artists/Uncle-acid-and-the-deadbeats",
+        "type": "regular",
+        "id": "245338"
+      },
+      {
+        "name": "Uncle Answers",
+        "url": "https://genius.com/artists/Uncle-answers",
+        "type": "regular",
+        "id": "2052201"
+      },
+      {
+        "name": "UncleBassy",
+        "url": "https://genius.com/artists/Unclebassy",
+        "type": "regular",
+        "id": "4202656"
+      },
+      {
+        "name": "Uncle Charlie",
+        "url": "https://genius.com/artists/Uncle-charlie",
+        "type": "regular",
+        "id": "2991036"
+      },
+      {
+        "name": "Uncle Chris",
+        "url": "https://genius.com/artists/Uncle-chris",
+        "type": "regular",
+        "id": "2017752"
+      },
+      {
+        "name": "Uncle Dane",
+        "url": "https://genius.com/artists/Uncle-dane",
+        "type": "regular",
+        "id": "666045"
+      },
+      {
+        "name": "Uncle Dave Macon",
+        "url": "https://genius.com/artists/Uncle-dave-macon",
+        "type": "regular",
+        "id": "387271"
+      },
+      {
+        "name": "Uncle Earl",
+        "url": "https://genius.com/artists/Uncle-earl",
+        "type": "regular",
+        "id": "372609"
+      },
+      {
+        "name": "Uncle F",
+        "url": "https://genius.com/artists/Uncle-f",
+        "type": "regular",
+        "id": "2324496"
+      },
+      {
+        "name": "UncleFlexxx",
+        "url": "https://genius.com/artists/Uncleflexxx",
+        "type": "regular",
+        "id": "2540632"
+      },
+      {
+        "name": "Uncle James",
+        "url": "https://genius.com/artists/Uncle-james",
+        "type": "regular",
+        "id": "1839596"
+      },
+      {
+        "name": "UncleKamo",
+        "url": "https://genius.com/artists/Unclekamo",
+        "type": "regular",
+        "id": "1928842"
+      },
+      {
+        "name": "Uncle Kracker",
+        "url": "https://genius.com/artists/Uncle-kracker",
+        "type": "regular",
+        "id": "2437"
+      },
+      {
+        "name": "Uncle Lucius",
+        "url": "https://genius.com/artists/Uncle-lucius",
+        "type": "regular",
+        "id": "405880"
+      },
+      {
+        "name": "Uncle Murda",
+        "url": "https://genius.com/artists/Uncle-murda",
+        "type": "regular",
+        "id": "490"
+      },
+      {
+        "name": "Uncle Outrage",
+        "url": "https://genius.com/artists/Uncle-outrage",
+        "type": "regular",
+        "id": "372275"
+      },
+      {
+        "name": "uncle pecos",
+        "url": "https://genius.com/artists/Uncle-pecos",
+        "type": "regular",
+        "id": "4022296"
+      },
+      {
+        "name": "Uncle Reece",
+        "url": "https://genius.com/artists/Uncle-reece",
+        "type": "regular",
+        "id": "36562"
+      },
+      {
+        "name": "Uncle Ruckus",
+        "url": "https://genius.com/artists/Uncle-ruckus",
+        "type": "regular",
+        "id": "1543491"
+      },
+      {
+        "name": "Uncle Sabu & Co.",
+        "url": "https://genius.com/artists/Uncle-sabu-and-co",
+        "type": "regular",
+        "id": "530541"
+      },
+      {
+        "name": "Uncle Sam (R&B)",
+        "url": "https://genius.com/artists/Uncle-sam-r-b",
+        "type": "regular",
+        "id": "2449086"
+      },
+      {
+        "name": "Uncle Sinner",
+        "url": "https://genius.com/artists/Uncle-sinner",
+        "type": "regular",
+        "id": "2062947"
+      },
+      {
+        "name": "Uncle Tupelo",
+        "url": "https://genius.com/artists/Uncle-tupelo",
+        "type": "regular",
+        "id": "137044"
+      },
+      {
+        "name": "Uncle Waffles",
+        "url": "https://genius.com/artists/Uncle-waffles",
+        "type": "regular",
+        "id": "3095549"
+      },
+      {
+        "name": "The Uncluded",
+        "url": "https://genius.com/artists/The-uncluded",
+        "type": "regular",
+        "id": "30555"
+      },
+      {
+        "name": "UncoJingJong",
+        "url": "https://genius.com/artists/Uncojingjong",
+        "type": "regular",
+        "id": "3179912"
+      },
+      {
+        "name": "Uncool MC",
+        "url": "https://genius.com/artists/Uncool-mc",
+        "type": "regular",
+        "id": "3611762"
+      },
+      {
+        "name": "Un Corazón",
+        "url": "https://genius.com/artists/Un-corazon",
+        "type": "regular",
+        "id": "483889"
+      },
+      {
+        "name": "Uncs (Sin Squad)",
+        "url": "https://genius.com/artists/Uncs-sin-squad",
+        "type": "regular",
+        "id": "1404034"
+      },
+      {
+        "name": "Uncured",
+        "url": "https://genius.com/artists/Uncured",
+        "type": "regular",
+        "id": "1812212"
+      },
+      {
+        "name": "ℒund",
+        "url": "https://genius.com/artists/Lund",
+        "type": "regular",
+        "id": "650935"
+      },
+      {
+        "name": "Undacava",
+        "url": "https://genius.com/artists/Undacava",
+        "type": "regular",
+        "id": "1654022"
+      },
+      {
+        "name": "UNDADASEA",
+        "url": "https://genius.com/artists/Undadasea",
+        "type": "regular",
+        "id": "1143655"
+      },
+      {
+        "name": "UNDEAD CORPORATION",
+        "url": "https://genius.com/artists/Undead-corporation",
+        "type": "regular",
+        "id": "1574182"
+      },
+      {
+        "name": "UNDEAD PAPI",
+        "url": "https://genius.com/artists/Undead-papi",
+        "type": "regular",
+        "id": "1475119"
+      },
+      {
+        "name": "Undead Ronin",
+        "url": "https://genius.com/artists/Undead-ronin",
+        "type": "regular",
+        "id": "2405011"
+      },
+      {
+        "name": "Undead Slayer",
+        "url": "https://genius.com/artists/Undead-slayer",
+        "type": "regular",
+        "id": "1609921"
+      },
+      {
+        "name": "Undeath",
+        "url": "https://genius.com/artists/Undeath",
+        "type": "regular",
+        "id": "2483229"
+      },
+      {
+        "name": "The Underachievers",
+        "url": "https://genius.com/artists/The-underachievers",
+        "type": "regular",
+        "id": "22853"
+      },
+      {
+        "name": "Underaiki",
+        "url": "https://genius.com/artists/Underaiki",
+        "type": "regular",
+        "id": "1960006"
+      },
+      {
+        "name": "Underarmor Clique",
+        "url": "https://genius.com/artists/Underarmor-clique",
+        "type": "regular",
+        "id": "3956854"
+      },
+      {
+        "name": "The Undercover Dream Lovers",
+        "url": "https://genius.com/artists/The-undercover-dream-lovers",
+        "type": "regular",
+        "id": "1042504"
+      },
+      {
+        "name": "Underdog",
+        "url": "https://genius.com/artists/Underdog",
+        "type": "regular",
+        "id": "51032"
+      },
+      {
+        "name": "UnderDogg - אנדרדוג",
+        "url": "https://genius.com/artists/Underdogg",
+        "type": "regular",
+        "id": "1132293"
+      },
+      {
+        "name": "The Underdog Project",
+        "url": "https://genius.com/artists/The-underdog-project",
+        "type": "regular",
+        "id": "372444"
+      },
+      {
+        "name": "Underdos - אנדרדוס",
+        "url": "https://genius.com/artists/Underdos",
+        "type": "regular",
+        "id": "4195699"
+      },
+      {
+        "name": "The Underground Avengers",
+        "url": "https://genius.com/artists/The-underground-avengers",
+        "type": "regular",
+        "id": "1548377"
+      },
+      {
+        "name": "Underground Genius",
+        "url": "https://genius.com/artists/Underground-genius",
+        "type": "regular",
+        "id": "3201250"
+      },
+      {
+        "name": "Underground Sound",
+        "url": "https://genius.com/artists/Underground-sound",
+        "type": "regular",
+        "id": "3999145"
+      },
+      {
+        "name": "The Underground Youth",
+        "url": "https://genius.com/artists/The-underground-youth",
+        "type": "regular",
+        "id": "356335"
+      },
+      {
+        "name": "UNDERGRUNN",
+        "url": "https://genius.com/artists/Undergrunn",
+        "type": "regular",
+        "id": "1416563"
+      },
+      {
+        "name": "Underman (ROU)",
+        "url": "https://genius.com/artists/Underman-rou",
+        "type": "regular",
+        "id": "4432509"
+      },
+      {
+        "name": "Underoath",
+        "url": "https://genius.com/artists/Underoath",
+        "type": "regular",
+        "id": "48927"
+      },
+      {
+        "name": "Under Side 821",
+        "url": "https://genius.com/artists/Under-side-821",
+        "type": "regular",
+        "id": "613332"
+      },
+      {
+        "name": "Underskyz, Kung Fu Junkie",
+        "url": "https://genius.com/artists/Underskyz-kung-fu-junkie",
+        "type": "regular",
+        "id": "3645021"
+      },
+      {
+        "name": "UNDERTALE (Game Series)",
+        "url": "https://genius.com/artists/Undertale-game-series",
+        "type": "regular",
+        "id": "636275"
+      },
+      {
+        "name": "Under The Rug",
+        "url": "https://genius.com/artists/Under-the-rug",
+        "type": "regular",
+        "id": "1561466"
+      },
+      {
+        "name": "The Undertones",
+        "url": "https://genius.com/artists/The-undertones",
+        "type": "regular",
+        "id": "60331"
+      },
+      {
+        "name": "UnderWHAT?",
+        "url": "https://genius.com/artists/Underwhat",
+        "type": "regular",
+        "id": "323234"
+      },
+      {
+        "name": "Ундервуд (Underwood)",
+        "url": "https://genius.com/artists/Underwood",
+        "type": "regular",
+        "id": "1929643"
+      },
+      {
+        "name": "Underworld Skunk",
+        "url": "https://genius.com/artists/Underworld-skunk",
+        "type": "regular",
+        "id": "2243007"
+      },
+      {
+        "name": "Undignified Baby",
+        "url": "https://genius.com/artists/Undignified-baby",
+        "type": "regular",
+        "id": "3507250"
+      },
+      {
+        "name": "The Undisputed Truth",
+        "url": "https://genius.com/artists/The-undisputed-truth",
+        "type": "regular",
+        "id": "68332"
+      },
+      {
+        "name": "UNDREAM",
+        "url": "https://genius.com/artists/Undream",
+        "type": "regular",
+        "id": "2344248"
+      },
+      {
+        "name": "UNDRESSD",
+        "url": "https://genius.com/artists/Undressd",
+        "type": "regular",
+        "id": "1846699"
+      },
+      {
+        "name": "Undying",
+        "url": "https://genius.com/artists/Undying",
+        "type": "regular",
+        "id": "362607"
+      },
+      {
+        "name": "Unearth",
+        "url": "https://genius.com/artists/Unearth",
+        "type": "regular",
+        "id": "355755"
+      },
+      {
+        "name": "UNEDUCATED KID",
+        "url": "https://genius.com/artists/Uneducated-kid",
+        "type": "regular",
+        "id": "1415851"
+      },
+      {
+        "name": "UNEEK (Uneekflow)",
+        "url": "https://genius.com/artists/Uneek-uneekflow",
+        "type": "regular",
+        "id": "3741991"
+      },
+      {
+        "name": "UneXpect",
+        "url": "https://genius.com/artists/Unexpect",
+        "type": "regular",
+        "id": "354421"
+      },
+      {
+        "name": "Unfamouslouie",
+        "url": "https://genius.com/artists/Unfamouslouie",
+        "type": "regular",
+        "id": "2869337"
+      },
+      {
+        "name": "unfazed (BRA)",
+        "url": "https://genius.com/artists/Unfazed-bra",
+        "type": "regular",
+        "id": "4305766"
+      },
+      {
+        "name": "Unflirt",
+        "url": "https://genius.com/artists/Unflirt",
+        "type": "regular",
+        "id": "2402995"
+      },
+      {
+        "name": "Unfoonk",
+        "url": "https://genius.com/artists/Unfoonk",
+        "type": "regular",
+        "id": "997104"
+      },
+      {
+        "name": "Unforgettable Popstar",
+        "url": "https://genius.com/artists/Unforgettable-popstar",
+        "type": "regular",
+        "id": "4433898"
+      },
+      {
+        "name": "​​unfuckman",
+        "url": "https://genius.com/artists/Unfuckman",
+        "type": "regular",
+        "id": "2925082"
+      },
+      {
+        "name": "Unghetto",
+        "url": "https://genius.com/artists/Unghetto",
+        "type": "regular",
+        "id": "1137967"
+      },
+      {
+        "name": "UNG-SKAB",
+        "url": "https://genius.com/artists/Ung-skab",
+        "type": "regular",
+        "id": "2798763"
+      },
+      {
+        "name": "Ungu",
+        "url": "https://genius.com/artists/Ungu",
+        "type": "regular",
+        "id": "367197"
+      },
+      {
+        "name": "The Unguided",
+        "url": "https://genius.com/artists/The-unguided",
+        "type": "regular",
+        "id": "357537"
+      },
+      {
+        "name": "Unheilig",
+        "url": "https://genius.com/artists/Unheilig",
+        "type": "regular",
+        "id": "41800"
+      },
+      {
+        "name": "Unholy Modal Rounders",
+        "url": "https://genius.com/artists/Unholy-modal-rounders",
+        "type": "regular",
+        "id": "4100049"
+      },
+      {
+        "name": "U-N-I",
+        "url": "https://genius.com/artists/U-n-i",
+        "type": "regular",
+        "id": "1572539"
+      },
+      {
+        "name": "UNI5",
+        "url": "https://genius.com/artists/Uni5",
+        "type": "regular",
+        "id": "1456774"
+      },
+      {
+        "name": "Unic",
+        "url": "https://genius.com/artists/Unic",
+        "type": "regular",
+        "id": "483396"
+      },
+      {
+        "name": "Unicorn Academy",
+        "url": "https://genius.com/artists/Unicorn-academy",
+        "type": "regular",
+        "id": "4025254"
+      },
+      {
+        "name": "The Unicorns",
+        "url": "https://genius.com/artists/The-unicorns",
+        "type": "regular",
+        "id": "53347"
+      },
+      {
+        "name": "Unida",
+        "url": "https://genius.com/artists/Unida",
+        "type": "regular",
+        "id": "375531"
+      },
+      {
+        "name": "The Unifics",
+        "url": "https://genius.com/artists/The-unifics",
+        "type": "regular",
+        "id": "643987"
+      },
+      {
+        "name": "Unified Highway",
+        "url": "https://genius.com/artists/Unified-highway",
+        "type": "regular",
+        "id": "1020011"
+      },
+      {
+        "name": "Unified Sound",
+        "url": "https://genius.com/artists/Unified-sound",
+        "type": "regular",
+        "id": "3030619"
+      },
+      {
+        "name": "Uniform",
+        "url": "https://genius.com/artists/Uniform",
+        "type": "regular",
+        "id": "227662"
+      },
+      {
+        "name": "Uniform Choice",
+        "url": "https://genius.com/artists/Uniform-choice",
+        "type": "regular",
+        "id": "373800"
+      },
+      {
+        "name": "Uniikki",
+        "url": "https://genius.com/artists/Uniikki",
+        "type": "regular",
+        "id": "452687"
+      },
+      {
+        "name": "UNIIQU3",
+        "url": "https://genius.com/artists/Uniiqu3",
+        "type": "regular",
+        "id": "163640"
+      },
+      {
+        "name": "Unija",
+        "url": "https://genius.com/artists/Unija",
+        "type": "regular",
+        "id": "3176201"
+      },
+      {
+        "name": "UNIK & GARA",
+        "url": "https://genius.com/artists/Unik-and-gara",
+        "type": "regular",
+        "id": "4033638"
+      },
+      {
+        "name": "Unikkatil",
+        "url": "https://genius.com/artists/Unikkatil",
+        "type": "regular",
+        "id": "49197"
+      },
+      {
+        "name": "Uniklubi",
+        "url": "https://genius.com/artists/Uniklubi",
+        "type": "regular",
+        "id": "344948"
+      },
+      {
+        "name": "Юни (Uni.Krol)",
+        "url": "https://genius.com/artists/Unikrol",
+        "type": "regular",
+        "id": "2944703"
+      },
+      {
+        "name": "Unimagined",
+        "url": "https://genius.com/artists/Unimagined",
+        "type": "regular",
+        "id": "2191625"
+      },
+      {
+        "name": "União 55",
+        "url": "https://genius.com/artists/Uniao-55",
+        "type": "regular",
+        "id": "3075418"
+      },
+      {
+        "name": "Union Analogtronics",
+        "url": "https://genius.com/artists/Union-analogtronics",
+        "type": "regular",
+        "id": "656490"
+      },
+      {
+        "name": "Union Fatal",
+        "url": "https://genius.com/artists/Union-fatal",
+        "type": "regular",
+        "id": "3805994"
+      },
+      {
+        "name": "The Union Underground",
+        "url": "https://genius.com/artists/The-union-underground",
+        "type": "regular",
+        "id": "328740"
+      },
+      {
+        "name": "U-niq",
+        "url": "https://genius.com/artists/U-niq",
+        "type": "regular",
+        "id": "205484"
+      },
+      {
+        "name": "UNIQ (KOR)",
+        "url": "https://genius.com/artists/Uniq-kor",
+        "type": "regular",
+        "id": "1029446"
+      },
+      {
+        "name": "Uniq Poet",
+        "url": "https://genius.com/artists/Uniq-poet",
+        "type": "regular",
+        "id": "1395545"
+      },
+      {
+        "name": "Unique Salonga",
+        "url": "https://genius.com/artists/Unique-salonga",
+        "type": "regular",
+        "id": "1427631"
+      },
+      {
+        "name": "UniqueSound",
+        "url": "https://genius.com/artists/Uniquesound",
+        "type": "regular",
+        "id": "1765674"
+      },
+      {
+        "name": "UNIS",
+        "url": "https://genius.com/artists/Unis",
+        "type": "regular",
+        "id": "3868481"
+      },
+      {
+        "name": "Unisonic",
+        "url": "https://genius.com/artists/Unisonic",
+        "type": "regular",
+        "id": "356531"
+      },
+      {
+        "name": "UNISON SQUARE GARDEN",
+        "url": "https://genius.com/artists/Unison-square-garden",
+        "type": "regular",
+        "id": "1244033"
+      },
+      {
+        "name": "Unité 2 Feu",
+        "url": "https://genius.com/artists/Unite-2-feu",
+        "type": "regular",
+        "id": "54250"
+      },
+      {
+        "name": "United Balls",
+        "url": "https://genius.com/artists/United-balls",
+        "type": "regular",
+        "id": "1685728"
+      },
+      {
+        "name": "United (HU)",
+        "url": "https://genius.com/artists/United-hu",
+        "type": "regular",
+        "id": "4045025"
+      },
+      {
+        "name": "United Nations (Band)",
+        "url": "https://genius.com/artists/United-nations-band",
+        "type": "regular",
+        "id": "3215910"
+      },
+      {
+        "name": "United Pursuit",
+        "url": "https://genius.com/artists/United-pursuit",
+        "type": "regular",
+        "id": "353772"
+      },
+      {
+        "name": "United States Congress",
+        "url": "https://genius.com/artists/United-states-congress",
+        "type": "regular",
+        "id": "24334"
+      },
+      {
+        "name": "United States Government",
+        "url": "https://genius.com/artists/United-states-government",
+        "type": "regular",
+        "id": "65062"
+      },
+      {
+        "name": "United States Military Academy",
+        "url": "https://genius.com/artists/United-states-military-academy",
+        "type": "regular",
+        "id": "3816949"
+      },
+      {
+        "name": "United States Military Academy Glee Club",
+        "url": "https://genius.com/artists/United-states-military-academy-glee-club",
+        "type": "regular",
+        "id": "3716394"
+      },
+      {
+        "name": "United States Naval Academy",
+        "url": "https://genius.com/artists/United-states-naval-academy",
+        "type": "regular",
+        "id": "212844"
+      },
+      {
+        "name": "The United States of America",
+        "url": "https://genius.com/artists/The-united-states-of-america",
+        "type": "regular",
+        "id": "52499"
+      },
+      {
+        "name": "Unit Five",
+        "url": "https://genius.com/artists/Unit-five",
+        "type": "regular",
+        "id": "452866"
+      },
+      {
+        "name": "Unit Four + Two",
+        "url": "https://genius.com/artists/Unit-four-two",
+        "type": "regular",
+        "id": "384037"
+      },
+      {
+        "name": "U/NITISH",
+        "url": "https://genius.com/artists/U-nitish",
+        "type": "regular",
+        "id": "2809194"
+      },
+      {
+        "name": "UNITY",
+        "url": "https://genius.com/artists/Unity",
+        "type": "regular",
+        "id": "2321810"
+      },
+      {
+        "name": "UnityTX",
+        "url": "https://genius.com/artists/Unitytx",
+        "type": "regular",
+        "id": "504572"
+      },
+      {
+        "name": "UNIVERSE (COL)",
+        "url": "https://genius.com/artists/Universe-col",
+        "type": "regular",
+        "id": "3720432"
+      },
+      {
+        "name": "UNIVERSE LEAGUE",
+        "url": "https://genius.com/artists/Universe-league",
+        "type": "regular",
+        "id": "4177333"
+      },
+      {
+        "name": "UniversesKarma",
+        "url": "https://genius.com/artists/Universeskarma",
+        "type": "regular",
+        "id": "3284426"
+      },
+      {
+        "name": "UNIVERSE TICKET (유니버스 티켓)",
+        "url": "https://genius.com/artists/Universe-ticket",
+        "type": "regular",
+        "id": "3692076"
+      },
+      {
+        "name": "UNIVERSITY (Band)",
+        "url": "https://genius.com/artists/University-band",
+        "type": "regular",
+        "id": "3693431"
+      },
+      {
+        "name": "University of Arkansas",
+        "url": "https://genius.com/artists/University-of-arkansas",
+        "type": "regular",
+        "id": "3771977"
+      },
+      {
+        "name": "University of California, Los Angeles",
+        "url": "https://genius.com/artists/University-of-california-los-angeles",
+        "type": "regular",
+        "id": "207032"
+      },
+      {
+        "name": "University of California Marching Band",
+        "url": "https://genius.com/artists/University-of-california-marching-band",
+        "type": "regular",
+        "id": "1040495"
+      },
+      {
+        "name": "University of Dayton",
+        "url": "https://genius.com/artists/University-of-dayton",
+        "type": "regular",
+        "id": "3824998"
+      },
+      {
+        "name": "University of Florida",
+        "url": "https://genius.com/artists/University-of-florida",
+        "type": "regular",
+        "id": "3786858"
+      },
+      {
+        "name": "University of Georgia",
+        "url": "https://genius.com/artists/University-of-georgia",
+        "type": "regular",
+        "id": "3785982"
+      },
+      {
+        "name": "University of Kansas",
+        "url": "https://genius.com/artists/University-of-kansas",
+        "type": "regular",
+        "id": "3793965"
+      },
+      {
+        "name": "University of Michigan",
+        "url": "https://genius.com/artists/University-of-michigan",
+        "type": "regular",
+        "id": "66120"
+      },
+      {
+        "name": "University of Michigan Men's Glee Club",
+        "url": "https://genius.com/artists/University-of-michigan-mens-glee-club",
+        "type": "regular",
+        "id": "3814420"
+      },
+      {
+        "name": "University of Minnesota",
+        "url": "https://genius.com/artists/University-of-minnesota",
+        "type": "regular",
+        "id": "3802869"
+      },
+      {
+        "name": "University of Missouri",
+        "url": "https://genius.com/artists/University-of-missouri",
+        "type": "regular",
+        "id": "3791612"
+      },
+      {
+        "name": "University of Nebraska",
+        "url": "https://genius.com/artists/University-of-nebraska",
+        "type": "regular",
+        "id": "3802836"
+      },
+      {
+        "name": "University of Notre Dame",
+        "url": "https://genius.com/artists/University-of-notre-dame",
+        "type": "regular",
+        "id": "3775942"
+      },
+      {
+        "name": "University of Oklahoma",
+        "url": "https://genius.com/artists/University-of-oklahoma",
+        "type": "regular",
+        "id": "3787616"
+      },
+      {
+        "name": "University of Oregon",
+        "url": "https://genius.com/artists/University-of-oregon",
+        "type": "regular",
+        "id": "3803010"
+      },
+      {
+        "name": "University of Pennsylvania",
+        "url": "https://genius.com/artists/University-of-pennsylvania",
+        "type": "regular",
+        "id": "267930"
+      },
+      {
+        "name": "University of Richmond",
+        "url": "https://genius.com/artists/University-of-richmond",
+        "type": "regular",
+        "id": "4145791"
+      },
+      {
+        "name": "University of South Carolina",
+        "url": "https://genius.com/artists/University-of-south-carolina",
+        "type": "regular",
+        "id": "3791558"
+      },
+      {
+        "name": "University of Southern California",
+        "url": "https://genius.com/artists/University-of-southern-california",
+        "type": "regular",
+        "id": "3786676"
+      },
+      {
+        "name": "University of Tennessee",
+        "url": "https://genius.com/artists/University-of-tennessee",
+        "type": "regular",
+        "id": "3791528"
+      },
+      {
+        "name": "University of Texas at Austin",
+        "url": "https://genius.com/artists/University-of-texas-at-austin",
+        "type": "regular",
+        "id": "209418"
+      },
+      {
+        "name": "University of Virginia",
+        "url": "https://genius.com/artists/University-of-virginia",
+        "type": "regular",
+        "id": "3807799"
+      },
+      {
+        "name": "University of Wisconsin",
+        "url": "https://genius.com/artists/University-of-wisconsin",
+        "type": "regular",
+        "id": "336207"
+      },
+      {
+        "name": "Uni X",
+        "url": "https://genius.com/artists/Uni-x",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "UNIYAL",
+        "url": "https://genius.com/artists/Uniyal",
+        "type": "regular",
+        "id": "4261298"
+      },
+      {
+        "name": "Un jour de paix",
+        "url": "https://genius.com/artists/Un-jour-de-paix",
+        "type": "regular",
+        "id": "3762780"
+      },
+      {
+        "name": "UnJust",
+        "url": "https://genius.com/artists/Unjust",
+        "type": "regular",
+        "id": "60937"
+      },
+      {
+        "name": "Unk",
+        "url": "https://genius.com/artists/Unk",
+        "type": "regular",
+        "id": "851"
+      },
+      {
+        "name": "unki",
+        "url": "https://genius.com/artists/Unki",
+        "type": "regular",
+        "id": "3036185"
+      },
+      {
+        "name": "​unki arhive",
+        "url": "https://genius.com/artists/Unki-arhive",
+        "type": "regular",
+        "id": "3652726"
+      },
+      {
+        "name": "UNK (ITA)",
+        "url": "https://genius.com/artists/Unk-ita",
+        "type": "regular",
+        "id": "2169542"
+      },
+      {
+        "name": "UNKLE",
+        "url": "https://genius.com/artists/Unkle",
+        "type": "regular",
+        "id": "572"
+      },
+      {
+        "name": "Unkle Adams",
+        "url": "https://genius.com/artists/Unkle-adams",
+        "type": "regular",
+        "id": "532007"
+      },
+      {
+        "name": "Unkle Bob",
+        "url": "https://genius.com/artists/Unkle-bob",
+        "type": "regular",
+        "id": "365686"
+      },
+      {
+        "name": "Unknown.beat",
+        "url": "https://genius.com/artists/Unknownbeat",
+        "type": "regular",
+        "id": "3201081"
+      },
+      {
+        "name": "Unknown Brain",
+        "url": "https://genius.com/artists/Unknown-brain",
+        "type": "regular",
+        "id": "1009986"
+      },
+      {
+        "name": "Unknown Hinson",
+        "url": "https://genius.com/artists/Unknown-hinson",
+        "type": "regular",
+        "id": "184515"
+      },
+      {
+        "name": "Unknown Mortal Orchestra",
+        "url": "https://genius.com/artists/Unknown-mortal-orchestra",
+        "type": "regular",
+        "id": "41395"
+      },
+      {
+        "name": "Unknown P",
+        "url": "https://genius.com/artists/Unknown-p",
+        "type": "regular",
+        "id": "1832545"
+      },
+      {
+        "name": "Неизвестный (Unknown) (RUS)",
+        "url": "https://genius.com/artists/Unknown-rus",
+        "type": "regular",
+        "id": "3559452"
+      },
+      {
+        "name": "Unknown Song Bird",
+        "url": "https://genius.com/artists/Unknown-song-bird",
+        "type": "regular",
+        "id": "2267673"
+      },
+      {
+        "name": "Unknown, Spanish Division Azul",
+        "url": "https://genius.com/artists/Unknown-spanish-division-azul",
+        "type": "regular",
+        "id": "3152975"
+      },
+      {
+        "name": "Unknown T",
+        "url": "https://genius.com/artists/Unknown-t",
+        "type": "regular",
+        "id": "1276114"
+      },
+      {
+        "name": "UNKNOWNUMB",
+        "url": "https://genius.com/artists/Unknownumb",
+        "type": "regular",
+        "id": "1612288"
+      },
+      {
+        "name": "UnknownVEVO",
+        "url": "https://genius.com/artists/Unknownvevo",
+        "type": "regular",
+        "id": "2871608"
+      },
+      {
+        "name": "unknxwn.",
+        "url": "https://genius.com/artists/Unknxwn",
+        "type": "regular",
+        "id": "131802"
+      },
+      {
+        "name": "​unknxwn6",
+        "url": "https://genius.com/artists/Unknxwn6",
+        "type": "regular",
+        "id": "3993876"
+      },
+      {
+        "name": "Unleashed",
+        "url": "https://genius.com/artists/Unleashed",
+        "type": "regular",
+        "id": "136295"
+      },
+      {
+        "name": "Unleash the Archers",
+        "url": "https://genius.com/artists/Unleash-the-archers",
+        "type": "regular",
+        "id": "480438"
+      },
+      {
+        "name": "The Unlikely Candidates",
+        "url": "https://genius.com/artists/The-unlikely-candidates",
+        "type": "regular",
+        "id": "59463"
+      },
+      {
+        "name": "Unlike Pluto",
+        "url": "https://genius.com/artists/Unlike-pluto",
+        "type": "regular",
+        "id": "335127"
+      },
+      {
+        "name": "Unlimited Struggle",
+        "url": "https://genius.com/artists/Unlimited-struggle",
+        "type": "regular",
+        "id": "985483"
+      },
+      {
+        "name": "UNLIMITS",
+        "url": "https://genius.com/artists/Unlimits",
+        "type": "regular",
+        "id": "2516486"
+      },
+      {
+        "name": "The Unlovables",
+        "url": "https://genius.com/artists/The-unlovables",
+        "type": "regular",
+        "id": "370242"
+      },
+      {
+        "name": "Unloved",
+        "url": "https://genius.com/artists/Unloved",
+        "type": "regular",
+        "id": "660060"
+      },
+      {
+        "name": "Unlucky Morpheus",
+        "url": "https://genius.com/artists/Unlucky-morpheus",
+        "type": "regular",
+        "id": "1236809"
+      },
+      {
+        "name": "U.N.L.V.",
+        "url": "https://genius.com/artists/Unlv",
+        "type": "regular",
+        "id": "3573"
+      },
+      {
+        "name": "UnMarkedSKA",
+        "url": "https://genius.com/artists/Unmarkedska",
+        "type": "regular",
+        "id": "4348484"
+      },
+      {
+        "name": "UNNAMED FEELING",
+        "url": "https://genius.com/artists/Unnamed-feeling",
+        "type": "regular",
+        "id": "2865551"
+      },
+      {
+        "name": "Unni Menon",
+        "url": "https://genius.com/artists/Unni-menon",
+        "type": "regular",
+        "id": "533893"
+      },
+      {
+        "name": "Unni Wilhelmsen",
+        "url": "https://genius.com/artists/Unni-wilhelmsen",
+        "type": "regular",
+        "id": "364748"
+      },
+      {
+        "name": "Unnämed",
+        "url": "https://genius.com/artists/Unnamed",
+        "type": "regular",
+        "id": "3432237"
+      },
+      {
+        "name": "Uno Consultório",
+        "url": "https://genius.com/artists/Uno-consultorio",
+        "type": "regular",
+        "id": "1157925"
+      },
+      {
+        "name": "​unodavid​",
+        "url": "https://genius.com/artists/Unodavid",
+        "type": "regular",
+        "id": "2083107"
+      },
+      {
+        "name": "​unofficialboyy (언오피셜보이)",
+        "url": "https://genius.com/artists/Unofficialboyy",
+        "type": "regular",
+        "id": "1839282"
+      },
+      {
+        "name": "Uno Svenningsson",
+        "url": "https://genius.com/artists/Uno-svenningsson",
+        "type": "regular",
+        "id": "193913"
+      },
+      {
+        "name": "UnoTheActivist",
+        "url": "https://genius.com/artists/Unotheactivist",
+        "type": "regular",
+        "id": "520363"
+      },
+      {
+        "name": "Unotheone",
+        "url": "https://genius.com/artists/Unotheone",
+        "type": "regular",
+        "id": "3510908"
+      },
+      {
+        "name": "​unpeople",
+        "url": "https://genius.com/artists/Unpeople",
+        "type": "regular",
+        "id": "3728489"
+      },
+      {
+        "name": "Un pinguino en mi ascensor",
+        "url": "https://genius.com/artists/Un-pinguino-en-mi-ascensor",
+        "type": "regular",
+        "id": "458432"
+      },
+      {
+        "name": "Unprocessed",
+        "url": "https://genius.com/artists/Unprocessed",
+        "type": "regular",
+        "id": "1408941"
+      },
+      {
+        "name": "Unrecovery",
+        "url": "https://genius.com/artists/Unrecovery",
+        "type": "regular",
+        "id": "3254173"
+      },
+      {
+        "name": "Unrest",
+        "url": "https://genius.com/artists/Unrest",
+        "type": "regular",
+        "id": "381761"
+      },
+      {
+        "name": "Unsane",
+        "url": "https://genius.com/artists/Unsane",
+        "type": "regular",
+        "id": "374938"
+      },
+      {
+        "name": "UNSECRET",
+        "url": "https://genius.com/artists/Unsecret",
+        "type": "regular",
+        "id": "635151"
+      },
+      {
+        "name": "Unseen",
+        "url": "https://genius.com/artists/Unseen",
+        "type": "regular",
+        "id": "46279"
+      },
+      {
+        "name": "The Unsleeping",
+        "url": "https://genius.com/artists/The-unsleeping",
+        "type": "regular",
+        "id": "2344140"
+      },
+      {
+        "name": "Unspoken",
+        "url": "https://genius.com/artists/Unspoken",
+        "type": "regular",
+        "id": "323614"
+      },
+      {
+        "name": "Unspoken Tradition",
+        "url": "https://genius.com/artists/Unspoken-tradition",
+        "type": "regular",
+        "id": "2486207"
+      },
+      {
+        "name": "Unsun",
+        "url": "https://genius.com/artists/Unsun",
+        "type": "regular",
+        "id": "367126"
+      },
+      {
+        "name": "Unterm Radar",
+        "url": "https://genius.com/artists/Unterm-radar",
+        "type": "regular",
+        "id": "2923178"
+      },
+      {
+        "name": "Unter Null",
+        "url": "https://genius.com/artists/Unter-null",
+        "type": "regular",
+        "id": "357185"
+      },
+      {
+        "name": "UNTER OBSI",
+        "url": "https://genius.com/artists/Unter-obsi",
+        "type": "regular",
+        "id": "2151893"
+      },
+      {
+        "name": "The Unthanks",
+        "url": "https://genius.com/artists/The-unthanks",
+        "type": "regular",
+        "id": "369224"
+      },
+      {
+        "name": "The Unthrowboxes",
+        "url": "https://genius.com/artists/The-unthrowboxes",
+        "type": "regular",
+        "id": "1135963"
+      },
+      {
+        "name": "Until Further Notice",
+        "url": "https://genius.com/artists/Until-further-notice",
+        "type": "regular",
+        "id": "1854582"
+      },
+      {
+        "name": "Until I Wake",
+        "url": "https://genius.com/artists/Until-i-wake",
+        "type": "regular",
+        "id": "2088016"
+      },
+      {
+        "name": "Until June",
+        "url": "https://genius.com/artists/Until-june",
+        "type": "regular",
+        "id": "360294"
+      },
+      {
+        "name": "Until The Ribbon Breaks",
+        "url": "https://genius.com/artists/Until-the-ribbon-breaks",
+        "type": "regular",
+        "id": "57350"
+      },
+      {
+        "name": "Until We Die",
+        "url": "https://genius.com/artists/Until-we-die",
+        "type": "regular",
+        "id": "1021125"
+      },
+      {
+        "name": "Un Titico",
+        "url": "https://genius.com/artists/Un-titico",
+        "type": "regular",
+        "id": "3458507"
+      },
+      {
+        "name": "untitled (halo)",
+        "url": "https://genius.com/artists/Untitled-halo",
+        "type": "regular",
+        "id": "3478088"
+      },
+      {
+        "name": "Untitled Worship",
+        "url": "https://genius.com/artists/Untitled-worship",
+        "type": "regular",
+        "id": "2031428"
+      },
+      {
+        "name": "Unto Ashes",
+        "url": "https://genius.com/artists/Unto-ashes",
+        "type": "regular",
+        "id": "349641"
+      },
+      {
+        "name": "Unto Mononen",
+        "url": "https://genius.com/artists/Unto-mononen",
+        "type": "regular",
+        "id": "998199"
+      },
+      {
+        "name": "Unto Others",
+        "url": "https://genius.com/artists/Unto-others",
+        "type": "regular",
+        "id": "2316323"
+      },
+      {
+        "name": "Untsakad",
+        "url": "https://genius.com/artists/Untsakad",
+        "type": "regular",
+        "id": "364477"
+      },
+      {
+        "name": "Unus Annus",
+        "url": "https://genius.com/artists/Unus-annus",
+        "type": "regular",
+        "id": "2065622"
+      },
+      {
+        "name": "Unusual Demont",
+        "url": "https://genius.com/artists/Unusual-demont",
+        "type": "regular",
+        "id": "328747"
+      },
+      {
+        "name": "U.N.V.",
+        "url": "https://genius.com/artists/Unv",
+        "type": "regular",
+        "id": "381039"
+      },
+      {
+        "name": "Unwanted Superheroes",
+        "url": "https://genius.com/artists/Unwanted-superheroes",
+        "type": "regular",
+        "id": "3902237"
+      },
+      {
+        "name": "Unwoman",
+        "url": "https://genius.com/artists/Unwoman",
+        "type": "regular",
+        "id": "362592"
+      },
+      {
+        "name": "Unwound",
+        "url": "https://genius.com/artists/Unwound",
+        "type": "regular",
+        "id": "363049"
+      },
+      {
+        "name": "Unwound818 (GRC)",
+        "url": "https://genius.com/artists/Unwound818-grc",
+        "type": "regular",
+        "id": "3450492"
+      },
+      {
+        "name": "Unwritten Law",
+        "url": "https://genius.com/artists/Unwritten-law",
+        "type": "regular",
+        "id": "358700"
+      },
+      {
+        "name": "Uochi Toki",
+        "url": "https://genius.com/artists/Uochi-toki",
+        "type": "regular",
+        "id": "394336"
+      },
+      {
+        "name": "Uomini di Mare",
+        "url": "https://genius.com/artists/Uomini-di-mare",
+        "type": "regular",
+        "id": "451435"
+      },
+      {
+        "name": "Uomodisu",
+        "url": "https://genius.com/artists/Uomodisu",
+        "type": "regular",
+        "id": "1033438"
+      },
+      {
+        "name": "UP10TION",
+        "url": "https://genius.com/artists/Up10tion",
+        "type": "regular",
+        "id": "1160422"
+      },
+      {
+        "name": "Upa Dance",
+        "url": "https://genius.com/artists/Upa-dance",
+        "type": "regular",
+        "id": "361476"
+      },
+      {
+        "name": "Upchuck",
+        "url": "https://genius.com/artists/Upchuck",
+        "type": "regular",
+        "id": "3291977"
+      },
+      {
+        "name": "Upchurch",
+        "url": "https://genius.com/artists/Upchurch",
+        "type": "regular",
+        "id": "1049535"
+      },
+      {
+        "name": "Upclosechris",
+        "url": "https://genius.com/artists/Upclosechris",
+        "type": "regular",
+        "id": "4291452"
+      },
+      {
+        "name": "​updog",
+        "url": "https://genius.com/artists/Updog",
+        "type": "regular",
+        "id": "1879758"
+      },
+      {
+        "name": "upgrades",
+        "url": "https://genius.com/artists/Upgrades",
+        "type": "regular",
+        "id": "4317886"
+      },
+      {
+        "name": "UPIKO",
+        "url": "https://genius.com/artists/Upiko",
+        "type": "regular",
+        "id": "3870212"
+      },
+      {
+        "name": "Ю-Питер (U-Piter)",
+        "url": "https://genius.com/artists/U-piter",
+        "type": "regular",
+        "id": "1308528"
+      },
+      {
+        "name": "Uplink",
+        "url": "https://genius.com/artists/Uplink",
+        "type": "regular",
+        "id": "1051832"
+      },
+      {
+        "name": "Upon a Burning Body",
+        "url": "https://genius.com/artists/Upon-a-burning-body",
+        "type": "regular",
+        "id": "223322"
+      },
+      {
+        "name": "Uppermost",
+        "url": "https://genius.com/artists/Uppermost",
+        "type": "regular",
+        "id": "248506"
+      },
+      {
+        "name": "​up!r",
+        "url": "https://genius.com/artists/Up-r",
+        "type": "regular",
+        "id": "3940266"
+      },
+      {
+        "name": "UPSAHL",
+        "url": "https://genius.com/artists/Upsahl",
+        "type": "regular",
+        "id": "1497838"
+      },
+      {
+        "name": "The Upsetters",
+        "url": "https://genius.com/artists/The-upsetters",
+        "type": "regular",
+        "id": "31532"
+      },
+      {
+        "name": "The Upstart Crows",
+        "url": "https://genius.com/artists/The-upstart-crows",
+        "type": "regular",
+        "id": "3701939"
+      },
+      {
+        "name": "Upstate",
+        "url": "https://genius.com/artists/Upstate",
+        "type": "regular",
+        "id": "1725436"
+      },
+      {
+        "name": "Upsurt",
+        "url": "https://genius.com/artists/Upsurt",
+        "type": "regular",
+        "id": "671172"
+      },
+      {
+        "name": "Up Up Girls (仮)",
+        "url": "https://genius.com/artists/Up-up-girls",
+        "type": "regular",
+        "id": "4042197"
+      },
+      {
+        "name": "Up Up Girls (2)",
+        "url": "https://genius.com/artists/Up-up-girls-2",
+        "type": "regular",
+        "id": "4034260"
+      },
+      {
+        "name": "Up Up Girls (Pro Wres)",
+        "url": "https://genius.com/artists/Up-up-girls-pro-wres",
+        "type": "regular",
+        "id": "4065720"
+      },
+      {
+        "name": "UpVampin",
+        "url": "https://genius.com/artists/Upvampin",
+        "type": "regular",
+        "id": "3806397"
+      },
+      {
+        "name": "Up With People",
+        "url": "https://genius.com/artists/Up-with-people",
+        "type": "regular",
+        "id": "1557138"
+      },
+      {
+        "name": "Uragan Hokage",
+        "url": "https://genius.com/artists/Uragan-hokage",
+        "type": "regular",
+        "id": "1807251"
+      },
+      {
+        "name": "Уральские Пельмени (Uralskiye Pelmeni)",
+        "url": "https://genius.com/artists/Uralskiye-pelmeni",
+        "type": "regular",
+        "id": "1652332"
+      },
+      {
+        "name": "Uran",
+        "url": "https://genius.com/artists/Uran",
+        "type": "regular",
+        "id": "1108387"
+      },
+      {
+        "name": "Uranium Club",
+        "url": "https://genius.com/artists/Uranium-club",
+        "type": "regular",
+        "id": "1451308"
+      },
+      {
+        "name": "Uratsakidogi",
+        "url": "https://genius.com/artists/Uratsakidogi",
+        "type": "regular",
+        "id": "2937527"
+      },
+      {
+        "name": "Urban & 4",
+        "url": "https://genius.com/artists/Urban-and-4",
+        "type": "regular",
+        "id": "2395628"
+      },
+      {
+        "name": "Urban Beatnics",
+        "url": "https://genius.com/artists/Urban-beatnics",
+        "type": "regular",
+        "id": "1226644"
+      },
+      {
+        "name": "Urban Cone",
+        "url": "https://genius.com/artists/Urban-cone",
+        "type": "regular",
+        "id": "186442"
+      },
+      {
+        "name": "Urban Cookie Collective",
+        "url": "https://genius.com/artists/Urban-cookie-collective",
+        "type": "regular",
+        "id": "362008"
+      },
+      {
+        "name": "Urban Dance Squad",
+        "url": "https://genius.com/artists/Urban-dance-squad",
+        "type": "regular",
+        "id": "36943"
+      },
+      {
+        "name": "Urbandub",
+        "url": "https://genius.com/artists/Urbandub",
+        "type": "regular",
+        "id": "354990"
+      },
+      {
+        "name": "Urban Flow",
+        "url": "https://genius.com/artists/Urban-flow",
+        "type": "regular",
+        "id": "2359985"
+      },
+      {
+        "name": "Urban Hype",
+        "url": "https://genius.com/artists/Urban-hype",
+        "type": "regular",
+        "id": "2123134"
+      },
+      {
+        "name": "Urban Life Worship",
+        "url": "https://genius.com/artists/Urban-life-worship",
+        "type": "regular",
+        "id": "1441842"
+      },
+      {
+        "name": "Urban Mystic",
+        "url": "https://genius.com/artists/Urban-mystic",
+        "type": "regular",
+        "id": "353462"
+      },
+      {
+        "name": "Urbannino",
+        "url": "https://genius.com/artists/Urbannino",
+        "type": "regular",
+        "id": "2690790"
+      },
+      {
+        "name": "Urban Rescue",
+        "url": "https://genius.com/artists/Urban-rescue",
+        "type": "regular",
+        "id": "405360"
+      },
+      {
+        "name": "Urban Roosters",
+        "url": "https://genius.com/artists/Urban-roosters",
+        "type": "regular",
+        "id": "1434109"
+      },
+      {
+        "name": "Urbanse",
+        "url": "https://genius.com/artists/Urbanse",
+        "type": "regular",
+        "id": "652722"
+      },
+      {
+        "name": "Urban Strangers",
+        "url": "https://genius.com/artists/Urban-strangers",
+        "type": "regular",
+        "id": "566739"
+      },
+      {
+        "name": "Urbanus",
+        "url": "https://genius.com/artists/Urbanus",
+        "type": "regular",
+        "id": "365623"
+      },
+      {
+        "name": "Urban Waste",
+        "url": "https://genius.com/artists/Urban-waste",
+        "type": "regular",
+        "id": "2055555"
+      },
+      {
+        "name": "Urban Zakapa (어반자카파)",
+        "url": "https://genius.com/artists/Urban-zakapa",
+        "type": "regular",
+        "id": "375683"
+      },
+      {
+        "name": "Urbánse & Veeyam",
+        "url": "https://genius.com/artists/Urbanse-and-veeyam",
+        "type": "regular",
+        "id": "1882763"
+      },
+      {
+        "name": "UrboyTJ",
+        "url": "https://genius.com/artists/Urboytj",
+        "type": "regular",
+        "id": "1219940"
+      },
+      {
+        "name": "URBVN ARCHITECTS NYC",
+        "url": "https://genius.com/artists/Urbvn-architects-nyc",
+        "type": "regular",
+        "id": "1490279"
+      },
+      {
+        "name": "Urch Raymond",
+        "url": "https://genius.com/artists/Urch-raymond",
+        "type": "regular",
+        "id": "3943685"
+      },
+      {
+        "name": "Urde",
+        "url": "https://genius.com/artists/Urde",
+        "type": "regular",
+        "id": "1578158"
+      },
+      {
+        "name": "Urfavgrannie",
+        "url": "https://genius.com/artists/Urfavgrannie",
+        "type": "regular",
+        "id": "2633162"
+      },
+      {
+        "name": "The Urge",
+        "url": "https://genius.com/artists/The-urge",
+        "type": "regular",
+        "id": "356657"
+      },
+      {
+        "name": "Urgehal",
+        "url": "https://genius.com/artists/Urgehal",
+        "type": "regular",
+        "id": "356630"
+      },
+      {
+        "name": "Urgent",
+        "url": "https://genius.com/artists/Urgent",
+        "type": "regular",
+        "id": "377019"
+      },
+      {
+        "name": "Urge Overkill",
+        "url": "https://genius.com/artists/Urge-overkill",
+        "type": "regular",
+        "id": "44734"
+      },
+      {
+        "name": "Uriah Heep",
+        "url": "https://genius.com/artists/Uriah-heep",
+        "type": "regular",
+        "id": "204661"
+      },
+      {
+        "name": "Urias",
+        "url": "https://genius.com/artists/Urias",
+        "type": "regular",
+        "id": "1467919"
+      },
+      {
+        "name": "Uriel Gaxiola",
+        "url": "https://genius.com/artists/Uriel-gaxiola",
+        "type": "regular",
+        "id": "4088619"
+      },
+      {
+        "name": "Uriel Lozano",
+        "url": "https://genius.com/artists/Uriel-lozano",
+        "type": "regular",
+        "id": "1506956"
+      },
+      {
+        "name": "Đurđina Đina Radić",
+        "url": "https://genius.com/artists/Urina-ina-radic",
+        "type": "regular",
+        "id": "3862981"
+      },
+      {
+        "name": "The Urinals",
+        "url": "https://genius.com/artists/The-urinals",
+        "type": "regular",
+        "id": "374731"
+      },
+      {
+        "name": "ЮрКисс (UrKiss)",
+        "url": "https://genius.com/artists/Urkiss",
+        "type": "regular",
+        "id": "2175364"
+      },
+      {
+        "name": "URLtv",
+        "url": "https://genius.com/artists/Urltv",
+        "type": "regular",
+        "id": "52179"
+      },
+      {
+        "name": "urmama",
+        "url": "https://genius.com/artists/Urmama",
+        "type": "regular",
+        "id": "4426225"
+      },
+      {
+        "name": "URO",
+        "url": "https://genius.com/artists/Uro",
+        "type": "regular",
+        "id": "2109992"
+      },
+      {
+        "name": "Uroš Živković",
+        "url": "https://genius.com/artists/Uros-zivkovic",
+        "type": "regular",
+        "id": "3108330"
+      },
+      {
+        "name": "€URO TRA$H",
+        "url": "https://genius.com/artists/Uro-tra-h",
+        "type": "regular",
+        "id": "2799369"
+      },
+      {
+        "name": "U-Roy",
+        "url": "https://genius.com/artists/U-roy",
+        "type": "regular",
+        "id": "372814"
+      },
+      {
+        "name": "​ur pretty",
+        "url": "https://genius.com/artists/Ur-pretty",
+        "type": "regular",
+        "id": "2912040"
+      },
+      {
+        "name": "Ursa Major (USA)",
+        "url": "https://genius.com/artists/Ursa-major-usa",
+        "type": "regular",
+        "id": "1664018"
+      },
+      {
+        "name": "Ursine Vulpine",
+        "url": "https://genius.com/artists/Ursine-vulpine",
+        "type": "regular",
+        "id": "1007155"
+      },
+      {
+        "name": "The Urs (ROU)",
+        "url": "https://genius.com/artists/The-urs-rou",
+        "type": "regular",
+        "id": "1171606"
+      },
+      {
+        "name": "Ursus Factory",
+        "url": "https://genius.com/artists/Ursus-factory",
+        "type": "regular",
+        "id": "1230160"
+      },
+      {
+        "name": "Urszula",
+        "url": "https://genius.com/artists/Urszula",
+        "type": "regular",
+        "id": "101653"
+      },
+      {
+        "name": "Urthboy",
+        "url": "https://genius.com/artists/Urthboy",
+        "type": "regular",
+        "id": "8925"
+      },
+      {
+        "name": "Uru",
+        "url": "https://genius.com/artists/Uru",
+        "type": "regular",
+        "id": "1456817"
+      },
+      {
+        "name": "Uru Whetu",
+        "url": "https://genius.com/artists/Uru-whetu",
+        "type": "regular",
+        "id": "3281150"
+      },
+      {
+        "name": "Us3",
+        "url": "https://genius.com/artists/Us3",
+        "type": "regular",
+        "id": "11079"
+      },
+      {
+        "name": "US5",
+        "url": "https://genius.com/artists/Us5",
+        "type": "regular",
+        "id": "207315"
+      },
+      {
+        "name": "U.S. Air Force",
+        "url": "https://genius.com/artists/Us-air-force",
+        "type": "regular",
+        "id": "3748443"
+      },
+      {
+        "name": "USAO",
+        "url": "https://genius.com/artists/Usao",
+        "type": "regular",
+        "id": "2412929"
+      },
+      {
+        "name": "U.S. Army",
+        "url": "https://genius.com/artists/Us-army",
+        "type": "regular",
+        "id": "53959"
+      },
+      {
+        "name": "USB",
+        "url": "https://genius.com/artists/Usb",
+        "type": "regular",
+        "id": "78098"
+      },
+      {
+        "name": "USB.mp3",
+        "url": "https://genius.com/artists/Usbmp3",
+        "type": "regular",
+        "id": "4124587"
+      },
+      {
+        "name": "U.S. Bombs",
+        "url": "https://genius.com/artists/Us-bombs",
+        "type": "regular",
+        "id": "349339"
+      },
+      {
+        "name": "Uschi Brüning",
+        "url": "https://genius.com/artists/Uschi-bruning",
+        "type": "regular",
+        "id": "2416612"
+      },
+      {
+        "name": "U.S. Coast Guard",
+        "url": "https://genius.com/artists/Us-coast-guard",
+        "type": "regular",
+        "id": "3749834"
+      },
+      {
+        "name": "U.S.D.A.",
+        "url": "https://genius.com/artists/Usda",
+        "type": "regular",
+        "id": "1445"
+      },
+      {
+        "name": "The Used",
+        "url": "https://genius.com/artists/The-used",
+        "type": "regular",
+        "id": "28536"
+      },
+      {
+        "name": "​​usedcvnt",
+        "url": "https://genius.com/artists/Usedcvnt",
+        "type": "regular",
+        "id": "3461919"
+      },
+      {
+        "name": "Used (DE)",
+        "url": "https://genius.com/artists/Used-de",
+        "type": "regular",
+        "id": "4439198"
+      },
+      {
+        "name": "Used (EDM)",
+        "url": "https://genius.com/artists/Used-edm",
+        "type": "regular",
+        "id": "1802889"
+      },
+      {
+        "name": "Useless ID - יוסלס איי.די",
+        "url": "https://genius.com/artists/Useless-id",
+        "type": "regular",
+        "id": "355595"
+      },
+      {
+        "name": "U.S. Elevator",
+        "url": "https://genius.com/artists/Us-elevator",
+        "type": "regular",
+        "id": "1020795"
+      },
+      {
+        "name": "user-177606669",
+        "url": "https://genius.com/artists/User-177606669",
+        "type": "regular",
+        "id": "2954346"
+      },
+      {
+        "name": "user-L",
+        "url": "https://genius.com/artists/User-l",
+        "type": "regular",
+        "id": "4398186"
+      },
+      {
+        "name": "Userskin1",
+        "url": "https://genius.com/artists/Userskin1",
+        "type": "regular",
+        "id": "4098469"
+      },
+      {
+        "name": "USERx",
+        "url": "https://genius.com/artists/Userx",
+        "type": "regular",
+        "id": "2447956"
+      },
+      {
+        "name": "Us, From Outside",
+        "url": "https://genius.com/artists/Us-from-outside",
+        "type": "regular",
+        "id": "365015"
+      },
+      {
+        "name": "U.S. Girls",
+        "url": "https://genius.com/artists/Us-girls",
+        "type": "regular",
+        "id": "57758"
+      },
+      {
+        "name": "Usha Mangeshkar",
+        "url": "https://genius.com/artists/Usha-mangeshkar",
+        "type": "regular",
+        "id": "2080734"
+      },
+      {
+        "name": "ushira",
+        "url": "https://genius.com/artists/Ushira",
+        "type": "regular",
+        "id": "2295361"
+      },
+      {
+        "name": "Ушко (Ushko)",
+        "url": "https://genius.com/artists/Ushko",
+        "type": "regular",
+        "id": "2150370"
+      },
+      {
+        "name": "Us in Motion",
+        "url": "https://genius.com/artists/Us-in-motion",
+        "type": "regular",
+        "id": "1850294"
+      },
+      {
+        "name": "USKY",
+        "url": "https://genius.com/artists/Usky",
+        "type": "regular",
+        "id": "671555"
+      },
+      {
+        "name": "U.S. Maple",
+        "url": "https://genius.com/artists/Us-maple",
+        "type": "regular",
+        "id": "1802932"
+      },
+      {
+        "name": "U.S. Marine Corps",
+        "url": "https://genius.com/artists/Us-marine-corps",
+        "type": "regular",
+        "id": "482874"
+      },
+      {
+        "name": "U.S. Navy",
+        "url": "https://genius.com/artists/Us-navy",
+        "type": "regular",
+        "id": "3749589"
+      },
+      {
+        "name": "U.S. Navy SEALs",
+        "url": "https://genius.com/artists/Us-navy-seals",
+        "type": "regular",
+        "id": "531886"
+      },
+      {
+        "name": "USO",
+        "url": "https://genius.com/artists/Uso",
+        "type": "regular",
+        "id": "11588"
+      },
+      {
+        "name": "U.S. Paratroopers",
+        "url": "https://genius.com/artists/Us-paratroopers",
+        "type": "regular",
+        "id": "1138474"
+      },
+      {
+        "name": "USPEER (유스피어)",
+        "url": "https://genius.com/artists/Uspeer",
+        "type": "regular",
+        "id": "4375065"
+      },
+      {
+        "name": "Успешная Группа (Uspeshnaya Gruppa)",
+        "url": "https://genius.com/artists/Uspeshnaya-gruppa",
+        "type": "regular",
+        "id": "1078208"
+      },
+      {
+        "name": "USS",
+        "url": "https://genius.com/artists/Uss",
+        "type": "regular",
+        "id": "354566"
+      },
+      {
+        "name": "USSEL",
+        "url": "https://genius.com/artists/Ussel",
+        "type": "regular",
+        "id": "2350120"
+      },
+      {
+        "name": "U.S. Space Force",
+        "url": "https://genius.com/artists/Us-space-force",
+        "type": "regular",
+        "id": "3748478"
+      },
+      {
+        "name": "USSR Soviet Chorus",
+        "url": "https://genius.com/artists/Ussr-soviet-chorus",
+        "type": "regular",
+        "id": "2760316"
+      },
+      {
+        "name": "USTABIL",
+        "url": "https://genius.com/artists/Ustabil",
+        "type": "regular",
+        "id": "4288361"
+      },
+      {
+        "name": "Устала курить (Ustala kurit')",
+        "url": "https://genius.com/artists/Ustala-kurit",
+        "type": "regular",
+        "id": "3352151"
+      },
+      {
+        "name": "Ustamy",
+        "url": "https://genius.com/artists/Ustamy",
+        "type": "regular",
+        "id": "3035448"
+      },
+      {
+        "name": "Устата (Ustata) (BGR)",
+        "url": "https://genius.com/artists/Ustata-bgr",
+        "type": "regular",
+        "id": "3755087"
+      },
+      {
+        "name": "Usted Señalemelo",
+        "url": "https://genius.com/artists/Usted-senalemelo",
+        "type": "regular",
+        "id": "1137226"
+      },
+      {
+        "name": "Us The Duo",
+        "url": "https://genius.com/artists/Us-the-duo",
+        "type": "regular",
+        "id": "215393"
+      },
+      {
+        "name": "Usuarios de Genius en Español",
+        "url": "https://genius.com/artists/Usuarios-de-genius-en-espanol",
+        "type": "regular",
+        "id": "1574123"
+      },
+      {
+        "name": "Usurp Synapse",
+        "url": "https://genius.com/artists/Usurp-synapse",
+        "type": "regular",
+        "id": "361034"
+      },
+      {
+        "name": "Usurum",
+        "url": "https://genius.com/artists/Usurum",
+        "type": "regular",
+        "id": "2225463"
+      },
+      {
+        "name": "Utah Phillips",
+        "url": "https://genius.com/artists/Utah-phillips",
+        "type": "regular",
+        "id": "1072839"
+      },
+      {
+        "name": "Utah Saints",
+        "url": "https://genius.com/artists/Utah-saints",
+        "type": "regular",
+        "id": "368665"
+      },
+      {
+        "name": "UTAMARO Movement",
+        "url": "https://genius.com/artists/Utamaro-movement",
+        "type": "regular",
+        "id": "3330491"
+      },
+      {
+        "name": "UTD",
+        "url": "https://genius.com/artists/Utd",
+        "type": "regular",
+        "id": "11080"
+      },
+      {
+        "name": "℃-ute",
+        "url": "https://genius.com/artists/C-ute",
+        "type": "regular",
+        "id": "2700929"
+      },
+      {
+        "name": "Ute Freudenberg",
+        "url": "https://genius.com/artists/Ute-freudenberg",
+        "type": "regular",
+        "id": "454705"
+      },
+      {
+        "name": "Ute Lemper",
+        "url": "https://genius.com/artists/Ute-lemper",
+        "type": "regular",
+        "id": "391329"
+      },
+      {
+        "name": "Utena",
+        "url": "https://genius.com/artists/Utena",
+        "type": "regular",
+        "id": "2463619"
+      },
+      {
+        "name": "Ute Til Lunch",
+        "url": "https://genius.com/artists/Ute-til-lunch",
+        "type": "regular",
+        "id": "531082"
+      },
+      {
+        "name": "UTFO",
+        "url": "https://genius.com/artists/Utfo",
+        "type": "regular",
+        "id": "8279"
+      },
+      {
+        "name": "Utha Likumahuwa",
+        "url": "https://genius.com/artists/Utha-likumahuwa",
+        "type": "regular",
+        "id": "1213548"
+      },
+      {
+        "name": "Žuti",
+        "url": "https://genius.com/artists/Zuti",
+        "type": "regular",
+        "id": "266899"
+      },
+      {
+        "name": "Utkarsh Ambudkar",
+        "url": "https://genius.com/artists/Utkarsh-ambudkar",
+        "type": "regular",
+        "id": "1038376"
+      },
+      {
+        "name": "Utoku",
+        "url": "https://genius.com/artists/Utoku",
+        "type": "regular",
+        "id": "3599329"
+      },
+      {
+        "name": "Utopia",
+        "url": "https://genius.com/artists/Utopia",
+        "type": "regular",
+        "id": "356190"
+      },
+      {
+        "name": "Utopia (Indonesia)",
+        "url": "https://genius.com/artists/Utopia-indonesia",
+        "type": "regular",
+        "id": "1556340"
+      },
+      {
+        "name": "Утро (Utro)",
+        "url": "https://genius.com/artists/Utro",
+        "type": "regular",
+        "id": "1497479"
+      },
+      {
+        "name": "uuondatrack",
+        "url": "https://genius.com/artists/Uuondatrack",
+        "type": "regular",
+        "id": "504099"
+      },
+      {
+        "name": "Uğur Yeter",
+        "url": "https://genius.com/artists/Ugur-yeter",
+        "type": "regular",
+        "id": "1272736"
+      },
+      {
+        "name": "Uğur Öztürk",
+        "url": "https://genius.com/artists/Ugur-ozturk",
+        "type": "regular",
+        "id": "626427"
+      },
+      {
+        "name": "uuuhhh i forgot his name, the frog dude",
+        "url": "https://genius.com/artists/Uuuhhh-i-forgot-his-name-the-frog-dude",
+        "type": "regular",
+        "id": "4380135"
+      },
+      {
+        "name": "Uve Key",
+        "url": "https://genius.com/artists/Uve-key",
+        "type": "regular",
+        "id": "3052169"
+      },
+      {
+        "name": "UVERworld",
+        "url": "https://genius.com/artists/Uverworld",
+        "type": "regular",
+        "id": "361956"
+      },
+      {
+        "name": "Uve Sad",
+        "url": "https://genius.com/artists/Uve-sad",
+        "type": "regular",
+        "id": "1824560"
+      },
+      {
+        "name": "Žuvi",
+        "url": "https://genius.com/artists/Zuvi",
+        "type": "regular",
+        "id": "59968"
+      },
+      {
+        "name": "Увула (Uvula)",
+        "url": "https://genius.com/artists/Uvula",
+        "type": "regular",
+        "id": "1331973"
+      },
+      {
+        "name": "Uwade",
+        "url": "https://genius.com/artists/Uwade",
+        "type": "regular",
+        "id": "2626093"
+      },
+      {
+        "name": "Uwe Adams",
+        "url": "https://genius.com/artists/Uwe-adams",
+        "type": "regular",
+        "id": "3584212"
+      },
+      {
+        "name": "Uwe Kröger",
+        "url": "https://genius.com/artists/Uwe-kroger",
+        "type": "regular",
+        "id": "3049036"
+      },
+      {
+        "name": "Uxie Kid",
+        "url": "https://genius.com/artists/Uxie-kid",
+        "type": "regular",
+        "id": "2373542"
+      },
+      {
+        "name": "uxknow",
+        "url": "https://genius.com/artists/Uxknow",
+        "type": "regular",
+        "id": "1204268"
+      },
+      {
+        "name": "Uyama Hiroto",
+        "url": "https://genius.com/artists/Uyama-hiroto",
+        "type": "regular",
+        "id": "18637"
+      },
+      {
+        "name": "Uyên Linh",
+        "url": "https://genius.com/artists/Uyen-linh",
+        "type": "regular",
+        "id": "2440179"
+      },
+      {
+        "name": "UZ",
+        "url": "https://genius.com/artists/Uz",
+        "type": "regular",
+        "id": "29921"
+      },
+      {
+        "name": "UZ4Y",
+        "url": "https://genius.com/artists/Uz4y",
+        "type": "regular",
+        "id": "4099454"
+      },
+      {
+        "name": "уже слишком (uzhe slishkom)",
+        "url": "https://genius.com/artists/Uzhe-slishkom",
+        "type": "regular",
+        "id": "3596159"
+      },
+      {
+        "name": "UZi (Duo)",
+        "url": "https://genius.com/artists/Uzi-duo",
+        "type": "regular",
+        "id": "10806"
+      },
+      {
+        "name": "Uzielito Mix",
+        "url": "https://genius.com/artists/Uzielito-mix",
+        "type": "regular",
+        "id": "1754526"
+      },
+      {
+        "name": "​uziellsiilver",
+        "url": "https://genius.com/artists/Uziellsiilver",
+        "type": "regular",
+        "id": "3655642"
+      },
+      {
+        "name": "UZI (FRA)",
+        "url": "https://genius.com/artists/Uzi-fra",
+        "type": "regular",
+        "id": "1623896"
+      },
+      {
+        "name": "Uzi (HT)",
+        "url": "https://genius.com/artists/Uzi-ht",
+        "type": "regular",
+        "id": "233451"
+      },
+      {
+        "name": "Uzii Gaang",
+        "url": "https://genius.com/artists/Uzii-gaang",
+        "type": "regular",
+        "id": "2036625"
+      },
+      {
+        "name": "Uzi Junkana",
+        "url": "https://genius.com/artists/Uzi-junkana",
+        "type": "regular",
+        "id": "397093"
+      },
+      {
+        "name": "Uzi Lvke",
+        "url": "https://genius.com/artists/Uzi-lvke",
+        "type": "regular",
+        "id": "1407786"
+      },
+      {
+        "name": "Uzi matki",
+        "url": "https://genius.com/artists/Uzi-matki",
+        "type": "regular",
+        "id": "3599816"
+      },
+      {
+        "name": "Uzi Navon - עוזי נבון",
+        "url": "https://genius.com/artists/Uzi-navon",
+        "type": "regular",
+        "id": "3454287"
+      },
+      {
+        "name": "Uzo Aduba",
+        "url": "https://genius.com/artists/Uzo-aduba",
+        "type": "regular",
+        "id": "974518"
+      },
+      {
+        "name": "Uzuhan",
+        "url": "https://genius.com/artists/Uzuhan",
+        "type": "regular",
+        "id": "1455661"
+      },
+      {
+        "name": "Uzum3",
+        "url": "https://genius.com/artists/Uzum3",
+        "type": "regular",
+        "id": "3209144"
+      },
+      {
+        "name": "Uzzy",
+        "url": "https://genius.com/artists/Uzzy",
+        "type": "regular",
+        "id": "645261"
+      },
+      {
+        "name": "Uzzy Marcus",
+        "url": "https://genius.com/artists/Uzzy-marcus",
+        "type": "regular",
+        "id": "1137441"
+      }
+    ]
+  }
+}

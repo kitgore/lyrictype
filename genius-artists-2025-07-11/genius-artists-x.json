@@ -1,0 +1,1921 @@
+{
+  "letter": "X",
+  "timestamp": "2025-07-11T13:25:21.781Z",
+  "totalArtists": 318,
+  "popularCount": 20,
+  "regularCount": 298,
+  "artists": {
+    "popular": [
+      {
+        "name": "XATAR",
+        "url": "https://genius.com/artists/Xatar",
+        "type": "popular",
+        "id": "16572"
+      },
+      {
+        "name": "Xavibo",
+        "url": "https://genius.com/artists/Xavibo",
+        "type": "popular",
+        "id": "1579855"
+      },
+      {
+        "name": "xaviersobased",
+        "url": "https://genius.com/artists/Xaviersobased",
+        "type": "popular",
+        "id": "2225586"
+      },
+      {
+        "name": "Xavier Wulf",
+        "url": "https://genius.com/artists/Xavier-wulf",
+        "type": "popular",
+        "id": "78740"
+      },
+      {
+        "name": "Xcho",
+        "url": "https://genius.com/artists/Xcho",
+        "type": "popular",
+        "id": "1908086"
+      },
+      {
+        "name": "Xdinary Heroes",
+        "url": "https://genius.com/artists/Xdinary-heroes",
+        "type": "popular",
+        "id": "2969278"
+      },
+      {
+        "name": "Xduppy",
+        "url": "https://genius.com/artists/Xduppy",
+        "type": "popular",
+        "id": "2942107"
+      },
+      {
+        "name": "Xefer",
+        "url": "https://genius.com/artists/Xefer",
+        "type": "popular",
+        "id": "2024648"
+      },
+      {
+        "name": "XG",
+        "url": "https://genius.com/artists/Xg",
+        "type": "popular",
+        "id": "3081133"
+      },
+      {
+        "name": "Xiu Xiu",
+        "url": "https://genius.com/artists/Xiu-xiu",
+        "type": "popular",
+        "id": "18696"
+      },
+      {
+        "name": "XOLIDAYBOY",
+        "url": "https://genius.com/artists/Xolidayboy",
+        "type": "popular",
+        "id": "2658239"
+      },
+      {
+        "name": "XTC",
+        "url": "https://genius.com/artists/Xtc",
+        "type": "popular",
+        "id": "95970"
+      },
+      {
+        "name": "XTRATUNA",
+        "url": "https://genius.com/artists/Xtratuna",
+        "type": "popular",
+        "id": "4178726"
+      },
+      {
+        "name": "королевский XVII",
+        "url": "https://genius.com/artists/Xvii",
+        "type": "popular",
+        "id": "3745312"
+      },
+      {
+        "name": "X Wave",
+        "url": "https://genius.com/artists/X-wave",
+        "type": "popular",
+        "id": "2902867"
+      },
+      {
+        "name": "The xx",
+        "url": "https://genius.com/artists/The-xx",
+        "type": "popular",
+        "id": "14181"
+      },
+      {
+        "name": "XXL",
+        "url": "https://genius.com/artists/Xxl",
+        "type": "popular",
+        "id": "186576"
+      },
+      {
+        "name": "xxxmanera",
+        "url": "https://genius.com/artists/Xxxmanera",
+        "type": "popular",
+        "id": "2679639"
+      },
+      {
+        "name": "XXXTENTACION",
+        "url": "https://genius.com/artists/Xxxtentacion",
+        "type": "popular",
+        "id": "396565"
+      },
+      {
+        "name": "Xzibit",
+        "url": "https://genius.com/artists/Xzibit",
+        "type": "popular",
+        "id": "291"
+      }
+    ],
+    "regular": [
+      {
+        "name": "X",
+        "url": "https://genius.com/artists/X",
+        "type": "regular",
+        "id": "13381"
+      },
+      {
+        "name": "​x0o0x_",
+        "url": "https://genius.com/artists/X0o0x",
+        "type": "regular",
+        "id": "2364166"
+      },
+      {
+        "name": "X4",
+        "url": "https://genius.com/artists/X4",
+        "type": "regular",
+        "id": "1532372"
+      },
+      {
+        "name": "X4Nii",
+        "url": "https://genius.com/artists/X4nii",
+        "type": "regular",
+        "id": "3475891"
+      },
+      {
+        "name": "X4nuryth",
+        "url": "https://genius.com/artists/X4nuryth",
+        "type": "regular",
+        "id": "4390578"
+      },
+      {
+        "name": "X7kira",
+        "url": "https://genius.com/artists/X7kira",
+        "type": "regular",
+        "id": "2506587"
+      },
+      {
+        "name": "XAAXAA",
+        "url": "https://genius.com/artists/Xaaxaa",
+        "type": "regular",
+        "id": "3000139"
+      },
+      {
+        "name": "Хабиб (Xabib)",
+        "url": "https://genius.com/artists/Xabib",
+        "type": "regular",
+        "id": "2591126"
+      },
+      {
+        "name": "Xabski",
+        "url": "https://genius.com/artists/Xabski",
+        "type": "regular",
+        "id": "1951539"
+      },
+      {
+        "name": "Xabur",
+        "url": "https://genius.com/artists/Xabur",
+        "type": "regular",
+        "id": "3874501"
+      },
+      {
+        "name": "XACV SQUAD",
+        "url": "https://genius.com/artists/Xacv-squad",
+        "type": "regular",
+        "id": "1799289"
+      },
+      {
+        "name": "‎xad",
+        "url": "https://genius.com/artists/Xad",
+        "type": "regular",
+        "id": "2354035"
+      },
+      {
+        "name": "xaduma",
+        "url": "https://genius.com/artists/Xaduma",
+        "type": "regular",
+        "id": "4189789"
+      },
+      {
+        "name": "‍xaev",
+        "url": "https://genius.com/artists/Xaev",
+        "type": "regular",
+        "id": "3210968"
+      },
+      {
+        "name": "Xamã",
+        "url": "https://genius.com/artists/Xama",
+        "type": "regular",
+        "id": "650138"
+      },
+      {
+        "name": "Xam651",
+        "url": "https://genius.com/artists/Xam651",
+        "type": "regular",
+        "id": "1749265"
+      },
+      {
+        "name": "X Ambassadors",
+        "url": "https://genius.com/artists/X-ambassadors",
+        "type": "regular",
+        "id": "51666"
+      },
+      {
+        "name": "Xamdam Sobirov",
+        "url": "https://genius.com/artists/Xamdam-sobirov",
+        "type": "regular",
+        "id": "3150579"
+      },
+      {
+        "name": "XamVolo",
+        "url": "https://genius.com/artists/Xamvolo",
+        "type": "regular",
+        "id": "91439"
+      },
+      {
+        "name": "Xana",
+        "url": "https://genius.com/artists/Xana",
+        "type": "regular",
+        "id": "2696251"
+      },
+      {
+        "name": "XANAKIN SKYWOK",
+        "url": "https://genius.com/artists/Xanakin-skywok",
+        "type": "regular",
+        "id": "2040409"
+      },
+      {
+        "name": "​xanaxrehabclub",
+        "url": "https://genius.com/artists/Xanaxrehabclub",
+        "type": "regular",
+        "id": "2831940"
+      },
+      {
+        "name": "Xand Avião",
+        "url": "https://genius.com/artists/Xand-aviao",
+        "type": "regular",
+        "id": "1170005"
+      },
+      {
+        "name": "​xander.",
+        "url": "https://genius.com/artists/Xander",
+        "type": "regular",
+        "id": "1929820"
+      },
+      {
+        "name": "Xander Ghost - زاندر جوست",
+        "url": "https://genius.com/artists/Xander-ghost",
+        "type": "regular",
+        "id": "228938"
+      },
+      {
+        "name": "Xander Linnet",
+        "url": "https://genius.com/artists/Xander-linnet",
+        "type": "regular",
+        "id": "1068328"
+      },
+      {
+        "name": "Xander Raymond Charles",
+        "url": "https://genius.com/artists/Xander-raymond-charles",
+        "type": "regular",
+        "id": "4366453"
+      },
+      {
+        "name": "Xander Sallows",
+        "url": "https://genius.com/artists/Xander-sallows",
+        "type": "regular",
+        "id": "2612475"
+      },
+      {
+        "name": "XANDRA (DJ)",
+        "url": "https://genius.com/artists/Xandra-dj",
+        "type": "regular",
+        "id": "4164086"
+      },
+      {
+        "name": "Xandria",
+        "url": "https://genius.com/artists/Xandria",
+        "type": "regular",
+        "id": "223149"
+      },
+      {
+        "name": "XandulsBored",
+        "url": "https://genius.com/artists/Xandulsbored",
+        "type": "regular",
+        "id": "1417454"
+      },
+      {
+        "name": "Xandyx",
+        "url": "https://genius.com/artists/Xandyx",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Xang",
+        "url": "https://genius.com/artists/Xang",
+        "type": "regular",
+        "id": "3418840"
+      },
+      {
+        "name": "xang3l",
+        "url": "https://genius.com/artists/Xang3l",
+        "type": "regular",
+        "id": "4252906"
+      },
+      {
+        "name": "Xan Griffin",
+        "url": "https://genius.com/artists/Xan-griffin",
+        "type": "regular",
+        "id": "1030495"
+      },
+      {
+        "name": "Xanman",
+        "url": "https://genius.com/artists/Xanman",
+        "type": "regular",
+        "id": "1534649"
+      },
+      {
+        "name": "Xanman$hawty",
+        "url": "https://genius.com/artists/Xanman-hawty",
+        "type": "regular",
+        "id": "1868247"
+      },
+      {
+        "name": "Xanım İsmayılqızı",
+        "url": "https://genius.com/artists/Xanm-ismaylqz",
+        "type": "regular",
+        "id": "1241951"
+      },
+      {
+        "name": "Xanny Label (XANNYxLIFE)",
+        "url": "https://genius.com/artists/Xanny-label-xannyxlife",
+        "type": "regular",
+        "id": "3180713"
+      },
+      {
+        "name": "Xansei",
+        "url": "https://genius.com/artists/Xansei",
+        "type": "regular",
+        "id": "1860158"
+      },
+      {
+        "name": "XANSY",
+        "url": "https://genius.com/artists/Xansy",
+        "type": "regular",
+        "id": "2338884"
+      },
+      {
+        "name": "Xanthochroid",
+        "url": "https://genius.com/artists/Xanthochroid",
+        "type": "regular",
+        "id": "379520"
+      },
+      {
+        "name": "Xantikvariāts, Hotte, Steps",
+        "url": "https://genius.com/artists/Xantikvariats-hotte-steps",
+        "type": "regular",
+        "id": "3433726"
+      },
+      {
+        "name": "Xantos",
+        "url": "https://genius.com/artists/Xantos",
+        "type": "regular",
+        "id": "218766"
+      },
+      {
+        "name": "Xaon",
+        "url": "https://genius.com/artists/Xaon",
+        "type": "regular",
+        "id": "1459099"
+      },
+      {
+        "name": "​xaptiox",
+        "url": "https://genius.com/artists/Xaptiox",
+        "type": "regular",
+        "id": "1724461"
+      },
+      {
+        "name": "XARAKTER",
+        "url": "https://genius.com/artists/Xarakter",
+        "type": "regular",
+        "id": "1878697"
+      },
+      {
+        "name": "XARISTA",
+        "url": "https://genius.com/artists/Xarista",
+        "type": "regular",
+        "id": "2656218"
+      },
+      {
+        "name": "Xasper",
+        "url": "https://genius.com/artists/Xasper",
+        "type": "regular",
+        "id": "3052231"
+      },
+      {
+        "name": "Xassa",
+        "url": "https://genius.com/artists/Xassa",
+        "type": "regular",
+        "id": "2111552"
+      },
+      {
+        "name": "Xasthur",
+        "url": "https://genius.com/artists/Xasthur",
+        "type": "regular",
+        "id": "368929"
+      },
+      {
+        "name": "XATASHI",
+        "url": "https://genius.com/artists/Xatashi",
+        "type": "regular",
+        "id": "2000903"
+      },
+      {
+        "name": "Xatirə İslam",
+        "url": "https://genius.com/artists/Xatir-islam",
+        "type": "regular",
+        "id": "2261320"
+      },
+      {
+        "name": "Xatuba",
+        "url": "https://genius.com/artists/Xatuba",
+        "type": "regular",
+        "id": "3871999"
+      },
+      {
+        "name": "Xatzifrageta",
+        "url": "https://genius.com/artists/Xatzifrageta",
+        "type": "regular",
+        "id": "2953503"
+      },
+      {
+        "name": "Xav",
+        "url": "https://genius.com/artists/Xav",
+        "type": "regular",
+        "id": "4330933"
+      },
+      {
+        "name": "XAVAS",
+        "url": "https://genius.com/artists/Xavas",
+        "type": "regular",
+        "id": "23815"
+      },
+      {
+        "name": "XAVER",
+        "url": "https://genius.com/artists/Xaver",
+        "type": "regular",
+        "id": "2387923"
+      },
+      {
+        "name": "Xavier Cugat",
+        "url": "https://genius.com/artists/Xavier-cugat",
+        "type": "regular",
+        "id": "379359"
+      },
+      {
+        "name": "Xavier Galatis",
+        "url": "https://genius.com/artists/Xavier-galatis",
+        "type": "regular",
+        "id": "3222903"
+      },
+      {
+        "name": "Xavier Mayne",
+        "url": "https://genius.com/artists/Xavier-mayne",
+        "type": "regular",
+        "id": "1456637"
+      },
+      {
+        "name": "Xavier Naidoo",
+        "url": "https://genius.com/artists/Xavier-naidoo",
+        "type": "regular",
+        "id": "10165"
+      },
+      {
+        "name": "Xavier Omär",
+        "url": "https://genius.com/artists/Xavier-omar",
+        "type": "regular",
+        "id": "874227"
+      },
+      {
+        "name": "Xavier Renegade Angel",
+        "url": "https://genius.com/artists/Xavier-renegade-angel",
+        "type": "regular",
+        "id": "3213549"
+      },
+      {
+        "name": "Xavier Ribera",
+        "url": "https://genius.com/artists/Xavier-ribera",
+        "type": "regular",
+        "id": "2839457"
+      },
+      {
+        "name": "Xavier Rudd",
+        "url": "https://genius.com/artists/Xavier-rudd",
+        "type": "regular",
+        "id": "31025"
+      },
+      {
+        "name": "Xavier Weeks",
+        "url": "https://genius.com/artists/Xavier-weeks",
+        "type": "regular",
+        "id": "1768240"
+      },
+      {
+        "name": "Xavi (MEX)",
+        "url": "https://genius.com/artists/Xavi-mex",
+        "type": "regular",
+        "id": "3116697"
+      },
+      {
+        "name": "Xavi The Destroyer",
+        "url": "https://genius.com/artists/Xavi-the-destroyer",
+        "type": "regular",
+        "id": "532576"
+      },
+      {
+        "name": "XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX",
+        "url": "https://genius.com/artists/Xavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffx",
+        "type": "regular",
+        "id": "1480924"
+      },
+      {
+        "name": "Xavy Rusan",
+        "url": "https://genius.com/artists/Xavy-rusan",
+        "type": "regular",
+        "id": "1979125"
+      },
+      {
+        "name": "Xaxanity",
+        "url": "https://genius.com/artists/Xaxanity",
+        "type": "regular",
+        "id": "2481540"
+      },
+      {
+        "name": "Xay Hill",
+        "url": "https://genius.com/artists/Xay-hill",
+        "type": "regular",
+        "id": "1616357"
+      },
+      {
+        "name": "Xayvier",
+        "url": "https://genius.com/artists/Xayvier",
+        "type": "regular",
+        "id": "1772132"
+      },
+      {
+        "name": "Xayyam Nisanov",
+        "url": "https://genius.com/artists/Xayyam-nisanov",
+        "type": "regular",
+        "id": "2511547"
+      },
+      {
+        "name": "The XCERTS",
+        "url": "https://genius.com/artists/The-xcerts",
+        "type": "regular",
+        "id": "361733"
+      },
+      {
+        "name": "X-Cetra",
+        "url": "https://genius.com/artists/X-cetra",
+        "type": "regular",
+        "id": "3814079"
+      },
+      {
+        "name": "陳輝陽 x 女聲合唱 (Chan Fai Young x Women's Choir)",
+        "url": "https://genius.com/artists/X-chan-fai-young-x-womens-choir",
+        "type": "regular",
+        "id": "2761618"
+      },
+      {
+        "name": "X Clan",
+        "url": "https://genius.com/artists/X-clan",
+        "type": "regular",
+        "id": "11221"
+      },
+      {
+        "name": "The X Clap",
+        "url": "https://genius.com/artists/The-x-clap",
+        "type": "regular",
+        "id": "529508"
+      },
+      {
+        "name": "XCOMM",
+        "url": "https://genius.com/artists/Xcomm",
+        "type": "regular",
+        "id": "4181191"
+      },
+      {
+        "name": "X-Cops",
+        "url": "https://genius.com/artists/X-cops",
+        "type": "regular",
+        "id": "372794"
+      },
+      {
+        "name": "XD (엑스디)",
+        "url": "https://genius.com/artists/Xd",
+        "type": "regular",
+        "id": "3357802"
+      },
+      {
+        "name": "XDdata",
+        "url": "https://genius.com/artists/Xddata",
+        "type": "regular",
+        "id": "3835595"
+      },
+      {
+        "name": "Xdjevsy",
+        "url": "https://genius.com/artists/Xdjevsy",
+        "type": "regular",
+        "id": "3977978"
+      },
+      {
+        "name": "xe1to",
+        "url": "https://genius.com/artists/Xe1to",
+        "type": "regular",
+        "id": "2910220"
+      },
+      {
+        "name": "The X-Ecutioners",
+        "url": "https://genius.com/artists/The-x-ecutioners",
+        "type": "regular",
+        "id": "8361"
+      },
+      {
+        "name": "Xeg",
+        "url": "https://genius.com/artists/Xeg",
+        "type": "regular",
+        "id": "48291"
+      },
+      {
+        "name": "XEKURO",
+        "url": "https://genius.com/artists/Xekuro",
+        "type": "regular",
+        "id": "2022961"
+      },
+      {
+        "name": "Xela fella",
+        "url": "https://genius.com/artists/Xela-fella",
+        "type": "regular",
+        "id": "2587116"
+      },
+      {
+        "name": "XELISHURT",
+        "url": "https://genius.com/artists/Xelishurt",
+        "type": "regular",
+        "id": "2400461"
+      },
+      {
+        "name": "XeloMusic",
+        "url": "https://genius.com/artists/Xelomusic",
+        "type": "regular",
+        "id": "3873493"
+      },
+      {
+        "name": "Xema Fuentes",
+        "url": "https://genius.com/artists/Xema-fuentes",
+        "type": "regular",
+        "id": "1997235"
+      },
+      {
+        "name": "Xen",
+        "url": "https://genius.com/artists/Xen",
+        "type": "regular",
+        "id": "336536"
+      },
+      {
+        "name": "Xen0christ",
+        "url": "https://genius.com/artists/Xen0christ",
+        "type": "regular",
+        "id": "1510494"
+      },
+      {
+        "name": "Xenia (HRV)",
+        "url": "https://genius.com/artists/Xenia-hrv",
+        "type": "regular",
+        "id": "3588208"
+      },
+      {
+        "name": "Xenia Manasseh",
+        "url": "https://genius.com/artists/Xenia-manasseh",
+        "type": "regular",
+        "id": "1676977"
+      },
+      {
+        "name": "Xenia Pajčin",
+        "url": "https://genius.com/artists/Xenia-pajcin",
+        "type": "regular",
+        "id": "3097773"
+      },
+      {
+        "name": "Xenia Rubinos",
+        "url": "https://genius.com/artists/Xenia-rubinos",
+        "type": "regular",
+        "id": "977679"
+      },
+      {
+        "name": "XENO",
+        "url": "https://genius.com/artists/Xeno",
+        "type": "regular",
+        "id": "2805973"
+      },
+      {
+        "name": "Xeno Carr",
+        "url": "https://genius.com/artists/Xeno-carr",
+        "type": "regular",
+        "id": "1066661"
+      },
+      {
+        "name": "Xenon",
+        "url": "https://genius.com/artists/Xenon",
+        "type": "regular",
+        "id": "1259401"
+      },
+      {
+        "name": "Xenoswrld",
+        "url": "https://genius.com/artists/Xenoswrld",
+        "type": "regular",
+        "id": "2025965"
+      },
+      {
+        "name": "Xentrix",
+        "url": "https://genius.com/artists/Xentrix",
+        "type": "regular",
+        "id": "353338"
+      },
+      {
+        "name": "Xetonyl",
+        "url": "https://genius.com/artists/Xetonyl",
+        "type": "regular",
+        "id": "1574359"
+      },
+      {
+        "name": "The X Factor Musical",
+        "url": "https://genius.com/artists/The-x-factor-musical",
+        "type": "regular",
+        "id": "4244063"
+      },
+      {
+        "name": "XFGaming",
+        "url": "https://genius.com/artists/Xfgaming",
+        "type": "regular",
+        "id": "4194257"
+      },
+      {
+        "name": "Xfruge",
+        "url": "https://genius.com/artists/Xfruge",
+        "type": "regular",
+        "id": "1225402"
+      },
+      {
+        "name": "X-fusion",
+        "url": "https://genius.com/artists/X-fusion",
+        "type": "regular",
+        "id": "355338"
+      },
+      {
+        "name": "​​xHEIDIx",
+        "url": "https://genius.com/artists/Xheidix",
+        "type": "regular",
+        "id": "2998132"
+      },
+      {
+        "name": "Xhelazz",
+        "url": "https://genius.com/artists/Xhelazz",
+        "type": "regular",
+        "id": "54165"
+      },
+      {
+        "name": "Xhensila",
+        "url": "https://genius.com/artists/Xhensila",
+        "type": "regular",
+        "id": "1530997"
+      },
+      {
+        "name": "Xhess",
+        "url": "https://genius.com/artists/Xhess",
+        "type": "regular",
+        "id": "3835632"
+      },
+      {
+        "name": "Xhoni Beats",
+        "url": "https://genius.com/artists/Xhoni-beats",
+        "type": "regular",
+        "id": "2981618"
+      },
+      {
+        "name": "Xhris2Eazy",
+        "url": "https://genius.com/artists/Xhris2eazy",
+        "type": "regular",
+        "id": "2098963"
+      },
+      {
+        "name": "XHz Official",
+        "url": "https://genius.com/artists/Xhz-official",
+        "type": "regular",
+        "id": "3301232"
+      },
+      {
+        "name": "Xhulooo",
+        "url": "https://genius.com/artists/Xhulooo",
+        "type": "regular",
+        "id": "2181918"
+      },
+      {
+        "name": "XIA",
+        "url": "https://genius.com/artists/Xia",
+        "type": "regular",
+        "id": "619612"
+      },
+      {
+        "name": "Xiang Xiang",
+        "url": "https://genius.com/artists/Xiang-xiang",
+        "type": "regular",
+        "id": "529772"
+      },
+      {
+        "name": "蕭秉治 (Xiao Bing Chih)",
+        "url": "https://genius.com/artists/Xiao-bing-chih",
+        "type": "regular",
+        "id": "2676063"
+      },
+      {
+        "name": "小潘潘 (XiaoPanPan)",
+        "url": "https://genius.com/artists/Xiaopanpan",
+        "type": "regular",
+        "id": "2218248"
+      },
+      {
+        "name": "肖战 (Xiao Zhan)",
+        "url": "https://genius.com/artists/Xiao-zhan",
+        "type": "regular",
+        "id": "2231402"
+      },
+      {
+        "name": "夏之禹 (Xia Zhiyu)",
+        "url": "https://genius.com/artists/Xia-zhiyu",
+        "type": "regular",
+        "id": "3531028"
+      },
+      {
+        "name": "Xibalba",
+        "url": "https://genius.com/artists/Xibalba",
+        "type": "regular",
+        "id": "343135"
+      },
+      {
+        "name": "​​xicu",
+        "url": "https://genius.com/artists/Xicu",
+        "type": "regular",
+        "id": "3766304"
+      },
+      {
+        "name": "Øxid",
+        "url": "https://genius.com/artists/Xid",
+        "type": "regular",
+        "id": "4141735"
+      },
+      {
+        "name": "Xidir",
+        "url": "https://genius.com/artists/Xidir",
+        "type": "regular",
+        "id": "1749211"
+      },
+      {
+        "name": "XIII",
+        "url": "https://genius.com/artists/Xiii",
+        "type": "regular",
+        "id": "1190965"
+      },
+      {
+        "name": "XIII (13)",
+        "url": "https://genius.com/artists/Xiii-13",
+        "type": "regular",
+        "id": "1746664"
+      },
+      {
+        "name": "XiiiDolor",
+        "url": "https://genius.com/artists/Xiiidolor",
+        "type": "regular",
+        "id": "1655020"
+      },
+      {
+        "name": "XIIVI",
+        "url": "https://genius.com/artists/Xiivi",
+        "type": "regular",
+        "id": "3470035"
+      },
+      {
+        "name": "xikers (싸이커스)",
+        "url": "https://genius.com/artists/Xikers",
+        "type": "regular",
+        "id": "3357813"
+      },
+      {
+        "name": "Ximena Sariñana",
+        "url": "https://genius.com/artists/Ximena-sarinana",
+        "type": "regular",
+        "id": "453424"
+      },
+      {
+        "name": "Ximista",
+        "url": "https://genius.com/artists/Ximista",
+        "type": "regular",
+        "id": "3245526"
+      },
+      {
+        "name": "Ximone Rose",
+        "url": "https://genius.com/artists/Ximone-rose",
+        "type": "regular",
+        "id": "3056846"
+      },
+      {
+        "name": "​ximora",
+        "url": "https://genius.com/artists/Ximora",
+        "type": "regular",
+        "id": "3256889"
+      },
+      {
+        "name": "X:IN",
+        "url": "https://genius.com/artists/X-in",
+        "type": "regular",
+        "id": "3464957"
+      },
+      {
+        "name": "Xina Mora",
+        "url": "https://genius.com/artists/Xina-mora",
+        "type": "regular",
+        "id": "2319621"
+      },
+      {
+        "name": "Xingyi",
+        "url": "https://genius.com/artists/Xingyi",
+        "type": "regular",
+        "id": "4336681"
+      },
+      {
+        "name": "XINK",
+        "url": "https://genius.com/artists/Xink",
+        "type": "regular",
+        "id": "377584"
+      },
+      {
+        "name": "Xinlisupreme",
+        "url": "https://genius.com/artists/Xinlisupreme",
+        "type": "regular",
+        "id": "2162256"
+      },
+      {
+        "name": "劉雨昕 (Xin Liu)",
+        "url": "https://genius.com/artists/Xin-liu",
+        "type": "regular",
+        "id": "2614418"
+      },
+      {
+        "name": "XINOBI",
+        "url": "https://genius.com/artists/Xinobi",
+        "type": "regular",
+        "id": "331745"
+      },
+      {
+        "name": "Xiomara Blackstock",
+        "url": "https://genius.com/artists/Xiomara-blackstock",
+        "type": "regular",
+        "id": "3847703"
+      },
+      {
+        "name": "Xir",
+        "url": "https://genius.com/artists/Xir",
+        "type": "regular",
+        "id": "181344"
+      },
+      {
+        "name": "XIRA",
+        "url": "https://genius.com/artists/Xira",
+        "type": "regular",
+        "id": "1666000"
+      },
+      {
+        "name": "Xis",
+        "url": "https://genius.com/artists/Xis",
+        "type": "regular",
+        "id": "187536"
+      },
+      {
+        "name": "XIT",
+        "url": "https://genius.com/artists/Xit",
+        "type": "regular",
+        "id": "1426491"
+      },
+      {
+        "name": "Xiuhtezcatl",
+        "url": "https://genius.com/artists/Xiuhtezcatl",
+        "type": "regular",
+        "id": "1480776"
+      },
+      {
+        "name": "XIUMIN",
+        "url": "https://genius.com/artists/Xiumin",
+        "type": "regular",
+        "id": "1166274"
+      },
+      {
+        "name": "ΔXIUS LIИK (AXIUS LINK)",
+        "url": "https://genius.com/artists/Xius-lik-axius-link",
+        "type": "regular",
+        "id": "2601208"
+      },
+      {
+        "name": "Xiyo",
+        "url": "https://genius.com/artists/Xiyo",
+        "type": "regular",
+        "id": "3001272"
+      },
+      {
+        "name": "X JAPAN",
+        "url": "https://genius.com/artists/X-japan",
+        "type": "regular",
+        "id": "174661"
+      },
+      {
+        "name": "Xójira",
+        "url": "https://genius.com/artists/Xojira",
+        "type": "regular",
+        "id": "3203794"
+      },
+      {
+        "name": "​xJK.",
+        "url": "https://genius.com/artists/Xjk",
+        "type": "regular",
+        "id": "1460029"
+      },
+      {
+        "name": "XKL",
+        "url": "https://genius.com/artists/Xkl",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "XKUBEE",
+        "url": "https://genius.com/artists/Xkubee",
+        "type": "regular",
+        "id": "1978351"
+      },
+      {
+        "name": "XKYLAR",
+        "url": "https://genius.com/artists/Xkylar",
+        "type": "regular",
+        "id": "1721354"
+      },
+      {
+        "name": "Xllie!",
+        "url": "https://genius.com/artists/Xllie",
+        "type": "regular",
+        "id": "3701963"
+      },
+      {
+        "name": "Xlout",
+        "url": "https://genius.com/artists/Xlout",
+        "type": "regular",
+        "id": "4057934"
+      },
+      {
+        "name": "XLOV (엑스러브)",
+        "url": "https://genius.com/artists/Xlov",
+        "type": "regular",
+        "id": "4247632"
+      },
+      {
+        "name": "XLOVCLO",
+        "url": "https://genius.com/artists/Xlovclo",
+        "type": "regular",
+        "id": "2936967"
+      },
+      {
+        "name": "X Lovers",
+        "url": "https://genius.com/artists/X-lovers",
+        "type": "regular",
+        "id": "1272890"
+      },
+      {
+        "name": "Xlson137",
+        "url": "https://genius.com/artists/Xlson137",
+        "type": "regular",
+        "id": "976168"
+      },
+      {
+        "name": "XLyl. The X Mark",
+        "url": "https://genius.com/artists/Xlyl-the-x-mark",
+        "type": "regular",
+        "id": "3217858"
+      },
+      {
+        "name": "Xmal Deutschland",
+        "url": "https://genius.com/artists/Xmal-deutschland",
+        "type": "regular",
+        "id": "363351"
+      },
+      {
+        "name": "XMASwu",
+        "url": "https://genius.com/artists/Xmaswu",
+        "type": "regular",
+        "id": "2992246"
+      },
+      {
+        "name": "​xMax",
+        "url": "https://genius.com/artists/Xmax",
+        "type": "regular",
+        "id": "2982990"
+      },
+      {
+        "name": "X-Men",
+        "url": "https://genius.com/artists/X-men",
+        "type": "regular",
+        "id": "1948"
+      },
+      {
+        "name": "XNEGATIVEMAN",
+        "url": "https://genius.com/artists/Xnegativeman",
+        "type": "regular",
+        "id": "3804382"
+      },
+      {
+        "name": "XNGRYSXUL",
+        "url": "https://genius.com/artists/Xngrysxul",
+        "type": "regular",
+        "id": "4403243"
+      },
+      {
+        "name": "XnightsiX",
+        "url": "https://genius.com/artists/Xnightsix",
+        "type": "regular",
+        "id": "3059062"
+      },
+      {
+        "name": "ØXN (IRE)",
+        "url": "https://genius.com/artists/Xn-ire",
+        "type": "regular",
+        "id": "3601651"
+      },
+      {
+        "name": "​​​xNOMADx",
+        "url": "https://genius.com/artists/Xnomadx",
+        "type": "regular",
+        "id": "3648622"
+      },
+      {
+        "name": "​xnrst",
+        "url": "https://genius.com/artists/Xnrst",
+        "type": "regular",
+        "id": "1672266"
+      },
+      {
+        "name": "Xīn Shídài Héchàng Tuán",
+        "url": "https://genius.com/artists/Xin-shidai-hechang-tuan",
+        "type": "regular",
+        "id": "3821325"
+      },
+      {
+        "name": "​xnti",
+        "url": "https://genius.com/artists/Xnti",
+        "type": "regular",
+        "id": "3872246"
+      },
+      {
+        "name": "XO Alone",
+        "url": "https://genius.com/artists/Xo-alone",
+        "type": "regular",
+        "id": "1658719"
+      },
+      {
+        "name": "XoBrooklynne",
+        "url": "https://genius.com/artists/Xobrooklynne",
+        "type": "regular",
+        "id": "2980999"
+      },
+      {
+        "name": "XODDIAC",
+        "url": "https://genius.com/artists/Xoddiac",
+        "type": "regular",
+        "id": "2256615"
+      },
+      {
+        "name": "XODIAC",
+        "url": "https://genius.com/artists/Xodiac",
+        "type": "regular",
+        "id": "3468497"
+      },
+      {
+        "name": "Xoel López",
+        "url": "https://genius.com/artists/Xoel-lopez",
+        "type": "regular",
+        "id": "453832"
+      },
+      {
+        "name": "Xoemyr",
+        "url": "https://genius.com/artists/Xoemyr",
+        "type": "regular",
+        "id": "2691153"
+      },
+      {
+        "name": "​​​​xoff",
+        "url": "https://genius.com/artists/Xoff",
+        "type": "regular",
+        "id": "4090050"
+      },
+      {
+        "name": "​xofilo",
+        "url": "https://genius.com/artists/Xofilo",
+        "type": "regular",
+        "id": "2673845"
+      },
+      {
+        "name": "XO-IQ",
+        "url": "https://genius.com/artists/Xo-iq",
+        "type": "regular",
+        "id": "531788"
+      },
+      {
+        "name": "Xolly Mncwango",
+        "url": "https://genius.com/artists/Xolly-mncwango",
+        "type": "regular",
+        "id": "4306480"
+      },
+      {
+        "name": "Xolo Maridueña",
+        "url": "https://genius.com/artists/Xolo-mariduena",
+        "type": "regular",
+        "id": "3636576"
+      },
+      {
+        "name": "Xoly",
+        "url": "https://genius.com/artists/Xoly",
+        "type": "regular",
+        "id": "3195864"
+      },
+      {
+        "name": "XOMG Pop",
+        "url": "https://genius.com/artists/Xomg-pop",
+        "type": "regular",
+        "id": "2992906"
+      },
+      {
+        "name": "xona",
+        "url": "https://genius.com/artists/Xona",
+        "type": "regular",
+        "id": "175038"
+      },
+      {
+        "name": "xoni",
+        "url": "https://genius.com/artists/Xoni",
+        "type": "regular",
+        "id": "3053449"
+      },
+      {
+        "name": "XONOR",
+        "url": "https://genius.com/artists/Xonor",
+        "type": "regular",
+        "id": "3921191"
+      },
+      {
+        "name": "​xooos (수스)",
+        "url": "https://genius.com/artists/Xooos",
+        "type": "regular",
+        "id": "3405659"
+      },
+      {
+        "name": "Xorro",
+        "url": "https://genius.com/artists/Xorro",
+        "type": "regular",
+        "id": "1408663"
+      },
+      {
+        "name": "XO TEAM",
+        "url": "https://genius.com/artists/Xo-team",
+        "type": "regular",
+        "id": "3005207"
+      },
+      {
+        "name": "Xoureldin - نور الدين الطيار",
+        "url": "https://genius.com/artists/Xoureldin",
+        "type": "regular",
+        "id": "3173204"
+      },
+      {
+        "name": "XOV",
+        "url": "https://genius.com/artists/Xov",
+        "type": "regular",
+        "id": "270305"
+      },
+      {
+        "name": "XO_willow☆",
+        "url": "https://genius.com/artists/Xo-willow",
+        "type": "regular",
+        "id": "2032124"
+      },
+      {
+        "name": "Xowla",
+        "url": "https://genius.com/artists/Xowla",
+        "type": "regular",
+        "id": "3027863"
+      },
+      {
+        "name": "Xoxo Jordan",
+        "url": "https://genius.com/artists/Xoxo-jordan",
+        "type": "regular",
+        "id": "2978218"
+      },
+      {
+        "name": "‎xoxoswitch",
+        "url": "https://genius.com/artists/Xoxoswitch",
+        "type": "regular",
+        "id": "2136941"
+      },
+      {
+        "name": "​xPainWarriorx",
+        "url": "https://genius.com/artists/Xpainwarriorx",
+        "type": "regular",
+        "id": "2235797"
+      },
+      {
+        "name": "XPDC",
+        "url": "https://genius.com/artists/Xpdc",
+        "type": "regular",
+        "id": "1806800"
+      },
+      {
+        "name": "Xpert",
+        "url": "https://genius.com/artists/Xpert",
+        "type": "regular",
+        "id": "164943"
+      },
+      {
+        "name": "X-Plane",
+        "url": "https://genius.com/artists/X-plane",
+        "type": "regular",
+        "id": "1768720"
+      },
+      {
+        "name": "Xploshi",
+        "url": "https://genius.com/artists/Xploshi",
+        "type": "regular",
+        "id": "2823476"
+      },
+      {
+        "name": "X-Press 2",
+        "url": "https://genius.com/artists/X-press-2",
+        "type": "regular",
+        "id": "361667"
+      },
+      {
+        "name": "XPWEW",
+        "url": "https://genius.com/artists/Xpwew",
+        "type": "regular",
+        "id": "1547519"
+      },
+      {
+        "name": "X-Raided",
+        "url": "https://genius.com/artists/X-raided",
+        "type": "regular",
+        "id": "3215"
+      },
+      {
+        "name": "XRaidX",
+        "url": "https://genius.com/artists/Xraidx",
+        "type": "regular",
+        "id": "1323498"
+      },
+      {
+        "name": "X (random)",
+        "url": "https://genius.com/artists/X-random",
+        "type": "regular",
+        "id": "1081178"
+      },
+      {
+        "name": "X-Ray Spex",
+        "url": "https://genius.com/artists/X-ray-spex",
+        "type": "regular",
+        "id": "26929"
+      },
+      {
+        "name": "XRIZ",
+        "url": "https://genius.com/artists/Xriz",
+        "type": "regular",
+        "id": "459851"
+      },
+      {
+        "name": "XROOTZ",
+        "url": "https://genius.com/artists/Xrootz",
+        "type": "regular",
+        "id": "2593719"
+      },
+      {
+        "name": "#Xrootz CL",
+        "url": "https://genius.com/artists/Xrootz-cl",
+        "type": "regular",
+        "id": "2567099"
+      },
+      {
+        "name": "#XROOTZ Lz",
+        "url": "https://genius.com/artists/Xrootz-lz",
+        "type": "regular",
+        "id": "2567100"
+      },
+      {
+        "name": "XROSS",
+        "url": "https://genius.com/artists/Xross",
+        "type": "regular",
+        "id": "2110969"
+      },
+      {
+        "name": "XRS (GRC)",
+        "url": "https://genius.com/artists/Xrs-grc",
+        "type": "regular",
+        "id": "3842187"
+      },
+      {
+        "name": "XRUSTALIC",
+        "url": "https://genius.com/artists/Xrustalic",
+        "type": "regular",
+        "id": "3483641"
+      },
+      {
+        "name": "​xryce",
+        "url": "https://genius.com/artists/Xryce",
+        "type": "regular",
+        "id": "3394741"
+      },
+      {
+        "name": "Xscape",
+        "url": "https://genius.com/artists/Xscape",
+        "type": "regular",
+        "id": "7418"
+      },
+      {
+        "name": "​xsickboi",
+        "url": "https://genius.com/artists/Xsickboi",
+        "type": "regular",
+        "id": "2654713"
+      },
+      {
+        "name": "XSNX MSCX",
+        "url": "https://genius.com/artists/Xsnx-mscx",
+        "type": "regular",
+        "id": "3631083"
+      },
+      {
+        "name": "XSOLEIL",
+        "url": "https://genius.com/artists/Xsoleil",
+        "type": "regular",
+        "id": "3371023"
+      },
+      {
+        "name": "XS Project",
+        "url": "https://genius.com/artists/Xs-project",
+        "type": "regular",
+        "id": "1275185"
+      },
+      {
+        "name": "​X (SRB)",
+        "url": "https://genius.com/artists/X-srb",
+        "type": "regular",
+        "id": "2224376"
+      },
+      {
+        "name": "xstasyslim",
+        "url": "https://genius.com/artists/Xstasyslim",
+        "type": "regular",
+        "id": "3874462"
+      },
+      {
+        "name": "Xstay",
+        "url": "https://genius.com/artists/Xstay",
+        "type": "regular",
+        "id": "1734220"
+      },
+      {
+        "name": "Xstitch",
+        "url": "https://genius.com/artists/Xstitch",
+        "type": "regular",
+        "id": "2900092"
+      },
+      {
+        "name": "X-Tense",
+        "url": "https://genius.com/artists/X-tense",
+        "type": "regular",
+        "id": "545257"
+      },
+      {
+        "name": "Xtha",
+        "url": "https://genius.com/artists/Xtha",
+        "type": "regular",
+        "id": "3386001"
+      },
+      {
+        "name": "XTINA GG",
+        "url": "https://genius.com/artists/Xtina-gg",
+        "type": "regular",
+        "id": "3646429"
+      },
+      {
+        "name": "xtinto",
+        "url": "https://genius.com/artists/Xtinto",
+        "type": "regular",
+        "id": "551968"
+      },
+      {
+        "name": "​xtk.cnb",
+        "url": "https://genius.com/artists/Xtkcnb",
+        "type": "regular",
+        "id": "3779372"
+      },
+      {
+        "name": "XTokely",
+        "url": "https://genius.com/artists/Xtokely",
+        "type": "regular",
+        "id": "2272360"
+      },
+      {
+        "name": "​​xTOx",
+        "url": "https://genius.com/artists/Xtox",
+        "type": "regular",
+        "id": "3948165"
+      },
+      {
+        "name": "X.T.P. (GRC)",
+        "url": "https://genius.com/artists/Xtp-grc",
+        "type": "regular",
+        "id": "1649733"
+      },
+      {
+        "name": "xTR33x",
+        "url": "https://genius.com/artists/Xtr33x",
+        "type": "regular",
+        "id": "4376726"
+      },
+      {
+        "name": "XTR4angelz4me",
+        "url": "https://genius.com/artists/Xtr4angelz4me",
+        "type": "regular",
+        "id": "3706224"
+      },
+      {
+        "name": "⁣xtrace",
+        "url": "https://genius.com/artists/Xtrace",
+        "type": "regular",
+        "id": "3377212"
+      },
+      {
+        "name": "XTREME",
+        "url": "https://genius.com/artists/Xtreme",
+        "type": "regular",
+        "id": "3627252"
+      },
+      {
+        "name": "Xtreme (Band)",
+        "url": "https://genius.com/artists/Xtreme-band",
+        "type": "regular",
+        "id": "34126"
+      },
+      {
+        "name": "Xtreme Team",
+        "url": "https://genius.com/artists/Xtreme-team",
+        "type": "regular",
+        "id": "197638"
+      },
+      {
+        "name": "XTRIONIKA",
+        "url": "https://genius.com/artists/Xtrionika",
+        "type": "regular",
+        "id": "3695661"
+      },
+      {
+        "name": "xtsy*",
+        "url": "https://genius.com/artists/Xtsy",
+        "type": "regular",
+        "id": "3155848"
+      },
+      {
+        "name": "Xtwze",
+        "url": "https://genius.com/artists/Xtwze",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "xuanpac",
+        "url": "https://genius.com/artists/Xuanpac",
+        "type": "regular",
+        "id": "4450630"
+      },
+      {
+        "name": "XUITCASECITY",
+        "url": "https://genius.com/artists/Xuitcasecity",
+        "type": "regular",
+        "id": "869280"
+      },
+      {
+        "name": "Xukai & Cheng Xiao",
+        "url": "https://genius.com/artists/Xukai-and-cheng-xiao",
+        "type": "regular",
+        "id": "3084454"
+      },
+      {
+        "name": "‎xul south pacific trading co. est 1918",
+        "url": "https://genius.com/artists/Xul-south-pacific-trading-co-est-1918",
+        "type": "regular",
+        "id": "3317983"
+      },
+      {
+        "name": "Xumar Qədimova",
+        "url": "https://genius.com/artists/Xumar-qdimova",
+        "type": "regular",
+        "id": "1262155"
+      },
+      {
+        "name": "xUnreachablee",
+        "url": "https://genius.com/artists/Xunreachablee",
+        "type": "regular",
+        "id": "1067455"
+      },
+      {
+        "name": "Xutos & Pontapés",
+        "url": "https://genius.com/artists/Xutos-and-pontapes",
+        "type": "regular",
+        "id": "42160"
+      },
+      {
+        "name": "Xuxa",
+        "url": "https://genius.com/artists/Xuxa",
+        "type": "regular",
+        "id": "154271"
+      },
+      {
+        "name": "Xuxhiz",
+        "url": "https://genius.com/artists/Xuxhiz",
+        "type": "regular",
+        "id": "3490990"
+      },
+      {
+        "name": "XV",
+        "url": "https://genius.com/artists/Xv",
+        "type": "regular",
+        "id": "1010"
+      },
+      {
+        "name": "XVBARBAR",
+        "url": "https://genius.com/artists/Xvbarbar",
+        "type": "regular",
+        "id": "77499"
+      },
+      {
+        "name": "XVI Religion",
+        "url": "https://genius.com/artists/Xvi-religion",
+        "type": "regular",
+        "id": "232544"
+      },
+      {
+        "name": "Xvir Grewal",
+        "url": "https://genius.com/artists/Xvir-grewal",
+        "type": "regular",
+        "id": "4406550"
+      },
+      {
+        "name": "xvnki",
+        "url": "https://genius.com/artists/Xvnki",
+        "type": "regular",
+        "id": "4176178"
+      },
+      {
+        "name": "xvskillz",
+        "url": "https://genius.com/artists/Xvskillz",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Xvtt",
+        "url": "https://genius.com/artists/Xvtt",
+        "type": "regular",
+        "id": "341854"
+      },
+      {
+        "name": "XVXX",
+        "url": "https://genius.com/artists/Xvxx",
+        "type": "regular",
+        "id": "1261636"
+      },
+      {
+        "name": "XweaponX",
+        "url": "https://genius.com/artists/Xweaponx",
+        "type": "regular",
+        "id": "3468714"
+      },
+      {
+        "name": "XWHISKY",
+        "url": "https://genius.com/artists/Xwhisky",
+        "type": "regular",
+        "id": "2351407"
+      },
+      {
+        "name": "Xxanteria",
+        "url": "https://genius.com/artists/Xxanteria",
+        "type": "regular",
+        "id": "3315643"
+      },
+      {
+        "name": "XXC Legacy",
+        "url": "https://genius.com/artists/Xxc-legacy",
+        "type": "regular",
+        "id": "2966713"
+      },
+      {
+        "name": "​xxcrush",
+        "url": "https://genius.com/artists/Xxcrush",
+        "type": "regular",
+        "id": "2023738"
+      },
+      {
+        "name": "Xxer",
+        "url": "https://genius.com/artists/Xxer",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "xxffcyuvcui",
+        "url": "https://genius.com/artists/Xxffcyuvcui",
+        "type": "regular",
+        "id": "4246601"
+      },
+      {
+        "name": "Xxkaster",
+        "url": "https://genius.com/artists/Xxkaster",
+        "type": "regular",
+        "id": "2258482"
+      },
+      {
+        "name": "XXKATUSJINSUX",
+        "url": "https://genius.com/artists/Xxkatusjinsux",
+        "type": "regular",
+        "id": "2892118"
+      },
+      {
+        "name": "XX:me",
+        "url": "https://genius.com/artists/Xx-me",
+        "type": "regular",
+        "id": "1470814"
+      },
+      {
+        "name": "​​xxtarlit⚸",
+        "url": "https://genius.com/artists/Xxtarlit",
+        "type": "regular",
+        "id": "3023839"
+      },
+      {
+        "name": "​xxtristanxo",
+        "url": "https://genius.com/artists/Xxtristanxo",
+        "type": "regular",
+        "id": "3153658"
+      },
+      {
+        "name": "XxulliGan",
+        "url": "https://genius.com/artists/Xxulligan",
+        "type": "regular",
+        "id": "3780347"
+      },
+      {
+        "name": "Xxxbillyturtle",
+        "url": "https://genius.com/artists/Xxxbillyturtle",
+        "type": "regular",
+        "id": "4374025"
+      },
+      {
+        "name": "XXXHXAILO",
+        "url": "https://genius.com/artists/Xxxhxailo",
+        "type": "regular",
+        "id": "1690572"
+      },
+      {
+        "name": "XXX (KOR)",
+        "url": "https://genius.com/artists/Xxx-kor",
+        "type": "regular",
+        "id": "1730580"
+      },
+      {
+        "name": "Xxxmän360",
+        "url": "https://genius.com/artists/Xxxman360",
+        "type": "regular",
+        "id": "3967151"
+      },
+      {
+        "name": "XXX Rottweiler Hundar",
+        "url": "https://genius.com/artists/Xxx-rottweiler-hundar",
+        "type": "regular",
+        "id": "62985"
+      },
+      {
+        "name": "XXXTRAKTOR",
+        "url": "https://genius.com/artists/Xxxtraktor",
+        "type": "regular",
+        "id": "3270230"
+      },
+      {
+        "name": "XXXXMLZ",
+        "url": "https://genius.com/artists/Xxxxmlz",
+        "type": "regular",
+        "id": "3719377"
+      },
+      {
+        "name": "XXXXXXXXXX",
+        "url": "https://genius.com/artists/Xxxxxxxxxx",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "​xxylvii",
+        "url": "https://genius.com/artists/Xxylvii",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "XXYYXX",
+        "url": "https://genius.com/artists/Xxyyxx",
+        "type": "regular",
+        "id": "31001"
+      },
+      {
+        "name": "Xyce",
+        "url": "https://genius.com/artists/Xyce",
+        "type": "regular",
+        "id": "1947574"
+      },
+      {
+        "name": "Xydo (시도)",
+        "url": "https://genius.com/artists/Xydo",
+        "type": "regular",
+        "id": "1732193"
+      },
+      {
+        "name": "Xylina Spathia",
+        "url": "https://genius.com/artists/Xylina-spathia",
+        "type": "regular",
+        "id": "1755642"
+      },
+      {
+        "name": "xyluhfone",
+        "url": "https://genius.com/artists/Xyluhfone",
+        "type": "regular",
+        "id": "4169606"
+      },
+      {
+        "name": "Xymox",
+        "url": "https://genius.com/artists/Xymox",
+        "type": "regular",
+        "id": "356367"
+      },
+      {
+        "name": "Xynzzz",
+        "url": "https://genius.com/artists/Xynzzz",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Xyz (Band)",
+        "url": "https://genius.com/artists/Xyz-band",
+        "type": "regular",
+        "id": "1943003"
+      },
+      {
+        "name": "XYZI",
+        "url": "https://genius.com/artists/Xyzi",
+        "type": "regular",
+        "id": "2231946"
+      },
+      {
+        "name": "XZARKHAN",
+        "url": "https://genius.com/artists/Xzarkhan",
+        "type": "regular",
+        "id": "1250766"
+      },
+      {
+        "name": "Xzay",
+        "url": "https://genius.com/artists/Xzay",
+        "type": "regular",
+        "id": "2120852"
+      },
+      {
+        "name": "xzudemx",
+        "url": "https://genius.com/artists/Xzudemx",
+        "type": "regular",
+        "id": "1759035"
+      }
+    ]
+  }
+}

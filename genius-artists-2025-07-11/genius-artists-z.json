@@ -1,0 +1,4513 @@
+{
+  "letter": "Z",
+  "timestamp": "2025-07-11T14:03:02.307Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Zac Brown Band",
+        "url": "https://genius.com/artists/Zac-brown-band",
+        "type": "popular",
+        "id": "22928"
+      },
+      {
+        "name": "Zac Efron",
+        "url": "https://genius.com/artists/Zac-efron",
+        "type": "popular",
+        "id": "184927"
+      },
+      {
+        "name": "Zach Bryan",
+        "url": "https://genius.com/artists/Zach-bryan",
+        "type": "popular",
+        "id": "1902011"
+      },
+      {
+        "name": "ZAH1DE",
+        "url": "https://genius.com/artists/Zah1de",
+        "type": "popular",
+        "id": "4186534"
+      },
+      {
+        "name": "Zamdane",
+        "url": "https://genius.com/artists/Zamdane",
+        "type": "popular",
+        "id": "1159944"
+      },
+      {
+        "name": "Zara Larsson",
+        "url": "https://genius.com/artists/Zara-larsson",
+        "type": "popular",
+        "id": "55903"
+      },
+      {
+        "name": "zavet",
+        "url": "https://genius.com/artists/Zavet",
+        "type": "popular",
+        "id": "3732356"
+      },
+      {
+        "name": "ZAYN",
+        "url": "https://genius.com/artists/Zayn",
+        "type": "popular",
+        "id": "339472"
+      },
+      {
+        "name": "Zdravko Čolić",
+        "url": "https://genius.com/artists/Zdravko-colic",
+        "type": "popular",
+        "id": "363158"
+      },
+      {
+        "name": "Zedd",
+        "url": "https://genius.com/artists/Zedd",
+        "type": "popular",
+        "id": "24215"
+      },
+      {
+        "name": "Zee Nxumalo",
+        "url": "https://genius.com/artists/Zee-nxumalo",
+        "type": "popular",
+        "id": "3071928"
+      },
+      {
+        "name": "Земфира (Zemfira)",
+        "url": "https://genius.com/artists/Zemfira",
+        "type": "popular",
+        "id": "1025364"
+      },
+      {
+        "name": "Zendaya",
+        "url": "https://genius.com/artists/Zendaya",
+        "type": "popular",
+        "id": "43902"
+      },
+      {
+        "name": "Zeynep Bastık",
+        "url": "https://genius.com/artists/Zeynep-bastk",
+        "type": "popular",
+        "id": "1769741"
+      },
+      {
+        "name": "郑润泽 (Zheng Run Ze)",
+        "url": "https://genius.com/artists/Zheng-run-ze",
+        "type": "popular",
+        "id": "4087353"
+      },
+      {
+        "name": "Женя Трофимов (Zhenya Trofimov)",
+        "url": "https://genius.com/artists/Zhenya-trofimov",
+        "type": "popular",
+        "id": "3952198"
+      },
+      {
+        "name": "Zoë Më (CHE)",
+        "url": "https://genius.com/artists/Zoe-me-che",
+        "type": "popular",
+        "id": "4341905"
+      },
+      {
+        "name": "Zsá Zsá",
+        "url": "https://genius.com/artists/Zsa-zsa",
+        "type": "popular",
+        "id": "4019243"
+      },
+      {
+        "name": "zxcursed",
+        "url": "https://genius.com/artists/Zxcursed",
+        "type": "popular",
+        "id": "3008871"
+      },
+      {
+        "name": "ZZ Top",
+        "url": "https://genius.com/artists/Zz-top",
+        "type": "popular",
+        "id": "32519"
+      }
+    ],
+    "regular": [
+      {
+        "name": "Z",
+        "url": "https://genius.com/artists/Z",
+        "type": "regular",
+        "id": "1119663"
+      },
+      {
+        "name": "Z1NO",
+        "url": "https://genius.com/artists/Z1no",
+        "type": "regular",
+        "id": "3733684"
+      },
+      {
+        "name": "Z4NE",
+        "url": "https://genius.com/artists/Z4ne",
+        "type": "regular",
+        "id": "2253711"
+      },
+      {
+        "name": "Z8 (DEU)",
+        "url": "https://genius.com/artists/Z8-deu",
+        "type": "regular",
+        "id": "4028419"
+      },
+      {
+        "name": "Zaac",
+        "url": "https://genius.com/artists/Zaac",
+        "type": "regular",
+        "id": "1140534"
+      },
+      {
+        "name": "Zabad",
+        "url": "https://genius.com/artists/Zabad",
+        "type": "regular",
+        "id": "2624149"
+      },
+      {
+        "name": "Zabawa",
+        "url": "https://genius.com/artists/Zabawa",
+        "type": "regular",
+        "id": "2149070"
+      },
+      {
+        "name": "забей, лерочка (zabey, lerochka)",
+        "url": "https://genius.com/artists/Zabey-lerochka",
+        "type": "regular",
+        "id": "2695252"
+      },
+      {
+        "name": "Zabitə Alıyeva",
+        "url": "https://genius.com/artists/Zabit-alyeva",
+        "type": "regular",
+        "id": "2755812"
+      },
+      {
+        "name": "Zablokirovan",
+        "url": "https://genius.com/artists/Zablokirovan",
+        "type": "regular",
+        "id": "3553158"
+      },
+      {
+        "name": "Zabranjeno pušenje",
+        "url": "https://genius.com/artists/Zabranjeno-pusenje",
+        "type": "regular",
+        "id": "359951"
+      },
+      {
+        "name": "Zacarías Ferreira",
+        "url": "https://genius.com/artists/Zacarias-ferreira",
+        "type": "regular",
+        "id": "353829"
+      },
+      {
+        "name": "Zacardi Cortez",
+        "url": "https://genius.com/artists/Zacardi-cortez",
+        "type": "regular",
+        "id": "390342"
+      },
+      {
+        "name": "Zacari",
+        "url": "https://genius.com/artists/Zacari",
+        "type": "regular",
+        "id": "526832"
+      },
+      {
+        "name": "Zac Brown",
+        "url": "https://genius.com/artists/Zac-brown",
+        "type": "regular",
+        "id": "43770"
+      },
+      {
+        "name": "Zac Chase",
+        "url": "https://genius.com/artists/Zac-chase",
+        "type": "regular",
+        "id": "1275995"
+      },
+      {
+        "name": "Zac Farro",
+        "url": "https://genius.com/artists/Zac-farro",
+        "type": "regular",
+        "id": "981387"
+      },
+      {
+        "name": "Zac Greer",
+        "url": "https://genius.com/artists/Zac-greer",
+        "type": "regular",
+        "id": "1521676"
+      },
+      {
+        "name": "Zachary Bryner",
+        "url": "https://genius.com/artists/Zachary-bryner",
+        "type": "regular",
+        "id": "3748768"
+      },
+      {
+        "name": "Zachary Hill",
+        "url": "https://genius.com/artists/Zachary-hill",
+        "type": "regular",
+        "id": "2025545"
+      },
+      {
+        "name": "Zachary James (Broadway)",
+        "url": "https://genius.com/artists/Zachary-james-broadway",
+        "type": "regular",
+        "id": "1131011"
+      },
+      {
+        "name": "Zachary Knowles",
+        "url": "https://genius.com/artists/Zachary-knowles",
+        "type": "regular",
+        "id": "1456526"
+      },
+      {
+        "name": "Zachary Levi",
+        "url": "https://genius.com/artists/Zachary-levi",
+        "type": "regular",
+        "id": "683737"
+      },
+      {
+        "name": "Zachary Mogavero",
+        "url": "https://genius.com/artists/Zachary-mogavero",
+        "type": "regular",
+        "id": "2716784"
+      },
+      {
+        "name": "Zachary Noah Piser",
+        "url": "https://genius.com/artists/Zachary-noah-piser",
+        "type": "regular",
+        "id": "3516678"
+      },
+      {
+        "name": "Zachary Preciado",
+        "url": "https://genius.com/artists/Zachary-preciado",
+        "type": "regular",
+        "id": "2590098"
+      },
+      {
+        "name": "Zachary Richard",
+        "url": "https://genius.com/artists/Zachary-richard",
+        "type": "regular",
+        "id": "356593"
+      },
+      {
+        "name": "Zach B",
+        "url": "https://genius.com/artists/Zach-b",
+        "type": "regular",
+        "id": "269583"
+      },
+      {
+        "name": "Zach Callison",
+        "url": "https://genius.com/artists/Zach-callison",
+        "type": "regular",
+        "id": "343018"
+      },
+      {
+        "name": "Zach Diamond",
+        "url": "https://genius.com/artists/Zach-diamond",
+        "type": "regular",
+        "id": "1262478"
+      },
+      {
+        "name": "Zach Galifianakis",
+        "url": "https://genius.com/artists/Zach-galifianakis",
+        "type": "regular",
+        "id": "219140"
+      },
+      {
+        "name": "Zach Gordon",
+        "url": "https://genius.com/artists/Zach-gordon",
+        "type": "regular",
+        "id": "1272437"
+      },
+      {
+        "name": "Zach Hill",
+        "url": "https://genius.com/artists/Zach-hill",
+        "type": "regular",
+        "id": "362223"
+      },
+      {
+        "name": "Zach Hood",
+        "url": "https://genius.com/artists/Zach-hood",
+        "type": "regular",
+        "id": "2553218"
+      },
+      {
+        "name": "Zachi",
+        "url": "https://genius.com/artists/Zachi",
+        "type": "regular",
+        "id": "2581375"
+      },
+      {
+        "name": "Zach John King",
+        "url": "https://genius.com/artists/Zach-john-king",
+        "type": "regular",
+        "id": "3744933"
+      },
+      {
+        "name": "Zach McPhee",
+        "url": "https://genius.com/artists/Zach-mcphee",
+        "type": "regular",
+        "id": "3539722"
+      },
+      {
+        "name": "Zach Palmer",
+        "url": "https://genius.com/artists/Zach-palmer",
+        "type": "regular",
+        "id": "3318666"
+      },
+      {
+        "name": "Zach Seabaugh",
+        "url": "https://genius.com/artists/Zach-seabaugh",
+        "type": "regular",
+        "id": "3115687"
+      },
+      {
+        "name": "Zach Sobiech",
+        "url": "https://genius.com/artists/Zach-sobiech",
+        "type": "regular",
+        "id": "226510"
+      },
+      {
+        "name": "Zachz Winner",
+        "url": "https://genius.com/artists/Zachz-winner",
+        "type": "regular",
+        "id": "2639627"
+      },
+      {
+        "name": "Zach Templar",
+        "url": "https://genius.com/artists/Zach-templar",
+        "type": "regular",
+        "id": "3349391"
+      },
+      {
+        "name": "Zach Top",
+        "url": "https://genius.com/artists/Zach-top",
+        "type": "regular",
+        "id": "3141201"
+      },
+      {
+        "name": "Zach Webb",
+        "url": "https://genius.com/artists/Zach-webb",
+        "type": "regular",
+        "id": "1172691"
+      },
+      {
+        "name": "Zach Williams",
+        "url": "https://genius.com/artists/Zach-williams",
+        "type": "regular",
+        "id": "405711"
+      },
+      {
+        "name": "Zach Winters",
+        "url": "https://genius.com/artists/Zach-winters",
+        "type": "regular",
+        "id": "1570653"
+      },
+      {
+        "name": "​zachy",
+        "url": "https://genius.com/artists/Zachy",
+        "type": "regular",
+        "id": "3392025"
+      },
+      {
+        "name": "Zack3y",
+        "url": "https://genius.com/artists/Zack3y",
+        "type": "regular",
+        "id": "3382474"
+      },
+      {
+        "name": "Zackarias Hibaoui",
+        "url": "https://genius.com/artists/Zackarias-hibaoui",
+        "type": "regular",
+        "id": "4122228"
+      },
+      {
+        "name": "Zackavelli",
+        "url": "https://genius.com/artists/Zackavelli",
+        "type": "regular",
+        "id": "2217990"
+      },
+      {
+        "name": "Zack Bia",
+        "url": "https://genius.com/artists/Zack-bia",
+        "type": "regular",
+        "id": "2652555"
+      },
+      {
+        "name": "Zack Binspin",
+        "url": "https://genius.com/artists/Zack-binspin",
+        "type": "regular",
+        "id": "1325741"
+      },
+      {
+        "name": "Zack de la Rocha",
+        "url": "https://genius.com/artists/Zack-de-la-rocha",
+        "type": "regular",
+        "id": "9775"
+      },
+      {
+        "name": "Zacke",
+        "url": "https://genius.com/artists/Zacke",
+        "type": "regular",
+        "id": "179156"
+      },
+      {
+        "name": "Zackery",
+        "url": "https://genius.com/artists/Zackery",
+        "type": "regular",
+        "id": "3138577"
+      },
+      {
+        "name": "Zack Fox",
+        "url": "https://genius.com/artists/Zack-fox",
+        "type": "regular",
+        "id": "1563816"
+      },
+      {
+        "name": "Zack Hemsey",
+        "url": "https://genius.com/artists/Zack-hemsey",
+        "type": "regular",
+        "id": "49021"
+      },
+      {
+        "name": "Zack Ink",
+        "url": "https://genius.com/artists/Zack-ink",
+        "type": "regular",
+        "id": "1007891"
+      },
+      {
+        "name": "Zack Knight",
+        "url": "https://genius.com/artists/Zack-knight",
+        "type": "regular",
+        "id": "37249"
+      },
+      {
+        "name": "Zack Lucas",
+        "url": "https://genius.com/artists/Zack-lucas",
+        "type": "regular",
+        "id": "2782584"
+      },
+      {
+        "name": "Zackmess",
+        "url": "https://genius.com/artists/Zackmess",
+        "type": "regular",
+        "id": "1623610"
+      },
+      {
+        "name": "Zack Tabudlo",
+        "url": "https://genius.com/artists/Zack-tabudlo",
+        "type": "regular",
+        "id": "1518633"
+      },
+      {
+        "name": "Zack Villere",
+        "url": "https://genius.com/artists/Zack-villere",
+        "type": "regular",
+        "id": "1144230"
+      },
+      {
+        "name": "Zad - زاد",
+        "url": "https://genius.com/artists/Zad",
+        "type": "regular",
+        "id": "3947038"
+      },
+      {
+        "name": "Zadlu xpompa",
+        "url": "https://genius.com/artists/Zadlu-xpompa",
+        "type": "regular",
+        "id": "1865679"
+      },
+      {
+        "name": "Zae",
+        "url": "https://genius.com/artists/Zae",
+        "type": "regular",
+        "id": "2068840"
+      },
+      {
+        "name": "Zaeden",
+        "url": "https://genius.com/artists/Zaeden",
+        "type": "regular",
+        "id": "1001852"
+      },
+      {
+        "name": "Zae France",
+        "url": "https://genius.com/artists/Zae-france",
+        "type": "regular",
+        "id": "1272281"
+      },
+      {
+        "name": "ZAF (EGY) - زاف",
+        "url": "https://genius.com/artists/Zaf-egy",
+        "type": "regular",
+        "id": "4440630"
+      },
+      {
+        "name": "Zager and Evans",
+        "url": "https://genius.com/artists/Zager-and-evans",
+        "type": "regular",
+        "id": "187507"
+      },
+      {
+        "name": "Заги Бок (Zagi Bok)",
+        "url": "https://genius.com/artists/Zagi-bok",
+        "type": "regular",
+        "id": "1297509"
+      },
+      {
+        "name": "İzah",
+        "url": "https://genius.com/artists/Izah",
+        "type": "regular",
+        "id": "656910"
+      },
+      {
+        "name": "Zahara",
+        "url": "https://genius.com/artists/Zahara",
+        "type": "regular",
+        "id": "1423607"
+      },
+      {
+        "name": "Zahara (ZAF)",
+        "url": "https://genius.com/artists/Zahara-zaf",
+        "type": "regular",
+        "id": "179560"
+      },
+      {
+        "name": "Захар Май (Zahar May)",
+        "url": "https://genius.com/artists/Zahar-may",
+        "type": "regular",
+        "id": "1409386"
+      },
+      {
+        "name": "Zaho",
+        "url": "https://genius.com/artists/Zaho",
+        "type": "regular",
+        "id": "11629"
+      },
+      {
+        "name": "Zaho de Sagazan",
+        "url": "https://genius.com/artists/Zaho-de-sagazan",
+        "type": "regular",
+        "id": "2488706"
+      },
+      {
+        "name": "Zahriya Zachary",
+        "url": "https://genius.com/artists/Zahriya-zachary",
+        "type": "regular",
+        "id": "2871993"
+      },
+      {
+        "name": "Zai",
+        "url": "https://genius.com/artists/Zai",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Zai1k",
+        "url": "https://genius.com/artists/Zai1k",
+        "type": "regular",
+        "id": "2150530"
+      },
+      {
+        "name": "Zaia",
+        "url": "https://genius.com/artists/Zaia",
+        "type": "regular",
+        "id": "1145106"
+      },
+      {
+        "name": "Zaichkou888",
+        "url": "https://genius.com/artists/Zaichkou888",
+        "type": "regular",
+        "id": "3688151"
+      },
+      {
+        "name": "Zaider",
+        "url": "https://genius.com/artists/Zaider",
+        "type": "regular",
+        "id": "1468352"
+      },
+      {
+        "name": "Zaid Khaled - زيد خالد",
+        "url": "https://genius.com/artists/Zaid-khaled",
+        "type": "regular",
+        "id": "2777137"
+      },
+      {
+        "name": "Zaid Tabani",
+        "url": "https://genius.com/artists/Zaid-tabani",
+        "type": "regular",
+        "id": "648839"
+      },
+      {
+        "name": "Zaihsik off",
+        "url": "https://genius.com/artists/Zaihsik-off",
+        "type": "regular",
+        "id": "3740594"
+      },
+      {
+        "name": "Zainal Abidin",
+        "url": "https://genius.com/artists/Zainal-abidin",
+        "type": "regular",
+        "id": "479248"
+      },
+      {
+        "name": "Zain Bhikha",
+        "url": "https://genius.com/artists/Zain-bhikha",
+        "type": "regular",
+        "id": "371598"
+      },
+      {
+        "name": "Zaini",
+        "url": "https://genius.com/artists/Zaini",
+        "type": "regular",
+        "id": "2021477"
+      },
+      {
+        "name": "Zain SA",
+        "url": "https://genius.com/artists/Zain-sa",
+        "type": "regular",
+        "id": "2682514"
+      },
+      {
+        "name": "Zain Zohaib",
+        "url": "https://genius.com/artists/Zain-zohaib",
+        "type": "regular",
+        "id": "3103904"
+      },
+      {
+        "name": "Zaira Ali",
+        "url": "https://genius.com/artists/Zaira-ali",
+        "type": "regular",
+        "id": "4103215"
+      },
+      {
+        "name": "Zak Abel",
+        "url": "https://genius.com/artists/Zak-abel",
+        "type": "regular",
+        "id": "208656"
+      },
+      {
+        "name": "Zakaria Ghafouli - زكرياء الغفولي",
+        "url": "https://genius.com/artists/Zakaria-ghafouli",
+        "type": "regular",
+        "id": "1687285"
+      },
+      {
+        "name": "Zakes Bantwini",
+        "url": "https://genius.com/artists/Zakes-bantwini",
+        "type": "regular",
+        "id": "2243998"
+      },
+      {
+        "name": "Zaki (Band)",
+        "url": "https://genius.com/artists/Zaki-band",
+        "type": "regular",
+        "id": "2481350"
+      },
+      {
+        "name": "Zakiya",
+        "url": "https://genius.com/artists/Zakiya",
+        "type": "regular",
+        "id": "2505292"
+      },
+      {
+        "name": "Zakkujo",
+        "url": "https://genius.com/artists/Zakkujo",
+        "type": "regular",
+        "id": "3622538"
+      },
+      {
+        "name": "Zakkum",
+        "url": "https://genius.com/artists/Zakkum",
+        "type": "regular",
+        "id": "354946"
+      },
+      {
+        "name": "Zakk Wylde",
+        "url": "https://genius.com/artists/Zakk-wylde",
+        "type": "regular",
+        "id": "140181"
+      },
+      {
+        "name": "Zakloow",
+        "url": "https://genius.com/artists/Zakloow",
+        "type": "regular",
+        "id": "2900506"
+      },
+      {
+        "name": "ZA.K.O",
+        "url": "https://genius.com/artists/Zako",
+        "type": "regular",
+        "id": "554455"
+      },
+      {
+        "name": "Zakopower",
+        "url": "https://genius.com/artists/Zakopower",
+        "type": "regular",
+        "id": "369306"
+      },
+      {
+        "name": "Закрите Суспільство та його друзі (Zakryte)",
+        "url": "https://genius.com/artists/Zakryte",
+        "type": "regular",
+        "id": "3084539"
+      },
+      {
+        "name": "Zakwe",
+        "url": "https://genius.com/artists/Zakwe",
+        "type": "regular",
+        "id": "210999"
+      },
+      {
+        "name": "zaky",
+        "url": "https://genius.com/artists/Zaky",
+        "type": "regular",
+        "id": "2749737"
+      },
+      {
+        "name": "Zakyo",
+        "url": "https://genius.com/artists/Zakyo",
+        "type": "regular",
+        "id": "3403856"
+      },
+      {
+        "name": "Zaldats",
+        "url": "https://genius.com/artists/Zaldats",
+        "type": "regular",
+        "id": "3902324"
+      },
+      {
+        "name": "Zale (ROU)",
+        "url": "https://genius.com/artists/Zale-rou",
+        "type": "regular",
+        "id": "3806143"
+      },
+      {
+        "name": "Zalia",
+        "url": "https://genius.com/artists/Zalia",
+        "type": "regular",
+        "id": "321040"
+      },
+      {
+        "name": "Zalinki",
+        "url": "https://genius.com/artists/Zalinki",
+        "type": "regular",
+        "id": "1534784"
+      },
+      {
+        "name": "Zaly",
+        "url": "https://genius.com/artists/Zaly",
+        "type": "regular",
+        "id": "4019012"
+      },
+      {
+        "name": "Zama Khumalo",
+        "url": "https://genius.com/artists/Zama-khumalo",
+        "type": "regular",
+        "id": "4390302"
+      },
+      {
+        "name": "ЗАМАЙ (ZAMAY)",
+        "url": "https://genius.com/artists/Zamay",
+        "type": "regular",
+        "id": "576596"
+      },
+      {
+        "name": "Zambayonny",
+        "url": "https://genius.com/artists/Zambayonny",
+        "type": "regular",
+        "id": "181641"
+      },
+      {
+        "name": "Zambezi",
+        "url": "https://genius.com/artists/Zambezi",
+        "type": "regular",
+        "id": "1479026"
+      },
+      {
+        "name": "The Zambonis",
+        "url": "https://genius.com/artists/The-zambonis",
+        "type": "regular",
+        "id": "361633"
+      },
+      {
+        "name": "Zamination",
+        "url": "https://genius.com/artists/Zamination",
+        "type": "regular",
+        "id": "2646460"
+      },
+      {
+        "name": "Zamiq Hüseynov",
+        "url": "https://genius.com/artists/Zamiq-huseynov",
+        "type": "regular",
+        "id": "1262118"
+      },
+      {
+        "name": "​zamir",
+        "url": "https://genius.com/artists/Zamir",
+        "type": "regular",
+        "id": "1318820"
+      },
+      {
+        "name": "Zana",
+        "url": "https://genius.com/artists/Zana",
+        "type": "regular",
+        "id": "27042"
+      },
+      {
+        "name": "ZAND",
+        "url": "https://genius.com/artists/Zand",
+        "type": "regular",
+        "id": "2283400"
+      },
+      {
+        "name": "Zander Hawley",
+        "url": "https://genius.com/artists/Zander-hawley",
+        "type": "regular",
+        "id": "1135830"
+      },
+      {
+        "name": "Zandi Holup",
+        "url": "https://genius.com/artists/Zandi-holup",
+        "type": "regular",
+        "id": "667019"
+      },
+      {
+        "name": "​zandros",
+        "url": "https://genius.com/artists/Zandros",
+        "type": "regular",
+        "id": "3140628"
+      },
+      {
+        "name": "Zane Lowe",
+        "url": "https://genius.com/artists/Zane-lowe",
+        "type": "regular",
+        "id": "73120"
+      },
+      {
+        "name": "​zane lynchetti",
+        "url": "https://genius.com/artists/Zane-lynchetti",
+        "type": "regular",
+        "id": "3633313"
+      },
+      {
+        "name": "Zane Williams",
+        "url": "https://genius.com/artists/Zane-williams",
+        "type": "regular",
+        "id": "365455"
+      },
+      {
+        "name": "Zangalewa",
+        "url": "https://genius.com/artists/Zangalewa",
+        "type": "regular",
+        "id": "2947621"
+      },
+      {
+        "name": "Zangeres Zonder Naam",
+        "url": "https://genius.com/artists/Zangeres-zonder-naam",
+        "type": "regular",
+        "id": "360945"
+      },
+      {
+        "name": "Zanger Rinus",
+        "url": "https://genius.com/artists/Zanger-rinus",
+        "type": "regular",
+        "id": "47101"
+      },
+      {
+        "name": "Зангези (Zangezi)",
+        "url": "https://genius.com/artists/Zangezi",
+        "type": "regular",
+        "id": "2700876"
+      },
+      {
+        "name": "Zanias",
+        "url": "https://genius.com/artists/Zanias",
+        "type": "regular",
+        "id": "1403962"
+      },
+      {
+        "name": "zaniel",
+        "url": "https://genius.com/artists/Zaniel",
+        "type": "regular",
+        "id": "4314366"
+      },
+      {
+        "name": "ZANI (ZA)",
+        "url": "https://genius.com/artists/Zani-za",
+        "type": "regular",
+        "id": "3860158"
+      },
+      {
+        "name": "Zanka Flow",
+        "url": "https://genius.com/artists/Zanka-flow",
+        "type": "regular",
+        "id": "1060948"
+      },
+      {
+        "name": "Zan Nguyễn",
+        "url": "https://genius.com/artists/Zan-nguyen",
+        "type": "regular",
+        "id": "3801219"
+      },
+      {
+        "name": "Zano",
+        "url": "https://genius.com/artists/Zano",
+        "type": "regular",
+        "id": "669539"
+      },
+      {
+        "name": "Zanthite (TUR)",
+        "url": "https://genius.com/artists/Zanthite-tur",
+        "type": "regular",
+        "id": "4250704"
+      },
+      {
+        "name": "Zanto",
+        "url": "https://genius.com/artists/Zanto",
+        "type": "regular",
+        "id": "1629070"
+      },
+      {
+        "name": "Zanton",
+        "url": "https://genius.com/artists/Zanton",
+        "type": "regular",
+        "id": "2161377"
+      },
+      {
+        "name": "Zao",
+        "url": "https://genius.com/artists/Zao",
+        "type": "regular",
+        "id": "355678"
+      },
+      {
+        "name": "早安 (Zao An)",
+        "url": "https://genius.com/artists/Zao-an",
+        "type": "regular",
+        "id": "3273073"
+      },
+      {
+        "name": "Zap Mama",
+        "url": "https://genius.com/artists/Zap-mama",
+        "type": "regular",
+        "id": "8242"
+      },
+      {
+        "name": "Zapp",
+        "url": "https://genius.com/artists/Zapp",
+        "type": "regular",
+        "id": "4070"
+      },
+      {
+        "name": "ZAPRAVKA",
+        "url": "https://genius.com/artists/Zapravka",
+        "type": "regular",
+        "id": "2852587"
+      },
+      {
+        "name": "Zaprešić Boys",
+        "url": "https://genius.com/artists/Zapresic-boys",
+        "type": "regular",
+        "id": "2850741"
+      },
+      {
+        "name": "Zap Tharwat - زاب ثروت",
+        "url": "https://genius.com/artists/Zap-tharwat",
+        "type": "regular",
+        "id": "1145832"
+      },
+      {
+        "name": "ZaQ",
+        "url": "https://genius.com/artists/Zaq",
+        "type": "regular",
+        "id": "1510579"
+      },
+      {
+        "name": "ZAQ (JPN)",
+        "url": "https://genius.com/artists/Zaq-jpn",
+        "type": "regular",
+        "id": "49277"
+      },
+      {
+        "name": "Zar1",
+        "url": "https://genius.com/artists/Zar1",
+        "type": "regular",
+        "id": "52858"
+      },
+      {
+        "name": "Zara",
+        "url": "https://genius.com/artists/Zara",
+        "type": "regular",
+        "id": "375007"
+      },
+      {
+        "name": "Zara G",
+        "url": "https://genius.com/artists/Zara-g",
+        "type": "regular",
+        "id": "1030621"
+      },
+      {
+        "name": "Zarah Leander",
+        "url": "https://genius.com/artists/Zarah-leander",
+        "type": "regular",
+        "id": "379413"
+      },
+      {
+        "name": "Zara Luxxxury",
+        "url": "https://genius.com/artists/Zara-luxxxury",
+        "type": "regular",
+        "id": "4349098"
+      },
+      {
+        "name": "Zaramay",
+        "url": "https://genius.com/artists/Zaramay",
+        "type": "regular",
+        "id": "1866314"
+      },
+      {
+        "name": "ざらめ (ZARAME)",
+        "url": "https://genius.com/artists/Zarame",
+        "type": "regular",
+        "id": "4029447"
+      },
+      {
+        "name": "Зараза (Zaraza)",
+        "url": "https://genius.com/artists/Zaraza",
+        "type": "regular",
+        "id": "1100484"
+      },
+      {
+        "name": "Zarcort",
+        "url": "https://genius.com/artists/Zarcort",
+        "type": "regular",
+        "id": "530818"
+      },
+      {
+        "name": "ZARD",
+        "url": "https://genius.com/artists/Zard",
+        "type": "regular",
+        "id": "354327"
+      },
+      {
+        "name": "Zardonic",
+        "url": "https://genius.com/artists/Zardonic",
+        "type": "regular",
+        "id": "404761"
+      },
+      {
+        "name": "Zareuz",
+        "url": "https://genius.com/artists/Zareuz",
+        "type": "regular",
+        "id": "1678042"
+      },
+      {
+        "name": "Zarfani",
+        "url": "https://genius.com/artists/Zarfani",
+        "type": "regular",
+        "id": "2266948"
+      },
+      {
+        "name": "Zarko",
+        "url": "https://genius.com/artists/Zarko",
+        "type": "regular",
+        "id": "3584359"
+      },
+      {
+        "name": "Zar Paulo",
+        "url": "https://genius.com/artists/Zar-paulo",
+        "type": "regular",
+        "id": "2507708"
+      },
+      {
+        "name": "Zartmann",
+        "url": "https://genius.com/artists/Zartmann",
+        "type": "regular",
+        "id": "2627681"
+      },
+      {
+        "name": "ZARYADARK",
+        "url": "https://genius.com/artists/Zaryadark",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Zasko",
+        "url": "https://genius.com/artists/Zasko",
+        "type": "regular",
+        "id": "1053164"
+      },
+      {
+        "name": "Zate",
+        "url": "https://genius.com/artists/Zate",
+        "type": "regular",
+        "id": "96716"
+      },
+      {
+        "name": "​zathmi",
+        "url": "https://genius.com/artists/Zathmi",
+        "type": "regular",
+        "id": "1587170"
+      },
+      {
+        "name": "Заточка (Zatochka)",
+        "url": "https://genius.com/artists/Zatochka",
+        "type": "regular",
+        "id": "1481478"
+      },
+      {
+        "name": "Zatox",
+        "url": "https://genius.com/artists/Zatox",
+        "type": "regular",
+        "id": "406178"
+      },
+      {
+        "name": "zatru",
+        "url": "https://genius.com/artists/Zatru",
+        "type": "regular",
+        "id": "2765381"
+      },
+      {
+        "name": "#ЗАЦВ (ZATSV)",
+        "url": "https://genius.com/artists/Zatsv",
+        "type": "regular",
+        "id": "2115392"
+      },
+      {
+        "name": "Zaug",
+        "url": "https://genius.com/artists/Zaug",
+        "type": "regular",
+        "id": "2467843"
+      },
+      {
+        "name": "Zaunpfahl",
+        "url": "https://genius.com/artists/Zaunpfahl",
+        "type": "regular",
+        "id": "360158"
+      },
+      {
+        "name": "Zauntee",
+        "url": "https://genius.com/artists/Zauntee",
+        "type": "regular",
+        "id": "1159652"
+      },
+      {
+        "name": "Заур Магомадов (Zaur Magomadov)",
+        "url": "https://genius.com/artists/Zaur-magomadov",
+        "type": "regular",
+        "id": "2074471"
+      },
+      {
+        "name": "Zaur Əmiraslanov",
+        "url": "https://genius.com/artists/Zaur-miraslanov",
+        "type": "regular",
+        "id": "2796015"
+      },
+      {
+        "name": "ZAVET (DEU)",
+        "url": "https://genius.com/artists/Zavet-deu",
+        "type": "regular",
+        "id": "3058105"
+      },
+      {
+        "name": "ЗАВТРА БРОШУ (ZAVTRA BROSHU)",
+        "url": "https://genius.com/artists/Zavtra-broshu",
+        "type": "regular",
+        "id": "1502181"
+      },
+      {
+        "name": "Zawezo",
+        "url": "https://genius.com/artists/Zawezo",
+        "type": "regular",
+        "id": "461504"
+      },
+      {
+        "name": "​zawmbi3",
+        "url": "https://genius.com/artists/Zawmbi3",
+        "type": "regular",
+        "id": "3572140"
+      },
+      {
+        "name": "Zayatz",
+        "url": "https://genius.com/artists/Zayatz",
+        "type": "regular",
+        "id": "1831323"
+      },
+      {
+        "name": "ZayBang",
+        "url": "https://genius.com/artists/Zaybang",
+        "type": "regular",
+        "id": "1891558"
+      },
+      {
+        "name": "Zaybo Stunna",
+        "url": "https://genius.com/artists/Zaybo-stunna",
+        "type": "regular",
+        "id": "3636491"
+      },
+      {
+        "name": "Zay Dante",
+        "url": "https://genius.com/artists/Zay-dante",
+        "type": "regular",
+        "id": "4277405"
+      },
+      {
+        "name": "Zayde Wolf",
+        "url": "https://genius.com/artists/Zayde-wolf",
+        "type": "regular",
+        "id": "984662"
+      },
+      {
+        "name": "Zayel",
+        "url": "https://genius.com/artists/Zayel",
+        "type": "regular",
+        "id": "1417092"
+      },
+      {
+        "name": "ZAY GTM",
+        "url": "https://genius.com/artists/Zay-gtm",
+        "type": "regular",
+        "id": "3820306"
+      },
+      {
+        "name": "ZAYGUAPKID",
+        "url": "https://genius.com/artists/Zayguapkid",
+        "type": "regular",
+        "id": "3094336"
+      },
+      {
+        "name": "Zay Hilfigerrr",
+        "url": "https://genius.com/artists/Zay-hilfigerrr",
+        "type": "regular",
+        "id": "1015048"
+      },
+      {
+        "name": "Zayion McCall",
+        "url": "https://genius.com/artists/Zayion-mccall",
+        "type": "regular",
+        "id": "980801"
+      },
+      {
+        "name": "Zaylevelten",
+        "url": "https://genius.com/artists/Zaylevelten",
+        "type": "regular",
+        "id": "3835855"
+      },
+      {
+        "name": "Zayo",
+        "url": "https://genius.com/artists/Zayo",
+        "type": "regular",
+        "id": "451270"
+      },
+      {
+        "name": "zayok",
+        "url": "https://genius.com/artists/Zayok",
+        "type": "regular",
+        "id": "2521549"
+      },
+      {
+        "name": "Zayre",
+        "url": "https://genius.com/artists/Zayre",
+        "type": "regular",
+        "id": "2957763"
+      },
+      {
+        "name": "Zayskii",
+        "url": "https://genius.com/artists/Zayskii",
+        "type": "regular",
+        "id": "3109104"
+      },
+      {
+        "name": "Zaytoven",
+        "url": "https://genius.com/artists/Zaytoven",
+        "type": "regular",
+        "id": "27822"
+      },
+      {
+        "name": "ZAZ",
+        "url": "https://genius.com/artists/Zaz",
+        "type": "regular",
+        "id": "106553"
+      },
+      {
+        "name": "Zaza Fournier",
+        "url": "https://genius.com/artists/Zaza-fournier",
+        "type": "regular",
+        "id": "480882"
+      },
+      {
+        "name": "Заза Наполи (Zaza Napoli)",
+        "url": "https://genius.com/artists/Zaza-napoli",
+        "type": "regular",
+        "id": "3416534"
+      },
+      {
+        "name": "Zazie",
+        "url": "https://genius.com/artists/Zazie",
+        "type": "regular",
+        "id": "142940"
+      },
+      {
+        "name": "Zbatata",
+        "url": "https://genius.com/artists/Zbatata",
+        "type": "regular",
+        "id": "62778"
+      },
+      {
+        "name": "Zábaz",
+        "url": "https://genius.com/artists/Zabaz",
+        "type": "regular",
+        "id": "1625025"
+      },
+      {
+        "name": "ZBeatz",
+        "url": "https://genius.com/artists/Zbeatz",
+        "type": "regular",
+        "id": "80234"
+      },
+      {
+        "name": "Z Berg",
+        "url": "https://genius.com/artists/Z-berg",
+        "type": "regular",
+        "id": "662335"
+      },
+      {
+        "name": "Zbig",
+        "url": "https://genius.com/artists/Zbig",
+        "type": "regular",
+        "id": "1234828"
+      },
+      {
+        "name": "Zbigniew Preisner",
+        "url": "https://genius.com/artists/Zbigniew-preisner",
+        "type": "regular",
+        "id": "391098"
+      },
+      {
+        "name": "Zbigniew Stonoga",
+        "url": "https://genius.com/artists/Zbigniew-stonoga",
+        "type": "regular",
+        "id": "610261"
+      },
+      {
+        "name": "Zbigniew Wodecki",
+        "url": "https://genius.com/artists/Zbigniew-wodecki",
+        "type": "regular",
+        "id": "395107"
+      },
+      {
+        "name": "завтра будет снег (zbsnow)",
+        "url": "https://genius.com/artists/Zbsnow",
+        "type": "regular",
+        "id": "3247952"
+      },
+      {
+        "name": "Z.B.U.K.U",
+        "url": "https://genius.com/artists/Zbuku",
+        "type": "regular",
+        "id": "53880"
+      },
+      {
+        "name": "Zébulon",
+        "url": "https://genius.com/artists/Zebulon",
+        "type": "regular",
+        "id": "364377"
+      },
+      {
+        "name": "Özcan Deniz",
+        "url": "https://genius.com/artists/Ozcan-deniz",
+        "type": "regular",
+        "id": "452742"
+      },
+      {
+        "name": "Zcar JPG",
+        "url": "https://genius.com/artists/Zcar-jpg",
+        "type": "regular",
+        "id": "4196858"
+      },
+      {
+        "name": "Zdechły Osa",
+        "url": "https://genius.com/artists/Zdechy-osa",
+        "type": "regular",
+        "id": "1620278"
+      },
+      {
+        "name": "Özdemir Erdoğan",
+        "url": "https://genius.com/artists/Ozdemir-erdogan",
+        "type": "regular",
+        "id": "532030"
+      },
+      {
+        "name": "Zdenka Kovačiček",
+        "url": "https://genius.com/artists/Zdenka-kovacicek",
+        "type": "regular",
+        "id": "2991740"
+      },
+      {
+        "name": "Zdob și Zdub",
+        "url": "https://genius.com/artists/Zdob-si-zdub",
+        "type": "regular",
+        "id": "404532"
+      },
+      {
+        "name": "Zdot",
+        "url": "https://genius.com/artists/Zdot",
+        "type": "regular",
+        "id": "37818"
+      },
+      {
+        "name": "ZDR",
+        "url": "https://genius.com/artists/Zdr",
+        "type": "regular",
+        "id": "169427"
+      },
+      {
+        "name": "ドラゴンボールZ (DRAGON BALL Z)",
+        "url": "https://genius.com/artists/Z-dragon-ball-z",
+        "type": "regular",
+        "id": "192877"
+      },
+      {
+        "name": "Z.E",
+        "url": "https://genius.com/artists/Ze",
+        "type": "regular",
+        "id": "1270597"
+      },
+      {
+        "name": "ze66y",
+        "url": "https://genius.com/artists/Ze66y",
+        "type": "regular",
+        "id": "1561074"
+      },
+      {
+        "name": "ZE:A",
+        "url": "https://genius.com/artists/Ze-a",
+        "type": "regular",
+        "id": "360527"
+      },
+      {
+        "name": "Zeal & Ardor",
+        "url": "https://genius.com/artists/Zeal-and-ardor",
+        "type": "regular",
+        "id": "1009015"
+      },
+      {
+        "name": "Zeal Ginjoka",
+        "url": "https://genius.com/artists/Zeal-ginjoka",
+        "type": "regular",
+        "id": "4355246"
+      },
+      {
+        "name": "Zeamsone",
+        "url": "https://genius.com/artists/Zeamsone",
+        "type": "regular",
+        "id": "627199"
+      },
+      {
+        "name": "Zeauxi",
+        "url": "https://genius.com/artists/Zeauxi",
+        "type": "regular",
+        "id": "1686656"
+      },
+      {
+        "name": "Zeballos",
+        "url": "https://genius.com/artists/Zeballos",
+        "type": "regular",
+        "id": "1911367"
+      },
+      {
+        "name": "Zeb Bangash",
+        "url": "https://genius.com/artists/Zeb-bangash",
+        "type": "regular",
+        "id": "1652944"
+      },
+      {
+        "name": "Zebda",
+        "url": "https://genius.com/artists/Zebda",
+        "type": "regular",
+        "id": "353518"
+      },
+      {
+        "name": "Zebra",
+        "url": "https://genius.com/artists/Zebra",
+        "type": "regular",
+        "id": "343590"
+      },
+      {
+        "name": "Zebrahead",
+        "url": "https://genius.com/artists/Zebrahead",
+        "type": "regular",
+        "id": "31012"
+      },
+      {
+        "name": "Zebra Katz",
+        "url": "https://genius.com/artists/Zebra-katz",
+        "type": "regular",
+        "id": "16863"
+      },
+      {
+        "name": "Zeca Baleiro",
+        "url": "https://genius.com/artists/Zeca-baleiro",
+        "type": "regular",
+        "id": "349487"
+      },
+      {
+        "name": "Zeca Pagodinho",
+        "url": "https://genius.com/artists/Zeca-pagodinho",
+        "type": "regular",
+        "id": "60616"
+      },
+      {
+        "name": "Zecca",
+        "url": "https://genius.com/artists/Zecca",
+        "type": "regular",
+        "id": "1594252"
+      },
+      {
+        "name": "Zed",
+        "url": "https://genius.com/artists/Zed",
+        "type": "regular",
+        "id": "682393"
+      },
+      {
+        "name": "ZedBazi",
+        "url": "https://genius.com/artists/Zedbazi",
+        "type": "regular",
+        "id": "24232"
+      },
+      {
+        "name": "Zeddy Will",
+        "url": "https://genius.com/artists/Zeddy-will",
+        "type": "regular",
+        "id": "3631502"
+      },
+      {
+        "name": "ZEDİ",
+        "url": "https://genius.com/artists/Zedi",
+        "type": "regular",
+        "id": "4202178"
+      },
+      {
+        "name": "Zed-K - زادكا",
+        "url": "https://genius.com/artists/Zed-k",
+        "type": "regular",
+        "id": "508865"
+      },
+      {
+        "name": "Zedk (UK)",
+        "url": "https://genius.com/artists/Zedk-uk",
+        "type": "regular",
+        "id": "2841772"
+      },
+      {
+        "name": "Zedline",
+        "url": "https://genius.com/artists/Zedline",
+        "type": "regular",
+        "id": "2759301"
+      },
+      {
+        "name": "ZEDNED",
+        "url": "https://genius.com/artists/Zedned",
+        "type": "regular",
+        "id": "3595947"
+      },
+      {
+        "name": "Zed (NZL)",
+        "url": "https://genius.com/artists/Zed-nzl",
+        "type": "regular",
+        "id": "50885"
+      },
+      {
+        "name": "Zeds Dead",
+        "url": "https://genius.com/artists/Zeds-dead",
+        "type": "regular",
+        "id": "2476"
+      },
+      {
+        "name": "ZEDSU",
+        "url": "https://genius.com/artists/Zedsu",
+        "type": "regular",
+        "id": "2007186"
+      },
+      {
+        "name": "Zed Yun Pavarotti",
+        "url": "https://genius.com/artists/Zed-yun-pavarotti",
+        "type": "regular",
+        "id": "1276822"
+      },
+      {
+        "name": "Zed Zilla",
+        "url": "https://genius.com/artists/Zed-zilla",
+        "type": "regular",
+        "id": "15911"
+      },
+      {
+        "name": "​zee!",
+        "url": "https://genius.com/artists/Zee",
+        "type": "regular",
+        "id": "2368262"
+      },
+      {
+        "name": "Zee Avi",
+        "url": "https://genius.com/artists/Zee-avi",
+        "type": "regular",
+        "id": "185802"
+      },
+      {
+        "name": "Zeeba",
+        "url": "https://genius.com/artists/Zeeba",
+        "type": "regular",
+        "id": "1020231"
+      },
+      {
+        "name": "ZeeBomb",
+        "url": "https://genius.com/artists/Zeebomb",
+        "type": "regular",
+        "id": "128082"
+      },
+      {
+        "name": "Zeebra",
+        "url": "https://genius.com/artists/Zeebra",
+        "type": "regular",
+        "id": "8274"
+      },
+      {
+        "name": "Zee (Christian)",
+        "url": "https://genius.com/artists/Zee-christian",
+        "type": "regular",
+        "id": "2776304"
+      },
+      {
+        "name": "Zeek Afridi",
+        "url": "https://genius.com/artists/Zeek-afridi",
+        "type": "regular",
+        "id": "1635663"
+      },
+      {
+        "name": "​zeekayo",
+        "url": "https://genius.com/artists/Zeekayo",
+        "type": "regular",
+        "id": "2964242"
+      },
+      {
+        "name": "ZEE MACHINE",
+        "url": "https://genius.com/artists/Zee-machine",
+        "type": "regular",
+        "id": "1733240"
+      },
+      {
+        "name": "ZEENHLE",
+        "url": "https://genius.com/artists/Zeenhle",
+        "type": "regular",
+        "id": "3629039"
+      },
+      {
+        "name": "zeeroxx",
+        "url": "https://genius.com/artists/Zeeroxx",
+        "type": "regular",
+        "id": "2107902"
+      },
+      {
+        "name": "Zee Stack",
+        "url": "https://genius.com/artists/Zee-stack",
+        "type": "regular",
+        "id": "2104062"
+      },
+      {
+        "name": "Zefe",
+        "url": "https://genius.com/artists/Zefe",
+        "type": "regular",
+        "id": "2775088"
+      },
+      {
+        "name": "Zeg P",
+        "url": "https://genius.com/artists/Zeg-p",
+        "type": "regular",
+        "id": "630518"
+      },
+      {
+        "name": "Zehava Ben - זהבה בן",
+        "url": "https://genius.com/artists/Zehava-ben",
+        "type": "regular",
+        "id": "1298245"
+      },
+      {
+        "name": "zehdi",
+        "url": "https://genius.com/artists/Zehdi",
+        "type": "regular",
+        "id": "4169250"
+      },
+      {
+        "name": "Zehra Bajraktarević",
+        "url": "https://genius.com/artists/Zehra-bajraktarevic",
+        "type": "regular",
+        "id": "3251743"
+      },
+      {
+        "name": "Zehr Vibe",
+        "url": "https://genius.com/artists/Zehr-vibe",
+        "type": "regular",
+        "id": "2909162"
+      },
+      {
+        "name": "​zeija",
+        "url": "https://genius.com/artists/Zeija",
+        "type": "regular",
+        "id": "1789063"
+      },
+      {
+        "name": "Zeina",
+        "url": "https://genius.com/artists/Zeina",
+        "type": "regular",
+        "id": "669244"
+      },
+      {
+        "name": "Zeju POG",
+        "url": "https://genius.com/artists/Zeju-pog",
+        "type": "regular",
+        "id": "3274061"
+      },
+      {
+        "name": "Zek",
+        "url": "https://genius.com/artists/Zek",
+        "type": "regular",
+        "id": "14103"
+      },
+      {
+        "name": "ZEKE",
+        "url": "https://genius.com/artists/Zeke",
+        "type": "regular",
+        "id": "61788"
+      },
+      {
+        "name": "Zeke Abella",
+        "url": "https://genius.com/artists/Zeke-abella",
+        "type": "regular",
+        "id": "3471491"
+      },
+      {
+        "name": "Zeke Bleu",
+        "url": "https://genius.com/artists/Zeke-bleu",
+        "type": "regular",
+        "id": "3945118"
+      },
+      {
+        "name": "Zeke Forever",
+        "url": "https://genius.com/artists/Zeke-forever",
+        "type": "regular",
+        "id": "1123294"
+      },
+      {
+        "name": "Zeke Pujols",
+        "url": "https://genius.com/artists/Zeke-pujols",
+        "type": "regular",
+        "id": "3944790"
+      },
+      {
+        "name": "ZekeUltra",
+        "url": "https://genius.com/artists/Zekeultra",
+        "type": "regular",
+        "id": "985344"
+      },
+      {
+        "name": "Zeki Arkun",
+        "url": "https://genius.com/artists/Zeki-arkun",
+        "type": "regular",
+        "id": "2930969"
+      },
+      {
+        "name": "Zeki Müren",
+        "url": "https://genius.com/artists/Zeki-muren",
+        "type": "regular",
+        "id": "358945"
+      },
+      {
+        "name": "Zekra - ذكرى",
+        "url": "https://genius.com/artists/Zekra",
+        "type": "regular",
+        "id": "3713147"
+      },
+      {
+        "name": "Zeli (EDM)",
+        "url": "https://genius.com/artists/Zeli-edm",
+        "type": "regular",
+        "id": "3452659"
+      },
+      {
+        "name": "Zell",
+        "url": "https://genius.com/artists/Zell",
+        "type": "regular",
+        "id": "2406077"
+      },
+      {
+        "name": "Zella Day",
+        "url": "https://genius.com/artists/Zella-day",
+        "type": "regular",
+        "id": "184842"
+      },
+      {
+        "name": "Zelle",
+        "url": "https://genius.com/artists/Zelle",
+        "type": "regular",
+        "id": "100049"
+      },
+      {
+        "name": "Zelly Ocho",
+        "url": "https://genius.com/artists/Zelly-ocho",
+        "type": "regular",
+        "id": "1226188"
+      },
+      {
+        "name": "ZelooperZ",
+        "url": "https://genius.com/artists/Zelooperz",
+        "type": "regular",
+        "id": "15193"
+      },
+      {
+        "name": "Zema",
+        "url": "https://genius.com/artists/Zema",
+        "type": "regular",
+        "id": "1683082"
+      },
+      {
+        "name": "Zemaru",
+        "url": "https://genius.com/artists/Zemaru",
+        "type": "regular",
+        "id": "1665930"
+      },
+      {
+        "name": "Zemeth",
+        "url": "https://genius.com/artists/Zemeth",
+        "type": "regular",
+        "id": "3073259"
+      },
+      {
+        "name": "Земфира от Луки (Zemfira from Luka)",
+        "url": "https://genius.com/artists/Zemfira-from-luka",
+        "type": "regular",
+        "id": "3461609"
+      },
+      {
+        "name": "Zemin Kat",
+        "url": "https://genius.com/artists/Zemin-kat",
+        "type": "regular",
+        "id": "1669638"
+      },
+      {
+        "name": "Zemlja gruva",
+        "url": "https://genius.com/artists/Zemlja-gruva",
+        "type": "regular",
+        "id": "1420962"
+      },
+      {
+        "name": "Zen",
+        "url": "https://genius.com/artists/Zen",
+        "type": "regular",
+        "id": "25849"
+      },
+      {
+        "name": "ぜんぶ君のせいだ。(zenbukiminoseida.)",
+        "url": "https://genius.com/artists/Zenbukiminoseida",
+        "type": "regular",
+        "id": "2068966"
+      },
+      {
+        "name": "Zen Café",
+        "url": "https://genius.com/artists/Zen-cafe",
+        "type": "regular",
+        "id": "353765"
+      },
+      {
+        "name": "The Zen Circus",
+        "url": "https://genius.com/artists/The-zen-circus",
+        "type": "regular",
+        "id": "359743"
+      },
+      {
+        "name": "Zendo Zultier",
+        "url": "https://genius.com/artists/Zendo-zultier",
+        "type": "regular",
+        "id": "3094331"
+      },
+      {
+        "name": "Zenek Kupatasa",
+        "url": "https://genius.com/artists/Zenek-kupatasa",
+        "type": "regular",
+        "id": "1111794"
+      },
+      {
+        "name": "ZENE THE ZILLA (제네 더 질라)",
+        "url": "https://genius.com/artists/Zene-the-zilla",
+        "type": "regular",
+        "id": "1368239"
+      },
+      {
+        "name": "Zen-G",
+        "url": "https://genius.com/artists/Zen-g",
+        "type": "regular",
+        "id": "1191237"
+      },
+      {
+        "name": "Zenglen",
+        "url": "https://genius.com/artists/Zenglen",
+        "type": "regular",
+        "id": "459389"
+      },
+      {
+        "name": "Zenithlovesdaisy",
+        "url": "https://genius.com/artists/Zenithlovesdaisy",
+        "type": "regular",
+        "id": "3668939"
+      },
+      {
+        "name": "The Zenith Passage",
+        "url": "https://genius.com/artists/The-zenith-passage",
+        "type": "regular",
+        "id": "1160386"
+      },
+      {
+        "name": "The Zenmenn",
+        "url": "https://genius.com/artists/The-zenmenn",
+        "type": "regular",
+        "id": "3087033"
+      },
+      {
+        "name": "Zenon Martyniuk",
+        "url": "https://genius.com/artists/Zenon-martyniuk",
+        "type": "regular",
+        "id": "578813"
+      },
+      {
+        "name": "Zenotroid",
+        "url": "https://genius.com/artists/Zenotroid",
+        "type": "regular",
+        "id": "3346736"
+      },
+      {
+        "name": "Zen P",
+        "url": "https://genius.com/artists/Zen-p",
+        "type": "regular",
+        "id": "3602741"
+      },
+      {
+        "name": "Zensery",
+        "url": "https://genius.com/artists/Zensery",
+        "type": "regular",
+        "id": "1775488"
+      },
+      {
+        "name": "ZENTHEGHOUL",
+        "url": "https://genius.com/artists/Zentheghoul",
+        "type": "regular",
+        "id": "3251070"
+      },
+      {
+        "name": "Zeny (YouTube)",
+        "url": "https://genius.com/artists/Zeny-youtube",
+        "type": "regular",
+        "id": "4006432"
+      },
+      {
+        "name": "Zeo Jaweed",
+        "url": "https://genius.com/artists/Zeo-jaweed",
+        "type": "regular",
+        "id": "1489435"
+      },
+      {
+        "name": "ZeoWorks",
+        "url": "https://genius.com/artists/Zeoworks",
+        "type": "regular",
+        "id": "1480742"
+      },
+      {
+        "name": "Zep Dembo",
+        "url": "https://genius.com/artists/Zep-dembo",
+        "type": "regular",
+        "id": "3809536"
+      },
+      {
+        "name": "Zepelinbeats",
+        "url": "https://genius.com/artists/Zepelinbeats",
+        "type": "regular",
+        "id": "2782217"
+      },
+      {
+        "name": "Zeph",
+        "url": "https://genius.com/artists/Zeph",
+        "type": "regular",
+        "id": "1568540"
+      },
+      {
+        "name": "Zephanie",
+        "url": "https://genius.com/artists/Zephanie",
+        "type": "regular",
+        "id": "1902261"
+      },
+      {
+        "name": "ZEPHRAPS",
+        "url": "https://genius.com/artists/Zephraps",
+        "type": "regular",
+        "id": "3297388"
+      },
+      {
+        "name": "Zephyrianna",
+        "url": "https://genius.com/artists/Zephyrianna",
+        "type": "regular",
+        "id": "2849520"
+      },
+      {
+        "name": "Zeppet Store",
+        "url": "https://genius.com/artists/Zeppet-store",
+        "type": "regular",
+        "id": "4046505"
+      },
+      {
+        "name": "Zequin",
+        "url": "https://genius.com/artists/Zequin",
+        "type": "regular",
+        "id": "3449604"
+      },
+      {
+        "name": "Zera",
+        "url": "https://genius.com/artists/Zera",
+        "type": "regular",
+        "id": "2625064"
+      },
+      {
+        "name": "Zeraphine",
+        "url": "https://genius.com/artists/Zeraphine",
+        "type": "regular",
+        "id": "344877"
+      },
+      {
+        "name": "ZERA (ゼラ) (Producer)",
+        "url": "https://genius.com/artists/Zera-producer",
+        "type": "regular",
+        "id": "3385192"
+      },
+      {
+        "name": "ZeratoR",
+        "url": "https://genius.com/artists/Zerator",
+        "type": "regular",
+        "id": "387087"
+      },
+      {
+        "name": "Zerb",
+        "url": "https://genius.com/artists/Zerb",
+        "type": "regular",
+        "id": "1307711"
+      },
+      {
+        "name": "Zerimar",
+        "url": "https://genius.com/artists/Zerimar",
+        "type": "regular",
+        "id": "2260906"
+      },
+      {
+        "name": "зеркало (zerkalo32)",
+        "url": "https://genius.com/artists/Zerkalo32",
+        "type": "regular",
+        "id": "4441405"
+      },
+      {
+        "name": "Zero",
+        "url": "https://genius.com/artists/Zero",
+        "type": "regular",
+        "id": "183921"
+      },
+      {
+        "name": "Zero 7",
+        "url": "https://genius.com/artists/Zero-7",
+        "type": "regular",
+        "id": "2570"
+      },
+      {
+        "name": "Zero 9:36",
+        "url": "https://genius.com/artists/Zero-9-36",
+        "type": "regular",
+        "id": "1962795"
+      },
+      {
+        "name": "Zero Assoluto",
+        "url": "https://genius.com/artists/Zero-assoluto",
+        "type": "regular",
+        "id": "375426"
+      },
+      {
+        "name": "ZEROBASEONE",
+        "url": "https://genius.com/artists/Zerobaseone",
+        "type": "regular",
+        "id": "3510056"
+      },
+      {
+        "name": "Zero Boys",
+        "url": "https://genius.com/artists/Zero-boys",
+        "type": "regular",
+        "id": "354149"
+      },
+      {
+        "name": "ZeroFaded",
+        "url": "https://genius.com/artists/Zerofaded",
+        "type": "regular",
+        "id": "2270839"
+      },
+      {
+        "name": "Zeroh",
+        "url": "https://genius.com/artists/Zeroh",
+        "type": "regular",
+        "id": "18755"
+      },
+      {
+        "name": "Zeromancer",
+        "url": "https://genius.com/artists/Zeromancer",
+        "type": "regular",
+        "id": "354386"
+      },
+      {
+        "name": "The Zero [MM]",
+        "url": "https://genius.com/artists/The-zero-mm",
+        "type": "regular",
+        "id": "2828597"
+      },
+      {
+        "name": "Zero Mostel",
+        "url": "https://genius.com/artists/Zero-mostel",
+        "type": "regular",
+        "id": "226558"
+      },
+      {
+        "name": "Zero Motivation (OST) - אפס ביחסי אנוש",
+        "url": "https://genius.com/artists/Zero-motivation-ost",
+        "type": "regular",
+        "id": "3787087"
+      },
+      {
+        "name": "Zero People",
+        "url": "https://genius.com/artists/Zero-people",
+        "type": "regular",
+        "id": "1752447"
+      },
+      {
+        "name": "Zero (Rap)",
+        "url": "https://genius.com/artists/Zero-rap",
+        "type": "regular",
+        "id": "26145"
+      },
+      {
+        "name": "The Zeros (Band)",
+        "url": "https://genius.com/artists/The-zeros-band",
+        "type": "regular",
+        "id": "481327"
+      },
+      {
+        "name": "ZERO$OMN",
+        "url": "https://genius.com/artists/Zero-omn",
+        "type": "regular",
+        "id": "4298869"
+      },
+      {
+        "name": "Zero (UK)",
+        "url": "https://genius.com/artists/Zero-uk",
+        "type": "regular",
+        "id": "3187587"
+      },
+      {
+        "name": "Zero Vicious",
+        "url": "https://genius.com/artists/Zero-vicious",
+        "type": "regular",
+        "id": "626794"
+      },
+      {
+        "name": "Zerrin Özer",
+        "url": "https://genius.com/artists/Zerrin-ozer",
+        "type": "regular",
+        "id": "360764"
+      },
+      {
+        "name": "Zerrydl",
+        "url": "https://genius.com/artists/Zerrydl",
+        "type": "regular",
+        "id": "2600026"
+      },
+      {
+        "name": "Zeruel",
+        "url": "https://genius.com/artists/Zeruel",
+        "type": "regular",
+        "id": "3839641"
+      },
+      {
+        "name": "Zesau",
+        "url": "https://genius.com/artists/Zesau",
+        "type": "regular",
+        "id": "11649"
+      },
+      {
+        "name": "Zeshan B",
+        "url": "https://genius.com/artists/Zeshan-b",
+        "type": "regular",
+        "id": "2233063"
+      },
+      {
+        "name": "Zespół Pieśni i Tańca Śląsk",
+        "url": "https://genius.com/artists/Zespo-piesni-i-tanca-slask",
+        "type": "regular",
+        "id": "2235992"
+      },
+      {
+        "name": "ZETAK",
+        "url": "https://genius.com/artists/Zetak",
+        "type": "regular",
+        "id": "2149346"
+      },
+      {
+        "name": "Zetazen",
+        "url": "https://genius.com/artists/Zetazen",
+        "type": "regular",
+        "id": "1008909"
+      },
+      {
+        "name": "ZetaZeta",
+        "url": "https://genius.com/artists/Zetazeta",
+        "type": "regular",
+        "id": "559323"
+      },
+      {
+        "name": "ZetHa",
+        "url": "https://genius.com/artists/Zetha",
+        "type": "regular",
+        "id": "127721"
+      },
+      {
+        "name": "Zetod",
+        "url": "https://genius.com/artists/Zetod",
+        "type": "regular",
+        "id": "3318034"
+      },
+      {
+        "name": "Zetpewu Bakajoko",
+        "url": "https://genius.com/artists/Zetpewu-bakajoko",
+        "type": "regular",
+        "id": "2012504"
+      },
+      {
+        "name": "Zetta 09",
+        "url": "https://genius.com/artists/Zetta-09",
+        "type": "regular",
+        "id": "2218863"
+      },
+      {
+        "name": "ZETTAI",
+        "url": "https://genius.com/artists/Zettai",
+        "type": "regular",
+        "id": "4258896"
+      },
+      {
+        "name": "Zeu",
+        "url": "https://genius.com/artists/Zeu",
+        "type": "regular",
+        "id": "165982"
+      },
+      {
+        "name": "Zeus (POL)",
+        "url": "https://genius.com/artists/Zeus-pol",
+        "type": "regular",
+        "id": "58648"
+      },
+      {
+        "name": "Zevia",
+        "url": "https://genius.com/artists/Zevia",
+        "type": "regular",
+        "id": "2743147"
+      },
+      {
+        "name": "Zexta Alianza",
+        "url": "https://genius.com/artists/Zexta-alianza",
+        "type": "regular",
+        "id": "2451940"
+      },
+      {
+        "name": "ZEXZEX",
+        "url": "https://genius.com/artists/Zexzex",
+        "type": "regular",
+        "id": "4323624"
+      },
+      {
+        "name": "Üzeyir Mehdizadə",
+        "url": "https://genius.com/artists/Uzeyir-mehdizad",
+        "type": "regular",
+        "id": "1478918"
+      },
+      {
+        "name": "Zeynəb Həsəni",
+        "url": "https://genius.com/artists/Zeynb-hsni",
+        "type": "regular",
+        "id": "2379295"
+      },
+      {
+        "name": "Zeynəb Xanlarova",
+        "url": "https://genius.com/artists/Zeynb-xanlarova",
+        "type": "regular",
+        "id": "1262110"
+      },
+      {
+        "name": "zeyne - زين",
+        "url": "https://genius.com/artists/Zeyne",
+        "type": "regular",
+        "id": "2787571"
+      },
+      {
+        "name": "Zeynep Casalini",
+        "url": "https://genius.com/artists/Zeynep-casalini",
+        "type": "regular",
+        "id": "2058370"
+      },
+      {
+        "name": "Zeynep Dizdar",
+        "url": "https://genius.com/artists/Zeynep-dizdar",
+        "type": "regular",
+        "id": "404490"
+      },
+      {
+        "name": "Zezé Di Camargo & Luciano",
+        "url": "https://genius.com/artists/Zeze-di-camargo-and-luciano",
+        "type": "regular",
+        "id": "353057"
+      },
+      {
+        "name": "ZEZE",
+        "url": "https://genius.com/artists/Zeze",
+        "type": "regular",
+        "id": "22849"
+      },
+      {
+        "name": "Zé Felipe",
+        "url": "https://genius.com/artists/Ze-felipe",
+        "type": "regular",
+        "id": "480129"
+      },
+      {
+        "name": "Z-FLO",
+        "url": "https://genius.com/artists/Z-flo",
+        "type": "regular",
+        "id": "653701"
+      },
+      {
+        "name": "Özgün",
+        "url": "https://genius.com/artists/Ozgun",
+        "type": "regular",
+        "id": "328604"
+      },
+      {
+        "name": "Özgür Alter",
+        "url": "https://genius.com/artists/Ozgur-alter",
+        "type": "regular",
+        "id": "3396473"
+      },
+      {
+        "name": "Жадан і собаки (Zhadan i Sobaky)",
+        "url": "https://genius.com/artists/Zhadan-i-sobaky",
+        "type": "regular",
+        "id": "3541468"
+      },
+      {
+        "name": "Жаман (Zhaman)",
+        "url": "https://genius.com/artists/Zhaman",
+        "type": "regular",
+        "id": "1830392"
+      },
+      {
+        "name": "Zhané",
+        "url": "https://genius.com/artists/Zhane",
+        "type": "regular",
+        "id": "3340"
+      },
+      {
+        "name": "张杰 (Zhang Jie)",
+        "url": "https://genius.com/artists/Zhang-jie",
+        "type": "regular",
+        "id": "1243140"
+      },
+      {
+        "name": "Zhang YanJun (张燕军)",
+        "url": "https://genius.com/artists/Zhang-yanjun",
+        "type": "regular",
+        "id": "2777201"
+      },
+      {
+        "name": "张远 (Zhang Yuan)",
+        "url": "https://genius.com/artists/Zhang-yuan",
+        "type": "regular",
+        "id": "3008527"
+      },
+      {
+        "name": "张真源 (Zhang Zhenyuan)",
+        "url": "https://genius.com/artists/Zhang-zhenyuan",
+        "type": "regular",
+        "id": "2415561"
+      },
+      {
+        "name": "張紫寧 (Zhang Zining)",
+        "url": "https://genius.com/artists/Zhang-zining",
+        "type": "regular",
+        "id": "2356896"
+      },
+      {
+        "name": "Жанна Агузарова (Zhanna Aguzarova)",
+        "url": "https://genius.com/artists/Zhanna-aguzarova",
+        "type": "regular",
+        "id": "1884821"
+      },
+      {
+        "name": "жанна орешкина (zhanna oreshkina)",
+        "url": "https://genius.com/artists/Zhanna-oreshkina",
+        "type": "regular",
+        "id": "4270682"
+      },
+      {
+        "name": "zhanulka",
+        "url": "https://genius.com/artists/Zhanulka",
+        "type": "regular",
+        "id": "1738544"
+      },
+      {
+        "name": "赵雷 (Zhao Lei)",
+        "url": "https://genius.com/artists/Zhao-lei",
+        "type": "regular",
+        "id": "1655944"
+      },
+      {
+        "name": "赵露思 (Zhao Lusi)",
+        "url": "https://genius.com/artists/Zhao-lusi",
+        "type": "regular",
+        "id": "2551449"
+      },
+      {
+        "name": "Жарок (Zharok)",
+        "url": "https://genius.com/artists/Zharok",
+        "type": "regular",
+        "id": "3352996"
+      },
+      {
+        "name": "Жасмин (Zhasmin)",
+        "url": "https://genius.com/artists/Zhasmin",
+        "type": "regular",
+        "id": "1911149"
+      },
+      {
+        "name": "Zhavia",
+        "url": "https://genius.com/artists/Zhavia",
+        "type": "regular",
+        "id": "1464738"
+      },
+      {
+        "name": "Ждун (Zhdun)",
+        "url": "https://genius.com/artists/Zhdun",
+        "type": "regular",
+        "id": "4346281"
+      },
+      {
+        "name": "Zheani",
+        "url": "https://genius.com/artists/Zheani",
+        "type": "regular",
+        "id": "1317334"
+      },
+      {
+        "name": "Жека Расту (Zheka Rastu)",
+        "url": "https://genius.com/artists/Zheka-rastu",
+        "type": "regular",
+        "id": "1849403"
+      },
+      {
+        "name": "Zhelik",
+        "url": "https://genius.com/artists/Zhelik",
+        "type": "regular",
+        "id": "4294050"
+      },
+      {
+        "name": "Жёлтая Ветка (Zheltaya Vetka)",
+        "url": "https://genius.com/artists/Zheltaya-vetka",
+        "type": "regular",
+        "id": "2687956"
+      },
+      {
+        "name": "Zhenja",
+        "url": "https://genius.com/artists/Zhenja",
+        "type": "regular",
+        "id": "3556238"
+      },
+      {
+        "name": "Женя Белоусов (Zhenya Belousov)",
+        "url": "https://genius.com/artists/Zhenya-belousov",
+        "type": "regular",
+        "id": "1839432"
+      },
+      {
+        "name": "ZHIEND",
+        "url": "https://genius.com/artists/Zhiend",
+        "type": "regular",
+        "id": "574327"
+      },
+      {
+        "name": "Жин-Жин (Zhin-Zhin)",
+        "url": "https://genius.com/artists/Zhin-zhin",
+        "type": "regular",
+        "id": "3356532"
+      },
+      {
+        "name": "周深 (Zhou Shen)",
+        "url": "https://genius.com/artists/Zhou-shen",
+        "type": "regular",
+        "id": "1685852"
+      },
+      {
+        "name": "ЖЩ (ZHSCH)",
+        "url": "https://genius.com/artists/Zhsch",
+        "type": "regular",
+        "id": "1485492"
+      },
+      {
+        "name": "ZHU",
+        "url": "https://genius.com/artists/Zhu",
+        "type": "regular",
+        "id": "186206"
+      },
+      {
+        "name": "Жуки (Zhuki)",
+        "url": "https://genius.com/artists/Zhuki",
+        "type": "regular",
+        "id": "1583247"
+      },
+      {
+        "name": "zhunii",
+        "url": "https://genius.com/artists/Zhunii",
+        "type": "regular",
+        "id": "4092361"
+      },
+      {
+        "name": "Ziad Bourji - زياد برجي",
+        "url": "https://genius.com/artists/Ziad-bourji",
+        "type": "regular",
+        "id": "1896994"
+      },
+      {
+        "name": "Ziad Rahbani - زياد رحباني",
+        "url": "https://genius.com/artists/Ziad-rahbani",
+        "type": "regular",
+        "id": "521447"
+      },
+      {
+        "name": "ZIAD ZAZA - زياد ظاظا",
+        "url": "https://genius.com/artists/Ziad-zaza",
+        "type": "regular",
+        "id": "3243237"
+      },
+      {
+        "name": "Ziahfyah",
+        "url": "https://genius.com/artists/Ziahfyah",
+        "type": "regular",
+        "id": "3886363"
+      },
+      {
+        "name": "Ziak",
+        "url": "https://genius.com/artists/Ziak",
+        "type": "regular",
+        "id": "2113831"
+      },
+      {
+        "name": "Ziana Zain",
+        "url": "https://genius.com/artists/Ziana-zain",
+        "type": "regular",
+        "id": "359606"
+      },
+      {
+        "name": "Ziané Saayman",
+        "url": "https://genius.com/artists/Ziane-saayman",
+        "type": "regular",
+        "id": "4341273"
+      },
+      {
+        "name": "Zia Quizon",
+        "url": "https://genius.com/artists/Zia-quizon",
+        "type": "regular",
+        "id": "406074"
+      },
+      {
+        "name": "Zé Ibarra",
+        "url": "https://genius.com/artists/Ze-ibarra",
+        "type": "regular",
+        "id": "1886116"
+      },
+      {
+        "name": "Zibex",
+        "url": "https://genius.com/artists/Zibex",
+        "type": "regular",
+        "id": "1687549"
+      },
+      {
+        "name": "Zica",
+        "url": "https://genius.com/artists/Zica",
+        "type": "regular",
+        "id": "1698445"
+      },
+      {
+        "name": "Zicer Inc.",
+        "url": "https://genius.com/artists/Zicer-inc",
+        "type": "regular",
+        "id": "1875877"
+      },
+      {
+        "name": "ZICO",
+        "url": "https://genius.com/artists/Zico",
+        "type": "regular",
+        "id": "217593"
+      },
+      {
+        "name": "Zididada",
+        "url": "https://genius.com/artists/Zididada",
+        "type": "regular",
+        "id": "358921"
+      },
+      {
+        "name": "Zidii",
+        "url": "https://genius.com/artists/Zidii",
+        "type": "regular",
+        "id": "3757847"
+      },
+      {
+        "name": "Ziedu Vija",
+        "url": "https://genius.com/artists/Ziedu-vija",
+        "type": "regular",
+        "id": "1331273"
+      },
+      {
+        "name": "ZieZie",
+        "url": "https://genius.com/artists/Ziezie",
+        "type": "regular",
+        "id": "1141650"
+      },
+      {
+        "name": "Циферблат (Ziferblat)",
+        "url": "https://genius.com/artists/Ziferblat",
+        "type": "regular",
+        "id": "3429234"
+      },
+      {
+        "name": "Zifou",
+        "url": "https://genius.com/artists/Zifou",
+        "type": "regular",
+        "id": "30126"
+      },
+      {
+        "name": "Zift",
+        "url": "https://genius.com/artists/Zift",
+        "type": "regular",
+        "id": "334641"
+      },
+      {
+        "name": "Zigarro | SMORRA",
+        "url": "https://genius.com/artists/Zigarro-smorra",
+        "type": "regular",
+        "id": "4325076"
+      },
+      {
+        "name": "The Ziggens",
+        "url": "https://genius.com/artists/The-ziggens",
+        "type": "regular",
+        "id": "376201"
+      },
+      {
+        "name": "Ziggy",
+        "url": "https://genius.com/artists/Ziggy",
+        "type": "regular",
+        "id": "64768"
+      },
+      {
+        "name": "Ziggy4x",
+        "url": "https://genius.com/artists/Ziggy4x",
+        "type": "regular",
+        "id": "3992010"
+      },
+      {
+        "name": "Ziggy Alberts",
+        "url": "https://genius.com/artists/Ziggy-alberts",
+        "type": "regular",
+        "id": "521088"
+      },
+      {
+        "name": "Ziggy Marley",
+        "url": "https://genius.com/artists/Ziggy-marley",
+        "type": "regular",
+        "id": "22999"
+      },
+      {
+        "name": "Ziggy Marley & The Melody Makers",
+        "url": "https://genius.com/artists/Ziggy-marley-and-the-melody-makers",
+        "type": "regular",
+        "id": "256428"
+      },
+      {
+        "name": "Ziggy Ramo",
+        "url": "https://genius.com/artists/Ziggy-ramo",
+        "type": "regular",
+        "id": "1619730"
+      },
+      {
+        "name": "ZIG MENTALITY",
+        "url": "https://genius.com/artists/Zig-mentality",
+        "type": "regular",
+        "id": "2217430"
+      },
+      {
+        "name": "Zika Boy",
+        "url": "https://genius.com/artists/Zika-boy",
+        "type": "regular",
+        "id": "3163317"
+      },
+      {
+        "name": "Zi:Kill",
+        "url": "https://genius.com/artists/Zi-kill",
+        "type": "regular",
+        "id": "1765411"
+      },
+      {
+        "name": "ZIK (Long Zhi Kun)",
+        "url": "https://genius.com/artists/Zik-long-zhi-kun",
+        "type": "regular",
+        "id": "4399838"
+      },
+      {
+        "name": "Zikxo",
+        "url": "https://genius.com/artists/Zikxo",
+        "type": "regular",
+        "id": "1207099"
+      },
+      {
+        "name": "Zild",
+        "url": "https://genius.com/artists/Zild",
+        "type": "regular",
+        "id": "1385249"
+      },
+      {
+        "name": "ZillaKami",
+        "url": "https://genius.com/artists/Zillakami",
+        "type": "regular",
+        "id": "880018"
+      },
+      {
+        "name": "Zillionaire Doe",
+        "url": "https://genius.com/artists/Zillionaire-doe",
+        "type": "regular",
+        "id": "4081251"
+      },
+      {
+        "name": "Zimbini",
+        "url": "https://genius.com/artists/Zimbini",
+        "type": "regular",
+        "id": "3933269"
+      },
+      {
+        "name": "Zimm",
+        "url": "https://genius.com/artists/Zimm",
+        "type": "regular",
+        "id": "1054495"
+      },
+      {
+        "name": "Zimmer90",
+        "url": "https://genius.com/artists/Zimmer90",
+        "type": "regular",
+        "id": "2612716"
+      },
+      {
+        "name": "Zimmermann (NOR)",
+        "url": "https://genius.com/artists/Zimmermann-nor",
+        "type": "regular",
+        "id": "3344486"
+      },
+      {
+        "name": "ЗимойБезШапки (ZimoyBezShapki)",
+        "url": "https://genius.com/artists/Zimoybezshapki",
+        "type": "regular",
+        "id": "3565485"
+      },
+      {
+        "name": "Zimple",
+        "url": "https://genius.com/artists/Zimple",
+        "type": "regular",
+        "id": "181633"
+      },
+      {
+        "name": "Zina Daoudia - زينة الداودية",
+        "url": "https://genius.com/artists/Zina-daoudia",
+        "type": "regular",
+        "id": "1863491"
+      },
+      {
+        "name": "Zinadelphia",
+        "url": "https://genius.com/artists/Zinadelphia",
+        "type": "regular",
+        "id": "2434828"
+      },
+      {
+        "name": "Zincboy",
+        "url": "https://genius.com/artists/Zincboy",
+        "type": "regular",
+        "id": "1446392"
+      },
+      {
+        "name": "Zinée",
+        "url": "https://genius.com/artists/Zinee",
+        "type": "regular",
+        "id": "2306966"
+      },
+      {
+        "name": "Zinera",
+        "url": "https://genius.com/artists/Zinera",
+        "type": "regular",
+        "id": "3634921"
+      },
+      {
+        "name": "zinoblade",
+        "url": "https://genius.com/artists/Zinoblade",
+        "type": "regular",
+        "id": "2536325"
+      },
+      {
+        "name": "Zinoleesky",
+        "url": "https://genius.com/artists/Zinoleesky",
+        "type": "regular",
+        "id": "2056273"
+      },
+      {
+        "name": "Zinon",
+        "url": "https://genius.com/artists/Zinon",
+        "type": "regular",
+        "id": "647479"
+      },
+      {
+        "name": "Zino (UK)",
+        "url": "https://genius.com/artists/Zino-uk",
+        "type": "regular",
+        "id": "2503014"
+      },
+      {
+        "name": "ZINTENSE",
+        "url": "https://genius.com/artists/Zintense",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Ziomcy",
+        "url": "https://genius.com/artists/Ziomcy",
+        "type": "regular",
+        "id": "3290199"
+      },
+      {
+        "name": "Zion",
+        "url": "https://genius.com/artists/Zion",
+        "type": "regular",
+        "id": "6307"
+      },
+      {
+        "name": "Zion & Lennox",
+        "url": "https://genius.com/artists/Zion-and-lennox",
+        "type": "regular",
+        "id": "403538"
+      },
+      {
+        "name": "Zion I",
+        "url": "https://genius.com/artists/Zion-i",
+        "type": "regular",
+        "id": "1752"
+      },
+      {
+        "name": "ZionRyozo",
+        "url": "https://genius.com/artists/Zionryozo",
+        "type": "regular",
+        "id": "1879444"
+      },
+      {
+        "name": "Zion.T",
+        "url": "https://genius.com/artists/Ziont",
+        "type": "regular",
+        "id": "95538"
+      },
+      {
+        "name": "Zioło",
+        "url": "https://genius.com/artists/Zioo",
+        "type": "regular",
+        "id": "60391"
+      },
+      {
+        "name": "Zior Park",
+        "url": "https://genius.com/artists/Zior-park",
+        "type": "regular",
+        "id": "1823207"
+      },
+      {
+        "name": "ziPbby",
+        "url": "https://genius.com/artists/Zipbby",
+        "type": "regular",
+        "id": "3149166"
+      },
+      {
+        "name": "Zipera",
+        "url": "https://genius.com/artists/Zipera",
+        "type": "regular",
+        "id": "132751"
+      },
+      {
+        "name": "ZippO (UA)",
+        "url": "https://genius.com/artists/Zippo-ua",
+        "type": "regular",
+        "id": "1151574"
+      },
+      {
+        "name": "Zippy Kid",
+        "url": "https://genius.com/artists/Zippy-kid",
+        "type": "regular",
+        "id": "327411"
+      },
+      {
+        "name": "Zippy Ogar",
+        "url": "https://genius.com/artists/Zippy-ogar",
+        "type": "regular",
+        "id": "2999187"
+      },
+      {
+        "name": "ziproom",
+        "url": "https://genius.com/artists/Ziproom",
+        "type": "regular",
+        "id": "4113529"
+      },
+      {
+        "name": "ZIP Skład",
+        "url": "https://genius.com/artists/Zip-skad",
+        "type": "regular",
+        "id": "58660"
+      },
+      {
+        "name": "Zip Zipper",
+        "url": "https://genius.com/artists/Zip-zipper",
+        "type": "regular",
+        "id": "1481333"
+      },
+      {
+        "name": "Zircon",
+        "url": "https://genius.com/artists/Zircon",
+        "type": "regular",
+        "id": "454517"
+      },
+      {
+        "name": "ØZI (Stefan Chen)",
+        "url": "https://genius.com/artists/Zi-stefan-chen",
+        "type": "regular",
+        "id": "1227906"
+      },
+      {
+        "name": "ZITA",
+        "url": "https://genius.com/artists/Zita",
+        "type": "regular",
+        "id": "3555490"
+      },
+      {
+        "name": "Zitoune",
+        "url": "https://genius.com/artists/Zitoune",
+        "type": "regular",
+        "id": "34833"
+      },
+      {
+        "name": "Zitten (짙은)",
+        "url": "https://genius.com/artists/Zitten",
+        "type": "regular",
+        "id": "1149437"
+      },
+      {
+        "name": "Ziva Magnolya",
+        "url": "https://genius.com/artists/Ziva-magnolya",
+        "type": "regular",
+        "id": "2297061"
+      },
+      {
+        "name": "Zivert",
+        "url": "https://genius.com/artists/Zivert",
+        "type": "regular",
+        "id": "1705319"
+      },
+      {
+        "name": "Zivilia",
+        "url": "https://genius.com/artists/Zivilia",
+        "type": "regular",
+        "id": "2327713"
+      },
+      {
+        "name": "Zivsick",
+        "url": "https://genius.com/artists/Zivsick",
+        "type": "regular",
+        "id": "2200542"
+      },
+      {
+        "name": "Ziv Zaifman",
+        "url": "https://genius.com/artists/Ziv-zaifman",
+        "type": "regular",
+        "id": "1277357"
+      },
+      {
+        "name": "zix. (Pluggnb)",
+        "url": "https://genius.com/artists/Zix-pluggnb",
+        "type": "regular",
+        "id": "4295914"
+      },
+      {
+        "name": "Ziyaad Luceo",
+        "url": "https://genius.com/artists/Ziyaad-luceo",
+        "type": "regular",
+        "id": "300572"
+      },
+      {
+        "name": "Ziyakruse",
+        "url": "https://genius.com/artists/Ziyakruse",
+        "type": "regular",
+        "id": "3114716"
+      },
+      {
+        "name": "Ziynet Sali",
+        "url": "https://genius.com/artists/Ziynet-sali",
+        "type": "regular",
+        "id": "387699"
+      },
+      {
+        "name": "Zizan",
+        "url": "https://genius.com/artists/Zizan",
+        "type": "regular",
+        "id": "533779"
+      },
+      {
+        "name": "Zizi Kirana",
+        "url": "https://genius.com/artists/Zizi-kirana",
+        "type": "regular",
+        "id": "1243732"
+      },
+      {
+        "name": "Zizi Possi",
+        "url": "https://genius.com/artists/Zizi-possi",
+        "type": "regular",
+        "id": "365098"
+      },
+      {
+        "name": "ZiZZi",
+        "url": "https://genius.com/artists/Zizzi",
+        "type": "regular",
+        "id": "4009969"
+      },
+      {
+        "name": "Zizzy",
+        "url": "https://genius.com/artists/Zizzy",
+        "type": "regular",
+        "id": "1969171"
+      },
+      {
+        "name": "Zizzy (TUR)",
+        "url": "https://genius.com/artists/Zizzy-tur",
+        "type": "regular",
+        "id": "4127123"
+      },
+      {
+        "name": "Zjay",
+        "url": "https://genius.com/artists/Zjay",
+        "type": "regular",
+        "id": "1290365"
+      },
+      {
+        "name": "ZJ Chrome",
+        "url": "https://genius.com/artists/Zj-chrome",
+        "type": "regular",
+        "id": "680701"
+      },
+      {
+        "name": "Z Jocker",
+        "url": "https://genius.com/artists/Z-jocker",
+        "type": "regular",
+        "id": "3318174"
+      },
+      {
+        "name": "z² (JPN)",
+        "url": "https://genius.com/artists/Z2-jpn",
+        "type": "regular",
+        "id": "4168617"
+      },
+      {
+        "name": "ZK",
+        "url": "https://genius.com/artists/Zk",
+        "type": "regular",
+        "id": "1088444"
+      },
+      {
+        "name": "Özkan",
+        "url": "https://genius.com/artists/Ozkan",
+        "type": "regular",
+        "id": "1997211"
+      },
+      {
+        "name": "ZK (CGM)",
+        "url": "https://genius.com/artists/Zk-cgm",
+        "type": "regular",
+        "id": "1260601"
+      },
+      {
+        "name": "Гуфи (ZKD)",
+        "url": "https://genius.com/artists/Zkd",
+        "type": "regular",
+        "id": "3031992"
+      },
+      {
+        "name": "Zkr",
+        "url": "https://genius.com/artists/Zkr",
+        "type": "regular",
+        "id": "217822"
+      },
+      {
+        "name": "Злата Іванів (Zlata Ivaniv)",
+        "url": "https://genius.com/artists/Zlata-ivaniv",
+        "type": "regular",
+        "id": "4121135"
+      },
+      {
+        "name": "Zlatan",
+        "url": "https://genius.com/artists/Zlatan",
+        "type": "regular",
+        "id": "1600610"
+      },
+      {
+        "name": "Zlata Ognevich",
+        "url": "https://genius.com/artists/Zlata-ognevich",
+        "type": "regular",
+        "id": "50802"
+      },
+      {
+        "name": "Zlata Petrović",
+        "url": "https://genius.com/artists/Zlata-petrovic",
+        "type": "regular",
+        "id": "2883656"
+      },
+      {
+        "name": "Zlata (RUS)",
+        "url": "https://genius.com/artists/Zlata-rus",
+        "type": "regular",
+        "id": "4407118"
+      },
+      {
+        "name": "Zlatko",
+        "url": "https://genius.com/artists/Zlatko",
+        "type": "regular",
+        "id": "203900"
+      },
+      {
+        "name": "Özlem Tekin",
+        "url": "https://genius.com/artists/Ozlem-tekin",
+        "type": "regular",
+        "id": "456404"
+      },
+      {
+        "name": "Zülfiyyə Xanbabayeva",
+        "url": "https://genius.com/artists/Zulfiyy-xanbabayeva",
+        "type": "regular",
+        "id": "1262130"
+      },
+      {
+        "name": "Zülfü Livaneli",
+        "url": "https://genius.com/artists/Zulfu-livaneli",
+        "type": "regular",
+        "id": "359146"
+      },
+      {
+        "name": "Zélia Duncan",
+        "url": "https://genius.com/artists/Zelia-duncan",
+        "type": "regular",
+        "id": "178016"
+      },
+      {
+        "name": "Zélie",
+        "url": "https://genius.com/artists/Zelie",
+        "type": "regular",
+        "id": "3227396"
+      },
+      {
+        "name": "ZL-KILLA",
+        "url": "https://genius.com/artists/Zl-killa",
+        "type": "regular",
+        "id": "2918011"
+      },
+      {
+        "name": "АЗА#ZLO (AZA#ZLO)",
+        "url": "https://genius.com/artists/Zlo-azazlo",
+        "type": "regular",
+        "id": "1126668"
+      },
+      {
+        "name": "zlvtni",
+        "url": "https://genius.com/artists/Zlvtni",
+        "type": "regular",
+        "id": "2179418"
+      },
+      {
+        "name": "Zámbó Jimmy",
+        "url": "https://genius.com/artists/Zambo-jimmy",
+        "type": "regular",
+        "id": "2136040"
+      },
+      {
+        "name": "Zmelkoow",
+        "url": "https://genius.com/artists/Zmelkoow",
+        "type": "regular",
+        "id": "343944"
+      },
+      {
+        "name": "Змей (Zmey)",
+        "url": "https://genius.com/artists/Zmey",
+        "type": "regular",
+        "id": "1229032"
+      },
+      {
+        "name": "ももいろクローバーZ (Momoiro Clover Z)",
+        "url": "https://genius.com/artists/Z-momoiro-clover-z",
+        "type": "regular",
+        "id": "1430865"
+      },
+      {
+        "name": "Z Money",
+        "url": "https://genius.com/artists/Z-money",
+        "type": "regular",
+        "id": "26829"
+      },
+      {
+        "name": "Znaki",
+        "url": "https://genius.com/artists/Znaki",
+        "type": "regular",
+        "id": "372421"
+      },
+      {
+        "name": "НАZИМА (NAZIMA)",
+        "url": "https://genius.com/artists/Z-nazima",
+        "type": "regular",
+        "id": "1529978"
+      },
+      {
+        "name": "Zé Neto & Cristiano",
+        "url": "https://genius.com/artists/Ze-neto-and-cristiano",
+        "type": "regular",
+        "id": "75349"
+      },
+      {
+        "name": "Zénit",
+        "url": "https://genius.com/artists/Zenit",
+        "type": "regular",
+        "id": "52024"
+      },
+      {
+        "name": "Znowu Tony",
+        "url": "https://genius.com/artists/Znowu-tony",
+        "type": "regular",
+        "id": "3834134"
+      },
+      {
+        "name": "Zoé",
+        "url": "https://genius.com/artists/Zoe",
+        "type": "regular",
+        "id": "68584"
+      },
+      {
+        "name": "Zoan",
+        "url": "https://genius.com/artists/Zoan",
+        "type": "regular",
+        "id": "1745275"
+      },
+      {
+        "name": "zodiak",
+        "url": "https://genius.com/artists/Zodiak",
+        "type": "regular",
+        "id": "976623"
+      },
+      {
+        "name": "Zodiaks",
+        "url": "https://genius.com/artists/Zodiaks",
+        "type": "regular",
+        "id": "2035483"
+      },
+      {
+        "name": "ZODIVK",
+        "url": "https://genius.com/artists/Zodivk",
+        "type": "regular",
+        "id": "2204827"
+      },
+      {
+        "name": "Zoe Clark",
+        "url": "https://genius.com/artists/Zoe-clark",
+        "type": "regular",
+        "id": "2197248"
+      },
+      {
+        "name": "Zoee",
+        "url": "https://genius.com/artists/Zoee",
+        "type": "regular",
+        "id": "1185725"
+      },
+      {
+        "name": "左乙 (ZOEE) (CHN)",
+        "url": "https://genius.com/artists/Zoee-chn",
+        "type": "regular",
+        "id": "3406813"
+      },
+      {
+        "name": "Zoe Gotusso",
+        "url": "https://genius.com/artists/Zoe-gotusso",
+        "type": "regular",
+        "id": "1576334"
+      },
+      {
+        "name": "Zoe Kida",
+        "url": "https://genius.com/artists/Zoe-kida",
+        "type": "regular",
+        "id": "3033254"
+      },
+      {
+        "name": "Zoe Ko",
+        "url": "https://genius.com/artists/Zoe-ko",
+        "type": "regular",
+        "id": "3164063"
+      },
+      {
+        "name": "ZOE Music",
+        "url": "https://genius.com/artists/Zoe-music",
+        "type": "regular",
+        "id": "2979637"
+      },
+      {
+        "name": "Zoe Osama",
+        "url": "https://genius.com/artists/Zoe-osama",
+        "type": "regular",
+        "id": "3380118"
+      },
+      {
+        "name": "Zoe Saldaña",
+        "url": "https://genius.com/artists/Zoe-saldana",
+        "type": "regular",
+        "id": "1254604"
+      },
+      {
+        "name": "Zoe Wees",
+        "url": "https://genius.com/artists/Zoe-wees",
+        "type": "regular",
+        "id": "2144779"
+      },
+      {
+        "name": "Zoe Winkler",
+        "url": "https://genius.com/artists/Zoe-winkler",
+        "type": "regular",
+        "id": "645762"
+      },
+      {
+        "name": "Zoey Dollaz",
+        "url": "https://genius.com/artists/Zoey-dollaz",
+        "type": "regular",
+        "id": "182312"
+      },
+      {
+        "name": "Z (of Firing Squad)",
+        "url": "https://genius.com/artists/Z-of-firing-squad",
+        "type": "regular",
+        "id": "1106596"
+      },
+      {
+        "name": "ЗоХа (ZoHa)",
+        "url": "https://genius.com/artists/Zoha",
+        "type": "regular",
+        "id": "3401592"
+      },
+      {
+        "name": "Zohar Argov - זוהר ארגוב",
+        "url": "https://genius.com/artists/Zohar-argov",
+        "type": "regular",
+        "id": "1011514"
+      },
+      {
+        "name": "Zoi",
+        "url": "https://genius.com/artists/Zoi",
+        "type": "regular",
+        "id": "1584694"
+      },
+      {
+        "name": "Zois",
+        "url": "https://genius.com/artists/Zois",
+        "type": "regular",
+        "id": "4043499"
+      },
+      {
+        "name": "ZOIS (DE)",
+        "url": "https://genius.com/artists/Zois-de",
+        "type": "regular",
+        "id": "2576958"
+      },
+      {
+        "name": "Zoë Johnston",
+        "url": "https://genius.com/artists/Zoe-johnston",
+        "type": "regular",
+        "id": "318889"
+      },
+      {
+        "name": "Zokush",
+        "url": "https://genius.com/artists/Zokush",
+        "type": "regular",
+        "id": "2776326"
+      },
+      {
+        "name": "Zola",
+        "url": "https://genius.com/artists/Zola",
+        "type": "regular",
+        "id": "1101709"
+      },
+      {
+        "name": "Zola 7",
+        "url": "https://genius.com/artists/Zola-7",
+        "type": "regular",
+        "id": "1225023"
+      },
+      {
+        "name": "Zola Blood",
+        "url": "https://genius.com/artists/Zola-blood",
+        "type": "regular",
+        "id": "406026"
+      },
+      {
+        "name": "Zola Jesus",
+        "url": "https://genius.com/artists/Zola-jesus",
+        "type": "regular",
+        "id": "47781"
+      },
+      {
+        "name": "Zolarmoon",
+        "url": "https://genius.com/artists/Zolarmoon",
+        "type": "regular",
+        "id": "585517"
+      },
+      {
+        "name": "The Zolas",
+        "url": "https://genius.com/artists/The-zolas",
+        "type": "regular",
+        "id": "26994"
+      },
+      {
+        "name": "Zola Simone",
+        "url": "https://genius.com/artists/Zola-simone",
+        "type": "regular",
+        "id": "2781825"
+      },
+      {
+        "name": "Zolita",
+        "url": "https://genius.com/artists/Zolita",
+        "type": "regular",
+        "id": "569113"
+      },
+      {
+        "name": "Zoë Livay",
+        "url": "https://genius.com/artists/Zoe-livay",
+        "type": "regular",
+        "id": "1984480"
+      },
+      {
+        "name": "Zolof The Rock & Roll Destroyer",
+        "url": "https://genius.com/artists/Zolof-the-rock-and-roll-destroyer",
+        "type": "regular",
+        "id": "363612"
+      },
+      {
+        "name": "ZO (Lonzo Ball)",
+        "url": "https://genius.com/artists/Zo-lonzo-ball",
+        "type": "regular",
+        "id": "1133638"
+      },
+      {
+        "name": "Золотые зубы (Zolotie zubi)",
+        "url": "https://genius.com/artists/Zolotie-zubi",
+        "type": "regular",
+        "id": "3408373"
+      },
+      {
+        "name": "ZOLOTO",
+        "url": "https://genius.com/artists/Zoloto",
+        "type": "regular",
+        "id": "1619180"
+      },
+      {
+        "name": "Ансамбль «Золотое Кольцо» (Zolotoe Koltso Ensemble)",
+        "url": "https://genius.com/artists/Zolotoe-koltso-ensemble",
+        "type": "regular",
+        "id": "3187492"
+      },
+      {
+        "name": "Золотое Перо (Zolotoe Pero)",
+        "url": "https://genius.com/artists/Zolotoe-pero",
+        "type": "regular",
+        "id": "2494921"
+      },
+      {
+        "name": "Zolpidem",
+        "url": "https://genius.com/artists/Zolpidem",
+        "type": "regular",
+        "id": "4111138"
+      },
+      {
+        "name": "Zoltán Kodály",
+        "url": "https://genius.com/artists/Zoltan-kodaly",
+        "type": "regular",
+        "id": "1147846"
+      },
+      {
+        "name": "Зомб (Zomb)",
+        "url": "https://genius.com/artists/Zomb",
+        "type": "regular",
+        "id": "1187136"
+      },
+      {
+        "name": "zombAe",
+        "url": "https://genius.com/artists/Zombae",
+        "type": "regular",
+        "id": "2679334"
+      },
+      {
+        "name": "Zombie Ghost Train",
+        "url": "https://genius.com/artists/Zombie-ghost-train",
+        "type": "regular",
+        "id": "354141"
+      },
+      {
+        "name": "Zombie Girl",
+        "url": "https://genius.com/artists/Zombie-girl",
+        "type": "regular",
+        "id": "365737"
+      },
+      {
+        "name": "Zombie Juice",
+        "url": "https://genius.com/artists/Zombie-juice",
+        "type": "regular",
+        "id": "234192"
+      },
+      {
+        "name": "Zombie Nation",
+        "url": "https://genius.com/artists/Zombie-nation",
+        "type": "regular",
+        "id": "379510"
+      },
+      {
+        "name": "The Zombies",
+        "url": "https://genius.com/artists/The-zombies",
+        "type": "regular",
+        "id": "39065"
+      },
+      {
+        "name": "ZOMBIES – Cast",
+        "url": "https://genius.com/artists/Zombies-cast",
+        "type": "regular",
+        "id": "2956113"
+      },
+      {
+        "name": "Zombiez",
+        "url": "https://genius.com/artists/Zombiez",
+        "type": "regular",
+        "id": "1301793"
+      },
+      {
+        "name": "Zombina And The Skeletones",
+        "url": "https://genius.com/artists/Zombina-and-the-skeletones",
+        "type": "regular",
+        "id": "350921"
+      },
+      {
+        "name": "Zomboy",
+        "url": "https://genius.com/artists/Zomboy",
+        "type": "regular",
+        "id": "217147"
+      },
+      {
+        "name": "zombycare",
+        "url": "https://genius.com/artists/Zombycare",
+        "type": "regular",
+        "id": "3452433"
+      },
+      {
+        "name": "Zom Marie",
+        "url": "https://genius.com/artists/Zom-marie",
+        "type": "regular",
+        "id": "2412563"
+      },
+      {
+        "name": "Zona Ganjah",
+        "url": "https://genius.com/artists/Zona-ganjah",
+        "type": "regular",
+        "id": "367344"
+      },
+      {
+        "name": "Zona Man",
+        "url": "https://genius.com/artists/Zona-man",
+        "type": "regular",
+        "id": "502326"
+      },
+      {
+        "name": "Zonderling",
+        "url": "https://genius.com/artists/Zonderling",
+        "type": "regular",
+        "id": "984787"
+      },
+      {
+        "name": "ZONE",
+        "url": "https://genius.com/artists/Zone",
+        "type": "regular",
+        "id": "19300"
+      },
+      {
+        "name": "Zone 2",
+        "url": "https://genius.com/artists/Zone-2",
+        "type": "regular",
+        "id": "1077609"
+      },
+      {
+        "name": "ZonetoZen",
+        "url": "https://genius.com/artists/Zonetozen",
+        "type": "regular",
+        "id": "2659984"
+      },
+      {
+        "name": "Zonke",
+        "url": "https://genius.com/artists/Zonke",
+        "type": "regular",
+        "id": "48879"
+      },
+      {
+        "name": "Zéon Squad",
+        "url": "https://genius.com/artists/Zeon-squad",
+        "type": "regular",
+        "id": "4148703"
+      },
+      {
+        "name": "Zontani Nekri",
+        "url": "https://genius.com/artists/Zontani-nekri",
+        "type": "regular",
+        "id": "601175"
+      },
+      {
+        "name": "ZOO",
+        "url": "https://genius.com/artists/Zoo",
+        "type": "regular",
+        "id": "1164144"
+      },
+      {
+        "name": "Zoocci Coke Dope",
+        "url": "https://genius.com/artists/Zoocci-coke-dope",
+        "type": "regular",
+        "id": "461409"
+      },
+      {
+        "name": "Zooey Deschanel",
+        "url": "https://genius.com/artists/Zooey-deschanel",
+        "type": "regular",
+        "id": "153492"
+      },
+      {
+        "name": "The Zoo (Filipino Band)",
+        "url": "https://genius.com/artists/The-zoo-filipino-band",
+        "type": "regular",
+        "id": "3175239"
+      },
+      {
+        "name": "Zoo Gazer (动物园钉子户)",
+        "url": "https://genius.com/artists/Zoo-gazer",
+        "type": "regular",
+        "id": "1539493"
+      },
+      {
+        "name": "Zoomo",
+        "url": "https://genius.com/artists/Zoomo",
+        "type": "regular",
+        "id": "53497"
+      },
+      {
+        "name": "Zoomy",
+        "url": "https://genius.com/artists/Zoomy",
+        "type": "regular",
+        "id": "2438468"
+      },
+      {
+        "name": "Зоопарк (Zoopark)",
+        "url": "https://genius.com/artists/Zoopark",
+        "type": "regular",
+        "id": "1671398"
+      },
+      {
+        "name": "Zoot Woman",
+        "url": "https://genius.com/artists/Zoot-woman",
+        "type": "regular",
+        "id": "370448"
+      },
+      {
+        "name": "Zootzie",
+        "url": "https://genius.com/artists/Zootzie",
+        "type": "regular",
+        "id": "1204390"
+      },
+      {
+        "name": "Zorana Mićanović",
+        "url": "https://genius.com/artists/Zorana-micanovic",
+        "type": "regular",
+        "id": "2911403"
+      },
+      {
+        "name": "Zora Neale Hurston",
+        "url": "https://genius.com/artists/Zora-neale-hurston",
+        "type": "regular",
+        "id": "38379"
+      },
+      {
+        "name": "Zoran Gajić",
+        "url": "https://genius.com/artists/Zoran-gajic",
+        "type": "regular",
+        "id": "3742572"
+      },
+      {
+        "name": "Zoran Kalezić",
+        "url": "https://genius.com/artists/Zoran-kalezic",
+        "type": "regular",
+        "id": "3252320"
+      },
+      {
+        "name": "Zoran Vanev",
+        "url": "https://genius.com/artists/Zoran-vanev",
+        "type": "regular",
+        "id": "2683085"
+      },
+      {
+        "name": "ZORA (Sängerin)",
+        "url": "https://genius.com/artists/Zora-sangerin",
+        "type": "regular",
+        "id": "4365957"
+      },
+      {
+        "name": "Zorba",
+        "url": "https://genius.com/artists/Zorba",
+        "type": "regular",
+        "id": "284945"
+      },
+      {
+        "name": "Zorden",
+        "url": "https://genius.com/artists/Zorden",
+        "type": "regular",
+        "id": "2172900"
+      },
+      {
+        "name": "Zorica Brunclik",
+        "url": "https://genius.com/artists/Zorica-brunclik",
+        "type": "regular",
+        "id": "2823348"
+      },
+      {
+        "name": "Zorica Marković",
+        "url": "https://genius.com/artists/Zorica-markovic",
+        "type": "regular",
+        "id": "3527957"
+      },
+      {
+        "name": "Zorja",
+        "url": "https://genius.com/artists/Zorja",
+        "type": "regular",
+        "id": "3021279"
+      },
+      {
+        "name": "ZORN",
+        "url": "https://genius.com/artists/Zorn",
+        "type": "regular",
+        "id": "2346986"
+      },
+      {
+        "name": "Zoro&Buzz",
+        "url": "https://genius.com/artists/Zoro-buzz",
+        "type": "regular",
+        "id": "1583495"
+      },
+      {
+        "name": "Zoro (GRC)",
+        "url": "https://genius.com/artists/Zoro-grc",
+        "type": "regular",
+        "id": "2381574"
+      },
+      {
+        "name": "Zoro l'Frérot",
+        "url": "https://genius.com/artists/Zoro-lfrerot",
+        "type": "regular",
+        "id": "2076761"
+      },
+      {
+        "name": "Zorro",
+        "url": "https://genius.com/artists/Zorro",
+        "type": "regular",
+        "id": "73630"
+      },
+      {
+        "name": "Zoster",
+        "url": "https://genius.com/artists/Zoster",
+        "type": "regular",
+        "id": "383322"
+      },
+      {
+        "name": "Zoë Tauran",
+        "url": "https://genius.com/artists/Zoe-tauran",
+        "type": "regular",
+        "id": "481346"
+      },
+      {
+        "name": "Zotiyac",
+        "url": "https://genius.com/artists/Zotiyac",
+        "type": "regular",
+        "id": "1093943"
+      },
+      {
+        "name": "ZOT on the WAVE",
+        "url": "https://genius.com/artists/Zot-on-the-wave",
+        "type": "regular",
+        "id": "1263140"
+      },
+      {
+        "name": "Zo Trapalot",
+        "url": "https://genius.com/artists/Zo-trapalot",
+        "type": "regular",
+        "id": "3359040"
+      },
+      {
+        "name": "Zoufris Maracas",
+        "url": "https://genius.com/artists/Zoufris-maracas",
+        "type": "regular",
+        "id": "343730"
+      },
+      {
+        "name": "Zouhair Bahaoui - زهير البهاوي",
+        "url": "https://genius.com/artists/Zouhair-bahaoui",
+        "type": "regular",
+        "id": "1176075"
+      },
+      {
+        "name": "Zouk Machine",
+        "url": "https://genius.com/artists/Zouk-machine",
+        "type": "regular",
+        "id": "378235"
+      },
+      {
+        "name": "Zounds",
+        "url": "https://genius.com/artists/Zounds",
+        "type": "regular",
+        "id": "373207"
+      },
+      {
+        "name": "Zouzounia",
+        "url": "https://genius.com/artists/Zouzounia",
+        "type": "regular",
+        "id": "4153410"
+      },
+      {
+        "name": "Zoxea",
+        "url": "https://genius.com/artists/Zoxea",
+        "type": "regular",
+        "id": "11623"
+      },
+      {
+        "name": "Зоя (zoyazimes)",
+        "url": "https://genius.com/artists/Zoyazimes",
+        "type": "regular",
+        "id": "3267253"
+      },
+      {
+        "name": "Zoyou",
+        "url": "https://genius.com/artists/Zoyou",
+        "type": "regular",
+        "id": "2498605"
+      },
+      {
+        "name": "ZO ZAZZ (조째즈)",
+        "url": "https://genius.com/artists/Zo-zazz",
+        "type": "regular",
+        "id": "4283697"
+      },
+      {
+        "name": "ZÉ Pack M",
+        "url": "https://genius.com/artists/Ze-pack-m",
+        "type": "regular",
+        "id": "4319824"
+      },
+      {
+        "name": "Zpecial",
+        "url": "https://genius.com/artists/Zpecial",
+        "type": "regular",
+        "id": "2607913"
+      },
+      {
+        "name": "Z Plus Plus",
+        "url": "https://genius.com/artists/Z-plus-plus",
+        "type": "regular",
+        "id": "1802358"
+      },
+      {
+        "name": "ZPU",
+        "url": "https://genius.com/artists/Zpu",
+        "type": "regular",
+        "id": "55589"
+      },
+      {
+        "name": "Zé Ramalho",
+        "url": "https://genius.com/artists/Ze-ramalho",
+        "type": "regular",
+        "id": "324811"
+      },
+      {
+        "name": "Züri West",
+        "url": "https://genius.com/artists/Zuri-west",
+        "type": "regular",
+        "id": "353758"
+      },
+      {
+        "name": "Z-Ro",
+        "url": "https://genius.com/artists/Z-ro",
+        "type": "regular",
+        "id": "588"
+      },
+      {
+        "name": "Zé Roberto",
+        "url": "https://genius.com/artists/Ze-roberto",
+        "type": "regular",
+        "id": "1217872"
+      },
+      {
+        "name": "ZR Worthy",
+        "url": "https://genius.com/artists/Zr-worthy",
+        "type": "regular",
+        "id": "2657354"
+      },
+      {
+        "name": "ZR x Lil Mo",
+        "url": "https://genius.com/artists/Zr-x-lil-mo",
+        "type": "regular",
+        "id": "1457863"
+      },
+      {
+        "name": "Zлий Rепер Zеник",
+        "url": "https://genius.com/artists/Z-r-z",
+        "type": "regular",
+        "id": "3523262"
+      },
+      {
+        "name": "Zsa Zsa Padilla",
+        "url": "https://genius.com/artists/Zsa-zsa-padilla",
+        "type": "regular",
+        "id": "363583"
+      },
+      {
+        "name": "Z Sharp Studios",
+        "url": "https://genius.com/artists/Z-sharp-studios",
+        "type": "regular",
+        "id": "3756834"
+      },
+      {
+        "name": "ZSK",
+        "url": "https://genius.com/artists/Zsk",
+        "type": "regular",
+        "id": "227565"
+      },
+      {
+        "name": "三Z (Sān-Z)",
+        "url": "https://genius.com/artists/Z-san-z",
+        "type": "regular",
+        "id": "4016198"
+      },
+      {
+        "name": "Z.TAO",
+        "url": "https://genius.com/artists/Ztao",
+        "type": "regular",
+        "id": "980644"
+      },
+      {
+        "name": "ZTL",
+        "url": "https://genius.com/artists/Ztl",
+        "type": "regular",
+        "id": "1685478"
+      },
+      {
+        "name": "Z-Trip",
+        "url": "https://genius.com/artists/Z-trip",
+        "type": "regular",
+        "id": "8956"
+      },
+      {
+        "name": "Zubeen Garg",
+        "url": "https://genius.com/artists/Zubeen-garg",
+        "type": "regular",
+        "id": "532123"
+      },
+      {
+        "name": "Zubi",
+        "url": "https://genius.com/artists/Zubi",
+        "type": "regular",
+        "id": "1869203"
+      },
+      {
+        "name": "Zubin",
+        "url": "https://genius.com/artists/Zubin",
+        "type": "regular",
+        "id": "1142013"
+      },
+      {
+        "name": "ZUBIN (Indie)",
+        "url": "https://genius.com/artists/Zubin-indie",
+        "type": "regular",
+        "id": "4012885"
+      },
+      {
+        "name": "Zubir Said",
+        "url": "https://genius.com/artists/Zubir-said",
+        "type": "regular",
+        "id": "186843"
+      },
+      {
+        "name": "зубы:) (zuby smile)",
+        "url": "https://genius.com/artists/Zuby-smile",
+        "type": "regular",
+        "id": "3416156"
+      },
+      {
+        "name": "Zucchero",
+        "url": "https://genius.com/artists/Zucchero",
+        "type": "regular",
+        "id": "358595"
+      },
+      {
+        "name": "Zuchu",
+        "url": "https://genius.com/artists/Zuchu",
+        "type": "regular",
+        "id": "2184552"
+      },
+      {
+        "name": "Zudizilla",
+        "url": "https://genius.com/artists/Zudizilla",
+        "type": "regular",
+        "id": "618205"
+      },
+      {
+        "name": "Zugezogen Maskulin",
+        "url": "https://genius.com/artists/Zugezogen-maskulin",
+        "type": "regular",
+        "id": "18803"
+      },
+      {
+        "name": "Zug Izland",
+        "url": "https://genius.com/artists/Zug-izland",
+        "type": "regular",
+        "id": "6621"
+      },
+      {
+        "name": "Zugo",
+        "url": "https://genius.com/artists/Zugo",
+        "type": "regular",
+        "id": "2785128"
+      },
+      {
+        "name": "祖海 (Zu Hai)",
+        "url": "https://genius.com/artists/Zu-hai",
+        "type": "regular",
+        "id": "2673028"
+      },
+      {
+        "name": "ZUHAIR",
+        "url": "https://genius.com/artists/Zuhair",
+        "type": "regular",
+        "id": "1285972"
+      },
+      {
+        "name": "Zuhal Olcay",
+        "url": "https://genius.com/artists/Zuhal-olcay",
+        "type": "regular",
+        "id": "365826"
+      },
+      {
+        "name": "Zuhk",
+        "url": "https://genius.com/artists/Zuhk",
+        "type": "regular",
+        "id": "3880953"
+      },
+      {
+        "name": "Zukenee",
+        "url": "https://genius.com/artists/Zukenee",
+        "type": "regular",
+        "id": "3153702"
+      },
+      {
+        "name": "Zukovstheworld",
+        "url": "https://genius.com/artists/Zukovstheworld",
+        "type": "regular",
+        "id": "4265578"
+      },
+      {
+        "name": "ZULAN",
+        "url": "https://genius.com/artists/Zulan",
+        "type": "regular",
+        "id": "4388907"
+      },
+      {
+        "name": "Zuloo",
+        "url": "https://genius.com/artists/Zuloo",
+        "type": "regular",
+        "id": "4169397"
+      },
+      {
+        "name": "Zulu",
+        "url": "https://genius.com/artists/Zulu",
+        "type": "regular",
+        "id": "2944"
+      },
+      {
+        "name": "ZuluMecca",
+        "url": "https://genius.com/artists/Zulumecca",
+        "type": "regular",
+        "id": "2216344"
+      },
+      {
+        "name": "Zum",
+        "url": "https://genius.com/artists/Zum",
+        "type": "regular",
+        "id": "148419"
+      },
+      {
+        "name": "Zuma",
+        "url": "https://genius.com/artists/Zuma",
+        "type": "regular",
+        "id": "998786"
+      },
+      {
+        "name": "ZUN",
+        "url": "https://genius.com/artists/Zun",
+        "type": "regular",
+        "id": "1444435"
+      },
+      {
+        "name": "Zuna",
+        "url": "https://genius.com/artists/Zuna",
+        "type": "regular",
+        "id": "632671"
+      },
+      {
+        "name": "Zupfgeigenhansel",
+        "url": "https://genius.com/artists/Zupfgeigenhansel",
+        "type": "regular",
+        "id": "365796"
+      },
+      {
+        "name": "Zupiter",
+        "url": "https://genius.com/artists/Zupiter",
+        "type": "regular",
+        "id": "1955957"
+      },
+      {
+        "name": "​zuro",
+        "url": "https://genius.com/artists/Zuro",
+        "type": "regular",
+        "id": "2463258"
+      },
+      {
+        "name": "Z (USA)",
+        "url": "https://genius.com/artists/Z-usa",
+        "type": "regular",
+        "id": "589767"
+      },
+      {
+        "name": "Zuse",
+        "url": "https://genius.com/artists/Zuse",
+        "type": "regular",
+        "id": "62173"
+      },
+      {
+        "name": "ZUSJE",
+        "url": "https://genius.com/artists/Zusje",
+        "type": "regular",
+        "id": "3447800"
+      },
+      {
+        "name": "ZUT",
+        "url": "https://genius.com/artists/Zut",
+        "type": "regular",
+        "id": "1472346"
+      },
+      {
+        "name": "ずっと真夜中でいいのに。(ZUTOMAYO)",
+        "url": "https://genius.com/artists/Zutomayo",
+        "type": "regular",
+        "id": "1898338"
+      },
+      {
+        "name": "The Zutons",
+        "url": "https://genius.com/artists/The-zutons",
+        "type": "regular",
+        "id": "355249"
+      },
+      {
+        "name": "Zuu",
+        "url": "https://genius.com/artists/Zuu",
+        "type": "regular",
+        "id": "38939"
+      },
+      {
+        "name": "Zuukou Mayzie",
+        "url": "https://genius.com/artists/Zuukou-mayzie",
+        "type": "regular",
+        "id": "225437"
+      },
+      {
+        "name": "ZUUZ",
+        "url": "https://genius.com/artists/Zuuz",
+        "type": "regular",
+        "id": "2730318"
+      },
+      {
+        "name": "Zuzie",
+        "url": "https://genius.com/artists/Zuzie",
+        "type": "regular",
+        "id": "4079060"
+      },
+      {
+        "name": "​zuziula",
+        "url": "https://genius.com/artists/Zuziula",
+        "type": "regular",
+        "id": "3830908"
+      },
+      {
+        "name": "Zé Vaqueiro",
+        "url": "https://genius.com/artists/Ze-vaqueiro",
+        "type": "regular",
+        "id": "1939261"
+      },
+      {
+        "name": "zvch (USA)",
+        "url": "https://genius.com/artists/Zvch-usa",
+        "type": "regular",
+        "id": "3773085"
+      },
+      {
+        "name": "zvcvrsxd",
+        "url": "https://genius.com/artists/Zvcvrsxd",
+        "type": "regular",
+        "id": "4220176"
+      },
+      {
+        "name": "Zventa Sventana",
+        "url": "https://genius.com/artists/Zventa-sventana",
+        "type": "regular",
+        "id": "1773875"
+      },
+      {
+        "name": "Звери (Zveri)",
+        "url": "https://genius.com/artists/Zveri",
+        "type": "regular",
+        "id": "1224340"
+      },
+      {
+        "name": "Звонкий (Zvonkiy)",
+        "url": "https://genius.com/artists/Zvonkiy",
+        "type": "regular",
+        "id": "1238050"
+      },
+      {
+        "name": "Звуки Му (Zvuki Mu)",
+        "url": "https://genius.com/artists/Zvuki-mu",
+        "type": "regular",
+        "id": "363078"
+      },
+      {
+        "name": "ZWALL",
+        "url": "https://genius.com/artists/Zwall",
+        "type": "regular",
+        "id": "1285934"
+      },
+      {
+        "name": "Zwan",
+        "url": "https://genius.com/artists/Zwan",
+        "type": "regular",
+        "id": "365899"
+      },
+      {
+        "name": "Zwangere Guy",
+        "url": "https://genius.com/artists/Zwangere-guy",
+        "type": "regular",
+        "id": "1116189"
+      },
+      {
+        "name": "Zwayetoven",
+        "url": "https://genius.com/artists/Zwayetoven",
+        "type": "regular",
+        "id": "2997772"
+      },
+      {
+        "name": "ZWE1HVNDXR",
+        "url": "https://genius.com/artists/Zwe1hvndxr",
+        "type": "regular",
+        "id": "3649546"
+      },
+      {
+        "name": "Zwei",
+        "url": "https://genius.com/artists/Zwei",
+        "type": "regular",
+        "id": "1508000"
+      },
+      {
+        "name": "ZWrld",
+        "url": "https://genius.com/artists/Zwrld",
+        "type": "regular",
+        "id": "2570731"
+      },
+      {
+        "name": "Zwyntar",
+        "url": "https://genius.com/artists/Zwyntar",
+        "type": "regular",
+        "id": "3030525"
+      },
+      {
+        "name": "ZXKAI",
+        "url": "https://genius.com/artists/Zxkai",
+        "type": "regular",
+        "id": "4277682"
+      },
+      {
+        "name": "​zxmra",
+        "url": "https://genius.com/artists/Zxmra",
+        "type": "regular",
+        "id": "3583474"
+      },
+      {
+        "name": "zxtr",
+        "url": "https://genius.com/artists/Zxtr",
+        "type": "regular",
+        "id": "3024231"
+      },
+      {
+        "name": "Zya",
+        "url": "https://genius.com/artists/Zya",
+        "type": "regular",
+        "id": "2327135"
+      },
+      {
+        "name": "Zy Benji",
+        "url": "https://genius.com/artists/Zy-benji",
+        "type": "regular",
+        "id": "3560007"
+      },
+      {
+        "name": "Zychee",
+        "url": "https://genius.com/artists/Zychee",
+        "type": "regular",
+        "id": "4426302"
+      },
+      {
+        "name": "ZYLIX",
+        "url": "https://genius.com/artists/Zylix",
+        "type": "regular",
+        "id": "3642682"
+      },
+      {
+        "name": "Zymba",
+        "url": "https://genius.com/artists/Zymba",
+        "type": "regular",
+        "id": "2305649"
+      },
+      {
+        "name": "Zynakal",
+        "url": "https://genius.com/artists/Zynakal",
+        "type": "regular",
+        "id": "1598373"
+      },
+      {
+        "name": "Zynthesiren",
+        "url": "https://genius.com/artists/Zynthesiren",
+        "type": "regular",
+        "id": "4011480"
+      },
+      {
+        "name": "Łzy (POL)",
+        "url": "https://genius.com/artists/Zy-pol",
+        "type": "regular",
+        "id": "665877"
+      },
+      {
+        "name": "Zyron",
+        "url": "https://genius.com/artists/Zyron",
+        "type": "regular",
+        "id": "2127313"
+      },
+      {
+        "name": "Zyrtck",
+        "url": "https://genius.com/artists/Zyrtck",
+        "type": "regular",
+        "id": "1592277"
+      },
+      {
+        "name": "zyzek",
+        "url": "https://genius.com/artists/Zyzek",
+        "type": "regular",
+        "id": "2591000"
+      },
+      {
+        "name": "Z.Z. Hill",
+        "url": "https://genius.com/artists/Zz-hill",
+        "type": "regular",
+        "id": "384670"
+      },
+      {
+        "name": "zįęzųĮąşęjąş (Yabujin)",
+        "url": "https://genius.com/artists/Ziezuiasejas-yabujin",
+        "type": "regular",
+        "id": "4212535"
+      },
+      {
+        "name": "КняZz (KnyaZz)",
+        "url": "https://genius.com/artists/Zz-knyazz",
+        "type": "regular",
+        "id": "131617"
+      },
+      {
+        "name": "​zzoilo",
+        "url": "https://genius.com/artists/Zzoilo",
+        "type": "regular",
+        "id": "2838886"
+      },
+      {
+        "name": "ZZ Ward",
+        "url": "https://genius.com/artists/Zz-ward",
+        "type": "regular",
+        "id": "15950"
+      },
+      {
+        "name": "Zzz.",
+        "url": "https://genius.com/artists/Zzz",
+        "type": "regular",
+        "id": "3114435"
+      },
+      {
+        "name": "​zzzahara",
+        "url": "https://genius.com/artists/Zzzahara",
+        "type": "regular",
+        "id": "2565752"
+      },
+      {
+        "name": "​​​zZzSleepyAsh",
+        "url": "https://genius.com/artists/Zzzsleepyash",
+        "type": "regular",
+        "id": "2144873"
+      },
+      {
+        "name": "ZzzTud",
+        "url": "https://genius.com/artists/Zzztud",
+        "type": "regular",
+        "id": "2517047"
+      }
+    ]
+  }
+}

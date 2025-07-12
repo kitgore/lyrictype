@@ -1,0 +1,4513 @@
+{
+  "letter": "B",
+  "timestamp": "2025-07-11T06:52:50.204Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Backstreet Boys",
+        "url": "https://genius.com/artists/Backstreet-boys",
+        "type": "popular",
+        "id": "8415"
+      },
+      {
+        "name": "Bad Bunny",
+        "url": "https://genius.com/artists/Bad-bunny",
+        "type": "popular",
+        "id": "690350"
+      },
+      {
+        "name": "The Beach Boys",
+        "url": "https://genius.com/artists/The-beach-boys",
+        "type": "popular",
+        "id": "1138"
+      },
+      {
+        "name": "The Beatles",
+        "url": "https://genius.com/artists/The-beatles",
+        "type": "popular",
+        "id": "586"
+      },
+      {
+        "name": "Benson Boone",
+        "url": "https://genius.com/artists/Benson-boone",
+        "type": "popular",
+        "id": "2915938"
+      },
+      {
+        "name": "Beyoncé",
+        "url": "https://genius.com/artists/Beyonce",
+        "type": "popular",
+        "id": "498"
+      },
+      {
+        "name": "Big Sean",
+        "url": "https://genius.com/artists/Big-sean",
+        "type": "popular",
+        "id": "492"
+      },
+      {
+        "name": "Billie Eilish",
+        "url": "https://genius.com/artists/Billie-eilish",
+        "type": "popular",
+        "id": "615550"
+      },
+      {
+        "name": "Billy Joel",
+        "url": "https://genius.com/artists/Billy-joel",
+        "type": "popular",
+        "id": "16965"
+      },
+      {
+        "name": "Black Eyed Peas",
+        "url": "https://genius.com/artists/Black-eyed-peas",
+        "type": "popular",
+        "id": "425"
+      },
+      {
+        "name": "Black Sherif",
+        "url": "https://genius.com/artists/Black-sherif",
+        "type": "popular",
+        "id": "2127018"
+      },
+      {
+        "name": "blink-182",
+        "url": "https://genius.com/artists/Blink-182",
+        "type": "popular",
+        "id": "13373"
+      },
+      {
+        "name": "Bob Dylan",
+        "url": "https://genius.com/artists/Bob-dylan",
+        "type": "popular",
+        "id": "181"
+      },
+      {
+        "name": "Bob Marley & The Wailers",
+        "url": "https://genius.com/artists/Bob-marley-and-the-wailers",
+        "type": "popular",
+        "id": "28615"
+      },
+      {
+        "name": "Bresh",
+        "url": "https://genius.com/artists/Bresh",
+        "type": "popular",
+        "id": "623737"
+      },
+      {
+        "name": "Britney Spears",
+        "url": "https://genius.com/artists/Britney-spears",
+        "type": "popular",
+        "id": "1052"
+      },
+      {
+        "name": "Bruce Springsteen",
+        "url": "https://genius.com/artists/Bruce-springsteen",
+        "type": "popular",
+        "id": "19041"
+      },
+      {
+        "name": "Bruno Mars",
+        "url": "https://genius.com/artists/Bruno-mars",
+        "type": "popular",
+        "id": "500"
+      },
+      {
+        "name": "Bryan Adams",
+        "url": "https://genius.com/artists/Bryan-adams",
+        "type": "popular",
+        "id": "32823"
+      },
+      {
+        "name": "Buba Corelli",
+        "url": "https://genius.com/artists/Buba-corelli",
+        "type": "popular",
+        "id": "53624"
+      }
+    ],
+    "regular": [
+      {
+        "name": "The B-52's",
+        "url": "https://genius.com/artists/The-b-52s",
+        "type": "regular",
+        "id": "34604"
+      },
+      {
+        "name": "B6",
+        "url": "https://genius.com/artists/B6",
+        "type": "regular",
+        "id": "2299265"
+      },
+      {
+        "name": "Baasik",
+        "url": "https://genius.com/artists/Baasik",
+        "type": "regular",
+        "id": "994073"
+      },
+      {
+        "name": "Babalwa M",
+        "url": "https://genius.com/artists/Babalwa-m",
+        "type": "regular",
+        "id": "2554244"
+      },
+      {
+        "name": "⁠babangida",
+        "url": "https://genius.com/artists/Babangida",
+        "type": "regular",
+        "id": "681497"
+      },
+      {
+        "name": "Babasha",
+        "url": "https://genius.com/artists/Babasha",
+        "type": "regular",
+        "id": "3813094"
+      },
+      {
+        "name": "Babbie Mason",
+        "url": "https://genius.com/artists/Babbie-mason",
+        "type": "regular",
+        "id": "370059"
+      },
+      {
+        "name": "Baby Ariel",
+        "url": "https://genius.com/artists/Baby-ariel",
+        "type": "regular",
+        "id": "1200823"
+      },
+      {
+        "name": "Baby Bash",
+        "url": "https://genius.com/artists/Baby-bash",
+        "type": "regular",
+        "id": "1617"
+      },
+      {
+        "name": "Baby Blood",
+        "url": "https://genius.com/artists/Baby-blood",
+        "type": "regular",
+        "id": "3491449"
+      },
+      {
+        "name": "BABY BOI (Artist)",
+        "url": "https://genius.com/artists/Baby-boi-artist",
+        "type": "regular",
+        "id": "4404693"
+      },
+      {
+        "name": "Baby Bugs",
+        "url": "https://genius.com/artists/Baby-bugs",
+        "type": "regular",
+        "id": "2593976"
+      },
+      {
+        "name": "BabyChiefDoit",
+        "url": "https://genius.com/artists/Babychiefdoit",
+        "type": "regular",
+        "id": "4040272"
+      },
+      {
+        "name": "Baby Cute",
+        "url": "https://genius.com/artists/Baby-cute",
+        "type": "regular",
+        "id": "2849011"
+      },
+      {
+        "name": "BabyDrill",
+        "url": "https://genius.com/artists/Babydrill",
+        "type": "regular",
+        "id": "3118220"
+      },
+      {
+        "name": "Babyface",
+        "url": "https://genius.com/artists/Babyface",
+        "type": "regular",
+        "id": "1336"
+      },
+      {
+        "name": "Babyface Ray",
+        "url": "https://genius.com/artists/Babyface-ray",
+        "type": "regular",
+        "id": "419073"
+      },
+      {
+        "name": "Babyfxce E",
+        "url": "https://genius.com/artists/Babyfxce-e",
+        "type": "regular",
+        "id": "3381439"
+      },
+      {
+        "name": "Baby Gang",
+        "url": "https://genius.com/artists/Baby-gang",
+        "type": "regular",
+        "id": "2276316"
+      },
+      {
+        "name": "BABY GRAVY",
+        "url": "https://genius.com/artists/Baby-gravy",
+        "type": "regular",
+        "id": "1151159"
+      },
+      {
+        "name": "​​​​​​baby hayabusa",
+        "url": "https://genius.com/artists/Baby-hayabusa",
+        "type": "regular",
+        "id": "3335873"
+      },
+      {
+        "name": "Baby Jane",
+        "url": "https://genius.com/artists/Baby-jane",
+        "type": "regular",
+        "id": "1844256"
+      },
+      {
+        "name": "Baby Jey",
+        "url": "https://genius.com/artists/Baby-jey",
+        "type": "regular",
+        "id": "1681849"
+      },
+      {
+        "name": "Baby Keem",
+        "url": "https://genius.com/artists/Baby-keem",
+        "type": "regular",
+        "id": "1185435"
+      },
+      {
+        "name": "Baby Kia",
+        "url": "https://genius.com/artists/Baby-kia",
+        "type": "regular",
+        "id": "3749735"
+      },
+      {
+        "name": "Baby Lasagna",
+        "url": "https://genius.com/artists/Baby-lasagna",
+        "type": "regular",
+        "id": "3791883"
+      },
+      {
+        "name": "Baby Mel",
+        "url": "https://genius.com/artists/Baby-mel",
+        "type": "regular",
+        "id": "3974316"
+      },
+      {
+        "name": "Baby Melo",
+        "url": "https://genius.com/artists/Baby-melo",
+        "type": "regular",
+        "id": "3288938"
+      },
+      {
+        "name": "BABYMETAL",
+        "url": "https://genius.com/artists/Babymetal",
+        "type": "regular",
+        "id": "195008"
+      },
+      {
+        "name": "Baby Money",
+        "url": "https://genius.com/artists/Baby-money",
+        "type": "regular",
+        "id": "1630189"
+      },
+      {
+        "name": "BABYMONSTER",
+        "url": "https://genius.com/artists/Babymonster",
+        "type": "regular",
+        "id": "3434454"
+      },
+      {
+        "name": "Baby Rose",
+        "url": "https://genius.com/artists/Baby-rose",
+        "type": "regular",
+        "id": "580564"
+      },
+      {
+        "name": "Baby Smoove",
+        "url": "https://genius.com/artists/Baby-smoove",
+        "type": "regular",
+        "id": "430295"
+      },
+      {
+        "name": "Baby Tate",
+        "url": "https://genius.com/artists/Baby-tate",
+        "type": "regular",
+        "id": "1245435"
+      },
+      {
+        "name": "BabyTron",
+        "url": "https://genius.com/artists/Babytron",
+        "type": "regular",
+        "id": "1907668"
+      },
+      {
+        "name": "BABYXSOSA",
+        "url": "https://genius.com/artists/Babyxsosa",
+        "type": "regular",
+        "id": "2029773"
+      },
+      {
+        "name": "Bachman-Turner Overdrive",
+        "url": "https://genius.com/artists/Bachman-turner-overdrive",
+        "type": "regular",
+        "id": "55262"
+      },
+      {
+        "name": "​back number",
+        "url": "https://genius.com/artists/Back-number",
+        "type": "regular",
+        "id": "59626"
+      },
+      {
+        "name": "The Backseat Lovers",
+        "url": "https://genius.com/artists/The-backseat-lovers",
+        "type": "regular",
+        "id": "1608117"
+      },
+      {
+        "name": "Backxwash",
+        "url": "https://genius.com/artists/Backxwash",
+        "type": "regular",
+        "id": "1894173"
+      },
+      {
+        "name": "BADBADNOTGOOD",
+        "url": "https://genius.com/artists/Badbadnotgood",
+        "type": "regular",
+        "id": "32626"
+      },
+      {
+        "name": "Bad Brains",
+        "url": "https://genius.com/artists/Bad-brains",
+        "type": "regular",
+        "id": "22527"
+      },
+      {
+        "name": "Bad Company",
+        "url": "https://genius.com/artists/Bad-company",
+        "type": "regular",
+        "id": "27412"
+      },
+      {
+        "name": "badCurt",
+        "url": "https://genius.com/artists/Badcurt",
+        "type": "regular",
+        "id": "488240"
+      },
+      {
+        "name": "Bad English",
+        "url": "https://genius.com/artists/Bad-english",
+        "type": "regular",
+        "id": "369106"
+      },
+      {
+        "name": "Badfinger",
+        "url": "https://genius.com/artists/Badfinger",
+        "type": "regular",
+        "id": "46697"
+      },
+      {
+        "name": "Badflower",
+        "url": "https://genius.com/artists/Badflower",
+        "type": "regular",
+        "id": "396929"
+      },
+      {
+        "name": "BADGRUB",
+        "url": "https://genius.com/artists/Badgrub",
+        "type": "regular",
+        "id": "4388502"
+      },
+      {
+        "name": "Badguychapo",
+        "url": "https://genius.com/artists/Badguychapo",
+        "type": "regular",
+        "id": "2173304"
+      },
+      {
+        "name": "Bad Gyal",
+        "url": "https://genius.com/artists/Bad-gyal",
+        "type": "regular",
+        "id": "673865"
+      },
+      {
+        "name": "BAD HOP",
+        "url": "https://genius.com/artists/Bad-hop",
+        "type": "regular",
+        "id": "611655"
+      },
+      {
+        "name": "Bad Meets Evil",
+        "url": "https://genius.com/artists/Bad-meets-evil",
+        "type": "regular",
+        "id": "11571"
+      },
+      {
+        "name": "BADMIXY",
+        "url": "https://genius.com/artists/Badmixy",
+        "type": "regular",
+        "id": "3188121"
+      },
+      {
+        "name": "Bad Nova",
+        "url": "https://genius.com/artists/Bad-nova",
+        "type": "regular",
+        "id": "4256188"
+      },
+      {
+        "name": "Bad Omens",
+        "url": "https://genius.com/artists/Bad-omens",
+        "type": "regular",
+        "id": "622031"
+      },
+      {
+        "name": "Bad Religion",
+        "url": "https://genius.com/artists/Bad-religion",
+        "type": "regular",
+        "id": "27995"
+      },
+      {
+        "name": "Badshah",
+        "url": "https://genius.com/artists/Badshah",
+        "type": "regular",
+        "id": "67490"
+      },
+      {
+        "name": "BAEKHYUN",
+        "url": "https://genius.com/artists/Baekhyun",
+        "type": "regular",
+        "id": "1177114"
+      },
+      {
+        "name": "Bagdhara",
+        "url": "https://genius.com/artists/Bagdhara",
+        "type": "regular",
+        "id": "4362104"
+      },
+      {
+        "name": "Bahaa Sultan - بهاء سلطان",
+        "url": "https://genius.com/artists/Bahaa-sultan",
+        "type": "regular",
+        "id": "1406264"
+      },
+      {
+        "name": "Bahh Tee",
+        "url": "https://genius.com/artists/Bahh-tee",
+        "type": "regular",
+        "id": "1994059"
+      },
+      {
+        "name": "Bailey Zimmerman",
+        "url": "https://genius.com/artists/Bailey-zimmerman",
+        "type": "regular",
+        "id": "2583903"
+      },
+      {
+        "name": "Bajaga & Instruktori",
+        "url": "https://genius.com/artists/Bajaga-and-instruktori",
+        "type": "regular",
+        "id": "360541"
+      },
+      {
+        "name": "BakaPrase",
+        "url": "https://genius.com/artists/Bakaprase",
+        "type": "regular",
+        "id": "1240049"
+      },
+      {
+        "name": "Bakar",
+        "url": "https://genius.com/artists/Bakar",
+        "type": "regular",
+        "id": "1541955"
+      },
+      {
+        "name": "BAK Jay",
+        "url": "https://genius.com/artists/Bak-jay",
+        "type": "regular",
+        "id": "4017625"
+      },
+      {
+        "name": "Bakr",
+        "url": "https://genius.com/artists/Bakr",
+        "type": "regular",
+        "id": "2661892"
+      },
+      {
+        "name": "Bali (IND)",
+        "url": "https://genius.com/artists/Bali-ind",
+        "type": "regular",
+        "id": "2598384"
+      },
+      {
+        "name": "BALKON",
+        "url": "https://genius.com/artists/Balkon",
+        "type": "regular",
+        "id": "2985852"
+      },
+      {
+        "name": "Balti - بلطي",
+        "url": "https://genius.com/artists/Balti",
+        "type": "regular",
+        "id": "16032"
+      },
+      {
+        "name": "Balu Brigada",
+        "url": "https://genius.com/artists/Balu-brigada",
+        "type": "regular",
+        "id": "1424206"
+      },
+      {
+        "name": "Bambee",
+        "url": "https://genius.com/artists/Bambee",
+        "type": "regular",
+        "id": "363298"
+      },
+      {
+        "name": "bambi",
+        "url": "https://genius.com/artists/Bambi",
+        "type": "regular",
+        "id": "2913482"
+      },
+      {
+        "name": "Bamboo",
+        "url": "https://genius.com/artists/Bamboo",
+        "type": "regular",
+        "id": "61565"
+      },
+      {
+        "name": "Bamby",
+        "url": "https://genius.com/artists/Bamby",
+        "type": "regular",
+        "id": "672759"
+      },
+      {
+        "name": "Bananarama",
+        "url": "https://genius.com/artists/Bananarama",
+        "type": "regular",
+        "id": "56526"
+      },
+      {
+        "name": "The Band",
+        "url": "https://genius.com/artists/The-band",
+        "type": "regular",
+        "id": "4946"
+      },
+      {
+        "name": "Banda El Recodo de Cruz Lizárraga",
+        "url": "https://genius.com/artists/Banda-el-recodo-de-cruz-lizarraga",
+        "type": "regular",
+        "id": "348219"
+      },
+      {
+        "name": "Banda la costeña",
+        "url": "https://genius.com/artists/Banda-la-costena",
+        "type": "regular",
+        "id": "455032"
+      },
+      {
+        "name": "Bandalos Chinos",
+        "url": "https://genius.com/artists/Bandalos-chinos",
+        "type": "regular",
+        "id": "1182974"
+      },
+      {
+        "name": "Banda MS de Sergio Lizárraga",
+        "url": "https://genius.com/artists/Banda-ms-de-sergio-lizarraga",
+        "type": "regular",
+        "id": "490779"
+      },
+      {
+        "name": "Bandang Lapis",
+        "url": "https://genius.com/artists/Bandang-lapis",
+        "type": "regular",
+        "id": "2154895"
+      },
+      {
+        "name": "The Band CAMINO",
+        "url": "https://genius.com/artists/The-band-camino",
+        "type": "regular",
+        "id": "774074"
+      },
+      {
+        "name": "Банд’Эрос (Band’Eros)",
+        "url": "https://genius.com/artists/Banderos",
+        "type": "regular",
+        "id": "1628164"
+      },
+      {
+        "name": "Band of Horses",
+        "url": "https://genius.com/artists/Band-of-horses",
+        "type": "regular",
+        "id": "18985"
+      },
+      {
+        "name": "The Band Perry",
+        "url": "https://genius.com/artists/The-band-perry",
+        "type": "regular",
+        "id": "14215"
+      },
+      {
+        "name": "Bandra",
+        "url": "https://genius.com/artists/Bandra",
+        "type": "regular",
+        "id": "2792271"
+      },
+      {
+        "name": "Сметана Band (Smetana)",
+        "url": "https://genius.com/artists/Band-smetana",
+        "type": "regular",
+        "id": "2164081"
+      },
+      {
+        "name": "Baneva",
+        "url": "https://genius.com/artists/Baneva",
+        "type": "regular",
+        "id": "1496828"
+      },
+      {
+        "name": "BANG CHAN",
+        "url": "https://genius.com/artists/Bang-chan",
+        "type": "regular",
+        "id": "1601329"
+      },
+      {
+        "name": "Bangg3",
+        "url": "https://genius.com/artists/Bangg3",
+        "type": "regular",
+        "id": "1491002"
+      },
+      {
+        "name": "The Bangles",
+        "url": "https://genius.com/artists/The-bangles",
+        "type": "regular",
+        "id": "207669"
+      },
+      {
+        "name": "BANGWHITE",
+        "url": "https://genius.com/artists/Bangwhite",
+        "type": "regular",
+        "id": "1014488"
+      },
+      {
+        "name": "BanicAttack",
+        "url": "https://genius.com/artists/Banicattack",
+        "type": "regular",
+        "id": "4401288"
+      },
+      {
+        "name": "Bankrol Hayden",
+        "url": "https://genius.com/artists/Bankrol-hayden",
+        "type": "regular",
+        "id": "1492647"
+      },
+      {
+        "name": "Bankroll Ni",
+        "url": "https://genius.com/artists/Bankroll-ni",
+        "type": "regular",
+        "id": "4402482"
+      },
+      {
+        "name": "BANKS",
+        "url": "https://genius.com/artists/Banks",
+        "type": "regular",
+        "id": "38325"
+      },
+      {
+        "name": "Bankzitters",
+        "url": "https://genius.com/artists/Bankzitters",
+        "type": "regular",
+        "id": "1924639"
+      },
+      {
+        "name": "Banshee",
+        "url": "https://genius.com/artists/Banshee",
+        "type": "regular",
+        "id": "2327833"
+      },
+      {
+        "name": "BARÉ",
+        "url": "https://genius.com/artists/Bare",
+        "type": "regular",
+        "id": "3613836"
+      },
+      {
+        "name": "Barış Akarsu",
+        "url": "https://genius.com/artists/Bars-akarsu",
+        "type": "regular",
+        "id": "2207961"
+      },
+      {
+        "name": "Barbara Bobak",
+        "url": "https://genius.com/artists/Barbara-bobak",
+        "type": "regular",
+        "id": "3167346"
+      },
+      {
+        "name": "Barbara Pravi",
+        "url": "https://genius.com/artists/Barbara-pravi",
+        "type": "regular",
+        "id": "1258540"
+      },
+      {
+        "name": "Barbara Wangui",
+        "url": "https://genius.com/artists/Barbara-wangui",
+        "type": "regular",
+        "id": "4080229"
+      },
+      {
+        "name": "Barbie",
+        "url": "https://genius.com/artists/Barbie",
+        "type": "regular",
+        "id": "1411048"
+      },
+      {
+        "name": "Barbra Streisand",
+        "url": "https://genius.com/artists/Barbra-streisand",
+        "type": "regular",
+        "id": "65306"
+      },
+      {
+        "name": "Bardal",
+        "url": "https://genius.com/artists/Bardal",
+        "type": "regular",
+        "id": "3507579"
+      },
+      {
+        "name": "The Barden Bellas",
+        "url": "https://genius.com/artists/The-barden-bellas",
+        "type": "regular",
+        "id": "404528"
+      },
+      {
+        "name": "Bardero$",
+        "url": "https://genius.com/artists/Bardero",
+        "type": "regular",
+        "id": "1115608"
+      },
+      {
+        "name": "Barış Diri",
+        "url": "https://genius.com/artists/Bars-diri",
+        "type": "regular",
+        "id": "2599983"
+      },
+      {
+        "name": "Barenaked Ladies",
+        "url": "https://genius.com/artists/Barenaked-ladies",
+        "type": "regular",
+        "id": "1585"
+      },
+      {
+        "name": "Barış Manço",
+        "url": "https://genius.com/artists/Bars-manco",
+        "type": "regular",
+        "id": "521027"
+      },
+      {
+        "name": "Barney",
+        "url": "https://genius.com/artists/Barney",
+        "type": "regular",
+        "id": "359746"
+      },
+      {
+        "name": "Barré",
+        "url": "https://genius.com/artists/Barre",
+        "type": "regular",
+        "id": "2451058"
+      },
+      {
+        "name": "Barrett Wilbert Weed",
+        "url": "https://genius.com/artists/Barrett-wilbert-weed",
+        "type": "regular",
+        "id": "634902"
+      },
+      {
+        "name": "Barrington Levy",
+        "url": "https://genius.com/artists/Barrington-levy",
+        "type": "regular",
+        "id": "6426"
+      },
+      {
+        "name": "Barry B",
+        "url": "https://genius.com/artists/Barry-b",
+        "type": "regular",
+        "id": "3394229"
+      },
+      {
+        "name": "Barry Jhay",
+        "url": "https://genius.com/artists/Barry-jhay",
+        "type": "regular",
+        "id": "1941682"
+      },
+      {
+        "name": "Barry Manilow",
+        "url": "https://genius.com/artists/Barry-manilow",
+        "type": "regular",
+        "id": "76664"
+      },
+      {
+        "name": "Barry White",
+        "url": "https://genius.com/artists/Barry-white",
+        "type": "regular",
+        "id": "3719"
+      },
+      {
+        "name": "Bart Baker",
+        "url": "https://genius.com/artists/Bart-baker",
+        "type": "regular",
+        "id": "20551"
+      },
+      {
+        "name": "Bas",
+        "url": "https://genius.com/artists/Bas",
+        "type": "regular",
+        "id": "24472"
+      },
+      {
+        "name": "Basement",
+        "url": "https://genius.com/artists/Basement",
+        "type": "regular",
+        "id": "204920"
+      },
+      {
+        "name": "Basement Jaxx",
+        "url": "https://genius.com/artists/Basement-jaxx",
+        "type": "regular",
+        "id": "24019"
+      },
+      {
+        "name": "BashfortheWorld",
+        "url": "https://genius.com/artists/Bashfortheworld",
+        "type": "regular",
+        "id": "2453221"
+      },
+      {
+        "name": "Basil Valdez",
+        "url": "https://genius.com/artists/Basil-valdez",
+        "type": "regular",
+        "id": "362927"
+      },
+      {
+        "name": "Жека Басотский (Basotsky)",
+        "url": "https://genius.com/artists/Basotsky",
+        "type": "regular",
+        "id": "1868589"
+      },
+      {
+        "name": "Basshunter",
+        "url": "https://genius.com/artists/Basshunter",
+        "type": "regular",
+        "id": "130426"
+      },
+      {
+        "name": "Bassi Maestro",
+        "url": "https://genius.com/artists/Bassi-maestro",
+        "type": "regular",
+        "id": "42536"
+      },
+      {
+        "name": "Баста (Basta)",
+        "url": "https://genius.com/artists/Basta",
+        "type": "regular",
+        "id": "49085"
+      },
+      {
+        "name": "Bastille",
+        "url": "https://genius.com/artists/Bastille",
+        "type": "regular",
+        "id": "43324"
+      },
+      {
+        "name": "Bathory",
+        "url": "https://genius.com/artists/Bathory",
+        "type": "regular",
+        "id": "152482"
+      },
+      {
+        "name": "BATO",
+        "url": "https://genius.com/artists/Bato",
+        "type": "regular",
+        "id": "1803811"
+      },
+      {
+        "name": "Battle Beast",
+        "url": "https://genius.com/artists/Battle-beast",
+        "type": "regular",
+        "id": "262109"
+      },
+      {
+        "name": "Batuflex",
+        "url": "https://genius.com/artists/Batuflex",
+        "type": "regular",
+        "id": "1695325"
+      },
+      {
+        "name": "Батыр (Batyr)",
+        "url": "https://genius.com/artists/Batyr",
+        "type": "regular",
+        "id": "4382412"
+      },
+      {
+        "name": "Bauhaus",
+        "url": "https://genius.com/artists/Bauhaus",
+        "type": "regular",
+        "id": "248390"
+      },
+      {
+        "name": "​​bôa (UK)",
+        "url": "https://genius.com/artists/Boa-uk",
+        "type": "regular",
+        "id": "562783"
+      },
+      {
+        "name": "Bausa",
+        "url": "https://genius.com/artists/Bausa",
+        "type": "regular",
+        "id": "80616"
+      },
+      {
+        "name": "Baustelle",
+        "url": "https://genius.com/artists/Baustelle",
+        "type": "regular",
+        "id": "144139"
+      },
+      {
+        "name": "Bayaan",
+        "url": "https://genius.com/artists/Bayaan",
+        "type": "regular",
+        "id": "1719972"
+      },
+      {
+        "name": "Bayhan",
+        "url": "https://genius.com/artists/Bayhan",
+        "type": "regular",
+        "id": "2793857"
+      },
+      {
+        "name": "Bayker Blankenship",
+        "url": "https://genius.com/artists/Bayker-blankenship",
+        "type": "regular",
+        "id": "3973603"
+      },
+      {
+        "name": "Bayside",
+        "url": "https://genius.com/artists/Bayside",
+        "type": "regular",
+        "id": "16657"
+      },
+      {
+        "name": "Bay Swag",
+        "url": "https://genius.com/artists/Bay-swag",
+        "type": "regular",
+        "id": "1052023"
+      },
+      {
+        "name": "Baz Luhrmann",
+        "url": "https://genius.com/artists/Baz-luhrmann",
+        "type": "regular",
+        "id": "47714"
+      },
+      {
+        "name": "Bazzazian",
+        "url": "https://genius.com/artists/Bazzazian",
+        "type": "regular",
+        "id": "42739"
+      },
+      {
+        "name": "Bazzi",
+        "url": "https://genius.com/artists/Bazzi",
+        "type": "regular",
+        "id": "1033670"
+      },
+      {
+        "name": "BB29",
+        "url": "https://genius.com/artists/Bb29",
+        "type": "regular",
+        "id": "4284442"
+      },
+      {
+        "name": "B.B. Jacques",
+        "url": "https://genius.com/artists/Bb-jacques",
+        "type": "regular",
+        "id": "2757016"
+      },
+      {
+        "name": "B.B. King",
+        "url": "https://genius.com/artists/Bb-king",
+        "type": "regular",
+        "id": "1107"
+      },
+      {
+        "name": "bbno$",
+        "url": "https://genius.com/artists/Bbno",
+        "type": "regular",
+        "id": "1000053"
+      },
+      {
+        "name": "Bb trickz",
+        "url": "https://genius.com/artists/Bb-trickz",
+        "type": "regular",
+        "id": "3456451"
+      },
+      {
+        "name": "BBY GOYARD",
+        "url": "https://genius.com/artists/Bby-goyard",
+        "type": "regular",
+        "id": "1230864"
+      },
+      {
+        "name": "beabadoobee",
+        "url": "https://genius.com/artists/Beabadoobee",
+        "type": "regular",
+        "id": "1269387"
+      },
+      {
+        "name": "Beach Bunny",
+        "url": "https://genius.com/artists/Beach-bunny",
+        "type": "regular",
+        "id": "1231496"
+      },
+      {
+        "name": "The Beaches",
+        "url": "https://genius.com/artists/The-beaches",
+        "type": "regular",
+        "id": "1196057"
+      },
+      {
+        "name": "Beach House",
+        "url": "https://genius.com/artists/Beach-house",
+        "type": "regular",
+        "id": "18671"
+      },
+      {
+        "name": "Beach Weather",
+        "url": "https://genius.com/artists/Beach-weather",
+        "type": "regular",
+        "id": "650356"
+      },
+      {
+        "name": "Bea Duarte",
+        "url": "https://genius.com/artists/Bea-duarte",
+        "type": "regular",
+        "id": "3411642"
+      },
+      {
+        "name": "Beanie Sigel",
+        "url": "https://genius.com/artists/Beanie-sigel",
+        "type": "regular",
+        "id": "119"
+      },
+      {
+        "name": "Bear Ghost",
+        "url": "https://genius.com/artists/Bear-ghost",
+        "type": "regular",
+        "id": "1215992"
+      },
+      {
+        "name": "Bear McCreary",
+        "url": "https://genius.com/artists/Bear-mccreary",
+        "type": "regular",
+        "id": "375869"
+      },
+      {
+        "name": "Beartooth",
+        "url": "https://genius.com/artists/Beartooth",
+        "type": "regular",
+        "id": "74758"
+      },
+      {
+        "name": "BEARWOLF",
+        "url": "https://genius.com/artists/Bearwolf",
+        "type": "regular",
+        "id": "3874744"
+      },
+      {
+        "name": "Beast Boy (Teen Titans)",
+        "url": "https://genius.com/artists/Beast-boy-teen-titans",
+        "type": "regular",
+        "id": "1278382"
+      },
+      {
+        "name": "Beastie Boys",
+        "url": "https://genius.com/artists/Beastie-boys",
+        "type": "regular",
+        "id": "329"
+      },
+      {
+        "name": "BeatKing",
+        "url": "https://genius.com/artists/Beatking",
+        "type": "regular",
+        "id": "111560"
+      },
+      {
+        "name": "Beautiful Boys",
+        "url": "https://genius.com/artists/Beautiful-boys",
+        "type": "regular",
+        "id": "3852660"
+      },
+      {
+        "name": "The Beautiful South",
+        "url": "https://genius.com/artists/The-beautiful-south",
+        "type": "regular",
+        "id": "152920"
+      },
+      {
+        "name": "Bebe Neuwirth",
+        "url": "https://genius.com/artists/Bebe-neuwirth",
+        "type": "regular",
+        "id": "405211"
+      },
+      {
+        "name": "Bebe Rexha",
+        "url": "https://genius.com/artists/Bebe-rexha",
+        "type": "regular",
+        "id": "104044"
+      },
+      {
+        "name": "Because",
+        "url": "https://genius.com/artists/Because",
+        "type": "regular",
+        "id": "1181001"
+      },
+      {
+        "name": "Beck",
+        "url": "https://genius.com/artists/Beck",
+        "type": "regular",
+        "id": "2073"
+      },
+      {
+        "name": "Becky G",
+        "url": "https://genius.com/artists/Becky-g",
+        "type": "regular",
+        "id": "30426"
+      },
+      {
+        "name": "Becky Hill",
+        "url": "https://genius.com/artists/Becky-hill",
+        "type": "regular",
+        "id": "48547"
+      },
+      {
+        "name": "Bedoes",
+        "url": "https://genius.com/artists/Bedoes",
+        "type": "regular",
+        "id": "67175"
+      },
+      {
+        "name": "Bee Gees",
+        "url": "https://genius.com/artists/Bee-gees",
+        "type": "regular",
+        "id": "800"
+      },
+      {
+        "name": "Beendo Z",
+        "url": "https://genius.com/artists/Beendo-z",
+        "type": "regular",
+        "id": "2406036"
+      },
+      {
+        "name": "Beenie Man",
+        "url": "https://genius.com/artists/Beenie-man",
+        "type": "regular",
+        "id": "8550"
+      },
+      {
+        "name": "bees & honey",
+        "url": "https://genius.com/artists/Bees-and-honey",
+        "type": "regular",
+        "id": "1568933"
+      },
+      {
+        "name": "Beetlejuice Original Broadway Cast Recording Ensemble",
+        "url": "https://genius.com/artists/Beetlejuice-original-broadway-cast-recording-ensemble",
+        "type": "regular",
+        "id": "3039493"
+      },
+      {
+        "name": "BE:FIRST",
+        "url": "https://genius.com/artists/Be-first",
+        "type": "regular",
+        "id": "2844971"
+      },
+      {
+        "name": "BEGE",
+        "url": "https://genius.com/artists/Bege",
+        "type": "regular",
+        "id": "2173583"
+      },
+      {
+        "name": "Behemoth",
+        "url": "https://genius.com/artists/Behemoth",
+        "type": "regular",
+        "id": "66000"
+      },
+      {
+        "name": "BEHM",
+        "url": "https://genius.com/artists/Behm",
+        "type": "regular",
+        "id": "1406945"
+      },
+      {
+        "name": "Behzad Leito",
+        "url": "https://genius.com/artists/Behzad-leito",
+        "type": "regular",
+        "id": "50344"
+      },
+      {
+        "name": "Beşiktaş",
+        "url": "https://genius.com/artists/Besiktas",
+        "type": "regular",
+        "id": "215070"
+      },
+      {
+        "name": "Beirut",
+        "url": "https://genius.com/artists/Beirut",
+        "type": "regular",
+        "id": "17941"
+      },
+      {
+        "name": "Bekar",
+        "url": "https://genius.com/artists/Bekar",
+        "type": "regular",
+        "id": "496984"
+      },
+      {
+        "name": "Beéle",
+        "url": "https://genius.com/artists/Beele",
+        "type": "regular",
+        "id": "1953230"
+      },
+      {
+        "name": "Belinda",
+        "url": "https://genius.com/artists/Belinda",
+        "type": "regular",
+        "id": "108902"
+      },
+      {
+        "name": "Belinda Carlisle",
+        "url": "https://genius.com/artists/Belinda-carlisle",
+        "type": "regular",
+        "id": "325551"
+      },
+      {
+        "name": "Bella",
+        "url": "https://genius.com/artists/Bella",
+        "type": "regular",
+        "id": "2778153"
+      },
+      {
+        "name": "Bellakath",
+        "url": "https://genius.com/artists/Bellakath",
+        "type": "regular",
+        "id": "3348048"
+      },
+      {
+        "name": "The Bellamy Brothers",
+        "url": "https://genius.com/artists/The-bellamy-brothers",
+        "type": "regular",
+        "id": "289713"
+      },
+      {
+        "name": "Bella Poarch",
+        "url": "https://genius.com/artists/Bella-poarch",
+        "type": "regular",
+        "id": "2656724"
+      },
+      {
+        "name": "Bella Shmurda",
+        "url": "https://genius.com/artists/Bella-shmurda",
+        "type": "regular",
+        "id": "1894534"
+      },
+      {
+        "name": "Bell Biv DeVoe",
+        "url": "https://genius.com/artists/Bell-biv-devoe",
+        "type": "regular",
+        "id": "8511"
+      },
+      {
+        "name": "Belle",
+        "url": "https://genius.com/artists/Belle",
+        "type": "regular",
+        "id": "2850423"
+      },
+      {
+        "name": "Belle and Sebastian",
+        "url": "https://genius.com/artists/Belle-and-sebastian",
+        "type": "regular",
+        "id": "26867"
+      },
+      {
+        "name": "Bello Figo",
+        "url": "https://genius.com/artists/Bello-figo",
+        "type": "regular",
+        "id": "651904"
+      },
+      {
+        "name": "Belly",
+        "url": "https://genius.com/artists/Belly",
+        "type": "regular",
+        "id": "1362"
+      },
+      {
+        "name": "Belmondo",
+        "url": "https://genius.com/artists/Belmondo",
+        "type": "regular",
+        "id": "404627"
+      },
+      {
+        "name": "Belén Aguilera",
+        "url": "https://genius.com/artists/Belen-aguilera",
+        "type": "regular",
+        "id": "1153253"
+      },
+      {
+        "name": "The Belonging Co",
+        "url": "https://genius.com/artists/The-belonging-co",
+        "type": "regular",
+        "id": "1221873"
+      },
+      {
+        "name": "Beluga Lagoon",
+        "url": "https://genius.com/artists/Beluga-lagoon",
+        "type": "regular",
+        "id": "2887867"
+      },
+      {
+        "name": "Be More Chill Ensemble",
+        "url": "https://genius.com/artists/Be-more-chill-ensemble",
+        "type": "regular",
+        "id": "1143711"
+      },
+      {
+        "name": "Ben&Ben",
+        "url": "https://genius.com/artists/Ben-ben",
+        "type": "regular",
+        "id": "333456"
+      },
+      {
+        "name": "Ben Caplan",
+        "url": "https://genius.com/artists/Ben-caplan",
+        "type": "regular",
+        "id": "454840"
+      },
+      {
+        "name": "Ben Cristovao",
+        "url": "https://genius.com/artists/Ben-cristovao",
+        "type": "regular",
+        "id": "458754"
+      },
+      {
+        "name": "Bendeniz",
+        "url": "https://genius.com/artists/Bendeniz",
+        "type": "regular",
+        "id": "362381"
+      },
+      {
+        "name": "BENEE",
+        "url": "https://genius.com/artists/Benee",
+        "type": "regular",
+        "id": "1279689"
+      },
+      {
+        "name": "Ben E. King",
+        "url": "https://genius.com/artists/Ben-e-king",
+        "type": "regular",
+        "id": "19688"
+      },
+      {
+        "name": "Ben Fero",
+        "url": "https://genius.com/artists/Ben-fero",
+        "type": "regular",
+        "id": "1495653"
+      },
+      {
+        "name": "Ben Folds",
+        "url": "https://genius.com/artists/Ben-folds",
+        "type": "regular",
+        "id": "31405"
+      },
+      {
+        "name": "Ben Folds Five",
+        "url": "https://genius.com/artists/Ben-folds-five",
+        "type": "regular",
+        "id": "17584"
+      },
+      {
+        "name": "Ben Fuller",
+        "url": "https://genius.com/artists/Ben-fuller",
+        "type": "regular",
+        "id": "3100727"
+      },
+      {
+        "name": "Bengü",
+        "url": "https://genius.com/artists/Bengu",
+        "type": "regular",
+        "id": "52280"
+      },
+      {
+        "name": "Bengü Beker",
+        "url": "https://genius.com/artists/Bengu-beker",
+        "type": "regular",
+        "id": "3602050"
+      },
+      {
+        "name": "Ben Howard",
+        "url": "https://genius.com/artists/Ben-howard",
+        "type": "regular",
+        "id": "37258"
+      },
+      {
+        "name": "Benjamin Dube",
+        "url": "https://genius.com/artists/Benjamin-dube",
+        "type": "regular",
+        "id": "458675"
+      },
+      {
+        "name": "Benjamin Elgar",
+        "url": "https://genius.com/artists/Benjamin-elgar",
+        "type": "regular",
+        "id": "4022987"
+      },
+      {
+        "name": "Benjamin (FIN)",
+        "url": "https://genius.com/artists/Benjamin-fin",
+        "type": "regular",
+        "id": "1659446"
+      },
+      {
+        "name": "​benjamingotbenz",
+        "url": "https://genius.com/artists/Benjamingotbenz",
+        "type": "regular",
+        "id": "1318627"
+      },
+      {
+        "name": "Benjamin Ingrosso",
+        "url": "https://genius.com/artists/Benjamin-ingrosso",
+        "type": "regular",
+        "id": "618127"
+      },
+      {
+        "name": "Benjamin William Hastings",
+        "url": "https://genius.com/artists/Benjamin-william-hastings",
+        "type": "regular",
+        "id": "559782"
+      },
+      {
+        "name": "Benjamin Zephaniah",
+        "url": "https://genius.com/artists/Benjamin-zephaniah",
+        "type": "regular",
+        "id": "35233"
+      },
+      {
+        "name": "Benji Blue Bills",
+        "url": "https://genius.com/artists/Benji-blue-bills",
+        "type": "regular",
+        "id": "2409244"
+      },
+      {
+        "name": "BENJIxScarlett",
+        "url": "https://genius.com/artists/Benjixscarlett",
+        "type": "regular",
+        "id": "3718205"
+      },
+      {
+        "name": "Ben Kweller",
+        "url": "https://genius.com/artists/Ben-kweller",
+        "type": "regular",
+        "id": "350048"
+      },
+      {
+        "name": "benno!",
+        "url": "https://genius.com/artists/Benno",
+        "type": "regular",
+        "id": "4261651"
+      },
+      {
+        "name": "Benny Benassi",
+        "url": "https://genius.com/artists/Benny-benassi",
+        "type": "regular",
+        "id": "13692"
+      },
+      {
+        "name": "benny blanco",
+        "url": "https://genius.com/artists/Benny-blanco",
+        "type": "regular",
+        "id": "28906"
+      },
+      {
+        "name": "Benny Hinn",
+        "url": "https://genius.com/artists/Benny-hinn",
+        "type": "regular",
+        "id": "459799"
+      },
+      {
+        "name": "Benny Jamz",
+        "url": "https://genius.com/artists/Benny-jamz",
+        "type": "regular",
+        "id": "35990"
+      },
+      {
+        "name": "​benny mayne",
+        "url": "https://genius.com/artists/Benny-mayne",
+        "type": "regular",
+        "id": "1364723"
+      },
+      {
+        "name": "Benny the Butcher",
+        "url": "https://genius.com/artists/Benny-the-butcher",
+        "type": "regular",
+        "id": "1169925"
+      },
+      {
+        "name": "Ben Platt",
+        "url": "https://genius.com/artists/Ben-platt",
+        "type": "regular",
+        "id": "666954"
+      },
+      {
+        "name": "BEN plg",
+        "url": "https://genius.com/artists/Ben-plg",
+        "type": "regular",
+        "id": "1894477"
+      },
+      {
+        "name": "Ben Rector",
+        "url": "https://genius.com/artists/Ben-rector",
+        "type": "regular",
+        "id": "288060"
+      },
+      {
+        "name": "Ben Starr",
+        "url": "https://genius.com/artists/Ben-starr",
+        "type": "regular",
+        "id": "4422244"
+      },
+      {
+        "name": "Bente",
+        "url": "https://genius.com/artists/Bente",
+        "type": "regular",
+        "id": "2089885"
+      },
+      {
+        "name": "Ben Wright",
+        "url": "https://genius.com/artists/Ben-wright",
+        "type": "regular",
+        "id": "491724"
+      },
+      {
+        "name": "Beny Jr",
+        "url": "https://genius.com/artists/Beny-jr",
+        "type": "regular",
+        "id": "1893598"
+      },
+      {
+        "name": "Beogradski Sindikat",
+        "url": "https://genius.com/artists/Beogradski-sindikat",
+        "type": "regular",
+        "id": "28381"
+      },
+      {
+        "name": "Ber",
+        "url": "https://genius.com/artists/Ber",
+        "type": "regular",
+        "id": "2682299"
+      },
+      {
+        "name": "Berg (DNK)",
+        "url": "https://genius.com/artists/Berg-dnk",
+        "type": "regular",
+        "id": "1613775"
+      },
+      {
+        "name": "Bernadette Peters",
+        "url": "https://genius.com/artists/Bernadette-peters",
+        "type": "regular",
+        "id": "365562"
+      },
+      {
+        "name": "Bernadya",
+        "url": "https://genius.com/artists/Bernadya",
+        "type": "regular",
+        "id": "3703366"
+      },
+      {
+        "name": "Berner",
+        "url": "https://genius.com/artists/Berner",
+        "type": "regular",
+        "id": "14490"
+      },
+      {
+        "name": "Berq",
+        "url": "https://genius.com/artists/Berq",
+        "type": "regular",
+        "id": "3572591"
+      },
+      {
+        "name": "Berrin Keklikler",
+        "url": "https://genius.com/artists/Berrin-keklikler",
+        "type": "regular",
+        "id": "2443884"
+      },
+      {
+        "name": "BESS",
+        "url": "https://genius.com/artists/Bess",
+        "type": "regular",
+        "id": "661742"
+      },
+      {
+        "name": "Bessan Ismail - بيسان إسماعيل",
+        "url": "https://genius.com/artists/Bessan-ismail",
+        "type": "regular",
+        "id": "2616397"
+      },
+      {
+        "name": "Bessie Smith",
+        "url": "https://genius.com/artists/Bessie-smith",
+        "type": "regular",
+        "id": "343694"
+      },
+      {
+        "name": "BET",
+        "url": "https://genius.com/artists/Bet",
+        "type": "regular",
+        "id": "132097"
+      },
+      {
+        "name": "Beta Berk Bayındır",
+        "url": "https://genius.com/artists/Beta-berk-bayndr",
+        "type": "regular",
+        "id": "195370"
+      },
+      {
+        "name": "​betcover!!",
+        "url": "https://genius.com/artists/Betcover",
+        "type": "regular",
+        "id": "2961463"
+      },
+      {
+        "name": "Bethel Music",
+        "url": "https://genius.com/artists/Bethel-music",
+        "type": "regular",
+        "id": "204702"
+      },
+      {
+        "name": "Beth Hart",
+        "url": "https://genius.com/artists/Beth-hart",
+        "type": "regular",
+        "id": "72756"
+      },
+      {
+        "name": "Beth Howland",
+        "url": "https://genius.com/artists/Beth-howland",
+        "type": "regular",
+        "id": "1018539"
+      },
+      {
+        "name": "The Beths",
+        "url": "https://genius.com/artists/The-beths",
+        "type": "regular",
+        "id": "1063127"
+      },
+      {
+        "name": "Beton.Hofi",
+        "url": "https://genius.com/artists/Betonhofi",
+        "type": "regular",
+        "id": "2042071"
+      },
+      {
+        "name": "Betsy",
+        "url": "https://genius.com/artists/Betsy",
+        "type": "regular",
+        "id": "2757099"
+      },
+      {
+        "name": "Bette Midler",
+        "url": "https://genius.com/artists/Bette-midler",
+        "type": "regular",
+        "id": "40282"
+      },
+      {
+        "name": "Better Than Ezra",
+        "url": "https://genius.com/artists/Better-than-ezra",
+        "type": "regular",
+        "id": "37300"
+      },
+      {
+        "name": "Betty White",
+        "url": "https://genius.com/artists/Betty-white",
+        "type": "regular",
+        "id": "115856"
+      },
+      {
+        "name": "BETWEEN FRIENDS",
+        "url": "https://genius.com/artists/Between-friends",
+        "type": "regular",
+        "id": "1578811"
+      },
+      {
+        "name": "Between the Buried and Me",
+        "url": "https://genius.com/artists/Between-the-buried-and-me",
+        "type": "regular",
+        "id": "59533"
+      },
+      {
+        "name": "Beverley Craven",
+        "url": "https://genius.com/artists/Beverley-craven",
+        "type": "regular",
+        "id": "348681"
+      },
+      {
+        "name": "Bexblu",
+        "url": "https://genius.com/artists/Bexblu",
+        "type": "regular",
+        "id": "3758432"
+      },
+      {
+        "name": "BEXEY",
+        "url": "https://genius.com/artists/Bexey",
+        "type": "regular",
+        "id": "579589"
+      },
+      {
+        "name": "Бездна Анального Угнетения (Bezdna Anal'nogo Ugneteniya)",
+        "url": "https://genius.com/artists/Bezdna-analnogo-ugneteniya",
+        "type": "regular",
+        "id": "3139497"
+      },
+      {
+        "name": "BFB Da Packman",
+        "url": "https://genius.com/artists/Bfb-da-packman",
+        "type": "regular",
+        "id": "2152343"
+      },
+      {
+        "name": "B.G.",
+        "url": "https://genius.com/artists/Bg",
+        "type": "regular",
+        "id": "1819"
+      },
+      {
+        "name": "Bhad Bhabie",
+        "url": "https://genius.com/artists/Bhad-bhabie",
+        "type": "regular",
+        "id": "1069179"
+      },
+      {
+        "name": "BhadBoi OML",
+        "url": "https://genius.com/artists/Bhadboi-oml",
+        "type": "regular",
+        "id": "3582659"
+      },
+      {
+        "name": "Bharg",
+        "url": "https://genius.com/artists/Bharg",
+        "type": "regular",
+        "id": "2228499"
+      },
+      {
+        "name": "Bhaskar (IND)",
+        "url": "https://genius.com/artists/Bhaskar-ind",
+        "type": "regular",
+        "id": "4268977"
+      },
+      {
+        "name": "Bhavi",
+        "url": "https://genius.com/artists/Bhavi",
+        "type": "regular",
+        "id": "1345394"
+      },
+      {
+        "name": "Bhor Habill",
+        "url": "https://genius.com/artists/Bhor-habill",
+        "type": "regular",
+        "id": "3706925"
+      },
+      {
+        "name": "BHZ",
+        "url": "https://genius.com/artists/Bhz",
+        "type": "regular",
+        "id": "1029550"
+      },
+      {
+        "name": "Böhse Onkelz",
+        "url": "https://genius.com/artists/Bohse-onkelz",
+        "type": "regular",
+        "id": "57903"
+      },
+      {
+        "name": "B.I",
+        "url": "https://genius.com/artists/Bi",
+        "type": "regular",
+        "id": "231984"
+      },
+      {
+        "name": "BIA",
+        "url": "https://genius.com/artists/Bia",
+        "type": "regular",
+        "id": "273084"
+      },
+      {
+        "name": "Białas",
+        "url": "https://genius.com/artists/Biaas",
+        "type": "regular",
+        "id": "31159"
+      },
+      {
+        "name": "Бьянка (Bianka)",
+        "url": "https://genius.com/artists/Bianka",
+        "type": "regular",
+        "id": "1088410"
+      },
+      {
+        "name": "Biba",
+        "url": "https://genius.com/artists/Biba",
+        "type": "regular",
+        "id": "1952262"
+      },
+      {
+        "name": "BIBI (비비)",
+        "url": "https://genius.com/artists/Bibi",
+        "type": "regular",
+        "id": "1825718"
+      },
+      {
+        "name": "Bibi Babydoll",
+        "url": "https://genius.com/artists/Bibi-babydoll",
+        "type": "regular",
+        "id": "3199085"
+      },
+      {
+        "name": "Bibi und Tina",
+        "url": "https://genius.com/artists/Bibi-und-tina",
+        "type": "regular",
+        "id": "1106401"
+      },
+      {
+        "name": "Bic Runga",
+        "url": "https://genius.com/artists/Bic-runga",
+        "type": "regular",
+        "id": "333337"
+      },
+      {
+        "name": "Biffy Clyro",
+        "url": "https://genius.com/artists/Biffy-clyro",
+        "type": "regular",
+        "id": "62717"
+      },
+      {
+        "name": "BIG30",
+        "url": "https://genius.com/artists/Big30",
+        "type": "regular",
+        "id": "2232816"
+      },
+      {
+        "name": "Big & Rich",
+        "url": "https://genius.com/artists/Big-and-rich",
+        "type": "regular",
+        "id": "227587"
+      },
+      {
+        "name": "Big Ant Dog",
+        "url": "https://genius.com/artists/Big-ant-dog",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "BIGBABYGUCCI",
+        "url": "https://genius.com/artists/Bigbabygucci",
+        "type": "regular",
+        "id": "652244"
+      },
+      {
+        "name": "Big Baby Tape",
+        "url": "https://genius.com/artists/Big-baby-tape",
+        "type": "regular",
+        "id": "1184443"
+      },
+      {
+        "name": "BIGBANG (빅뱅)",
+        "url": "https://genius.com/artists/Bigbang",
+        "type": "regular",
+        "id": "11428"
+      },
+      {
+        "name": "BIGBAT",
+        "url": "https://genius.com/artists/Bigbat",
+        "type": "regular",
+        "id": "3980124"
+      },
+      {
+        "name": "Big Black",
+        "url": "https://genius.com/artists/Big-black",
+        "type": "regular",
+        "id": "57506"
+      },
+      {
+        "name": "Big Boogie",
+        "url": "https://genius.com/artists/Big-boogie",
+        "type": "regular",
+        "id": "65208"
+      },
+      {
+        "name": "Big Boss Vette",
+        "url": "https://genius.com/artists/Big-boss-vette",
+        "type": "regular",
+        "id": "3062652"
+      },
+      {
+        "name": "Big Brother and the Holding Company",
+        "url": "https://genius.com/artists/Big-brother-and-the-holding-company",
+        "type": "regular",
+        "id": "207674"
+      },
+      {
+        "name": "Big Country",
+        "url": "https://genius.com/artists/Big-country",
+        "type": "regular",
+        "id": "45514"
+      },
+      {
+        "name": "Big Daddy Kane",
+        "url": "https://genius.com/artists/Big-daddy-kane",
+        "type": "regular",
+        "id": "202"
+      },
+      {
+        "name": "Big Daddy Weave",
+        "url": "https://genius.com/artists/Big-daddy-weave",
+        "type": "regular",
+        "id": "204852"
+      },
+      {
+        "name": "Bigflo & Oli",
+        "url": "https://genius.com/artists/Bigflo-and-oli",
+        "type": "regular",
+        "id": "14388"
+      },
+      {
+        "name": "Biggie68",
+        "url": "https://genius.com/artists/Biggie68",
+        "type": "regular",
+        "id": "3156858"
+      },
+      {
+        "name": "Big K.R.I.T.",
+        "url": "https://genius.com/artists/Big-krit",
+        "type": "regular",
+        "id": "491"
+      },
+      {
+        "name": "Big L",
+        "url": "https://genius.com/artists/Big-l",
+        "type": "regular",
+        "id": "103"
+      },
+      {
+        "name": "BigMama",
+        "url": "https://genius.com/artists/Bigmama",
+        "type": "regular",
+        "id": "2448546"
+      },
+      {
+        "name": "Big Opp",
+        "url": "https://genius.com/artists/Big-opp",
+        "type": "regular",
+        "id": "3241290"
+      },
+      {
+        "name": "Big Pun",
+        "url": "https://genius.com/artists/Big-pun",
+        "type": "regular",
+        "id": "161"
+      },
+      {
+        "name": "Big Red Machine",
+        "url": "https://genius.com/artists/Big-red-machine",
+        "type": "regular",
+        "id": "1493325"
+      },
+      {
+        "name": "Big Ro6",
+        "url": "https://genius.com/artists/Big-ro6",
+        "type": "regular",
+        "id": "4436313"
+      },
+      {
+        "name": "BIGru i Paja Kratak",
+        "url": "https://genius.com/artists/Bigru-i-paja-kratak",
+        "type": "regular",
+        "id": "1851437"
+      },
+      {
+        "name": "Big Rush",
+        "url": "https://genius.com/artists/Big-rush",
+        "type": "regular",
+        "id": "1815580"
+      },
+      {
+        "name": "Big Russian Boss",
+        "url": "https://genius.com/artists/Big-russian-boss",
+        "type": "regular",
+        "id": "161760"
+      },
+      {
+        "name": "Big Sad 1900",
+        "url": "https://genius.com/artists/Big-sad-1900",
+        "type": "regular",
+        "id": "2358124"
+      },
+      {
+        "name": "BiGSaM - بيج سام",
+        "url": "https://genius.com/artists/Bigsam",
+        "type": "regular",
+        "id": "1643048"
+      },
+      {
+        "name": "Big Shaq",
+        "url": "https://genius.com/artists/Big-shaq",
+        "type": "regular",
+        "id": "1223820"
+      },
+      {
+        "name": "Big Soto",
+        "url": "https://genius.com/artists/Big-soto",
+        "type": "regular",
+        "id": "1074158"
+      },
+      {
+        "name": "Big Star",
+        "url": "https://genius.com/artists/Big-star",
+        "type": "regular",
+        "id": "23153"
+      },
+      {
+        "name": "BIGTEAM All Stars",
+        "url": "https://genius.com/artists/Bigteam-all-stars",
+        "type": "regular",
+        "id": "4423158"
+      },
+      {
+        "name": "Big Thief",
+        "url": "https://genius.com/artists/Big-thief",
+        "type": "regular",
+        "id": "668810"
+      },
+      {
+        "name": "Big Time Rush",
+        "url": "https://genius.com/artists/Big-time-rush",
+        "type": "regular",
+        "id": "11908"
+      },
+      {
+        "name": "Big Tymers",
+        "url": "https://genius.com/artists/Big-tymers",
+        "type": "regular",
+        "id": "18"
+      },
+      {
+        "name": "Big Vader",
+        "url": "https://genius.com/artists/Big-vader",
+        "type": "regular",
+        "id": "3807190"
+      },
+      {
+        "name": "BigXthaPlug",
+        "url": "https://genius.com/artists/Bigxthaplug",
+        "type": "regular",
+        "id": "2991490"
+      },
+      {
+        "name": "Big Yavo",
+        "url": "https://genius.com/artists/Big-yavo",
+        "type": "regular",
+        "id": "2327031"
+      },
+      {
+        "name": "Bijelo dugme",
+        "url": "https://genius.com/artists/Bijelo-dugme",
+        "type": "regular",
+        "id": "178033"
+      },
+      {
+        "name": "Bikini Kill",
+        "url": "https://genius.com/artists/Bikini-kill",
+        "type": "regular",
+        "id": "29871"
+      },
+      {
+        "name": "Bilal Saeed",
+        "url": "https://genius.com/artists/Bilal-saeed",
+        "type": "regular",
+        "id": "326859"
+      },
+      {
+        "name": "Bill Haley & His Comets",
+        "url": "https://genius.com/artists/Bill-haley-and-his-comets",
+        "type": "regular",
+        "id": "350190"
+      },
+      {
+        "name": "Billie Holiday",
+        "url": "https://genius.com/artists/Billie-holiday",
+        "type": "regular",
+        "id": "36440"
+      },
+      {
+        "name": "Billie Marten",
+        "url": "https://genius.com/artists/Billie-marten",
+        "type": "regular",
+        "id": "344995"
+      },
+      {
+        "name": "Bill Lee (Playback Singer)",
+        "url": "https://genius.com/artists/Bill-lee-playback-singer",
+        "type": "regular",
+        "id": "1557627"
+      },
+      {
+        "name": "Bill Withers",
+        "url": "https://genius.com/artists/Bill-withers",
+        "type": "regular",
+        "id": "12145"
+      },
+      {
+        "name": "Bill Wurtz",
+        "url": "https://genius.com/artists/Bill-wurtz",
+        "type": "regular",
+        "id": "651310"
+      },
+      {
+        "name": "Billy Boyd",
+        "url": "https://genius.com/artists/Billy-boyd",
+        "type": "regular",
+        "id": "272171"
+      },
+      {
+        "name": "Billy Bragg",
+        "url": "https://genius.com/artists/Billy-bragg",
+        "type": "regular",
+        "id": "22158"
+      },
+      {
+        "name": "Billy Bragg and Wilco",
+        "url": "https://genius.com/artists/Billy-bragg-and-wilco",
+        "type": "regular",
+        "id": "36224"
+      },
+      {
+        "name": "Billy Cobb",
+        "url": "https://genius.com/artists/Billy-cobb",
+        "type": "regular",
+        "id": "1160836"
+      },
+      {
+        "name": "Billy Currington",
+        "url": "https://genius.com/artists/Billy-currington",
+        "type": "regular",
+        "id": "187635"
+      },
+      {
+        "name": "Billy Funk",
+        "url": "https://genius.com/artists/Billy-funk",
+        "type": "regular",
+        "id": "1197046"
+      },
+      {
+        "name": "Billy Idol",
+        "url": "https://genius.com/artists/Billy-idol",
+        "type": "regular",
+        "id": "37816"
+      },
+      {
+        "name": "Billy Ocean",
+        "url": "https://genius.com/artists/Billy-ocean",
+        "type": "regular",
+        "id": "8619"
+      },
+      {
+        "name": "Billy Preston",
+        "url": "https://genius.com/artists/Billy-preston",
+        "type": "regular",
+        "id": "66180"
+      },
+      {
+        "name": "Billy Ray Cyrus",
+        "url": "https://genius.com/artists/Billy-ray-cyrus",
+        "type": "regular",
+        "id": "60166"
+      },
+      {
+        "name": "Billy Squier",
+        "url": "https://genius.com/artists/Billy-squier",
+        "type": "regular",
+        "id": "68097"
+      },
+      {
+        "name": "Billy Straus",
+        "url": "https://genius.com/artists/Billy-straus",
+        "type": "regular",
+        "id": "1173192"
+      },
+      {
+        "name": "Billy Strings",
+        "url": "https://genius.com/artists/Billy-strings",
+        "type": "regular",
+        "id": "1431433"
+      },
+      {
+        "name": "Billy Talent",
+        "url": "https://genius.com/artists/Billy-talent",
+        "type": "regular",
+        "id": "18422"
+      },
+      {
+        "name": "​billy woods",
+        "url": "https://genius.com/artists/Billy-woods",
+        "type": "regular",
+        "id": "13907"
+      },
+      {
+        "name": "Bilmuri",
+        "url": "https://genius.com/artists/Bilmuri",
+        "type": "regular",
+        "id": "979777"
+      },
+      {
+        "name": "Bing Crosby",
+        "url": "https://genius.com/artists/Bing-crosby",
+        "type": "regular",
+        "id": "30989"
+      },
+      {
+        "name": "BINI",
+        "url": "https://genius.com/artists/Bini",
+        "type": "regular",
+        "id": "2489690"
+      },
+      {
+        "name": "Bino Rideaux",
+        "url": "https://genius.com/artists/Bino-rideaux",
+        "type": "regular",
+        "id": "980048"
+      },
+      {
+        "name": "Bipolar Sunshine",
+        "url": "https://genius.com/artists/Bipolar-sunshine",
+        "type": "regular",
+        "id": "95841"
+      },
+      {
+        "name": "Birdman",
+        "url": "https://genius.com/artists/Birdman",
+        "type": "regular",
+        "id": "86"
+      },
+      {
+        "name": "Birdy",
+        "url": "https://genius.com/artists/Birdy",
+        "type": "regular",
+        "id": "24715"
+      },
+      {
+        "name": "Birnir",
+        "url": "https://genius.com/artists/Birnir",
+        "type": "regular",
+        "id": "1104321"
+      },
+      {
+        "name": "The Birthday Massacre",
+        "url": "https://genius.com/artists/The-birthday-massacre",
+        "type": "regular",
+        "id": "58846"
+      },
+      {
+        "name": "Bisexual From The Village",
+        "url": "https://genius.com/artists/Bisexual-from-the-village",
+        "type": "regular",
+        "id": "2896011"
+      },
+      {
+        "name": "Bishop Briggs",
+        "url": "https://genius.com/artists/Bishop-briggs",
+        "type": "regular",
+        "id": "662528"
+      },
+      {
+        "name": "Bishop Paul S. Morton",
+        "url": "https://genius.com/artists/Bishop-paul-s-morton",
+        "type": "regular",
+        "id": "349992"
+      },
+      {
+        "name": "​bixby",
+        "url": "https://genius.com/artists/Bixby",
+        "type": "regular",
+        "id": "640241"
+      },
+      {
+        "name": "Bizarrap",
+        "url": "https://genius.com/artists/Bizarrap",
+        "type": "regular",
+        "id": "1301514"
+      },
+      {
+        "name": "Bizzey",
+        "url": "https://genius.com/artists/Bizzey",
+        "type": "regular",
+        "id": "541219"
+      },
+      {
+        "name": "Bizzle",
+        "url": "https://genius.com/artists/Bizzle",
+        "type": "regular",
+        "id": "20906"
+      },
+      {
+        "name": "B Jack$",
+        "url": "https://genius.com/artists/B-jack",
+        "type": "regular",
+        "id": "1986383"
+      },
+      {
+        "name": "BJ Lips",
+        "url": "https://genius.com/artists/Bj-lips",
+        "type": "regular",
+        "id": "2878169"
+      },
+      {
+        "name": "BJ Putnam",
+        "url": "https://genius.com/artists/Bj-putnam",
+        "type": "regular",
+        "id": "456005"
+      },
+      {
+        "name": "Björk",
+        "url": "https://genius.com/artists/Bjork",
+        "type": "regular",
+        "id": "34778"
+      },
+      {
+        "name": "Björn Afzelius",
+        "url": "https://genius.com/artists/Bjorn-afzelius",
+        "type": "regular",
+        "id": "344031"
+      },
+      {
+        "name": "B.J. Thomas",
+        "url": "https://genius.com/artists/Bj-thomas",
+        "type": "regular",
+        "id": "980"
+      },
+      {
+        "name": "BK'",
+        "url": "https://genius.com/artists/Bk",
+        "type": "regular",
+        "id": "568216"
+      },
+      {
+        "name": "Bktherula",
+        "url": "https://genius.com/artists/Bktherula",
+        "type": "regular",
+        "id": "1914854"
+      },
+      {
+        "name": "BL8M",
+        "url": "https://genius.com/artists/Bl8m",
+        "type": "regular",
+        "id": "3716426"
+      },
+      {
+        "name": "Black",
+        "url": "https://genius.com/artists/Black",
+        "type": "regular",
+        "id": "7897"
+      },
+      {
+        "name": "Black061",
+        "url": "https://genius.com/artists/Black061",
+        "type": "regular",
+        "id": "2793815"
+      },
+      {
+        "name": "blackbear",
+        "url": "https://genius.com/artists/Blackbear",
+        "type": "regular",
+        "id": "25680"
+      },
+      {
+        "name": "Black Box Recorder",
+        "url": "https://genius.com/artists/Black-box-recorder",
+        "type": "regular",
+        "id": "355987"
+      },
+      {
+        "name": "Black Country, New Road",
+        "url": "https://genius.com/artists/Black-country-new-road",
+        "type": "regular",
+        "id": "1717730"
+      },
+      {
+        "name": "The Black Crowes",
+        "url": "https://genius.com/artists/The-black-crowes",
+        "type": "regular",
+        "id": "78085"
+      },
+      {
+        "name": "Black Dresses",
+        "url": "https://genius.com/artists/Black-dresses",
+        "type": "regular",
+        "id": "1446367"
+      },
+      {
+        "name": "Black Flag",
+        "url": "https://genius.com/artists/Black-flag",
+        "type": "regular",
+        "id": "23311"
+      },
+      {
+        "name": "Black Gryph0n",
+        "url": "https://genius.com/artists/Black-gryph0n",
+        "type": "regular",
+        "id": "308585"
+      },
+      {
+        "name": "Black Hanifah",
+        "url": "https://genius.com/artists/Black-hanifah",
+        "type": "regular",
+        "id": "1608468"
+      },
+      {
+        "name": "Blackinny",
+        "url": "https://genius.com/artists/Blackinny",
+        "type": "regular",
+        "id": "2423870"
+      },
+      {
+        "name": "The Black Keys",
+        "url": "https://genius.com/artists/The-black-keys",
+        "type": "regular",
+        "id": "1166"
+      },
+      {
+        "name": "Black Kray",
+        "url": "https://genius.com/artists/Black-kray",
+        "type": "regular",
+        "id": "148861"
+      },
+      {
+        "name": "Black Label Society",
+        "url": "https://genius.com/artists/Black-label-society",
+        "type": "regular",
+        "id": "140180"
+      },
+      {
+        "name": "Black Lace",
+        "url": "https://genius.com/artists/Black-lace",
+        "type": "regular",
+        "id": "222222"
+      },
+      {
+        "name": "Black Magick SS",
+        "url": "https://genius.com/artists/Black-magick-ss",
+        "type": "regular",
+        "id": "2016243"
+      },
+      {
+        "name": "​black midi",
+        "url": "https://genius.com/artists/Black-midi",
+        "type": "regular",
+        "id": "1722056"
+      },
+      {
+        "name": "Black Moth Super Rainbow",
+        "url": "https://genius.com/artists/Black-moth-super-rainbow",
+        "type": "regular",
+        "id": "22980"
+      },
+      {
+        "name": "BLACKPINK",
+        "url": "https://genius.com/artists/Blackpink",
+        "type": "regular",
+        "id": "987404"
+      },
+      {
+        "name": "Black Pumas",
+        "url": "https://genius.com/artists/Black-pumas",
+        "type": "regular",
+        "id": "1753186"
+      },
+      {
+        "name": "Black Sabbath",
+        "url": "https://genius.com/artists/Black-sabbath",
+        "type": "regular",
+        "id": "1121"
+      },
+      {
+        "name": "Black Sheep",
+        "url": "https://genius.com/artists/Black-sheep",
+        "type": "regular",
+        "id": "268"
+      },
+      {
+        "name": "The Black Skirts",
+        "url": "https://genius.com/artists/The-black-skirts",
+        "type": "regular",
+        "id": "980734"
+      },
+      {
+        "name": "Black Smurf",
+        "url": "https://genius.com/artists/Black-smurf",
+        "type": "regular",
+        "id": "140178"
+      },
+      {
+        "name": "Black Star",
+        "url": "https://genius.com/artists/Black-star",
+        "type": "regular",
+        "id": "354"
+      },
+      {
+        "name": "Blackstreet",
+        "url": "https://genius.com/artists/Blackstreet",
+        "type": "regular",
+        "id": "2598"
+      },
+      {
+        "name": "Black Thought",
+        "url": "https://genius.com/artists/Black-thought",
+        "type": "regular",
+        "id": "176"
+      },
+      {
+        "name": "Black Veil Brides",
+        "url": "https://genius.com/artists/Black-veil-brides",
+        "type": "regular",
+        "id": "14557"
+      },
+      {
+        "name": "Black Voices Movement",
+        "url": "https://genius.com/artists/Black-voices-movement",
+        "type": "regular",
+        "id": "3067154"
+      },
+      {
+        "name": "Blac Youngsta",
+        "url": "https://genius.com/artists/Blac-youngsta",
+        "type": "regular",
+        "id": "407382"
+      },
+      {
+        "name": "Blade and Bath",
+        "url": "https://genius.com/artists/Blade-and-bath",
+        "type": "regular",
+        "id": "3899115"
+      },
+      {
+        "name": "Bladee",
+        "url": "https://genius.com/artists/Bladee",
+        "type": "regular",
+        "id": "83959"
+      },
+      {
+        "name": "blago white",
+        "url": "https://genius.com/artists/Blago-white",
+        "type": "regular",
+        "id": "1630520"
+      },
+      {
+        "name": "Blake Michael",
+        "url": "https://genius.com/artists/Blake-michael",
+        "type": "regular",
+        "id": "587592"
+      },
+      {
+        "name": "The Blake Robinson Synthetic Orchestra",
+        "url": "https://genius.com/artists/The-blake-robinson-synthetic-orchestra",
+        "type": "regular",
+        "id": "1066683"
+      },
+      {
+        "name": "Blake Roman",
+        "url": "https://genius.com/artists/Blake-roman",
+        "type": "regular",
+        "id": "3541404"
+      },
+      {
+        "name": "Blake Shelton",
+        "url": "https://genius.com/artists/Blake-shelton",
+        "type": "regular",
+        "id": "34065"
+      },
+      {
+        "name": "BLANCO",
+        "url": "https://genius.com/artists/Blanco",
+        "type": "regular",
+        "id": "2362235"
+      },
+      {
+        "name": "Blanco (UK)",
+        "url": "https://genius.com/artists/Blanco-uk",
+        "type": "regular",
+        "id": "1001968"
+      },
+      {
+        "name": "Blaqbonez",
+        "url": "https://genius.com/artists/Blaqbonez",
+        "type": "regular",
+        "id": "1167864"
+      },
+      {
+        "name": "BLASTER (PHL)",
+        "url": "https://genius.com/artists/Blaster-phl",
+        "type": "regular",
+        "id": "1427644"
+      },
+      {
+        "name": "The Blasting Company",
+        "url": "https://genius.com/artists/The-blasting-company",
+        "type": "regular",
+        "id": "1246869"
+      },
+      {
+        "name": "Blaze Foley",
+        "url": "https://genius.com/artists/Blaze-foley",
+        "type": "regular",
+        "id": "360919"
+      },
+      {
+        "name": "Bleachers",
+        "url": "https://genius.com/artists/Bleachers",
+        "type": "regular",
+        "id": "158659"
+      },
+      {
+        "name": "Bleed From Within",
+        "url": "https://genius.com/artists/Bleed-from-within",
+        "type": "regular",
+        "id": "128264"
+      },
+      {
+        "name": "Bülent Ersoy",
+        "url": "https://genius.com/artists/Bulent-ersoy",
+        "type": "regular",
+        "id": "352816"
+      },
+      {
+        "name": "bleood",
+        "url": "https://genius.com/artists/Bleood",
+        "type": "regular",
+        "id": "3252034"
+      },
+      {
+        "name": "Blessd",
+        "url": "https://genius.com/artists/Blessd",
+        "type": "regular",
+        "id": "2314605"
+      },
+      {
+        "name": "blessthefall",
+        "url": "https://genius.com/artists/Blessthefall",
+        "type": "regular",
+        "id": "26739"
+      },
+      {
+        "name": "Блестящие (Blestyashchiye)",
+        "url": "https://genius.com/artists/Blestyashchiye",
+        "type": "regular",
+        "id": "1142794"
+      },
+      {
+        "name": "BLØF",
+        "url": "https://genius.com/artists/Blf",
+        "type": "regular",
+        "id": "355366"
+      },
+      {
+        "name": "Blind Faith",
+        "url": "https://genius.com/artists/Blind-faith",
+        "type": "regular",
+        "id": "139433"
+      },
+      {
+        "name": "Blind Guardian",
+        "url": "https://genius.com/artists/Blind-guardian",
+        "type": "regular",
+        "id": "214400"
+      },
+      {
+        "name": "Blind Melon",
+        "url": "https://genius.com/artists/Blind-melon",
+        "type": "regular",
+        "id": "631"
+      },
+      {
+        "name": "Blizzi Boi",
+        "url": "https://genius.com/artists/Blizzi-boi",
+        "type": "regular",
+        "id": "60317"
+      },
+      {
+        "name": "Blo",
+        "url": "https://genius.com/artists/Blo",
+        "type": "regular",
+        "id": "3377155"
+      },
+      {
+        "name": "Bloc Party",
+        "url": "https://genius.com/artists/Bloc-party",
+        "type": "regular",
+        "id": "16723"
+      },
+      {
+        "name": "BLOK3",
+        "url": "https://genius.com/artists/Blok3",
+        "type": "regular",
+        "id": "3023016"
+      },
+      {
+        "name": "Blond",
+        "url": "https://genius.com/artists/Blond",
+        "type": "regular",
+        "id": "455630"
+      },
+      {
+        "name": "Blonde Redhead",
+        "url": "https://genius.com/artists/Blonde-redhead",
+        "type": "regular",
+        "id": "72967"
+      },
+      {
+        "name": "Blondie",
+        "url": "https://genius.com/artists/Blondie",
+        "type": "regular",
+        "id": "8227"
+      },
+      {
+        "name": "Blondshell",
+        "url": "https://genius.com/artists/Blondshell",
+        "type": "regular",
+        "id": "3193861"
+      },
+      {
+        "name": "Bloodhound Gang",
+        "url": "https://genius.com/artists/Bloodhound-gang",
+        "type": "regular",
+        "id": "737"
+      },
+      {
+        "name": "Bloodhound Lil Jeff",
+        "url": "https://genius.com/artists/Bloodhound-lil-jeff",
+        "type": "regular",
+        "id": "3991272"
+      },
+      {
+        "name": "BloodHound Q50",
+        "url": "https://genius.com/artists/Bloodhound-q50",
+        "type": "regular",
+        "id": "4011321"
+      },
+      {
+        "name": "BLOODIE",
+        "url": "https://genius.com/artists/Bloodie",
+        "type": "regular",
+        "id": "3521346"
+      },
+      {
+        "name": "Blood On the Dance Floor",
+        "url": "https://genius.com/artists/Blood-on-the-dance-floor",
+        "type": "regular",
+        "id": "92237"
+      },
+      {
+        "name": "Blood Orange",
+        "url": "https://genius.com/artists/Blood-orange",
+        "type": "regular",
+        "id": "583895"
+      },
+      {
+        "name": "Blood, Sweat & Tears",
+        "url": "https://genius.com/artists/Blood-sweat-and-tears",
+        "type": "regular",
+        "id": "50688"
+      },
+      {
+        "name": "Bloody Hawk",
+        "url": "https://genius.com/artists/Bloody-hawk",
+        "type": "regular",
+        "id": "1008175"
+      },
+      {
+        "name": "Blossoms",
+        "url": "https://genius.com/artists/Blossoms",
+        "type": "regular",
+        "id": "455532"
+      },
+      {
+        "name": "BLP KOSHER",
+        "url": "https://genius.com/artists/Blp-kosher",
+        "type": "regular",
+        "id": "3408779"
+      },
+      {
+        "name": "Blæst",
+        "url": "https://genius.com/artists/Blst",
+        "type": "regular",
+        "id": "2123558"
+      },
+      {
+        "name": "Blu",
+        "url": "https://genius.com/artists/Blu",
+        "type": "regular",
+        "id": "420"
+      },
+      {
+        "name": "Blu Cantrell",
+        "url": "https://genius.com/artists/Blu-cantrell",
+        "type": "regular",
+        "id": "7370"
+      },
+      {
+        "name": "Blue",
+        "url": "https://genius.com/artists/Blue",
+        "type": "regular",
+        "id": "21474"
+      },
+      {
+        "name": "BlueBucksClan",
+        "url": "https://genius.com/artists/Bluebucksclan",
+        "type": "regular",
+        "id": "1867001"
+      },
+      {
+        "name": "Blueface",
+        "url": "https://genius.com/artists/Blueface",
+        "type": "regular",
+        "id": "1195330"
+      },
+      {
+        "name": "Blue Foundation",
+        "url": "https://genius.com/artists/Blue-foundation",
+        "type": "regular",
+        "id": "38278"
+      },
+      {
+        "name": "Blue Jeans (BGD)",
+        "url": "https://genius.com/artists/Blue-jeans-bgd",
+        "type": "regular",
+        "id": "3613873"
+      },
+      {
+        "name": "Blue October",
+        "url": "https://genius.com/artists/Blue-october",
+        "type": "regular",
+        "id": "20214"
+      },
+      {
+        "name": "Blue Rodeo",
+        "url": "https://genius.com/artists/Blue-rodeo",
+        "type": "regular",
+        "id": "349425"
+      },
+      {
+        "name": "The Blues Brothers",
+        "url": "https://genius.com/artists/The-blues-brothers",
+        "type": "regular",
+        "id": "355049"
+      },
+      {
+        "name": "Blues Traveler",
+        "url": "https://genius.com/artists/Blues-traveler",
+        "type": "regular",
+        "id": "176728"
+      },
+      {
+        "name": "Blue Touch Bangladesh",
+        "url": "https://genius.com/artists/Blue-touch-bangladesh",
+        "type": "regular",
+        "id": "4141537"
+      },
+      {
+        "name": "Blue Öyster Cult",
+        "url": "https://genius.com/artists/Blue-oyster-cult",
+        "type": "regular",
+        "id": "50622"
+      },
+      {
+        "name": "Blur",
+        "url": "https://genius.com/artists/Blur",
+        "type": "regular",
+        "id": "723"
+      },
+      {
+        "name": "Blxckie",
+        "url": "https://genius.com/artists/Blxckie",
+        "type": "regular",
+        "id": "1203852"
+      },
+      {
+        "name": "Blxst",
+        "url": "https://genius.com/artists/Blxst",
+        "type": "regular",
+        "id": "1723999"
+      },
+      {
+        "name": "BNK48",
+        "url": "https://genius.com/artists/Bnk48",
+        "type": "regular",
+        "id": "1376000"
+      },
+      {
+        "name": "​bnkr44",
+        "url": "https://genius.com/artists/Bnkr44",
+        "type": "regular",
+        "id": "2237518"
+      },
+      {
+        "name": "Bnxn",
+        "url": "https://genius.com/artists/Bnxn",
+        "type": "regular",
+        "id": "1999525"
+      },
+      {
+        "name": "BNYX®",
+        "url": "https://genius.com/artists/Bnyx",
+        "type": "regular",
+        "id": "1134021"
+      },
+      {
+        "name": "BoA (보아)",
+        "url": "https://genius.com/artists/Boa",
+        "type": "regular",
+        "id": "3901"
+      },
+      {
+        "name": "Boards of Canada",
+        "url": "https://genius.com/artists/Boards-of-canada",
+        "type": "regular",
+        "id": "177958"
+      },
+      {
+        "name": "B.o.B",
+        "url": "https://genius.com/artists/Bob",
+        "type": "regular",
+        "id": "853"
+      },
+      {
+        "name": "Bobbie Gentry",
+        "url": "https://genius.com/artists/Bobbie-gentry",
+        "type": "regular",
+        "id": "91592"
+      },
+      {
+        "name": "Bobby Brown",
+        "url": "https://genius.com/artists/Bobby-brown",
+        "type": "regular",
+        "id": "3542"
+      },
+      {
+        "name": "Bobby Caldwell",
+        "url": "https://genius.com/artists/Bobby-caldwell",
+        "type": "regular",
+        "id": "100332"
+      },
+      {
+        "name": "Bobby Darin",
+        "url": "https://genius.com/artists/Bobby-darin",
+        "type": "regular",
+        "id": "115571"
+      },
+      {
+        "name": "Bobby Day",
+        "url": "https://genius.com/artists/Bobby-day",
+        "type": "regular",
+        "id": "362653"
+      },
+      {
+        "name": "Bobby Hebb",
+        "url": "https://genius.com/artists/Bobby-hebb",
+        "type": "regular",
+        "id": "54040"
+      },
+      {
+        "name": "Bobby McFerrin",
+        "url": "https://genius.com/artists/Bobby-mcferrin",
+        "type": "regular",
+        "id": "38206"
+      },
+      {
+        "name": "Bobby Sherman",
+        "url": "https://genius.com/artists/Bobby-sherman",
+        "type": "regular",
+        "id": "360855"
+      },
+      {
+        "name": "Bobby Shmurda",
+        "url": "https://genius.com/artists/Bobby-shmurda",
+        "type": "regular",
+        "id": "197731"
+      },
+      {
+        "name": "Bobby V",
+        "url": "https://genius.com/artists/Bobby-v",
+        "type": "regular",
+        "id": "415"
+      },
+      {
+        "name": "Bobby Vandamme",
+        "url": "https://genius.com/artists/Bobby-vandamme",
+        "type": "regular",
+        "id": "2358584"
+      },
+      {
+        "name": "Bobby Vinton",
+        "url": "https://genius.com/artists/Bobby-vinton",
+        "type": "regular",
+        "id": "181890"
+      },
+      {
+        "name": "Bobby Womack",
+        "url": "https://genius.com/artists/Bobby-womack",
+        "type": "regular",
+        "id": "1709"
+      },
+      {
+        "name": "Bob Marley",
+        "url": "https://genius.com/artists/Bob-marley",
+        "type": "regular",
+        "id": "922"
+      },
+      {
+        "name": "Bob's Burgers",
+        "url": "https://genius.com/artists/Bobs-burgers",
+        "type": "regular",
+        "id": "100258"
+      },
+      {
+        "name": "Bob Seger",
+        "url": "https://genius.com/artists/Bob-seger",
+        "type": "regular",
+        "id": "38157"
+      },
+      {
+        "name": "Bob Sinclar",
+        "url": "https://genius.com/artists/Bob-sinclar",
+        "type": "regular",
+        "id": "348437"
+      },
+      {
+        "name": "Bob the Builder",
+        "url": "https://genius.com/artists/Bob-the-builder",
+        "type": "regular",
+        "id": "40028"
+      },
+      {
+        "name": "Bo Burnham",
+        "url": "https://genius.com/artists/Bo-burnham",
+        "type": "regular",
+        "id": "979"
+      },
+      {
+        "name": "Bob Vylan",
+        "url": "https://genius.com/artists/Bob-vylan",
+        "type": "regular",
+        "id": "2038884"
+      },
+      {
+        "name": "Bob Wills",
+        "url": "https://genius.com/artists/Bob-wills",
+        "type": "regular",
+        "id": "348225"
+      },
+      {
+        "name": "Bodo Wartke",
+        "url": "https://genius.com/artists/Bodo-wartke",
+        "type": "regular",
+        "id": "1097948"
+      },
+      {
+        "name": "Boef",
+        "url": "https://genius.com/artists/Boef",
+        "type": "regular",
+        "id": "575371"
+      },
+      {
+        "name": "Bohemia",
+        "url": "https://genius.com/artists/Bohemia",
+        "type": "regular",
+        "id": "20164"
+      },
+      {
+        "name": "Boj",
+        "url": "https://genius.com/artists/Boj",
+        "type": "regular",
+        "id": "29407"
+      },
+      {
+        "name": "BoJack Horseman",
+        "url": "https://genius.com/artists/Bojack-horseman",
+        "type": "regular",
+        "id": "572070"
+      },
+      {
+        "name": "Boldy James",
+        "url": "https://genius.com/artists/Boldy-james",
+        "type": "regular",
+        "id": "11689"
+      },
+      {
+        "name": "Bollo",
+        "url": "https://genius.com/artists/Bollo",
+        "type": "regular",
+        "id": "1424214"
+      },
+      {
+        "name": "Bomba Estéreo",
+        "url": "https://genius.com/artists/Bomba-estereo",
+        "type": "regular",
+        "id": "364644"
+      },
+      {
+        "name": "Bomfunk MC's",
+        "url": "https://genius.com/artists/Bomfunk-mcs",
+        "type": "regular",
+        "id": "3950"
+      },
+      {
+        "name": "Bon Calso",
+        "url": "https://genius.com/artists/Bon-calso",
+        "type": "regular",
+        "id": "1745802"
+      },
+      {
+        "name": "Бонд с кнопкой (Bond s knopkoi)",
+        "url": "https://genius.com/artists/Bond-s-knopkoi",
+        "type": "regular",
+        "id": "4162455"
+      },
+      {
+        "name": "BONES",
+        "url": "https://genius.com/artists/Bones",
+        "type": "regular",
+        "id": "38842"
+      },
+      {
+        "name": "Bone Thugs-N-Harmony",
+        "url": "https://genius.com/artists/Bone-thugs-n-harmony",
+        "type": "regular",
+        "id": "64"
+      },
+      {
+        "name": "Boney M.",
+        "url": "https://genius.com/artists/Boney-m",
+        "type": "regular",
+        "id": "43259"
+      },
+      {
+        "name": "Bonez MC",
+        "url": "https://genius.com/artists/Bonez-mc",
+        "type": "regular",
+        "id": "18537"
+      },
+      {
+        "name": "Bon Iver",
+        "url": "https://genius.com/artists/Bon-iver",
+        "type": "regular",
+        "id": "589"
+      },
+      {
+        "name": "Bon Jovi",
+        "url": "https://genius.com/artists/Bon-jovi",
+        "type": "regular",
+        "id": "16698"
+      },
+      {
+        "name": "Bonnie Raitt",
+        "url": "https://genius.com/artists/Bonnie-raitt",
+        "type": "regular",
+        "id": "115216"
+      },
+      {
+        "name": "Bonnie Tyler",
+        "url": "https://genius.com/artists/Bonnie-tyler",
+        "type": "regular",
+        "id": "39868"
+      },
+      {
+        "name": "Bono",
+        "url": "https://genius.com/artists/Bono",
+        "type": "regular",
+        "id": "15857"
+      },
+      {
+        "name": "Bonobo",
+        "url": "https://genius.com/artists/Bonobo",
+        "type": "regular",
+        "id": "48669"
+      },
+      {
+        "name": "Bonus RPK",
+        "url": "https://genius.com/artists/Bonus-rpk",
+        "type": "regular",
+        "id": "159286"
+      },
+      {
+        "name": "Booba",
+        "url": "https://genius.com/artists/Booba",
+        "type": "regular",
+        "id": "1282"
+      },
+      {
+        "name": "Booboo Stewart",
+        "url": "https://genius.com/artists/Booboo-stewart",
+        "type": "regular",
+        "id": "544041"
+      },
+      {
+        "name": "BoofPaxkMooky",
+        "url": "https://genius.com/artists/Boofpaxkmooky",
+        "type": "regular",
+        "id": "1524322"
+      },
+      {
+        "name": "Boogie Down Productions",
+        "url": "https://genius.com/artists/Boogie-down-productions",
+        "type": "regular",
+        "id": "815"
+      },
+      {
+        "name": "A Boogie wit da Hoodie",
+        "url": "https://genius.com/artists/A-boogie-wit-da-hoodie",
+        "type": "regular",
+        "id": "639521"
+      },
+      {
+        "name": "‎BOOKER",
+        "url": "https://genius.com/artists/Booker",
+        "type": "regular",
+        "id": "1014045"
+      },
+      {
+        "name": "​boolymon",
+        "url": "https://genius.com/artists/Boolymon",
+        "type": "regular",
+        "id": "2726569"
+      },
+      {
+        "name": "Boom Kitty",
+        "url": "https://genius.com/artists/Boom-kitty",
+        "type": "regular",
+        "id": "2000759"
+      },
+      {
+        "name": "The Boondocks",
+        "url": "https://genius.com/artists/The-boondocks",
+        "type": "regular",
+        "id": "40105"
+      },
+      {
+        "name": "Boosie Badazz",
+        "url": "https://genius.com/artists/Boosie-badazz",
+        "type": "regular",
+        "id": "931"
+      },
+      {
+        "name": "Booter Bee",
+        "url": "https://genius.com/artists/Booter-bee",
+        "type": "regular",
+        "id": "3080872"
+      },
+      {
+        "name": "Borislav Slavov",
+        "url": "https://genius.com/artists/Borislav-slavov",
+        "type": "regular",
+        "id": "2291190"
+      },
+      {
+        "name": "BOSMA DJ",
+        "url": "https://genius.com/artists/Bosma-dj",
+        "type": "regular",
+        "id": "4388495"
+      },
+      {
+        "name": "BossMan Dlow",
+        "url": "https://genius.com/artists/Bossman-dlow",
+        "type": "regular",
+        "id": "3574079"
+      },
+      {
+        "name": "Bossy",
+        "url": "https://genius.com/artists/Bossy",
+        "type": "regular",
+        "id": "1796937"
+      },
+      {
+        "name": "Boston",
+        "url": "https://genius.com/artists/Boston",
+        "type": "regular",
+        "id": "20663"
+      },
+      {
+        "name": "Boulevard Depo",
+        "url": "https://genius.com/artists/Boulevard-depo",
+        "type": "regular",
+        "id": "100956"
+      },
+      {
+        "name": "Bouss",
+        "url": "https://genius.com/artists/Bouss",
+        "type": "regular",
+        "id": "3815679"
+      },
+      {
+        "name": "BOWKYLION",
+        "url": "https://genius.com/artists/Bowkylion",
+        "type": "regular",
+        "id": "2150167"
+      },
+      {
+        "name": "Bowling for Soup",
+        "url": "https://genius.com/artists/Bowling-for-soup",
+        "type": "regular",
+        "id": "22121"
+      },
+      {
+        "name": "Bow Wow",
+        "url": "https://genius.com/artists/Bow-wow",
+        "type": "regular",
+        "id": "745"
+      },
+      {
+        "name": "The Boxer Rebellion",
+        "url": "https://genius.com/artists/The-boxer-rebellion",
+        "type": "regular",
+        "id": "67075"
+      },
+      {
+        "name": "Boyce Avenue",
+        "url": "https://genius.com/artists/Boyce-avenue",
+        "type": "regular",
+        "id": "166310"
+      },
+      {
+        "name": "BOY FANTASY",
+        "url": "https://genius.com/artists/Boy-fantasy",
+        "type": "regular",
+        "id": "2543910"
+      },
+      {
+        "name": "boygenius",
+        "url": "https://genius.com/artists/Boygenius",
+        "type": "regular",
+        "id": "1617445"
+      },
+      {
+        "name": "Boyinaband",
+        "url": "https://genius.com/artists/Boyinaband",
+        "type": "regular",
+        "id": "159396"
+      },
+      {
+        "name": "BOYNEXTDOOR",
+        "url": "https://genius.com/artists/Boynextdoor",
+        "type": "regular",
+        "id": "3523166"
+      },
+      {
+        "name": "Boyz II Men",
+        "url": "https://genius.com/artists/Boyz-ii-men",
+        "type": "regular",
+        "id": "440"
+      },
+      {
+        "name": "BOYS LIKE GIRLS",
+        "url": "https://genius.com/artists/Boys-like-girls",
+        "type": "regular",
+        "id": "58994"
+      },
+      {
+        "name": "Boys Noize",
+        "url": "https://genius.com/artists/Boys-noize",
+        "type": "regular",
+        "id": "95539"
+      },
+      {
+        "name": "Boyz N Da Hood",
+        "url": "https://genius.com/artists/Boyz-n-da-hood",
+        "type": "regular",
+        "id": "3978"
+      },
+      {
+        "name": "The Boys (VR)",
+        "url": "https://genius.com/artists/The-boys-vr",
+        "type": "regular",
+        "id": "2372682"
+      },
+      {
+        "name": "BoyWithUke",
+        "url": "https://genius.com/artists/Boywithuke",
+        "type": "regular",
+        "id": "2515182"
+      },
+      {
+        "name": "Boyzone",
+        "url": "https://genius.com/artists/Boyzone",
+        "type": "regular",
+        "id": "344536"
+      },
+      {
+        "name": "Boz Scaggs",
+        "url": "https://genius.com/artists/Boz-scaggs",
+        "type": "regular",
+        "id": "222679"
+      },
+      {
+        "name": "B. Praak",
+        "url": "https://genius.com/artists/B-praak",
+        "type": "regular",
+        "id": "1478513"
+      },
+      {
+        "name": "Brad Kane",
+        "url": "https://genius.com/artists/Brad-kane",
+        "type": "regular",
+        "id": "160701"
+      },
+      {
+        "name": "Bradley Cooper",
+        "url": "https://genius.com/artists/Bradley-cooper",
+        "type": "regular",
+        "id": "113649"
+      },
+      {
+        "name": "Brad Paisley",
+        "url": "https://genius.com/artists/Brad-paisley",
+        "type": "regular",
+        "id": "22758"
+      },
+      {
+        "name": "The Brady Bunch",
+        "url": "https://genius.com/artists/The-brady-bunch",
+        "type": "regular",
+        "id": "192883"
+      },
+      {
+        "name": "Braelyn Rankins",
+        "url": "https://genius.com/artists/Braelyn-rankins",
+        "type": "regular",
+        "id": "4222161"
+      },
+      {
+        "name": "İbrahim Tatlıses",
+        "url": "https://genius.com/artists/Ibrahim-tatlses",
+        "type": "regular",
+        "id": "479689"
+      },
+      {
+        "name": "brakence",
+        "url": "https://genius.com/artists/Brakence",
+        "type": "regular",
+        "id": "1652231"
+      },
+      {
+        "name": "Branco",
+        "url": "https://genius.com/artists/Branco",
+        "type": "regular",
+        "id": "637737"
+      },
+      {
+        "name": "Brandi Carlile",
+        "url": "https://genius.com/artists/Brandi-carlile",
+        "type": "regular",
+        "id": "156698"
+      },
+      {
+        "name": "Brand New",
+        "url": "https://genius.com/artists/Brand-new",
+        "type": "regular",
+        "id": "17582"
+      },
+      {
+        "name": "Brandão85",
+        "url": "https://genius.com/artists/Brandao85",
+        "type": "regular",
+        "id": "2475367"
+      },
+      {
+        "name": "Brandon Lake",
+        "url": "https://genius.com/artists/Brandon-lake",
+        "type": "regular",
+        "id": "1177614"
+      },
+      {
+        "name": "Brandon McInnis",
+        "url": "https://genius.com/artists/Brandon-mcinnis",
+        "type": "regular",
+        "id": "2658624"
+      },
+      {
+        "name": "Brandon Mychal Smith",
+        "url": "https://genius.com/artists/Brandon-mychal-smith",
+        "type": "regular",
+        "id": "456924"
+      },
+      {
+        "name": "Brandon Rogers",
+        "url": "https://genius.com/artists/Brandon-rogers",
+        "type": "regular",
+        "id": "663327"
+      },
+      {
+        "name": "Brandon Uranowitz",
+        "url": "https://genius.com/artists/Brandon-uranowitz",
+        "type": "regular",
+        "id": "1011809"
+      },
+      {
+        "name": "Brandon Yates",
+        "url": "https://genius.com/artists/Brandon-yates",
+        "type": "regular",
+        "id": "1744961"
+      },
+      {
+        "name": "Brandy",
+        "url": "https://genius.com/artists/Brandy",
+        "type": "regular",
+        "id": "1425"
+      },
+      {
+        "name": "Brantley Gilbert",
+        "url": "https://genius.com/artists/Brantley-gilbert",
+        "type": "regular",
+        "id": "22925"
+      },
+      {
+        "name": "BRANYA",
+        "url": "https://genius.com/artists/Branya",
+        "type": "regular",
+        "id": "2695309"
+      },
+      {
+        "name": "Bratz",
+        "url": "https://genius.com/artists/Bratz",
+        "type": "regular",
+        "id": "363471"
+      },
+      {
+        "name": "Братья Грим (Brat'ya Grim)",
+        "url": "https://genius.com/artists/Bratya-grim",
+        "type": "regular",
+        "id": "1510730"
+      },
+      {
+        "name": "The Brave Little Abacus",
+        "url": "https://genius.com/artists/The-brave-little-abacus",
+        "type": "regular",
+        "id": "277095"
+      },
+      {
+        "name": "Браво (Bravo) (Band)",
+        "url": "https://genius.com/artists/Bravo-band",
+        "type": "regular",
+        "id": "1884823"
+      },
+      {
+        "name": "Brawl Stars",
+        "url": "https://genius.com/artists/Brawl-stars",
+        "type": "regular",
+        "id": "2799332"
+      },
+      {
+        "name": "Braxton Keith",
+        "url": "https://genius.com/artists/Braxton-keith",
+        "type": "regular",
+        "id": "1908141"
+      },
+      {
+        "name": "Bread",
+        "url": "https://genius.com/artists/Bread",
+        "type": "regular",
+        "id": "240079"
+      },
+      {
+        "name": "Breaking Bad",
+        "url": "https://genius.com/artists/Breaking-bad",
+        "type": "regular",
+        "id": "65205"
+      },
+      {
+        "name": "Breaking Benjamin",
+        "url": "https://genius.com/artists/Breaking-benjamin",
+        "type": "regular",
+        "id": "21856"
+      },
+      {
+        "name": "Breanna Nix",
+        "url": "https://genius.com/artists/Breanna-nix",
+        "type": "regular",
+        "id": "4442009"
+      },
+      {
+        "name": "​breathe.",
+        "url": "https://genius.com/artists/Breathe",
+        "type": "regular",
+        "id": "1554371"
+      },
+      {
+        "name": "БРЕДИШЬ (BREDISH)",
+        "url": "https://genius.com/artists/Bredish",
+        "type": "regular",
+        "id": "3105287"
+      },
+      {
+        "name": "The Breeders",
+        "url": "https://genius.com/artists/The-breeders",
+        "type": "regular",
+        "id": "50512"
+      },
+      {
+        "name": "Breezy Boyz",
+        "url": "https://genius.com/artists/Breezy-boyz",
+        "type": "regular",
+        "id": "3223446"
+      },
+      {
+        "name": "Brenda Lee",
+        "url": "https://genius.com/artists/Brenda-lee",
+        "type": "regular",
+        "id": "32563"
+      },
+      {
+        "name": "Brendan Abernathy",
+        "url": "https://genius.com/artists/Brendan-abernathy",
+        "type": "regular",
+        "id": "2438687"
+      },
+      {
+        "name": "Brenn!",
+        "url": "https://genius.com/artists/Brenn",
+        "type": "regular",
+        "id": "3509154"
+      },
+      {
+        "name": "Brennan Jones",
+        "url": "https://genius.com/artists/Brennan-jones",
+        "type": "regular",
+        "id": "3868198"
+      },
+      {
+        "name": "Brent Comer",
+        "url": "https://genius.com/artists/Brent-comer",
+        "type": "regular",
+        "id": "3970717"
+      },
+      {
+        "name": "Brent Faiyaz",
+        "url": "https://genius.com/artists/Brent-faiyaz",
+        "type": "regular",
+        "id": "332612"
+      },
+      {
+        "name": "Brent Jones",
+        "url": "https://genius.com/artists/Brent-jones",
+        "type": "regular",
+        "id": "2188820"
+      },
+      {
+        "name": "Brenton Brown",
+        "url": "https://genius.com/artists/Brenton-brown",
+        "type": "regular",
+        "id": "16325"
+      },
+      {
+        "name": "Breskvica",
+        "url": "https://genius.com/artists/Breskvica",
+        "type": "regular",
+        "id": "1927365"
+      },
+      {
+        "name": "Brett Young",
+        "url": "https://genius.com/artists/Brett-young",
+        "type": "regular",
+        "id": "455379"
+      },
+      {
+        "name": "BRGR",
+        "url": "https://genius.com/artists/Brgr",
+        "type": "regular",
+        "id": "2986023"
+      },
+      {
+        "name": "Bri3",
+        "url": "https://genius.com/artists/Bri3",
+        "type": "regular",
+        "id": "4230173"
+      },
+      {
+        "name": "Brian Charles Johnson",
+        "url": "https://genius.com/artists/Brian-charles-johnson",
+        "type": "regular",
+        "id": "209860"
+      },
+      {
+        "name": "Brian D'Arcy James",
+        "url": "https://genius.com/artists/Brian-darcy-james",
+        "type": "regular",
+        "id": "406052"
+      },
+      {
+        "name": "Brian Doerksen",
+        "url": "https://genius.com/artists/Brian-doerksen",
+        "type": "regular",
+        "id": "353263"
+      },
+      {
+        "name": "Brian Dunphy",
+        "url": "https://genius.com/artists/Brian-dunphy",
+        "type": "regular",
+        "id": "4407284"
+      },
+      {
+        "name": "Brian Ennals",
+        "url": "https://genius.com/artists/Brian-ennals",
+        "type": "regular",
+        "id": "3270688"
+      },
+      {
+        "name": "Brian Eno",
+        "url": "https://genius.com/artists/Brian-eno",
+        "type": "regular",
+        "id": "29972"
+      },
+      {
+        "name": "The Brian Jonestown Massacre",
+        "url": "https://genius.com/artists/The-brian-jonestown-massacre",
+        "type": "regular",
+        "id": "72953"
+      },
+      {
+        "name": "Brian McKnight",
+        "url": "https://genius.com/artists/Brian-mcknight",
+        "type": "regular",
+        "id": "6628"
+      },
+      {
+        "name": "Brian Wilson",
+        "url": "https://genius.com/artists/Brian-wilson",
+        "type": "regular",
+        "id": "57967"
+      },
+      {
+        "name": "Bridgit Mendler",
+        "url": "https://genius.com/artists/Bridgit-mendler",
+        "type": "regular",
+        "id": "26661"
+      },
+      {
+        "name": "Briga",
+        "url": "https://genius.com/artists/Briga",
+        "type": "regular",
+        "id": "100200"
+      },
+      {
+        "name": "Bright Eyes",
+        "url": "https://genius.com/artists/Bright-eyes",
+        "type": "regular",
+        "id": "8750"
+      },
+      {
+        "name": "Bring it On: The Musical - Original Broadway Cast",
+        "url": "https://genius.com/artists/Bring-it-on-the-musical-original-broadway-cast",
+        "type": "regular",
+        "id": "1416296"
+      },
+      {
+        "name": "Bring Me The Horizon",
+        "url": "https://genius.com/artists/Bring-me-the-horizon",
+        "type": "regular",
+        "id": "32137"
+      },
+      {
+        "name": "Briston Maroney",
+        "url": "https://genius.com/artists/Briston-maroney",
+        "type": "regular",
+        "id": "1443429"
+      },
+      {
+        "name": "Britney Manson",
+        "url": "https://genius.com/artists/Britney-manson",
+        "type": "regular",
+        "id": "3627686"
+      },
+      {
+        "name": "Brittany Broski",
+        "url": "https://genius.com/artists/Brittany-broski",
+        "type": "regular",
+        "id": "4360149"
+      },
+      {
+        "name": "Brittany Howard",
+        "url": "https://genius.com/artists/Brittany-howard",
+        "type": "regular",
+        "id": "641880"
+      },
+      {
+        "name": "Brittnee Belt",
+        "url": "https://genius.com/artists/Brittnee-belt",
+        "type": "regular",
+        "id": "1357458"
+      },
+      {
+        "name": "Brittney Spencer",
+        "url": "https://genius.com/artists/Brittney-spencer",
+        "type": "regular",
+        "id": "1823620"
+      },
+      {
+        "name": "Britton",
+        "url": "https://genius.com/artists/Britton",
+        "type": "regular",
+        "id": "1419835"
+      },
+      {
+        "name": "BØRNS",
+        "url": "https://genius.com/artists/Brns",
+        "type": "regular",
+        "id": "240008"
+      },
+      {
+        "name": "Broadcast",
+        "url": "https://genius.com/artists/Broadcast",
+        "type": "regular",
+        "id": "96772"
+      },
+      {
+        "name": "Broadway Karkat",
+        "url": "https://genius.com/artists/Broadway-karkat",
+        "type": "regular",
+        "id": "1565760"
+      },
+      {
+        "name": "The Brobecks",
+        "url": "https://genius.com/artists/The-brobecks",
+        "type": "regular",
+        "id": "198403"
+      },
+      {
+        "name": "BROCKHAMPTON",
+        "url": "https://genius.com/artists/Brockhampton",
+        "type": "regular",
+        "id": "323651"
+      },
+      {
+        "name": "Brodha V",
+        "url": "https://genius.com/artists/Brodha-v",
+        "type": "regular",
+        "id": "27010"
+      },
+      {
+        "name": "Brody Grant",
+        "url": "https://genius.com/artists/Brody-grant",
+        "type": "regular",
+        "id": "3894731"
+      },
+      {
+        "name": "brokeNCYDE",
+        "url": "https://genius.com/artists/Brokencyde",
+        "type": "regular",
+        "id": "1734"
+      },
+      {
+        "name": "Broken Social Scene",
+        "url": "https://genius.com/artists/Broken-social-scene",
+        "type": "regular",
+        "id": "30848"
+      },
+      {
+        "name": "Brokezart",
+        "url": "https://genius.com/artists/Brokezart",
+        "type": "regular",
+        "id": "1422498"
+      },
+      {
+        "name": "Bronski Beat",
+        "url": "https://genius.com/artists/Bronski-beat",
+        "type": "regular",
+        "id": "351765"
+      },
+      {
+        "name": "Brooke",
+        "url": "https://genius.com/artists/Brooke",
+        "type": "regular",
+        "id": "1656935"
+      },
+      {
+        "name": "Brooke Candy",
+        "url": "https://genius.com/artists/Brooke-candy",
+        "type": "regular",
+        "id": "29499"
+      },
+      {
+        "name": "Brooke Ligertwood",
+        "url": "https://genius.com/artists/Brooke-ligertwood",
+        "type": "regular",
+        "id": "182153"
+      },
+      {
+        "name": "Brooke Maxwell",
+        "url": "https://genius.com/artists/Brooke-maxwell",
+        "type": "regular",
+        "id": "2549161"
+      },
+      {
+        "name": "The Brooklyn Tabernacle Choir",
+        "url": "https://genius.com/artists/The-brooklyn-tabernacle-choir",
+        "type": "regular",
+        "id": "356680"
+      },
+      {
+        "name": "Brooks & Dunn",
+        "url": "https://genius.com/artists/Brooks-and-dunn",
+        "type": "regular",
+        "id": "50113"
+      },
+      {
+        "name": "Brotha Lynch Hung",
+        "url": "https://genius.com/artists/Brotha-lynch-hung",
+        "type": "regular",
+        "id": "1088"
+      },
+      {
+        "name": "Brother Ali",
+        "url": "https://genius.com/artists/Brother-ali",
+        "type": "regular",
+        "id": "1257"
+      },
+      {
+        "name": "BrotherKupa",
+        "url": "https://genius.com/artists/Brotherkupa",
+        "type": "regular",
+        "id": "3264065"
+      },
+      {
+        "name": "The Brown Singers",
+        "url": "https://genius.com/artists/The-brown-singers",
+        "type": "regular",
+        "id": "2351932"
+      },
+      {
+        "name": "Brray",
+        "url": "https://genius.com/artists/Brray",
+        "type": "regular",
+        "id": "637091"
+      },
+      {
+        "name": "BRS Kash",
+        "url": "https://genius.com/artists/Brs-kash",
+        "type": "regular",
+        "id": "1612031"
+      },
+      {
+        "name": "Bruce Adler",
+        "url": "https://genius.com/artists/Bruce-adler",
+        "type": "regular",
+        "id": "406263"
+      },
+      {
+        "name": "Bruce Cockburn",
+        "url": "https://genius.com/artists/Bruce-cockburn",
+        "type": "regular",
+        "id": "23828"
+      },
+      {
+        "name": "Bruce Hornsby & The Range",
+        "url": "https://genius.com/artists/Bruce-hornsby-and-the-range",
+        "type": "regular",
+        "id": "57669"
+      },
+      {
+        "name": "Bruno Coulais",
+        "url": "https://genius.com/artists/Bruno-coulais",
+        "type": "regular",
+        "id": "34129"
+      },
+      {
+        "name": "Bruno Major",
+        "url": "https://genius.com/artists/Bruno-major",
+        "type": "regular",
+        "id": "991546"
+      },
+      {
+        "name": "Brunori Sas",
+        "url": "https://genius.com/artists/Brunori-sas",
+        "type": "regular",
+        "id": "375497"
+      },
+      {
+        "name": "Brut",
+        "url": "https://genius.com/artists/Brut",
+        "type": "regular",
+        "id": "219682"
+      },
+      {
+        "name": "Brutalismus 3000",
+        "url": "https://genius.com/artists/Brutalismus-3000",
+        "type": "regular",
+        "id": "2612969"
+      },
+      {
+        "name": "Брутто (Brutto)",
+        "url": "https://genius.com/artists/Brutto",
+        "type": "regular",
+        "id": "1233599"
+      },
+      {
+        "name": "Bryan Ferry",
+        "url": "https://genius.com/artists/Bryan-ferry",
+        "type": "regular",
+        "id": "204913"
+      },
+      {
+        "name": "Bryant Barnes",
+        "url": "https://genius.com/artists/Bryant-barnes",
+        "type": "regular",
+        "id": "3658471"
+      },
+      {
+        "name": "Bryant Myers",
+        "url": "https://genius.com/artists/Bryant-myers",
+        "type": "regular",
+        "id": "624480"
+      },
+      {
+        "name": "Bryant Oden",
+        "url": "https://genius.com/artists/Bryant-oden",
+        "type": "regular",
+        "id": "208400"
+      },
+      {
+        "name": "Bryartz",
+        "url": "https://genius.com/artists/Bryartz",
+        "type": "regular",
+        "id": "2034290"
+      },
+      {
+        "name": "Bryce Leatherwood",
+        "url": "https://genius.com/artists/Bryce-leatherwood",
+        "type": "regular",
+        "id": "3773507"
+      },
+      {
+        "name": "Bryce Pinkham",
+        "url": "https://genius.com/artists/Bryce-pinkham",
+        "type": "regular",
+        "id": "452313"
+      },
+      {
+        "name": "Bryce Vine",
+        "url": "https://genius.com/artists/Bryce-vine",
+        "type": "regular",
+        "id": "42956"
+      },
+      {
+        "name": "BRYKULETS",
+        "url": "https://genius.com/artists/Brykulets",
+        "type": "regular",
+        "id": "4197766"
+      },
+      {
+        "name": "Bryson Gray",
+        "url": "https://genius.com/artists/Bryson-gray",
+        "type": "regular",
+        "id": "1067700"
+      },
+      {
+        "name": "Bryson Tiller",
+        "url": "https://genius.com/artists/Bryson-tiller",
+        "type": "regular",
+        "id": "264368"
+      },
+      {
+        "name": "Brytiago",
+        "url": "https://genius.com/artists/Brytiago",
+        "type": "regular",
+        "id": "625138"
+      },
+      {
+        "name": "BSWEEDY",
+        "url": "https://genius.com/artists/Bsweedy",
+        "type": "regular",
+        "id": "3635006"
+      },
+      {
+        "name": "BTS",
+        "url": "https://genius.com/artists/Bts",
+        "type": "regular",
+        "id": "70113"
+      },
+      {
+        "name": "Bub8les",
+        "url": "https://genius.com/artists/Bub8les",
+        "type": "regular",
+        "id": "3394412"
+      },
+      {
+        "name": "Bubble Guppies Cast",
+        "url": "https://genius.com/artists/Bubble-guppies-cast",
+        "type": "regular",
+        "id": "2475893"
+      },
+      {
+        "name": "Buckcherry",
+        "url": "https://genius.com/artists/Buckcherry",
+        "type": "regular",
+        "id": "20018"
+      },
+      {
+        "name": "Buck Owens",
+        "url": "https://genius.com/artists/Buck-owens",
+        "type": "regular",
+        "id": "63396"
+      },
+      {
+        "name": "Buckshot (@buckeshot)",
+        "url": "https://genius.com/artists/Buckshot-buckeshot",
+        "type": "regular",
+        "id": "2537762"
+      },
+      {
+        "name": "Buddahbeads",
+        "url": "https://genius.com/artists/Buddahbeads",
+        "type": "regular",
+        "id": "2297890"
+      },
+      {
+        "name": "Buddy Castle",
+        "url": "https://genius.com/artists/Buddy-castle",
+        "type": "regular",
+        "id": "2492640"
+      },
+      {
+        "name": "Buddy Guy",
+        "url": "https://genius.com/artists/Buddy-guy",
+        "type": "regular",
+        "id": "131422"
+      },
+      {
+        "name": "Buddy Holly",
+        "url": "https://genius.com/artists/Buddy-holly",
+        "type": "regular",
+        "id": "64977"
+      },
+      {
+        "name": "Buena Vista Social Club",
+        "url": "https://genius.com/artists/Buena-vista-social-club",
+        "type": "regular",
+        "id": "92824"
+      },
+      {
+        "name": "Буерак (Buerak)",
+        "url": "https://genius.com/artists/Buerak",
+        "type": "regular",
+        "id": "1098618"
+      },
+      {
+        "name": "Buffalo Springfield",
+        "url": "https://genius.com/artists/Buffalo-springfield",
+        "type": "regular",
+        "id": "31084"
+      },
+      {
+        "name": "The Buggles",
+        "url": "https://genius.com/artists/The-buggles",
+        "type": "regular",
+        "id": "32551"
+      },
+      {
+        "name": "B.U.G. Mafia",
+        "url": "https://genius.com/artists/Bug-mafia",
+        "type": "regular",
+        "id": "38244"
+      },
+      {
+        "name": "Bugoy Drilon",
+        "url": "https://genius.com/artists/Bugoy-drilon",
+        "type": "regular",
+        "id": "372070"
+      },
+      {
+        "name": "Bugoy na Koykoy",
+        "url": "https://genius.com/artists/Bugoy-na-koykoy",
+        "type": "regular",
+        "id": "1274536"
+      },
+      {
+        "name": "Bugzy Malone",
+        "url": "https://genius.com/artists/Bugzy-malone",
+        "type": "regular",
+        "id": "28799"
+      },
+      {
+        "name": "Built to Spill",
+        "url": "https://genius.com/artists/Built-to-spill",
+        "type": "regular",
+        "id": "15997"
+      },
+      {
+        "name": "Buju Banton",
+        "url": "https://genius.com/artists/Buju-banton",
+        "type": "regular",
+        "id": "5896"
+      },
+      {
+        "name": "Bukas Palad Music Ministry",
+        "url": "https://genius.com/artists/Bukas-palad-music-ministry",
+        "type": "regular",
+        "id": "2611098"
+      },
+      {
+        "name": "Buč Kesidi",
+        "url": "https://genius.com/artists/Buc-kesidi",
+        "type": "regular",
+        "id": "1644515"
+      },
+      {
+        "name": "Bulin 47",
+        "url": "https://genius.com/artists/Bulin-47",
+        "type": "regular",
+        "id": "1481649"
+      },
+      {
+        "name": "bulk_machine",
+        "url": "https://genius.com/artists/Bulk-machine",
+        "type": "regular",
+        "id": "4206967"
+      },
+      {
+        "name": "Bullet For My Valentine",
+        "url": "https://genius.com/artists/Bullet-for-my-valentine",
+        "type": "regular",
+        "id": "37666"
+      },
+      {
+        "name": "Bulutsuzluk Özlemi",
+        "url": "https://genius.com/artists/Bulutsuzluk-ozlemi",
+        "type": "regular",
+        "id": "353382"
+      },
+      {
+        "name": "Bumble Beezy",
+        "url": "https://genius.com/artists/Bumble-beezy",
+        "type": "regular",
+        "id": "215010"
+      },
+      {
+        "name": "Бумбокс (Bumboks)",
+        "url": "https://genius.com/artists/Bumboks",
+        "type": "regular",
+        "id": "1265811"
+      },
+      {
+        "name": "Bunbury",
+        "url": "https://genius.com/artists/Bunbury",
+        "type": "regular",
+        "id": "362561"
+      },
+      {
+        "name": "Bunga Citra Lestari",
+        "url": "https://genius.com/artists/Bunga-citra-lestari",
+        "type": "regular",
+        "id": "372067"
+      },
+      {
+        "name": "bunii",
+        "url": "https://genius.com/artists/Bunii",
+        "type": "regular",
+        "id": "4059139"
+      },
+      {
+        "name": "BunnaB",
+        "url": "https://genius.com/artists/Bunnab",
+        "type": "regular",
+        "id": "3648867"
+      },
+      {
+        "name": "Burak Bulut",
+        "url": "https://genius.com/artists/Burak-bulut",
+        "type": "regular",
+        "id": "2759935"
+      },
+      {
+        "name": "Buray",
+        "url": "https://genius.com/artists/Buray",
+        "type": "regular",
+        "id": "651318"
+      },
+      {
+        "name": "Burger King",
+        "url": "https://genius.com/artists/Burger-king",
+        "type": "regular",
+        "id": "67911"
+      },
+      {
+        "name": "Burl Ives",
+        "url": "https://genius.com/artists/Burl-ives",
+        "type": "regular",
+        "id": "103765"
+      },
+      {
+        "name": "Burna Boy",
+        "url": "https://genius.com/artists/Burna-boy",
+        "type": "regular",
+        "id": "39313"
+      },
+      {
+        "name": "Burt Bacharach",
+        "url": "https://genius.com/artists/Burt-bacharach",
+        "type": "regular",
+        "id": "73335"
+      },
+      {
+        "name": "Bury Tomorrow",
+        "url": "https://genius.com/artists/Bury-tomorrow",
+        "type": "regular",
+        "id": "101313"
+      },
+      {
+        "name": "Burzum",
+        "url": "https://genius.com/artists/Burzum",
+        "type": "regular",
+        "id": "153511"
+      },
+      {
+        "name": "BUS",
+        "url": "https://genius.com/artists/Bus",
+        "type": "regular",
+        "id": "3759181"
+      },
+      {
+        "name": "Buscabulla",
+        "url": "https://genius.com/artists/Buscabulla",
+        "type": "regular",
+        "id": "526233"
+      },
+      {
+        "name": "Bush",
+        "url": "https://genius.com/artists/Bush",
+        "type": "regular",
+        "id": "20009"
+      },
+      {
+        "name": "BU$HI",
+        "url": "https://genius.com/artists/Bu-hi",
+        "type": "regular",
+        "id": "1233575"
+      },
+      {
+        "name": "Bushido",
+        "url": "https://genius.com/artists/Bushido",
+        "type": "regular",
+        "id": "12338"
+      },
+      {
+        "name": "BUSHIDO ZHO",
+        "url": "https://genius.com/artists/Bushido-zho",
+        "type": "regular",
+        "id": "1793301"
+      },
+      {
+        "name": "BUSHPIG SCATBUTCHER",
+        "url": "https://genius.com/artists/Bushpig-scatbutcher",
+        "type": "regular",
+        "id": "217249"
+      },
+      {
+        "name": "Busta Rhymes",
+        "url": "https://genius.com/artists/Busta-rhymes",
+        "type": "regular",
+        "id": "338"
+      },
+      {
+        "name": "Busted",
+        "url": "https://genius.com/artists/Busted",
+        "type": "regular",
+        "id": "158503"
+      },
+      {
+        "name": "BUSTER",
+        "url": "https://genius.com/artists/Buster",
+        "type": "regular",
+        "id": "2346240"
+      },
+      {
+        "name": "Busy Signal",
+        "url": "https://genius.com/artists/Busy-signal",
+        "type": "regular",
+        "id": "8690"
+      },
+      {
+        "name": "Buta",
+        "url": "https://genius.com/artists/Buta",
+        "type": "regular",
+        "id": "54094"
+      },
+      {
+        "name": "The Butcher Sisters",
+        "url": "https://genius.com/artists/The-butcher-sisters",
+        "type": "regular",
+        "id": "1233082"
+      },
+      {
+        "name": "Butrint Imeri",
+        "url": "https://genius.com/artists/Butrint-imeri",
+        "type": "regular",
+        "id": "1171939"
+      },
+      {
+        "name": "Butthole Surfers",
+        "url": "https://genius.com/artists/Butthole-surfers",
+        "type": "regular",
+        "id": "35359"
+      },
+      {
+        "name": "The Buttress",
+        "url": "https://genius.com/artists/The-buttress",
+        "type": "regular",
+        "id": "49383"
+      },
+      {
+        "name": "Бутырка (Butyrka)",
+        "url": "https://genius.com/artists/Butyrka",
+        "type": "regular",
+        "id": "1557927"
+      },
+      {
+        "name": "Buzzcocks",
+        "url": "https://genius.com/artists/Buzzcocks",
+        "type": "regular",
+        "id": "184046"
+      },
+      {
+        "name": "Bvcovia",
+        "url": "https://genius.com/artists/Bvcovia",
+        "type": "regular",
+        "id": "1313251"
+      },
+      {
+        "name": "By Индия (By India)",
+        "url": "https://genius.com/artists/By-by-india",
+        "type": "regular",
+        "id": "2164469"
+      },
+      {
+        "name": "The Byrds",
+        "url": "https://genius.com/artists/The-byrds",
+        "type": "regular",
+        "id": "45703"
+      },
+      {
+        "name": "Byron Cage",
+        "url": "https://genius.com/artists/Byron-cage",
+        "type": "regular",
+        "id": "355162"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4513 @@
+{
+  "letter": "0",
+  "timestamp": "2025-07-11T19:53:46.563Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "10cc",
+        "url": "https://genius.com/artists/10cc",
+        "type": "popular",
+        "id": "34886"
+      },
+      {
+        "name": "163ONMYNECK",
+        "url": "https://genius.com/artists/163onmyneck",
+        "type": "popular",
+        "id": "1778216"
+      },
+      {
+        "name": "The 1975",
+        "url": "https://genius.com/artists/The-1975",
+        "type": "popular",
+        "id": "45824"
+      },
+      {
+        "name": "1.Kla$",
+        "url": "https://genius.com/artists/1kla",
+        "type": "popular",
+        "id": "1154082"
+      },
+      {
+        "name": "21 Savage",
+        "url": "https://genius.com/artists/21-savage",
+        "type": "popular",
+        "id": "430404"
+      },
+      {
+        "name": "26is",
+        "url": "https://genius.com/artists/26is",
+        "type": "popular",
+        "id": "4088545"
+      },
+      {
+        "name": "2 Chainz",
+        "url": "https://genius.com/artists/2-chainz",
+        "type": "popular",
+        "id": "14325"
+      },
+      {
+        "name": "2hollis",
+        "url": "https://genius.com/artists/2hollis",
+        "type": "popular",
+        "id": "2628056"
+      },
+      {
+        "name": "2Pac",
+        "url": "https://genius.com/artists/2pac",
+        "type": "popular",
+        "id": "59"
+      },
+      {
+        "name": "3 Doors Down",
+        "url": "https://genius.com/artists/3-doors-down",
+        "type": "popular",
+        "id": "66472"
+      },
+      {
+        "name": "41",
+        "url": "https://genius.com/artists/41",
+        "type": "popular",
+        "id": "3348849"
+      },
+      {
+        "name": "АК-47 (AK-47)",
+        "url": "https://genius.com/artists/47-ak-47",
+        "type": "popular",
+        "id": "49047"
+      },
+      {
+        "name": "4 Non Blondes",
+        "url": "https://genius.com/artists/4-non-blondes",
+        "type": "popular",
+        "id": "82084"
+      },
+      {
+        "name": "50 Cent",
+        "url": "https://genius.com/artists/50-cent",
+        "type": "popular",
+        "id": "108"
+      },
+      {
+        "name": "5mewmet",
+        "url": "https://genius.com/artists/5mewmet",
+        "type": "popular",
+        "id": "3734965"
+      },
+      {
+        "name": "5 Seconds of Summer",
+        "url": "https://genius.com/artists/5-seconds-of-summer",
+        "type": "popular",
+        "id": "64610"
+      },
+      {
+        "name": "6arelyhuman",
+        "url": "https://genius.com/artists/6arelyhuman",
+        "type": "popular",
+        "id": "2852544"
+      },
+      {
+        "name": "6ix9ine",
+        "url": "https://genius.com/artists/6ix9ine",
+        "type": "popular",
+        "id": "1124097"
+      },
+      {
+        "name": "6LACK",
+        "url": "https://genius.com/artists/6lack",
+        "type": "popular",
+        "id": "189848"
+      },
+      {
+        "name": "9mice",
+        "url": "https://genius.com/artists/9mice",
+        "type": "popular",
+        "id": "2888370"
+      }
+    ],
+    "regular": [
+      {
+        "name": "0",
+        "url": "https://genius.com/artists/0",
+        "type": "regular",
+        "id": "38078"
+      },
+      {
+        "name": "003",
+        "url": "https://genius.com/artists/003",
+        "type": "regular",
+        "id": "550780"
+      },
+      {
+        "name": "009 Sound System",
+        "url": "https://genius.com/artists/009-sound-system",
+        "type": "regular",
+        "id": "179011"
+      },
+      {
+        "name": "0 похвал (0 pohval)",
+        "url": "https://genius.com/artists/0-0-pohval",
+        "type": "regular",
+        "id": "3398874"
+      },
+      {
+        "name": "01099",
+        "url": "https://genius.com/artists/01099",
+        "type": "regular",
+        "id": "1984410"
+      },
+      {
+        "name": "017KIYOSHI",
+        "url": "https://genius.com/artists/017kiyoshi",
+        "type": "regular",
+        "id": "3151989"
+      },
+      {
+        "name": "01an",
+        "url": "https://genius.com/artists/01an",
+        "type": "regular",
+        "id": "2796700"
+      },
+      {
+        "name": "021G",
+        "url": "https://genius.com/artists/021g",
+        "type": "regular",
+        "id": "3029228"
+      },
+      {
+        "name": "021kid",
+        "url": "https://genius.com/artists/021kid",
+        "type": "regular",
+        "id": "1907718"
+      },
+      {
+        "name": "02ashes",
+        "url": "https://genius.com/artists/02ashes",
+        "type": "regular",
+        "id": "2715902"
+      },
+      {
+        "name": "031CHOPPA",
+        "url": "https://genius.com/artists/031choppa",
+        "type": "regular",
+        "id": "2388517"
+      },
+      {
+        "name": "03 Greedo",
+        "url": "https://genius.com/artists/03-greedo",
+        "type": "regular",
+        "id": "1186883"
+      },
+      {
+        "name": "03osc",
+        "url": "https://genius.com/artists/03osc",
+        "type": "regular",
+        "id": "2797852"
+      },
+      {
+        "name": "03- Performance",
+        "url": "https://genius.com/artists/03-performance",
+        "type": "regular",
+        "id": "3187461"
+      },
+      {
+        "name": "044 ROSE",
+        "url": "https://genius.com/artists/044-rose",
+        "type": "regular",
+        "id": "1048633"
+      },
+      {
+        "name": "The 046",
+        "url": "https://genius.com/artists/The-046",
+        "type": "regular",
+        "id": "2250002"
+      },
+      {
+        "name": "070",
+        "url": "https://genius.com/artists/070",
+        "type": "regular",
+        "id": "990434"
+      },
+      {
+        "name": "070 Shake",
+        "url": "https://genius.com/artists/070-shake",
+        "type": "regular",
+        "id": "650841"
+      },
+      {
+        "name": "нольвосьмой (08)",
+        "url": "https://genius.com/artists/08",
+        "type": "regular",
+        "id": "3589361"
+      },
+      {
+        "name": "ゆーり (0906yurin)",
+        "url": "https://genius.com/artists/0906yurin",
+        "type": "regular",
+        "id": "4204018"
+      },
+      {
+        "name": "091",
+        "url": "https://genius.com/artists/091",
+        "type": "regular",
+        "id": "1032433"
+      },
+      {
+        "name": "0artew",
+        "url": "https://genius.com/artists/0artew",
+        "type": "regular",
+        "id": "4129616"
+      },
+      {
+        "name": "0bey0pe",
+        "url": "https://genius.com/artists/0bey0pe",
+        "type": "regular",
+        "id": "4338141"
+      },
+      {
+        "name": "0nce_nd_83b",
+        "url": "https://genius.com/artists/0nce-nd-83b",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "0rzeł",
+        "url": "https://genius.com/artists/0rze",
+        "type": "regular",
+        "id": "3738365"
+      },
+      {
+        "name": "0to8",
+        "url": "https://genius.com/artists/0to8",
+        "type": "regular",
+        "id": "3345414"
+      },
+      {
+        "name": "0WAVE",
+        "url": "https://genius.com/artists/0wave",
+        "type": "regular",
+        "id": "3381244"
+      },
+      {
+        "name": "0XIG3N",
+        "url": "https://genius.com/artists/0xig3n",
+        "type": "regular",
+        "id": "2248785"
+      },
+      {
+        "name": "0zyyd",
+        "url": "https://genius.com/artists/0zyyd",
+        "type": "regular",
+        "id": "2597734"
+      },
+      {
+        "name": "1000 Слов",
+        "url": "https://genius.com/artists/1000",
+        "type": "regular",
+        "id": "1439237"
+      },
+      {
+        "name": "10,000 Fathers",
+        "url": "https://genius.com/artists/10000-fathers",
+        "type": "regular",
+        "id": "1145874"
+      },
+      {
+        "name": "10,000 Maniacs",
+        "url": "https://genius.com/artists/10000-maniacs",
+        "type": "regular",
+        "id": "329672"
+      },
+      {
+        "name": "1000mods",
+        "url": "https://genius.com/artists/1000mods",
+        "type": "regular",
+        "id": "261969"
+      },
+      {
+        "name": "100 Атмосфер (100 Atmosfer)",
+        "url": "https://genius.com/artists/100-100-atmosfer",
+        "type": "regular",
+        "id": "1507055"
+      },
+      {
+        "name": "100лиця (100lytsia)",
+        "url": "https://genius.com/artists/100-100lytsia",
+        "type": "regular",
+        "id": "3525940"
+      },
+      {
+        "name": "100Bandplan",
+        "url": "https://genius.com/artists/100bandplan",
+        "type": "regular",
+        "id": "4282894"
+      },
+      {
+        "name": "100BandXan",
+        "url": "https://genius.com/artists/100bandxan",
+        "type": "regular",
+        "id": "1314665"
+      },
+      {
+        "name": "100 Blaze",
+        "url": "https://genius.com/artists/100-blaze",
+        "type": "regular",
+        "id": "544293"
+      },
+      {
+        "name": "100 Demons",
+        "url": "https://genius.com/artists/100-demons",
+        "type": "regular",
+        "id": "344488"
+      },
+      {
+        "name": "100 gecs",
+        "url": "https://genius.com/artists/100-gecs",
+        "type": "regular",
+        "id": "1048712"
+      },
+      {
+        "name": "100 KILA",
+        "url": "https://genius.com/artists/100-kila",
+        "type": "regular",
+        "id": "18801"
+      },
+      {
+        "name": "100K Track",
+        "url": "https://genius.com/artists/100k-track",
+        "type": "regular",
+        "id": "2768374"
+      },
+      {
+        "name": "100 OTD",
+        "url": "https://genius.com/artists/100-otd",
+        "type": "regular",
+        "id": "3801129"
+      },
+      {
+        "name": "100 RBH",
+        "url": "https://genius.com/artists/100-rbh",
+        "type": "regular",
+        "id": "1739183"
+      },
+      {
+        "name": "100% (Rock)",
+        "url": "https://genius.com/artists/100-rock",
+        "type": "regular",
+        "id": "3061578"
+      },
+      {
+        "name": "Те100стерон (RUS)",
+        "url": "https://genius.com/artists/100-rus",
+        "type": "regular",
+        "id": "2645052"
+      },
+      {
+        "name": "100s",
+        "url": "https://genius.com/artists/100s",
+        "type": "regular",
+        "id": "49243"
+      },
+      {
+        "name": "10 дней без горячей воды (10 dney bez goryachey vody)",
+        "url": "https://genius.com/artists/10-10-dney-bez-goryachey-vody",
+        "type": "regular",
+        "id": "1385111"
+      },
+      {
+        "name": "1017 ALYX 9SM",
+        "url": "https://genius.com/artists/1017-alyx-9sm",
+        "type": "regular",
+        "id": "3605142"
+      },
+      {
+        "name": "1017 (Artist)",
+        "url": "https://genius.com/artists/1017-artist",
+        "type": "regular",
+        "id": "1674959"
+      },
+      {
+        "name": "1019",
+        "url": "https://genius.com/artists/1019",
+        "type": "regular",
+        "id": "2982204"
+      },
+      {
+        "name": "101Barz",
+        "url": "https://genius.com/artists/101barz",
+        "type": "regular",
+        "id": "134675"
+      },
+      {
+        "name": "火箭少女101 (Rocket Girls 101)",
+        "url": "https://genius.com/artists/101-rocket-girls-101",
+        "type": "regular",
+        "id": "1723549"
+      },
+      {
+        "name": "101 Strings Orchestra",
+        "url": "https://genius.com/artists/101-strings-orchestra",
+        "type": "regular",
+        "id": "459026"
+      },
+      {
+        "name": "102 Boyz",
+        "url": "https://genius.com/artists/102-boyz",
+        "type": "regular",
+        "id": "839711"
+      },
+      {
+        "name": "1030 Tuwop",
+        "url": "https://genius.com/artists/1030-tuwop",
+        "type": "regular",
+        "id": "1236445"
+      },
+      {
+        "name": "104",
+        "url": "https://genius.com/artists/104",
+        "type": "regular",
+        "id": "1024738"
+      },
+      {
+        "name": "108",
+        "url": "https://genius.com/artists/108",
+        "type": "regular",
+        "id": "1200424"
+      },
+      {
+        "name": "1096Gang",
+        "url": "https://genius.com/artists/1096gang",
+        "type": "regular",
+        "id": "2557905"
+      },
+      {
+        "name": "10AGE",
+        "url": "https://genius.com/artists/10age",
+        "type": "regular",
+        "id": "1792127"
+      },
+      {
+        "name": "10cellphones",
+        "url": "https://genius.com/artists/10cellphones",
+        "type": "regular",
+        "id": "1264467"
+      },
+      {
+        "name": "10CM",
+        "url": "https://genius.com/artists/10cm",
+        "type": "regular",
+        "id": "69352"
+      },
+      {
+        "name": "10-FEET",
+        "url": "https://genius.com/artists/10-feet",
+        "type": "regular",
+        "id": "3340438"
+      },
+      {
+        "name": "10 Ft. Ganja Plant",
+        "url": "https://genius.com/artists/10-ft-ganja-plant",
+        "type": "regular",
+        "id": "977312"
+      },
+      {
+        "name": "10k.Caash",
+        "url": "https://genius.com/artists/10kcaash",
+        "type": "regular",
+        "id": "1635995"
+      },
+      {
+        "name": "10KDunkin",
+        "url": "https://genius.com/artists/10kdunkin",
+        "type": "regular",
+        "id": "1152450"
+      },
+      {
+        "name": "10kkev",
+        "url": "https://genius.com/artists/10kkev",
+        "type": "regular",
+        "id": "1981051"
+      },
+      {
+        "name": "10TA Lil A",
+        "url": "https://genius.com/artists/10ta-lil-a",
+        "type": "regular",
+        "id": "2397454"
+      },
+      {
+        "name": "10th Anniversary Cast of Les Misérables",
+        "url": "https://genius.com/artists/10th-anniversary-cast-of-les-miserables",
+        "type": "regular",
+        "id": "4052612"
+      },
+      {
+        "name": "10Tik",
+        "url": "https://genius.com/artists/10tik",
+        "type": "regular",
+        "id": "2634812"
+      },
+      {
+        "name": "10 Years",
+        "url": "https://genius.com/artists/10-years",
+        "type": "regular",
+        "id": "89600"
+      },
+      {
+        "name": "1100 Himself",
+        "url": "https://genius.com/artists/1100-himself",
+        "type": "regular",
+        "id": "3083365"
+      },
+      {
+        "name": "11:11",
+        "url": "https://genius.com/artists/11-11",
+        "type": "regular",
+        "id": "572581"
+      },
+      {
+        "name": "112",
+        "url": "https://genius.com/artists/112",
+        "type": "regular",
+        "id": "504"
+      },
+      {
+        "name": "113",
+        "url": "https://genius.com/artists/113",
+        "type": "regular",
+        "id": "11574"
+      },
+      {
+        "name": "116",
+        "url": "https://genius.com/artists/116",
+        "type": "regular",
+        "id": "9634"
+      },
+      {
+        "name": "#11FOG Lowkey",
+        "url": "https://genius.com/artists/11fog-lowkey",
+        "type": "regular",
+        "id": "2075026"
+      },
+      {
+        "name": "121SELAH",
+        "url": "https://genius.com/artists/121selah",
+        "type": "regular",
+        "id": "3114123"
+      },
+      {
+        "name": "1230 Klassick",
+        "url": "https://genius.com/artists/1230-klassick",
+        "type": "regular",
+        "id": "2800495"
+      },
+      {
+        "name": "125, rue montmartre",
+        "url": "https://genius.com/artists/125-rue-montmartre",
+        "type": "regular",
+        "id": "1763675"
+      },
+      {
+        "name": "12BH",
+        "url": "https://genius.com/artists/12bh",
+        "type": "regular",
+        "id": "4059457"
+      },
+      {
+        "name": "12 Gauge",
+        "url": "https://genius.com/artists/12-gauge",
+        "type": "regular",
+        "id": "403763"
+      },
+      {
+        "name": "12os Pithikos",
+        "url": "https://genius.com/artists/12os-pithikos",
+        "type": "regular",
+        "id": "38749"
+      },
+      {
+        "name": "12 Rods",
+        "url": "https://genius.com/artists/12-rods",
+        "type": "regular",
+        "id": "373717"
+      },
+      {
+        "name": "12 Stones",
+        "url": "https://genius.com/artists/12-stones",
+        "type": "regular",
+        "id": "137067"
+      },
+      {
+        "name": "12st Three",
+        "url": "https://genius.com/artists/12st-three",
+        "type": "regular",
+        "id": "4315062"
+      },
+      {
+        "name": "12th Street",
+        "url": "https://genius.com/artists/12th-street",
+        "type": "regular",
+        "id": "2604324"
+      },
+      {
+        "name": "1300SAINT",
+        "url": "https://genius.com/artists/1300saint",
+        "type": "regular",
+        "id": "3524608"
+      },
+      {
+        "name": "1337",
+        "url": "https://genius.com/artists/1337",
+        "type": "regular",
+        "id": "2653351"
+      },
+      {
+        "name": "Школа №134 (School №134)",
+        "url": "https://genius.com/artists/No134-school-no134",
+        "type": "regular",
+        "id": "2826563"
+      },
+      {
+        "name": "13 Block",
+        "url": "https://genius.com/artists/13-block",
+        "type": "regular",
+        "id": "327072"
+      },
+      {
+        "name": "13K",
+        "url": "https://genius.com/artists/13k",
+        "type": "regular",
+        "id": "4058816"
+      },
+      {
+        "name": "13Kai",
+        "url": "https://genius.com/artists/13kai",
+        "type": "regular",
+        "id": "1852220"
+      },
+      {
+        "name": "13 Killoki",
+        "url": "https://genius.com/artists/13-killoki",
+        "type": "regular",
+        "id": "2597631"
+      },
+      {
+        "name": "13majki",
+        "url": "https://genius.com/artists/13majki",
+        "type": "regular",
+        "id": "3383118"
+      },
+      {
+        "name": "13Many",
+        "url": "https://genius.com/artists/13many",
+        "type": "regular",
+        "id": "4017069"
+      },
+      {
+        "name": "13 Organisé",
+        "url": "https://genius.com/artists/13-organise",
+        "type": "regular",
+        "id": "2426551"
+      },
+      {
+        "name": "П13 (P13)",
+        "url": "https://genius.com/artists/13-p13",
+        "type": "regular",
+        "id": "1387064"
+      },
+      {
+        "name": "The 13th Floor Elevators",
+        "url": "https://genius.com/artists/The-13th-floor-elevators",
+        "type": "regular",
+        "id": "70365"
+      },
+      {
+        "name": "140 BPM Battle",
+        "url": "https://genius.com/artists/140-bpm-battle",
+        "type": "regular",
+        "id": "1014895"
+      },
+      {
+        "name": "143leti",
+        "url": "https://genius.com/artists/143leti",
+        "type": "regular",
+        "id": "3867647"
+      },
+      {
+        "name": "14HunnidBoiz",
+        "url": "https://genius.com/artists/14hunnidboiz",
+        "type": "regular",
+        "id": "3683023"
+      },
+      {
+        "name": "14ly (HKG)",
+        "url": "https://genius.com/artists/14ly-hkg",
+        "type": "regular",
+        "id": "4000983"
+      },
+      {
+        "name": "1501",
+        "url": "https://genius.com/artists/1501",
+        "type": "regular",
+        "id": "2989601"
+      },
+      {
+        "name": "156/Silence",
+        "url": "https://genius.com/artists/156-silence",
+        "type": "regular",
+        "id": "1000758"
+      },
+      {
+        "name": "Урицкого157 (Yritskogo157)",
+        "url": "https://genius.com/artists/157-yritskogo157",
+        "type": "regular",
+        "id": "3884040"
+      },
+      {
+        "name": "158",
+        "url": "https://genius.com/artists/158",
+        "type": "regular",
+        "id": "1519333"
+      },
+      {
+        "name": "1600j",
+        "url": "https://genius.com/artists/1600j",
+        "type": "regular",
+        "id": "1357101"
+      },
+      {
+        "name": "1621",
+        "url": "https://genius.com/artists/1621",
+        "type": "regular",
+        "id": "3747210"
+      },
+      {
+        "name": "163Margs",
+        "url": "https://genius.com/artists/163margs",
+        "type": "regular",
+        "id": "3653575"
+      },
+      {
+        "name": "167 Gang",
+        "url": "https://genius.com/artists/167-gang",
+        "type": "regular",
+        "id": "2147677"
+      },
+      {
+        "name": "16:9 krollo ✥",
+        "url": "https://genius.com/artists/16-9-krollo",
+        "type": "regular",
+        "id": "3227218"
+      },
+      {
+        "name": "16 Horsepower",
+        "url": "https://genius.com/artists/16-horsepower",
+        "type": "regular",
+        "id": "363234"
+      },
+      {
+        "name": "16RUS",
+        "url": "https://genius.com/artists/16rus",
+        "type": "regular",
+        "id": "2615705"
+      },
+      {
+        "name": "16volt",
+        "url": "https://genius.com/artists/16volt",
+        "type": "regular",
+        "id": "354361"
+      },
+      {
+        "name": "16yrold",
+        "url": "https://genius.com/artists/16yrold",
+        "type": "regular",
+        "id": "215175"
+      },
+      {
+        "name": "1789, Les Amants De La Bastille",
+        "url": "https://genius.com/artists/1789-les-amants-de-la-bastille",
+        "type": "regular",
+        "id": "406092"
+      },
+      {
+        "name": "джугмейн178рус (juggmane178rus)",
+        "url": "https://genius.com/artists/178-juggmane178rus",
+        "type": "regular",
+        "id": "2837338"
+      },
+      {
+        "name": "17Beats",
+        "url": "https://genius.com/artists/17beats",
+        "type": "regular",
+        "id": "2243834"
+      },
+      {
+        "name": "17-й независимый баттл Hip-Hop.Ru (iBattle 17)",
+        "url": "https://genius.com/artists/17-hip-hopru-ibattle-17",
+        "type": "regular",
+        "id": "1995594"
+      },
+      {
+        "name": "17 SEVENTEEN",
+        "url": "https://genius.com/artists/17-seventeen",
+        "type": "regular",
+        "id": "2707615"
+      },
+      {
+        "name": "1-800-PAIN",
+        "url": "https://genius.com/artists/1-800-pain",
+        "type": "regular",
+        "id": "2360320"
+      },
+      {
+        "name": "187 Mobstaz",
+        "url": "https://genius.com/artists/187-mobstaz",
+        "type": "regular",
+        "id": "204623"
+      },
+      {
+        "name": "187 (SRB)",
+        "url": "https://genius.com/artists/187-srb",
+        "type": "regular",
+        "id": "2675948"
+      },
+      {
+        "name": "187 Strassenbande",
+        "url": "https://genius.com/artists/187-strassenbande",
+        "type": "regular",
+        "id": "19650"
+      },
+      {
+        "name": "18 Bonez",
+        "url": "https://genius.com/artists/18-bonez",
+        "type": "regular",
+        "id": "4216253"
+      },
+      {
+        "name": "18 Carat Affair",
+        "url": "https://genius.com/artists/18-carat-affair",
+        "type": "regular",
+        "id": "336019"
+      },
+      {
+        "name": "Формат18 (Format18)",
+        "url": "https://genius.com/artists/18-format18",
+        "type": "regular",
+        "id": "3518726"
+      },
+      {
+        "name": "#18 Grippa",
+        "url": "https://genius.com/artists/18-grippa",
+        "type": "regular",
+        "id": "4382352"
+      },
+      {
+        "name": "18K",
+        "url": "https://genius.com/artists/18k",
+        "type": "regular",
+        "id": "3029097"
+      },
+      {
+        "name": "18 Karat",
+        "url": "https://genius.com/artists/18-karat",
+        "type": "regular",
+        "id": "547530"
+      },
+      {
+        "name": "18stop",
+        "url": "https://genius.com/artists/18stop",
+        "type": "regular",
+        "id": "3396376"
+      },
+      {
+        "name": "1900Rugrat",
+        "url": "https://genius.com/artists/1900rugrat",
+        "type": "regular",
+        "id": "4126086"
+      },
+      {
+        "name": "1910 Fruitgum Company",
+        "url": "https://genius.com/artists/1910-fruitgum-company",
+        "type": "regular",
+        "id": "80678"
+      },
+      {
+        "name": "1914",
+        "url": "https://genius.com/artists/1914",
+        "type": "regular",
+        "id": "52783"
+      },
+      {
+        "name": "1927",
+        "url": "https://genius.com/artists/1927",
+        "type": "regular",
+        "id": "373927"
+      },
+      {
+        "name": "1966 Music Theater of Lincoln Center Cast of Annie Get Your Gun",
+        "url": "https://genius.com/artists/1966-music-theater-of-lincoln-center-cast-of-annie-get-your-gun",
+        "type": "regular",
+        "id": "3003557"
+      },
+      {
+        "name": "1974 AD",
+        "url": "https://genius.com/artists/1974-ad",
+        "type": "regular",
+        "id": "533309"
+      },
+      {
+        "name": "1982",
+        "url": "https://genius.com/artists/1982",
+        "type": "regular",
+        "id": "29988"
+      },
+      {
+        "name": "1986 Omega Tribe",
+        "url": "https://genius.com/artists/1986-omega-tribe",
+        "type": "regular",
+        "id": "2223749"
+      },
+      {
+        "name": "1986zig",
+        "url": "https://genius.com/artists/1986zig",
+        "type": "regular",
+        "id": "2680605"
+      },
+      {
+        "name": "1995",
+        "url": "https://genius.com/artists/1995",
+        "type": "regular",
+        "id": "12091"
+      },
+      {
+        "name": "1995 (Producer)",
+        "url": "https://genius.com/artists/1995-producer",
+        "type": "regular",
+        "id": "258636"
+      },
+      {
+        "name": "The 1999",
+        "url": "https://genius.com/artists/The-1999",
+        "type": "regular",
+        "id": "91539"
+      },
+      {
+        "name": "1999 Broadway Cast of Annie Get Your Gun",
+        "url": "https://genius.com/artists/1999-broadway-cast-of-annie-get-your-gun",
+        "type": "regular",
+        "id": "491953"
+      },
+      {
+        "name": "1999 WRITE THE FUTURE",
+        "url": "https://genius.com/artists/1999-write-the-future",
+        "type": "regular",
+        "id": "3696545"
+      },
+      {
+        "name": "19F",
+        "url": "https://genius.com/artists/19f",
+        "type": "regular",
+        "id": "3758416"
+      },
+      {
+        "name": "1Aaron",
+        "url": "https://genius.com/artists/1aaron",
+        "type": "regular",
+        "id": "2319955"
+      },
+      {
+        "name": "1adaaaan",
+        "url": "https://genius.com/artists/1adaaaan",
+        "type": "regular",
+        "id": "2616264"
+      },
+      {
+        "name": "1adro",
+        "url": "https://genius.com/artists/1adro",
+        "type": "regular",
+        "id": "4350645"
+      },
+      {
+        "name": "1afflicted",
+        "url": "https://genius.com/artists/1afflicted",
+        "type": "regular",
+        "id": "3407734"
+      },
+      {
+        "name": "1c",
+        "url": "https://genius.com/artists/1c",
+        "type": "regular",
+        "id": "3178009"
+      },
+      {
+        "name": "艾斯凯瑞 (1CEKary)",
+        "url": "https://genius.com/artists/1cekary",
+        "type": "regular",
+        "id": "4457287"
+      },
+      {
+        "name": "1ches",
+        "url": "https://genius.com/artists/1ches",
+        "type": "regular",
+        "id": "3977593"
+      },
+      {
+        "name": "1crusafix",
+        "url": "https://genius.com/artists/1crusafix",
+        "type": "regular",
+        "id": "2448145"
+      },
+      {
+        "name": "1.Cuz",
+        "url": "https://genius.com/artists/1cuz",
+        "type": "regular",
+        "id": "1658385"
+      },
+      {
+        "name": "1D1R",
+        "url": "https://genius.com/artists/1d1r",
+        "type": "regular",
+        "id": "3133838"
+      },
+      {
+        "name": "1da Banton",
+        "url": "https://genius.com/artists/1da-banton",
+        "type": "regular",
+        "id": "1999167"
+      },
+      {
+        "name": "1gnis",
+        "url": "https://genius.com/artists/1gnis",
+        "type": "regular",
+        "id": "3042845"
+      },
+      {
+        "name": "1Kilo",
+        "url": "https://genius.com/artists/1kilo",
+        "type": "regular",
+        "id": "1052471"
+      },
+      {
+        "name": "1K Phew",
+        "url": "https://genius.com/artists/1k-phew",
+        "type": "regular",
+        "id": "593391"
+      },
+      {
+        "name": "1mere",
+        "url": "https://genius.com/artists/1mere",
+        "type": "regular",
+        "id": "1213331"
+      },
+      {
+        "name": "1MILL",
+        "url": "https://genius.com/artists/1mill",
+        "type": "regular",
+        "id": "2077723"
+      },
+      {
+        "name": "1MillionU$D",
+        "url": "https://genius.com/artists/1millionu-d",
+        "type": "regular",
+        "id": "1667760"
+      },
+      {
+        "name": "1 Min",
+        "url": "https://genius.com/artists/1-min",
+        "type": "regular",
+        "id": "3987605"
+      },
+      {
+        "name": "1Mind",
+        "url": "https://genius.com/artists/1mind",
+        "type": "regular",
+        "id": "193351"
+      },
+      {
+        "name": "1mirs",
+        "url": "https://genius.com/artists/1mirs",
+        "type": "regular",
+        "id": "3270207"
+      },
+      {
+        "name": "1nonly",
+        "url": "https://genius.com/artists/1nonly",
+        "type": "regular",
+        "id": "2355637"
+      },
+      {
+        "name": "1of1",
+        "url": "https://genius.com/artists/1of1",
+        "type": "regular",
+        "id": "2129877"
+      },
+      {
+        "name": "1oneam",
+        "url": "https://genius.com/artists/1oneam",
+        "type": "regular",
+        "id": "2115827"
+      },
+      {
+        "name": "1PLIKÉ140",
+        "url": "https://genius.com/artists/1plike140",
+        "type": "regular",
+        "id": "2015456"
+      },
+      {
+        "name": "1QEW7",
+        "url": "https://genius.com/artists/1qew7",
+        "type": "regular",
+        "id": "3922968"
+      },
+      {
+        "name": "1soul",
+        "url": "https://genius.com/artists/1soul",
+        "type": "regular",
+        "id": "3890351"
+      },
+      {
+        "name": "1Spirit & Theophilus Sunday",
+        "url": "https://genius.com/artists/1spirit-and-theophilus-sunday",
+        "type": "regular",
+        "id": "4277071"
+      },
+      {
+        "name": "1stepup",
+        "url": "https://genius.com/artists/1stepup",
+        "type": "regular",
+        "id": "2944332"
+      },
+      {
+        "name": "1st lady",
+        "url": "https://genius.com/artists/1st-lady",
+        "type": "regular",
+        "id": "66337"
+      },
+      {
+        "name": "1stress",
+        "url": "https://genius.com/artists/1stress",
+        "type": "regular",
+        "id": "2898112"
+      },
+      {
+        "name": "1T1",
+        "url": "https://genius.com/artists/1t1",
+        "type": "regular",
+        "id": "4243050"
+      },
+      {
+        "name": "1TakeJay",
+        "url": "https://genius.com/artists/1takejay",
+        "type": "regular",
+        "id": "1281720"
+      },
+      {
+        "name": "1tappworky",
+        "url": "https://genius.com/artists/1tappworky",
+        "type": "regular",
+        "id": "3899968"
+      },
+      {
+        "name": "1tbsp",
+        "url": "https://genius.com/artists/1tbsp",
+        "type": "regular",
+        "id": "3430637"
+      },
+      {
+        "name": "1 Trait Danger",
+        "url": "https://genius.com/artists/1-trait-danger",
+        "type": "regular",
+        "id": "1392291"
+      },
+      {
+        "name": "1TYM",
+        "url": "https://genius.com/artists/1tym",
+        "type": "regular",
+        "id": "374558"
+      },
+      {
+        "name": "1Up Tee",
+        "url": "https://genius.com/artists/1up-tee",
+        "type": "regular",
+        "id": "3712781"
+      },
+      {
+        "name": "1VAN",
+        "url": "https://genius.com/artists/1van",
+        "type": "regular",
+        "id": "2088652"
+      },
+      {
+        "name": "1Way4xx",
+        "url": "https://genius.com/artists/1way4xx",
+        "type": "regular",
+        "id": "3575656"
+      },
+      {
+        "name": "1WayFrank",
+        "url": "https://genius.com/artists/1wayfrank",
+        "type": "regular",
+        "id": "207709"
+      },
+      {
+        "name": "1winks1",
+        "url": "https://genius.com/artists/1winks1",
+        "type": "regular",
+        "id": "4238522"
+      },
+      {
+        "name": "1xmxxd",
+        "url": "https://genius.com/artists/1xmxxd",
+        "type": "regular",
+        "id": "3353408"
+      },
+      {
+        "name": "​великая Даниэлла 2001 (velikaya Daniella 2001)",
+        "url": "https://genius.com/artists/2001-velikaya-daniella-2001",
+        "type": "regular",
+        "id": "4077882"
+      },
+      {
+        "name": "2003 New Broadway Cast of Little Shop of Horrors",
+        "url": "https://genius.com/artists/2003-new-broadway-cast-of-little-shop-of-horrors",
+        "type": "regular",
+        "id": "3555278"
+      },
+      {
+        "name": "2006 Broadway Cast of A Chorus Line",
+        "url": "https://genius.com/artists/2006-broadway-cast-of-a-chorus-line",
+        "type": "regular",
+        "id": "1545096"
+      },
+      {
+        "name": "2006 Revival Cast of Company",
+        "url": "https://genius.com/artists/2006-revival-cast-of-company",
+        "type": "regular",
+        "id": "2337283"
+      },
+      {
+        "name": "2006WR",
+        "url": "https://genius.com/artists/2006wr",
+        "type": "regular",
+        "id": "3318972"
+      },
+      {
+        "name": "200 (eback) (이백)",
+        "url": "https://genius.com/artists/200-eback",
+        "type": "regular",
+        "id": "4181505"
+      },
+      {
+        "name": "200 Stab Wounds",
+        "url": "https://genius.com/artists/200-stab-wounds",
+        "type": "regular",
+        "id": "2609039"
+      },
+      {
+        "name": "2011 Broadway Cast of Anything Goes",
+        "url": "https://genius.com/artists/2011-broadway-cast-of-anything-goes",
+        "type": "regular",
+        "id": "1412358"
+      },
+      {
+        "name": "#2016",
+        "url": "https://genius.com/artists/2016",
+        "type": "regular",
+        "id": "4010947"
+      },
+      {
+        "name": "2017 Broadway Cast of Sunday in the Park with George",
+        "url": "https://genius.com/artists/2017-broadway-cast-of-sunday-in-the-park-with-george",
+        "type": "regular",
+        "id": "1432879"
+      },
+      {
+        "name": "2018 London Cast of Company",
+        "url": "https://genius.com/artists/2018-london-cast-of-company",
+        "type": "regular",
+        "id": "1719013"
+      },
+      {
+        "name": "2021 London Cast of Cabaret",
+        "url": "https://genius.com/artists/2021-london-cast-of-cabaret",
+        "type": "regular",
+        "id": "3385769"
+      },
+      {
+        "name": "‎2040x2040",
+        "url": "https://genius.com/artists/2040x2040",
+        "type": "regular",
+        "id": "2718290"
+      },
+      {
+        "name": "20 Fingers",
+        "url": "https://genius.com/artists/20-fingers",
+        "type": "regular",
+        "id": "32844"
+      },
+      {
+        "name": "20TOKENS",
+        "url": "https://genius.com/artists/20tokens",
+        "type": "regular",
+        "id": "2168446"
+      },
+      {
+        "name": "212 Music",
+        "url": "https://genius.com/artists/212-music",
+        "type": "regular",
+        "id": "1441338"
+      },
+      {
+        "name": "213",
+        "url": "https://genius.com/artists/213",
+        "type": "regular",
+        "id": "2295"
+      },
+      {
+        "name": "العشيرة 217",
+        "url": "https://genius.com/artists/217",
+        "type": "regular",
+        "id": "1756503"
+      },
+      {
+        "name": "21 Lil Harold",
+        "url": "https://genius.com/artists/21-lil-harold",
+        "type": "regular",
+        "id": "1529305"
+      },
+      {
+        "name": "21st Century",
+        "url": "https://genius.com/artists/21st-century",
+        "type": "regular",
+        "id": "560364"
+      },
+      {
+        "name": "21 Tach",
+        "url": "https://genius.com/artists/21-tach",
+        "type": "regular",
+        "id": "2497206"
+      },
+      {
+        "name": "22 РАЗА (22 RAZA)",
+        "url": "https://genius.com/artists/22-22-raza",
+        "type": "regular",
+        "id": "3944609"
+      },
+      {
+        "name": "227novaa",
+        "url": "https://genius.com/artists/227novaa",
+        "type": "regular",
+        "id": "4279267"
+      },
+      {
+        "name": "22december",
+        "url": "https://genius.com/artists/22december",
+        "type": "regular",
+        "id": "2862901"
+      },
+      {
+        "name": "22francc",
+        "url": "https://genius.com/artists/22francc",
+        "type": "regular",
+        "id": "3597115"
+      },
+      {
+        "name": "22GFay",
+        "url": "https://genius.com/artists/22gfay",
+        "type": "regular",
+        "id": "2750459"
+      },
+      {
+        "name": "22Gz",
+        "url": "https://genius.com/artists/22gz",
+        "type": "regular",
+        "id": "1037102"
+      },
+      {
+        "name": "22° Halo",
+        "url": "https://genius.com/artists/22-halo",
+        "type": "regular",
+        "id": "2673338"
+      },
+      {
+        "name": "#2Маши (#2Mashi)",
+        "url": "https://genius.com/artists/2-2mashi",
+        "type": "regular",
+        "id": "1586928"
+      },
+      {
+        "name": "22nd Jim",
+        "url": "https://genius.com/artists/22nd-jim",
+        "type": "regular",
+        "id": "1449361"
+      },
+      {
+        "name": "22-pistepirkko",
+        "url": "https://genius.com/artists/22-pistepirkko",
+        "type": "regular",
+        "id": "363693"
+      },
+      {
+        "name": "22simba",
+        "url": "https://genius.com/artists/22simba",
+        "type": "regular",
+        "id": "2864791"
+      },
+      {
+        "name": "23",
+        "url": "https://genius.com/artists/23",
+        "type": "regular",
+        "id": "2558139"
+      },
+      {
+        "name": "23 (DEU)",
+        "url": "https://genius.com/artists/23-deu",
+        "type": "regular",
+        "id": "2873878"
+      },
+      {
+        "name": "23Peezy",
+        "url": "https://genius.com/artists/23peezy",
+        "type": "regular",
+        "id": "2411391"
+      },
+      {
+        "name": "23 Unofficial",
+        "url": "https://genius.com/artists/23-unofficial",
+        "type": "regular",
+        "id": "1320353"
+      },
+      {
+        "name": "23wa",
+        "url": "https://genius.com/artists/23wa",
+        "type": "regular",
+        "id": "1961722"
+      },
+      {
+        "name": "24 Grana",
+        "url": "https://genius.com/artists/24-grana",
+        "type": "regular",
+        "id": "453159"
+      },
+      {
+        "name": "24Heavy",
+        "url": "https://genius.com/artists/24heavy",
+        "type": "regular",
+        "id": "1416448"
+      },
+      {
+        "name": "24hrs",
+        "url": "https://genius.com/artists/24hrs",
+        "type": "regular",
+        "id": "644156"
+      },
+      {
+        "name": "24K",
+        "url": "https://genius.com/artists/24k",
+        "type": "regular",
+        "id": "1629799"
+      },
+      {
+        "name": "24kGoldn",
+        "url": "https://genius.com/artists/24kgoldn",
+        "type": "regular",
+        "id": "1450588"
+      },
+      {
+        "name": "24k.Right",
+        "url": "https://genius.com/artists/24kright",
+        "type": "regular",
+        "id": "3295985"
+      },
+      {
+        "name": "24Lik",
+        "url": "https://genius.com/artists/24lik",
+        "type": "regular",
+        "id": "2970692"
+      },
+      {
+        "name": "24wavey",
+        "url": "https://genius.com/artists/24wavey",
+        "type": "regular",
+        "id": "2346952"
+      },
+      {
+        "name": "25",
+        "url": "https://genius.com/artists/25",
+        "type": "regular",
+        "id": "3044958"
+      },
+      {
+        "name": "2504",
+        "url": "https://genius.com/artists/2504",
+        "type": "regular",
+        "id": "2369819"
+      },
+      {
+        "name": "25/17",
+        "url": "https://genius.com/artists/25-17",
+        "type": "regular",
+        "id": "1040046"
+      },
+      {
+        "name": "255",
+        "url": "https://genius.com/artists/255",
+        "type": "regular",
+        "id": "3293991"
+      },
+      {
+        "name": "256 Pi",
+        "url": "https://genius.com/artists/256-pi",
+        "type": "regular",
+        "id": "2106159"
+      },
+      {
+        "name": "257ers",
+        "url": "https://genius.com/artists/257ers",
+        "type": "regular",
+        "id": "19470"
+      },
+      {
+        "name": "258 Noise",
+        "url": "https://genius.com/artists/258-noise",
+        "type": "regular",
+        "id": "1494765"
+      },
+      {
+        "name": "25K",
+        "url": "https://genius.com/artists/25k",
+        "type": "regular",
+        "id": "1444696"
+      },
+      {
+        "name": "25時、ナイトコードで。(Nightcord at 25:00)",
+        "url": "https://genius.com/artists/25nightcord-at-25-00",
+        "type": "regular",
+        "id": "2990173"
+      },
+      {
+        "name": "25stack",
+        "url": "https://genius.com/artists/25stack",
+        "type": "regular",
+        "id": "3812057"
+      },
+      {
+        "name": "26AR",
+        "url": "https://genius.com/artists/26ar",
+        "type": "regular",
+        "id": "2531332"
+      },
+      {
+        "name": "27.FUCKDEMONS",
+        "url": "https://genius.com/artists/27fuckdemons",
+        "type": "regular",
+        "id": "2396714"
+      },
+      {
+        "name": "27REEVES",
+        "url": "https://genius.com/artists/27reeves",
+        "type": "regular",
+        "id": "2297634"
+      },
+      {
+        "name": "27theory",
+        "url": "https://genius.com/artists/27theory",
+        "type": "regular",
+        "id": "4134873"
+      },
+      {
+        "name": "2819 Worship",
+        "url": "https://genius.com/artists/2819-worship",
+        "type": "regular",
+        "id": "4360553"
+      },
+      {
+        "name": "289Shawty",
+        "url": "https://genius.com/artists/289shawty",
+        "type": "regular",
+        "id": "2192145"
+      },
+      {
+        "name": "290",
+        "url": "https://genius.com/artists/290",
+        "type": "regular",
+        "id": "2098445"
+      },
+      {
+        "name": "2AM",
+        "url": "https://genius.com/artists/2am",
+        "type": "regular",
+        "id": "367125"
+      },
+      {
+        "name": "2ara",
+        "url": "https://genius.com/artists/2ara",
+        "type": "regular",
+        "id": "1602177"
+      },
+      {
+        "name": "2Baba",
+        "url": "https://genius.com/artists/2baba",
+        "type": "regular",
+        "id": "1179124"
+      },
+      {
+        "name": "2 Be 3",
+        "url": "https://genius.com/artists/2-be-3",
+        "type": "regular",
+        "id": "362865"
+      },
+      {
+        "name": "Би-2 (Bi-2)",
+        "url": "https://genius.com/artists/2-bi-2",
+        "type": "regular",
+        "id": "1027095"
+      },
+      {
+        "name": "2Bona",
+        "url": "https://genius.com/artists/2bona",
+        "type": "regular",
+        "id": "1588704"
+      },
+      {
+        "name": "2 Brothers On The 4th Floor",
+        "url": "https://genius.com/artists/2-brothers-on-the-4th-floor",
+        "type": "regular",
+        "id": "371824"
+      },
+      {
+        "name": "2BYG",
+        "url": "https://genius.com/artists/2byg",
+        "type": "regular",
+        "id": "4409922"
+      },
+      {
+        "name": "2cardial",
+        "url": "https://genius.com/artists/2cardial",
+        "type": "regular",
+        "id": "4155419"
+      },
+      {
+        "name": "2chance",
+        "url": "https://genius.com/artists/2chance",
+        "type": "regular",
+        "id": "3759059"
+      },
+      {
+        "name": "2 Eleven",
+        "url": "https://genius.com/artists/2-eleven",
+        "type": "regular",
+        "id": "648424"
+      },
+      {
+        "name": "2 Engel & Charlie",
+        "url": "https://genius.com/artists/2-engel-and-charlie",
+        "type": "regular",
+        "id": "3114890"
+      },
+      {
+        "name": "2facedlon",
+        "url": "https://genius.com/artists/2facedlon",
+        "type": "regular",
+        "id": "4117704"
+      },
+      {
+        "name": "Фактор 2 (Factor 2)",
+        "url": "https://genius.com/artists/2-factor-2",
+        "type": "regular",
+        "id": "1077424"
+      },
+      {
+        "name": "2famous",
+        "url": "https://genius.com/artists/2famous",
+        "type": "regular",
+        "id": "2736407"
+      },
+      {
+        "name": "2FeetBino",
+        "url": "https://genius.com/artists/2feetbino",
+        "type": "regular",
+        "id": "1619423"
+      },
+      {
+        "name": "2gaudy",
+        "url": "https://genius.com/artists/2gaudy",
+        "type": "regular",
+        "id": "2010056"
+      },
+      {
+        "name": "2gether",
+        "url": "https://genius.com/artists/2gether",
+        "type": "regular",
+        "id": "370068"
+      },
+      {
+        "name": "2 Guys N The Parque",
+        "url": "https://genius.com/artists/2-guys-n-the-parque",
+        "type": "regular",
+        "id": "460110"
+      },
+      {
+        "name": "2H Company",
+        "url": "https://genius.com/artists/2h-company",
+        "type": "regular",
+        "id": "1030906"
+      },
+      {
+        "name": "2HermanoZ",
+        "url": "https://genius.com/artists/2hermanoz",
+        "type": "regular",
+        "id": "1305500"
+      },
+      {
+        "name": "2hug",
+        "url": "https://genius.com/artists/2hug",
+        "type": "regular",
+        "id": "3666100"
+      },
+      {
+        "name": "2 Hyped Brothers & A Dog",
+        "url": "https://genius.com/artists/2-hyped-brothers-and-a-dog",
+        "type": "regular",
+        "id": "2639789"
+      },
+      {
+        "name": "2J",
+        "url": "https://genius.com/artists/2j",
+        "type": "regular",
+        "id": "667755"
+      },
+      {
+        "name": "The 2 Johnnies",
+        "url": "https://genius.com/artists/The-2-johnnies",
+        "type": "regular",
+        "id": "1964779"
+      },
+      {
+        "name": "2K88",
+        "url": "https://genius.com/artists/2k88",
+        "type": "regular",
+        "id": "58658"
+      },
+      {
+        "name": "2KBABY",
+        "url": "https://genius.com/artists/2kbaby",
+        "type": "regular",
+        "id": "2058447"
+      },
+      {
+        "name": "2K Beatz",
+        "url": "https://genius.com/artists/2k-beatz",
+        "type": "regular",
+        "id": "587785"
+      },
+      {
+        "name": "2KE",
+        "url": "https://genius.com/artists/2ke",
+        "type": "regular",
+        "id": "3613790"
+      },
+      {
+        "name": "2kizz",
+        "url": "https://genius.com/artists/2kizz",
+        "type": "regular",
+        "id": "2870663"
+      },
+      {
+        "name": "2 Live Crew",
+        "url": "https://genius.com/artists/2-live-crew",
+        "type": "regular",
+        "id": "809"
+      },
+      {
+        "name": "2 Low Key",
+        "url": "https://genius.com/artists/2-low-key",
+        "type": "regular",
+        "id": "1857935"
+      },
+      {
+        "name": "2M",
+        "url": "https://genius.com/artists/2m",
+        "type": "regular",
+        "id": "2058131"
+      },
+      {
+        "name": "2 Mello",
+        "url": "https://genius.com/artists/2-mello",
+        "type": "regular",
+        "id": "129682"
+      },
+      {
+        "name": "2 Milly",
+        "url": "https://genius.com/artists/2-milly",
+        "type": "regular",
+        "id": "557249"
+      },
+      {
+        "name": "2 Minutos",
+        "url": "https://genius.com/artists/2-minutos",
+        "type": "regular",
+        "id": "367945"
+      },
+      {
+        "name": "2 Mètres",
+        "url": "https://genius.com/artists/2-metres",
+        "type": "regular",
+        "id": "1950787"
+      },
+      {
+        "name": "2mygrave",
+        "url": "https://genius.com/artists/2mygrave",
+        "type": "regular",
+        "id": "1201676"
+      },
+      {
+        "name": "2nd Chapter of Acts",
+        "url": "https://genius.com/artists/2nd-chapter-of-acts",
+        "type": "regular",
+        "id": "359154"
+      },
+      {
+        "name": "2nd Exit",
+        "url": "https://genius.com/artists/2nd-exit",
+        "type": "regular",
+        "id": "1185474"
+      },
+      {
+        "name": "2nd.gf",
+        "url": "https://genius.com/artists/2ndgf",
+        "type": "regular",
+        "id": "4379265"
+      },
+      {
+        "name": "2nd II None",
+        "url": "https://genius.com/artists/2nd-ii-none",
+        "type": "regular",
+        "id": "2746"
+      },
+      {
+        "name": "2nd In Command",
+        "url": "https://genius.com/artists/2nd-in-command",
+        "type": "regular",
+        "id": "2077085"
+      },
+      {
+        "name": "2nd South Carolina String Band",
+        "url": "https://genius.com/artists/2nd-south-carolina-string-band",
+        "type": "regular",
+        "id": "454376"
+      },
+      {
+        "name": "2NE1",
+        "url": "https://genius.com/artists/2ne1",
+        "type": "regular",
+        "id": "20499"
+      },
+      {
+        "name": "Пара Нормальных (2normal)",
+        "url": "https://genius.com/artists/2normal",
+        "type": "regular",
+        "id": "2241158"
+      },
+      {
+        "name": "2NP",
+        "url": "https://genius.com/artists/2np",
+        "type": "regular",
+        "id": "1168334"
+      },
+      {
+        "name": "2ooDark",
+        "url": "https://genius.com/artists/2oodark",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "2 Pistols",
+        "url": "https://genius.com/artists/2-pistols",
+        "type": "regular",
+        "id": "2751"
+      },
+      {
+        "name": "2PM (투피엠)",
+        "url": "https://genius.com/artists/2pm",
+        "type": "regular",
+        "id": "361807"
+      },
+      {
+        "name": "2po2",
+        "url": "https://genius.com/artists/2po2",
+        "type": "regular",
+        "id": "149167"
+      },
+      {
+        "name": "2Rare",
+        "url": "https://genius.com/artists/2rare",
+        "type": "regular",
+        "id": "1871715"
+      },
+      {
+        "name": "2Rari",
+        "url": "https://genius.com/artists/2rari",
+        "type": "regular",
+        "id": "1863952"
+      },
+      {
+        "name": "2raumwohnung",
+        "url": "https://genius.com/artists/2raumwohnung",
+        "type": "regular",
+        "id": "340097"
+      },
+      {
+        "name": "2rbina 2rista",
+        "url": "https://genius.com/artists/2rbina-2rista",
+        "type": "regular",
+        "id": "1003935"
+      },
+      {
+        "name": "2run",
+        "url": "https://genius.com/artists/2run",
+        "type": "regular",
+        "id": "2720307"
+      },
+      {
+        "name": "2Scratch",
+        "url": "https://genius.com/artists/2scratch",
+        "type": "regular",
+        "id": "1550327"
+      },
+      {
+        "name": "2SDxrt3all",
+        "url": "https://genius.com/artists/2sdxrt3all",
+        "type": "regular",
+        "id": "3597457"
+      },
+      {
+        "name": "2Shaddy",
+        "url": "https://genius.com/artists/2shaddy",
+        "type": "regular",
+        "id": "542508"
+      },
+      {
+        "name": "2shanez",
+        "url": "https://genius.com/artists/2shanez",
+        "type": "regular",
+        "id": "2441881"
+      },
+      {
+        "name": "2slimey",
+        "url": "https://genius.com/artists/2slimey",
+        "type": "regular",
+        "id": "3900650"
+      },
+      {
+        "name": "2smokeyy",
+        "url": "https://genius.com/artists/2smokeyy",
+        "type": "regular",
+        "id": "2493200"
+      },
+      {
+        "name": "2soma",
+        "url": "https://genius.com/artists/2soma",
+        "type": "regular",
+        "id": "2098412"
+      },
+      {
+        "name": "ста2тика (sta2tica)",
+        "url": "https://genius.com/artists/2-sta2tica",
+        "type": "regular",
+        "id": "4387906"
+      },
+      {
+        "name": "2sty",
+        "url": "https://genius.com/artists/2sty",
+        "type": "regular",
+        "id": "59834"
+      },
+      {
+        "name": "2T4",
+        "url": "https://genius.com/artists/2t4",
+        "type": "regular",
+        "id": "1273986"
+      },
+      {
+        "name": "2Ton",
+        "url": "https://genius.com/artists/2ton",
+        "type": "regular",
+        "id": "181171"
+      },
+      {
+        "name": "2 Unlimited",
+        "url": "https://genius.com/artists/2-unlimited",
+        "type": "regular",
+        "id": "364513"
+      },
+      {
+        "name": "2UU!",
+        "url": "https://genius.com/artists/2uu",
+        "type": "regular",
+        "id": "4066667"
+      },
+      {
+        "name": "2Virgins",
+        "url": "https://genius.com/artists/2virgins",
+        "type": "regular",
+        "id": "130646"
+      },
+      {
+        "name": "2WEI",
+        "url": "https://genius.com/artists/2wei",
+        "type": "regular",
+        "id": "1392324"
+      },
+      {
+        "name": "2wo2imes",
+        "url": "https://genius.com/artists/2wo2imes",
+        "type": "regular",
+        "id": "1685411"
+      },
+      {
+        "name": "2woBunnies",
+        "url": "https://genius.com/artists/2wobunnies",
+        "type": "regular",
+        "id": "3282175"
+      },
+      {
+        "name": "2worth",
+        "url": "https://genius.com/artists/2worth",
+        "type": "regular",
+        "id": "2118116"
+      },
+      {
+        "name": "2ZDINIZZ",
+        "url": "https://genius.com/artists/2zdinizz",
+        "type": "regular",
+        "id": "1735482"
+      },
+      {
+        "name": "3",
+        "url": "https://genius.com/artists/3",
+        "type": "regular",
+        "id": "25614"
+      },
+      {
+        "name": "30.02",
+        "url": "https://genius.com/artists/3002",
+        "type": "regular",
+        "id": "2909951"
+      },
+      {
+        "name": "3010",
+        "url": "https://genius.com/artists/3010",
+        "type": "regular",
+        "id": "14648"
+      },
+      {
+        "name": "3030",
+        "url": "https://genius.com/artists/3030",
+        "type": "regular",
+        "id": "54083"
+      },
+      {
+        "name": "30 Deep Grimeyy",
+        "url": "https://genius.com/artists/30-deep-grimeyy",
+        "type": "regular",
+        "id": "1993530"
+      },
+      {
+        "name": "30KEY!",
+        "url": "https://genius.com/artists/30key",
+        "type": "regular",
+        "id": "3425114"
+      },
+      {
+        "name": "30y",
+        "url": "https://genius.com/artists/30y",
+        "type": "regular",
+        "id": "632064"
+      },
+      {
+        "name": "30Zona",
+        "url": "https://genius.com/artists/30zona",
+        "type": "regular",
+        "id": "1221979"
+      },
+      {
+        "name": "310Babii",
+        "url": "https://genius.com/artists/310babii",
+        "type": "regular",
+        "id": "3657822"
+      },
+      {
+        "name": "311",
+        "url": "https://genius.com/artists/311",
+        "type": "regular",
+        "id": "10440"
+      },
+      {
+        "name": "Город 312 (Gorod 312)",
+        "url": "https://genius.com/artists/312-gorod-312",
+        "type": "regular",
+        "id": "1265736"
+      },
+      {
+        "name": "31 FAM",
+        "url": "https://genius.com/artists/31-fam",
+        "type": "regular",
+        "id": "1329610"
+      },
+      {
+        "name": "31 Minutos",
+        "url": "https://genius.com/artists/31-minutos",
+        "type": "regular",
+        "id": "364577"
+      },
+      {
+        "name": "3200 Tre",
+        "url": "https://genius.com/artists/3200-tre",
+        "type": "regular",
+        "id": "2621483"
+      },
+      {
+        "name": "333 Mob",
+        "url": "https://genius.com/artists/333-mob",
+        "type": "regular",
+        "id": "1044497"
+      },
+      {
+        "name": "3% (3 Percent AUS)",
+        "url": "https://genius.com/artists/3-3-percent-aus",
+        "type": "regular",
+        "id": "3710822"
+      },
+      {
+        "name": "3 кита (3 whales)",
+        "url": "https://genius.com/artists/3-3-whales",
+        "type": "regular",
+        "id": "1004646"
+      },
+      {
+        "name": "347aidan",
+        "url": "https://genius.com/artists/347aidan",
+        "type": "regular",
+        "id": "2099578"
+      },
+      {
+        "name": "34alain34",
+        "url": "https://genius.com/artists/34alain34",
+        "type": "regular",
+        "id": "2237417"
+      },
+      {
+        "name": "лампочка34 (lampochka34)",
+        "url": "https://genius.com/artists/34-lampochka34",
+        "type": "regular",
+        "id": "4369626"
+      },
+      {
+        "name": "34murphy",
+        "url": "https://genius.com/artists/34murphy",
+        "type": "regular",
+        "id": "3119760"
+      },
+      {
+        "name": "350",
+        "url": "https://genius.com/artists/350",
+        "type": "regular",
+        "id": "2425214"
+      },
+      {
+        "name": "3.56 am",
+        "url": "https://genius.com/artists/356-am",
+        "type": "regular",
+        "id": "2961092"
+      },
+      {
+        "name": "360",
+        "url": "https://genius.com/artists/360",
+        "type": "regular",
+        "id": "24003"
+      },
+      {
+        "name": "365daband",
+        "url": "https://genius.com/artists/365daband",
+        "type": "regular",
+        "id": "1497119"
+      },
+      {
+        "name": "367Densil",
+        "url": "https://genius.com/artists/367densil",
+        "type": "regular",
+        "id": "2753582"
+      },
+      {
+        "name": "36 Crazyfists",
+        "url": "https://genius.com/artists/36-crazyfists",
+        "type": "regular",
+        "id": "324095"
+      },
+      {
+        "name": "36 (UK)",
+        "url": "https://genius.com/artists/36-uk",
+        "type": "regular",
+        "id": "3167501"
+      },
+      {
+        "name": "3776",
+        "url": "https://genius.com/artists/3776",
+        "type": "regular",
+        "id": "1963396"
+      },
+      {
+        "name": "37 in this b!tch",
+        "url": "https://genius.com/artists/37-in-this-b-tch",
+        "type": "regular",
+        "id": "3391322"
+      },
+      {
+        "name": "38004l",
+        "url": "https://genius.com/artists/38004l",
+        "type": "regular",
+        "id": "4154662"
+      },
+      {
+        "name": "3 80Y 11 2 [AOV]",
+        "url": "https://genius.com/artists/3-80y-11-2-aov",
+        "type": "regular",
+        "id": "1256350"
+      },
+      {
+        "name": "38 Special",
+        "url": "https://genius.com/artists/38-special",
+        "type": "regular",
+        "id": "59159"
+      },
+      {
+        "name": "38 Spesh",
+        "url": "https://genius.com/artists/38-spesh",
+        "type": "regular",
+        "id": "185316"
+      },
+      {
+        "name": "39",
+        "url": "https://genius.com/artists/39",
+        "type": "regular",
+        "id": "675984"
+      },
+      {
+        "name": "392 Lil Head",
+        "url": "https://genius.com/artists/392-lil-head",
+        "type": "regular",
+        "id": "2617183"
+      },
+      {
+        "name": "3ab3az - عبعظ",
+        "url": "https://genius.com/artists/3ab3az",
+        "type": "regular",
+        "id": "2319532"
+      },
+      {
+        "name": "3AM",
+        "url": "https://genius.com/artists/3am",
+        "type": "regular",
+        "id": "2669358"
+      },
+      {
+        "name": "3arbi",
+        "url": "https://genius.com/artists/3arbi",
+        "type": "regular",
+        "id": "3202765"
+      },
+      {
+        "name": "3BallMTY",
+        "url": "https://genius.com/artists/3ballmty",
+        "type": "regular",
+        "id": "135104"
+      },
+      {
+        "name": "3Berlin",
+        "url": "https://genius.com/artists/3berlin",
+        "type": "regular",
+        "id": "2830746"
+      },
+      {
+        "name": "3Breezy",
+        "url": "https://genius.com/artists/3breezy",
+        "type": "regular",
+        "id": "2331078"
+      },
+      {
+        "name": "3 Busserulls",
+        "url": "https://genius.com/artists/3-busserulls",
+        "type": "regular",
+        "id": "453396"
+      },
+      {
+        "name": "3clouds",
+        "url": "https://genius.com/artists/3clouds",
+        "type": "regular",
+        "id": "2714161"
+      },
+      {
+        "name": "3D",
+        "url": "https://genius.com/artists/3d",
+        "type": "regular",
+        "id": "1000527"
+      },
+      {
+        "name": "3dnan",
+        "url": "https://genius.com/artists/3dnan",
+        "type": "regular",
+        "id": "3314379"
+      },
+      {
+        "name": "3ee",
+        "url": "https://genius.com/artists/3ee",
+        "type": "regular",
+        "id": "3218906"
+      },
+      {
+        "name": "3EED",
+        "url": "https://genius.com/artists/3eed",
+        "type": "regular",
+        "id": "1532891"
+      },
+      {
+        "name": "3enba - عنبة",
+        "url": "https://genius.com/artists/3enba",
+        "type": "regular",
+        "id": "2778518"
+      },
+      {
+        "name": "3ezbet l Hiphop - عزبة الهيب هوب",
+        "url": "https://genius.com/artists/3ezbet-l-hiphop",
+        "type": "regular",
+        "id": "1252861"
+      },
+      {
+        "name": "3g0th2002",
+        "url": "https://genius.com/artists/3g0th2002",
+        "type": "regular",
+        "id": "3859955"
+      },
+      {
+        "name": "хулагу 3g (khulagutron)",
+        "url": "https://genius.com/artists/3g-khulagutron",
+        "type": "regular",
+        "id": "4251973"
+      },
+      {
+        "name": "3House",
+        "url": "https://genius.com/artists/3house",
+        "type": "regular",
+        "id": "2164074"
+      },
+      {
+        "name": "3 Hürel",
+        "url": "https://genius.com/artists/3-hurel",
+        "type": "regular",
+        "id": "1271507"
+      },
+      {
+        "name": "3imad",
+        "url": "https://genius.com/artists/3imad",
+        "type": "regular",
+        "id": "4099437"
+      },
+      {
+        "name": "3 Inches of Blood",
+        "url": "https://genius.com/artists/3-inches-of-blood",
+        "type": "regular",
+        "id": "357737"
+      },
+      {
+        "name": "3JS",
+        "url": "https://genius.com/artists/3js",
+        "type": "regular",
+        "id": "372362"
+      },
+      {
+        "name": "3 КОТА (KOTA)",
+        "url": "https://genius.com/artists/3-kota",
+        "type": "regular",
+        "id": "3227339"
+      },
+      {
+        "name": "3LAU",
+        "url": "https://genius.com/artists/3lau",
+        "type": "regular",
+        "id": "155839"
+      },
+      {
+        "name": "3LW",
+        "url": "https://genius.com/artists/3lw",
+        "type": "regular",
+        "id": "2233"
+      },
+      {
+        "name": "3M5",
+        "url": "https://genius.com/artists/3m5",
+        "type": "regular",
+        "id": "1931320"
+      },
+      {
+        "name": "3MFrench",
+        "url": "https://genius.com/artists/3mfrench",
+        "type": "regular",
+        "id": "1897764"
+      },
+      {
+        "name": "3NMA",
+        "url": "https://genius.com/artists/3nma",
+        "type": "regular",
+        "id": "3855709"
+      },
+      {
+        "name": "3OD",
+        "url": "https://genius.com/artists/3od",
+        "type": "regular",
+        "id": "2825761"
+      },
+      {
+        "name": "3OH!3",
+        "url": "https://genius.com/artists/3oh-3",
+        "type": "regular",
+        "id": "7092"
+      },
+      {
+        "name": "3OhBlack",
+        "url": "https://genius.com/artists/3ohblack",
+        "type": "regular",
+        "id": "682411"
+      },
+      {
+        "name": "3o$ama",
+        "url": "https://genius.com/artists/3o-ama",
+        "type": "regular",
+        "id": "3741459"
+      },
+      {
+        "name": "3pc",
+        "url": "https://genius.com/artists/3pc",
+        "type": "regular",
+        "id": "8487"
+      },
+      {
+        "name": "3Plusss",
+        "url": "https://genius.com/artists/3plusss",
+        "type": "regular",
+        "id": "24476"
+      },
+      {
+        "name": "3RACHA",
+        "url": "https://genius.com/artists/3racha",
+        "type": "regular",
+        "id": "1430187"
+      },
+      {
+        "name": "Третя Штурмова (3rd Assault Brigade)",
+        "url": "https://genius.com/artists/3rd-assault-brigade",
+        "type": "regular",
+        "id": "4195841"
+      },
+      {
+        "name": "3rd Bass",
+        "url": "https://genius.com/artists/3rd-bass",
+        "type": "regular",
+        "id": "2548"
+      },
+      {
+        "name": "The 3rd Kind",
+        "url": "https://genius.com/artists/The-3rd-kind",
+        "type": "regular",
+        "id": "36837"
+      },
+      {
+        "name": "3rd Storee",
+        "url": "https://genius.com/artists/3rd-storee",
+        "type": "regular",
+        "id": "8465"
+      },
+      {
+        "name": "3robi",
+        "url": "https://genius.com/artists/3robi",
+        "type": "regular",
+        "id": "616606"
+      },
+      {
+        "name": "3 Sud Est",
+        "url": "https://genius.com/artists/3-sud-est",
+        "type": "regular",
+        "id": "1814586"
+      },
+      {
+        "name": "3T",
+        "url": "https://genius.com/artists/3t",
+        "type": "regular",
+        "id": "364083"
+      },
+      {
+        "name": "3TEETH",
+        "url": "https://genius.com/artists/3teeth",
+        "type": "regular",
+        "id": "1095331"
+      },
+      {
+        "name": "3TERNITY",
+        "url": "https://genius.com/artists/3ternity",
+        "type": "regular",
+        "id": "1890453"
+      },
+      {
+        "name": "3umph",
+        "url": "https://genius.com/artists/3umph",
+        "type": "regular",
+        "id": "3475686"
+      },
+      {
+        "name": "3xKlan",
+        "url": "https://genius.com/artists/3xklan",
+        "type": "regular",
+        "id": "139035"
+      },
+      {
+        "name": "А4",
+        "url": "https://genius.com/artists/4",
+        "type": "regular",
+        "id": "1857449"
+      },
+      {
+        "name": "40000 Gang",
+        "url": "https://genius.com/artists/40000-gang",
+        "type": "regular",
+        "id": "204571"
+      },
+      {
+        "name": "404",
+        "url": "https://genius.com/artists/404",
+        "type": "regular",
+        "id": "270307"
+      },
+      {
+        "name": "40-45, de Musical (Nederlandse cast)",
+        "url": "https://genius.com/artists/40-45-de-musical-nederlandse-cast",
+        "type": "regular",
+        "id": "4186470"
+      },
+      {
+        "name": "404Billy",
+        "url": "https://genius.com/artists/404billy",
+        "type": "regular",
+        "id": "1080043"
+      },
+      {
+        "name": "ЮГ 404 (UG 404)",
+        "url": "https://genius.com/artists/404-ug-404",
+        "type": "regular",
+        "id": "1906281"
+      },
+      {
+        "name": "406ahmad",
+        "url": "https://genius.com/artists/406ahmad",
+        "type": "regular",
+        "id": "2970848"
+      },
+      {
+        "name": "408",
+        "url": "https://genius.com/artists/408",
+        "type": "regular",
+        "id": "1064224"
+      },
+      {
+        "name": "408 Darwin",
+        "url": "https://genius.com/artists/408-darwin",
+        "type": "regular",
+        "id": "3125719"
+      },
+      {
+        "name": "40 Below Summer",
+        "url": "https://genius.com/artists/40-below-summer",
+        "type": "regular",
+        "id": "347388"
+      },
+      {
+        "name": "40 Glocc",
+        "url": "https://genius.com/artists/40-glocc",
+        "type": "regular",
+        "id": "2775"
+      },
+      {
+        "name": "40 Watt Sun",
+        "url": "https://genius.com/artists/40-watt-sun",
+        "type": "regular",
+        "id": "1134388"
+      },
+      {
+        "name": "410",
+        "url": "https://genius.com/artists/410",
+        "type": "regular",
+        "id": "149301"
+      },
+      {
+        "name": "#410 BDK",
+        "url": "https://genius.com/artists/410-bdk",
+        "type": "regular",
+        "id": "3155423"
+      },
+      {
+        "name": "410 (FRA)",
+        "url": "https://genius.com/artists/410-fra",
+        "type": "regular",
+        "id": "3336385"
+      },
+      {
+        "name": "42",
+        "url": "https://genius.com/artists/42",
+        "type": "regular",
+        "id": "2112916"
+      },
+      {
+        "name": "420 Soldierz",
+        "url": "https://genius.com/artists/420-soldierz",
+        "type": "regular",
+        "id": "2453712"
+      },
+      {
+        "name": "421 Seasons",
+        "url": "https://genius.com/artists/421-seasons",
+        "type": "regular",
+        "id": "2435547"
+      },
+      {
+        "name": "4 226",
+        "url": "https://genius.com/artists/4-226",
+        "type": "regular",
+        "id": "2570166"
+      },
+      {
+        "name": "424KP",
+        "url": "https://genius.com/artists/424kp",
+        "type": "regular",
+        "id": "2175981"
+      },
+      {
+        "name": "42 Dugg",
+        "url": "https://genius.com/artists/42-dugg",
+        "type": "regular",
+        "id": "1426415"
+      },
+      {
+        "name": "42nd Street",
+        "url": "https://genius.com/artists/42nd-street",
+        "type": "regular",
+        "id": "406013"
+      },
+      {
+        "name": "438 Tok",
+        "url": "https://genius.com/artists/438-tok",
+        "type": "regular",
+        "id": "2019286"
+      },
+      {
+        "name": "43ai",
+        "url": "https://genius.com/artists/43ai",
+        "type": "regular",
+        "id": "90891"
+      },
+      {
+        "name": "43zla",
+        "url": "https://genius.com/artists/43zla",
+        "type": "regular",
+        "id": "508851"
+      },
+      {
+        "name": "4:40 (ESP)",
+        "url": "https://genius.com/artists/4-40-esp",
+        "type": "regular",
+        "id": "3742882"
+      },
+      {
+        "name": "440 Smitty",
+        "url": "https://genius.com/artists/440-smitty",
+        "type": "regular",
+        "id": "3053567"
+      },
+      {
+        "name": "442oons",
+        "url": "https://genius.com/artists/442oons",
+        "type": "regular",
+        "id": "1580999"
+      },
+      {
+        "name": "444pluto",
+        "url": "https://genius.com/artists/444pluto",
+        "type": "regular",
+        "id": "3647099"
+      },
+      {
+        "name": "4.4c",
+        "url": "https://genius.com/artists/44c",
+        "type": "regular",
+        "id": "3540318"
+      },
+      {
+        "name": "44neverluv",
+        "url": "https://genius.com/artists/44neverluv",
+        "type": "regular",
+        "id": "2853171"
+      },
+      {
+        "name": "4 Позиции Бруно (4PB)",
+        "url": "https://genius.com/artists/4-4pb",
+        "type": "regular",
+        "id": "1487617"
+      },
+      {
+        "name": "44phantom",
+        "url": "https://genius.com/artists/44phantom",
+        "type": "regular",
+        "id": "1834160"
+      },
+      {
+        "name": "450",
+        "url": "https://genius.com/artists/450",
+        "type": "regular",
+        "id": "2795264"
+      },
+      {
+        "name": "451",
+        "url": "https://genius.com/artists/451",
+        "type": "regular",
+        "id": "1500829"
+      },
+      {
+        "name": "454",
+        "url": "https://genius.com/artists/454",
+        "type": "regular",
+        "id": "2579335"
+      },
+      {
+        "name": "45Gbaby",
+        "url": "https://genius.com/artists/45gbaby",
+        "type": "regular",
+        "id": "4272885"
+      },
+      {
+        "name": "45 Grave",
+        "url": "https://genius.com/artists/45-grave",
+        "type": "regular",
+        "id": "361241"
+      },
+      {
+        "name": "Лілу45 (Lely45)",
+        "url": "https://genius.com/artists/45-lely45",
+        "type": "regular",
+        "id": "2707707"
+      },
+      {
+        "name": "欅坂46 (Keyakizaka46)",
+        "url": "https://genius.com/artists/46-keyakizaka46",
+        "type": "regular",
+        "id": "1240306"
+      },
+      {
+        "name": "乃木坂46 (Nogizaka46)",
+        "url": "https://genius.com/artists/46-nogizaka46",
+        "type": "regular",
+        "id": "1630365"
+      },
+      {
+        "name": "櫻坂46 (Sakurazaka46)",
+        "url": "https://genius.com/artists/46-sakurazaka46",
+        "type": "regular",
+        "id": "2627816"
+      },
+      {
+        "name": "47SOUL",
+        "url": "https://genius.com/artists/47soul",
+        "type": "regular",
+        "id": "2280004"
+      },
+      {
+        "name": "47ter",
+        "url": "https://genius.com/artists/47ter",
+        "type": "regular",
+        "id": "1292948"
+      },
+      {
+        "name": "The 49ers",
+        "url": "https://genius.com/artists/The-49ers",
+        "type": "regular",
+        "id": "13697"
+      },
+      {
+        "name": "49th & Main",
+        "url": "https://genius.com/artists/49th-and-main",
+        "type": "regular",
+        "id": "2591358"
+      },
+      {
+        "name": "49 Winchester",
+        "url": "https://genius.com/artists/49-winchester",
+        "type": "regular",
+        "id": "1685453"
+      },
+      {
+        "name": "Чатти (4atty)",
+        "url": "https://genius.com/artists/4atty",
+        "type": "regular",
+        "id": "662643"
+      },
+      {
+        "name": "4BANG",
+        "url": "https://genius.com/artists/4bang",
+        "type": "regular",
+        "id": "3253257"
+      },
+      {
+        "name": "4batz",
+        "url": "https://genius.com/artists/4batz",
+        "type": "regular",
+        "id": "3707702"
+      },
+      {
+        "name": "4Block Lil Mari",
+        "url": "https://genius.com/artists/4block-lil-mari",
+        "type": "regular",
+        "id": "4105065"
+      },
+      {
+        "name": "4BOUT (어바웃)",
+        "url": "https://genius.com/artists/4bout",
+        "type": "regular",
+        "id": "1509265"
+      },
+      {
+        "name": "4cf",
+        "url": "https://genius.com/artists/4cf",
+        "type": "regular",
+        "id": "2756006"
+      },
+      {
+        "name": "4chan",
+        "url": "https://genius.com/artists/4chan",
+        "type": "regular",
+        "id": "573830"
+      },
+      {
+        "name": "4EVE",
+        "url": "https://genius.com/artists/4eve",
+        "type": "regular",
+        "id": "2649299"
+      },
+      {
+        "name": "4ever Falling",
+        "url": "https://genius.com/artists/4ever-falling",
+        "type": "regular",
+        "id": "1367803"
+      },
+      {
+        "name": "4everfreebrony",
+        "url": "https://genius.com/artists/4everfreebrony",
+        "type": "regular",
+        "id": "1009930"
+      },
+      {
+        "name": "4Fargo",
+        "url": "https://genius.com/artists/4fargo",
+        "type": "regular",
+        "id": "3636614"
+      },
+      {
+        "name": "4gegenbeat",
+        "url": "https://genius.com/artists/4gegenbeat",
+        "type": "regular",
+        "id": "3288821"
+      },
+      {
+        "name": "4hero",
+        "url": "https://genius.com/artists/4hero",
+        "type": "regular",
+        "id": "453790"
+      },
+      {
+        "name": "4Him",
+        "url": "https://genius.com/artists/4him",
+        "type": "regular",
+        "id": "353968"
+      },
+      {
+        "name": "4htrbgft4hrbg",
+        "url": "https://genius.com/artists/4htrbgft4hrbg",
+        "type": "regular",
+        "id": "1320825"
+      },
+      {
+        "name": "4Keus",
+        "url": "https://genius.com/artists/4keus",
+        "type": "regular",
+        "id": "1285728"
+      },
+      {
+        "name": "4Keus Gang",
+        "url": "https://genius.com/artists/4keus-gang",
+        "type": "regular",
+        "id": "653543"
+      },
+      {
+        "name": "4KIDS TV",
+        "url": "https://genius.com/artists/4kids-tv",
+        "type": "regular",
+        "id": "187998"
+      },
+      {
+        "name": "4LFA",
+        "url": "https://genius.com/artists/4lfa",
+        "type": "regular",
+        "id": "1422272"
+      },
+      {
+        "name": "4L JAVI",
+        "url": "https://genius.com/artists/4l-javi",
+        "type": "regular",
+        "id": "585478"
+      },
+      {
+        "name": "4lung",
+        "url": "https://genius.com/artists/4lung",
+        "type": "regular",
+        "id": "1614494"
+      },
+      {
+        "name": "4Minute",
+        "url": "https://genius.com/artists/4minute",
+        "type": "regular",
+        "id": "452754"
+      },
+      {
+        "name": "4na",
+        "url": "https://genius.com/artists/4na",
+        "type": "regular",
+        "id": "2951426"
+      },
+      {
+        "name": "4n Way",
+        "url": "https://genius.com/artists/4n-way",
+        "type": "regular",
+        "id": "1550532"
+      },
+      {
+        "name": "4ortake",
+        "url": "https://genius.com/artists/4ortake",
+        "type": "regular",
+        "id": "4185085"
+      },
+      {
+        "name": "4ORUXA",
+        "url": "https://genius.com/artists/4oruxa",
+        "type": "regular",
+        "id": "3502478"
+      },
+      {
+        "name": "4 P.M. (For Positive Music)",
+        "url": "https://genius.com/artists/4-pm-for-positive-music",
+        "type": "regular",
+        "id": "281745"
+      },
+      {
+        "name": "4rif",
+        "url": "https://genius.com/artists/4rif",
+        "type": "regular",
+        "id": "1658744"
+      },
+      {
+        "name": "4К (RUS)",
+        "url": "https://genius.com/artists/4-rus",
+        "type": "regular",
+        "id": "3506825"
+      },
+      {
+        "name": "4s4ki",
+        "url": "https://genius.com/artists/4s4ki",
+        "type": "regular",
+        "id": "2300790"
+      },
+      {
+        "name": "The 4-Skins",
+        "url": "https://genius.com/artists/The-4-skins",
+        "type": "regular",
+        "id": "347441"
+      },
+      {
+        "name": "4 Star View",
+        "url": "https://genius.com/artists/4-star-view",
+        "type": "regular",
+        "id": "2285625"
+      },
+      {
+        "name": "4 Strings",
+        "url": "https://genius.com/artists/4-strings",
+        "type": "regular",
+        "id": "370563"
+      },
+      {
+        "name": "4Teen",
+        "url": "https://genius.com/artists/4teen",
+        "type": "regular",
+        "id": "1216053"
+      },
+      {
+        "name": "4*TOWN",
+        "url": "https://genius.com/artists/4town",
+        "type": "regular",
+        "id": "2956246"
+      },
+      {
+        "name": "4tune",
+        "url": "https://genius.com/artists/4tune",
+        "type": "regular",
+        "id": "20278"
+      },
+      {
+        "name": "4уПuK",
+        "url": "https://genius.com/artists/4uk",
+        "type": "regular",
+        "id": "2508652"
+      },
+      {
+        "name": "501Bryze",
+        "url": "https://genius.com/artists/501bryze",
+        "type": "regular",
+        "id": "4313565"
+      },
+      {
+        "name": "The 502s",
+        "url": "https://genius.com/artists/The-502s",
+        "type": "regular",
+        "id": "1614657"
+      },
+      {
+        "name": "504 Boyz",
+        "url": "https://genius.com/artists/504-boyz",
+        "type": "regular",
+        "id": "2798"
+      },
+      {
+        "name": "507KAZ",
+        "url": "https://genius.com/artists/507kaz",
+        "type": "regular",
+        "id": "3735310"
+      },
+      {
+        "name": "509-E",
+        "url": "https://genius.com/artists/509-e",
+        "type": "regular",
+        "id": "86300"
+      },
+      {
+        "name": "50 Shots Beats",
+        "url": "https://genius.com/artists/50-shots-beats",
+        "type": "regular",
+        "id": "2005585"
+      },
+      {
+        "name": "50 Wiz",
+        "url": "https://genius.com/artists/50-wiz",
+        "type": "regular",
+        "id": "1903988"
+      },
+      {
+        "name": "510 Music",
+        "url": "https://genius.com/artists/510-music",
+        "type": "regular",
+        "id": "4335960"
+      },
+      {
+        "name": "510reconnection",
+        "url": "https://genius.com/artists/510reconnection",
+        "type": "regular",
+        "id": "2784917"
+      },
+      {
+        "name": "512",
+        "url": "https://genius.com/artists/512",
+        "type": "regular",
+        "id": "4327093"
+      },
+      {
+        "name": "51 June",
+        "url": "https://genius.com/artists/51-june",
+        "type": "regular",
+        "id": "2366191"
+      },
+      {
+        "name": "52Hz",
+        "url": "https://genius.com/artists/52hz",
+        "type": "regular",
+        "id": "3958567"
+      },
+      {
+        "name": "53 Thieves",
+        "url": "https://genius.com/artists/53-thieves",
+        "type": "regular",
+        "id": "1935924"
+      },
+      {
+        "name": "54-40",
+        "url": "https://genius.com/artists/54-40",
+        "type": "regular",
+        "id": "344813"
+      },
+      {
+        "name": "54 Ultra",
+        "url": "https://genius.com/artists/54-ultra",
+        "type": "regular",
+        "id": "3841574"
+      },
+      {
+        "name": "556Kurumi",
+        "url": "https://genius.com/artists/556kurumi",
+        "type": "regular",
+        "id": "4443939"
+      },
+      {
+        "name": "556zoo",
+        "url": "https://genius.com/artists/556zoo",
+        "type": "regular",
+        "id": "2660530"
+      },
+      {
+        "name": "55ASKY",
+        "url": "https://genius.com/artists/55asky",
+        "type": "regular",
+        "id": "3681550"
+      },
+      {
+        "name": "5 Плюх (5 Plyuh)",
+        "url": "https://genius.com/artists/5-5-plyuh",
+        "type": "regular",
+        "id": "1041119"
+      },
+      {
+        "name": "5УТРА (5UTRA)",
+        "url": "https://genius.com/artists/5-5utra",
+        "type": "regular",
+        "id": "3141684"
+      },
+      {
+        "name": "55x55",
+        "url": "https://genius.com/artists/55x55",
+        "type": "regular",
+        "id": "1099751"
+      },
+      {
+        "name": "57th Street Rogue Dog Villians",
+        "url": "https://genius.com/artists/57th-street-rogue-dog-villians",
+        "type": "regular",
+        "id": "2846"
+      },
+      {
+        "name": "58G",
+        "url": "https://genius.com/artists/58g",
+        "type": "regular",
+        "id": "2318588"
+      },
+      {
+        "name": "##### (5diez)",
+        "url": "https://genius.com/artists/5diez",
+        "type": "regular",
+        "id": "1849164"
+      },
+      {
+        "name": "5dirtyVon",
+        "url": "https://genius.com/artists/5dirtyvon",
+        "type": "regular",
+        "id": "3903360"
+      },
+      {
+        "name": "5EB",
+        "url": "https://genius.com/artists/5eb",
+        "type": "regular",
+        "id": "1425201"
+      },
+      {
+        "name": "5GANG",
+        "url": "https://genius.com/artists/5gang",
+        "type": "regular",
+        "id": "1326356"
+      },
+      {
+        "name": "The 5 heartbeats",
+        "url": "https://genius.com/artists/The-5-heartbeats",
+        "type": "regular",
+        "id": "491672"
+      },
+      {
+        "name": "5iftyy",
+        "url": "https://genius.com/artists/5iftyy",
+        "type": "regular",
+        "id": "2181115"
+      },
+      {
+        "name": "5L",
+        "url": "https://genius.com/artists/5l",
+        "type": "regular",
+        "id": "2813693"
+      },
+      {
+        "name": "5MIINUST",
+        "url": "https://genius.com/artists/5miinust",
+        "type": "regular",
+        "id": "1193938"
+      },
+      {
+        "name": "5’nizza",
+        "url": "https://genius.com/artists/5nizza",
+        "type": "regular",
+        "id": "389286"
+      },
+      {
+        "name": "5opka",
+        "url": "https://genius.com/artists/5opka",
+        "type": "regular",
+        "id": "1830287"
+      },
+      {
+        "name": "5sleyn",
+        "url": "https://genius.com/artists/5sleyn",
+        "type": "regular",
+        "id": "4272206"
+      },
+      {
+        "name": "5sta Family",
+        "url": "https://genius.com/artists/5sta-family",
+        "type": "regular",
+        "id": "458033"
+      },
+      {
+        "name": "5Star",
+        "url": "https://genius.com/artists/5star",
+        "type": "regular",
+        "id": "3074180"
+      },
+      {
+        "name": "5$TAR (Label)",
+        "url": "https://genius.com/artists/5-tar-label",
+        "type": "regular",
+        "id": "3953397"
+      },
+      {
+        "name": "#5th ATB",
+        "url": "https://genius.com/artists/5th-atb",
+        "type": "regular",
+        "id": "4338043"
+      },
+      {
+        "name": "The 5th Dimension",
+        "url": "https://genius.com/artists/The-5th-dimension",
+        "type": "regular",
+        "id": "344168"
+      },
+      {
+        "name": "5th Ward Boyz",
+        "url": "https://genius.com/artists/5th-ward-boyz",
+        "type": "regular",
+        "id": "2853"
+      },
+      {
+        "name": "5th Ward Weebie",
+        "url": "https://genius.com/artists/5th-ward-weebie",
+        "type": "regular",
+        "id": "2847"
+      },
+      {
+        "name": "5unna",
+        "url": "https://genius.com/artists/5unna",
+        "type": "regular",
+        "id": "2936665"
+      },
+      {
+        "name": "5UPERNOVA",
+        "url": "https://genius.com/artists/5upernova",
+        "type": "regular",
+        "id": "3666282"
+      },
+      {
+        "name": "5v",
+        "url": "https://genius.com/artists/5v",
+        "type": "regular",
+        "id": "1568038"
+      },
+      {
+        "name": "6000000000 себя (Six billion yourself)",
+        "url": "https://genius.com/artists/6000000000-six-billion-yourself",
+        "type": "regular",
+        "id": "2305795"
+      },
+      {
+        "name": "6000 open hours",
+        "url": "https://genius.com/artists/6000-open-hours",
+        "type": "regular",
+        "id": "3089991"
+      },
+      {
+        "name": "600Breezy",
+        "url": "https://genius.com/artists/600breezy",
+        "type": "regular",
+        "id": "187974"
+      },
+      {
+        "name": "6055",
+        "url": "https://genius.com/artists/6055",
+        "type": "regular",
+        "id": "4278365"
+      },
+      {
+        "name": "60 juno",
+        "url": "https://genius.com/artists/60-juno",
+        "type": "regular",
+        "id": "2650057"
+      },
+      {
+        "name": "60k Cvndy",
+        "url": "https://genius.com/artists/60k-cvndy",
+        "type": "regular",
+        "id": "2878678"
+      },
+      {
+        "name": "616 Undone.",
+        "url": "https://genius.com/artists/616-undone",
+        "type": "regular",
+        "id": "4063793"
+      },
+      {
+        "name": "6363",
+        "url": "https://genius.com/artists/6363",
+        "type": "regular",
+        "id": "986398"
+      },
+      {
+        "name": "637iso",
+        "url": "https://genius.com/artists/637iso",
+        "type": "regular",
+        "id": "3660577"
+      },
+      {
+        "name": "63KLUF",
+        "url": "https://genius.com/artists/63kluf",
+        "type": "regular",
+        "id": "2759868"
+      },
+      {
+        "name": "63OG",
+        "url": "https://genius.com/artists/63og",
+        "type": "regular",
+        "id": "2759866"
+      },
+      {
+        "name": "645AR",
+        "url": "https://genius.com/artists/645ar",
+        "type": "regular",
+        "id": "1152449"
+      },
+      {
+        "name": "65daysofstatic",
+        "url": "https://genius.com/artists/65daysofstatic",
+        "type": "regular",
+        "id": "452617"
+      },
+      {
+        "name": "65Goonz",
+        "url": "https://genius.com/artists/65goonz",
+        "type": "regular",
+        "id": "2088643"
+      },
+      {
+        "name": "666",
+        "url": "https://genius.com/artists/666",
+        "type": "regular",
+        "id": "327226"
+      },
+      {
+        "name": "666maxim",
+        "url": "https://genius.com/artists/666maxim",
+        "type": "regular",
+        "id": "4276130"
+      },
+      {
+        "name": "666SWISH",
+        "url": "https://genius.com/artists/666swish",
+        "type": "regular",
+        "id": "2775709"
+      },
+      {
+        "name": "667",
+        "url": "https://genius.com/artists/667",
+        "type": "regular",
+        "id": "404446"
+      },
+      {
+        "name": "66CL",
+        "url": "https://genius.com/artists/66cl",
+        "type": "regular",
+        "id": "3185336"
+      },
+      {
+        "name": "67",
+        "url": "https://genius.com/artists/67",
+        "type": "regular",
+        "id": "305806"
+      },
+      {
+        "name": "​*67​ (USA)",
+        "url": "https://genius.com/artists/67-usa",
+        "type": "regular",
+        "id": "2901683"
+      },
+      {
+        "name": "'68",
+        "url": "https://genius.com/artists/68",
+        "type": "regular",
+        "id": "455613"
+      },
+      {
+        "name": "69 Boyz",
+        "url": "https://genius.com/artists/69-boyz",
+        "type": "regular",
+        "id": "2869"
+      },
+      {
+        "name": "The 69 Eyes",
+        "url": "https://genius.com/artists/The-69-eyes",
+        "type": "regular",
+        "id": "189788"
+      },
+      {
+        "name": "6 AM (ALB)",
+        "url": "https://genius.com/artists/6-am-alb",
+        "type": "regular",
+        "id": "4308532"
+      },
+      {
+        "name": "6CycleMind",
+        "url": "https://genius.com/artists/6cyclemind",
+        "type": "regular",
+        "id": "453062"
+      },
+      {
+        "name": "6 Dogs",
+        "url": "https://genius.com/artists/6-dogs",
+        "type": "regular",
+        "id": "1002172"
+      },
+      {
+        "name": "6ELLUCCI",
+        "url": "https://genius.com/artists/6ellucci",
+        "type": "regular",
+        "id": "3957328"
+      },
+      {
+        "name": "6euroneunzig",
+        "url": "https://genius.com/artists/6euroneunzig",
+        "type": "regular",
+        "id": "3938206"
+      },
+      {
+        "name": "6evermir",
+        "url": "https://genius.com/artists/6evermir",
+        "type": "regular",
+        "id": "2736203"
+      },
+      {
+        "name": "6FU;",
+        "url": "https://genius.com/artists/6fu",
+        "type": "regular",
+        "id": "4068578"
+      },
+      {
+        "name": "6HOST",
+        "url": "https://genius.com/artists/6host",
+        "type": "regular",
+        "id": "1427444"
+      },
+      {
+        "name": "6ig swaggg..",
+        "url": "https://genius.com/artists/6ig-swaggg",
+        "type": "regular",
+        "id": "3997297"
+      },
+      {
+        "name": "6ix",
+        "url": "https://genius.com/artists/6ix",
+        "type": "regular",
+        "id": "49286"
+      },
+      {
+        "name": "6ixbuzz",
+        "url": "https://genius.com/artists/6ixbuzz",
+        "type": "regular",
+        "id": "1606619"
+      },
+      {
+        "name": "6ixth sense",
+        "url": "https://genius.com/artists/6ixth-sense",
+        "type": "regular",
+        "id": "482950"
+      },
+      {
+        "name": "6ixx",
+        "url": "https://genius.com/artists/6ixx",
+        "type": "regular",
+        "id": "3077926"
+      },
+      {
+        "name": "6lack Hart",
+        "url": "https://genius.com/artists/6lack-hart",
+        "type": "regular",
+        "id": "1688135"
+      },
+      {
+        "name": "6o",
+        "url": "https://genius.com/artists/6o",
+        "type": "regular",
+        "id": "1712109"
+      },
+      {
+        "name": "6obby",
+        "url": "https://genius.com/artists/6obby",
+        "type": "regular",
+        "id": "1018371"
+      },
+      {
+        "name": "6PM RECORDS",
+        "url": "https://genius.com/artists/6pm-records",
+        "type": "regular",
+        "id": "3639515"
+      },
+      {
+        "name": "6SNOT",
+        "url": "https://genius.com/artists/6snot",
+        "type": "regular",
+        "id": "2287370"
+      },
+      {
+        "name": "The 6ths",
+        "url": "https://genius.com/artists/The-6ths",
+        "type": "regular",
+        "id": "223335"
+      },
+      {
+        "name": "6th$ithLord",
+        "url": "https://genius.com/artists/6th-ithlord",
+        "type": "regular",
+        "id": "1476347"
+      },
+      {
+        "name": "6 Voltios",
+        "url": "https://genius.com/artists/6-voltios",
+        "type": "regular",
+        "id": "347514"
+      },
+      {
+        "name": "6wounds",
+        "url": "https://genius.com/artists/6wounds",
+        "type": "regular",
+        "id": "3718088"
+      },
+      {
+        "name": "6xSlatt",
+        "url": "https://genius.com/artists/6xslatt",
+        "type": "regular",
+        "id": "2878229"
+      },
+      {
+        "name": "6YNTHMANE",
+        "url": "https://genius.com/artists/6ynthmane",
+        "type": "regular",
+        "id": "3620649"
+      },
+      {
+        "name": "7",
+        "url": "https://genius.com/artists/7",
+        "type": "regular",
+        "id": "39227"
+      },
+      {
+        "name": "702",
+        "url": "https://genius.com/artists/702",
+        "type": "regular",
+        "id": "8468"
+      },
+      {
+        "name": "7038634357",
+        "url": "https://genius.com/artists/7038634357",
+        "type": "regular",
+        "id": "1811426"
+      },
+      {
+        "name": "70th Street Carlos",
+        "url": "https://genius.com/artists/70th-street-carlos",
+        "type": "regular",
+        "id": "1138724"
+      },
+      {
+        "name": "71degrees",
+        "url": "https://genius.com/artists/71degrees",
+        "type": "regular",
+        "id": "4374350"
+      },
+      {
+        "name": "71 Digits",
+        "url": "https://genius.com/artists/71-digits",
+        "type": "regular",
+        "id": "2200398"
+      },
+      {
+        "name": "727 Clique",
+        "url": "https://genius.com/artists/727-clique",
+        "type": "regular",
+        "id": "1169521"
+      },
+      {
+        "name": "730 Huncho",
+        "url": "https://genius.com/artists/730-huncho",
+        "type": "regular",
+        "id": "2225237"
+      },
+      {
+        "name": "73 de Pijp",
+        "url": "https://genius.com/artists/73-de-pijp",
+        "type": "regular",
+        "id": "1978015"
+      },
+      {
+        "name": "ОУ74 (OU74)",
+        "url": "https://genius.com/artists/74-ou74",
+        "type": "regular",
+        "id": "683685"
+      },
+      {
+        "name": "7.62 (BEL)",
+        "url": "https://genius.com/artists/762-bel",
+        "type": "regular",
+        "id": "2453014"
+      },
+      {
+        "name": "764-hero",
+        "url": "https://genius.com/artists/764-hero",
+        "type": "regular",
+        "id": "347484"
+      },
+      {
+        "name": "76th Street",
+        "url": "https://genius.com/artists/76th-street",
+        "type": "regular",
+        "id": "2639491"
+      },
+      {
+        "name": "​777forevermore",
+        "url": "https://genius.com/artists/777forevermore",
+        "type": "regular",
+        "id": "3158590"
+      },
+      {
+        "name": "7Б (7B)",
+        "url": "https://genius.com/artists/7-7b",
+        "type": "regular",
+        "id": "1474509"
+      },
+      {
+        "name": "77 Bombay Street",
+        "url": "https://genius.com/artists/77-bombay-street",
+        "type": "regular",
+        "id": "305132"
+      },
+      {
+        "name": "77.mp3",
+        "url": "https://genius.com/artists/77mp3",
+        "type": "regular",
+        "id": "1135325"
+      },
+      {
+        "name": "7раса (7race)",
+        "url": "https://genius.com/artists/7-7race",
+        "type": "regular",
+        "id": "2907457"
+      },
+      {
+        "name": "The 77s",
+        "url": "https://genius.com/artists/The-77s",
+        "type": "regular",
+        "id": "358872"
+      },
+      {
+        "name": "77 Spot",
+        "url": "https://genius.com/artists/77-spot",
+        "type": "regular",
+        "id": "2028150"
+      },
+      {
+        "name": "79.5",
+        "url": "https://genius.com/artists/795",
+        "type": "regular",
+        "id": "2323367"
+      },
+      {
+        "name": "7981 Kal",
+        "url": "https://genius.com/artists/7981-kal",
+        "type": "regular",
+        "id": "1843677"
+      },
+      {
+        "name": "7AE",
+        "url": "https://genius.com/artists/7ae",
+        "type": "regular",
+        "id": "1646167"
+      },
+      {
+        "name": "7 Angels 7 Plagues",
+        "url": "https://genius.com/artists/7-angels-7-plagues",
+        "type": "regular",
+        "id": "374981"
+      },
+      {
+        "name": "7ARI",
+        "url": "https://genius.com/artists/7ari",
+        "type": "regular",
+        "id": "641288"
+      },
+      {
+        "name": "7azilov",
+        "url": "https://genius.com/artists/7azilov",
+        "type": "regular",
+        "id": "4295028"
+      },
+      {
+        "name": "7dnight",
+        "url": "https://genius.com/artists/7dnight",
+        "type": "regular",
+        "id": "3795503"
+      },
+      {
+        "name": "7 GRANDY",
+        "url": "https://genius.com/artists/7-grandy",
+        "type": "regular",
+        "id": "1504735"
+      },
+      {
+        "name": "7 Hills Worship",
+        "url": "https://genius.com/artists/7-hills-worship",
+        "type": "regular",
+        "id": "3179491"
+      },
+      {
+        "name": "7L & Esoteric",
+        "url": "https://genius.com/artists/7l-and-esoteric",
+        "type": "regular",
+        "id": "24980"
+      },
+      {
+        "name": "7liwa",
+        "url": "https://genius.com/artists/7liwa",
+        "type": "regular",
+        "id": "88906"
+      },
+      {
+        "name": "7 Minutoz",
+        "url": "https://genius.com/artists/7-minutoz",
+        "type": "regular",
+        "id": "1015156"
+      },
+      {
+        "name": "7Nightz #cc",
+        "url": "https://genius.com/artists/7nightz-cc",
+        "type": "regular",
+        "id": "1737415"
+      },
+      {
+        "name": "7 Notas 7 Colores",
+        "url": "https://genius.com/artists/7-notas-7-colores",
+        "type": "regular",
+        "id": "49810"
+      },
+      {
+        "name": "7Seconds",
+        "url": "https://genius.com/artists/7seconds",
+        "type": "regular",
+        "id": "323678"
+      },
+      {
+        "name": "7seven",
+        "url": "https://genius.com/artists/7seven",
+        "type": "regular",
+        "id": "3369421"
+      },
+      {
+        "name": "7sirens",
+        "url": "https://genius.com/artists/7sirens",
+        "type": "regular",
+        "id": "3618436"
+      },
+      {
+        "name": "7th",
+        "url": "https://genius.com/artists/7th",
+        "type": "regular",
+        "id": "1116314"
+      },
+      {
+        "name": "7th (PHL)",
+        "url": "https://genius.com/artists/7th-phl",
+        "type": "regular",
+        "id": "3211522"
+      },
+      {
+        "name": "7-Toun",
+        "url": "https://genius.com/artists/7-toun",
+        "type": "regular",
+        "id": "227549"
+      },
+      {
+        "name": "7ules",
+        "url": "https://genius.com/artists/7ules",
+        "type": "regular",
+        "id": "1711814"
+      },
+      {
+        "name": "7ullaci",
+        "url": "https://genius.com/artists/7ullaci",
+        "type": "regular",
+        "id": "4400548"
+      },
+      {
+        "name": "7wizard",
+        "url": "https://genius.com/artists/7wizard",
+        "type": "regular",
+        "id": "3870054"
+      },
+      {
+        "name": "7xvethegenius",
+        "url": "https://genius.com/artists/7xvethegenius",
+        "type": "regular",
+        "id": "1976285"
+      },
+      {
+        "name": "7xvn",
+        "url": "https://genius.com/artists/7xvn",
+        "type": "regular",
+        "id": "1486855"
+      },
+      {
+        "name": "7 Year Bitch",
+        "url": "https://genius.com/artists/7-year-bitch",
+        "type": "regular",
+        "id": "364890"
+      },
+      {
+        "name": "7 Zwerge",
+        "url": "https://genius.com/artists/7-zwerge",
+        "type": "regular",
+        "id": "1051511"
+      },
+      {
+        "name": "THE 8 (徐明浩)",
+        "url": "https://genius.com/artists/The-8",
+        "type": "regular",
+        "id": "1041538"
+      },
+      {
+        "name": "800 cherries",
+        "url": "https://genius.com/artists/800-cherries",
+        "type": "regular",
+        "id": "2559176"
+      },
+      {
+        "name": "800pts",
+        "url": "https://genius.com/artists/800pts",
+        "type": "regular",
+        "id": "2677308"
+      },
+      {
+        "name": "803Fresh",
+        "url": "https://genius.com/artists/803fresh",
+        "type": "regular",
+        "id": "4408107"
+      },
+      {
+        "name": "808alex",
+        "url": "https://genius.com/artists/808alex",
+        "type": "regular",
+        "id": "3541684"
+      },
+      {
+        "name": "808 BEEZY",
+        "url": "https://genius.com/artists/808-beezy",
+        "type": "regular",
+        "id": "1593160"
+      },
+      {
+        "name": "808iuli",
+        "url": "https://genius.com/artists/808iuli",
+        "type": "regular",
+        "id": "4086038"
+      },
+      {
+        "name": "808NOCHE",
+        "url": "https://genius.com/artists/808noche",
+        "type": "regular",
+        "id": "3624111"
+      },
+      {
+        "name": "808 State",
+        "url": "https://genius.com/artists/808-state",
+        "type": "regular",
+        "id": "50276"
+      },
+      {
+        "name": "808toofly",
+        "url": "https://genius.com/artists/808toofly",
+        "type": "regular",
+        "id": "3251836"
+      },
+      {
+        "name": "80purppp",
+        "url": "https://genius.com/artists/80purppp",
+        "type": "regular",
+        "id": "1329858"
+      },
+      {
+        "name": "816 Boyz",
+        "url": "https://genius.com/artists/816-boyz",
+        "type": "regular",
+        "id": "12358"
+      },
+      {
+        "name": "81Hundo",
+        "url": "https://genius.com/artists/81hundo",
+        "type": "regular",
+        "id": "3091826"
+      },
+      {
+        "name": "82MAJOR",
+        "url": "https://genius.com/artists/82major",
+        "type": "regular",
+        "id": "3673515"
+      },
+      {
+        "name": "83",
+        "url": "https://genius.com/artists/83",
+        "type": "regular",
+        "id": "39582"
+      },
+      {
+        "name": "八三夭 (831)",
+        "url": "https://genius.com/artists/831",
+        "type": "regular",
+        "id": "2137059"
+      },
+      {
+        "name": "83baby",
+        "url": "https://genius.com/artists/83baby",
+        "type": "regular",
+        "id": "3245594"
+      },
+      {
+        "name": "83HADES",
+        "url": "https://genius.com/artists/83hades",
+        "type": "regular",
+        "id": "1478828"
+      },
+      {
+        "name": "8485",
+        "url": "https://genius.com/artists/8485",
+        "type": "regular",
+        "id": "2170489"
+      },
+      {
+        "name": "기안84 (Kian84)",
+        "url": "https://genius.com/artists/84-kian84",
+        "type": "regular",
+        "id": "4408283"
+      },
+      {
+        "name": "84 (RUS)",
+        "url": "https://genius.com/artists/84-rus",
+        "type": "regular",
+        "id": "3035205"
+      },
+      {
+        "name": "85Prod",
+        "url": "https://genius.com/artists/85prod",
+        "type": "regular",
+        "id": "3320297"
+      },
+      {
+        "name": "86LOVE",
+        "url": "https://genius.com/artists/86love",
+        "type": "regular",
+        "id": "2405321"
+      },
+      {
+        "name": "870glizzy",
+        "url": "https://genius.com/artists/870glizzy",
+        "type": "regular",
+        "id": "2304021"
+      },
+      {
+        "name": "The 88",
+        "url": "https://genius.com/artists/The-88",
+        "type": "regular",
+        "id": "37095"
+      },
+      {
+        "name": "883",
+        "url": "https://genius.com/artists/883",
+        "type": "regular",
+        "id": "355481"
+      },
+      {
+        "name": "888 Blue",
+        "url": "https://genius.com/artists/888-blue",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "88 Diagrams",
+        "url": "https://genius.com/artists/88-diagrams",
+        "type": "regular",
+        "id": "1936049"
+      },
+      {
+        "name": "88 Fingers Louie",
+        "url": "https://genius.com/artists/88-fingers-louie",
+        "type": "regular",
+        "id": "357754"
+      },
+      {
+        "name": "88GLAM",
+        "url": "https://genius.com/artists/88glam",
+        "type": "regular",
+        "id": "1251094"
+      },
+      {
+        "name": "88-Keys",
+        "url": "https://genius.com/artists/88-keys",
+        "type": "regular",
+        "id": "2024"
+      },
+      {
+        "name": "88rising",
+        "url": "https://genius.com/artists/88rising",
+        "type": "regular",
+        "id": "995039"
+      },
+      {
+        "name": "8Ball",
+        "url": "https://genius.com/artists/8ball",
+        "type": "regular",
+        "id": "4168"
+      },
+      {
+        "name": "8Ball & MJG",
+        "url": "https://genius.com/artists/8ball-and-mjg",
+        "type": "regular",
+        "id": "1858"
+      },
+      {
+        "name": "8Ball (DNK)",
+        "url": "https://genius.com/artists/8ball-dnk",
+        "type": "regular",
+        "id": "3942072"
+      },
+      {
+        "name": "8 Ballin'",
+        "url": "https://genius.com/artists/8-ballin",
+        "type": "regular",
+        "id": "1957213"
+      },
+      {
+        "name": "8Ball (Indonesia)",
+        "url": "https://genius.com/artists/8ball-indonesia",
+        "type": "regular",
+        "id": "3853747"
+      },
+      {
+        "name": "8belial",
+        "url": "https://genius.com/artists/8belial",
+        "type": "regular",
+        "id": "3093081"
+      },
+      {
+        "name": "8-Bit Arcade",
+        "url": "https://genius.com/artists/8-bit-arcade",
+        "type": "regular",
+        "id": "2425612"
+      },
+      {
+        "name": "The 8-Bit Big Band",
+        "url": "https://genius.com/artists/The-8-bit-big-band",
+        "type": "regular",
+        "id": "2617242"
+      },
+      {
+        "name": "8 Bit Universe",
+        "url": "https://genius.com/artists/8-bit-universe",
+        "type": "regular",
+        "id": "1188898"
+      },
+      {
+        "name": "8blevrai",
+        "url": "https://genius.com/artists/8blevrai",
+        "type": "regular",
+        "id": "2454083"
+      },
+      {
+        "name": "8corpses",
+        "url": "https://genius.com/artists/8corpses",
+        "type": "regular",
+        "id": "2033726"
+      },
+      {
+        "name": "8 Graves",
+        "url": "https://genius.com/artists/8-graves",
+        "type": "regular",
+        "id": "1036103"
+      },
+      {
+        "name": "8K",
+        "url": "https://genius.com/artists/8k",
+        "type": "regular",
+        "id": "2377203"
+      },
+      {
+        "name": "8mm",
+        "url": "https://genius.com/artists/8mm",
+        "type": "regular",
+        "id": "11393"
+      },
+      {
+        "name": "8RO8",
+        "url": "https://genius.com/artists/8ro8",
+        "type": "regular",
+        "id": "1320268"
+      },
+      {
+        "name": "8ruki",
+        "url": "https://genius.com/artists/8ruki",
+        "type": "regular",
+        "id": "1441161"
+      },
+      {
+        "name": "8 Shuff",
+        "url": "https://genius.com/artists/8-shuff",
+        "type": "regular",
+        "id": "2558961"
+      },
+      {
+        "name": "8syn",
+        "url": "https://genius.com/artists/8syn",
+        "type": "regular",
+        "id": "631102"
+      },
+      {
+        "name": "​8trxck",
+        "url": "https://genius.com/artists/8trxck",
+        "type": "regular",
+        "id": "2881314"
+      },
+      {
+        "name": "8TURN",
+        "url": "https://genius.com/artists/8turn",
+        "type": "regular",
+        "id": "3397505"
+      },
+      {
+        "name": "909Memphis",
+        "url": "https://genius.com/artists/909memphis",
+        "type": "regular",
+        "id": "1152753"
+      },
+      {
+        "name": "90 BPM",
+        "url": "https://genius.com/artists/90-bpm",
+        "type": "regular",
+        "id": "626289"
+      },
+      {
+        "name": "90sFlav",
+        "url": "https://genius.com/artists/90sflav",
+        "type": "regular",
+        "id": "1137422"
+      },
+      {
+        "name": "911",
+        "url": "https://genius.com/artists/911",
+        "type": "regular",
+        "id": "8573"
+      },
+      {
+        "name": "916frosty",
+        "url": "https://genius.com/artists/916frosty",
+        "type": "regular",
+        "id": "1089374"
+      },
+      {
+        "name": "917 Rackz",
+        "url": "https://genius.com/artists/917-rackz",
+        "type": "regular",
+        "id": "2004928"
+      },
+      {
+        "name": "919slum",
+        "url": "https://genius.com/artists/919slum",
+        "type": "regular",
+        "id": "3290924"
+      },
+      {
+        "name": "_91nova",
+        "url": "https://genius.com/artists/91nova",
+        "type": "regular",
+        "id": "2999346"
+      },
+      {
+        "name": "91Vocals",
+        "url": "https://genius.com/artists/91vocals",
+        "type": "regular",
+        "id": "3075279"
+      },
+      {
+        "name": "92914",
+        "url": "https://genius.com/artists/92914",
+        "type": "regular",
+        "id": "1528207"
+      },
+      {
+        "name": "92legend",
+        "url": "https://genius.com/artists/92legend",
+        "type": "regular",
+        "id": "3195779"
+      },
+      {
+        "name": "93FEETOFSMOKE",
+        "url": "https://genius.com/artists/93feetofsmoke",
+        "type": "regular",
+        "id": "636064"
+      },
+      {
+        "name": "949Paya$o",
+        "url": "https://genius.com/artists/949paya-o",
+        "type": "regular",
+        "id": "4253768"
+      },
+      {
+        "name": "954mari",
+        "url": "https://genius.com/artists/954mari",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "96billystillpimpin",
+        "url": "https://genius.com/artists/96billystillpimpin",
+        "type": "regular",
+        "id": "4365076"
+      },
+      {
+        "name": "96猫 (Kuroneko)",
+        "url": "https://genius.com/artists/96-kuroneko",
+        "type": "regular",
+        "id": "1736374"
+      },
+      {
+        "name": "96Nemes",
+        "url": "https://genius.com/artists/96nemes",
+        "type": "regular",
+        "id": "3208921"
+      },
+      {
+        "name": "970BLOCK",
+        "url": "https://genius.com/artists/970block",
+        "type": "regular",
+        "id": "1852058"
+      },
+      {
+        "name": "97inco",
+        "url": "https://genius.com/artists/97inco",
+        "type": "regular",
+        "id": "2818591"
+      },
+      {
+        "name": "98°",
+        "url": "https://genius.com/artists/98",
+        "type": "regular",
+        "id": "151905"
+      },
+      {
+        "name": "98 FM",
+        "url": "https://genius.com/artists/98-fm",
+        "type": "regular",
+        "id": "156164"
+      },
+      {
+        "name": "Мышеловка98 (MouseTrap98)",
+        "url": "https://genius.com/artists/98-mousetrap98",
+        "type": "regular",
+        "id": "3646224"
+      },
+      {
+        "name": "98s",
+        "url": "https://genius.com/artists/98s",
+        "type": "regular",
+        "id": "2345426"
+      },
+      {
+        "name": "999",
+        "url": "https://genius.com/artists/999",
+        "type": "regular",
+        "id": "359712"
+      },
+      {
+        "name": "9 ГРАММ (9 GRAMM)",
+        "url": "https://genius.com/artists/9-9-gramm",
+        "type": "regular",
+        "id": "991802"
+      },
+      {
+        "name": "99 Neighbors",
+        "url": "https://genius.com/artists/99-neighbors",
+        "type": "regular",
+        "id": "1685070"
+      },
+      {
+        "name": "99 Percent",
+        "url": "https://genius.com/artists/99-percent",
+        "type": "regular",
+        "id": "456135"
+      },
+      {
+        "name": "99 Posse",
+        "url": "https://genius.com/artists/99-posse",
+        "type": "regular",
+        "id": "280987"
+      },
+      {
+        "name": "99side",
+        "url": "https://genius.com/artists/99side",
+        "type": "regular",
+        "id": "4161077"
+      },
+      {
+        "name": "99 Souls",
+        "url": "https://genius.com/artists/99-souls",
+        "type": "regular",
+        "id": "590383"
+      },
+      {
+        "name": "99ZED",
+        "url": "https://genius.com/artists/99zed",
+        "type": "regular",
+        "id": "2363865"
+      },
+      {
+        "name": "9ckles",
+        "url": "https://genius.com/artists/9ckles",
+        "type": "regular",
+        "id": "2152800"
+      },
+      {
+        "name": "9ety",
+        "url": "https://genius.com/artists/9ety",
+        "type": "regular",
+        "id": "4449169"
+      },
+      {
+        "name": "9ice",
+        "url": "https://genius.com/artists/9ice",
+        "type": "regular",
+        "id": "380765"
+      },
+      {
+        "name": "The 9ine",
+        "url": "https://genius.com/artists/The-9ine",
+        "type": "regular",
+        "id": "1282938"
+      },
+      {
+        "name": "9inebro",
+        "url": "https://genius.com/artists/9inebro",
+        "type": "regular",
+        "id": "2517301"
+      },
+      {
+        "name": "9Lana",
+        "url": "https://genius.com/artists/9lana",
+        "type": "regular",
+        "id": "3402753"
+      },
+      {
+        "name": "9lives",
+        "url": "https://genius.com/artists/9lives",
+        "type": "regular",
+        "id": "1060195"
+      },
+      {
+        "name": "9lokkNine",
+        "url": "https://genius.com/artists/9lokknine",
+        "type": "regular",
+        "id": "1408064"
+      },
+      {
+        "name": "9m88",
+        "url": "https://genius.com/artists/9m88",
+        "type": "regular",
+        "id": "1183432"
+      },
+      {
+        "name": "9 Miller",
+        "url": "https://genius.com/artists/9-miller",
+        "type": "regular",
+        "id": "1011864"
+      },
+      {
+        "name": "9 Millimeter - 9 מילימטר",
+        "url": "https://genius.com/artists/9-millimeter-9",
+        "type": "regular",
+        "id": "1016190"
+      },
+      {
+        "name": "9MUSES (나인뮤지스)",
+        "url": "https://genius.com/artists/9muses",
+        "type": "regular",
+        "id": "393607"
+      },
+      {
+        "name": "9nine (JPN)",
+        "url": "https://genius.com/artists/9nine-jpn",
+        "type": "regular",
+        "id": "4014296"
+      },
+      {
+        "name": "9ssey",
+        "url": "https://genius.com/artists/9ssey",
+        "type": "regular",
+        "id": "3427456"
+      },
+      {
+        "name": "9TAILS",
+        "url": "https://genius.com/artists/9tails",
+        "type": "regular",
+        "id": "1144902"
+      },
+      {
+        "name": "9th Street",
+        "url": "https://genius.com/artists/9th-street",
+        "type": "regular",
+        "id": "1678908"
+      },
+      {
+        "name": "9th Wonder",
+        "url": "https://genius.com/artists/9th-wonder",
+        "type": "regular",
+        "id": "2194"
+      }
+    ]
+  }
+}

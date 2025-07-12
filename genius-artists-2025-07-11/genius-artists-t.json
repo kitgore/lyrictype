@@ -1,0 +1,4513 @@
+{
+  "letter": "T",
+  "timestamp": "2025-07-11T12:23:59.431Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Tame Impala",
+        "url": "https://genius.com/artists/Tame-impala",
+        "type": "popular",
+        "id": "26369"
+      },
+      {
+        "name": "Tate McRae",
+        "url": "https://genius.com/artists/Tate-mcrae",
+        "type": "popular",
+        "id": "1258628"
+      },
+      {
+        "name": "Taylor Swift",
+        "url": "https://genius.com/artists/Taylor-swift",
+        "type": "popular",
+        "id": "1177"
+      },
+      {
+        "name": "Tears for Fears",
+        "url": "https://genius.com/artists/Tears-for-fears",
+        "type": "popular",
+        "id": "25916"
+      },
+      {
+        "name": "Teddy Swims",
+        "url": "https://genius.com/artists/Teddy-swims",
+        "type": "popular",
+        "id": "1802608"
+      },
+      {
+        "name": "​The Lumineers",
+        "url": "https://genius.com/artists/The-lumineers",
+        "type": "popular",
+        "id": "26076"
+      },
+      {
+        "name": "TJ Monterde",
+        "url": "https://genius.com/artists/Tj-monterde",
+        "type": "popular",
+        "id": "1115170"
+      },
+      {
+        "name": "Toby Fox",
+        "url": "https://genius.com/artists/Toby-fox",
+        "type": "popular",
+        "id": "597740"
+      },
+      {
+        "name": "Tom Petty",
+        "url": "https://genius.com/artists/Tom-petty",
+        "type": "popular",
+        "id": "20785"
+      },
+      {
+        "name": "Tony Boy",
+        "url": "https://genius.com/artists/Tony-boy",
+        "type": "popular",
+        "id": "1391051"
+      },
+      {
+        "name": "Tory Lanez",
+        "url": "https://genius.com/artists/Tory-lanez",
+        "type": "popular",
+        "id": "1632"
+      },
+      {
+        "name": "Toto",
+        "url": "https://genius.com/artists/Toto",
+        "type": "popular",
+        "id": "33259"
+      },
+      {
+        "name": "Travis Scott",
+        "url": "https://genius.com/artists/Travis-scott",
+        "type": "popular",
+        "id": "20185"
+      },
+      {
+        "name": "Trippie Redd",
+        "url": "https://genius.com/artists/Trippie-redd",
+        "type": "popular",
+        "id": "1086436"
+      },
+      {
+        "name": "Turnstile",
+        "url": "https://genius.com/artists/Turnstile",
+        "type": "popular",
+        "id": "365552"
+      },
+      {
+        "name": "TV Girl",
+        "url": "https://genius.com/artists/Tv-girl",
+        "type": "popular",
+        "id": "19054"
+      },
+      {
+        "name": "twenty one pilots",
+        "url": "https://genius.com/artists/Twenty-one-pilots",
+        "type": "popular",
+        "id": "23796"
+      },
+      {
+        "name": "TWICE",
+        "url": "https://genius.com/artists/Twice",
+        "type": "popular",
+        "id": "211474"
+      },
+      {
+        "name": "Ty Dolla $ign",
+        "url": "https://genius.com/artists/Ty-dolla-sign",
+        "type": "popular",
+        "id": "25005"
+      },
+      {
+        "name": "Tyler, The Creator",
+        "url": "https://genius.com/artists/Tyler-the-creator",
+        "type": "popular",
+        "id": "685"
+      }
+    ],
+    "regular": [
+      {
+        "name": "T3R Elemento",
+        "url": "https://genius.com/artists/T3r-elemento",
+        "type": "regular",
+        "id": "1294340"
+      },
+      {
+        "name": "The Tabernacle Choir at Temple Square",
+        "url": "https://genius.com/artists/The-tabernacle-choir-at-temple-square",
+        "type": "regular",
+        "id": "351140"
+      },
+      {
+        "name": "Tabitha",
+        "url": "https://genius.com/artists/Tabitha",
+        "type": "regular",
+        "id": "1049108"
+      },
+      {
+        "name": "TABLO",
+        "url": "https://genius.com/artists/Tablo",
+        "type": "regular",
+        "id": "12558"
+      },
+      {
+        "name": "Taco",
+        "url": "https://genius.com/artists/Taco",
+        "type": "regular",
+        "id": "1499205"
+      },
+      {
+        "name": "Taco Hemingway",
+        "url": "https://genius.com/artists/Taco-hemingway",
+        "type": "regular",
+        "id": "114783"
+      },
+      {
+        "name": "TACONAFIDE",
+        "url": "https://genius.com/artists/Taconafide",
+        "type": "regular",
+        "id": "1421023"
+      },
+      {
+        "name": "TAEYANG (태양)",
+        "url": "https://genius.com/artists/Taeyang",
+        "type": "regular",
+        "id": "200913"
+      },
+      {
+        "name": "TAEYEON (태연)",
+        "url": "https://genius.com/artists/Taeyeon",
+        "type": "regular",
+        "id": "405774"
+      },
+      {
+        "name": "Taf Lathos",
+        "url": "https://genius.com/artists/Taf-lathos",
+        "type": "regular",
+        "id": "161494"
+      },
+      {
+        "name": "Tag Team",
+        "url": "https://genius.com/artists/Tag-team",
+        "type": "regular",
+        "id": "10700"
+      },
+      {
+        "name": "Tahsan",
+        "url": "https://genius.com/artists/Tahsan",
+        "type": "regular",
+        "id": "391235"
+      },
+      {
+        "name": "Taichu",
+        "url": "https://genius.com/artists/Taichu",
+        "type": "regular",
+        "id": "1872890"
+      },
+      {
+        "name": "Taimour Baig",
+        "url": "https://genius.com/artists/Taimour-baig",
+        "type": "regular",
+        "id": "2230463"
+      },
+      {
+        "name": "Tainy",
+        "url": "https://genius.com/artists/Tainy",
+        "type": "regular",
+        "id": "72334"
+      },
+      {
+        "name": "Taio Cruz",
+        "url": "https://genius.com/artists/Taio-cruz",
+        "type": "regular",
+        "id": "2395"
+      },
+      {
+        "name": "Tai Verdes",
+        "url": "https://genius.com/artists/Tai-verdes",
+        "type": "regular",
+        "id": "2291777"
+      },
+      {
+        "name": "Taj Mahal",
+        "url": "https://genius.com/artists/Taj-mahal",
+        "type": "regular",
+        "id": "246194"
+      },
+      {
+        "name": "Takanashi Kiara",
+        "url": "https://genius.com/artists/Takanashi-kiara",
+        "type": "regular",
+        "id": "2483431"
+      },
+      {
+        "name": "Take Care",
+        "url": "https://genius.com/artists/Take-care",
+        "type": "regular",
+        "id": "2462918"
+      },
+      {
+        "name": "Takeoff",
+        "url": "https://genius.com/artists/Takeoff",
+        "type": "regular",
+        "id": "148761"
+      },
+      {
+        "name": "Take That",
+        "url": "https://genius.com/artists/Take-that",
+        "type": "regular",
+        "id": "52429"
+      },
+      {
+        "name": "Taking Back Sunday",
+        "url": "https://genius.com/artists/Taking-back-sunday",
+        "type": "regular",
+        "id": "34723"
+      },
+      {
+        "name": "takizava",
+        "url": "https://genius.com/artists/Takizava",
+        "type": "regular",
+        "id": "1378680"
+      },
+      {
+        "name": "Takt32",
+        "url": "https://genius.com/artists/Takt32",
+        "type": "regular",
+        "id": "53314"
+      },
+      {
+        "name": "岩崎琢 (Taku Iwasaki)",
+        "url": "https://genius.com/artists/Taku-iwasaki",
+        "type": "regular",
+        "id": "186211"
+      },
+      {
+        "name": "Taladro",
+        "url": "https://genius.com/artists/Taladro",
+        "type": "regular",
+        "id": "998065"
+      },
+      {
+        "name": "Talal Maddah - طلال مداح",
+        "url": "https://genius.com/artists/Talal-maddah",
+        "type": "regular",
+        "id": "2513987"
+      },
+      {
+        "name": "Tal Bachman",
+        "url": "https://genius.com/artists/Tal-bachman",
+        "type": "regular",
+        "id": "167833"
+      },
+      {
+        "name": "Talented Blake",
+        "url": "https://genius.com/artists/Talented-blake",
+        "type": "regular",
+        "id": "4360788"
+      },
+      {
+        "name": "Talha Anjum",
+        "url": "https://genius.com/artists/Talha-anjum",
+        "type": "regular",
+        "id": "1180843"
+      },
+      {
+        "name": "Talhah Yunus",
+        "url": "https://genius.com/artists/Talhah-yunus",
+        "type": "regular",
+        "id": "222288"
+      },
+      {
+        "name": "Talia Mar",
+        "url": "https://genius.com/artists/Talia-mar",
+        "type": "regular",
+        "id": "1055434"
+      },
+      {
+        "name": "Talib Kweli",
+        "url": "https://genius.com/artists/Talib-kweli",
+        "type": "regular",
+        "id": "388"
+      },
+      {
+        "name": "Talking Heads",
+        "url": "https://genius.com/artists/Talking-heads",
+        "type": "regular",
+        "id": "13347"
+      },
+      {
+        "name": "Talkshow Boy",
+        "url": "https://genius.com/artists/Talkshow-boy",
+        "type": "regular",
+        "id": "160552"
+      },
+      {
+        "name": "Talk Talk",
+        "url": "https://genius.com/artists/Talk-talk",
+        "type": "regular",
+        "id": "223797"
+      },
+      {
+        "name": "Tallah",
+        "url": "https://genius.com/artists/Tallah",
+        "type": "regular",
+        "id": "1475439"
+      },
+      {
+        "name": "The Tallest Man On Earth",
+        "url": "https://genius.com/artists/The-tallest-man-on-earth",
+        "type": "regular",
+        "id": "25516"
+      },
+      {
+        "name": "Tally Hall",
+        "url": "https://genius.com/artists/Tally-hall",
+        "type": "regular",
+        "id": "202603"
+      },
+      {
+        "name": "T.A. Loc",
+        "url": "https://genius.com/artists/Ta-loc",
+        "type": "regular",
+        "id": "1034943"
+      },
+      {
+        "name": "Talos",
+        "url": "https://genius.com/artists/Talos",
+        "type": "regular",
+        "id": "480651"
+      },
+      {
+        "name": "Talwiinder",
+        "url": "https://genius.com/artists/Talwiinder",
+        "type": "regular",
+        "id": "2474818"
+      },
+      {
+        "name": "Talya Sindel",
+        "url": "https://genius.com/artists/Talya-sindel",
+        "type": "regular",
+        "id": "3843419"
+      },
+      {
+        "name": "Tamar Braxton",
+        "url": "https://genius.com/artists/Tamar-braxton",
+        "type": "regular",
+        "id": "7913"
+      },
+      {
+        "name": "Tamela Mann",
+        "url": "https://genius.com/artists/Tamela-mann",
+        "type": "regular",
+        "id": "87447"
+      },
+      {
+        "name": "Tamer Ashour - تامر عاشور",
+        "url": "https://genius.com/artists/Tamer-ashour",
+        "type": "regular",
+        "id": "530000"
+      },
+      {
+        "name": "Tamer Hosny - تامر حسني",
+        "url": "https://genius.com/artists/Tamer-hosny",
+        "type": "regular",
+        "id": "480505"
+      },
+      {
+        "name": "Tamia",
+        "url": "https://genius.com/artists/Tamia",
+        "type": "regular",
+        "id": "2001"
+      },
+      {
+        "name": "Tamino",
+        "url": "https://genius.com/artists/Tamino",
+        "type": "regular",
+        "id": "1096353"
+      },
+      {
+        "name": "Tammi Terrell",
+        "url": "https://genius.com/artists/Tammi-terrell",
+        "type": "regular",
+        "id": "22405"
+      },
+      {
+        "name": "Tammy Wynette",
+        "url": "https://genius.com/artists/Tammy-wynette",
+        "type": "regular",
+        "id": "64228"
+      },
+      {
+        "name": "tana",
+        "url": "https://genius.com/artists/Tana",
+        "type": "regular",
+        "id": "2086940"
+      },
+      {
+        "name": "Tananai",
+        "url": "https://genius.com/artists/Tananai",
+        "type": "regular",
+        "id": "1603135"
+      },
+      {
+        "name": "T&K",
+        "url": "https://genius.com/artists/T-k",
+        "type": "regular",
+        "id": "511376"
+      },
+      {
+        "name": "Tanerélle",
+        "url": "https://genius.com/artists/Tanerelle",
+        "type": "regular",
+        "id": "672104"
+      },
+      {
+        "name": "Tanin Jazz",
+        "url": "https://genius.com/artists/Tanin-jazz",
+        "type": "regular",
+        "id": "3719093"
+      },
+      {
+        "name": "Tanishk Bagchi",
+        "url": "https://genius.com/artists/Tanishk-bagchi",
+        "type": "regular",
+        "id": "1119431"
+      },
+      {
+        "name": "Танисия (Tanisiya)",
+        "url": "https://genius.com/artists/Tanisiya",
+        "type": "regular",
+        "id": "4320061"
+      },
+      {
+        "name": "Tanita Tikaram",
+        "url": "https://genius.com/artists/Tanita-tikaram",
+        "type": "regular",
+        "id": "170119"
+      },
+      {
+        "name": "Tanja Savić",
+        "url": "https://genius.com/artists/Tanja-savic",
+        "type": "regular",
+        "id": "1080507"
+      },
+      {
+        "name": "Tank",
+        "url": "https://genius.com/artists/Tank",
+        "type": "regular",
+        "id": "1057"
+      },
+      {
+        "name": "Tankurt Manas",
+        "url": "https://genius.com/artists/Tankurt-manas",
+        "type": "regular",
+        "id": "653968"
+      },
+      {
+        "name": "Tanna Leone",
+        "url": "https://genius.com/artists/Tanna-leone",
+        "type": "regular",
+        "id": "3088529"
+      },
+      {
+        "name": "Tanner Adell",
+        "url": "https://genius.com/artists/Tanner-adell",
+        "type": "regular",
+        "id": "2835248"
+      },
+      {
+        "name": "Tan Taşçı",
+        "url": "https://genius.com/artists/Tan-tasc",
+        "type": "regular",
+        "id": "532591"
+      },
+      {
+        "name": "Tanveer Evan",
+        "url": "https://genius.com/artists/Tanveer-evan",
+        "type": "regular",
+        "id": "1503803"
+      },
+      {
+        "name": "蔡健雅 (Tanya Chua)",
+        "url": "https://genius.com/artists/Tanya-chua",
+        "type": "regular",
+        "id": "1045668"
+      },
+      {
+        "name": "Tanya Tucker",
+        "url": "https://genius.com/artists/Tanya-tucker",
+        "type": "regular",
+        "id": "331840"
+      },
+      {
+        "name": "Tanzir Tuhin & Avash",
+        "url": "https://genius.com/artists/Tanzir-tuhin-and-avash",
+        "type": "regular",
+        "id": "1733221"
+      },
+      {
+        "name": "Танцы Минус (Tanzy Minus)",
+        "url": "https://genius.com/artists/Tanzy-minus",
+        "type": "regular",
+        "id": "1587901"
+      },
+      {
+        "name": "Tapani Kansa",
+        "url": "https://genius.com/artists/Tapani-kansa",
+        "type": "regular",
+        "id": "380916"
+      },
+      {
+        "name": "Tapio Rautavaara",
+        "url": "https://genius.com/artists/Tapio-rautavaara",
+        "type": "regular",
+        "id": "365225"
+      },
+      {
+        "name": "TARAS",
+        "url": "https://genius.com/artists/Taras",
+        "type": "regular",
+        "id": "1020159"
+      },
+      {
+        "name": "tarchi",
+        "url": "https://genius.com/artists/Tarchi",
+        "type": "regular",
+        "id": "3189544"
+      },
+      {
+        "name": "Tarkan",
+        "url": "https://genius.com/artists/Tarkan",
+        "type": "regular",
+        "id": "1204"
+      },
+      {
+        "name": "Taron Egerton",
+        "url": "https://genius.com/artists/Taron-egerton",
+        "type": "regular",
+        "id": "1043315"
+      },
+      {
+        "name": "Tarrus Riley",
+        "url": "https://genius.com/artists/Tarrus-riley",
+        "type": "regular",
+        "id": "886"
+      },
+      {
+        "name": "Tasha Cobbs Leonard",
+        "url": "https://genius.com/artists/Tasha-cobbs-leonard",
+        "type": "regular",
+        "id": "120512"
+      },
+      {
+        "name": "Tash Sultana",
+        "url": "https://genius.com/artists/Tash-sultana",
+        "type": "regular",
+        "id": "1001787"
+      },
+      {
+        "name": "A Taste of Honey",
+        "url": "https://genius.com/artists/A-taste-of-honey",
+        "type": "regular",
+        "id": "362384"
+      },
+      {
+        "name": "TaTa",
+        "url": "https://genius.com/artists/Tata",
+        "type": "regular",
+        "id": "3172148"
+      },
+      {
+        "name": "Tata Barahona",
+        "url": "https://genius.com/artists/Tata-barahona",
+        "type": "regular",
+        "id": "1189344"
+      },
+      {
+        "name": "Tatiana",
+        "url": "https://genius.com/artists/Tatiana",
+        "type": "regular",
+        "id": "42601"
+      },
+      {
+        "name": "Tatiana Manaois",
+        "url": "https://genius.com/artists/Tatiana-manaois",
+        "type": "regular",
+        "id": "270484"
+      },
+      {
+        "name": "山下達郎 (Tatsuro Yamashita)",
+        "url": "https://genius.com/artists/Tatsuro-yamashita",
+        "type": "regular",
+        "id": "419067"
+      },
+      {
+        "name": "キタニタツヤ (Tatsuya Kitani)",
+        "url": "https://genius.com/artists/Tatsuya-kitani",
+        "type": "regular",
+        "id": "1677080"
+      },
+      {
+        "name": "Tattoo Colour",
+        "url": "https://genius.com/artists/Tattoo-colour",
+        "type": "regular",
+        "id": "2244208"
+      },
+      {
+        "name": "t.A.T.u.",
+        "url": "https://genius.com/artists/Tatu",
+        "type": "regular",
+        "id": "79055"
+      },
+      {
+        "name": "Татьяна Буланова (Tatyana Bulanova)",
+        "url": "https://genius.com/artists/Tatyana-bulanova",
+        "type": "regular",
+        "id": "2058310"
+      },
+      {
+        "name": "Татьяна Дасковская (Tatyana Daskovskaya)",
+        "url": "https://genius.com/artists/Tatyana-daskovskaya",
+        "type": "regular",
+        "id": "3315109"
+      },
+      {
+        "name": "Татьяна Куртукова (Tatyana Kurtukova)",
+        "url": "https://genius.com/artists/Tatyana-kurtukova",
+        "type": "regular",
+        "id": "3855248"
+      },
+      {
+        "name": "Tauren Wells",
+        "url": "https://genius.com/artists/Tauren-wells",
+        "type": "regular",
+        "id": "185061"
+      },
+      {
+        "name": "Tax Free (POL)",
+        "url": "https://genius.com/artists/Tax-free-pol",
+        "type": "regular",
+        "id": "4463842"
+      },
+      {
+        "name": "The Taxpayers",
+        "url": "https://genius.com/artists/The-taxpayers",
+        "type": "regular",
+        "id": "57830"
+      },
+      {
+        "name": "TAYA",
+        "url": "https://genius.com/artists/Taya",
+        "type": "regular",
+        "id": "527407"
+      },
+      {
+        "name": "Tay B",
+        "url": "https://genius.com/artists/Tay-b",
+        "type": "regular",
+        "id": "1110697"
+      },
+      {
+        "name": "Tayc",
+        "url": "https://genius.com/artists/Tayc",
+        "type": "regular",
+        "id": "1181301"
+      },
+      {
+        "name": "Tay-K",
+        "url": "https://genius.com/artists/Tay-k",
+        "type": "regular",
+        "id": "1147606"
+      },
+      {
+        "name": "Tay Keith",
+        "url": "https://genius.com/artists/Tay-keith",
+        "type": "regular",
+        "id": "270426"
+      },
+      {
+        "name": "Taylan Kaya",
+        "url": "https://genius.com/artists/Taylan-kaya",
+        "type": "regular",
+        "id": "1060946"
+      },
+      {
+        "name": "Tayla Parx",
+        "url": "https://genius.com/artists/Tayla-parx",
+        "type": "regular",
+        "id": "615916"
+      },
+      {
+        "name": "Taylor Armstrong",
+        "url": "https://genius.com/artists/Taylor-armstrong",
+        "type": "regular",
+        "id": "1492313"
+      },
+      {
+        "name": "Taylor Dayne",
+        "url": "https://genius.com/artists/Taylor-dayne",
+        "type": "regular",
+        "id": "355440"
+      },
+      {
+        "name": "Taylor Demp",
+        "url": "https://genius.com/artists/Taylor-demp",
+        "type": "regular",
+        "id": "4078823"
+      },
+      {
+        "name": "Taylor Fish",
+        "url": "https://genius.com/artists/Taylor-fish",
+        "type": "regular",
+        "id": "3030919"
+      },
+      {
+        "name": "Taylor Lautner",
+        "url": "https://genius.com/artists/Taylor-lautner",
+        "type": "regular",
+        "id": "2258109"
+      },
+      {
+        "name": "Taylour Paige",
+        "url": "https://genius.com/artists/Taylour-paige",
+        "type": "regular",
+        "id": "3042421"
+      },
+      {
+        "name": "Tayna",
+        "url": "https://genius.com/artists/Tayna",
+        "type": "regular",
+        "id": "1500420"
+      },
+      {
+        "name": "Tayson Kryss",
+        "url": "https://genius.com/artists/Tayson-kryss",
+        "type": "regular",
+        "id": "4215518"
+      },
+      {
+        "name": "Тбили (Tbili)",
+        "url": "https://genius.com/artists/Tbili",
+        "type": "regular",
+        "id": "1021354"
+      },
+      {
+        "name": "TBO (ZAF)",
+        "url": "https://genius.com/artists/Tbo-zaf",
+        "type": "regular",
+        "id": "640436"
+      },
+      {
+        "name": "Tchubi",
+        "url": "https://genius.com/artists/Tchubi",
+        "type": "regular",
+        "id": "2389318"
+      },
+      {
+        "name": "T. Danny",
+        "url": "https://genius.com/artists/T-danny",
+        "type": "regular",
+        "id": "1788365"
+      },
+      {
+        "name": "Три дня дождя (TDD)",
+        "url": "https://genius.com/artists/Tdd",
+        "type": "regular",
+        "id": "1962336"
+      },
+      {
+        "name": "tdf",
+        "url": "https://genius.com/artists/Tdf",
+        "type": "regular",
+        "id": "2632652"
+      },
+      {
+        "name": "Tdot2Oppy",
+        "url": "https://genius.com/artists/Tdot2oppy",
+        "type": "regular",
+        "id": "2900662"
+      },
+      {
+        "name": "Teagan Earley",
+        "url": "https://genius.com/artists/Teagan-earley",
+        "type": "regular",
+        "id": "3389339"
+      },
+      {
+        "name": "&TEAM",
+        "url": "https://genius.com/artists/Team",
+        "type": "regular",
+        "id": "2940001"
+      },
+      {
+        "name": "Team America",
+        "url": "https://genius.com/artists/Team-america",
+        "type": "regular",
+        "id": "2496093"
+      },
+      {
+        "name": "Team Eternity Ghana",
+        "url": "https://genius.com/artists/Team-eternity-ghana",
+        "type": "regular",
+        "id": "3947027"
+      },
+      {
+        "name": "TeamFourStar",
+        "url": "https://genius.com/artists/Teamfourstar",
+        "type": "regular",
+        "id": "1045243"
+      },
+      {
+        "name": "Team Rocket",
+        "url": "https://genius.com/artists/Team-rocket",
+        "type": "regular",
+        "id": "333195"
+      },
+      {
+        "name": "Team Sleep",
+        "url": "https://genius.com/artists/Team-sleep",
+        "type": "regular",
+        "id": "353777"
+      },
+      {
+        "name": "Team StarKid",
+        "url": "https://genius.com/artists/Team-starkid",
+        "type": "regular",
+        "id": "400350"
+      },
+      {
+        "name": "Tea Tairović",
+        "url": "https://genius.com/artists/Tea-tairovic",
+        "type": "regular",
+        "id": "1113714"
+      },
+      {
+        "name": "TEC",
+        "url": "https://genius.com/artists/Tec",
+        "type": "regular",
+        "id": "1241007"
+      },
+      {
+        "name": "Tech N9ne",
+        "url": "https://genius.com/artists/Tech-n9ne",
+        "type": "regular",
+        "id": "506"
+      },
+      {
+        "name": "Technotronic",
+        "url": "https://genius.com/artists/Technotronic",
+        "type": "regular",
+        "id": "365375"
+      },
+      {
+        "name": "Ted & Sheri",
+        "url": "https://genius.com/artists/Ted-and-sheri",
+        "type": "regular",
+        "id": "363330"
+      },
+      {
+        "name": "Tedashii",
+        "url": "https://genius.com/artists/Tedashii",
+        "type": "regular",
+        "id": "7386"
+      },
+      {
+        "name": "Teddy Pendergrass",
+        "url": "https://genius.com/artists/Teddy-pendergrass",
+        "type": "regular",
+        "id": "1249"
+      },
+      {
+        "name": "Tede",
+        "url": "https://genius.com/artists/Tede",
+        "type": "regular",
+        "id": "24193"
+      },
+      {
+        "name": "Ted Gärdestad",
+        "url": "https://genius.com/artists/Ted-gardestad",
+        "type": "regular",
+        "id": "357109"
+      },
+      {
+        "name": "Ted Hughes",
+        "url": "https://genius.com/artists/Ted-hughes",
+        "type": "regular",
+        "id": "21050"
+      },
+      {
+        "name": "Теди Александрова (Tedi Aleksandrova)",
+        "url": "https://genius.com/artists/Tedi-aleksandrova",
+        "type": "regular",
+        "id": "3788393"
+      },
+      {
+        "name": "Ted Ito",
+        "url": "https://genius.com/artists/Ted-ito",
+        "type": "regular",
+        "id": "3247074"
+      },
+      {
+        "name": "Ted Nugent",
+        "url": "https://genius.com/artists/Ted-nugent",
+        "type": "regular",
+        "id": "103560"
+      },
+      {
+        "name": "Ted Poley",
+        "url": "https://genius.com/artists/Ted-poley",
+        "type": "regular",
+        "id": "58922"
+      },
+      {
+        "name": "Tedua",
+        "url": "https://genius.com/artists/Tedua",
+        "type": "regular",
+        "id": "569723"
+      },
+      {
+        "name": "Teedra Moses",
+        "url": "https://genius.com/artists/Teedra-moses",
+        "type": "regular",
+        "id": "11242"
+      },
+      {
+        "name": "Tee Grizzley",
+        "url": "https://genius.com/artists/Tee-grizzley",
+        "type": "regular",
+        "id": "1028913"
+      },
+      {
+        "name": "Teejay",
+        "url": "https://genius.com/artists/Teejay",
+        "type": "regular",
+        "id": "1595725"
+      },
+      {
+        "name": "Teejayx6",
+        "url": "https://genius.com/artists/Teejayx6",
+        "type": "regular",
+        "id": "1876620"
+      },
+      {
+        "name": "Teenage Disaster",
+        "url": "https://genius.com/artists/Teenage-disaster",
+        "type": "regular",
+        "id": "2024655"
+      },
+      {
+        "name": "Teenage Mutant Ninja Turtles",
+        "url": "https://genius.com/artists/Teenage-mutant-ninja-turtles",
+        "type": "regular",
+        "id": "213843"
+      },
+      {
+        "name": "Teena Marie",
+        "url": "https://genius.com/artists/Teena-marie",
+        "type": "regular",
+        "id": "2972"
+      },
+      {
+        "name": "Teen Mortgage",
+        "url": "https://genius.com/artists/Teen-mortgage",
+        "type": "regular",
+        "id": "1863651"
+      },
+      {
+        "name": "Teen Suicide",
+        "url": "https://genius.com/artists/Teen-suicide",
+        "type": "regular",
+        "id": "4051932"
+      },
+      {
+        "name": "Teen Titans Go!",
+        "url": "https://genius.com/artists/Teen-titans-go",
+        "type": "regular",
+        "id": "1278370"
+      },
+      {
+        "name": "Teezo Touchdown",
+        "url": "https://genius.com/artists/Teezo-touchdown",
+        "type": "regular",
+        "id": "1399903"
+      },
+      {
+        "name": "Ștefan Costea",
+        "url": "https://genius.com/artists/Stefan-costea",
+        "type": "regular",
+        "id": "2626281"
+      },
+      {
+        "name": "Tegan and Sara",
+        "url": "https://genius.com/artists/Tegan-and-sara",
+        "type": "regular",
+        "id": "33996"
+      },
+      {
+        "name": "Tegi Pannu",
+        "url": "https://genius.com/artists/Tegi-pannu",
+        "type": "regular",
+        "id": "3560456"
+      },
+      {
+        "name": "Tego Calderón",
+        "url": "https://genius.com/artists/Tego-calderon",
+        "type": "regular",
+        "id": "56068"
+      },
+      {
+        "name": "Tek lintowe",
+        "url": "https://genius.com/artists/Tek-lintowe",
+        "type": "regular",
+        "id": "2599266"
+      },
+      {
+        "name": "Tekno",
+        "url": "https://genius.com/artists/Tekno",
+        "type": "regular",
+        "id": "525537"
+      },
+      {
+        "name": "Teletubbies",
+        "url": "https://genius.com/artists/Teletubbies",
+        "type": "regular",
+        "id": "454464"
+      },
+      {
+        "name": "Television",
+        "url": "https://genius.com/artists/Television",
+        "type": "regular",
+        "id": "31147"
+      },
+      {
+        "name": "Σtella",
+        "url": "https://genius.com/artists/Tella",
+        "type": "regular",
+        "id": "1416046"
+      },
+      {
+        "name": "Temachii",
+        "url": "https://genius.com/artists/Temachii",
+        "type": "regular",
+        "id": "3386155"
+      },
+      {
+        "name": "Te Matatini",
+        "url": "https://genius.com/artists/Te-matatini",
+        "type": "regular",
+        "id": "3598641"
+      },
+      {
+        "name": "TE/MO",
+        "url": "https://genius.com/artists/Te-mo",
+        "type": "regular",
+        "id": "3902736"
+      },
+      {
+        "name": "The Temper Trap",
+        "url": "https://genius.com/artists/The-temper-trap",
+        "type": "regular",
+        "id": "20645"
+      },
+      {
+        "name": "Temple of the Dog",
+        "url": "https://genius.com/artists/Temple-of-the-dog",
+        "type": "regular",
+        "id": "62664"
+      },
+      {
+        "name": "Tempo",
+        "url": "https://genius.com/artists/Tempo",
+        "type": "regular",
+        "id": "234856"
+      },
+      {
+        "name": "TEMPOREX",
+        "url": "https://genius.com/artists/Temporex",
+        "type": "regular",
+        "id": "1076220"
+      },
+      {
+        "name": "The Temptations",
+        "url": "https://genius.com/artists/The-temptations",
+        "type": "regular",
+        "id": "1664"
+      },
+      {
+        "name": "Tems",
+        "url": "https://genius.com/artists/Tems",
+        "type": "regular",
+        "id": "1649025"
+      },
+      {
+        "name": "TEN",
+        "url": "https://genius.com/artists/Ten",
+        "type": "regular",
+        "id": "1057412"
+      },
+      {
+        "name": "Ten2Five",
+        "url": "https://genius.com/artists/Ten2five",
+        "type": "regular",
+        "id": "374326"
+      },
+      {
+        "name": "Tenacious D",
+        "url": "https://genius.com/artists/Tenacious-d",
+        "type": "regular",
+        "id": "19845"
+      },
+      {
+        "name": "Tenderlybae",
+        "url": "https://genius.com/artists/Tenderlybae",
+        "type": "regular",
+        "id": "1688811"
+      },
+      {
+        "name": "Tendon Levey",
+        "url": "https://genius.com/artists/Tendon-levey",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Teni",
+        "url": "https://genius.com/artists/Teni",
+        "type": "regular",
+        "id": "1455849"
+      },
+      {
+        "name": "​tenkay",
+        "url": "https://genius.com/artists/Tenkay",
+        "type": "regular",
+        "id": "3153752"
+      },
+      {
+        "name": "Tennessee Ernie Ford",
+        "url": "https://genius.com/artists/Tennessee-ernie-ford",
+        "type": "regular",
+        "id": "359463"
+      },
+      {
+        "name": "Tennessee Williams",
+        "url": "https://genius.com/artists/Tennessee-williams",
+        "type": "regular",
+        "id": "68674"
+      },
+      {
+        "name": "Tennis",
+        "url": "https://genius.com/artists/Tennis",
+        "type": "regular",
+        "id": "11394"
+      },
+      {
+        "name": "Ten Sharp",
+        "url": "https://genius.com/artists/Ten-sharp",
+        "type": "regular",
+        "id": "378318"
+      },
+      {
+        "name": "Tenth Avenue North",
+        "url": "https://genius.com/artists/Tenth-avenue-north",
+        "type": "regular",
+        "id": "59371"
+      },
+      {
+        "name": "Ten Typ Mes",
+        "url": "https://genius.com/artists/Ten-typ-mes",
+        "type": "regular",
+        "id": "19857"
+      },
+      {
+        "name": "Tenxi",
+        "url": "https://genius.com/artists/Tenxi",
+        "type": "regular",
+        "id": "3007052"
+      },
+      {
+        "name": "Ten Years After",
+        "url": "https://genius.com/artists/Ten-years-after",
+        "type": "regular",
+        "id": "38339"
+      },
+      {
+        "name": "Teodora",
+        "url": "https://genius.com/artists/Teodora",
+        "type": "regular",
+        "id": "1093106"
+      },
+      {
+        "name": "​teo glacier",
+        "url": "https://genius.com/artists/Teo-glacier",
+        "type": "regular",
+        "id": "3461259"
+      },
+      {
+        "name": "Teoman",
+        "url": "https://genius.com/artists/Teoman",
+        "type": "regular",
+        "id": "357383"
+      },
+      {
+        "name": "Tepki",
+        "url": "https://genius.com/artists/Tepki",
+        "type": "regular",
+        "id": "285786"
+      },
+      {
+        "name": "林家謙 (Terence Lam)",
+        "url": "https://genius.com/artists/Terence-lam",
+        "type": "regular",
+        "id": "2171121"
+      },
+      {
+        "name": "Terence Trent D'Arby",
+        "url": "https://genius.com/artists/Terence-trent-darby",
+        "type": "regular",
+        "id": "344608"
+      },
+      {
+        "name": "鄧麗君 (Teresa Teng)",
+        "url": "https://genius.com/artists/Teresa-teng",
+        "type": "regular",
+        "id": "318849"
+      },
+      {
+        "name": "TERESHINA",
+        "url": "https://genius.com/artists/Tereshina",
+        "type": "regular",
+        "id": "2278737"
+      },
+      {
+        "name": "Teri Ralston",
+        "url": "https://genius.com/artists/Teri-ralston",
+        "type": "regular",
+        "id": "1018540"
+      },
+      {
+        "name": "Teriyaki Boyz",
+        "url": "https://genius.com/artists/Teriyaki-boyz",
+        "type": "regular",
+        "id": "8200"
+      },
+      {
+        "name": "Terno Rei",
+        "url": "https://genius.com/artists/Terno-rei",
+        "type": "regular",
+        "id": "1027992"
+      },
+      {
+        "name": "Terrace Martin",
+        "url": "https://genius.com/artists/Terrace-martin",
+        "type": "regular",
+        "id": "13291"
+      },
+      {
+        "name": "Terrance Zdunich",
+        "url": "https://genius.com/artists/Terrance-zdunich",
+        "type": "regular",
+        "id": "405921"
+      },
+      {
+        "name": "Terrian",
+        "url": "https://genius.com/artists/Terrian",
+        "type": "regular",
+        "id": "1603258"
+      },
+      {
+        "name": "Terror Fabulous",
+        "url": "https://genius.com/artists/Terror-fabulous",
+        "type": "regular",
+        "id": "26456"
+      },
+      {
+        "name": "Terror Jr",
+        "url": "https://genius.com/artists/Terror-jr",
+        "type": "regular",
+        "id": "654589"
+      },
+      {
+        "name": "TERROR REID",
+        "url": "https://genius.com/artists/Terror-reid",
+        "type": "regular",
+        "id": "1110840"
+      },
+      {
+        "name": "Terry Jacks",
+        "url": "https://genius.com/artists/Terry-jacks",
+        "type": "regular",
+        "id": "32073"
+      },
+      {
+        "name": "Terry MacAlmon",
+        "url": "https://genius.com/artists/Terry-macalmon",
+        "type": "regular",
+        "id": "367451"
+      },
+      {
+        "name": "Tesher",
+        "url": "https://genius.com/artists/Tesher",
+        "type": "regular",
+        "id": "2121748"
+      },
+      {
+        "name": "The Teskey Brothers",
+        "url": "https://genius.com/artists/The-teskey-brothers",
+        "type": "regular",
+        "id": "1652473"
+      },
+      {
+        "name": "Tesla",
+        "url": "https://genius.com/artists/Tesla",
+        "type": "regular",
+        "id": "273793"
+      },
+      {
+        "name": "Tessa",
+        "url": "https://genius.com/artists/Tessa",
+        "type": "regular",
+        "id": "1867652"
+      },
+      {
+        "name": "Testament",
+        "url": "https://genius.com/artists/Testament",
+        "type": "regular",
+        "id": "37578"
+      },
+      {
+        "name": "Teto",
+        "url": "https://genius.com/artists/Teto",
+        "type": "regular",
+        "id": "1719466"
+      },
+      {
+        "name": "Teuterekordz",
+        "url": "https://genius.com/artists/Teuterekordz",
+        "type": "regular",
+        "id": "1804642"
+      },
+      {
+        "name": "TeuYungBoy",
+        "url": "https://genius.com/artists/Teuyungboy",
+        "type": "regular",
+        "id": "3962232"
+      },
+      {
+        "name": "Tevin Campbell",
+        "url": "https://genius.com/artists/Tevin-campbell",
+        "type": "regular",
+        "id": "8544"
+      },
+      {
+        "name": "Te Wehi",
+        "url": "https://genius.com/artists/Te-wehi",
+        "type": "regular",
+        "id": "3920006"
+      },
+      {
+        "name": "tewiq",
+        "url": "https://genius.com/artists/Tewiq",
+        "type": "regular",
+        "id": "2789963"
+      },
+      {
+        "name": "Texako",
+        "url": "https://genius.com/artists/Texako",
+        "type": "regular",
+        "id": "1160392"
+      },
+      {
+        "name": "Texas",
+        "url": "https://genius.com/artists/Texas",
+        "type": "regular",
+        "id": "8265"
+      },
+      {
+        "name": "Texas Tornados",
+        "url": "https://genius.com/artists/Texas-tornados",
+        "type": "regular",
+        "id": "362098"
+      },
+      {
+        "name": "Teya Dora",
+        "url": "https://genius.com/artists/Teya-dora",
+        "type": "regular",
+        "id": "1474149"
+      },
+      {
+        "name": "Teyana Taylor",
+        "url": "https://genius.com/artists/Teyana-taylor",
+        "type": "regular",
+        "id": "1236"
+      },
+      {
+        "name": "TEZZ (UK)",
+        "url": "https://genius.com/artists/Tezz-uk",
+        "type": "regular",
+        "id": "4434792"
+      },
+      {
+        "name": "T-Fest",
+        "url": "https://genius.com/artists/T-fest",
+        "type": "regular",
+        "id": "1063927"
+      },
+      {
+        "name": "TH",
+        "url": "https://genius.com/artists/Th",
+        "type": "regular",
+        "id": "2365886"
+      },
+      {
+        "name": "Thaiboy Digital",
+        "url": "https://genius.com/artists/Thaiboy-digital",
+        "type": "regular",
+        "id": "139312"
+      },
+      {
+        "name": "Thai McGrath",
+        "url": "https://genius.com/artists/Thai-mcgrath",
+        "type": "regular",
+        "id": "3320579"
+      },
+      {
+        "name": "Thalía",
+        "url": "https://genius.com/artists/Thalia",
+        "type": "regular",
+        "id": "343803"
+      },
+      {
+        "name": "thasup",
+        "url": "https://genius.com/artists/Thasup",
+        "type": "regular",
+        "id": "1227429"
+      },
+      {
+        "name": "That Chick Angel",
+        "url": "https://genius.com/artists/That-chick-angel",
+        "type": "regular",
+        "id": "3555549"
+      },
+      {
+        "name": "That Handsome Devil",
+        "url": "https://genius.com/artists/That-handsome-devil",
+        "type": "regular",
+        "id": "15965"
+      },
+      {
+        "name": "That Mexican OT",
+        "url": "https://genius.com/artists/That-mexican-ot",
+        "type": "regular",
+        "id": "2918185"
+      },
+      {
+        "name": "Thatohatsi",
+        "url": "https://genius.com/artists/Thatohatsi",
+        "type": "regular",
+        "id": "4165503"
+      },
+      {
+        "name": "Thato Saul",
+        "url": "https://genius.com/artists/Thato-saul",
+        "type": "regular",
+        "id": "1020325"
+      },
+      {
+        "name": "Thayne Jasperson",
+        "url": "https://genius.com/artists/Thayne-jasperson",
+        "type": "regular",
+        "id": "572161"
+      },
+      {
+        "name": "THCF",
+        "url": "https://genius.com/artists/Thcf",
+        "type": "regular",
+        "id": "161074"
+      },
+      {
+        "name": "The The",
+        "url": "https://genius.com/artists/The-the",
+        "type": "regular",
+        "id": "580350"
+      },
+      {
+        "name": "​The Beat",
+        "url": "https://genius.com/artists/The-beat",
+        "type": "regular",
+        "id": "45512"
+      },
+      {
+        "name": "​The Beloved",
+        "url": "https://genius.com/artists/The-beloved",
+        "type": "regular",
+        "id": "359925"
+      },
+      {
+        "name": "​the bird and the bee",
+        "url": "https://genius.com/artists/The-bird-and-the-bee",
+        "type": "regular",
+        "id": "137170"
+      },
+      {
+        "name": "​The D.O.C.",
+        "url": "https://genius.com/artists/The-doc",
+        "type": "regular",
+        "id": "1129"
+      },
+      {
+        "name": "The-Dream",
+        "url": "https://genius.com/artists/The-dream",
+        "type": "regular",
+        "id": "1181"
+      },
+      {
+        "name": "Конец фильма (The end of the film)",
+        "url": "https://genius.com/artists/The-end-of-the-film",
+        "type": "regular",
+        "id": "2570546"
+      },
+      {
+        "name": "Thee Sacred Souls",
+        "url": "https://genius.com/artists/Thee-sacred-souls",
+        "type": "regular",
+        "id": "2227087"
+      },
+      {
+        "name": "​The Everly Brothers",
+        "url": "https://genius.com/artists/The-everly-brothers",
+        "type": "regular",
+        "id": "44139"
+      },
+      {
+        "name": "​The Fall",
+        "url": "https://genius.com/artists/The-fall",
+        "type": "regular",
+        "id": "125285"
+      },
+      {
+        "name": "TheFatRat",
+        "url": "https://genius.com/artists/Thefatrat",
+        "type": "regular",
+        "id": "482968"
+      },
+      {
+        "name": "Thegiornalisti",
+        "url": "https://genius.com/artists/Thegiornalisti",
+        "type": "regular",
+        "id": "480672"
+      },
+      {
+        "name": "​The Guess Who",
+        "url": "https://genius.com/artists/The-guess-who",
+        "type": "regular",
+        "id": "10214"
+      },
+      {
+        "name": "​The Jam",
+        "url": "https://genius.com/artists/The-jam",
+        "type": "regular",
+        "id": "22773"
+      },
+      {
+        "name": "​the King will come",
+        "url": "https://genius.com/artists/The-king-will-come",
+        "type": "regular",
+        "id": "3547038"
+      },
+      {
+        "name": "​The K's",
+        "url": "https://genius.com/artists/The-ks",
+        "type": "regular",
+        "id": "1268330"
+      },
+      {
+        "name": "Thelma Houston",
+        "url": "https://genius.com/artists/Thelma-houston",
+        "type": "regular",
+        "id": "344706"
+      },
+      {
+        "name": "Them",
+        "url": "https://genius.com/artists/Them",
+        "type": "regular",
+        "id": "324016"
+      },
+      {
+        "name": "TheManBeHisLa",
+        "url": "https://genius.com/artists/Themanbehisla",
+        "type": "regular",
+        "id": "3382523"
+      },
+      {
+        "name": "Them & I",
+        "url": "https://genius.com/artists/Them-and-i",
+        "type": "regular",
+        "id": "3839028"
+      },
+      {
+        "name": "Them Crooked Vultures",
+        "url": "https://genius.com/artists/Them-crooked-vultures",
+        "type": "regular",
+        "id": "15398"
+      },
+      {
+        "name": "TheMilo",
+        "url": "https://genius.com/artists/Themilo",
+        "type": "regular",
+        "id": "3111881"
+      },
+      {
+        "name": "Themusicnerdguy",
+        "url": "https://genius.com/artists/Themusicnerdguy",
+        "type": "regular",
+        "id": "4083353"
+      },
+      {
+        "name": "Theodora",
+        "url": "https://genius.com/artists/Theodora",
+        "type": "regular",
+        "id": "3365642"
+      },
+      {
+        "name": "Theodore Bikel",
+        "url": "https://genius.com/artists/Theodore-bikel",
+        "type": "regular",
+        "id": "1542947"
+      },
+      {
+        "name": "Theo Evan",
+        "url": "https://genius.com/artists/Theo-evan",
+        "type": "regular",
+        "id": "4303113"
+      },
+      {
+        "name": "Theory of a Deadman",
+        "url": "https://genius.com/artists/Theory-of-a-deadman",
+        "type": "regular",
+        "id": "23836"
+      },
+      {
+        "name": "Theo Somolu",
+        "url": "https://genius.com/artists/Theo-somolu",
+        "type": "regular",
+        "id": "4222162"
+      },
+      {
+        "name": "T​he Prodigy",
+        "url": "https://genius.com/artists/The-prodigy",
+        "type": "regular",
+        "id": "322528"
+      },
+      {
+        "name": "​the scary jokes",
+        "url": "https://genius.com/artists/The-scary-jokes",
+        "type": "regular",
+        "id": "1267243"
+      },
+      {
+        "name": "СТИНТ (THE STINT)",
+        "url": "https://genius.com/artists/The-stint",
+        "type": "regular",
+        "id": "1688902"
+      },
+      {
+        "name": "​The Symposium",
+        "url": "https://genius.com/artists/The-symposium",
+        "type": "regular",
+        "id": "368713"
+      },
+      {
+        "name": "​The Time",
+        "url": "https://genius.com/artists/The-time",
+        "type": "regular",
+        "id": "660865"
+      },
+      {
+        "name": "​DA Uzi",
+        "url": "https://genius.com/artists/Da-uzi",
+        "type": "regular",
+        "id": "1212452"
+      },
+      {
+        "name": "THEY.",
+        "url": "https://genius.com/artists/They",
+        "type": "regular",
+        "id": "579570"
+      },
+      {
+        "name": "They Might Be Giants",
+        "url": "https://genius.com/artists/They-might-be-giants",
+        "type": "regular",
+        "id": "35519"
+      },
+      {
+        "name": "Thievery Corporation",
+        "url": "https://genius.com/artists/Thievery-corporation",
+        "type": "regular",
+        "id": "50825"
+      },
+      {
+        "name": "Thin Lizzy",
+        "url": "https://genius.com/artists/Thin-lizzy",
+        "type": "regular",
+        "id": "30612"
+      },
+      {
+        "name": "Third Day",
+        "url": "https://genius.com/artists/Third-day",
+        "type": "regular",
+        "id": "324828"
+      },
+      {
+        "name": "Third Eye Blind",
+        "url": "https://genius.com/artists/Third-eye-blind",
+        "type": "regular",
+        "id": "1414"
+      },
+      {
+        "name": "Thirty Seconds to Mars",
+        "url": "https://genius.com/artists/Thirty-seconds-to-mars",
+        "type": "regular",
+        "id": "60945"
+      },
+      {
+        "name": "This Band",
+        "url": "https://genius.com/artists/This-band",
+        "type": "regular",
+        "id": "1417789"
+      },
+      {
+        "name": "This is Lorelei",
+        "url": "https://genius.com/artists/This-is-lorelei",
+        "type": "regular",
+        "id": "3199605"
+      },
+      {
+        "name": "ThisizLondon",
+        "url": "https://genius.com/artists/Thisizlondon",
+        "type": "regular",
+        "id": "73793"
+      },
+      {
+        "name": "This Mortal Coil",
+        "url": "https://genius.com/artists/This-mortal-coil",
+        "type": "regular",
+        "id": "134152"
+      },
+      {
+        "name": "THIZZY52",
+        "url": "https://genius.com/artists/Thizzy52",
+        "type": "regular",
+        "id": "3804225"
+      },
+      {
+        "name": "Thắng",
+        "url": "https://genius.com/artists/Thang",
+        "type": "regular",
+        "id": "3518918"
+      },
+      {
+        "name": "THÉODORT",
+        "url": "https://genius.com/artists/Theodort",
+        "type": "regular",
+        "id": "2153843"
+      },
+      {
+        "name": "Thomas & Friends",
+        "url": "https://genius.com/artists/Thomas-and-friends",
+        "type": "regular",
+        "id": "773990"
+      },
+      {
+        "name": "Thomas Benjamin Wild Esq",
+        "url": "https://genius.com/artists/Thomas-benjamin-wild-esq",
+        "type": "regular",
+        "id": "1737484"
+      },
+      {
+        "name": "Thomas Doherty",
+        "url": "https://genius.com/artists/Thomas-doherty",
+        "type": "regular",
+        "id": "1150524"
+      },
+      {
+        "name": "Thomas Helmig",
+        "url": "https://genius.com/artists/Thomas-helmig",
+        "type": "regular",
+        "id": "359596"
+      },
+      {
+        "name": "Thomas LaRosa",
+        "url": "https://genius.com/artists/Thomas-larosa",
+        "type": "regular",
+        "id": "2899022"
+      },
+      {
+        "name": "Thomas Morley",
+        "url": "https://genius.com/artists/Thomas-morley",
+        "type": "regular",
+        "id": "1986583"
+      },
+      {
+        "name": "Thomas Mraz",
+        "url": "https://genius.com/artists/Thomas-mraz",
+        "type": "regular",
+        "id": "134882"
+      },
+      {
+        "name": "Thomas Rhett",
+        "url": "https://genius.com/artists/Thomas-rhett",
+        "type": "regular",
+        "id": "158709"
+      },
+      {
+        "name": "Thomeboydontkill",
+        "url": "https://genius.com/artists/Thomeboydontkill",
+        "type": "regular",
+        "id": "2903650"
+      },
+      {
+        "name": "Thompson Twins",
+        "url": "https://genius.com/artists/Thompson-twins",
+        "type": "regular",
+        "id": "354512"
+      },
+      {
+        "name": "Thom Yorke",
+        "url": "https://genius.com/artists/Thom-yorke",
+        "type": "regular",
+        "id": "49096"
+      },
+      {
+        "name": "Thorbjørn Egner",
+        "url": "https://genius.com/artists/Thorbjrn-egner",
+        "type": "regular",
+        "id": "491202"
+      },
+      {
+        "name": "Thor Farlov",
+        "url": "https://genius.com/artists/Thor-farlov",
+        "type": "regular",
+        "id": "973653"
+      },
+      {
+        "name": "Thornhill",
+        "url": "https://genius.com/artists/Thornhill",
+        "type": "regular",
+        "id": "1106201"
+      },
+      {
+        "name": "ЧёЗаУродыНаСцене (ThoseMonstersOnStage)",
+        "url": "https://genius.com/artists/Thosemonstersonstage",
+        "type": "regular",
+        "id": "3327797"
+      },
+      {
+        "name": "THOT SQUAD",
+        "url": "https://genius.com/artists/Thot-squad",
+        "type": "regular",
+        "id": "3290391"
+      },
+      {
+        "name": "Thou",
+        "url": "https://genius.com/artists/Thou",
+        "type": "regular",
+        "id": "355430"
+      },
+      {
+        "name": "Thousand Below",
+        "url": "https://genius.com/artists/Thousand-below",
+        "type": "regular",
+        "id": "1066461"
+      },
+      {
+        "name": "Thousand Foot Krutch",
+        "url": "https://genius.com/artists/Thousand-foot-krutch",
+        "type": "regular",
+        "id": "17556"
+      },
+      {
+        "name": "Thouxanbanfauni",
+        "url": "https://genius.com/artists/Thouxanbanfauni",
+        "type": "regular",
+        "id": "520371"
+      },
+      {
+        "name": "​thquib",
+        "url": "https://genius.com/artists/Thquib",
+        "type": "regular",
+        "id": "2560603"
+      },
+      {
+        "name": "​thr33",
+        "url": "https://genius.com/artists/Thr33",
+        "type": "regular",
+        "id": "3251894"
+      },
+      {
+        "name": "Three 6 Mafia",
+        "url": "https://genius.com/artists/Three-6-mafia",
+        "type": "regular",
+        "id": "44"
+      },
+      {
+        "name": "Three Days Grace",
+        "url": "https://genius.com/artists/Three-days-grace",
+        "type": "regular",
+        "id": "12926"
+      },
+      {
+        "name": "Three Dog Night",
+        "url": "https://genius.com/artists/Three-dog-night",
+        "type": "regular",
+        "id": "42922"
+      },
+      {
+        "name": "Three Man Down",
+        "url": "https://genius.com/artists/Three-man-down",
+        "type": "regular",
+        "id": "2556495"
+      },
+      {
+        "name": "threetwenty",
+        "url": "https://genius.com/artists/Threetwenty",
+        "type": "regular",
+        "id": "4395570"
+      },
+      {
+        "name": "Thrice",
+        "url": "https://genius.com/artists/Thrice",
+        "type": "regular",
+        "id": "17343"
+      },
+      {
+        "name": "THRILL PILL",
+        "url": "https://genius.com/artists/Thrill-pill",
+        "type": "regular",
+        "id": "1009099"
+      },
+      {
+        "name": "THØRNS",
+        "url": "https://genius.com/artists/Thrns",
+        "type": "regular",
+        "id": "3285431"
+      },
+      {
+        "name": "Throbbing Gristle",
+        "url": "https://genius.com/artists/Throbbing-gristle",
+        "type": "regular",
+        "id": "142471"
+      },
+      {
+        "name": "Thåström",
+        "url": "https://genius.com/artists/Thastrom",
+        "type": "regular",
+        "id": "358272"
+      },
+      {
+        "name": "Thug Life",
+        "url": "https://genius.com/artists/Thug-life",
+        "type": "regular",
+        "id": "2736"
+      },
+      {
+        "name": "Thugsta",
+        "url": "https://genius.com/artists/Thugsta",
+        "type": "regular",
+        "id": "2640276"
+      },
+      {
+        "name": "Thugstage Beats",
+        "url": "https://genius.com/artists/Thugstage-beats",
+        "type": "regular",
+        "id": "2409092"
+      },
+      {
+        "name": "Thukuthela",
+        "url": "https://genius.com/artists/Thukuthela",
+        "type": "regular",
+        "id": "4271159"
+      },
+      {
+        "name": "Thundercat",
+        "url": "https://genius.com/artists/Thundercat",
+        "type": "regular",
+        "id": "14481"
+      },
+      {
+        "name": "Thurl Ravenscroft",
+        "url": "https://genius.com/artists/Thurl-ravenscroft",
+        "type": "regular",
+        "id": "405677"
+      },
+      {
+        "name": "Thursday",
+        "url": "https://genius.com/artists/Thursday",
+        "type": "regular",
+        "id": "34884"
+      },
+      {
+        "name": "ThxSoMch",
+        "url": "https://genius.com/artists/Thxsomch",
+        "type": "regular",
+        "id": "3321868"
+      },
+      {
+        "name": "Thy Art Is Murder",
+        "url": "https://genius.com/artists/Thy-art-is-murder",
+        "type": "regular",
+        "id": "141732"
+      },
+      {
+        "name": "thủy (VNM)",
+        "url": "https://genius.com/artists/Thuy-vnm",
+        "type": "regular",
+        "id": "1112085"
+      },
+      {
+        "name": "T.I.",
+        "url": "https://genius.com/artists/Ti",
+        "type": "regular",
+        "id": "85"
+      },
+      {
+        "name": "Tia Blake",
+        "url": "https://genius.com/artists/Tia-blake",
+        "type": "regular",
+        "id": "2580932"
+      },
+      {
+        "name": "TiaCorine",
+        "url": "https://genius.com/artists/Tiacorine",
+        "type": "regular",
+        "id": "1739831"
+      },
+      {
+        "name": "Tiago PZK",
+        "url": "https://genius.com/artists/Tiago-pzk",
+        "type": "regular",
+        "id": "2174045"
+      },
+      {
+        "name": "Tiagz",
+        "url": "https://genius.com/artists/Tiagz",
+        "type": "regular",
+        "id": "2081935"
+      },
+      {
+        "name": "Tiakola",
+        "url": "https://genius.com/artists/Tiakola",
+        "type": "regular",
+        "id": "1444864"
+      },
+      {
+        "name": "Tiara Andini",
+        "url": "https://genius.com/artists/Tiara-andini",
+        "type": "regular",
+        "id": "2127291"
+      },
+      {
+        "name": "T.I BLAZE",
+        "url": "https://genius.com/artists/Ti-blaze",
+        "type": "regular",
+        "id": "2948619"
+      },
+      {
+        "name": "​ticklemytip",
+        "url": "https://genius.com/artists/Ticklemytip",
+        "type": "regular",
+        "id": "3130828"
+      },
+      {
+        "name": "Tic Tac Toe",
+        "url": "https://genius.com/artists/Tic-tac-toe",
+        "type": "regular",
+        "id": "86595"
+      },
+      {
+        "name": "TIEFBASSKOMMANDO",
+        "url": "https://genius.com/artists/Tiefbasskommando",
+        "type": "regular",
+        "id": "2123246"
+      },
+      {
+        "name": "Tiem (IRN)",
+        "url": "https://genius.com/artists/Tiem-irn",
+        "type": "regular",
+        "id": "3565114"
+      },
+      {
+        "name": "Tien Tien",
+        "url": "https://genius.com/artists/Tien-tien",
+        "type": "regular",
+        "id": "1433753"
+      },
+      {
+        "name": "Tiera Kennedy",
+        "url": "https://genius.com/artists/Tiera-kennedy",
+        "type": "regular",
+        "id": "3064465"
+      },
+      {
+        "name": "Tierra Whack",
+        "url": "https://genius.com/artists/Tierra-whack",
+        "type": "regular",
+        "id": "565305"
+      },
+      {
+        "name": "TIF",
+        "url": "https://genius.com/artists/Tif",
+        "type": "regular",
+        "id": "1927147"
+      },
+      {
+        "name": "Tiffany",
+        "url": "https://genius.com/artists/Tiffany",
+        "type": "regular",
+        "id": "4299"
+      },
+      {
+        "name": "Tiffany Boone",
+        "url": "https://genius.com/artists/Tiffany-boone",
+        "type": "regular",
+        "id": "4222171"
+      },
+      {
+        "name": "Tiffany Hudson",
+        "url": "https://genius.com/artists/Tiffany-hudson",
+        "type": "regular",
+        "id": "2661587"
+      },
+      {
+        "name": "The Tiger Lillies",
+        "url": "https://genius.com/artists/The-tiger-lillies",
+        "type": "regular",
+        "id": "353756"
+      },
+      {
+        "name": "Tigers Jaw",
+        "url": "https://genius.com/artists/Tigers-jaw",
+        "type": "regular",
+        "id": "136760"
+      },
+      {
+        "name": "TIGO",
+        "url": "https://genius.com/artists/Tigo",
+        "type": "regular",
+        "id": "3904652"
+      },
+      {
+        "name": "Tiken Jah Fakoly",
+        "url": "https://genius.com/artists/Tiken-jah-fakoly",
+        "type": "regular",
+        "id": "134219"
+      },
+      {
+        "name": "Tila Tsoli",
+        "url": "https://genius.com/artists/Tila-tsoli",
+        "type": "regular",
+        "id": "2923697"
+      },
+      {
+        "name": "Till Lindemann",
+        "url": "https://genius.com/artists/Till-lindemann",
+        "type": "regular",
+        "id": "338482"
+      },
+      {
+        "name": "'Til Tuesday",
+        "url": "https://genius.com/artists/Til-tuesday",
+        "type": "regular",
+        "id": "346486"
+      },
+      {
+        "name": "Тима Белорусских (Tima Belorusskih)",
+        "url": "https://genius.com/artists/Tima-belorusskih",
+        "type": "regular",
+        "id": "1562769"
+      },
+      {
+        "name": "тима ищет свет (tima ishet svet)",
+        "url": "https://genius.com/artists/Tima-ishet-svet",
+        "type": "regular",
+        "id": "1607577"
+      },
+      {
+        "name": "Timal",
+        "url": "https://genius.com/artists/Timal",
+        "type": "regular",
+        "id": "963309"
+      },
+      {
+        "name": "Тимати (Timati)",
+        "url": "https://genius.com/artists/Timati",
+        "type": "regular",
+        "id": "20382"
+      },
+      {
+        "name": "Timbaland",
+        "url": "https://genius.com/artists/Timbaland",
+        "type": "regular",
+        "id": "112"
+      },
+      {
+        "name": "Tim Buckley",
+        "url": "https://genius.com/artists/Tim-buckley",
+        "type": "regular",
+        "id": "129914"
+      },
+      {
+        "name": "​​timelesz",
+        "url": "https://genius.com/artists/Timelesz",
+        "type": "regular",
+        "id": "2113812"
+      },
+      {
+        "name": "Tim Hawkins",
+        "url": "https://genius.com/artists/Tim-hawkins",
+        "type": "regular",
+        "id": "453293"
+      },
+      {
+        "name": "Tim Hughes",
+        "url": "https://genius.com/artists/Tim-hughes",
+        "type": "regular",
+        "id": "97803"
+      },
+      {
+        "name": "Tim McGraw",
+        "url": "https://genius.com/artists/Tim-mcgraw",
+        "type": "regular",
+        "id": "4791"
+      },
+      {
+        "name": "timmies",
+        "url": "https://genius.com/artists/Timmies",
+        "type": "regular",
+        "id": "1250863"
+      },
+      {
+        "name": "Tim Minchin",
+        "url": "https://genius.com/artists/Tim-minchin",
+        "type": "regular",
+        "id": "12256"
+      },
+      {
+        "name": "Timmy Trumpet",
+        "url": "https://genius.com/artists/Timmy-trumpet",
+        "type": "regular",
+        "id": "284703"
+      },
+      {
+        "name": "Timothée Chalamet",
+        "url": "https://genius.com/artists/Timothee-chalamet",
+        "type": "regular",
+        "id": "1323897"
+      },
+      {
+        "name": "Timothy Hughes",
+        "url": "https://genius.com/artists/Timothy-hughes",
+        "type": "regular",
+        "id": "1415790"
+      },
+      {
+        "name": "Tim Robinson",
+        "url": "https://genius.com/artists/Tim-robinson",
+        "type": "regular",
+        "id": "1869491"
+      },
+      {
+        "name": "Тимур Муцураев (Timur Mutsuraev)",
+        "url": "https://genius.com/artists/Timur-mutsuraev",
+        "type": "regular",
+        "id": "497358"
+      },
+      {
+        "name": "Tina Arena",
+        "url": "https://genius.com/artists/Tina-arena",
+        "type": "regular",
+        "id": "350380"
+      },
+      {
+        "name": "Tina Dickow",
+        "url": "https://genius.com/artists/Tina-dickow",
+        "type": "regular",
+        "id": "15169"
+      },
+      {
+        "name": "Тіна Кароль (Tina Karol)",
+        "url": "https://genius.com/artists/Tina-karol",
+        "type": "regular",
+        "id": "1838296"
+      },
+      {
+        "name": "Tinariwen",
+        "url": "https://genius.com/artists/Tinariwen",
+        "type": "regular",
+        "id": "174113"
+      },
+      {
+        "name": "Tinashe",
+        "url": "https://genius.com/artists/Tinashe",
+        "type": "regular",
+        "id": "25561"
+      },
+      {
+        "name": "Tina Turner",
+        "url": "https://genius.com/artists/Tina-turner",
+        "type": "regular",
+        "id": "28334"
+      },
+      {
+        "name": "Tindersticks",
+        "url": "https://genius.com/artists/Tindersticks",
+        "type": "regular",
+        "id": "51926"
+      },
+      {
+        "name": "The Ting Tings",
+        "url": "https://genius.com/artists/The-ting-tings",
+        "type": "regular",
+        "id": "33583"
+      },
+      {
+        "name": "TINI",
+        "url": "https://genius.com/artists/Tini",
+        "type": "regular",
+        "id": "381162"
+      },
+      {
+        "name": "Tinie Tempah",
+        "url": "https://genius.com/artists/Tinie-tempah",
+        "type": "regular",
+        "id": "721"
+      },
+      {
+        "name": "Tink",
+        "url": "https://genius.com/artists/Tink",
+        "type": "regular",
+        "id": "20064"
+      },
+      {
+        "name": "Tino (BGR)",
+        "url": "https://genius.com/artists/Tino-bgr",
+        "type": "regular",
+        "id": "4296796"
+      },
+      {
+        "name": "Tino el Pingüino",
+        "url": "https://genius.com/artists/Tino-el-pinguino",
+        "type": "regular",
+        "id": "68890"
+      },
+      {
+        "name": "Tino Martin",
+        "url": "https://genius.com/artists/Tino-martin",
+        "type": "regular",
+        "id": "525814"
+      },
+      {
+        "name": "Tiny Habits",
+        "url": "https://genius.com/artists/Tiny-habits",
+        "type": "regular",
+        "id": "3306878"
+      },
+      {
+        "name": "Tiny Tim",
+        "url": "https://genius.com/artists/Tiny-tim",
+        "type": "regular",
+        "id": "340434"
+      },
+      {
+        "name": "Tion Wayne",
+        "url": "https://genius.com/artists/Tion-wayne",
+        "type": "regular",
+        "id": "559749"
+      },
+      {
+        "name": "TisaKorean",
+        "url": "https://genius.com/artists/Tisakorean",
+        "type": "regular",
+        "id": "1113091"
+      },
+      {
+        "name": "TISM",
+        "url": "https://genius.com/artists/Tism",
+        "type": "regular",
+        "id": "66965"
+      },
+      {
+        "name": "Tiësto",
+        "url": "https://genius.com/artists/Tiesto",
+        "type": "regular",
+        "id": "1082"
+      },
+      {
+        "name": "Title Fight",
+        "url": "https://genius.com/artists/Title-fight",
+        "type": "regular",
+        "id": "53688"
+      },
+      {
+        "name": "Tito Double P",
+        "url": "https://genius.com/artists/Tito-double-p",
+        "type": "regular",
+        "id": "3572197"
+      },
+      {
+        "name": "Tito \"El Bambino\"",
+        "url": "https://genius.com/artists/Tito-el-bambino",
+        "type": "regular",
+        "id": "350055"
+      },
+      {
+        "name": "TitoM",
+        "url": "https://genius.com/artists/Titom",
+        "type": "regular",
+        "id": "3315886"
+      },
+      {
+        "name": "Tito torbellino",
+        "url": "https://genius.com/artists/Tito-torbellino",
+        "type": "regular",
+        "id": "453028"
+      },
+      {
+        "name": "Tito Y Su Torbellino",
+        "url": "https://genius.com/artists/Tito-y-su-torbellino",
+        "type": "regular",
+        "id": "304492"
+      },
+      {
+        "name": "Tituss Burgess",
+        "url": "https://genius.com/artists/Tituss-burgess",
+        "type": "regular",
+        "id": "665755"
+      },
+      {
+        "name": "Tiwa Savage",
+        "url": "https://genius.com/artists/Tiwa-savage",
+        "type": "regular",
+        "id": "119302"
+      },
+      {
+        "name": "TiyGangAce",
+        "url": "https://genius.com/artists/Tiygangace",
+        "type": "regular",
+        "id": "3867985"
+      },
+      {
+        "name": "Tiziano Ferro",
+        "url": "https://genius.com/artists/Tiziano-ferro",
+        "type": "regular",
+        "id": "319863"
+      },
+      {
+        "name": "TJ_beastboy",
+        "url": "https://genius.com/artists/Tj-beastboy",
+        "type": "regular",
+        "id": "1648251"
+      },
+      {
+        "name": "TK (FRA)",
+        "url": "https://genius.com/artists/Tk-fra",
+        "type": "regular",
+        "id": "1852283"
+      },
+      {
+        "name": "TK from 凛として時雨",
+        "url": "https://genius.com/artists/Tk-from",
+        "type": "regular",
+        "id": "1045649"
+      },
+      {
+        "name": "TKKF",
+        "url": "https://genius.com/artists/Tkkf",
+        "type": "regular",
+        "id": "3891793"
+      },
+      {
+        "name": "TLC",
+        "url": "https://genius.com/artists/Tlc",
+        "type": "regular",
+        "id": "964"
+      },
+      {
+        "name": "​tlinh",
+        "url": "https://genius.com/artists/Tlinh",
+        "type": "regular",
+        "id": "2309384"
+      },
+      {
+        "name": "t-low",
+        "url": "https://genius.com/artists/T-low",
+        "type": "regular",
+        "id": "9229"
+      },
+      {
+        "name": "TMB (CAN)",
+        "url": "https://genius.com/artists/Tmb-can",
+        "type": "regular",
+        "id": "4433047"
+      },
+      {
+        "name": "TMC Movie Tunez",
+        "url": "https://genius.com/artists/Tmc-movie-tunez",
+        "type": "regular",
+        "id": "524353"
+      },
+      {
+        "name": "TM NETWORK",
+        "url": "https://genius.com/artists/Tm-network",
+        "type": "regular",
+        "id": "2605839"
+      },
+      {
+        "name": "TNG",
+        "url": "https://genius.com/artists/Tng",
+        "type": "regular",
+        "id": "2914887"
+      },
+      {
+        "name": "时代少年团 (TNT)",
+        "url": "https://genius.com/artists/Tnt",
+        "type": "regular",
+        "id": "2415531"
+      },
+      {
+        "name": "¿Téo?",
+        "url": "https://genius.com/artists/Teo",
+        "type": "regular",
+        "id": "175832"
+      },
+      {
+        "name": "Toadies",
+        "url": "https://genius.com/artists/Toadies",
+        "type": "regular",
+        "id": "20313"
+      },
+      {
+        "name": "Toad the Wet Sprocket",
+        "url": "https://genius.com/artists/Toad-the-wet-sprocket",
+        "type": "regular",
+        "id": "80625"
+      },
+      {
+        "name": "Tobe Nwigwe",
+        "url": "https://genius.com/artists/Tobe-nwigwe",
+        "type": "regular",
+        "id": "1245225"
+      },
+      {
+        "name": "Tobias Forge",
+        "url": "https://genius.com/artists/Tobias-forge",
+        "type": "regular",
+        "id": "1055157"
+      },
+      {
+        "name": "Tobias Rahim",
+        "url": "https://genius.com/artists/Tobias-rahim",
+        "type": "regular",
+        "id": "1002721"
+      },
+      {
+        "name": "Tobias Sten",
+        "url": "https://genius.com/artists/Tobias-sten",
+        "type": "regular",
+        "id": "4034692"
+      },
+      {
+        "name": "Tobii",
+        "url": "https://genius.com/artists/Tobii",
+        "type": "regular",
+        "id": "2044769"
+      },
+      {
+        "name": "Tobii (THA)",
+        "url": "https://genius.com/artists/Tobii-tha",
+        "type": "regular",
+        "id": "4197763"
+      },
+      {
+        "name": "​tobi lou",
+        "url": "https://genius.com/artists/Tobi-lou",
+        "type": "regular",
+        "id": "566681"
+      },
+      {
+        "name": "Toby Keith",
+        "url": "https://genius.com/artists/Toby-keith",
+        "type": "regular",
+        "id": "1176"
+      },
+      {
+        "name": "TobyMac",
+        "url": "https://genius.com/artists/Tobymac",
+        "type": "regular",
+        "id": "6296"
+      },
+      {
+        "name": "Toby Morse",
+        "url": "https://genius.com/artists/Toby-morse",
+        "type": "regular",
+        "id": "1173252"
+      },
+      {
+        "name": "Tockyy",
+        "url": "https://genius.com/artists/Tockyy",
+        "type": "regular",
+        "id": "4008939"
+      },
+      {
+        "name": "Tocotronic",
+        "url": "https://genius.com/artists/Tocotronic",
+        "type": "regular",
+        "id": "41792"
+      },
+      {
+        "name": "Todd Dulaney",
+        "url": "https://genius.com/artists/Todd-dulaney",
+        "type": "regular",
+        "id": "345099"
+      },
+      {
+        "name": "Todd Galberth",
+        "url": "https://genius.com/artists/Todd-galberth",
+        "type": "regular",
+        "id": "1528528"
+      },
+      {
+        "name": "Todd Rundgren",
+        "url": "https://genius.com/artists/Todd-rundgren",
+        "type": "regular",
+        "id": "39345"
+      },
+      {
+        "name": "Todd Snider",
+        "url": "https://genius.com/artists/Todd-snider",
+        "type": "regular",
+        "id": "297004"
+      },
+      {
+        "name": "Todiefor",
+        "url": "https://genius.com/artists/Todiefor",
+        "type": "regular",
+        "id": "1163063"
+      },
+      {
+        "name": "Todrick Hall",
+        "url": "https://genius.com/artists/Todrick-hall",
+        "type": "regular",
+        "id": "34146"
+      },
+      {
+        "name": "Toše Proeski",
+        "url": "https://genius.com/artists/Tose-proeski",
+        "type": "regular",
+        "id": "393746"
+      },
+      {
+        "name": "Tohji",
+        "url": "https://genius.com/artists/Tohji",
+        "type": "regular",
+        "id": "1672290"
+      },
+      {
+        "name": "Token",
+        "url": "https://genius.com/artists/Token",
+        "type": "regular",
+        "id": "23310"
+      },
+      {
+        "name": "The Tokens",
+        "url": "https://genius.com/artists/The-tokens",
+        "type": "regular",
+        "id": "114344"
+      },
+      {
+        "name": "Tokio Hotel",
+        "url": "https://genius.com/artists/Tokio-hotel",
+        "type": "regular",
+        "id": "59133"
+      },
+      {
+        "name": "Tokischa",
+        "url": "https://genius.com/artists/Tokischa",
+        "type": "regular",
+        "id": "1716429"
+      },
+      {
+        "name": "Tokyo Tea Room",
+        "url": "https://genius.com/artists/Tokyo-tea-room",
+        "type": "regular",
+        "id": "1779498"
+      },
+      {
+        "name": "T. Oliver Reid",
+        "url": "https://genius.com/artists/T-oliver-reid",
+        "type": "regular",
+        "id": "2492158"
+      },
+      {
+        "name": "Tom & Angela",
+        "url": "https://genius.com/artists/Tom-and-angela",
+        "type": "regular",
+        "id": "2024748"
+      },
+      {
+        "name": "Tomas Ledin",
+        "url": "https://genius.com/artists/Tomas-ledin",
+        "type": "regular",
+        "id": "344879"
+      },
+      {
+        "name": "Toma Tu Lugar",
+        "url": "https://genius.com/artists/Toma-tu-lugar",
+        "type": "regular",
+        "id": "480392"
+      },
+      {
+        "name": "Toma Zdravković",
+        "url": "https://genius.com/artists/Toma-zdravkovic",
+        "type": "regular",
+        "id": "2822381"
+      },
+      {
+        "name": "Tombochio",
+        "url": "https://genius.com/artists/Tombochio",
+        "type": "regular",
+        "id": "4095718"
+      },
+      {
+        "name": "Tom Cardy",
+        "url": "https://genius.com/artists/Tom-cardy",
+        "type": "regular",
+        "id": "2793237"
+      },
+      {
+        "name": "The Tomfoolers",
+        "url": "https://genius.com/artists/The-tomfoolers",
+        "type": "regular",
+        "id": "4304840"
+      },
+      {
+        "name": "Tom Francis",
+        "url": "https://genius.com/artists/Tom-francis",
+        "type": "regular",
+        "id": "635220"
+      },
+      {
+        "name": "Tom Grennan",
+        "url": "https://genius.com/artists/Tom-grennan",
+        "type": "regular",
+        "id": "642258"
+      },
+      {
+        "name": "Tom Hengst",
+        "url": "https://genius.com/artists/Tom-hengst",
+        "type": "regular",
+        "id": "1961919"
+      },
+      {
+        "name": "Tom Jones",
+        "url": "https://genius.com/artists/Tom-jones",
+        "type": "regular",
+        "id": "11195"
+      },
+      {
+        "name": "Tom Lehrer",
+        "url": "https://genius.com/artists/Tom-lehrer",
+        "type": "regular",
+        "id": "31251"
+      },
+      {
+        "name": "Tom MacDonald",
+        "url": "https://genius.com/artists/Tom-macdonald",
+        "type": "regular",
+        "id": "1191624"
+      },
+      {
+        "name": "Tommee Profitt",
+        "url": "https://genius.com/artists/Tommee-profitt",
+        "type": "regular",
+        "id": "223523"
+      },
+      {
+        "name": "Tom Misch",
+        "url": "https://genius.com/artists/Tom-misch",
+        "type": "regular",
+        "id": "155465"
+      },
+      {
+        "name": "Tom Morello",
+        "url": "https://genius.com/artists/Tom-morello",
+        "type": "regular",
+        "id": "4781"
+      },
+      {
+        "name": "Tommy Cash",
+        "url": "https://genius.com/artists/Tommy-cash",
+        "type": "regular",
+        "id": "1014901"
+      },
+      {
+        "name": "tommy (FL)",
+        "url": "https://genius.com/artists/Tommy-fl",
+        "type": "regular",
+        "id": "2905963"
+      },
+      {
+        "name": "Tommy Genesis",
+        "url": "https://genius.com/artists/Tommy-genesis",
+        "type": "regular",
+        "id": "396643"
+      },
+      {
+        "name": "Tommy Gun - تومي جَن",
+        "url": "https://genius.com/artists/Tommy-gun",
+        "type": "regular",
+        "id": "3394079"
+      },
+      {
+        "name": "Tommy James",
+        "url": "https://genius.com/artists/Tommy-james",
+        "type": "regular",
+        "id": "67185"
+      },
+      {
+        "name": "Tommy James and the Shondells",
+        "url": "https://genius.com/artists/Tommy-james-and-the-shondells",
+        "type": "regular",
+        "id": "67184"
+      },
+      {
+        "name": "Tommy Körberg",
+        "url": "https://genius.com/artists/Tommy-korberg",
+        "type": "regular",
+        "id": "365984"
+      },
+      {
+        "name": "Tommy Lee Sparta",
+        "url": "https://genius.com/artists/Tommy-lee-sparta",
+        "type": "regular",
+        "id": "38930"
+      },
+      {
+        "name": "Tommy Makem",
+        "url": "https://genius.com/artists/Tommy-makem",
+        "type": "regular",
+        "id": "361326"
+      },
+      {
+        "name": "Tommy Newport",
+        "url": "https://genius.com/artists/Tommy-newport",
+        "type": "regular",
+        "id": "1525797"
+      },
+      {
+        "name": "Tommy Richman",
+        "url": "https://genius.com/artists/Tommy-richman",
+        "type": "regular",
+        "id": "1817818"
+      },
+      {
+        "name": "Tommy Tutone",
+        "url": "https://genius.com/artists/Tommy-tutone",
+        "type": "regular",
+        "id": "211580"
+      },
+      {
+        "name": "Tommy Walker",
+        "url": "https://genius.com/artists/Tommy-walker",
+        "type": "regular",
+        "id": "131009"
+      },
+      {
+        "name": "Tommy Wright III",
+        "url": "https://genius.com/artists/Tommy-wright-iii",
+        "type": "regular",
+        "id": "11016"
+      },
+      {
+        "name": "tomo",
+        "url": "https://genius.com/artists/Tomo",
+        "type": "regular",
+        "id": "2114419"
+      },
+      {
+        "name": "Tom Odell",
+        "url": "https://genius.com/artists/Tom-odell",
+        "type": "regular",
+        "id": "78999"
+      },
+      {
+        "name": "TOMORROW X TOGETHER",
+        "url": "https://genius.com/artists/Tomorrow-x-together",
+        "type": "regular",
+        "id": "1692196"
+      },
+      {
+        "name": "Tomo (Singer)",
+        "url": "https://genius.com/artists/Tomo-singer",
+        "type": "regular",
+        "id": "3904512"
+      },
+      {
+        "name": "大谷智哉 (Tomoya Ohtani)",
+        "url": "https://genius.com/artists/Tomoya-ohtani",
+        "type": "regular",
+        "id": "30063"
+      },
+      {
+        "name": "Tom Paxton",
+        "url": "https://genius.com/artists/Tom-paxton",
+        "type": "regular",
+        "id": "344381"
+      },
+      {
+        "name": "Tom Petty and the Heartbreakers",
+        "url": "https://genius.com/artists/Tom-petty-and-the-heartbreakers",
+        "type": "regular",
+        "id": "67932"
+      },
+      {
+        "name": "Tom Rosenthal",
+        "url": "https://genius.com/artists/Tom-rosenthal",
+        "type": "regular",
+        "id": "142420"
+      },
+      {
+        "name": "Tom Rothrock",
+        "url": "https://genius.com/artists/Tom-rothrock",
+        "type": "regular",
+        "id": "36560"
+      },
+      {
+        "name": "TomSka",
+        "url": "https://genius.com/artists/Tomska",
+        "type": "regular",
+        "id": "22259"
+      },
+      {
+        "name": "Tom Snow",
+        "url": "https://genius.com/artists/Tom-snow",
+        "type": "regular",
+        "id": "61316"
+      },
+      {
+        "name": "Tom T. Hall",
+        "url": "https://genius.com/artists/Tom-t-hall",
+        "type": "regular",
+        "id": "332500"
+      },
+      {
+        "name": "Tom Tom Club",
+        "url": "https://genius.com/artists/Tom-tom-club",
+        "type": "regular",
+        "id": "187"
+      },
+      {
+        "name": "Tom Twers",
+        "url": "https://genius.com/artists/Tom-twers",
+        "type": "regular",
+        "id": "2473676"
+      },
+      {
+        "name": "Tom Waits",
+        "url": "https://genius.com/artists/Tom-waits",
+        "type": "regular",
+        "id": "1691"
+      },
+      {
+        "name": "Tom Walker",
+        "url": "https://genius.com/artists/Tom-walker",
+        "type": "regular",
+        "id": "1028158"
+      },
+      {
+        "name": "Tom Zanetti",
+        "url": "https://genius.com/artists/Tom-zanetti",
+        "type": "regular",
+        "id": "399450"
+      },
+      {
+        "name": "TONEEJAY",
+        "url": "https://genius.com/artists/Toneejay",
+        "type": "regular",
+        "id": "2812241"
+      },
+      {
+        "name": "Tone Hangers",
+        "url": "https://genius.com/artists/Tone-hangers",
+        "type": "regular",
+        "id": "408037"
+      },
+      {
+        "name": "Tone Lōc",
+        "url": "https://genius.com/artists/Tone-loc",
+        "type": "regular",
+        "id": "2937"
+      },
+      {
+        "name": "Tones and I",
+        "url": "https://genius.com/artists/Tones-and-i",
+        "type": "regular",
+        "id": "1747058"
+      },
+      {
+        "name": "Toni Anzis",
+        "url": "https://genius.com/artists/Toni-anzis",
+        "type": "regular",
+        "id": "2511755"
+      },
+      {
+        "name": "Toni Basil",
+        "url": "https://genius.com/artists/Toni-basil",
+        "type": "regular",
+        "id": "150147"
+      },
+      {
+        "name": "Toni Braxton",
+        "url": "https://genius.com/artists/Toni-braxton",
+        "type": "regular",
+        "id": "3371"
+      },
+      {
+        "name": "Tonic",
+        "url": "https://genius.com/artists/Tonic",
+        "type": "regular",
+        "id": "3111"
+      },
+      {
+        "name": "Toni Fowler",
+        "url": "https://genius.com/artists/Toni-fowler",
+        "type": "regular",
+        "id": "3078376"
+      },
+      {
+        "name": "Toni Gonzaga",
+        "url": "https://genius.com/artists/Toni-gonzaga",
+        "type": "regular",
+        "id": "358023"
+      },
+      {
+        "name": "Tonči Huljić & Madre Badessa",
+        "url": "https://genius.com/artists/Tonci-huljic-and-madre-badessa",
+        "type": "regular",
+        "id": "2399139"
+      },
+      {
+        "name": "Тони Раут (Toni Raut)",
+        "url": "https://genius.com/artists/Toni-raut",
+        "type": "regular",
+        "id": "165496"
+      },
+      {
+        "name": "Ton Steine Scherben",
+        "url": "https://genius.com/artists/Ton-steine-scherben",
+        "type": "regular",
+        "id": "71560"
+      },
+      {
+        "name": "Tony 2Milli",
+        "url": "https://genius.com/artists/Tony-2milli",
+        "type": "regular",
+        "id": "2042010"
+      },
+      {
+        "name": "Tony Bennett",
+        "url": "https://genius.com/artists/Tony-bennett",
+        "type": "regular",
+        "id": "40927"
+      },
+      {
+        "name": "Tony Cetinski",
+        "url": "https://genius.com/artists/Tony-cetinski",
+        "type": "regular",
+        "id": "378665"
+      },
+      {
+        "name": "Tony Dayimane",
+        "url": "https://genius.com/artists/Tony-dayimane",
+        "type": "regular",
+        "id": "3626880"
+      },
+      {
+        "name": "Tony Dize",
+        "url": "https://genius.com/artists/Tony-dize",
+        "type": "regular",
+        "id": "363589"
+      },
+      {
+        "name": "Tony Effe",
+        "url": "https://genius.com/artists/Tony-effe",
+        "type": "regular",
+        "id": "603119"
+      },
+      {
+        "name": "Tony Halstead",
+        "url": "https://genius.com/artists/Tony-halstead",
+        "type": "regular",
+        "id": "1410909"
+      },
+      {
+        "name": "Tony Harnell",
+        "url": "https://genius.com/artists/Tony-harnell",
+        "type": "regular",
+        "id": "58923"
+      },
+      {
+        "name": "Tony Herrera (MEX)",
+        "url": "https://genius.com/artists/Tony-herrera-mex",
+        "type": "regular",
+        "id": "3973077"
+      },
+      {
+        "name": "Tony Joe White",
+        "url": "https://genius.com/artists/Tony-joe-white",
+        "type": "regular",
+        "id": "356691"
+      },
+      {
+        "name": "Tony Monta",
+        "url": "https://genius.com/artists/Tony-monta",
+        "type": "regular",
+        "id": "4395566"
+      },
+      {
+        "name": "Tony Orlando & Dawn",
+        "url": "https://genius.com/artists/Tony-orlando-and-dawn",
+        "type": "regular",
+        "id": "284962"
+      },
+      {
+        "name": "Tony Rice",
+        "url": "https://genius.com/artists/Tony-rice",
+        "type": "regular",
+        "id": "375866"
+      },
+      {
+        "name": "The Tony Rich Project",
+        "url": "https://genius.com/artists/The-tony-rich-project",
+        "type": "regular",
+        "id": "356590"
+      },
+      {
+        "name": "Tony Seltzer",
+        "url": "https://genius.com/artists/Tony-seltzer",
+        "type": "regular",
+        "id": "1061235"
+      },
+      {
+        "name": "Tony Shhnow",
+        "url": "https://genius.com/artists/Tony-shhnow",
+        "type": "regular",
+        "id": "1152556"
+      },
+      {
+        "name": "Tony! Toni! Toné!",
+        "url": "https://genius.com/artists/Tony-toni-tone",
+        "type": "regular",
+        "id": "23029"
+      },
+      {
+        "name": "Tony Yayo",
+        "url": "https://genius.com/artists/Tony-yayo",
+        "type": "regular",
+        "id": "556"
+      },
+      {
+        "name": "Too Close To Touch",
+        "url": "https://genius.com/artists/Too-close-to-touch",
+        "type": "regular",
+        "id": "235914"
+      },
+      {
+        "name": "Tool",
+        "url": "https://genius.com/artists/Tool",
+        "type": "regular",
+        "id": "19326"
+      },
+      {
+        "name": "Too $hort",
+        "url": "https://genius.com/artists/Too-short",
+        "type": "regular",
+        "id": "191"
+      },
+      {
+        "name": "Toosii",
+        "url": "https://genius.com/artists/Toosii",
+        "type": "regular",
+        "id": "1294384"
+      },
+      {
+        "name": "Toots & The Maytals",
+        "url": "https://genius.com/artists/Toots-and-the-maytals",
+        "type": "regular",
+        "id": "66956"
+      },
+      {
+        "name": "Topher Ngo",
+        "url": "https://genius.com/artists/Topher-ngo",
+        "type": "regular",
+        "id": "2956255"
+      },
+      {
+        "name": "Topic",
+        "url": "https://genius.com/artists/Topic",
+        "type": "regular",
+        "id": "18954"
+      },
+      {
+        "name": "Topi Sorsakoski",
+        "url": "https://genius.com/artists/Topi-sorsakoski",
+        "type": "regular",
+        "id": "376149"
+      },
+      {
+        "name": "Toploader",
+        "url": "https://genius.com/artists/Toploader",
+        "type": "regular",
+        "id": "209054"
+      },
+      {
+        "name": "Topman Meeko",
+        "url": "https://genius.com/artists/Topman-meeko",
+        "type": "regular",
+        "id": "4315949"
+      },
+      {
+        "name": "Topol",
+        "url": "https://genius.com/artists/Topol",
+        "type": "regular",
+        "id": "458399"
+      },
+      {
+        "name": "TopOppGen",
+        "url": "https://genius.com/artists/Topoppgen",
+        "type": "regular",
+        "id": "3919276"
+      },
+      {
+        "name": "Top Suzara",
+        "url": "https://genius.com/artists/Top-suzara",
+        "type": "regular",
+        "id": "373659"
+      },
+      {
+        "name": "Toquel",
+        "url": "https://genius.com/artists/Toquel",
+        "type": "regular",
+        "id": "67601"
+      },
+      {
+        "name": "Torey D'Shaun",
+        "url": "https://genius.com/artists/Torey-dshaun",
+        "type": "regular",
+        "id": "1140518"
+      },
+      {
+        "name": "Tori Amos",
+        "url": "https://genius.com/artists/Tori-amos",
+        "type": "regular",
+        "id": "34286"
+      },
+      {
+        "name": "Tori Kelly",
+        "url": "https://genius.com/artists/Tori-kelly",
+        "type": "regular",
+        "id": "19770"
+      },
+      {
+        "name": "Toro y Moi",
+        "url": "https://genius.com/artists/Toro-y-moi",
+        "type": "regular",
+        "id": "14082"
+      },
+      {
+        "name": "TORRES",
+        "url": "https://genius.com/artists/Torres",
+        "type": "regular",
+        "id": "50539"
+      },
+      {
+        "name": "TORRRES",
+        "url": "https://genius.com/artists/Torrres",
+        "type": "regular",
+        "id": "4082289"
+      },
+      {
+        "name": "Тося Чайкина (Tosya Chaikina)",
+        "url": "https://genius.com/artists/Tosya-chaikina",
+        "type": "regular",
+        "id": "1569879"
+      },
+      {
+        "name": "Total",
+        "url": "https://genius.com/artists/Total",
+        "type": "regular",
+        "id": "1541"
+      },
+      {
+        "name": "Toteking",
+        "url": "https://genius.com/artists/Toteking",
+        "type": "regular",
+        "id": "15589"
+      },
+      {
+        "name": "Tothapi",
+        "url": "https://genius.com/artists/Tothapi",
+        "type": "regular",
+        "id": "3331873"
+      },
+      {
+        "name": "Toto Cutugno",
+        "url": "https://genius.com/artists/Toto-cutugno",
+        "type": "regular",
+        "id": "363742"
+      },
+      {
+        "name": "Touché Amoré",
+        "url": "https://genius.com/artists/Touche-amore",
+        "type": "regular",
+        "id": "33672"
+      },
+      {
+        "name": "Touchline",
+        "url": "https://genius.com/artists/Touchline",
+        "type": "regular",
+        "id": "1714050"
+      },
+      {
+        "name": "A Touch of Class",
+        "url": "https://genius.com/artists/A-touch-of-class",
+        "type": "regular",
+        "id": "132054"
+      },
+      {
+        "name": "Tove Lo",
+        "url": "https://genius.com/artists/Tove-lo",
+        "type": "regular",
+        "id": "127642"
+      },
+      {
+        "name": "Tower of Power",
+        "url": "https://genius.com/artists/Tower-of-power",
+        "type": "regular",
+        "id": "44024"
+      },
+      {
+        "name": "Townes Van Zandt",
+        "url": "https://genius.com/artists/Townes-van-zandt",
+        "type": "regular",
+        "id": "27118"
+      },
+      {
+        "name": "Toxic Lipstick",
+        "url": "https://genius.com/artists/Toxic-lipstick",
+        "type": "regular",
+        "id": "1992144"
+      },
+      {
+        "name": "Toxi$",
+        "url": "https://genius.com/artists/Toxi",
+        "type": "regular",
+        "id": "1944702"
+      },
+      {
+        "name": "Toygar Işıklı",
+        "url": "https://genius.com/artists/Toygar-iskl",
+        "type": "regular",
+        "id": "479224"
+      },
+      {
+        "name": "Tozovac",
+        "url": "https://genius.com/artists/Tozovac",
+        "type": "regular",
+        "id": "2881547"
+      },
+      {
+        "name": "T-Pain",
+        "url": "https://genius.com/artists/T-pain",
+        "type": "regular",
+        "id": "337"
+      },
+      {
+        "name": "Tr3yway6k",
+        "url": "https://genius.com/artists/Tr3yway6k",
+        "type": "regular",
+        "id": "2812232"
+      },
+      {
+        "name": "Trace Adkins",
+        "url": "https://genius.com/artists/Trace-adkins",
+        "type": "regular",
+        "id": "23007"
+      },
+      {
+        "name": "Tracy Chapman",
+        "url": "https://genius.com/artists/Tracy-chapman",
+        "type": "regular",
+        "id": "1746"
+      },
+      {
+        "name": "Tracy Lawrence",
+        "url": "https://genius.com/artists/Tracy-lawrence",
+        "type": "regular",
+        "id": "344409"
+      },
+      {
+        "name": "Tha Trademarc",
+        "url": "https://genius.com/artists/Tha-trademarc",
+        "type": "regular",
+        "id": "1534"
+      },
+      {
+        "name": "Traditional Transcriptions",
+        "url": "https://genius.com/artists/Traditional-transcriptions",
+        "type": "regular",
+        "id": "3781426"
+      },
+      {
+        "name": "Trae tha Truth",
+        "url": "https://genius.com/artists/Trae-tha-truth",
+        "type": "regular",
+        "id": "1075"
+      },
+      {
+        "name": "Traffic",
+        "url": "https://genius.com/artists/Traffic",
+        "type": "regular",
+        "id": "1129889"
+      },
+      {
+        "name": "The Tragically Hip",
+        "url": "https://genius.com/artists/The-tragically-hip",
+        "type": "regular",
+        "id": "56393"
+      },
+      {
+        "name": "Trailerpark",
+        "url": "https://genius.com/artists/Trailerpark",
+        "type": "regular",
+        "id": "26447"
+      },
+      {
+        "name": "Train",
+        "url": "https://genius.com/artists/Train",
+        "type": "regular",
+        "id": "2029"
+      },
+      {
+        "name": "Train Breaks Down",
+        "url": "https://genius.com/artists/Train-breaks-down",
+        "type": "regular",
+        "id": "3372835"
+      },
+      {
+        "name": "Trainer",
+        "url": "https://genius.com/artists/Trainer",
+        "type": "regular",
+        "id": "1261177"
+      },
+      {
+        "name": "Trampled by Turtles",
+        "url": "https://genius.com/artists/Trampled-by-turtles",
+        "type": "regular",
+        "id": "149146"
+      },
+      {
+        "name": "Trannos",
+        "url": "https://genius.com/artists/Trannos",
+        "type": "regular",
+        "id": "2199672"
+      },
+      {
+        "name": "Transformation Worship",
+        "url": "https://genius.com/artists/Transformation-worship",
+        "type": "regular",
+        "id": "3311951"
+      },
+      {
+        "name": "Trap King (DZ)",
+        "url": "https://genius.com/artists/Trap-king-dz",
+        "type": "regular",
+        "id": "2794014"
+      },
+      {
+        "name": "Trapt",
+        "url": "https://genius.com/artists/Trapt",
+        "type": "regular",
+        "id": "97148"
+      },
+      {
+        "name": "TRAP ZONE",
+        "url": "https://genius.com/artists/Trap-zone",
+        "type": "regular",
+        "id": "4361099"
+      },
+      {
+        "name": "The Trashmen",
+        "url": "https://genius.com/artists/The-trashmen",
+        "type": "regular",
+        "id": "39734"
+      },
+      {
+        "name": "Traveling Wilburys",
+        "url": "https://genius.com/artists/Traveling-wilburys",
+        "type": "regular",
+        "id": "60612"
+      },
+      {
+        "name": "Travie McCoy",
+        "url": "https://genius.com/artists/Travie-mccoy",
+        "type": "regular",
+        "id": "667"
+      },
+      {
+        "name": "Travis",
+        "url": "https://genius.com/artists/Travis",
+        "type": "regular",
+        "id": "31074"
+      },
+      {
+        "name": "Travis Barker",
+        "url": "https://genius.com/artists/Travis-barker",
+        "type": "regular",
+        "id": "1604"
+      },
+      {
+        "name": "Travis Greene",
+        "url": "https://genius.com/artists/Travis-greene",
+        "type": "regular",
+        "id": "484963"
+      },
+      {
+        "name": "Travis Japan",
+        "url": "https://genius.com/artists/Travis-japan",
+        "type": "regular",
+        "id": "3329168"
+      },
+      {
+        "name": "Travis Porter",
+        "url": "https://genius.com/artists/Travis-porter",
+        "type": "regular",
+        "id": "1355"
+      },
+      {
+        "name": "Travis Tritt",
+        "url": "https://genius.com/artists/Travis-tritt",
+        "type": "regular",
+        "id": "15276"
+      },
+      {
+        "name": "ТРАВМА (TRAVMA)",
+        "url": "https://genius.com/artists/Travma",
+        "type": "regular",
+        "id": "1804577"
+      },
+      {
+        "name": "Tream",
+        "url": "https://genius.com/artists/Tream",
+        "type": "regular",
+        "id": "2305810"
+      },
+      {
+        "name": "​treamiboii",
+        "url": "https://genius.com/artists/Treamiboii",
+        "type": "regular",
+        "id": "3035845"
+      },
+      {
+        "name": "TREASURE",
+        "url": "https://genius.com/artists/Treasure",
+        "type": "regular",
+        "id": "1712515"
+      },
+      {
+        "name": "Treaty Oak Revival",
+        "url": "https://genius.com/artists/Treaty-oak-revival",
+        "type": "regular",
+        "id": "2483428"
+      },
+      {
+        "name": "The Treblemakers",
+        "url": "https://genius.com/artists/The-treblemakers",
+        "type": "regular",
+        "id": "508832"
+      },
+      {
+        "name": "Tredici Pietro",
+        "url": "https://genius.com/artists/Tredici-pietro",
+        "type": "regular",
+        "id": "1502692"
+      },
+      {
+        "name": "TREFUEGO",
+        "url": "https://genius.com/artists/Trefuego",
+        "type": "regular",
+        "id": "1953042"
+      },
+      {
+        "name": "Trettmann",
+        "url": "https://genius.com/artists/Trettmann",
+        "type": "regular",
+        "id": "551136"
+      },
+      {
+        "name": "Trevor Daniel",
+        "url": "https://genius.com/artists/Trevor-daniel",
+        "type": "regular",
+        "id": "636444"
+      },
+      {
+        "name": "Trevor Hall",
+        "url": "https://genius.com/artists/Trevor-hall",
+        "type": "regular",
+        "id": "232917"
+      },
+      {
+        "name": "Trevor Tordjman",
+        "url": "https://genius.com/artists/Trevor-tordjman",
+        "type": "regular",
+        "id": "1396091"
+      },
+      {
+        "name": "T. Rex",
+        "url": "https://genius.com/artists/T-rex",
+        "type": "regular",
+        "id": "37269"
+      },
+      {
+        "name": "T-Rex (PRT)",
+        "url": "https://genius.com/artists/T-rex-prt",
+        "type": "regular",
+        "id": "1105813"
+      },
+      {
+        "name": "Trey Parker",
+        "url": "https://genius.com/artists/Trey-parker",
+        "type": "regular",
+        "id": "11205"
+      },
+      {
+        "name": "Trey Songz",
+        "url": "https://genius.com/artists/Trey-songz",
+        "type": "regular",
+        "id": "326"
+      },
+      {
+        "name": "Триагрутрика (Triagrutrika)",
+        "url": "https://genius.com/artists/Triagrutrika",
+        "type": "regular",
+        "id": "16455"
+      },
+      {
+        "name": "Tribal Rain",
+        "url": "https://genius.com/artists/Tribal-rain",
+        "type": "regular",
+        "id": "1814607"
+      },
+      {
+        "name": "Tribal Seeds",
+        "url": "https://genius.com/artists/Tribal-seeds",
+        "type": "regular",
+        "id": "13267"
+      },
+      {
+        "name": "A Tribe Called Quest",
+        "url": "https://genius.com/artists/A-tribe-called-quest",
+        "type": "regular",
+        "id": "519"
+      },
+      {
+        "name": "Tribl",
+        "url": "https://genius.com/artists/Tribl",
+        "type": "regular",
+        "id": "2070417"
+      },
+      {
+        "name": "Trick Daddy",
+        "url": "https://genius.com/artists/Trick-daddy",
+        "type": "regular",
+        "id": "379"
+      },
+      {
+        "name": "Trickle",
+        "url": "https://genius.com/artists/Trickle",
+        "type": "regular",
+        "id": "2775086"
+      },
+      {
+        "name": "Trick Trick",
+        "url": "https://genius.com/artists/Trick-trick",
+        "type": "regular",
+        "id": "1218"
+      },
+      {
+        "name": "Tricky",
+        "url": "https://genius.com/artists/Tricky",
+        "type": "regular",
+        "id": "6318"
+      },
+      {
+        "name": "Три дня говна (Tri dnya govna)",
+        "url": "https://genius.com/artists/Tri-dnya-govna",
+        "type": "regular",
+        "id": "3573150"
+      },
+      {
+        "name": "TRIGZ HRB",
+        "url": "https://genius.com/artists/Trigz-hrb",
+        "type": "regular",
+        "id": "3937177"
+      },
+      {
+        "name": "triibupasta",
+        "url": "https://genius.com/artists/Triibupasta",
+        "type": "regular",
+        "id": "4136661"
+      },
+      {
+        "name": "Trile",
+        "url": "https://genius.com/artists/Trile",
+        "type": "regular",
+        "id": "1513918"
+      },
+      {
+        "name": "Trina",
+        "url": "https://genius.com/artists/Trina",
+        "type": "regular",
+        "id": "117"
+      },
+      {
+        "name": "тринадцать карат (trinadtsat karat)",
+        "url": "https://genius.com/artists/Trinadtsat-karat",
+        "type": "regular",
+        "id": "2856752"
+      },
+      {
+        "name": "Trinidad Cardona",
+        "url": "https://genius.com/artists/Trinidad-cardona",
+        "type": "regular",
+        "id": "647871"
+      },
+      {
+        "name": "Trinix",
+        "url": "https://genius.com/artists/Trinix",
+        "type": "regular",
+        "id": "1007070"
+      },
+      {
+        "name": "Trip Lee",
+        "url": "https://genius.com/artists/Trip-lee",
+        "type": "regular",
+        "id": "7388"
+      },
+      {
+        "name": "tripleS",
+        "url": "https://genius.com/artists/Triples",
+        "type": "regular",
+        "id": "3168137"
+      },
+      {
+        "name": "triplesixdelete",
+        "url": "https://genius.com/artists/Triplesixdelete",
+        "type": "regular",
+        "id": "1942791"
+      },
+      {
+        "name": "Tripolare",
+        "url": "https://genius.com/artists/Tripolare",
+        "type": "regular",
+        "id": "2195560"
+      },
+      {
+        "name": "TRISHA (RU)",
+        "url": "https://genius.com/artists/Trisha-ru",
+        "type": "regular",
+        "id": "4408112"
+      },
+      {
+        "name": "Trisha Yearwood",
+        "url": "https://genius.com/artists/Trisha-yearwood",
+        "type": "regular",
+        "id": "74837"
+      },
+      {
+        "name": "Tristan Caldwell",
+        "url": "https://genius.com/artists/Tristan-caldwell",
+        "type": "regular",
+        "id": "4183389"
+      },
+      {
+        "name": "TRITIA",
+        "url": "https://genius.com/artists/Tritia",
+        "type": "regular",
+        "id": "1300486"
+      },
+      {
+        "name": "Три Типа (Tri Tipa)",
+        "url": "https://genius.com/artists/Tri-tipa",
+        "type": "regular",
+        "id": "1964886"
+      },
+      {
+        "name": "Triumph",
+        "url": "https://genius.com/artists/Triumph",
+        "type": "regular",
+        "id": "69046"
+      },
+      {
+        "name": "Trivium",
+        "url": "https://genius.com/artists/Trivium",
+        "type": "regular",
+        "id": "138660"
+      },
+      {
+        "name": "Trix (CAN)",
+        "url": "https://genius.com/artists/Trix-can",
+        "type": "regular",
+        "id": "4165760"
+      },
+      {
+        "name": "The Troggs",
+        "url": "https://genius.com/artists/The-troggs",
+        "type": "regular",
+        "id": "38789"
+      },
+      {
+        "name": "Trond-Viggo Torgersen",
+        "url": "https://genius.com/artists/Trond-viggo-torgersen",
+        "type": "regular",
+        "id": "378716"
+      },
+      {
+        "name": "Tropical Fuck Storm",
+        "url": "https://genius.com/artists/Tropical-fuck-storm",
+        "type": "regular",
+        "id": "1275411"
+      },
+      {
+        "name": "TROPICO",
+        "url": "https://genius.com/artists/Tropico",
+        "type": "regular",
+        "id": "1941247"
+      },
+      {
+        "name": "TROY",
+        "url": "https://genius.com/artists/Troy",
+        "type": "regular",
+        "id": "2416766"
+      },
+      {
+        "name": "Troy Baker",
+        "url": "https://genius.com/artists/Troy-baker",
+        "type": "regular",
+        "id": "332470"
+      },
+      {
+        "name": "Troye Sivan",
+        "url": "https://genius.com/artists/Troye-sivan",
+        "type": "regular",
+        "id": "161507"
+      },
+      {
+        "name": "TR/ST",
+        "url": "https://genius.com/artists/Tr-st",
+        "type": "regular",
+        "id": "30774"
+      },
+      {
+        "name": "TRU",
+        "url": "https://genius.com/artists/Tru",
+        "type": "regular",
+        "id": "9037"
+      },
+      {
+        "name": "Trueblood",
+        "url": "https://genius.com/artists/Trueblood",
+        "type": "regular",
+        "id": "4321197"
+      },
+      {
+        "name": "Trueno",
+        "url": "https://genius.com/artists/Trueno",
+        "type": "regular",
+        "id": "1184652"
+      },
+      {
+        "name": "Truth (CCM)",
+        "url": "https://genius.com/artists/Truth-ccm",
+        "type": "regular",
+        "id": "3024186"
+      },
+      {
+        "name": "Truwer",
+        "url": "https://genius.com/artists/Truwer",
+        "type": "regular",
+        "id": "672373"
+      },
+      {
+        "name": "TRXSTR",
+        "url": "https://genius.com/artists/Trxstr",
+        "type": "regular",
+        "id": "1546909"
+      },
+      {
+        "name": "TryHardNinja",
+        "url": "https://genius.com/artists/Tryhardninja",
+        "type": "regular",
+        "id": "21676"
+      },
+      {
+        "name": "T.S. Eliot",
+        "url": "https://genius.com/artists/Ts-eliot",
+        "type": "regular",
+        "id": "742"
+      },
+      {
+        "name": "T'Shan Williams",
+        "url": "https://genius.com/artists/Tshan-williams",
+        "type": "regular",
+        "id": "1746409"
+      },
+      {
+        "name": "TSS",
+        "url": "https://genius.com/artists/Tss",
+        "type": "regular",
+        "id": "3213185"
+      },
+      {
+        "name": "唾奇 (Tsubaki)",
+        "url": "https://genius.com/artists/Tsubaki",
+        "type": "regular",
+        "id": "1429247"
+      },
+      {
+        "name": "Tsu Surf",
+        "url": "https://genius.com/artists/Tsu-surf",
+        "type": "regular",
+        "id": "29362"
+      },
+      {
+        "name": "TUANA",
+        "url": "https://genius.com/artists/Tuana",
+        "type": "regular",
+        "id": "3827990"
+      },
+      {
+        "name": "​tuborosho",
+        "url": "https://genius.com/artists/Tuborosho",
+        "type": "regular",
+        "id": "3885498"
+      },
+      {
+        "name": "Tucker Wetmore",
+        "url": "https://genius.com/artists/Tucker-wetmore",
+        "type": "regular",
+        "id": "3860315"
+      },
+      {
+        "name": "TUL8TE - توو ليت",
+        "url": "https://genius.com/artists/Tul8te",
+        "type": "regular",
+        "id": "3350264"
+      },
+      {
+        "name": "Tulsi Kumar",
+        "url": "https://genius.com/artists/Tulsi-kumar",
+        "type": "regular",
+        "id": "452164"
+      },
+      {
+        "name": "Tulus",
+        "url": "https://genius.com/artists/Tulus",
+        "type": "regular",
+        "id": "194472"
+      },
+      {
+        "name": "TumaniYO",
+        "url": "https://genius.com/artists/Tumaniyo",
+        "type": "regular",
+        "id": "1421884"
+      },
+      {
+        "name": "Tuna - טונה",
+        "url": "https://genius.com/artists/Tuna",
+        "type": "regular",
+        "id": "601186"
+      },
+      {
+        "name": "​tunedbugra",
+        "url": "https://genius.com/artists/Tunedbugra",
+        "type": "regular",
+        "id": "3714724"
+      },
+      {
+        "name": "Tunes of the future",
+        "url": "https://genius.com/artists/Tunes-of-the-future",
+        "type": "regular",
+        "id": "4424761"
+      },
+      {
+        "name": "Tune-Yards",
+        "url": "https://genius.com/artists/Tune-yards",
+        "type": "regular",
+        "id": "11662"
+      },
+      {
+        "name": "Tungevaag",
+        "url": "https://genius.com/artists/Tungevaag",
+        "type": "regular",
+        "id": "455248"
+      },
+      {
+        "name": "Turbo",
+        "url": "https://genius.com/artists/Turbo",
+        "type": "regular",
+        "id": "150435"
+      },
+      {
+        "name": "Turbonegro",
+        "url": "https://genius.com/artists/Turbonegro",
+        "type": "regular",
+        "id": "108807"
+      },
+      {
+        "name": "Turbo Turabi",
+        "url": "https://genius.com/artists/Turbo-turabi",
+        "type": "regular",
+        "id": "4299703"
+      },
+      {
+        "name": "Turisti",
+        "url": "https://genius.com/artists/Turisti",
+        "type": "regular",
+        "id": "1864047"
+      },
+      {
+        "name": "Turk (EGY) - ترك",
+        "url": "https://genius.com/artists/Turk-egy",
+        "type": "regular",
+        "id": "3472264"
+      },
+      {
+        "name": "Turken",
+        "url": "https://genius.com/artists/Turken",
+        "type": "regular",
+        "id": "2320840"
+      },
+      {
+        "name": "Turmion Kätilöt",
+        "url": "https://genius.com/artists/Turmion-katilot",
+        "type": "regular",
+        "id": "363762"
+      },
+      {
+        "name": "Turnabout",
+        "url": "https://genius.com/artists/Turnabout",
+        "type": "regular",
+        "id": "2971192"
+      },
+      {
+        "name": "Turnover",
+        "url": "https://genius.com/artists/Turnover",
+        "type": "regular",
+        "id": "223312"
+      },
+      {
+        "name": "Turnpike Troubadours",
+        "url": "https://genius.com/artists/Turnpike-troubadours",
+        "type": "regular",
+        "id": "290871"
+      },
+      {
+        "name": "‎turrobaby",
+        "url": "https://genius.com/artists/Turrobaby",
+        "type": "regular",
+        "id": "3621535"
+      },
+      {
+        "name": "The Turtles",
+        "url": "https://genius.com/artists/The-turtles",
+        "type": "regular",
+        "id": "24687"
+      },
+      {
+        "name": "Tury",
+        "url": "https://genius.com/artists/Tury",
+        "type": "regular",
+        "id": "4105118"
+      },
+      {
+        "name": "Tus",
+        "url": "https://genius.com/artists/Tus",
+        "type": "regular",
+        "id": "1122700"
+      },
+      {
+        "name": "Tu$ Brother$",
+        "url": "https://genius.com/artists/Tu-brother",
+        "type": "regular",
+        "id": "1878361"
+      },
+      {
+        "name": "Tussiwarriors",
+        "url": "https://genius.com/artists/Tussiwarriors",
+        "type": "regular",
+        "id": "3468055"
+      },
+      {
+        "name": "Tutu",
+        "url": "https://genius.com/artists/Tutu",
+        "type": "regular",
+        "id": "1900137"
+      },
+      {
+        "name": "​tv·2",
+        "url": "https://genius.com/artists/Tv2",
+        "type": "regular",
+        "id": "375300"
+      },
+      {
+        "name": "TVETH",
+        "url": "https://genius.com/artists/Tveth",
+        "type": "regular",
+        "id": "366712"
+      },
+      {
+        "name": "TV on the Radio",
+        "url": "https://genius.com/artists/Tv-on-the-radio",
+        "type": "regular",
+        "id": "13099"
+      },
+      {
+        "name": "творожный бизнес (tvorozhniy biznes)",
+        "url": "https://genius.com/artists/Tvorozhniy-biznes",
+        "type": "regular",
+        "id": "3000008"
+      },
+      {
+        "name": "ТВОИ КОШМАРЫ (Tvoyi Koshmary)",
+        "url": "https://genius.com/artists/Tvoyi-koshmary",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Твоё нежное безумие (Tvoyo nezhnoe bezumie)",
+        "url": "https://genius.com/artists/Tvoyo-nezhnoe-bezumie",
+        "type": "regular",
+        "id": "2802248"
+      },
+      {
+        "name": "TVXQ! (동방신기)",
+        "url": "https://genius.com/artists/Tvxq",
+        "type": "regular",
+        "id": "405304"
+      },
+      {
+        "name": "Twamiz",
+        "url": "https://genius.com/artists/Twamiz",
+        "type": "regular",
+        "id": "2236560"
+      },
+      {
+        "name": "Twice Música",
+        "url": "https://genius.com/artists/Twice-musica",
+        "type": "regular",
+        "id": "1202305"
+      },
+      {
+        "name": "twikipedia",
+        "url": "https://genius.com/artists/Twikipedia",
+        "type": "regular",
+        "id": "1612132"
+      },
+      {
+        "name": "Twila Paris",
+        "url": "https://genius.com/artists/Twila-paris",
+        "type": "regular",
+        "id": "353092"
+      },
+      {
+        "name": "Twilight Sparkle",
+        "url": "https://genius.com/artists/Twilight-sparkle",
+        "type": "regular",
+        "id": "2110946"
+      },
+      {
+        "name": "Twin H",
+        "url": "https://genius.com/artists/Twin-h",
+        "type": "regular",
+        "id": "4423673"
+      },
+      {
+        "name": "Twin S (ACG)",
+        "url": "https://genius.com/artists/Twin-s-acg",
+        "type": "regular",
+        "id": "3160905"
+      },
+      {
+        "name": "Twin Tribes",
+        "url": "https://genius.com/artists/Twin-tribes",
+        "type": "regular",
+        "id": "2248978"
+      },
+      {
+        "name": "Twista",
+        "url": "https://genius.com/artists/Twista",
+        "type": "regular",
+        "id": "74"
+      },
+      {
+        "name": "Twisted Insane",
+        "url": "https://genius.com/artists/Twisted-insane",
+        "type": "regular",
+        "id": "11590"
+      },
+      {
+        "name": "Twisted Sister",
+        "url": "https://genius.com/artists/Twisted-sister",
+        "type": "regular",
+        "id": "208338"
+      },
+      {
+        "name": "Twiztid",
+        "url": "https://genius.com/artists/Twiztid",
+        "type": "regular",
+        "id": "3107"
+      },
+      {
+        "name": "Two Door Cinema Club",
+        "url": "https://genius.com/artists/Two-door-cinema-club",
+        "type": "regular",
+        "id": "17586"
+      },
+      {
+        "name": "Two Feathers",
+        "url": "https://genius.com/artists/Two-feathers",
+        "type": "regular",
+        "id": "3173416"
+      },
+      {
+        "name": "Two Feet",
+        "url": "https://genius.com/artists/Two-feet",
+        "type": "regular",
+        "id": "998003"
+      },
+      {
+        "name": "Two Star",
+        "url": "https://genius.com/artists/Two-star",
+        "type": "regular",
+        "id": "3822101"
+      },
+      {
+        "name": "Two Steps From Hell",
+        "url": "https://genius.com/artists/Two-steps-from-hell",
+        "type": "regular",
+        "id": "143161"
+      },
+      {
+        "name": "T.W.R.",
+        "url": "https://genius.com/artists/Twr",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "TWRP",
+        "url": "https://genius.com/artists/Twrp",
+        "type": "regular",
+        "id": "650409"
+      },
+      {
+        "name": "TWS (투어스)",
+        "url": "https://genius.com/artists/Tws",
+        "type": "regular",
+        "id": "3058373"
+      },
+      {
+        "name": "TWXN",
+        "url": "https://genius.com/artists/Twxn",
+        "type": "regular",
+        "id": "3842166"
+      },
+      {
+        "name": "TX2",
+        "url": "https://genius.com/artists/Tx2",
+        "type": "regular",
+        "id": "2964649"
+      },
+      {
+        "name": "Tycoon (ZAF)",
+        "url": "https://genius.com/artists/Tycoon-zaf",
+        "type": "regular",
+        "id": "3147775"
+      },
+      {
+        "name": "Tye Tribbett",
+        "url": "https://genius.com/artists/Tye-tribbett",
+        "type": "regular",
+        "id": "338270"
+      },
+      {
+        "name": "Tyga",
+        "url": "https://genius.com/artists/Tyga",
+        "type": "regular",
+        "id": "554"
+      },
+      {
+        "name": "TYKING",
+        "url": "https://genius.com/artists/Tyking",
+        "type": "regular",
+        "id": "3921715"
+      },
+      {
+        "name": "Tyla",
+        "url": "https://genius.com/artists/Tyla",
+        "type": "regular",
+        "id": "2601015"
+      },
+      {
+        "name": "Tyler Braden",
+        "url": "https://genius.com/artists/Tyler-braden",
+        "type": "regular",
+        "id": "1660423"
+      },
+      {
+        "name": "Tyler Cassidy",
+        "url": "https://genius.com/artists/Tyler-cassidy",
+        "type": "regular",
+        "id": "23087"
+      },
+      {
+        "name": "Tyler Childers",
+        "url": "https://genius.com/artists/Tyler-childers",
+        "type": "regular",
+        "id": "1065785"
+      },
+      {
+        "name": "Tyler Collins",
+        "url": "https://genius.com/artists/Tyler-collins",
+        "type": "regular",
+        "id": "376678"
+      },
+      {
+        "name": "Tyler Hubbard",
+        "url": "https://genius.com/artists/Tyler-hubbard",
+        "type": "regular",
+        "id": "977349"
+      },
+      {
+        "name": "Tyler ICU",
+        "url": "https://genius.com/artists/Tyler-icu",
+        "type": "regular",
+        "id": "1023535"
+      },
+      {
+        "name": "Tyler James Williams",
+        "url": "https://genius.com/artists/Tyler-james-williams",
+        "type": "regular",
+        "id": "21759"
+      },
+      {
+        "name": "Tyler Joseph",
+        "url": "https://genius.com/artists/Tyler-joseph",
+        "type": "regular",
+        "id": "50268"
+      },
+      {
+        "name": "TYLER LEWIS",
+        "url": "https://genius.com/artists/Tyler-lewis",
+        "type": "regular",
+        "id": "3815417"
+      },
+      {
+        "name": "Tyler Perry",
+        "url": "https://genius.com/artists/Tyler-perry",
+        "type": "regular",
+        "id": "454310"
+      },
+      {
+        "name": "Tymek",
+        "url": "https://genius.com/artists/Tymek",
+        "type": "regular",
+        "id": "1038994"
+      },
+      {
+        "name": "Ty Myers",
+        "url": "https://genius.com/artists/Ty-myers",
+        "type": "regular",
+        "id": "3566187"
+      },
+      {
+        "name": "Tynisha Keli",
+        "url": "https://genius.com/artists/Tynisha-keli",
+        "type": "regular",
+        "id": "34313"
+      },
+      {
+        "name": "Typecast",
+        "url": "https://genius.com/artists/Typecast",
+        "type": "regular",
+        "id": "354207"
+      },
+      {
+        "name": "Type O Negative",
+        "url": "https://genius.com/artists/Type-o-negative",
+        "type": "regular",
+        "id": "232849"
+      },
+      {
+        "name": "Tyrese",
+        "url": "https://genius.com/artists/Tyrese",
+        "type": "regular",
+        "id": "2651"
+      },
+      {
+        "name": "Tyrone Davis",
+        "url": "https://genius.com/artists/Tyrone-davis",
+        "type": "regular",
+        "id": "360650"
+      },
+      {
+        "name": "Tyrone Wells",
+        "url": "https://genius.com/artists/Tyrone-wells",
+        "type": "regular",
+        "id": "186564"
+      },
+      {
+        "name": "Ty Segall",
+        "url": "https://genius.com/artists/Ty-segall",
+        "type": "regular",
+        "id": "212217"
+      },
+      {
+        "name": "Tyson James",
+        "url": "https://genius.com/artists/Tyson-james",
+        "type": "regular",
+        "id": "2354966"
+      },
+      {
+        "name": "Tyson Yen",
+        "url": "https://genius.com/artists/Tyson-yen",
+        "type": "regular",
+        "id": "1179164"
+      },
+      {
+        "name": "Tzanca Uraganu",
+        "url": "https://genius.com/artists/Tzanca-uraganu",
+        "type": "regular",
+        "id": "2506352"
+      },
+      {
+        "name": "TzarBombah",
+        "url": "https://genius.com/artists/Tzarbombah",
+        "type": "regular",
+        "id": "2105339"
+      }
+    ]
+  }
+}

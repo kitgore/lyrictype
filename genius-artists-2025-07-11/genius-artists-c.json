@@ -1,0 +1,4513 @@
+{
+  "letter": "C",
+  "timestamp": "2025-07-11T07:12:05.534Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Cardi B",
+        "url": "https://genius.com/artists/Cardi-b",
+        "type": "popular",
+        "id": "621678"
+      },
+      {
+        "name": "Carly Rae Jepsen",
+        "url": "https://genius.com/artists/Carly-rae-jepsen",
+        "type": "popular",
+        "id": "21150"
+      },
+      {
+        "name": "Cast of EPIC: The Musical",
+        "url": "https://genius.com/artists/Cast-of-epic-the-musical",
+        "type": "popular",
+        "id": "4016579"
+      },
+      {
+        "name": "The Cast of Sofia the First",
+        "url": "https://genius.com/artists/The-cast-of-sofia-the-first",
+        "type": "popular",
+        "id": "452422"
+      },
+      {
+        "name": "Ceg",
+        "url": "https://genius.com/artists/Ceg",
+        "type": "popular",
+        "id": "1421000"
+      },
+      {
+        "name": "Central Cee",
+        "url": "https://genius.com/artists/Central-cee",
+        "type": "popular",
+        "id": "897106"
+      },
+      {
+        "name": "Chappell Roan",
+        "url": "https://genius.com/artists/Chappell-roan",
+        "type": "popular",
+        "id": "1190065"
+      },
+      {
+        "name": "Charli xcx",
+        "url": "https://genius.com/artists/Charli-xcx",
+        "type": "popular",
+        "id": "45349"
+      },
+      {
+        "name": "Childish Gambino",
+        "url": "https://genius.com/artists/Childish-gambino",
+        "type": "popular",
+        "id": "1745"
+      },
+      {
+        "name": "Chris Brown",
+        "url": "https://genius.com/artists/Chris-brown",
+        "type": "popular",
+        "id": "438"
+      },
+      {
+        "name": "Christopher Jackson",
+        "url": "https://genius.com/artists/Christopher-jackson",
+        "type": "popular",
+        "id": "188557"
+      },
+      {
+        "name": "Cigarettes After Sex",
+        "url": "https://genius.com/artists/Cigarettes-after-sex",
+        "type": "popular",
+        "id": "508714"
+      },
+      {
+        "name": "Céline Dion",
+        "url": "https://genius.com/artists/Celine-dion",
+        "type": "popular",
+        "id": "65300"
+      },
+      {
+        "name": "Clipse",
+        "url": "https://genius.com/artists/Clipse",
+        "type": "popular",
+        "id": "5"
+      },
+      {
+        "name": "CMAT",
+        "url": "https://genius.com/artists/Cmat",
+        "type": "popular",
+        "id": "2450044"
+      },
+      {
+        "name": "Coldplay",
+        "url": "https://genius.com/artists/Coldplay",
+        "type": "popular",
+        "id": "8351"
+      },
+      {
+        "name": "Count Basie",
+        "url": "https://genius.com/artists/Count-basie",
+        "type": "popular",
+        "id": "351018"
+      },
+      {
+        "name": "The Cranberries",
+        "url": "https://genius.com/artists/The-cranberries",
+        "type": "popular",
+        "id": "31849"
+      },
+      {
+        "name": "Creedence Clearwater Revival",
+        "url": "https://genius.com/artists/Creedence-clearwater-revival",
+        "type": "popular",
+        "id": "28871"
+      },
+      {
+        "name": "cupcakKe",
+        "url": "https://genius.com/artists/Cupcakke",
+        "type": "popular",
+        "id": "576538"
+      }
+    ],
+    "regular": [
+      {
+        "name": "Ca7riel & Paco Amoroso",
+        "url": "https://genius.com/artists/Ca7riel-and-paco-amoroso",
+        "type": "regular",
+        "id": "2010779"
+      },
+      {
+        "name": "Caamp",
+        "url": "https://genius.com/artists/Caamp",
+        "type": "regular",
+        "id": "1236219"
+      },
+      {
+        "name": "Caballero & JeanJass",
+        "url": "https://genius.com/artists/Caballero-and-jeanjass",
+        "type": "regular",
+        "id": "639298"
+      },
+      {
+        "name": "Cabaret Ensemble (1998)",
+        "url": "https://genius.com/artists/Cabaret-ensemble-1998",
+        "type": "regular",
+        "id": "3982352"
+      },
+      {
+        "name": "Cab Calloway",
+        "url": "https://genius.com/artists/Cab-calloway",
+        "type": "regular",
+        "id": "353201"
+      },
+      {
+        "name": "Cachirula",
+        "url": "https://genius.com/artists/Cachirula",
+        "type": "regular",
+        "id": "3669827"
+      },
+      {
+        "name": "Caetano Veloso",
+        "url": "https://genius.com/artists/Caetano-veloso",
+        "type": "regular",
+        "id": "75216"
+      },
+      {
+        "name": "Café Tacvba",
+        "url": "https://genius.com/artists/Cafe-tacvba",
+        "type": "regular",
+        "id": "361468"
+      },
+      {
+        "name": "Cafuné",
+        "url": "https://genius.com/artists/Cafune",
+        "type": "regular",
+        "id": "616770"
+      },
+      {
+        "name": "Cage",
+        "url": "https://genius.com/artists/Cage",
+        "type": "regular",
+        "id": "1068"
+      },
+      {
+        "name": "Cage The Elephant",
+        "url": "https://genius.com/artists/Cage-the-elephant",
+        "type": "regular",
+        "id": "8339"
+      },
+      {
+        "name": "Caifanes",
+        "url": "https://genius.com/artists/Caifanes",
+        "type": "regular",
+        "id": "359499"
+      },
+      {
+        "name": "Caillou",
+        "url": "https://genius.com/artists/Caillou",
+        "type": "regular",
+        "id": "388563"
+      },
+      {
+        "name": "Caimislost",
+        "url": "https://genius.com/artists/Caimislost",
+        "type": "regular",
+        "id": "4299180"
+      },
+      {
+        "name": "CAIN",
+        "url": "https://genius.com/artists/Cain",
+        "type": "regular",
+        "id": "2365001"
+      },
+      {
+        "name": "Cain Culto",
+        "url": "https://genius.com/artists/Cain-culto",
+        "type": "regular",
+        "id": "2792573"
+      },
+      {
+        "name": "Cairokee - كايروكي",
+        "url": "https://genius.com/artists/Cairokee",
+        "type": "regular",
+        "id": "654673"
+      },
+      {
+        "name": "Caissie Levy",
+        "url": "https://genius.com/artists/Caissie-levy",
+        "type": "regular",
+        "id": "453481"
+      },
+      {
+        "name": "蔡徐坤 (Cai Xu Kun)",
+        "url": "https://genius.com/artists/Cai-xu-kun",
+        "type": "regular",
+        "id": "1574222"
+      },
+      {
+        "name": "Cajo",
+        "url": "https://genius.com/artists/Cajo",
+        "type": "regular",
+        "id": "4442623"
+      },
+      {
+        "name": "Cakal",
+        "url": "https://genius.com/artists/Cakal",
+        "type": "regular",
+        "id": "2429795"
+      },
+      {
+        "name": "CAKE",
+        "url": "https://genius.com/artists/Cake",
+        "type": "regular",
+        "id": "38835"
+      },
+      {
+        "name": "CAKEBOY",
+        "url": "https://genius.com/artists/Cakeboy",
+        "type": "regular",
+        "id": "324698"
+      },
+      {
+        "name": "Calboy",
+        "url": "https://genius.com/artists/Calboy",
+        "type": "regular",
+        "id": "1577142"
+      },
+      {
+        "name": "Calcutta",
+        "url": "https://genius.com/artists/Calcutta",
+        "type": "regular",
+        "id": "638746"
+      },
+      {
+        "name": "Caleb Calloway",
+        "url": "https://genius.com/artists/Caleb-calloway",
+        "type": "regular",
+        "id": "127603"
+      },
+      {
+        "name": "Caleb Gordon",
+        "url": "https://genius.com/artists/Caleb-gordon",
+        "type": "regular",
+        "id": "2555900"
+      },
+      {
+        "name": "Caleb Hyles",
+        "url": "https://genius.com/artists/Caleb-hyles",
+        "type": "regular",
+        "id": "990950"
+      },
+      {
+        "name": "Calema",
+        "url": "https://genius.com/artists/Calema",
+        "type": "regular",
+        "id": "1171756"
+      },
+      {
+        "name": "Cale saurage",
+        "url": "https://genius.com/artists/Cale-saurage",
+        "type": "regular",
+        "id": "1933554"
+      },
+      {
+        "name": "CALI",
+        "url": "https://genius.com/artists/Cali",
+        "type": "regular",
+        "id": "2607748"
+      },
+      {
+        "name": "Cali Life Style",
+        "url": "https://genius.com/artists/Cali-life-style",
+        "type": "regular",
+        "id": "234281"
+      },
+      {
+        "name": "Callalily",
+        "url": "https://genius.com/artists/Callalily",
+        "type": "regular",
+        "id": "348411"
+      },
+      {
+        "name": "Calle 13",
+        "url": "https://genius.com/artists/Calle-13",
+        "type": "regular",
+        "id": "11106"
+      },
+      {
+        "name": "Calle 24",
+        "url": "https://genius.com/artists/Calle-24",
+        "type": "regular",
+        "id": "2730639"
+      },
+      {
+        "name": "The Calling",
+        "url": "https://genius.com/artists/The-calling",
+        "type": "regular",
+        "id": "115744"
+      },
+      {
+        "name": "The Callous Daoboys",
+        "url": "https://genius.com/artists/The-callous-daoboys",
+        "type": "regular",
+        "id": "1802723"
+      },
+      {
+        "name": "Calm",
+        "url": "https://genius.com/artists/Calm",
+        "type": "regular",
+        "id": "2010673"
+      },
+      {
+        "name": "Cal Scruby",
+        "url": "https://genius.com/artists/Cal-scruby",
+        "type": "regular",
+        "id": "19457"
+      },
+      {
+        "name": "Calum Hood",
+        "url": "https://genius.com/artists/Calum-hood",
+        "type": "regular",
+        "id": "550521"
+      },
+      {
+        "name": "Calum Scott",
+        "url": "https://genius.com/artists/Calum-scott",
+        "type": "regular",
+        "id": "977386"
+      },
+      {
+        "name": "Calvin Harris",
+        "url": "https://genius.com/artists/Calvin-harris",
+        "type": "regular",
+        "id": "2069"
+      },
+      {
+        "name": "Cam",
+        "url": "https://genius.com/artists/Cam",
+        "type": "regular",
+        "id": "333940"
+      },
+      {
+        "name": "Camarón De La Isla",
+        "url": "https://genius.com/artists/Camaron-de-la-isla",
+        "type": "regular",
+        "id": "362848"
+      },
+      {
+        "name": "Came Beats",
+        "url": "https://genius.com/artists/Came-beats",
+        "type": "regular",
+        "id": "1254508"
+      },
+      {
+        "name": "Camel",
+        "url": "https://genius.com/artists/Camel",
+        "type": "regular",
+        "id": "58283"
+      },
+      {
+        "name": "かめりあ (Camellia)",
+        "url": "https://genius.com/artists/Camellia",
+        "type": "regular",
+        "id": "1817834"
+      },
+      {
+        "name": "CamelPhat",
+        "url": "https://genius.com/artists/Camelphat",
+        "type": "regular",
+        "id": "315448"
+      },
+      {
+        "name": "Cameo",
+        "url": "https://genius.com/artists/Cameo",
+        "type": "regular",
+        "id": "8404"
+      },
+      {
+        "name": "Camera Obscura",
+        "url": "https://genius.com/artists/Camera-obscura",
+        "type": "regular",
+        "id": "84547"
+      },
+      {
+        "name": "Cameron Boyce",
+        "url": "https://genius.com/artists/Cameron-boyce",
+        "type": "regular",
+        "id": "544040"
+      },
+      {
+        "name": "Cameron Whitcomb",
+        "url": "https://genius.com/artists/Cameron-whitcomb",
+        "type": "regular",
+        "id": "3792194"
+      },
+      {
+        "name": "Cameron Winter",
+        "url": "https://genius.com/artists/Cameron-winter",
+        "type": "regular",
+        "id": "2892224"
+      },
+      {
+        "name": "Camila Cabello",
+        "url": "https://genius.com/artists/Camila-cabello",
+        "type": "regular",
+        "id": "609667"
+      },
+      {
+        "name": "Camille",
+        "url": "https://genius.com/artists/Camille",
+        "type": "regular",
+        "id": "357387"
+      },
+      {
+        "name": "Camille Dhont",
+        "url": "https://genius.com/artists/Camille-dhont",
+        "type": "regular",
+        "id": "2180557"
+      },
+      {
+        "name": "Camilo",
+        "url": "https://genius.com/artists/Camilo",
+        "type": "regular",
+        "id": "1371843"
+      },
+      {
+        "name": "CamilWay",
+        "url": "https://genius.com/artists/Camilway",
+        "type": "regular",
+        "id": "3135625"
+      },
+      {
+        "name": "Camo! (USA)",
+        "url": "https://genius.com/artists/Camo-usa",
+        "type": "regular",
+        "id": "228871"
+      },
+      {
+        "name": "Cam'ron",
+        "url": "https://genius.com/artists/Camron",
+        "type": "regular",
+        "id": "1"
+      },
+      {
+        "name": "Cam Steady",
+        "url": "https://genius.com/artists/Cam-steady",
+        "type": "regular",
+        "id": "2614645"
+      },
+      {
+        "name": "Can",
+        "url": "https://genius.com/artists/Can",
+        "type": "regular",
+        "id": "183536"
+      },
+      {
+        "name": "Candace",
+        "url": "https://genius.com/artists/Candace",
+        "type": "regular",
+        "id": "371768"
+      },
+      {
+        "name": "Candan Erçetin",
+        "url": "https://genius.com/artists/Candan-ercetin",
+        "type": "regular",
+        "id": "359015"
+      },
+      {
+        "name": "Candlebox",
+        "url": "https://genius.com/artists/Candlebox",
+        "type": "regular",
+        "id": "38728"
+      },
+      {
+        "name": "​candyboii",
+        "url": "https://genius.com/artists/Candyboii",
+        "type": "regular",
+        "id": "1447250"
+      },
+      {
+        "name": "CANEY030",
+        "url": "https://genius.com/artists/Caney030",
+        "type": "regular",
+        "id": "1967570"
+      },
+      {
+        "name": "Canibus",
+        "url": "https://genius.com/artists/Canibus",
+        "type": "regular",
+        "id": "209"
+      },
+      {
+        "name": "Canned Heat",
+        "url": "https://genius.com/artists/Canned-heat",
+        "type": "regular",
+        "id": "66598"
+      },
+      {
+        "name": "Cannibal Corpse",
+        "url": "https://genius.com/artists/Cannibal-corpse",
+        "type": "regular",
+        "id": "41863"
+      },
+      {
+        "name": "Cannons",
+        "url": "https://genius.com/artists/Cannons",
+        "type": "regular",
+        "id": "341963"
+      },
+      {
+        "name": "Canozan",
+        "url": "https://genius.com/artists/Canozan",
+        "type": "regular",
+        "id": "1255479"
+      },
+      {
+        "name": "Canserbero",
+        "url": "https://genius.com/artists/Canserbero",
+        "type": "regular",
+        "id": "26333"
+      },
+      {
+        "name": "@canwebeskibidi",
+        "url": "https://genius.com/artists/Canwebeskibidi",
+        "type": "regular",
+        "id": "4222916"
+      },
+      {
+        "name": "Caparezza",
+        "url": "https://genius.com/artists/Caparezza",
+        "type": "regular",
+        "id": "24580"
+      },
+      {
+        "name": "カプコン・サウンドチーム (Capcom Sound Team)",
+        "url": "https://genius.com/artists/Capcom-sound-team",
+        "type": "regular",
+        "id": "1149690"
+      },
+      {
+        "name": "Capital Bra",
+        "url": "https://genius.com/artists/Capital-bra",
+        "type": "regular",
+        "id": "1038122"
+      },
+      {
+        "name": "Capital Cities",
+        "url": "https://genius.com/artists/Capital-cities",
+        "type": "regular",
+        "id": "52217"
+      },
+      {
+        "name": "Capital STEEZ",
+        "url": "https://genius.com/artists/Capital-steez",
+        "type": "regular",
+        "id": "25496"
+      },
+      {
+        "name": "Capleton",
+        "url": "https://genius.com/artists/Capleton",
+        "type": "regular",
+        "id": "5201"
+      },
+      {
+        "name": "Cap'n Jazz",
+        "url": "https://genius.com/artists/Capn-jazz",
+        "type": "regular",
+        "id": "23360"
+      },
+      {
+        "name": "CAPO",
+        "url": "https://genius.com/artists/Capo",
+        "type": "regular",
+        "id": "3791"
+      },
+      {
+        "name": "Capone-N-Noreaga",
+        "url": "https://genius.com/artists/Capone-n-noreaga",
+        "type": "regular",
+        "id": "1173"
+      },
+      {
+        "name": "Capo Plaza",
+        "url": "https://genius.com/artists/Capo-plaza",
+        "type": "regular",
+        "id": "991191"
+      },
+      {
+        "name": "Captain & Tennille",
+        "url": "https://genius.com/artists/Captain-and-tennille",
+        "type": "regular",
+        "id": "285815"
+      },
+      {
+        "name": "Captain Beefheart & His Magic Band",
+        "url": "https://genius.com/artists/Captain-beefheart-and-his-magic-band",
+        "type": "regular",
+        "id": "327132"
+      },
+      {
+        "name": "CaptainSparklez",
+        "url": "https://genius.com/artists/Captainsparklez",
+        "type": "regular",
+        "id": "21677"
+      },
+      {
+        "name": "CAPTOWN",
+        "url": "https://genius.com/artists/Captown",
+        "type": "regular",
+        "id": "1839105"
+      },
+      {
+        "name": "Caralisa Monteiro",
+        "url": "https://genius.com/artists/Caralisa-monteiro",
+        "type": "regular",
+        "id": "1881236"
+      },
+      {
+        "name": "Caramella Girls",
+        "url": "https://genius.com/artists/Caramella-girls",
+        "type": "regular",
+        "id": "663621"
+      },
+      {
+        "name": "Caravan Palace",
+        "url": "https://genius.com/artists/Caravan-palace",
+        "type": "regular",
+        "id": "49684"
+      },
+      {
+        "name": "Carcass",
+        "url": "https://genius.com/artists/Carcass",
+        "type": "regular",
+        "id": "345773"
+      },
+      {
+        "name": "Cardenales De Nuevo León",
+        "url": "https://genius.com/artists/Cardenales-de-nuevo-leon",
+        "type": "regular",
+        "id": "372963"
+      },
+      {
+        "name": "Cardiacs",
+        "url": "https://genius.com/artists/Cardiacs",
+        "type": "regular",
+        "id": "353300"
+      },
+      {
+        "name": "The Cardigans",
+        "url": "https://genius.com/artists/The-cardigans",
+        "type": "regular",
+        "id": "43724"
+      },
+      {
+        "name": "Cardo Got Wings",
+        "url": "https://genius.com/artists/Cardo-got-wings",
+        "type": "regular",
+        "id": "27259"
+      },
+      {
+        "name": "The Caretaker",
+        "url": "https://genius.com/artists/The-caretaker",
+        "type": "regular",
+        "id": "1776594"
+      },
+      {
+        "name": "Carey Mulligan",
+        "url": "https://genius.com/artists/Carey-mulligan",
+        "type": "regular",
+        "id": "230202"
+      },
+      {
+        "name": "Carissa's Wierd",
+        "url": "https://genius.com/artists/Carissas-wierd",
+        "type": "regular",
+        "id": "84112"
+      },
+      {
+        "name": "Carla Morrison",
+        "url": "https://genius.com/artists/Carla-morrison",
+        "type": "regular",
+        "id": "363417"
+      },
+      {
+        "name": "Carla's Dreams",
+        "url": "https://genius.com/artists/Carlas-dreams",
+        "type": "regular",
+        "id": "667045"
+      },
+      {
+        "name": "Carl Brave",
+        "url": "https://genius.com/artists/Carl-brave",
+        "type": "regular",
+        "id": "1009184"
+      },
+      {
+        "name": "Carl Brave x Franco126",
+        "url": "https://genius.com/artists/Carl-brave-x-franco126",
+        "type": "regular",
+        "id": "1045557"
+      },
+      {
+        "name": "Carl Douglas",
+        "url": "https://genius.com/artists/Carl-douglas",
+        "type": "regular",
+        "id": "29300"
+      },
+      {
+        "name": "Carlos Petrel",
+        "url": "https://genius.com/artists/Carlos-petrel",
+        "type": "regular",
+        "id": "2414221"
+      },
+      {
+        "name": "Carlos Vives",
+        "url": "https://genius.com/artists/Carlos-vives",
+        "type": "regular",
+        "id": "344693"
+      },
+      {
+        "name": "Carlos Y José",
+        "url": "https://genius.com/artists/Carlos-y-jose",
+        "type": "regular",
+        "id": "353143"
+      },
+      {
+        "name": "Carl Thomas",
+        "url": "https://genius.com/artists/Carl-thomas",
+        "type": "regular",
+        "id": "2954"
+      },
+      {
+        "name": "Carly Pearce",
+        "url": "https://genius.com/artists/Carly-pearce",
+        "type": "regular",
+        "id": "589048"
+      },
+      {
+        "name": "Carly Simon",
+        "url": "https://genius.com/artists/Carly-simon",
+        "type": "regular",
+        "id": "1104"
+      },
+      {
+        "name": "Carman",
+        "url": "https://genius.com/artists/Carman",
+        "type": "regular",
+        "id": "344383"
+      },
+      {
+        "name": "Кар-Мэн (Car-Man) (RUS)",
+        "url": "https://genius.com/artists/Car-man-rus",
+        "type": "regular",
+        "id": "1755182"
+      },
+      {
+        "name": "Carmen Winstead",
+        "url": "https://genius.com/artists/Carmen-winstead",
+        "type": "regular",
+        "id": "3068837"
+      },
+      {
+        "name": "Carín León",
+        "url": "https://genius.com/artists/Carin-leon",
+        "type": "regular",
+        "id": "1987923"
+      },
+      {
+        "name": "Caro Emerald",
+        "url": "https://genius.com/artists/Caro-emerald",
+        "type": "regular",
+        "id": "58797"
+      },
+      {
+        "name": "Carola",
+        "url": "https://genius.com/artists/Carola",
+        "type": "regular",
+        "id": "354841"
+      },
+      {
+        "name": "Carol Ann Duffy",
+        "url": "https://genius.com/artists/Carol-ann-duffy",
+        "type": "regular",
+        "id": "48770"
+      },
+      {
+        "name": "Carol Banawa",
+        "url": "https://genius.com/artists/Carol-banawa",
+        "type": "regular",
+        "id": "353904"
+      },
+      {
+        "name": "Carol Biazin",
+        "url": "https://genius.com/artists/Carol-biazin",
+        "type": "regular",
+        "id": "1295663"
+      },
+      {
+        "name": "Carole King",
+        "url": "https://genius.com/artists/Carole-king",
+        "type": "regular",
+        "id": "49407"
+      },
+      {
+        "name": "Carole Shelley",
+        "url": "https://genius.com/artists/Carole-shelley",
+        "type": "regular",
+        "id": "300544"
+      },
+      {
+        "name": "Carolina Deslandes",
+        "url": "https://genius.com/artists/Carolina-deslandes",
+        "type": "regular",
+        "id": "452307"
+      },
+      {
+        "name": "Carolina Durante",
+        "url": "https://genius.com/artists/Carolina-durante",
+        "type": "regular",
+        "id": "1525762"
+      },
+      {
+        "name": "Carolina Gaitán",
+        "url": "https://genius.com/artists/Carolina-gaitan",
+        "type": "regular",
+        "id": "2965212"
+      },
+      {
+        "name": "​caroline",
+        "url": "https://genius.com/artists/Caroline",
+        "type": "regular",
+        "id": "355336"
+      },
+      {
+        "name": "Caroline Polachek",
+        "url": "https://genius.com/artists/Caroline-polachek",
+        "type": "regular",
+        "id": "63882"
+      },
+      {
+        "name": "Carpenters",
+        "url": "https://genius.com/artists/Carpenters",
+        "type": "regular",
+        "id": "30992"
+      },
+      {
+        "name": "Carpetman",
+        "url": "https://genius.com/artists/Carpetman",
+        "type": "regular",
+        "id": "3768587"
+      },
+      {
+        "name": "Carrie Hope Fletcher",
+        "url": "https://genius.com/artists/Carrie-hope-fletcher",
+        "type": "regular",
+        "id": "574643"
+      },
+      {
+        "name": "Carrie: The Musical Ensemble",
+        "url": "https://genius.com/artists/Carrie-the-musical-ensemble",
+        "type": "regular",
+        "id": "1036402"
+      },
+      {
+        "name": "Carrie Underwood",
+        "url": "https://genius.com/artists/Carrie-underwood",
+        "type": "regular",
+        "id": "21014"
+      },
+      {
+        "name": "The Cars",
+        "url": "https://genius.com/artists/The-cars",
+        "type": "regular",
+        "id": "90849"
+      },
+      {
+        "name": "Car Seat Headrest",
+        "url": "https://genius.com/artists/Car-seat-headrest",
+        "type": "regular",
+        "id": "338591"
+      },
+      {
+        "name": "Cartel de Santa",
+        "url": "https://genius.com/artists/Cartel-de-santa",
+        "type": "regular",
+        "id": "17085"
+      },
+      {
+        "name": "Carter Faith",
+        "url": "https://genius.com/artists/Carter-faith",
+        "type": "regular",
+        "id": "2340776"
+      },
+      {
+        "name": "The Carter Family",
+        "url": "https://genius.com/artists/The-carter-family",
+        "type": "regular",
+        "id": "31512"
+      },
+      {
+        "name": "THE CARTERS",
+        "url": "https://genius.com/artists/The-carters",
+        "type": "regular",
+        "id": "1408735"
+      },
+      {
+        "name": "Cartier God",
+        "url": "https://genius.com/artists/Cartier-god",
+        "type": "regular",
+        "id": "1226846"
+      },
+      {
+        "name": "Cartoon",
+        "url": "https://genius.com/artists/Cartoon",
+        "type": "regular",
+        "id": "339803"
+      },
+      {
+        "name": "Cartoon Network",
+        "url": "https://genius.com/artists/Cartoon-network",
+        "type": "regular",
+        "id": "324109"
+      },
+      {
+        "name": "CARYS",
+        "url": "https://genius.com/artists/Carys",
+        "type": "regular",
+        "id": "1938592"
+      },
+      {
+        "name": "Casa Di",
+        "url": "https://genius.com/artists/Casa-di",
+        "type": "regular",
+        "id": "162152"
+      },
+      {
+        "name": "Cascada",
+        "url": "https://genius.com/artists/Cascada",
+        "type": "regular",
+        "id": "50790"
+      },
+      {
+        "name": "The Cascades",
+        "url": "https://genius.com/artists/The-cascades",
+        "type": "regular",
+        "id": "342016"
+      },
+      {
+        "name": "Case",
+        "url": "https://genius.com/artists/Case",
+        "type": "regular",
+        "id": "3551"
+      },
+      {
+        "name": "Casey Edwards",
+        "url": "https://genius.com/artists/Casey-edwards",
+        "type": "regular",
+        "id": "1489595"
+      },
+      {
+        "name": "CA$HANOVA BULHAR",
+        "url": "https://genius.com/artists/Ca-hanova-bulhar",
+        "type": "regular",
+        "id": "1508704"
+      },
+      {
+        "name": "Cash Callaway",
+        "url": "https://genius.com/artists/Cash-callaway",
+        "type": "regular",
+        "id": "1309281"
+      },
+      {
+        "name": "Cash Cash",
+        "url": "https://genius.com/artists/Cash-cash",
+        "type": "regular",
+        "id": "104043"
+      },
+      {
+        "name": "Cash Cobain",
+        "url": "https://genius.com/artists/Cash-cobain",
+        "type": "regular",
+        "id": "1048194"
+      },
+      {
+        "name": "Cash Flow",
+        "url": "https://genius.com/artists/Cash-flow",
+        "type": "regular",
+        "id": "20404"
+      },
+      {
+        "name": "Ca$his",
+        "url": "https://genius.com/artists/Ca-his",
+        "type": "regular",
+        "id": "555"
+      },
+      {
+        "name": "Cash Kidd",
+        "url": "https://genius.com/artists/Cash-kidd",
+        "type": "regular",
+        "id": "164335"
+      },
+      {
+        "name": "Cashmere Cat",
+        "url": "https://genius.com/artists/Cashmere-cat",
+        "type": "regular",
+        "id": "49698"
+      },
+      {
+        "name": "CASISDEAD",
+        "url": "https://genius.com/artists/Casisdead",
+        "type": "regular",
+        "id": "28526"
+      },
+      {
+        "name": "Casper",
+        "url": "https://genius.com/artists/Casper",
+        "type": "regular",
+        "id": "12089"
+      },
+      {
+        "name": "Casper Fox",
+        "url": "https://genius.com/artists/Casper-fox",
+        "type": "regular",
+        "id": "4361087"
+      },
+      {
+        "name": "Casper Mágico",
+        "url": "https://genius.com/artists/Casper-magico",
+        "type": "regular",
+        "id": "1093583"
+      },
+      {
+        "name": "КАСПЕР (CASPER) (RU)",
+        "url": "https://genius.com/artists/Casper-ru",
+        "type": "regular",
+        "id": "3960004"
+      },
+      {
+        "name": "Casper TNG",
+        "url": "https://genius.com/artists/Casper-tng",
+        "type": "regular",
+        "id": "1151112"
+      },
+      {
+        "name": "Cass Elliot",
+        "url": "https://genius.com/artists/Cass-elliot",
+        "type": "regular",
+        "id": "348405"
+      },
+      {
+        "name": "Cassidy",
+        "url": "https://genius.com/artists/Cassidy",
+        "type": "regular",
+        "id": "230"
+      },
+      {
+        "name": "Cassie",
+        "url": "https://genius.com/artists/Cassie",
+        "type": "regular",
+        "id": "8576"
+      },
+      {
+        "name": "cassö (LDN)",
+        "url": "https://genius.com/artists/Casso-ldn",
+        "type": "regular",
+        "id": "3611123"
+      },
+      {
+        "name": "Cassper Nyovest",
+        "url": "https://genius.com/artists/Cassper-nyovest",
+        "type": "regular",
+        "id": "208474"
+      },
+      {
+        "name": "Casting Crowns",
+        "url": "https://genius.com/artists/Casting-crowns",
+        "type": "regular",
+        "id": "162015"
+      },
+      {
+        "name": "The Cast of Frozen",
+        "url": "https://genius.com/artists/The-cast-of-frozen",
+        "type": "regular",
+        "id": "452383"
+      },
+      {
+        "name": "Cast of High School Musical: The Musical: The Series",
+        "url": "https://genius.com/artists/Cast-of-high-school-musical-the-musical-the-series",
+        "type": "regular",
+        "id": "2001762"
+      },
+      {
+        "name": "Cast of Into the Woods",
+        "url": "https://genius.com/artists/Cast-of-into-the-woods",
+        "type": "regular",
+        "id": "1212863"
+      },
+      {
+        "name": "The Cast Of Journey To Bethlehem",
+        "url": "https://genius.com/artists/The-cast-of-journey-to-bethlehem",
+        "type": "regular",
+        "id": "3785094"
+      },
+      {
+        "name": "The Cast of RuPaul's Drag Race, Season 17",
+        "url": "https://genius.com/artists/The-cast-of-rupauls-drag-race-season-17",
+        "type": "regular",
+        "id": "4289356"
+      },
+      {
+        "name": "Cast of The Curious Case of Benjamin Button",
+        "url": "https://genius.com/artists/Cast-of-the-curious-case-of-benjamin-button",
+        "type": "regular",
+        "id": "4436919"
+      },
+      {
+        "name": "Cast of the Motion Picture 'Rent'",
+        "url": "https://genius.com/artists/Cast-of-the-motion-picture-rent",
+        "type": "regular",
+        "id": "1704109"
+      },
+      {
+        "name": "Cast of Total Drama World Tour",
+        "url": "https://genius.com/artists/Cast-of-total-drama-world-tour",
+        "type": "regular",
+        "id": "2146500"
+      },
+      {
+        "name": "Catalyst...",
+        "url": "https://genius.com/artists/Catalyst",
+        "type": "regular",
+        "id": "3632443"
+      },
+      {
+        "name": "Cate Le Bon",
+        "url": "https://genius.com/artists/Cate-le-bon",
+        "type": "regular",
+        "id": "323980"
+      },
+      {
+        "name": "The Cat Empire",
+        "url": "https://genius.com/artists/The-cat-empire",
+        "type": "regular",
+        "id": "52611"
+      },
+      {
+        "name": "Catfish and the Bottlemen",
+        "url": "https://genius.com/artists/Catfish-and-the-bottlemen",
+        "type": "regular",
+        "id": "185633"
+      },
+      {
+        "name": "Catherine Zeta-Jones",
+        "url": "https://genius.com/artists/Catherine-zeta-jones",
+        "type": "regular",
+        "id": "335047"
+      },
+      {
+        "name": "Cat Power",
+        "url": "https://genius.com/artists/Cat-power",
+        "type": "regular",
+        "id": "21610"
+      },
+      {
+        "name": "The Cats",
+        "url": "https://genius.com/artists/The-cats",
+        "type": "regular",
+        "id": "344360"
+      },
+      {
+        "name": "Cats Millionaire",
+        "url": "https://genius.com/artists/Cats-millionaire",
+        "type": "regular",
+        "id": "379559"
+      },
+      {
+        "name": "Cat Stevens",
+        "url": "https://genius.com/artists/Cat-stevens",
+        "type": "regular",
+        "id": "13132"
+      },
+      {
+        "name": "Cattle Decapitation",
+        "url": "https://genius.com/artists/Cattle-decapitation",
+        "type": "regular",
+        "id": "340465"
+      },
+      {
+        "name": "Cave 110",
+        "url": "https://genius.com/artists/Cave-110",
+        "type": "regular",
+        "id": "4094081"
+      },
+      {
+        "name": "Cavetown",
+        "url": "https://genius.com/artists/Cavetown",
+        "type": "regular",
+        "id": "966969"
+      },
+      {
+        "name": "Cazzu",
+        "url": "https://genius.com/artists/Cazzu",
+        "type": "regular",
+        "id": "1158019"
+      },
+      {
+        "name": "C Blu",
+        "url": "https://genius.com/artists/C-blu",
+        "type": "regular",
+        "id": "2857263"
+      },
+      {
+        "name": "CBW",
+        "url": "https://genius.com/artists/Cbw",
+        "type": "regular",
+        "id": "3784869"
+      },
+      {
+        "name": "C.C. Catch",
+        "url": "https://genius.com/artists/Cc-catch",
+        "type": "regular",
+        "id": "362572"
+      },
+      {
+        "name": "CCCP - Fedeli alla Linea",
+        "url": "https://genius.com/artists/Cccp-fedeli-alla-linea",
+        "type": "regular",
+        "id": "349526"
+      },
+      {
+        "name": "CDobleta",
+        "url": "https://genius.com/artists/Cdobleta",
+        "type": "regular",
+        "id": "3528244"
+      },
+      {
+        "name": "Ceca",
+        "url": "https://genius.com/artists/Ceca",
+        "type": "regular",
+        "id": "353136"
+      },
+      {
+        "name": "Cece Natalie",
+        "url": "https://genius.com/artists/Cece-natalie",
+        "type": "regular",
+        "id": "3492716"
+      },
+      {
+        "name": "CeCe Peniston",
+        "url": "https://genius.com/artists/Cece-peniston",
+        "type": "regular",
+        "id": "359219"
+      },
+      {
+        "name": "CeCe Winans",
+        "url": "https://genius.com/artists/Cece-winans",
+        "type": "regular",
+        "id": "8366"
+      },
+      {
+        "name": "Ceci de la Cueva",
+        "url": "https://genius.com/artists/Ceci-de-la-cueva",
+        "type": "regular",
+        "id": "3999407"
+      },
+      {
+        "name": "Cecilia Krull",
+        "url": "https://genius.com/artists/Cecilia-krull",
+        "type": "regular",
+        "id": "1294790"
+      },
+      {
+        "name": "Cecilio G.",
+        "url": "https://genius.com/artists/Cecilio-g",
+        "type": "regular",
+        "id": "585297"
+      },
+      {
+        "name": "Ceechynaa",
+        "url": "https://genius.com/artists/Ceechynaa",
+        "type": "regular",
+        "id": "3487997"
+      },
+      {
+        "name": "Ceeka RSA",
+        "url": "https://genius.com/artists/Ceeka-rsa",
+        "type": "regular",
+        "id": "3490176"
+      },
+      {
+        "name": "CeeLo Green",
+        "url": "https://genius.com/artists/Ceelo-green",
+        "type": "regular",
+        "id": "4413"
+      },
+      {
+        "name": "Celeste",
+        "url": "https://genius.com/artists/Celeste",
+        "type": "regular",
+        "id": "187501"
+      },
+      {
+        "name": "Celia Cruz",
+        "url": "https://genius.com/artists/Celia-cruz",
+        "type": "regular",
+        "id": "95025"
+      },
+      {
+        "name": "Celldweller",
+        "url": "https://genius.com/artists/Celldweller",
+        "type": "regular",
+        "id": "303186"
+      },
+      {
+        "name": "Celo & Abdi",
+        "url": "https://genius.com/artists/Celo-and-abdi",
+        "type": "regular",
+        "id": "19125"
+      },
+      {
+        "name": "Celtic Thunder",
+        "url": "https://genius.com/artists/Celtic-thunder",
+        "type": "regular",
+        "id": "354048"
+      },
+      {
+        "name": "Celtic Woman",
+        "url": "https://genius.com/artists/Celtic-woman",
+        "type": "regular",
+        "id": "44393"
+      },
+      {
+        "name": "Cem Adrian",
+        "url": "https://genius.com/artists/Cem-adrian",
+        "type": "regular",
+        "id": "348813"
+      },
+      {
+        "name": "Cem Karaca",
+        "url": "https://genius.com/artists/Cem-karaca",
+        "type": "regular",
+        "id": "358984"
+      },
+      {
+        "name": "CENTR",
+        "url": "https://genius.com/artists/Centr",
+        "type": "regular",
+        "id": "368350"
+      },
+      {
+        "name": "CEO Trayle",
+        "url": "https://genius.com/artists/Ceo-trayle",
+        "type": "regular",
+        "id": "2123990"
+      },
+      {
+        "name": "Cercel",
+        "url": "https://genius.com/artists/Cercel",
+        "type": "regular",
+        "id": "3286063"
+      },
+      {
+        "name": "Ceren",
+        "url": "https://genius.com/artists/Ceren",
+        "type": "regular",
+        "id": "3585260"
+      },
+      {
+        "name": "Cerounno",
+        "url": "https://genius.com/artists/Cerounno",
+        "type": "regular",
+        "id": "3425543"
+      },
+      {
+        "name": "Certified Trapper",
+        "url": "https://genius.com/artists/Certified-trapper",
+        "type": "regular",
+        "id": "3239172"
+      },
+      {
+        "name": "Cesare Cremonini",
+        "url": "https://genius.com/artists/Cesare-cremonini",
+        "type": "regular",
+        "id": "362711"
+      },
+      {
+        "name": "Ceza",
+        "url": "https://genius.com/artists/Ceza",
+        "type": "regular",
+        "id": "11586"
+      },
+      {
+        "name": "Cezinando",
+        "url": "https://genius.com/artists/Cezinando",
+        "type": "regular",
+        "id": "35788"
+      },
+      {
+        "name": "CFO$",
+        "url": "https://genius.com/artists/Cfo",
+        "type": "regular",
+        "id": "209086"
+      },
+      {
+        "name": "CG5",
+        "url": "https://genius.com/artists/Cg5",
+        "type": "regular",
+        "id": "1140651"
+      },
+      {
+        "name": "C.Gambino",
+        "url": "https://genius.com/artists/Cgambino",
+        "type": "regular",
+        "id": "2031399"
+      },
+      {
+        "name": "CGM",
+        "url": "https://genius.com/artists/Cgm",
+        "type": "regular",
+        "id": "1260604"
+      },
+      {
+        "name": "C-God4life",
+        "url": "https://genius.com/artists/C-god4life",
+        "type": "regular",
+        "id": "3921232"
+      },
+      {
+        "name": "Chaar Diwaari",
+        "url": "https://genius.com/artists/Chaar-diwaari",
+        "type": "regular",
+        "id": "3379134"
+      },
+      {
+        "name": "Chada",
+        "url": "https://genius.com/artists/Chada",
+        "type": "regular",
+        "id": "58666"
+      },
+      {
+        "name": "Chad Kroeger",
+        "url": "https://genius.com/artists/Chad-kroeger",
+        "type": "regular",
+        "id": "7804"
+      },
+      {
+        "name": "Чайф (Chaif)",
+        "url": "https://genius.com/artists/Chaif",
+        "type": "regular",
+        "id": "1490814"
+      },
+      {
+        "name": "The Chainsmokers",
+        "url": "https://genius.com/artists/The-chainsmokers",
+        "type": "regular",
+        "id": "150934"
+      },
+      {
+        "name": "Chaka Demus & Pliers",
+        "url": "https://genius.com/artists/Chaka-demus-and-pliers",
+        "type": "regular",
+        "id": "263864"
+      },
+      {
+        "name": "Chaka Khan",
+        "url": "https://genius.com/artists/Chaka-khan",
+        "type": "regular",
+        "id": "5116"
+      },
+      {
+        "name": "Chalie Boy",
+        "url": "https://genius.com/artists/Chalie-boy",
+        "type": "regular",
+        "id": "4448"
+      },
+      {
+        "name": "Chalino Sánchez",
+        "url": "https://genius.com/artists/Chalino-sanchez",
+        "type": "regular",
+        "id": "364146"
+      },
+      {
+        "name": "The Chalkeaters",
+        "url": "https://genius.com/artists/The-chalkeaters",
+        "type": "regular",
+        "id": "1859732"
+      },
+      {
+        "name": "ЧЕЛЕНЖЕР (CHALLENGER RU)",
+        "url": "https://genius.com/artists/Challenger-ru",
+        "type": "regular",
+        "id": "3644204"
+      },
+      {
+        "name": "The Chameleons",
+        "url": "https://genius.com/artists/The-chameleons",
+        "type": "regular",
+        "id": "110038"
+      },
+      {
+        "name": "Chamillionaire",
+        "url": "https://genius.com/artists/Chamillionaire",
+        "type": "regular",
+        "id": "115"
+      },
+      {
+        "name": "The Champs",
+        "url": "https://genius.com/artists/The-champs",
+        "type": "regular",
+        "id": "1169464"
+      },
+      {
+        "name": "Chance Peña",
+        "url": "https://genius.com/artists/Chance-pena",
+        "type": "regular",
+        "id": "1517116"
+      },
+      {
+        "name": "Chance the Rapper",
+        "url": "https://genius.com/artists/Chance-the-rapper",
+        "type": "regular",
+        "id": "16751"
+      },
+      {
+        "name": "Chandler Kinney",
+        "url": "https://genius.com/artists/Chandler-kinney",
+        "type": "regular",
+        "id": "2063639"
+      },
+      {
+        "name": "Chandler Leighton",
+        "url": "https://genius.com/artists/Chandler-leighton",
+        "type": "regular",
+        "id": "1904257"
+      },
+      {
+        "name": "Chandler Moore",
+        "url": "https://genius.com/artists/Chandler-moore",
+        "type": "regular",
+        "id": "1114407"
+      },
+      {
+        "name": "chandol",
+        "url": "https://genius.com/artists/Chandol",
+        "type": "regular",
+        "id": "4188184"
+      },
+      {
+        "name": "Chandrabindoo",
+        "url": "https://genius.com/artists/Chandrabindoo",
+        "type": "regular",
+        "id": "1846045"
+      },
+      {
+        "name": "CHANGMO (창모)",
+        "url": "https://genius.com/artists/Changmo",
+        "type": "regular",
+        "id": "397347"
+      },
+      {
+        "name": "ちゃんみな (CHANMINA)",
+        "url": "https://genius.com/artists/Chanmina",
+        "type": "regular",
+        "id": "1123755"
+      },
+      {
+        "name": "Chanté Moore",
+        "url": "https://genius.com/artists/Chante-moore",
+        "type": "regular",
+        "id": "20485"
+      },
+      {
+        "name": "Chapo102",
+        "url": "https://genius.com/artists/Chapo102",
+        "type": "regular",
+        "id": "839713"
+      },
+      {
+        "name": "Charity Gayle",
+        "url": "https://genius.com/artists/Charity-gayle",
+        "type": "regular",
+        "id": "1464657"
+      },
+      {
+        "name": "Charlene",
+        "url": "https://genius.com/artists/Charlene",
+        "type": "regular",
+        "id": "66438"
+      },
+      {
+        "name": "Charles & Eddie",
+        "url": "https://genius.com/artists/Charles-and-eddie",
+        "type": "regular",
+        "id": "349811"
+      },
+      {
+        "name": "Charles Aznavour",
+        "url": "https://genius.com/artists/Charles-aznavour",
+        "type": "regular",
+        "id": "13060"
+      },
+      {
+        "name": "Charles Bukowski",
+        "url": "https://genius.com/artists/Charles-bukowski",
+        "type": "regular",
+        "id": "21205"
+      },
+      {
+        "name": "Charles Dickens",
+        "url": "https://genius.com/artists/Charles-dickens",
+        "type": "regular",
+        "id": "32553"
+      },
+      {
+        "name": "Charles Trenet",
+        "url": "https://genius.com/artists/Charles-trenet",
+        "type": "regular",
+        "id": "96580"
+      },
+      {
+        "name": "Charley Crockett",
+        "url": "https://genius.com/artists/Charley-crockett",
+        "type": "regular",
+        "id": "1480382"
+      },
+      {
+        "name": "Charley Pride",
+        "url": "https://genius.com/artists/Charley-pride",
+        "type": "regular",
+        "id": "332421"
+      },
+      {
+        "name": "Charlie Daniels",
+        "url": "https://genius.com/artists/Charlie-daniels",
+        "type": "regular",
+        "id": "22754"
+      },
+      {
+        "name": "charlie moncler",
+        "url": "https://genius.com/artists/Charlie-moncler",
+        "type": "regular",
+        "id": "2223301"
+      },
+      {
+        "name": "Charlie Oriain",
+        "url": "https://genius.com/artists/Charlie-oriain",
+        "type": "regular",
+        "id": "2904978"
+      },
+      {
+        "name": "Charlie Puth",
+        "url": "https://genius.com/artists/Charlie-puth",
+        "type": "regular",
+        "id": "250301"
+      },
+      {
+        "name": "Charlie Rich",
+        "url": "https://genius.com/artists/Charlie-rich",
+        "type": "regular",
+        "id": "287452"
+      },
+      {
+        "name": "Charlie Sloth",
+        "url": "https://genius.com/artists/Charlie-sloth",
+        "type": "regular",
+        "id": "39558"
+      },
+      {
+        "name": "Charlie Wilson",
+        "url": "https://genius.com/artists/Charlie-wilson",
+        "type": "regular",
+        "id": "530"
+      },
+      {
+        "name": "Charlotte Cardin",
+        "url": "https://genius.com/artists/Charlotte-cardin",
+        "type": "regular",
+        "id": "180820"
+      },
+      {
+        "name": "Charlotte Dowsson",
+        "url": "https://genius.com/artists/Charlotte-dowsson",
+        "type": "regular",
+        "id": "4421117"
+      },
+      {
+        "name": "Charlotte Lawrence",
+        "url": "https://genius.com/artists/Charlotte-lawrence",
+        "type": "regular",
+        "id": "1151710"
+      },
+      {
+        "name": "Charlotte Martin",
+        "url": "https://genius.com/artists/Charlotte-martin",
+        "type": "regular",
+        "id": "176616"
+      },
+      {
+        "name": "Charly García",
+        "url": "https://genius.com/artists/Charly-garcia",
+        "type": "regular",
+        "id": "344676"
+      },
+      {
+        "name": "Charmer",
+        "url": "https://genius.com/artists/Charmer",
+        "type": "regular",
+        "id": "1004825"
+      },
+      {
+        "name": "Charmian Carr",
+        "url": "https://genius.com/artists/Charmian-carr",
+        "type": "regular",
+        "id": "406014"
+      },
+      {
+        "name": "Chase & Status",
+        "url": "https://genius.com/artists/Chase-and-status",
+        "type": "regular",
+        "id": "1464"
+      },
+      {
+        "name": "Chase Atlantic",
+        "url": "https://genius.com/artists/Chase-atlantic",
+        "type": "regular",
+        "id": "337188"
+      },
+      {
+        "name": "Chase Icon",
+        "url": "https://genius.com/artists/Chase-icon",
+        "type": "regular",
+        "id": "2283419"
+      },
+      {
+        "name": "Chase Matthew",
+        "url": "https://genius.com/artists/Chase-matthew",
+        "type": "regular",
+        "id": "1969016"
+      },
+      {
+        "name": "Chase Noseworthy",
+        "url": "https://genius.com/artists/Chase-noseworthy",
+        "type": "regular",
+        "id": "2312584"
+      },
+      {
+        "name": "Chase Petra",
+        "url": "https://genius.com/artists/Chase-petra",
+        "type": "regular",
+        "id": "1657580"
+      },
+      {
+        "name": "Chase Rice",
+        "url": "https://genius.com/artists/Chase-rice",
+        "type": "regular",
+        "id": "227641"
+      },
+      {
+        "name": "Chase Shakur",
+        "url": "https://genius.com/artists/Chase-shakur",
+        "type": "regular",
+        "id": "1319004"
+      },
+      {
+        "name": "Chat Pile",
+        "url": "https://genius.com/artists/Chat-pile",
+        "type": "regular",
+        "id": "1874195"
+      },
+      {
+        "name": "Чай Вдвоем (Chay Vdvoem)",
+        "url": "https://genius.com/artists/Chay-vdvoem",
+        "type": "regular",
+        "id": "2198114"
+      },
+      {
+        "name": "Che",
+        "url": "https://genius.com/artists/Che",
+        "type": "regular",
+        "id": "2860491"
+      },
+      {
+        "name": "Cheap Perfume",
+        "url": "https://genius.com/artists/Cheap-perfume",
+        "type": "regular",
+        "id": "2422166"
+      },
+      {
+        "name": "Cheap Trick",
+        "url": "https://genius.com/artists/Cheap-trick",
+        "type": "regular",
+        "id": "24684"
+      },
+      {
+        "name": "Cheat Codes",
+        "url": "https://genius.com/artists/Cheat-codes",
+        "type": "regular",
+        "id": "377002"
+      },
+      {
+        "name": "Cheatz (POL)",
+        "url": "https://genius.com/artists/Cheatz-pol",
+        "type": "regular",
+        "id": "1780911"
+      },
+      {
+        "name": "Cheb Akil - الشاب عقيل",
+        "url": "https://genius.com/artists/Cheb-akil",
+        "type": "regular",
+        "id": "1267765"
+      },
+      {
+        "name": "Cheb Hasni",
+        "url": "https://genius.com/artists/Cheb-hasni",
+        "type": "regular",
+        "id": "482275"
+      },
+      {
+        "name": "Cheech & Chong",
+        "url": "https://genius.com/artists/Cheech-and-chong",
+        "type": "regular",
+        "id": "24418"
+      },
+      {
+        "name": "Che Ecru",
+        "url": "https://genius.com/artists/Che-ecru",
+        "type": "regular",
+        "id": "607732"
+      },
+      {
+        "name": "Cheek",
+        "url": "https://genius.com/artists/Cheek",
+        "type": "regular",
+        "id": "228328"
+      },
+      {
+        "name": "Cheema Y",
+        "url": "https://genius.com/artists/Cheema-y",
+        "type": "regular",
+        "id": "3840063"
+      },
+      {
+        "name": "The Cheetah Girls",
+        "url": "https://genius.com/artists/The-cheetah-girls",
+        "type": "regular",
+        "id": "264359"
+      },
+      {
+        "name": "Chef Boy",
+        "url": "https://genius.com/artists/Chef-boy",
+        "type": "regular",
+        "id": "2604602"
+      },
+      {
+        "name": "Chella",
+        "url": "https://genius.com/artists/Chella",
+        "type": "regular",
+        "id": "2711552"
+      },
+      {
+        "name": "Chelsea Cutler",
+        "url": "https://genius.com/artists/Chelsea-cutler",
+        "type": "regular",
+        "id": "561943"
+      },
+      {
+        "name": "Chelsea Plank",
+        "url": "https://genius.com/artists/Chelsea-plank",
+        "type": "regular",
+        "id": "2105735"
+      },
+      {
+        "name": "Chelsea Wolfe",
+        "url": "https://genius.com/artists/Chelsea-wolfe",
+        "type": "regular",
+        "id": "45708"
+      },
+      {
+        "name": "The Chemical Brothers",
+        "url": "https://genius.com/artists/The-chemical-brothers",
+        "type": "regular",
+        "id": "6974"
+      },
+      {
+        "name": "Chemlab",
+        "url": "https://genius.com/artists/Chemlab",
+        "type": "regular",
+        "id": "330175"
+      },
+      {
+        "name": "the Chemodan",
+        "url": "https://genius.com/artists/The-chemodan",
+        "type": "regular",
+        "id": "1252820"
+      },
+      {
+        "name": "Chencho Corleone",
+        "url": "https://genius.com/artists/Chencho-corleone",
+        "type": "regular",
+        "id": "1244358"
+      },
+      {
+        "name": "Cher",
+        "url": "https://genius.com/artists/Cher",
+        "type": "regular",
+        "id": "13214"
+      },
+      {
+        "name": "Чёрная Экономика (Chernaya Ekonomika)",
+        "url": "https://genius.com/artists/Chernaya-ekonomika",
+        "type": "regular",
+        "id": "1312547"
+      },
+      {
+        "name": "Cherpen",
+        "url": "https://genius.com/artists/Cherpen",
+        "type": "regular",
+        "id": "3921299"
+      },
+      {
+        "name": "Cherub",
+        "url": "https://genius.com/artists/Cherub",
+        "type": "regular",
+        "id": "37716"
+      },
+      {
+        "name": "Cheryl",
+        "url": "https://genius.com/artists/Cheryl",
+        "type": "regular",
+        "id": "39300"
+      },
+      {
+        "name": "Cheryl Freeman",
+        "url": "https://genius.com/artists/Cheryl-freeman",
+        "type": "regular",
+        "id": "158550"
+      },
+      {
+        "name": "Cheryl Lynn",
+        "url": "https://genius.com/artists/Cheryl-lynn",
+        "type": "regular",
+        "id": "229959"
+      },
+      {
+        "name": "Честер Небро (Chester Nebro)",
+        "url": "https://genius.com/artists/Chester-nebro",
+        "type": "regular",
+        "id": "621569"
+      },
+      {
+        "name": "Честный (Chestny)",
+        "url": "https://genius.com/artists/Chestny",
+        "type": "regular",
+        "id": "2012837"
+      },
+      {
+        "name": "Chet Baker",
+        "url": "https://genius.com/artists/Chet-baker",
+        "type": "regular",
+        "id": "161409"
+      },
+      {
+        "name": "Chet Faker",
+        "url": "https://genius.com/artists/Chet-faker",
+        "type": "regular",
+        "id": "73177"
+      },
+      {
+        "name": "Chetta",
+        "url": "https://genius.com/artists/Chetta",
+        "type": "regular",
+        "id": "660925"
+      },
+      {
+        "name": "Cheu-B",
+        "url": "https://genius.com/artists/Cheu-b",
+        "type": "regular",
+        "id": "651153"
+      },
+      {
+        "name": "Chevelle",
+        "url": "https://genius.com/artists/Chevelle",
+        "type": "regular",
+        "id": "26718"
+      },
+      {
+        "name": "Chevy",
+        "url": "https://genius.com/artists/Chevy",
+        "type": "regular",
+        "id": "131325"
+      },
+      {
+        "name": "Chezile",
+        "url": "https://genius.com/artists/Chezile",
+        "type": "regular",
+        "id": "2798179"
+      },
+      {
+        "name": "Chiaraspureluv",
+        "url": "https://genius.com/artists/Chiaraspureluv",
+        "type": "regular",
+        "id": "4316366"
+      },
+      {
+        "name": "Chic",
+        "url": "https://genius.com/artists/Chic",
+        "type": "regular",
+        "id": "1557518"
+      },
+      {
+        "name": "Chicago",
+        "url": "https://genius.com/artists/Chicago",
+        "type": "regular",
+        "id": "36556"
+      },
+      {
+        "name": "Chicago Mass Choir",
+        "url": "https://genius.com/artists/Chicago-mass-choir",
+        "type": "regular",
+        "id": "365798"
+      },
+      {
+        "name": "Chicago West",
+        "url": "https://genius.com/artists/Chicago-west",
+        "type": "regular",
+        "id": "4055220"
+      },
+      {
+        "name": "Chicken P",
+        "url": "https://genius.com/artists/Chicken-p",
+        "type": "regular",
+        "id": "1042880"
+      },
+      {
+        "name": "The Chicks",
+        "url": "https://genius.com/artists/The-chicks",
+        "type": "regular",
+        "id": "24366"
+      },
+      {
+        "name": "Chico Buarque",
+        "url": "https://genius.com/artists/Chico-buarque",
+        "type": "regular",
+        "id": "90348"
+      },
+      {
+        "name": "Chief Keef",
+        "url": "https://genius.com/artists/Chief-keef",
+        "type": "regular",
+        "id": "16808"
+      },
+      {
+        "name": "The Chieftains",
+        "url": "https://genius.com/artists/The-chieftains",
+        "type": "regular",
+        "id": "180081"
+      },
+      {
+        "name": "​chiello",
+        "url": "https://genius.com/artists/Chiello",
+        "type": "regular",
+        "id": "1522164"
+      },
+      {
+        "name": "Chiko",
+        "url": "https://genius.com/artists/Chiko",
+        "type": "regular",
+        "id": "4141067"
+      },
+      {
+        "name": "Children of Bodom",
+        "url": "https://genius.com/artists/Children-of-bodom",
+        "type": "regular",
+        "id": "328328"
+      },
+      {
+        "name": "Children's classic hits",
+        "url": "https://genius.com/artists/Childrens-classic-hits",
+        "type": "regular",
+        "id": "480643"
+      },
+      {
+        "name": "Children Songs",
+        "url": "https://genius.com/artists/Children-songs",
+        "type": "regular",
+        "id": "405191"
+      },
+      {
+        "name": "Chillinit",
+        "url": "https://genius.com/artists/Chillinit",
+        "type": "regular",
+        "id": "1482839"
+      },
+      {
+        "name": "Чи-Ли (CHI-LLl)",
+        "url": "https://genius.com/artists/Chi-lll",
+        "type": "regular",
+        "id": "4024665"
+      },
+      {
+        "name": "Chills",
+        "url": "https://genius.com/artists/Chills",
+        "type": "regular",
+        "id": "1480042"
+      },
+      {
+        "name": "​chillwagon",
+        "url": "https://genius.com/artists/Chillwagon",
+        "type": "regular",
+        "id": "1563250"
+      },
+      {
+        "name": "China Anne McClain",
+        "url": "https://genius.com/artists/China-anne-mcclain",
+        "type": "regular",
+        "id": "20882"
+      },
+      {
+        "name": "CHINCHILLA (UK)",
+        "url": "https://genius.com/artists/Chinchilla-uk",
+        "type": "regular",
+        "id": "2075149"
+      },
+      {
+        "name": "Chingy",
+        "url": "https://genius.com/artists/Chingy",
+        "type": "regular",
+        "id": "645"
+      },
+      {
+        "name": "Chinmayi",
+        "url": "https://genius.com/artists/Chinmayi",
+        "type": "regular",
+        "id": "1690744"
+      },
+      {
+        "name": "Chino Pacas",
+        "url": "https://genius.com/artists/Chino-pacas",
+        "type": "regular",
+        "id": "3453677"
+      },
+      {
+        "name": "Chiodos",
+        "url": "https://genius.com/artists/Chiodos",
+        "type": "regular",
+        "id": "57561"
+      },
+      {
+        "name": "Chip",
+        "url": "https://genius.com/artists/Chip",
+        "type": "regular",
+        "id": "9248"
+      },
+      {
+        "name": "ЧипаЧип (ChipaChip)",
+        "url": "https://genius.com/artists/Chipachip",
+        "type": "regular",
+        "id": "1484458"
+      },
+      {
+        "name": "Chip Zien",
+        "url": "https://genius.com/artists/Chip-zien",
+        "type": "regular",
+        "id": "456315"
+      },
+      {
+        "name": "CHIQUITA (BABYMONSTER)",
+        "url": "https://genius.com/artists/Chiquita-babymonster",
+        "type": "regular",
+        "id": "3480123"
+      },
+      {
+        "name": "Chirok471",
+        "url": "https://genius.com/artists/Chirok471",
+        "type": "regular",
+        "id": "2990899"
+      },
+      {
+        "name": "Chita Rivera",
+        "url": "https://genius.com/artists/Chita-rivera",
+        "type": "regular",
+        "id": "383765"
+      },
+      {
+        "name": "Chito Rana$",
+        "url": "https://genius.com/artists/Chito-rana",
+        "type": "regular",
+        "id": "1790790"
+      },
+      {
+        "name": "Chitra Singh",
+        "url": "https://genius.com/artists/Chitra-singh",
+        "type": "regular",
+        "id": "3807368"
+      },
+      {
+        "name": "Chivas",
+        "url": "https://genius.com/artists/Chivas",
+        "type": "regular",
+        "id": "484060"
+      },
+      {
+        "name": "Чиж и Ко (Chizh & Co)",
+        "url": "https://genius.com/artists/Chizh-and-co",
+        "type": "regular",
+        "id": "1767048"
+      },
+      {
+        "name": "Chlöe",
+        "url": "https://genius.com/artists/Chloe",
+        "type": "regular",
+        "id": "993246"
+      },
+      {
+        "name": "Chloe Ament",
+        "url": "https://genius.com/artists/Chloe-ament",
+        "type": "regular",
+        "id": "2889419"
+      },
+      {
+        "name": "chloe moriondo",
+        "url": "https://genius.com/artists/Chloe-moriondo",
+        "type": "regular",
+        "id": "1212454"
+      },
+      {
+        "name": "Chloe Qisha",
+        "url": "https://genius.com/artists/Chloe-qisha",
+        "type": "regular",
+        "id": "4062041"
+      },
+      {
+        "name": "Chloe x Halle",
+        "url": "https://genius.com/artists/Chloe-x-halle",
+        "type": "regular",
+        "id": "453240"
+      },
+      {
+        "name": "CHO",
+        "url": "https://genius.com/artists/Cho",
+        "type": "regular",
+        "id": "81657"
+      },
+      {
+        "name": "Chonny Jash",
+        "url": "https://genius.com/artists/Chonny-jash",
+        "type": "regular",
+        "id": "3256557"
+      },
+      {
+        "name": "The Chordettes",
+        "url": "https://genius.com/artists/The-chordettes",
+        "type": "regular",
+        "id": "44299"
+      },
+      {
+        "name": "Chord Overstreet",
+        "url": "https://genius.com/artists/Chord-overstreet",
+        "type": "regular",
+        "id": "994443"
+      },
+      {
+        "name": "The Chorus of Beauty and the Beast",
+        "url": "https://genius.com/artists/The-chorus-of-beauty-and-the-beast",
+        "type": "regular",
+        "id": "2484855"
+      },
+      {
+        "name": "超ときめき♡宣伝部 (Cho Tokimeki-Sendenbu)",
+        "url": "https://genius.com/artists/Cho-tokimeki-sendenbu",
+        "type": "regular",
+        "id": "3185146"
+      },
+      {
+        "name": "Chow Lee",
+        "url": "https://genius.com/artists/Chow-lee",
+        "type": "regular",
+        "id": "2075865"
+      },
+      {
+        "name": "Chris Abolade",
+        "url": "https://genius.com/artists/Chris-abolade",
+        "type": "regular",
+        "id": "1237725"
+      },
+      {
+        "name": "Chris Brown (Elevation)",
+        "url": "https://genius.com/artists/Chris-brown-elevation",
+        "type": "regular",
+        "id": "412259"
+      },
+      {
+        "name": "Chris Cornell",
+        "url": "https://genius.com/artists/Chris-cornell",
+        "type": "regular",
+        "id": "18435"
+      },
+      {
+        "name": "Chris De Burgh",
+        "url": "https://genius.com/artists/Chris-de-burgh",
+        "type": "regular",
+        "id": "39097"
+      },
+      {
+        "name": "Chris Grey",
+        "url": "https://genius.com/artists/Chris-grey",
+        "type": "regular",
+        "id": "1578482"
+      },
+      {
+        "name": "Chris Isaak",
+        "url": "https://genius.com/artists/Chris-isaak",
+        "type": "regular",
+        "id": "98393"
+      },
+      {
+        "name": "Chris Janson",
+        "url": "https://genius.com/artists/Chris-janson",
+        "type": "regular",
+        "id": "389952"
+      },
+      {
+        "name": "Chris Kirkpatrick",
+        "url": "https://genius.com/artists/Chris-kirkpatrick",
+        "type": "regular",
+        "id": "218290"
+      },
+      {
+        "name": "Chris Lake",
+        "url": "https://genius.com/artists/Chris-lake",
+        "type": "regular",
+        "id": "219207"
+      },
+      {
+        "name": "Chris Norman",
+        "url": "https://genius.com/artists/Chris-norman",
+        "type": "regular",
+        "id": "359187"
+      },
+      {
+        "name": "Chris Rea",
+        "url": "https://genius.com/artists/Chris-rea",
+        "type": "regular",
+        "id": "213446"
+      },
+      {
+        "name": "Chris Rice",
+        "url": "https://genius.com/artists/Chris-rice",
+        "type": "regular",
+        "id": "356075"
+      },
+      {
+        "name": "Chris Stapleton",
+        "url": "https://genius.com/artists/Chris-stapleton",
+        "type": "regular",
+        "id": "394611"
+      },
+      {
+        "name": "Chrissy Costanza",
+        "url": "https://genius.com/artists/Chrissy-costanza",
+        "type": "regular",
+        "id": "454141"
+      },
+      {
+        "name": "CHRIST DILLINGER",
+        "url": "https://genius.com/artists/Christ-dillinger",
+        "type": "regular",
+        "id": "1787541"
+      },
+      {
+        "name": "Christian Borle",
+        "url": "https://genius.com/artists/Christian-borle",
+        "type": "regular",
+        "id": "384486"
+      },
+      {
+        "name": "Christian Death",
+        "url": "https://genius.com/artists/Christian-death",
+        "type": "regular",
+        "id": "65672"
+      },
+      {
+        "name": "Chri$tian Gate$",
+        "url": "https://genius.com/artists/Chri-tian-gate",
+        "type": "regular",
+        "id": "1270804"
+      },
+      {
+        "name": "Christian Kuria",
+        "url": "https://genius.com/artists/Christian-kuria",
+        "type": "regular",
+        "id": "1615990"
+      },
+      {
+        "name": "Christian Nodal",
+        "url": "https://genius.com/artists/Christian-nodal",
+        "type": "regular",
+        "id": "1111425"
+      },
+      {
+        "name": "Christina Aguilera",
+        "url": "https://genius.com/artists/Christina-aguilera",
+        "type": "regular",
+        "id": "1211"
+      },
+      {
+        "name": "Christina Milian",
+        "url": "https://genius.com/artists/Christina-milian",
+        "type": "regular",
+        "id": "6757"
+      },
+      {
+        "name": "Christina Perri",
+        "url": "https://genius.com/artists/Christina-perri",
+        "type": "regular",
+        "id": "13763"
+      },
+      {
+        "name": "Christina Rossetti",
+        "url": "https://genius.com/artists/Christina-rossetti",
+        "type": "regular",
+        "id": "49022"
+      },
+      {
+        "name": "Christine and the Queens",
+        "url": "https://genius.com/artists/Christine-and-the-queens",
+        "type": "regular",
+        "id": "327334"
+      },
+      {
+        "name": "Christine Baranski",
+        "url": "https://genius.com/artists/Christine-baranski",
+        "type": "regular",
+        "id": "335132"
+      },
+      {
+        "name": "Christmas Songs",
+        "url": "https://genius.com/artists/Christmas-songs",
+        "type": "regular",
+        "id": "404512"
+      },
+      {
+        "name": "Christ music kids",
+        "url": "https://genius.com/artists/Christ-music-kids",
+        "type": "regular",
+        "id": "458689"
+      },
+      {
+        "name": "Chris Tomlin",
+        "url": "https://genius.com/artists/Chris-tomlin",
+        "type": "regular",
+        "id": "63757"
+      },
+      {
+        "name": "Christophe Beck",
+        "url": "https://genius.com/artists/Christophe-beck",
+        "type": "regular",
+        "id": "137892"
+      },
+      {
+        "name": "Christopher",
+        "url": "https://genius.com/artists/Christopher",
+        "type": "regular",
+        "id": "247080"
+      },
+      {
+        "name": "Christopher Chung",
+        "url": "https://genius.com/artists/Christopher-chung",
+        "type": "regular",
+        "id": "1746408"
+      },
+      {
+        "name": "Christopher Cross",
+        "url": "https://genius.com/artists/Christopher-cross",
+        "type": "regular",
+        "id": "211639"
+      },
+      {
+        "name": "Christopher Fitzgerald",
+        "url": "https://genius.com/artists/Christopher-fitzgerald",
+        "type": "regular",
+        "id": "300412"
+      },
+      {
+        "name": "Christopher Nolan",
+        "url": "https://genius.com/artists/Christopher-nolan",
+        "type": "regular",
+        "id": "34099"
+      },
+      {
+        "name": "Christopher Saint",
+        "url": "https://genius.com/artists/Christopher-saint",
+        "type": "regular",
+        "id": "3931363"
+      },
+      {
+        "name": "Christopher Sieber",
+        "url": "https://genius.com/artists/Christopher-sieber",
+        "type": "regular",
+        "id": "457446"
+      },
+      {
+        "name": "Christos Mastoras",
+        "url": "https://genius.com/artists/Christos-mastoras",
+        "type": "regular",
+        "id": "1948808"
+      },
+      {
+        "name": "Chris Travis",
+        "url": "https://genius.com/artists/Chris-travis",
+        "type": "regular",
+        "id": "31861"
+      },
+      {
+        "name": "Christy Altomare",
+        "url": "https://genius.com/artists/Christy-altomare",
+        "type": "regular",
+        "id": "1024375"
+      },
+      {
+        "name": "Christy Moore",
+        "url": "https://genius.com/artists/Christy-moore",
+        "type": "regular",
+        "id": "348247"
+      },
+      {
+        "name": "Chris Webby",
+        "url": "https://genius.com/artists/Chris-webby",
+        "type": "regular",
+        "id": "432"
+      },
+      {
+        "name": "Chrisye",
+        "url": "https://genius.com/artists/Chrisye",
+        "type": "regular",
+        "id": "369031"
+      },
+      {
+        "name": "Chris Young",
+        "url": "https://genius.com/artists/Chris-young",
+        "type": "regular",
+        "id": "18713"
+      },
+      {
+        "name": "Chronic Law",
+        "url": "https://genius.com/artists/Chronic-law",
+        "type": "regular",
+        "id": "1692466"
+      },
+      {
+        "name": "Chronixx",
+        "url": "https://genius.com/artists/Chronixx",
+        "type": "regular",
+        "id": "68340"
+      },
+      {
+        "name": "Chrystal",
+        "url": "https://genius.com/artists/Chrystal",
+        "type": "regular",
+        "id": "1413105"
+      },
+      {
+        "name": "Chuck Berry",
+        "url": "https://genius.com/artists/Chuck-berry",
+        "type": "regular",
+        "id": "19340"
+      },
+      {
+        "name": "Chuck Palahniuk",
+        "url": "https://genius.com/artists/Chuck-palahniuk",
+        "type": "regular",
+        "id": "65517"
+      },
+      {
+        "name": "Chuckyy",
+        "url": "https://genius.com/artists/Chuckyy",
+        "type": "regular",
+        "id": "3754478"
+      },
+      {
+        "name": "Chumbawamba",
+        "url": "https://genius.com/artists/Chumbawamba",
+        "type": "regular",
+        "id": "29176"
+      },
+      {
+        "name": "CHUNG HA",
+        "url": "https://genius.com/artists/Chung-ha",
+        "type": "regular",
+        "id": "1119757"
+      },
+      {
+        "name": "The Church",
+        "url": "https://genius.com/artists/The-church",
+        "type": "regular",
+        "id": "46410"
+      },
+      {
+        "name": "Churgney Gurgney",
+        "url": "https://genius.com/artists/Churgney-gurgney",
+        "type": "regular",
+        "id": "3276539"
+      },
+      {
+        "name": "CHUU",
+        "url": "https://genius.com/artists/Chuu",
+        "type": "regular",
+        "id": "1550235"
+      },
+      {
+        "name": "Chuwi",
+        "url": "https://genius.com/artists/Chuwi",
+        "type": "regular",
+        "id": "3743774"
+      },
+      {
+        "name": "Chuyin",
+        "url": "https://genius.com/artists/Chuyin",
+        "type": "regular",
+        "id": "3706454"
+      },
+      {
+        "name": "Chuy Montana",
+        "url": "https://genius.com/artists/Chuy-montana",
+        "type": "regular",
+        "id": "3470190"
+      },
+      {
+        "name": "CHVRCHES",
+        "url": "https://genius.com/artists/Chvrches",
+        "type": "regular",
+        "id": "40863"
+      },
+      {
+        "name": "Cian Ducrot",
+        "url": "https://genius.com/artists/Cian-ducrot",
+        "type": "regular",
+        "id": "1660715"
+      },
+      {
+        "name": "Ciara",
+        "url": "https://genius.com/artists/Ciara",
+        "type": "regular",
+        "id": "1630"
+      },
+      {
+        "name": "Cici",
+        "url": "https://genius.com/artists/Cici",
+        "type": "regular",
+        "id": "25235"
+      },
+      {
+        "name": "CIFIKA",
+        "url": "https://genius.com/artists/Cifika",
+        "type": "regular",
+        "id": "1264597"
+      },
+      {
+        "name": "Cil",
+        "url": "https://genius.com/artists/Cil",
+        "type": "regular",
+        "id": "3143792"
+      },
+      {
+        "name": "Cimorelli",
+        "url": "https://genius.com/artists/Cimorelli",
+        "type": "regular",
+        "id": "21788"
+      },
+      {
+        "name": "Cindy Lee",
+        "url": "https://genius.com/artists/Cindy-lee",
+        "type": "regular",
+        "id": "1142053"
+      },
+      {
+        "name": "The Cinematic Orchestra",
+        "url": "https://genius.com/artists/The-cinematic-orchestra",
+        "type": "regular",
+        "id": "357385"
+      },
+      {
+        "name": "Circa Survive",
+        "url": "https://genius.com/artists/Circa-survive",
+        "type": "regular",
+        "id": "26595"
+      },
+      {
+        "name": "Circuit Rider Music",
+        "url": "https://genius.com/artists/Circuit-rider-music",
+        "type": "regular",
+        "id": "1676649"
+      },
+      {
+        "name": "CircusP",
+        "url": "https://genius.com/artists/Circusp",
+        "type": "regular",
+        "id": "343029"
+      },
+      {
+        "name": "Cities Aviv",
+        "url": "https://genius.com/artists/Cities-aviv",
+        "type": "regular",
+        "id": "16037"
+      },
+      {
+        "name": "Citipointe Worship",
+        "url": "https://genius.com/artists/Citipointe-worship",
+        "type": "regular",
+        "id": "405498"
+      },
+      {
+        "name": "Citizen",
+        "url": "https://genius.com/artists/Citizen",
+        "type": "regular",
+        "id": "13168"
+      },
+      {
+        "name": "Citizens",
+        "url": "https://genius.com/artists/Citizens",
+        "type": "regular",
+        "id": "292139"
+      },
+      {
+        "name": "Citizen Soldier",
+        "url": "https://genius.com/artists/Citizen-soldier",
+        "type": "regular",
+        "id": "1653147"
+      },
+      {
+        "name": "CITIZEN (USA)",
+        "url": "https://genius.com/artists/Citizen-usa",
+        "type": "regular",
+        "id": "4133621"
+      },
+      {
+        "name": "CityAlight",
+        "url": "https://genius.com/artists/Cityalight",
+        "type": "regular",
+        "id": "1019187"
+      },
+      {
+        "name": "City and Colour",
+        "url": "https://genius.com/artists/City-and-colour",
+        "type": "regular",
+        "id": "19789"
+      },
+      {
+        "name": "City Girls",
+        "url": "https://genius.com/artists/City-girls",
+        "type": "regular",
+        "id": "1277050"
+      },
+      {
+        "name": "City High",
+        "url": "https://genius.com/artists/City-high",
+        "type": "regular",
+        "id": "8418"
+      },
+      {
+        "name": "City Morgue",
+        "url": "https://genius.com/artists/City-morgue",
+        "type": "regular",
+        "id": "1285895"
+      },
+      {
+        "name": "Civ",
+        "url": "https://genius.com/artists/Civ",
+        "type": "regular",
+        "id": "4304325"
+      },
+      {
+        "name": "The Civil Wars",
+        "url": "https://genius.com/artists/The-civil-wars",
+        "type": "regular",
+        "id": "16026"
+      },
+      {
+        "name": "Ciza",
+        "url": "https://genius.com/artists/Ciza",
+        "type": "regular",
+        "id": "3157730"
+      },
+      {
+        "name": "CJ",
+        "url": "https://genius.com/artists/Cj",
+        "type": "regular",
+        "id": "5848"
+      },
+      {
+        "name": "Cjbeards",
+        "url": "https://genius.com/artists/Cjbeards",
+        "type": "regular",
+        "id": "1925697"
+      },
+      {
+        "name": "C-Kan",
+        "url": "https://genius.com/artists/C-kan",
+        "type": "regular",
+        "id": "44209"
+      },
+      {
+        "name": "CKay",
+        "url": "https://genius.com/artists/Ckay",
+        "type": "regular",
+        "id": "821992"
+      },
+      {
+        "name": "CKY",
+        "url": "https://genius.com/artists/Cky",
+        "type": "regular",
+        "id": "49364"
+      },
+      {
+        "name": "CK YG",
+        "url": "https://genius.com/artists/Ck-yg",
+        "type": "regular",
+        "id": "3049668"
+      },
+      {
+        "name": "Claira Titman",
+        "url": "https://genius.com/artists/Claira-titman",
+        "type": "regular",
+        "id": "641368"
+      },
+      {
+        "name": "Clairo",
+        "url": "https://genius.com/artists/Clairo",
+        "type": "regular",
+        "id": "1144133"
+      },
+      {
+        "name": "Clamavi De Profundis",
+        "url": "https://genius.com/artists/Clamavi-de-profundis",
+        "type": "regular",
+        "id": "538504"
+      },
+      {
+        "name": "The Clancy Brothers & Tommy Makem",
+        "url": "https://genius.com/artists/The-clancy-brothers-and-tommy-makem",
+        "type": "regular",
+        "id": "352662"
+      },
+      {
+        "name": "Clannad",
+        "url": "https://genius.com/artists/Clannad",
+        "type": "regular",
+        "id": "344747"
+      },
+      {
+        "name": "Clara La San",
+        "url": "https://genius.com/artists/Clara-la-san",
+        "type": "regular",
+        "id": "323218"
+      },
+      {
+        "name": "Clarent",
+        "url": "https://genius.com/artists/Clarent",
+        "type": "regular",
+        "id": "3826429"
+      },
+      {
+        "name": "Clarion (USA)",
+        "url": "https://genius.com/artists/Clarion-usa",
+        "type": "regular",
+        "id": "4402370"
+      },
+      {
+        "name": "Clark Gesner",
+        "url": "https://genius.com/artists/Clark-gesner",
+        "type": "regular",
+        "id": "363500"
+      },
+      {
+        "name": "The Clark Sisters",
+        "url": "https://genius.com/artists/The-clark-sisters",
+        "type": "regular",
+        "id": "8730"
+      },
+      {
+        "name": "Clase Personal",
+        "url": "https://genius.com/artists/Clase-personal",
+        "type": "regular",
+        "id": "4352475"
+      },
+      {
+        "name": "The Clash",
+        "url": "https://genius.com/artists/The-clash",
+        "type": "regular",
+        "id": "648"
+      },
+      {
+        "name": "Claude",
+        "url": "https://genius.com/artists/Claude",
+        "type": "regular",
+        "id": "3338337"
+      },
+      {
+        "name": "Claudia Valentina",
+        "url": "https://genius.com/artists/Claudia-valentina",
+        "type": "regular",
+        "id": "1891346"
+      },
+      {
+        "name": "Claudio Baglioni",
+        "url": "https://genius.com/artists/Claudio-baglioni",
+        "type": "regular",
+        "id": "343801"
+      },
+      {
+        "name": "Claudio Botelho",
+        "url": "https://genius.com/artists/Claudio-botelho",
+        "type": "regular",
+        "id": "1673089"
+      },
+      {
+        "name": "Claudio Montana",
+        "url": "https://genius.com/artists/Claudio-montana",
+        "type": "regular",
+        "id": "2574615"
+      },
+      {
+        "name": "Claudio Villa",
+        "url": "https://genius.com/artists/Claudio-villa",
+        "type": "regular",
+        "id": "361314"
+      },
+      {
+        "name": "Clave Especial",
+        "url": "https://genius.com/artists/Clave-especial",
+        "type": "regular",
+        "id": "2983900"
+      },
+      {
+        "name": "Claver Gold",
+        "url": "https://genius.com/artists/Claver-gold",
+        "type": "regular",
+        "id": "541368"
+      },
+      {
+        "name": "Clavish",
+        "url": "https://genius.com/artists/Clavish",
+        "type": "regular",
+        "id": "1488228"
+      },
+      {
+        "name": "Clay Walker",
+        "url": "https://genius.com/artists/Clay-walker",
+        "type": "regular",
+        "id": "65485"
+      },
+      {
+        "name": "Clean Bandit",
+        "url": "https://genius.com/artists/Clean-bandit",
+        "type": "regular",
+        "id": "106693"
+      },
+      {
+        "name": "Clementine Douglas",
+        "url": "https://genius.com/artists/Clementine-douglas",
+        "type": "regular",
+        "id": "1439688"
+      },
+      {
+        "name": "Cleo Sol",
+        "url": "https://genius.com/artists/Cleo-sol",
+        "type": "regular",
+        "id": "12130"
+      },
+      {
+        "name": "Cleveland Brown",
+        "url": "https://genius.com/artists/Cleveland-brown",
+        "type": "regular",
+        "id": "28658"
+      },
+      {
+        "name": "The Click Five",
+        "url": "https://genius.com/artists/The-click-five",
+        "type": "regular",
+        "id": "244761"
+      },
+      {
+        "name": "Cliff Richard",
+        "url": "https://genius.com/artists/Cliff-richard",
+        "type": "regular",
+        "id": "343773"
+      },
+      {
+        "name": "Călinacho",
+        "url": "https://genius.com/artists/Calinacho",
+        "type": "regular",
+        "id": "1238735"
+      },
+      {
+        "name": "Clint Black",
+        "url": "https://genius.com/artists/Clint-black",
+        "type": "regular",
+        "id": "332208"
+      },
+      {
+        "name": "Clinton Kane",
+        "url": "https://genius.com/artists/Clinton-kane",
+        "type": "regular",
+        "id": "1597681"
+      },
+      {
+        "name": "clipping.",
+        "url": "https://genius.com/artists/Clipping",
+        "type": "regular",
+        "id": "39793"
+      },
+      {
+        "name": "Cllevio Masoni",
+        "url": "https://genius.com/artists/Cllevio-masoni",
+        "type": "regular",
+        "id": "2603211"
+      },
+      {
+        "name": "ClockClock",
+        "url": "https://genius.com/artists/Clockclock",
+        "type": "regular",
+        "id": "2253617"
+      },
+      {
+        "name": "CLONNEX",
+        "url": "https://genius.com/artists/Clonnex",
+        "type": "regular",
+        "id": "1194448"
+      },
+      {
+        "name": "Cloonee",
+        "url": "https://genius.com/artists/Cloonee",
+        "type": "regular",
+        "id": "1036468"
+      },
+      {
+        "name": "Cloudy June",
+        "url": "https://genius.com/artists/Cloudy-june",
+        "type": "regular",
+        "id": "2392169"
+      },
+      {
+        "name": "clout",
+        "url": "https://genius.com/artists/Clout",
+        "type": "regular",
+        "id": "3761092"
+      },
+      {
+        "name": "Clover! (USA)",
+        "url": "https://genius.com/artists/Clover-usa",
+        "type": "regular",
+        "id": "3786089"
+      },
+      {
+        "name": "Clúster",
+        "url": "https://genius.com/artists/Cluster",
+        "type": "regular",
+        "id": "2475795"
+      },
+      {
+        "name": "Club Dogo",
+        "url": "https://genius.com/artists/Club-dogo",
+        "type": "regular",
+        "id": "27305"
+      },
+      {
+        "name": "Clueso",
+        "url": "https://genius.com/artists/Clueso",
+        "type": "regular",
+        "id": "24257"
+      },
+      {
+        "name": "Cluster (Band)",
+        "url": "https://genius.com/artists/Cluster-band",
+        "type": "regular",
+        "id": "459250"
+      },
+      {
+        "name": "Clutch",
+        "url": "https://genius.com/artists/Clutch",
+        "type": "regular",
+        "id": "57683"
+      },
+      {
+        "name": "C Marí",
+        "url": "https://genius.com/artists/C-mari",
+        "type": "regular",
+        "id": "2697998"
+      },
+      {
+        "name": "CMH",
+        "url": "https://genius.com/artists/Cmh",
+        "type": "regular",
+        "id": "1185183"
+      },
+      {
+        "name": "CM Punk",
+        "url": "https://genius.com/artists/Cm-punk",
+        "type": "regular",
+        "id": "34413"
+      },
+      {
+        "name": "C-Murder",
+        "url": "https://genius.com/artists/C-murder",
+        "type": "regular",
+        "id": "3526"
+      },
+      {
+        "name": "C!naH",
+        "url": "https://genius.com/artists/C-nah",
+        "type": "regular",
+        "id": "3799753"
+      },
+      {
+        "name": "CNCO",
+        "url": "https://genius.com/artists/Cnco",
+        "type": "regular",
+        "id": "622140"
+      },
+      {
+        "name": "Coast Contra",
+        "url": "https://genius.com/artists/Coast-contra",
+        "type": "regular",
+        "id": "568293"
+      },
+      {
+        "name": "The Coasters",
+        "url": "https://genius.com/artists/The-coasters",
+        "type": "regular",
+        "id": "131373"
+      },
+      {
+        "name": "COBRAH",
+        "url": "https://genius.com/artists/Cobrah",
+        "type": "regular",
+        "id": "1061681"
+      },
+      {
+        "name": "Cobra Starship",
+        "url": "https://genius.com/artists/Cobra-starship",
+        "type": "regular",
+        "id": "12674"
+      },
+      {
+        "name": "Coby",
+        "url": "https://genius.com/artists/Coby",
+        "type": "regular",
+        "id": "61969"
+      },
+      {
+        "name": "Cochise",
+        "url": "https://genius.com/artists/Cochise",
+        "type": "regular",
+        "id": "47920"
+      },
+      {
+        "name": "CoCo",
+        "url": "https://genius.com/artists/Coco",
+        "type": "regular",
+        "id": "4680"
+      },
+      {
+        "name": "Coco & Clair Clair",
+        "url": "https://genius.com/artists/Coco-and-clair-clair",
+        "type": "regular",
+        "id": "1144324"
+      },
+      {
+        "name": "Coco Jones",
+        "url": "https://genius.com/artists/Coco-jones",
+        "type": "regular",
+        "id": "21758"
+      },
+      {
+        "name": "CoComelon",
+        "url": "https://genius.com/artists/Cocomelon",
+        "type": "regular",
+        "id": "2349737"
+      },
+      {
+        "name": "CocoRosie",
+        "url": "https://genius.com/artists/Cocorosie",
+        "type": "regular",
+        "id": "34652"
+      },
+      {
+        "name": "Cocteau Twins",
+        "url": "https://genius.com/artists/Cocteau-twins",
+        "type": "regular",
+        "id": "138662"
+      },
+      {
+        "name": "CODE80",
+        "url": "https://genius.com/artists/Code80",
+        "type": "regular",
+        "id": "1100454"
+      },
+      {
+        "name": "Code Red (DEU)",
+        "url": "https://genius.com/artists/Code-red-deu",
+        "type": "regular",
+        "id": "358183"
+      },
+      {
+        "name": "Cody Carnes",
+        "url": "https://genius.com/artists/Cody-carnes",
+        "type": "regular",
+        "id": "533973"
+      },
+      {
+        "name": "Cody Fry",
+        "url": "https://genius.com/artists/Cody-fry",
+        "type": "regular",
+        "id": "490787"
+      },
+      {
+        "name": "Cody Jinks",
+        "url": "https://genius.com/artists/Cody-jinks",
+        "type": "regular",
+        "id": "531685"
+      },
+      {
+        "name": "Cody Johnson",
+        "url": "https://genius.com/artists/Cody-johnson",
+        "type": "regular",
+        "id": "333806"
+      },
+      {
+        "name": "Cody Tyler feat we are the stars",
+        "url": "https://genius.com/artists/Cody-tyler-feat-we-are-the-stars",
+        "type": "regular",
+        "id": "4420134"
+      },
+      {
+        "name": "Coez",
+        "url": "https://genius.com/artists/Coez",
+        "type": "regular",
+        "id": "243116"
+      },
+      {
+        "name": "Coheed and Cambria",
+        "url": "https://genius.com/artists/Coheed-and-cambria",
+        "type": "regular",
+        "id": "37957"
+      },
+      {
+        "name": "Coil",
+        "url": "https://genius.com/artists/Coil",
+        "type": "regular",
+        "id": "357303"
+      },
+      {
+        "name": "Coi Leray",
+        "url": "https://genius.com/artists/Coi-leray",
+        "type": "regular",
+        "id": "1530720"
+      },
+      {
+        "name": "COIN",
+        "url": "https://genius.com/artists/Coin",
+        "type": "regular",
+        "id": "24760"
+      },
+      {
+        "name": "Cojum Dip",
+        "url": "https://genius.com/artists/Cojum-dip",
+        "type": "regular",
+        "id": "1357370"
+      },
+      {
+        "name": "Colbie Caillat",
+        "url": "https://genius.com/artists/Colbie-caillat",
+        "type": "regular",
+        "id": "29562"
+      },
+      {
+        "name": "cold carti",
+        "url": "https://genius.com/artists/Cold-carti",
+        "type": "regular",
+        "id": "1459514"
+      },
+      {
+        "name": "Cold Chisel",
+        "url": "https://genius.com/artists/Cold-chisel",
+        "type": "regular",
+        "id": "125136"
+      },
+      {
+        "name": "COLDCLOUD",
+        "url": "https://genius.com/artists/Coldcloud",
+        "type": "regular",
+        "id": "988606"
+      },
+      {
+        "name": "Colde",
+        "url": "https://genius.com/artists/Colde",
+        "type": "regular",
+        "id": "1111231"
+      },
+      {
+        "name": "Cold Hart",
+        "url": "https://genius.com/artists/Cold-hart",
+        "type": "regular",
+        "id": "184057"
+      },
+      {
+        "name": "Co Lee",
+        "url": "https://genius.com/artists/Co-lee",
+        "type": "regular",
+        "id": "1829242"
+      },
+      {
+        "name": "Cole Porter",
+        "url": "https://genius.com/artists/Cole-porter",
+        "type": "regular",
+        "id": "26326"
+      },
+      {
+        "name": "Cole Swindell",
+        "url": "https://genius.com/artists/Cole-swindell",
+        "type": "regular",
+        "id": "227777"
+      },
+      {
+        "name": "Colin Buchanan",
+        "url": "https://genius.com/artists/Colin-buchanan",
+        "type": "regular",
+        "id": "355725"
+      },
+      {
+        "name": "Colin Firth",
+        "url": "https://genius.com/artists/Colin-firth",
+        "type": "regular",
+        "id": "403526"
+      },
+      {
+        "name": "Collective Soul",
+        "url": "https://genius.com/artists/Collective-soul",
+        "type": "regular",
+        "id": "102090"
+      },
+      {
+        "name": "Colleen Ballinger",
+        "url": "https://genius.com/artists/Colleen-ballinger",
+        "type": "regular",
+        "id": "611559"
+      },
+      {
+        "name": "Collie Buddz",
+        "url": "https://genius.com/artists/Collie-buddz",
+        "type": "regular",
+        "id": "2086"
+      },
+      {
+        "name": "Collin Raye",
+        "url": "https://genius.com/artists/Collin-raye",
+        "type": "regular",
+        "id": "24705"
+      },
+      {
+        "name": "Collinz Music",
+        "url": "https://genius.com/artists/Collinz-music",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Colman Domingo",
+        "url": "https://genius.com/artists/Colman-domingo",
+        "type": "regular",
+        "id": "228157"
+      },
+      {
+        "name": "Colm R. McGuinness",
+        "url": "https://genius.com/artists/Colm-r-mcguinness",
+        "type": "regular",
+        "id": "2728387"
+      },
+      {
+        "name": "Colm Wilkinson",
+        "url": "https://genius.com/artists/Colm-wilkinson",
+        "type": "regular",
+        "id": "39178"
+      },
+      {
+        "name": "Colonia",
+        "url": "https://genius.com/artists/Colonia",
+        "type": "regular",
+        "id": "358893"
+      },
+      {
+        "name": "The Color Purple Broadway Cast",
+        "url": "https://genius.com/artists/The-color-purple-broadway-cast",
+        "type": "regular",
+        "id": "664383"
+      },
+      {
+        "name": "COLORS",
+        "url": "https://genius.com/artists/Colors",
+        "type": "regular",
+        "id": "383038"
+      },
+      {
+        "name": "Colter Wall",
+        "url": "https://genius.com/artists/Colter-wall",
+        "type": "regular",
+        "id": "683673"
+      },
+      {
+        "name": "Coma Cinema",
+        "url": "https://genius.com/artists/Coma-cinema",
+        "type": "regular",
+        "id": "153944"
+      },
+      {
+        "name": "Coma_Cose",
+        "url": "https://genius.com/artists/Coma-cose",
+        "type": "regular",
+        "id": "1088825"
+      },
+      {
+        "name": "Комбинация (Combination)",
+        "url": "https://genius.com/artists/Combination",
+        "type": "regular",
+        "id": "1844765"
+      },
+      {
+        "name": "Comethazine",
+        "url": "https://genius.com/artists/Comethazine",
+        "type": "regular",
+        "id": "989525"
+      },
+      {
+        "name": "Commissioned",
+        "url": "https://genius.com/artists/Commissioned",
+        "type": "regular",
+        "id": "369323"
+      },
+      {
+        "name": "Commodores",
+        "url": "https://genius.com/artists/Commodores",
+        "type": "regular",
+        "id": "39239"
+      },
+      {
+        "name": "Common",
+        "url": "https://genius.com/artists/Common",
+        "type": "regular",
+        "id": "223"
+      },
+      {
+        "name": "Comms @ Genius",
+        "url": "https://genius.com/artists/Comms-at-genius",
+        "type": "regular",
+        "id": "987022"
+      },
+      {
+        "name": "Community Music",
+        "url": "https://genius.com/artists/Community-music",
+        "type": "regular",
+        "id": "1816790"
+      },
+      {
+        "name": "Complete",
+        "url": "https://genius.com/artists/Complete",
+        "type": "regular",
+        "id": "997209"
+      },
+      {
+        "name": "Conan Gray",
+        "url": "https://genius.com/artists/Conan-gray",
+        "type": "regular",
+        "id": "621686"
+      },
+      {
+        "name": "Concrete Blonde",
+        "url": "https://genius.com/artists/Concrete-blonde",
+        "type": "regular",
+        "id": "351663"
+      },
+      {
+        "name": "Concrete Boys",
+        "url": "https://genius.com/artists/Concrete-boys",
+        "type": "regular",
+        "id": "2856292"
+      },
+      {
+        "name": "Conductor Williams",
+        "url": "https://genius.com/artists/Conductor-williams",
+        "type": "regular",
+        "id": "1702868"
+      },
+      {
+        "name": "Confidence Man",
+        "url": "https://genius.com/artists/Confidence-man",
+        "type": "regular",
+        "id": "1011196"
+      },
+      {
+        "name": "Conflict",
+        "url": "https://genius.com/artists/Conflict",
+        "type": "regular",
+        "id": "150525"
+      },
+      {
+        "name": "Con Funk Shun",
+        "url": "https://genius.com/artists/Con-funk-shun",
+        "type": "regular",
+        "id": "6719"
+      },
+      {
+        "name": "Conner Smith",
+        "url": "https://genius.com/artists/Conner-smith",
+        "type": "regular",
+        "id": "2813807"
+      },
+      {
+        "name": "Connie Francis",
+        "url": "https://genius.com/artists/Connie-francis",
+        "type": "regular",
+        "id": "332977"
+      },
+      {
+        "name": "Connor Price",
+        "url": "https://genius.com/artists/Connor-price",
+        "type": "regular",
+        "id": "1461298"
+      },
+      {
+        "name": "Connor Spiotto",
+        "url": "https://genius.com/artists/Connor-spiotto",
+        "type": "regular",
+        "id": "1233837"
+      },
+      {
+        "name": "Conor Maynard",
+        "url": "https://genius.com/artists/Conor-maynard",
+        "type": "regular",
+        "id": "21941"
+      },
+      {
+        "name": "Consequence",
+        "url": "https://genius.com/artists/Consequence",
+        "type": "regular",
+        "id": "344"
+      },
+      {
+        "name": "Contra",
+        "url": "https://genius.com/artists/Contra",
+        "type": "regular",
+        "id": "167130"
+      },
+      {
+        "name": "Control (Cumbia norteña)",
+        "url": "https://genius.com/artists/Control-cumbia-nortena",
+        "type": "regular",
+        "id": "86732"
+      },
+      {
+        "name": "Converge",
+        "url": "https://genius.com/artists/Converge",
+        "type": "regular",
+        "id": "221650"
+      },
+      {
+        "name": "Conway the Machine",
+        "url": "https://genius.com/artists/Conway-the-machine",
+        "type": "regular",
+        "id": "53774"
+      },
+      {
+        "name": "Conway Twitty",
+        "url": "https://genius.com/artists/Conway-twitty",
+        "type": "regular",
+        "id": "223639"
+      },
+      {
+        "name": "Cookie$ (Rap)",
+        "url": "https://genius.com/artists/Cookie-rap",
+        "type": "regular",
+        "id": "3307937"
+      },
+      {
+        "name": "Cookin Soul",
+        "url": "https://genius.com/artists/Cookin-soul",
+        "type": "regular",
+        "id": "28438"
+      },
+      {
+        "name": "Coolio",
+        "url": "https://genius.com/artists/Coolio",
+        "type": "regular",
+        "id": "676"
+      },
+      {
+        "name": "Cooper Alan",
+        "url": "https://genius.com/artists/Cooper-alan",
+        "type": "regular",
+        "id": "1416396"
+      },
+      {
+        "name": "Copypasta",
+        "url": "https://genius.com/artists/Copypasta",
+        "type": "regular",
+        "id": "394484"
+      },
+      {
+        "name": "Corazón Serrano",
+        "url": "https://genius.com/artists/Corazon-serrano",
+        "type": "regular",
+        "id": "454709"
+      },
+      {
+        "name": "Corbin",
+        "url": "https://genius.com/artists/Corbin",
+        "type": "regular",
+        "id": "149272"
+      },
+      {
+        "name": "Corbin Bleu",
+        "url": "https://genius.com/artists/Corbin-bleu",
+        "type": "regular",
+        "id": "184941"
+      },
+      {
+        "name": "Corb Lund",
+        "url": "https://genius.com/artists/Corb-lund",
+        "type": "regular",
+        "id": "129716"
+      },
+      {
+        "name": "Cordae",
+        "url": "https://genius.com/artists/Cordae",
+        "type": "regular",
+        "id": "1469896"
+      },
+      {
+        "name": "Corey Hart",
+        "url": "https://genius.com/artists/Corey-hart",
+        "type": "regular",
+        "id": "46811"
+      },
+      {
+        "name": "Corey Hawkins",
+        "url": "https://genius.com/artists/Corey-hawkins",
+        "type": "regular",
+        "id": "2700063"
+      },
+      {
+        "name": "Corey Taylor",
+        "url": "https://genius.com/artists/Corey-taylor",
+        "type": "regular",
+        "id": "44044"
+      },
+      {
+        "name": "Corina Smith",
+        "url": "https://genius.com/artists/Corina-smith",
+        "type": "regular",
+        "id": "1009385"
+      },
+      {
+        "name": "Corinne Bailey Rae",
+        "url": "https://genius.com/artists/Corinne-bailey-rae",
+        "type": "regular",
+        "id": "20226"
+      },
+      {
+        "name": "Corneille",
+        "url": "https://genius.com/artists/Corneille",
+        "type": "regular",
+        "id": "14094"
+      },
+      {
+        "name": "Cornelio Reyna",
+        "url": "https://genius.com/artists/Cornelio-reyna",
+        "type": "regular",
+        "id": "380364"
+      },
+      {
+        "name": "Cornelis Vreeswijk",
+        "url": "https://genius.com/artists/Cornelis-vreeswijk",
+        "type": "regular",
+        "id": "343815"
+      },
+      {
+        "name": "Cornelius",
+        "url": "https://genius.com/artists/Cornelius",
+        "type": "regular",
+        "id": "19368"
+      },
+      {
+        "name": "Cornershop",
+        "url": "https://genius.com/artists/Cornershop",
+        "type": "regular",
+        "id": "47504"
+      },
+      {
+        "name": "Coro - La cenicienta",
+        "url": "https://genius.com/artists/Coro-la-cenicienta",
+        "type": "regular",
+        "id": "2873377"
+      },
+      {
+        "name": "Corona",
+        "url": "https://genius.com/artists/Corona",
+        "type": "regular",
+        "id": "68098"
+      },
+      {
+        "name": "CORPSE",
+        "url": "https://genius.com/artists/Corpse",
+        "type": "regular",
+        "id": "354771"
+      },
+      {
+        "name": "The Corries",
+        "url": "https://genius.com/artists/The-corries",
+        "type": "regular",
+        "id": "30289"
+      },
+      {
+        "name": "The Corrs",
+        "url": "https://genius.com/artists/The-corrs",
+        "type": "regular",
+        "id": "179170"
+      },
+      {
+        "name": "Corruptaled",
+        "url": "https://genius.com/artists/Corruptaled",
+        "type": "regular",
+        "id": "4209630"
+      },
+      {
+        "name": "Cortisa Star",
+        "url": "https://genius.com/artists/Cortisa-star",
+        "type": "regular",
+        "id": "3631435"
+      },
+      {
+        "name": "Cory Asbury",
+        "url": "https://genius.com/artists/Cory-asbury",
+        "type": "regular",
+        "id": "359074"
+      },
+      {
+        "name": "Co’Sang",
+        "url": "https://genius.com/artists/Cosang",
+        "type": "regular",
+        "id": "33859"
+      },
+      {
+        "name": "Cosculluela",
+        "url": "https://genius.com/artists/Cosculluela",
+        "type": "regular",
+        "id": "139656"
+      },
+      {
+        "name": "CosmeticCloud",
+        "url": "https://genius.com/artists/Cosmeticcloud",
+        "type": "regular",
+        "id": "4347440"
+      },
+      {
+        "name": "Cosmograph",
+        "url": "https://genius.com/artists/Cosmograph",
+        "type": "regular",
+        "id": "3525768"
+      },
+      {
+        "name": "Cosmo Sheldrake",
+        "url": "https://genius.com/artists/Cosmo-sheldrake",
+        "type": "regular",
+        "id": "184147"
+      },
+      {
+        "name": "cosmosy",
+        "url": "https://genius.com/artists/Cosmosy",
+        "type": "regular",
+        "id": "4219879"
+      },
+      {
+        "name": "Costa Cashman",
+        "url": "https://genius.com/artists/Costa-cashman",
+        "type": "regular",
+        "id": "3380466"
+      },
+      {
+        "name": "Costi",
+        "url": "https://genius.com/artists/Costi",
+        "type": "regular",
+        "id": "2737826"
+      },
+      {
+        "name": "Cottonwood Firing Squad",
+        "url": "https://genius.com/artists/Cottonwood-firing-squad",
+        "type": "regular",
+        "id": "1012264"
+      },
+      {
+        "name": "Couch",
+        "url": "https://genius.com/artists/Couch",
+        "type": "regular",
+        "id": "500675"
+      },
+      {
+        "name": "Cougar MacDowall",
+        "url": "https://genius.com/artists/Cougar-macdowall",
+        "type": "regular",
+        "id": "1649927"
+      },
+      {
+        "name": "Counterparts",
+        "url": "https://genius.com/artists/Counterparts",
+        "type": "regular",
+        "id": "130924"
+      },
+      {
+        "name": "Counting Crows",
+        "url": "https://genius.com/artists/Counting-crows",
+        "type": "regular",
+        "id": "12779"
+      },
+      {
+        "name": "Courtney Barnett",
+        "url": "https://genius.com/artists/Courtney-barnett",
+        "type": "regular",
+        "id": "103724"
+      },
+      {
+        "name": "Covenant Worship",
+        "url": "https://genius.com/artists/Covenant-worship",
+        "type": "regular",
+        "id": "533328"
+      },
+      {
+        "name": "The Covey Band",
+        "url": "https://genius.com/artists/The-covey-band",
+        "type": "regular",
+        "id": "3721768"
+      },
+      {
+        "name": "CowBoii",
+        "url": "https://genius.com/artists/Cowboii",
+        "type": "regular",
+        "id": "3746645"
+      },
+      {
+        "name": "​cowboyclicker",
+        "url": "https://genius.com/artists/Cowboyclicker",
+        "type": "regular",
+        "id": "2487539"
+      },
+      {
+        "name": "Cowboy Junkies",
+        "url": "https://genius.com/artists/Cowboy-junkies",
+        "type": "regular",
+        "id": "241621"
+      },
+      {
+        "name": "Cozz",
+        "url": "https://genius.com/artists/Cozz",
+        "type": "regular",
+        "id": "165589"
+      },
+      {
+        "name": "cr1tter",
+        "url": "https://genius.com/artists/Cr1tter",
+        "type": "regular",
+        "id": "3395369"
+      },
+      {
+        "name": "Cr7z",
+        "url": "https://genius.com/artists/Cr7z",
+        "type": "regular",
+        "id": "31772"
+      },
+      {
+        "name": "Crabb Family",
+        "url": "https://genius.com/artists/Crabb-family",
+        "type": "regular",
+        "id": "364502"
+      },
+      {
+        "name": "Cracker",
+        "url": "https://genius.com/artists/Cracker",
+        "type": "regular",
+        "id": "19722"
+      },
+      {
+        "name": "Cradle of Filth",
+        "url": "https://genius.com/artists/Cradle-of-filth",
+        "type": "regular",
+        "id": "74196"
+      },
+      {
+        "name": "Craig David",
+        "url": "https://genius.com/artists/Craig-david",
+        "type": "regular",
+        "id": "680"
+      },
+      {
+        "name": "Craig Finn",
+        "url": "https://genius.com/artists/Craig-finn",
+        "type": "regular",
+        "id": "33970"
+      },
+      {
+        "name": "Craig Mack",
+        "url": "https://genius.com/artists/Craig-mack",
+        "type": "regular",
+        "id": "1111"
+      },
+      {
+        "name": "Craig Scissorhands",
+        "url": "https://genius.com/artists/Craig-scissorhands",
+        "type": "regular",
+        "id": "2223341"
+      },
+      {
+        "name": "Craig Xen",
+        "url": "https://genius.com/artists/Craig-xen",
+        "type": "regular",
+        "id": "549227"
+      },
+      {
+        "name": "The Cramps",
+        "url": "https://genius.com/artists/The-cramps",
+        "type": "regular",
+        "id": "357274"
+      },
+      {
+        "name": "The Crane Wives",
+        "url": "https://genius.com/artists/The-crane-wives",
+        "type": "regular",
+        "id": "456296"
+      },
+      {
+        "name": "Crash Adams",
+        "url": "https://genius.com/artists/Crash-adams",
+        "type": "regular",
+        "id": "2275886"
+      },
+      {
+        "name": "Crash Test Dummies",
+        "url": "https://genius.com/artists/Crash-test-dummies",
+        "type": "regular",
+        "id": "51475"
+      },
+      {
+        "name": "Crass",
+        "url": "https://genius.com/artists/Crass",
+        "type": "regular",
+        "id": "26935"
+      },
+      {
+        "name": "CRAVITY",
+        "url": "https://genius.com/artists/Cravity",
+        "type": "regular",
+        "id": "2180266"
+      },
+      {
+        "name": "​crayon (USA)",
+        "url": "https://genius.com/artists/Crayon-usa",
+        "type": "regular",
+        "id": "3919101"
+      },
+      {
+        "name": "Crazy Ex-Girlfriend Cast",
+        "url": "https://genius.com/artists/Crazy-ex-girlfriend-cast",
+        "type": "regular",
+        "id": "1254208"
+      },
+      {
+        "name": "Crazy Frog",
+        "url": "https://genius.com/artists/Crazy-frog",
+        "type": "regular",
+        "id": "191044"
+      },
+      {
+        "name": "Crazy Music Channel",
+        "url": "https://genius.com/artists/Crazy-music-channel",
+        "type": "regular",
+        "id": "4342751"
+      },
+      {
+        "name": "Crazy Town",
+        "url": "https://genius.com/artists/Crazy-town",
+        "type": "regular",
+        "id": "8343"
+      },
+      {
+        "name": "Cream",
+        "url": "https://genius.com/artists/Cream",
+        "type": "regular",
+        "id": "4800"
+      },
+      {
+        "name": "CREAM SODA",
+        "url": "https://genius.com/artists/Cream-soda",
+        "type": "regular",
+        "id": "1203919"
+      },
+      {
+        "name": "Creed",
+        "url": "https://genius.com/artists/Creed",
+        "type": "regular",
+        "id": "13217"
+      },
+      {
+        "name": "Creep-P",
+        "url": "https://genius.com/artists/Creep-p",
+        "type": "regular",
+        "id": "1189018"
+      },
+      {
+        "name": "Creepy Nuts",
+        "url": "https://genius.com/artists/Creepy-nuts",
+        "type": "regular",
+        "id": "1305332"
+      },
+      {
+        "name": "Crime Mob",
+        "url": "https://genius.com/artists/Crime-mob",
+        "type": "regular",
+        "id": "4807"
+      },
+      {
+        "name": "Криминальный бит (Criminal beat)",
+        "url": "https://genius.com/artists/Criminal-beat",
+        "type": "regular",
+        "id": "2904650"
+      },
+      {
+        "name": "Crippling Alcoholism",
+        "url": "https://genius.com/artists/Crippling-alcoholism",
+        "type": "regular",
+        "id": "3369513"
+      },
+      {
+        "name": "Cris Mj",
+        "url": "https://genius.com/artists/Cris-mj",
+        "type": "regular",
+        "id": "2320052"
+      },
+      {
+        "name": "Cristina D'Avena",
+        "url": "https://genius.com/artists/Cristina-davena",
+        "type": "regular",
+        "id": "379102"
+      },
+      {
+        "name": "Cristina Vee",
+        "url": "https://genius.com/artists/Cristina-vee",
+        "type": "regular",
+        "id": "1405495"
+      },
+      {
+        "name": "Cristy Candler",
+        "url": "https://genius.com/artists/Cristy-candler",
+        "type": "regular",
+        "id": "300562"
+      },
+      {
+        "name": "Cristy Lane",
+        "url": "https://genius.com/artists/Cristy-lane",
+        "type": "regular",
+        "id": "356926"
+      },
+      {
+        "name": "Critical",
+        "url": "https://genius.com/artists/Critical",
+        "type": "regular",
+        "id": "1949223"
+      },
+      {
+        "name": "Crni Cerak",
+        "url": "https://genius.com/artists/Crni-cerak",
+        "type": "regular",
+        "id": "2448528"
+      },
+      {
+        "name": "CRO",
+        "url": "https://genius.com/artists/Cro",
+        "type": "regular",
+        "id": "14536"
+      },
+      {
+        "name": "C.R.O (Bardero$)",
+        "url": "https://genius.com/artists/Cro-bardero",
+        "type": "regular",
+        "id": "1409101"
+      },
+      {
+        "name": "Crosby, Stills & Nash",
+        "url": "https://genius.com/artists/Crosby-stills-and-nash",
+        "type": "regular",
+        "id": "128013"
+      },
+      {
+        "name": "Crosby, Stills, Nash & Young",
+        "url": "https://genius.com/artists/Crosby-stills-nash-and-young",
+        "type": "regular",
+        "id": "34009"
+      },
+      {
+        "name": "††† (Crosses)",
+        "url": "https://genius.com/artists/Crosses",
+        "type": "regular",
+        "id": "66358"
+      },
+      {
+        "name": "Crowbar",
+        "url": "https://genius.com/artists/Crowbar",
+        "type": "regular",
+        "id": "355318"
+      },
+      {
+        "name": "Crowded House",
+        "url": "https://genius.com/artists/Crowded-house",
+        "type": "regular",
+        "id": "180619"
+      },
+      {
+        "name": "Crowder",
+        "url": "https://genius.com/artists/Crowder",
+        "type": "regular",
+        "id": "325376"
+      },
+      {
+        "name": "Crowe Boys",
+        "url": "https://genius.com/artists/Crowe-boys",
+        "type": "regular",
+        "id": "3800953"
+      },
+      {
+        "name": "Crudo Means Raw",
+        "url": "https://genius.com/artists/Crudo-means-raw",
+        "type": "regular",
+        "id": "43894"
+      },
+      {
+        "name": "Crumb",
+        "url": "https://genius.com/artists/Crumb",
+        "type": "regular",
+        "id": "373581"
+      },
+      {
+        "name": "Crush 40",
+        "url": "https://genius.com/artists/Crush-40",
+        "type": "regular",
+        "id": "58924"
+      },
+      {
+        "name": "Crustsox",
+        "url": "https://genius.com/artists/Crustsox",
+        "type": "regular",
+        "id": "2496015"
+      },
+      {
+        "name": "Cruz Cafuné",
+        "url": "https://genius.com/artists/Cruz-cafune",
+        "type": "regular",
+        "id": "582612"
+      },
+      {
+        "name": "Crvena jabuka",
+        "url": "https://genius.com/artists/Crvena-jabuka",
+        "type": "regular",
+        "id": "361597"
+      },
+      {
+        "name": "The Crying Nudes",
+        "url": "https://genius.com/artists/The-crying-nudes",
+        "type": "regular",
+        "id": "3471104"
+      },
+      {
+        "name": "Cryptopsy",
+        "url": "https://genius.com/artists/Cryptopsy",
+        "type": "regular",
+        "id": "359969"
+      },
+      {
+        "name": "Crystal Castles",
+        "url": "https://genius.com/artists/Crystal-castles",
+        "type": "regular",
+        "id": "14078"
+      },
+      {
+        "name": "Crystal Lewis",
+        "url": "https://genius.com/artists/Crystal-lewis",
+        "type": "regular",
+        "id": "34189"
+      },
+      {
+        "name": "Crystal Waters",
+        "url": "https://genius.com/artists/Crystal-waters",
+        "type": "regular",
+        "id": "339862"
+      },
+      {
+        "name": "Crywank",
+        "url": "https://genius.com/artists/Crywank",
+        "type": "regular",
+        "id": "67395"
+      },
+      {
+        "name": "C. Tangana",
+        "url": "https://genius.com/artists/C-tangana",
+        "type": "regular",
+        "id": "56991"
+      },
+      {
+        "name": "Cuba L.A.",
+        "url": "https://genius.com/artists/Cuba-la",
+        "type": "regular",
+        "id": "1897454"
+      },
+      {
+        "name": "Cuco",
+        "url": "https://genius.com/artists/Cuco",
+        "type": "regular",
+        "id": "990459"
+      },
+      {
+        "name": "Cueshé",
+        "url": "https://genius.com/artists/Cueshe",
+        "type": "regular",
+        "id": "359620"
+      },
+      {
+        "name": "Culcha Candela",
+        "url": "https://genius.com/artists/Culcha-candela",
+        "type": "regular",
+        "id": "204982"
+      },
+      {
+        "name": "The Cult",
+        "url": "https://genius.com/artists/The-cult",
+        "type": "regular",
+        "id": "68000"
+      },
+      {
+        "name": "Cult Member",
+        "url": "https://genius.com/artists/Cult-member",
+        "type": "regular",
+        "id": "3631346"
+      },
+      {
+        "name": "Cults",
+        "url": "https://genius.com/artists/Cults",
+        "type": "regular",
+        "id": "15724"
+      },
+      {
+        "name": "Culture",
+        "url": "https://genius.com/artists/Culture",
+        "type": "regular",
+        "id": "4375"
+      },
+      {
+        "name": "Culture Club",
+        "url": "https://genius.com/artists/Culture-club",
+        "type": "regular",
+        "id": "2521"
+      },
+      {
+        "name": "Cunami Flo",
+        "url": "https://genius.com/artists/Cunami-flo",
+        "type": "regular",
+        "id": "2112493"
+      },
+      {
+        "name": "CunninLynguists",
+        "url": "https://genius.com/artists/Cunninlynguists",
+        "type": "regular",
+        "id": "534"
+      },
+      {
+        "name": "Cupid",
+        "url": "https://genius.com/artists/Cupid",
+        "type": "regular",
+        "id": "8618"
+      },
+      {
+        "name": "Cupid shuffle dj's",
+        "url": "https://genius.com/artists/Cupid-shuffle-djs",
+        "type": "regular",
+        "id": "454553"
+      },
+      {
+        "name": "Cup of Joe",
+        "url": "https://genius.com/artists/Cup-of-joe",
+        "type": "regular",
+        "id": "2141552"
+      },
+      {
+        "name": "CUPSIZE",
+        "url": "https://genius.com/artists/Cupsize",
+        "type": "regular",
+        "id": "2617757"
+      },
+      {
+        "name": "The Cure",
+        "url": "https://genius.com/artists/The-cure",
+        "type": "regular",
+        "id": "15758"
+      },
+      {
+        "name": "Curieux",
+        "url": "https://genius.com/artists/Curieux",
+        "type": "regular",
+        "id": "4115112"
+      },
+      {
+        "name": "Curren$y",
+        "url": "https://genius.com/artists/Curren-y",
+        "type": "regular",
+        "id": "1183"
+      },
+      {
+        "name": "Current 93",
+        "url": "https://genius.com/artists/Current-93",
+        "type": "regular",
+        "id": "204974"
+      },
+      {
+        "name": "Current Joys",
+        "url": "https://genius.com/artists/Current-joys",
+        "type": "regular",
+        "id": "618660"
+      },
+      {
+        "name": "Currents",
+        "url": "https://genius.com/artists/Currents",
+        "type": "regular",
+        "id": "527223"
+      },
+      {
+        "name": "Curse One",
+        "url": "https://genius.com/artists/Curse-one",
+        "type": "regular",
+        "id": "479357"
+      },
+      {
+        "name": "Curta'n Wall",
+        "url": "https://genius.com/artists/Curtan-wall",
+        "type": "regular",
+        "id": "3640644"
+      },
+      {
+        "name": "Curtis Mayfield",
+        "url": "https://genius.com/artists/Curtis-mayfield",
+        "type": "regular",
+        "id": "864"
+      },
+      {
+        "name": "CUTIE STREET",
+        "url": "https://genius.com/artists/Cutie-street",
+        "type": "regular",
+        "id": "4060861"
+      },
+      {
+        "name": "Cutting Crew",
+        "url": "https://genius.com/artists/Cutting-crew",
+        "type": "regular",
+        "id": "21401"
+      },
+      {
+        "name": "Cvija",
+        "url": "https://genius.com/artists/Cvija",
+        "type": "regular",
+        "id": "222750"
+      },
+      {
+        "name": "C.W. McCall",
+        "url": "https://genius.com/artists/Cw-mccall",
+        "type": "regular",
+        "id": "68436"
+      },
+      {
+        "name": "Cxpidn0ra",
+        "url": "https://genius.com/artists/Cxpidn0ra",
+        "type": "regular",
+        "id": "3516358"
+      },
+      {
+        "name": "cybernene",
+        "url": "https://genius.com/artists/Cybernene",
+        "type": "regular",
+        "id": "3131922"
+      },
+      {
+        "name": "Cyborg",
+        "url": "https://genius.com/artists/Cyborg",
+        "type": "regular",
+        "id": "22777"
+      },
+      {
+        "name": "Cy Coleman",
+        "url": "https://genius.com/artists/Cy-coleman",
+        "type": "regular",
+        "id": "323657"
+      },
+      {
+        "name": "CyHi",
+        "url": "https://genius.com/artists/Cyhi",
+        "type": "regular",
+        "id": "758"
+      },
+      {
+        "name": "Cyndi Lauper",
+        "url": "https://genius.com/artists/Cyndi-lauper",
+        "type": "regular",
+        "id": "29192"
+      },
+      {
+        "name": "Cynthia Erivo",
+        "url": "https://genius.com/artists/Cynthia-erivo",
+        "type": "regular",
+        "id": "263409"
+      },
+      {
+        "name": "Cynthia Harrell",
+        "url": "https://genius.com/artists/Cynthia-harrell",
+        "type": "regular",
+        "id": "207687"
+      },
+      {
+        "name": "Cypis",
+        "url": "https://genius.com/artists/Cypis",
+        "type": "regular",
+        "id": "621177"
+      },
+      {
+        "name": "Cypress Hill",
+        "url": "https://genius.com/artists/Cypress-hill",
+        "type": "regular",
+        "id": "1317"
+      },
+      {
+        "name": "CYRIL",
+        "url": "https://genius.com/artists/Cyril",
+        "type": "regular",
+        "id": "3736727"
+      },
+      {
+        "name": "CyYu",
+        "url": "https://genius.com/artists/Cyyu",
+        "type": "regular",
+        "id": "3959020"
+      },
+      {
+        "name": "Czar",
+        "url": "https://genius.com/artists/Czar",
+        "type": "regular",
+        "id": "1182842"
+      },
+      {
+        "name": "CZARFACE",
+        "url": "https://genius.com/artists/Czarface",
+        "type": "regular",
+        "id": "35828"
+      }
+    ]
+  }
+}

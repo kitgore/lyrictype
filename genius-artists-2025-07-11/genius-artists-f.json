@@ -1,0 +1,4513 @@
+{
+  "letter": "F",
+  "timestamp": "2025-07-11T08:08:26.442Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Fabri Fibra",
+        "url": "https://genius.com/artists/Fabri-fibra",
+        "type": "popular",
+        "id": "21702"
+      },
+      {
+        "name": "FACE",
+        "url": "https://genius.com/artists/Face",
+        "type": "popular",
+        "id": "988966"
+      },
+      {
+        "name": "fakemink",
+        "url": "https://genius.com/artists/Fakemink",
+        "type": "popular",
+        "id": "3942631"
+      },
+      {
+        "name": "Fall Out Boy",
+        "url": "https://genius.com/artists/Fall-out-boy",
+        "type": "popular",
+        "id": "7811"
+      },
+      {
+        "name": "Feid",
+        "url": "https://genius.com/artists/Feid",
+        "type": "popular",
+        "id": "1012056"
+      },
+      {
+        "name": "Fetty Wap",
+        "url": "https://genius.com/artists/Fetty-wap",
+        "type": "popular",
+        "id": "216609"
+      },
+      {
+        "name": "FINNEAS",
+        "url": "https://genius.com/artists/Finneas",
+        "type": "popular",
+        "id": "615565"
+      },
+      {
+        "name": "Fleetwood Mac",
+        "url": "https://genius.com/artists/Fleetwood-mac",
+        "type": "popular",
+        "id": "2579"
+      },
+      {
+        "name": "FLETCHER",
+        "url": "https://genius.com/artists/Fletcher",
+        "type": "popular",
+        "id": "67780"
+      },
+      {
+        "name": "Florence + the Machine",
+        "url": "https://genius.com/artists/Florence-the-machine",
+        "type": "popular",
+        "id": "18512"
+      },
+      {
+        "name": "Flo Rida",
+        "url": "https://genius.com/artists/Flo-rida",
+        "type": "popular",
+        "id": "1081"
+      },
+      {
+        "name": "Fontaines D.C.",
+        "url": "https://genius.com/artists/Fontaines-dc",
+        "type": "popular",
+        "id": "1479967"
+      },
+      {
+        "name": "Forrest Frank",
+        "url": "https://genius.com/artists/Forrest-frank",
+        "type": "popular",
+        "id": "260108"
+      },
+      {
+        "name": "FORTUNA 812",
+        "url": "https://genius.com/artists/Fortuna-812",
+        "type": "popular",
+        "id": "3529488"
+      },
+      {
+        "name": "Frank Ocean",
+        "url": "https://genius.com/artists/Frank-ocean",
+        "type": "popular",
+        "id": "1985"
+      },
+      {
+        "name": "Frank Sinatra",
+        "url": "https://genius.com/artists/Frank-sinatra",
+        "type": "popular",
+        "id": "824"
+      },
+      {
+        "name": "Fred again..",
+        "url": "https://genius.com/artists/Fred-again",
+        "type": "popular",
+        "id": "2051921"
+      },
+      {
+        "name": "FRIENDLY THUG 52 NGG",
+        "url": "https://genius.com/artists/Friendly-thug-52-ngg",
+        "type": "popular",
+        "id": "3122905"
+      },
+      {
+        "name": "Fuerza Regida",
+        "url": "https://genius.com/artists/Fuerza-regida",
+        "type": "popular",
+        "id": "1475628"
+      },
+      {
+        "name": "Future",
+        "url": "https://genius.com/artists/Future",
+        "type": "popular",
+        "id": "2197"
+      }
+    ],
+    "regular": [
+      {
+        "name": "f0lk",
+        "url": "https://genius.com/artists/F0lk",
+        "type": "regular",
+        "id": "2642170"
+      },
+      {
+        "name": "F1LTHY",
+        "url": "https://genius.com/artists/F1lthy",
+        "type": "regular",
+        "id": "507210"
+      },
+      {
+        "name": "F4",
+        "url": "https://genius.com/artists/F4",
+        "type": "regular",
+        "id": "376853"
+      },
+      {
+        "name": "f5ve",
+        "url": "https://genius.com/artists/F5ve",
+        "type": "regular",
+        "id": "3215413"
+      },
+      {
+        "name": "Fababy",
+        "url": "https://genius.com/artists/Fababy",
+        "type": "regular",
+        "id": "14336"
+      },
+      {
+        "name": "Faber",
+        "url": "https://genius.com/artists/Faber",
+        "type": "regular",
+        "id": "628137"
+      },
+      {
+        "name": "Faber Drive",
+        "url": "https://genius.com/artists/Faber-drive",
+        "type": "regular",
+        "id": "207799"
+      },
+      {
+        "name": "Faberge",
+        "url": "https://genius.com/artists/Faberge",
+        "type": "regular",
+        "id": "2497073"
+      },
+      {
+        "name": "FAB GODAMN",
+        "url": "https://genius.com/artists/Fab-godamn",
+        "type": "regular",
+        "id": "3603882"
+      },
+      {
+        "name": "Fabio Rovazzi",
+        "url": "https://genius.com/artists/Fabio-rovazzi",
+        "type": "regular",
+        "id": "669622"
+      },
+      {
+        "name": "Fabolous",
+        "url": "https://genius.com/artists/Fabolous",
+        "type": "regular",
+        "id": "3"
+      },
+      {
+        "name": "Fabrizio De André",
+        "url": "https://genius.com/artists/Fabrizio-de-andre",
+        "type": "regular",
+        "id": "142900"
+      },
+      {
+        "name": "Fabrizio Moro",
+        "url": "https://genius.com/artists/Fabrizio-moro",
+        "type": "regular",
+        "id": "365851"
+      },
+      {
+        "name": "The Fabulous Thunderbirds",
+        "url": "https://genius.com/artists/The-fabulous-thunderbirds",
+        "type": "regular",
+        "id": "359379"
+      },
+      {
+        "name": "FabvL",
+        "url": "https://genius.com/artists/Fabvl",
+        "type": "regular",
+        "id": "1105887"
+      },
+      {
+        "name": "​faccianuvola",
+        "url": "https://genius.com/artists/Faccianuvola",
+        "type": "regular",
+        "id": "3995468"
+      },
+      {
+        "name": "Face2Face",
+        "url": "https://genius.com/artists/Face2face",
+        "type": "regular",
+        "id": "2160597"
+      },
+      {
+        "name": "FaceBrooklyn",
+        "url": "https://genius.com/artists/Facebrooklyn",
+        "type": "regular",
+        "id": "3058186"
+      },
+      {
+        "name": "Faceless Music (Label)",
+        "url": "https://genius.com/artists/Faceless-music-label",
+        "type": "regular",
+        "id": "4214703"
+      },
+      {
+        "name": "Faces",
+        "url": "https://genius.com/artists/Faces",
+        "type": "regular",
+        "id": "27778"
+      },
+      {
+        "name": "FACESOUL",
+        "url": "https://genius.com/artists/Facesoul",
+        "type": "regular",
+        "id": "1097910"
+      },
+      {
+        "name": "Face To Face",
+        "url": "https://genius.com/artists/Face-to-face",
+        "type": "regular",
+        "id": "77161"
+      },
+      {
+        "name": "Facundo Cabral",
+        "url": "https://genius.com/artists/Facundo-cabral",
+        "type": "regular",
+        "id": "402298"
+      },
+      {
+        "name": "Fadaei",
+        "url": "https://genius.com/artists/Fadaei",
+        "type": "regular",
+        "id": "29997"
+      },
+      {
+        "name": "FADE031",
+        "url": "https://genius.com/artists/Fade031",
+        "type": "regular",
+        "id": "2875649"
+      },
+      {
+        "name": "Fade2Black",
+        "url": "https://genius.com/artists/Fade2black",
+        "type": "regular",
+        "id": "1938956"
+      },
+      {
+        "name": "Fadel Chaker - فضل شاكر",
+        "url": "https://genius.com/artists/Fadel-chaker",
+        "type": "regular",
+        "id": "482895"
+      },
+      {
+        "name": "Fagata",
+        "url": "https://genius.com/artists/Fagata",
+        "type": "regular",
+        "id": "3370991"
+      },
+      {
+        "name": "Faheem Abdullah",
+        "url": "https://genius.com/artists/Faheem-abdullah",
+        "type": "regular",
+        "id": "3214842"
+      },
+      {
+        "name": "Failure",
+        "url": "https://genius.com/artists/Failure",
+        "type": "regular",
+        "id": "60828"
+      },
+      {
+        "name": "Faiq Ağayev",
+        "url": "https://genius.com/artists/Faiq-agayev",
+        "type": "regular",
+        "id": "1259960"
+      },
+      {
+        "name": "The Fairly OddParents",
+        "url": "https://genius.com/artists/The-fairly-oddparents",
+        "type": "regular",
+        "id": "396228"
+      },
+      {
+        "name": "Fairouz - فيروز",
+        "url": "https://genius.com/artists/Fairouz",
+        "type": "regular",
+        "id": "58718"
+      },
+      {
+        "name": "Fairport Convention",
+        "url": "https://genius.com/artists/Fairport-convention",
+        "type": "regular",
+        "id": "33401"
+      },
+      {
+        "name": "Fair to Midland",
+        "url": "https://genius.com/artists/Fair-to-midland",
+        "type": "regular",
+        "id": "271744"
+      },
+      {
+        "name": "Faith Evans",
+        "url": "https://genius.com/artists/Faith-evans",
+        "type": "regular",
+        "id": "682"
+      },
+      {
+        "name": "Faith Hill",
+        "url": "https://genius.com/artists/Faith-hill",
+        "type": "regular",
+        "id": "48448"
+      },
+      {
+        "name": "Faithless",
+        "url": "https://genius.com/artists/Faithless",
+        "type": "regular",
+        "id": "19002"
+      },
+      {
+        "name": "Faith No More",
+        "url": "https://genius.com/artists/Faith-no-more",
+        "type": "regular",
+        "id": "3931"
+      },
+      {
+        "name": "Faith + 1",
+        "url": "https://genius.com/artists/Faith-1",
+        "type": "regular",
+        "id": "3746243"
+      },
+      {
+        "name": "Faith Prince",
+        "url": "https://genius.com/artists/Faith-prince",
+        "type": "regular",
+        "id": "454932"
+      },
+      {
+        "name": "Faizal Tahir",
+        "url": "https://genius.com/artists/Faizal-tahir",
+        "type": "regular",
+        "id": "457844"
+      },
+      {
+        "name": "Falak Shabir",
+        "url": "https://genius.com/artists/Falak-shabir",
+        "type": "regular",
+        "id": "1193726"
+      },
+      {
+        "name": "Falcko",
+        "url": "https://genius.com/artists/Falcko",
+        "type": "regular",
+        "id": "17041"
+      },
+      {
+        "name": "Falco",
+        "url": "https://genius.com/artists/Falco",
+        "type": "regular",
+        "id": "21831"
+      },
+      {
+        "name": "Falcom Sound Team jdk",
+        "url": "https://genius.com/artists/Falcom-sound-team-jdk",
+        "type": "regular",
+        "id": "2826340"
+      },
+      {
+        "name": "Falke 912",
+        "url": "https://genius.com/artists/Falke-912",
+        "type": "regular",
+        "id": "2366964"
+      },
+      {
+        "name": "​fallen777angel",
+        "url": "https://genius.com/artists/Fallen777angel",
+        "type": "regular",
+        "id": "3972218"
+      },
+      {
+        "name": "Falling In Reverse",
+        "url": "https://genius.com/artists/Falling-in-reverse",
+        "type": "regular",
+        "id": "17926"
+      },
+      {
+        "name": "The Fall of Troy",
+        "url": "https://genius.com/artists/The-fall-of-troy",
+        "type": "regular",
+        "id": "91666"
+      },
+      {
+        "name": "Fallon",
+        "url": "https://genius.com/artists/Fallon",
+        "type": "regular",
+        "id": "61111"
+      },
+      {
+        "name": "Fallujah",
+        "url": "https://genius.com/artists/Fallujah",
+        "type": "regular",
+        "id": "380619"
+      },
+      {
+        "name": "Fally Ipupa",
+        "url": "https://genius.com/artists/Fally-ipupa",
+        "type": "regular",
+        "id": "48394"
+      },
+      {
+        "name": "Falz",
+        "url": "https://genius.com/artists/Falz",
+        "type": "regular",
+        "id": "576466"
+      },
+      {
+        "name": "Falsettos 2016 Broadway Company",
+        "url": "https://genius.com/artists/Falsettos-2016-broadway-company",
+        "type": "regular",
+        "id": "3563577"
+      },
+      {
+        "name": "Fame on Fire",
+        "url": "https://genius.com/artists/Fame-on-fire",
+        "type": "regular",
+        "id": "1064801"
+      },
+      {
+        "name": "Fameye",
+        "url": "https://genius.com/artists/Fameye",
+        "type": "regular",
+        "id": "1730874"
+      },
+      {
+        "name": "The Family Crest",
+        "url": "https://genius.com/artists/The-family-crest",
+        "type": "regular",
+        "id": "148078"
+      },
+      {
+        "name": "Family Guy",
+        "url": "https://genius.com/artists/Family-guy",
+        "type": "regular",
+        "id": "42989"
+      },
+      {
+        "name": "Family of the Year",
+        "url": "https://genius.com/artists/Family-of-the-year",
+        "type": "regular",
+        "id": "58164"
+      },
+      {
+        "name": "Famous Dex",
+        "url": "https://genius.com/artists/Famous-dex",
+        "type": "regular",
+        "id": "334508"
+      },
+      {
+        "name": "Famous Last Words",
+        "url": "https://genius.com/artists/Famous-last-words",
+        "type": "regular",
+        "id": "107305"
+      },
+      {
+        "name": "Famous Pluto",
+        "url": "https://genius.com/artists/Famous-pluto",
+        "type": "regular",
+        "id": "4207174"
+      },
+      {
+        "name": "FAMY",
+        "url": "https://genius.com/artists/Famy",
+        "type": "regular",
+        "id": "193315"
+      },
+      {
+        "name": "Fancy Cat",
+        "url": "https://genius.com/artists/Fancy-cat",
+        "type": "regular",
+        "id": "4280440"
+      },
+      {
+        "name": "Faneto",
+        "url": "https://genius.com/artists/Faneto",
+        "type": "regular",
+        "id": "3588075"
+      },
+      {
+        "name": "Fangoria",
+        "url": "https://genius.com/artists/Fangoria",
+        "type": "regular",
+        "id": "363886"
+      },
+      {
+        "name": "FANN",
+        "url": "https://genius.com/artists/Fann",
+        "type": "regular",
+        "id": "1590634"
+      },
+      {
+        "name": "Fanny J",
+        "url": "https://genius.com/artists/Fanny-j",
+        "type": "regular",
+        "id": "372716"
+      },
+      {
+        "name": "Fantasia",
+        "url": "https://genius.com/artists/Fantasia",
+        "type": "regular",
+        "id": "8609"
+      },
+      {
+        "name": "Faouzia",
+        "url": "https://genius.com/artists/Faouzia",
+        "type": "regular",
+        "id": "1169852"
+      },
+      {
+        "name": "Far Apart",
+        "url": "https://genius.com/artists/Far-apart",
+        "type": "regular",
+        "id": "392042"
+      },
+      {
+        "name": "Farazi",
+        "url": "https://genius.com/artists/Farazi",
+        "type": "regular",
+        "id": "332685"
+      },
+      {
+        "name": "Farazi V Kayra",
+        "url": "https://genius.com/artists/Farazi-v-kayra",
+        "type": "regular",
+        "id": "332683"
+      },
+      {
+        "name": "Far Caspian",
+        "url": "https://genius.com/artists/Far-caspian",
+        "type": "regular",
+        "id": "1686257"
+      },
+      {
+        "name": "Fard",
+        "url": "https://genius.com/artists/Fard",
+        "type": "regular",
+        "id": "12074"
+      },
+      {
+        "name": "Fardi",
+        "url": "https://genius.com/artists/Fardi",
+        "type": "regular",
+        "id": "2263267"
+      },
+      {
+        "name": "Far East Movement",
+        "url": "https://genius.com/artists/Far-east-movement",
+        "type": "regular",
+        "id": "924"
+      },
+      {
+        "name": "Fareed Ayaz & Abu Muhammad",
+        "url": "https://genius.com/artists/Fareed-ayaz-and-abu-muhammad",
+        "type": "regular",
+        "id": "1631581"
+      },
+      {
+        "name": "Fares Karam - فارس كرم",
+        "url": "https://genius.com/artists/Fares-karam",
+        "type": "regular",
+        "id": "455162"
+      },
+      {
+        "name": "Fares Sokar - فارس سكر",
+        "url": "https://genius.com/artists/Fares-sokar",
+        "type": "regular",
+        "id": "3973907"
+      },
+      {
+        "name": "Farhan Akhtar",
+        "url": "https://genius.com/artists/Farhan-akhtar",
+        "type": "regular",
+        "id": "520178"
+      },
+      {
+        "name": "Farhan Khan",
+        "url": "https://genius.com/artists/Farhan-khan",
+        "type": "regular",
+        "id": "130807"
+      },
+      {
+        "name": "Farhan Saeed",
+        "url": "https://genius.com/artists/Farhan-saeed",
+        "type": "regular",
+        "id": "1290200"
+      },
+      {
+        "name": "FARIANA",
+        "url": "https://genius.com/artists/Fariana",
+        "type": "regular",
+        "id": "458352"
+      },
+      {
+        "name": "Farid - فريد",
+        "url": "https://genius.com/artists/Farid",
+        "type": "regular",
+        "id": "3452577"
+      },
+      {
+        "name": "Farida Khanum",
+        "url": "https://genius.com/artists/Farida-khanum",
+        "type": "regular",
+        "id": "1680515"
+      },
+      {
+        "name": "Farid Bang",
+        "url": "https://genius.com/artists/Farid-bang",
+        "type": "regular",
+        "id": "12076"
+      },
+      {
+        "name": "Фарик Назарбаев (Farik Nazarbaev)",
+        "url": "https://genius.com/artists/Farik-nazarbaev",
+        "type": "regular",
+        "id": "2395130"
+      },
+      {
+        "name": "Farin Urlaub",
+        "url": "https://genius.com/artists/Farin-urlaub",
+        "type": "regular",
+        "id": "144575"
+      },
+      {
+        "name": "Faris Adam",
+        "url": "https://genius.com/artists/Faris-adam",
+        "type": "regular",
+        "id": "4386030"
+      },
+      {
+        "name": "Faris Shafi",
+        "url": "https://genius.com/artists/Faris-shafi",
+        "type": "regular",
+        "id": "157380"
+      },
+      {
+        "name": "Farmaan SMG",
+        "url": "https://genius.com/artists/Farmaan-smg",
+        "type": "regular",
+        "id": "2809572"
+      },
+      {
+        "name": "Faron Young",
+        "url": "https://genius.com/artists/Faron-young",
+        "type": "regular",
+        "id": "354792"
+      },
+      {
+        "name": "Faroon",
+        "url": "https://genius.com/artists/Faroon",
+        "type": "regular",
+        "id": "1926207"
+      },
+      {
+        "name": "Farooq Got Audio",
+        "url": "https://genius.com/artists/Farooq-got-audio",
+        "type": "regular",
+        "id": "4044823"
+      },
+      {
+        "name": "Farruko",
+        "url": "https://genius.com/artists/Farruko",
+        "type": "regular",
+        "id": "152199"
+      },
+      {
+        "name": "Faruz Feet",
+        "url": "https://genius.com/artists/Faruz-feet",
+        "type": "regular",
+        "id": "114441"
+      },
+      {
+        "name": "Farya Faraji",
+        "url": "https://genius.com/artists/Farya-faraji",
+        "type": "regular",
+        "id": "3227129"
+      },
+      {
+        "name": "Farzad Ghadimi",
+        "url": "https://genius.com/artists/Farzad-ghadimi",
+        "type": "regular",
+        "id": "3270079"
+      },
+      {
+        "name": "Fäaschtbänkler",
+        "url": "https://genius.com/artists/Faaschtbankler",
+        "type": "regular",
+        "id": "1907583"
+      },
+      {
+        "name": "Fascinating Aida",
+        "url": "https://genius.com/artists/Fascinating-aida",
+        "type": "regular",
+        "id": "402383"
+      },
+      {
+        "name": "Fashion Forty",
+        "url": "https://genius.com/artists/Fashion-forty",
+        "type": "regular",
+        "id": "3064075"
+      },
+      {
+        "name": "Fast Animals and Slow Kids",
+        "url": "https://genius.com/artists/Fast-animals-and-slow-kids",
+        "type": "regular",
+        "id": "452304"
+      },
+      {
+        "name": "Fastball",
+        "url": "https://genius.com/artists/Fastball",
+        "type": "regular",
+        "id": "32606"
+      },
+      {
+        "name": "FAST BOY",
+        "url": "https://genius.com/artists/Fast-boy",
+        "type": "regular",
+        "id": "2338436"
+      },
+      {
+        "name": "Faster Pussycat",
+        "url": "https://genius.com/artists/Faster-pussycat",
+        "type": "regular",
+        "id": "363453"
+      },
+      {
+        "name": "Fast Food Music",
+        "url": "https://genius.com/artists/Fast-food-music",
+        "type": "regular",
+        "id": "1480576"
+      },
+      {
+        "name": "FastMoney Goon",
+        "url": "https://genius.com/artists/Fastmoney-goon",
+        "type": "regular",
+        "id": "2595021"
+      },
+      {
+        "name": "Fatal Bazooka",
+        "url": "https://genius.com/artists/Fatal-bazooka",
+        "type": "regular",
+        "id": "16335"
+      },
+      {
+        "name": "The Fatback Band",
+        "url": "https://genius.com/artists/The-fatback-band",
+        "type": "regular",
+        "id": "343631"
+      },
+      {
+        "name": "Fatboy Slim",
+        "url": "https://genius.com/artists/Fatboy-slim",
+        "type": "regular",
+        "id": "2957"
+      },
+      {
+        "name": "Fat Dog",
+        "url": "https://genius.com/artists/Fat-dog",
+        "type": "regular",
+        "id": "456529"
+      },
+      {
+        "name": "Fat Freddy's Drop",
+        "url": "https://genius.com/artists/Fat-freddys-drop",
+        "type": "regular",
+        "id": "67787"
+      },
+      {
+        "name": "Father",
+        "url": "https://genius.com/artists/Father",
+        "type": "regular",
+        "id": "127561"
+      },
+      {
+        "name": "Father & Sons",
+        "url": "https://genius.com/artists/Father-and-sons",
+        "type": "regular",
+        "id": "533842"
+      },
+      {
+        "name": "Father John Misty",
+        "url": "https://genius.com/artists/Father-john-misty",
+        "type": "regular",
+        "id": "30388"
+      },
+      {
+        "name": "Fatih Bulut",
+        "url": "https://genius.com/artists/Fatih-bulut",
+        "type": "regular",
+        "id": "2780135"
+      },
+      {
+        "name": "Fatih Erkoç",
+        "url": "https://genius.com/artists/Fatih-erkoc",
+        "type": "regular",
+        "id": "532589"
+      },
+      {
+        "name": "Fat Joe",
+        "url": "https://genius.com/artists/Fat-joe",
+        "type": "regular",
+        "id": "83"
+      },
+      {
+        "name": "Fat Larry's Band",
+        "url": "https://genius.com/artists/Fat-larrys-band",
+        "type": "regular",
+        "id": "21547"
+      },
+      {
+        "name": "Fatman Scoop",
+        "url": "https://genius.com/artists/Fatman-scoop",
+        "type": "regular",
+        "id": "3516"
+      },
+      {
+        "name": "Fat Meech",
+        "url": "https://genius.com/artists/Fat-meech",
+        "type": "regular",
+        "id": "1662347"
+      },
+      {
+        "name": "Fat Mizzo",
+        "url": "https://genius.com/artists/Fat-mizzo",
+        "type": "regular",
+        "id": "132773"
+      },
+      {
+        "name": "Fat Nick",
+        "url": "https://genius.com/artists/Fat-nick",
+        "type": "regular",
+        "id": "51170"
+      },
+      {
+        "name": "Fatoni",
+        "url": "https://genius.com/artists/Fatoni",
+        "type": "regular",
+        "id": "26316"
+      },
+      {
+        "name": "Fat Pat",
+        "url": "https://genius.com/artists/Fat-pat",
+        "type": "regular",
+        "id": "2385"
+      },
+      {
+        "name": "Fats Domino",
+        "url": "https://genius.com/artists/Fats-domino",
+        "type": "regular",
+        "id": "328898"
+      },
+      {
+        "name": "Fats Waller",
+        "url": "https://genius.com/artists/Fats-waller",
+        "type": "regular",
+        "id": "170001"
+      },
+      {
+        "name": "FaTTi (ALB)",
+        "url": "https://genius.com/artists/Fatti-alb",
+        "type": "regular",
+        "id": "4018048"
+      },
+      {
+        "name": "Fatt Macc",
+        "url": "https://genius.com/artists/Fatt-macc",
+        "type": "regular",
+        "id": "3247100"
+      },
+      {
+        "name": "FattMack",
+        "url": "https://genius.com/artists/Fattmack",
+        "type": "regular",
+        "id": "3821598"
+      },
+      {
+        "name": "Fat Trel",
+        "url": "https://genius.com/artists/Fat-trel",
+        "type": "regular",
+        "id": "831"
+      },
+      {
+        "name": "Faun",
+        "url": "https://genius.com/artists/Faun",
+        "type": "regular",
+        "id": "354224"
+      },
+      {
+        "name": "Faussaire BTB",
+        "url": "https://genius.com/artists/Faussaire-btb",
+        "type": "regular",
+        "id": "3985893"
+      },
+      {
+        "name": "FAUVE",
+        "url": "https://genius.com/artists/Fauve",
+        "type": "regular",
+        "id": "43573"
+      },
+      {
+        "name": "FAVE",
+        "url": "https://genius.com/artists/Fave",
+        "type": "regular",
+        "id": "2631635"
+      },
+      {
+        "name": "Favé (FRA)",
+        "url": "https://genius.com/artists/Fave-fra",
+        "type": "regular",
+        "id": "2797012"
+      },
+      {
+        "name": "Favorite",
+        "url": "https://genius.com/artists/Favorite",
+        "type": "regular",
+        "id": "12500"
+      },
+      {
+        "name": "The Favors",
+        "url": "https://genius.com/artists/The-favors",
+        "type": "regular",
+        "id": "4305098"
+      },
+      {
+        "name": "favst",
+        "url": "https://genius.com/artists/Favst",
+        "type": "regular",
+        "id": "1868685"
+      },
+      {
+        "name": "Faydee",
+        "url": "https://genius.com/artists/Faydee",
+        "type": "regular",
+        "id": "161640"
+      },
+      {
+        "name": "Faye Webster",
+        "url": "https://genius.com/artists/Faye-webster",
+        "type": "regular",
+        "id": "1126994"
+      },
+      {
+        "name": "王菲 (Faye Wong)",
+        "url": "https://genius.com/artists/Faye-wong",
+        "type": "regular",
+        "id": "958177"
+      },
+      {
+        "name": "Faze",
+        "url": "https://genius.com/artists/Faze",
+        "type": "regular",
+        "id": "30340"
+      },
+      {
+        "name": "Fazzini",
+        "url": "https://genius.com/artists/Fazzini",
+        "type": "regular",
+        "id": "1408642"
+      },
+      {
+        "name": "FBC",
+        "url": "https://genius.com/artists/Fbc",
+        "type": "regular",
+        "id": "674692"
+      },
+      {
+        "name": "FBG Duck",
+        "url": "https://genius.com/artists/Fbg-duck",
+        "type": "regular",
+        "id": "45571"
+      },
+      {
+        "name": "FBG Murda",
+        "url": "https://genius.com/artists/Fbg-murda",
+        "type": "regular",
+        "id": "3735956"
+      },
+      {
+        "name": "FBLMANNY",
+        "url": "https://genius.com/artists/Fblmanny",
+        "type": "regular",
+        "id": "3798081"
+      },
+      {
+        "name": "FC Barcelona, Georgina Blanch, Miguel Biarnés, Joana Subirats, Marina Rico, Gemma Planella, Noemi Gallardo, Iago García, Xavi Benítez & Dracs 1991",
+        "url": "https://genius.com/artists/Fc-barcelona-georgina-blanch-miguel-biarnes-joana-subirats-marina-rico-gemma-planella-noemi-gallardo-iago-garcia-xavi-benitez-and-dracs-1991",
+        "type": "regular",
+        "id": "4195748"
+      },
+      {
+        "name": "FCG Heem",
+        "url": "https://genius.com/artists/Fcg-heem",
+        "type": "regular",
+        "id": "2196495"
+      },
+      {
+        "name": "F.Charm",
+        "url": "https://genius.com/artists/Fcharm",
+        "type": "regular",
+        "id": "1529991"
+      },
+      {
+        "name": "@ФакШиза (fckshizy)",
+        "url": "https://genius.com/artists/Fckshizy",
+        "type": "regular",
+        "id": "3375190"
+      },
+      {
+        "name": "Fcukers",
+        "url": "https://genius.com/artists/Fcukers",
+        "type": "regular",
+        "id": "3493158"
+      },
+      {
+        "name": "FEAR",
+        "url": "https://genius.com/artists/Fear",
+        "type": "regular",
+        "id": "51742"
+      },
+      {
+        "name": "Fear, and Loathing in Las Vegas",
+        "url": "https://genius.com/artists/Fear-and-loathing-in-las-vegas",
+        "type": "regular",
+        "id": "350799"
+      },
+      {
+        "name": "Fear Before",
+        "url": "https://genius.com/artists/Fear-before",
+        "type": "regular",
+        "id": "363599"
+      },
+      {
+        "name": "​FearDorian",
+        "url": "https://genius.com/artists/Feardorian",
+        "type": "regular",
+        "id": "2222873"
+      },
+      {
+        "name": "Fear Factory",
+        "url": "https://genius.com/artists/Fear-factory",
+        "type": "regular",
+        "id": "8341"
+      },
+      {
+        "name": "​.Feast",
+        "url": "https://genius.com/artists/Feast",
+        "type": "regular",
+        "id": "628199"
+      },
+      {
+        "name": "Feast Worship",
+        "url": "https://genius.com/artists/Feast-worship",
+        "type": "regular",
+        "id": "1509205"
+      },
+      {
+        "name": "Febem",
+        "url": "https://genius.com/artists/Febem",
+        "type": "regular",
+        "id": "557117"
+      },
+      {
+        "name": "Febuary (band)",
+        "url": "https://genius.com/artists/Febuary-band",
+        "type": "regular",
+        "id": "3923731"
+      },
+      {
+        "name": "Feby Putri",
+        "url": "https://genius.com/artists/Feby-putri",
+        "type": "regular",
+        "id": "1947650"
+      },
+      {
+        "name": "Fecal Matter",
+        "url": "https://genius.com/artists/Fecal-matter",
+        "type": "regular",
+        "id": "55569"
+      },
+      {
+        "name": "Fedez",
+        "url": "https://genius.com/artists/Fedez",
+        "type": "regular",
+        "id": "56003"
+      },
+      {
+        "name": "федор яйца (fedorballs)",
+        "url": "https://genius.com/artists/Fedorballs",
+        "type": "regular",
+        "id": "3968584"
+      },
+      {
+        "name": "FEDUK",
+        "url": "https://genius.com/artists/Feduk",
+        "type": "regular",
+        "id": "1091788"
+      },
+      {
+        "name": "​feeble little horse",
+        "url": "https://genius.com/artists/Feeble-little-horse",
+        "type": "regular",
+        "id": "2956746"
+      },
+      {
+        "name": "Feeder",
+        "url": "https://genius.com/artists/Feeder",
+        "type": "regular",
+        "id": "56083"
+      },
+      {
+        "name": "Fehd Benchemsi",
+        "url": "https://genius.com/artists/Fehd-benchemsi",
+        "type": "regular",
+        "id": "2097300"
+      },
+      {
+        "name": "Fehlfarben",
+        "url": "https://genius.com/artists/Fehlfarben",
+        "type": "regular",
+        "id": "70363"
+      },
+      {
+        "name": "Feiert Jesus!",
+        "url": "https://genius.com/artists/Feiert-jesus",
+        "type": "regular",
+        "id": "372489"
+      },
+      {
+        "name": "菲菲公主 (Fei Fei Gong Zhu)",
+        "url": "https://genius.com/artists/Fei-fei-gong-zhu",
+        "type": "regular",
+        "id": "4415925"
+      },
+      {
+        "name": "Feine Sahne Fischfilet",
+        "url": "https://genius.com/artists/Feine-sahne-fischfilet",
+        "type": "regular",
+        "id": "77521"
+      },
+      {
+        "name": "Feint",
+        "url": "https://genius.com/artists/Feint",
+        "type": "regular",
+        "id": "63241"
+      },
+      {
+        "name": "Feist",
+        "url": "https://genius.com/artists/Feist",
+        "type": "regular",
+        "id": "18072"
+      },
+      {
+        "name": "費玉清 (Fei Yu-ching)",
+        "url": "https://genius.com/artists/Fei-yu-ching",
+        "type": "regular",
+        "id": "30875"
+      },
+      {
+        "name": "FEJO (IND)",
+        "url": "https://genius.com/artists/Fejo-ind",
+        "type": "regular",
+        "id": "1518767"
+      },
+      {
+        "name": "Fela Kuti",
+        "url": "https://genius.com/artists/Fela-kuti",
+        "type": "regular",
+        "id": "67974"
+      },
+      {
+        "name": "The Felice Brothers",
+        "url": "https://genius.com/artists/The-felice-brothers",
+        "type": "regular",
+        "id": "142508"
+      },
+      {
+        "name": "Felicia Day",
+        "url": "https://genius.com/artists/Felicia-day",
+        "type": "regular",
+        "id": "63764"
+      },
+      {
+        "name": "Felipe Bejarano",
+        "url": "https://genius.com/artists/Felipe-bejarano",
+        "type": "regular",
+        "id": "4351489"
+      },
+      {
+        "name": "Felip (SB19)",
+        "url": "https://genius.com/artists/Felip-sb19",
+        "type": "regular",
+        "id": "2883960"
+      },
+      {
+        "name": "FELIVAND",
+        "url": "https://genius.com/artists/Felivand",
+        "type": "regular",
+        "id": "1199688"
+      },
+      {
+        "name": "FELIX",
+        "url": "https://genius.com/artists/Felix",
+        "type": "regular",
+        "id": "2892675"
+      },
+      {
+        "name": "Felix Blume",
+        "url": "https://genius.com/artists/Felix-blume",
+        "type": "regular",
+        "id": "1758698"
+      },
+      {
+        "name": "Felix Jaehn",
+        "url": "https://genius.com/artists/Felix-jaehn",
+        "type": "regular",
+        "id": "395104"
+      },
+      {
+        "name": "FELIX (Stray Kids)",
+        "url": "https://genius.com/artists/Felix-stray-kids",
+        "type": "regular",
+        "id": "1601327"
+      },
+      {
+        "name": "fellow fellow",
+        "url": "https://genius.com/artists/Fellow-fellow",
+        "type": "regular",
+        "id": "2391500"
+      },
+      {
+        "name": "Felly",
+        "url": "https://genius.com/artists/Felly",
+        "type": "regular",
+        "id": "11751"
+      },
+      {
+        "name": "Felp 22",
+        "url": "https://genius.com/artists/Felp-22",
+        "type": "regular",
+        "id": "644974"
+      },
+      {
+        "name": "FEM&M",
+        "url": "https://genius.com/artists/Fem-m",
+        "type": "regular",
+        "id": "4286221"
+      },
+      {
+        "name": "​femdot.",
+        "url": "https://genius.com/artists/Femdot",
+        "type": "regular",
+        "id": "37378"
+      },
+      {
+        "name": "fem.love",
+        "url": "https://genius.com/artists/Femlove",
+        "type": "regular",
+        "id": "2066274"
+      },
+      {
+        "name": "femtanyl",
+        "url": "https://genius.com/artists/Femtanyl",
+        "type": "regular",
+        "id": "3589271"
+      },
+      {
+        "name": "FEMTOGO",
+        "url": "https://genius.com/artists/Femtogo",
+        "type": "regular",
+        "id": "3171563"
+      },
+      {
+        "name": "FENDIGLOCK",
+        "url": "https://genius.com/artists/Fendiglock",
+        "type": "regular",
+        "id": "1091613"
+      },
+      {
+        "name": "Feng",
+        "url": "https://genius.com/artists/Feng",
+        "type": "regular",
+        "id": "4230259"
+      },
+      {
+        "name": "Fenix Flexin",
+        "url": "https://genius.com/artists/Fenix-flexin",
+        "type": "regular",
+        "id": "16913"
+      },
+      {
+        "name": "FEOFILOV",
+        "url": "https://genius.com/artists/Feofilov",
+        "type": "regular",
+        "id": "1982542"
+      },
+      {
+        "name": "Ferdinand M. Bautista",
+        "url": "https://genius.com/artists/Ferdinand-m-bautista",
+        "type": "regular",
+        "id": "3300960"
+      },
+      {
+        "name": "Ferdi Tayfur",
+        "url": "https://genius.com/artists/Ferdi-tayfur",
+        "type": "regular",
+        "id": "367826"
+      },
+      {
+        "name": "Ferdi Özbeğen",
+        "url": "https://genius.com/artists/Ferdi-ozbegen",
+        "type": "regular",
+        "id": "1941486"
+      },
+      {
+        "name": "Fergie",
+        "url": "https://genius.com/artists/Fergie",
+        "type": "regular",
+        "id": "950"
+      },
+      {
+        "name": "Ferhat Göçer",
+        "url": "https://genius.com/artists/Ferhat-gocer",
+        "type": "regular",
+        "id": "225554"
+      },
+      {
+        "name": "Feridun Düzağaç",
+        "url": "https://genius.com/artists/Feridun-duzagac",
+        "type": "regular",
+        "id": "402453"
+      },
+      {
+        "name": "Ferlin Husky",
+        "url": "https://genius.com/artists/Ferlin-husky",
+        "type": "regular",
+        "id": "344552"
+      },
+      {
+        "name": "Ferman Akgül",
+        "url": "https://genius.com/artists/Ferman-akgul",
+        "type": "regular",
+        "id": "1306686"
+      },
+      {
+        "name": "Fernandezz",
+        "url": "https://genius.com/artists/Fernandezz",
+        "type": "regular",
+        "id": "2969354"
+      },
+      {
+        "name": "FERNANDOCOSTA",
+        "url": "https://genius.com/artists/Fernandocosta",
+        "type": "regular",
+        "id": "1115466"
+      },
+      {
+        "name": "Fernando Ortega",
+        "url": "https://genius.com/artists/Fernando-ortega",
+        "type": "regular",
+        "id": "2079933"
+      },
+      {
+        "name": "Fern. (PHL)",
+        "url": "https://genius.com/artists/Fern-phl",
+        "type": "regular",
+        "id": "1432400"
+      },
+      {
+        "name": "Fero",
+        "url": "https://genius.com/artists/Fero",
+        "type": "regular",
+        "id": "1154340"
+      },
+      {
+        "name": "Ferry (Vocaloid)",
+        "url": "https://genius.com/artists/Ferry-vocaloid",
+        "type": "regular",
+        "id": "1633940"
+      },
+      {
+        "name": "FerzanBeats",
+        "url": "https://genius.com/artists/Ferzanbeats",
+        "type": "regular",
+        "id": "1020571"
+      },
+      {
+        "name": "Fetah",
+        "url": "https://genius.com/artists/Fetah",
+        "type": "regular",
+        "id": "3761360"
+      },
+      {
+        "name": "Fettah Can",
+        "url": "https://genius.com/artists/Fettah-can",
+        "type": "regular",
+        "id": "348273"
+      },
+      {
+        "name": "Fettes Brot",
+        "url": "https://genius.com/artists/Fettes-brot",
+        "type": "regular",
+        "id": "12800"
+      },
+      {
+        "name": "Fetty P. Franklin",
+        "url": "https://genius.com/artists/Fetty-p-franklin",
+        "type": "regular",
+        "id": "1708681"
+      },
+      {
+        "name": "Feu! Chatterton",
+        "url": "https://genius.com/artists/Feu-chatterton",
+        "type": "regular",
+        "id": "456246"
+      },
+      {
+        "name": "Feuerschwanz",
+        "url": "https://genius.com/artists/Feuerschwanz",
+        "type": "regular",
+        "id": "356100"
+      },
+      {
+        "name": "FEVER 333",
+        "url": "https://genius.com/artists/Fever-333",
+        "type": "regular",
+        "id": "1172980"
+      },
+      {
+        "name": "Fever Ray",
+        "url": "https://genius.com/artists/Fever-ray",
+        "type": "regular",
+        "id": "76277"
+      },
+      {
+        "name": "FEX",
+        "url": "https://genius.com/artists/Fex",
+        "type": "regular",
+        "id": "1893679"
+      },
+      {
+        "name": "ffawty",
+        "url": "https://genius.com/artists/Ffawty",
+        "type": "regular",
+        "id": "3886536"
+      },
+      {
+        "name": "FFRAGEZEICHEN",
+        "url": "https://genius.com/artists/Ffragezeichen",
+        "type": "regular",
+        "id": "2603175"
+      },
+      {
+        "name": "FG Red",
+        "url": "https://genius.com/artists/Fg-red",
+        "type": "regular",
+        "id": "4099659"
+      },
+      {
+        "name": "F.HERO",
+        "url": "https://genius.com/artists/Fhero",
+        "type": "regular",
+        "id": "1687256"
+      },
+      {
+        "name": "fhop music",
+        "url": "https://genius.com/artists/Fhop-music",
+        "type": "regular",
+        "id": "3292454"
+      },
+      {
+        "name": "Fialeja",
+        "url": "https://genius.com/artists/Fialeja",
+        "type": "regular",
+        "id": "1127045"
+      },
+      {
+        "name": "Fiddlehead",
+        "url": "https://genius.com/artists/Fiddlehead",
+        "type": "regular",
+        "id": "1412314"
+      },
+      {
+        "name": "FIDLAR",
+        "url": "https://genius.com/artists/Fidlar",
+        "type": "regular",
+        "id": "68443"
+      },
+      {
+        "name": "Fido (NGA)",
+        "url": "https://genius.com/artists/Fido-nga",
+        "type": "regular",
+        "id": "4186763"
+      },
+      {
+        "name": "Field Medic",
+        "url": "https://genius.com/artists/Field-medic",
+        "type": "regular",
+        "id": "1077426"
+      },
+      {
+        "name": "Field Mob",
+        "url": "https://genius.com/artists/Field-mob",
+        "type": "regular",
+        "id": "2217"
+      },
+      {
+        "name": "Fields of the Nephilim",
+        "url": "https://genius.com/artists/Fields-of-the-nephilim",
+        "type": "regular",
+        "id": "361103"
+      },
+      {
+        "name": "Fiepie",
+        "url": "https://genius.com/artists/Fiepie",
+        "type": "regular",
+        "id": "3376307"
+      },
+      {
+        "name": "Fiersa Besari",
+        "url": "https://genius.com/artists/Fiersa-besari",
+        "type": "regular",
+        "id": "1286570"
+      },
+      {
+        "name": "Fifth Harmony",
+        "url": "https://genius.com/artists/Fifth-harmony",
+        "type": "regular",
+        "id": "60437"
+      },
+      {
+        "name": "FIFTY FIFTY (피프티피프티)",
+        "url": "https://genius.com/artists/Fifty-fifty",
+        "type": "regular",
+        "id": "3350128"
+      },
+      {
+        "name": "Figa Flawas",
+        "url": "https://genius.com/artists/Figa-flawas",
+        "type": "regular",
+        "id": "3514554"
+      },
+      {
+        "name": "Fightmarker's Rap Battles",
+        "url": "https://genius.com/artists/Fightmarkers-rap-battles",
+        "type": "regular",
+        "id": "3200893"
+      },
+      {
+        "name": "FIGHTMASTER",
+        "url": "https://genius.com/artists/Fightmaster",
+        "type": "regular",
+        "id": "3615609"
+      },
+      {
+        "name": "Fightstar",
+        "url": "https://genius.com/artists/Fightstar",
+        "type": "regular",
+        "id": "363087"
+      },
+      {
+        "name": "Figo i Samogony",
+        "url": "https://genius.com/artists/Figo-i-samogony",
+        "type": "regular",
+        "id": "3371577"
+      },
+      {
+        "name": "Figoshin",
+        "url": "https://genius.com/artists/Figoshin",
+        "type": "regular",
+        "id": "359097"
+      },
+      {
+        "name": "FIIXD",
+        "url": "https://genius.com/artists/Fiixd",
+        "type": "regular",
+        "id": "1582633"
+      },
+      {
+        "name": "Fiji",
+        "url": "https://genius.com/artists/Fiji",
+        "type": "regular",
+        "id": "1556080"
+      },
+      {
+        "name": "Fiji Blue",
+        "url": "https://genius.com/artists/Fiji-blue",
+        "type": "regular",
+        "id": "1935133"
+      },
+      {
+        "name": "Fike & Jambazi",
+        "url": "https://genius.com/artists/Fike-and-jambazi",
+        "type": "regular",
+        "id": "2364868"
+      },
+      {
+        "name": "Фики (Fiki)",
+        "url": "https://genius.com/artists/Fiki",
+        "type": "regular",
+        "id": "3404944"
+      },
+      {
+        "name": "Fikret Kızılok",
+        "url": "https://genius.com/artists/Fikret-kzlok",
+        "type": "regular",
+        "id": "1334072"
+      },
+      {
+        "name": "Filatov & Karas",
+        "url": "https://genius.com/artists/Filatov-and-karas",
+        "type": "regular",
+        "id": "1167515"
+      },
+      {
+        "name": "Filipek",
+        "url": "https://genius.com/artists/Filipek",
+        "type": "regular",
+        "id": "175450"
+      },
+      {
+        "name": "Filipe Ret",
+        "url": "https://genius.com/artists/Filipe-ret",
+        "type": "regular",
+        "id": "31812"
+      },
+      {
+        "name": "Filip Mitrovic",
+        "url": "https://genius.com/artists/Filip-mitrovic",
+        "type": "regular",
+        "id": "2494374"
+      },
+      {
+        "name": "Film",
+        "url": "https://genius.com/artists/Film",
+        "type": "regular",
+        "id": "358523"
+      },
+      {
+        "name": "Filow",
+        "url": "https://genius.com/artists/Filow",
+        "type": "regular",
+        "id": "2016600"
+      },
+      {
+        "name": "Filter",
+        "url": "https://genius.com/artists/Filter",
+        "type": "regular",
+        "id": "78433"
+      },
+      {
+        "name": "Fil Tilen",
+        "url": "https://genius.com/artists/Fil-tilen",
+        "type": "regular",
+        "id": "1023560"
+      },
+      {
+        "name": "FILV",
+        "url": "https://genius.com/artists/Filv",
+        "type": "regular",
+        "id": "2103169"
+      },
+      {
+        "name": "Fimiguerrero",
+        "url": "https://genius.com/artists/Fimiguerrero",
+        "type": "regular",
+        "id": "1872602"
+      },
+      {
+        "name": "​finalbossfight",
+        "url": "https://genius.com/artists/Finalbossfight",
+        "type": "regular",
+        "id": "2831857"
+      },
+      {
+        "name": "Final Fantasy",
+        "url": "https://genius.com/artists/Final-fantasy",
+        "type": "regular",
+        "id": "208658"
+      },
+      {
+        "name": "Fin Argus",
+        "url": "https://genius.com/artists/Fin-argus",
+        "type": "regular",
+        "id": "2426603"
+      },
+      {
+        "name": "Finatticz",
+        "url": "https://genius.com/artists/Finatticz",
+        "type": "regular",
+        "id": "18923"
+      },
+      {
+        "name": "FiNCH",
+        "url": "https://genius.com/artists/Finch",
+        "type": "regular",
+        "id": "1118051"
+      },
+      {
+        "name": "Finch (USA)",
+        "url": "https://genius.com/artists/Finch-usa",
+        "type": "regular",
+        "id": "94557"
+      },
+      {
+        "name": "Fine",
+        "url": "https://genius.com/artists/Fine",
+        "type": "regular",
+        "id": "674781"
+      },
+      {
+        "name": "Finem",
+        "url": "https://genius.com/artists/Finem",
+        "type": "regular",
+        "id": "1872578"
+      },
+      {
+        "name": "Finesse",
+        "url": "https://genius.com/artists/Finesse",
+        "type": "regular",
+        "id": "2651116"
+      },
+      {
+        "name": "Finesse2Tymes",
+        "url": "https://genius.com/artists/Finesse2tymes",
+        "type": "regular",
+        "id": "1118022"
+      },
+      {
+        "name": "Finessekid",
+        "url": "https://genius.com/artists/Finessekid",
+        "type": "regular",
+        "id": "4283078"
+      },
+      {
+        "name": "Finessim",
+        "url": "https://genius.com/artists/Finessim",
+        "type": "regular",
+        "id": "1418673"
+      },
+      {
+        "name": "Fine Young Cannibals",
+        "url": "https://genius.com/artists/Fine-young-cannibals",
+        "type": "regular",
+        "id": "171539"
+      },
+      {
+        "name": "Finger Eleven",
+        "url": "https://genius.com/artists/Finger-eleven",
+        "type": "regular",
+        "id": "99453"
+      },
+      {
+        "name": "Fink",
+        "url": "https://genius.com/artists/Fink",
+        "type": "regular",
+        "id": "40238"
+      },
+      {
+        "name": "Finley",
+        "url": "https://genius.com/artists/Finley",
+        "type": "regular",
+        "id": "358363"
+      },
+      {
+        "name": "Finn Gruva",
+        "url": "https://genius.com/artists/Finn-gruva",
+        "type": "regular",
+        "id": "3253793"
+      },
+      {
+        "name": "Finn Kalvik",
+        "url": "https://genius.com/artists/Finn-kalvik",
+        "type": "regular",
+        "id": "373611"
+      },
+      {
+        "name": "Finn Wolfhard",
+        "url": "https://genius.com/artists/Finn-wolfhard",
+        "type": "regular",
+        "id": "1058152"
+      },
+      {
+        "name": "Fino Como El Haze",
+        "url": "https://genius.com/artists/Fino-como-el-haze",
+        "type": "regular",
+        "id": "1018408"
+      },
+      {
+        "name": "Fiona Apple",
+        "url": "https://genius.com/artists/Fiona-apple",
+        "type": "regular",
+        "id": "653"
+      },
+      {
+        "name": "Fiona Palomo",
+        "url": "https://genius.com/artists/Fiona-palomo",
+        "type": "regular",
+        "id": "3929012"
+      },
+      {
+        "name": "Fiori-Séguin",
+        "url": "https://genius.com/artists/Fiori-seguin",
+        "type": "regular",
+        "id": "1635365"
+      },
+      {
+        "name": "Фираз Шатохин (Firaz Shatokhin)",
+        "url": "https://genius.com/artists/Firaz-shatokhin",
+        "type": "regular",
+        "id": "3568352"
+      },
+      {
+        "name": "Fireboy DML",
+        "url": "https://genius.com/artists/Fireboy-dml",
+        "type": "regular",
+        "id": "1878854"
+      },
+      {
+        "name": "Firefall",
+        "url": "https://genius.com/artists/Firefall",
+        "type": "regular",
+        "id": "359765"
+      },
+      {
+        "name": "Firehouse",
+        "url": "https://genius.com/artists/Firehouse",
+        "type": "regular",
+        "id": "332529"
+      },
+      {
+        "name": "Fireken",
+        "url": "https://genius.com/artists/Fireken",
+        "type": "regular",
+        "id": "3536272"
+      },
+      {
+        "name": "The Firm",
+        "url": "https://genius.com/artists/The-firm",
+        "type": "regular",
+        "id": "478"
+      },
+      {
+        "name": "Firma",
+        "url": "https://genius.com/artists/Firma",
+        "type": "regular",
+        "id": "151511"
+      },
+      {
+        "name": "The Firm (comedy)",
+        "url": "https://genius.com/artists/The-firm-comedy",
+        "type": "regular",
+        "id": "1534914"
+      },
+      {
+        "name": "First Aid Kit",
+        "url": "https://genius.com/artists/First-aid-kit",
+        "type": "regular",
+        "id": "65458"
+      },
+      {
+        "name": "First Circle",
+        "url": "https://genius.com/artists/First-circle",
+        "type": "regular",
+        "id": "481803"
+      },
+      {
+        "name": "The First Class",
+        "url": "https://genius.com/artists/The-first-class",
+        "type": "regular",
+        "id": "1860283"
+      },
+      {
+        "name": "First Pentecostal Church Of Little Rock",
+        "url": "https://genius.com/artists/First-pentecostal-church-of-little-rock",
+        "type": "regular",
+        "id": "2039256"
+      },
+      {
+        "name": "Fishbone",
+        "url": "https://genius.com/artists/Fishbone",
+        "type": "regular",
+        "id": "8600"
+      },
+      {
+        "name": "FISHER",
+        "url": "https://genius.com/artists/Fisher",
+        "type": "regular",
+        "id": "1447550"
+      },
+      {
+        "name": "Fisherman's Friends",
+        "url": "https://genius.com/artists/Fishermans-friends",
+        "type": "regular",
+        "id": "383037"
+      },
+      {
+        "name": "Fisher-Price",
+        "url": "https://genius.com/artists/Fisher-price",
+        "type": "regular",
+        "id": "384047"
+      },
+      {
+        "name": "Fish in a Birdcage",
+        "url": "https://genius.com/artists/Fish-in-a-birdcage",
+        "type": "regular",
+        "id": "2586038"
+      },
+      {
+        "name": "梁靜茹 (Fish Leong)",
+        "url": "https://genius.com/artists/Fish-leong",
+        "type": "regular",
+        "id": "1898179"
+      },
+      {
+        "name": "Fishmans",
+        "url": "https://genius.com/artists/Fishmans",
+        "type": "regular",
+        "id": "1118958"
+      },
+      {
+        "name": "Fish (Rock)",
+        "url": "https://genius.com/artists/Fish-rock",
+        "type": "regular",
+        "id": "17043"
+      },
+      {
+        "name": "Fit for a King",
+        "url": "https://genius.com/artists/Fit-for-a-king",
+        "type": "regular",
+        "id": "263413"
+      },
+      {
+        "name": "Fit for an Autopsy",
+        "url": "https://genius.com/artists/Fit-for-an-autopsy",
+        "type": "regular",
+        "id": "367918"
+      },
+      {
+        "name": "Fito & Fitipaldis",
+        "url": "https://genius.com/artists/Fito-and-fitipaldis",
+        "type": "regular",
+        "id": "343551"
+      },
+      {
+        "name": "Fito Páez",
+        "url": "https://genius.com/artists/Fito-paez",
+        "type": "regular",
+        "id": "356209"
+      },
+      {
+        "name": "Fitz and The Tantrums",
+        "url": "https://genius.com/artists/Fitz-and-the-tantrums",
+        "type": "regular",
+        "id": "36961"
+      },
+      {
+        "name": "Five",
+        "url": "https://genius.com/artists/Five",
+        "type": "regular",
+        "id": "148045"
+      },
+      {
+        "name": "Five Finger Death Punch",
+        "url": "https://genius.com/artists/Five-finger-death-punch",
+        "type": "regular",
+        "id": "19975"
+      },
+      {
+        "name": "Five for Fighting",
+        "url": "https://genius.com/artists/Five-for-fighting",
+        "type": "regular",
+        "id": "39650"
+      },
+      {
+        "name": "Five Iron Frenzy",
+        "url": "https://genius.com/artists/Five-iron-frenzy",
+        "type": "regular",
+        "id": "137071"
+      },
+      {
+        "name": "Five Man Electrical Band",
+        "url": "https://genius.com/artists/Five-man-electrical-band",
+        "type": "regular",
+        "id": "139471"
+      },
+      {
+        "name": "Five Stairsteps",
+        "url": "https://genius.com/artists/Five-stairsteps",
+        "type": "regular",
+        "id": "25258"
+      },
+      {
+        "name": "Fivio Foreign",
+        "url": "https://genius.com/artists/Fivio-foreign",
+        "type": "regular",
+        "id": "1584757"
+      },
+      {
+        "name": "Fi Vita Sigma",
+        "url": "https://genius.com/artists/Fi-vita-sigma",
+        "type": "regular",
+        "id": "1127459"
+      },
+      {
+        "name": "The Fixx",
+        "url": "https://genius.com/artists/The-fixx",
+        "type": "regular",
+        "id": "354992"
+      },
+      {
+        "name": "Fiya",
+        "url": "https://genius.com/artists/Fiya",
+        "type": "regular",
+        "id": "405640"
+      },
+      {
+        "name": "FKA twigs",
+        "url": "https://genius.com/artists/Fka-twigs",
+        "type": "regular",
+        "id": "63636"
+      },
+      {
+        "name": "FKJ",
+        "url": "https://genius.com/artists/Fkj",
+        "type": "regular",
+        "id": "67372"
+      },
+      {
+        "name": "Flaco G",
+        "url": "https://genius.com/artists/Flaco-g",
+        "type": "regular",
+        "id": "3727221"
+      },
+      {
+        "name": "Flaco Vazquez",
+        "url": "https://genius.com/artists/Flaco-vazquez",
+        "type": "regular",
+        "id": "1665511"
+      },
+      {
+        "name": "FLAME",
+        "url": "https://genius.com/artists/Flame",
+        "type": "regular",
+        "id": "5953"
+      },
+      {
+        "name": "The Flaming Lips",
+        "url": "https://genius.com/artists/The-flaming-lips",
+        "type": "regular",
+        "id": "18738"
+      },
+      {
+        "name": "The Flamingos",
+        "url": "https://genius.com/artists/The-flamingos",
+        "type": "regular",
+        "id": "73373"
+      },
+      {
+        "name": "Flamingosi",
+        "url": "https://genius.com/artists/Flamingosi",
+        "type": "regular",
+        "id": "514309"
+      },
+      {
+        "name": "Flanagan & Allen",
+        "url": "https://genius.com/artists/Flanagan-and-allen",
+        "type": "regular",
+        "id": "349474"
+      },
+      {
+        "name": "Flanders & Swann",
+        "url": "https://genius.com/artists/Flanders-and-swann",
+        "type": "regular",
+        "id": "365323"
+      },
+      {
+        "name": "Flatbush Zombies",
+        "url": "https://genius.com/artists/Flatbush-zombies",
+        "type": "regular",
+        "id": "16377"
+      },
+      {
+        "name": "Flatland Cavalry",
+        "url": "https://genius.com/artists/Flatland-cavalry",
+        "type": "regular",
+        "id": "1050665"
+      },
+      {
+        "name": "Flatsound",
+        "url": "https://genius.com/artists/Flatsound",
+        "type": "regular",
+        "id": "359125"
+      },
+      {
+        "name": "The Flat Stanleys",
+        "url": "https://genius.com/artists/The-flat-stanleys",
+        "type": "regular",
+        "id": "1012537"
+      },
+      {
+        "name": "Flatt & Scruggs",
+        "url": "https://genius.com/artists/Flatt-and-scruggs",
+        "type": "regular",
+        "id": "333088"
+      },
+      {
+        "name": "Flavio",
+        "url": "https://genius.com/artists/Flavio",
+        "type": "regular",
+        "id": "797665"
+      },
+      {
+        "name": "FLAVOR FOLEY",
+        "url": "https://genius.com/artists/Flavor-foley",
+        "type": "regular",
+        "id": "3895596"
+      },
+      {
+        "name": "Flavour",
+        "url": "https://genius.com/artists/Flavour",
+        "type": "regular",
+        "id": "452954"
+      },
+      {
+        "name": "Flawed Mangoes",
+        "url": "https://genius.com/artists/Flawed-mangoes",
+        "type": "regular",
+        "id": "1809616"
+      },
+      {
+        "name": "Flee Lord",
+        "url": "https://genius.com/artists/Flee-lord",
+        "type": "regular",
+        "id": "1466079"
+      },
+      {
+        "name": "Fleet Foxes",
+        "url": "https://genius.com/artists/Fleet-foxes",
+        "type": "regular",
+        "id": "15821"
+      },
+      {
+        "name": "FLEMMING",
+        "url": "https://genius.com/artists/Flemming",
+        "type": "regular",
+        "id": "1095287"
+      },
+      {
+        "name": "Flenn",
+        "url": "https://genius.com/artists/Flenn",
+        "type": "regular",
+        "id": "185828"
+      },
+      {
+        "name": "Fler",
+        "url": "https://genius.com/artists/Fler",
+        "type": "regular",
+        "id": "12840"
+      },
+      {
+        "name": "FLESH",
+        "url": "https://genius.com/artists/Flesh",
+        "type": "regular",
+        "id": "561909"
+      },
+      {
+        "name": "Fleshgod Apocalypse",
+        "url": "https://genius.com/artists/Fleshgod-apocalypse",
+        "type": "regular",
+        "id": "362298"
+      },
+      {
+        "name": "Fleshwater",
+        "url": "https://genius.com/artists/Fleshwater",
+        "type": "regular",
+        "id": "2118370"
+      },
+      {
+        "name": "Fletcher Sheridan",
+        "url": "https://genius.com/artists/Fletcher-sheridan",
+        "type": "regular",
+        "id": "367669"
+      },
+      {
+        "name": "Fleur East",
+        "url": "https://genius.com/artists/Fleur-east",
+        "type": "regular",
+        "id": "280878"
+      },
+      {
+        "name": "Fleurie",
+        "url": "https://genius.com/artists/Fleurie",
+        "type": "regular",
+        "id": "336955"
+      },
+      {
+        "name": "fleurnothappy",
+        "url": "https://genius.com/artists/Fleurnothappy",
+        "type": "regular",
+        "id": "3762553"
+      },
+      {
+        "name": "FL EX - فليكس",
+        "url": "https://genius.com/artists/Fl-ex",
+        "type": "regular",
+        "id": "3037048"
+      },
+      {
+        "name": "Flict G",
+        "url": "https://genius.com/artists/Flict-g",
+        "type": "regular",
+        "id": "155286"
+      },
+      {
+        "name": "​fliggsy",
+        "url": "https://genius.com/artists/Fliggsy",
+        "type": "regular",
+        "id": "1804807"
+      },
+      {
+        "name": "Flight",
+        "url": "https://genius.com/artists/Flight",
+        "type": "regular",
+        "id": "1080647"
+      },
+      {
+        "name": "Flight Facilities",
+        "url": "https://genius.com/artists/Flight-facilities",
+        "type": "regular",
+        "id": "18945"
+      },
+      {
+        "name": "Flight of the Conchords",
+        "url": "https://genius.com/artists/Flight-of-the-conchords",
+        "type": "regular",
+        "id": "1517"
+      },
+      {
+        "name": "The Flintstones",
+        "url": "https://genius.com/artists/The-flintstones",
+        "type": "regular",
+        "id": "662718"
+      },
+      {
+        "name": "Flipp Dinero",
+        "url": "https://genius.com/artists/Flipp-dinero",
+        "type": "regular",
+        "id": "1114883"
+      },
+      {
+        "name": "Flipsyde",
+        "url": "https://genius.com/artists/Flipsyde",
+        "type": "regular",
+        "id": "2206"
+      },
+      {
+        "name": "flipturn",
+        "url": "https://genius.com/artists/Flipturn",
+        "type": "regular",
+        "id": "1181283"
+      },
+      {
+        "name": "FLO",
+        "url": "https://genius.com/artists/Flo",
+        "type": "regular",
+        "id": "3105071"
+      },
+      {
+        "name": "Float",
+        "url": "https://genius.com/artists/Float",
+        "type": "regular",
+        "id": "1065196"
+      },
+      {
+        "name": "The Flob",
+        "url": "https://genius.com/artists/The-flob",
+        "type": "regular",
+        "id": "2348552"
+      },
+      {
+        "name": "Flobots",
+        "url": "https://genius.com/artists/Flobots",
+        "type": "regular",
+        "id": "755"
+      },
+      {
+        "name": "​Flockaa",
+        "url": "https://genius.com/artists/Flockaa",
+        "type": "regular",
+        "id": "3401402"
+      },
+      {
+        "name": "A Flock of Seagulls",
+        "url": "https://genius.com/artists/A-flock-of-seagulls",
+        "type": "regular",
+        "id": "34366"
+      },
+      {
+        "name": "Floetry",
+        "url": "https://genius.com/artists/Floetry",
+        "type": "regular",
+        "id": "3824"
+      },
+      {
+        "name": "Flogging Molly",
+        "url": "https://genius.com/artists/Flogging-molly",
+        "type": "regular",
+        "id": "32927"
+      },
+      {
+        "name": "Floki (RUS)",
+        "url": "https://genius.com/artists/Floki-rus",
+        "type": "regular",
+        "id": "3866611"
+      },
+      {
+        "name": "Flo Milli",
+        "url": "https://genius.com/artists/Flo-milli",
+        "type": "regular",
+        "id": "1649468"
+      },
+      {
+        "name": "flora cash",
+        "url": "https://genius.com/artists/Flora-cash",
+        "type": "regular",
+        "id": "654619"
+      },
+      {
+        "name": "Flora Kərimova",
+        "url": "https://genius.com/artists/Flora-krimova",
+        "type": "regular",
+        "id": "1262115"
+      },
+      {
+        "name": "Floral Bugs",
+        "url": "https://genius.com/artists/Floral-bugs",
+        "type": "regular",
+        "id": "1465363"
+      },
+      {
+        "name": "Florante",
+        "url": "https://genius.com/artists/Florante",
+        "type": "regular",
+        "id": "479741"
+      },
+      {
+        "name": "Florence Road",
+        "url": "https://genius.com/artists/Florence-road",
+        "type": "regular",
+        "id": "3568462"
+      },
+      {
+        "name": "Флориан Дебиендра (Florian Desbiendras)",
+        "url": "https://genius.com/artists/Florian-desbiendras",
+        "type": "regular",
+        "id": "4319947"
+      },
+      {
+        "name": "Florian Künstler",
+        "url": "https://genius.com/artists/Florian-kunstler",
+        "type": "regular",
+        "id": "1887144"
+      },
+      {
+        "name": "Florian Silbereisen",
+        "url": "https://genius.com/artists/Florian-silbereisen",
+        "type": "regular",
+        "id": "2269384"
+      },
+      {
+        "name": "Florida Georgia Line",
+        "url": "https://genius.com/artists/Florida-georgia-line",
+        "type": "regular",
+        "id": "38175"
+      },
+      {
+        "name": "Flori Mumajesi",
+        "url": "https://genius.com/artists/Flori-mumajesi",
+        "type": "regular",
+        "id": "156599"
+      },
+      {
+        "name": "Florist",
+        "url": "https://genius.com/artists/Florist",
+        "type": "regular",
+        "id": "640741"
+      },
+      {
+        "name": "Florrie Forde",
+        "url": "https://genius.com/artists/Florrie-forde",
+        "type": "regular",
+        "id": "1143513"
+      },
+      {
+        "name": "Florry",
+        "url": "https://genius.com/artists/Florry",
+        "type": "regular",
+        "id": "1255202"
+      },
+      {
+        "name": "FLOW",
+        "url": "https://genius.com/artists/Flow",
+        "type": "regular",
+        "id": "1228029"
+      },
+      {
+        "name": "Flowdan",
+        "url": "https://genius.com/artists/Flowdan",
+        "type": "regular",
+        "id": "12335"
+      },
+      {
+        "name": "Flower Face",
+        "url": "https://genius.com/artists/Flower-face",
+        "type": "regular",
+        "id": "1038004"
+      },
+      {
+        "name": "​​flowerovlove",
+        "url": "https://genius.com/artists/Flowerovlove",
+        "type": "regular",
+        "id": "3046614"
+      },
+      {
+        "name": "Flow G",
+        "url": "https://genius.com/artists/Flow-g",
+        "type": "regular",
+        "id": "1226549"
+      },
+      {
+        "name": "FloyyMenor",
+        "url": "https://genius.com/artists/Floyymenor",
+        "type": "regular",
+        "id": "3484918"
+      },
+      {
+        "name": "Flume",
+        "url": "https://genius.com/artists/Flume",
+        "type": "regular",
+        "id": "49449"
+      },
+      {
+        "name": "Flëur",
+        "url": "https://genius.com/artists/Fleur",
+        "type": "regular",
+        "id": "1655546"
+      },
+      {
+        "name": "Fluttershy",
+        "url": "https://genius.com/artists/Fluttershy",
+        "type": "regular",
+        "id": "15109"
+      },
+      {
+        "name": "Flux Pavilion",
+        "url": "https://genius.com/artists/Flux-pavilion",
+        "type": "regular",
+        "id": "22503"
+      },
+      {
+        "name": "FLVCKKA",
+        "url": "https://genius.com/artists/Flvckka",
+        "type": "regular",
+        "id": "3394434"
+      },
+      {
+        "name": "FLVME",
+        "url": "https://genius.com/artists/Flvme",
+        "type": "regular",
+        "id": "1084083"
+      },
+      {
+        "name": "Flyana Boss",
+        "url": "https://genius.com/artists/Flyana-boss",
+        "type": "regular",
+        "id": "2793319"
+      },
+      {
+        "name": "Fly Anakin",
+        "url": "https://genius.com/artists/Fly-anakin",
+        "type": "regular",
+        "id": "34167"
+      },
+      {
+        "name": "Fly By Midnight",
+        "url": "https://genius.com/artists/Fly-by-midnight",
+        "type": "regular",
+        "id": "986039"
+      },
+      {
+        "name": "The Flying Burrito Brothers",
+        "url": "https://genius.com/artists/The-flying-burrito-brothers",
+        "type": "regular",
+        "id": "107601"
+      },
+      {
+        "name": "​flyingfish (Shoegaze)",
+        "url": "https://genius.com/artists/Flyingfish-shoegaze",
+        "type": "regular",
+        "id": "3545775"
+      },
+      {
+        "name": "FlyingKitty",
+        "url": "https://genius.com/artists/Flyingkitty",
+        "type": "regular",
+        "id": "1147008"
+      },
+      {
+        "name": "Flying Lotus",
+        "url": "https://genius.com/artists/Flying-lotus",
+        "type": "regular",
+        "id": "22931"
+      },
+      {
+        "name": "Flyleaf",
+        "url": "https://genius.com/artists/Flyleaf",
+        "type": "regular",
+        "id": "13374"
+      },
+      {
+        "name": "FLY LO (GRC)",
+        "url": "https://genius.com/artists/Fly-lo-grc",
+        "type": "regular",
+        "id": "2182613"
+      },
+      {
+        "name": "Fly Project",
+        "url": "https://genius.com/artists/Fly-project",
+        "type": "regular",
+        "id": "343864"
+      },
+      {
+        "name": "Flyte",
+        "url": "https://genius.com/artists/Flyte",
+        "type": "regular",
+        "id": "162096"
+      },
+      {
+        "name": "Flyysoulja",
+        "url": "https://genius.com/artists/Flyysoulja",
+        "type": "regular",
+        "id": "2793832"
+      },
+      {
+        "name": "FMK",
+        "url": "https://genius.com/artists/Fmk",
+        "type": "regular",
+        "id": "88234"
+      },
+      {
+        "name": "Fntwxy",
+        "url": "https://genius.com/artists/Fntwxy",
+        "type": "regular",
+        "id": "3552907"
+      },
+      {
+        "name": "Fntxy",
+        "url": "https://genius.com/artists/Fntxy",
+        "type": "regular",
+        "id": "996801"
+      },
+      {
+        "name": "Foals",
+        "url": "https://genius.com/artists/Foals",
+        "type": "regular",
+        "id": "20414"
+      },
+      {
+        "name": "Fobia Kid",
+        "url": "https://genius.com/artists/Fobia-kid",
+        "type": "regular",
+        "id": "677902"
+      },
+      {
+        "name": "Focalistic",
+        "url": "https://genius.com/artists/Focalistic",
+        "type": "regular",
+        "id": "1030419"
+      },
+      {
+        "name": "Foetus",
+        "url": "https://genius.com/artists/Foetus",
+        "type": "regular",
+        "id": "160444"
+      },
+      {
+        "name": "ФОГЕЛЬ (FOGEL)",
+        "url": "https://genius.com/artists/Fogel",
+        "type": "regular",
+        "id": "1877001"
+      },
+      {
+        "name": "Foghat",
+        "url": "https://genius.com/artists/Foghat",
+        "type": "regular",
+        "id": "162803"
+      },
+      {
+        "name": "Fog Lake",
+        "url": "https://genius.com/artists/Fog-lake",
+        "type": "regular",
+        "id": "187615"
+      },
+      {
+        "name": "Foje",
+        "url": "https://genius.com/artists/Foje",
+        "type": "regular",
+        "id": "353675"
+      },
+      {
+        "name": "FOLA",
+        "url": "https://genius.com/artists/Fola",
+        "type": "regular",
+        "id": "1102148"
+      },
+      {
+        "name": "Folake Olowofoyeku",
+        "url": "https://genius.com/artists/Folake-olowofoyeku",
+        "type": "regular",
+        "id": "4222167"
+      },
+      {
+        "name": "The Fold",
+        "url": "https://genius.com/artists/The-fold",
+        "type": "regular",
+        "id": "45284"
+      },
+      {
+        "name": "Folk Bitch Trio",
+        "url": "https://genius.com/artists/Folk-bitch-trio",
+        "type": "regular",
+        "id": "3559798"
+      },
+      {
+        "name": "Folkeklubben",
+        "url": "https://genius.com/artists/Folkeklubben",
+        "type": "regular",
+        "id": "452739"
+      },
+      {
+        "name": "FOLKPRO",
+        "url": "https://genius.com/artists/Folkpro",
+        "type": "regular",
+        "id": "659255"
+      },
+      {
+        "name": "FONFORINO",
+        "url": "https://genius.com/artists/Fonforino",
+        "type": "regular",
+        "id": "2485763"
+      },
+      {
+        "name": "Fonky Family",
+        "url": "https://genius.com/artists/Fonky-family",
+        "type": "regular",
+        "id": "13333"
+      },
+      {
+        "name": "Fonos",
+        "url": "https://genius.com/artists/Fonos",
+        "type": "regular",
+        "id": "621942"
+      },
+      {
+        "name": "Fonseca",
+        "url": "https://genius.com/artists/Fonseca",
+        "type": "regular",
+        "id": "355412"
+      },
+      {
+        "name": "‌food house",
+        "url": "https://genius.com/artists/Food-house",
+        "type": "regular",
+        "id": "2406102"
+      },
+      {
+        "name": "Foo Fighters",
+        "url": "https://genius.com/artists/Foo-fighters",
+        "type": "regular",
+        "id": "17237"
+      },
+      {
+        "name": "Foogiano",
+        "url": "https://genius.com/artists/Foogiano",
+        "type": "regular",
+        "id": "2147809"
+      },
+      {
+        "name": "Foolio",
+        "url": "https://genius.com/artists/Foolio",
+        "type": "regular",
+        "id": "1002152"
+      },
+      {
+        "name": "Fool's Garden",
+        "url": "https://genius.com/artists/Fools-garden",
+        "type": "regular",
+        "id": "226724"
+      },
+      {
+        "name": "Footprints on the moon",
+        "url": "https://genius.com/artists/Footprints-on-the-moon",
+        "type": "regular",
+        "id": "2713993"
+      },
+      {
+        "name": "FORCEPARKBOIS",
+        "url": "https://genius.com/artists/Forceparkbois",
+        "type": "regular",
+        "id": "2718557"
+      },
+      {
+        "name": "Fordo",
+        "url": "https://genius.com/artists/Fordo",
+        "type": "regular",
+        "id": "3034412"
+      },
+      {
+        "name": "Foreigner",
+        "url": "https://genius.com/artists/Foreigner",
+        "type": "regular",
+        "id": "24055"
+      },
+      {
+        "name": "Forest Blakk",
+        "url": "https://genius.com/artists/Forest-blakk",
+        "type": "regular",
+        "id": "1238161"
+      },
+      {
+        "name": "Forester",
+        "url": "https://genius.com/artists/Forester",
+        "type": "regular",
+        "id": "1767200"
+      },
+      {
+        "name": "for KING & COUNTRY",
+        "url": "https://genius.com/artists/For-king-and-country",
+        "type": "regular",
+        "id": "234257"
+      },
+      {
+        "name": "The Format",
+        "url": "https://genius.com/artists/The-format",
+        "type": "regular",
+        "id": "61116"
+      },
+      {
+        "name": "Forrest Day",
+        "url": "https://genius.com/artists/Forrest-day",
+        "type": "regular",
+        "id": "1055314"
+      },
+      {
+        "name": "For Revenge",
+        "url": "https://genius.com/artists/For-revenge",
+        "type": "regular",
+        "id": "2011067"
+      },
+      {
+        "name": "For Those I Love",
+        "url": "https://genius.com/artists/For-those-i-love",
+        "type": "regular",
+        "id": "2374804"
+      },
+      {
+        "name": "Forth Wanderers",
+        "url": "https://genius.com/artists/Forth-wanderers",
+        "type": "regular",
+        "id": "342889"
+      },
+      {
+        "name": "Fort Minor",
+        "url": "https://genius.com/artists/Fort-minor",
+        "type": "regular",
+        "id": "704"
+      },
+      {
+        "name": "Fortnite",
+        "url": "https://genius.com/artists/Fortnite",
+        "type": "regular",
+        "id": "1487570"
+      },
+      {
+        "name": "For Today",
+        "url": "https://genius.com/artists/For-today",
+        "type": "regular",
+        "id": "34813"
+      },
+      {
+        "name": "FORTS",
+        "url": "https://genius.com/artists/Forts",
+        "type": "regular",
+        "id": "2796904"
+      },
+      {
+        "name": "Forward City",
+        "url": "https://genius.com/artists/Forward-city",
+        "type": "regular",
+        "id": "3255210"
+      },
+      {
+        "name": "Fossils",
+        "url": "https://genius.com/artists/Fossils",
+        "type": "regular",
+        "id": "1202155"
+      },
+      {
+        "name": "Foster",
+        "url": "https://genius.com/artists/Foster",
+        "type": "regular",
+        "id": "27750"
+      },
+      {
+        "name": "Foster & Allen",
+        "url": "https://genius.com/artists/Foster-and-allen",
+        "type": "regular",
+        "id": "349127"
+      },
+      {
+        "name": "Foster the People",
+        "url": "https://genius.com/artists/Foster-the-people",
+        "type": "regular",
+        "id": "703"
+      },
+      {
+        "name": "Fotty Seven",
+        "url": "https://genius.com/artists/Fotty-seven",
+        "type": "regular",
+        "id": "1222706"
+      },
+      {
+        "name": "Fouad Jned - فؤاد جنيد",
+        "url": "https://genius.com/artists/Fouad-jned",
+        "type": "regular",
+        "id": "2350677"
+      },
+      {
+        "name": "Foundation",
+        "url": "https://genius.com/artists/Foundation",
+        "type": "regular",
+        "id": "60972"
+      },
+      {
+        "name": "The Foundations",
+        "url": "https://genius.com/artists/The-foundations",
+        "type": "regular",
+        "id": "213744"
+      },
+      {
+        "name": "Fountains of Wayne",
+        "url": "https://genius.com/artists/Fountains-of-wayne",
+        "type": "regular",
+        "id": "82238"
+      },
+      {
+        "name": "Fourfive",
+        "url": "https://genius.com/artists/Fourfive",
+        "type": "regular",
+        "id": "1803332"
+      },
+      {
+        "name": "The Four Seasons",
+        "url": "https://genius.com/artists/The-four-seasons",
+        "type": "regular",
+        "id": "211671"
+      },
+      {
+        "name": "Four Tet",
+        "url": "https://genius.com/artists/Four-tet",
+        "type": "regular",
+        "id": "126879"
+      },
+      {
+        "name": "Fourth Nattawat",
+        "url": "https://genius.com/artists/Fourth-nattawat",
+        "type": "regular",
+        "id": "3474481"
+      },
+      {
+        "name": "The Four Tops",
+        "url": "https://genius.com/artists/The-four-tops",
+        "type": "regular",
+        "id": "141666"
+      },
+      {
+        "name": "Fourtwnty",
+        "url": "https://genius.com/artists/Fourtwnty",
+        "type": "regular",
+        "id": "1185761"
+      },
+      {
+        "name": "FOURTY",
+        "url": "https://genius.com/artists/Fourty",
+        "type": "regular",
+        "id": "2006117"
+      },
+      {
+        "name": "Four Year Strong",
+        "url": "https://genius.com/artists/Four-year-strong",
+        "type": "regular",
+        "id": "209134"
+      },
+      {
+        "name": "Fousheé",
+        "url": "https://genius.com/artists/Foushee",
+        "type": "regular",
+        "id": "1478923"
+      },
+      {
+        "name": "Fox",
+        "url": "https://genius.com/artists/Fox",
+        "type": "regular",
+        "id": "13438"
+      },
+      {
+        "name": "The Fox and Rice Experience",
+        "url": "https://genius.com/artists/The-fox-and-rice-experience",
+        "type": "regular",
+        "id": "3531202"
+      },
+      {
+        "name": "Foxes",
+        "url": "https://genius.com/artists/Foxes",
+        "type": "regular",
+        "id": "26041"
+      },
+      {
+        "name": "Foxing",
+        "url": "https://genius.com/artists/Foxing",
+        "type": "regular",
+        "id": "100075"
+      },
+      {
+        "name": "Fox Stevenson",
+        "url": "https://genius.com/artists/Fox-stevenson",
+        "type": "regular",
+        "id": "199505"
+      },
+      {
+        "name": "Fox Szn",
+        "url": "https://genius.com/artists/Fox-szn",
+        "type": "regular",
+        "id": "2410907"
+      },
+      {
+        "name": "Foxtails",
+        "url": "https://genius.com/artists/Foxtails",
+        "type": "regular",
+        "id": "2379554"
+      },
+      {
+        "name": "Foxwarren",
+        "url": "https://genius.com/artists/Foxwarren",
+        "type": "regular",
+        "id": "1449358"
+      },
+      {
+        "name": "Foxy Brown",
+        "url": "https://genius.com/artists/Foxy-brown",
+        "type": "regular",
+        "id": "204"
+      },
+      {
+        "name": "Foyone",
+        "url": "https://genius.com/artists/Foyone",
+        "type": "regular",
+        "id": "161343"
+      },
+      {
+        "name": "Foy Vance",
+        "url": "https://genius.com/artists/Foy-vance",
+        "type": "regular",
+        "id": "275120"
+      },
+      {
+        "name": "Frah Quintale",
+        "url": "https://genius.com/artists/Frah-quintale",
+        "type": "regular",
+        "id": "978638"
+      },
+      {
+        "name": "Fra Lippo Lippi",
+        "url": "https://genius.com/artists/Fra-lippo-lippi",
+        "type": "regular",
+        "id": "375924"
+      },
+      {
+        "name": "France Gall",
+        "url": "https://genius.com/artists/France-gall",
+        "type": "regular",
+        "id": "95454"
+      },
+      {
+        "name": "Francesca Battistelli",
+        "url": "https://genius.com/artists/Francesca-battistelli",
+        "type": "regular",
+        "id": "290894"
+      },
+      {
+        "name": "Francesca Michielin",
+        "url": "https://genius.com/artists/Francesca-michielin",
+        "type": "regular",
+        "id": "56002"
+      },
+      {
+        "name": "Francesco De Gregori",
+        "url": "https://genius.com/artists/Francesco-de-gregori",
+        "type": "regular",
+        "id": "344502"
+      },
+      {
+        "name": "Francesco Guccini",
+        "url": "https://genius.com/artists/Francesco-guccini",
+        "type": "regular",
+        "id": "358166"
+      },
+      {
+        "name": "Frances Ruffelle",
+        "url": "https://genius.com/artists/Frances-ruffelle",
+        "type": "regular",
+        "id": "376960"
+      },
+      {
+        "name": "Francis and the Lights",
+        "url": "https://genius.com/artists/Francis-and-the-lights",
+        "type": "regular",
+        "id": "46043"
+      },
+      {
+        "name": "Francis Cabrel",
+        "url": "https://genius.com/artists/Francis-cabrel",
+        "type": "regular",
+        "id": "63068"
+      },
+      {
+        "name": "Francisca Valenzuela",
+        "url": "https://genius.com/artists/Francisca-valenzuela",
+        "type": "regular",
+        "id": "356257"
+      },
+      {
+        "name": "Francisco Santiago",
+        "url": "https://genius.com/artists/Francisco-santiago",
+        "type": "regular",
+        "id": "1774435"
+      },
+      {
+        "name": "Francis Doom",
+        "url": "https://genius.com/artists/Francis-doom",
+        "type": "regular",
+        "id": "3745512"
+      },
+      {
+        "name": "Francis M.",
+        "url": "https://genius.com/artists/Francis-m",
+        "type": "regular",
+        "id": "369722"
+      },
+      {
+        "name": "​francis (POL)",
+        "url": "https://genius.com/artists/Francis-pol",
+        "type": "regular",
+        "id": "2770110"
+      },
+      {
+        "name": "Francis Scott Key",
+        "url": "https://genius.com/artists/Francis-scott-key",
+        "type": "regular",
+        "id": "22258"
+      },
+      {
+        "name": "Francky Vincent",
+        "url": "https://genius.com/artists/Francky-vincent",
+        "type": "regular",
+        "id": "67266"
+      },
+      {
+        "name": "Franco",
+        "url": "https://genius.com/artists/Franco",
+        "type": "regular",
+        "id": "28357"
+      },
+      {
+        "name": "Franco126",
+        "url": "https://genius.com/artists/Franco126",
+        "type": "regular",
+        "id": "607653"
+      },
+      {
+        "name": "Franco Battiato",
+        "url": "https://genius.com/artists/Franco-battiato",
+        "type": "regular",
+        "id": "100951"
+      },
+      {
+        "name": "Franco Califano",
+        "url": "https://genius.com/artists/Franco-califano",
+        "type": "regular",
+        "id": "344030"
+      },
+      {
+        "name": "Franco De Vita",
+        "url": "https://genius.com/artists/Franco-de-vita",
+        "type": "regular",
+        "id": "1037941"
+      },
+      {
+        "name": "Franco \"El Gorila\"",
+        "url": "https://genius.com/artists/Franco-el-gorila",
+        "type": "regular",
+        "id": "349667"
+      },
+      {
+        "name": "Franco Ricciardi",
+        "url": "https://genius.com/artists/Franco-ricciardi",
+        "type": "regular",
+        "id": "226002"
+      },
+      {
+        "name": "Franglish",
+        "url": "https://genius.com/artists/Franglish",
+        "type": "regular",
+        "id": "246691"
+      },
+      {
+        "name": "The Frank and Walters",
+        "url": "https://genius.com/artists/The-frank-and-walters",
+        "type": "regular",
+        "id": "354800"
+      },
+      {
+        "name": "Frank Black",
+        "url": "https://genius.com/artists/Frank-black",
+        "type": "regular",
+        "id": "184148"
+      },
+      {
+        "name": "Frank Edwards",
+        "url": "https://genius.com/artists/Frank-edwards",
+        "type": "regular",
+        "id": "452407"
+      },
+      {
+        "name": "Frank Ely",
+        "url": "https://genius.com/artists/Frank-ely",
+        "type": "regular",
+        "id": "2609364"
+      },
+      {
+        "name": "Frankenstein-A New Musical World Premiere Cast",
+        "url": "https://genius.com/artists/Frankenstein-a-new-musical-world-premiere-cast",
+        "type": "regular",
+        "id": "1922959"
+      },
+      {
+        "name": "Frankie and the Witch Fingers",
+        "url": "https://genius.com/artists/Frankie-and-the-witch-fingers",
+        "type": "regular",
+        "id": "1006658"
+      },
+      {
+        "name": "Frankie Avalon",
+        "url": "https://genius.com/artists/Frankie-avalon",
+        "type": "regular",
+        "id": "330996"
+      },
+      {
+        "name": "Frankie Cosmos",
+        "url": "https://genius.com/artists/Frankie-cosmos",
+        "type": "regular",
+        "id": "327227"
+      },
+      {
+        "name": "Frankie Goes to Hollywood",
+        "url": "https://genius.com/artists/Frankie-goes-to-hollywood",
+        "type": "regular",
+        "id": "39902"
+      },
+      {
+        "name": "Frankie Grande",
+        "url": "https://genius.com/artists/Frankie-grande",
+        "type": "regular",
+        "id": "1136762"
+      },
+      {
+        "name": "Frankie hi-nrg mc",
+        "url": "https://genius.com/artists/Frankie-hi-nrg-mc",
+        "type": "regular",
+        "id": "23734"
+      },
+      {
+        "name": "Frankie J",
+        "url": "https://genius.com/artists/Frankie-j",
+        "type": "regular",
+        "id": "3280"
+      },
+      {
+        "name": "Frankie Jonas",
+        "url": "https://genius.com/artists/Frankie-jonas",
+        "type": "regular",
+        "id": "4279844"
+      },
+      {
+        "name": "Frankie Laine",
+        "url": "https://genius.com/artists/Frankie-laine",
+        "type": "regular",
+        "id": "333887"
+      },
+      {
+        "name": "Frankie Lymon & The Teenagers",
+        "url": "https://genius.com/artists/Frankie-lymon-and-the-teenagers",
+        "type": "regular",
+        "id": "65184"
+      },
+      {
+        "name": "FRANKIEONTHEGUITAR",
+        "url": "https://genius.com/artists/Frankieontheguitar",
+        "type": "regular",
+        "id": "1145088"
+      },
+      {
+        "name": "Frank Iero and the Patience",
+        "url": "https://genius.com/artists/Frank-iero-and-the-patience",
+        "type": "regular",
+        "id": "998910"
+      },
+      {
+        "name": "Frankie Ruiz",
+        "url": "https://genius.com/artists/Frankie-ruiz",
+        "type": "regular",
+        "id": "364246"
+      },
+      {
+        "name": "Frankie Valli",
+        "url": "https://genius.com/artists/Frankie-valli",
+        "type": "regular",
+        "id": "51958"
+      },
+      {
+        "name": "Frank Ifield",
+        "url": "https://genius.com/artists/Frank-ifield",
+        "type": "regular",
+        "id": "357211"
+      },
+      {
+        "name": "Franklin Jonas",
+        "url": "https://genius.com/artists/Franklin-jonas",
+        "type": "regular",
+        "id": "1037085"
+      },
+      {
+        "name": "Frank Reyes",
+        "url": "https://genius.com/artists/Frank-reyes",
+        "type": "regular",
+        "id": "367975"
+      },
+      {
+        "name": "Frank Sark",
+        "url": "https://genius.com/artists/Frank-sark",
+        "type": "regular",
+        "id": "2912002"
+      },
+      {
+        "name": "Frank Sinatra & The Tommy Dorsey Orchestra",
+        "url": "https://genius.com/artists/Frank-sinatra-and-the-tommy-dorsey-orchestra",
+        "type": "regular",
+        "id": "349162"
+      },
+      {
+        "name": "Frank Turner",
+        "url": "https://genius.com/artists/Frank-turner",
+        "type": "regular",
+        "id": "48059"
+      },
+      {
+        "name": "Frank White",
+        "url": "https://genius.com/artists/Frank-white",
+        "type": "regular",
+        "id": "2880983"
+      },
+      {
+        "name": "Frank Wildhorn",
+        "url": "https://genius.com/artists/Frank-wildhorn",
+        "type": "regular",
+        "id": "373797"
+      },
+      {
+        "name": "Frank Wildhorn and Jack Murphy",
+        "url": "https://genius.com/artists/Frank-wildhorn-and-jack-murphy",
+        "type": "regular",
+        "id": "1055924"
+      },
+      {
+        "name": "Frank Yankovic",
+        "url": "https://genius.com/artists/Frank-yankovic",
+        "type": "regular",
+        "id": "377882"
+      },
+      {
+        "name": "Franky Style",
+        "url": "https://genius.com/artists/Franky-style",
+        "type": "regular",
+        "id": "1408643"
+      },
+      {
+        "name": "Frank Zappa",
+        "url": "https://genius.com/artists/Frank-zappa",
+        "type": "regular",
+        "id": "41921"
+      },
+      {
+        "name": "Fran Laoren",
+        "url": "https://genius.com/artists/Fran-laoren",
+        "type": "regular",
+        "id": "1246033"
+      },
+      {
+        "name": "Françoise Hardy",
+        "url": "https://genius.com/artists/Francoise-hardy",
+        "type": "regular",
+        "id": "38037"
+      },
+      {
+        "name": "Frans Bauer",
+        "url": "https://genius.com/artists/Frans-bauer",
+        "type": "regular",
+        "id": "362521"
+      },
+      {
+        "name": "Franz Ferdinand",
+        "url": "https://genius.com/artists/Franz-ferdinand",
+        "type": "regular",
+        "id": "21216"
+      },
+      {
+        "name": "Franz Josef Degenhardt",
+        "url": "https://genius.com/artists/Franz-josef-degenhardt",
+        "type": "regular",
+        "id": "129030"
+      },
+      {
+        "name": "Franz Lehár",
+        "url": "https://genius.com/artists/Franz-lehar",
+        "type": "regular",
+        "id": "1076852"
+      },
+      {
+        "name": "Franz Schubert",
+        "url": "https://genius.com/artists/Franz-schubert",
+        "type": "regular",
+        "id": "193362"
+      },
+      {
+        "name": "Fran Vasilić",
+        "url": "https://genius.com/artists/Fran-vasilic",
+        "type": "regular",
+        "id": "2425031"
+      },
+      {
+        "name": "Franzl Lang",
+        "url": "https://genius.com/artists/Franzl-lang",
+        "type": "regular",
+        "id": "360537"
+      },
+      {
+        "name": "Frappe Ash",
+        "url": "https://genius.com/artists/Frappe-ash",
+        "type": "regular",
+        "id": "1938751"
+      },
+      {
+        "name": "The Fratellis",
+        "url": "https://genius.com/artists/The-fratellis",
+        "type": "regular",
+        "id": "23288"
+      },
+      {
+        "name": "Fırat (TUR)",
+        "url": "https://genius.com/artists/Frat-tur",
+        "type": "regular",
+        "id": "4389219"
+      },
+      {
+        "name": "Frauenarzt",
+        "url": "https://genius.com/artists/Frauenarzt",
+        "type": "regular",
+        "id": "12887"
+      },
+      {
+        "name": "Frawley",
+        "url": "https://genius.com/artists/Frawley",
+        "type": "regular",
+        "id": "1815135"
+      },
+      {
+        "name": "FRAXILLE",
+        "url": "https://genius.com/artists/Fraxille",
+        "type": "regular",
+        "id": "1608675"
+      },
+      {
+        "name": "The Fray",
+        "url": "https://genius.com/artists/The-fray",
+        "type": "regular",
+        "id": "7807"
+      },
+      {
+        "name": "Frayser Click",
+        "url": "https://genius.com/artists/Frayser-click",
+        "type": "regular",
+        "id": "69412"
+      },
+      {
+        "name": "F-Raz",
+        "url": "https://genius.com/artists/F-raz",
+        "type": "regular",
+        "id": "1114281"
+      },
+      {
+        "name": "Frazey Ford",
+        "url": "https://genius.com/artists/Frazey-ford",
+        "type": "regular",
+        "id": "372671"
+      },
+      {
+        "name": "F.R. David",
+        "url": "https://genius.com/artists/Fr-david",
+        "type": "regular",
+        "id": "369365"
+      },
+      {
+        "name": "ФРИК ПАТИ (FREAK PARTY)",
+        "url": "https://genius.com/artists/Freak-party",
+        "type": "regular",
+        "id": "1942552"
+      },
+      {
+        "name": "FREAKYMAFIACULT",
+        "url": "https://genius.com/artists/Freakymafiacult",
+        "type": "regular",
+        "id": "2623"
+      },
+      {
+        "name": "Fred Astaire",
+        "url": "https://genius.com/artists/Fred-astaire",
+        "type": "regular",
+        "id": "219255"
+      },
+      {
+        "name": "Fred Bongusto",
+        "url": "https://genius.com/artists/Fred-bongusto",
+        "type": "regular",
+        "id": "353696"
+      },
+      {
+        "name": "Fred Buscaglione",
+        "url": "https://genius.com/artists/Fred-buscaglione",
+        "type": "regular",
+        "id": "353341"
+      },
+      {
+        "name": "Fredd",
+        "url": "https://genius.com/artists/Fredd",
+        "type": "regular",
+        "id": "2080489"
+      },
+      {
+        "name": "Fred De Palma",
+        "url": "https://genius.com/artists/Fred-de-palma",
+        "type": "regular",
+        "id": "92186"
+      },
+      {
+        "name": "Freddie Aguilar",
+        "url": "https://genius.com/artists/Freddie-aguilar",
+        "type": "regular",
+        "id": "369890"
+      },
+      {
+        "name": "Freddie Dredd",
+        "url": "https://genius.com/artists/Freddie-dredd",
+        "type": "regular",
+        "id": "621633"
+      },
+      {
+        "name": "Freddie Gibbs",
+        "url": "https://genius.com/artists/Freddie-gibbs",
+        "type": "regular",
+        "id": "939"
+      },
+      {
+        "name": "Freddie Jackson",
+        "url": "https://genius.com/artists/Freddie-jackson",
+        "type": "regular",
+        "id": "85131"
+      },
+      {
+        "name": "Freddie King",
+        "url": "https://genius.com/artists/Freddie-king",
+        "type": "regular",
+        "id": "102849"
+      },
+      {
+        "name": "Freddie McGregor",
+        "url": "https://genius.com/artists/Freddie-mcgregor",
+        "type": "regular",
+        "id": "360906"
+      },
+      {
+        "name": "Freddie Mercury",
+        "url": "https://genius.com/artists/Freddie-mercury",
+        "type": "regular",
+        "id": "60493"
+      },
+      {
+        "name": "Freddus I Chłopaki",
+        "url": "https://genius.com/artists/Freddus-i-chopaki",
+        "type": "regular",
+        "id": "4434059"
+      },
+      {
+        "name": "Freddy Fender",
+        "url": "https://genius.com/artists/Freddy-fender",
+        "type": "regular",
+        "id": "362799"
+      },
+      {
+        "name": "Freddy Quinn",
+        "url": "https://genius.com/artists/Freddy-quinn",
+        "type": "regular",
+        "id": "362359"
+      },
+      {
+        "name": "Freddy Rodriguez (Singer)",
+        "url": "https://genius.com/artists/Freddy-rodriguez-singer",
+        "type": "regular",
+        "id": "1410577"
+      },
+      {
+        "name": "Fred Eaglesmith",
+        "url": "https://genius.com/artists/Fred-eaglesmith",
+        "type": "regular",
+        "id": "355198"
+      },
+      {
+        "name": "Frederik",
+        "url": "https://genius.com/artists/Frederik",
+        "type": "regular",
+        "id": "381780"
+      },
+      {
+        "name": "Fred Hammond",
+        "url": "https://genius.com/artists/Fred-hammond",
+        "type": "regular",
+        "id": "214242"
+      },
+      {
+        "name": "Fred Hammond & Radical for Christ",
+        "url": "https://genius.com/artists/Fred-hammond-and-radical-for-christ",
+        "type": "regular",
+        "id": "348593"
+      },
+      {
+        "name": "Fredi",
+        "url": "https://genius.com/artists/Fredi",
+        "type": "regular",
+        "id": "222571"
+      },
+      {
+        "name": "Fredi Walker",
+        "url": "https://genius.com/artists/Fredi-walker",
+        "type": "regular",
+        "id": "982140"
+      },
+      {
+        "name": "Fred Åkerström",
+        "url": "https://genius.com/artists/Fred-akerstrom",
+        "type": "regular",
+        "id": "381359"
+      },
+      {
+        "name": "Fredo",
+        "url": "https://genius.com/artists/Fredo",
+        "type": "regular",
+        "id": "667872"
+      },
+      {
+        "name": "Fredo Bang",
+        "url": "https://genius.com/artists/Fredo-bang",
+        "type": "regular",
+        "id": "1547123"
+      },
+      {
+        "name": "Fredo Santana",
+        "url": "https://genius.com/artists/Fredo-santana",
+        "type": "regular",
+        "id": "20757"
+      },
+      {
+        "name": "Fred Rogers",
+        "url": "https://genius.com/artists/Fred-rogers",
+        "type": "regular",
+        "id": "552692"
+      },
+      {
+        "name": "Fredz",
+        "url": "https://genius.com/artists/Fredz",
+        "type": "regular",
+        "id": "2091802"
+      },
+      {
+        "name": "Fr. Eduardo Hontiveros SJ",
+        "url": "https://genius.com/artists/Fr-eduardo-hontiveros-sj",
+        "type": "regular",
+        "id": "2657991"
+      },
+      {
+        "name": "Free",
+        "url": "https://genius.com/artists/Free",
+        "type": "regular",
+        "id": "42462"
+      },
+      {
+        "name": "FREE.99",
+        "url": "https://genius.com/artists/Free99",
+        "type": "regular",
+        "id": "3238002"
+      },
+      {
+        "name": "Free Chapel Music",
+        "url": "https://genius.com/artists/Free-chapel-music",
+        "type": "regular",
+        "id": "405668"
+      },
+      {
+        "name": "Free Finga",
+        "url": "https://genius.com/artists/Free-finga",
+        "type": "regular",
+        "id": "666219"
+      },
+      {
+        "name": "FREEKLANE",
+        "url": "https://genius.com/artists/Freeklane",
+        "type": "regular",
+        "id": "1055298"
+      },
+      {
+        "name": "Free Nationals",
+        "url": "https://genius.com/artists/Free-nationals",
+        "type": "regular",
+        "id": "1599175"
+      },
+      {
+        "name": "Free Party",
+        "url": "https://genius.com/artists/Free-party",
+        "type": "regular",
+        "id": "1884281"
+      },
+      {
+        "name": "Freestyle",
+        "url": "https://genius.com/artists/Freestyle",
+        "type": "regular",
+        "id": "10324"
+      },
+      {
+        "name": "Freestyle (PHL)",
+        "url": "https://genius.com/artists/Freestyle-phl",
+        "type": "regular",
+        "id": "2079156"
+      },
+      {
+        "name": "Free Throw",
+        "url": "https://genius.com/artists/Free-throw",
+        "type": "regular",
+        "id": "7749"
+      },
+      {
+        "name": "Freeway",
+        "url": "https://genius.com/artists/Freeway",
+        "type": "regular",
+        "id": "250"
+      },
+      {
+        "name": "Freeze Corleone",
+        "url": "https://genius.com/artists/Freeze-corleone",
+        "type": "regular",
+        "id": "63888"
+      },
+      {
+        "name": "Frei.Wild",
+        "url": "https://genius.com/artists/Freiwild",
+        "type": "regular",
+        "id": "356613"
+      },
+      {
+        "name": "French Affair",
+        "url": "https://genius.com/artists/French-affair",
+        "type": "regular",
+        "id": "376072"
+      },
+      {
+        "name": "FRENCHGRL",
+        "url": "https://genius.com/artists/Frenchgrl",
+        "type": "regular",
+        "id": "4339591"
+      },
+      {
+        "name": "French Montana",
+        "url": "https://genius.com/artists/French-montana",
+        "type": "regular",
+        "id": "1583"
+      },
+      {
+        "name": "French The Kid",
+        "url": "https://genius.com/artists/French-the-kid",
+        "type": "regular",
+        "id": "2229892"
+      },
+      {
+        "name": "Frenkie",
+        "url": "https://genius.com/artists/Frenkie",
+        "type": "regular",
+        "id": "22617"
+      },
+      {
+        "name": "Fre_nky",
+        "url": "https://genius.com/artists/Fre-nky",
+        "type": "regular",
+        "id": "3480242"
+      },
+      {
+        "name": "Frenna",
+        "url": "https://genius.com/artists/Frenna",
+        "type": "regular",
+        "id": "254304"
+      },
+      {
+        "name": "FRENSHIP",
+        "url": "https://genius.com/artists/Frenship",
+        "type": "regular",
+        "id": "580568"
+      },
+      {
+        "name": "Frenzal Rhomb",
+        "url": "https://genius.com/artists/Frenzal-rhomb",
+        "type": "regular",
+        "id": "354134"
+      },
+      {
+        "name": "Frenzo Harami",
+        "url": "https://genius.com/artists/Frenzo-harami",
+        "type": "regular",
+        "id": "1861657"
+      },
+      {
+        "name": "FRESCO",
+        "url": "https://genius.com/artists/Fresco",
+        "type": "regular",
+        "id": "1024427"
+      },
+      {
+        "name": "Fresco Trey",
+        "url": "https://genius.com/artists/Fresco-trey",
+        "type": "regular",
+        "id": "1276093"
+      },
+      {
+        "name": "Fresh laDouille",
+        "url": "https://genius.com/artists/Fresh-ladouille",
+        "type": "regular",
+        "id": "2358449"
+      },
+      {
+        "name": "Freshy Kanal",
+        "url": "https://genius.com/artists/Freshy-kanal",
+        "type": "regular",
+        "id": "1298479"
+      },
+      {
+        "name": "Fresku",
+        "url": "https://genius.com/artists/Fresku",
+        "type": "regular",
+        "id": "18184"
+      },
+      {
+        "name": "Freud Marx Engels & Jung",
+        "url": "https://genius.com/artists/Freud-marx-engels-and-jung",
+        "type": "regular",
+        "id": "382194"
+      },
+      {
+        "name": "Freundeskreis",
+        "url": "https://genius.com/artists/Freundeskreis",
+        "type": "regular",
+        "id": "20970"
+      },
+      {
+        "name": "Freya Ridings",
+        "url": "https://genius.com/artists/Freya-ridings",
+        "type": "regular",
+        "id": "1132687"
+      },
+      {
+        "name": "Freya Skye",
+        "url": "https://genius.com/artists/Freya-skye",
+        "type": "regular",
+        "id": "3339038"
+      },
+      {
+        "name": "Frezzyyyy",
+        "url": "https://genius.com/artists/Frezzyyyy",
+        "type": "regular",
+        "id": "4343227"
+      },
+      {
+        "name": "F'Rhyme",
+        "url": "https://genius.com/artists/Frhyme",
+        "type": "regular",
+        "id": "2328262"
+      },
+      {
+        "name": "Frida (IL) - פרידה",
+        "url": "https://genius.com/artists/Frida-il",
+        "type": "regular",
+        "id": "4411925"
+      },
+      {
+        "name": "Friday Pilots Club",
+        "url": "https://genius.com/artists/Friday-pilots-club",
+        "type": "regular",
+        "id": "1408644"
+      },
+      {
+        "name": "Fridayy",
+        "url": "https://genius.com/artists/Fridayy",
+        "type": "regular",
+        "id": "2600051"
+      },
+      {
+        "name": "Fried By Fluoride",
+        "url": "https://genius.com/artists/Fried-by-fluoride",
+        "type": "regular",
+        "id": "2487345"
+      },
+      {
+        "name": "Friedrich Nietzsche",
+        "url": "https://genius.com/artists/Friedrich-nietzsche",
+        "type": "regular",
+        "id": "15692"
+      },
+      {
+        "name": "The Friendly Indians",
+        "url": "https://genius.com/artists/The-friendly-indians",
+        "type": "regular",
+        "id": "174845"
+      },
+      {
+        "name": "Friendship",
+        "url": "https://genius.com/artists/Friendship",
+        "type": "regular",
+        "id": "1249282"
+      },
+      {
+        "name": "Friendship is Witchcraft",
+        "url": "https://genius.com/artists/Friendship-is-witchcraft",
+        "type": "regular",
+        "id": "3344933"
+      },
+      {
+        "name": "The Friends of Distinction",
+        "url": "https://genius.com/artists/The-friends-of-distinction",
+        "type": "regular",
+        "id": "373085"
+      },
+      {
+        "name": "Friends (TV)",
+        "url": "https://genius.com/artists/Friends-tv",
+        "type": "regular",
+        "id": "76256"
+      },
+      {
+        "name": "ФРЕНДЗОНА (FRIENDZONA)",
+        "url": "https://genius.com/artists/Friendzona",
+        "type": "regular",
+        "id": "1464286"
+      },
+      {
+        "name": "Frightened Rabbit",
+        "url": "https://genius.com/artists/Frightened-rabbit",
+        "type": "regular",
+        "id": "41448"
+      },
+      {
+        "name": "The Frights",
+        "url": "https://genius.com/artists/The-frights",
+        "type": "regular",
+        "id": "521019"
+      },
+      {
+        "name": "Frisco",
+        "url": "https://genius.com/artists/Frisco",
+        "type": "regular",
+        "id": "13318"
+      },
+      {
+        "name": "FRISO",
+        "url": "https://genius.com/artists/Friso",
+        "type": "regular",
+        "id": "3091478"
+      },
+      {
+        "name": "Fritz Da Cat",
+        "url": "https://genius.com/artists/Fritz-da-cat",
+        "type": "regular",
+        "id": "59686"
+      },
+      {
+        "name": "Fritu",
+        "url": "https://genius.com/artists/Fritu",
+        "type": "regular",
+        "id": "1837187"
+      },
+      {
+        "name": "Friz (POL)",
+        "url": "https://genius.com/artists/Friz-pol",
+        "type": "regular",
+        "id": "2107970"
+      },
+      {
+        "name": "Frizzy P & Mr Cole",
+        "url": "https://genius.com/artists/Frizzy-p-and-mr-cole",
+        "type": "regular",
+        "id": "1736518"
+      },
+      {
+        "name": "FRÖKEN SNUSK",
+        "url": "https://genius.com/artists/Froken-snusk",
+        "type": "regular",
+        "id": "2820489"
+      },
+      {
+        "name": "Fr. Nemesio Que SJ",
+        "url": "https://genius.com/artists/Fr-nemesio-que-sj",
+        "type": "regular",
+        "id": "3727712"
+      },
+      {
+        "name": "Fr. Nicolas Sengson SVD",
+        "url": "https://genius.com/artists/Fr-nicolas-sengson-svd",
+        "type": "regular",
+        "id": "3555952"
+      },
+      {
+        "name": "Frnkiero andthe cellabration",
+        "url": "https://genius.com/artists/Frnkiero-andthe-cellabration",
+        "type": "regular",
+        "id": "217658"
+      },
+      {
+        "name": "Frode Fjellheim",
+        "url": "https://genius.com/artists/Frode-fjellheim",
+        "type": "regular",
+        "id": "152336"
+      },
+      {
+        "name": "Frog",
+        "url": "https://genius.com/artists/Frog",
+        "type": "regular",
+        "id": "1660597"
+      },
+      {
+        "name": "Froggy Fresh",
+        "url": "https://genius.com/artists/Froggy-fresh",
+        "type": "regular",
+        "id": "34418"
+      },
+      {
+        "name": "Froid",
+        "url": "https://genius.com/artists/Froid",
+        "type": "regular",
+        "id": "546122"
+      },
+      {
+        "name": "From Ashes to New",
+        "url": "https://genius.com/artists/From-ashes-to-new",
+        "type": "regular",
+        "id": "128692"
+      },
+      {
+        "name": "From First to Last",
+        "url": "https://genius.com/artists/From-first-to-last",
+        "type": "regular",
+        "id": "58750"
+      },
+      {
+        "name": "fromis_9",
+        "url": "https://genius.com/artists/Fromis-9",
+        "type": "regular",
+        "id": "1487923"
+      },
+      {
+        "name": "​fromjoy",
+        "url": "https://genius.com/artists/Fromjoy",
+        "type": "regular",
+        "id": "2645412"
+      },
+      {
+        "name": "Front 242",
+        "url": "https://genius.com/artists/Front-242",
+        "type": "regular",
+        "id": "32479"
+      },
+      {
+        "name": "The Front Bottoms",
+        "url": "https://genius.com/artists/The-front-bottoms",
+        "type": "regular",
+        "id": "53139"
+      },
+      {
+        "name": "Front Line Assembly",
+        "url": "https://genius.com/artists/Front-line-assembly",
+        "type": "regular",
+        "id": "354526"
+      },
+      {
+        "name": "Front Porch Step",
+        "url": "https://genius.com/artists/Front-porch-step",
+        "type": "regular",
+        "id": "219551"
+      },
+      {
+        "name": "Frost Children",
+        "url": "https://genius.com/artists/Frost-children",
+        "type": "regular",
+        "id": "2780483"
+      },
+      {
+        "name": "Frosti",
+        "url": "https://genius.com/artists/Frosti",
+        "type": "regular",
+        "id": "1122535"
+      },
+      {
+        "name": "Frosty",
+        "url": "https://genius.com/artists/Frosty",
+        "type": "regular",
+        "id": "1731271"
+      },
+      {
+        "name": "FRosTydaSnowMann",
+        "url": "https://genius.com/artists/Frostydasnowmann",
+        "type": "regular",
+        "id": "1040742"
+      },
+      {
+        "name": "Frou Frou",
+        "url": "https://genius.com/artists/Frou-frou",
+        "type": "regular",
+        "id": "32072"
+      },
+      {
+        "name": "Froukje",
+        "url": "https://genius.com/artists/Froukje",
+        "type": "regular",
+        "id": "2079773"
+      },
+      {
+        "name": "Frozouda",
+        "url": "https://genius.com/artists/Frozouda",
+        "type": "regular",
+        "id": "2607898"
+      },
+      {
+        "name": "фрози (frozy)",
+        "url": "https://genius.com/artists/Frozy",
+        "type": "regular",
+        "id": "1319578"
+      },
+      {
+        "name": "Frsh",
+        "url": "https://genius.com/artists/Frsh",
+        "type": "regular",
+        "id": "1049523"
+      },
+      {
+        "name": "Fruit Bats",
+        "url": "https://genius.com/artists/Fruit-bats",
+        "type": "regular",
+        "id": "353681"
+      },
+      {
+        "name": "FRUITS ZIPPER",
+        "url": "https://genius.com/artists/Fruits-zipper",
+        "type": "regular",
+        "id": "3235601"
+      },
+      {
+        "name": "frytz",
+        "url": "https://genius.com/artists/Frytz",
+        "type": "regular",
+        "id": "3949873"
+      },
+      {
+        "name": "F. Scott Fitzgerald",
+        "url": "https://genius.com/artists/F-scott-fitzgerald",
+        "type": "regular",
+        "id": "23550"
+      },
+      {
+        "name": "FSDaBender",
+        "url": "https://genius.com/artists/Fsdabender",
+        "type": "regular",
+        "id": "3152702"
+      },
+      {
+        "name": "FSK SATELLITE",
+        "url": "https://genius.com/artists/Fsk-satellite",
+        "type": "regular",
+        "id": "1769844"
+      },
+      {
+        "name": "FSTVLST",
+        "url": "https://genius.com/artists/Fstvlst",
+        "type": "regular",
+        "id": "1606946"
+      },
+      {
+        "name": "FTISLAND",
+        "url": "https://genius.com/artists/Ftisland",
+        "type": "regular",
+        "id": "381732"
+      },
+      {
+        "name": "FTL EYES",
+        "url": "https://genius.com/artists/Ftl-eyes",
+        "type": "regular",
+        "id": "2700621"
+      },
+      {
+        "name": "FTO Sett",
+        "url": "https://genius.com/artists/Fto-sett",
+        "type": "regular",
+        "id": "3317278"
+      },
+      {
+        "name": "FUAT",
+        "url": "https://genius.com/artists/Fuat",
+        "type": "regular",
+        "id": "128040"
+      },
+      {
+        "name": "Fubu Banks",
+        "url": "https://genius.com/artists/Fubu-banks",
+        "type": "regular",
+        "id": "2067672"
+      },
+      {
+        "name": "FUCKYOURCLIQUE",
+        "url": "https://genius.com/artists/Fuckyourclique",
+        "type": "regular",
+        "id": "1456915"
+      },
+      {
+        "name": "Fuego",
+        "url": "https://genius.com/artists/Fuego",
+        "type": "regular",
+        "id": "55816"
+      },
+      {
+        "name": "Fuel",
+        "url": "https://genius.com/artists/Fuel",
+        "type": "regular",
+        "id": "79715"
+      },
+      {
+        "name": "Fuentes Prod",
+        "url": "https://genius.com/artists/Fuentes-prod",
+        "type": "regular",
+        "id": "3596836"
+      },
+      {
+        "name": "Fuffifufzich",
+        "url": "https://genius.com/artists/Fuffifufzich",
+        "type": "regular",
+        "id": "2304716"
+      },
+      {
+        "name": "Fugazi",
+        "url": "https://genius.com/artists/Fugazi",
+        "type": "regular",
+        "id": "21126"
+      },
+      {
+        "name": "Fugees",
+        "url": "https://genius.com/artists/Fugees",
+        "type": "regular",
+        "id": "372"
+      },
+      {
+        "name": "The Fugs",
+        "url": "https://genius.com/artists/The-fugs",
+        "type": "regular",
+        "id": "186654"
+      },
+      {
+        "name": "藤井 風 (Fujii Kaze)",
+        "url": "https://genius.com/artists/Fujii-kaze",
+        "type": "regular",
+        "id": "2085837"
+      },
+      {
+        "name": "FUJČINELA BOJS",
+        "url": "https://genius.com/artists/Fujcinela-bojs",
+        "type": "regular",
+        "id": "3759171"
+      },
+      {
+        "name": "Fukaj",
+        "url": "https://genius.com/artists/Fukaj",
+        "type": "regular",
+        "id": "1910279"
+      },
+      {
+        "name": "Fukkit",
+        "url": "https://genius.com/artists/Fukkit",
+        "type": "regular",
+        "id": "958210"
+      },
+      {
+        "name": "Fulci (Death Metal)",
+        "url": "https://genius.com/artists/Fulci-death-metal",
+        "type": "regular",
+        "id": "2626597"
+      },
+      {
+        "name": "Full Company",
+        "url": "https://genius.com/artists/Full-company",
+        "type": "regular",
+        "id": "3702735"
+      },
+      {
+        "name": "Full of Hell",
+        "url": "https://genius.com/artists/Full-of-hell",
+        "type": "regular",
+        "id": "367564"
+      },
+      {
+        "name": "Full Smena",
+        "url": "https://genius.com/artists/Full-smena",
+        "type": "regular",
+        "id": "3934979"
+      },
+      {
+        "name": "FullyChop",
+        "url": "https://genius.com/artists/Fullychop",
+        "type": "regular",
+        "id": "4161920"
+      },
+      {
+        "name": "Fulminacci",
+        "url": "https://genius.com/artists/Fulminacci",
+        "type": "regular",
+        "id": "1690996"
+      },
+      {
+        "name": "Fulton Lee",
+        "url": "https://genius.com/artists/Fulton-lee",
+        "type": "regular",
+        "id": "1393784"
+      },
+      {
+        "name": "Fumez The Engineer",
+        "url": "https://genius.com/artists/Fumez-the-engineer",
+        "type": "regular",
+        "id": "996764"
+      },
+      {
+        "name": "fun.",
+        "url": "https://genius.com/artists/Fun",
+        "type": "regular",
+        "id": "16671"
+      },
+      {
+        "name": "Funda Arar",
+        "url": "https://genius.com/artists/Funda-arar",
+        "type": "regular",
+        "id": "357224"
+      },
+      {
+        "name": "funeral",
+        "url": "https://genius.com/artists/Funeral",
+        "type": "regular",
+        "id": "355289"
+      },
+      {
+        "name": "Funeral for a Friend",
+        "url": "https://genius.com/artists/Funeral-for-a-friend",
+        "type": "regular",
+        "id": "139792"
+      },
+      {
+        "name": "The Funeral Portrait",
+        "url": "https://genius.com/artists/The-funeral-portrait",
+        "type": "regular",
+        "id": "1013209"
+      },
+      {
+        "name": "Funimation",
+        "url": "https://genius.com/artists/Funimation",
+        "type": "regular",
+        "id": "326195"
+      },
+      {
+        "name": "Funkadelic",
+        "url": "https://genius.com/artists/Funkadelic",
+        "type": "regular",
+        "id": "18087"
+      },
+      {
+        "name": "FUNK DEMON",
+        "url": "https://genius.com/artists/Funk-demon",
+        "type": "regular",
+        "id": "4250415"
+      },
+      {
+        "name": "FunkDoobiest",
+        "url": "https://genius.com/artists/Funkdoobiest",
+        "type": "regular",
+        "id": "4873"
+      },
+      {
+        "name": "Funkmaster Flex",
+        "url": "https://genius.com/artists/Funkmaster-flex",
+        "type": "regular",
+        "id": "1912"
+      },
+      {
+        "name": "Funky",
+        "url": "https://genius.com/artists/Funky",
+        "type": "regular",
+        "id": "215947"
+      },
+      {
+        "name": "Funky G",
+        "url": "https://genius.com/artists/Funky-g",
+        "type": "regular",
+        "id": "383152"
+      },
+      {
+        "name": "Fun Lovin' Criminals",
+        "url": "https://genius.com/artists/Fun-lovin-criminals",
+        "type": "regular",
+        "id": "15053"
+      },
+      {
+        "name": "Fun Mode",
+        "url": "https://genius.com/artists/Fun-mode",
+        "type": "regular",
+        "id": "1759998"
+      },
+      {
+        "name": "FunnyMike",
+        "url": "https://genius.com/artists/Funnymike",
+        "type": "regular",
+        "id": "1007681"
+      },
+      {
+        "name": "FUR",
+        "url": "https://genius.com/artists/Fur",
+        "type": "regular",
+        "id": "1413385"
+      },
+      {
+        "name": "Furax Barbarossa",
+        "url": "https://genius.com/artists/Furax-barbarossa",
+        "type": "regular",
+        "id": "17313"
+      },
+      {
+        "name": "Furelise",
+        "url": "https://genius.com/artists/Furelise",
+        "type": "regular",
+        "id": "521677"
+      },
+      {
+        "name": "The Fureys",
+        "url": "https://genius.com/artists/The-fureys",
+        "type": "regular",
+        "id": "364165"
+      },
+      {
+        "name": "Furio Djunta",
+        "url": "https://genius.com/artists/Furio-djunta",
+        "type": "regular",
+        "id": "219728"
+      },
+      {
+        "name": "Fuse ODG",
+        "url": "https://genius.com/artists/Fuse-odg",
+        "type": "regular",
+        "id": "53342"
+      },
+      {
+        "name": "Futurebirds",
+        "url": "https://genius.com/artists/Futurebirds",
+        "type": "regular",
+        "id": "378685"
+      },
+      {
+        "name": "Future Islands",
+        "url": "https://genius.com/artists/Future-islands",
+        "type": "regular",
+        "id": "74723"
+      },
+      {
+        "name": "Future of the Left",
+        "url": "https://genius.com/artists/Future-of-the-left",
+        "type": "regular",
+        "id": "137972"
+      },
+      {
+        "name": "Future Teens",
+        "url": "https://genius.com/artists/Future-teens",
+        "type": "regular",
+        "id": "1440654"
+      },
+      {
+        "name": "Futuristic",
+        "url": "https://genius.com/artists/Futuristic",
+        "type": "regular",
+        "id": "22264"
+      },
+      {
+        "name": "FWC Big Key",
+        "url": "https://genius.com/artists/Fwc-big-key",
+        "type": "regular",
+        "id": "2065884"
+      },
+      {
+        "name": "f(x)",
+        "url": "https://genius.com/artists/Fx",
+        "type": "regular",
+        "id": "213742"
+      },
+      {
+        "name": "FY",
+        "url": "https://genius.com/artists/Fy",
+        "type": "regular",
+        "id": "1407873"
+      },
+      {
+        "name": "fyne",
+        "url": "https://genius.com/artists/Fyne",
+        "type": "regular",
+        "id": "3947381"
+      },
+      {
+        "name": "FYRE 02",
+        "url": "https://genius.com/artists/Fyre-02",
+        "type": "regular",
+        "id": "1071894"
+      }
+    ]
+  }
+}

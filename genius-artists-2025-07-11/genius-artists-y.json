@@ -1,0 +1,4513 @@
+{
+  "letter": "Y",
+  "timestamp": "2025-07-11T13:44:34.083Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Yaelokre",
+        "url": "https://genius.com/artists/Yaelokre",
+        "type": "popular",
+        "id": "3796763"
+      },
+      {
+        "name": "Yanix",
+        "url": "https://genius.com/artists/Yanix",
+        "type": "popular",
+        "id": "215448"
+      },
+      {
+        "name": "Ye",
+        "url": "https://genius.com/artists/Ye",
+        "type": "popular",
+        "id": "4414692"
+      },
+      {
+        "name": "Yeat",
+        "url": "https://genius.com/artists/Yeat",
+        "type": "popular",
+        "id": "1476681"
+      },
+      {
+        "name": "Yeng Constantino",
+        "url": "https://genius.com/artists/Yeng-constantino",
+        "type": "popular",
+        "id": "365953"
+      },
+      {
+        "name": "YG",
+        "url": "https://genius.com/artists/Yg",
+        "type": "popular",
+        "id": "1450"
+      },
+      {
+        "name": "YKNIECE",
+        "url": "https://genius.com/artists/Ykniece",
+        "type": "popular",
+        "id": "4355070"
+      },
+      {
+        "name": "YNW Melly",
+        "url": "https://genius.com/artists/Ynw-melly",
+        "type": "popular",
+        "id": "1137969"
+      },
+      {
+        "name": "YoungBoy Never Broke Again",
+        "url": "https://genius.com/artists/Youngboy-never-broke-again",
+        "type": "popular",
+        "id": "656173"
+      },
+      {
+        "name": "Young Dolph",
+        "url": "https://genius.com/artists/Young-dolph",
+        "type": "popular",
+        "id": "22437"
+      },
+      {
+        "name": "Young Jonn",
+        "url": "https://genius.com/artists/Young-jonn",
+        "type": "popular",
+        "id": "3117684"
+      },
+      {
+        "name": "Young Thug",
+        "url": "https://genius.com/artists/Young-thug",
+        "type": "popular",
+        "id": "20503"
+      },
+      {
+        "name": "Yo Yo Honey Singh",
+        "url": "https://genius.com/artists/Yo-yo-honey-singh",
+        "type": "popular",
+        "id": "80846"
+      },
+      {
+        "name": "Yung Beef",
+        "url": "https://genius.com/artists/Yung-beef",
+        "type": "popular",
+        "id": "213513"
+      },
+      {
+        "name": "YUNGBLUD",
+        "url": "https://genius.com/artists/Yungblud",
+        "type": "popular",
+        "id": "1120585"
+      },
+      {
+        "name": "yung kai",
+        "url": "https://genius.com/artists/Yung-kai",
+        "type": "popular",
+        "id": "3625700"
+      },
+      {
+        "name": "Yung Lean",
+        "url": "https://genius.com/artists/Yung-lean",
+        "type": "popular",
+        "id": "48326"
+      },
+      {
+        "name": "YUNG TRAPPA",
+        "url": "https://genius.com/artists/Yung-trappa",
+        "type": "popular",
+        "id": "663175"
+      },
+      {
+        "name": "Юрий Шатунов (Yurii Shatunov)",
+        "url": "https://genius.com/artists/Yurii-shatunov",
+        "type": "popular",
+        "id": "2000523"
+      },
+      {
+        "name": "Yuval Raphael - יובל רפאל",
+        "url": "https://genius.com/artists/Yuval-raphael",
+        "type": "popular",
+        "id": "4275781"
+      }
+    ],
+    "regular": [
+      {
+        "name": "YÖ",
+        "url": "https://genius.com/artists/Yo",
+        "type": "regular",
+        "id": "8460"
+      },
+      {
+        "name": "Y2K",
+        "url": "https://genius.com/artists/Y2k",
+        "type": "regular",
+        "id": "278305"
+      },
+      {
+        "name": "Y2K SPORTS",
+        "url": "https://genius.com/artists/Y2k-sports",
+        "type": "regular",
+        "id": "4041094"
+      },
+      {
+        "name": "Y4ska",
+        "url": "https://genius.com/artists/Y4ska",
+        "type": "regular",
+        "id": "3798716"
+      },
+      {
+        "name": "YA3",
+        "url": "https://genius.com/artists/Ya3",
+        "type": "regular",
+        "id": "2465852"
+      },
+      {
+        "name": "Yaşar",
+        "url": "https://genius.com/artists/Yasar",
+        "type": "regular",
+        "id": "479756"
+      },
+      {
+        "name": "Yaşar Kurt",
+        "url": "https://genius.com/artists/Yasar-kurt",
+        "type": "regular",
+        "id": "480044"
+      },
+      {
+        "name": "Yabadum",
+        "url": "https://genius.com/artists/Yabadum",
+        "type": "regular",
+        "id": "1023768"
+      },
+      {
+        "name": "Yabesh Thapa",
+        "url": "https://genius.com/artists/Yabesh-thapa",
+        "type": "regular",
+        "id": "2068381"
+      },
+      {
+        "name": "Ya Boy",
+        "url": "https://genius.com/artists/Ya-boy",
+        "type": "regular",
+        "id": "1870"
+      },
+      {
+        "name": "Yabujin",
+        "url": "https://genius.com/artists/Yabujin",
+        "type": "regular",
+        "id": "2171485"
+      },
+      {
+        "name": "YACHT",
+        "url": "https://genius.com/artists/Yacht",
+        "type": "regular",
+        "id": "68442"
+      },
+      {
+        "name": "Yadah",
+        "url": "https://genius.com/artists/Yadah",
+        "type": "regular",
+        "id": "1898930"
+      },
+      {
+        "name": "YADA Worship",
+        "url": "https://genius.com/artists/Yada-worship",
+        "type": "regular",
+        "id": "2958885"
+      },
+      {
+        "name": "Яд Добра (Yad Dobra)",
+        "url": "https://genius.com/artists/Yad-dobra",
+        "type": "regular",
+        "id": "2557277"
+      },
+      {
+        "name": "Yade Lauren",
+        "url": "https://genius.com/artists/Yade-lauren",
+        "type": "regular",
+        "id": "978984"
+      },
+      {
+        "name": "Ядовитая Тима (Yadovitaya Tima)",
+        "url": "https://genius.com/artists/Yadovitaya-tima",
+        "type": "regular",
+        "id": "4448256"
+      },
+      {
+        "name": "Yaeji",
+        "url": "https://genius.com/artists/Yaeji",
+        "type": "regular",
+        "id": "1230717"
+      },
+      {
+        "name": "Yael Naim",
+        "url": "https://genius.com/artists/Yael-naim",
+        "type": "regular",
+        "id": "1404"
+      },
+      {
+        "name": "YAENNIVER",
+        "url": "https://genius.com/artists/Yaenniver",
+        "type": "regular",
+        "id": "2845232"
+      },
+      {
+        "name": "​yaeow",
+        "url": "https://genius.com/artists/Yaeow",
+        "type": "regular",
+        "id": "2069383"
+      },
+      {
+        "name": "Yaga & Mackie",
+        "url": "https://genius.com/artists/Yaga-and-mackie",
+        "type": "regular",
+        "id": "359974"
+      },
+      {
+        "name": "The Yagas",
+        "url": "https://genius.com/artists/The-yagas",
+        "type": "regular",
+        "id": "4174673"
+      },
+      {
+        "name": "Yagi B",
+        "url": "https://genius.com/artists/Yagi-b",
+        "type": "regular",
+        "id": "2883195"
+      },
+      {
+        "name": "Ягода (Yagoda) (RUS)",
+        "url": "https://genius.com/artists/Yagoda-rus",
+        "type": "regular",
+        "id": "3869161"
+      },
+      {
+        "name": "Yago Oproprio",
+        "url": "https://genius.com/artists/Yago-oproprio",
+        "type": "regular",
+        "id": "2196382"
+      },
+      {
+        "name": "Yahaira Plasencia",
+        "url": "https://genius.com/artists/Yahaira-plasencia",
+        "type": "regular",
+        "id": "1486378"
+      },
+      {
+        "name": "Yahir Saldivar",
+        "url": "https://genius.com/artists/Yahir-saldivar",
+        "type": "regular",
+        "id": "3777799"
+      },
+      {
+        "name": "Yahritza Y Su Esencia",
+        "url": "https://genius.com/artists/Yahritza-y-su-esencia",
+        "type": "regular",
+        "id": "3107864"
+      },
+      {
+        "name": "Yahya (Artist)",
+        "url": "https://genius.com/artists/Yahya-artist",
+        "type": "regular",
+        "id": "2763833"
+      },
+      {
+        "name": "yaicafonk",
+        "url": "https://genius.com/artists/Yaicafonk",
+        "type": "regular",
+        "id": "4321289"
+      },
+      {
+        "name": "Yailin la Mas Viral",
+        "url": "https://genius.com/artists/Yailin-la-mas-viral",
+        "type": "regular",
+        "id": "2433751"
+      },
+      {
+        "name": "Yaima",
+        "url": "https://genius.com/artists/Yaima",
+        "type": "regular",
+        "id": "2087606"
+      },
+      {
+        "name": "Yaisel LM",
+        "url": "https://genius.com/artists/Yaisel-lm",
+        "type": "regular",
+        "id": "3031367"
+      },
+      {
+        "name": "YAKARY",
+        "url": "https://genius.com/artists/Yakary",
+        "type": "regular",
+        "id": "3301395"
+      },
+      {
+        "name": "Yak Gotti",
+        "url": "https://genius.com/artists/Yak-gotti",
+        "type": "regular",
+        "id": "350112"
+      },
+      {
+        "name": "Yakki",
+        "url": "https://genius.com/artists/Yakki",
+        "type": "regular",
+        "id": "1770793"
+      },
+      {
+        "name": "ЯКОРЪ (YAKOR)",
+        "url": "https://genius.com/artists/Yakor",
+        "type": "regular",
+        "id": "3791220"
+      },
+      {
+        "name": "YAKTAK",
+        "url": "https://genius.com/artists/Yaktak",
+        "type": "regular",
+        "id": "3373608"
+      },
+      {
+        "name": "Yak Yola",
+        "url": "https://genius.com/artists/Yak-yola",
+        "type": "regular",
+        "id": "2112913"
+      },
+      {
+        "name": "Yaşlı Amca",
+        "url": "https://genius.com/artists/Yasl-amca",
+        "type": "regular",
+        "id": "1538550"
+      },
+      {
+        "name": "Ya Levis",
+        "url": "https://genius.com/artists/Ya-levis",
+        "type": "regular",
+        "id": "1532912"
+      },
+      {
+        "name": "YALL",
+        "url": "https://genius.com/artists/Yall",
+        "type": "regular",
+        "id": "616078"
+      },
+      {
+        "name": "Ялла (Yalla) (Band)",
+        "url": "https://genius.com/artists/Yalla-band",
+        "type": "regular",
+        "id": "1572057"
+      },
+      {
+        "name": "Yallfavgirlky",
+        "url": "https://genius.com/artists/Yallfavgirlky",
+        "type": "regular",
+        "id": "4160843"
+      },
+      {
+        "name": "Yallunder",
+        "url": "https://genius.com/artists/Yallunder",
+        "type": "regular",
+        "id": "1811092"
+      },
+      {
+        "name": "Yalın",
+        "url": "https://genius.com/artists/Yaln",
+        "type": "regular",
+        "id": "479545"
+      },
+      {
+        "name": "yama",
+        "url": "https://genius.com/artists/Yama",
+        "type": "regular",
+        "id": "1110136"
+      },
+      {
+        "name": "Yama Buddha",
+        "url": "https://genius.com/artists/Yama-buddha",
+        "type": "regular",
+        "id": "31043"
+      },
+      {
+        "name": "YAMAKASI",
+        "url": "https://genius.com/artists/Yamakasi",
+        "type": "regular",
+        "id": "3865376"
+      },
+      {
+        "name": "Yama Make Them Bounce",
+        "url": "https://genius.com/artists/Yama-make-them-bounce",
+        "type": "regular",
+        "id": "2751045"
+      },
+      {
+        "name": "ЯМАУГЛИ (YAMAUGLI)",
+        "url": "https://genius.com/artists/Yamaugli",
+        "type": "regular",
+        "id": "2108853"
+      },
+      {
+        "name": "Yameii Online",
+        "url": "https://genius.com/artists/Yameii-online",
+        "type": "regular",
+        "id": "1937578"
+      },
+      {
+        "name": "Yamê (FRA)",
+        "url": "https://genius.com/artists/Yame-fra",
+        "type": "regular",
+        "id": "637330"
+      },
+      {
+        "name": "Yami (DEU)",
+        "url": "https://genius.com/artists/Yami-deu",
+        "type": "regular",
+        "id": "3889236"
+      },
+      {
+        "name": "Yamine",
+        "url": "https://genius.com/artists/Yamine",
+        "type": "regular",
+        "id": "1045132"
+      },
+      {
+        "name": "やみの おにいさん (yamino oneesan)",
+        "url": "https://genius.com/artists/Yamino-oneesan",
+        "type": "regular",
+        "id": "4301562"
+      },
+      {
+        "name": "Yami Safdie",
+        "url": "https://genius.com/artists/Yami-safdie",
+        "type": "regular",
+        "id": "2698251"
+      },
+      {
+        "name": "Yammi",
+        "url": "https://genius.com/artists/Yammi",
+        "type": "regular",
+        "id": "3413857"
+      },
+      {
+        "name": "Yampi",
+        "url": "https://genius.com/artists/Yampi",
+        "type": "regular",
+        "id": "666820"
+      },
+      {
+        "name": "Ямыч (Yamych)",
+        "url": "https://genius.com/artists/Yamych",
+        "type": "regular",
+        "id": "1919013"
+      },
+      {
+        "name": "Yana (USA)",
+        "url": "https://genius.com/artists/Yana-usa",
+        "type": "regular",
+        "id": "3091427"
+      },
+      {
+        "name": "Yan Block",
+        "url": "https://genius.com/artists/Yan-block",
+        "type": "regular",
+        "id": "2034296"
+      },
+      {
+        "name": "Yanchan Produced",
+        "url": "https://genius.com/artists/Yanchan-produced",
+        "type": "regular",
+        "id": "643735"
+      },
+      {
+        "name": "Yandel",
+        "url": "https://genius.com/artists/Yandel",
+        "type": "regular",
+        "id": "32132"
+      },
+      {
+        "name": "yandere",
+        "url": "https://genius.com/artists/Yandere",
+        "type": "regular",
+        "id": "1552469"
+      },
+      {
+        "name": "Y&R Mookey",
+        "url": "https://genius.com/artists/Y-r-mookey",
+        "type": "regular",
+        "id": "1913787"
+      },
+      {
+        "name": "Y&T",
+        "url": "https://genius.com/artists/Y-t",
+        "type": "regular",
+        "id": "18123"
+      },
+      {
+        "name": "Yanek (GRC)",
+        "url": "https://genius.com/artists/Yanek-grc",
+        "type": "regular",
+        "id": "3614260"
+      },
+      {
+        "name": "Yanga Chief",
+        "url": "https://genius.com/artists/Yanga-chief",
+        "type": "regular",
+        "id": "998010"
+      },
+      {
+        "name": "杨和苏 (Yang Hesu)",
+        "url": "https://genius.com/artists/Yang-hesu",
+        "type": "regular",
+        "id": "2833695"
+      },
+      {
+        "name": "YANGHONGWON (양홍원)",
+        "url": "https://genius.com/artists/Yanghongwon",
+        "type": "regular",
+        "id": "1368488"
+      },
+      {
+        "name": "Yang Hyun Suk (양현석)",
+        "url": "https://genius.com/artists/Yang-hyun-suk",
+        "type": "regular",
+        "id": "552767"
+      },
+      {
+        "name": "杨胖雨 (Yang Pangyu)",
+        "url": "https://genius.com/artists/Yang-pangyu",
+        "type": "regular",
+        "id": "4356939"
+      },
+      {
+        "name": "Yang Souljja",
+        "url": "https://genius.com/artists/Yang-souljja",
+        "type": "regular",
+        "id": "2829320"
+      },
+      {
+        "name": "YA NINA",
+        "url": "https://genius.com/artists/Ya-nina",
+        "type": "regular",
+        "id": "3532451"
+      },
+      {
+        "name": "Янка Дягилева (Yanka Diaghileva)",
+        "url": "https://genius.com/artists/Yanka-diaghileva",
+        "type": "regular",
+        "id": "1433479"
+      },
+      {
+        "name": "Yanko",
+        "url": "https://genius.com/artists/Yanko",
+        "type": "regular",
+        "id": "1642579"
+      },
+      {
+        "name": "YannC El Armónico",
+        "url": "https://genius.com/artists/Yannc-el-armonico",
+        "type": "regular",
+        "id": "653994"
+      },
+      {
+        "name": "Yanni",
+        "url": "https://genius.com/artists/Yanni",
+        "type": "regular",
+        "id": "356147"
+      },
+      {
+        "name": "Yannick Noah",
+        "url": "https://genius.com/artists/Yannick-noah",
+        "type": "regular",
+        "id": "147126"
+      },
+      {
+        "name": "Yanns",
+        "url": "https://genius.com/artists/Yanns",
+        "type": "regular",
+        "id": "2531879"
+      },
+      {
+        "name": "Yann Tiersen",
+        "url": "https://genius.com/artists/Yann-tiersen",
+        "type": "regular",
+        "id": "353282"
+      },
+      {
+        "name": "Yano (PHL)",
+        "url": "https://genius.com/artists/Yano-phl",
+        "type": "regular",
+        "id": "357334"
+      },
+      {
+        "name": "Yanou",
+        "url": "https://genius.com/artists/Yanou",
+        "type": "regular",
+        "id": "384197"
+      },
+      {
+        "name": "Январский Блюз (Yanvarskij Blyuz)",
+        "url": "https://genius.com/artists/Yanvarskij-blyuz",
+        "type": "regular",
+        "id": "3884445"
+      },
+      {
+        "name": "Yap10",
+        "url": "https://genius.com/artists/Yap10",
+        "type": "regular",
+        "id": "648525"
+      },
+      {
+        "name": "Yapi",
+        "url": "https://genius.com/artists/Yapi",
+        "type": "regular",
+        "id": "3349449"
+      },
+      {
+        "name": "Yaprak Asimov",
+        "url": "https://genius.com/artists/Yaprak-asimov",
+        "type": "regular",
+        "id": "608100"
+      },
+      {
+        "name": "Yara - يارا",
+        "url": "https://genius.com/artists/Yara",
+        "type": "regular",
+        "id": "480801"
+      },
+      {
+        "name": "YARA (PHL)",
+        "url": "https://genius.com/artists/Yara-phl",
+        "type": "regular",
+        "id": "3281483"
+      },
+      {
+        "name": "Yarbrough & Peoples",
+        "url": "https://genius.com/artists/Yarbrough-and-peoples",
+        "type": "regular",
+        "id": "389755"
+      },
+      {
+        "name": "ЯРЧЕ СОЛНЦА (YARCHE SOLNCA)",
+        "url": "https://genius.com/artists/Yarche-solnca",
+        "type": "regular",
+        "id": "3070758"
+      },
+      {
+        "name": "Yard Act",
+        "url": "https://genius.com/artists/Yard-act",
+        "type": "regular",
+        "id": "2499790"
+      },
+      {
+        "name": "The Yardbirds",
+        "url": "https://genius.com/artists/The-yardbirds",
+        "type": "regular",
+        "id": "134224"
+      },
+      {
+        "name": "Yarden",
+        "url": "https://genius.com/artists/Yarden",
+        "type": "regular",
+        "id": "2076582"
+      },
+      {
+        "name": "Yarge",
+        "url": "https://genius.com/artists/Yarge",
+        "type": "regular",
+        "id": "3493613"
+      },
+      {
+        "name": "ヤリチン☆ビッチ部 (Yarichin Bitch Club)",
+        "url": "https://genius.com/artists/Yarichin-bitch-club",
+        "type": "regular",
+        "id": "2440171"
+      },
+      {
+        "name": "Ярмак (YARMAK)",
+        "url": "https://genius.com/artists/Yarmak",
+        "type": "regular",
+        "id": "1134370"
+      },
+      {
+        "name": "Yaro",
+        "url": "https://genius.com/artists/Yaro",
+        "type": "regular",
+        "id": "141729"
+      },
+      {
+        "name": "Ярослав Евдокимов (Yaroslav Evdokimov)",
+        "url": "https://genius.com/artists/Yaroslav-evdokimov",
+        "type": "regular",
+        "id": "1544484"
+      },
+      {
+        "name": "Yasemin Mori",
+        "url": "https://genius.com/artists/Yasemin-mori",
+        "type": "regular",
+        "id": "479707"
+      },
+      {
+        "name": "YAØ (SGP)",
+        "url": "https://genius.com/artists/Ya-sgp",
+        "type": "regular",
+        "id": "1526794"
+      },
+      {
+        "name": "Yasha",
+        "url": "https://genius.com/artists/Yasha",
+        "type": "regular",
+        "id": "12501"
+      },
+      {
+        "name": "Yashika Sikka",
+        "url": "https://genius.com/artists/Yashika-sikka",
+        "type": "regular",
+        "id": "3804508"
+      },
+      {
+        "name": "Yashraj",
+        "url": "https://genius.com/artists/Yashraj",
+        "type": "regular",
+        "id": "2199548"
+      },
+      {
+        "name": "Yasiin Bey",
+        "url": "https://genius.com/artists/Yasiin-bey",
+        "type": "regular",
+        "id": "156"
+      },
+      {
+        "name": "Yasin",
+        "url": "https://genius.com/artists/Yasin",
+        "type": "regular",
+        "id": "1436896"
+      },
+      {
+        "name": "Yas (IRN)",
+        "url": "https://genius.com/artists/Yas-irn",
+        "type": "regular",
+        "id": "78825"
+      },
+      {
+        "name": "YASMI",
+        "url": "https://genius.com/artists/Yasmi",
+        "type": "regular",
+        "id": "2592269"
+      },
+      {
+        "name": "Yasmine Hamdan",
+        "url": "https://genius.com/artists/Yasmine-hamdan",
+        "type": "regular",
+        "id": "1147176"
+      },
+      {
+        "name": "Yasmin Levy",
+        "url": "https://genius.com/artists/Yasmin-levy",
+        "type": "regular",
+        "id": "367693"
+      },
+      {
+        "name": "Yasser Desai",
+        "url": "https://genius.com/artists/Yasser-desai",
+        "type": "regular",
+        "id": "1192633"
+      },
+      {
+        "name": "Yassin",
+        "url": "https://genius.com/artists/Yassin",
+        "type": "regular",
+        "id": "52894"
+      },
+      {
+        "name": "YassineBeats",
+        "url": "https://genius.com/artists/Yassinebeats",
+        "type": "regular",
+        "id": "1113304"
+      },
+      {
+        "name": "Yassir",
+        "url": "https://genius.com/artists/Yassir",
+        "type": "regular",
+        "id": "568238"
+      },
+      {
+        "name": "​yasssenev",
+        "url": "https://genius.com/artists/Yasssenev",
+        "type": "regular",
+        "id": "3469679"
+      },
+      {
+        "name": "高梨康治 (Yasuharu Takanashi)",
+        "url": "https://genius.com/artists/Yasuharu-takanashi",
+        "type": "regular",
+        "id": "1617637"
+      },
+      {
+        "name": "光田康典 (Yasunori Mitsuda)",
+        "url": "https://genius.com/artists/Yasunori-mitsuda",
+        "type": "regular",
+        "id": "678200"
+      },
+      {
+        "name": "Яся Чехомова (Yasya Chekhomova)",
+        "url": "https://genius.com/artists/Yasya-chekhomova",
+        "type": "regular",
+        "id": "4389713"
+      },
+      {
+        "name": "‎yatashigang",
+        "url": "https://genius.com/artists/Yatashigang",
+        "type": "regular",
+        "id": "3260214"
+      },
+      {
+        "name": "Yatta",
+        "url": "https://genius.com/artists/Yatta",
+        "type": "regular",
+        "id": "61314"
+      },
+      {
+        "name": "Yatta Bandz",
+        "url": "https://genius.com/artists/Yatta-bandz",
+        "type": "regular",
+        "id": "2618714"
+      },
+      {
+        "name": "YA (UK)",
+        "url": "https://genius.com/artists/Ya-uk",
+        "type": "regular",
+        "id": "3409847"
+      },
+      {
+        "name": "YAUX",
+        "url": "https://genius.com/artists/Yaux",
+        "type": "regular",
+        "id": "2094817"
+      },
+      {
+        "name": "Yaviah",
+        "url": "https://genius.com/artists/Yaviah",
+        "type": "regular",
+        "id": "387865"
+      },
+      {
+        "name": "Yavid",
+        "url": "https://genius.com/artists/Yavid",
+        "type": "regular",
+        "id": "1407173"
+      },
+      {
+        "name": "Yavi DG",
+        "url": "https://genius.com/artists/Yavi-dg",
+        "type": "regular",
+        "id": "3635087"
+      },
+      {
+        "name": "Yavuz Bingöl",
+        "url": "https://genius.com/artists/Yavuz-bingol",
+        "type": "regular",
+        "id": "481308"
+      },
+      {
+        "name": "Yavuz Çetin",
+        "url": "https://genius.com/artists/Yavuz-cetin",
+        "type": "regular",
+        "id": "479266"
+      },
+      {
+        "name": "Yawar Abdal",
+        "url": "https://genius.com/artists/Yawar-abdal",
+        "type": "regular",
+        "id": "2966667"
+      },
+      {
+        "name": "Yaya Bey",
+        "url": "https://genius.com/artists/Yaya-bey",
+        "type": "regular",
+        "id": "2624861"
+      },
+      {
+        "name": "Yaya D",
+        "url": "https://genius.com/artists/Yaya-d",
+        "type": "regular",
+        "id": "1302428"
+      },
+      {
+        "name": "YAYA (DEU)",
+        "url": "https://genius.com/artists/Yaya-deu",
+        "type": "regular",
+        "id": "3455304"
+      },
+      {
+        "name": "YAYAYI",
+        "url": "https://genius.com/artists/Yayayi",
+        "type": "regular",
+        "id": "1488180"
+      },
+      {
+        "name": "Yayoi",
+        "url": "https://genius.com/artists/Yayoi",
+        "type": "regular",
+        "id": "1748449"
+      },
+      {
+        "name": "Yayo y el Cuarteto Obrero",
+        "url": "https://genius.com/artists/Yayo-y-el-cuarteto-obrero",
+        "type": "regular",
+        "id": "3238380"
+      },
+      {
+        "name": "​yayu",
+        "url": "https://genius.com/artists/Yayu",
+        "type": "regular",
+        "id": "2772566"
+      },
+      {
+        "name": "Yazan Haifawi",
+        "url": "https://genius.com/artists/Yazan-haifawi",
+        "type": "regular",
+        "id": "3483679"
+      },
+      {
+        "name": "Yazida",
+        "url": "https://genius.com/artists/Yazida",
+        "type": "regular",
+        "id": "3091234"
+      },
+      {
+        "name": "Yazmin Lacey",
+        "url": "https://genius.com/artists/Yazmin-lacey",
+        "type": "regular",
+        "id": "1507111"
+      },
+      {
+        "name": "Yazoo",
+        "url": "https://genius.com/artists/Yazoo",
+        "type": "regular",
+        "id": "361015"
+      },
+      {
+        "name": "YB",
+        "url": "https://genius.com/artists/Yb",
+        "type": "regular",
+        "id": "3657276"
+      },
+      {
+        "name": "Ybcdul",
+        "url": "https://genius.com/artists/Ybcdul",
+        "type": "regular",
+        "id": "3098272"
+      },
+      {
+        "name": "ybezzyxd",
+        "url": "https://genius.com/artists/Ybezzyxd",
+        "type": "regular",
+        "id": "4339998"
+      },
+      {
+        "name": "YB (윤도현 밴드) (KOR)",
+        "url": "https://genius.com/artists/Yb-kor",
+        "type": "regular",
+        "id": "2691760"
+      },
+      {
+        "name": "YBN Lil Bro",
+        "url": "https://genius.com/artists/Ybn-lil-bro",
+        "type": "regular",
+        "id": "2722377"
+      },
+      {
+        "name": "YBN Nahmir",
+        "url": "https://genius.com/artists/Ybn-nahmir",
+        "type": "regular",
+        "id": "1219483"
+      },
+      {
+        "name": "YBS Skola",
+        "url": "https://genius.com/artists/Ybs-skola",
+        "type": "regular",
+        "id": "664163"
+      },
+      {
+        "name": "Yb Wasg'ood",
+        "url": "https://genius.com/artists/Yb-wasgood",
+        "type": "regular",
+        "id": "2601724"
+      },
+      {
+        "name": "YC Banks",
+        "url": "https://genius.com/artists/Yc-banks",
+        "type": "regular",
+        "id": "2604603"
+      },
+      {
+        "name": "Yc (DEU)",
+        "url": "https://genius.com/artists/Yc-deu",
+        "type": "regular",
+        "id": "3829720"
+      },
+      {
+        "name": "Ycee",
+        "url": "https://genius.com/artists/Ycee",
+        "type": "regular",
+        "id": "55982"
+      },
+      {
+        "name": "YCK",
+        "url": "https://genius.com/artists/Yck",
+        "type": "regular",
+        "id": "2442537"
+      },
+      {
+        "name": "YC LilKenta",
+        "url": "https://genius.com/artists/Yc-lilkenta",
+        "type": "regular",
+        "id": "3769890"
+      },
+      {
+        "name": "YC (Yung Chris)",
+        "url": "https://genius.com/artists/Yc-yung-chris",
+        "type": "regular",
+        "id": "11240"
+      },
+      {
+        "name": "YD Muni",
+        "url": "https://genius.com/artists/Yd-muni",
+        "type": "regular",
+        "id": "3177294"
+      },
+      {
+        "name": "YDRA",
+        "url": "https://genius.com/artists/Ydra",
+        "type": "regular",
+        "id": "1050573"
+      },
+      {
+        "name": "Yeabsra",
+        "url": "https://genius.com/artists/Yeabsra",
+        "type": "regular",
+        "id": "3108327"
+      },
+      {
+        "name": "Yeah Proof",
+        "url": "https://genius.com/artists/Yeah-proof",
+        "type": "regular",
+        "id": "2517967"
+      },
+      {
+        "name": "Yeah Yeah Yeahs",
+        "url": "https://genius.com/artists/Yeah-yeah-yeahs",
+        "type": "regular",
+        "id": "17657"
+      },
+      {
+        "name": "Ye Ali",
+        "url": "https://genius.com/artists/Ye-ali",
+        "type": "regular",
+        "id": "70422"
+      },
+      {
+        "name": "Year down",
+        "url": "https://genius.com/artists/Year-down",
+        "type": "regular",
+        "id": "3903395"
+      },
+      {
+        "name": "Год Змеи (Year of Snake)",
+        "url": "https://genius.com/artists/Year-of-snake",
+        "type": "regular",
+        "id": "2086417"
+      },
+      {
+        "name": "Years & Years",
+        "url": "https://genius.com/artists/Years-and-years",
+        "type": "regular",
+        "id": "222287"
+      },
+      {
+        "name": "Yeasayer",
+        "url": "https://genius.com/artists/Yeasayer",
+        "type": "regular",
+        "id": "1171"
+      },
+      {
+        "name": "Yeastie Girlz",
+        "url": "https://genius.com/artists/Yeastie-girlz",
+        "type": "regular",
+        "id": "374964"
+      },
+      {
+        "name": "Ye Banished Privateers",
+        "url": "https://genius.com/artists/Ye-banished-privateers",
+        "type": "regular",
+        "id": "484502"
+      },
+      {
+        "name": "Yebba",
+        "url": "https://genius.com/artists/Yebba",
+        "type": "regular",
+        "id": "1231887"
+      },
+      {
+        "name": "Yebit (예빛)",
+        "url": "https://genius.com/artists/Yebit",
+        "type": "regular",
+        "id": "2822921"
+      },
+      {
+        "name": "Yecko",
+        "url": "https://genius.com/artists/Yecko",
+        "type": "regular",
+        "id": "1118969"
+      },
+      {
+        "name": "Yedinci Ev",
+        "url": "https://genius.com/artists/Yedinci-ev",
+        "type": "regular",
+        "id": "1891200"
+      },
+      {
+        "name": "​​yedira",
+        "url": "https://genius.com/artists/Yedira",
+        "type": "regular",
+        "id": "3553294"
+      },
+      {
+        "name": "YEИDRY",
+        "url": "https://genius.com/artists/Yedry",
+        "type": "regular",
+        "id": "2014647"
+      },
+      {
+        "name": "Yeek",
+        "url": "https://genius.com/artists/Yeek",
+        "type": "regular",
+        "id": "451794"
+      },
+      {
+        "name": "yeemz",
+        "url": "https://genius.com/artists/Yeemz",
+        "type": "regular",
+        "id": "3722972"
+      },
+      {
+        "name": "Yeezy Travis",
+        "url": "https://genius.com/artists/Yeezy-travis",
+        "type": "regular",
+        "id": "4224853"
+      },
+      {
+        "name": "YeezYuri",
+        "url": "https://genius.com/artists/Yeezyuri",
+        "type": "regular",
+        "id": "1699421"
+      },
+      {
+        "name": "Yehuda Poliker - יהודה פוליקר",
+        "url": "https://genius.com/artists/Yehuda-poliker",
+        "type": "regular",
+        "id": "1026189"
+      },
+      {
+        "name": "Yehudit Ravitz - יהודית רביץ",
+        "url": "https://genius.com/artists/Yehudit-ravitz",
+        "type": "regular",
+        "id": "992397"
+      },
+      {
+        "name": "Yeis Sensura",
+        "url": "https://genius.com/artists/Yeis-sensura",
+        "type": "regular",
+        "id": "235759"
+      },
+      {
+        "name": "YEJI",
+        "url": "https://genius.com/artists/Yeji",
+        "type": "regular",
+        "id": "2183292"
+      },
+      {
+        "name": "Ye (Kanye West)",
+        "url": "https://genius.com/artists/Ye-kanye-west",
+        "type": "regular",
+        "id": "4442215"
+      },
+      {
+        "name": "Yeko",
+        "url": "https://genius.com/artists/Yeko",
+        "type": "regular",
+        "id": "4426423"
+      },
+      {
+        "name": "Yelawolf",
+        "url": "https://genius.com/artists/Yelawolf",
+        "type": "regular",
+        "id": "182"
+      },
+      {
+        "name": "Yel (채옐) (KOR)",
+        "url": "https://genius.com/artists/Yel-kor",
+        "type": "regular",
+        "id": "3491580"
+      },
+      {
+        "name": "Yella Beezy",
+        "url": "https://genius.com/artists/Yella-beezy",
+        "type": "regular",
+        "id": "540864"
+      },
+      {
+        "name": "Yelle",
+        "url": "https://genius.com/artists/Yelle",
+        "type": "regular",
+        "id": "17563"
+      },
+      {
+        "name": "Yello",
+        "url": "https://genius.com/artists/Yello",
+        "type": "regular",
+        "id": "361976"
+      },
+      {
+        "name": "YelloPain",
+        "url": "https://genius.com/artists/Yellopain",
+        "type": "regular",
+        "id": "1632582"
+      },
+      {
+        "name": "Yellowcard",
+        "url": "https://genius.com/artists/Yellowcard",
+        "type": "regular",
+        "id": "11760"
+      },
+      {
+        "name": "Yellow Claw",
+        "url": "https://genius.com/artists/Yellow-claw",
+        "type": "regular",
+        "id": "51496"
+      },
+      {
+        "name": "Yellow Days",
+        "url": "https://genius.com/artists/Yellow-days",
+        "type": "regular",
+        "id": "1043179"
+      },
+      {
+        "name": "The Yellow Diary",
+        "url": "https://genius.com/artists/The-yellow-diary",
+        "type": "regular",
+        "id": "1472916"
+      },
+      {
+        "name": "Yellow House",
+        "url": "https://genius.com/artists/Yellow-house",
+        "type": "regular",
+        "id": "1141238"
+      },
+      {
+        "name": "Yellowjackets",
+        "url": "https://genius.com/artists/Yellowjackets",
+        "type": "regular",
+        "id": "9919"
+      },
+      {
+        "name": "YELLOW MAGIC ORCHESTRA",
+        "url": "https://genius.com/artists/Yellow-magic-orchestra",
+        "type": "regular",
+        "id": "144605"
+      },
+      {
+        "name": "Yellowman",
+        "url": "https://genius.com/artists/Yellowman",
+        "type": "regular",
+        "id": "10155"
+      },
+      {
+        "name": "The Yellow Monkey",
+        "url": "https://genius.com/artists/The-yellow-monkey",
+        "type": "regular",
+        "id": "387133"
+      },
+      {
+        "name": "YeloHill",
+        "url": "https://genius.com/artists/Yelohill",
+        "type": "regular",
+        "id": "1427164"
+      },
+      {
+        "name": "Yemi Alade",
+        "url": "https://genius.com/artists/Yemi-alade",
+        "type": "regular",
+        "id": "343085"
+      },
+      {
+        "name": "Yemil",
+        "url": "https://genius.com/artists/Yemil",
+        "type": "regular",
+        "id": "1025625"
+      },
+      {
+        "name": "YENA (최예나)",
+        "url": "https://genius.com/artists/Yena",
+        "type": "regular",
+        "id": "2304606"
+      },
+      {
+        "name": "Yener Çevik",
+        "url": "https://genius.com/artists/Yener-cevik",
+        "type": "regular",
+        "id": "239158"
+      },
+      {
+        "name": "Yeni Türkü",
+        "url": "https://genius.com/artists/Yeni-turku",
+        "type": "regular",
+        "id": "369506"
+      },
+      {
+        "name": "Yenlik",
+        "url": "https://genius.com/artists/Yenlik",
+        "type": "regular",
+        "id": "2824322"
+      },
+      {
+        "name": "Yented",
+        "url": "https://genius.com/artists/Yented",
+        "type": "regular",
+        "id": "2620715"
+      },
+      {
+        "name": "YENTOWN",
+        "url": "https://genius.com/artists/Yentown",
+        "type": "regular",
+        "id": "1653707"
+      },
+      {
+        "name": "Yeolan",
+        "url": "https://genius.com/artists/Yeolan",
+        "type": "regular",
+        "id": "4461482"
+      },
+      {
+        "name": "YEONJUN (연준)",
+        "url": "https://genius.com/artists/Yeonjun",
+        "type": "regular",
+        "id": "1693124"
+      },
+      {
+        "name": "YEOSANG (여상)",
+        "url": "https://genius.com/artists/Yeosang",
+        "type": "regular",
+        "id": "1628022"
+      },
+      {
+        "name": "Yerai Cortés",
+        "url": "https://genius.com/artists/Yerai-cortes",
+        "type": "regular",
+        "id": "2329632"
+      },
+      {
+        "name": "Yerbolat Kudaibergenov",
+        "url": "https://genius.com/artists/Yerbolat-kudaibergenov",
+        "type": "regular",
+        "id": "3830089"
+      },
+      {
+        "name": "Yeri Mua",
+        "url": "https://genius.com/artists/Yeri-mua",
+        "type": "regular",
+        "id": "3389592"
+      },
+      {
+        "name": "Yerin Baek",
+        "url": "https://genius.com/artists/Yerin-baek",
+        "type": "regular",
+        "id": "845618"
+      },
+      {
+        "name": "YERKATT",
+        "url": "https://genius.com/artists/Yerkatt",
+        "type": "regular",
+        "id": "3209091"
+      },
+      {
+        "name": "Yeruza",
+        "url": "https://genius.com/artists/Yeruza",
+        "type": "regular",
+        "id": "2076029"
+      },
+      {
+        "name": "Yerzy",
+        "url": "https://genius.com/artists/Yerzy",
+        "type": "regular",
+        "id": "3065825"
+      },
+      {
+        "name": "Yes",
+        "url": "https://genius.com/artists/Yes",
+        "type": "regular",
+        "id": "36267"
+      },
+      {
+        "name": "Yesan 雪山",
+        "url": "https://genius.com/artists/Yesan",
+        "type": "regular",
+        "id": "1622019"
+      },
+      {
+        "name": "yeschapskii",
+        "url": "https://genius.com/artists/Yeschapskii",
+        "type": "regular",
+        "id": "3455402"
+      },
+      {
+        "name": "Yes-R",
+        "url": "https://genius.com/artists/Yes-r",
+        "type": "regular",
+        "id": "46155"
+      },
+      {
+        "name": "YESUNG (예성)",
+        "url": "https://genius.com/artists/Yesung",
+        "type": "regular",
+        "id": "661573"
+      },
+      {
+        "name": "Yeubi",
+        "url": "https://genius.com/artists/Yeubi",
+        "type": "regular",
+        "id": "4418075"
+      },
+      {
+        "name": "​yeule",
+        "url": "https://genius.com/artists/Yeule",
+        "type": "regular",
+        "id": "1495746"
+      },
+      {
+        "name": "Ye Vagabonds",
+        "url": "https://genius.com/artists/Ye-vagabonds",
+        "type": "regular",
+        "id": "1767373"
+      },
+      {
+        "name": "Yevgueni",
+        "url": "https://genius.com/artists/Yevgueni",
+        "type": "regular",
+        "id": "368062"
+      },
+      {
+        "name": "YEW",
+        "url": "https://genius.com/artists/Yew",
+        "type": "regular",
+        "id": "3572500"
+      },
+      {
+        "name": "ЙЕЙО (YEYO)",
+        "url": "https://genius.com/artists/Yeyo",
+        "type": "regular",
+        "id": "1472299"
+      },
+      {
+        "name": "Yeyo (MX)",
+        "url": "https://genius.com/artists/Yeyo-mx",
+        "type": "regular",
+        "id": "3514327"
+      },
+      {
+        "name": "Yezzy Wallace",
+        "url": "https://genius.com/artists/Yezzy-wallace",
+        "type": "regular",
+        "id": "2208145"
+      },
+      {
+        "name": "YFG FATSO",
+        "url": "https://genius.com/artists/Yfg-fatso",
+        "type": "regular",
+        "id": "3719746"
+      },
+      {
+        "name": "YFG Pave",
+        "url": "https://genius.com/artists/Yfg-pave",
+        "type": "regular",
+        "id": "2325865"
+      },
+      {
+        "name": "YFN Lucci",
+        "url": "https://genius.com/artists/Yfn-lucci",
+        "type": "regular",
+        "id": "388683"
+      },
+      {
+        "name": "Yfung",
+        "url": "https://genius.com/artists/Yfung",
+        "type": "regular",
+        "id": "3494539"
+      },
+      {
+        "name": "YG Marley",
+        "url": "https://genius.com/artists/Yg-marley",
+        "type": "regular",
+        "id": "1572379"
+      },
+      {
+        "name": "YG Pablo",
+        "url": "https://genius.com/artists/Yg-pablo",
+        "type": "regular",
+        "id": "1843409"
+      },
+      {
+        "name": "YGT",
+        "url": "https://genius.com/artists/Ygt",
+        "type": "regular",
+        "id": "2432796"
+      },
+      {
+        "name": "YG Teck",
+        "url": "https://genius.com/artists/Yg-teck",
+        "type": "regular",
+        "id": "1259892"
+      },
+      {
+        "name": "YGTUT",
+        "url": "https://genius.com/artists/Ygtut",
+        "type": "regular",
+        "id": "58513"
+      },
+      {
+        "name": "YGxTUS",
+        "url": "https://genius.com/artists/Ygxtus",
+        "type": "regular",
+        "id": "4150780"
+      },
+      {
+        "name": "Yhapojj",
+        "url": "https://genius.com/artists/Yhapojj",
+        "type": "regular",
+        "id": "1753571"
+      },
+      {
+        "name": "Yhung T.O.",
+        "url": "https://genius.com/artists/Yhung-to",
+        "type": "regular",
+        "id": "1048962"
+      },
+      {
+        "name": "YHWH Nailgun",
+        "url": "https://genius.com/artists/Yhwh-nailgun",
+        "type": "regular",
+        "id": "3577532"
+      },
+      {
+        "name": "张洢豪 (Yi Hao Zhang)",
+        "url": "https://genius.com/artists/Yi-hao-zhang",
+        "type": "regular",
+        "id": "2356909"
+      },
+      {
+        "name": "Yiğit Seferoğlu",
+        "url": "https://genius.com/artists/Yigit-seferoglu",
+        "type": "regular",
+        "id": "1692276"
+      },
+      {
+        "name": "Ying Yang Twins",
+        "url": "https://genius.com/artists/Ying-yang-twins",
+        "type": "regular",
+        "id": "473"
+      },
+      {
+        "name": "Yiru",
+        "url": "https://genius.com/artists/Yiru",
+        "type": "regular",
+        "id": "3981847"
+      },
+      {
+        "name": "Yiruma",
+        "url": "https://genius.com/artists/Yiruma",
+        "type": "regular",
+        "id": "383719"
+      },
+      {
+        "name": "Yishay Swissa - ישי סוויסה",
+        "url": "https://genius.com/artists/Yishay-swissa",
+        "type": "regular",
+        "id": "1214938"
+      },
+      {
+        "name": "Yiyo Sarante",
+        "url": "https://genius.com/artists/Yiyo-sarante",
+        "type": "regular",
+        "id": "452535"
+      },
+      {
+        "name": "Öykü & Berk",
+        "url": "https://genius.com/artists/Oyku-and-berk",
+        "type": "regular",
+        "id": "3271654"
+      },
+      {
+        "name": "Öykü Dörter",
+        "url": "https://genius.com/artists/Oyku-dorter",
+        "type": "regular",
+        "id": "2535313"
+      },
+      {
+        "name": "YkmNace",
+        "url": "https://genius.com/artists/Ykmnace",
+        "type": "regular",
+        "id": "4316573"
+      },
+      {
+        "name": "YK Osiris",
+        "url": "https://genius.com/artists/Yk-osiris",
+        "type": "regular",
+        "id": "1409873"
+      },
+      {
+        "name": "Yüksek Sadakat",
+        "url": "https://genius.com/artists/Yuksek-sadakat",
+        "type": "regular",
+        "id": "360254"
+      },
+      {
+        "name": "Yksteexy",
+        "url": "https://genius.com/artists/Yksteexy",
+        "type": "regular",
+        "id": "3701106"
+      },
+      {
+        "name": "YL",
+        "url": "https://genius.com/artists/Yl",
+        "type": "regular",
+        "id": "996826"
+      },
+      {
+        "name": "Y La Bamba",
+        "url": "https://genius.com/artists/Y-la-bamba",
+        "type": "regular",
+        "id": "65223"
+      },
+      {
+        "name": "Yıldız Tilbe",
+        "url": "https://genius.com/artists/Yldz-tilbe",
+        "type": "regular",
+        "id": "479772"
+      },
+      {
+        "name": "Yıldız Usmonova",
+        "url": "https://genius.com/artists/Yldz-usmonova",
+        "type": "regular",
+        "id": "529601"
+      },
+      {
+        "name": "YLGX",
+        "url": "https://genius.com/artists/Ylgx",
+        "type": "regular",
+        "id": "2467310"
+      },
+      {
+        "name": "Yölintu",
+        "url": "https://genius.com/artists/Yolintu",
+        "type": "regular",
+        "id": "374113"
+      },
+      {
+        "name": "Yll Limani",
+        "url": "https://genius.com/artists/Yll-limani",
+        "type": "regular",
+        "id": "1415184"
+      },
+      {
+        "name": "Ylona Garcia",
+        "url": "https://genius.com/artists/Ylona-garcia",
+        "type": "regular",
+        "id": "1115192"
+      },
+      {
+        "name": "Yltramarine",
+        "url": "https://genius.com/artists/Yltramarine",
+        "type": "regular",
+        "id": "1548535"
+      },
+      {
+        "name": "Ylvis",
+        "url": "https://genius.com/artists/Ylvis",
+        "type": "regular",
+        "id": "69575"
+      },
+      {
+        "name": "YMIR",
+        "url": "https://genius.com/artists/Ymir",
+        "type": "regular",
+        "id": "1688667"
+      },
+      {
+        "name": "Ynairaly Simo",
+        "url": "https://genius.com/artists/Ynairaly-simo",
+        "type": "regular",
+        "id": "2819002"
+      },
+      {
+        "name": "Yndling",
+        "url": "https://genius.com/artists/Yndling",
+        "type": "regular",
+        "id": "2885016"
+      },
+      {
+        "name": "Ynd Soulja",
+        "url": "https://genius.com/artists/Ynd-soulja",
+        "type": "regular",
+        "id": "2793814"
+      },
+      {
+        "name": "​yngblеss",
+        "url": "https://genius.com/artists/Yngblss",
+        "type": "regular",
+        "id": "3207012"
+      },
+      {
+        "name": "Yng Lvcas",
+        "url": "https://genius.com/artists/Yng-lvcas",
+        "type": "regular",
+        "id": "3433656"
+      },
+      {
+        "name": "YNG Martyr",
+        "url": "https://genius.com/artists/Yng-martyr",
+        "type": "regular",
+        "id": "1778194"
+      },
+      {
+        "name": "Yng Naz",
+        "url": "https://genius.com/artists/Yng-naz",
+        "type": "regular",
+        "id": "3882408"
+      },
+      {
+        "name": "Yngwie Malmsteen",
+        "url": "https://genius.com/artists/Yngwie-malmsteen",
+        "type": "regular",
+        "id": "344974"
+      },
+      {
+        "name": "YN Jay",
+        "url": "https://genius.com/artists/Yn-jay",
+        "type": "regular",
+        "id": "2210460"
+      },
+      {
+        "name": "Yno",
+        "url": "https://genius.com/artists/Yno",
+        "type": "regular",
+        "id": "3513694"
+      },
+      {
+        "name": "YNW BSlime",
+        "url": "https://genius.com/artists/Ynw-bslime",
+        "type": "regular",
+        "id": "1881497"
+      },
+      {
+        "name": "YNY Sebi",
+        "url": "https://genius.com/artists/Yny-sebi",
+        "type": "regular",
+        "id": "2106547"
+      },
+      {
+        "name": "Yoa",
+        "url": "https://genius.com/artists/Yoa",
+        "type": "regular",
+        "id": "3374348"
+      },
+      {
+        "name": "Yoan Retro",
+        "url": "https://genius.com/artists/Yoan-retro",
+        "type": "regular",
+        "id": "3737590"
+      },
+      {
+        "name": "Yoari (요아리)",
+        "url": "https://genius.com/artists/Yoari",
+        "type": "regular",
+        "id": "530858"
+      },
+      {
+        "name": "YOASOBI",
+        "url": "https://genius.com/artists/Yoasobi",
+        "type": "regular",
+        "id": "2270044"
+      },
+      {
+        "name": "Yoav",
+        "url": "https://genius.com/artists/Yoav",
+        "type": "regular",
+        "id": "339336"
+      },
+      {
+        "name": "Yoav Landau - יואב לנדאו",
+        "url": "https://genius.com/artists/Yoav-landau",
+        "type": "regular",
+        "id": "3795092"
+      },
+      {
+        "name": "YOB",
+        "url": "https://genius.com/artists/Yob",
+        "type": "regular",
+        "id": "367376"
+      },
+      {
+        "name": "Yodza",
+        "url": "https://genius.com/artists/Yodza",
+        "type": "regular",
+        "id": "2683236"
+      },
+      {
+        "name": "倉橋ヨエコ (Yoeko Kurahashi)",
+        "url": "https://genius.com/artists/Yoeko-kurahashi",
+        "type": "regular",
+        "id": "2766961"
+      },
+      {
+        "name": "Yo Gabba Gabba",
+        "url": "https://genius.com/artists/Yo-gabba-gabba",
+        "type": "regular",
+        "id": "83171"
+      },
+      {
+        "name": "Yo Gotti",
+        "url": "https://genius.com/artists/Yo-gotti",
+        "type": "regular",
+        "id": "118"
+      },
+      {
+        "name": "Yogscast",
+        "url": "https://genius.com/artists/Yogscast",
+        "type": "regular",
+        "id": "65501"
+      },
+      {
+        "name": "Yohani",
+        "url": "https://genius.com/artists/Yohani",
+        "type": "regular",
+        "id": "2911081"
+      },
+      {
+        "name": "Yohihito Yano, Saki Kabata",
+        "url": "https://genius.com/artists/Yohihito-yano-saki-kabata",
+        "type": "regular",
+        "id": "1110298"
+      },
+      {
+        "name": "Yohji da Vertu",
+        "url": "https://genius.com/artists/Yohji-da-vertu",
+        "type": "regular",
+        "id": "3067404"
+      },
+      {
+        "name": "神山羊 (YOH KAMIYAMA)",
+        "url": "https://genius.com/artists/Yoh-kamiyama",
+        "type": "regular",
+        "id": "1839114"
+      },
+      {
+        "name": "Yoinkin",
+        "url": "https://genius.com/artists/Yoinkin",
+        "type": "regular",
+        "id": "2715827"
+      },
+      {
+        "name": "野田洋次郎 (Yojiro Noda)",
+        "url": "https://genius.com/artists/Yojiro-noda",
+        "type": "regular",
+        "id": "1087174"
+      },
+      {
+        "name": "Yoke Lore",
+        "url": "https://genius.com/artists/Yoke-lore",
+        "type": "regular",
+        "id": "666067"
+      },
+      {
+        "name": "Yoko Gold",
+        "url": "https://genius.com/artists/Yoko-gold",
+        "type": "regular",
+        "id": "655452"
+      },
+      {
+        "name": "菅野よう子 (Yoko Kanno)",
+        "url": "https://genius.com/artists/Yoko-kanno",
+        "type": "regular",
+        "id": "80605"
+      },
+      {
+        "name": "yokolus",
+        "url": "https://genius.com/artists/Yokolus",
+        "type": "regular",
+        "id": "3877595"
+      },
+      {
+        "name": "荻野目洋子 (Yoko Oginome)",
+        "url": "https://genius.com/artists/Yoko-oginome",
+        "type": "regular",
+        "id": "2679110"
+      },
+      {
+        "name": "Yoko Ono",
+        "url": "https://genius.com/artists/Yoko-ono",
+        "type": "regular",
+        "id": "27984"
+      },
+      {
+        "name": "Yoko Shimomura",
+        "url": "https://genius.com/artists/Yoko-shimomura",
+        "type": "regular",
+        "id": "39216"
+      },
+      {
+        "name": "高橋洋子 (Yoko Takahashi)",
+        "url": "https://genius.com/artists/Yoko-takahashi",
+        "type": "regular",
+        "id": "546815"
+      },
+      {
+        "name": "Yola",
+        "url": "https://genius.com/artists/Yola",
+        "type": "regular",
+        "id": "16639"
+      },
+      {
+        "name": "Yolanda Adams",
+        "url": "https://genius.com/artists/Yolanda-adams",
+        "type": "regular",
+        "id": "3925"
+      },
+      {
+        "name": "Yolanda Be Cool",
+        "url": "https://genius.com/artists/Yolanda-be-cool",
+        "type": "regular",
+        "id": "352547"
+      },
+      {
+        "name": "Yolanda Garzón",
+        "url": "https://genius.com/artists/Yolanda-garzon",
+        "type": "regular",
+        "id": "3545009"
+      },
+      {
+        "name": "Yo La Tengo",
+        "url": "https://genius.com/artists/Yo-la-tengo",
+        "type": "regular",
+        "id": "12642"
+      },
+      {
+        "name": "Yolte (GRC)",
+        "url": "https://genius.com/artists/Yolte-grc",
+        "type": "regular",
+        "id": "2989012"
+      },
+      {
+        "name": "YolyBoy",
+        "url": "https://genius.com/artists/Yolyboy",
+        "type": "regular",
+        "id": "3822811"
+      },
+      {
+        "name": "Yo Maps",
+        "url": "https://genius.com/artists/Yo-maps",
+        "type": "regular",
+        "id": "1957994"
+      },
+      {
+        "name": "Yomel El Meloso",
+        "url": "https://genius.com/artists/Yomel-el-meloso",
+        "type": "regular",
+        "id": "1436377"
+      },
+      {
+        "name": "Yomo",
+        "url": "https://genius.com/artists/Yomo",
+        "type": "regular",
+        "id": "11245"
+      },
+      {
+        "name": "Yomo Toro",
+        "url": "https://genius.com/artists/Yomo-toro",
+        "type": "regular",
+        "id": "1721704"
+      },
+      {
+        "name": "Yona",
+        "url": "https://genius.com/artists/Yona",
+        "type": "regular",
+        "id": "406526"
+      },
+      {
+        "name": "YONAKA",
+        "url": "https://genius.com/artists/Yonaka",
+        "type": "regular",
+        "id": "1544255"
+      },
+      {
+        "name": "YONAS",
+        "url": "https://genius.com/artists/Yonas",
+        "type": "regular",
+        "id": "11411"
+      },
+      {
+        "name": "Yonca Evcimik",
+        "url": "https://genius.com/artists/Yonca-evcimik",
+        "type": "regular",
+        "id": "378066"
+      },
+      {
+        "name": "Yonder Mountain String Band",
+        "url": "https://genius.com/artists/Yonder-mountain-string-band",
+        "type": "regular",
+        "id": "343964"
+      },
+      {
+        "name": "YongYong (용용)",
+        "url": "https://genius.com/artists/Yongyong",
+        "type": "regular",
+        "id": "1479965"
+      },
+      {
+        "name": "YONGZOO",
+        "url": "https://genius.com/artists/Yongzoo",
+        "type": "regular",
+        "id": "2220784"
+      },
+      {
+        "name": "Yoni Bloch - יוני בלוך",
+        "url": "https://genius.com/artists/Yoni-bloch",
+        "type": "regular",
+        "id": "1328735"
+      },
+      {
+        "name": "YONII",
+        "url": "https://genius.com/artists/Yonii",
+        "type": "regular",
+        "id": "1042606"
+      },
+      {
+        "name": "YONI (THA)",
+        "url": "https://genius.com/artists/Yoni-tha",
+        "type": "regular",
+        "id": "4397156"
+      },
+      {
+        "name": "YonKaGor",
+        "url": "https://genius.com/artists/Yonkagor",
+        "type": "regular",
+        "id": "2561906"
+      },
+      {
+        "name": "Yonyo - يونيو",
+        "url": "https://genius.com/artists/Yonyo",
+        "type": "regular",
+        "id": "2952803"
+      },
+      {
+        "name": "Yoo Hwe Seung (유회승)",
+        "url": "https://genius.com/artists/Yoo-hwe-seung",
+        "type": "regular",
+        "id": "2764565"
+      },
+      {
+        "name": "Yoo Jae Ha (유재하)",
+        "url": "https://genius.com/artists/Yoo-jae-ha",
+        "type": "regular",
+        "id": "1371401"
+      },
+      {
+        "name": "YOOK SUNGJAE (육성재)",
+        "url": "https://genius.com/artists/Yook-sungjae",
+        "type": "regular",
+        "id": "1499336"
+      },
+      {
+        "name": "Yoon Jong Shin (윤종신)",
+        "url": "https://genius.com/artists/Yoon-jong-shin",
+        "type": "regular",
+        "id": "213179"
+      },
+      {
+        "name": "Yoonmirae (윤미래)",
+        "url": "https://genius.com/artists/Yoonmirae",
+        "type": "regular",
+        "id": "213556"
+      },
+      {
+        "name": "Yoon Sang (윤상)",
+        "url": "https://genius.com/artists/Yoon-sang",
+        "type": "regular",
+        "id": "1140793"
+      },
+      {
+        "name": "Da Yoopers",
+        "url": "https://genius.com/artists/Da-yoopers",
+        "type": "regular",
+        "id": "355107"
+      },
+      {
+        "name": "Yorghaki",
+        "url": "https://genius.com/artists/Yorghaki",
+        "type": "regular",
+        "id": "1510832"
+      },
+      {
+        "name": "Yorgos Rous",
+        "url": "https://genius.com/artists/Yorgos-rous",
+        "type": "regular",
+        "id": "2597591"
+      },
+      {
+        "name": "Йорш (Yorsh)",
+        "url": "https://genius.com/artists/Yorsh",
+        "type": "regular",
+        "id": "1925201"
+      },
+      {
+        "name": "Yorssy",
+        "url": "https://genius.com/artists/Yorssy",
+        "type": "regular",
+        "id": "3198572"
+      },
+      {
+        "name": "ヨルシカ (Yorushika)",
+        "url": "https://genius.com/artists/Yorushika",
+        "type": "regular",
+        "id": "1300277"
+      },
+      {
+        "name": "Yo-Sea",
+        "url": "https://genius.com/artists/Yo-sea",
+        "type": "regular",
+        "id": "1960209"
+      },
+      {
+        "name": "YOSHIKI",
+        "url": "https://genius.com/artists/Yoshiki",
+        "type": "regular",
+        "id": "1537054"
+      },
+      {
+        "name": "佐井好子 (Yoshiko Sai)",
+        "url": "https://genius.com/artists/Yoshiko-sai",
+        "type": "regular",
+        "id": "1708107"
+      },
+      {
+        "name": "Yoshi (MEX)",
+        "url": "https://genius.com/artists/Yoshi-mex",
+        "type": "regular",
+        "id": "2356684"
+      },
+      {
+        "name": "Yoshi T.",
+        "url": "https://genius.com/artists/Yoshi-t",
+        "type": "regular",
+        "id": "2351089"
+      },
+      {
+        "name": "亀田滋之 (Yoshiya Terayama)",
+        "url": "https://genius.com/artists/Yoshiya-terayama",
+        "type": "regular",
+        "id": "1770396"
+      },
+      {
+        "name": "Yoss Bones",
+        "url": "https://genius.com/artists/Yoss-bones",
+        "type": "regular",
+        "id": "1876251"
+      },
+      {
+        "name": "Yot Club",
+        "url": "https://genius.com/artists/Yot-club",
+        "type": "regular",
+        "id": "742429"
+      },
+      {
+        "name": "Yothu Yindi",
+        "url": "https://genius.com/artists/Yothu-yindi",
+        "type": "regular",
+        "id": "184750"
+      },
+      {
+        "name": "Yo Trane",
+        "url": "https://genius.com/artists/Yo-trane",
+        "type": "regular",
+        "id": "579792"
+      },
+      {
+        "name": "Yotto",
+        "url": "https://genius.com/artists/Yotto",
+        "type": "regular",
+        "id": "999344"
+      },
+      {
+        "name": "You Am I",
+        "url": "https://genius.com/artists/You-am-i",
+        "type": "regular",
+        "id": "354666"
+      },
+      {
+        "name": "キミとアイドルプリキュア♪ (You and Idol Precure♪)",
+        "url": "https://genius.com/artists/You-and-idol-precure",
+        "type": "regular",
+        "id": "4301003"
+      },
+      {
+        "name": "Youareanidiot.org",
+        "url": "https://genius.com/artists/Youareanidiotorg",
+        "type": "regular",
+        "id": "232685"
+      },
+      {
+        "name": "YOUHA",
+        "url": "https://genius.com/artists/Youha",
+        "type": "regular",
+        "id": "2416731"
+      },
+      {
+        "name": "You'll Never Get To Heaven",
+        "url": "https://genius.com/artists/Youll-never-get-to-heaven",
+        "type": "regular",
+        "id": "1521793"
+      },
+      {
+        "name": "You, Me, and Everyone We Know",
+        "url": "https://genius.com/artists/You-me-and-everyone-we-know",
+        "type": "regular",
+        "id": "336841"
+      },
+      {
+        "name": "You Me At Six",
+        "url": "https://genius.com/artists/You-me-at-six",
+        "type": "regular",
+        "id": "59805"
+      },
+      {
+        "name": "Young A6",
+        "url": "https://genius.com/artists/Young-a6",
+        "type": "regular",
+        "id": "2148974"
+      },
+      {
+        "name": "Young Adz",
+        "url": "https://genius.com/artists/Young-adz",
+        "type": "regular",
+        "id": "182468"
+      },
+      {
+        "name": "Young Alpha",
+        "url": "https://genius.com/artists/Young-alpha",
+        "type": "regular",
+        "id": "2252608"
+      },
+      {
+        "name": "Young Artists For Haiti",
+        "url": "https://genius.com/artists/Young-artists-for-haiti",
+        "type": "regular",
+        "id": "1906"
+      },
+      {
+        "name": "YoungBagChasers",
+        "url": "https://genius.com/artists/Youngbagchasers",
+        "type": "regular",
+        "id": "3098273"
+      },
+      {
+        "name": "Young Bego",
+        "url": "https://genius.com/artists/Young-bego",
+        "type": "regular",
+        "id": "514289"
+      },
+      {
+        "name": "Young Bleed",
+        "url": "https://genius.com/artists/Young-bleed",
+        "type": "regular",
+        "id": "3524"
+      },
+      {
+        "name": "Young Blood Neet",
+        "url": "https://genius.com/artists/Young-blood-neet",
+        "type": "regular",
+        "id": "3245694"
+      },
+      {
+        "name": "The Youngbloods",
+        "url": "https://genius.com/artists/The-youngbloods",
+        "type": "regular",
+        "id": "136651"
+      },
+      {
+        "name": "YoungBlood​Z",
+        "url": "https://genius.com/artists/Youngbloodz",
+        "type": "regular",
+        "id": "359"
+      },
+      {
+        "name": "Young Buck",
+        "url": "https://genius.com/artists/Young-buck",
+        "type": "regular",
+        "id": "402"
+      },
+      {
+        "name": "队长 (Young Captain)",
+        "url": "https://genius.com/artists/Young-captain",
+        "type": "regular",
+        "id": "3063448"
+      },
+      {
+        "name": "Young Chop",
+        "url": "https://genius.com/artists/Young-chop",
+        "type": "regular",
+        "id": "27606"
+      },
+      {
+        "name": "Young Chris",
+        "url": "https://genius.com/artists/Young-chris",
+        "type": "regular",
+        "id": "1266"
+      },
+      {
+        "name": "Young Cister",
+        "url": "https://genius.com/artists/Young-cister",
+        "type": "regular",
+        "id": "1127096"
+      },
+      {
+        "name": "Young Coco",
+        "url": "https://genius.com/artists/Young-coco",
+        "type": "regular",
+        "id": "1792429"
+      },
+      {
+        "name": "Young Dabo",
+        "url": "https://genius.com/artists/Young-dabo",
+        "type": "regular",
+        "id": "3379930"
+      },
+      {
+        "name": "YOUNG DIAMOND",
+        "url": "https://genius.com/artists/Young-diamond",
+        "type": "regular",
+        "id": "380149"
+      },
+      {
+        "name": "Young Dizz",
+        "url": "https://genius.com/artists/Young-dizz",
+        "type": "regular",
+        "id": "1382370"
+      },
+      {
+        "name": "Young Dro",
+        "url": "https://genius.com/artists/Young-dro",
+        "type": "regular",
+        "id": "406"
+      },
+      {
+        "name": "Young Drummer Boy",
+        "url": "https://genius.com/artists/Young-drummer-boy",
+        "type": "regular",
+        "id": "41562"
+      },
+      {
+        "name": "The Young Dubliners",
+        "url": "https://genius.com/artists/The-young-dubliners",
+        "type": "regular",
+        "id": "367143"
+      },
+      {
+        "name": "Young Ellens",
+        "url": "https://genius.com/artists/Young-ellens",
+        "type": "regular",
+        "id": "1487900"
+      },
+      {
+        "name": "Younger Hunger",
+        "url": "https://genius.com/artists/Younger-hunger",
+        "type": "regular",
+        "id": "1679815"
+      },
+      {
+        "name": "​youngestAlan",
+        "url": "https://genius.com/artists/Youngestalan",
+        "type": "regular",
+        "id": "2447439"
+      },
+      {
+        "name": "Young Fathers",
+        "url": "https://genius.com/artists/Young-fathers",
+        "type": "regular",
+        "id": "24972"
+      },
+      {
+        "name": "Young Fatty",
+        "url": "https://genius.com/artists/Young-fatty",
+        "type": "regular",
+        "id": "3773050"
+      },
+      {
+        "name": "Young Fly",
+        "url": "https://genius.com/artists/Young-fly",
+        "type": "regular",
+        "id": "113022"
+      },
+      {
+        "name": "YoungFootSoldier",
+        "url": "https://genius.com/artists/Youngfootsoldier",
+        "type": "regular",
+        "id": "3423394"
+      },
+      {
+        "name": "Young Franco",
+        "url": "https://genius.com/artists/Young-franco",
+        "type": "regular",
+        "id": "649535"
+      },
+      {
+        "name": "Young Galib",
+        "url": "https://genius.com/artists/Young-galib",
+        "type": "regular",
+        "id": "2785744"
+      },
+      {
+        "name": "Youngglizzy (CHL)",
+        "url": "https://genius.com/artists/Youngglizzy-chl",
+        "type": "regular",
+        "id": "3581538"
+      },
+      {
+        "name": "The Young Gods",
+        "url": "https://genius.com/artists/The-young-gods",
+        "type": "regular",
+        "id": "373062"
+      },
+      {
+        "name": "YOUNGGU",
+        "url": "https://genius.com/artists/Younggu",
+        "type": "regular",
+        "id": "494129"
+      },
+      {
+        "name": "Young Gunz",
+        "url": "https://genius.com/artists/Young-gunz",
+        "type": "regular",
+        "id": "4232"
+      },
+      {
+        "name": "Young Gun Silver Fox",
+        "url": "https://genius.com/artists/Young-gun-silver-fox",
+        "type": "regular",
+        "id": "1028883"
+      },
+      {
+        "name": "Young Hash",
+        "url": "https://genius.com/artists/Young-hash",
+        "type": "regular",
+        "id": "995441"
+      },
+      {
+        "name": "YOUNGHEARTED",
+        "url": "https://genius.com/artists/Younghearted",
+        "type": "regular",
+        "id": "1626604"
+      },
+      {
+        "name": "Young Igi",
+        "url": "https://genius.com/artists/Young-igi",
+        "type": "regular",
+        "id": "1037092"
+      },
+      {
+        "name": "YounginSoSleaze",
+        "url": "https://genius.com/artists/Younginsosleaze",
+        "type": "regular",
+        "id": "1153098"
+      },
+      {
+        "name": "Youngjee Lee",
+        "url": "https://genius.com/artists/Youngjee-lee",
+        "type": "regular",
+        "id": "3927797"
+      },
+      {
+        "name": "YOUNG J (THA)",
+        "url": "https://genius.com/artists/Young-j-tha",
+        "type": "regular",
+        "id": "3200550"
+      },
+      {
+        "name": "Young K",
+        "url": "https://genius.com/artists/Young-k",
+        "type": "regular",
+        "id": "11864"
+      },
+      {
+        "name": "Youngkid (IRN)",
+        "url": "https://genius.com/artists/Youngkid-irn",
+        "type": "regular",
+        "id": "4313077"
+      },
+      {
+        "name": "Young Leosia",
+        "url": "https://genius.com/artists/Young-leosia",
+        "type": "regular",
+        "id": "2232626"
+      },
+      {
+        "name": "Young lil GLODZIO",
+        "url": "https://genius.com/artists/Young-lil-glodzio",
+        "type": "regular",
+        "id": "2888053"
+      },
+      {
+        "name": "Young LS",
+        "url": "https://genius.com/artists/Young-ls",
+        "type": "regular",
+        "id": "3151546"
+      },
+      {
+        "name": "Young M.A",
+        "url": "https://genius.com/artists/Young-ma",
+        "type": "regular",
+        "id": "339543"
+      },
+      {
+        "name": "Young Martino",
+        "url": "https://genius.com/artists/Young-martino",
+        "type": "regular",
+        "id": "88359"
+      },
+      {
+        "name": "Young Maylay",
+        "url": "https://genius.com/artists/Young-maylay",
+        "type": "regular",
+        "id": "7977"
+      },
+      {
+        "name": "Young MC",
+        "url": "https://genius.com/artists/Young-mc",
+        "type": "regular",
+        "id": "10471"
+      },
+      {
+        "name": "Young Mefe (POL)",
+        "url": "https://genius.com/artists/Young-mefe-pol",
+        "type": "regular",
+        "id": "3671322"
+      },
+      {
+        "name": "Young Miko",
+        "url": "https://genius.com/artists/Young-miko",
+        "type": "regular",
+        "id": "2778630"
+      },
+      {
+        "name": "Young Money",
+        "url": "https://genius.com/artists/Young-money",
+        "type": "regular",
+        "id": "197"
+      },
+      {
+        "name": "Young Multi",
+        "url": "https://genius.com/artists/Young-multi",
+        "type": "regular",
+        "id": "228286"
+      },
+      {
+        "name": "Youngn Lipz",
+        "url": "https://genius.com/artists/Youngn-lipz",
+        "type": "regular",
+        "id": "1980714"
+      },
+      {
+        "name": "Young Noble",
+        "url": "https://genius.com/artists/Young-noble",
+        "type": "regular",
+        "id": "2257"
+      },
+      {
+        "name": "Young Nudy",
+        "url": "https://genius.com/artists/Young-nudy",
+        "type": "regular",
+        "id": "640658"
+      },
+      {
+        "name": "Young Oceans",
+        "url": "https://genius.com/artists/Young-oceans",
+        "type": "regular",
+        "id": "239940"
+      },
+      {
+        "name": "YOUNGOHM",
+        "url": "https://genius.com/artists/Youngohm",
+        "type": "regular",
+        "id": "1364849"
+      },
+      {
+        "name": "Young P&H",
+        "url": "https://genius.com/artists/Young-p-h",
+        "type": "regular",
+        "id": "209830"
+      },
+      {
+        "name": "Young Pappy",
+        "url": "https://genius.com/artists/Young-pappy",
+        "type": "regular",
+        "id": "281020"
+      },
+      {
+        "name": "Young Pink",
+        "url": "https://genius.com/artists/Young-pink",
+        "type": "regular",
+        "id": "44370"
+      },
+      {
+        "name": "Young Policja",
+        "url": "https://genius.com/artists/Young-policja",
+        "type": "regular",
+        "id": "1570776"
+      },
+      {
+        "name": "YOUNG POSSE",
+        "url": "https://genius.com/artists/Young-posse",
+        "type": "regular",
+        "id": "3600102"
+      },
+      {
+        "name": "The Young Rascals",
+        "url": "https://genius.com/artists/The-young-rascals",
+        "type": "regular",
+        "id": "253981"
+      },
+      {
+        "name": "Young Rebxl",
+        "url": "https://genius.com/artists/Young-rebxl",
+        "type": "regular",
+        "id": "2049768"
+      },
+      {
+        "name": "Young Roddy",
+        "url": "https://genius.com/artists/Young-roddy",
+        "type": "regular",
+        "id": "2216"
+      },
+      {
+        "name": "Young Scooter",
+        "url": "https://genius.com/artists/Young-scooter",
+        "type": "regular",
+        "id": "23552"
+      },
+      {
+        "name": "Young Signorino",
+        "url": "https://genius.com/artists/Young-signorino",
+        "type": "regular",
+        "id": "1159754"
+      },
+      {
+        "name": "Young S'lim",
+        "url": "https://genius.com/artists/Young-slim",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Young Slo-Be",
+        "url": "https://genius.com/artists/Young-slo-be",
+        "type": "regular",
+        "id": "2007474"
+      },
+      {
+        "name": "Young Smokes",
+        "url": "https://genius.com/artists/Young-smokes",
+        "type": "regular",
+        "id": "1047308"
+      },
+      {
+        "name": "YoungstaCPT",
+        "url": "https://genius.com/artists/Youngstacpt",
+        "type": "regular",
+        "id": "1058067"
+      },
+      {
+        "name": "Da Youngsta's",
+        "url": "https://genius.com/artists/Da-youngstas",
+        "type": "regular",
+        "id": "4979"
+      },
+      {
+        "name": "Youngs Teflon",
+        "url": "https://genius.com/artists/Youngs-teflon",
+        "type": "regular",
+        "id": "33386"
+      },
+      {
+        "name": "Young Stoner Life",
+        "url": "https://genius.com/artists/Young-stoner-life",
+        "type": "regular",
+        "id": "1156486"
+      },
+      {
+        "name": "Young Stunna",
+        "url": "https://genius.com/artists/Young-stunna",
+        "type": "regular",
+        "id": "2868846"
+      },
+      {
+        "name": "Young Stunners",
+        "url": "https://genius.com/artists/Young-stunners",
+        "type": "regular",
+        "id": "1180844"
+      },
+      {
+        "name": "Young Sudden",
+        "url": "https://genius.com/artists/Young-sudden",
+        "type": "regular",
+        "id": "2336022"
+      },
+      {
+        "name": "Young T & Bugsey",
+        "url": "https://genius.com/artists/Young-t-and-bugsey",
+        "type": "regular",
+        "id": "649803"
+      },
+      {
+        "name": "Young the Giant",
+        "url": "https://genius.com/artists/Young-the-giant",
+        "type": "regular",
+        "id": "16879"
+      },
+      {
+        "name": "The Young'uns",
+        "url": "https://genius.com/artists/The-younguns",
+        "type": "regular",
+        "id": "1246895"
+      },
+      {
+        "name": "The Young Veins",
+        "url": "https://genius.com/artists/The-young-veins",
+        "type": "regular",
+        "id": "203963"
+      },
+      {
+        "name": "Young Weapon",
+        "url": "https://genius.com/artists/Young-weapon",
+        "type": "regular",
+        "id": "1816998"
+      },
+      {
+        "name": "Young, wild & free",
+        "url": "https://genius.com/artists/Young-wild-and-free",
+        "type": "regular",
+        "id": "482396"
+      },
+      {
+        "name": "Young zetton",
+        "url": "https://genius.com/artists/Young-zetton",
+        "type": "regular",
+        "id": "2481975"
+      },
+      {
+        "name": "YOUNHA (윤하)",
+        "url": "https://genius.com/artists/Younha",
+        "type": "regular",
+        "id": "245350"
+      },
+      {
+        "name": "YouNotUs",
+        "url": "https://genius.com/artists/Younotus",
+        "type": "regular",
+        "id": "394682"
+      },
+      {
+        "name": "Youn Sun Nah",
+        "url": "https://genius.com/artists/Youn-sun-nah",
+        "type": "regular",
+        "id": "371810"
+      },
+      {
+        "name": "You+Me",
+        "url": "https://genius.com/artists/You-me",
+        "type": "regular",
+        "id": "233844"
+      },
+      {
+        "name": "Youppi",
+        "url": "https://genius.com/artists/Youppi",
+        "type": "regular",
+        "id": "3609333"
+      },
+      {
+        "name": "Youra (유라)",
+        "url": "https://genius.com/artists/Youra",
+        "type": "regular",
+        "id": "1676251"
+      },
+      {
+        "name": "Your Arms Are My Cocoon",
+        "url": "https://genius.com/artists/Your-arms-are-my-cocoon",
+        "type": "regular",
+        "id": "2493406"
+      },
+      {
+        "name": "Your Boy Posca",
+        "url": "https://genius.com/artists/Your-boy-posca",
+        "type": "regular",
+        "id": "3781352"
+      },
+      {
+        "name": "YourBoySponge",
+        "url": "https://genius.com/artists/Yourboysponge",
+        "type": "regular",
+        "id": "3031041"
+      },
+      {
+        "name": "Your Favorite Martian",
+        "url": "https://genius.com/artists/Your-favorite-martian",
+        "type": "regular",
+        "id": "12891"
+      },
+      {
+        "name": "YourFavouriteShady",
+        "url": "https://genius.com/artists/Yourfavouriteshady",
+        "type": "regular",
+        "id": "3377646"
+      },
+      {
+        "name": "Youri",
+        "url": "https://genius.com/artists/Youri",
+        "type": "regular",
+        "id": "1282676"
+      },
+      {
+        "name": "Your Neighbors",
+        "url": "https://genius.com/artists/Your-neighbors",
+        "type": "regular",
+        "id": "1516799"
+      },
+      {
+        "name": "Your Old Droog",
+        "url": "https://genius.com/artists/Your-old-droog",
+        "type": "regular",
+        "id": "189044"
+      },
+      {
+        "name": "YourRAGE",
+        "url": "https://genius.com/artists/Yourrage",
+        "type": "regular",
+        "id": "1565709"
+      },
+      {
+        "name": "Your Stepdad",
+        "url": "https://genius.com/artists/Your-stepdad",
+        "type": "regular",
+        "id": "2929094"
+      },
+      {
+        "name": "Yours Truly",
+        "url": "https://genius.com/artists/Yours-truly",
+        "type": "regular",
+        "id": "40979"
+      },
+      {
+        "name": "Yousef Joker - يوسف جوكر",
+        "url": "https://genius.com/artists/Yousef-joker",
+        "type": "regular",
+        "id": "1202714"
+      },
+      {
+        "name": "Youss45",
+        "url": "https://genius.com/artists/Youss45",
+        "type": "regular",
+        "id": "323269"
+      },
+      {
+        "name": "Youssef Swatt's",
+        "url": "https://genius.com/artists/Youssef-swatts",
+        "type": "regular",
+        "id": "47891"
+      },
+      {
+        "name": "Youssif Elashry - يوسف العشري",
+        "url": "https://genius.com/artists/Youssif-elashry",
+        "type": "regular",
+        "id": "3861255"
+      },
+      {
+        "name": "Youssou N'Dour",
+        "url": "https://genius.com/artists/Youssou-ndour",
+        "type": "regular",
+        "id": "4336"
+      },
+      {
+        "name": "Youssoupha",
+        "url": "https://genius.com/artists/Youssoupha",
+        "type": "regular",
+        "id": "1684"
+      },
+      {
+        "name": "Youth Alive",
+        "url": "https://genius.com/artists/Youth-alive",
+        "type": "regular",
+        "id": "349459"
+      },
+      {
+        "name": "Youth Brigade",
+        "url": "https://genius.com/artists/Youth-brigade",
+        "type": "regular",
+        "id": "68013"
+      },
+      {
+        "name": "The Youth for Christ Choir",
+        "url": "https://genius.com/artists/The-youth-for-christ-choir",
+        "type": "regular",
+        "id": "3991236"
+      },
+      {
+        "name": "Youth Fountain",
+        "url": "https://genius.com/artists/Youth-fountain",
+        "type": "regular",
+        "id": "1531309"
+      },
+      {
+        "name": "Youth Lagoon",
+        "url": "https://genius.com/artists/Youth-lagoon",
+        "type": "regular",
+        "id": "12789"
+      },
+      {
+        "name": "Youth Of Today",
+        "url": "https://genius.com/artists/Youth-of-today",
+        "type": "regular",
+        "id": "361925"
+      },
+      {
+        "name": "Youv Dee",
+        "url": "https://genius.com/artists/Youv-dee",
+        "type": "regular",
+        "id": "933047"
+      },
+      {
+        "name": "Yovie & Nuno",
+        "url": "https://genius.com/artists/Yovie-and-nuno",
+        "type": "regular",
+        "id": "405823"
+      },
+      {
+        "name": "Yovie Widianto",
+        "url": "https://genius.com/artists/Yovie-widianto",
+        "type": "regular",
+        "id": "1632535"
+      },
+      {
+        "name": "YOVNGCHIMI",
+        "url": "https://genius.com/artists/Yovngchimi",
+        "type": "regular",
+        "id": "3044200"
+      },
+      {
+        "name": "Yo-Yo",
+        "url": "https://genius.com/artists/Yo-yo",
+        "type": "regular",
+        "id": "2703"
+      },
+      {
+        "name": "Yo‐Yo Ma",
+        "url": "https://genius.com/artists/Yoyo-ma",
+        "type": "regular",
+        "id": "391301"
+      },
+      {
+        "name": "岑寧兒 (Yoyo Sham)",
+        "url": "https://genius.com/artists/Yoyo-sham",
+        "type": "regular",
+        "id": "1969986"
+      },
+      {
+        "name": "Yoyoy Villame",
+        "url": "https://genius.com/artists/Yoyoy-villame",
+        "type": "regular",
+        "id": "384538"
+      },
+      {
+        "name": "Yozay",
+        "url": "https://genius.com/artists/Yozay",
+        "type": "regular",
+        "id": "2791736"
+      },
+      {
+        "name": "Ypo",
+        "url": "https://genius.com/artists/Ypo",
+        "type": "regular",
+        "id": "597515"
+      },
+      {
+        "name": "YPU ROSE",
+        "url": "https://genius.com/artists/Ypu-rose",
+        "type": "regular",
+        "id": "4367918"
+      },
+      {
+        "name": "YPU Z",
+        "url": "https://genius.com/artists/Ypu-z",
+        "type": "regular",
+        "id": "4367916"
+      },
+      {
+        "name": "​ysabelle",
+        "url": "https://genius.com/artists/Ysabelle",
+        "type": "regular",
+        "id": "1100806"
+      },
+      {
+        "name": "YSB OG",
+        "url": "https://genius.com/artists/Ysb-og",
+        "type": "regular",
+        "id": "328243"
+      },
+      {
+        "name": "YSB Tril",
+        "url": "https://genius.com/artists/Ysb-tril",
+        "type": "regular",
+        "id": "1937761"
+      },
+      {
+        "name": "Ys Dz",
+        "url": "https://genius.com/artists/Ys-dz",
+        "type": "regular",
+        "id": "4262549"
+      },
+      {
+        "name": "Yseult",
+        "url": "https://genius.com/artists/Yseult",
+        "type": "regular",
+        "id": "265202"
+      },
+      {
+        "name": "Y Shadey",
+        "url": "https://genius.com/artists/Y-shadey",
+        "type": "regular",
+        "id": "3764425"
+      },
+      {
+        "name": "YSM Dylan",
+        "url": "https://genius.com/artists/Ysm-dylan",
+        "type": "regular",
+        "id": "2588925"
+      },
+      {
+        "name": "YSN",
+        "url": "https://genius.com/artists/Ysn",
+        "type": "regular",
+        "id": "608036"
+      },
+      {
+        "name": "YSN Flow",
+        "url": "https://genius.com/artists/Ysn-flow",
+        "type": "regular",
+        "id": "1740781"
+      },
+      {
+        "name": "Ysrael Barajas",
+        "url": "https://genius.com/artists/Ysrael-barajas",
+        "type": "regular",
+        "id": "3241280"
+      },
+      {
+        "name": "YSR Gramz",
+        "url": "https://genius.com/artists/Ysr-gramz",
+        "type": "regular",
+        "id": "2073884"
+      },
+      {
+        "name": "Yssi SB",
+        "url": "https://genius.com/artists/Yssi-sb",
+        "type": "regular",
+        "id": "2220233"
+      },
+      {
+        "name": "Øystein Sunde",
+        "url": "https://genius.com/artists/Ystein-sunde",
+        "type": "regular",
+        "id": "398856"
+      },
+      {
+        "name": "YSY A",
+        "url": "https://genius.com/artists/Ysy-a",
+        "type": "regular",
+        "id": "1046770"
+      },
+      {
+        "name": "YT",
+        "url": "https://genius.com/artists/Yt",
+        "type": "regular",
+        "id": "50065"
+      },
+      {
+        "name": "YTB Fatt",
+        "url": "https://genius.com/artists/Ytb-fatt",
+        "type": "regular",
+        "id": "3411313"
+      },
+      {
+        "name": "YTCracker",
+        "url": "https://genius.com/artists/Ytcracker",
+        "type": "regular",
+        "id": "9627"
+      },
+      {
+        "name": "YTD",
+        "url": "https://genius.com/artists/Ytd",
+        "type": "regular",
+        "id": "1917523"
+      },
+      {
+        "name": "Y-Titty",
+        "url": "https://genius.com/artists/Y-titty",
+        "type": "regular",
+        "id": "65075"
+      },
+      {
+        "name": "Yu",
+        "url": "https://genius.com/artists/Yu",
+        "type": "regular",
+        "id": "1485554"
+      },
+      {
+        "name": "袁一琦 (Yuan YiQi)",
+        "url": "https://genius.com/artists/Yuan-yiqi",
+        "type": "regular",
+        "id": "2812065"
+      },
+      {
+        "name": "Yuat",
+        "url": "https://genius.com/artists/Yuat",
+        "type": "regular",
+        "id": "4302080"
+      },
+      {
+        "name": "Yubeili",
+        "url": "https://genius.com/artists/Yubeili",
+        "type": "regular",
+        "id": "1909490"
+      },
+      {
+        "name": "Yuck",
+        "url": "https://genius.com/artists/Yuck",
+        "type": "regular",
+        "id": "65915"
+      },
+      {
+        "name": "Yueku",
+        "url": "https://genius.com/artists/Yueku",
+        "type": "regular",
+        "id": "2677142"
+      },
+      {
+        "name": "Ю.Г. (YU.G.)",
+        "url": "https://genius.com/artists/Yug",
+        "type": "regular",
+        "id": "1245668"
+      },
+      {
+        "name": "Yugen Blakrok",
+        "url": "https://genius.com/artists/Yugen-blakrok",
+        "type": "regular",
+        "id": "158465"
+      },
+      {
+        "name": "Yu-Gi-Oh!",
+        "url": "https://genius.com/artists/Yu-gi-oh",
+        "type": "regular",
+        "id": "132218"
+      },
+      {
+        "name": "菅野祐悟 (Yugo Kanno)",
+        "url": "https://genius.com/artists/Yugo-kanno",
+        "type": "regular",
+        "id": "1400271"
+      },
+      {
+        "name": "Yugopolis",
+        "url": "https://genius.com/artists/Yugopolis",
+        "type": "regular",
+        "id": "251926"
+      },
+      {
+        "name": "YU Grupa",
+        "url": "https://genius.com/artists/Yu-grupa",
+        "type": "regular",
+        "id": "357228"
+      },
+      {
+        "name": "YUGYEOM (유겸)",
+        "url": "https://genius.com/artists/Yugyeom",
+        "type": "regular",
+        "id": "659578"
+      },
+      {
+        "name": "YUI",
+        "url": "https://genius.com/artists/Yui",
+        "type": "regular",
+        "id": "333265"
+      },
+      {
+        "name": "『ユイカ』(Yuika)",
+        "url": "https://genius.com/artists/Yuika",
+        "type": "regular",
+        "id": "2819243"
+      },
+      {
+        "name": "ยุ้ย ญาติเยอะ (Yui Yardyer)",
+        "url": "https://genius.com/artists/Yui-yardyer",
+        "type": "regular",
+        "id": "3753972"
+      },
+      {
+        "name": "Yujen",
+        "url": "https://genius.com/artists/Yujen",
+        "type": "regular",
+        "id": "481791"
+      },
+      {
+        "name": "​​yuji (MYS)",
+        "url": "https://genius.com/artists/Yuji-mys",
+        "type": "regular",
+        "id": "3408884"
+      },
+      {
+        "name": "YUJU (유주)",
+        "url": "https://genius.com/artists/Yuju",
+        "type": "regular",
+        "id": "1573538"
+      },
+      {
+        "name": "北村友香 (Yuka Kitamura)",
+        "url": "https://genius.com/artists/Yuka-kitamura",
+        "type": "regular",
+        "id": "2131454"
+      },
+      {
+        "name": "yuke",
+        "url": "https://genius.com/artists/Yuke",
+        "type": "regular",
+        "id": "2942013"
+      },
+      {
+        "name": "千葉雄喜 (Yuki Chiba)",
+        "url": "https://genius.com/artists/Yuki-chiba",
+        "type": "regular",
+        "id": "3841879"
+      },
+      {
+        "name": "​yukidead",
+        "url": "https://genius.com/artists/Yukidead",
+        "type": "regular",
+        "id": "3254665"
+      },
+      {
+        "name": "Yukidomari",
+        "url": "https://genius.com/artists/Yukidomari",
+        "type": "regular",
+        "id": "3599764"
+      },
+      {
+        "name": "林ゆうき (Yuki Hayashi)",
+        "url": "https://genius.com/artists/Yuki-hayashi",
+        "type": "regular",
+        "id": "1765622"
+      },
+      {
+        "name": "高橋幸宏 (Yukihiro Takahashi)",
+        "url": "https://genius.com/artists/Yukihiro-takahashi",
+        "type": "regular",
+        "id": "993533"
+      },
+      {
+        "name": "YUKI (JPN)",
+        "url": "https://genius.com/artists/Yuki-jpn",
+        "type": "regular",
+        "id": "2250436"
+      },
+      {
+        "name": "梶浦由記 (Yuki Kajiura)",
+        "url": "https://genius.com/artists/Yuki-kajiura",
+        "type": "regular",
+        "id": "1027468"
+      },
+      {
+        "name": "Yukimi",
+        "url": "https://genius.com/artists/Yukimi",
+        "type": "regular",
+        "id": "167806"
+      },
+      {
+        "name": "Yukmouth",
+        "url": "https://genius.com/artists/Yukmouth",
+        "type": "regular",
+        "id": "505"
+      },
+      {
+        "name": "​yulia",
+        "url": "https://genius.com/artists/Yulia",
+        "type": "regular",
+        "id": "4026314"
+      },
+      {
+        "name": "Юлианна Караулова (Yulianna Karaulova)",
+        "url": "https://genius.com/artists/Yulianna-karaulova",
+        "type": "regular",
+        "id": "1151386"
+      },
+      {
+        "name": "Юлия Савичева (Yulia Savicheva)",
+        "url": "https://genius.com/artists/Yulia-savicheva",
+        "type": "regular",
+        "id": "1176326"
+      },
+      {
+        "name": "Юлий Г'Галин (Yuliy G'Galin)",
+        "url": "https://genius.com/artists/Yuliy-ggalin",
+        "type": "regular",
+        "id": "4369400"
+      },
+      {
+        "name": "YULLOLA",
+        "url": "https://genius.com/artists/Yullola",
+        "type": "regular",
+        "id": "2187754"
+      },
+      {
+        "name": "Yumbs",
+        "url": "https://genius.com/artists/Yumbs",
+        "type": "regular",
+        "id": "1597036"
+      },
+      {
+        "name": "YUMDDA (염따)",
+        "url": "https://genius.com/artists/Yumdda",
+        "type": "regular",
+        "id": "1344499"
+      },
+      {
+        "name": "Yumi",
+        "url": "https://genius.com/artists/Yumi",
+        "type": "regular",
+        "id": "2854230"
+      },
+      {
+        "name": "荒井由実 (Yumi Arai)",
+        "url": "https://genius.com/artists/Yumi-arai",
+        "type": "regular",
+        "id": "3141675"
+      },
+      {
+        "name": "川村ゆみ (Yumi Kawamura)",
+        "url": "https://genius.com/artists/Yumi-kawamura",
+        "type": "regular",
+        "id": "1096682"
+      },
+      {
+        "name": "松任谷由実 (Yumi Matsutoya)",
+        "url": "https://genius.com/artists/Yumi-matsutoya",
+        "type": "regular",
+        "id": "1071713"
+      },
+      {
+        "name": "​yumixx",
+        "url": "https://genius.com/artists/Yumixx",
+        "type": "regular",
+        "id": "3783467"
+      },
+      {
+        "name": "Yumi Zouma",
+        "url": "https://genius.com/artists/Yumi-zouma",
+        "type": "regular",
+        "id": "218305"
+      },
+      {
+        "name": "YUMMYNOODZ",
+        "url": "https://genius.com/artists/Yummynoodz",
+        "type": "regular",
+        "id": "3464537"
+      },
+      {
+        "name": "Yuna",
+        "url": "https://genius.com/artists/Yuna",
+        "type": "regular",
+        "id": "23982"
+      },
+      {
+        "name": "Yunes LaGrintaa",
+        "url": "https://genius.com/artists/Yunes-lagrintaa",
+        "type": "regular",
+        "id": "2475200"
+      },
+      {
+        "name": "Yung 2nuff",
+        "url": "https://genius.com/artists/Yung-2nuff",
+        "type": "regular",
+        "id": "4315947"
+      },
+      {
+        "name": "Yung Adisz",
+        "url": "https://genius.com/artists/Yung-adisz",
+        "type": "regular",
+        "id": "1508261"
+      },
+      {
+        "name": "Yung Ago",
+        "url": "https://genius.com/artists/Yung-ago",
+        "type": "regular",
+        "id": "2782040"
+      },
+      {
+        "name": "​yungalligator",
+        "url": "https://genius.com/artists/Yungalligator",
+        "type": "regular",
+        "id": "3649181"
+      },
+      {
+        "name": "​yungatita",
+        "url": "https://genius.com/artists/Yungatita",
+        "type": "regular",
+        "id": "1496705"
+      },
+      {
+        "name": "Yung Bae",
+        "url": "https://genius.com/artists/Yung-bae",
+        "type": "regular",
+        "id": "161492"
+      },
+      {
+        "name": "Yung Bambi",
+        "url": "https://genius.com/artists/Yung-bambi",
+        "type": "regular",
+        "id": "1026775"
+      },
+      {
+        "name": "Yung Bans",
+        "url": "https://genius.com/artists/Yung-bans",
+        "type": "regular",
+        "id": "628883"
+      },
+      {
+        "name": "Yung Bleu",
+        "url": "https://genius.com/artists/Yung-bleu",
+        "type": "regular",
+        "id": "1152503"
+      },
+      {
+        "name": "Yung Booke",
+        "url": "https://genius.com/artists/Yung-booke",
+        "type": "regular",
+        "id": "55495"
+      },
+      {
+        "name": "Yung Bredda",
+        "url": "https://genius.com/artists/Yung-bredda",
+        "type": "regular",
+        "id": "3145332"
+      },
+      {
+        "name": "Yung Buda",
+        "url": "https://genius.com/artists/Yung-buda",
+        "type": "regular",
+        "id": "649865"
+      },
+      {
+        "name": "Yung Bude",
+        "url": "https://genius.com/artists/Yung-bude",
+        "type": "regular",
+        "id": "1118664"
+      },
+      {
+        "name": "Yung Buttpiss",
+        "url": "https://genius.com/artists/Yung-buttpiss",
+        "type": "regular",
+        "id": "3211550"
+      },
+      {
+        "name": "​yungcameltoe",
+        "url": "https://genius.com/artists/Yungcameltoe",
+        "type": "regular",
+        "id": "2288817"
+      },
+      {
+        "name": "Yung Ceo",
+        "url": "https://genius.com/artists/Yung-ceo",
+        "type": "regular",
+        "id": "224242"
+      },
+      {
+        "name": "‎yungcihad",
+        "url": "https://genius.com/artists/Yungcihad",
+        "type": "regular",
+        "id": "3234797"
+      },
+      {
+        "name": "Yung Craka",
+        "url": "https://genius.com/artists/Yung-craka",
+        "type": "regular",
+        "id": "1610056"
+      },
+      {
+        "name": "Yung Dexn",
+        "url": "https://genius.com/artists/Yung-dexn",
+        "type": "regular",
+        "id": "2852686"
+      },
+      {
+        "name": "Yung Dizzy",
+        "url": "https://genius.com/artists/Yung-dizzy",
+        "type": "regular",
+        "id": "3680036"
+      },
+      {
+        "name": "YUNG DSA",
+        "url": "https://genius.com/artists/Yung-dsa",
+        "type": "regular",
+        "id": "4349557"
+      },
+      {
+        "name": "Yungeen Ace",
+        "url": "https://genius.com/artists/Yungeen-ace",
+        "type": "regular",
+        "id": "1388104"
+      },
+      {
+        "name": "Yungen",
+        "url": "https://genius.com/artists/Yungen",
+        "type": "regular",
+        "id": "14359"
+      },
+      {
+        "name": "​​yungest Moonstar",
+        "url": "https://genius.com/artists/Yungest-moonstar",
+        "type": "regular",
+        "id": "2886081"
+      },
+      {
+        "name": "YUNG EXU",
+        "url": "https://genius.com/artists/Yung-exu",
+        "type": "regular",
+        "id": "3862891"
+      },
+      {
+        "name": "Yung Fazo",
+        "url": "https://genius.com/artists/Yung-fazo",
+        "type": "regular",
+        "id": "1905304"
+      },
+      {
+        "name": "Yung Felix",
+        "url": "https://genius.com/artists/Yung-felix",
+        "type": "regular",
+        "id": "323576"
+      },
+      {
+        "name": "Yung Filly",
+        "url": "https://genius.com/artists/Yung-filly",
+        "type": "regular",
+        "id": "1258357"
+      },
+      {
+        "name": "YUNG FIMOZ",
+        "url": "https://genius.com/artists/Yung-fimoz",
+        "type": "regular",
+        "id": "4284650"
+      },
+      {
+        "name": "Yung Frendi",
+        "url": "https://genius.com/artists/Yung-frendi",
+        "type": "regular",
+        "id": "1571059"
+      },
+      {
+        "name": "Yung Fuego",
+        "url": "https://genius.com/artists/Yung-fuego",
+        "type": "regular",
+        "id": "1705520"
+      },
+      {
+        "name": "Yung Fume",
+        "url": "https://genius.com/artists/Yung-fume",
+        "type": "regular",
+        "id": "21915"
+      },
+      {
+        "name": "Yung God",
+        "url": "https://genius.com/artists/Yung-god",
+        "type": "regular",
+        "id": "12657"
+      },
+      {
+        "name": "Yunggoth✰",
+        "url": "https://genius.com/artists/Yunggoth",
+        "type": "regular",
+        "id": "655398"
+      },
+      {
+        "name": "Yung Gravy",
+        "url": "https://genius.com/artists/Yung-gravy",
+        "type": "regular",
+        "id": "977708"
+      },
+      {
+        "name": "Yung Gum",
+        "url": "https://genius.com/artists/Yung-gum",
+        "type": "regular",
+        "id": "1042039"
+      },
+      {
+        "name": "Yung Hood",
+        "url": "https://genius.com/artists/Yung-hood",
+        "type": "regular",
+        "id": "3945187"
+      },
+      {
+        "name": "Yung Hugo",
+        "url": "https://genius.com/artists/Yung-hugo",
+        "type": "regular",
+        "id": "1568479"
+      },
+      {
+        "name": "Yung Hurn",
+        "url": "https://genius.com/artists/Yung-hurn",
+        "type": "regular",
+        "id": "261838"
+      },
+      {
+        "name": "Yung Joc",
+        "url": "https://genius.com/artists/Yung-joc",
+        "type": "regular",
+        "id": "614"
+      },
+      {
+        "name": "Yung Juse",
+        "url": "https://genius.com/artists/Yung-juse",
+        "type": "regular",
+        "id": "1816865"
+      },
+      {
+        "name": "YungJZAisDead",
+        "url": "https://genius.com/artists/Yungjzaisdead",
+        "type": "regular",
+        "id": "609045"
+      },
+      {
+        "name": "Yung Kafa & Kücük Efendi",
+        "url": "https://genius.com/artists/Yung-kafa-and-kucuk-efendi",
+        "type": "regular",
+        "id": "1494157"
+      },
+      {
+        "name": "Yung Kage",
+        "url": "https://genius.com/artists/Yung-kage",
+        "type": "regular",
+        "id": "1711843"
+      },
+      {
+        "name": "Yung Kayo",
+        "url": "https://genius.com/artists/Yung-kayo",
+        "type": "regular",
+        "id": "1779682"
+      },
+      {
+        "name": "Yung Kriss",
+        "url": "https://genius.com/artists/Yung-kriss",
+        "type": "regular",
+        "id": "1306591"
+      },
+      {
+        "name": "Yungkulovski",
+        "url": "https://genius.com/artists/Yungkulovski",
+        "type": "regular",
+        "id": "998414"
+      },
+      {
+        "name": "Yung LA",
+        "url": "https://genius.com/artists/Yung-la",
+        "type": "regular",
+        "id": "11297"
+      },
+      {
+        "name": "YUNG LIXO",
+        "url": "https://genius.com/artists/Yung-lixo",
+        "type": "regular",
+        "id": "1247291"
+      },
+      {
+        "name": "Yung Mal",
+        "url": "https://genius.com/artists/Yung-mal",
+        "type": "regular",
+        "id": "86799"
+      },
+      {
+        "name": "YungManny",
+        "url": "https://genius.com/artists/Yungmanny",
+        "type": "regular",
+        "id": "1347112"
+      },
+      {
+        "name": "Yung Matzu",
+        "url": "https://genius.com/artists/Yung-matzu",
+        "type": "regular",
+        "id": "2809296"
+      },
+      {
+        "name": "YungMeechy",
+        "url": "https://genius.com/artists/Yungmeechy",
+        "type": "regular",
+        "id": "4141041"
+      },
+      {
+        "name": "Yung Miami",
+        "url": "https://genius.com/artists/Yung-miami",
+        "type": "regular",
+        "id": "1401808"
+      },
+      {
+        "name": "Yungmon",
+        "url": "https://genius.com/artists/Yungmon",
+        "type": "regular",
+        "id": "1230514"
+      },
+      {
+        "name": "YUNGMORPHEUS",
+        "url": "https://genius.com/artists/Yungmorpheus",
+        "type": "regular",
+        "id": "2016932"
+      },
+      {
+        "name": "Yung Naik",
+        "url": "https://genius.com/artists/Yung-naik",
+        "type": "regular",
+        "id": "1835871"
+      },
+      {
+        "name": "Yung Nugget",
+        "url": "https://genius.com/artists/Yung-nugget",
+        "type": "regular",
+        "id": "1325567"
+      },
+      {
+        "name": "Yung Oogway",
+        "url": "https://genius.com/artists/Yung-oogway",
+        "type": "regular",
+        "id": "1586874"
+      },
+      {
+        "name": "Yung Ouzo",
+        "url": "https://genius.com/artists/Yung-ouzo",
+        "type": "regular",
+        "id": "1585988"
+      },
+      {
+        "name": "Yungpalo",
+        "url": "https://genius.com/artists/Yungpalo",
+        "type": "regular",
+        "id": "2487342"
+      },
+      {
+        "name": "YungPepsi",
+        "url": "https://genius.com/artists/Yungpepsi",
+        "type": "regular",
+        "id": "1565595"
+      },
+      {
+        "name": "Yung Pinch",
+        "url": "https://genius.com/artists/Yung-pinch",
+        "type": "regular",
+        "id": "640257"
+      },
+      {
+        "name": "Yung Pleit",
+        "url": "https://genius.com/artists/Yung-pleit",
+        "type": "regular",
+        "id": "2383760"
+      },
+      {
+        "name": "Yung Poggerz",
+        "url": "https://genius.com/artists/Yung-poggerz",
+        "type": "regular",
+        "id": "3224531"
+      },
+      {
+        "name": "Yung Poppy",
+        "url": "https://genius.com/artists/Yung-poppy",
+        "type": "regular",
+        "id": "188602"
+      },
+      {
+        "name": "yung pretty",
+        "url": "https://genius.com/artists/Yung-pretty",
+        "type": "regular",
+        "id": "1042038"
+      },
+      {
+        "name": "YUNG-RARE",
+        "url": "https://genius.com/artists/Yung-rare",
+        "type": "regular",
+        "id": "1728360"
+      },
+      {
+        "name": "Yøung SadzZz",
+        "url": "https://genius.com/artists/Yung-sadzzz",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "YUNG SAINT PAUL",
+        "url": "https://genius.com/artists/Yung-saint-paul",
+        "type": "regular",
+        "id": "1500865"
+      },
+      {
+        "name": "Yung Sarria",
+        "url": "https://genius.com/artists/Yung-sarria",
+        "type": "regular",
+        "id": "650399"
+      },
+      {
+        "name": "Yung Sherman",
+        "url": "https://genius.com/artists/Yung-sherman",
+        "type": "regular",
+        "id": "60504"
+      },
+      {
+        "name": "Yung Simmie",
+        "url": "https://genius.com/artists/Yung-simmie",
+        "type": "regular",
+        "id": "16691"
+      },
+      {
+        "name": "Yung Snapp",
+        "url": "https://genius.com/artists/Yung-snapp",
+        "type": "regular",
+        "id": "569968"
+      },
+      {
+        "name": "Yung solarflare",
+        "url": "https://genius.com/artists/Yung-solarflare",
+        "type": "regular",
+        "id": "2226064"
+      },
+      {
+        "name": "Yung Spinach Cumshot",
+        "url": "https://genius.com/artists/Yung-spinach-cumshot",
+        "type": "regular",
+        "id": "2478197"
+      },
+      {
+        "name": "Yungsta",
+        "url": "https://genius.com/artists/Yungsta",
+        "type": "regular",
+        "id": "174215"
+      },
+      {
+        "name": "Yungster Jack",
+        "url": "https://genius.com/artists/Yungster-jack",
+        "type": "regular",
+        "id": "1018646"
+      },
+      {
+        "name": "柒羊 (Yung Takeem)",
+        "url": "https://genius.com/artists/Yung-takeem",
+        "type": "regular",
+        "id": "1254862"
+      },
+      {
+        "name": "Yungtarr",
+        "url": "https://genius.com/artists/Yungtarr",
+        "type": "regular",
+        "id": "3179598"
+      },
+      {
+        "name": "Yung Threat",
+        "url": "https://genius.com/artists/Yung-threat",
+        "type": "regular",
+        "id": "3544476"
+      },
+      {
+        "name": "Yung Tory",
+        "url": "https://genius.com/artists/Yung-tory",
+        "type": "regular",
+        "id": "778467"
+      },
+      {
+        "name": "Yung Tray",
+        "url": "https://genius.com/artists/Yung-tray",
+        "type": "regular",
+        "id": "2823725"
+      },
+      {
+        "name": "Yung Trip",
+        "url": "https://genius.com/artists/Yung-trip",
+        "type": "regular",
+        "id": "495280"
+      },
+      {
+        "name": "yung van",
+        "url": "https://genius.com/artists/Yung-van",
+        "type": "regular",
+        "id": "1152904"
+      },
+      {
+        "name": "yung vegan",
+        "url": "https://genius.com/artists/Yung-vegan",
+        "type": "regular",
+        "id": "1049662"
+      },
+      {
+        "name": "YUNGWAY",
+        "url": "https://genius.com/artists/Yungway",
+        "type": "regular",
+        "id": "1931998"
+      },
+      {
+        "name": "Yung Wylin'",
+        "url": "https://genius.com/artists/Yung-wylin",
+        "type": "regular",
+        "id": "3734526"
+      },
+      {
+        "name": "Yung Yury",
+        "url": "https://genius.com/artists/Yung-yury",
+        "type": "regular",
+        "id": "3420966"
+      },
+      {
+        "name": "​yungzawaa",
+        "url": "https://genius.com/artists/Yungzawaa",
+        "type": "regular",
+        "id": "3774512"
+      },
+      {
+        "name": "Yun Head",
+        "url": "https://genius.com/artists/Yun-head",
+        "type": "regular",
+        "id": "1539891"
+      },
+      {
+        "name": "YUNHO (윤호)",
+        "url": "https://genius.com/artists/Yunho",
+        "type": "regular",
+        "id": "1628021"
+      },
+      {
+        "name": "Yunicornlove",
+        "url": "https://genius.com/artists/Yunicornlove",
+        "type": "regular",
+        "id": "1445083"
+      },
+      {
+        "name": "​yuni (USA)",
+        "url": "https://genius.com/artists/Yuni-usa",
+        "type": "regular",
+        "id": "2361330"
+      },
+      {
+        "name": "Yunk",
+        "url": "https://genius.com/artists/Yunk",
+        "type": "regular",
+        "id": "2949193"
+      },
+      {
+        "name": "Yunk Vino",
+        "url": "https://genius.com/artists/Yunk-vino",
+        "type": "regular",
+        "id": "1889136"
+      },
+      {
+        "name": "YunLilo",
+        "url": "https://genius.com/artists/Yunlilo",
+        "type": "regular",
+        "id": "1812888"
+      },
+      {
+        "name": "YUN MUFASA",
+        "url": "https://genius.com/artists/Yun-mufasa",
+        "type": "regular",
+        "id": "1629039"
+      },
+      {
+        "name": "Yuno Miles",
+        "url": "https://genius.com/artists/Yuno-miles",
+        "type": "regular",
+        "id": "2133064"
+      },
+      {
+        "name": "雄之助 (Yunosuke)",
+        "url": "https://genius.com/artists/Yunosuke",
+        "type": "regular",
+        "id": "1991470"
+      },
+      {
+        "name": "YUNYIPR",
+        "url": "https://genius.com/artists/Yunyipr",
+        "type": "regular",
+        "id": "3826682"
+      },
+      {
+        "name": "YUP",
+        "url": "https://genius.com/artists/Yup",
+        "type": "regular",
+        "id": "227007"
+      },
+      {
+        "name": "陈宇鹏 (Yu-Peng Chen)",
+        "url": "https://genius.com/artists/Yu-peng-chen",
+        "type": "regular",
+        "id": "2783152"
+      },
+      {
+        "name": "Yuppe",
+        "url": "https://genius.com/artists/Yuppe",
+        "type": "regular",
+        "id": "3786680"
+      },
+      {
+        "name": "YUQI (宋雨琦)",
+        "url": "https://genius.com/artists/Yuqi",
+        "type": "regular",
+        "id": "1559152"
+      },
+      {
+        "name": "Юра Борисов (Yura Borisov)",
+        "url": "https://genius.com/artists/Yura-borisov",
+        "type": "regular",
+        "id": "4319894"
+      },
+      {
+        "name": "揺らぎ (Yuragi)",
+        "url": "https://genius.com/artists/Yuragi",
+        "type": "regular",
+        "id": "2209874"
+      },
+      {
+        "name": "Yura Yunita",
+        "url": "https://genius.com/artists/Yura-yunita",
+        "type": "regular",
+        "id": "1050248"
+      },
+      {
+        "name": "Юрий Антонов (Yuri Antonov)",
+        "url": "https://genius.com/artists/Yuri-antonov",
+        "type": "regular",
+        "id": "1456652"
+      },
+      {
+        "name": "Yuridia",
+        "url": "https://genius.com/artists/Yuridia",
+        "type": "regular",
+        "id": "67223"
+      },
+      {
+        "name": "Yuridope",
+        "url": "https://genius.com/artists/Yuridope",
+        "type": "regular",
+        "id": "1510627"
+      },
+      {
+        "name": "Yuri Gal",
+        "url": "https://genius.com/artists/Yuri-gal",
+        "type": "regular",
+        "id": "3903507"
+      },
+      {
+        "name": "久保ユリカ (Yurika Kubo)",
+        "url": "https://genius.com/artists/Yurika-kubo",
+        "type": "regular",
+        "id": "3075912"
+      },
+      {
+        "name": "Yuri (MEX)",
+        "url": "https://genius.com/artists/Yuri-mex",
+        "type": "regular",
+        "id": "2070069"
+      },
+      {
+        "name": "Юрий Никулин (Yuri Nikulin)",
+        "url": "https://genius.com/artists/Yuri-nikulin",
+        "type": "regular",
+        "id": "1359716"
+      },
+      {
+        "name": "Yuri NR5",
+        "url": "https://genius.com/artists/Yuri-nr5",
+        "type": "regular",
+        "id": "1654362"
+      },
+      {
+        "name": "Yuri Online",
+        "url": "https://genius.com/artists/Yuri-online",
+        "type": "regular",
+        "id": "1875992"
+      },
+      {
+        "name": "Юрий Каплан (Yuriy Kaplan)",
+        "url": "https://genius.com/artists/Yuriy-kaplan",
+        "type": "regular",
+        "id": "1426580"
+      },
+      {
+        "name": "Юрий Шевчук (Yuriy Shevchuk)",
+        "url": "https://genius.com/artists/Yuriy-shevchuk",
+        "type": "regular",
+        "id": "1108921"
+      },
+      {
+        "name": "YU Rock Misija",
+        "url": "https://genius.com/artists/Yu-rock-misija",
+        "type": "regular",
+        "id": "3135232"
+      },
+      {
+        "name": "Юрий Энтин (Yury Entin)",
+        "url": "https://genius.com/artists/Yury-entin",
+        "type": "regular",
+        "id": "1329490"
+      },
+      {
+        "name": "Юрий Лоза (Yury Loza)",
+        "url": "https://genius.com/artists/Yury-loza",
+        "type": "regular",
+        "id": "2674325"
+      },
+      {
+        "name": "Yusei",
+        "url": "https://genius.com/artists/Yusei",
+        "type": "regular",
+        "id": "1181644"
+      },
+      {
+        "name": "Yus Gz",
+        "url": "https://genius.com/artists/Yus-gz",
+        "type": "regular",
+        "id": "2959800"
+      },
+      {
+        "name": "Yussef Dayes",
+        "url": "https://genius.com/artists/Yussef-dayes",
+        "type": "regular",
+        "id": "1258947"
+      },
+      {
+        "name": "Yusuf & Yasin",
+        "url": "https://genius.com/artists/Yusuf-and-yasin",
+        "type": "regular",
+        "id": "2881008"
+      },
+      {
+        "name": "Yusuf Güney",
+        "url": "https://genius.com/artists/Yusuf-guney",
+        "type": "regular",
+        "id": "387610"
+      },
+      {
+        "name": "Yusuf Islam",
+        "url": "https://genius.com/artists/Yusuf-islam",
+        "type": "regular",
+        "id": "354538"
+      },
+      {
+        "name": "YUTA (ユウタ)",
+        "url": "https://genius.com/artists/Yuta",
+        "type": "regular",
+        "id": "1057419"
+      },
+      {
+        "name": "やまだ豊 (Yutaka Yamada)",
+        "url": "https://genius.com/artists/Yutaka-yamada",
+        "type": "regular",
+        "id": "1148303"
+      },
+      {
+        "name": "Yutu Brown",
+        "url": "https://genius.com/artists/Yutu-brown",
+        "type": "regular",
+        "id": "2663708"
+      },
+      {
+        "name": "Yuugen Vinny",
+        "url": "https://genius.com/artists/Yuugen-vinny",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Yuuhei Satellite",
+        "url": "https://genius.com/artists/Yuuhei-satellite",
+        "type": "regular",
+        "id": "2541558"
+      },
+      {
+        "name": "宮下遊 (Yuu Miyashita)",
+        "url": "https://genius.com/artists/Yuu-miyashita",
+        "type": "regular",
+        "id": "1941945"
+      },
+      {
+        "name": "Yuuna Nini",
+        "url": "https://genius.com/artists/Yuuna-nini",
+        "type": "regular",
+        "id": "3538491"
+      },
+      {
+        "name": "優里 (Yuuri)",
+        "url": "https://genius.com/artists/Yuuri",
+        "type": "regular",
+        "id": "2316985"
+      },
+      {
+        "name": "Yuvan Shankar Raja",
+        "url": "https://genius.com/artists/Yuvan-shankar-raja",
+        "type": "regular",
+        "id": "481206"
+      },
+      {
+        "name": "Yuxu",
+        "url": "https://genius.com/artists/Yuxu",
+        "type": "regular",
+        "id": "647794"
+      },
+      {
+        "name": "ゆよゆっぺ (Yuyoyuppe)",
+        "url": "https://genius.com/artists/Yuyoyuppe",
+        "type": "regular",
+        "id": "938133"
+      },
+      {
+        "name": "Yuyu19",
+        "url": "https://genius.com/artists/Yuyu19",
+        "type": "regular",
+        "id": "3942860"
+      },
+      {
+        "name": "Yuzmv",
+        "url": "https://genius.com/artists/Yuzmv",
+        "type": "regular",
+        "id": "1460088"
+      },
+      {
+        "name": "YV",
+        "url": "https://genius.com/artists/Yv",
+        "type": "regular",
+        "id": "2366036"
+      },
+      {
+        "name": "Yves",
+        "url": "https://genius.com/artists/Yves",
+        "type": "regular",
+        "id": "1550236"
+      },
+      {
+        "name": "Yves Berendse",
+        "url": "https://genius.com/artists/Yves-berendse",
+        "type": "regular",
+        "id": "2715917"
+      },
+      {
+        "name": "Yves Duteil",
+        "url": "https://genius.com/artists/Yves-duteil",
+        "type": "regular",
+        "id": "360441"
+      },
+      {
+        "name": "Yves Larock",
+        "url": "https://genius.com/artists/Yves-larock",
+        "type": "regular",
+        "id": "376989"
+      },
+      {
+        "name": "Yves Montand",
+        "url": "https://genius.com/artists/Yves-montand",
+        "type": "regular",
+        "id": "38034"
+      },
+      {
+        "name": "Yves Nisha",
+        "url": "https://genius.com/artists/Yves-nisha",
+        "type": "regular",
+        "id": "2488598"
+      },
+      {
+        "name": "Yves Tumor",
+        "url": "https://genius.com/artists/Yves-tumor",
+        "type": "regular",
+        "id": "1045469"
+      },
+      {
+        "name": "Yves V",
+        "url": "https://genius.com/artists/Yves-v",
+        "type": "regular",
+        "id": "459625"
+      },
+      {
+        "name": "Yvette Gonzalez-Nacer",
+        "url": "https://genius.com/artists/Yvette-gonzalez-nacer",
+        "type": "regular",
+        "id": "1844683"
+      },
+      {
+        "name": "​yvm3",
+        "url": "https://genius.com/artists/Yvm3",
+        "type": "regular",
+        "id": "3301945"
+      },
+      {
+        "name": "Yvncc",
+        "url": "https://genius.com/artists/Yvncc",
+        "type": "regular",
+        "id": "1171179"
+      },
+      {
+        "name": "Yvngayco",
+        "url": "https://genius.com/artists/Yvngayco",
+        "type": "regular",
+        "id": "3035853"
+      },
+      {
+        "name": "Yvngboi P",
+        "url": "https://genius.com/artists/Yvngboi-p",
+        "type": "regular",
+        "id": "3150331"
+      },
+      {
+        "name": "Yvng Patra",
+        "url": "https://genius.com/artists/Yvng-patra",
+        "type": "regular",
+        "id": "2935196"
+      },
+      {
+        "name": "​​yvngrobv",
+        "url": "https://genius.com/artists/Yvngrobv",
+        "type": "regular",
+        "id": "3107719"
+      },
+      {
+        "name": "yvngxchris",
+        "url": "https://genius.com/artists/Yvngxchris",
+        "type": "regular",
+        "id": "2351166"
+      },
+      {
+        "name": "Yvnnis",
+        "url": "https://genius.com/artists/Yvnnis",
+        "type": "regular",
+        "id": "2608249"
+      },
+      {
+        "name": "Yvonne Catterfeld",
+        "url": "https://genius.com/artists/Yvonne-catterfeld",
+        "type": "regular",
+        "id": "89633"
+      },
+      {
+        "name": "Yvonne Chaka Chaka",
+        "url": "https://genius.com/artists/Yvonne-chaka-chaka",
+        "type": "regular",
+        "id": "458866"
+      },
+      {
+        "name": "Yvonne Elliman",
+        "url": "https://genius.com/artists/Yvonne-elliman",
+        "type": "regular",
+        "id": "22535"
+      },
+      {
+        "name": "Yvonne Greitzke",
+        "url": "https://genius.com/artists/Yvonne-greitzke",
+        "type": "regular",
+        "id": "3002823"
+      },
+      {
+        "name": "Yvonnie",
+        "url": "https://genius.com/artists/Yvonnie",
+        "type": "regular",
+        "id": "4244128"
+      },
+      {
+        "name": "Yvzid",
+        "url": "https://genius.com/artists/Yvzid",
+        "type": "regular",
+        "id": "3455875"
+      },
+      {
+        "name": "Żywiołak",
+        "url": "https://genius.com/artists/Zywioak",
+        "type": "regular",
+        "id": "1565478"
+      },
+      {
+        "name": "Yxng Bane",
+        "url": "https://genius.com/artists/Yxng-bane",
+        "type": "regular",
+        "id": "572067"
+      },
+      {
+        "name": "Yxng Davi",
+        "url": "https://genius.com/artists/Yxng-davi",
+        "type": "regular",
+        "id": "1801583"
+      },
+      {
+        "name": "YXNG K.A",
+        "url": "https://genius.com/artists/Yxng-ka",
+        "type": "regular",
+        "id": "1948682"
+      },
+      {
+        "name": "​yxngxr1",
+        "url": "https://genius.com/artists/Yxngxr1",
+        "type": "regular",
+        "id": "1697628"
+      },
+      {
+        "name": "Yxung Lord",
+        "url": "https://genius.com/artists/Yxung-lord",
+        "type": "regular",
+        "id": "2172423"
+      },
+      {
+        "name": "yy (KOR)",
+        "url": "https://genius.com/artists/Yy-kor",
+        "type": "regular",
+        "id": "4361301"
+      },
+      {
+        "name": "YYUT (ゆゆうた)",
+        "url": "https://genius.com/artists/Yyut",
+        "type": "regular",
+        "id": "2700540"
+      },
+      {
+        "name": "yyy891",
+        "url": "https://genius.com/artists/Yyy891",
+        "type": "regular",
+        "id": "3126092"
+      },
+      {
+        "name": "İçyüz",
+        "url": "https://genius.com/artists/Icyuz",
+        "type": "regular",
+        "id": "1163196"
+      },
+      {
+        "name": "YZERR",
+        "url": "https://genius.com/artists/Yzerr",
+        "type": "regular",
+        "id": "1263075"
+      },
+      {
+        "name": "Yzomandias",
+        "url": "https://genius.com/artists/Yzomandias",
+        "type": "regular",
+        "id": "298985"
+      },
+      {
+        "name": "Yüzyüzeyken Konuşuruz",
+        "url": "https://genius.com/artists/Yuzyuzeyken-konusuruz",
+        "type": "regular",
+        "id": "482459"
+      }
+    ]
+  }
+}

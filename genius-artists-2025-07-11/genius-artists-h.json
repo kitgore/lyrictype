@@ -1,0 +1,4513 @@
+{
+  "letter": "H",
+  "timestamp": "2025-07-11T08:46:10.947Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Hades66",
+        "url": "https://genius.com/artists/Hades66",
+        "type": "popular",
+        "id": "3377962"
+      },
+      {
+        "name": "HAIM",
+        "url": "https://genius.com/artists/Haim",
+        "type": "popular",
+        "id": "43588"
+      },
+      {
+        "name": "Hale",
+        "url": "https://genius.com/artists/Hale",
+        "type": "popular",
+        "id": "362938"
+      },
+      {
+        "name": "Halsey",
+        "url": "https://genius.com/artists/Halsey",
+        "type": "popular",
+        "id": "228636"
+      },
+      {
+        "name": "Hamza",
+        "url": "https://genius.com/artists/Hamza",
+        "type": "popular",
+        "id": "74111"
+      },
+      {
+        "name": "Hanzel La H",
+        "url": "https://genius.com/artists/Hanzel-la-h",
+        "type": "popular",
+        "id": "2264762"
+      },
+      {
+        "name": "HARDY",
+        "url": "https://genius.com/artists/Hardy",
+        "type": "popular",
+        "id": "1677420"
+      },
+      {
+        "name": "Harry Styles",
+        "url": "https://genius.com/artists/Harry-styles",
+        "type": "popular",
+        "id": "22457"
+      },
+      {
+        "name": "Heronwater",
+        "url": "https://genius.com/artists/Heronwater",
+        "type": "popular",
+        "id": "2029722"
+      },
+      {
+        "name": "High School Musical Cast",
+        "url": "https://genius.com/artists/High-school-musical-cast",
+        "type": "popular",
+        "id": "373988"
+      },
+      {
+        "name": "Hillsong UNITED",
+        "url": "https://genius.com/artists/Hillsong-united",
+        "type": "popular",
+        "id": "99815"
+      },
+      {
+        "name": "Hillsong Worship",
+        "url": "https://genius.com/artists/Hillsong-worship",
+        "type": "popular",
+        "id": "280881"
+      },
+      {
+        "name": "Hindia",
+        "url": "https://genius.com/artists/Hindia",
+        "type": "popular",
+        "id": "1550249"
+      },
+      {
+        "name": "Håkan Hellström",
+        "url": "https://genius.com/artists/Hakan-hellstrom",
+        "type": "popular",
+        "id": "311079"
+      },
+      {
+        "name": "Hole",
+        "url": "https://genius.com/artists/Hole",
+        "type": "popular",
+        "id": "33619"
+      },
+      {
+        "name": "HOYO-MiX",
+        "url": "https://genius.com/artists/Hoyo-mix",
+        "type": "popular",
+        "id": "2732413"
+      },
+      {
+        "name": "Hozier",
+        "url": "https://genius.com/artists/Hozier",
+        "type": "popular",
+        "id": "73910"
+      },
+      {
+        "name": "Hugh Jackman",
+        "url": "https://genius.com/artists/Hugh-jackman",
+        "type": "popular",
+        "id": "54329"
+      },
+      {
+        "name": "Hunxho",
+        "url": "https://genius.com/artists/Hunxho",
+        "type": "popular",
+        "id": "2468193"
+      },
+      {
+        "name": "HYUNJIN",
+        "url": "https://genius.com/artists/Hyunjin",
+        "type": "popular",
+        "id": "1601292"
+      }
+    ],
+    "regular": [
+      {
+        "name": "H1-KEY",
+        "url": "https://genius.com/artists/H1-key",
+        "type": "regular",
+        "id": "3010732"
+      },
+      {
+        "name": "h3artcrush",
+        "url": "https://genius.com/artists/H3artcrush",
+        "type": "regular",
+        "id": "2138560"
+      },
+      {
+        "name": "h3nce",
+        "url": "https://genius.com/artists/H3nce",
+        "type": "regular",
+        "id": "3358422"
+      },
+      {
+        "name": "h4rtbrkr",
+        "url": "https://genius.com/artists/H4rtbrkr",
+        "type": "regular",
+        "id": "2694183"
+      },
+      {
+        "name": "H8.HOOD",
+        "url": "https://genius.com/artists/H8hood",
+        "type": "regular",
+        "id": "2212163"
+      },
+      {
+        "name": "Haaland936",
+        "url": "https://genius.com/artists/Haaland936",
+        "type": "regular",
+        "id": "3595838"
+      },
+      {
+        "name": "HAARPER",
+        "url": "https://genius.com/artists/Haarper",
+        "type": "regular",
+        "id": "1692118"
+      },
+      {
+        "name": "Ha-Ash",
+        "url": "https://genius.com/artists/Ha-ash",
+        "type": "regular",
+        "id": "352970"
+      },
+      {
+        "name": "Habib Wahid",
+        "url": "https://genius.com/artists/Habib-wahid",
+        "type": "regular",
+        "id": "1065190"
+      },
+      {
+        "name": "Habz.fx",
+        "url": "https://genius.com/artists/Habzfx",
+        "type": "regular",
+        "id": "3766495"
+      },
+      {
+        "name": "ハチワレ (Hachiware)",
+        "url": "https://genius.com/artists/Hachiware",
+        "type": "regular",
+        "id": "4280671"
+      },
+      {
+        "name": "Hackle",
+        "url": "https://genius.com/artists/Hackle",
+        "type": "regular",
+        "id": "2817015"
+      },
+      {
+        "name": "Haddaway",
+        "url": "https://genius.com/artists/Haddaway",
+        "type": "regular",
+        "id": "181955"
+      },
+      {
+        "name": "Hadestown Original Broadway Company",
+        "url": "https://genius.com/artists/Hadestown-original-broadway-company",
+        "type": "regular",
+        "id": "1880969"
+      },
+      {
+        "name": "Hadise",
+        "url": "https://genius.com/artists/Hadise",
+        "type": "regular",
+        "id": "353519"
+      },
+      {
+        "name": "Hadley Fraser",
+        "url": "https://genius.com/artists/Hadley-fraser",
+        "type": "regular",
+        "id": "533296"
+      },
+      {
+        "name": "Хадн дадн (Hadn dadn)",
+        "url": "https://genius.com/artists/Hadn-dadn",
+        "type": "regular",
+        "id": "1750900"
+      },
+      {
+        "name": "Hady El Soghayar - هادي الصغير",
+        "url": "https://genius.com/artists/Hady-el-soghayar",
+        "type": "regular",
+        "id": "3571129"
+      },
+      {
+        "name": "Hael Husaini",
+        "url": "https://genius.com/artists/Hael-husaini",
+        "type": "regular",
+        "id": "1255610"
+      },
+      {
+        "name": "HAEVN",
+        "url": "https://genius.com/artists/Haevn",
+        "type": "regular",
+        "id": "608202"
+      },
+      {
+        "name": "HAFFWAY",
+        "url": "https://genius.com/artists/Haffway",
+        "type": "regular",
+        "id": "3836703"
+      },
+      {
+        "name": "Hafiz Suip",
+        "url": "https://genius.com/artists/Hafiz-suip",
+        "type": "regular",
+        "id": "1786090"
+      },
+      {
+        "name": "Haftbefehl",
+        "url": "https://genius.com/artists/Haftbefehl",
+        "type": "regular",
+        "id": "12452"
+      },
+      {
+        "name": "Haiden Henderson",
+        "url": "https://genius.com/artists/Haiden-henderson",
+        "type": "regular",
+        "id": "2642165"
+      },
+      {
+        "name": "Haifa Wehbe - هيفاء وهبي",
+        "url": "https://genius.com/artists/Haifa-wehbe",
+        "type": "regular",
+        "id": "526044"
+      },
+      {
+        "name": "Hailee Steinfeld",
+        "url": "https://genius.com/artists/Hailee-steinfeld",
+        "type": "regular",
+        "id": "547449"
+      },
+      {
+        "name": "Hailey Knox",
+        "url": "https://genius.com/artists/Hailey-knox",
+        "type": "regular",
+        "id": "668406"
+      },
+      {
+        "name": "Hailey Whitters",
+        "url": "https://genius.com/artists/Hailey-whitters",
+        "type": "regular",
+        "id": "1020974"
+      },
+      {
+        "name": "Hail Mary Mallon",
+        "url": "https://genius.com/artists/Hail-mary-mallon",
+        "type": "regular",
+        "id": "12012"
+      },
+      {
+        "name": "Hail the Sun",
+        "url": "https://genius.com/artists/Hail-the-sun",
+        "type": "regular",
+        "id": "205664"
+      },
+      {
+        "name": "Haindling",
+        "url": "https://genius.com/artists/Haindling",
+        "type": "regular",
+        "id": "375898"
+      },
+      {
+        "name": "H.A.I.R",
+        "url": "https://genius.com/artists/Hair",
+        "type": "regular",
+        "id": "38876"
+      },
+      {
+        "name": "Hair Ensemble",
+        "url": "https://genius.com/artists/Hair-ensemble",
+        "type": "regular",
+        "id": "2852737"
+      },
+      {
+        "name": "'Hair' Tribe",
+        "url": "https://genius.com/artists/Hair-tribe",
+        "type": "regular",
+        "id": "1043906"
+      },
+      {
+        "name": "hairytwinkle2929",
+        "url": "https://genius.com/artists/Hairytwinkle2929",
+        "type": "regular",
+        "id": "4183647"
+      },
+      {
+        "name": "Hairy Twinkles",
+        "url": "https://genius.com/artists/Hairy-twinkles",
+        "type": "regular",
+        "id": "4180672"
+      },
+      {
+        "name": "hairytwinkles2929",
+        "url": "https://genius.com/artists/Hairytwinkles2929",
+        "type": "regular",
+        "id": "4183646"
+      },
+      {
+        "name": "HAITHAM (EGY) - هيثم",
+        "url": "https://genius.com/artists/Haitham-egy",
+        "type": "regular",
+        "id": "3680337"
+      },
+      {
+        "name": "Haiti Babii",
+        "url": "https://genius.com/artists/Haiti-babii",
+        "type": "regular",
+        "id": "1667376"
+      },
+      {
+        "name": "Hajaj",
+        "url": "https://genius.com/artists/Hajaj",
+        "type": "regular",
+        "id": "2943800"
+      },
+      {
+        "name": "Haji Basto",
+        "url": "https://genius.com/artists/Haji-basto",
+        "type": "regular",
+        "id": "3624887"
+      },
+      {
+        "name": "Hakan Altun",
+        "url": "https://genius.com/artists/Hakan-altun",
+        "type": "regular",
+        "id": "458372"
+      },
+      {
+        "name": "Hakan Taşıyan",
+        "url": "https://genius.com/artists/Hakan-tasyan",
+        "type": "regular",
+        "id": "1939194"
+      },
+      {
+        "name": "Hakeem Prime",
+        "url": "https://genius.com/artists/Hakeem-prime",
+        "type": "regular",
+        "id": "990104"
+      },
+      {
+        "name": "Haken",
+        "url": "https://genius.com/artists/Haken",
+        "type": "regular",
+        "id": "356471"
+      },
+      {
+        "name": "Hakim - حكيم",
+        "url": "https://genius.com/artists/Hakim",
+        "type": "regular",
+        "id": "3569"
+      },
+      {
+        "name": "Hakim Lemonhaze",
+        "url": "https://genius.com/artists/Hakim-lemonhaze",
+        "type": "regular",
+        "id": "778407"
+      },
+      {
+        "name": "Hakim Lokman",
+        "url": "https://genius.com/artists/Hakim-lokman",
+        "type": "regular",
+        "id": "4379196"
+      },
+      {
+        "name": "​hako",
+        "url": "https://genius.com/artists/Hako",
+        "type": "regular",
+        "id": "3577545"
+      },
+      {
+        "name": "Hakuna Group Music",
+        "url": "https://genius.com/artists/Hakuna-group-music",
+        "type": "regular",
+        "id": "3115530"
+      },
+      {
+        "name": "Hakuro",
+        "url": "https://genius.com/artists/Hakuro",
+        "type": "regular",
+        "id": "3381561"
+      },
+      {
+        "name": "長谷川白紙 (Hakushi Hasegawa)",
+        "url": "https://genius.com/artists/Hakushi-hasegawa",
+        "type": "regular",
+        "id": "2453059"
+      },
+      {
+        "name": "HalaCG",
+        "url": "https://genius.com/artists/Halacg",
+        "type": "regular",
+        "id": "1268286"
+      },
+      {
+        "name": "Halakolo - حلقولو",
+        "url": "https://genius.com/artists/Halakolo",
+        "type": "regular",
+        "id": "2777881"
+      },
+      {
+        "name": "HALCALI",
+        "url": "https://genius.com/artists/Halcali",
+        "type": "regular",
+        "id": "373180"
+      },
+      {
+        "name": "Halestorm",
+        "url": "https://genius.com/artists/Halestorm",
+        "type": "regular",
+        "id": "159508"
+      },
+      {
+        "name": "Haley Bennett",
+        "url": "https://genius.com/artists/Haley-bennett",
+        "type": "regular",
+        "id": "352765"
+      },
+      {
+        "name": "Haley Heynderickx",
+        "url": "https://genius.com/artists/Haley-heynderickx",
+        "type": "regular",
+        "id": "1305879"
+      },
+      {
+        "name": "Haley Joelle",
+        "url": "https://genius.com/artists/Haley-joelle",
+        "type": "regular",
+        "id": "2450857"
+      },
+      {
+        "name": "Haley Reinhart",
+        "url": "https://genius.com/artists/Haley-reinhart",
+        "type": "regular",
+        "id": "56685"
+      },
+      {
+        "name": "Haley Smalls",
+        "url": "https://genius.com/artists/Haley-smalls",
+        "type": "regular",
+        "id": "1129869"
+      },
+      {
+        "name": "half•alive",
+        "url": "https://genius.com/artists/Halfalive",
+        "type": "regular",
+        "id": "1168415"
+      },
+      {
+        "name": "Half Man Half Biscuit",
+        "url": "https://genius.com/artists/Half-man-half-biscuit",
+        "type": "regular",
+        "id": "343691"
+      },
+      {
+        "name": "Half Moon Run",
+        "url": "https://genius.com/artists/Half-moon-run",
+        "type": "regular",
+        "id": "97582"
+      },
+      {
+        "name": "Halfy & Winks",
+        "url": "https://genius.com/artists/Halfy-and-winks",
+        "type": "regular",
+        "id": "2737974"
+      },
+      {
+        "name": "Halid Bešlić",
+        "url": "https://genius.com/artists/Halid-beslic",
+        "type": "regular",
+        "id": "402257"
+      },
+      {
+        "name": "Halid Muslimović",
+        "url": "https://genius.com/artists/Halid-muslimovic",
+        "type": "regular",
+        "id": "480414"
+      },
+      {
+        "name": "Halil Sezai",
+        "url": "https://genius.com/artists/Halil-sezai",
+        "type": "regular",
+        "id": "373399"
+      },
+      {
+        "name": "Hal Ketchum",
+        "url": "https://genius.com/artists/Hal-ketchum",
+        "type": "regular",
+        "id": "354352"
+      },
+      {
+        "name": "Halle",
+        "url": "https://genius.com/artists/Halle",
+        "type": "regular",
+        "id": "1260769"
+      },
+      {
+        "name": "Hallie Coggins",
+        "url": "https://genius.com/artists/Hallie-coggins",
+        "type": "regular",
+        "id": "3568118"
+      },
+      {
+        "name": "Hallo aus Berlin",
+        "url": "https://genius.com/artists/Hallo-aus-berlin",
+        "type": "regular",
+        "id": "2083151"
+      },
+      {
+        "name": "Halocene",
+        "url": "https://genius.com/artists/Halocene",
+        "type": "regular",
+        "id": "484212"
+      },
+      {
+        "name": "Haloo Helsinki!",
+        "url": "https://genius.com/artists/Haloo-helsinki",
+        "type": "regular",
+        "id": "357452"
+      },
+      {
+        "name": "Haluk Levent",
+        "url": "https://genius.com/artists/Haluk-levent",
+        "type": "regular",
+        "id": "343856"
+      },
+      {
+        "name": "Halvdan Sivertsen",
+        "url": "https://genius.com/artists/Halvdan-sivertsen",
+        "type": "regular",
+        "id": "45359"
+      },
+      {
+        "name": "Hamada Helal - حمادة هلال",
+        "url": "https://genius.com/artists/Hamada-helal",
+        "type": "regular",
+        "id": "1744962"
+      },
+      {
+        "name": "Hambog Ng Sagpro Krew",
+        "url": "https://genius.com/artists/Hambog-ng-sagpro-krew",
+        "type": "regular",
+        "id": "2466272"
+      },
+      {
+        "name": "Hamid El Kasri",
+        "url": "https://genius.com/artists/Hamid-el-kasri",
+        "type": "regular",
+        "id": "1482578"
+      },
+      {
+        "name": "Hamid El Shaeri - حميد الشاعري",
+        "url": "https://genius.com/artists/Hamid-el-shaeri",
+        "type": "regular",
+        "id": "1539550"
+      },
+      {
+        "name": "Hamilton Leithauser",
+        "url": "https://genius.com/artists/Hamilton-leithauser",
+        "type": "regular",
+        "id": "147948"
+      },
+      {
+        "name": "Hamish Hawk",
+        "url": "https://genius.com/artists/Hamish-hawk",
+        "type": "regular",
+        "id": "2874056"
+      },
+      {
+        "name": "HAMMALI",
+        "url": "https://genius.com/artists/Hammali",
+        "type": "regular",
+        "id": "1518275"
+      },
+      {
+        "name": "HammAli & Navai",
+        "url": "https://genius.com/artists/Hammali-and-navai",
+        "type": "regular",
+        "id": "1451552"
+      },
+      {
+        "name": "HammerFall",
+        "url": "https://genius.com/artists/Hammerfall",
+        "type": "regular",
+        "id": "298648"
+      },
+      {
+        "name": "Hammon",
+        "url": "https://genius.com/artists/Hammon",
+        "type": "regular",
+        "id": "1469804"
+      },
+      {
+        "name": "Hamo Bika - حمو بيكا",
+        "url": "https://genius.com/artists/Hamo-bika",
+        "type": "regular",
+        "id": "2895399"
+      },
+      {
+        "name": "Hamo El Tikha - حمو الطيخا",
+        "url": "https://genius.com/artists/Hamo-el-tikha",
+        "type": "regular",
+        "id": "3149600"
+      },
+      {
+        "name": "Ham Sandwich",
+        "url": "https://genius.com/artists/Ham-sandwich",
+        "type": "regular",
+        "id": "2023519"
+      },
+      {
+        "name": "Hamza Al Mahmdawi - حمزة المحمداوي",
+        "url": "https://genius.com/artists/Hamza-al-mahmdawi",
+        "type": "regular",
+        "id": "4185775"
+      },
+      {
+        "name": "Hamzah The Fantastic",
+        "url": "https://genius.com/artists/Hamzah-the-fantastic",
+        "type": "regular",
+        "id": "2380106"
+      },
+      {
+        "name": "Hamza Namira - حمزة نمرة",
+        "url": "https://genius.com/artists/Hamza-namira",
+        "type": "regular",
+        "id": "479690"
+      },
+      {
+        "name": "HANA (B-RAVE)",
+        "url": "https://genius.com/artists/Hana-b-rave",
+        "type": "regular",
+        "id": "4298018"
+      },
+      {
+        "name": "Hana Stretton",
+        "url": "https://genius.com/artists/Hana-stretton",
+        "type": "regular",
+        "id": "3175594"
+      },
+      {
+        "name": "Hande Ünsal",
+        "url": "https://genius.com/artists/Hande-unsal",
+        "type": "regular",
+        "id": "1675713"
+      },
+      {
+        "name": "Hande Yener",
+        "url": "https://genius.com/artists/Hande-yener",
+        "type": "regular",
+        "id": "356460"
+      },
+      {
+        "name": "HandN",
+        "url": "https://genius.com/artists/Handn",
+        "type": "regular",
+        "id": "3131976"
+      },
+      {
+        "name": "Hands Like Houses",
+        "url": "https://genius.com/artists/Hands-like-houses",
+        "type": "regular",
+        "id": "19310"
+      },
+      {
+        "name": "Handsome Boy Modeling School",
+        "url": "https://genius.com/artists/Handsome-boy-modeling-school",
+        "type": "regular",
+        "id": "6424"
+      },
+      {
+        "name": "The Handsome Family",
+        "url": "https://genius.com/artists/The-handsome-family",
+        "type": "regular",
+        "id": "27100"
+      },
+      {
+        "name": "Hangad",
+        "url": "https://genius.com/artists/Hangad",
+        "type": "regular",
+        "id": "2190139"
+      },
+      {
+        "name": "Hangman (Thai Band)",
+        "url": "https://genius.com/artists/Hangman-thai-band",
+        "type": "regular",
+        "id": "3315922"
+      },
+      {
+        "name": "Hà An Huy",
+        "url": "https://genius.com/artists/Ha-an-huy",
+        "type": "regular",
+        "id": "3842524"
+      },
+      {
+        "name": "Hanka Paldum",
+        "url": "https://genius.com/artists/Hanka-paldum",
+        "type": "regular",
+        "id": "480230"
+      },
+      {
+        "name": "Hank Bentley",
+        "url": "https://genius.com/artists/Hank-bentley",
+        "type": "regular",
+        "id": "574954"
+      },
+      {
+        "name": "Hank Brunjes",
+        "url": "https://genius.com/artists/Hank-brunjes",
+        "type": "regular",
+        "id": "1028980"
+      },
+      {
+        "name": "Hank Locklin",
+        "url": "https://genius.com/artists/Hank-locklin",
+        "type": "regular",
+        "id": "362080"
+      },
+      {
+        "name": "Han (KOR) (Singer)",
+        "url": "https://genius.com/artists/Han-kor-singer",
+        "type": "regular",
+        "id": "2862125"
+      },
+      {
+        "name": "Hank Snow",
+        "url": "https://genius.com/artists/Hank-snow",
+        "type": "regular",
+        "id": "62539"
+      },
+      {
+        "name": "Hank Thompson",
+        "url": "https://genius.com/artists/Hank-thompson",
+        "type": "regular",
+        "id": "43014"
+      },
+      {
+        "name": "HANK TRILL",
+        "url": "https://genius.com/artists/Hank-trill",
+        "type": "regular",
+        "id": "1139651"
+      },
+      {
+        "name": "Hank Williams",
+        "url": "https://genius.com/artists/Hank-williams",
+        "type": "regular",
+        "id": "28632"
+      },
+      {
+        "name": "Hank Williams III",
+        "url": "https://genius.com/artists/Hank-williams-iii",
+        "type": "regular",
+        "id": "64095"
+      },
+      {
+        "name": "Hank Williams Jr.",
+        "url": "https://genius.com/artists/Hank-williams-jr",
+        "type": "regular",
+        "id": "7111"
+      },
+      {
+        "name": "ХАННА (HANNA)",
+        "url": "https://genius.com/artists/Hanna",
+        "type": "regular",
+        "id": "1132683"
+      },
+      {
+        "name": "​hannah bahng",
+        "url": "https://genius.com/artists/Hannah-bahng",
+        "type": "regular",
+        "id": "3587057"
+      },
+      {
+        "name": "Hannah Cohen",
+        "url": "https://genius.com/artists/Hannah-cohen",
+        "type": "regular",
+        "id": "363403"
+      },
+      {
+        "name": "Hannah Ellis",
+        "url": "https://genius.com/artists/Hannah-ellis",
+        "type": "regular",
+        "id": "1067805"
+      },
+      {
+        "name": "Hannah Jadagu",
+        "url": "https://genius.com/artists/Hannah-jadagu",
+        "type": "regular",
+        "id": "1721944"
+      },
+      {
+        "name": "Hannah Mae",
+        "url": "https://genius.com/artists/Hannah-mae",
+        "type": "regular",
+        "id": "2032219"
+      },
+      {
+        "name": "Hannah McClure",
+        "url": "https://genius.com/artists/Hannah-mcclure",
+        "type": "regular",
+        "id": "326336"
+      },
+      {
+        "name": "Hannah Montana",
+        "url": "https://genius.com/artists/Hannah-montana",
+        "type": "regular",
+        "id": "2384954"
+      },
+      {
+        "name": "Hannah Trager",
+        "url": "https://genius.com/artists/Hannah-trager",
+        "type": "regular",
+        "id": "1992002"
+      },
+      {
+        "name": "Hannah Waters",
+        "url": "https://genius.com/artists/Hannah-waters",
+        "type": "regular",
+        "id": "1484314"
+      },
+      {
+        "name": "Hannah Williams & The Affirmations",
+        "url": "https://genius.com/artists/Hannah-williams-and-the-affirmations",
+        "type": "regular",
+        "id": "1132968"
+      },
+      {
+        "name": "HANNAN",
+        "url": "https://genius.com/artists/Hannan",
+        "type": "regular",
+        "id": "615062"
+      },
+      {
+        "name": "Hanne Krogh",
+        "url": "https://genius.com/artists/Hanne-krogh",
+        "type": "regular",
+        "id": "453256"
+      },
+      {
+        "name": "Hannes",
+        "url": "https://genius.com/artists/Hannes",
+        "type": "regular",
+        "id": "1697181"
+      },
+      {
+        "name": "Hannes Wader",
+        "url": "https://genius.com/artists/Hannes-wader",
+        "type": "regular",
+        "id": "102038"
+      },
+      {
+        "name": "Hanni (NewJeans)",
+        "url": "https://genius.com/artists/Hanni-newjeans",
+        "type": "regular",
+        "id": "3241325"
+      },
+      {
+        "name": "Hanoi Rocks",
+        "url": "https://genius.com/artists/Hanoi-rocks",
+        "type": "regular",
+        "id": "355927"
+      },
+      {
+        "name": "Han Sara",
+        "url": "https://genius.com/artists/Han-sara",
+        "type": "regular",
+        "id": "1705469"
+      },
+      {
+        "name": "​H​ANSON",
+        "url": "https://genius.com/artists/Hanson",
+        "type": "regular",
+        "id": "50746"
+      },
+      {
+        "name": "Hans Philip",
+        "url": "https://genius.com/artists/Hans-philip",
+        "type": "regular",
+        "id": "41200"
+      },
+      {
+        "name": "Hansraj Raghuwanshi",
+        "url": "https://genius.com/artists/Hansraj-raghuwanshi",
+        "type": "regular",
+        "id": "1991242"
+      },
+      {
+        "name": "Hans Söllner",
+        "url": "https://genius.com/artists/Hans-sollner",
+        "type": "regular",
+        "id": "374228"
+      },
+      {
+        "name": "HAN (Stray Kids)",
+        "url": "https://genius.com/artists/Han-stray-kids",
+        "type": "regular",
+        "id": "1805371"
+      },
+      {
+        "name": "Hans Zimmer",
+        "url": "https://genius.com/artists/Hans-zimmer",
+        "type": "regular",
+        "id": "36539"
+      },
+      {
+        "name": "Hanuel",
+        "url": "https://genius.com/artists/Hanuel",
+        "type": "regular",
+        "id": "3148777"
+      },
+      {
+        "name": "Hanumankind",
+        "url": "https://genius.com/artists/Hanumankind",
+        "type": "regular",
+        "id": "2029678"
+      },
+      {
+        "name": "Hanybal",
+        "url": "https://genius.com/artists/Hanybal",
+        "type": "regular",
+        "id": "25929"
+      },
+      {
+        "name": "HAON (김하온)",
+        "url": "https://genius.com/artists/Haon",
+        "type": "regular",
+        "id": "1439911"
+      },
+      {
+        "name": "Hap Palmer",
+        "url": "https://genius.com/artists/Hap-palmer",
+        "type": "regular",
+        "id": "356730"
+      },
+      {
+        "name": "The Happenings",
+        "url": "https://genius.com/artists/The-happenings",
+        "type": "regular",
+        "id": "379108"
+      },
+      {
+        "name": "Happoradio",
+        "url": "https://genius.com/artists/Happoradio",
+        "type": "regular",
+        "id": "359235"
+      },
+      {
+        "name": "Happy Days",
+        "url": "https://genius.com/artists/Happy-days",
+        "type": "regular",
+        "id": "362861"
+      },
+      {
+        "name": "The Happy Fits",
+        "url": "https://genius.com/artists/The-happy-fits",
+        "type": "regular",
+        "id": "1004972"
+      },
+      {
+        "name": "HAPPY KITTY DRUGS",
+        "url": "https://genius.com/artists/Happy-kitty-drugs",
+        "type": "regular",
+        "id": "2384475"
+      },
+      {
+        "name": "Happy Mondays",
+        "url": "https://genius.com/artists/Happy-mondays",
+        "type": "regular",
+        "id": "44040"
+      },
+      {
+        "name": "Happy Monster Band",
+        "url": "https://genius.com/artists/Happy-monster-band",
+        "type": "regular",
+        "id": "1540230"
+      },
+      {
+        "name": "​happysad",
+        "url": "https://genius.com/artists/Happysad",
+        "type": "regular",
+        "id": "260111"
+      },
+      {
+        "name": "Haquil",
+        "url": "https://genius.com/artists/Haquil",
+        "type": "regular",
+        "id": "4316813"
+      },
+      {
+        "name": "Harakiri for the Sky",
+        "url": "https://genius.com/artists/Harakiri-for-the-sky",
+        "type": "regular",
+        "id": "976714"
+      },
+      {
+        "name": "Haramiler",
+        "url": "https://genius.com/artists/Haramiler",
+        "type": "regular",
+        "id": "383508"
+      },
+      {
+        "name": "Haranczykov",
+        "url": "https://genius.com/artists/Haranczykov",
+        "type": "regular",
+        "id": "2033649"
+      },
+      {
+        "name": "HARBOUR",
+        "url": "https://genius.com/artists/Harbour",
+        "type": "regular",
+        "id": "1008335"
+      },
+      {
+        "name": "Hard Bass School",
+        "url": "https://genius.com/artists/Hard-bass-school",
+        "type": "regular",
+        "id": "1063801"
+      },
+      {
+        "name": "Hard-Fi",
+        "url": "https://genius.com/artists/Hard-fi",
+        "type": "regular",
+        "id": "323875"
+      },
+      {
+        "name": "Hard GZ",
+        "url": "https://genius.com/artists/Hard-gz",
+        "type": "regular",
+        "id": "583096"
+      },
+      {
+        "name": "THE HARDKISS",
+        "url": "https://genius.com/artists/The-hardkiss",
+        "type": "regular",
+        "id": "987982"
+      },
+      {
+        "name": "​hard life",
+        "url": "https://genius.com/artists/Hard-life",
+        "type": "regular",
+        "id": "1475839"
+      },
+      {
+        "name": "Hard Rico",
+        "url": "https://genius.com/artists/Hard-rico",
+        "type": "regular",
+        "id": "2428663"
+      },
+      {
+        "name": "Hardrock",
+        "url": "https://genius.com/artists/Hardrock",
+        "type": "regular",
+        "id": "3057117"
+      },
+      {
+        "name": "HardStyl3r",
+        "url": "https://genius.com/artists/Hardstyl3r",
+        "type": "regular",
+        "id": "2237663"
+      },
+      {
+        "name": "Hardwell",
+        "url": "https://genius.com/artists/Hardwell",
+        "type": "regular",
+        "id": "154344"
+      },
+      {
+        "name": "Hariharan",
+        "url": "https://genius.com/artists/Hariharan",
+        "type": "regular",
+        "id": "1172981"
+      },
+      {
+        "name": "Harim",
+        "url": "https://genius.com/artists/Harim",
+        "type": "regular",
+        "id": "3473769"
+      },
+      {
+        "name": "Hari Mata Hari",
+        "url": "https://genius.com/artists/Hari-mata-hari",
+        "type": "regular",
+        "id": "358539"
+      },
+      {
+        "name": "Haring Manggi Miguelito Malakas",
+        "url": "https://genius.com/artists/Haring-manggi-miguelito-malakas",
+        "type": "regular",
+        "id": "3327634"
+      },
+      {
+        "name": "HariRoc",
+        "url": "https://genius.com/artists/Hariroc",
+        "type": "regular",
+        "id": "3382534"
+      },
+      {
+        "name": "Haris Alexiou",
+        "url": "https://genius.com/artists/Haris-alexiou",
+        "type": "regular",
+        "id": "406213"
+      },
+      {
+        "name": "Haris Džinović",
+        "url": "https://genius.com/artists/Haris-dzinovic",
+        "type": "regular",
+        "id": "479411"
+      },
+      {
+        "name": "Harkirat Sangha",
+        "url": "https://genius.com/artists/Harkirat-sangha",
+        "type": "regular",
+        "id": "4045986"
+      },
+      {
+        "name": "Harlan Ellison",
+        "url": "https://genius.com/artists/Harlan-ellison",
+        "type": "regular",
+        "id": "216645"
+      },
+      {
+        "name": "Harlem Spartans",
+        "url": "https://genius.com/artists/Harlem-spartans",
+        "type": "regular",
+        "id": "1000142"
+      },
+      {
+        "name": "Harley Poe",
+        "url": "https://genius.com/artists/Harley-poe",
+        "type": "regular",
+        "id": "391123"
+      },
+      {
+        "name": "Вредноблог (Harmful blog)",
+        "url": "https://genius.com/artists/Harmful-blog",
+        "type": "regular",
+        "id": "4412848"
+      },
+      {
+        "name": "Harmonium",
+        "url": "https://genius.com/artists/Harmonium",
+        "type": "regular",
+        "id": "215944"
+      },
+      {
+        "name": "Harmonize",
+        "url": "https://genius.com/artists/Harmonize",
+        "type": "regular",
+        "id": "1216125"
+      },
+      {
+        "name": "Harold Budd",
+        "url": "https://genius.com/artists/Harold-budd",
+        "type": "regular",
+        "id": "1204681"
+      },
+      {
+        "name": "Harold Melvin & The Blue Notes",
+        "url": "https://genius.com/artists/Harold-melvin-and-the-blue-notes",
+        "type": "regular",
+        "id": "47185"
+      },
+      {
+        "name": "Harper Lee",
+        "url": "https://genius.com/artists/Harper-lee",
+        "type": "regular",
+        "id": "162920"
+      },
+      {
+        "name": "Harper O'Neill",
+        "url": "https://genius.com/artists/Harper-oneill",
+        "type": "regular",
+        "id": "2573546"
+      },
+      {
+        "name": "Harrdy Sandhu",
+        "url": "https://genius.com/artists/Harrdy-sandhu",
+        "type": "regular",
+        "id": "1478512"
+      },
+      {
+        "name": "Harris & Ford",
+        "url": "https://genius.com/artists/Harris-and-ford",
+        "type": "regular",
+        "id": "1598286"
+      },
+      {
+        "name": "Harris J",
+        "url": "https://genius.com/artists/Harris-j",
+        "type": "regular",
+        "id": "577169"
+      },
+      {
+        "name": "Harris Jayaraj",
+        "url": "https://genius.com/artists/Harris-jayaraj",
+        "type": "regular",
+        "id": "375871"
+      },
+      {
+        "name": "Harrison Boe",
+        "url": "https://genius.com/artists/Harrison-boe",
+        "type": "regular",
+        "id": "3193735"
+      },
+      {
+        "name": "Harrison Gordon",
+        "url": "https://genius.com/artists/Harrison-gordon",
+        "type": "regular",
+        "id": "3112072"
+      },
+      {
+        "name": "Harry Belafonte",
+        "url": "https://genius.com/artists/Harry-belafonte",
+        "type": "regular",
+        "id": "1232"
+      },
+      {
+        "name": "Harry Brandelius",
+        "url": "https://genius.com/artists/Harry-brandelius",
+        "type": "regular",
+        "id": "530660"
+      },
+      {
+        "name": "Harry Chapin",
+        "url": "https://genius.com/artists/Harry-chapin",
+        "type": "regular",
+        "id": "24088"
+      },
+      {
+        "name": "Harry Connick, Jr.",
+        "url": "https://genius.com/artists/Harry-connick-jr",
+        "type": "regular",
+        "id": "305164"
+      },
+      {
+        "name": "Harry Fraud",
+        "url": "https://genius.com/artists/Harry-fraud",
+        "type": "regular",
+        "id": "27987"
+      },
+      {
+        "name": "Harry Gregson-Williams",
+        "url": "https://genius.com/artists/Harry-gregson-williams",
+        "type": "regular",
+        "id": "357503"
+      },
+      {
+        "name": "Harry James and His Orchestra",
+        "url": "https://genius.com/artists/Harry-james-and-his-orchestra",
+        "type": "regular",
+        "id": "350518"
+      },
+      {
+        "name": "Harry Mack",
+        "url": "https://genius.com/artists/Harry-mack",
+        "type": "regular",
+        "id": "1131796"
+      },
+      {
+        "name": "Harry McClintock",
+        "url": "https://genius.com/artists/Harry-mcclintock",
+        "type": "regular",
+        "id": "201421"
+      },
+      {
+        "name": "Harry Nach",
+        "url": "https://genius.com/artists/Harry-nach",
+        "type": "regular",
+        "id": "1651041"
+      },
+      {
+        "name": "Harry Nilsson",
+        "url": "https://genius.com/artists/Harry-nilsson",
+        "type": "regular",
+        "id": "85836"
+      },
+      {
+        "name": "Harry Roy & His Orchestra",
+        "url": "https://genius.com/artists/Harry-roy-and-his-orchestra",
+        "type": "regular",
+        "id": "1134647"
+      },
+      {
+        "name": "Harry Stockwell",
+        "url": "https://genius.com/artists/Harry-stockwell",
+        "type": "regular",
+        "id": "375894"
+      },
+      {
+        "name": "Harry Stott",
+        "url": "https://genius.com/artists/Harry-stott",
+        "type": "regular",
+        "id": "1569023"
+      },
+      {
+        "name": "Harshdeep Kaur",
+        "url": "https://genius.com/artists/Harshdeep-kaur",
+        "type": "regular",
+        "id": "389779"
+      },
+      {
+        "name": "Harsh Upadhyay",
+        "url": "https://genius.com/artists/Harsh-upadhyay",
+        "type": "regular",
+        "id": "2088389"
+      },
+      {
+        "name": "H_art the Band",
+        "url": "https://genius.com/artists/H-art-the-band",
+        "type": "regular",
+        "id": "1679725"
+      },
+      {
+        "name": "村上春樹 (Haruki Murakami)",
+        "url": "https://genius.com/artists/Haruki-murakami",
+        "type": "regular",
+        "id": "127499"
+      },
+      {
+        "name": "​haru matsui",
+        "url": "https://genius.com/artists/Haru-matsui",
+        "type": "regular",
+        "id": "1943268"
+      },
+      {
+        "name": "Harum Manis",
+        "url": "https://genius.com/artists/Harum-manis",
+        "type": "regular",
+        "id": "3755270"
+      },
+      {
+        "name": "細野晴臣  (Haruomi Hosono)",
+        "url": "https://genius.com/artists/Haruomi-hosono",
+        "type": "regular",
+        "id": "144606"
+      },
+      {
+        "name": "Harvest",
+        "url": "https://genius.com/artists/Harvest",
+        "type": "regular",
+        "id": "1442849"
+      },
+      {
+        "name": "Harvey Danger",
+        "url": "https://genius.com/artists/Harvey-danger",
+        "type": "regular",
+        "id": "41282"
+      },
+      {
+        "name": "Harvey Fierstein",
+        "url": "https://genius.com/artists/Harvey-fierstein",
+        "type": "regular",
+        "id": "151900"
+      },
+      {
+        "name": "Hasan Raheem",
+        "url": "https://genius.com/artists/Hasan-raheem",
+        "type": "regular",
+        "id": "2580319"
+      },
+      {
+        "name": "Haschak Sisters",
+        "url": "https://genius.com/artists/Haschak-sisters",
+        "type": "regular",
+        "id": "1029768"
+      },
+      {
+        "name": "Hassan Shakosh - حسن شاكوش",
+        "url": "https://genius.com/artists/Hassan-shakosh",
+        "type": "regular",
+        "id": "2103566"
+      },
+      {
+        "name": "Hassuna",
+        "url": "https://genius.com/artists/Hassuna",
+        "type": "regular",
+        "id": "3101297"
+      },
+      {
+        "name": "HA SUNG WOON (하성운)",
+        "url": "https://genius.com/artists/Ha-sung-woon",
+        "type": "regular",
+        "id": "1414835"
+      },
+      {
+        "name": "Hatebreed",
+        "url": "https://genius.com/artists/Hatebreed",
+        "type": "regular",
+        "id": "356155"
+      },
+      {
+        "name": "hate​oryx",
+        "url": "https://genius.com/artists/Hateoryx",
+        "type": "regular",
+        "id": "2766996"
+      },
+      {
+        "name": "хейтспіч (hatespeechua)",
+        "url": "https://genius.com/artists/Hatespeechua",
+        "type": "regular",
+        "id": "3212477"
+      },
+      {
+        "name": "Hatirpool Sessions",
+        "url": "https://genius.com/artists/Hatirpool-sessions",
+        "type": "regular",
+        "id": "3342549"
+      },
+      {
+        "name": "初音ミク (Hatsune Miku)",
+        "url": "https://genius.com/artists/Hatsune-miku",
+        "type": "regular",
+        "id": "49279"
+      },
+      {
+        "name": "The Hatters",
+        "url": "https://genius.com/artists/The-hatters",
+        "type": "regular",
+        "id": "1098448"
+      },
+      {
+        "name": "The Haunt",
+        "url": "https://genius.com/artists/The-haunt",
+        "type": "regular",
+        "id": "1619203"
+      },
+      {
+        "name": "The Haunted",
+        "url": "https://genius.com/artists/The-haunted",
+        "type": "regular",
+        "id": "180349"
+      },
+      {
+        "name": "hauntingclaire",
+        "url": "https://genius.com/artists/Hauntingclaire",
+        "type": "regular",
+        "id": "3163517"
+      },
+      {
+        "name": "Haustor",
+        "url": "https://genius.com/artists/Haustor",
+        "type": "regular",
+        "id": "343930"
+      },
+      {
+        "name": "Haux",
+        "url": "https://genius.com/artists/Haux",
+        "type": "regular",
+        "id": "659551"
+      },
+      {
+        "name": "Hava",
+        "url": "https://genius.com/artists/Hava",
+        "type": "regular",
+        "id": "1796640"
+      },
+      {
+        "name": "Hava Alberstein - חוה אלברשטיין",
+        "url": "https://genius.com/artists/Hava-alberstein",
+        "type": "regular",
+        "id": "1004582"
+      },
+      {
+        "name": "HAVAL",
+        "url": "https://genius.com/artists/Haval",
+        "type": "regular",
+        "id": "1660504"
+      },
+      {
+        "name": "Ha Vay",
+        "url": "https://genius.com/artists/Ha-vay",
+        "type": "regular",
+        "id": "2954960"
+      },
+      {
+        "name": "Have a Nice Life",
+        "url": "https://genius.com/artists/Have-a-nice-life",
+        "type": "regular",
+        "id": "55280"
+      },
+      {
+        "name": "Have Heart",
+        "url": "https://genius.com/artists/Have-heart",
+        "type": "regular",
+        "id": "356806"
+      },
+      {
+        "name": "Have Mercy",
+        "url": "https://genius.com/artists/Have-mercy",
+        "type": "regular",
+        "id": "229635"
+      },
+      {
+        "name": "Haven Madison",
+        "url": "https://genius.com/artists/Haven-madison",
+        "type": "regular",
+        "id": "3393703"
+      },
+      {
+        "name": "Haviah Mighty",
+        "url": "https://genius.com/artists/Haviah-mighty",
+        "type": "regular",
+        "id": "1436835"
+      },
+      {
+        "name": "HavinMotion",
+        "url": "https://genius.com/artists/Havinmotion",
+        "type": "regular",
+        "id": "3903204"
+      },
+      {
+        "name": "Hawk (GRC)",
+        "url": "https://genius.com/artists/Hawk-grc",
+        "type": "regular",
+        "id": "1288383"
+      },
+      {
+        "name": "Hawk Nelson",
+        "url": "https://genius.com/artists/Hawk-nelson",
+        "type": "regular",
+        "id": "262077"
+      },
+      {
+        "name": "Hawkwind",
+        "url": "https://genius.com/artists/Hawkwind",
+        "type": "regular",
+        "id": "50427"
+      },
+      {
+        "name": "Hawthorne Heights",
+        "url": "https://genius.com/artists/Hawthorne-heights",
+        "type": "regular",
+        "id": "196583"
+      },
+      {
+        "name": "Hayce Lemsi",
+        "url": "https://genius.com/artists/Hayce-lemsi",
+        "type": "regular",
+        "id": "20065"
+      },
+      {
+        "name": "Hayd",
+        "url": "https://genius.com/artists/Hayd",
+        "type": "regular",
+        "id": "1757702"
+      },
+      {
+        "name": "Hayden James",
+        "url": "https://genius.com/artists/Hayden-james",
+        "type": "regular",
+        "id": "452506"
+      },
+      {
+        "name": "Hayes Carll",
+        "url": "https://genius.com/artists/Hayes-carll",
+        "type": "regular",
+        "id": "194478"
+      },
+      {
+        "name": "Hayki",
+        "url": "https://genius.com/artists/Hayki",
+        "type": "regular",
+        "id": "42543"
+      },
+      {
+        "name": "Hayko Cepkin",
+        "url": "https://genius.com/artists/Hayko-cepkin",
+        "type": "regular",
+        "id": "360365"
+      },
+      {
+        "name": "HAYLA",
+        "url": "https://genius.com/artists/Hayla",
+        "type": "regular",
+        "id": "1549067"
+      },
+      {
+        "name": "Hayley Kiyoko",
+        "url": "https://genius.com/artists/Hayley-kiyoko",
+        "type": "regular",
+        "id": "21765"
+      },
+      {
+        "name": "Hayley Westenra",
+        "url": "https://genius.com/artists/Hayley-westenra",
+        "type": "regular",
+        "id": "109566"
+      },
+      {
+        "name": "Hayley Williams",
+        "url": "https://genius.com/artists/Hayley-williams",
+        "type": "regular",
+        "id": "298"
+      },
+      {
+        "name": "Haystak",
+        "url": "https://genius.com/artists/Haystak",
+        "type": "regular",
+        "id": "6119"
+      },
+      {
+        "name": "Haywire 617",
+        "url": "https://genius.com/artists/Haywire-617",
+        "type": "regular",
+        "id": "4146892"
+      },
+      {
+        "name": "Hazbin Hotel (Thai Version)",
+        "url": "https://genius.com/artists/Hazbin-hotel-thai-version",
+        "type": "regular",
+        "id": "3879317"
+      },
+      {
+        "name": "Haze (DEU)",
+        "url": "https://genius.com/artists/Haze-deu",
+        "type": "regular",
+        "id": "54555"
+      },
+      {
+        "name": "Hazel Brugger",
+        "url": "https://genius.com/artists/Hazel-brugger",
+        "type": "regular",
+        "id": "2552487"
+      },
+      {
+        "name": "Hazel O’Connor",
+        "url": "https://genius.com/artists/Hazel-oconnor",
+        "type": "regular",
+        "id": "344675"
+      },
+      {
+        "name": "Hazlett",
+        "url": "https://genius.com/artists/Hazlett",
+        "type": "regular",
+        "id": "1754457"
+      },
+      {
+        "name": "HBz",
+        "url": "https://genius.com/artists/Hbz",
+        "type": "regular",
+        "id": "2309984"
+      },
+      {
+        "name": "Héctor & Tito",
+        "url": "https://genius.com/artists/Hector-and-tito",
+        "type": "regular",
+        "id": "402455"
+      },
+      {
+        "name": "Héctor “El Father”",
+        "url": "https://genius.com/artists/Hector-el-father",
+        "type": "regular",
+        "id": "30139"
+      },
+      {
+        "name": "Héctor Lavoe",
+        "url": "https://genius.com/artists/Hector-lavoe",
+        "type": "regular",
+        "id": "344987"
+      },
+      {
+        "name": "Headache (PLZ)",
+        "url": "https://genius.com/artists/Headache-plz",
+        "type": "regular",
+        "id": "3551967"
+      },
+      {
+        "name": "The Head and the Heart",
+        "url": "https://genius.com/artists/The-head-and-the-heart",
+        "type": "regular",
+        "id": "23881"
+      },
+      {
+        "name": "Head East",
+        "url": "https://genius.com/artists/Head-east",
+        "type": "regular",
+        "id": "354194"
+      },
+      {
+        "name": "HeadHuncho Amir",
+        "url": "https://genius.com/artists/Headhuncho-amir",
+        "type": "regular",
+        "id": "4081252"
+      },
+      {
+        "name": "Headhunterz",
+        "url": "https://genius.com/artists/Headhunterz",
+        "type": "regular",
+        "id": "63295"
+      },
+      {
+        "name": "Headie One",
+        "url": "https://genius.com/artists/Headie-one",
+        "type": "regular",
+        "id": "1222127"
+      },
+      {
+        "name": "Healing Place Worship",
+        "url": "https://genius.com/artists/Healing-place-worship",
+        "type": "regular",
+        "id": "3696377"
+      },
+      {
+        "name": "HEALTH",
+        "url": "https://genius.com/artists/Health",
+        "type": "regular",
+        "id": "46381"
+      },
+      {
+        "name": "Healy",
+        "url": "https://genius.com/artists/Healy",
+        "type": "regular",
+        "id": "545920"
+      },
+      {
+        "name": "Healy After Dark",
+        "url": "https://genius.com/artists/Healy-after-dark",
+        "type": "regular",
+        "id": "2270496"
+      },
+      {
+        "name": "Heart",
+        "url": "https://genius.com/artists/Heart",
+        "type": "regular",
+        "id": "7760"
+      },
+      {
+        "name": "Heartakeher",
+        "url": "https://genius.com/artists/Heartakeher",
+        "type": "regular",
+        "id": "4409635"
+      },
+      {
+        "name": "Heart Attack Man",
+        "url": "https://genius.com/artists/Heart-attack-man",
+        "type": "regular",
+        "id": "1096321"
+      },
+      {
+        "name": "Heartland",
+        "url": "https://genius.com/artists/Heartland",
+        "type": "regular",
+        "id": "327974"
+      },
+      {
+        "name": "Heartless Bastards",
+        "url": "https://genius.com/artists/Heartless-bastards",
+        "type": "regular",
+        "id": "296159"
+      },
+      {
+        "name": "Heartless James",
+        "url": "https://genius.com/artists/Heartless-james",
+        "type": "regular",
+        "id": "3652143"
+      },
+      {
+        "name": "Hearts2Hearts",
+        "url": "https://genius.com/artists/Hearts2hearts",
+        "type": "regular",
+        "id": "4273283"
+      },
+      {
+        "name": "HEARTSTEEL",
+        "url": "https://genius.com/artists/Heartsteel",
+        "type": "regular",
+        "id": "3702121"
+      },
+      {
+        "name": "A Heartwell Ending",
+        "url": "https://genius.com/artists/A-heartwell-ending",
+        "type": "regular",
+        "id": "354325"
+      },
+      {
+        "name": "Heartworms",
+        "url": "https://genius.com/artists/Heartworms",
+        "type": "regular",
+        "id": "2568141"
+      },
+      {
+        "name": "H.E.A.T",
+        "url": "https://genius.com/artists/Heat",
+        "type": "regular",
+        "id": "2706"
+      },
+      {
+        "name": "Heather Headley",
+        "url": "https://genius.com/artists/Heather-headley",
+        "type": "regular",
+        "id": "79423"
+      },
+      {
+        "name": "Heather Menzies",
+        "url": "https://genius.com/artists/Heather-menzies",
+        "type": "regular",
+        "id": "2268470"
+      },
+      {
+        "name": "Heather Ripley",
+        "url": "https://genius.com/artists/Heather-ripley",
+        "type": "regular",
+        "id": "1551022"
+      },
+      {
+        "name": "Heathers the Musical Ensemble",
+        "url": "https://genius.com/artists/Heathers-the-musical-ensemble",
+        "type": "regular",
+        "id": "634901"
+      },
+      {
+        "name": "Heatmiser",
+        "url": "https://genius.com/artists/Heatmiser",
+        "type": "regular",
+        "id": "344689"
+      },
+      {
+        "name": "Heatwave",
+        "url": "https://genius.com/artists/Heatwave",
+        "type": "regular",
+        "id": "132714"
+      },
+      {
+        "name": "Heaven 17",
+        "url": "https://genius.com/artists/Heaven-17",
+        "type": "regular",
+        "id": "100911"
+      },
+      {
+        "name": "Heavenly",
+        "url": "https://genius.com/artists/Heavenly",
+        "type": "regular",
+        "id": "289965"
+      },
+      {
+        "name": "Heaven Shall Burn",
+        "url": "https://genius.com/artists/Heaven-shall-burn",
+        "type": "regular",
+        "id": "221240"
+      },
+      {
+        "name": "The Heavy",
+        "url": "https://genius.com/artists/The-heavy",
+        "type": "regular",
+        "id": "54951"
+      },
+      {
+        "name": "Heavy D & The Boyz",
+        "url": "https://genius.com/artists/Heavy-d-and-the-boyz",
+        "type": "regular",
+        "id": "292424"
+      },
+      {
+        "name": "Heavy Heavy Low Low",
+        "url": "https://genius.com/artists/Heavy-heavy-low-low",
+        "type": "regular",
+        "id": "344625"
+      },
+      {
+        "name": "田馥甄 (Hebe Tien)",
+        "url": "https://genius.com/artists/Hebe-tien",
+        "type": "regular",
+        "id": "1495318"
+      },
+      {
+        "name": "Hebi (KOR)",
+        "url": "https://genius.com/artists/Hebi-kor",
+        "type": "regular",
+        "id": "4405334"
+      },
+      {
+        "name": "Hector",
+        "url": "https://genius.com/artists/Hector",
+        "type": "regular",
+        "id": "215994"
+      },
+      {
+        "name": "Hedley",
+        "url": "https://genius.com/artists/Hedley",
+        "type": "regular",
+        "id": "30450"
+      },
+      {
+        "name": "(hed) p.e.",
+        "url": "https://genius.com/artists/Hed-pe",
+        "type": "regular",
+        "id": "8345"
+      },
+      {
+        "name": "Hedwig And The Angry Inch - Original Broadway Cast",
+        "url": "https://genius.com/artists/Hedwig-and-the-angry-inch-original-broadway-cast",
+        "type": "regular",
+        "id": "490904"
+      },
+      {
+        "name": "Hedwig and the Angry Inch - Original Cast",
+        "url": "https://genius.com/artists/Hedwig-and-the-angry-inch-original-cast",
+        "type": "regular",
+        "id": "405361"
+      },
+      {
+        "name": "Heelflip",
+        "url": "https://genius.com/artists/Heelflip",
+        "type": "regular",
+        "id": "3189137"
+      },
+      {
+        "name": "Heembeezy",
+        "url": "https://genius.com/artists/Heembeezy",
+        "type": "regular",
+        "id": "2998850"
+      },
+      {
+        "name": "Heeseung (ENHYPEN)",
+        "url": "https://genius.com/artists/Heeseung-enhypen",
+        "type": "regular",
+        "id": "2405207"
+      },
+      {
+        "name": "Hef",
+        "url": "https://genius.com/artists/Hef",
+        "type": "regular",
+        "id": "41326"
+      },
+      {
+        "name": "Heffy",
+        "url": "https://genius.com/artists/Heffy",
+        "type": "regular",
+        "id": "1135824"
+      },
+      {
+        "name": "hehehe",
+        "url": "https://genius.com/artists/Hehehe",
+        "type": "regular",
+        "id": "2780855"
+      },
+      {
+        "name": "Heiakim",
+        "url": "https://genius.com/artists/Heiakim",
+        "type": "regular",
+        "id": "1424372"
+      },
+      {
+        "name": "Heidi Montag",
+        "url": "https://genius.com/artists/Heidi-montag",
+        "type": "regular",
+        "id": "376146"
+      },
+      {
+        "name": "Heijan",
+        "url": "https://genius.com/artists/Heijan",
+        "type": "regular",
+        "id": "345363"
+      },
+      {
+        "name": "Heilung",
+        "url": "https://genius.com/artists/Heilung",
+        "type": "regular",
+        "id": "1460476"
+      },
+      {
+        "name": "Heino",
+        "url": "https://genius.com/artists/Heino",
+        "type": "regular",
+        "id": "172899"
+      },
+      {
+        "name": "Heinz Rudolf Kunze",
+        "url": "https://genius.com/artists/Heinz-rudolf-kunze",
+        "type": "regular",
+        "id": "343778"
+      },
+      {
+        "name": "He Is We",
+        "url": "https://genius.com/artists/He-is-we",
+        "type": "regular",
+        "id": "155295"
+      },
+      {
+        "name": "HEIZE (헤이즈)",
+        "url": "https://genius.com/artists/Heize",
+        "type": "regular",
+        "id": "116155"
+      },
+      {
+        "name": "Heja",
+        "url": "https://genius.com/artists/Heja",
+        "type": "regular",
+        "id": "620038"
+      },
+      {
+        "name": "Heldmaschine",
+        "url": "https://genius.com/artists/Heldmaschine",
+        "type": "regular",
+        "id": "1220382"
+      },
+      {
+        "name": "Helem Nejse",
+        "url": "https://genius.com/artists/Helem-nejse",
+        "type": "regular",
+        "id": "1603520"
+      },
+      {
+        "name": "helen",
+        "url": "https://genius.com/artists/Helen",
+        "type": "regular",
+        "id": "4325229"
+      },
+      {
+        "name": "Helena (BEL)",
+        "url": "https://genius.com/artists/Helena-bel",
+        "type": "regular",
+        "id": "3733121"
+      },
+      {
+        "name": "Helena Bonham Carter",
+        "url": "https://genius.com/artists/Helena-bonham-carter",
+        "type": "regular",
+        "id": "459248"
+      },
+      {
+        "name": "Helena Paparizou",
+        "url": "https://genius.com/artists/Helena-paparizou",
+        "type": "regular",
+        "id": "186243"
+      },
+      {
+        "name": "Helen Baylor",
+        "url": "https://genius.com/artists/Helen-baylor",
+        "type": "regular",
+        "id": "374995"
+      },
+      {
+        "name": "Helen Dunmore",
+        "url": "https://genius.com/artists/Helen-dunmore",
+        "type": "regular",
+        "id": "510876"
+      },
+      {
+        "name": "Helene Fischer",
+        "url": "https://genius.com/artists/Helene-fischer",
+        "type": "regular",
+        "id": "111724"
+      },
+      {
+        "name": "Helen J Shen",
+        "url": "https://genius.com/artists/Helen-j-shen",
+        "type": "regular",
+        "id": "2767526"
+      },
+      {
+        "name": "Helen Reddy",
+        "url": "https://genius.com/artists/Helen-reddy",
+        "type": "regular",
+        "id": "162188"
+      },
+      {
+        "name": "Helen Sjöholm",
+        "url": "https://genius.com/artists/Helen-sjoholm",
+        "type": "regular",
+        "id": "380980"
+      },
+      {
+        "name": "Helge Schneider",
+        "url": "https://genius.com/artists/Helge-schneider",
+        "type": "regular",
+        "id": "101599"
+      },
+      {
+        "name": "helios 812",
+        "url": "https://genius.com/artists/Helios-812",
+        "type": "regular",
+        "id": "3779540"
+      },
+      {
+        "name": "Heliyom",
+        "url": "https://genius.com/artists/Heliyom",
+        "type": "regular",
+        "id": "3072352"
+      },
+      {
+        "name": "Hellbillies",
+        "url": "https://genius.com/artists/Hellbillies",
+        "type": "regular",
+        "id": "354763"
+      },
+      {
+        "name": "HELLMERRY",
+        "url": "https://genius.com/artists/Hellmerry",
+        "type": "regular",
+        "id": "3022342"
+      },
+      {
+        "name": "Hellogoodbye",
+        "url": "https://genius.com/artists/Hellogoodbye",
+        "type": "regular",
+        "id": "1097"
+      },
+      {
+        "name": "HELLOVERCAVI",
+        "url": "https://genius.com/artists/Hellovercavi",
+        "type": "regular",
+        "id": "4438829"
+      },
+      {
+        "name": "Helloween",
+        "url": "https://genius.com/artists/Helloween",
+        "type": "regular",
+        "id": "30376"
+      },
+      {
+        "name": "The Hellp",
+        "url": "https://genius.com/artists/The-hellp",
+        "type": "regular",
+        "id": "1624879"
+      },
+      {
+        "name": "Hellsongs",
+        "url": "https://genius.com/artists/Hellsongs",
+        "type": "regular",
+        "id": "364684"
+      },
+      {
+        "name": "HELLYEAH",
+        "url": "https://genius.com/artists/Hellyeah",
+        "type": "regular",
+        "id": "337151"
+      },
+      {
+        "name": "Helmet",
+        "url": "https://genius.com/artists/Helmet",
+        "type": "regular",
+        "id": "6538"
+      },
+      {
+        "name": "Helmet Heads",
+        "url": "https://genius.com/artists/Helmet-heads",
+        "type": "regular",
+        "id": "4169840"
+      },
+      {
+        "name": "Helmi Sa7bi",
+        "url": "https://genius.com/artists/Helmi-sa7bi",
+        "type": "regular",
+        "id": "2173276"
+      },
+      {
+        "name": "Helmut Lotti",
+        "url": "https://genius.com/artists/Helmut-lotti",
+        "type": "regular",
+        "id": "353461"
+      },
+      {
+        "name": "Heltah Skeltah",
+        "url": "https://genius.com/artists/Heltah-skeltah",
+        "type": "regular",
+        "id": "3961"
+      },
+      {
+        "name": "Helvetia",
+        "url": "https://genius.com/artists/Helvetia",
+        "type": "regular",
+        "id": "389978"
+      },
+      {
+        "name": "He-Man",
+        "url": "https://genius.com/artists/He-man",
+        "type": "regular",
+        "id": "639650"
+      },
+      {
+        "name": "Hemant Kumar",
+        "url": "https://genius.com/artists/Hemant-kumar",
+        "type": "regular",
+        "id": "484320"
+      },
+      {
+        "name": "Hemant Raj",
+        "url": "https://genius.com/artists/Hemant-raj",
+        "type": "regular",
+        "id": "3249568"
+      },
+      {
+        "name": "​hemlocke springs",
+        "url": "https://genius.com/artists/Hemlocke-springs",
+        "type": "regular",
+        "id": "3186232"
+      },
+      {
+        "name": "Hemp Gru",
+        "url": "https://genius.com/artists/Hemp-gru",
+        "type": "regular",
+        "id": "63207"
+      },
+      {
+        "name": "Henny",
+        "url": "https://genius.com/artists/Henny",
+        "type": "regular",
+        "id": "1718258"
+      },
+      {
+        "name": "Henrik",
+        "url": "https://genius.com/artists/Henrik",
+        "type": "regular",
+        "id": "2409317"
+      },
+      {
+        "name": "Henrique & Juliano",
+        "url": "https://genius.com/artists/Henrique-and-juliano",
+        "type": "regular",
+        "id": "638791"
+      },
+      {
+        "name": "Henri Salvador",
+        "url": "https://genius.com/artists/Henri-salvador",
+        "type": "regular",
+        "id": "118843"
+      },
+      {
+        "name": "Henry Danger Cast",
+        "url": "https://genius.com/artists/Henry-danger-cast",
+        "type": "regular",
+        "id": "1890930"
+      },
+      {
+        "name": "Henry Hall",
+        "url": "https://genius.com/artists/Henry-hall",
+        "type": "regular",
+        "id": "2152264"
+      },
+      {
+        "name": "Henry Krieger",
+        "url": "https://genius.com/artists/Henry-krieger",
+        "type": "regular",
+        "id": "363522"
+      },
+      {
+        "name": "Henry Lau",
+        "url": "https://genius.com/artists/Henry-lau",
+        "type": "regular",
+        "id": "302518"
+      },
+      {
+        "name": "Henry Mancini",
+        "url": "https://genius.com/artists/Henry-mancini",
+        "type": "regular",
+        "id": "356400"
+      },
+      {
+        "name": "Henry Moodie",
+        "url": "https://genius.com/artists/Henry-moodie",
+        "type": "regular",
+        "id": "3217479"
+      },
+      {
+        "name": "Henry Morris",
+        "url": "https://genius.com/artists/Henry-morris",
+        "type": "regular",
+        "id": "3638151"
+      },
+      {
+        "name": "Henry Purcell",
+        "url": "https://genius.com/artists/Henry-purcell",
+        "type": "regular",
+        "id": "338768"
+      },
+      {
+        "name": "Henry Seeley",
+        "url": "https://genius.com/artists/Henry-seeley",
+        "type": "regular",
+        "id": "991397"
+      },
+      {
+        "name": "Henry VIII",
+        "url": "https://genius.com/artists/Henry-viii",
+        "type": "regular",
+        "id": "49659"
+      },
+      {
+        "name": "HENSY",
+        "url": "https://genius.com/artists/Hensy",
+        "type": "regular",
+        "id": "2019623"
+      },
+      {
+        "name": "Hepsi",
+        "url": "https://genius.com/artists/Hepsi",
+        "type": "regular",
+        "id": "365852"
+      },
+      {
+        "name": "H.E.R.",
+        "url": "https://genius.com/artists/Her",
+        "type": "regular",
+        "id": "1000403"
+      },
+      {
+        "name": "Herb Alpert",
+        "url": "https://genius.com/artists/Herb-alpert",
+        "type": "regular",
+        "id": "147200"
+      },
+      {
+        "name": "Herb Alpert & The Tijuana Brass",
+        "url": "https://genius.com/artists/Herb-alpert-and-the-tijuana-brass",
+        "type": "regular",
+        "id": "350137"
+      },
+      {
+        "name": "Herbert Grönemeyer",
+        "url": "https://genius.com/artists/Herbert-gronemeyer",
+        "type": "regular",
+        "id": "54839"
+      },
+      {
+        "name": "Herbie Hancock",
+        "url": "https://genius.com/artists/Herbie-hancock",
+        "type": "regular",
+        "id": "6238"
+      },
+      {
+        "name": "Herbs",
+        "url": "https://genius.com/artists/Herbs",
+        "type": "regular",
+        "id": "454851"
+      },
+      {
+        "name": "​herbst",
+        "url": "https://genius.com/artists/Herbst",
+        "type": "regular",
+        "id": "4031602"
+      },
+      {
+        "name": "Herb Surface",
+        "url": "https://genius.com/artists/Herb-surface",
+        "type": "regular",
+        "id": "3281862"
+      },
+      {
+        "name": "Here Come The Mummies",
+        "url": "https://genius.com/artists/Here-come-the-mummies",
+        "type": "regular",
+        "id": "363708"
+      },
+      {
+        "name": "Herencia De Grandes",
+        "url": "https://genius.com/artists/Herencia-de-grandes",
+        "type": "regular",
+        "id": "3672443"
+      },
+      {
+        "name": "Herencia de Patrones",
+        "url": "https://genius.com/artists/Herencia-de-patrones",
+        "type": "regular",
+        "id": "1844437"
+      },
+      {
+        "name": "Heritage Singers",
+        "url": "https://genius.com/artists/Heritage-singers",
+        "type": "regular",
+        "id": "361377"
+      },
+      {
+        "name": "Herman Melville",
+        "url": "https://genius.com/artists/Herman-melville",
+        "type": "regular",
+        "id": "22978"
+      },
+      {
+        "name": "Hermanos Espinoza",
+        "url": "https://genius.com/artists/Hermanos-espinoza",
+        "type": "regular",
+        "id": "3809244"
+      },
+      {
+        "name": "Hermanos Gutiérrez",
+        "url": "https://genius.com/artists/Hermanos-gutierrez",
+        "type": "regular",
+        "id": "2326360"
+      },
+      {
+        "name": "Herman's Hermits",
+        "url": "https://genius.com/artists/Hermans-hermits",
+        "type": "regular",
+        "id": "103730"
+      },
+      {
+        "name": "Herman Silow",
+        "url": "https://genius.com/artists/Herman-silow",
+        "type": "regular",
+        "id": "4117349"
+      },
+      {
+        "name": "Herman van Veen",
+        "url": "https://genius.com/artists/Herman-van-veen",
+        "type": "regular",
+        "id": "328644"
+      },
+      {
+        "name": "Hermesdeniz",
+        "url": "https://genius.com/artists/Hermesdeniz",
+        "type": "regular",
+        "id": "3620337"
+      },
+      {
+        "name": "Hermit and the Recluse",
+        "url": "https://genius.com/artists/Hermit-and-the-recluse",
+        "type": "regular",
+        "id": "1556284"
+      },
+      {
+        "name": "Herms Niel",
+        "url": "https://genius.com/artists/Herms-niel",
+        "type": "regular",
+        "id": "1592255"
+      },
+      {
+        "name": "Her New Knife",
+        "url": "https://genius.com/artists/Her-new-knife",
+        "type": "regular",
+        "id": "3580585"
+      },
+      {
+        "name": "HE/RO",
+        "url": "https://genius.com/artists/He-ro",
+        "type": "regular",
+        "id": "2540824"
+      },
+      {
+        "name": "Herra Hnetusmjör",
+        "url": "https://genius.com/artists/Herra-hnetusmjor",
+        "type": "regular",
+        "id": "207950"
+      },
+      {
+        "name": "Herreys",
+        "url": "https://genius.com/artists/Herreys",
+        "type": "regular",
+        "id": "369178"
+      },
+      {
+        "name": "Her's",
+        "url": "https://genius.com/artists/Hers",
+        "type": "regular",
+        "id": "1019943"
+      },
+      {
+        "name": "Her Words Kill",
+        "url": "https://genius.com/artists/Her-words-kill",
+        "type": "regular",
+        "id": "373090"
+      },
+      {
+        "name": "HesamTiem",
+        "url": "https://genius.com/artists/Hesamtiem",
+        "type": "regular",
+        "id": "3685089"
+      },
+      {
+        "name": "Hesse Kassel",
+        "url": "https://genius.com/artists/Hesse-kassel",
+        "type": "regular",
+        "id": "4034246"
+      },
+      {
+        "name": "Hessom",
+        "url": "https://genius.com/artists/Hessom",
+        "type": "regular",
+        "id": "4313567"
+      },
+      {
+        "name": "Хестон (Heston)",
+        "url": "https://genius.com/artists/Heston",
+        "type": "regular",
+        "id": "2276349"
+      },
+      {
+        "name": "Het Goede Doel",
+        "url": "https://genius.com/artists/Het-goede-doel",
+        "type": "regular",
+        "id": "361418"
+      },
+      {
+        "name": "Heuss L'enfoiré",
+        "url": "https://genius.com/artists/Heuss-lenfoire",
+        "type": "regular",
+        "id": "1242021"
+      },
+      {
+        "name": "Hev Abi",
+        "url": "https://genius.com/artists/Hev-abi",
+        "type": "regular",
+        "id": "3514421"
+      },
+      {
+        "name": "HEWRA",
+        "url": "https://genius.com/artists/Hewra",
+        "type": "regular",
+        "id": "1068572"
+      },
+      {
+        "name": "The Hex Girls",
+        "url": "https://genius.com/artists/The-hex-girls",
+        "type": "regular",
+        "id": "1273807"
+      },
+      {
+        "name": "HEY JUNE!",
+        "url": "https://genius.com/artists/Hey-june",
+        "type": "regular",
+        "id": "3445535"
+      },
+      {
+        "name": "Heykel",
+        "url": "https://genius.com/artists/Heykel",
+        "type": "regular",
+        "id": "3497970"
+      },
+      {
+        "name": "heylog",
+        "url": "https://genius.com/artists/Heylog",
+        "type": "regular",
+        "id": "1505401"
+      },
+      {
+        "name": "Heymylan",
+        "url": "https://genius.com/artists/Heymylan",
+        "type": "regular",
+        "id": "3770006"
+      },
+      {
+        "name": "​​hey, nothing",
+        "url": "https://genius.com/artists/Hey-nothing",
+        "type": "regular",
+        "id": "2798070"
+      },
+      {
+        "name": "Hey! Say! JUMP",
+        "url": "https://genius.com/artists/Hey-say-jump",
+        "type": "regular",
+        "id": "59609"
+      },
+      {
+        "name": "Hey Violet",
+        "url": "https://genius.com/artists/Hey-violet",
+        "type": "regular",
+        "id": "532816"
+      },
+      {
+        "name": "Heywood Banks",
+        "url": "https://genius.com/artists/Heywood-banks",
+        "type": "regular",
+        "id": "369977"
+      },
+      {
+        "name": "Hezekiah Walker",
+        "url": "https://genius.com/artists/Hezekiah-walker",
+        "type": "regular",
+        "id": "350549"
+      },
+      {
+        "name": "Hezzy",
+        "url": "https://genius.com/artists/Hezzy",
+        "type": "regular",
+        "id": "3941074"
+      },
+      {
+        "name": "HGEMONA$",
+        "url": "https://genius.com/artists/Hgemona",
+        "type": "regular",
+        "id": "1927420"
+      },
+      {
+        "name": "Höhner",
+        "url": "https://genius.com/artists/Hohner",
+        "type": "regular",
+        "id": "149706"
+      },
+      {
+        "name": "HHP",
+        "url": "https://genius.com/artists/Hhp",
+        "type": "regular",
+        "id": "40409"
+      },
+      {
+        "name": "Hi-5",
+        "url": "https://genius.com/artists/Hi-5",
+        "type": "regular",
+        "id": "358263"
+      },
+      {
+        "name": "Hiatus Kaiyote",
+        "url": "https://genius.com/artists/Hiatus-kaiyote",
+        "type": "regular",
+        "id": "62702"
+      },
+      {
+        "name": "Hi-C",
+        "url": "https://genius.com/artists/Hi-c",
+        "type": "regular",
+        "id": "1098264"
+      },
+      {
+        "name": "Hichkas",
+        "url": "https://genius.com/artists/Hichkas",
+        "type": "regular",
+        "id": "20849"
+      },
+      {
+        "name": "The Hics",
+        "url": "https://genius.com/artists/The-hics",
+        "type": "regular",
+        "id": "68229"
+      },
+      {
+        "name": "長沼英樹 (Hideki Naganuma)",
+        "url": "https://genius.com/artists/Hideki-naganuma",
+        "type": "regular",
+        "id": "365322"
+      },
+      {
+        "name": "坂本英城 (Hideki Sakamoto)",
+        "url": "https://genius.com/artists/Hideki-sakamoto",
+        "type": "regular",
+        "id": "1423313"
+      },
+      {
+        "name": "Hidra",
+        "url": "https://genius.com/artists/Hidra",
+        "type": "regular",
+        "id": "452981"
+      },
+      {
+        "name": "Hieroglyphics",
+        "url": "https://genius.com/artists/Hieroglyphics",
+        "type": "regular",
+        "id": "1089"
+      },
+      {
+        "name": "HIEUTHUHAI",
+        "url": "https://genius.com/artists/Hieuthuhai",
+        "type": "regular",
+        "id": "2031129"
+      },
+      {
+        "name": "Hi-Fi (RUS)",
+        "url": "https://genius.com/artists/Hi-fi-rus",
+        "type": "regular",
+        "id": "2019770"
+      },
+      {
+        "name": "Hi-Five",
+        "url": "https://genius.com/artists/Hi-five",
+        "type": "regular",
+        "id": "8649"
+      },
+      {
+        "name": "High 5",
+        "url": "https://genius.com/artists/High-5",
+        "type": "regular",
+        "id": "986145"
+      },
+      {
+        "name": "The High & Mighty",
+        "url": "https://genius.com/artists/The-high-and-mighty",
+        "type": "regular",
+        "id": "971"
+      },
+      {
+        "name": "Highasakite",
+        "url": "https://genius.com/artists/Highasakite",
+        "type": "regular",
+        "id": "235814"
+      },
+      {
+        "name": "Higher Brothers",
+        "url": "https://genius.com/artists/Higher-brothers",
+        "type": "regular",
+        "id": "1000448"
+      },
+      {
+        "name": "The High Kings",
+        "url": "https://genius.com/artists/The-high-kings",
+        "type": "regular",
+        "id": "365710"
+      },
+      {
+        "name": "Highlands Worship",
+        "url": "https://genius.com/artists/Highlands-worship",
+        "type": "regular",
+        "id": "405610"
+      },
+      {
+        "name": "Highly Suspect",
+        "url": "https://genius.com/artists/Highly-suspect",
+        "type": "regular",
+        "id": "338874"
+      },
+      {
+        "name": "High on Fire",
+        "url": "https://genius.com/artists/High-on-fire",
+        "type": "regular",
+        "id": "344638"
+      },
+      {
+        "name": "HighRolla",
+        "url": "https://genius.com/artists/Highrolla",
+        "type": "regular",
+        "id": "656597"
+      },
+      {
+        "name": "The High Strung",
+        "url": "https://genius.com/artists/The-high-strung",
+        "type": "regular",
+        "id": "372854"
+      },
+      {
+        "name": "High Vis",
+        "url": "https://genius.com/artists/High-vis",
+        "type": "regular",
+        "id": "3131719"
+      },
+      {
+        "name": "Highway",
+        "url": "https://genius.com/artists/Highway",
+        "type": "regular",
+        "id": "1350669"
+      },
+      {
+        "name": "The Highwaymen",
+        "url": "https://genius.com/artists/The-highwaymen",
+        "type": "regular",
+        "id": "215914"
+      },
+      {
+        "name": "The Highwomen",
+        "url": "https://genius.com/artists/The-highwomen",
+        "type": "regular",
+        "id": "1819224"
+      },
+      {
+        "name": "Hi Hania",
+        "url": "https://genius.com/artists/Hi-hania",
+        "type": "regular",
+        "id": "3053277"
+      },
+      {
+        "name": "柊マグネタイト (Hiiragi Magnetite)",
+        "url": "https://genius.com/artists/Hiiragi-magnetite",
+        "type": "regular",
+        "id": "2738139"
+      },
+      {
+        "name": "Hijos De Barrón",
+        "url": "https://genius.com/artists/Hijos-de-barron",
+        "type": "regular",
+        "id": "454660"
+      },
+      {
+        "name": "Hikaru Station",
+        "url": "https://genius.com/artists/Hikaru-station",
+        "type": "regular",
+        "id": "1325689"
+      },
+      {
+        "name": "宇多田ヒカル (Hikaru Utada)",
+        "url": "https://genius.com/artists/Hikaru-utada",
+        "type": "regular",
+        "id": "22739"
+      },
+      {
+        "name": "Hikmət Aslanov",
+        "url": "https://genius.com/artists/Hikmt-aslanov",
+        "type": "regular",
+        "id": "3669921"
+      },
+      {
+        "name": "Hilary Duff",
+        "url": "https://genius.com/artists/Hilary-duff",
+        "type": "regular",
+        "id": "15291"
+      },
+      {
+        "name": "Hildegard Knef",
+        "url": "https://genius.com/artists/Hildegard-knef",
+        "type": "regular",
+        "id": "69343"
+      },
+      {
+        "name": "Hildegard von Blingin'",
+        "url": "https://genius.com/artists/Hildegard-von-blingin",
+        "type": "regular",
+        "id": "2278991"
+      },
+      {
+        "name": "Hiljson Mandela",
+        "url": "https://genius.com/artists/Hiljson-mandela",
+        "type": "regular",
+        "id": "1493324"
+      },
+      {
+        "name": "Hiljson Mandela & Miach",
+        "url": "https://genius.com/artists/Hiljson-mandela-and-miach",
+        "type": "regular",
+        "id": "4168622"
+      },
+      {
+        "name": "HILLARI",
+        "url": "https://genius.com/artists/Hillari",
+        "type": "regular",
+        "id": "3365074"
+      },
+      {
+        "name": "Hillary Scott",
+        "url": "https://genius.com/artists/Hillary-scott",
+        "type": "regular",
+        "id": "662227"
+      },
+      {
+        "name": "Hillsong en Español",
+        "url": "https://genius.com/artists/Hillsong-en-espanol",
+        "type": "regular",
+        "id": "688698"
+      },
+      {
+        "name": "Hillsong Kids",
+        "url": "https://genius.com/artists/Hillsong-kids",
+        "type": "regular",
+        "id": "370232"
+      },
+      {
+        "name": "Hillsong London",
+        "url": "https://genius.com/artists/Hillsong-london",
+        "type": "regular",
+        "id": "360190"
+      },
+      {
+        "name": "Hillsong Young & Free",
+        "url": "https://genius.com/artists/Hillsong-young-and-free",
+        "type": "regular",
+        "id": "77650"
+      },
+      {
+        "name": "Hilltop Hoods",
+        "url": "https://genius.com/artists/Hilltop-hoods",
+        "type": "regular",
+        "id": "4842"
+      },
+      {
+        "name": "HIMEHINA",
+        "url": "https://genius.com/artists/Himehina",
+        "type": "regular",
+        "id": "2370950"
+      },
+      {
+        "name": "Химера (Himera Band)",
+        "url": "https://genius.com/artists/Himera-band",
+        "type": "regular",
+        "id": "1967714"
+      },
+      {
+        "name": "Himesh Reshammiya",
+        "url": "https://genius.com/artists/Himesh-reshammiya",
+        "type": "regular",
+        "id": "363809"
+      },
+      {
+        "name": "HIM (FIN)",
+        "url": "https://genius.com/artists/Him-fin",
+        "type": "regular",
+        "id": "46307"
+      },
+      {
+        "name": "Himig Heswita",
+        "url": "https://genius.com/artists/Himig-heswita",
+        "type": "regular",
+        "id": "2368336"
+      },
+      {
+        "name": "Himra",
+        "url": "https://genius.com/artists/Himra",
+        "type": "regular",
+        "id": "2817358"
+      },
+      {
+        "name": "Hinder",
+        "url": "https://genius.com/artists/Hinder",
+        "type": "regular",
+        "id": "51708"
+      },
+      {
+        "name": "Hinds",
+        "url": "https://genius.com/artists/Hinds",
+        "type": "regular",
+        "id": "454485"
+      },
+      {
+        "name": "張敬軒 (Hins Cheung)",
+        "url": "https://genius.com/artists/Hins-cheung",
+        "type": "regular",
+        "id": "1549328"
+      },
+      {
+        "name": "Hiperbolė",
+        "url": "https://genius.com/artists/Hiperbole",
+        "type": "regular",
+        "id": "31516"
+      },
+      {
+        "name": "Hiphopologist",
+        "url": "https://genius.com/artists/Hiphopologist",
+        "type": "regular",
+        "id": "2296766"
+      },
+      {
+        "name": "Hiphop Tamizha",
+        "url": "https://genius.com/artists/Hiphop-tamizha",
+        "type": "regular",
+        "id": "533334"
+      },
+      {
+        "name": "Hippie Sabotage",
+        "url": "https://genius.com/artists/Hippie-sabotage",
+        "type": "regular",
+        "id": "28492"
+      },
+      {
+        "name": "Hippo Campus",
+        "url": "https://genius.com/artists/Hippo-campus",
+        "type": "regular",
+        "id": "182356"
+      },
+      {
+        "name": "Hi-Rez",
+        "url": "https://genius.com/artists/Hi-rez",
+        "type": "regular",
+        "id": "13631"
+      },
+      {
+        "name": "HIRO (KAZ)",
+        "url": "https://genius.com/artists/Hiro-kaz",
+        "type": "regular",
+        "id": "1169202"
+      },
+      {
+        "name": "Hiromitsu Kitayama",
+        "url": "https://genius.com/artists/Hiromitsu-kitayama",
+        "type": "regular",
+        "id": "3737376"
+      },
+      {
+        "name": "хироши (hiroshielden)",
+        "url": "https://genius.com/artists/Hiroshielden",
+        "type": "regular",
+        "id": "4278176"
+      },
+      {
+        "name": "澤野弘之 (Hiroyuki Sawano)",
+        "url": "https://genius.com/artists/Hiroyuki-sawano",
+        "type": "regular",
+        "id": "405727"
+      },
+      {
+        "name": "Hisab",
+        "url": "https://genius.com/artists/Hisab",
+        "type": "regular",
+        "id": "3052183"
+      },
+      {
+        "name": "Hit-Boy",
+        "url": "https://genius.com/artists/Hit-boy",
+        "type": "regular",
+        "id": "21188"
+      },
+      {
+        "name": "Hiten",
+        "url": "https://genius.com/artists/Hiten",
+        "type": "regular",
+        "id": "2812709"
+      },
+      {
+        "name": "HITGS (힛지스)",
+        "url": "https://genius.com/artists/Hitgs",
+        "type": "regular",
+        "id": "4389031"
+      },
+      {
+        "name": "Hitkidd",
+        "url": "https://genius.com/artists/Hitkidd",
+        "type": "regular",
+        "id": "632856"
+      },
+      {
+        "name": "Hitmaka",
+        "url": "https://genius.com/artists/Hitmaka",
+        "type": "regular",
+        "id": "11305"
+      },
+      {
+        "name": "羊文学 (Hitsujibungaku)",
+        "url": "https://genius.com/artists/Hitsujibungaku",
+        "type": "regular",
+        "id": "1874207"
+      },
+      {
+        "name": "The Hives",
+        "url": "https://genius.com/artists/The-hives",
+        "type": "regular",
+        "id": "7812"
+      },
+      {
+        "name": "HIVI!",
+        "url": "https://genius.com/artists/Hivi",
+        "type": "regular",
+        "id": "1055102"
+      },
+      {
+        "name": "HIWAY CC",
+        "url": "https://genius.com/artists/Hiway-cc",
+        "type": "regular",
+        "id": "1018061"
+      },
+      {
+        "name": "Hixxy",
+        "url": "https://genius.com/artists/Hixxy",
+        "type": "regular",
+        "id": "377387"
+      },
+      {
+        "name": "H JeuneCrack",
+        "url": "https://genius.com/artists/H-jeunecrack",
+        "type": "regular",
+        "id": "2616866"
+      },
+      {
+        "name": "HK",
+        "url": "https://genius.com/artists/Hk",
+        "type": "regular",
+        "id": "407883"
+      },
+      {
+        "name": "Hladno Pivo",
+        "url": "https://genius.com/artists/Hladno-pivo",
+        "type": "regular",
+        "id": "355820"
+      },
+      {
+        "name": "H.LA DROGUE",
+        "url": "https://genius.com/artists/Hla-drogue",
+        "type": "regular",
+        "id": "2532545"
+      },
+      {
+        "name": "ХЛЕБ (HLEB)",
+        "url": "https://genius.com/artists/Hleb",
+        "type": "regular",
+        "id": "650917"
+      },
+      {
+        "name": "хмыров (hmirov)",
+        "url": "https://genius.com/artists/Hmirov",
+        "type": "regular",
+        "id": "1839436"
+      },
+      {
+        "name": "HMZ (FRA)",
+        "url": "https://genius.com/artists/Hmz-fra",
+        "type": "regular",
+        "id": "2296719"
+      },
+      {
+        "name": "Ho3ein",
+        "url": "https://genius.com/artists/Ho3ein",
+        "type": "regular",
+        "id": "151590"
+      },
+      {
+        "name": "Ho99o9",
+        "url": "https://genius.com/artists/Ho99o9",
+        "type": "regular",
+        "id": "574262"
+      },
+      {
+        "name": "Hoagy Carmichael",
+        "url": "https://genius.com/artists/Hoagy-carmichael",
+        "type": "regular",
+        "id": "354773"
+      },
+      {
+        "name": "Hoba Hoba Spirit",
+        "url": "https://genius.com/artists/Hoba-hoba-spirit",
+        "type": "regular",
+        "id": "109663"
+      },
+      {
+        "name": "Hobo Johnson",
+        "url": "https://genius.com/artists/Hobo-johnson",
+        "type": "regular",
+        "id": "1102311"
+      },
+      {
+        "name": "Hodgy",
+        "url": "https://genius.com/artists/Hodgy",
+        "type": "regular",
+        "id": "1262"
+      },
+      {
+        "name": "HOFMANNITA",
+        "url": "https://genius.com/artists/Hofmannita",
+        "type": "regular",
+        "id": "1766440"
+      },
+      {
+        "name": "Hoftyk",
+        "url": "https://genius.com/artists/Hoftyk",
+        "type": "regular",
+        "id": "2017236"
+      },
+      {
+        "name": "Hojean",
+        "url": "https://genius.com/artists/Hojean",
+        "type": "regular",
+        "id": "1075208"
+      },
+      {
+        "name": "HOKE",
+        "url": "https://genius.com/artists/Hoke",
+        "type": "regular",
+        "id": "1395600"
+      },
+      {
+        "name": "Holding Absence",
+        "url": "https://genius.com/artists/Holding-absence",
+        "type": "regular",
+        "id": "601094"
+      },
+      {
+        "name": "The Hold Steady",
+        "url": "https://genius.com/artists/The-hold-steady",
+        "type": "regular",
+        "id": "31359"
+      },
+      {
+        "name": "Каникулы На Марсе (Holidays On Mars)",
+        "url": "https://genius.com/artists/Holidays-on-mars",
+        "type": "regular",
+        "id": "3824086"
+      },
+      {
+        "name": "Холла (Holla) (RU)",
+        "url": "https://genius.com/artists/Holla-ru",
+        "type": "regular",
+        "id": "4434162"
+      },
+      {
+        "name": "The Hollies",
+        "url": "https://genius.com/artists/The-hollies",
+        "type": "regular",
+        "id": "29611"
+      },
+      {
+        "name": "Hollow Coves",
+        "url": "https://genius.com/artists/Hollow-coves",
+        "type": "regular",
+        "id": "647688"
+      },
+      {
+        "name": "Holly Humberstone",
+        "url": "https://genius.com/artists/Holly-humberstone",
+        "type": "regular",
+        "id": "2093464"
+      },
+      {
+        "name": "Holly Near",
+        "url": "https://genius.com/artists/Holly-near",
+        "type": "regular",
+        "id": "354190"
+      },
+      {
+        "name": "Hollywood Hank",
+        "url": "https://genius.com/artists/Hollywood-hank",
+        "type": "regular",
+        "id": "13393"
+      },
+      {
+        "name": "Hollywood Undead",
+        "url": "https://genius.com/artists/Hollywood-undead",
+        "type": "regular",
+        "id": "2071"
+      },
+      {
+        "name": "Hologram Lo'",
+        "url": "https://genius.com/artists/Hologram-lo",
+        "type": "regular",
+        "id": "41734"
+      },
+      {
+        "name": "Hololive English",
+        "url": "https://genius.com/artists/Hololive-english",
+        "type": "regular",
+        "id": "3015647"
+      },
+      {
+        "name": "Holy Bible (KJV)",
+        "url": "https://genius.com/artists/Holy-bible-kjv",
+        "type": "regular",
+        "id": "31651"
+      },
+      {
+        "name": "HOLYCHILD",
+        "url": "https://genius.com/artists/Holychild",
+        "type": "regular",
+        "id": "309275"
+      },
+      {
+        "name": "Holy Fuck",
+        "url": "https://genius.com/artists/Holy-fuck",
+        "type": "regular",
+        "id": "126994"
+      },
+      {
+        "name": "Holy Locust",
+        "url": "https://genius.com/artists/Holy-locust",
+        "type": "regular",
+        "id": "1496849"
+      },
+      {
+        "name": "Holy Molly",
+        "url": "https://genius.com/artists/Holy-molly",
+        "type": "regular",
+        "id": "2045946"
+      },
+      {
+        "name": "HolyName",
+        "url": "https://genius.com/artists/Holyname",
+        "type": "regular",
+        "id": "2769456"
+      },
+      {
+        "name": "Holy Name of Mary Choral Family",
+        "url": "https://genius.com/artists/Holy-name-of-mary-choral-family",
+        "type": "regular",
+        "id": "54747"
+      },
+      {
+        "name": "Holywatr",
+        "url": "https://genius.com/artists/Holywatr",
+        "type": "regular",
+        "id": "2934678"
+      },
+      {
+        "name": "Hombres G",
+        "url": "https://genius.com/artists/Hombres-g",
+        "type": "regular",
+        "id": "344604"
+      },
+      {
+        "name": "HOME",
+        "url": "https://genius.com/artists/Home",
+        "type": "regular",
+        "id": "1053092"
+      },
+      {
+        "name": "Home Brew",
+        "url": "https://genius.com/artists/Home-brew",
+        "type": "regular",
+        "id": "23411"
+      },
+      {
+        "name": "Home Free",
+        "url": "https://genius.com/artists/Home-free",
+        "type": "regular",
+        "id": "314853"
+      },
+      {
+        "name": "Home Is Where",
+        "url": "https://genius.com/artists/Home-is-where",
+        "type": "regular",
+        "id": "2486094"
+      },
+      {
+        "name": "Homer el Mero Mero",
+        "url": "https://genius.com/artists/Homer-el-mero-mero",
+        "type": "regular",
+        "id": "1388427"
+      },
+      {
+        "name": "HOMESHAKE",
+        "url": "https://genius.com/artists/Homeshake",
+        "type": "regular",
+        "id": "299072"
+      },
+      {
+        "name": "The Home Team",
+        "url": "https://genius.com/artists/The-home-team",
+        "type": "regular",
+        "id": "1421937"
+      },
+      {
+        "name": "HOMIE",
+        "url": "https://genius.com/artists/Homie",
+        "type": "regular",
+        "id": "1919927"
+      },
+      {
+        "name": "Homixide Gang",
+        "url": "https://genius.com/artists/Homixide-gang",
+        "type": "regular",
+        "id": "2704855"
+      },
+      {
+        "name": "Honcho",
+        "url": "https://genius.com/artists/Honcho",
+        "type": "regular",
+        "id": "642162"
+      },
+      {
+        "name": "honestav",
+        "url": "https://genius.com/artists/Honestav",
+        "type": "regular",
+        "id": "3802411"
+      },
+      {
+        "name": "Honey Bxby",
+        "url": "https://genius.com/artists/Honey-bxby",
+        "type": "regular",
+        "id": "3502950"
+      },
+      {
+        "name": "HoneyKomb Brazy",
+        "url": "https://genius.com/artists/Honeykomb-brazy",
+        "type": "regular",
+        "id": "2609952"
+      },
+      {
+        "name": "Honey Revenge",
+        "url": "https://genius.com/artists/Honey-revenge",
+        "type": "regular",
+        "id": "2963362"
+      },
+      {
+        "name": "The Honeysticks",
+        "url": "https://genius.com/artists/The-honeysticks",
+        "type": "regular",
+        "id": "1105033"
+      },
+      {
+        "name": "HoneyWorks",
+        "url": "https://genius.com/artists/Honeyworks",
+        "type": "regular",
+        "id": "1011132"
+      },
+      {
+        "name": "Hoàng Duyên",
+        "url": "https://genius.com/artists/Hoang-duyen",
+        "type": "regular",
+        "id": "2572198"
+      },
+      {
+        "name": "Hongjoong (홍중)",
+        "url": "https://genius.com/artists/Hongjoong",
+        "type": "regular",
+        "id": "1628019"
+      },
+      {
+        "name": "Hong Kong Disneyland",
+        "url": "https://genius.com/artists/Hong-kong-disneyland",
+        "type": "regular",
+        "id": "1155216"
+      },
+      {
+        "name": "Hoàng Thuỳ Linh",
+        "url": "https://genius.com/artists/Hoang-thuy-linh",
+        "type": "regular",
+        "id": "1582946"
+      },
+      {
+        "name": "HONNE",
+        "url": "https://genius.com/artists/Honne",
+        "type": "regular",
+        "id": "483876"
+      },
+      {
+        "name": "Honningbarna",
+        "url": "https://genius.com/artists/Honningbarna",
+        "type": "regular",
+        "id": "388229"
+      },
+      {
+        "name": "Hoobastank",
+        "url": "https://genius.com/artists/Hoobastank",
+        "type": "regular",
+        "id": "55859"
+      },
+      {
+        "name": "Hoodadk4",
+        "url": "https://genius.com/artists/Hoodadk4",
+        "type": "regular",
+        "id": "3621202"
+      },
+      {
+        "name": "HoodBlaq",
+        "url": "https://genius.com/artists/Hoodblaq",
+        "type": "regular",
+        "id": "2913510"
+      },
+      {
+        "name": "Hoodie Allen",
+        "url": "https://genius.com/artists/Hoodie-allen",
+        "type": "regular",
+        "id": "2057"
+      },
+      {
+        "name": "The Hood Rejects",
+        "url": "https://genius.com/artists/The-hood-rejects",
+        "type": "regular",
+        "id": "3925192"
+      },
+      {
+        "name": "Hood Rich Luka",
+        "url": "https://genius.com/artists/Hood-rich-luka",
+        "type": "regular",
+        "id": "2799357"
+      },
+      {
+        "name": "Hoodrich Pablo Juan",
+        "url": "https://genius.com/artists/Hoodrich-pablo-juan",
+        "type": "regular",
+        "id": "234513"
+      },
+      {
+        "name": "Hood Tali",
+        "url": "https://genius.com/artists/Hood-tali",
+        "type": "regular",
+        "id": "2983260"
+      },
+      {
+        "name": "​hooligan chase",
+        "url": "https://genius.com/artists/Hooligan-chase",
+        "type": "regular",
+        "id": "816644"
+      },
+      {
+        "name": "Hooligan Hefs",
+        "url": "https://genius.com/artists/Hooligan-hefs",
+        "type": "regular",
+        "id": "1253839"
+      },
+      {
+        "name": "Hoomaan",
+        "url": "https://genius.com/artists/Hoomaan",
+        "type": "regular",
+        "id": "2240237"
+      },
+      {
+        "name": "The Hoosiers",
+        "url": "https://genius.com/artists/The-hoosiers",
+        "type": "regular",
+        "id": "196585"
+      },
+      {
+        "name": "Hooss",
+        "url": "https://genius.com/artists/Hooss",
+        "type": "regular",
+        "id": "265169"
+      },
+      {
+        "name": "The Hooters",
+        "url": "https://genius.com/artists/The-hooters",
+        "type": "regular",
+        "id": "55876"
+      },
+      {
+        "name": "Hootie & the Blowfish",
+        "url": "https://genius.com/artists/Hootie-and-the-blowfish",
+        "type": "regular",
+        "id": "64922"
+      },
+      {
+        "name": "Hooverphonic",
+        "url": "https://genius.com/artists/Hooverphonic",
+        "type": "regular",
+        "id": "209725"
+      },
+      {
+        "name": "Hop Along",
+        "url": "https://genius.com/artists/Hop-along",
+        "type": "regular",
+        "id": "37695"
+      },
+      {
+        "name": "Hope Darst",
+        "url": "https://genius.com/artists/Hope-darst",
+        "type": "regular",
+        "id": "1221919"
+      },
+      {
+        "name": "Hope Filipino Worship",
+        "url": "https://genius.com/artists/Hope-filipino-worship",
+        "type": "regular",
+        "id": "3022195"
+      },
+      {
+        "name": "Hope Godwin",
+        "url": "https://genius.com/artists/Hope-godwin",
+        "type": "regular",
+        "id": "4400932"
+      },
+      {
+        "name": "Hope Sandoval & the Warm Inventions",
+        "url": "https://genius.com/artists/Hope-sandoval-and-the-warm-inventions",
+        "type": "regular",
+        "id": "368037"
+      },
+      {
+        "name": "Hope Tala",
+        "url": "https://genius.com/artists/Hope-tala",
+        "type": "regular",
+        "id": "1529817"
+      },
+      {
+        "name": "Hopital",
+        "url": "https://genius.com/artists/Hopital",
+        "type": "regular",
+        "id": "1857787"
+      },
+      {
+        "name": "Hopoutblick",
+        "url": "https://genius.com/artists/Hopoutblick",
+        "type": "regular",
+        "id": "3238358"
+      },
+      {
+        "name": "The Hoppers",
+        "url": "https://genius.com/artists/The-hoppers",
+        "type": "regular",
+        "id": "372528"
+      },
+      {
+        "name": "Hopsin",
+        "url": "https://genius.com/artists/Hopsin",
+        "type": "regular",
+        "id": "1308"
+      },
+      {
+        "name": "Horace Andy",
+        "url": "https://genius.com/artists/Horace-andy",
+        "type": "regular",
+        "id": "35773"
+      },
+      {
+        "name": "Horace Silver",
+        "url": "https://genius.com/artists/Horace-silver",
+        "type": "regular",
+        "id": "369093"
+      },
+      {
+        "name": "Hornet La Frappe",
+        "url": "https://genius.com/artists/Hornet-la-frappe",
+        "type": "regular",
+        "id": "221964"
+      },
+      {
+        "name": "HOROSHIYAGNI",
+        "url": "https://genius.com/artists/Horoshiyagni",
+        "type": "regular",
+        "id": "2513931"
+      },
+      {
+        "name": "Horrible Histories",
+        "url": "https://genius.com/artists/Horrible-histories",
+        "type": "regular",
+        "id": "334241"
+      },
+      {
+        "name": "Horrid1",
+        "url": "https://genius.com/artists/Horrid1",
+        "type": "regular",
+        "id": "1236060"
+      },
+      {
+        "name": "​horrormovies",
+        "url": "https://genius.com/artists/Horrormovies",
+        "type": "regular",
+        "id": "2486501"
+      },
+      {
+        "name": "The Horrors",
+        "url": "https://genius.com/artists/The-horrors",
+        "type": "regular",
+        "id": "178886"
+      },
+      {
+        "name": "Horror Skunx",
+        "url": "https://genius.com/artists/Horror-skunx",
+        "type": "regular",
+        "id": "3167301"
+      },
+      {
+        "name": "horsegiirL",
+        "url": "https://genius.com/artists/Horsegiirl",
+        "type": "regular",
+        "id": "3295803"
+      },
+      {
+        "name": "Horsegirl",
+        "url": "https://genius.com/artists/Horsegirl",
+        "type": "regular",
+        "id": "2618181"
+      },
+      {
+        "name": "Horse Head",
+        "url": "https://genius.com/artists/Horse-head",
+        "type": "regular",
+        "id": "183429"
+      },
+      {
+        "name": "Horse Jumper of Love",
+        "url": "https://genius.com/artists/Horse-jumper-of-love",
+        "type": "regular",
+        "id": "1110472"
+      },
+      {
+        "name": "Horse the Band",
+        "url": "https://genius.com/artists/Horse-the-band",
+        "type": "regular",
+        "id": "77401"
+      },
+      {
+        "name": "Horus",
+        "url": "https://genius.com/artists/Horus",
+        "type": "regular",
+        "id": "1027240"
+      },
+      {
+        "name": "Horus (VEN)",
+        "url": "https://genius.com/artists/Horus-ven",
+        "type": "regular",
+        "id": "1569451"
+      },
+      {
+        "name": "Hoseung (설호승)",
+        "url": "https://genius.com/artists/Hoseung",
+        "type": "regular",
+        "id": "2099328"
+      },
+      {
+        "name": "HOSHI (호시)",
+        "url": "https://genius.com/artists/Hoshi",
+        "type": "regular",
+        "id": "1450999"
+      },
+      {
+        "name": "​hoshie star",
+        "url": "https://genius.com/artists/Hoshie-star",
+        "type": "regular",
+        "id": "2637403"
+      },
+      {
+        "name": "Hoshi (FRA)",
+        "url": "https://genius.com/artists/Hoshi-fra",
+        "type": "regular",
+        "id": "1147139"
+      },
+      {
+        "name": "星街すいせい (Hoshimachi Suisei)",
+        "url": "https://genius.com/artists/Hoshimachi-suisei",
+        "type": "regular",
+        "id": "2525448"
+      },
+      {
+        "name": "Hotboii",
+        "url": "https://genius.com/artists/Hotboii",
+        "type": "regular",
+        "id": "1666901"
+      },
+      {
+        "name": "Hot Boys",
+        "url": "https://genius.com/artists/Hot-boys",
+        "type": "regular",
+        "id": "1663"
+      },
+      {
+        "name": "Hot Chelle Rae",
+        "url": "https://genius.com/artists/Hot-chelle-rae",
+        "type": "regular",
+        "id": "12159"
+      },
+      {
+        "name": "Hot Chip",
+        "url": "https://genius.com/artists/Hot-chip",
+        "type": "regular",
+        "id": "1676"
+      },
+      {
+        "name": "Hot Chocolate",
+        "url": "https://genius.com/artists/Hot-chocolate",
+        "type": "regular",
+        "id": "50339"
+      },
+      {
+        "name": "Hotdog",
+        "url": "https://genius.com/artists/Hotdog",
+        "type": "regular",
+        "id": "379228"
+      },
+      {
+        "name": "Hotel Books",
+        "url": "https://genius.com/artists/Hotel-books",
+        "type": "regular",
+        "id": "202712"
+      },
+      {
+        "name": "The Hotelier",
+        "url": "https://genius.com/artists/The-hotelier",
+        "type": "regular",
+        "id": "151514"
+      },
+      {
+        "name": "Hotel Ugly",
+        "url": "https://genius.com/artists/Hotel-ugly",
+        "type": "regular",
+        "id": "2275584"
+      },
+      {
+        "name": "Hot Freaks",
+        "url": "https://genius.com/artists/Hot-freaks",
+        "type": "regular",
+        "id": "194470"
+      },
+      {
+        "name": "Hothouse Flowers",
+        "url": "https://genius.com/artists/Hothouse-flowers",
+        "type": "regular",
+        "id": "357921"
+      },
+      {
+        "name": "Hotline TNT",
+        "url": "https://genius.com/artists/Hotline-tnt",
+        "type": "regular",
+        "id": "1528335"
+      },
+      {
+        "name": "Hot Milk",
+        "url": "https://genius.com/artists/Hot-milk",
+        "type": "regular",
+        "id": "1700597"
+      },
+      {
+        "name": "Hot Mulligan",
+        "url": "https://genius.com/artists/Hot-mulligan",
+        "type": "regular",
+        "id": "1018784"
+      },
+      {
+        "name": "Hotstylz",
+        "url": "https://genius.com/artists/Hotstylz",
+        "type": "regular",
+        "id": "2009"
+      },
+      {
+        "name": "Hott Headzz",
+        "url": "https://genius.com/artists/Hott-headzz",
+        "type": "regular",
+        "id": "346357"
+      },
+      {
+        "name": "Hottub",
+        "url": "https://genius.com/artists/Hottub",
+        "type": "regular",
+        "id": "1528131"
+      },
+      {
+        "name": "Hot Water Music",
+        "url": "https://genius.com/artists/Hot-water-music",
+        "type": "regular",
+        "id": "353471"
+      },
+      {
+        "name": "Houda Bondok - حودة بندق",
+        "url": "https://genius.com/artists/Houda-bondok",
+        "type": "regular",
+        "id": "2859668"
+      },
+      {
+        "name": "Houda Nasser - حودة ناصر",
+        "url": "https://genius.com/artists/Houda-nasser",
+        "type": "regular",
+        "id": "2917148"
+      },
+      {
+        "name": "HOUDI",
+        "url": "https://genius.com/artists/Houdi",
+        "type": "regular",
+        "id": "3296317"
+      },
+      {
+        "name": "Houdini",
+        "url": "https://genius.com/artists/Houdini",
+        "type": "regular",
+        "id": "353605"
+      },
+      {
+        "name": "HOUMBY",
+        "url": "https://genius.com/artists/Houmby",
+        "type": "regular",
+        "id": "3040284"
+      },
+      {
+        "name": "Houndmouth",
+        "url": "https://genius.com/artists/Houndmouth",
+        "type": "regular",
+        "id": "339178"
+      },
+      {
+        "name": "The Hound + The Fox",
+        "url": "https://genius.com/artists/The-hound-the-fox",
+        "type": "regular",
+        "id": "1250328"
+      },
+      {
+        "name": "The Hours",
+        "url": "https://genius.com/artists/The-hours",
+        "type": "regular",
+        "id": "42002"
+      },
+      {
+        "name": "Housefires",
+        "url": "https://genius.com/artists/Housefires",
+        "type": "regular",
+        "id": "458058"
+      },
+      {
+        "name": "The Housemartins",
+        "url": "https://genius.com/artists/The-housemartins",
+        "type": "regular",
+        "id": "75975"
+      },
+      {
+        "name": "The House of Love",
+        "url": "https://genius.com/artists/The-house-of-love",
+        "type": "regular",
+        "id": "50249"
+      },
+      {
+        "name": "House of Pain",
+        "url": "https://genius.com/artists/House-of-pain",
+        "type": "regular",
+        "id": "942"
+      },
+      {
+        "name": "House of Protection",
+        "url": "https://genius.com/artists/House-of-protection",
+        "type": "regular",
+        "id": "3927894"
+      },
+      {
+        "name": "宝鐘マリン (Houshou Marine)",
+        "url": "https://genius.com/artists/Houshou-marine",
+        "type": "regular",
+        "id": "2381981"
+      },
+      {
+        "name": "Hov1",
+        "url": "https://genius.com/artists/Hov1",
+        "type": "regular",
+        "id": "578752"
+      },
+      {
+        "name": "Howard Blake",
+        "url": "https://genius.com/artists/Howard-blake",
+        "type": "regular",
+        "id": "384945"
+      },
+      {
+        "name": "Howard Carpendale",
+        "url": "https://genius.com/artists/Howard-carpendale",
+        "type": "regular",
+        "id": "372885"
+      },
+      {
+        "name": "Howard Goodall",
+        "url": "https://genius.com/artists/Howard-goodall",
+        "type": "regular",
+        "id": "383057"
+      },
+      {
+        "name": "Howard Jones",
+        "url": "https://genius.com/artists/Howard-jones",
+        "type": "regular",
+        "id": "188641"
+      },
+      {
+        "name": "HOward MOody",
+        "url": "https://genius.com/artists/Howard-moody",
+        "type": "regular",
+        "id": "3965866"
+      },
+      {
+        "name": "Howard Shore",
+        "url": "https://genius.com/artists/Howard-shore",
+        "type": "regular",
+        "id": "350584"
+      },
+      {
+        "name": "Howie Day",
+        "url": "https://genius.com/artists/Howie-day",
+        "type": "regular",
+        "id": "16116"
+      },
+      {
+        "name": "How I Met Your Mother",
+        "url": "https://genius.com/artists/How-i-met-your-mother",
+        "type": "regular",
+        "id": "43954"
+      },
+      {
+        "name": "Howlin' Wolf",
+        "url": "https://genius.com/artists/Howlin-wolf",
+        "type": "regular",
+        "id": "65010"
+      },
+      {
+        "name": "HoYoFair",
+        "url": "https://genius.com/artists/Hoyofair",
+        "type": "regular",
+        "id": "3528306"
+      },
+      {
+        "name": "Hoyt Axton",
+        "url": "https://genius.com/artists/Hoyt-axton",
+        "type": "regular",
+        "id": "353954"
+      },
+      {
+        "name": "Hoyt Curtin",
+        "url": "https://genius.com/artists/Hoyt-curtin",
+        "type": "regular",
+        "id": "51507"
+      },
+      {
+        "name": "Hozwal",
+        "url": "https://genius.com/artists/Hozwal",
+        "type": "regular",
+        "id": "1704594"
+      },
+      {
+        "name": "Hridoy Khan",
+        "url": "https://genius.com/artists/Hridoy-khan",
+        "type": "regular",
+        "id": "1194809"
+      },
+      {
+        "name": "Héroes Del Silencio",
+        "url": "https://genius.com/artists/Heroes-del-silencio",
+        "type": "regular",
+        "id": "357275"
+      },
+      {
+        "name": "HRVY",
+        "url": "https://genius.com/artists/Hrvy",
+        "type": "regular",
+        "id": "1176546"
+      },
+      {
+        "name": "Hüsker Dü",
+        "url": "https://genius.com/artists/Husker-du",
+        "type": "regular",
+        "id": "354055"
+      },
+      {
+        "name": "Hüsnü Arkan",
+        "url": "https://genius.com/artists/Husnu-arkan",
+        "type": "regular",
+        "id": "1298210"
+      },
+      {
+        "name": "H-Town",
+        "url": "https://genius.com/artists/H-town",
+        "type": "regular",
+        "id": "18414"
+      },
+      {
+        "name": "The HU",
+        "url": "https://genius.com/artists/The-hu",
+        "type": "regular",
+        "id": "1088438"
+      },
+      {
+        "name": "華晨宇 (Hua Chenyu)",
+        "url": "https://genius.com/artists/Hua-chenyu",
+        "type": "regular",
+        "id": "2126623"
+      },
+      {
+        "name": "Huan62",
+        "url": "https://genius.com/artists/Huan62",
+        "type": "regular",
+        "id": "4284674"
+      },
+      {
+        "name": "Hubert.",
+        "url": "https://genius.com/artists/Hubert",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Hubert-Félix Thiéfaine",
+        "url": "https://genius.com/artists/Hubert-felix-thiefaine",
+        "type": "regular",
+        "id": "73368"
+      },
+      {
+        "name": "Hubert Sumlin",
+        "url": "https://genius.com/artists/Hubert-sumlin",
+        "type": "regular",
+        "id": "108800"
+      },
+      {
+        "name": "hubithekid",
+        "url": "https://genius.com/artists/Hubithekid",
+        "type": "regular",
+        "id": "1417023"
+      },
+      {
+        "name": "Huddy",
+        "url": "https://genius.com/artists/Huddy",
+        "type": "regular",
+        "id": "2570642"
+      },
+      {
+        "name": "Hudson Westbrook",
+        "url": "https://genius.com/artists/Hudson-westbrook",
+        "type": "regular",
+        "id": "3951125"
+      },
+      {
+        "name": "Hue and Cry",
+        "url": "https://genius.com/artists/Hue-and-cry",
+        "type": "regular",
+        "id": "357662"
+      },
+      {
+        "name": "The Hues Corporation",
+        "url": "https://genius.com/artists/The-hues-corporation",
+        "type": "regular",
+        "id": "288772"
+      },
+      {
+        "name": "Huey Lewis & The News",
+        "url": "https://genius.com/artists/Huey-lewis-and-the-news",
+        "type": "regular",
+        "id": "48460"
+      },
+      {
+        "name": "Huff 'N Doback",
+        "url": "https://genius.com/artists/Huff-n-doback",
+        "type": "regular",
+        "id": "1412"
+      },
+      {
+        "name": "HUGEL",
+        "url": "https://genius.com/artists/Hugel",
+        "type": "regular",
+        "id": "1185140"
+      },
+      {
+        "name": "Huge L (FIN)",
+        "url": "https://genius.com/artists/Huge-l-fin",
+        "type": "regular",
+        "id": "50330"
+      },
+      {
+        "name": "Hugh Grant",
+        "url": "https://genius.com/artists/Hugh-grant",
+        "type": "regular",
+        "id": "374698"
+      },
+      {
+        "name": "Hugh Laurie",
+        "url": "https://genius.com/artists/Hugh-laurie",
+        "type": "regular",
+        "id": "212542"
+      },
+      {
+        "name": "Hugh Masekela",
+        "url": "https://genius.com/artists/Hugh-masekela",
+        "type": "regular",
+        "id": "365673"
+      },
+      {
+        "name": "Hugo",
+        "url": "https://genius.com/artists/Hugo",
+        "type": "regular",
+        "id": "43439"
+      },
+      {
+        "name": "Hugo23",
+        "url": "https://genius.com/artists/Hugo23",
+        "type": "regular",
+        "id": "4124834"
+      },
+      {
+        "name": "HUGO (FIN)",
+        "url": "https://genius.com/artists/Hugo-fin",
+        "type": "regular",
+        "id": "3658875"
+      },
+      {
+        "name": "Hugo Loud",
+        "url": "https://genius.com/artists/Hugo-loud",
+        "type": "regular",
+        "id": "1870247"
+      },
+      {
+        "name": "HUGORM",
+        "url": "https://genius.com/artists/Hugorm",
+        "type": "regular",
+        "id": "2086363"
+      },
+      {
+        "name": "Hugo TSR",
+        "url": "https://genius.com/artists/Hugo-tsr",
+        "type": "regular",
+        "id": "15176"
+      },
+      {
+        "name": "Hugues Aufray",
+        "url": "https://genius.com/artists/Hugues-aufray",
+        "type": "regular",
+        "id": "344595"
+      },
+      {
+        "name": "HUH YUNJIN (허윤진)",
+        "url": "https://genius.com/artists/Huh-yunjin",
+        "type": "regular",
+        "id": "2987164"
+      },
+      {
+        "name": "Hujan",
+        "url": "https://genius.com/artists/Hujan",
+        "type": "regular",
+        "id": "370752"
+      },
+      {
+        "name": "Hukbalahap of Tondo Tribe",
+        "url": "https://genius.com/artists/Hukbalahap-of-tondo-tribe",
+        "type": "regular",
+        "id": "3685182"
+      },
+      {
+        "name": "Hulvey",
+        "url": "https://genius.com/artists/Hulvey",
+        "type": "regular",
+        "id": "1705940"
+      },
+      {
+        "name": "Hum",
+        "url": "https://genius.com/artists/Hum",
+        "type": "regular",
+        "id": "360472"
+      },
+      {
+        "name": "human Being",
+        "url": "https://genius.com/artists/Human-being",
+        "type": "regular",
+        "id": "2605090"
+      },
+      {
+        "name": "The Human League",
+        "url": "https://genius.com/artists/The-human-league",
+        "type": "regular",
+        "id": "220144"
+      },
+      {
+        "name": "HUMBE",
+        "url": "https://genius.com/artists/Humbe",
+        "type": "regular",
+        "id": "1855211"
+      },
+      {
+        "name": "Humble Pie",
+        "url": "https://genius.com/artists/Humble-pie",
+        "type": "regular",
+        "id": "207426"
+      },
+      {
+        "name": "Humlan Djojj",
+        "url": "https://genius.com/artists/Humlan-djojj",
+        "type": "regular",
+        "id": "2685994"
+      },
+      {
+        "name": "Humood Alkhudher",
+        "url": "https://genius.com/artists/Humood-alkhudher",
+        "type": "regular",
+        "id": "480032"
+      },
+      {
+        "name": "Humprey Lofranco",
+        "url": "https://genius.com/artists/Humprey-lofranco",
+        "type": "regular",
+        "id": "3401045"
+      },
+      {
+        "name": "HUNCHO JACK",
+        "url": "https://genius.com/artists/Huncho-jack",
+        "type": "regular",
+        "id": "1043518"
+      },
+      {
+        "name": "Hundred Sins",
+        "url": "https://genius.com/artists/Hundred-sins",
+        "type": "regular",
+        "id": "1703989"
+      },
+      {
+        "name": "Hundredth",
+        "url": "https://genius.com/artists/Hundredth",
+        "type": "regular",
+        "id": "362289"
+      },
+      {
+        "name": "Hunnid-P",
+        "url": "https://genius.com/artists/Hunnid-p",
+        "type": "regular",
+        "id": "30064"
+      },
+      {
+        "name": "Hunter Foster",
+        "url": "https://genius.com/artists/Hunter-foster",
+        "type": "regular",
+        "id": "481727"
+      },
+      {
+        "name": "Hunter Hayes",
+        "url": "https://genius.com/artists/Hunter-hayes",
+        "type": "regular",
+        "id": "22977"
+      },
+      {
+        "name": "Hunter Metts",
+        "url": "https://genius.com/artists/Hunter-metts",
+        "type": "regular",
+        "id": "2627231"
+      },
+      {
+        "name": "Hunters & Collectors",
+        "url": "https://genius.com/artists/Hunters-and-collectors",
+        "type": "regular",
+        "id": "262800"
+      },
+      {
+        "name": "​huntr (ARG)",
+        "url": "https://genius.com/artists/Huntr-arg",
+        "type": "regular",
+        "id": "3908286"
+      },
+      {
+        "name": "Huntrill",
+        "url": "https://genius.com/artists/Huntrill",
+        "type": "regular",
+        "id": "1493753"
+      },
+      {
+        "name": "Hurray for the Riff Raff",
+        "url": "https://genius.com/artists/Hurray-for-the-riff-raff",
+        "type": "regular",
+        "id": "41486"
+      },
+      {
+        "name": "Hurricane",
+        "url": "https://genius.com/artists/Hurricane",
+        "type": "regular",
+        "id": "1945351"
+      },
+      {
+        "name": "Hurricane Chris",
+        "url": "https://genius.com/artists/Hurricane-chris",
+        "type": "regular",
+        "id": "1641"
+      },
+      {
+        "name": "Hurricane Wisdom",
+        "url": "https://genius.com/artists/Hurricane-wisdom",
+        "type": "regular",
+        "id": "2964613"
+      },
+      {
+        "name": "Hurriganes",
+        "url": "https://genius.com/artists/Hurriganes",
+        "type": "regular",
+        "id": "353760"
+      },
+      {
+        "name": "HURRYKNG",
+        "url": "https://genius.com/artists/Hurrykng",
+        "type": "regular",
+        "id": "2339529"
+      },
+      {
+        "name": "Hurt",
+        "url": "https://genius.com/artists/Hurt",
+        "type": "regular",
+        "id": "58195"
+      },
+      {
+        "name": "Hurts",
+        "url": "https://genius.com/artists/Hurts",
+        "type": "regular",
+        "id": "79399"
+      },
+      {
+        "name": "Husayn - حُسَين",
+        "url": "https://genius.com/artists/Husayn",
+        "type": "regular",
+        "id": "1763168"
+      },
+      {
+        "name": "Hush",
+        "url": "https://genius.com/artists/Hush",
+        "type": "regular",
+        "id": "6553"
+      },
+      {
+        "name": "The Hush Sound",
+        "url": "https://genius.com/artists/The-hush-sound",
+        "type": "regular",
+        "id": "118534"
+      },
+      {
+        "name": "Huskii",
+        "url": "https://genius.com/artists/Huskii",
+        "type": "regular",
+        "id": "1159189"
+      },
+      {
+        "name": "Хаски (Husky)",
+        "url": "https://genius.com/artists/Husky",
+        "type": "regular",
+        "id": "64942"
+      },
+      {
+        "name": "Hussain Al Jassmi - حسين الجسمي",
+        "url": "https://genius.com/artists/Hussain-al-jassmi",
+        "type": "regular",
+        "id": "1766144"
+      },
+      {
+        "name": "HUSSVRX",
+        "url": "https://genius.com/artists/Hussvrx",
+        "type": "regular",
+        "id": "3672295"
+      },
+      {
+        "name": "Hustlang Robber",
+        "url": "https://genius.com/artists/Hustlang-robber",
+        "type": "regular",
+        "id": "2932882"
+      },
+      {
+        "name": "huzzy b",
+        "url": "https://genius.com/artists/Huzzy-b",
+        "type": "regular",
+        "id": "1436614"
+      },
+      {
+        "name": "Hva Snakker Du Om?",
+        "url": "https://genius.com/artists/Hva-snakker-du-om",
+        "type": "regular",
+        "id": "457917"
+      },
+      {
+        "name": "황정민 (Hwang Jung-min)",
+        "url": "https://genius.com/artists/Hwang-jung-min",
+        "type": "regular",
+        "id": "4408282"
+      },
+      {
+        "name": "HWASA (화사)",
+        "url": "https://genius.com/artists/Hwasa",
+        "type": "regular",
+        "id": "648367"
+      },
+      {
+        "name": "HxW (HOSHI & WOOZI)",
+        "url": "https://genius.com/artists/Hxw-hoshi-and-woozi",
+        "type": "regular",
+        "id": "4322652"
+      },
+      {
+        "name": "Hybrid Minds",
+        "url": "https://genius.com/artists/Hybrid-minds",
+        "type": "regular",
+        "id": "187742"
+      },
+      {
+        "name": "HYBS",
+        "url": "https://genius.com/artists/Hybs",
+        "type": "regular",
+        "id": "1147797"
+      },
+      {
+        "name": "Hyce",
+        "url": "https://genius.com/artists/Hyce",
+        "type": "regular",
+        "id": "3822591"
+      },
+      {
+        "name": "HYDE",
+        "url": "https://genius.com/artists/Hyde",
+        "type": "regular",
+        "id": "135066"
+      },
+      {
+        "name": "Hydracoque",
+        "url": "https://genius.com/artists/Hydracoque",
+        "type": "regular",
+        "id": "3002960"
+      },
+      {
+        "name": "Hydra (ITA)",
+        "url": "https://genius.com/artists/Hydra-ita",
+        "type": "regular",
+        "id": "1953575"
+      },
+      {
+        "name": "Hyper Act",
+        "url": "https://genius.com/artists/Hyper-act",
+        "type": "regular",
+        "id": "3915152"
+      },
+      {
+        "name": "Hypocrisy",
+        "url": "https://genius.com/artists/Hypocrisy",
+        "type": "regular",
+        "id": "362330"
+      },
+      {
+        "name": "HYUKOH",
+        "url": "https://genius.com/artists/Hyukoh",
+        "type": "regular",
+        "id": "318857"
+      },
+      {
+        "name": "Häzel",
+        "url": "https://genius.com/artists/Hazel",
+        "type": "regular",
+        "id": "18341"
+      },
+      {
+        "name": "Hzino",
+        "url": "https://genius.com/artists/Hzino",
+        "type": "regular",
+        "id": "2664994"
+      }
+    ]
+  }
+}
