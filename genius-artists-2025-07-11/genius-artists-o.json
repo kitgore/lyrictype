@@ -1,0 +1,4513 @@
+{
+  "letter": "O",
+  "timestamp": "2025-07-11T11:00:52.186Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Oasis",
+        "url": "https://genius.com/artists/Oasis",
+        "type": "popular",
+        "id": "21100"
+      },
+      {
+        "name": "OBLADAET",
+        "url": "https://genius.com/artists/Obladaet",
+        "type": "popular",
+        "id": "212437"
+      },
+      {
+        "name": "Offset",
+        "url": "https://genius.com/artists/Offset",
+        "type": "popular",
+        "id": "88813"
+      },
+      {
+        "name": "The Offspring",
+        "url": "https://genius.com/artists/The-offspring",
+        "type": "popular",
+        "id": "8353"
+      },
+      {
+        "name": "OG Buda",
+        "url": "https://genius.com/artists/Og-buda",
+        "type": "popular",
+        "id": "1482307"
+      },
+      {
+        "name": "Okieriete Onaodowan",
+        "url": "https://genius.com/artists/Okieriete-onaodowan",
+        "type": "popular",
+        "id": "570031"
+      },
+      {
+        "name": "Olamide",
+        "url": "https://genius.com/artists/Olamide",
+        "type": "popular",
+        "id": "33053"
+      },
+      {
+        "name": "Olivia Dean",
+        "url": "https://genius.com/artists/Olivia-dean",
+        "type": "popular",
+        "id": "1976586"
+      },
+      {
+        "name": "Olivia Rodrigo",
+        "url": "https://genius.com/artists/Olivia-rodrigo",
+        "type": "popular",
+        "id": "1599675"
+      },
+      {
+        "name": "One Direction",
+        "url": "https://genius.com/artists/One-direction",
+        "type": "popular",
+        "id": "19657"
+      },
+      {
+        "name": "OneRepublic",
+        "url": "https://genius.com/artists/Onerepublic",
+        "type": "popular",
+        "id": "934"
+      },
+      {
+        "name": "Orange & Lemons",
+        "url": "https://genius.com/artists/Orange-and-lemons",
+        "type": "popular",
+        "id": "371179"
+      },
+      {
+        "name": "Organize",
+        "url": "https://genius.com/artists/Organize",
+        "type": "popular",
+        "id": "2303042"
+      },
+      {
+        "name": "Original Broadway Cast of Hamilton",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-hamilton",
+        "type": "popular",
+        "id": "572149"
+      },
+      {
+        "name": "‎OsamaSon",
+        "url": "https://genius.com/artists/Osamason",
+        "type": "popular",
+        "id": "3270750"
+      },
+      {
+        "name": "The Outfield",
+        "url": "https://genius.com/artists/The-outfield",
+        "type": "popular",
+        "id": "25744"
+      },
+      {
+        "name": "OutKast",
+        "url": "https://genius.com/artists/Outkast",
+        "type": "popular",
+        "id": "105"
+      },
+      {
+        "name": "Owl City",
+        "url": "https://genius.com/artists/Owl-city",
+        "type": "popular",
+        "id": "13286"
+      },
+      {
+        "name": "Oxxxymiron",
+        "url": "https://genius.com/artists/Oxxxymiron",
+        "type": "popular",
+        "id": "24422"
+      },
+      {
+        "name": "Ozzy Osbourne",
+        "url": "https://genius.com/artists/Ozzy-osbourne",
+        "type": "popular",
+        "id": "3347"
+      }
+    ],
+    "regular": [
+      {
+        "name": "O3ohn (오존)",
+        "url": "https://genius.com/artists/O3ohn",
+        "type": "regular",
+        "id": "1280852"
+      },
+      {
+        "name": "oaf1",
+        "url": "https://genius.com/artists/Oaf1",
+        "type": "regular",
+        "id": "2090443"
+      },
+      {
+        "name": "OAFF",
+        "url": "https://genius.com/artists/Oaff",
+        "type": "regular",
+        "id": "2505282"
+      },
+      {
+        "name": "OAG",
+        "url": "https://genius.com/artists/Oag",
+        "type": "regular",
+        "id": "368039"
+      },
+      {
+        "name": "Oakland",
+        "url": "https://genius.com/artists/Oakland",
+        "type": "regular",
+        "id": "3698577"
+      },
+      {
+        "name": "The Oak Ridge Boys",
+        "url": "https://genius.com/artists/The-oak-ridge-boys",
+        "type": "regular",
+        "id": "306330"
+      },
+      {
+        "name": "Oakwood",
+        "url": "https://genius.com/artists/Oakwood",
+        "type": "regular",
+        "id": "3780891"
+      },
+      {
+        "name": "O.A (PR)",
+        "url": "https://genius.com/artists/Oa-pr",
+        "type": "regular",
+        "id": "2912039"
+      },
+      {
+        "name": "O.A.R",
+        "url": "https://genius.com/artists/Oar",
+        "type": "regular",
+        "id": "20229"
+      },
+      {
+        "name": "Oasis Ministry",
+        "url": "https://genius.com/artists/Oasis-ministry",
+        "type": "regular",
+        "id": "2998842"
+      },
+      {
+        "name": "Oathbreaker",
+        "url": "https://genius.com/artists/Oathbreaker",
+        "type": "regular",
+        "id": "354770"
+      },
+      {
+        "name": "Ober (CHL)",
+        "url": "https://genius.com/artists/Ober-chl",
+        "type": "regular",
+        "id": "3787114"
+      },
+      {
+        "name": "Oberhofer",
+        "url": "https://genius.com/artists/Oberhofer",
+        "type": "regular",
+        "id": "142893"
+      },
+      {
+        "name": "Obie Trice",
+        "url": "https://genius.com/artists/Obie-trice",
+        "type": "regular",
+        "id": "810"
+      },
+      {
+        "name": "Obie Wanshot",
+        "url": "https://genius.com/artists/Obie-wanshot",
+        "type": "regular",
+        "id": "1326988"
+      },
+      {
+        "name": "Обильный (Obilnyi)",
+        "url": "https://genius.com/artists/Obilnyi",
+        "type": "regular",
+        "id": "3350379"
+      },
+      {
+        "name": "Obito (VNM)",
+        "url": "https://genius.com/artists/Obito-vnm",
+        "type": "regular",
+        "id": "2667802"
+      },
+      {
+        "name": "Obituary",
+        "url": "https://genius.com/artists/Obituary",
+        "type": "regular",
+        "id": "344004"
+      },
+      {
+        "name": "OblivionFall After Dark",
+        "url": "https://genius.com/artists/Oblivionfall-after-dark",
+        "type": "regular",
+        "id": "1782367"
+      },
+      {
+        "name": "Oblivion's Mighty Trash",
+        "url": "https://genius.com/artists/Oblivions-mighty-trash",
+        "type": "regular",
+        "id": "3342850"
+      },
+      {
+        "name": "Oblé Reed",
+        "url": "https://genius.com/artists/Oble-reed",
+        "type": "regular",
+        "id": "3613943"
+      },
+      {
+        "name": "OB O'Brien",
+        "url": "https://genius.com/artists/Ob-obrien",
+        "type": "regular",
+        "id": "24661"
+      },
+      {
+        "name": "Obojeni Program",
+        "url": "https://genius.com/artists/Obojeni-program",
+        "type": "regular",
+        "id": "362731"
+      },
+      {
+        "name": "Obongjayar",
+        "url": "https://genius.com/artists/Obongjayar",
+        "type": "regular",
+        "id": "1137790"
+      },
+      {
+        "name": "OBOY",
+        "url": "https://genius.com/artists/Oboy",
+        "type": "regular",
+        "id": "635729"
+      },
+      {
+        "name": "O'Bros",
+        "url": "https://genius.com/artists/Obros",
+        "type": "regular",
+        "id": "1056696"
+      },
+      {
+        "name": "Obscurest Vinyl",
+        "url": "https://genius.com/artists/Obscurest-vinyl",
+        "type": "regular",
+        "id": "3915004"
+      },
+      {
+        "name": "Обстоятельства (Obstoyatelstva)",
+        "url": "https://genius.com/artists/Obstoyatelstva",
+        "type": "regular",
+        "id": "2331580"
+      },
+      {
+        "name": "Łobuzy",
+        "url": "https://genius.com/artists/Obuzy",
+        "type": "regular",
+        "id": "1695699"
+      },
+      {
+        "name": "Obywatel G.C.",
+        "url": "https://genius.com/artists/Obywatel-gc",
+        "type": "regular",
+        "id": "361414"
+      },
+      {
+        "name": "O.C.",
+        "url": "https://genius.com/artists/Oc",
+        "type": "regular",
+        "id": "2992"
+      },
+      {
+        "name": "Ocasional Talento",
+        "url": "https://genius.com/artists/Ocasional-talento",
+        "type": "regular",
+        "id": "3411828"
+      },
+      {
+        "name": "Ocboyblau",
+        "url": "https://genius.com/artists/Ocboyblau",
+        "type": "regular",
+        "id": "2016293"
+      },
+      {
+        "name": "O.C. Dawgs",
+        "url": "https://genius.com/artists/Oc-dawgs",
+        "type": "regular",
+        "id": "1316857"
+      },
+      {
+        "name": "Ocean",
+        "url": "https://genius.com/artists/Ocean",
+        "type": "regular",
+        "id": "29014"
+      },
+      {
+        "name": "Oceana",
+        "url": "https://genius.com/artists/Oceana",
+        "type": "regular",
+        "id": "355226"
+      },
+      {
+        "name": "Ocean Alley",
+        "url": "https://genius.com/artists/Ocean-alley",
+        "type": "regular",
+        "id": "1005945"
+      },
+      {
+        "name": "The Ocean Blue",
+        "url": "https://genius.com/artists/The-ocean-blue",
+        "type": "regular",
+        "id": "353656"
+      },
+      {
+        "name": "The Ocean Collective",
+        "url": "https://genius.com/artists/The-ocean-collective",
+        "type": "regular",
+        "id": "225129"
+      },
+      {
+        "name": "Ocean Colour Scene",
+        "url": "https://genius.com/artists/Ocean-colour-scene",
+        "type": "regular",
+        "id": "208848"
+      },
+      {
+        "name": "Ocean (DEU)",
+        "url": "https://genius.com/artists/Ocean-deu",
+        "type": "regular",
+        "id": "2420455"
+      },
+      {
+        "name": "oceanfromtheblue",
+        "url": "https://genius.com/artists/Oceanfromtheblue",
+        "type": "regular",
+        "id": "1570520"
+      },
+      {
+        "name": "OceanLab",
+        "url": "https://genius.com/artists/Oceanlab",
+        "type": "regular",
+        "id": "56714"
+      },
+      {
+        "name": "Oceansize",
+        "url": "https://genius.com/artists/Oceansize",
+        "type": "regular",
+        "id": "324970"
+      },
+      {
+        "name": "Ocean Sleeper",
+        "url": "https://genius.com/artists/Ocean-sleeper",
+        "type": "regular",
+        "id": "1066581"
+      },
+      {
+        "name": "Ocean Vuong",
+        "url": "https://genius.com/artists/Ocean-vuong",
+        "type": "regular",
+        "id": "335159"
+      },
+      {
+        "name": "Ocean Wisdom",
+        "url": "https://genius.com/artists/Ocean-wisdom",
+        "type": "regular",
+        "id": "224838"
+      },
+      {
+        "name": "Ocie Elliott",
+        "url": "https://genius.com/artists/Ocie-elliott",
+        "type": "regular",
+        "id": "2140802"
+      },
+      {
+        "name": "OCnotes",
+        "url": "https://genius.com/artists/Ocnotes",
+        "type": "regular",
+        "id": "610067"
+      },
+      {
+        "name": "OCT",
+        "url": "https://genius.com/artists/Oct",
+        "type": "regular",
+        "id": "1545110"
+      },
+      {
+        "name": "Octavian",
+        "url": "https://genius.com/artists/Octavian",
+        "type": "regular",
+        "id": "1306452"
+      },
+      {
+        "name": "Octavio Mesa",
+        "url": "https://genius.com/artists/Octavio-mesa",
+        "type": "regular",
+        "id": "1267415"
+      },
+      {
+        "name": "October London",
+        "url": "https://genius.com/artists/October-london",
+        "type": "regular",
+        "id": "797747"
+      },
+      {
+        "name": "OCTOBERSFULLMOON",
+        "url": "https://genius.com/artists/Octobersfullmoon",
+        "type": "regular",
+        "id": "2122803"
+      },
+      {
+        "name": "Octonauts",
+        "url": "https://genius.com/artists/Octonauts",
+        "type": "regular",
+        "id": "2700805"
+      },
+      {
+        "name": "Oda priekam",
+        "url": "https://genius.com/artists/Oda-priekam",
+        "type": "regular",
+        "id": "3278457"
+      },
+      {
+        "name": "ODDEEO",
+        "url": "https://genius.com/artists/Oddeeo",
+        "type": "regular",
+        "id": "1428813"
+      },
+      {
+        "name": "ODD EYE CIRCLE",
+        "url": "https://genius.com/artists/Odd-eye-circle",
+        "type": "regular",
+        "id": "1222550"
+      },
+      {
+        "name": "Odd Future",
+        "url": "https://genius.com/artists/Odd-future",
+        "type": "regular",
+        "id": "1739"
+      },
+      {
+        "name": "Oddisee",
+        "url": "https://genius.com/artists/Oddisee",
+        "type": "regular",
+        "id": "7094"
+      },
+      {
+        "name": "ODD MAMI",
+        "url": "https://genius.com/artists/Odd-mami",
+        "type": "regular",
+        "id": "1921222"
+      },
+      {
+        "name": "Odd Mob",
+        "url": "https://genius.com/artists/Odd-mob",
+        "type": "regular",
+        "id": "452478"
+      },
+      {
+        "name": "Odd Nordstoga",
+        "url": "https://genius.com/artists/Odd-nordstoga",
+        "type": "regular",
+        "id": "137077"
+      },
+      {
+        "name": "Odd Signature",
+        "url": "https://genius.com/artists/Odd-signature",
+        "type": "regular",
+        "id": "2657219"
+      },
+      {
+        "name": "Oddwin",
+        "url": "https://genius.com/artists/Oddwin",
+        "type": "regular",
+        "id": "1023691"
+      },
+      {
+        "name": "​oddworld",
+        "url": "https://genius.com/artists/Oddworld",
+        "type": "regular",
+        "id": "3925157"
+      },
+      {
+        "name": "Odeal",
+        "url": "https://genius.com/artists/Odeal",
+        "type": "regular",
+        "id": "2069309"
+      },
+      {
+        "name": "ODECORE",
+        "url": "https://genius.com/artists/Odecore",
+        "type": "regular",
+        "id": "3631493"
+      },
+      {
+        "name": "Odelia Tirza",
+        "url": "https://genius.com/artists/Odelia-tirza",
+        "type": "regular",
+        "id": "3933060"
+      },
+      {
+        "name": "ODESZA",
+        "url": "https://genius.com/artists/Odesza",
+        "type": "regular",
+        "id": "168601"
+      },
+      {
+        "name": "Odetari",
+        "url": "https://genius.com/artists/Odetari",
+        "type": "regular",
+        "id": "3473604"
+      },
+      {
+        "name": "Odetta",
+        "url": "https://genius.com/artists/Odetta",
+        "type": "regular",
+        "id": "224568"
+      },
+      {
+        "name": "Odette Quesada",
+        "url": "https://genius.com/artists/Odette-quesada",
+        "type": "regular",
+        "id": "385433"
+      },
+      {
+        "name": "Odeya - אודיה",
+        "url": "https://genius.com/artists/Odeya",
+        "type": "regular",
+        "id": "3080570"
+      },
+      {
+        "name": "Odezenne",
+        "url": "https://genius.com/artists/Odezenne",
+        "type": "regular",
+        "id": "14523"
+      },
+      {
+        "name": "Odhran Murphy",
+        "url": "https://genius.com/artists/Odhran-murphy",
+        "type": "regular",
+        "id": "3688940"
+      },
+      {
+        "name": "ODIE",
+        "url": "https://genius.com/artists/Odie",
+        "type": "regular",
+        "id": "264394"
+      },
+      {
+        "name": "Odie Leigh",
+        "url": "https://genius.com/artists/Odie-leigh",
+        "type": "regular",
+        "id": "2556507"
+      },
+      {
+        "name": "ODZ",
+        "url": "https://genius.com/artists/Odz",
+        "type": "regular",
+        "id": "1207592"
+      },
+      {
+        "name": "ODUMODUBLVCK",
+        "url": "https://genius.com/artists/Odumodublvck",
+        "type": "regular",
+        "id": "1542886"
+      },
+      {
+        "name": "Odunsi (The Engine)",
+        "url": "https://genius.com/artists/Odunsi-the-engine",
+        "type": "regular",
+        "id": "652636"
+      },
+      {
+        "name": "ODURACHEN",
+        "url": "https://genius.com/artists/Odurachen",
+        "type": "regular",
+        "id": "3657511"
+      },
+      {
+        "name": "Odyssey",
+        "url": "https://genius.com/artists/Odyssey",
+        "type": "regular",
+        "id": "365862"
+      },
+      {
+        "name": "Oesch's die Dritten",
+        "url": "https://genius.com/artists/Oeschs-die-dritten",
+        "type": "regular",
+        "id": "371601"
+      },
+      {
+        "name": "OFB",
+        "url": "https://genius.com/artists/Ofb",
+        "type": "regular",
+        "id": "547629"
+      },
+      {
+        "name": "Ofek Adanek - אופק אדנק",
+        "url": "https://genius.com/artists/Ofek-adanek",
+        "type": "regular",
+        "id": "1174373"
+      },
+      {
+        "name": "Ofenbach",
+        "url": "https://genius.com/artists/Ofenbach",
+        "type": "regular",
+        "id": "649045"
+      },
+      {
+        "name": "Off10N",
+        "url": "https://genius.com/artists/Off10n",
+        "type": "regular",
+        "id": "2278925"
+      },
+      {
+        "name": "Глеб Самойлoff & The Matrixx",
+        "url": "https://genius.com/artists/Off-and-the-matrixx",
+        "type": "regular",
+        "id": "3717786"
+      },
+      {
+        "name": "Offenbach",
+        "url": "https://genius.com/artists/Offenbach",
+        "type": "regular",
+        "id": "356159"
+      },
+      {
+        "name": "Offgrid",
+        "url": "https://genius.com/artists/Offgrid",
+        "type": "regular",
+        "id": "2144651"
+      },
+      {
+        "name": "Offica",
+        "url": "https://genius.com/artists/Offica",
+        "type": "regular",
+        "id": "1833847"
+      },
+      {
+        "name": "The Office (USA)",
+        "url": "https://genius.com/artists/The-office-usa",
+        "type": "regular",
+        "id": "465700"
+      },
+      {
+        "name": "Official53Crew",
+        "url": "https://genius.com/artists/Official53crew",
+        "type": "regular",
+        "id": "1624292"
+      },
+      {
+        "name": "Officialalex425",
+        "url": "https://genius.com/artists/Officialalex425",
+        "type": "regular",
+        "id": "2148756"
+      },
+      {
+        "name": "Official髭男dism",
+        "url": "https://genius.com/artists/Officialdism",
+        "type": "regular",
+        "id": "1872530"
+      },
+      {
+        "name": "Officialdjaaron",
+        "url": "https://genius.com/artists/Officialdjaaron",
+        "type": "regular",
+        "id": "2462295"
+      },
+      {
+        "name": "OfficialJoel_le",
+        "url": "https://genius.com/artists/Officialjoel-le",
+        "type": "regular",
+        "id": "4350135"
+      },
+      {
+        "name": "Official TS",
+        "url": "https://genius.com/artists/Official-ts",
+        "type": "regular",
+        "id": "2289766"
+      },
+      {
+        "name": "Offlaga Disco Pax",
+        "url": "https://genius.com/artists/Offlaga-disco-pax",
+        "type": "regular",
+        "id": "377218"
+      },
+      {
+        "name": "OfflineTV",
+        "url": "https://genius.com/artists/Offlinetv",
+        "type": "regular",
+        "id": "3736595"
+      },
+      {
+        "name": "OFFMi",
+        "url": "https://genius.com/artists/Offmi",
+        "type": "regular",
+        "id": "1079613"
+      },
+      {
+        "name": "​offonoff",
+        "url": "https://genius.com/artists/Offonoff",
+        "type": "regular",
+        "id": "1111221"
+      },
+      {
+        "name": "Off Radar",
+        "url": "https://genius.com/artists/Off-radar",
+        "type": "regular",
+        "id": "4290063"
+      },
+      {
+        "name": "Off the Hook",
+        "url": "https://genius.com/artists/Off-the-hook",
+        "type": "regular",
+        "id": "1641748"
+      },
+      {
+        "name": "Off With Their Heads",
+        "url": "https://genius.com/artists/Off-with-their-heads",
+        "type": "regular",
+        "id": "357128"
+      },
+      {
+        "name": "Of Mice & Men",
+        "url": "https://genius.com/artists/Of-mice-and-men",
+        "type": "regular",
+        "id": "42161"
+      },
+      {
+        "name": "Of Monsters and Men",
+        "url": "https://genius.com/artists/Of-monsters-and-men",
+        "type": "regular",
+        "id": "18453"
+      },
+      {
+        "name": "of Montreal",
+        "url": "https://genius.com/artists/Of-montreal",
+        "type": "regular",
+        "id": "16871"
+      },
+      {
+        "name": "Ofra Haza - עפרה חזה",
+        "url": "https://genius.com/artists/Ofra-haza",
+        "type": "regular",
+        "id": "161763"
+      },
+      {
+        "name": "Of The Wand & The Moon",
+        "url": "https://genius.com/artists/Of-the-wand-and-the-moon",
+        "type": "regular",
+        "id": "360700"
+      },
+      {
+        "name": "oftn (오픈) (KOR)",
+        "url": "https://genius.com/artists/Oftn-kor",
+        "type": "regular",
+        "id": "3903379"
+      },
+      {
+        "name": "O.G.",
+        "url": "https://genius.com/artists/Og",
+        "type": "regular",
+        "id": "6193"
+      },
+      {
+        "name": "Đogani",
+        "url": "https://genius.com/artists/Ogani",
+        "type": "regular",
+        "id": "406032"
+      },
+      {
+        "name": "OG Bobby Billions",
+        "url": "https://genius.com/artists/Og-bobby-billions",
+        "type": "regular",
+        "id": "1766517"
+      },
+      {
+        "name": "OG Destruyelo",
+        "url": "https://genius.com/artists/Og-destruyelo",
+        "type": "regular",
+        "id": "3500563"
+      },
+      {
+        "name": "OG Eastbull",
+        "url": "https://genius.com/artists/Og-eastbull",
+        "type": "regular",
+        "id": "1006743"
+      },
+      {
+        "name": "OGE (GRC)",
+        "url": "https://genius.com/artists/Oge-grc",
+        "type": "regular",
+        "id": "1429207"
+      },
+      {
+        "name": "O.G EzzY (RUS)",
+        "url": "https://genius.com/artists/Og-ezzy-rus",
+        "type": "regular",
+        "id": "2476900"
+      },
+      {
+        "name": "Ogie Alcasid",
+        "url": "https://genius.com/artists/Ogie-alcasid",
+        "type": "regular",
+        "id": "348915"
+      },
+      {
+        "name": "Ogi (R&B)",
+        "url": "https://genius.com/artists/Ogi-r-b",
+        "type": "regular",
+        "id": "3056261"
+      },
+      {
+        "name": "OG KAMKA",
+        "url": "https://genius.com/artists/Og-kamka",
+        "type": "regular",
+        "id": "4356495"
+      },
+      {
+        "name": "OG Keemo",
+        "url": "https://genius.com/artists/Og-keemo",
+        "type": "regular",
+        "id": "1029025"
+      },
+      {
+        "name": "OG Kid Frost",
+        "url": "https://genius.com/artists/Og-kid-frost",
+        "type": "regular",
+        "id": "2932"
+      },
+      {
+        "name": "OG LOCKE",
+        "url": "https://genius.com/artists/Og-locke",
+        "type": "regular",
+        "id": "2169043"
+      },
+      {
+        "name": "OG LU",
+        "url": "https://genius.com/artists/Og-lu",
+        "type": "regular",
+        "id": "2879488"
+      },
+      {
+        "name": "OG Lucifer",
+        "url": "https://genius.com/artists/Og-lucifer",
+        "type": "regular",
+        "id": "3628378"
+      },
+      {
+        "name": "OG Maco",
+        "url": "https://genius.com/artists/Og-maco",
+        "type": "regular",
+        "id": "207474"
+      },
+      {
+        "name": "OG Nafas",
+        "url": "https://genius.com/artists/Og-nafas",
+        "type": "regular",
+        "id": "4066384"
+      },
+      {
+        "name": "Ogün Sanlısoy",
+        "url": "https://genius.com/artists/Ogun-sanlsoy",
+        "type": "regular",
+        "id": "531718"
+      },
+      {
+        "name": "OG Olgierd",
+        "url": "https://genius.com/artists/Og-olgierd",
+        "type": "regular",
+        "id": "1894628"
+      },
+      {
+        "name": "OG Parker",
+        "url": "https://genius.com/artists/Og-parker",
+        "type": "regular",
+        "id": "239980"
+      },
+      {
+        "name": "OG PAV",
+        "url": "https://genius.com/artists/Og-pav",
+        "type": "regular",
+        "id": "3403772"
+      },
+      {
+        "name": "O.G. Pezo",
+        "url": "https://genius.com/artists/Og-pezo",
+        "type": "regular",
+        "id": "2218508"
+      },
+      {
+        "name": "OGR-Scintilla",
+        "url": "https://genius.com/artists/Ogr-scintilla",
+        "type": "regular",
+        "id": "2532159"
+      },
+      {
+        "name": "Ogryzek",
+        "url": "https://genius.com/artists/Ogryzek",
+        "type": "regular",
+        "id": "3845875"
+      },
+      {
+        "name": "Ogtorch",
+        "url": "https://genius.com/artists/Ogtorch",
+        "type": "regular",
+        "id": "3323352"
+      },
+      {
+        "name": "OG Version",
+        "url": "https://genius.com/artists/Og-version",
+        "type": "regular",
+        "id": "1169108"
+      },
+      {
+        "name": "Ohana - אוחנה",
+        "url": "https://genius.com/artists/Ohana",
+        "type": "regular",
+        "id": "1813057"
+      },
+      {
+        "name": "Ohash",
+        "url": "https://genius.com/artists/Ohash",
+        "type": "regular",
+        "id": "1554342"
+      },
+      {
+        "name": "Oh! Caraga",
+        "url": "https://genius.com/artists/Oh-caraga",
+        "type": "regular",
+        "id": "2406570"
+      },
+      {
+        "name": "OhGeesy",
+        "url": "https://genius.com/artists/Ohgeesy",
+        "type": "regular",
+        "id": "1070343"
+      },
+      {
+        "name": "OhGr",
+        "url": "https://genius.com/artists/Ohgr",
+        "type": "regular",
+        "id": "211969"
+      },
+      {
+        "name": "The Oh Hellos",
+        "url": "https://genius.com/artists/The-oh-hellos",
+        "type": "regular",
+        "id": "48177"
+      },
+      {
+        "name": "Ohio Players",
+        "url": "https://genius.com/artists/Ohio-players",
+        "type": "regular",
+        "id": "13059"
+      },
+      {
+        "name": "Ohio State University",
+        "url": "https://genius.com/artists/Ohio-state-university",
+        "type": "regular",
+        "id": "1043712"
+      },
+      {
+        "name": "Oh Land",
+        "url": "https://genius.com/artists/Oh-land",
+        "type": "regular",
+        "id": "14246"
+      },
+      {
+        "name": "โอม เพลงคำ (Ohm Plengkham)",
+        "url": "https://genius.com/artists/Ohm-plengkham",
+        "type": "regular",
+        "id": "3850056"
+      },
+      {
+        "name": "OH MY GIRL",
+        "url": "https://genius.com/artists/Oh-my-girl",
+        "type": "regular",
+        "id": "976351"
+      },
+      {
+        "name": "Oh No",
+        "url": "https://genius.com/artists/Oh-no",
+        "type": "regular",
+        "id": "7573"
+      },
+      {
+        "name": "Oh, Sleeper",
+        "url": "https://genius.com/artists/Oh-sleeper",
+        "type": "regular",
+        "id": "32488"
+      },
+      {
+        "name": "‎ohsxnta",
+        "url": "https://genius.com/artists/Ohsxnta",
+        "type": "regular",
+        "id": "3137253"
+      },
+      {
+        "name": "Ohthatsmizz",
+        "url": "https://genius.com/artists/Ohthatsmizz",
+        "type": "regular",
+        "id": "3775014"
+      },
+      {
+        "name": "Oh Wonder",
+        "url": "https://genius.com/artists/Oh-wonder",
+        "type": "regular",
+        "id": "282172"
+      },
+      {
+        "name": "君島大空 (Ohzora Kimishima)",
+        "url": "https://genius.com/artists/Ohzora-kimishima",
+        "type": "regular",
+        "id": "2684807"
+      },
+      {
+        "name": "Oimara",
+        "url": "https://genius.com/artists/Oimara",
+        "type": "regular",
+        "id": "2096815"
+      },
+      {
+        "name": "Oingo Boingo",
+        "url": "https://genius.com/artists/Oingo-boingo",
+        "type": "regular",
+        "id": "237176"
+      },
+      {
+        "name": "OIO",
+        "url": "https://genius.com/artists/Oio",
+        "type": "regular",
+        "id": "2630071"
+      },
+      {
+        "name": "The O'Jays",
+        "url": "https://genius.com/artists/The-ojays",
+        "type": "regular",
+        "id": "34393"
+      },
+      {
+        "name": "OJ da Juiceman",
+        "url": "https://genius.com/artists/Oj-da-juiceman",
+        "type": "regular",
+        "id": "260"
+      },
+      {
+        "name": "Okaber",
+        "url": "https://genius.com/artists/Okaber",
+        "type": "regular",
+        "id": "252776"
+      },
+      {
+        "name": "Oka Wi Ortega - أوكا و أورتيجا",
+        "url": "https://genius.com/artists/Oka-wi-ortega",
+        "type": "regular",
+        "id": "1400074"
+      },
+      {
+        "name": "Okay Kaya",
+        "url": "https://genius.com/artists/Okay-kaya",
+        "type": "regular",
+        "id": "396377"
+      },
+      {
+        "name": "Okaymar",
+        "url": "https://genius.com/artists/Okaymar",
+        "type": "regular",
+        "id": "2175263"
+      },
+      {
+        "name": "OkaySpade",
+        "url": "https://genius.com/artists/Okayspade",
+        "type": "regular",
+        "id": "4350114"
+      },
+      {
+        "name": "OK Band",
+        "url": "https://genius.com/artists/Ok-band",
+        "type": "regular",
+        "id": "457348"
+      },
+      {
+        "name": "​ok.danke.tschüss",
+        "url": "https://genius.com/artists/Okdanketschuss",
+        "type": "regular",
+        "id": "2038183"
+      },
+      {
+        "name": "Океан Ельзи (Okean Elzy)",
+        "url": "https://genius.com/artists/Okean-elzy",
+        "type": "regular",
+        "id": "1333519"
+      },
+      {
+        "name": "The Okee Dokee Brothers",
+        "url": "https://genius.com/artists/The-okee-dokee-brothers",
+        "type": "regular",
+        "id": "364073"
+      },
+      {
+        "name": "Okekel",
+        "url": "https://genius.com/artists/Okekel",
+        "type": "regular",
+        "id": "3382587"
+      },
+      {
+        "name": "OK Glass",
+        "url": "https://genius.com/artists/Ok-glass",
+        "type": "regular",
+        "id": "1635969"
+      },
+      {
+        "name": "OK Go",
+        "url": "https://genius.com/artists/Ok-go",
+        "type": "regular",
+        "id": "21036"
+      },
+      {
+        "name": "Oki",
+        "url": "https://genius.com/artists/Oki",
+        "type": "regular",
+        "id": "1316187"
+      },
+      {
+        "name": "​​okis",
+        "url": "https://genius.com/artists/Okis",
+        "type": "regular",
+        "id": "3025796"
+      },
+      {
+        "name": "Okkervil River",
+        "url": "https://genius.com/artists/Okkervil-river",
+        "type": "regular",
+        "id": "60635"
+      },
+      {
+        "name": "OK KID",
+        "url": "https://genius.com/artists/Ok-kid",
+        "type": "regular",
+        "id": "45026"
+      },
+      {
+        "name": "Oklou",
+        "url": "https://genius.com/artists/Oklou",
+        "type": "regular",
+        "id": "823187"
+      },
+      {
+        "name": "Okmalumkoolkat",
+        "url": "https://genius.com/artists/Okmalumkoolkat",
+        "type": "regular",
+        "id": "163726"
+      },
+      {
+        "name": "王OK (OK Wang)",
+        "url": "https://genius.com/artists/Ok-ok-wang",
+        "type": "regular",
+        "id": "3836297"
+      },
+      {
+        "name": "Околорэп (Okolorap)",
+        "url": "https://genius.com/artists/Okolorap",
+        "type": "regular",
+        "id": "1474437"
+      },
+      {
+        "name": "Акула (Oksana Pochepa)",
+        "url": "https://genius.com/artists/Oksana-pochepa",
+        "type": "regular",
+        "id": "1802821"
+      },
+      {
+        "name": "OKS (UKR)",
+        "url": "https://genius.com/artists/Oks-ukr",
+        "type": "regular",
+        "id": "3663752"
+      },
+      {
+        "name": "Oktavia",
+        "url": "https://genius.com/artists/Oktavia",
+        "type": "regular",
+        "id": "1965317"
+      },
+      {
+        "name": "Oktobar 1864",
+        "url": "https://genius.com/artists/Oktobar-1864",
+        "type": "regular",
+        "id": "2352484"
+      },
+      {
+        "name": "Okxyvro!",
+        "url": "https://genius.com/artists/Okxyvro",
+        "type": "regular",
+        "id": "3233481"
+      },
+      {
+        "name": "Ola Belle Reed",
+        "url": "https://genius.com/artists/Ola-belle-reed",
+        "type": "regular",
+        "id": "576520"
+      },
+      {
+        "name": "Olaf der Flipper",
+        "url": "https://genius.com/artists/Olaf-der-flipper",
+        "type": "regular",
+        "id": "4396852"
+      },
+      {
+        "name": "Ola Gjeilo",
+        "url": "https://genius.com/artists/Ola-gjeilo",
+        "type": "regular",
+        "id": "1689682"
+      },
+      {
+        "name": "Ola Runt",
+        "url": "https://genius.com/artists/Ola-runt",
+        "type": "regular",
+        "id": "1693349"
+      },
+      {
+        "name": "Olavi Uusivirta",
+        "url": "https://genius.com/artists/Olavi-uusivirta",
+        "type": "regular",
+        "id": "353783"
+      },
+      {
+        "name": "Olavi Virta",
+        "url": "https://genius.com/artists/Olavi-virta",
+        "type": "regular",
+        "id": "458150"
+      },
+      {
+        "name": "Old 97's",
+        "url": "https://genius.com/artists/Old-97s",
+        "type": "regular",
+        "id": "34606"
+      },
+      {
+        "name": "Old & In The Way",
+        "url": "https://genius.com/artists/Old-and-in-the-way",
+        "type": "regular",
+        "id": "360935"
+      },
+      {
+        "name": "Old Blind Dogs",
+        "url": "https://genius.com/artists/Old-blind-dogs",
+        "type": "regular",
+        "id": "377069"
+      },
+      {
+        "name": "Old Crow Medicine Show",
+        "url": "https://genius.com/artists/Old-crow-medicine-show",
+        "type": "regular",
+        "id": "12261"
+      },
+      {
+        "name": "Old Dominion",
+        "url": "https://genius.com/artists/Old-dominion",
+        "type": "regular",
+        "id": "456503"
+      },
+      {
+        "name": "Old Flame",
+        "url": "https://genius.com/artists/Old-flame",
+        "type": "regular",
+        "id": "3886973"
+      },
+      {
+        "name": "Old G",
+        "url": "https://genius.com/artists/Old-g",
+        "type": "regular",
+        "id": "1146066"
+      },
+      {
+        "name": "Old Gods of Asgard",
+        "url": "https://genius.com/artists/Old-gods-of-asgard",
+        "type": "regular",
+        "id": "387505"
+      },
+      {
+        "name": "Old Gray",
+        "url": "https://genius.com/artists/Old-gray",
+        "type": "regular",
+        "id": "72948"
+      },
+      {
+        "name": "Ol' Dirty Bastard",
+        "url": "https://genius.com/artists/Ol-dirty-bastard",
+        "type": "regular",
+        "id": "32"
+      },
+      {
+        "name": "Old Man Canyon",
+        "url": "https://genius.com/artists/Old-man-canyon",
+        "type": "regular",
+        "id": "264408"
+      },
+      {
+        "name": "Old Man Saxon",
+        "url": "https://genius.com/artists/Old-man-saxon",
+        "type": "regular",
+        "id": "322590"
+      },
+      {
+        "name": "Old Mervs",
+        "url": "https://genius.com/artists/Old-mervs",
+        "type": "regular",
+        "id": "2457141"
+      },
+      {
+        "name": "OldPurp",
+        "url": "https://genius.com/artists/Oldpurp",
+        "type": "regular",
+        "id": "1411468"
+      },
+      {
+        "name": "OldyGotTheSound",
+        "url": "https://genius.com/artists/Oldygotthesound",
+        "type": "regular",
+        "id": "1959397"
+      },
+      {
+        "name": "Ole 60",
+        "url": "https://genius.com/artists/Ole-60",
+        "type": "regular",
+        "id": "3852063"
+      },
+      {
+        "name": "Ole Børud",
+        "url": "https://genius.com/artists/Ole-brud",
+        "type": "regular",
+        "id": "491858"
+      },
+      {
+        "name": "Олег Анофриев (Oleg Anofriev)",
+        "url": "https://genius.com/artists/Oleg-anofriev",
+        "type": "regular",
+        "id": "1596647"
+      },
+      {
+        "name": "Олег Газманов (Oleg Gazmanov)",
+        "url": "https://genius.com/artists/Oleg-gazmanov",
+        "type": "regular",
+        "id": "1476585"
+      },
+      {
+        "name": "Олег Кензов (Oleg Kenzov)",
+        "url": "https://genius.com/artists/Oleg-kenzov",
+        "type": "regular",
+        "id": "2169944"
+      },
+      {
+        "name": "Олег Майами (Oleg Miami)",
+        "url": "https://genius.com/artists/Oleg-miami",
+        "type": "regular",
+        "id": "1137136"
+      },
+      {
+        "name": "Олег Митяев (Oleg Mityaev)",
+        "url": "https://genius.com/artists/Oleg-mityaev",
+        "type": "regular",
+        "id": "1679780"
+      },
+      {
+        "name": "Ole Ivars",
+        "url": "https://genius.com/artists/Ole-ivars",
+        "type": "regular",
+        "id": "453148"
+      },
+      {
+        "name": "Olek",
+        "url": "https://genius.com/artists/Olek",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Олена Тополя (Olena Topolia)",
+        "url": "https://genius.com/artists/Olena-topolia",
+        "type": "regular",
+        "id": "4408552"
+      },
+      {
+        "name": "Ole Paus",
+        "url": "https://genius.com/artists/Ole-paus",
+        "type": "regular",
+        "id": "189037"
+      },
+      {
+        "name": "Olesya Rulin",
+        "url": "https://genius.com/artists/Olesya-rulin",
+        "type": "regular",
+        "id": "184938"
+      },
+      {
+        "name": "Oleta Adams",
+        "url": "https://genius.com/artists/Oleta-adams",
+        "type": "regular",
+        "id": "349121"
+      },
+      {
+        "name": "Olexesh",
+        "url": "https://genius.com/artists/Olexesh",
+        "type": "regular",
+        "id": "30628"
+      },
+      {
+        "name": "OLGA",
+        "url": "https://genius.com/artists/Olga",
+        "type": "regular",
+        "id": "3886064"
+      },
+      {
+        "name": "Ольга Бузова (Olga Buzova)",
+        "url": "https://genius.com/artists/Olga-buzova",
+        "type": "regular",
+        "id": "1109509"
+      },
+      {
+        "name": "Olga Merediz",
+        "url": "https://genius.com/artists/Olga-merediz",
+        "type": "regular",
+        "id": "576572"
+      },
+      {
+        "name": "OLGANG",
+        "url": "https://genius.com/artists/Olgang",
+        "type": "regular",
+        "id": "3625051"
+      },
+      {
+        "name": "OLG Zak",
+        "url": "https://genius.com/artists/Olg-zak",
+        "type": "regular",
+        "id": "3472354"
+      },
+      {
+        "name": "Oli",
+        "url": "https://genius.com/artists/Oli",
+        "type": "regular",
+        "id": "553749"
+      },
+      {
+        "name": "Olin Garcés",
+        "url": "https://genius.com/artists/Olin-garces",
+        "type": "regular",
+        "id": "4358030"
+      },
+      {
+        "name": "Oli.P",
+        "url": "https://genius.com/artists/Olip",
+        "type": "regular",
+        "id": "155441"
+      },
+      {
+        "name": "Oli Sykes",
+        "url": "https://genius.com/artists/Oli-sykes",
+        "type": "regular",
+        "id": "1007693"
+      },
+      {
+        "name": "Olive Jones",
+        "url": "https://genius.com/artists/Olive-jones",
+        "type": "regular",
+        "id": "3550343"
+      },
+      {
+        "name": "Oliver Anthony Music",
+        "url": "https://genius.com/artists/Oliver-anthony-music",
+        "type": "regular",
+        "id": "3626821"
+      },
+      {
+        "name": "Oliver Cronin",
+        "url": "https://genius.com/artists/Oliver-cronin",
+        "type": "regular",
+        "id": "2974922"
+      },
+      {
+        "name": "Oliver Dragojević",
+        "url": "https://genius.com/artists/Oliver-dragojevic",
+        "type": "regular",
+        "id": "402387"
+      },
+      {
+        "name": "Oliver Edward",
+        "url": "https://genius.com/artists/Oliver-edward",
+        "type": "regular",
+        "id": "3199692"
+      },
+      {
+        "name": "Oliver Francis",
+        "url": "https://genius.com/artists/Oliver-francis",
+        "type": "regular",
+        "id": "260188"
+      },
+      {
+        "name": "Oliver Gies",
+        "url": "https://genius.com/artists/Oliver-gies",
+        "type": "regular",
+        "id": "1711351"
+      },
+      {
+        "name": "Oliver Good",
+        "url": "https://genius.com/artists/Oliver-good",
+        "type": "regular",
+        "id": "2697835"
+      },
+      {
+        "name": "Oliver Heldens",
+        "url": "https://genius.com/artists/Oliver-heldens",
+        "type": "regular",
+        "id": "178168"
+      },
+      {
+        "name": "Oliver Koletzki",
+        "url": "https://genius.com/artists/Oliver-koletzki",
+        "type": "regular",
+        "id": "199509"
+      },
+      {
+        "name": "Oliver Mandić",
+        "url": "https://genius.com/artists/Oliver-mandic",
+        "type": "regular",
+        "id": "1772186"
+      },
+      {
+        "name": "Oliver Mtukudzi",
+        "url": "https://genius.com/artists/Oliver-mtukudzi",
+        "type": "regular",
+        "id": "1008544"
+      },
+      {
+        "name": "Oliver (Musical Cast Recording)",
+        "url": "https://genius.com/artists/Oliver-musical-cast-recording",
+        "type": "regular",
+        "id": "455316"
+      },
+      {
+        "name": "Oliver Olson",
+        "url": "https://genius.com/artists/Oliver-olson",
+        "type": "regular",
+        "id": "1783043"
+      },
+      {
+        "name": "Oliver Onions",
+        "url": "https://genius.com/artists/Oliver-onions",
+        "type": "regular",
+        "id": "357832"
+      },
+      {
+        "name": "Oliver Powell",
+        "url": "https://genius.com/artists/Oliver-powell",
+        "type": "regular",
+        "id": "1541896"
+      },
+      {
+        "name": "Oliver Richman",
+        "url": "https://genius.com/artists/Oliver-richman",
+        "type": "regular",
+        "id": "4431558"
+      },
+      {
+        "name": "Oliver (Singer)",
+        "url": "https://genius.com/artists/Oliver-singer",
+        "type": "regular",
+        "id": "2807214"
+      },
+      {
+        "name": "Oliver Tree",
+        "url": "https://genius.com/artists/Oliver-tree",
+        "type": "regular",
+        "id": "1020188"
+      },
+      {
+        "name": "Oliver Walker",
+        "url": "https://genius.com/artists/Oliver-walker",
+        "type": "regular",
+        "id": "1951027"
+      },
+      {
+        "name": "Oliver Wallace",
+        "url": "https://genius.com/artists/Oliver-wallace",
+        "type": "regular",
+        "id": "160708"
+      },
+      {
+        "name": "Olivetheboy",
+        "url": "https://genius.com/artists/Olivetheboy",
+        "type": "regular",
+        "id": "2804696"
+      },
+      {
+        "name": "Olivia Addams",
+        "url": "https://genius.com/artists/Olivia-addams",
+        "type": "regular",
+        "id": "1630498"
+      },
+      {
+        "name": "Olivia Foa'i",
+        "url": "https://genius.com/artists/Olivia-foai",
+        "type": "regular",
+        "id": "1028049"
+      },
+      {
+        "name": "Olivia Holt",
+        "url": "https://genius.com/artists/Olivia-holt",
+        "type": "regular",
+        "id": "138549"
+      },
+      {
+        "name": "Olivia Lane",
+        "url": "https://genius.com/artists/Olivia-lane",
+        "type": "regular",
+        "id": "484767"
+      },
+      {
+        "name": "Olivia Lobato",
+        "url": "https://genius.com/artists/Olivia-lobato",
+        "type": "regular",
+        "id": "2732107"
+      },
+      {
+        "name": "Olivia Lufkin",
+        "url": "https://genius.com/artists/Olivia-lufkin",
+        "type": "regular",
+        "id": "2443724"
+      },
+      {
+        "name": "Olivia Marsh",
+        "url": "https://genius.com/artists/Olivia-marsh",
+        "type": "regular",
+        "id": "3916258"
+      },
+      {
+        "name": "Olivia Newton-John",
+        "url": "https://genius.com/artists/Olivia-newton-john",
+        "type": "regular",
+        "id": "281740"
+      },
+      {
+        "name": "Olivia O.",
+        "url": "https://genius.com/artists/Olivia-o",
+        "type": "regular",
+        "id": "1646932"
+      },
+      {
+        "name": "Olivia O'Brien",
+        "url": "https://genius.com/artists/Olivia-obrien",
+        "type": "regular",
+        "id": "540192"
+      },
+      {
+        "name": "Olivia Ong",
+        "url": "https://genius.com/artists/Olivia-ong",
+        "type": "regular",
+        "id": "353997"
+      },
+      {
+        "name": "The Olivia Tremor Control",
+        "url": "https://genius.com/artists/The-olivia-tremor-control",
+        "type": "regular",
+        "id": "353347"
+      },
+      {
+        "name": "Olivier Deriviere",
+        "url": "https://genius.com/artists/Olivier-deriviere",
+        "type": "regular",
+        "id": "1811925"
+      },
+      {
+        "name": "Oliwka Brazil",
+        "url": "https://genius.com/artists/Oliwka-brazil",
+        "type": "regular",
+        "id": "2590651"
+      },
+      {
+        "name": "Ol' Kainry",
+        "url": "https://genius.com/artists/Ol-kainry",
+        "type": "regular",
+        "id": "2249"
+      },
+      {
+        "name": "Ollane",
+        "url": "https://genius.com/artists/Ollane",
+        "type": "regular",
+        "id": "2056854"
+      },
+      {
+        "name": "Olle Adolphson",
+        "url": "https://genius.com/artists/Olle-adolphson",
+        "type": "regular",
+        "id": "349032"
+      },
+      {
+        "name": "Olle Ljungström",
+        "url": "https://genius.com/artists/Olle-ljungstrom",
+        "type": "regular",
+        "id": "359141"
+      },
+      {
+        "name": "Olli Banjo",
+        "url": "https://genius.com/artists/Olli-banjo",
+        "type": "regular",
+        "id": "11839"
+      },
+      {
+        "name": "Ollie",
+        "url": "https://genius.com/artists/Ollie",
+        "type": "regular",
+        "id": "39966"
+      },
+      {
+        "name": "Ollie MN",
+        "url": "https://genius.com/artists/Ollie-mn",
+        "type": "regular",
+        "id": "1084843"
+      },
+      {
+        "name": "Olli Halonen",
+        "url": "https://genius.com/artists/Olli-halonen",
+        "type": "regular",
+        "id": "1303650"
+      },
+      {
+        "name": "Olly",
+        "url": "https://genius.com/artists/Olly",
+        "type": "regular",
+        "id": "126534"
+      },
+      {
+        "name": "Olly Alexander",
+        "url": "https://genius.com/artists/Olly-alexander",
+        "type": "regular",
+        "id": "279148"
+      },
+      {
+        "name": "Olly Dobson",
+        "url": "https://genius.com/artists/Olly-dobson",
+        "type": "regular",
+        "id": "2451473"
+      },
+      {
+        "name": "Olly Murs",
+        "url": "https://genius.com/artists/Olly-murs",
+        "type": "regular",
+        "id": "40181"
+      },
+      {
+        "name": "Olson",
+        "url": "https://genius.com/artists/Olson",
+        "type": "regular",
+        "id": "15685"
+      },
+      {
+        "name": "olszakumpel",
+        "url": "https://genius.com/artists/Olszakumpel",
+        "type": "regular",
+        "id": "1167334"
+      },
+      {
+        "name": "Olya Holiday",
+        "url": "https://genius.com/artists/Olya-holiday",
+        "type": "regular",
+        "id": "3435049"
+      },
+      {
+        "name": "Оля Ля (Olya La)",
+        "url": "https://genius.com/artists/Olya-la",
+        "type": "regular",
+        "id": "3337359"
+      },
+      {
+        "name": "Оля Полякова (Olya Polyakova)",
+        "url": "https://genius.com/artists/Olya-polyakova",
+        "type": "regular",
+        "id": "2049568"
+      },
+      {
+        "name": "OM.",
+        "url": "https://genius.com/artists/Om",
+        "type": "regular",
+        "id": "2820547"
+      },
+      {
+        "name": "Omah Lay",
+        "url": "https://genius.com/artists/Omah-lay",
+        "type": "regular",
+        "id": "1809552"
+      },
+      {
+        "name": "OMAR",
+        "url": "https://genius.com/artists/Omar",
+        "type": "regular",
+        "id": "2269661"
+      },
+      {
+        "name": "Omar101",
+        "url": "https://genius.com/artists/Omar101",
+        "type": "regular",
+        "id": "1624807"
+      },
+      {
+        "name": "Omar Apollo",
+        "url": "https://genius.com/artists/Omar-apollo",
+        "type": "regular",
+        "id": "1109623"
+      },
+      {
+        "name": "Omar Baliw",
+        "url": "https://genius.com/artists/Omar-baliw",
+        "type": "regular",
+        "id": "2446551"
+      },
+      {
+        "name": "OmarCameUp",
+        "url": "https://genius.com/artists/Omarcameup",
+        "type": "regular",
+        "id": "1233306"
+      },
+      {
+        "name": "Omar Courtz",
+        "url": "https://genius.com/artists/Omar-courtz",
+        "type": "regular",
+        "id": "1329178"
+      },
+      {
+        "name": "Omar (DNK)",
+        "url": "https://genius.com/artists/Omar-dnk",
+        "type": "regular",
+        "id": "1122426"
+      },
+      {
+        "name": "Omar Esa",
+        "url": "https://genius.com/artists/Omar-esa",
+        "type": "regular",
+        "id": "187685"
+      },
+      {
+        "name": "Omarion",
+        "url": "https://genius.com/artists/Omarion",
+        "type": "regular",
+        "id": "2052"
+      },
+      {
+        "name": "Omar LinX",
+        "url": "https://genius.com/artists/Omar-linx",
+        "type": "regular",
+        "id": "2477"
+      },
+      {
+        "name": "Omar Montes",
+        "url": "https://genius.com/artists/Omar-montes",
+        "type": "regular",
+        "id": "1485498"
+      },
+      {
+        "name": "Omar Rodríguez-López",
+        "url": "https://genius.com/artists/Omar-rodriguez-lopez",
+        "type": "regular",
+        "id": "405912"
+      },
+      {
+        "name": "Omar Rudberg",
+        "url": "https://genius.com/artists/Omar-rudberg",
+        "type": "regular",
+        "id": "660559"
+      },
+      {
+        "name": "Omar Ruiz",
+        "url": "https://genius.com/artists/Omar-ruiz",
+        "type": "regular",
+        "id": "479206"
+      },
+      {
+        "name": "Omar Souleyman",
+        "url": "https://genius.com/artists/Omar-souleyman",
+        "type": "regular",
+        "id": "380163"
+      },
+      {
+        "name": "Omar Sterling",
+        "url": "https://genius.com/artists/Omar-sterling",
+        "type": "regular",
+        "id": "622743"
+      },
+      {
+        "name": "Omar (UK)",
+        "url": "https://genius.com/artists/Omar-uk",
+        "type": "regular",
+        "id": "4703"
+      },
+      {
+        "name": "Omar Varela",
+        "url": "https://genius.com/artists/Omar-varela",
+        "type": "regular",
+        "id": "1116179"
+      },
+      {
+        "name": "​​​​omatix",
+        "url": "https://genius.com/artists/Omatix",
+        "type": "regular",
+        "id": "4025698"
+      },
+      {
+        "name": "Omawumi",
+        "url": "https://genius.com/artists/Omawumi",
+        "type": "regular",
+        "id": "481954"
+      },
+      {
+        "name": "Om (Band)",
+        "url": "https://genius.com/artists/Om-band",
+        "type": "regular",
+        "id": "9605"
+      },
+      {
+        "name": "Ombladon",
+        "url": "https://genius.com/artists/Ombladon",
+        "type": "regular",
+        "id": "38236"
+      },
+      {
+        "name": "OMB Peezy",
+        "url": "https://genius.com/artists/Omb-peezy",
+        "type": "regular",
+        "id": "1154389"
+      },
+      {
+        "name": "OMC",
+        "url": "https://genius.com/artists/Omc",
+        "type": "regular",
+        "id": "64606"
+      },
+      {
+        "name": "Omega",
+        "url": "https://genius.com/artists/Omega",
+        "type": "regular",
+        "id": "15328"
+      },
+      {
+        "name": "Omega El Fuerte",
+        "url": "https://genius.com/artists/Omega-el-fuerte",
+        "type": "regular",
+        "id": "391877"
+      },
+      {
+        "name": "Omen",
+        "url": "https://genius.com/artists/Omen",
+        "type": "regular",
+        "id": "731"
+      },
+      {
+        "name": "OmenXIII",
+        "url": "https://genius.com/artists/Omenxiii",
+        "type": "regular",
+        "id": "534620"
+      },
+      {
+        "name": "Omer Adam - עומר אדם",
+        "url": "https://genius.com/artists/Omer-adam",
+        "type": "regular",
+        "id": "1048659"
+      },
+      {
+        "name": "Omerettà the Great",
+        "url": "https://genius.com/artists/Omeretta-the-great",
+        "type": "regular",
+        "id": "1061799"
+      },
+      {
+        "name": "Omerta (USA)",
+        "url": "https://genius.com/artists/Omerta-usa",
+        "type": "regular",
+        "id": "2145568"
+      },
+      {
+        "name": "The OMG Girlz",
+        "url": "https://genius.com/artists/The-omg-girlz",
+        "type": "regular",
+        "id": "19206"
+      },
+      {
+        "name": "超てんちゃん (OMGkawaiiAngel)",
+        "url": "https://genius.com/artists/Omgkawaiiangel",
+        "type": "regular",
+        "id": "4022001"
+      },
+      {
+        "name": "OMI",
+        "url": "https://genius.com/artists/Omi",
+        "type": "regular",
+        "id": "292730"
+      },
+      {
+        "name": "Omido",
+        "url": "https://genius.com/artists/Omido",
+        "type": "regular",
+        "id": "2318821"
+      },
+      {
+        "name": "OminousyL",
+        "url": "https://genius.com/artists/Ominousyl",
+        "type": "regular",
+        "id": "4029506"
+      },
+      {
+        "name": "OMINVS",
+        "url": "https://genius.com/artists/Ominvs",
+        "type": "regular",
+        "id": "2936040"
+      },
+      {
+        "name": "Omit ST",
+        "url": "https://genius.com/artists/Omit-st",
+        "type": "regular",
+        "id": "2392336"
+      },
+      {
+        "name": "Omkara",
+        "url": "https://genius.com/artists/Omkara",
+        "type": "regular",
+        "id": "542967"
+      },
+      {
+        "name": "Omnia",
+        "url": "https://genius.com/artists/Omnia",
+        "type": "regular",
+        "id": "359085"
+      },
+      {
+        "name": "Omni Clutch",
+        "url": "https://genius.com/artists/Omni-clutch",
+        "type": "regular",
+        "id": "2809004"
+      },
+      {
+        "name": "万能青年旅店 (Omnipotent Youth Society)",
+        "url": "https://genius.com/artists/Omnipotent-youth-society",
+        "type": "regular",
+        "id": "1473052"
+      },
+      {
+        "name": "Omoinotake",
+        "url": "https://genius.com/artists/Omoinotake",
+        "type": "regular",
+        "id": "2266419"
+      },
+      {
+        "name": "Omori",
+        "url": "https://genius.com/artists/Omori",
+        "type": "regular",
+        "id": "2326033"
+      },
+      {
+        "name": "Område 69",
+        "url": "https://genius.com/artists/Omrade-69",
+        "type": "regular",
+        "id": "3790212"
+      },
+      {
+        "name": "Omy De Oro",
+        "url": "https://genius.com/artists/Omy-de-oro",
+        "type": "regular",
+        "id": "1595095"
+      },
+      {
+        "name": "Łona",
+        "url": "https://genius.com/artists/Ona",
+        "type": "regular",
+        "id": "56075"
+      },
+      {
+        "name": "Łona i Webber",
+        "url": "https://genius.com/artists/Ona-i-webber",
+        "type": "regular",
+        "id": "322540"
+      },
+      {
+        "name": "Onative",
+        "url": "https://genius.com/artists/Onative",
+        "type": "regular",
+        "id": "1481152"
+      },
+      {
+        "name": "On Broken Wings",
+        "url": "https://genius.com/artists/On-broken-wings",
+        "type": "regular",
+        "id": "367171"
+      },
+      {
+        "name": "Once Upon a Mattress Ensemble (1996)",
+        "url": "https://genius.com/artists/Once-upon-a-mattress-ensemble-1996",
+        "type": "regular",
+        "id": "3068771"
+      },
+      {
+        "name": "陳健安 (On Chan)",
+        "url": "https://genius.com/artists/On-chan",
+        "type": "regular",
+        "id": "2551297"
+      },
+      {
+        "name": "ONDA ANDAR",
+        "url": "https://genius.com/artists/Onda-andar",
+        "type": "regular",
+        "id": "4181008"
+      },
+      {
+        "name": "Ondara",
+        "url": "https://genius.com/artists/Ondara",
+        "type": "regular",
+        "id": "1261519"
+      },
+      {
+        "name": "ONDELIVE",
+        "url": "https://genius.com/artists/Ondelive",
+        "type": "regular",
+        "id": "4136925"
+      },
+      {
+        "name": "ONE CLICK STRAIGHT",
+        "url": "https://genius.com/artists/One-click-straight",
+        "type": "regular",
+        "id": "1961559"
+      },
+      {
+        "name": "One Don",
+        "url": "https://genius.com/artists/One-don",
+        "type": "regular",
+        "id": "4187419"
+      },
+      {
+        "name": "ONEFOUR",
+        "url": "https://genius.com/artists/Onefour",
+        "type": "regular",
+        "id": "1781425"
+      },
+      {
+        "name": "ONE HOUSE",
+        "url": "https://genius.com/artists/One-house",
+        "type": "regular",
+        "id": "3454113"
+      },
+      {
+        "name": "Один в каное (One in a canoe)",
+        "url": "https://genius.com/artists/One-in-a-canoe",
+        "type": "regular",
+        "id": "1748629"
+      },
+      {
+        "name": "Oneohtrix Point Never",
+        "url": "https://genius.com/artists/Oneohtrix-point-never",
+        "type": "regular",
+        "id": "106613"
+      },
+      {
+        "name": "ONE OK ROCK",
+        "url": "https://genius.com/artists/One-ok-rock",
+        "type": "regular",
+        "id": "207444"
+      },
+      {
+        "name": "ONE OR EIGHT",
+        "url": "https://genius.com/artists/One-or-eight",
+        "type": "regular",
+        "id": "4002529"
+      },
+      {
+        "name": "OneOuts Australia",
+        "url": "https://genius.com/artists/Oneouts-australia",
+        "type": "regular",
+        "id": "1515801"
+      },
+      {
+        "name": "ONE PACT (원팩트)",
+        "url": "https://genius.com/artists/One-pact",
+        "type": "regular",
+        "id": "3687364"
+      },
+      {
+        "name": "ONE PIECE",
+        "url": "https://genius.com/artists/One-piece",
+        "type": "regular",
+        "id": "93805"
+      },
+      {
+        "name": "ONE PLAY",
+        "url": "https://genius.com/artists/One-play",
+        "type": "regular",
+        "id": "2846724"
+      },
+      {
+        "name": "One Pound Fish Man",
+        "url": "https://genius.com/artists/One-pound-fish-man",
+        "type": "regular",
+        "id": "346233"
+      },
+      {
+        "name": "One Step Closer",
+        "url": "https://genius.com/artists/One-step-closer",
+        "type": "regular",
+        "id": "1877198"
+      },
+      {
+        "name": "onething live",
+        "url": "https://genius.com/artists/Onething-live",
+        "type": "regular",
+        "id": "1287709"
+      },
+      {
+        "name": "О!нет (Onetpaket)",
+        "url": "https://genius.com/artists/Onetpaket",
+        "type": "regular",
+        "id": "3841967"
+      },
+      {
+        "name": "One-T + Cool-T",
+        "url": "https://genius.com/artists/One-t-cool-t",
+        "type": "regular",
+        "id": "388670"
+      },
+      {
+        "name": "One True God",
+        "url": "https://genius.com/artists/One-true-god",
+        "type": "regular",
+        "id": "1930169"
+      },
+      {
+        "name": "ONEUS",
+        "url": "https://genius.com/artists/Oneus",
+        "type": "regular",
+        "id": "1682768"
+      },
+      {
+        "name": "One Voice INT Music",
+        "url": "https://genius.com/artists/One-voice-int-music",
+        "type": "regular",
+        "id": "3790074"
+      },
+      {
+        "name": "ONEW (온유)",
+        "url": "https://genius.com/artists/Onew",
+        "type": "regular",
+        "id": "1418158"
+      },
+      {
+        "name": "One Way",
+        "url": "https://genius.com/artists/One-way",
+        "type": "regular",
+        "id": "18895"
+      },
+      {
+        "name": "Oneway Blvd",
+        "url": "https://genius.com/artists/Oneway-blvd",
+        "type": "regular",
+        "id": "4430878"
+      },
+      {
+        "name": "ONEWE",
+        "url": "https://genius.com/artists/Onewe",
+        "type": "regular",
+        "id": "1822264"
+      },
+      {
+        "name": "Oney1",
+        "url": "https://genius.com/artists/Oney1",
+        "type": "regular",
+        "id": "3431111"
+      },
+      {
+        "name": "ONI (HRV)",
+        "url": "https://genius.com/artists/Oni-hrv",
+        "type": "regular",
+        "id": "519016"
+      },
+      {
+        "name": "ONI INC.",
+        "url": "https://genius.com/artists/Oni-inc",
+        "type": "regular",
+        "id": "1428382"
+      },
+      {
+        "name": "Onision",
+        "url": "https://genius.com/artists/Onision",
+        "type": "regular",
+        "id": "460413"
+      },
+      {
+        "name": "Only Fire",
+        "url": "https://genius.com/artists/Only-fire",
+        "type": "regular",
+        "id": "1581020"
+      },
+      {
+        "name": "Only Murders in the Building – Cast",
+        "url": "https://genius.com/artists/Only-murders-in-the-building-cast",
+        "type": "regular",
+        "id": "3633779"
+      },
+      {
+        "name": "The Only Ones",
+        "url": "https://genius.com/artists/The-only-ones",
+        "type": "regular",
+        "id": "57221"
+      },
+      {
+        "name": "Only The Family",
+        "url": "https://genius.com/artists/Only-the-family",
+        "type": "regular",
+        "id": "1225091"
+      },
+      {
+        "name": "Only The Poets",
+        "url": "https://genius.com/artists/Only-the-poets",
+        "type": "regular",
+        "id": "1730352"
+      },
+      {
+        "name": "Only U",
+        "url": "https://genius.com/artists/Only-u",
+        "type": "regular",
+        "id": "1809589"
+      },
+      {
+        "name": "onna badvibes",
+        "url": "https://genius.com/artists/Onna-badvibes",
+        "type": "regular",
+        "id": "1584450"
+      },
+      {
+        "name": "On The Radar",
+        "url": "https://genius.com/artists/On-the-radar",
+        "type": "regular",
+        "id": "3068727"
+      },
+      {
+        "name": "Onur Can Özcan",
+        "url": "https://genius.com/artists/Onur-can-ozcan",
+        "type": "regular",
+        "id": "1604444"
+      },
+      {
+        "name": "Onurr",
+        "url": "https://genius.com/artists/Onurr",
+        "type": "regular",
+        "id": "1160956"
+      },
+      {
+        "name": "Он Юн (On Yun)",
+        "url": "https://genius.com/artists/On-yun",
+        "type": "regular",
+        "id": "1687864"
+      },
+      {
+        "name": "Onyx",
+        "url": "https://genius.com/artists/Onyx",
+        "type": "regular",
+        "id": "8260"
+      },
+      {
+        "name": "OODareDevil",
+        "url": "https://genius.com/artists/Oodaredevil",
+        "type": "regular",
+        "id": "2116596"
+      },
+      {
+        "name": "ooes",
+        "url": "https://genius.com/artists/Ooes",
+        "type": "regular",
+        "id": "2417536"
+      },
+      {
+        "name": "Ooklah The Moc",
+        "url": "https://genius.com/artists/Ooklah-the-moc",
+        "type": "regular",
+        "id": "390790"
+      },
+      {
+        "name": "Oompa Loompa Cast",
+        "url": "https://genius.com/artists/Oompa-loompa-cast",
+        "type": "regular",
+        "id": "526460"
+      },
+      {
+        "name": "Oompa-Loompas",
+        "url": "https://genius.com/artists/Oompa-loompas",
+        "type": "regular",
+        "id": "4430881"
+      },
+      {
+        "name": "OOMPH!",
+        "url": "https://genius.com/artists/Oomph",
+        "type": "regular",
+        "id": "147967"
+      },
+      {
+        "name": "Oopsy",
+        "url": "https://genius.com/artists/Oopsy",
+        "type": "regular",
+        "id": "3616442"
+      },
+      {
+        "name": "The Oozes",
+        "url": "https://genius.com/artists/The-oozes",
+        "type": "regular",
+        "id": "2353618"
+      },
+      {
+        "name": "Opał",
+        "url": "https://genius.com/artists/Opa",
+        "type": "regular",
+        "id": "296207"
+      },
+      {
+        "name": "Open Kids",
+        "url": "https://genius.com/artists/Open-kids",
+        "type": "regular",
+        "id": "1245636"
+      },
+      {
+        "name": "Open Mike Eagle",
+        "url": "https://genius.com/artists/Open-mike-eagle",
+        "type": "regular",
+        "id": "16518"
+      },
+      {
+        "name": "Operation Ivy",
+        "url": "https://genius.com/artists/Operation-ivy",
+        "type": "regular",
+        "id": "112212"
+      },
+      {
+        "name": "Операция Пластилин (Operation Plasticine)",
+        "url": "https://genius.com/artists/Operation-plasticine",
+        "type": "regular",
+        "id": "1814098"
+      },
+      {
+        "name": "Operelly",
+        "url": "https://genius.com/artists/Operelly",
+        "type": "regular",
+        "id": "3134158"
+      },
+      {
+        "name": "Opetaia Foa'i",
+        "url": "https://genius.com/artists/Opetaia-foai",
+        "type": "regular",
+        "id": "1024227"
+      },
+      {
+        "name": "Opeth",
+        "url": "https://genius.com/artists/Opeth",
+        "type": "regular",
+        "id": "59420"
+      },
+      {
+        "name": "Opgezwolle",
+        "url": "https://genius.com/artists/Opgezwolle",
+        "type": "regular",
+        "id": "61700"
+      },
+      {
+        "name": "Opick",
+        "url": "https://genius.com/artists/Opick",
+        "type": "regular",
+        "id": "340900"
+      },
+      {
+        "name": "Opi The Hit Machine",
+        "url": "https://genius.com/artists/Opi-the-hit-machine",
+        "type": "regular",
+        "id": "1458560"
+      },
+      {
+        "name": "opium2k",
+        "url": "https://genius.com/artists/Opium2k",
+        "type": "regular",
+        "id": "3480182"
+      },
+      {
+        "name": "The Opposites",
+        "url": "https://genius.com/artists/The-opposites",
+        "type": "regular",
+        "id": "23352"
+      },
+      {
+        "name": "The Oppressed",
+        "url": "https://genius.com/artists/The-oppressed",
+        "type": "regular",
+        "id": "360875"
+      },
+      {
+        "name": "Oprychy z Getta",
+        "url": "https://genius.com/artists/Oprychy-z-getta",
+        "type": "regular",
+        "id": "3818323"
+      },
+      {
+        "name": "​opt",
+        "url": "https://genius.com/artists/Opt",
+        "type": "regular",
+        "id": "3003585"
+      },
+      {
+        "name": "Opus",
+        "url": "https://genius.com/artists/Opus",
+        "type": "regular",
+        "id": "1021367"
+      },
+      {
+        "name": "Opwekking",
+        "url": "https://genius.com/artists/Opwekking",
+        "type": "regular",
+        "id": "1935262"
+      },
+      {
+        "name": "Oqtay Ağayev",
+        "url": "https://genius.com/artists/Oqtay-agayev",
+        "type": "regular",
+        "id": "2606602"
+      },
+      {
+        "name": "OQUES GRASSES",
+        "url": "https://genius.com/artists/Oques-grasses",
+        "type": "regular",
+        "id": "457762"
+      },
+      {
+        "name": "OR3O",
+        "url": "https://genius.com/artists/Or3o",
+        "type": "regular",
+        "id": "1161413"
+      },
+      {
+        "name": "Oracle Sisters",
+        "url": "https://genius.com/artists/Oracle-sisters",
+        "type": "regular",
+        "id": "2141973"
+      },
+      {
+        "name": "Oral Bee",
+        "url": "https://genius.com/artists/Oral-bee",
+        "type": "regular",
+        "id": "3403"
+      },
+      {
+        "name": "Orange Juice",
+        "url": "https://genius.com/artists/Orange-juice",
+        "type": "regular",
+        "id": "174949"
+      },
+      {
+        "name": "ORANGE RANGE",
+        "url": "https://genius.com/artists/Orange-range",
+        "type": "regular",
+        "id": "365152"
+      },
+      {
+        "name": "Orange (VNM)",
+        "url": "https://genius.com/artists/Orange-vnm",
+        "type": "regular",
+        "id": "381705"
+      },
+      {
+        "name": "O Rappa",
+        "url": "https://genius.com/artists/O-rappa",
+        "type": "regular",
+        "id": "94363"
+      },
+      {
+        "name": "Orbital",
+        "url": "https://genius.com/artists/Orbital",
+        "type": "regular",
+        "id": "72522"
+      },
+      {
+        "name": "Orbit Culture",
+        "url": "https://genius.com/artists/Orbit-culture",
+        "type": "regular",
+        "id": "1062105"
+      },
+      {
+        "name": "Orchestral Manoeuvres in the Dark",
+        "url": "https://genius.com/artists/Orchestral-manoeuvres-in-the-dark",
+        "type": "regular",
+        "id": "32334"
+      },
+      {
+        "name": "Orchestra Super Mazembe",
+        "url": "https://genius.com/artists/Orchestra-super-mazembe",
+        "type": "regular",
+        "id": "4240824"
+      },
+      {
+        "name": "Orchi",
+        "url": "https://genius.com/artists/Orchi",
+        "type": "regular",
+        "id": "1795821"
+      },
+      {
+        "name": "Orchid",
+        "url": "https://genius.com/artists/Orchid",
+        "type": "regular",
+        "id": "33966"
+      },
+      {
+        "name": "Orchid Mantis",
+        "url": "https://genius.com/artists/Orchid-mantis",
+        "type": "regular",
+        "id": "1085464"
+      },
+      {
+        "name": "Orco (NLD)",
+        "url": "https://genius.com/artists/Orco-nld",
+        "type": "regular",
+        "id": "4148783"
+      },
+      {
+        "name": "ORDA",
+        "url": "https://genius.com/artists/Orda",
+        "type": "regular",
+        "id": "2104197"
+      },
+      {
+        "name": "Orden Ogan",
+        "url": "https://genius.com/artists/Orden-ogan",
+        "type": "regular",
+        "id": "363099"
+      },
+      {
+        "name": "Ordo Rosarius Equilibrio",
+        "url": "https://genius.com/artists/Ordo-rosarius-equilibrio",
+        "type": "regular",
+        "id": "356696"
+      },
+      {
+        "name": "Đorđe",
+        "url": "https://genius.com/artists/Ore",
+        "type": "regular",
+        "id": "3398949"
+      },
+      {
+        "name": "Đorđe Balašević",
+        "url": "https://genius.com/artists/Ore-balasevic",
+        "type": "regular",
+        "id": "1026094"
+      },
+      {
+        "name": "OrelSan",
+        "url": "https://genius.com/artists/Orelsan",
+        "type": "regular",
+        "id": "1286"
+      },
+      {
+        "name": "Orfeh",
+        "url": "https://genius.com/artists/Orfeh",
+        "type": "regular",
+        "id": "998599"
+      },
+      {
+        "name": "Organized Konfusion",
+        "url": "https://genius.com/artists/Organized-konfusion",
+        "type": "regular",
+        "id": "1326"
+      },
+      {
+        "name": "​orgasmdonor",
+        "url": "https://genius.com/artists/Orgasmdonor",
+        "type": "regular",
+        "id": "3942134"
+      },
+      {
+        "name": "ORGAVSM",
+        "url": "https://genius.com/artists/Orgavsm",
+        "type": "regular",
+        "id": "4294968"
+      },
+      {
+        "name": "Оргазм Нострадамуса (Orgazm Nostradamusa)",
+        "url": "https://genius.com/artists/Orgazm-nostradamusa",
+        "type": "regular",
+        "id": "2789550"
+      },
+      {
+        "name": "Orgi-E",
+        "url": "https://genius.com/artists/Orgi-e",
+        "type": "regular",
+        "id": "15170"
+      },
+      {
+        "name": "Orgy",
+        "url": "https://genius.com/artists/Orgy",
+        "type": "regular",
+        "id": "358009"
+      },
+      {
+        "name": "Orhan Gencebay",
+        "url": "https://genius.com/artists/Orhan-gencebay",
+        "type": "regular",
+        "id": "452325"
+      },
+      {
+        "name": "Orhan Türkoğlu",
+        "url": "https://genius.com/artists/Orhan-turkoglu",
+        "type": "regular",
+        "id": "2605744"
+      },
+      {
+        "name": "Orianthi",
+        "url": "https://genius.com/artists/Orianthi",
+        "type": "regular",
+        "id": "145072"
+      },
+      {
+        "name": "​oribloom",
+        "url": "https://genius.com/artists/Oribloom",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Oricadia",
+        "url": "https://genius.com/artists/Oricadia",
+        "type": "regular",
+        "id": "2275165"
+      },
+      {
+        "name": "Orient Pearl",
+        "url": "https://genius.com/artists/Orient-pearl",
+        "type": "regular",
+        "id": "375819"
+      },
+      {
+        "name": "Orietta Berti",
+        "url": "https://genius.com/artists/Orietta-berti",
+        "type": "regular",
+        "id": "359576"
+      },
+      {
+        "name": "Origa",
+        "url": "https://genius.com/artists/Origa",
+        "type": "regular",
+        "id": "318138"
+      },
+      {
+        "name": "Origami Angel",
+        "url": "https://genius.com/artists/Origami-angel",
+        "type": "regular",
+        "id": "1593650"
+      },
+      {
+        "name": "Origami Ultra",
+        "url": "https://genius.com/artists/Origami-ultra",
+        "type": "regular",
+        "id": "3278110"
+      },
+      {
+        "name": "Original Broadway Cast of 13",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-13",
+        "type": "regular",
+        "id": "1175123"
+      },
+      {
+        "name": "Original Broadway Cast of 1776",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-1776",
+        "type": "regular",
+        "id": "1177710"
+      },
+      {
+        "name": "Original Broadway Cast of 42nd Street",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-42nd-street",
+        "type": "regular",
+        "id": "1994752"
+      },
+      {
+        "name": "Original Broadway Cast of A Chorus Line",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-a-chorus-line",
+        "type": "regular",
+        "id": "1239642"
+      },
+      {
+        "name": "Original Broadway Cast of Aladdin",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-aladdin",
+        "type": "regular",
+        "id": "998648"
+      },
+      {
+        "name": "Original Broadway Cast of Amélie",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-amelie",
+        "type": "regular",
+        "id": "1329904"
+      },
+      {
+        "name": "The Original Broadway Cast of Anastasia",
+        "url": "https://genius.com/artists/The-original-broadway-cast-of-anastasia",
+        "type": "regular",
+        "id": "1145801"
+      },
+      {
+        "name": "Original Broadway Cast of & Juliet",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-and-juliet",
+        "type": "regular",
+        "id": "3337124"
+      },
+      {
+        "name": "Original Broadway Cast of Annie",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-annie",
+        "type": "regular",
+        "id": "2178202"
+      },
+      {
+        "name": "Original Broadway Cast of Annie Get Your Gun",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-annie-get-your-gun",
+        "type": "regular",
+        "id": "3003580"
+      },
+      {
+        "name": "Original Broadway Cast of Beauty and the Beast",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-beauty-and-the-beast",
+        "type": "regular",
+        "id": "1176641"
+      },
+      {
+        "name": "Original Broadway Cast of Beetlejuice",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-beetlejuice",
+        "type": "regular",
+        "id": "1698798"
+      },
+      {
+        "name": "Original Broadway Cast of Be More Chill",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-be-more-chill",
+        "type": "regular",
+        "id": "1782639"
+      },
+      {
+        "name": "Original Broadway Cast of Boop! The Musical",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-boop-the-musical",
+        "type": "regular",
+        "id": "4350032"
+      },
+      {
+        "name": "Original Broadway Cast of Bye Bye Birdie",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-bye-bye-birdie",
+        "type": "regular",
+        "id": "1419220"
+      },
+      {
+        "name": "Original Broadway Cast of Cabaret",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-cabaret",
+        "type": "regular",
+        "id": "1462161"
+      },
+      {
+        "name": "Original Broadway Cast of Cats",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-cats",
+        "type": "regular",
+        "id": "1317279"
+      },
+      {
+        "name": "The Original Broadway Cast of Cinderella",
+        "url": "https://genius.com/artists/The-original-broadway-cast-of-cinderella",
+        "type": "regular",
+        "id": "2457019"
+      },
+      {
+        "name": "Original Broadway Cast of Come From Away",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-come-from-away",
+        "type": "regular",
+        "id": "1106484"
+      },
+      {
+        "name": "Original Broadway Cast of Company",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-company",
+        "type": "regular",
+        "id": "3286311"
+      },
+      {
+        "name": "Original Broadway Cast of Curtains",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-curtains",
+        "type": "regular",
+        "id": "2910787"
+      },
+      {
+        "name": "Original Broadway Cast of Dead Outlaw",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-dead-outlaw",
+        "type": "regular",
+        "id": "4419498"
+      },
+      {
+        "name": "Original Broadway Cast of Dear Evan Hansen",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-dear-evan-hansen",
+        "type": "regular",
+        "id": "1256447"
+      },
+      {
+        "name": "Original Broadway Cast of Dirty Rotten Scoundrels",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-dirty-rotten-scoundrels",
+        "type": "regular",
+        "id": "1208218"
+      },
+      {
+        "name": "Original Broadway Cast of Evita",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-evita",
+        "type": "regular",
+        "id": "3277883"
+      },
+      {
+        "name": "Original Broadway Cast of Frozen",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-frozen",
+        "type": "regular",
+        "id": "1400714"
+      },
+      {
+        "name": "Original Broadway Cast of Fun Home",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-fun-home",
+        "type": "regular",
+        "id": "1140707"
+      },
+      {
+        "name": "Original Broadway Cast of Funny Girl",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-funny-girl",
+        "type": "regular",
+        "id": "1402022"
+      },
+      {
+        "name": "Original Broadway Cast of Grease",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-grease",
+        "type": "regular",
+        "id": "3260488"
+      },
+      {
+        "name": "Original Broadway Cast of Groundhog Day",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-groundhog-day",
+        "type": "regular",
+        "id": "1365315"
+      },
+      {
+        "name": "Original Broadway Cast of Guys and Dolls",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-guys-and-dolls",
+        "type": "regular",
+        "id": "4335457"
+      },
+      {
+        "name": "Original Broadway Cast Of Hairspray",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-hairspray",
+        "type": "regular",
+        "id": "1647931"
+      },
+      {
+        "name": "Original Broadway Cast of Honeymoon in Vegas",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-honeymoon-in-vegas",
+        "type": "regular",
+        "id": "2013921"
+      },
+      {
+        "name": "Original Broadway Cast of Into the Woods",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-into-the-woods",
+        "type": "regular",
+        "id": "1214227"
+      },
+      {
+        "name": "Original Broadway Cast of Jagged Little Pill",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-jagged-little-pill",
+        "type": "regular",
+        "id": "2034269"
+      },
+      {
+        "name": "Original Broadway Cast of Jesus Christ Superstar",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-jesus-christ-superstar",
+        "type": "regular",
+        "id": "2621621"
+      },
+      {
+        "name": "Original Broadway Cast of Lempicka",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-lempicka",
+        "type": "regular",
+        "id": "3929291"
+      },
+      {
+        "name": "Original Broadway Cast of Les Misérables",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-les-miserables",
+        "type": "regular",
+        "id": "139923"
+      },
+      {
+        "name": "Original Broadway Cast of Mean Girls",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-mean-girls",
+        "type": "regular",
+        "id": "1441181"
+      },
+      {
+        "name": "Original Broadway Cast of Merrily We Roll Along",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-merrily-we-roll-along",
+        "type": "regular",
+        "id": "1241458"
+      },
+      {
+        "name": "Original Broadway Cast of Moulin Rouge! The Musical",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-moulin-rouge-the-musical",
+        "type": "regular",
+        "id": "2109550"
+      },
+      {
+        "name": "Original Broadway Cast of My Fair Lady",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-my-fair-lady",
+        "type": "regular",
+        "id": "3022659"
+      },
+      {
+        "name": "Original Broadway Cast of Natasha, Pierre & the Great Comet of 1812",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-natasha-pierre-and-the-great-comet-of-1812",
+        "type": "regular",
+        "id": "1206422"
+      },
+      {
+        "name": "Original Broadway Cast of Next To Normal",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-next-to-normal",
+        "type": "regular",
+        "id": "2034082"
+      },
+      {
+        "name": "Original Broadway Cast of Once",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-once",
+        "type": "regular",
+        "id": "1239525"
+      },
+      {
+        "name": "Original Broadway Cast of Parade",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-parade",
+        "type": "regular",
+        "id": "3612123"
+      },
+      {
+        "name": "Original Broadway Cast of Pretty Woman",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-pretty-woman",
+        "type": "regular",
+        "id": "1592325"
+      },
+      {
+        "name": "Original Broadway Cast of Ragtime: The Musical",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-ragtime-the-musical",
+        "type": "regular",
+        "id": "1173743"
+      },
+      {
+        "name": "Original Broadway Cast of Rent",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-rent",
+        "type": "regular",
+        "id": "1271454"
+      },
+      {
+        "name": "Original Broadway Cast of Rock Of Ages",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-rock-of-ages",
+        "type": "regular",
+        "id": "1657242"
+      },
+      {
+        "name": "The Original Broadway Cast of School of Rock",
+        "url": "https://genius.com/artists/The-original-broadway-cast-of-school-of-rock",
+        "type": "regular",
+        "id": "1248934"
+      },
+      {
+        "name": "Original Broadway Cast of Shrek: The Musical",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-shrek-the-musical",
+        "type": "regular",
+        "id": "1258695"
+      },
+      {
+        "name": "Original Broadway Cast of Some Like It Hot",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-some-like-it-hot",
+        "type": "regular",
+        "id": "3508887"
+      },
+      {
+        "name": "Original Broadway Cast of Something Rotten",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-something-rotten",
+        "type": "regular",
+        "id": "3547145"
+      },
+      {
+        "name": "Original Broadway Cast of Sweeney Todd",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-sweeney-todd",
+        "type": "regular",
+        "id": "3037806"
+      },
+      {
+        "name": "Original Broadway Cast of The 25th Annual Putnam County Spelling Bee",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-25th-annual-putnam-county-spelling-bee",
+        "type": "regular",
+        "id": "659597"
+      },
+      {
+        "name": "Original Broadway Cast of The Band's Visit",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-bands-visit",
+        "type": "regular",
+        "id": "1439568"
+      },
+      {
+        "name": "Original Broadway Cast of The Book of Mormon",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-book-of-mormon",
+        "type": "regular",
+        "id": "46642"
+      },
+      {
+        "name": "Original Broadway Cast of The Drowsy Chaperone",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-drowsy-chaperone",
+        "type": "regular",
+        "id": "1210502"
+      },
+      {
+        "name": "Original Broadway Cast of The Great Gatsby - A New Musical",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-great-gatsby-a-new-musical",
+        "type": "regular",
+        "id": "3984025"
+      },
+      {
+        "name": "Original Broadway Cast of The Little Mermaid",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-little-mermaid",
+        "type": "regular",
+        "id": "1432304"
+      },
+      {
+        "name": "Original Broadway Cast of The Music Man",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-music-man",
+        "type": "regular",
+        "id": "3309998"
+      },
+      {
+        "name": "Original Broadway Cast of The Mystery of Edwin Drood",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-mystery-of-edwin-drood",
+        "type": "regular",
+        "id": "2726847"
+      },
+      {
+        "name": "Original Broadway Cast of The Outsiders",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-outsiders",
+        "type": "regular",
+        "id": "3951485"
+      },
+      {
+        "name": "Original Broadway Cast of The Sound of Music",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-the-sound-of-music",
+        "type": "regular",
+        "id": "2452101"
+      },
+      {
+        "name": "Original Broadway Cast of Violet",
+        "url": "https://genius.com/artists/Original-broadway-cast-of-violet",
+        "type": "regular",
+        "id": "1270630"
+      },
+      {
+        "name": "Original Broadway Chorus of Natasha, Pierre & the Great Comet of 1812",
+        "url": "https://genius.com/artists/Original-broadway-chorus-of-natasha-pierre-and-the-great-comet-of-1812",
+        "type": "regular",
+        "id": "4314988"
+      },
+      {
+        "name": "Original Broadway Company of Natasha, Pierre & the Great Comet of 1812",
+        "url": "https://genius.com/artists/Original-broadway-company-of-natasha-pierre-and-the-great-comet-of-1812",
+        "type": "regular",
+        "id": "3411102"
+      },
+      {
+        "name": "Original by Bethel , this version is by Jonathan Stamper",
+        "url": "https://genius.com/artists/Original-by-bethel-this-version-is-by-jonathan-stamper",
+        "type": "regular",
+        "id": "4431555"
+      },
+      {
+        "name": "Original by STUDIO LICO, cover by KOSMiYU",
+        "url": "https://genius.com/artists/Original-by-studio-lico-cover-by-kosmiyu",
+        "type": "regular",
+        "id": "4248541"
+      },
+      {
+        "name": "Original Cast",
+        "url": "https://genius.com/artists/Original-cast",
+        "type": "regular",
+        "id": "387225"
+      },
+      {
+        "name": "The Original Caste",
+        "url": "https://genius.com/artists/The-original-caste",
+        "type": "regular",
+        "id": "380001"
+      },
+      {
+        "name": "Original Cast of 36 Questions",
+        "url": "https://genius.com/artists/Original-cast-of-36-questions",
+        "type": "regular",
+        "id": "1195127"
+      },
+      {
+        "name": "Original Cast of Alice By Heart",
+        "url": "https://genius.com/artists/Original-cast-of-alice-by-heart",
+        "type": "regular",
+        "id": "1858226"
+      },
+      {
+        "name": "Original Cast of Hadestown",
+        "url": "https://genius.com/artists/Original-cast-of-hadestown",
+        "type": "regular",
+        "id": "1158127"
+      },
+      {
+        "name": "Original Cast of His Story the Musical",
+        "url": "https://genius.com/artists/Original-cast-of-his-story-the-musical",
+        "type": "regular",
+        "id": "1777200"
+      },
+      {
+        "name": "Original Cast of Hope Despair Musical",
+        "url": "https://genius.com/artists/Original-cast-of-hope-despair-musical",
+        "type": "regular",
+        "id": "3726494"
+      },
+      {
+        "name": "Original Cast of SpongeBob SquarePants, The New Musical",
+        "url": "https://genius.com/artists/Original-cast-of-spongebob-squarepants-the-new-musical",
+        "type": "regular",
+        "id": "1252001"
+      },
+      {
+        "name": "Original Cast of The Lightning Thief Musical",
+        "url": "https://genius.com/artists/Original-cast-of-the-lightning-thief-musical",
+        "type": "regular",
+        "id": "1087216"
+      },
+      {
+        "name": "Original Cast of Why Am I So Single",
+        "url": "https://genius.com/artists/Original-cast-of-why-am-i-so-single",
+        "type": "regular",
+        "id": "4082628"
+      },
+      {
+        "name": "Original Cast of Zombie Prom",
+        "url": "https://genius.com/artists/Original-cast-of-zombie-prom",
+        "type": "regular",
+        "id": "1317532"
+      },
+      {
+        "name": "Original Cast: Starlight Express",
+        "url": "https://genius.com/artists/Original-cast-starlight-express",
+        "type": "regular",
+        "id": "523012"
+      },
+      {
+        "name": "Original (German) Cast of \"Tanz Der Vampire\"",
+        "url": "https://genius.com/artists/Original-german-cast-of-tanz-der-vampire",
+        "type": "regular",
+        "id": "530655"
+      },
+      {
+        "name": "Original God",
+        "url": "https://genius.com/artists/Original-god",
+        "type": "regular",
+        "id": "1016187"
+      },
+      {
+        "name": "Original Hamburg Cast Of Hamilton",
+        "url": "https://genius.com/artists/Original-hamburg-cast-of-hamilton",
+        "type": "regular",
+        "id": "4252491"
+      },
+      {
+        "name": "Original Juan",
+        "url": "https://genius.com/artists/Original-juan",
+        "type": "regular",
+        "id": "291866"
+      },
+      {
+        "name": "Original Koffee",
+        "url": "https://genius.com/artists/Original-koffee",
+        "type": "regular",
+        "id": "1519150"
+      },
+      {
+        "name": "Original London Cast of Cats",
+        "url": "https://genius.com/artists/Original-london-cast-of-cats",
+        "type": "regular",
+        "id": "1320955"
+      },
+      {
+        "name": "Original London Cast of Charlie and the Chocolate Factory",
+        "url": "https://genius.com/artists/Original-london-cast-of-charlie-and-the-chocolate-factory",
+        "type": "regular",
+        "id": "1549799"
+      },
+      {
+        "name": "Original London Cast of Fame",
+        "url": "https://genius.com/artists/Original-london-cast-of-fame",
+        "type": "regular",
+        "id": "2481779"
+      },
+      {
+        "name": "Original London Cast of Hair",
+        "url": "https://genius.com/artists/Original-london-cast-of-hair",
+        "type": "regular",
+        "id": "2396953"
+      },
+      {
+        "name": "Original London Cast of Mary Poppins",
+        "url": "https://genius.com/artists/Original-london-cast-of-mary-poppins",
+        "type": "regular",
+        "id": "1284438"
+      },
+      {
+        "name": "Original London Cast of Notre Dame de Paris",
+        "url": "https://genius.com/artists/Original-london-cast-of-notre-dame-de-paris",
+        "type": "regular",
+        "id": "2069694"
+      },
+      {
+        "name": "Original Motion Picture Cast of Little Shop of Horrors",
+        "url": "https://genius.com/artists/Original-motion-picture-cast-of-little-shop-of-horrors",
+        "type": "regular",
+        "id": "1242854"
+      },
+      {
+        "name": "Original Off-Broadway Cast of Little Shop of Horrors",
+        "url": "https://genius.com/artists/Original-off-broadway-cast-of-little-shop-of-horrors",
+        "type": "regular",
+        "id": "3261311"
+      },
+      {
+        "name": "Original Off Broadway Cast of Penelope",
+        "url": "https://genius.com/artists/Original-off-broadway-cast-of-penelope",
+        "type": "regular",
+        "id": "4114274"
+      },
+      {
+        "name": "Original Off-Broadway Cast of We Are The Tigers",
+        "url": "https://genius.com/artists/Original-off-broadway-cast-of-we-are-the-tigers",
+        "type": "regular",
+        "id": "1809343"
+      },
+      {
+        "name": "Original West End Cast of Bonnie and Clyde",
+        "url": "https://genius.com/artists/Original-west-end-cast-of-bonnie-and-clyde",
+        "type": "regular",
+        "id": "3613130"
+      },
+      {
+        "name": "Original West End Cast of Everybody's Talking About Jamie",
+        "url": "https://genius.com/artists/Original-west-end-cast-of-everybodys-talking-about-jamie",
+        "type": "regular",
+        "id": "1456413"
+      },
+      {
+        "name": "Original West End Cast of Heathers",
+        "url": "https://genius.com/artists/Original-west-end-cast-of-heathers",
+        "type": "regular",
+        "id": "4248310"
+      },
+      {
+        "name": "Original West End Cast of The Prince of Egypt",
+        "url": "https://genius.com/artists/Original-west-end-cast-of-the-prince-of-egypt",
+        "type": "regular",
+        "id": "2020034"
+      },
+      {
+        "name": "Original West End Company of Hadestown",
+        "url": "https://genius.com/artists/Original-west-end-company-of-hadestown",
+        "type": "regular",
+        "id": "4223994"
+      },
+      {
+        "name": "The Orion Experience",
+        "url": "https://genius.com/artists/The-orion-experience",
+        "type": "regular",
+        "id": "230471"
+      },
+      {
+        "name": "Orion Rigel Dommisse",
+        "url": "https://genius.com/artists/Orion-rigel-dommisse",
+        "type": "regular",
+        "id": "379290"
+      },
+      {
+        "name": "Orion Sun",
+        "url": "https://genius.com/artists/Orion-sun",
+        "type": "regular",
+        "id": "1180613"
+      },
+      {
+        "name": "Orishas",
+        "url": "https://genius.com/artists/Orishas",
+        "type": "regular",
+        "id": "17770"
+      },
+      {
+        "name": "Orkestar Vožd",
+        "url": "https://genius.com/artists/Orkestar-vozd",
+        "type": "regular",
+        "id": "3367047"
+      },
+      {
+        "name": "Orkhan Zeynalli",
+        "url": "https://genius.com/artists/Orkhan-zeynalli",
+        "type": "regular",
+        "id": "2277466"
+      },
+      {
+        "name": "Orkundk",
+        "url": "https://genius.com/artists/Orkundk",
+        "type": "regular",
+        "id": "1760856"
+      },
+      {
+        "name": "Orla Gartland",
+        "url": "https://genius.com/artists/Orla-gartland",
+        "type": "regular",
+        "id": "374469"
+      },
+      {
+        "name": "Orlando Brown",
+        "url": "https://genius.com/artists/Orlando-brown",
+        "type": "regular",
+        "id": "91911"
+      },
+      {
+        "name": "Orlando (UK)",
+        "url": "https://genius.com/artists/Orlando-uk",
+        "type": "regular",
+        "id": "3107843"
+      },
+      {
+        "name": "Orleans",
+        "url": "https://genius.com/artists/Orleans",
+        "type": "regular",
+        "id": "357060"
+      },
+      {
+        "name": "Ornatos Violeta",
+        "url": "https://genius.com/artists/Ornatos-violeta",
+        "type": "regular",
+        "id": "358678"
+      },
+      {
+        "name": "Ornella Vanoni",
+        "url": "https://genius.com/artists/Ornella-vanoni",
+        "type": "regular",
+        "id": "359106"
+      },
+      {
+        "name": "ORO600",
+        "url": "https://genius.com/artists/Oro600",
+        "type": "regular",
+        "id": "3706278"
+      },
+      {
+        "name": "Orochi",
+        "url": "https://genius.com/artists/Orochi",
+        "type": "regular",
+        "id": "672604"
+      },
+      {
+        "name": "Oro Sólido",
+        "url": "https://genius.com/artists/Oro-solido",
+        "type": "regular",
+        "id": "404669"
+      },
+      {
+        "name": "Orphaned Land",
+        "url": "https://genius.com/artists/Orphaned-land",
+        "type": "regular",
+        "id": "233431"
+      },
+      {
+        "name": "Orphan (Metal)",
+        "url": "https://genius.com/artists/Orphan-metal",
+        "type": "regular",
+        "id": "3237268"
+      },
+      {
+        "name": "Orrage",
+        "url": "https://genius.com/artists/Orrage",
+        "type": "regular",
+        "id": "4005046"
+      },
+      {
+        "name": "Orslok",
+        "url": "https://genius.com/artists/Orslok",
+        "type": "regular",
+        "id": "2064537"
+      },
+      {
+        "name": "Orso (Duo)",
+        "url": "https://genius.com/artists/Orso-duo",
+        "type": "regular",
+        "id": "4094508"
+      },
+      {
+        "name": "Orthodox",
+        "url": "https://genius.com/artists/Orthodox",
+        "type": "regular",
+        "id": "120987"
+      },
+      {
+        "name": "Oruam",
+        "url": "https://genius.com/artists/Oruam",
+        "type": "regular",
+        "id": "3015327"
+      },
+      {
+        "name": "ORU LIVE",
+        "url": "https://genius.com/artists/Oru-live",
+        "type": "regular",
+        "id": "532080"
+      },
+      {
+        "name": "Orup",
+        "url": "https://genius.com/artists/Orup",
+        "type": "regular",
+        "id": "375713"
+      },
+      {
+        "name": "Orville Peck",
+        "url": "https://genius.com/artists/Orville-peck",
+        "type": "regular",
+        "id": "1438569"
+      },
+      {
+        "name": "The Orwells",
+        "url": "https://genius.com/artists/The-orwells",
+        "type": "regular",
+        "id": "156304"
+      },
+      {
+        "name": "Oryginalna obsada \"1989\"",
+        "url": "https://genius.com/artists/Oryginalna-obsada-1989",
+        "type": "regular",
+        "id": "4111301"
+      },
+      {
+        "name": "OSA",
+        "url": "https://genius.com/artists/Osa",
+        "type": "regular",
+        "id": "1847448"
+      },
+      {
+        "name": "The Osborne Brothers",
+        "url": "https://genius.com/artists/The-osborne-brothers",
+        "type": "regular",
+        "id": "358375"
+      },
+      {
+        "name": "Oscar",
+        "url": "https://genius.com/artists/Oscar",
+        "type": "regular",
+        "id": "1106502"
+      },
+      {
+        "name": "Oscar and the Wolf",
+        "url": "https://genius.com/artists/Oscar-and-the-wolf",
+        "type": "regular",
+        "id": "228121"
+      },
+      {
+        "name": "Oscar Anton",
+        "url": "https://genius.com/artists/Oscar-anton",
+        "type": "regular",
+        "id": "1962467"
+      },
+      {
+        "name": "Oscar Brand",
+        "url": "https://genius.com/artists/Oscar-brand",
+        "type": "regular",
+        "id": "384477"
+      },
+      {
+        "name": "Oscar Brown Jr.",
+        "url": "https://genius.com/artists/Oscar-brown-jr",
+        "type": "regular",
+        "id": "146501"
+      },
+      {
+        "name": "Oscar D'León",
+        "url": "https://genius.com/artists/Oscar-dleon",
+        "type": "regular",
+        "id": "363957"
+      },
+      {
+        "name": "Oscar Harris",
+        "url": "https://genius.com/artists/Oscar-harris",
+        "type": "regular",
+        "id": "456624"
+      },
+      {
+        "name": "Oscar Isaac",
+        "url": "https://genius.com/artists/Oscar-isaac",
+        "type": "regular",
+        "id": "112167"
+      },
+      {
+        "name": "Oscar Lang",
+        "url": "https://genius.com/artists/Oscar-lang",
+        "type": "regular",
+        "id": "1269385"
+      },
+      {
+        "name": "Oscar Mayer Weiner",
+        "url": "https://genius.com/artists/Oscar-mayer-weiner",
+        "type": "regular",
+        "id": "3583371"
+      },
+      {
+        "name": "Oscar Mbo",
+        "url": "https://genius.com/artists/Oscar-mbo",
+        "type": "regular",
+        "id": "2966116"
+      },
+      {
+        "name": "Oscar Ortiz",
+        "url": "https://genius.com/artists/Oscar-ortiz",
+        "type": "regular",
+        "id": "1913817"
+      },
+      {
+        "name": "Oscar Wilde",
+        "url": "https://genius.com/artists/Oscar-wilde",
+        "type": "regular",
+        "id": "24811"
+      },
+      {
+        "name": "Osees",
+        "url": "https://genius.com/artists/Osees",
+        "type": "regular",
+        "id": "68447"
+      },
+      {
+        "name": "Oshen (USA)",
+        "url": "https://genius.com/artists/Oshen-usa",
+        "type": "regular",
+        "id": "4134168"
+      },
+      {
+        "name": "Ошибся номером (Oshibsya nomerom)",
+        "url": "https://genius.com/artists/Oshibsya-nomerom",
+        "type": "regular",
+        "id": "2951004"
+      },
+      {
+        "name": "Osho Jain",
+        "url": "https://genius.com/artists/Osho-jain",
+        "type": "regular",
+        "id": "2151117"
+      },
+      {
+        "name": "O SIDE MAFIA",
+        "url": "https://genius.com/artists/O-side-mafia",
+        "type": "regular",
+        "id": "3340659"
+      },
+      {
+        "name": "((( O ))) (Singer)",
+        "url": "https://genius.com/artists/O-singer",
+        "type": "regular",
+        "id": "1173488"
+      },
+      {
+        "name": "Osirus Jack",
+        "url": "https://genius.com/artists/Osirus-jack",
+        "type": "regular",
+        "id": "398764"
+      },
+      {
+        "name": "OSKA030",
+        "url": "https://genius.com/artists/Oska030",
+        "type": "regular",
+        "id": "2541298"
+      },
+      {
+        "name": "Oskar Linnros",
+        "url": "https://genius.com/artists/Oskar-linnros",
+        "type": "regular",
+        "id": "81307"
+      },
+      {
+        "name": "Oslo Gospel Choir",
+        "url": "https://genius.com/artists/Oslo-gospel-choir",
+        "type": "regular",
+        "id": "363541"
+      },
+      {
+        "name": "Osman Hadžić",
+        "url": "https://genius.com/artists/Osman-hadzic",
+        "type": "regular",
+        "id": "3228514"
+      },
+      {
+        "name": "The Osmonds",
+        "url": "https://genius.com/artists/The-osmonds",
+        "type": "regular",
+        "id": "286554"
+      },
+      {
+        "name": "Os Mutantes",
+        "url": "https://genius.com/artists/Os-mutantes",
+        "type": "regular",
+        "id": "86274"
+      },
+      {
+        "name": "ОСОБОВ (OSOBOV)",
+        "url": "https://genius.com/artists/Osobov",
+        "type": "regular",
+        "id": "611246"
+      },
+      {
+        "name": "Oso Oso",
+        "url": "https://genius.com/artists/Oso-oso",
+        "type": "regular",
+        "id": "1064093"
+      },
+      {
+        "name": "Os Paralamas do Sucesso",
+        "url": "https://genius.com/artists/Os-paralamas-do-sucesso",
+        "type": "regular",
+        "id": "357155"
+      },
+      {
+        "name": "Os Quatro e Meia",
+        "url": "https://genius.com/artists/Os-quatro-e-meia",
+        "type": "regular",
+        "id": "1169775"
+      },
+      {
+        "name": "Osquitar",
+        "url": "https://genius.com/artists/Osquitar",
+        "type": "regular",
+        "id": "4336431"
+      },
+      {
+        "name": "Ostan Stars",
+        "url": "https://genius.com/artists/Ostan-stars",
+        "type": "regular",
+        "id": "2099396"
+      },
+      {
+        "name": "Остап Парфёнов (Ostap Parfenov)",
+        "url": "https://genius.com/artists/Ostap-parfenov",
+        "type": "regular",
+        "id": "2837364"
+      },
+      {
+        "name": "OsterMine",
+        "url": "https://genius.com/artists/Ostermine",
+        "type": "regular",
+        "id": "2214332"
+      },
+      {
+        "name": "Ost+Front",
+        "url": "https://genius.com/artists/Ost-front",
+        "type": "regular",
+        "id": "362344"
+      },
+      {
+        "name": "O.S.T.R.",
+        "url": "https://genius.com/artists/Ostr",
+        "type": "regular",
+        "id": "58540"
+      },
+      {
+        "name": "OSTY",
+        "url": "https://genius.com/artists/Osty",
+        "type": "regular",
+        "id": "3599904"
+      },
+      {
+        "name": "OSUN (권오선)",
+        "url": "https://genius.com/artists/Osun",
+        "type": "regular",
+        "id": "2704269"
+      },
+      {
+        "name": "Osvajači",
+        "url": "https://genius.com/artists/Osvajaci",
+        "type": "regular",
+        "id": "403917"
+      },
+      {
+        "name": "Oswald",
+        "url": "https://genius.com/artists/Oswald",
+        "type": "regular",
+        "id": "391100"
+      },
+      {
+        "name": "Oswald (DEU)",
+        "url": "https://genius.com/artists/Oswald-deu",
+        "type": "regular",
+        "id": "4095391"
+      },
+      {
+        "name": "Oswaldo_NR",
+        "url": "https://genius.com/artists/Oswaldo-nr",
+        "type": "regular",
+        "id": "3750761"
+      },
+      {
+        "name": "OT7 Quanny",
+        "url": "https://genius.com/artists/Ot7-quanny",
+        "type": "regular",
+        "id": "2311366"
+      },
+      {
+        "name": "OtaaL",
+        "url": "https://genius.com/artists/Otaal",
+        "type": "regular",
+        "id": "4219068"
+      },
+      {
+        "name": "OTAB INALAB",
+        "url": "https://genius.com/artists/Otab-inalab",
+        "type": "regular",
+        "id": "4374433"
+      },
+      {
+        "name": "Otava Yo",
+        "url": "https://genius.com/artists/Otava-yo",
+        "type": "regular",
+        "id": "1161855"
+      },
+      {
+        "name": "OTB Fastlane",
+        "url": "https://genius.com/artists/Otb-fastlane",
+        "type": "regular",
+        "id": "173225"
+      },
+      {
+        "name": "Otep",
+        "url": "https://genius.com/artists/Otep",
+        "type": "regular",
+        "id": "87411"
+      },
+      {
+        "name": "O.T. Genasis",
+        "url": "https://genius.com/artists/Ot-genasis",
+        "type": "regular",
+        "id": "154225"
+      },
+      {
+        "name": "Other Lives",
+        "url": "https://genius.com/artists/Other-lives",
+        "type": "regular",
+        "id": "328030"
+      },
+      {
+        "name": "Otherside",
+        "url": "https://genius.com/artists/Otherside",
+        "type": "regular",
+        "id": "981166"
+      },
+      {
+        "name": "Otile Brown",
+        "url": "https://genius.com/artists/Otile-brown",
+        "type": "regular",
+        "id": "1264445"
+      },
+      {
+        "name": "Otilia",
+        "url": "https://genius.com/artists/Otilia",
+        "type": "regular",
+        "id": "482504"
+      },
+      {
+        "name": "Otis Day & The Knights",
+        "url": "https://genius.com/artists/Otis-day-and-the-knights",
+        "type": "regular",
+        "id": "376206"
+      },
+      {
+        "name": "Otis Redding",
+        "url": "https://genius.com/artists/Otis-redding",
+        "type": "regular",
+        "id": "13177"
+      },
+      {
+        "name": "OTM",
+        "url": "https://genius.com/artists/Otm",
+        "type": "regular",
+        "id": "3027971"
+      },
+      {
+        "name": "おとぼけビ～バ～ (Otoboke Beaver)",
+        "url": "https://genius.com/artists/Otoboke-beaver",
+        "type": "regular",
+        "id": "1878743"
+      },
+      {
+        "name": "Otomania",
+        "url": "https://genius.com/artists/Otomania",
+        "type": "regular",
+        "id": "1466160"
+      },
+      {
+        "name": "O-Town",
+        "url": "https://genius.com/artists/O-town",
+        "type": "regular",
+        "id": "148044"
+      },
+      {
+        "name": "OTP",
+        "url": "https://genius.com/artists/Otp",
+        "type": "regular",
+        "id": "2504715"
+      },
+      {
+        "name": "OTP & BM",
+        "url": "https://genius.com/artists/Otp-and-bm",
+        "type": "regular",
+        "id": "3901565"
+      },
+      {
+        "name": "Отпетые Мошенники (Otpetye Moshenniki)",
+        "url": "https://genius.com/artists/Otpetye-moshenniki",
+        "type": "regular",
+        "id": "1882150"
+      },
+      {
+        "name": "OTSHA - أوتشا",
+        "url": "https://genius.com/artists/Otsha",
+        "type": "regular",
+        "id": "3589451"
+      },
+      {
+        "name": "Otsochodzi",
+        "url": "https://genius.com/artists/Otsochodzi",
+        "type": "regular",
+        "id": "209028"
+      },
+      {
+        "name": "Ottawan",
+        "url": "https://genius.com/artists/Ottawan",
+        "type": "regular",
+        "id": "354191"
+      },
+      {
+        "name": "OT the Real",
+        "url": "https://genius.com/artists/Ot-the-real",
+        "type": "regular",
+        "id": "1930745"
+      },
+      {
+        "name": "Otto Waalkes",
+        "url": "https://genius.com/artists/Otto-waalkes",
+        "type": "regular",
+        "id": "63960"
+      },
+      {
+        "name": "otuka",
+        "url": "https://genius.com/artists/Otuka",
+        "type": "regular",
+        "id": "3462442"
+      },
+      {
+        "name": "OTURRO",
+        "url": "https://genius.com/artists/Oturro",
+        "type": "regular",
+        "id": "2860806"
+      },
+      {
+        "name": "OTYKEN",
+        "url": "https://genius.com/artists/Otyken",
+        "type": "regular",
+        "id": "3677195"
+      },
+      {
+        "name": "Oualid",
+        "url": "https://genius.com/artists/Oualid",
+        "type": "regular",
+        "id": "1569607"
+      },
+      {
+        "name": "Ouidad",
+        "url": "https://genius.com/artists/Ouidad",
+        "type": "regular",
+        "id": "3319622"
+      },
+      {
+        "name": "Ouija Macc",
+        "url": "https://genius.com/artists/Ouija-macc",
+        "type": "regular",
+        "id": "1212504"
+      },
+      {
+        "name": "Oulahlou",
+        "url": "https://genius.com/artists/Oulahlou",
+        "type": "regular",
+        "id": "2916193"
+      },
+      {
+        "name": "Oum",
+        "url": "https://genius.com/artists/Oum",
+        "type": "regular",
+        "id": "1061958"
+      },
+      {
+        "name": "Oumaima Taleb - أميمة طالب",
+        "url": "https://genius.com/artists/Oumaima-taleb",
+        "type": "regular",
+        "id": "3998992"
+      },
+      {
+        "name": "Oumou Sangaré",
+        "url": "https://genius.com/artists/Oumou-sangare",
+        "type": "regular",
+        "id": "538665"
+      },
+      {
+        "name": "Our Lady Peace",
+        "url": "https://genius.com/artists/Our-lady-peace",
+        "type": "regular",
+        "id": "63937"
+      },
+      {
+        "name": "Our Last Night",
+        "url": "https://genius.com/artists/Our-last-night",
+        "type": "regular",
+        "id": "126411"
+      },
+      {
+        "name": "Our Mirage",
+        "url": "https://genius.com/artists/Our-mirage",
+        "type": "regular",
+        "id": "1091134"
+      },
+      {
+        "name": "ourmoney",
+        "url": "https://genius.com/artists/Ourmoney",
+        "type": "regular",
+        "id": "2448529"
+      },
+      {
+        "name": "Ouro Kronii",
+        "url": "https://genius.com/artists/Ouro-kronii",
+        "type": "regular",
+        "id": "3029970"
+      },
+      {
+        "name": "Ourselves the Elves",
+        "url": "https://genius.com/artists/Ourselves-the-elves",
+        "type": "regular",
+        "id": "662497"
+      },
+      {
+        "name": "Ouse",
+        "url": "https://genius.com/artists/Ouse",
+        "type": "regular",
+        "id": "1189287"
+      },
+      {
+        "name": "Outbreakband",
+        "url": "https://genius.com/artists/Outbreakband",
+        "type": "regular",
+        "id": "458977"
+      },
+      {
+        "name": "Outerspass",
+        "url": "https://genius.com/artists/Outerspass",
+        "type": "regular",
+        "id": "1577295"
+      },
+      {
+        "name": "The Outhere Brothers",
+        "url": "https://genius.com/artists/The-outhere-brothers",
+        "type": "regular",
+        "id": "377280"
+      },
+      {
+        "name": "Outlandish",
+        "url": "https://genius.com/artists/Outlandish",
+        "type": "regular",
+        "id": "2462"
+      },
+      {
+        "name": "Outlawz",
+        "url": "https://genius.com/artists/Outlawz",
+        "type": "regular",
+        "id": "180"
+      },
+      {
+        "name": "The Outlaws (Southern Rock Band)",
+        "url": "https://genius.com/artists/The-outlaws-southern-rock-band",
+        "type": "regular",
+        "id": "161199"
+      },
+      {
+        "name": "Outta Pocket (USA)",
+        "url": "https://genius.com/artists/Outta-pocket-usa",
+        "type": "regular",
+        "id": "2874244"
+      },
+      {
+        "name": "Oğuzhan Koç",
+        "url": "https://genius.com/artists/Oguzhan-koc",
+        "type": "regular",
+        "id": "397744"
+      },
+      {
+        "name": "Ouzzi",
+        "url": "https://genius.com/artists/Ouzzi",
+        "type": "regular",
+        "id": "1708536"
+      },
+      {
+        "name": "OVE",
+        "url": "https://genius.com/artists/Ove",
+        "type": "regular",
+        "id": "2925371"
+      },
+      {
+        "name": "Overbreed",
+        "url": "https://genius.com/artists/Overbreed",
+        "type": "regular",
+        "id": "3856486"
+      },
+      {
+        "name": "Overkill",
+        "url": "https://genius.com/artists/Overkill",
+        "type": "regular",
+        "id": "286566"
+      },
+      {
+        "name": "OVER KILL (JPN)",
+        "url": "https://genius.com/artists/Over-kill-jpn",
+        "type": "regular",
+        "id": "2139924"
+      },
+      {
+        "name": "Over Lapa",
+        "url": "https://genius.com/artists/Over-lapa",
+        "type": "regular",
+        "id": "1855930"
+      },
+      {
+        "name": "Overmono",
+        "url": "https://genius.com/artists/Overmono",
+        "type": "regular",
+        "id": "1441469"
+      },
+      {
+        "name": "Over October",
+        "url": "https://genius.com/artists/Over-october",
+        "type": "regular",
+        "id": "1009435"
+      },
+      {
+        "name": "Overpade",
+        "url": "https://genius.com/artists/Overpade",
+        "type": "regular",
+        "id": "2331891"
+      },
+      {
+        "name": "overpass",
+        "url": "https://genius.com/artists/Overpass",
+        "type": "regular",
+        "id": "3359572"
+      },
+      {
+        "name": "Overrated",
+        "url": "https://genius.com/artists/Overrated",
+        "type": "regular",
+        "id": "1589968"
+      },
+      {
+        "name": "Over the Rhine",
+        "url": "https://genius.com/artists/Over-the-rhine",
+        "type": "regular",
+        "id": "277739"
+      },
+      {
+        "name": "The Overtones",
+        "url": "https://genius.com/artists/The-overtones",
+        "type": "regular",
+        "id": "360462"
+      },
+      {
+        "name": "overtonight",
+        "url": "https://genius.com/artists/Overtonight",
+        "type": "regular",
+        "id": "4280019"
+      },
+      {
+        "name": "ovg!",
+        "url": "https://genius.com/artists/Ovg",
+        "type": "regular",
+        "id": "2586820"
+      },
+      {
+        "name": "Ovi",
+        "url": "https://genius.com/artists/Ovi",
+        "type": "regular",
+        "id": "456695"
+      },
+      {
+        "name": "ovine hall",
+        "url": "https://genius.com/artists/Ovine-hall",
+        "type": "regular",
+        "id": "3535550"
+      },
+      {
+        "name": "Ovi Wood",
+        "url": "https://genius.com/artists/Ovi-wood",
+        "type": "regular",
+        "id": "3457238"
+      },
+      {
+        "name": "Ovlov",
+        "url": "https://genius.com/artists/Ovlov",
+        "type": "regular",
+        "id": "480469"
+      },
+      {
+        "name": "Ovp.9",
+        "url": "https://genius.com/artists/Ovp9",
+        "type": "regular",
+        "id": "3693914"
+      },
+      {
+        "name": "Ovrkast.",
+        "url": "https://genius.com/artists/Ovrkast",
+        "type": "regular",
+        "id": "1178860"
+      },
+      {
+        "name": "Овсянкин (Ovsyankin)",
+        "url": "https://genius.com/artists/Ovsyankin",
+        "type": "regular",
+        "id": "1008184"
+      },
+      {
+        "name": "O.V. Wright",
+        "url": "https://genius.com/artists/Ov-wright",
+        "type": "regular",
+        "id": "368547"
+      },
+      {
+        "name": "Ovy On The Drums",
+        "url": "https://genius.com/artists/Ovy-on-the-drums",
+        "type": "regular",
+        "id": "1038708"
+      },
+      {
+        "name": "Ovyze",
+        "url": "https://genius.com/artists/Ovyze",
+        "type": "regular",
+        "id": "3254187"
+      },
+      {
+        "name": "Owar1",
+        "url": "https://genius.com/artists/Owar1",
+        "type": "regular",
+        "id": "3237385"
+      },
+      {
+        "name": "OWEEK",
+        "url": "https://genius.com/artists/Oweek",
+        "type": "regular",
+        "id": "2732620"
+      },
+      {
+        "name": "Owen",
+        "url": "https://genius.com/artists/Owen",
+        "type": "regular",
+        "id": "1951536"
+      },
+      {
+        "name": "Owen (오왼) (KOR)",
+        "url": "https://genius.com/artists/Owen-kor",
+        "type": "regular",
+        "id": "666125"
+      },
+      {
+        "name": "Owen Pallett",
+        "url": "https://genius.com/artists/Owen-pallett",
+        "type": "regular",
+        "id": "53462"
+      },
+      {
+        "name": "Owen Saward",
+        "url": "https://genius.com/artists/Owen-saward",
+        "type": "regular",
+        "id": "1504354"
+      },
+      {
+        "name": "Owen Sheers",
+        "url": "https://genius.com/artists/Owen-sheers",
+        "type": "regular",
+        "id": "183265"
+      },
+      {
+        "name": "Owen (USA)",
+        "url": "https://genius.com/artists/Owen-usa",
+        "type": "regular",
+        "id": "2821932"
+      },
+      {
+        "name": "OWLORDIE",
+        "url": "https://genius.com/artists/Owlordie",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "​ox33n",
+        "url": "https://genius.com/artists/Ox33n",
+        "type": "regular",
+        "id": "2964598"
+      },
+      {
+        "name": "Oxbow",
+        "url": "https://genius.com/artists/Oxbow",
+        "type": "regular",
+        "id": "1033806"
+      },
+      {
+        "name": "Oxide Muzik - أوكسايد ميوزك",
+        "url": "https://genius.com/artists/Oxide-muzik",
+        "type": "regular",
+        "id": "3081866"
+      },
+      {
+        "name": "Oxlade",
+        "url": "https://genius.com/artists/Oxlade",
+        "type": "regular",
+        "id": "1709367"
+      },
+      {
+        "name": "Oxmo Puccino",
+        "url": "https://genius.com/artists/Oxmo-puccino",
+        "type": "regular",
+        "id": "1947"
+      },
+      {
+        "name": "Oyche Doniz",
+        "url": "https://genius.com/artists/Oyche-doniz",
+        "type": "regular",
+        "id": "653625"
+      },
+      {
+        "name": "OY Quan",
+        "url": "https://genius.com/artists/Oy-quan",
+        "type": "regular",
+        "id": "3214451"
+      },
+      {
+        "name": "Oysterband",
+        "url": "https://genius.com/artists/Oysterband",
+        "type": "regular",
+        "id": "343548"
+      },
+      {
+        "name": "Глюк’oZa",
+        "url": "https://genius.com/artists/Oza",
+        "type": "regular",
+        "id": "454718"
+      },
+      {
+        "name": "OZAN BRA",
+        "url": "https://genius.com/artists/Ozan-bra",
+        "type": "regular",
+        "id": "3613817"
+      },
+      {
+        "name": "Ozan Buğra Kaya",
+        "url": "https://genius.com/artists/Ozan-bugra-kaya",
+        "type": "regular",
+        "id": "4427363"
+      },
+      {
+        "name": "Ozan Doğulu",
+        "url": "https://genius.com/artists/Ozan-dogulu",
+        "type": "regular",
+        "id": "491221"
+      },
+      {
+        "name": "The Ozark Mountain Daredevils",
+        "url": "https://genius.com/artists/The-ozark-mountain-daredevils",
+        "type": "regular",
+        "id": "60144"
+      },
+      {
+        "name": "Ozbi",
+        "url": "https://genius.com/artists/Ozbi",
+        "type": "regular",
+        "id": "1002039"
+      },
+      {
+        "name": "Ozelot",
+        "url": "https://genius.com/artists/Ozelot",
+        "type": "regular",
+        "id": "1624012"
+      },
+      {
+        "name": "Ozma",
+        "url": "https://genius.com/artists/Ozma",
+        "type": "regular",
+        "id": "355757"
+      },
+      {
+        "name": "Ozols",
+        "url": "https://genius.com/artists/Ozols",
+        "type": "regular",
+        "id": "406619"
+      },
+      {
+        "name": "O-Zone",
+        "url": "https://genius.com/artists/O-zone",
+        "type": "regular",
+        "id": "36793"
+      },
+      {
+        "name": "Ozone Dehumanizer",
+        "url": "https://genius.com/artists/Ozone-dehumanizer",
+        "type": "regular",
+        "id": "1496425"
+      },
+      {
+        "name": "OZROSAURUS",
+        "url": "https://genius.com/artists/Ozrosaurus",
+        "type": "regular",
+        "id": "2641015"
+      },
+      {
+        "name": "oztism",
+        "url": "https://genius.com/artists/Oztism",
+        "type": "regular",
+        "id": "4259466"
+      },
+      {
+        "name": "Ozuna",
+        "url": "https://genius.com/artists/Ozuna",
+        "type": "regular",
+        "id": "640693"
+      },
+      {
+        "name": "OZworld",
+        "url": "https://genius.com/artists/Ozworld",
+        "type": "regular",
+        "id": "2164922"
+      },
+      {
+        "name": "Ozymandias",
+        "url": "https://genius.com/artists/Ozymandias",
+        "type": "regular",
+        "id": "140177"
+      },
+      {
+        "name": "​ozzy",
+        "url": "https://genius.com/artists/Ozzy",
+        "type": "regular",
+        "id": "3677507"
+      },
+      {
+        "name": "Ozzy Baby",
+        "url": "https://genius.com/artists/Ozzy-baby",
+        "type": "regular",
+        "id": "2152465"
+      },
+      {
+        "name": "Ozzy Oggyz",
+        "url": "https://genius.com/artists/Ozzy-oggyz",
+        "type": "regular",
+        "id": "2649036"
+      }
+    ]
+  }
+}

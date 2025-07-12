@@ -1,0 +1,4513 @@
+{
+  "letter": "E",
+  "timestamp": "2025-07-11T07:49:36.609Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Eagles",
+        "url": "https://genius.com/artists/Eagles",
+        "type": "popular",
+        "id": "561"
+      },
+      {
+        "name": "Earl Sweatshirt",
+        "url": "https://genius.com/artists/Earl-sweatshirt",
+        "type": "popular",
+        "id": "686"
+      },
+      {
+        "name": "Şebnem Ferah",
+        "url": "https://genius.com/artists/Sebnem-ferah",
+        "type": "popular",
+        "id": "479512"
+      },
+      {
+        "name": "Ed Sheeran",
+        "url": "https://genius.com/artists/Ed-sheeran",
+        "type": "popular",
+        "id": "12418"
+      },
+      {
+        "name": "Edwin McCain",
+        "url": "https://genius.com/artists/Edwin-mccain",
+        "type": "popular",
+        "id": "39169"
+      },
+      {
+        "name": "Егор Крид (Egor Kreed)",
+        "url": "https://genius.com/artists/Egor-kreed",
+        "type": "popular",
+        "id": "1094015"
+      },
+      {
+        "name": "EJAE",
+        "url": "https://genius.com/artists/Ejae",
+        "type": "popular",
+        "id": "1015580"
+      },
+      {
+        "name": "Elevation Worship",
+        "url": "https://genius.com/artists/Elevation-worship",
+        "type": "popular",
+        "id": "223948"
+      },
+      {
+        "name": "Ella Fitzgerald",
+        "url": "https://genius.com/artists/Ella-fitzgerald",
+        "type": "popular",
+        "id": "32784"
+      },
+      {
+        "name": "Elle McLemore",
+        "url": "https://genius.com/artists/Elle-mclemore",
+        "type": "popular",
+        "id": "634904"
+      },
+      {
+        "name": "Ellie Goulding",
+        "url": "https://genius.com/artists/Ellie-goulding",
+        "type": "popular",
+        "id": "1838"
+      },
+      {
+        "name": "Elton John",
+        "url": "https://genius.com/artists/Elton-john",
+        "type": "popular",
+        "id": "560"
+      },
+      {
+        "name": "Elvis Presley",
+        "url": "https://genius.com/artists/Elvis-presley",
+        "type": "popular",
+        "id": "1645"
+      },
+      {
+        "name": "Eminem",
+        "url": "https://genius.com/artists/Eminem",
+        "type": "popular",
+        "id": "45"
+      },
+      {
+        "name": "ENHYPEN",
+        "url": "https://genius.com/artists/Enhypen",
+        "type": "popular",
+        "id": "2406628"
+      },
+      {
+        "name": "Era7capone",
+        "url": "https://genius.com/artists/Era7capone",
+        "type": "popular",
+        "id": "3252206"
+      },
+      {
+        "name": "Eraserheads",
+        "url": "https://genius.com/artists/Eraserheads",
+        "type": "popular",
+        "id": "353379"
+      },
+      {
+        "name": "Eric Clapton",
+        "url": "https://genius.com/artists/Eric-clapton",
+        "type": "popular",
+        "id": "19272"
+      },
+      {
+        "name": "Ethel Cain",
+        "url": "https://genius.com/artists/Ethel-cain",
+        "type": "popular",
+        "id": "1904291"
+      },
+      {
+        "name": "Evanescence",
+        "url": "https://genius.com/artists/Evanescence",
+        "type": "popular",
+        "id": "17912"
+      }
+    ],
+    "regular": [
+      {
+        "name": "E1 (3x3)",
+        "url": "https://genius.com/artists/E1-3x3",
+        "type": "regular",
+        "id": "2044198"
+      },
+      {
+        "name": "E-40",
+        "url": "https://genius.com/artists/E-40",
+        "type": "regular",
+        "id": "405"
+      },
+      {
+        "name": "EA7",
+        "url": "https://genius.com/artists/Ea7",
+        "type": "regular",
+        "id": "1758443"
+      },
+      {
+        "name": "Eabidak",
+        "url": "https://genius.com/artists/Eabidak",
+        "type": "regular",
+        "id": "2629904"
+      },
+      {
+        "name": "Eagle-Eye Cherry",
+        "url": "https://genius.com/artists/Eagle-eye-cherry",
+        "type": "regular",
+        "id": "80093"
+      },
+      {
+        "name": "Eagles of Death Metal",
+        "url": "https://genius.com/artists/Eagles-of-death-metal",
+        "type": "regular",
+        "id": "206519"
+      },
+      {
+        "name": "eaJ",
+        "url": "https://genius.com/artists/Eaj",
+        "type": "regular",
+        "id": "1500287"
+      },
+      {
+        "name": "Eamon",
+        "url": "https://genius.com/artists/Eamon",
+        "type": "regular",
+        "id": "5708"
+      },
+      {
+        "name": "Earl Agustin",
+        "url": "https://genius.com/artists/Earl-agustin",
+        "type": "regular",
+        "id": "2992920"
+      },
+      {
+        "name": "Earle Gresham Jr.",
+        "url": "https://genius.com/artists/Earle-gresham-jr",
+        "type": "regular",
+        "id": "4090546"
+      },
+      {
+        "name": "Early B",
+        "url": "https://genius.com/artists/Early-b",
+        "type": "regular",
+        "id": "1265978"
+      },
+      {
+        "name": "The Early November",
+        "url": "https://genius.com/artists/The-early-november",
+        "type": "regular",
+        "id": "34893"
+      },
+      {
+        "name": "Earnest Pugh",
+        "url": "https://genius.com/artists/Earnest-pugh",
+        "type": "regular",
+        "id": "361426"
+      },
+      {
+        "name": "Eartha Kitt",
+        "url": "https://genius.com/artists/Eartha-kitt",
+        "type": "regular",
+        "id": "354585"
+      },
+      {
+        "name": "Earth Crisis",
+        "url": "https://genius.com/artists/Earth-crisis",
+        "type": "regular",
+        "id": "363377"
+      },
+      {
+        "name": "Eartheater",
+        "url": "https://genius.com/artists/Eartheater",
+        "type": "regular",
+        "id": "1108768"
+      },
+      {
+        "name": "EARTHGANG",
+        "url": "https://genius.com/artists/Earthgang",
+        "type": "regular",
+        "id": "39892"
+      },
+      {
+        "name": "Земляне (Earth Men)",
+        "url": "https://genius.com/artists/Earth-men",
+        "type": "regular",
+        "id": "1439525"
+      },
+      {
+        "name": "Earth, Wind & Fire",
+        "url": "https://genius.com/artists/Earth-wind-and-fire",
+        "type": "regular",
+        "id": "13163"
+      },
+      {
+        "name": "陳奕迅 (Eason Chan)",
+        "url": "https://genius.com/artists/Eason-chan",
+        "type": "regular",
+        "id": "27251"
+      },
+      {
+        "name": "East 17",
+        "url": "https://genius.com/artists/East-17",
+        "type": "regular",
+        "id": "372595"
+      },
+      {
+        "name": "Easykid",
+        "url": "https://genius.com/artists/Easykid",
+        "type": "regular",
+        "id": "1215003"
+      },
+      {
+        "name": "EAT BABIES?",
+        "url": "https://genius.com/artists/Eat-babies",
+        "type": "regular",
+        "id": "1410685"
+      },
+      {
+        "name": "EAZYBOI",
+        "url": "https://genius.com/artists/Eazyboi",
+        "type": "regular",
+        "id": "1718556"
+      },
+      {
+        "name": "Eazy-E",
+        "url": "https://genius.com/artists/Eazy-e",
+        "type": "regular",
+        "id": "496"
+      },
+      {
+        "name": "Eazy Mac",
+        "url": "https://genius.com/artists/Eazy-mac",
+        "type": "regular",
+        "id": "302570"
+      },
+      {
+        "name": "Ебанько (Eban'ko)",
+        "url": "https://genius.com/artists/Ebanko",
+        "type": "regular",
+        "id": "1865580"
+      },
+      {
+        "name": "Eban Schletter",
+        "url": "https://genius.com/artists/Eban-schletter",
+        "type": "regular",
+        "id": "1096780"
+      },
+      {
+        "name": "Ebba Grön",
+        "url": "https://genius.com/artists/Ebba-gron",
+        "type": "regular",
+        "id": "356512"
+      },
+      {
+        "name": "EBBY",
+        "url": "https://genius.com/artists/Ebby",
+        "type": "regular",
+        "id": "1109518"
+      },
+      {
+        "name": "Ebe Dancel",
+        "url": "https://genius.com/artists/Ebe-dancel",
+        "type": "regular",
+        "id": "455636"
+      },
+      {
+        "name": "Eben(NIG)",
+        "url": "https://genius.com/artists/Ebennig",
+        "type": "regular",
+        "id": "3570319"
+      },
+      {
+        "name": "Ebi",
+        "url": "https://genius.com/artists/Ebi",
+        "type": "regular",
+        "id": "365903"
+      },
+      {
+        "name": "Ebiet G. Ade",
+        "url": "https://genius.com/artists/Ebiet-g-ade",
+        "type": "regular",
+        "id": "347472"
+      },
+      {
+        "name": "EBK Jaaybo",
+        "url": "https://genius.com/artists/Ebk-jaaybo",
+        "type": "regular",
+        "id": "2347683"
+      },
+      {
+        "name": "EBK Leebo",
+        "url": "https://genius.com/artists/Ebk-leebo",
+        "type": "regular",
+        "id": "3515863"
+      },
+      {
+        "name": "EBK LulMaxx",
+        "url": "https://genius.com/artists/Ebk-lulmaxx",
+        "type": "regular",
+        "id": "4403559"
+      },
+      {
+        "name": "EBK MadMaxx",
+        "url": "https://genius.com/artists/Ebk-madmaxx",
+        "type": "regular",
+        "id": "2819890"
+      },
+      {
+        "name": "EBK Pig",
+        "url": "https://genius.com/artists/Ebk-pig",
+        "type": "regular",
+        "id": "3806852"
+      },
+      {
+        "name": "EBK Young Joc",
+        "url": "https://genius.com/artists/Ebk-young-joc",
+        "type": "regular",
+        "id": "1914521"
+      },
+      {
+        "name": "E Bleu",
+        "url": "https://genius.com/artists/E-bleu",
+        "type": "regular",
+        "id": "1596259"
+      },
+      {
+        "name": "EBONY",
+        "url": "https://genius.com/artists/Ebony",
+        "type": "regular",
+        "id": "1939520"
+      },
+      {
+        "name": "Ebony Loren",
+        "url": "https://genius.com/artists/Ebony-loren",
+        "type": "regular",
+        "id": "2730845"
+      },
+      {
+        "name": "Ebow",
+        "url": "https://genius.com/artists/Ebow",
+        "type": "regular",
+        "id": "331277"
+      },
+      {
+        "name": "Ebril",
+        "url": "https://genius.com/artists/Ebril",
+        "type": "regular",
+        "id": "1966006"
+      },
+      {
+        "name": "Ebru Gündeş",
+        "url": "https://genius.com/artists/Ebru-gundes",
+        "type": "regular",
+        "id": "455714"
+      },
+      {
+        "name": "Ebru Yaşar",
+        "url": "https://genius.com/artists/Ebru-yasar",
+        "type": "regular",
+        "id": "482197"
+      },
+      {
+        "name": "Ecca Vandal",
+        "url": "https://genius.com/artists/Ecca-vandal",
+        "type": "regular",
+        "id": "1244297"
+      },
+      {
+        "name": "Ecco2k",
+        "url": "https://genius.com/artists/Ecco2k",
+        "type": "regular",
+        "id": "152872"
+      },
+      {
+        "name": "Echo & the Bunnymen",
+        "url": "https://genius.com/artists/Echo-and-the-bunnymen",
+        "type": "regular",
+        "id": "46891"
+      },
+      {
+        "name": "Echos",
+        "url": "https://genius.com/artists/Echos",
+        "type": "regular",
+        "id": "624323"
+      },
+      {
+        "name": "Echosmith",
+        "url": "https://genius.com/artists/Echosmith",
+        "type": "regular",
+        "id": "139795"
+      },
+      {
+        "name": "󠁪echstacy",
+        "url": "https://genius.com/artists/Echstacy",
+        "type": "regular",
+        "id": "3459221"
+      },
+      {
+        "name": "ECKO",
+        "url": "https://genius.com/artists/Ecko",
+        "type": "regular",
+        "id": "483483"
+      },
+      {
+        "name": "Eclat Story",
+        "url": "https://genius.com/artists/Eclat-story",
+        "type": "regular",
+        "id": "2081671"
+      },
+      {
+        "name": "Edai",
+        "url": "https://genius.com/artists/Edai",
+        "type": "regular",
+        "id": "37706"
+      },
+      {
+        "name": "呂爵安 (Edan Lui)",
+        "url": "https://genius.com/artists/Edan-lui",
+        "type": "regular",
+        "id": "2713323"
+      },
+      {
+        "name": "Eddie And The Getaway",
+        "url": "https://genius.com/artists/Eddie-and-the-getaway",
+        "type": "regular",
+        "id": "3351083"
+      },
+      {
+        "name": "Eddie Cochran",
+        "url": "https://genius.com/artists/Eddie-cochran",
+        "type": "regular",
+        "id": "328942"
+      },
+      {
+        "name": "Eddiefrb",
+        "url": "https://genius.com/artists/Eddiefrb",
+        "type": "regular",
+        "id": "2384099"
+      },
+      {
+        "name": "Eddie James",
+        "url": "https://genius.com/artists/Eddie-james",
+        "type": "regular",
+        "id": "378096"
+      },
+      {
+        "name": "Eddie Meduza",
+        "url": "https://genius.com/artists/Eddie-meduza",
+        "type": "regular",
+        "id": "353322"
+      },
+      {
+        "name": "Eddie Money",
+        "url": "https://genius.com/artists/Eddie-money",
+        "type": "regular",
+        "id": "38587"
+      },
+      {
+        "name": "Eddie Murphy",
+        "url": "https://genius.com/artists/Eddie-murphy",
+        "type": "regular",
+        "id": "26408"
+      },
+      {
+        "name": "Eddie Rabbitt",
+        "url": "https://genius.com/artists/Eddie-rabbitt",
+        "type": "regular",
+        "id": "332512"
+      },
+      {
+        "name": "Eddie Redmayne",
+        "url": "https://genius.com/artists/Eddie-redmayne",
+        "type": "regular",
+        "id": "392083"
+      },
+      {
+        "name": "Eddie Santiago",
+        "url": "https://genius.com/artists/Eddie-santiago",
+        "type": "regular",
+        "id": "355621"
+      },
+      {
+        "name": "Eddie Vedder",
+        "url": "https://genius.com/artists/Eddie-vedder",
+        "type": "regular",
+        "id": "48352"
+      },
+      {
+        "name": "Eddin",
+        "url": "https://genius.com/artists/Eddin",
+        "type": "regular",
+        "id": "1922016"
+      },
+      {
+        "name": "Eddy Arnold",
+        "url": "https://genius.com/artists/Eddy-arnold",
+        "type": "regular",
+        "id": "184992"
+      },
+      {
+        "name": "Eddy Baker",
+        "url": "https://genius.com/artists/Eddy-baker",
+        "type": "regular",
+        "id": "27905"
+      },
+      {
+        "name": "Eddy Grant",
+        "url": "https://genius.com/artists/Eddy-grant",
+        "type": "regular",
+        "id": "50728"
+      },
+      {
+        "name": "Eddy Lover",
+        "url": "https://genius.com/artists/Eddy-lover",
+        "type": "regular",
+        "id": "405904"
+      },
+      {
+        "name": "Eddy (MEX)",
+        "url": "https://genius.com/artists/Eddy-mex",
+        "type": "regular",
+        "id": "4019882"
+      },
+      {
+        "name": "Eddy Mitchell",
+        "url": "https://genius.com/artists/Eddy-mitchell",
+        "type": "regular",
+        "id": "353809"
+      },
+      {
+        "name": "Edelweiss (HUN)",
+        "url": "https://genius.com/artists/Edelweiss-hun",
+        "type": "regular",
+        "id": "3315953"
+      },
+      {
+        "name": "EDEN",
+        "url": "https://genius.com/artists/Eden",
+        "type": "regular",
+        "id": "355608"
+      },
+      {
+        "name": "Eden Espinosa",
+        "url": "https://genius.com/artists/Eden-espinosa",
+        "type": "regular",
+        "id": "480563"
+      },
+      {
+        "name": "Eden Golan - עדן גולן",
+        "url": "https://genius.com/artists/Eden-golan",
+        "type": "regular",
+        "id": "3852789"
+      },
+      {
+        "name": "Eden Muñoz",
+        "url": "https://genius.com/artists/Eden-munoz",
+        "type": "regular",
+        "id": "2187260"
+      },
+      {
+        "name": "The Eden Project",
+        "url": "https://genius.com/artists/The-eden-project",
+        "type": "regular",
+        "id": "1217069"
+      },
+      {
+        "name": "Edexcel",
+        "url": "https://genius.com/artists/Edexcel",
+        "type": "regular",
+        "id": "1538660"
+      },
+      {
+        "name": "Edgar Allan Poe",
+        "url": "https://genius.com/artists/Edgar-allan-poe",
+        "type": "regular",
+        "id": "21094"
+      },
+      {
+        "name": "Edgardo Nuñez",
+        "url": "https://genius.com/artists/Edgardo-nunez",
+        "type": "regular",
+        "id": "2983897"
+      },
+      {
+        "name": "Edgar Wasser",
+        "url": "https://genius.com/artists/Edgar-wasser",
+        "type": "regular",
+        "id": "21929"
+      },
+      {
+        "name": "Edgar Winter",
+        "url": "https://genius.com/artists/Edgar-winter",
+        "type": "regular",
+        "id": "30304"
+      },
+      {
+        "name": "Ed Helms",
+        "url": "https://genius.com/artists/Ed-helms",
+        "type": "regular",
+        "id": "388938"
+      },
+      {
+        "name": "Edición Especial",
+        "url": "https://genius.com/artists/Edicion-especial",
+        "type": "regular",
+        "id": "1765050"
+      },
+      {
+        "name": "Edie Brickell & New Bohemians",
+        "url": "https://genius.com/artists/Edie-brickell-and-new-bohemians",
+        "type": "regular",
+        "id": "319846"
+      },
+      {
+        "name": "Edie Lehmann Boddicker",
+        "url": "https://genius.com/artists/Edie-lehmann-boddicker",
+        "type": "regular",
+        "id": "641369"
+      },
+      {
+        "name": "Edip Akbayram",
+        "url": "https://genius.com/artists/Edip-akbayram",
+        "type": "regular",
+        "id": "348883"
+      },
+      {
+        "name": "EDIS",
+        "url": "https://genius.com/artists/Edis",
+        "type": "regular",
+        "id": "519658"
+      },
+      {
+        "name": "Edison Lighthouse",
+        "url": "https://genius.com/artists/Edison-lighthouse",
+        "type": "regular",
+        "id": "372101"
+      },
+      {
+        "name": "Edita",
+        "url": "https://genius.com/artists/Edita",
+        "type": "regular",
+        "id": "1585304"
+      },
+      {
+        "name": "Edith Whiskers",
+        "url": "https://genius.com/artists/Edith-whiskers",
+        "type": "regular",
+        "id": "2473417"
+      },
+      {
+        "name": "Editors",
+        "url": "https://genius.com/artists/Editors",
+        "type": "regular",
+        "id": "62019"
+      },
+      {
+        "name": "Ed Maverick",
+        "url": "https://genius.com/artists/Ed-maverick",
+        "type": "regular",
+        "id": "1543334"
+      },
+      {
+        "name": "Edmund Stoiber",
+        "url": "https://genius.com/artists/Edmund-stoiber",
+        "type": "regular",
+        "id": "59153"
+      },
+      {
+        "name": "Edoardo Bennato",
+        "url": "https://genius.com/artists/Edoardo-bennato",
+        "type": "regular",
+        "id": "343570"
+      },
+      {
+        "name": "Edo Maajka",
+        "url": "https://genius.com/artists/Edo-maajka",
+        "type": "regular",
+        "id": "19422"
+      },
+      {
+        "name": "Edo Saiya",
+        "url": "https://genius.com/artists/Edo-saiya",
+        "type": "regular",
+        "id": "1167074"
+      },
+      {
+        "name": "Edot Babyy",
+        "url": "https://genius.com/artists/Edot-babyy",
+        "type": "regular",
+        "id": "2231234"
+      },
+      {
+        "name": "Edouard Baer",
+        "url": "https://genius.com/artists/Edouard-baer",
+        "type": "regular",
+        "id": "1124589"
+      },
+      {
+        "name": "E-Dubble",
+        "url": "https://genius.com/artists/E-dubble",
+        "type": "regular",
+        "id": "14759"
+      },
+      {
+        "name": "Edward Baker-Duly",
+        "url": "https://genius.com/artists/Edward-baker-duly",
+        "type": "regular",
+        "id": "1992521"
+      },
+      {
+        "name": "Edward Elgar",
+        "url": "https://genius.com/artists/Edward-elgar",
+        "type": "regular",
+        "id": "29843"
+      },
+      {
+        "name": "Edward Maya",
+        "url": "https://genius.com/artists/Edward-maya",
+        "type": "regular",
+        "id": "609"
+      },
+      {
+        "name": "Edward Sharpe & The Magnetic Zeros",
+        "url": "https://genius.com/artists/Edward-sharpe-and-the-magnetic-zeros",
+        "type": "regular",
+        "id": "17598"
+      },
+      {
+        "name": "Edward Skeletrix",
+        "url": "https://genius.com/artists/Edward-skeletrix",
+        "type": "regular",
+        "id": "3741241"
+      },
+      {
+        "name": "Edwin Hawkins",
+        "url": "https://genius.com/artists/Edwin-hawkins",
+        "type": "regular",
+        "id": "360433"
+      },
+      {
+        "name": "Edwin Rosen",
+        "url": "https://genius.com/artists/Edwin-rosen",
+        "type": "regular",
+        "id": "2195071"
+      },
+      {
+        "name": "Edwin Starr",
+        "url": "https://genius.com/artists/Edwin-starr",
+        "type": "regular",
+        "id": "27034"
+      },
+      {
+        "name": "Edwyn Collins",
+        "url": "https://genius.com/artists/Edwyn-collins",
+        "type": "regular",
+        "id": "353576"
+      },
+      {
+        "name": "Eefje de Visser",
+        "url": "https://genius.com/artists/Eefje-de-visser",
+        "type": "regular",
+        "id": "368414"
+      },
+      {
+        "name": "Eek-A-Mouse",
+        "url": "https://genius.com/artists/Eek-a-mouse",
+        "type": "regular",
+        "id": "9724"
+      },
+      {
+        "name": "​eelijahh",
+        "url": "https://genius.com/artists/Eelijahh",
+        "type": "regular",
+        "id": "1654612"
+      },
+      {
+        "name": "Eels",
+        "url": "https://genius.com/artists/Eels",
+        "type": "regular",
+        "id": "19190"
+      },
+      {
+        "name": "Eem Triplin",
+        "url": "https://genius.com/artists/Eem-triplin",
+        "type": "regular",
+        "id": "1311224"
+      },
+      {
+        "name": "EeOneGuy",
+        "url": "https://genius.com/artists/Eeoneguy",
+        "type": "regular",
+        "id": "1021048"
+      },
+      {
+        "name": "Eevil Stöö",
+        "url": "https://genius.com/artists/Eevil-stoo",
+        "type": "regular",
+        "id": "208827"
+      },
+      {
+        "name": "Efek Rumah Kaca",
+        "url": "https://genius.com/artists/Efek-rumah-kaca",
+        "type": "regular",
+        "id": "1031300"
+      },
+      {
+        "name": "Efendi",
+        "url": "https://genius.com/artists/Efendi",
+        "type": "regular",
+        "id": "2141641"
+      },
+      {
+        "name": "​efey4hya",
+        "url": "https://genius.com/artists/Efey4hya",
+        "type": "regular",
+        "id": "3661661"
+      },
+      {
+        "name": "EGE!",
+        "url": "https://genius.com/artists/Ege",
+        "type": "regular",
+        "id": "3012209"
+      },
+      {
+        "name": "Ege Boran",
+        "url": "https://genius.com/artists/Ege-boran",
+        "type": "regular",
+        "id": "2775569"
+      },
+      {
+        "name": "Ege Zulu",
+        "url": "https://genius.com/artists/Ege-zulu",
+        "type": "regular",
+        "id": "1978619"
+      },
+      {
+        "name": "Egg (mylifeisayolk)",
+        "url": "https://genius.com/artists/Egg-mylifeisayolk",
+        "type": "regular",
+        "id": "2108305"
+      },
+      {
+        "name": "Eggs, Bacon, Grits",
+        "url": "https://genius.com/artists/Eggs-bacon-grits",
+        "type": "regular",
+        "id": "346417"
+      },
+      {
+        "name": "EGO (DEU)",
+        "url": "https://genius.com/artists/Ego-deu",
+        "type": "regular",
+        "id": "1185427"
+      },
+      {
+        "name": "Egoism",
+        "url": "https://genius.com/artists/Egoism",
+        "type": "regular",
+        "id": "1604607"
+      },
+      {
+        "name": "Egor",
+        "url": "https://genius.com/artists/Egor",
+        "type": "regular",
+        "id": "665804"
+      },
+      {
+        "name": "Егор и Опизденевшие (Egor i Opizdenevshie)",
+        "url": "https://genius.com/artists/Egor-i-opizdenevshie",
+        "type": "regular",
+        "id": "1302794"
+      },
+      {
+        "name": "Егор Летов (Egor Letov)",
+        "url": "https://genius.com/artists/Egor-letov",
+        "type": "regular",
+        "id": "1296730"
+      },
+      {
+        "name": "ЕГОР НАТС (EGOR NATS)",
+        "url": "https://genius.com/artists/Egor-nats",
+        "type": "regular",
+        "id": "1189291"
+      },
+      {
+        "name": "Egreen",
+        "url": "https://genius.com/artists/Egreen",
+        "type": "regular",
+        "id": "158554"
+      },
+      {
+        "name": "Egzod",
+        "url": "https://genius.com/artists/Egzod",
+        "type": "regular",
+        "id": "1070170"
+      },
+      {
+        "name": "Ehab Tawfik - إيهاب توفيق",
+        "url": "https://genius.com/artists/Ehab-tawfik",
+        "type": "regular",
+        "id": "3466863"
+      },
+      {
+        "name": "Şehinşah",
+        "url": "https://genius.com/artists/Sehinsah",
+        "type": "regular",
+        "id": "92219"
+      },
+      {
+        "name": "Eidola",
+        "url": "https://genius.com/artists/Eidola",
+        "type": "regular",
+        "id": "999931"
+      },
+      {
+        "name": "Eiffel 65",
+        "url": "https://genius.com/artists/Eiffel-65",
+        "type": "regular",
+        "id": "14160"
+      },
+      {
+        "name": "Eileen Alister",
+        "url": "https://genius.com/artists/Eileen-alister",
+        "type": "regular",
+        "id": "3918566"
+      },
+      {
+        "name": "​eill (JPN)",
+        "url": "https://genius.com/artists/Eill-jpn",
+        "type": "regular",
+        "id": "1976382"
+      },
+      {
+        "name": "Einer Bankz",
+        "url": "https://genius.com/artists/Einer-bankz",
+        "type": "regular",
+        "id": "1120959"
+      },
+      {
+        "name": "Eino Kettunen",
+        "url": "https://genius.com/artists/Eino-kettunen",
+        "type": "regular",
+        "id": "1132865"
+      },
+      {
+        "name": "Einár",
+        "url": "https://genius.com/artists/Einar",
+        "type": "regular",
+        "id": "1704096"
+      },
+      {
+        "name": "Einstürzende Neubauten",
+        "url": "https://genius.com/artists/Einsturzende-neubauten",
+        "type": "regular",
+        "id": "361088"
+      },
+      {
+        "name": "Eisbrecher",
+        "url": "https://genius.com/artists/Eisbrecher",
+        "type": "regular",
+        "id": "310938"
+      },
+      {
+        "name": "Eivør",
+        "url": "https://genius.com/artists/Eivr",
+        "type": "regular",
+        "id": "1329163"
+      },
+      {
+        "name": "Eix",
+        "url": "https://genius.com/artists/Eix",
+        "type": "regular",
+        "id": "1645590"
+      },
+      {
+        "name": "EJEAN",
+        "url": "https://genius.com/artists/Ejean",
+        "type": "regular",
+        "id": "3270023"
+      },
+      {
+        "name": "Ñejo",
+        "url": "https://genius.com/artists/Nejo",
+        "type": "regular",
+        "id": "55410"
+      },
+      {
+        "name": "Ñejo & Dálmata",
+        "url": "https://genius.com/artists/Nejo-and-dalmata",
+        "type": "regular",
+        "id": "454560"
+      },
+      {
+        "name": "Ekatarina Velika",
+        "url": "https://genius.com/artists/Ekatarina-velika",
+        "type": "regular",
+        "id": "355028"
+      },
+      {
+        "name": "Екатерина Яшникова (Ekaterina Yashnikova)",
+        "url": "https://genius.com/artists/Ekaterina-yashnikova",
+        "type": "regular",
+        "id": "2025426"
+      },
+      {
+        "name": "ekhoe",
+        "url": "https://genius.com/artists/Ekhoe",
+        "type": "regular",
+        "id": "2391154"
+      },
+      {
+        "name": "эхопрокуренныхподъездов (ekhoprokurennykhpod`yezdov)",
+        "url": "https://genius.com/artists/Ekhoprokurennykhpodyezdov",
+        "type": "regular",
+        "id": "1071141"
+      },
+      {
+        "name": "EKIPA",
+        "url": "https://genius.com/artists/Ekipa",
+        "type": "regular",
+        "id": "2465907"
+      },
+      {
+        "name": "EKKSTACY",
+        "url": "https://genius.com/artists/Ekkstacy",
+        "type": "regular",
+        "id": "1704760"
+      },
+      {
+        "name": "Eko Fresh",
+        "url": "https://genius.com/artists/Eko-fresh",
+        "type": "regular",
+        "id": "12455"
+      },
+      {
+        "name": "Ekoh",
+        "url": "https://genius.com/artists/Ekoh",
+        "type": "regular",
+        "id": "48555"
+      },
+      {
+        "name": "Экси (Eksi)",
+        "url": "https://genius.com/artists/Eksi",
+        "type": "regular",
+        "id": "1804832"
+      },
+      {
+        "name": "Eladio Carrión",
+        "url": "https://genius.com/artists/Eladio-carrion",
+        "type": "regular",
+        "id": "1153165"
+      },
+      {
+        "name": "Elai",
+        "url": "https://genius.com/artists/Elai",
+        "type": "regular",
+        "id": "2077902"
+      },
+      {
+        "name": "Elaine",
+        "url": "https://genius.com/artists/Elaine",
+        "type": "regular",
+        "id": "1489056"
+      },
+      {
+        "name": "Elaine Paige",
+        "url": "https://genius.com/artists/Elaine-paige",
+        "type": "regular",
+        "id": "368298"
+      },
+      {
+        "name": "Elaine Stritch",
+        "url": "https://genius.com/artists/Elaine-stritch",
+        "type": "regular",
+        "id": "207404"
+      },
+      {
+        "name": "El Alfa",
+        "url": "https://genius.com/artists/El-alfa",
+        "type": "regular",
+        "id": "452856"
+      },
+      {
+        "name": "Elastica",
+        "url": "https://genius.com/artists/Elastica",
+        "type": "regular",
+        "id": "108180"
+      },
+      {
+        "name": "Elastinen",
+        "url": "https://genius.com/artists/Elastinen",
+        "type": "regular",
+        "id": "363021"
+      },
+      {
+        "name": "Ela Taubert",
+        "url": "https://genius.com/artists/Ela-taubert",
+        "type": "regular",
+        "id": "3136444"
+      },
+      {
+        "name": "El Barto",
+        "url": "https://genius.com/artists/El-barto",
+        "type": "regular",
+        "id": "1588228"
+      },
+      {
+        "name": "El Blachy",
+        "url": "https://genius.com/artists/El-blachy",
+        "type": "regular",
+        "id": "4203705"
+      },
+      {
+        "name": "El Bogueto",
+        "url": "https://genius.com/artists/El-bogueto",
+        "type": "regular",
+        "id": "3533440"
+      },
+      {
+        "name": "Elbow",
+        "url": "https://genius.com/artists/Elbow",
+        "type": "regular",
+        "id": "27570"
+      },
+      {
+        "name": "Эльбрус Джанмирзоев (Elbrus Dzhanmirzoev)",
+        "url": "https://genius.com/artists/Elbrus-dzhanmirzoev",
+        "type": "regular",
+        "id": "2647388"
+      },
+      {
+        "name": "El Bugg",
+        "url": "https://genius.com/artists/El-bugg",
+        "type": "regular",
+        "id": "3412319"
+      },
+      {
+        "name": "El Canto del Loco",
+        "url": "https://genius.com/artists/El-canto-del-loco",
+        "type": "regular",
+        "id": "348192"
+      },
+      {
+        "name": "El Cartél D.L.C",
+        "url": "https://genius.com/artists/El-cartel-dlc",
+        "type": "regular",
+        "id": "4383676"
+      },
+      {
+        "name": "El Castro - الكاسترو",
+        "url": "https://genius.com/artists/El-castro",
+        "type": "regular",
+        "id": "735172"
+      },
+      {
+        "name": "El Chapo Junior",
+        "url": "https://genius.com/artists/El-chapo-junior",
+        "type": "regular",
+        "id": "2586955"
+      },
+      {
+        "name": "El Chojin",
+        "url": "https://genius.com/artists/El-chojin",
+        "type": "regular",
+        "id": "55578"
+      },
+      {
+        "name": "El Chombo",
+        "url": "https://genius.com/artists/El-chombo",
+        "type": "regular",
+        "id": "373556"
+      },
+      {
+        "name": "El Cousteau",
+        "url": "https://genius.com/artists/El-cousteau",
+        "type": "regular",
+        "id": "1314880"
+      },
+      {
+        "name": "El Coyote Y Su Banda Tierra Santa",
+        "url": "https://genius.com/artists/El-coyote-y-su-banda-tierra-santa",
+        "type": "regular",
+        "id": "405703"
+      },
+      {
+        "name": "El Cuarteto de Nos",
+        "url": "https://genius.com/artists/El-cuarteto-de-nos",
+        "type": "regular",
+        "id": "195427"
+      },
+      {
+        "name": "Eldab3 - الضبع",
+        "url": "https://genius.com/artists/Eldab3",
+        "type": "regular",
+        "id": "1329752"
+      },
+      {
+        "name": "El De Las R's",
+        "url": "https://genius.com/artists/El-de-las-rs",
+        "type": "regular",
+        "id": "3876599"
+      },
+      {
+        "name": "Elderbrook",
+        "url": "https://genius.com/artists/Elderbrook",
+        "type": "regular",
+        "id": "458592"
+      },
+      {
+        "name": "Eldkvarn",
+        "url": "https://genius.com/artists/Eldkvarn",
+        "type": "regular",
+        "id": "368381"
+      },
+      {
+        "name": "Eldo",
+        "url": "https://genius.com/artists/Eldo",
+        "type": "regular",
+        "id": "28888"
+      },
+      {
+        "name": "El Doctor",
+        "url": "https://genius.com/artists/El-doctor",
+        "type": "regular",
+        "id": "1341645"
+      },
+      {
+        "name": "Eldorado",
+        "url": "https://genius.com/artists/Eldorado",
+        "type": "regular",
+        "id": "1485496"
+      },
+      {
+        "name": "Элджей (Eldzhey)",
+        "url": "https://genius.com/artists/Eldzhey",
+        "type": "regular",
+        "id": "662644"
+      },
+      {
+        "name": "Ele A",
+        "url": "https://genius.com/artists/Ele-a",
+        "type": "regular",
+        "id": "2443284"
+      },
+      {
+        "name": "Ele A El Dominio",
+        "url": "https://genius.com/artists/Ele-a-el-dominio",
+        "type": "regular",
+        "id": "1204316"
+      },
+      {
+        "name": "Eleanor Worthington-Cox",
+        "url": "https://genius.com/artists/Eleanor-worthington-cox",
+        "type": "regular",
+        "id": "4456927"
+      },
+      {
+        "name": "Electric Banana Band",
+        "url": "https://genius.com/artists/Electric-banana-band",
+        "type": "regular",
+        "id": "379233"
+      },
+      {
+        "name": "Electric Callboy",
+        "url": "https://genius.com/artists/Electric-callboy",
+        "type": "regular",
+        "id": "80105"
+      },
+      {
+        "name": "Electric Guest",
+        "url": "https://genius.com/artists/Electric-guest",
+        "type": "regular",
+        "id": "30558"
+      },
+      {
+        "name": "Electric Light Orchestra",
+        "url": "https://genius.com/artists/Electric-light-orchestra",
+        "type": "regular",
+        "id": "29232"
+      },
+      {
+        "name": "Electric Six",
+        "url": "https://genius.com/artists/Electric-six",
+        "type": "regular",
+        "id": "56326"
+      },
+      {
+        "name": "Electric Wizard",
+        "url": "https://genius.com/artists/Electric-wizard",
+        "type": "regular",
+        "id": "20622"
+      },
+      {
+        "name": "Electric Youth",
+        "url": "https://genius.com/artists/Electric-youth",
+        "type": "regular",
+        "id": "14223"
+      },
+      {
+        "name": "Electrobirds",
+        "url": "https://genius.com/artists/Electrobirds",
+        "type": "regular",
+        "id": "3840658"
+      },
+      {
+        "name": "Электрофорез (Electroforez)",
+        "url": "https://genius.com/artists/Electroforez",
+        "type": "regular",
+        "id": "1320744"
+      },
+      {
+        "name": "Electronic",
+        "url": "https://genius.com/artists/Electronic",
+        "type": "regular",
+        "id": "344599"
+      },
+      {
+        "name": "Elefánt zenekar",
+        "url": "https://genius.com/artists/Elefant-zenekar",
+        "type": "regular",
+        "id": "3119097"
+      },
+      {
+        "name": "Электроптицы (Elektroptitsi)",
+        "url": "https://genius.com/artists/Elektroptitsi",
+        "type": "regular",
+        "id": "2888073"
+      },
+      {
+        "name": "Электрослабость (Elektroslabost')",
+        "url": "https://genius.com/artists/Elektroslabost",
+        "type": "regular",
+        "id": "4048463"
+      },
+      {
+        "name": "Elektryczne Gitary",
+        "url": "https://genius.com/artists/Elektryczne-gitary",
+        "type": "regular",
+        "id": "226429"
+      },
+      {
+        "name": "Element of Crime",
+        "url": "https://genius.com/artists/Element-of-crime",
+        "type": "regular",
+        "id": "342499"
+      },
+      {
+        "name": "Elena",
+        "url": "https://genius.com/artists/Elena",
+        "type": "regular",
+        "id": "986405"
+      },
+      {
+        "name": "ELENA ROSE",
+        "url": "https://genius.com/artists/Elena-rose",
+        "type": "regular",
+        "id": "1987223"
+      },
+      {
+        "name": "Elena Siegman",
+        "url": "https://genius.com/artists/Elena-siegman",
+        "type": "regular",
+        "id": "18795"
+      },
+      {
+        "name": "Елена Ваенга (Elena Vaenga)",
+        "url": "https://genius.com/artists/Elena-vaenga",
+        "type": "regular",
+        "id": "1373426"
+      },
+      {
+        "name": "Elenco de Soy Luna",
+        "url": "https://genius.com/artists/Elenco-de-soy-luna",
+        "type": "regular",
+        "id": "1094535"
+      },
+      {
+        "name": "Eleni Foureira",
+        "url": "https://genius.com/artists/Eleni-foureira",
+        "type": "regular",
+        "id": "454309"
+      },
+      {
+        "name": "Elephant Man",
+        "url": "https://genius.com/artists/Elephant-man",
+        "type": "regular",
+        "id": "3783"
+      },
+      {
+        "name": "ELEVATION RHYTHM",
+        "url": "https://genius.com/artists/Elevation-rhythm",
+        "type": "regular",
+        "id": "1884867"
+      },
+      {
+        "name": "Elevator Boys",
+        "url": "https://genius.com/artists/Elevator-boys",
+        "type": "regular",
+        "id": "3605137"
+      },
+      {
+        "name": "Eleventwelfth",
+        "url": "https://genius.com/artists/Eleventwelfth",
+        "type": "regular",
+        "id": "1418542"
+      },
+      {
+        "name": "Elgit Doda",
+        "url": "https://genius.com/artists/Elgit-doda",
+        "type": "regular",
+        "id": "395009"
+      },
+      {
+        "name": "ElGranAlexis",
+        "url": "https://genius.com/artists/Elgranalexis",
+        "type": "regular",
+        "id": "4139418"
+      },
+      {
+        "name": "El Gran Combo de Puerto Rico",
+        "url": "https://genius.com/artists/El-gran-combo-de-puerto-rico",
+        "type": "regular",
+        "id": "359563"
+      },
+      {
+        "name": "ElGrandeToto",
+        "url": "https://genius.com/artists/Elgrandetoto",
+        "type": "regular",
+        "id": "1073333"
+      },
+      {
+        "name": "El Gran Martín Elías",
+        "url": "https://genius.com/artists/El-gran-martin-elias",
+        "type": "regular",
+        "id": "1900676"
+      },
+      {
+        "name": "ELHAE",
+        "url": "https://genius.com/artists/Elhae",
+        "type": "regular",
+        "id": "47545"
+      },
+      {
+        "name": "El High",
+        "url": "https://genius.com/artists/El-high",
+        "type": "regular",
+        "id": "638743"
+      },
+      {
+        "name": "Eli",
+        "url": "https://genius.com/artists/Eli",
+        "type": "regular",
+        "id": "3294796"
+      },
+      {
+        "name": "Elias (DEU)",
+        "url": "https://genius.com/artists/Elias-deu",
+        "type": "regular",
+        "id": "3540105"
+      },
+      {
+        "name": "Elias Rønnenfelt",
+        "url": "https://genius.com/artists/Elias-rnnenfelt",
+        "type": "regular",
+        "id": "1018205"
+      },
+      {
+        "name": "Eli Brown",
+        "url": "https://genius.com/artists/Eli-brown",
+        "type": "regular",
+        "id": "2831354"
+      },
+      {
+        "name": "Elida Reyna y Avante",
+        "url": "https://genius.com/artists/Elida-reyna-y-avante",
+        "type": "regular",
+        "id": "3036511"
+      },
+      {
+        "name": "ELIESG",
+        "url": "https://genius.com/artists/Eliesg",
+        "type": "regular",
+        "id": "1338571"
+      },
+      {
+        "name": "Elif Doğan",
+        "url": "https://genius.com/artists/Elif-dogan",
+        "type": "regular",
+        "id": "2858572"
+      },
+      {
+        "name": "Eli Fross",
+        "url": "https://genius.com/artists/Eli-fross",
+        "type": "regular",
+        "id": "1782278"
+      },
+      {
+        "name": "Elif Turan",
+        "url": "https://genius.com/artists/Elif-turan",
+        "type": "regular",
+        "id": "2613483"
+      },
+      {
+        "name": "elijah",
+        "url": "https://genius.com/artists/Elijah",
+        "type": "regular",
+        "id": "4039040"
+      },
+      {
+        "name": "Elijah Kelley",
+        "url": "https://genius.com/artists/Elijah-kelley",
+        "type": "regular",
+        "id": "393612"
+      },
+      {
+        "name": "elijah woods",
+        "url": "https://genius.com/artists/Elijah-woods",
+        "type": "regular",
+        "id": "1091332"
+      },
+      {
+        "name": "​elijxhwtf",
+        "url": "https://genius.com/artists/Elijxhwtf",
+        "type": "regular",
+        "id": "3258191"
+      },
+      {
+        "name": "Elina",
+        "url": "https://genius.com/artists/Elina",
+        "type": "regular",
+        "id": "1155423"
+      },
+      {
+        "name": "Elinel",
+        "url": "https://genius.com/artists/Elinel",
+        "type": "regular",
+        "id": "38531"
+      },
+      {
+        "name": "ELIO",
+        "url": "https://genius.com/artists/Elio",
+        "type": "regular",
+        "id": "2155311"
+      },
+      {
+        "name": "Elio e le Storie Tese",
+        "url": "https://genius.com/artists/Elio-e-le-storie-tese",
+        "type": "regular",
+        "id": "354514"
+      },
+      {
+        "name": "Elio Toffana",
+        "url": "https://genius.com/artists/Elio-toffana",
+        "type": "regular",
+        "id": "54262"
+      },
+      {
+        "name": "Eli Preiss",
+        "url": "https://genius.com/artists/Eli-preiss",
+        "type": "regular",
+        "id": "1895932"
+      },
+      {
+        "name": "Elisa",
+        "url": "https://genius.com/artists/Elisa",
+        "type": "regular",
+        "id": "47631"
+      },
+      {
+        "name": "Elisabeth das Musical",
+        "url": "https://genius.com/artists/Elisabeth-das-musical",
+        "type": "regular",
+        "id": "1225123"
+      },
+      {
+        "name": "Elisabeth Roma",
+        "url": "https://genius.com/artists/Elisabeth-roma",
+        "type": "regular",
+        "id": "2717935"
+      },
+      {
+        "name": "Elisa Rosselli",
+        "url": "https://genius.com/artists/Elisa-rosselli",
+        "type": "regular",
+        "id": "609922"
+      },
+      {
+        "name": "elisey",
+        "url": "https://genius.com/artists/Elisey",
+        "type": "regular",
+        "id": "3222228"
+      },
+      {
+        "name": "Elis Regina",
+        "url": "https://genius.com/artists/Elis-regina",
+        "type": "regular",
+        "id": "211669"
+      },
+      {
+        "name": "Elissa - إليسا",
+        "url": "https://genius.com/artists/Elissa",
+        "type": "regular",
+        "id": "262238"
+      },
+      {
+        "name": "Elita",
+        "url": "https://genius.com/artists/Elita",
+        "type": "regular",
+        "id": "1526015"
+      },
+      {
+        "name": "Elitni Odredi",
+        "url": "https://genius.com/artists/Elitni-odredi",
+        "type": "regular",
+        "id": "482078"
+      },
+      {
+        "name": "​eli. (USA)",
+        "url": "https://genius.com/artists/Eli-usa",
+        "type": "regular",
+        "id": "1457356"
+      },
+      {
+        "name": "Eli Wilson",
+        "url": "https://genius.com/artists/Eli-wilson",
+        "type": "regular",
+        "id": "1676246"
+      },
+      {
+        "name": "ELIZA",
+        "url": "https://genius.com/artists/Eliza",
+        "type": "regular",
+        "id": "21810"
+      },
+      {
+        "name": "Elizabeth Barrett Browning",
+        "url": "https://genius.com/artists/Elizabeth-barrett-browning",
+        "type": "regular",
+        "id": "21105"
+      },
+      {
+        "name": "Elizabeth Nichols",
+        "url": "https://genius.com/artists/Elizabeth-nichols",
+        "type": "regular",
+        "id": "4177414"
+      },
+      {
+        "name": "Eliza Gilkyson",
+        "url": "https://genius.com/artists/Eliza-gilkyson",
+        "type": "regular",
+        "id": "333966"
+      },
+      {
+        "name": "Eliza Maturan",
+        "url": "https://genius.com/artists/Eliza-maturan",
+        "type": "regular",
+        "id": "3281989"
+      },
+      {
+        "name": "Eliza McLamb",
+        "url": "https://genius.com/artists/Eliza-mclamb",
+        "type": "regular",
+        "id": "2352940"
+      },
+      {
+        "name": "Eliza Rose",
+        "url": "https://genius.com/artists/Eliza-rose",
+        "type": "regular",
+        "id": "2813000"
+      },
+      {
+        "name": "El Jincho",
+        "url": "https://genius.com/artists/El-jincho",
+        "type": "regular",
+        "id": "1374161"
+      },
+      {
+        "name": "Željko Bebek",
+        "url": "https://genius.com/artists/Zeljko-bebek",
+        "type": "regular",
+        "id": "1775110"
+      },
+      {
+        "name": "Željko Joksimović",
+        "url": "https://genius.com/artists/Zeljko-joksimovic",
+        "type": "regular",
+        "id": "404973"
+      },
+      {
+        "name": "Željko Samardžić",
+        "url": "https://genius.com/artists/Zeljko-samardzic",
+        "type": "regular",
+        "id": "452512"
+      },
+      {
+        "name": "El Joker - الجوكر",
+        "url": "https://genius.com/artists/El-joker",
+        "type": "regular",
+        "id": "180311"
+      },
+      {
+        "name": "El Jordan 23",
+        "url": "https://genius.com/artists/El-jordan-23",
+        "type": "regular",
+        "id": "2845659"
+      },
+      {
+        "name": "Ёлка (Elka)",
+        "url": "https://genius.com/artists/Elka",
+        "type": "regular",
+        "id": "332155"
+      },
+      {
+        "name": "Elkie Brooks",
+        "url": "https://genius.com/artists/Elkie-brooks",
+        "type": "regular",
+        "id": "349463"
+      },
+      {
+        "name": "El Komander",
+        "url": "https://genius.com/artists/El-komander",
+        "type": "regular",
+        "id": "99894"
+      },
+      {
+        "name": "Ella Boh",
+        "url": "https://genius.com/artists/Ella-boh",
+        "type": "regular",
+        "id": "1492018"
+      },
+      {
+        "name": "Ella Eyre",
+        "url": "https://genius.com/artists/Ella-eyre",
+        "type": "regular",
+        "id": "51595"
+      },
+      {
+        "name": "Ella Henderson",
+        "url": "https://genius.com/artists/Ella-henderson",
+        "type": "regular",
+        "id": "183925"
+      },
+      {
+        "name": "Ella Jenkins",
+        "url": "https://genius.com/artists/Ella-jenkins",
+        "type": "regular",
+        "id": "480715"
+      },
+      {
+        "name": "Ella Langley",
+        "url": "https://genius.com/artists/Ella-langley",
+        "type": "regular",
+        "id": "2797742"
+      },
+      {
+        "name": "Ella Mai",
+        "url": "https://genius.com/artists/Ella-mai",
+        "type": "regular",
+        "id": "561499"
+      },
+      {
+        "name": "Ella Red",
+        "url": "https://genius.com/artists/Ella-red",
+        "type": "regular",
+        "id": "3933387"
+      },
+      {
+        "name": "Elle Coves",
+        "url": "https://genius.com/artists/Elle-coves",
+        "type": "regular",
+        "id": "3453237"
+      },
+      {
+        "name": "Elle King",
+        "url": "https://genius.com/artists/Elle-king",
+        "type": "regular",
+        "id": "81159"
+      },
+      {
+        "name": "​ellene",
+        "url": "https://genius.com/artists/Ellene",
+        "type": "regular",
+        "id": "1406412"
+      },
+      {
+        "name": "Ellen Greene",
+        "url": "https://genius.com/artists/Ellen-greene",
+        "type": "regular",
+        "id": "369789"
+      },
+      {
+        "name": "Ellen McLain",
+        "url": "https://genius.com/artists/Ellen-mclain",
+        "type": "regular",
+        "id": "571455"
+      },
+      {
+        "name": "ELLEN VANJOREK",
+        "url": "https://genius.com/artists/Ellen-vanjorek",
+        "type": "regular",
+        "id": "4252670"
+      },
+      {
+        "name": "Elle Teresa",
+        "url": "https://genius.com/artists/Elle-teresa",
+        "type": "regular",
+        "id": "1611046"
+      },
+      {
+        "name": "Elley Duhé",
+        "url": "https://genius.com/artists/Elley-duhe",
+        "type": "regular",
+        "id": "1029458"
+      },
+      {
+        "name": "Ellice",
+        "url": "https://genius.com/artists/Ellice",
+        "type": "regular",
+        "id": "3533971"
+      },
+      {
+        "name": "Ellie Holcomb",
+        "url": "https://genius.com/artists/Ellie-holcomb",
+        "type": "regular",
+        "id": "374486"
+      },
+      {
+        "name": "Ellie Minibot",
+        "url": "https://genius.com/artists/Ellie-minibot",
+        "type": "regular",
+        "id": "3947074"
+      },
+      {
+        "name": "Ellie Nanni",
+        "url": "https://genius.com/artists/Ellie-nanni",
+        "type": "regular",
+        "id": "4129762"
+      },
+      {
+        "name": "Elli Kokkinou",
+        "url": "https://genius.com/artists/Elli-kokkinou",
+        "type": "regular",
+        "id": "405606"
+      },
+      {
+        "name": "ELLIMEI",
+        "url": "https://genius.com/artists/Ellimei",
+        "type": "regular",
+        "id": "4012985"
+      },
+      {
+        "name": "Ellinoora",
+        "url": "https://genius.com/artists/Ellinoora",
+        "type": "regular",
+        "id": "457464"
+      },
+      {
+        "name": "Elliot James Reay",
+        "url": "https://genius.com/artists/Elliot-james-reay",
+        "type": "regular",
+        "id": "2094336"
+      },
+      {
+        "name": "Elliot Moss",
+        "url": "https://genius.com/artists/Elliot-moss",
+        "type": "regular",
+        "id": "453098"
+      },
+      {
+        "name": "ElliottMerriman",
+        "url": "https://genius.com/artists/Elliottmerriman",
+        "type": "regular",
+        "id": "3989883"
+      },
+      {
+        "name": "Elliott Smith",
+        "url": "https://genius.com/artists/Elliott-smith",
+        "type": "regular",
+        "id": "17460"
+      },
+      {
+        "name": "Ellise",
+        "url": "https://genius.com/artists/Ellise",
+        "type": "regular",
+        "id": "1087905"
+      },
+      {
+        "name": "¥ellow Bucks",
+        "url": "https://genius.com/artists/Ellow-bucks",
+        "type": "regular",
+        "id": "2239329"
+      },
+      {
+        "name": "El Makabelico",
+        "url": "https://genius.com/artists/El-makabelico",
+        "type": "regular",
+        "id": "1416475"
+      },
+      {
+        "name": "El Malilla",
+        "url": "https://genius.com/artists/El-malilla",
+        "type": "regular",
+        "id": "3545783"
+      },
+      {
+        "name": "ELMAN",
+        "url": "https://genius.com/artists/Elman",
+        "type": "regular",
+        "id": "140907"
+      },
+      {
+        "name": "Elmas",
+        "url": "https://genius.com/artists/Elmas",
+        "type": "regular",
+        "id": "2564166"
+      },
+      {
+        "name": "Elma Sinanović",
+        "url": "https://genius.com/artists/Elma-sinanovic",
+        "type": "regular",
+        "id": "1648189"
+      },
+      {
+        "name": "El Mató a un Policía Motorizado",
+        "url": "https://genius.com/artists/El-mato-a-un-policia-motorizado",
+        "type": "regular",
+        "id": "453066"
+      },
+      {
+        "name": "El Michels Affair",
+        "url": "https://genius.com/artists/El-michels-affair",
+        "type": "regular",
+        "id": "484594"
+      },
+      {
+        "name": "Elmiene",
+        "url": "https://genius.com/artists/Elmiene",
+        "type": "regular",
+        "id": "2972866"
+      },
+      {
+        "name": "El Mimoso Luis Antonio López",
+        "url": "https://genius.com/artists/El-mimoso-luis-antonio-lopez",
+        "type": "regular",
+        "id": "454337"
+      },
+      {
+        "name": "Elmira Rəhimova",
+        "url": "https://genius.com/artists/Elmira-rhimova",
+        "type": "regular",
+        "id": "2953582"
+      },
+      {
+        "name": "Elmo & Patsy",
+        "url": "https://genius.com/artists/Elmo-and-patsy",
+        "type": "regular",
+        "id": "289481"
+      },
+      {
+        "name": "el momy",
+        "url": "https://genius.com/artists/El-momy",
+        "type": "regular",
+        "id": "4196300"
+      },
+      {
+        "name": "Elmore James",
+        "url": "https://genius.com/artists/Elmore-james",
+        "type": "regular",
+        "id": "358668"
+      },
+      {
+        "name": "ElMusto",
+        "url": "https://genius.com/artists/Elmusto",
+        "type": "regular",
+        "id": "3114910"
+      },
+      {
+        "name": "Elnarə Xəlilova",
+        "url": "https://genius.com/artists/Elnar-xlilova",
+        "type": "regular",
+        "id": "2086340"
+      },
+      {
+        "name": "El Nino",
+        "url": "https://genius.com/artists/El-nino",
+        "type": "regular",
+        "id": "160322"
+      },
+      {
+        "name": "Elodie",
+        "url": "https://genius.com/artists/Elodie",
+        "type": "regular",
+        "id": "1042738"
+      },
+      {
+        "name": "Eloise",
+        "url": "https://genius.com/artists/Eloise",
+        "type": "regular",
+        "id": "1588661"
+      },
+      {
+        "name": "elox1m",
+        "url": "https://genius.com/artists/Elox1m",
+        "type": "regular",
+        "id": "3134329"
+      },
+      {
+        "name": "El-P",
+        "url": "https://genius.com/artists/El-p",
+        "type": "regular",
+        "id": "1070"
+      },
+      {
+        "name": "El Padrinito Toys",
+        "url": "https://genius.com/artists/El-padrinito-toys",
+        "type": "regular",
+        "id": "3445649"
+      },
+      {
+        "name": "ElPatron970",
+        "url": "https://genius.com/artists/Elpatron970",
+        "type": "regular",
+        "id": "2243885"
+      },
+      {
+        "name": "El pollito pio",
+        "url": "https://genius.com/artists/El-pollito-pio",
+        "type": "regular",
+        "id": "456962"
+      },
+      {
+        "name": "El Rabbanito",
+        "url": "https://genius.com/artists/El-rabbanito",
+        "type": "regular",
+        "id": "3859101"
+      },
+      {
+        "name": "Elsa & Emilie",
+        "url": "https://genius.com/artists/Elsa-and-emilie",
+        "type": "regular",
+        "id": "452885"
+      },
+      {
+        "name": "Elsa y Elmar",
+        "url": "https://genius.com/artists/Elsa-y-elmar",
+        "type": "regular",
+        "id": "997317"
+      },
+      {
+        "name": "El Snappo",
+        "url": "https://genius.com/artists/El-snappo",
+        "type": "regular",
+        "id": "3807631"
+      },
+      {
+        "name": "Elsu",
+        "url": "https://genius.com/artists/Elsu",
+        "type": "regular",
+        "id": "4200820"
+      },
+      {
+        "name": "El Triángulo Estudio",
+        "url": "https://genius.com/artists/El-triangulo-estudio",
+        "type": "regular",
+        "id": "1476310"
+      },
+      {
+        "name": "E L U C I D",
+        "url": "https://genius.com/artists/E-l-u-c-i-d",
+        "type": "regular",
+        "id": "50687"
+      },
+      {
+        "name": "‎elusin",
+        "url": "https://genius.com/artists/Elusin",
+        "type": "regular",
+        "id": "2380227"
+      },
+      {
+        "name": "Eluveitie",
+        "url": "https://genius.com/artists/Eluveitie",
+        "type": "regular",
+        "id": "75622"
+      },
+      {
+        "name": "Elvana Gjata",
+        "url": "https://genius.com/artists/Elvana-gjata",
+        "type": "regular",
+        "id": "155227"
+      },
+      {
+        "name": "El viejo paulino y su gente",
+        "url": "https://genius.com/artists/El-viejo-paulino-y-su-gente",
+        "type": "regular",
+        "id": "479842"
+      },
+      {
+        "name": "Elvira T",
+        "url": "https://genius.com/artists/Elvira-t",
+        "type": "regular",
+        "id": "376710"
+      },
+      {
+        "name": "El Virtual",
+        "url": "https://genius.com/artists/El-virtual",
+        "type": "regular",
+        "id": "1554904"
+      },
+      {
+        "name": "Elvis Costello",
+        "url": "https://genius.com/artists/Elvis-costello",
+        "type": "regular",
+        "id": "24308"
+      },
+      {
+        "name": "Elvis Crespo",
+        "url": "https://genius.com/artists/Elvis-crespo",
+        "type": "regular",
+        "id": "148541"
+      },
+      {
+        "name": "Elvis Martinez",
+        "url": "https://genius.com/artists/Elvis-martinez",
+        "type": "regular",
+        "id": "402546"
+      },
+      {
+        "name": "EL Waili - الوايلي",
+        "url": "https://genius.com/artists/El-waili",
+        "type": "regular",
+        "id": "2490179"
+      },
+      {
+        "name": "El WiWi",
+        "url": "https://genius.com/artists/El-wiwi",
+        "type": "regular",
+        "id": "2925128"
+      },
+      {
+        "name": "Elyanna - إليانا",
+        "url": "https://genius.com/artists/Elyanna",
+        "type": "regular",
+        "id": "2014769"
+      },
+      {
+        "name": "elyaplugg!",
+        "url": "https://genius.com/artists/Elyaplugg",
+        "type": "regular",
+        "id": "3140953"
+      },
+      {
+        "name": "Ely Oaks",
+        "url": "https://genius.com/artists/Ely-oaks",
+        "type": "regular",
+        "id": "3549378"
+      },
+      {
+        "name": "ElyOtto",
+        "url": "https://genius.com/artists/Elyotto",
+        "type": "regular",
+        "id": "2383639"
+      },
+      {
+        "name": "Elysian Fields",
+        "url": "https://genius.com/artists/Elysian-fields",
+        "type": "regular",
+        "id": "355405"
+      },
+      {
+        "name": "El Zar",
+        "url": "https://genius.com/artists/El-zar",
+        "type": "regular",
+        "id": "1555235"
+      },
+      {
+        "name": "​eLZhi",
+        "url": "https://genius.com/artists/Elzhi",
+        "type": "regular",
+        "id": "327"
+      },
+      {
+        "name": "Ema",
+        "url": "https://genius.com/artists/Ema",
+        "type": "regular",
+        "id": "3171606"
+      },
+      {
+        "name": "EMAA",
+        "url": "https://genius.com/artists/Emaa",
+        "type": "regular",
+        "id": "2452294"
+      },
+      {
+        "name": "Емануела (Emanuela)",
+        "url": "https://genius.com/artists/Emanuela",
+        "type": "regular",
+        "id": "2287863"
+      },
+      {
+        "name": "Emarosa",
+        "url": "https://genius.com/artists/Emarosa",
+        "type": "regular",
+        "id": "36316"
+      },
+      {
+        "name": "Em Beihold",
+        "url": "https://genius.com/artists/Em-beihold",
+        "type": "regular",
+        "id": "2096208"
+      },
+      {
+        "name": "Emei",
+        "url": "https://genius.com/artists/Emei",
+        "type": "regular",
+        "id": "2917362"
+      },
+      {
+        "name": "EMEL",
+        "url": "https://genius.com/artists/Emel",
+        "type": "regular",
+        "id": "530201"
+      },
+      {
+        "name": "Emelie Hollow",
+        "url": "https://genius.com/artists/Emelie-hollow",
+        "type": "regular",
+        "id": "1044000"
+      },
+      {
+        "name": "EMELINE",
+        "url": "https://genius.com/artists/Emeline",
+        "type": "regular",
+        "id": "1325438"
+      },
+      {
+        "name": "Emeli Sandé",
+        "url": "https://genius.com/artists/Emeli-sande",
+        "type": "regular",
+        "id": "13465"
+      },
+      {
+        "name": "Emel Sayın",
+        "url": "https://genius.com/artists/Emel-sayn",
+        "type": "regular",
+        "id": "532272"
+      },
+      {
+        "name": "Emerson Day",
+        "url": "https://genius.com/artists/Emerson-day",
+        "type": "regular",
+        "id": "4395493"
+      },
+      {
+        "name": "Emerson, Lake & Palmer",
+        "url": "https://genius.com/artists/Emerson-lake-and-palmer",
+        "type": "regular",
+        "id": "86378"
+      },
+      {
+        "name": "Emery",
+        "url": "https://genius.com/artists/Emery",
+        "type": "regular",
+        "id": "193306"
+      },
+      {
+        "name": "EMF",
+        "url": "https://genius.com/artists/Emf",
+        "type": "regular",
+        "id": "81147"
+      },
+      {
+        "name": "Emi515",
+        "url": "https://genius.com/artists/Emi515",
+        "type": "regular",
+        "id": "3527878"
+      },
+      {
+        "name": "Emi Choi",
+        "url": "https://genius.com/artists/Emi-choi",
+        "type": "regular",
+        "id": "3509624"
+      },
+      {
+        "name": "Emicida",
+        "url": "https://genius.com/artists/Emicida",
+        "type": "regular",
+        "id": "13995"
+      },
+      {
+        "name": "Emilíana Torrini",
+        "url": "https://genius.com/artists/Emiliana-torrini",
+        "type": "regular",
+        "id": "403629"
+      },
+      {
+        "name": "Emilee Moore",
+        "url": "https://genius.com/artists/Emilee-moore",
+        "type": "regular",
+        "id": "2580590"
+      },
+      {
+        "name": "Emilia",
+        "url": "https://genius.com/artists/Emilia",
+        "type": "regular",
+        "id": "1290772"
+      },
+      {
+        "name": "Емилия (Emilia) (BGR)",
+        "url": "https://genius.com/artists/Emilia-bgr",
+        "type": "regular",
+        "id": "3738705"
+      },
+      {
+        "name": "Emilia Faucher",
+        "url": "https://genius.com/artists/Emilia-faucher",
+        "type": "regular",
+        "id": "4353808"
+      },
+      {
+        "name": "Emilia McCarthy",
+        "url": "https://genius.com/artists/Emilia-mccarthy",
+        "type": "regular",
+        "id": "1456335"
+      },
+      {
+        "name": "Emilia Mitiku",
+        "url": "https://genius.com/artists/Emilia-mitiku",
+        "type": "regular",
+        "id": "63830"
+      },
+      {
+        "name": "Emilie Autumn",
+        "url": "https://genius.com/artists/Emilie-autumn",
+        "type": "regular",
+        "id": "37615"
+      },
+      {
+        "name": "Emilio Piano",
+        "url": "https://genius.com/artists/Emilio-piano",
+        "type": "regular",
+        "id": "3865992"
+      },
+      {
+        "name": "Emil Rosé",
+        "url": "https://genius.com/artists/Emil-rose",
+        "type": "regular",
+        "id": "2228656"
+      },
+      {
+        "name": "Emily Alyn Lind",
+        "url": "https://genius.com/artists/Emily-alyn-lind",
+        "type": "regular",
+        "id": "1948004"
+      },
+      {
+        "name": "Emily Ann Roberts",
+        "url": "https://genius.com/artists/Emily-ann-roberts",
+        "type": "regular",
+        "id": "1843616"
+      },
+      {
+        "name": "Emily Dickinson",
+        "url": "https://genius.com/artists/Emily-dickinson",
+        "type": "regular",
+        "id": "717"
+      },
+      {
+        "name": "Emily James",
+        "url": "https://genius.com/artists/Emily-james",
+        "type": "regular",
+        "id": "1605095"
+      },
+      {
+        "name": "Emily Montes",
+        "url": "https://genius.com/artists/Emily-montes",
+        "type": "regular",
+        "id": "2250865"
+      },
+      {
+        "name": "Emily Watts",
+        "url": "https://genius.com/artists/Emily-watts",
+        "type": "regular",
+        "id": "2608690"
+      },
+      {
+        "name": "Emily Youcis",
+        "url": "https://genius.com/artists/Emily-youcis",
+        "type": "regular",
+        "id": "2176977"
+      },
+      {
+        "name": "Emily Zeck",
+        "url": "https://genius.com/artists/Emily-zeck",
+        "type": "regular",
+        "id": "672107"
+      },
+      {
+        "name": "EMIN",
+        "url": "https://genius.com/artists/Emin",
+        "type": "regular",
+        "id": "379549"
+      },
+      {
+        "name": "Emina Jahović",
+        "url": "https://genius.com/artists/Emina-jahovic",
+        "type": "regular",
+        "id": "455226"
+      },
+      {
+        "name": "Emir Can İğrek",
+        "url": "https://genius.com/artists/Emir-can-igrek",
+        "type": "regular",
+        "id": "1262024"
+      },
+      {
+        "name": "​Emirsito",
+        "url": "https://genius.com/artists/Emirsito",
+        "type": "regular",
+        "id": "2651233"
+      },
+      {
+        "name": "Emis Killa",
+        "url": "https://genius.com/artists/Emis-killa",
+        "type": "regular",
+        "id": "29194"
+      },
+      {
+        "name": "Emi Thasorn",
+        "url": "https://genius.com/artists/Emi-thasorn",
+        "type": "regular",
+        "id": "4403844"
+      },
+      {
+        "name": "​emi (UKR)",
+        "url": "https://genius.com/artists/Emi-ukr",
+        "type": "regular",
+        "id": "3639850"
+      },
+      {
+        "name": "Emiway Bantai",
+        "url": "https://genius.com/artists/Emiway-bantai",
+        "type": "regular",
+        "id": "1439953"
+      },
+      {
+        "name": "Emjay",
+        "url": "https://genius.com/artists/Emjay",
+        "type": "regular",
+        "id": "2912057"
+      },
+      {
+        "name": "Emkal",
+        "url": "https://genius.com/artists/Emkal",
+        "type": "regular",
+        "id": "2367980"
+      },
+      {
+        "name": "emlyn",
+        "url": "https://genius.com/artists/Emlyn",
+        "type": "regular",
+        "id": "2581411"
+      },
+      {
+        "name": "EMM",
+        "url": "https://genius.com/artists/Emm",
+        "type": "regular",
+        "id": "37811"
+      },
+      {
+        "name": "Emma",
+        "url": "https://genius.com/artists/Emma",
+        "type": "regular",
+        "id": "1738812"
+      },
+      {
+        "name": "​emma & matilda",
+        "url": "https://genius.com/artists/Emma-and-matilda",
+        "type": "regular",
+        "id": "3536358"
+      },
+      {
+        "name": "EMMA (cantautore)",
+        "url": "https://genius.com/artists/Emma-cantautore",
+        "type": "regular",
+        "id": "3809029"
+      },
+      {
+        "name": "Emma Duncan",
+        "url": "https://genius.com/artists/Emma-duncan",
+        "type": "regular",
+        "id": "2289944"
+      },
+      {
+        "name": "EMMA (FRA)",
+        "url": "https://genius.com/artists/Emma-fra",
+        "type": "regular",
+        "id": "4157853"
+      },
+      {
+        "name": "Emma Heesters",
+        "url": "https://genius.com/artists/Emma-heesters",
+        "type": "regular",
+        "id": "1296227"
+      },
+      {
+        "name": "Emma Hunton",
+        "url": "https://genius.com/artists/Emma-hunton",
+        "type": "regular",
+        "id": "1117969"
+      },
+      {
+        "name": "Emma Louise",
+        "url": "https://genius.com/artists/Emma-louise",
+        "type": "regular",
+        "id": "41421"
+      },
+      {
+        "name": "Emma Nissen",
+        "url": "https://genius.com/artists/Emma-nissen",
+        "type": "regular",
+        "id": "3387470"
+      },
+      {
+        "name": "Emma Nolde",
+        "url": "https://genius.com/artists/Emma-nolde",
+        "type": "regular",
+        "id": "2304224"
+      },
+      {
+        "name": "emmanuellcortess_",
+        "url": "https://genius.com/artists/Emmanuellcortess",
+        "type": "regular",
+        "id": "3954268"
+      },
+      {
+        "name": "Emma Peters",
+        "url": "https://genius.com/artists/Emma-peters",
+        "type": "regular",
+        "id": "2064311"
+      },
+      {
+        "name": "Emma Pittman",
+        "url": "https://genius.com/artists/Emma-pittman",
+        "type": "regular",
+        "id": "3970718"
+      },
+      {
+        "name": "Emma Ruth Rundle",
+        "url": "https://genius.com/artists/Emma-ruth-rundle",
+        "type": "regular",
+        "id": "378520"
+      },
+      {
+        "name": "Emma Stone",
+        "url": "https://genius.com/artists/Emma-stone",
+        "type": "regular",
+        "id": "40264"
+      },
+      {
+        "name": "Emma Thompson",
+        "url": "https://genius.com/artists/Emma-thompson",
+        "type": "regular",
+        "id": "219289"
+      },
+      {
+        "name": "Emma Watson",
+        "url": "https://genius.com/artists/Emma-watson",
+        "type": "regular",
+        "id": "137309"
+      },
+      {
+        "name": "Emmit Fenn",
+        "url": "https://genius.com/artists/Emmit-fenn",
+        "type": "regular",
+        "id": "649633"
+      },
+      {
+        "name": "Emmure",
+        "url": "https://genius.com/artists/Emmure",
+        "type": "regular",
+        "id": "134885"
+      },
+      {
+        "name": "EMMY",
+        "url": "https://genius.com/artists/Emmy",
+        "type": "regular",
+        "id": "2576725"
+      },
+      {
+        "name": "Emmylou Harris",
+        "url": "https://genius.com/artists/Emmylou-harris",
+        "type": "regular",
+        "id": "39198"
+      },
+      {
+        "name": "Emmy Meli",
+        "url": "https://genius.com/artists/Emmy-meli",
+        "type": "regular",
+        "id": "2958648"
+      },
+      {
+        "name": "Emmy Rossum",
+        "url": "https://genius.com/artists/Emmy-rossum",
+        "type": "regular",
+        "id": "368001"
+      },
+      {
+        "name": "Emoji Genius",
+        "url": "https://genius.com/artists/Emoji-genius",
+        "type": "regular",
+        "id": "114342"
+      },
+      {
+        "name": "Emon Chowdhury",
+        "url": "https://genius.com/artists/Emon-chowdhury",
+        "type": "regular",
+        "id": "3563464"
+      },
+      {
+        "name": "⁣emoslut666",
+        "url": "https://genius.com/artists/Emoslut666",
+        "type": "regular",
+        "id": "3519831"
+      },
+      {
+        "name": "Emotional Oranges",
+        "url": "https://genius.com/artists/Emotional-oranges",
+        "type": "regular",
+        "id": "1466015"
+      },
+      {
+        "name": "The Emotions",
+        "url": "https://genius.com/artists/The-emotions",
+        "type": "regular",
+        "id": "149605"
+      },
+      {
+        "name": "Empath-P",
+        "url": "https://genius.com/artists/Empath-p",
+        "type": "regular",
+        "id": "1146094"
+      },
+      {
+        "name": "Emperor",
+        "url": "https://genius.com/artists/Emperor",
+        "type": "regular",
+        "id": "69733"
+      },
+      {
+        "name": "Emperor X",
+        "url": "https://genius.com/artists/Emperor-x",
+        "type": "regular",
+        "id": "165570"
+      },
+      {
+        "name": "Empiio",
+        "url": "https://genius.com/artists/Empiio",
+        "type": "regular",
+        "id": "1093953"
+      },
+      {
+        "name": "Empire Cast",
+        "url": "https://genius.com/artists/Empire-cast",
+        "type": "regular",
+        "id": "307381"
+      },
+      {
+        "name": "Empire of Geese",
+        "url": "https://genius.com/artists/Empire-of-geese",
+        "type": "regular",
+        "id": "3105448"
+      },
+      {
+        "name": "Empire of the Sun",
+        "url": "https://genius.com/artists/Empire-of-the-sun",
+        "type": "regular",
+        "id": "332"
+      },
+      {
+        "name": "Empress Of",
+        "url": "https://genius.com/artists/Empress-of",
+        "type": "regular",
+        "id": "41739"
+      },
+      {
+        "name": "Emra Brah",
+        "url": "https://genius.com/artists/Emra-brah",
+        "type": "regular",
+        "id": "3710827"
+      },
+      {
+        "name": "Emrah",
+        "url": "https://genius.com/artists/Emrah",
+        "type": "regular",
+        "id": "482319"
+      },
+      {
+        "name": "Emrah Karaduman",
+        "url": "https://genius.com/artists/Emrah-karaduman",
+        "type": "regular",
+        "id": "1165435"
+      },
+      {
+        "name": "Emre Altuğ",
+        "url": "https://genius.com/artists/Emre-altug",
+        "type": "regular",
+        "id": "454312"
+      },
+      {
+        "name": "Emre Aydın",
+        "url": "https://genius.com/artists/Emre-aydn",
+        "type": "regular",
+        "id": "479257"
+      },
+      {
+        "name": "Emre Fel",
+        "url": "https://genius.com/artists/Emre-fel",
+        "type": "regular",
+        "id": "2585003"
+      },
+      {
+        "name": "Šemsa Suljaković",
+        "url": "https://genius.com/artists/Semsa-suljakovic",
+        "type": "regular",
+        "id": "1768724"
+      },
+      {
+        "name": "Emtee",
+        "url": "https://genius.com/artists/Emtee",
+        "type": "regular",
+        "id": "573737"
+      },
+      {
+        "name": "Em Xinh Say Hi",
+        "url": "https://genius.com/artists/Em-xinh-say-hi",
+        "type": "regular",
+        "id": "4426728"
+      },
+      {
+        "name": "Đen",
+        "url": "https://genius.com/artists/En",
+        "type": "regular",
+        "id": "1121859"
+      },
+      {
+        "name": "EN6O",
+        "url": "https://genius.com/artists/En6o",
+        "type": "regular",
+        "id": "1421381"
+      },
+      {
+        "name": "Encanto - Cast",
+        "url": "https://genius.com/artists/Encanto-cast",
+        "type": "regular",
+        "id": "2961968"
+      },
+      {
+        "name": "ENCASSATOR",
+        "url": "https://genius.com/artists/Encassator",
+        "type": "regular",
+        "id": "2170408"
+      },
+      {
+        "name": "EnchantedMob",
+        "url": "https://genius.com/artists/Enchantedmob",
+        "type": "regular",
+        "id": "1538189"
+      },
+      {
+        "name": "Encore (Bangladesh)",
+        "url": "https://genius.com/artists/Encore-bangladesh",
+        "type": "regular",
+        "id": "2938546"
+      },
+      {
+        "name": "Endank Soekamti",
+        "url": "https://genius.com/artists/Endank-soekamti",
+        "type": "regular",
+        "id": "1634998"
+      },
+      {
+        "name": "Endel",
+        "url": "https://genius.com/artists/Endel",
+        "type": "regular",
+        "id": "2140429"
+      },
+      {
+        "name": "Ender (TUR)",
+        "url": "https://genius.com/artists/Ender-tur",
+        "type": "regular",
+        "id": "3339936"
+      },
+      {
+        "name": "Эндшпиль (Endspiel)",
+        "url": "https://genius.com/artists/Endspiel",
+        "type": "regular",
+        "id": "2945076"
+      },
+      {
+        "name": "周國賢 (Endy Chow)",
+        "url": "https://genius.com/artists/Endy-chow",
+        "type": "regular",
+        "id": "1461617"
+      },
+      {
+        "name": "Endzone",
+        "url": "https://genius.com/artists/Endzone",
+        "type": "regular",
+        "id": "2171567"
+      },
+      {
+        "name": "Enej",
+        "url": "https://genius.com/artists/Enej",
+        "type": "regular",
+        "id": "353647"
+      },
+      {
+        "name": "Enes Alper",
+        "url": "https://genius.com/artists/Enes-alper",
+        "type": "regular",
+        "id": "641271"
+      },
+      {
+        "name": "Enes Batur",
+        "url": "https://genius.com/artists/Enes-batur",
+        "type": "regular",
+        "id": "1209831"
+      },
+      {
+        "name": "En Espíritu y en Verdad",
+        "url": "https://genius.com/artists/En-espiritu-y-en-verdad",
+        "type": "regular",
+        "id": "452622"
+      },
+      {
+        "name": "Engelbert Humperdinck",
+        "url": "https://genius.com/artists/Engelbert-humperdinck",
+        "type": "regular",
+        "id": "355244"
+      },
+      {
+        "name": "Engin nursani",
+        "url": "https://genius.com/artists/Engin-nursani",
+        "type": "regular",
+        "id": "480074"
+      },
+      {
+        "name": "England Dan & John Ford Coley",
+        "url": "https://genius.com/artists/England-dan-and-john-ford-coley",
+        "type": "regular",
+        "id": "336865"
+      },
+      {
+        "name": "English Teacher",
+        "url": "https://genius.com/artists/English-teacher",
+        "type": "regular",
+        "id": "2692504"
+      },
+      {
+        "name": "Ñengo Flow",
+        "url": "https://genius.com/artists/Nengo-flow",
+        "type": "regular",
+        "id": "72600"
+      },
+      {
+        "name": "Enigma",
+        "url": "https://genius.com/artists/Enigma",
+        "type": "regular",
+        "id": "47617"
+      },
+      {
+        "name": "Enigma Norteño",
+        "url": "https://genius.com/artists/Enigma-norteno",
+        "type": "regular",
+        "id": "405228"
+      },
+      {
+        "name": "Enima",
+        "url": "https://genius.com/artists/Enima",
+        "type": "regular",
+        "id": "979243"
+      },
+      {
+        "name": "Enina",
+        "url": "https://genius.com/artists/Enina",
+        "type": "regular",
+        "id": "2317491"
+      },
+      {
+        "name": "Eniola Abioye",
+        "url": "https://genius.com/artists/Eniola-abioye",
+        "type": "regular",
+        "id": "1969084"
+      },
+      {
+        "name": "ENIQUE",
+        "url": "https://genius.com/artists/Enique",
+        "type": "regular",
+        "id": "487074"
+      },
+      {
+        "name": "Enisa",
+        "url": "https://genius.com/artists/Enisa",
+        "type": "regular",
+        "id": "1219187"
+      },
+      {
+        "name": "Enjambre",
+        "url": "https://genius.com/artists/Enjambre",
+        "type": "regular",
+        "id": "253284"
+      },
+      {
+        "name": "Enjoy",
+        "url": "https://genius.com/artists/Enjoy",
+        "type": "regular",
+        "id": "1057685"
+      },
+      {
+        "name": "Enjoykin",
+        "url": "https://genius.com/artists/Enjoykin",
+        "type": "regular",
+        "id": "1080794"
+      },
+      {
+        "name": "​элли на маковом поле (enmp)",
+        "url": "https://genius.com/artists/Enmp",
+        "type": "regular",
+        "id": "1930444"
+      },
+      {
+        "name": "EN Music",
+        "url": "https://genius.com/artists/En-music",
+        "type": "regular",
+        "id": "2547226"
+      },
+      {
+        "name": "Enna Alouette",
+        "url": "https://genius.com/artists/Enna-alouette",
+        "type": "regular",
+        "id": "2909105"
+      },
+      {
+        "name": "ENNIO",
+        "url": "https://genius.com/artists/Ennio",
+        "type": "regular",
+        "id": "1870553"
+      },
+      {
+        "name": "Ennio Morricone",
+        "url": "https://genius.com/artists/Ennio-morricone",
+        "type": "regular",
+        "id": "47679"
+      },
+      {
+        "name": "Enny",
+        "url": "https://genius.com/artists/Enny",
+        "type": "regular",
+        "id": "2501658"
+      },
+      {
+        "name": "Ennyman",
+        "url": "https://genius.com/artists/Ennyman",
+        "type": "regular",
+        "id": "4006130"
+      },
+      {
+        "name": "Eno",
+        "url": "https://genius.com/artists/Eno",
+        "type": "regular",
+        "id": "361046"
+      },
+      {
+        "name": "Enol",
+        "url": "https://genius.com/artists/Enol",
+        "type": "regular",
+        "id": "2621649"
+      },
+      {
+        "name": "Enola (Indonesia)",
+        "url": "https://genius.com/artists/Enola-indonesia",
+        "type": "regular",
+        "id": "3113872"
+      },
+      {
+        "name": "Enon",
+        "url": "https://genius.com/artists/Enon",
+        "type": "regular",
+        "id": "46855"
+      },
+      {
+        "name": "Enrico Macias",
+        "url": "https://genius.com/artists/Enrico-macias",
+        "type": "regular",
+        "id": "343672"
+      },
+      {
+        "name": "Enrique Iglesias",
+        "url": "https://genius.com/artists/Enrique-iglesias",
+        "type": "regular",
+        "id": "8362"
+      },
+      {
+        "name": "Ensemble",
+        "url": "https://genius.com/artists/Ensemble",
+        "type": "regular",
+        "id": "106732"
+      },
+      {
+        "name": "Ансабль Александрова (Ensemble Alexandrov )",
+        "url": "https://genius.com/artists/Ensemble-alexandrov",
+        "type": "regular",
+        "id": "2776855"
+      },
+      {
+        "name": "Ensi",
+        "url": "https://genius.com/artists/Ensi",
+        "type": "regular",
+        "id": "42535"
+      },
+      {
+        "name": "Ensiferum",
+        "url": "https://genius.com/artists/Ensiferum",
+        "type": "regular",
+        "id": "193736"
+      },
+      {
+        "name": "Enter Shikari",
+        "url": "https://genius.com/artists/Enter-shikari",
+        "type": "regular",
+        "id": "50734"
+      },
+      {
+        "name": "EnteTainment",
+        "url": "https://genius.com/artists/Entetainment",
+        "type": "regular",
+        "id": "190989"
+      },
+      {
+        "name": "Entombed",
+        "url": "https://genius.com/artists/Entombed",
+        "type": "regular",
+        "id": "328625"
+      },
+      {
+        "name": "ENTYPE",
+        "url": "https://genius.com/artists/Entype",
+        "type": "regular",
+        "id": "2775557"
+      },
+      {
+        "name": "Enuff Z'Nuff",
+        "url": "https://genius.com/artists/Enuff-znuff",
+        "type": "regular",
+        "id": "354264"
+      },
+      {
+        "name": "Enur",
+        "url": "https://genius.com/artists/Enur",
+        "type": "regular",
+        "id": "1799"
+      },
+      {
+        "name": "​enveel",
+        "url": "https://genius.com/artists/Enveel",
+        "type": "regular",
+        "id": "2986433"
+      },
+      {
+        "name": "En Vogue",
+        "url": "https://genius.com/artists/En-vogue",
+        "type": "regular",
+        "id": "8571"
+      },
+      {
+        "name": "Enya",
+        "url": "https://genius.com/artists/Enya",
+        "type": "regular",
+        "id": "8526"
+      },
+      {
+        "name": "enzocerobulto",
+        "url": "https://genius.com/artists/Enzocerobulto",
+        "type": "regular",
+        "id": "3958892"
+      },
+      {
+        "name": "ENZO EBK",
+        "url": "https://genius.com/artists/Enzo-ebk",
+        "type": "regular",
+        "id": "3089412"
+      },
+      {
+        "name": "Enzooo",
+        "url": "https://genius.com/artists/Enzooo",
+        "type": "regular",
+        "id": "4315950"
+      },
+      {
+        "name": "EO",
+        "url": "https://genius.com/artists/Eo",
+        "type": "regular",
+        "id": "1559809"
+      },
+      {
+        "name": "Ephraim Sykes",
+        "url": "https://genius.com/artists/Ephraim-sykes",
+        "type": "regular",
+        "id": "574454"
+      },
+      {
+        "name": "Epica",
+        "url": "https://genius.com/artists/Epica",
+        "type": "regular",
+        "id": "54594"
+      },
+      {
+        "name": "EPIC Ensemble",
+        "url": "https://genius.com/artists/Epic-ensemble",
+        "type": "regular",
+        "id": "3389335"
+      },
+      {
+        "name": "Epicifiedd",
+        "url": "https://genius.com/artists/Epicifiedd",
+        "type": "regular",
+        "id": "4401345"
+      },
+      {
+        "name": "Epic Rap Batles of History",
+        "url": "https://genius.com/artists/Epic-rap-batles-of-history",
+        "type": "regular",
+        "id": "2802417"
+      },
+      {
+        "name": "Epic Rap Battles of History",
+        "url": "https://genius.com/artists/Epic-rap-battles-of-history",
+        "type": "regular",
+        "id": "26092"
+      },
+      {
+        "name": "EpiCure",
+        "url": "https://genius.com/artists/Epicure",
+        "type": "regular",
+        "id": "486260"
+      },
+      {
+        "name": "EPIK HIGH (에픽하이)",
+        "url": "https://genius.com/artists/Epik-high",
+        "type": "regular",
+        "id": "12024"
+      },
+      {
+        "name": "Epinrmnv",
+        "url": "https://genius.com/artists/Epinrmnv",
+        "type": "regular",
+        "id": "2284917"
+      },
+      {
+        "name": "Epis Dym KNF",
+        "url": "https://genius.com/artists/Epis-dym-knf",
+        "type": "regular",
+        "id": "1317266"
+      },
+      {
+        "name": "EPITXME",
+        "url": "https://genius.com/artists/Epitxme",
+        "type": "regular",
+        "id": "4143755"
+      },
+      {
+        "name": "EPMD",
+        "url": "https://genius.com/artists/Epmd",
+        "type": "regular",
+        "id": "503"
+      },
+      {
+        "name": "EpochMusic",
+        "url": "https://genius.com/artists/Epochmusic",
+        "type": "regular",
+        "id": "4384252"
+      },
+      {
+        "name": "Eppu Normaali",
+        "url": "https://genius.com/artists/Eppu-normaali",
+        "type": "regular",
+        "id": "353357"
+      },
+      {
+        "name": "EPR Iyer",
+        "url": "https://genius.com/artists/Epr-iyer",
+        "type": "regular",
+        "id": "2099093"
+      },
+      {
+        "name": "ERA",
+        "url": "https://genius.com/artists/Era",
+        "type": "regular",
+        "id": "39443"
+      },
+      {
+        "name": "Era Istrefi",
+        "url": "https://genius.com/artists/Era-istrefi",
+        "type": "regular",
+        "id": "625575"
+      },
+      {
+        "name": "･ ･－･ ･－ ･･･ ･ －･･ (Erased)",
+        "url": "https://genius.com/artists/Erased",
+        "type": "regular",
+        "id": "2364416"
+      },
+      {
+        "name": "Erasure",
+        "url": "https://genius.com/artists/Erasure",
+        "type": "regular",
+        "id": "121446"
+      },
+      {
+        "name": "ERAY067",
+        "url": "https://genius.com/artists/Eray067",
+        "type": "regular",
+        "id": "3874834"
+      },
+      {
+        "name": "Erda",
+        "url": "https://genius.com/artists/Erda",
+        "type": "regular",
+        "id": "4084449"
+      },
+      {
+        "name": "Erdem Kınay",
+        "url": "https://genius.com/artists/Erdem-knay",
+        "type": "regular",
+        "id": "235783"
+      },
+      {
+        "name": "Erenbauy",
+        "url": "https://genius.com/artists/Erenbauy",
+        "type": "regular",
+        "id": "3814638"
+      },
+      {
+        "name": "Eren Karayılan",
+        "url": "https://genius.com/artists/Eren-karaylan",
+        "type": "regular",
+        "id": "4119175"
+      },
+      {
+        "name": "Erfan",
+        "url": "https://genius.com/artists/Erfan",
+        "type": "regular",
+        "id": "211517"
+      },
+      {
+        "name": "Ergo Pro",
+        "url": "https://genius.com/artists/Ergo-pro",
+        "type": "regular",
+        "id": "1482960"
+      },
+      {
+        "name": "Erica Banks",
+        "url": "https://genius.com/artists/Erica-banks",
+        "type": "regular",
+        "id": "2288894"
+      },
+      {
+        "name": "Erica Campbell",
+        "url": "https://genius.com/artists/Erica-campbell",
+        "type": "regular",
+        "id": "262717"
+      },
+      {
+        "name": "Eric Anderson",
+        "url": "https://genius.com/artists/Eric-anderson",
+        "type": "regular",
+        "id": "687010"
+      },
+      {
+        "name": "Eric Andre",
+        "url": "https://genius.com/artists/Eric-andre",
+        "type": "regular",
+        "id": "519220"
+      },
+      {
+        "name": "Eric B. & Rakim",
+        "url": "https://genius.com/artists/Eric-b-and-rakim",
+        "type": "regular",
+        "id": "161762"
+      },
+      {
+        "name": "Eric Bellinger",
+        "url": "https://genius.com/artists/Eric-bellinger",
+        "type": "regular",
+        "id": "19233"
+      },
+      {
+        "name": "Eric Benét",
+        "url": "https://genius.com/artists/Eric-benet",
+        "type": "regular",
+        "id": "8471"
+      },
+      {
+        "name": "Eric.B.Jr",
+        "url": "https://genius.com/artists/Ericbjr",
+        "type": "regular",
+        "id": "2262616"
+      },
+      {
+        "name": "Eric Bogle",
+        "url": "https://genius.com/artists/Eric-bogle",
+        "type": "regular",
+        "id": "51557"
+      },
+      {
+        "name": "Eric Carmen",
+        "url": "https://genius.com/artists/Eric-carmen",
+        "type": "regular",
+        "id": "358649"
+      },
+      {
+        "name": "周興哲 (Eric Chou)",
+        "url": "https://genius.com/artists/Eric-chou",
+        "type": "regular",
+        "id": "1008653"
+      },
+      {
+        "name": "Eric Church",
+        "url": "https://genius.com/artists/Eric-church",
+        "type": "regular",
+        "id": "32085"
+      },
+      {
+        "name": "ericdoa",
+        "url": "https://genius.com/artists/Ericdoa",
+        "type": "regular",
+        "id": "1590081"
+      },
+      {
+        "name": "Eric Donaldson",
+        "url": "https://genius.com/artists/Eric-donaldson",
+        "type": "regular",
+        "id": "388644"
+      },
+      {
+        "name": "Eric Godlow",
+        "url": "https://genius.com/artists/Eric-godlow",
+        "type": "regular",
+        "id": "1323364"
+      },
+      {
+        "name": "Eric Idle",
+        "url": "https://genius.com/artists/Eric-idle",
+        "type": "regular",
+        "id": "180204"
+      },
+      {
+        "name": "Erick Sermon",
+        "url": "https://genius.com/artists/Erick-sermon",
+        "type": "regular",
+        "id": "3608"
+      },
+      {
+        "name": "Erick the Architect",
+        "url": "https://genius.com/artists/Erick-the-architect",
+        "type": "regular",
+        "id": "17102"
+      },
+      {
+        "name": "Eric Nam",
+        "url": "https://genius.com/artists/Eric-nam",
+        "type": "regular",
+        "id": "977320"
+      },
+      {
+        "name": "Eric Prydz",
+        "url": "https://genius.com/artists/Eric-prydz",
+        "type": "regular",
+        "id": "71873"
+      },
+      {
+        "name": "Eric Reprid",
+        "url": "https://genius.com/artists/Eric-reprid",
+        "type": "regular",
+        "id": "1103887"
+      },
+      {
+        "name": "Ericson",
+        "url": "https://genius.com/artists/Ericson",
+        "type": "regular",
+        "id": "390135"
+      },
+      {
+        "name": "Eric Whitacre",
+        "url": "https://genius.com/artists/Eric-whitacre",
+        "type": "regular",
+        "id": "59555"
+      },
+      {
+        "name": "Erigga",
+        "url": "https://genius.com/artists/Erigga",
+        "type": "regular",
+        "id": "2249165"
+      },
+      {
+        "name": "ERIICE",
+        "url": "https://genius.com/artists/Eriice",
+        "type": "regular",
+        "id": "3429900"
+      },
+      {
+        "name": "Erika de Casier",
+        "url": "https://genius.com/artists/Erika-de-casier",
+        "type": "regular",
+        "id": "1242411"
+      },
+      {
+        "name": "Erika Henningsen",
+        "url": "https://genius.com/artists/Erika-henningsen",
+        "type": "regular",
+        "id": "1441180"
+      },
+      {
+        "name": "Erika Isac",
+        "url": "https://genius.com/artists/Erika-isac",
+        "type": "regular",
+        "id": "1858500"
+      },
+      {
+        "name": "Эрика Лундмоен (Erika Lundmoen)",
+        "url": "https://genius.com/artists/Erika-lundmoen",
+        "type": "regular",
+        "id": "1555330"
+      },
+      {
+        "name": "Erika Vikman",
+        "url": "https://genius.com/artists/Erika-vikman",
+        "type": "regular",
+        "id": "1774445"
+      },
+      {
+        "name": "Erik Santos",
+        "url": "https://genius.com/artists/Erik-santos",
+        "type": "regular",
+        "id": "381424"
+      },
+      {
+        "name": "Erin",
+        "url": "https://genius.com/artists/Erin",
+        "type": "regular",
+        "id": "41414"
+      },
+      {
+        "name": "Erin B.",
+        "url": "https://genius.com/artists/Erin-b",
+        "type": "regular",
+        "id": "1453897"
+      },
+      {
+        "name": "Erin Kinsey",
+        "url": "https://genius.com/artists/Erin-kinsey",
+        "type": "regular",
+        "id": "2837091"
+      },
+      {
+        "name": "Erin LeCount",
+        "url": "https://genius.com/artists/Erin-lecount",
+        "type": "regular",
+        "id": "2834542"
+      },
+      {
+        "name": "Eripe",
+        "url": "https://genius.com/artists/Eripe",
+        "type": "regular",
+        "id": "32607"
+      },
+      {
+        "name": "Erkan Oğur",
+        "url": "https://genius.com/artists/Erkan-ogur",
+        "type": "regular",
+        "id": "530558"
+      },
+      {
+        "name": "Еркеш Хасен (Erkesh Khasen)",
+        "url": "https://genius.com/artists/Erkesh-khasen",
+        "type": "regular",
+        "id": "3449062"
+      },
+      {
+        "name": "Erkin Koray",
+        "url": "https://genius.com/artists/Erkin-koray",
+        "type": "regular",
+        "id": "344848"
+      },
+      {
+        "name": "Ermal Meta",
+        "url": "https://genius.com/artists/Ermal-meta",
+        "type": "regular",
+        "id": "458055"
+      },
+      {
+        "name": "Ернан Амандық (Ernar Amandyq)",
+        "url": "https://genius.com/artists/Ernar-amandyq",
+        "type": "regular",
+        "id": "4318726"
+      },
+      {
+        "name": "ERNEST",
+        "url": "https://genius.com/artists/Ernest",
+        "type": "regular",
+        "id": "1223544"
+      },
+      {
+        "name": "Эрнест Меркель (Ernest Merkel)",
+        "url": "https://genius.com/artists/Ernest-merkel",
+        "type": "regular",
+        "id": "2060312"
+      },
+      {
+        "name": "Ernesto De Curtis",
+        "url": "https://genius.com/artists/Ernesto-de-curtis",
+        "type": "regular",
+        "id": "1675566"
+      },
+      {
+        "name": "Ernest Tubb",
+        "url": "https://genius.com/artists/Ernest-tubb",
+        "type": "regular",
+        "id": "288092"
+      },
+      {
+        "name": "Ernia",
+        "url": "https://genius.com/artists/Ernia",
+        "type": "regular",
+        "id": "652529"
+      },
+      {
+        "name": "Ernie Haase & Signature Sound",
+        "url": "https://genius.com/artists/Ernie-haase-and-signature-sound",
+        "type": "regular",
+        "id": "376150"
+      },
+      {
+        "name": "Ernie Sabella",
+        "url": "https://genius.com/artists/Ernie-sabella",
+        "type": "regular",
+        "id": "158566"
+      },
+      {
+        "name": "Ernst Busch",
+        "url": "https://genius.com/artists/Ernst-busch",
+        "type": "regular",
+        "id": "360578"
+      },
+      {
+        "name": "Ero",
+        "url": "https://genius.com/artists/Ero",
+        "type": "regular",
+        "id": "2619547"
+      },
+      {
+        "name": "Erol Evgin",
+        "url": "https://genius.com/artists/Erol-evgin",
+        "type": "regular",
+        "id": "375955"
+      },
+      {
+        "name": "Eros Ramazzotti",
+        "url": "https://genius.com/artists/Eros-ramazzotti",
+        "type": "regular",
+        "id": "344967"
+      },
+      {
+        "name": "E-rotic",
+        "url": "https://genius.com/artists/E-rotic",
+        "type": "regular",
+        "id": "157658"
+      },
+      {
+        "name": "ERRA",
+        "url": "https://genius.com/artists/Erra",
+        "type": "regular",
+        "id": "131473"
+      },
+      {
+        "name": "Erreway",
+        "url": "https://genius.com/artists/Erreway",
+        "type": "regular",
+        "id": "344461"
+      },
+      {
+        "name": "Errol Allen",
+        "url": "https://genius.com/artists/Errol-allen",
+        "type": "regular",
+        "id": "1592611"
+      },
+      {
+        "name": "Erste Allgemeine Verunsicherung",
+        "url": "https://genius.com/artists/Erste-allgemeine-verunsicherung",
+        "type": "regular",
+        "id": "108738"
+      },
+      {
+        "name": "Eruption",
+        "url": "https://genius.com/artists/Eruption",
+        "type": "regular",
+        "id": "384986"
+      },
+      {
+        "name": "Erutan",
+        "url": "https://genius.com/artists/Erutan",
+        "type": "regular",
+        "id": "452464"
+      },
+      {
+        "name": "Erykah Badu",
+        "url": "https://genius.com/artists/Erykah-badu",
+        "type": "regular",
+        "id": "909"
+      },
+      {
+        "name": "Eryk Moczko",
+        "url": "https://genius.com/artists/Eryk-moczko",
+        "type": "regular",
+        "id": "1958551"
+      },
+      {
+        "name": "Esau Ortiz",
+        "url": "https://genius.com/artists/Esau-ortiz",
+        "type": "regular",
+        "id": "3875634"
+      },
+      {
+        "name": "Escape The Fate",
+        "url": "https://genius.com/artists/Escape-the-fate",
+        "type": "regular",
+        "id": "22356"
+      },
+      {
+        "name": "Эсчевский (Eschevskii)",
+        "url": "https://genius.com/artists/Eschevskii",
+        "type": "regular",
+        "id": "1492081"
+      },
+      {
+        "name": "Escomar",
+        "url": "https://genius.com/artists/Escomar",
+        "type": "regular",
+        "id": "2648139"
+      },
+      {
+        "name": "EsDeeKid",
+        "url": "https://genius.com/artists/Esdeekid",
+        "type": "regular",
+        "id": "3996876"
+      },
+      {
+        "name": "E.S.G. (TX)",
+        "url": "https://genius.com/artists/Esg-tx",
+        "type": "regular",
+        "id": "3630"
+      },
+      {
+        "name": "Esham",
+        "url": "https://genius.com/artists/Esham",
+        "type": "regular",
+        "id": "1608"
+      },
+      {
+        "name": "Esha Tewari",
+        "url": "https://genius.com/artists/Esha-tewari",
+        "type": "regular",
+        "id": "3822509"
+      },
+      {
+        "name": "Esin İRİS",
+        "url": "https://genius.com/artists/Esin-iris",
+        "type": "regular",
+        "id": "1025247"
+      },
+      {
+        "name": "Eskorbuto",
+        "url": "https://genius.com/artists/Eskorbuto",
+        "type": "regular",
+        "id": "360115"
+      },
+      {
+        "name": "Eslabon Armado",
+        "url": "https://genius.com/artists/Eslabon-armado",
+        "type": "regular",
+        "id": "2212629"
+      },
+      {
+        "name": "Eslam Kabonga - إسلام كابونجا",
+        "url": "https://genius.com/artists/Eslam-kabonga",
+        "type": "regular",
+        "id": "2920276"
+      },
+      {
+        "name": "Esperanza Spalding",
+        "url": "https://genius.com/artists/Esperanza-spalding",
+        "type": "regular",
+        "id": "19450"
+      },
+      {
+        "name": "Espinoza Paz",
+        "url": "https://genius.com/artists/Espinoza-paz",
+        "type": "regular",
+        "id": "360857"
+      },
+      {
+        "name": "Essam Sasa - عصام صاصا",
+        "url": "https://genius.com/artists/Essam-sasa",
+        "type": "regular",
+        "id": "2920273"
+      },
+      {
+        "name": "Essential Worship",
+        "url": "https://genius.com/artists/Essential-worship",
+        "type": "regular",
+        "id": "1126992"
+      },
+      {
+        "name": "Estee Nack",
+        "url": "https://genius.com/artists/Estee-nack",
+        "type": "regular",
+        "id": "24027"
+      },
+      {
+        "name": "Estelle",
+        "url": "https://genius.com/artists/Estelle",
+        "type": "regular",
+        "id": "1340"
+      },
+      {
+        "name": "Ester Dean",
+        "url": "https://genius.com/artists/Ester-dean",
+        "type": "regular",
+        "id": "7672"
+      },
+      {
+        "name": "Estevan Plazola",
+        "url": "https://genius.com/artists/Estevan-plazola",
+        "type": "regular",
+        "id": "2720811"
+      },
+      {
+        "name": "EST Gee",
+        "url": "https://genius.com/artists/Est-gee",
+        "type": "regular",
+        "id": "1780510"
+      },
+      {
+        "name": "Esther Graf",
+        "url": "https://genius.com/artists/Esther-graf",
+        "type": "regular",
+        "id": "1834362"
+      },
+      {
+        "name": "虞书欣 (Esther Yu)",
+        "url": "https://genius.com/artists/Esther-yu",
+        "type": "regular",
+        "id": "2614434"
+      },
+      {
+        "name": "Estopa",
+        "url": "https://genius.com/artists/Estopa",
+        "type": "regular",
+        "id": "358146"
+      },
+      {
+        "name": "Etana",
+        "url": "https://genius.com/artists/Etana",
+        "type": "regular",
+        "id": "16276"
+      },
+      {
+        "name": "Eternal Gosh!",
+        "url": "https://genius.com/artists/Eternal-gosh",
+        "type": "regular",
+        "id": "1012931"
+      },
+      {
+        "name": "Etern.all",
+        "url": "https://genius.com/artists/Eternall",
+        "type": "regular",
+        "id": "2196368"
+      },
+      {
+        "name": "Eternxlkz",
+        "url": "https://genius.com/artists/Eternxlkz",
+        "type": "regular",
+        "id": "3826107"
+      },
+      {
+        "name": "Etham",
+        "url": "https://genius.com/artists/Etham",
+        "type": "regular",
+        "id": "614070"
+      },
+      {
+        "name": "Ethan Bortnick",
+        "url": "https://genius.com/artists/Ethan-bortnick",
+        "type": "regular",
+        "id": "1397253"
+      },
+      {
+        "name": "Ethan Low",
+        "url": "https://genius.com/artists/Ethan-low",
+        "type": "regular",
+        "id": "2586718"
+      },
+      {
+        "name": "Ethan Regan",
+        "url": "https://genius.com/artists/Ethan-regan",
+        "type": "regular",
+        "id": "1344311"
+      },
+      {
+        "name": "Ethel Merman",
+        "url": "https://genius.com/artists/Ethel-merman",
+        "type": "regular",
+        "id": "358004"
+      },
+      {
+        "name": "Ethereal",
+        "url": "https://genius.com/artists/Ethereal",
+        "type": "regular",
+        "id": "56055"
+      },
+      {
+        "name": "Ethismos",
+        "url": "https://genius.com/artists/Ethismos",
+        "type": "regular",
+        "id": "2042851"
+      },
+      {
+        "name": "EthoSuave",
+        "url": "https://genius.com/artists/Ethosuave",
+        "type": "regular",
+        "id": "3732244"
+      },
+      {
+        "name": "ET (HRV)",
+        "url": "https://genius.com/artists/Et-hrv",
+        "type": "regular",
+        "id": "3476638"
+      },
+      {
+        "name": "Etnon",
+        "url": "https://genius.com/artists/Etnon",
+        "type": "regular",
+        "id": "150137"
+      },
+      {
+        "name": "Etta",
+        "url": "https://genius.com/artists/Etta",
+        "type": "regular",
+        "id": "1500875"
+      },
+      {
+        "name": "Etta James",
+        "url": "https://genius.com/artists/Etta-james",
+        "type": "regular",
+        "id": "5093"
+      },
+      {
+        "name": "Etta Marcus",
+        "url": "https://genius.com/artists/Etta-marcus",
+        "type": "regular",
+        "id": "2906998"
+      },
+      {
+        "name": "E-Type",
+        "url": "https://genius.com/artists/E-type",
+        "type": "regular",
+        "id": "357140"
+      },
+      {
+        "name": "Eugenio in Via Di Gioia",
+        "url": "https://genius.com/artists/Eugenio-in-via-di-gioia",
+        "type": "regular",
+        "id": "848171"
+      },
+      {
+        "name": "Eugy Official",
+        "url": "https://genius.com/artists/Eugy-official",
+        "type": "regular",
+        "id": "671424"
+      },
+      {
+        "name": "Eulito Doinog",
+        "url": "https://genius.com/artists/Eulito-doinog",
+        "type": "regular",
+        "id": "1290489"
+      },
+      {
+        "name": "euro91",
+        "url": "https://genius.com/artists/Euro91",
+        "type": "regular",
+        "id": "3954535"
+      },
+      {
+        "name": "Europe",
+        "url": "https://genius.com/artists/Europe",
+        "type": "regular",
+        "id": "12126"
+      },
+      {
+        "name": "Europeo.ai",
+        "url": "https://genius.com/artists/Europeoai",
+        "type": "regular",
+        "id": "4180747"
+      },
+      {
+        "name": "Eurothug",
+        "url": "https://genius.com/artists/Eurothug",
+        "type": "regular",
+        "id": "3555180"
+      },
+      {
+        "name": "Eurythmics",
+        "url": "https://genius.com/artists/Eurythmics",
+        "type": "regular",
+        "id": "829"
+      },
+      {
+        "name": "Euskoprincess",
+        "url": "https://genius.com/artists/Euskoprincess",
+        "type": "regular",
+        "id": "3181548"
+      },
+      {
+        "name": "Eva Cassidy",
+        "url": "https://genius.com/artists/Eva-cassidy",
+        "type": "regular",
+        "id": "142418"
+      },
+      {
+        "name": "Evan Craft",
+        "url": "https://genius.com/artists/Evan-craft",
+        "type": "regular",
+        "id": "453758"
+      },
+      {
+        "name": "Evan Fong",
+        "url": "https://genius.com/artists/Evan-fong",
+        "type": "regular",
+        "id": "4277068"
+      },
+      {
+        "name": "Evangelia",
+        "url": "https://genius.com/artists/Evangelia",
+        "type": "regular",
+        "id": "118597"
+      },
+      {
+        "name": "Evangeline (USA)",
+        "url": "https://genius.com/artists/Evangeline-usa",
+        "type": "regular",
+        "id": "3546378"
+      },
+      {
+        "name": "Evan Honer",
+        "url": "https://genius.com/artists/Evan-honer",
+        "type": "regular",
+        "id": "3259074"
+      },
+      {
+        "name": "Eva Noblezada",
+        "url": "https://genius.com/artists/Eva-noblezada",
+        "type": "regular",
+        "id": "1022682"
+      },
+      {
+        "name": "Evan Pak",
+        "url": "https://genius.com/artists/Evan-pak",
+        "type": "regular",
+        "id": "4194224"
+      },
+      {
+        "name": "Evan Rachel Wood",
+        "url": "https://genius.com/artists/Evan-rachel-wood",
+        "type": "regular",
+        "id": "112087"
+      },
+      {
+        "name": "Evan Todd",
+        "url": "https://genius.com/artists/Evan-todd",
+        "type": "regular",
+        "id": "634907"
+      },
+      {
+        "name": "Eva Simons",
+        "url": "https://genius.com/artists/Eva-simons",
+        "type": "regular",
+        "id": "14042"
+      },
+      {
+        "name": "Eva Timush",
+        "url": "https://genius.com/artists/Eva-timush",
+        "type": "regular",
+        "id": "2585485"
+      },
+      {
+        "name": "Ева Власова (Eva Vlasova)",
+        "url": "https://genius.com/artists/Eva-vlasova",
+        "type": "regular",
+        "id": "2591551"
+      },
+      {
+        "name": "Eve",
+        "url": "https://genius.com/artists/Eve",
+        "type": "regular",
+        "id": "458"
+      },
+      {
+        "name": "Eve 6",
+        "url": "https://genius.com/artists/Eve-6",
+        "type": "regular",
+        "id": "59608"
+      },
+      {
+        "name": "Eve (JPN)",
+        "url": "https://genius.com/artists/Eve-jpn",
+        "type": "regular",
+        "id": "1992030"
+      },
+      {
+        "name": "Evelina",
+        "url": "https://genius.com/artists/Evelina",
+        "type": "regular",
+        "id": "988147"
+      },
+      {
+        "name": "Evelyn \"Champagne\" King",
+        "url": "https://genius.com/artists/Evelyn-champagne-king",
+        "type": "regular",
+        "id": "153739"
+      },
+      {
+        "name": "Evelyn Evelyn",
+        "url": "https://genius.com/artists/Evelyn-evelyn",
+        "type": "regular",
+        "id": "371259"
+      },
+      {
+        "name": "EVEN CUTE",
+        "url": "https://genius.com/artists/Even-cute",
+        "type": "regular",
+        "id": "3611790"
+      },
+      {
+        "name": "Ever After High",
+        "url": "https://genius.com/artists/Ever-after-high",
+        "type": "regular",
+        "id": "1596815"
+      },
+      {
+        "name": "Everclear",
+        "url": "https://genius.com/artists/Everclear",
+        "type": "regular",
+        "id": "23998"
+      },
+      {
+        "name": "Everlast",
+        "url": "https://genius.com/artists/Everlast",
+        "type": "regular",
+        "id": "266"
+      },
+      {
+        "name": "Evern",
+        "url": "https://genius.com/artists/Evern",
+        "type": "regular",
+        "id": "4403123"
+      },
+      {
+        "name": "Evert Taube",
+        "url": "https://genius.com/artists/Evert-taube",
+        "type": "regular",
+        "id": "369500"
+      },
+      {
+        "name": "Everybody Loves an Outlaw",
+        "url": "https://genius.com/artists/Everybody-loves-an-outlaw",
+        "type": "regular",
+        "id": "2285864"
+      },
+      {
+        "name": "Everybody's Worried About Owen",
+        "url": "https://genius.com/artists/Everybodys-worried-about-owen",
+        "type": "regular",
+        "id": "2786823"
+      },
+      {
+        "name": "Every Nation Music",
+        "url": "https://genius.com/artists/Every-nation-music",
+        "type": "regular",
+        "id": "452404"
+      },
+      {
+        "name": "Everyone Asked About You",
+        "url": "https://genius.com/artists/Everyone-asked-about-you",
+        "type": "regular",
+        "id": "673040"
+      },
+      {
+        "name": "Everything But The Girl",
+        "url": "https://genius.com/artists/Everything-but-the-girl",
+        "type": "regular",
+        "id": "56561"
+      },
+      {
+        "name": "Everything Everything",
+        "url": "https://genius.com/artists/Everything-everything",
+        "type": "regular",
+        "id": "104263"
+      },
+      {
+        "name": "Every Time I Die",
+        "url": "https://genius.com/artists/Every-time-i-die",
+        "type": "regular",
+        "id": "182461"
+      },
+      {
+        "name": "Eves Laurent",
+        "url": "https://genius.com/artists/Eves-laurent",
+        "type": "regular",
+        "id": "1118108"
+      },
+      {
+        "name": "Женя Меркель (Evgenia Merkel)",
+        "url": "https://genius.com/artists/Evgenia-merkel",
+        "type": "regular",
+        "id": "2194611"
+      },
+      {
+        "name": "Евгения Ранда (Evgenia Randa)",
+        "url": "https://genius.com/artists/Evgenia-randa",
+        "type": "regular",
+        "id": "3864270"
+      },
+      {
+        "name": "Евгения Отрадная (Evgeniya Otrandaya)",
+        "url": "https://genius.com/artists/Evgeniya-otrandaya",
+        "type": "regular",
+        "id": "2434514"
+      },
+      {
+        "name": "Евгений Шварц (Evgeny Shvarts)",
+        "url": "https://genius.com/artists/Evgeny-shvarts",
+        "type": "regular",
+        "id": "4319906"
+      },
+      {
+        "name": "Eviatar Banai - אביתר בנאי",
+        "url": "https://genius.com/artists/Eviatar-banai",
+        "type": "regular",
+        "id": "1048673"
+      },
+      {
+        "name": "Evidence",
+        "url": "https://genius.com/artists/Evidence",
+        "type": "regular",
+        "id": "1022"
+      },
+      {
+        "name": "Evil Anvil",
+        "url": "https://genius.com/artists/Evil-anvil",
+        "type": "regular",
+        "id": "3629315"
+      },
+      {
+        "name": "evilgiane",
+        "url": "https://genius.com/artists/Evilgiane",
+        "type": "regular",
+        "id": "1437503"
+      },
+      {
+        "name": "Evo",
+        "url": "https://genius.com/artists/Evo",
+        "type": "regular",
+        "id": "43608"
+      },
+      {
+        "name": "EVO (Label)",
+        "url": "https://genius.com/artists/Evo-label",
+        "type": "regular",
+        "id": "4250416"
+      },
+      {
+        "name": "ЭВСЭ (EVSE)",
+        "url": "https://genius.com/artists/Evse",
+        "type": "regular",
+        "id": "3866612"
+      },
+      {
+        "name": "Evulva",
+        "url": "https://genius.com/artists/Evulva",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Şevval Sam",
+        "url": "https://genius.com/artists/Sevval-sam",
+        "type": "regular",
+        "id": "453654"
+      },
+      {
+        "name": "Ewan MacColl",
+        "url": "https://genius.com/artists/Ewan-maccoll",
+        "type": "regular",
+        "id": "375091"
+      },
+      {
+        "name": "Ewan McGregor",
+        "url": "https://genius.com/artists/Ewan-mcgregor",
+        "type": "regular",
+        "id": "74835"
+      },
+      {
+        "name": "E-Wuu",
+        "url": "https://genius.com/artists/E-wuu",
+        "type": "regular",
+        "id": "2983252"
+      },
+      {
+        "name": "ExactlySandwich",
+        "url": "https://genius.com/artists/Exactlysandwich",
+        "type": "regular",
+        "id": "4048726"
+      },
+      {
+        "name": "Example",
+        "url": "https://genius.com/artists/Example",
+        "type": "regular",
+        "id": "1184"
+      },
+      {
+        "name": "Ex Battalion",
+        "url": "https://genius.com/artists/Ex-battalion",
+        "type": "regular",
+        "id": "1226564"
+      },
+      {
+        "name": "Excision",
+        "url": "https://genius.com/artists/Excision",
+        "type": "regular",
+        "id": "53027"
+      },
+      {
+        "name": "Exile",
+        "url": "https://genius.com/artists/Exile",
+        "type": "regular",
+        "id": "15952"
+      },
+      {
+        "name": "Exile Music",
+        "url": "https://genius.com/artists/Exile-music",
+        "type": "regular",
+        "id": "2330030"
+      },
+      {
+        "name": "Exists",
+        "url": "https://genius.com/artists/Exists",
+        "type": "regular",
+        "id": "480993"
+      },
+      {
+        "name": "EXO",
+        "url": "https://genius.com/artists/Exo",
+        "type": "regular",
+        "id": "67399"
+      },
+      {
+        "name": "Exodus",
+        "url": "https://genius.com/artists/Exodus",
+        "type": "regular",
+        "id": "66511"
+      },
+      {
+        "name": "The Exploited",
+        "url": "https://genius.com/artists/The-exploited",
+        "type": "regular",
+        "id": "356008"
+      },
+      {
+        "name": "EX Team 74",
+        "url": "https://genius.com/artists/Ex-team-74",
+        "type": "regular",
+        "id": "4306920"
+      },
+      {
+        "name": "Extreme",
+        "url": "https://genius.com/artists/Extreme",
+        "type": "regular",
+        "id": "3221"
+      },
+      {
+        "name": "Extreme Music",
+        "url": "https://genius.com/artists/Extreme-music",
+        "type": "regular",
+        "id": "674899"
+      },
+      {
+        "name": "Extremoduro",
+        "url": "https://genius.com/artists/Extremoduro",
+        "type": "regular",
+        "id": "334256"
+      },
+      {
+        "name": "Eyal Golan - אייל גולן",
+        "url": "https://genius.com/artists/Eyal-golan",
+        "type": "regular",
+        "id": "1081106"
+      },
+      {
+        "name": "Eycin",
+        "url": "https://genius.com/artists/Eycin",
+        "type": "regular",
+        "id": "3267353"
+      },
+      {
+        "name": "​eyden",
+        "url": "https://genius.com/artists/Eyden",
+        "type": "regular",
+        "id": "2951713"
+      },
+      {
+        "name": "Eydie Gormé",
+        "url": "https://genius.com/artists/Eydie-gorme",
+        "type": "regular",
+        "id": "404861"
+      },
+      {
+        "name": "Eyedea & Abilities",
+        "url": "https://genius.com/artists/Eyedea-and-abilities",
+        "type": "regular",
+        "id": "1203"
+      },
+      {
+        "name": "Eyedress",
+        "url": "https://genius.com/artists/Eyedress",
+        "type": "regular",
+        "id": "72110"
+      },
+      {
+        "name": "Eyehategod",
+        "url": "https://genius.com/artists/Eyehategod",
+        "type": "regular",
+        "id": "207708"
+      },
+      {
+        "name": "Эйфория (Eyforiya)",
+        "url": "https://genius.com/artists/Eyforiya",
+        "type": "regular",
+        "id": "2888183"
+      },
+      {
+        "name": "Eylem Aktaş",
+        "url": "https://genius.com/artists/Eylem-aktas",
+        "type": "regular",
+        "id": "3195512"
+      },
+      {
+        "name": "Eypio",
+        "url": "https://genius.com/artists/Eypio",
+        "type": "regular",
+        "id": "11408"
+      },
+      {
+        "name": "Eyyub Yaqubov",
+        "url": "https://genius.com/artists/Eyyub-yaqubov",
+        "type": "regular",
+        "id": "1723793"
+      },
+      {
+        "name": "eZburger401",
+        "url": "https://genius.com/artists/Ezburger401",
+        "type": "regular",
+        "id": "4417944"
+      },
+      {
+        "name": "EZG",
+        "url": "https://genius.com/artists/Ezg",
+        "type": "regular",
+        "id": "457886"
+      },
+      {
+        "name": "Ezginin Günlüğü",
+        "url": "https://genius.com/artists/Ezginin-gunlugu",
+        "type": "regular",
+        "id": "480951"
+      },
+      {
+        "name": "Ezhel",
+        "url": "https://genius.com/artists/Ezhel",
+        "type": "regular",
+        "id": "195369"
+      },
+      {
+        "name": "Ежемесячные (Ezhemesyachnye)",
+        "url": "https://genius.com/artists/Ezhemesyachnye",
+        "type": "regular",
+        "id": "1205894"
+      },
+      {
+        "name": "Ez Mil",
+        "url": "https://genius.com/artists/Ez-mil",
+        "type": "regular",
+        "id": "1747291"
+      },
+      {
+        "name": "Řezník",
+        "url": "https://genius.com/artists/Reznik",
+        "type": "regular",
+        "id": "156215"
+      },
+      {
+        "name": "Ezra Band",
+        "url": "https://genius.com/artists/Ezra-band",
+        "type": "regular",
+        "id": "1176141"
+      },
+      {
+        "name": "Ezra Bell",
+        "url": "https://genius.com/artists/Ezra-bell",
+        "type": "regular",
+        "id": "1066644"
+      },
+      {
+        "name": "Ezra Collective",
+        "url": "https://genius.com/artists/Ezra-collective",
+        "type": "regular",
+        "id": "1571685"
+      },
+      {
+        "name": "Ezra Furman",
+        "url": "https://genius.com/artists/Ezra-furman",
+        "type": "regular",
+        "id": "88909"
+      },
+      {
+        "name": "EZVIT 810",
+        "url": "https://genius.com/artists/Ezvit-810",
+        "type": "regular",
+        "id": "2649352"
+      },
+      {
+        "name": "Ezya",
+        "url": "https://genius.com/artists/Ezya",
+        "type": "regular",
+        "id": "3968313"
+      },
+      {
+        "name": "Ezzythecat",
+        "url": "https://genius.com/artists/Ezzythecat",
+        "type": "regular",
+        "id": "3967123"
+      }
+    ]
+  }
+}

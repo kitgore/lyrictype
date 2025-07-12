@@ -1,0 +1,4513 @@
+{
+  "letter": "G",
+  "timestamp": "2025-07-11T08:27:56.233Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Genius",
+        "url": "https://genius.com/artists/Genius",
+        "type": "popular",
+        "id": "204611"
+      },
+      {
+        "name": "Genius Brasil Traduções",
+        "url": "https://genius.com/artists/Genius-brasil-traducoes",
+        "type": "popular",
+        "id": "210448"
+      },
+      {
+        "name": "Genius Deutsche Übersetzungen",
+        "url": "https://genius.com/artists/Genius-deutsche-ubersetzungen",
+        "type": "popular",
+        "id": "1799569"
+      },
+      {
+        "name": "Genius English Translations",
+        "url": "https://genius.com/artists/Genius-english-translations",
+        "type": "popular",
+        "id": "196943"
+      },
+      {
+        "name": "Genius Romanizations",
+        "url": "https://genius.com/artists/Genius-romanizations",
+        "type": "popular",
+        "id": "1507735"
+      },
+      {
+        "name": "Genius Russian Translations (Русский перевод)",
+        "url": "https://genius.com/artists/Genius-russian-translations",
+        "type": "popular",
+        "id": "498402"
+      },
+      {
+        "name": "Genius Traducciones al Español",
+        "url": "https://genius.com/artists/Genius-traducciones-al-espanol",
+        "type": "popular",
+        "id": "1376254"
+      },
+      {
+        "name": "Genius traductions françaises",
+        "url": "https://genius.com/artists/Genius-traductions-francaises",
+        "type": "popular",
+        "id": "140856"
+      },
+      {
+        "name": "Genius Traduzioni Italiane",
+        "url": "https://genius.com/artists/Genius-traduzioni-italiane",
+        "type": "popular",
+        "id": "1562857"
+      },
+      {
+        "name": "Genius Türkçe Çeviriler",
+        "url": "https://genius.com/artists/Genius-turkce-ceviriler",
+        "type": "popular",
+        "id": "569121"
+      },
+      {
+        "name": "Genius Ukrainian Translations (Українські переклади)",
+        "url": "https://genius.com/artists/Genius-ukrainian-translations",
+        "type": "popular",
+        "id": "1872193"
+      },
+      {
+        "name": "George Michael",
+        "url": "https://genius.com/artists/George-michael",
+        "type": "popular",
+        "id": "35252"
+      },
+      {
+        "name": "G Herbo",
+        "url": "https://genius.com/artists/G-herbo",
+        "type": "popular",
+        "id": "32397"
+      },
+      {
+        "name": "Ghost",
+        "url": "https://genius.com/artists/Ghost",
+        "type": "popular",
+        "id": "56072"
+      },
+      {
+        "name": "GloRilla",
+        "url": "https://genius.com/artists/Glorilla",
+        "type": "popular",
+        "id": "2991477"
+      },
+      {
+        "name": "Gorillaz",
+        "url": "https://genius.com/artists/Gorillaz",
+        "type": "popular",
+        "id": "860"
+      },
+      {
+        "name": "Gracie Abrams",
+        "url": "https://genius.com/artists/Gracie-abrams",
+        "type": "popular",
+        "id": "631746"
+      },
+      {
+        "name": "Green Day",
+        "url": "https://genius.com/artists/Green-day",
+        "type": "popular",
+        "id": "632"
+      },
+      {
+        "name": "Gunna",
+        "url": "https://genius.com/artists/Gunna",
+        "type": "popular",
+        "id": "91049"
+      },
+      {
+        "name": "Guns N' Roses",
+        "url": "https://genius.com/artists/Guns-n-roses",
+        "type": "popular",
+        "id": "637"
+      }
+    ],
+    "regular": [
+      {
+        "name": "G1nter",
+        "url": "https://genius.com/artists/G1nter",
+        "type": "regular",
+        "id": "4383888"
+      },
+      {
+        "name": "G1ocatore",
+        "url": "https://genius.com/artists/G1ocatore",
+        "type": "regular",
+        "id": "2967304"
+      },
+      {
+        "name": "G22",
+        "url": "https://genius.com/artists/G22",
+        "type": "regular",
+        "id": "3066163"
+      },
+      {
+        "name": "G40 (Rap)",
+        "url": "https://genius.com/artists/G40-rap",
+        "type": "regular",
+        "id": "3594162"
+      },
+      {
+        "name": "Gab3",
+        "url": "https://genius.com/artists/Gab3",
+        "type": "regular",
+        "id": "1043016"
+      },
+      {
+        "name": "Gabbie Hanna",
+        "url": "https://genius.com/artists/Gabbie-hanna",
+        "type": "regular",
+        "id": "1006413"
+      },
+      {
+        "name": "Gabb MC",
+        "url": "https://genius.com/artists/Gabb-mc",
+        "type": "regular",
+        "id": "3083183"
+      },
+      {
+        "name": "Gabby Barrett",
+        "url": "https://genius.com/artists/Gabby-barrett",
+        "type": "regular",
+        "id": "1478979"
+      },
+      {
+        "name": "​gabby start",
+        "url": "https://genius.com/artists/Gabby-start",
+        "type": "regular",
+        "id": "2921155"
+      },
+      {
+        "name": "Gabito Ballesteros",
+        "url": "https://genius.com/artists/Gabito-ballesteros",
+        "type": "regular",
+        "id": "3301921"
+      },
+      {
+        "name": "Gable Price and Friends",
+        "url": "https://genius.com/artists/Gable-price-and-friends",
+        "type": "regular",
+        "id": "1719304"
+      },
+      {
+        "name": "Gaboro",
+        "url": "https://genius.com/artists/Gaboro",
+        "type": "regular",
+        "id": "3185497"
+      },
+      {
+        "name": "Gabriela Bee",
+        "url": "https://genius.com/artists/Gabriela-bee",
+        "type": "regular",
+        "id": "1396534"
+      },
+      {
+        "name": "Gabriela Richardson",
+        "url": "https://genius.com/artists/Gabriela-richardson",
+        "type": "regular",
+        "id": "616079"
+      },
+      {
+        "name": "Gabriel Drago",
+        "url": "https://genius.com/artists/Gabriel-drago",
+        "type": "regular",
+        "id": "2009653"
+      },
+      {
+        "name": "Gabriel Fauré",
+        "url": "https://genius.com/artists/Gabriel-faure",
+        "type": "regular",
+        "id": "369232"
+      },
+      {
+        "name": "Gabriella Flores",
+        "url": "https://genius.com/artists/Gabriella-flores",
+        "type": "regular",
+        "id": "4319889"
+      },
+      {
+        "name": "Gabriella Pizzolo",
+        "url": "https://genius.com/artists/Gabriella-pizzolo",
+        "type": "regular",
+        "id": "1853749"
+      },
+      {
+        "name": "Gabriella Rose",
+        "url": "https://genius.com/artists/Gabriella-rose",
+        "type": "regular",
+        "id": "1698295"
+      },
+      {
+        "name": "Gabrielle",
+        "url": "https://genius.com/artists/Gabrielle",
+        "type": "regular",
+        "id": "78421"
+      },
+      {
+        "name": "Gabrielle Aplin",
+        "url": "https://genius.com/artists/Gabrielle-aplin",
+        "type": "regular",
+        "id": "50879"
+      },
+      {
+        "name": "Gabrielle (NOR)",
+        "url": "https://genius.com/artists/Gabrielle-nor",
+        "type": "regular",
+        "id": "26269"
+      },
+      {
+        "name": "Gabrielė Vilkickytė",
+        "url": "https://genius.com/artists/Gabriele-vilkickyte",
+        "type": "regular",
+        "id": "2293430"
+      },
+      {
+        "name": "Gabry Ponte",
+        "url": "https://genius.com/artists/Gabry-ponte",
+        "type": "regular",
+        "id": "45292"
+      },
+      {
+        "name": "Gabzy",
+        "url": "https://genius.com/artists/Gabzy",
+        "type": "regular",
+        "id": "1320806"
+      },
+      {
+        "name": "GACKT",
+        "url": "https://genius.com/artists/Gackt",
+        "type": "regular",
+        "id": "356693"
+      },
+      {
+        "name": "Gael García Bernal",
+        "url": "https://genius.com/artists/Gael-garcia-bernal",
+        "type": "regular",
+        "id": "404880"
+      },
+      {
+        "name": "Gaelic Storm",
+        "url": "https://genius.com/artists/Gaelic-storm",
+        "type": "regular",
+        "id": "358316"
+      },
+      {
+        "name": "Gaia",
+        "url": "https://genius.com/artists/Gaia",
+        "type": "regular",
+        "id": "1043490"
+      },
+      {
+        "name": "Gaise Baba",
+        "url": "https://genius.com/artists/Gaise-baba",
+        "type": "regular",
+        "id": "3548284"
+      },
+      {
+        "name": "Гайтана (Gaitana)",
+        "url": "https://genius.com/artists/Gaitana",
+        "type": "regular",
+        "id": "368132"
+      },
+      {
+        "name": "The Gaither Vocal Band",
+        "url": "https://genius.com/artists/The-gaither-vocal-band",
+        "type": "regular",
+        "id": "332187"
+      },
+      {
+        "name": "Gajendra Verma",
+        "url": "https://genius.com/artists/Gajendra-verma",
+        "type": "regular",
+        "id": "138797"
+      },
+      {
+        "name": "Gala",
+        "url": "https://genius.com/artists/Gala",
+        "type": "regular",
+        "id": "348170"
+      },
+      {
+        "name": "Galantis",
+        "url": "https://genius.com/artists/Galantis",
+        "type": "regular",
+        "id": "159154"
+      },
+      {
+        "name": "Galaxie 500",
+        "url": "https://genius.com/artists/Galaxie-500",
+        "type": "regular",
+        "id": "209374"
+      },
+      {
+        "name": "Gal Costa",
+        "url": "https://genius.com/artists/Gal-costa",
+        "type": "regular",
+        "id": "75215"
+      },
+      {
+        "name": "Galdive",
+        "url": "https://genius.com/artists/Galdive",
+        "type": "regular",
+        "id": "1674227"
+      },
+      {
+        "name": "Галена (Galena)",
+        "url": "https://genius.com/artists/Galena",
+        "type": "regular",
+        "id": "1841158"
+      },
+      {
+        "name": "Gal Gadot - גל גדות",
+        "url": "https://genius.com/artists/Gal-gadot",
+        "type": "regular",
+        "id": "197486"
+      },
+      {
+        "name": "Galibri & Mavik",
+        "url": "https://genius.com/artists/Galibri-and-mavik",
+        "type": "regular",
+        "id": "2809711"
+      },
+      {
+        "name": "Galija",
+        "url": "https://genius.com/artists/Galija",
+        "type": "regular",
+        "id": "354783"
+      },
+      {
+        "name": "Galimatias",
+        "url": "https://genius.com/artists/Galimatias",
+        "type": "regular",
+        "id": "142066"
+      },
+      {
+        "name": "Галин (Galin)",
+        "url": "https://genius.com/artists/Galin",
+        "type": "regular",
+        "id": "2724547"
+      },
+      {
+        "name": "Galindo",
+        "url": "https://genius.com/artists/Galindo",
+        "type": "regular",
+        "id": "3514502"
+      },
+      {
+        "name": "Gallant",
+        "url": "https://genius.com/artists/Gallant",
+        "type": "regular",
+        "id": "276497"
+      },
+      {
+        "name": "Galleons",
+        "url": "https://genius.com/artists/Galleons",
+        "type": "regular",
+        "id": "1549800"
+      },
+      {
+        "name": "GALNERYUS",
+        "url": "https://genius.com/artists/Galneryus",
+        "type": "regular",
+        "id": "344673"
+      },
+      {
+        "name": "Gambi",
+        "url": "https://genius.com/artists/Gambi",
+        "type": "regular",
+        "id": "1726656"
+      },
+      {
+        "name": "Gambino",
+        "url": "https://genius.com/artists/Gambino",
+        "type": "regular",
+        "id": "102956"
+      },
+      {
+        "name": "The Game",
+        "url": "https://genius.com/artists/The-game",
+        "type": "regular",
+        "id": "42"
+      },
+      {
+        "name": "GameboyJones",
+        "url": "https://genius.com/artists/Gameboyjones",
+        "type": "regular",
+        "id": "1105885"
+      },
+      {
+        "name": "GAME FREAK",
+        "url": "https://genius.com/artists/Game-freak",
+        "type": "regular",
+        "id": "190559"
+      },
+      {
+        "name": "Game of Thrones",
+        "url": "https://genius.com/artists/Game-of-thrones",
+        "type": "regular",
+        "id": "131301"
+      },
+      {
+        "name": "GamePlayah",
+        "url": "https://genius.com/artists/Gameplayah",
+        "type": "regular",
+        "id": "3597373"
+      },
+      {
+        "name": "Gamer802",
+        "url": "https://genius.com/artists/Gamer802",
+        "type": "regular",
+        "id": "3989923"
+      },
+      {
+        "name": "Games We Play",
+        "url": "https://genius.com/artists/Games-we-play",
+        "type": "regular",
+        "id": "2624763"
+      },
+      {
+        "name": "Gamingplush64",
+        "url": "https://genius.com/artists/Gamingplush64",
+        "type": "regular",
+        "id": "2319173"
+      },
+      {
+        "name": "Gamma Ray",
+        "url": "https://genius.com/artists/Gamma-ray",
+        "type": "regular",
+        "id": "343822"
+      },
+      {
+        "name": "Gamma Skies",
+        "url": "https://genius.com/artists/Gamma-skies",
+        "type": "regular",
+        "id": "1924039"
+      },
+      {
+        "name": "Гамора (Gamora)",
+        "url": "https://genius.com/artists/Gamora",
+        "type": "regular",
+        "id": "1062073"
+      },
+      {
+        "name": "Gang Albanii",
+        "url": "https://genius.com/artists/Gang-albanii",
+        "type": "regular",
+        "id": "334012"
+      },
+      {
+        "name": "Ganggy",
+        "url": "https://genius.com/artists/Ganggy",
+        "type": "regular",
+        "id": "3863032"
+      },
+      {
+        "name": "Gang of Four",
+        "url": "https://genius.com/artists/Gang-of-four",
+        "type": "regular",
+        "id": "75518"
+      },
+      {
+        "name": "Gang of Youths",
+        "url": "https://genius.com/artists/Gang-of-youths",
+        "type": "regular",
+        "id": "396754"
+      },
+      {
+        "name": "Gangsta Boo",
+        "url": "https://genius.com/artists/Gangsta-boo",
+        "type": "regular",
+        "id": "5996"
+      },
+      {
+        "name": "Gangsta Rap",
+        "url": "https://genius.com/artists/Gangsta-rap",
+        "type": "regular",
+        "id": "21744"
+      },
+      {
+        "name": "Gang Starr",
+        "url": "https://genius.com/artists/Gang-starr",
+        "type": "regular",
+        "id": "220"
+      },
+      {
+        "name": "Gao the Arsonist",
+        "url": "https://genius.com/artists/Gao-the-arsonist",
+        "type": "regular",
+        "id": "1981433"
+      },
+      {
+        "name": "The Gap Band",
+        "url": "https://genius.com/artists/The-gap-band",
+        "type": "regular",
+        "id": "55371"
+      },
+      {
+        "name": "gapman",
+        "url": "https://genius.com/artists/Gapman",
+        "type": "regular",
+        "id": "2295622"
+      },
+      {
+        "name": "Garbage",
+        "url": "https://genius.com/artists/Garbage",
+        "type": "regular",
+        "id": "18769"
+      },
+      {
+        "name": "Garcon Maigre",
+        "url": "https://genius.com/artists/Garcon-maigre",
+        "type": "regular",
+        "id": "2803620"
+      },
+      {
+        "name": "The Garden",
+        "url": "https://genius.com/artists/The-garden",
+        "type": "regular",
+        "id": "62957"
+      },
+      {
+        "name": "Gareth",
+        "url": "https://genius.com/artists/Gareth",
+        "type": "regular",
+        "id": "4053280"
+      },
+      {
+        "name": "Gareth Emery",
+        "url": "https://genius.com/artists/Gareth-emery",
+        "type": "regular",
+        "id": "93154"
+      },
+      {
+        "name": "Gareth Gates",
+        "url": "https://genius.com/artists/Gareth-gates",
+        "type": "regular",
+        "id": "353982"
+      },
+      {
+        "name": "Gareth.T",
+        "url": "https://genius.com/artists/Garetht",
+        "type": "regular",
+        "id": "1399219"
+      },
+      {
+        "name": "Garfunkel & Oates",
+        "url": "https://genius.com/artists/Garfunkel-and-oates",
+        "type": "regular",
+        "id": "42521"
+      },
+      {
+        "name": "Гарик Погорелов (Garik Pogorelov)",
+        "url": "https://genius.com/artists/Garik-pogorelov",
+        "type": "regular",
+        "id": "1907163"
+      },
+      {
+        "name": "Garmarna",
+        "url": "https://genius.com/artists/Garmarna",
+        "type": "regular",
+        "id": "356118"
+      },
+      {
+        "name": "Garou",
+        "url": "https://genius.com/artists/Garou",
+        "type": "regular",
+        "id": "140390"
+      },
+      {
+        "name": "Garrett Clayton",
+        "url": "https://genius.com/artists/Garrett-clayton",
+        "type": "regular",
+        "id": "506798"
+      },
+      {
+        "name": "Гарри Топор (Garri Topor)",
+        "url": "https://genius.com/artists/Garri-topor",
+        "type": "regular",
+        "id": "165497"
+      },
+      {
+        "name": "Garry Sandhu",
+        "url": "https://genius.com/artists/Garry-sandhu",
+        "type": "regular",
+        "id": "483060"
+      },
+      {
+        "name": "Garth Brooks",
+        "url": "https://genius.com/artists/Garth-brooks",
+        "type": "regular",
+        "id": "15266"
+      },
+      {
+        "name": "Garudagamanatava MahaVishnuStotram",
+        "url": "https://genius.com/artists/Garudagamanatava-mahavishnustotram",
+        "type": "regular",
+        "id": "1332799"
+      },
+      {
+        "name": "Garuda gamana tava (Telugu)",
+        "url": "https://genius.com/artists/Garuda-gamana-tava-telugu",
+        "type": "regular",
+        "id": "1332825"
+      },
+      {
+        "name": "Gary Allan",
+        "url": "https://genius.com/artists/Gary-allan",
+        "type": "regular",
+        "id": "283436"
+      },
+      {
+        "name": "Gary Barlow",
+        "url": "https://genius.com/artists/Gary-barlow",
+        "type": "regular",
+        "id": "108647"
+      },
+      {
+        "name": "Gary Clark Jr.",
+        "url": "https://genius.com/artists/Gary-clark-jr",
+        "type": "regular",
+        "id": "19600"
+      },
+      {
+        "name": "Gary Glitter",
+        "url": "https://genius.com/artists/Gary-glitter",
+        "type": "regular",
+        "id": "47516"
+      },
+      {
+        "name": "Gary Moore",
+        "url": "https://genius.com/artists/Gary-moore",
+        "type": "regular",
+        "id": "237831"
+      },
+      {
+        "name": "Gary Morris",
+        "url": "https://genius.com/artists/Gary-morris",
+        "type": "regular",
+        "id": "357382"
+      },
+      {
+        "name": "Gary Numan",
+        "url": "https://genius.com/artists/Gary-numan",
+        "type": "regular",
+        "id": "48223"
+      },
+      {
+        "name": "Gary Puckett & The Union Gap",
+        "url": "https://genius.com/artists/Gary-puckett-and-the-union-gap",
+        "type": "regular",
+        "id": "367355"
+      },
+      {
+        "name": "Gary Sadler",
+        "url": "https://genius.com/artists/Gary-sadler",
+        "type": "regular",
+        "id": "403862"
+      },
+      {
+        "name": "Gary Stewart",
+        "url": "https://genius.com/artists/Gary-stewart",
+        "type": "regular",
+        "id": "360313"
+      },
+      {
+        "name": "Gary Valenciano",
+        "url": "https://genius.com/artists/Gary-valenciano",
+        "type": "regular",
+        "id": "355468"
+      },
+      {
+        "name": "Gary Wright",
+        "url": "https://genius.com/artists/Gary-wright",
+        "type": "regular",
+        "id": "340467"
+      },
+      {
+        "name": "GASHI",
+        "url": "https://genius.com/artists/Gashi",
+        "type": "regular",
+        "id": "62375"
+      },
+      {
+        "name": "The Gaslight Anthem",
+        "url": "https://genius.com/artists/The-gaslight-anthem",
+        "type": "regular",
+        "id": "22822"
+      },
+      {
+        "name": "Gasolin'",
+        "url": "https://genius.com/artists/Gasolin",
+        "type": "regular",
+        "id": "344632"
+      },
+      {
+        "name": "Gaspari",
+        "url": "https://genius.com/artists/Gaspari",
+        "type": "regular",
+        "id": "3516714"
+      },
+      {
+        "name": "Gaten Matarazzo",
+        "url": "https://genius.com/artists/Gaten-matarazzo",
+        "type": "regular",
+        "id": "1058150"
+      },
+      {
+        "name": "Gateway Worship",
+        "url": "https://genius.com/artists/Gateway-worship",
+        "type": "regular",
+        "id": "363444"
+      },
+      {
+        "name": "Gateway Worship Español",
+        "url": "https://genius.com/artists/Gateway-worship-espanol",
+        "type": "regular",
+        "id": "3090177"
+      },
+      {
+        "name": "GAT (PHL)",
+        "url": "https://genius.com/artists/Gat-phl",
+        "type": "regular",
+        "id": "4306680"
+      },
+      {
+        "name": "Gat Putch",
+        "url": "https://genius.com/artists/Gat-putch",
+        "type": "regular",
+        "id": "3238798"
+      },
+      {
+        "name": "Gatton",
+        "url": "https://genius.com/artists/Gatton",
+        "type": "regular",
+        "id": "1961654"
+      },
+      {
+        "name": "GAULOIS",
+        "url": "https://genius.com/artists/Gaulois",
+        "type": "regular",
+        "id": "2568442"
+      },
+      {
+        "name": "Gavin Adcock",
+        "url": "https://genius.com/artists/Gavin-adcock",
+        "type": "regular",
+        "id": "3630789"
+      },
+      {
+        "name": "Gavin Creel",
+        "url": "https://genius.com/artists/Gavin-creel",
+        "type": "regular",
+        "id": "304448"
+      },
+      {
+        "name": "Gavin DeGraw",
+        "url": "https://genius.com/artists/Gavin-degraw",
+        "type": "regular",
+        "id": "17412"
+      },
+      {
+        "name": "Gavin James",
+        "url": "https://genius.com/artists/Gavin-james",
+        "type": "regular",
+        "id": "452119"
+      },
+      {
+        "name": "Gavin Magnus",
+        "url": "https://genius.com/artists/Gavin-magnus",
+        "type": "regular",
+        "id": "1857253"
+      },
+      {
+        "name": "gavn!",
+        "url": "https://genius.com/artists/Gavn",
+        "type": "regular",
+        "id": "1959275"
+      },
+      {
+        "name": "GAVRILINA",
+        "url": "https://genius.com/artists/Gavrilina",
+        "type": "regular",
+        "id": "2528133"
+      },
+      {
+        "name": "GAWNE",
+        "url": "https://genius.com/artists/Gawne",
+        "type": "regular",
+        "id": "1712233"
+      },
+      {
+        "name": "Gawr Gura",
+        "url": "https://genius.com/artists/Gawr-gura",
+        "type": "regular",
+        "id": "2525109"
+      },
+      {
+        "name": "GAYAZOV$ BROTHER$",
+        "url": "https://genius.com/artists/Gayazov-brother",
+        "type": "regular",
+        "id": "1717172"
+      },
+      {
+        "name": "GAYLE",
+        "url": "https://genius.com/artists/Gayle",
+        "type": "regular",
+        "id": "1002062"
+      },
+      {
+        "name": "Gazan",
+        "url": "https://genius.com/artists/Gazan",
+        "type": "regular",
+        "id": "2152955"
+      },
+      {
+        "name": "Gazapizm",
+        "url": "https://genius.com/artists/Gazapizm",
+        "type": "regular",
+        "id": "251630"
+      },
+      {
+        "name": "Gazebo",
+        "url": "https://genius.com/artists/Gazebo",
+        "type": "regular",
+        "id": "359908"
+      },
+      {
+        "name": "Gazo",
+        "url": "https://genius.com/artists/Gazo",
+        "type": "regular",
+        "id": "23012"
+      },
+      {
+        "name": "Gazzelle",
+        "url": "https://genius.com/artists/Gazzelle",
+        "type": "regular",
+        "id": "1045059"
+      },
+      {
+        "name": "GBG Sheik",
+        "url": "https://genius.com/artists/Gbg-sheik",
+        "type": "regular",
+        "id": "3363080"
+      },
+      {
+        "name": "GBKHATEDLOVE",
+        "url": "https://genius.com/artists/Gbkhatedlove",
+        "type": "regular",
+        "id": "1894911"
+      },
+      {
+        "name": "Gdaal",
+        "url": "https://genius.com/artists/Gdaal",
+        "type": "regular",
+        "id": "219663"
+      },
+      {
+        "name": "Где Фантом? (Gde Fantom?)",
+        "url": "https://genius.com/artists/Gde-fantom",
+        "type": "regular",
+        "id": "2498382"
+      },
+      {
+        "name": "G-Dep",
+        "url": "https://genius.com/artists/G-dep",
+        "type": "regular",
+        "id": "3555"
+      },
+      {
+        "name": "G-DRAGON (지드래곤)",
+        "url": "https://genius.com/artists/G-dragon",
+        "type": "regular",
+        "id": "69141"
+      },
+      {
+        "name": "Åge Aleksandersen",
+        "url": "https://genius.com/artists/Age-aleksandersen",
+        "type": "regular",
+        "id": "35504"
+      },
+      {
+        "name": "G-Eazy",
+        "url": "https://genius.com/artists/G-eazy",
+        "type": "regular",
+        "id": "11395"
+      },
+      {
+        "name": "Gedz",
+        "url": "https://genius.com/artists/Gedz",
+        "type": "regular",
+        "id": "29679"
+      },
+      {
+        "name": "Джиган (Geegun)",
+        "url": "https://genius.com/artists/Geegun",
+        "type": "regular",
+        "id": "1113252"
+      },
+      {
+        "name": "Geese",
+        "url": "https://genius.com/artists/Geese",
+        "type": "regular",
+        "id": "1799537"
+      },
+      {
+        "name": "Geeshie Wiley",
+        "url": "https://genius.com/artists/Geeshie-wiley",
+        "type": "regular",
+        "id": "1019823"
+      },
+      {
+        "name": "Geeta Dutt",
+        "url": "https://genius.com/artists/Geeta-dutt",
+        "type": "regular",
+        "id": "360749"
+      },
+      {
+        "name": "GeezyDee",
+        "url": "https://genius.com/artists/Geezydee",
+        "type": "regular",
+        "id": "2695055"
+      },
+      {
+        "name": "Geier Sturzflug",
+        "url": "https://genius.com/artists/Geier-sturzflug",
+        "type": "regular",
+        "id": "374074"
+      },
+      {
+        "name": "​geiko",
+        "url": "https://genius.com/artists/Geiko",
+        "type": "regular",
+        "id": "1654914"
+      },
+      {
+        "name": "Geisha",
+        "url": "https://genius.com/artists/Geisha",
+        "type": "regular",
+        "id": "75024"
+      },
+      {
+        "name": "Gejlon",
+        "url": "https://genius.com/artists/Gejlon",
+        "type": "regular",
+        "id": "3505024"
+      },
+      {
+        "name": "GELBOYS",
+        "url": "https://genius.com/artists/Gelboys",
+        "type": "regular",
+        "id": "4328434"
+      },
+      {
+        "name": "GELO",
+        "url": "https://genius.com/artists/Gelo",
+        "type": "regular",
+        "id": "2268543"
+      },
+      {
+        "name": "鄧紫棋 (G.E.M.)",
+        "url": "https://genius.com/artists/Gem",
+        "type": "regular",
+        "id": "38368"
+      },
+      {
+        "name": "GEMINI (제미나이)",
+        "url": "https://genius.com/artists/Gemini",
+        "type": "regular",
+        "id": "2399069"
+      },
+      {
+        "name": "Gemitaiz",
+        "url": "https://genius.com/artists/Gemitaiz",
+        "type": "regular",
+        "id": "32862"
+      },
+      {
+        "name": "Gemroz",
+        "url": "https://genius.com/artists/Gemroz",
+        "type": "regular",
+        "id": "3257496"
+      },
+      {
+        "name": "Gene Autry",
+        "url": "https://genius.com/artists/Gene-autry",
+        "type": "regular",
+        "id": "225402"
+      },
+      {
+        "name": "Gene Kelly",
+        "url": "https://genius.com/artists/Gene-kelly",
+        "type": "regular",
+        "id": "39168"
+      },
+      {
+        "name": "Gene Paul",
+        "url": "https://genius.com/artists/Gene-paul",
+        "type": "regular",
+        "id": "70929"
+      },
+      {
+        "name": "Gene Pitney",
+        "url": "https://genius.com/artists/Gene-pitney",
+        "type": "regular",
+        "id": "72168"
+      },
+      {
+        "name": "Generación 12",
+        "url": "https://genius.com/artists/Generacion-12",
+        "type": "regular",
+        "id": "453556"
+      },
+      {
+        "name": "General Wesley Clark",
+        "url": "https://genius.com/artists/General-wesley-clark",
+        "type": "regular",
+        "id": "68684"
+      },
+      {
+        "name": "Genesis",
+        "url": "https://genius.com/artists/Genesis",
+        "type": "regular",
+        "id": "19901"
+      },
+      {
+        "name": "Genetikk",
+        "url": "https://genius.com/artists/Genetikk",
+        "type": "regular",
+        "id": "15329"
+      },
+      {
+        "name": "Geneva Cruz",
+        "url": "https://genius.com/artists/Geneva-cruz",
+        "type": "regular",
+        "id": "3199458"
+      },
+      {
+        "name": "Genevieve Stokes",
+        "url": "https://genius.com/artists/Genevieve-stokes",
+        "type": "regular",
+        "id": "1867190"
+      },
+      {
+        "name": "Gene Vincent",
+        "url": "https://genius.com/artists/Gene-vincent",
+        "type": "regular",
+        "id": "235155"
+      },
+      {
+        "name": "Gene Watson",
+        "url": "https://genius.com/artists/Gene-watson",
+        "type": "regular",
+        "id": "334100"
+      },
+      {
+        "name": "Gene Wilder",
+        "url": "https://genius.com/artists/Gene-wilder",
+        "type": "regular",
+        "id": "54991"
+      },
+      {
+        "name": "Genezio",
+        "url": "https://genius.com/artists/Genezio",
+        "type": "regular",
+        "id": "2805777"
+      },
+      {
+        "name": "Genç Fenerbahçeliler",
+        "url": "https://genius.com/artists/Genc-fenerbahceliler",
+        "type": "regular",
+        "id": "2893905"
+      },
+      {
+        "name": "星野源 (Gen Hoshino)",
+        "url": "https://genius.com/artists/Gen-hoshino",
+        "type": "regular",
+        "id": "1137674"
+      },
+      {
+        "name": "Genichris",
+        "url": "https://genius.com/artists/Genichris",
+        "type": "regular",
+        "id": "3221081"
+      },
+      {
+        "name": "Genitorturers",
+        "url": "https://genius.com/artists/Genitorturers",
+        "type": "regular",
+        "id": "358955"
+      },
+      {
+        "name": "Genius Arabic Translations (الترجمات العربية)",
+        "url": "https://genius.com/artists/Genius-arabic-translations",
+        "type": "regular",
+        "id": "211029"
+      },
+      {
+        "name": "Genius Bản dịch tiếng Việt",
+        "url": "https://genius.com/artists/Genius-ban-dich-tieng-viet",
+        "type": "regular",
+        "id": "2799615"
+      },
+      {
+        "name": "Genius bosanski prijevodi",
+        "url": "https://genius.com/artists/Genius-bosanski-prijevodi",
+        "type": "regular",
+        "id": "3522377"
+      },
+      {
+        "name": "Genius Brasil",
+        "url": "https://genius.com/artists/Genius-brasil",
+        "type": "regular",
+        "id": "95329"
+      },
+      {
+        "name": "Genius Chinese Translations (中文翻譯/中文翻译)",
+        "url": "https://genius.com/artists/Genius-chinese-translations",
+        "type": "regular",
+        "id": "2738802"
+      },
+      {
+        "name": "Genius Deutschland",
+        "url": "https://genius.com/artists/Genius-deutschland",
+        "type": "regular",
+        "id": "211115"
+      },
+      {
+        "name": "Genius en Español",
+        "url": "https://genius.com/artists/Genius-en-espanol",
+        "type": "regular",
+        "id": "546789"
+      },
+      {
+        "name": "Genius České překlady",
+        "url": "https://genius.com/artists/Genius-ceske-preklady",
+        "type": "regular",
+        "id": "1827252"
+      },
+      {
+        "name": "Genius Farsi Translations (ترجمه‌ی فارسی)",
+        "url": "https://genius.com/artists/Genius-farsi-translations",
+        "type": "regular",
+        "id": "1207399"
+      },
+      {
+        "name": "Genius France",
+        "url": "https://genius.com/artists/Genius-france",
+        "type": "regular",
+        "id": "207006"
+      },
+      {
+        "name": "Genius Greek Translations (Ελληνικές μεταφράσεις)",
+        "url": "https://genius.com/artists/Genius-greek-translations",
+        "type": "regular",
+        "id": "2888256"
+      },
+      {
+        "name": "Genius Hebrew Translations (תרגומים לעברית)",
+        "url": "https://genius.com/artists/Genius-hebrew-translations",
+        "type": "regular",
+        "id": "1699245"
+      },
+      {
+        "name": "Genius Hindi Translations (हिंदी अनुवाद)",
+        "url": "https://genius.com/artists/Genius-hindi-translations",
+        "type": "regular",
+        "id": "2782164"
+      },
+      {
+        "name": "Genius Hochdeutsche Übersetzungen",
+        "url": "https://genius.com/artists/Genius-hochdeutsche-ubersetzungen",
+        "type": "regular",
+        "id": "3666198"
+      },
+      {
+        "name": "Genius hrvatski prijevodi",
+        "url": "https://genius.com/artists/Genius-hrvatski-prijevodi",
+        "type": "regular",
+        "id": "4276958"
+      },
+      {
+        "name": "Genius Italia",
+        "url": "https://genius.com/artists/Genius-italia",
+        "type": "regular",
+        "id": "59681"
+      },
+      {
+        "name": "Genius Japan",
+        "url": "https://genius.com/artists/Genius-japan",
+        "type": "regular",
+        "id": "2117953"
+      },
+      {
+        "name": "Genius Japanese Translations (歌詞和訳)",
+        "url": "https://genius.com/artists/Genius-japanese-translations",
+        "type": "regular",
+        "id": "1825793"
+      },
+      {
+        "name": "Genius Korea",
+        "url": "https://genius.com/artists/Genius-korea",
+        "type": "regular",
+        "id": "2329789"
+      },
+      {
+        "name": "Genius Korean Translations (한국어 번역)",
+        "url": "https://genius.com/artists/Genius-korean-translations",
+        "type": "regular",
+        "id": "3157533"
+      },
+      {
+        "name": "Genius Lists",
+        "url": "https://genius.com/artists/Genius-lists",
+        "type": "regular",
+        "id": "614215"
+      },
+      {
+        "name": "Genius magyar fordítások",
+        "url": "https://genius.com/artists/Genius-magyar-forditasok",
+        "type": "regular",
+        "id": "2426702"
+      },
+      {
+        "name": "Genius Morocco",
+        "url": "https://genius.com/artists/Genius-morocco",
+        "type": "regular",
+        "id": "161779"
+      },
+      {
+        "name": "Genius Nederlandse Vertalingen",
+        "url": "https://genius.com/artists/Genius-nederlandse-vertalingen",
+        "type": "regular",
+        "id": "1805866"
+      },
+      {
+        "name": "Genius Norske Oversettelser",
+        "url": "https://genius.com/artists/Genius-norske-oversettelser",
+        "type": "regular",
+        "id": "3461450"
+      },
+      {
+        "name": "Genius Pagsasalin Sa Filipino",
+        "url": "https://genius.com/artists/Genius-pagsasalin-sa-filipino",
+        "type": "regular",
+        "id": "2792781"
+      },
+      {
+        "name": "Genius Portugal Traduções",
+        "url": "https://genius.com/artists/Genius-portugal-traducoes",
+        "type": "regular",
+        "id": "2249639"
+      },
+      {
+        "name": "Genius RSC",
+        "url": "https://genius.com/artists/Genius-rsc",
+        "type": "regular",
+        "id": "2546011"
+      },
+      {
+        "name": "Genius RSC Creative Associations (Творческие Объединения)",
+        "url": "https://genius.com/artists/Genius-rsc-creative-associations",
+        "type": "regular",
+        "id": "4424450"
+      },
+      {
+        "name": "Genius RSC Discographies (Дискографии)",
+        "url": "https://genius.com/artists/Genius-rsc-discographies",
+        "type": "regular",
+        "id": "3749093"
+      },
+      {
+        "name": "Genius Russia",
+        "url": "https://genius.com/artists/Genius-russia",
+        "type": "regular",
+        "id": "1025691"
+      },
+      {
+        "name": "Genius srpski prevodi",
+        "url": "https://genius.com/artists/Genius-srpski-prevodi",
+        "type": "regular",
+        "id": "2060763"
+      },
+      {
+        "name": "Genius Österreich",
+        "url": "https://genius.com/artists/Genius-osterreich",
+        "type": "regular",
+        "id": "148403"
+      },
+      {
+        "name": "Genius Österreichische Übersetzungen",
+        "url": "https://genius.com/artists/Genius-osterreichische-ubersetzungen",
+        "type": "regular",
+        "id": "4440085"
+      },
+      {
+        "name": "Genius Svenska Översättningar",
+        "url": "https://genius.com/artists/Genius-svenska-oversattningar",
+        "type": "regular",
+        "id": "2028797"
+      },
+      {
+        "name": "Genius Terjemahan Indonesia",
+        "url": "https://genius.com/artists/Genius-terjemahan-indonesia",
+        "type": "regular",
+        "id": "2016225"
+      },
+      {
+        "name": "Genius Thai Translations (คำแปลภาษาไทย)",
+        "url": "https://genius.com/artists/Genius-thai-translations",
+        "type": "regular",
+        "id": "1651883"
+      },
+      {
+        "name": "Genius traduceri în română",
+        "url": "https://genius.com/artists/Genius-traduceri-in-romana",
+        "type": "regular",
+        "id": "1667485"
+      },
+      {
+        "name": "Genius Türkiye",
+        "url": "https://genius.com/artists/Genius-turkiye",
+        "type": "regular",
+        "id": "160739"
+      },
+      {
+        "name": "Genius UK",
+        "url": "https://genius.com/artists/Genius-uk",
+        "type": "regular",
+        "id": "1735481"
+      },
+      {
+        "name": "Genius Urdu Translations (اردو تراجم)",
+        "url": "https://genius.com/artists/Genius-urdu-translations",
+        "type": "regular",
+        "id": "2851831"
+      },
+      {
+        "name": "Genius Users",
+        "url": "https://genius.com/artists/Genius-users",
+        "type": "regular",
+        "id": "226635"
+      },
+      {
+        "name": "GENJUTSU",
+        "url": "https://genius.com/artists/Genjutsu",
+        "type": "regular",
+        "id": "2686698"
+      },
+      {
+        "name": "Geno Five",
+        "url": "https://genius.com/artists/Geno-five",
+        "type": "regular",
+        "id": "1217180"
+      },
+      {
+        "name": "Gente de Zona",
+        "url": "https://genius.com/artists/Gente-de-zona",
+        "type": "regular",
+        "id": "150394"
+      },
+      {
+        "name": "Gentle Giant",
+        "url": "https://genius.com/artists/Gentle-giant",
+        "type": "regular",
+        "id": "155886"
+      },
+      {
+        "name": "Gentleman",
+        "url": "https://genius.com/artists/Gentleman",
+        "type": "regular",
+        "id": "2983"
+      },
+      {
+        "name": "A Gentleman's Guide to Love and Murder Company",
+        "url": "https://genius.com/artists/A-gentlemans-guide-to-love-and-murder-company",
+        "type": "regular",
+        "id": "491080"
+      },
+      {
+        "name": "The Gentle Men",
+        "url": "https://genius.com/artists/The-gentle-men",
+        "type": "regular",
+        "id": "2122173"
+      },
+      {
+        "name": "Genzie",
+        "url": "https://genius.com/artists/Genzie",
+        "type": "regular",
+        "id": "2937735"
+      },
+      {
+        "name": "Genzo (TUR)",
+        "url": "https://genius.com/artists/Genzo-tur",
+        "type": "regular",
+        "id": "3475271"
+      },
+      {
+        "name": "Geoffrey Golden",
+        "url": "https://genius.com/artists/Geoffrey-golden",
+        "type": "regular",
+        "id": "990096"
+      },
+      {
+        "name": "Geolier",
+        "url": "https://genius.com/artists/Geolier",
+        "type": "regular",
+        "id": "1453163"
+      },
+      {
+        "name": "Geordie Greep",
+        "url": "https://genius.com/artists/Geordie-greep",
+        "type": "regular",
+        "id": "1787151"
+      },
+      {
+        "name": "George Baker Selection",
+        "url": "https://genius.com/artists/George-baker-selection",
+        "type": "regular",
+        "id": "144324"
+      },
+      {
+        "name": "George Benson",
+        "url": "https://genius.com/artists/George-benson",
+        "type": "regular",
+        "id": "37115"
+      },
+      {
+        "name": "George Carlin",
+        "url": "https://genius.com/artists/George-carlin",
+        "type": "regular",
+        "id": "12139"
+      },
+      {
+        "name": "George Chakiris",
+        "url": "https://genius.com/artists/George-chakiris",
+        "type": "regular",
+        "id": "1028933"
+      },
+      {
+        "name": "George Clanton",
+        "url": "https://genius.com/artists/George-clanton",
+        "type": "regular",
+        "id": "582371"
+      },
+      {
+        "name": "George Clinton",
+        "url": "https://genius.com/artists/George-clinton",
+        "type": "regular",
+        "id": "351"
+      },
+      {
+        "name": "George Duke",
+        "url": "https://genius.com/artists/George-duke",
+        "type": "regular",
+        "id": "25653"
+      },
+      {
+        "name": "George Ezra",
+        "url": "https://genius.com/artists/George-ezra",
+        "type": "regular",
+        "id": "133122"
+      },
+      {
+        "name": "George F",
+        "url": "https://genius.com/artists/George-f",
+        "type": "regular",
+        "id": "4433464"
+      },
+      {
+        "name": "George Frideric Handel",
+        "url": "https://genius.com/artists/George-frideric-handel",
+        "type": "regular",
+        "id": "391755"
+      },
+      {
+        "name": "George Harrison",
+        "url": "https://genius.com/artists/George-harrison",
+        "type": "regular",
+        "id": "33327"
+      },
+      {
+        "name": "George Jones",
+        "url": "https://genius.com/artists/George-jones",
+        "type": "regular",
+        "id": "47668"
+      },
+      {
+        "name": "George McCrae",
+        "url": "https://genius.com/artists/George-mccrae",
+        "type": "regular",
+        "id": "147452"
+      },
+      {
+        "name": "George M. Cohan",
+        "url": "https://genius.com/artists/George-m-cohan",
+        "type": "regular",
+        "id": "332973"
+      },
+      {
+        "name": "George Orwell",
+        "url": "https://genius.com/artists/George-orwell",
+        "type": "regular",
+        "id": "19507"
+      },
+      {
+        "name": "George R. R. Martin",
+        "url": "https://genius.com/artists/George-r-r-martin",
+        "type": "regular",
+        "id": "52235"
+      },
+      {
+        "name": "George Salazar",
+        "url": "https://genius.com/artists/George-salazar",
+        "type": "regular",
+        "id": "453784"
+      },
+      {
+        "name": "Georges Bizet",
+        "url": "https://genius.com/artists/Georges-bizet",
+        "type": "regular",
+        "id": "37397"
+      },
+      {
+        "name": "Georges Brassens",
+        "url": "https://genius.com/artists/Georges-brassens",
+        "type": "regular",
+        "id": "25269"
+      },
+      {
+        "name": "Georges Moustaki",
+        "url": "https://genius.com/artists/Georges-moustaki",
+        "type": "regular",
+        "id": "26360"
+      },
+      {
+        "name": "George Strait",
+        "url": "https://genius.com/artists/George-strait",
+        "type": "regular",
+        "id": "15101"
+      },
+      {
+        "name": "George Thorogood & The Destroyers",
+        "url": "https://genius.com/artists/George-thorogood-and-the-destroyers",
+        "type": "regular",
+        "id": "344474"
+      },
+      {
+        "name": "George Wassouf - جورج وسوف",
+        "url": "https://genius.com/artists/George-wassouf",
+        "type": "regular",
+        "id": "455595"
+      },
+      {
+        "name": "Georgia Cavallo",
+        "url": "https://genius.com/artists/Georgia-cavallo",
+        "type": "regular",
+        "id": "3970271"
+      },
+      {
+        "name": "The Georgia Satellites",
+        "url": "https://genius.com/artists/The-georgia-satellites",
+        "type": "regular",
+        "id": "362495"
+      },
+      {
+        "name": "Georgio",
+        "url": "https://genius.com/artists/Georgio",
+        "type": "regular",
+        "id": "21841"
+      },
+      {
+        "name": "​geoxantes",
+        "url": "https://genius.com/artists/Geoxantes",
+        "type": "regular",
+        "id": "3915450"
+      },
+      {
+        "name": "Gerald Levert",
+        "url": "https://genius.com/artists/Gerald-levert",
+        "type": "regular",
+        "id": "4538"
+      },
+      {
+        "name": "Gera MX",
+        "url": "https://genius.com/artists/Gera-mx",
+        "type": "regular",
+        "id": "481225"
+      },
+      {
+        "name": "Gerard Butler",
+        "url": "https://genius.com/artists/Gerard-butler",
+        "type": "regular",
+        "id": "66621"
+      },
+      {
+        "name": "Gerardo Ortiz",
+        "url": "https://genius.com/artists/Gerardo-ortiz",
+        "type": "regular",
+        "id": "161157"
+      },
+      {
+        "name": "Gerard Way",
+        "url": "https://genius.com/artists/Gerard-way",
+        "type": "regular",
+        "id": "24398"
+      },
+      {
+        "name": "gerarrti",
+        "url": "https://genius.com/artists/Gerarrti",
+        "type": "regular",
+        "id": "4096007"
+      },
+      {
+        "name": "Gerhard Schöne",
+        "url": "https://genius.com/artists/Gerhard-schone",
+        "type": "regular",
+        "id": "353443"
+      },
+      {
+        "name": "Geri Halliwell",
+        "url": "https://genius.com/artists/Geri-halliwell",
+        "type": "regular",
+        "id": "364273"
+      },
+      {
+        "name": "Germ",
+        "url": "https://genius.com/artists/Germ",
+        "type": "regular",
+        "id": "9660"
+      },
+      {
+        "name": "Germs",
+        "url": "https://genius.com/artists/Germs",
+        "type": "regular",
+        "id": "43005"
+      },
+      {
+        "name": "Герои (Geroi)",
+        "url": "https://genius.com/artists/Geroi",
+        "type": "regular",
+        "id": "1470185"
+      },
+      {
+        "name": "Gerry and The Pacemakers",
+        "url": "https://genius.com/artists/Gerry-and-the-pacemakers",
+        "type": "regular",
+        "id": "31092"
+      },
+      {
+        "name": "Gerry Cinnamon",
+        "url": "https://genius.com/artists/Gerry-cinnamon",
+        "type": "regular",
+        "id": "1232389"
+      },
+      {
+        "name": "Gerry Rafferty",
+        "url": "https://genius.com/artists/Gerry-rafferty",
+        "type": "regular",
+        "id": "23574"
+      },
+      {
+        "name": "Gers Pardoel",
+        "url": "https://genius.com/artists/Gers-pardoel",
+        "type": "regular",
+        "id": "16706"
+      },
+      {
+        "name": "Gesaffelstein",
+        "url": "https://genius.com/artists/Gesaffelstein",
+        "type": "regular",
+        "id": "56090"
+      },
+      {
+        "name": "Getdown Services",
+        "url": "https://genius.com/artists/Getdown-services",
+        "type": "regular",
+        "id": "3908331"
+      },
+      {
+        "name": "Geto Boys",
+        "url": "https://genius.com/artists/Geto-boys",
+        "type": "regular",
+        "id": "377"
+      },
+      {
+        "name": "Get Scared",
+        "url": "https://genius.com/artists/Get-scared",
+        "type": "regular",
+        "id": "104984"
+      },
+      {
+        "name": "Gettomasa",
+        "url": "https://genius.com/artists/Gettomasa",
+        "type": "regular",
+        "id": "528417"
+      },
+      {
+        "name": "The Get Up Kids",
+        "url": "https://genius.com/artists/The-get-up-kids",
+        "type": "regular",
+        "id": "188344"
+      },
+      {
+        "name": "GEZEBELLE GABURGABLY",
+        "url": "https://genius.com/artists/Gezebelle-gaburgably",
+        "type": "regular",
+        "id": "2246420"
+      },
+      {
+        "name": "G Flip",
+        "url": "https://genius.com/artists/G-flip",
+        "type": "regular",
+        "id": "1393658"
+      },
+      {
+        "name": "GFOTY",
+        "url": "https://genius.com/artists/Gfoty",
+        "type": "regular",
+        "id": "210716"
+      },
+      {
+        "name": "GFRIEND",
+        "url": "https://genius.com/artists/Gfriend",
+        "type": "regular",
+        "id": "679842"
+      },
+      {
+        "name": "GG Allin",
+        "url": "https://genius.com/artists/Gg-allin",
+        "type": "regular",
+        "id": "326748"
+      },
+      {
+        "name": "GGM Kimbo",
+        "url": "https://genius.com/artists/Ggm-kimbo",
+        "type": "regular",
+        "id": "3036543"
+      },
+      {
+        "name": "GGM Soulja",
+        "url": "https://genius.com/artists/Ggm-soulja",
+        "type": "regular",
+        "id": "3036544"
+      },
+      {
+        "name": "GhAatak",
+        "url": "https://genius.com/artists/Ghaatak",
+        "type": "regular",
+        "id": "4237653"
+      },
+      {
+        "name": "Ghais Guevara",
+        "url": "https://genius.com/artists/Ghais-guevara",
+        "type": "regular",
+        "id": "1778359"
+      },
+      {
+        "name": "Ghali",
+        "url": "https://genius.com/artists/Ghali",
+        "type": "regular",
+        "id": "531151"
+      },
+      {
+        "name": "Ghemon",
+        "url": "https://genius.com/artists/Ghemon",
+        "type": "regular",
+        "id": "49800"
+      },
+      {
+        "name": "Ghetto Dogs",
+        "url": "https://genius.com/artists/Ghetto-dogs",
+        "type": "regular",
+        "id": "629718"
+      },
+      {
+        "name": "Ghetto Geasy",
+        "url": "https://genius.com/artists/Ghetto-geasy",
+        "type": "regular",
+        "id": "67608"
+      },
+      {
+        "name": "Ghetto Gecko",
+        "url": "https://genius.com/artists/Ghetto-gecko",
+        "type": "regular",
+        "id": "2557913"
+      },
+      {
+        "name": "Ghetts",
+        "url": "https://genius.com/artists/Ghetts",
+        "type": "regular",
+        "id": "1688"
+      },
+      {
+        "name": "Ghostemane",
+        "url": "https://genius.com/artists/Ghostemane",
+        "type": "regular",
+        "id": "549225"
+      },
+      {
+        "name": "Ghostface Killah",
+        "url": "https://genius.com/artists/Ghostface-killah",
+        "type": "regular",
+        "id": "20"
+      },
+      {
+        "name": "The Ghost Inside",
+        "url": "https://genius.com/artists/The-ghost-inside",
+        "type": "regular",
+        "id": "59622"
+      },
+      {
+        "name": "Ghost Killer Track",
+        "url": "https://genius.com/artists/Ghost-killer-track",
+        "type": "regular",
+        "id": "614152"
+      },
+      {
+        "name": "Ghostly Kisses",
+        "url": "https://genius.com/artists/Ghostly-kisses",
+        "type": "regular",
+        "id": "1136672"
+      },
+      {
+        "name": "Ghost Mountain",
+        "url": "https://genius.com/artists/Ghost-mountain",
+        "type": "regular",
+        "id": "1900191"
+      },
+      {
+        "name": "Ghost Quartet",
+        "url": "https://genius.com/artists/Ghost-quartet",
+        "type": "regular",
+        "id": "839797"
+      },
+      {
+        "name": "Ghost Town DJ's",
+        "url": "https://genius.com/artists/Ghost-town-djs",
+        "type": "regular",
+        "id": "388559"
+      },
+      {
+        "name": "GHOST (Vocaloid)",
+        "url": "https://genius.com/artists/Ghost-vocaloid",
+        "type": "regular",
+        "id": "1174406"
+      },
+      {
+        "name": "Ghouljaboy",
+        "url": "https://genius.com/artists/Ghouljaboy",
+        "type": "regular",
+        "id": "1834683"
+      },
+      {
+        "name": "Ghulam Ali",
+        "url": "https://genius.com/artists/Ghulam-ali",
+        "type": "regular",
+        "id": "460209"
+      },
+      {
+        "name": "Giacomo Puccini",
+        "url": "https://genius.com/artists/Giacomo-puccini",
+        "type": "regular",
+        "id": "36899"
+      },
+      {
+        "name": "Gianna Nannini",
+        "url": "https://genius.com/artists/Gianna-nannini",
+        "type": "regular",
+        "id": "353094"
+      },
+      {
+        "name": "Gianni Morandi",
+        "url": "https://genius.com/artists/Gianni-morandi",
+        "type": "regular",
+        "id": "344410"
+      },
+      {
+        "name": "Giannis Fakinos",
+        "url": "https://genius.com/artists/Giannis-fakinos",
+        "type": "regular",
+        "id": "3729100"
+      },
+      {
+        "name": "Gianni Suave",
+        "url": "https://genius.com/artists/Gianni-suave",
+        "type": "regular",
+        "id": "1047213"
+      },
+      {
+        "name": "Giant Rooks",
+        "url": "https://genius.com/artists/Giant-rooks",
+        "type": "regular",
+        "id": "634846"
+      },
+      {
+        "name": "​Gibbs",
+        "url": "https://genius.com/artists/Gibbs",
+        "type": "regular",
+        "id": "223624"
+      },
+      {
+        "name": "Gibonni",
+        "url": "https://genius.com/artists/Gibonni",
+        "type": "regular",
+        "id": "359138"
+      },
+      {
+        "name": "Gideon Glick",
+        "url": "https://genius.com/artists/Gideon-glick",
+        "type": "regular",
+        "id": "1036624"
+      },
+      {
+        "name": "Giga",
+        "url": "https://genius.com/artists/Giga",
+        "type": "regular",
+        "id": "672148"
+      },
+      {
+        "name": "Giggs",
+        "url": "https://genius.com/artists/Giggs",
+        "type": "regular",
+        "id": "1397"
+      },
+      {
+        "name": "Gigi D'Agostino",
+        "url": "https://genius.com/artists/Gigi-dagostino",
+        "type": "regular",
+        "id": "342502"
+      },
+      {
+        "name": "Gigi D'Alessio",
+        "url": "https://genius.com/artists/Gigi-dalessio",
+        "type": "regular",
+        "id": "359188"
+      },
+      {
+        "name": "Gigi Murin",
+        "url": "https://genius.com/artists/Gigi-murin",
+        "type": "regular",
+        "id": "4004722"
+      },
+      {
+        "name": "Gigi Perez",
+        "url": "https://genius.com/artists/Gigi-perez",
+        "type": "regular",
+        "id": "2660023"
+      },
+      {
+        "name": "Gilbert and Sullivan",
+        "url": "https://genius.com/artists/Gilbert-and-sullivan",
+        "type": "regular",
+        "id": "57863"
+      },
+      {
+        "name": "Gilberto Gil",
+        "url": "https://genius.com/artists/Gilberto-gil",
+        "type": "regular",
+        "id": "87466"
+      },
+      {
+        "name": "Gilbert O'Sullivan",
+        "url": "https://genius.com/artists/Gilbert-osullivan",
+        "type": "regular",
+        "id": "249489"
+      },
+      {
+        "name": "Giles Corey",
+        "url": "https://genius.com/artists/Giles-corey",
+        "type": "regular",
+        "id": "60337"
+      },
+      {
+        "name": "Gilles Vigneault",
+        "url": "https://genius.com/artists/Gilles-vigneault",
+        "type": "regular",
+        "id": "362913"
+      },
+      {
+        "name": "Gilli",
+        "url": "https://genius.com/artists/Gilli",
+        "type": "regular",
+        "id": "13757"
+      },
+      {
+        "name": "Gillian Flynn",
+        "url": "https://genius.com/artists/Gillian-flynn",
+        "type": "regular",
+        "id": "233684"
+      },
+      {
+        "name": "Gillian Welch",
+        "url": "https://genius.com/artists/Gillian-welch",
+        "type": "regular",
+        "id": "43258"
+      },
+      {
+        "name": "Gil Scott-Heron",
+        "url": "https://genius.com/artists/Gil-scott-heron",
+        "type": "regular",
+        "id": "953"
+      },
+      {
+        "name": "Gil Scott-Heron & Brian Jackson",
+        "url": "https://genius.com/artists/Gil-scott-heron-and-brian-jackson",
+        "type": "regular",
+        "id": "988520"
+      },
+      {
+        "name": "Gimpson",
+        "url": "https://genius.com/artists/Gimpson",
+        "type": "regular",
+        "id": "65169"
+      },
+      {
+        "name": "GIMS",
+        "url": "https://genius.com/artists/Gims",
+        "type": "regular",
+        "id": "13325"
+      },
+      {
+        "name": "Gina T",
+        "url": "https://genius.com/artists/Gina-t",
+        "type": "regular",
+        "id": "373639"
+      },
+      {
+        "name": "Gin Blossoms",
+        "url": "https://genius.com/artists/Gin-blossoms",
+        "type": "regular",
+        "id": "38160"
+      },
+      {
+        "name": "Ginette Reno",
+        "url": "https://genius.com/artists/Ginette-reno",
+        "type": "regular",
+        "id": "361461"
+      },
+      {
+        "name": "Ginger Root",
+        "url": "https://genius.com/artists/Ginger-root",
+        "type": "regular",
+        "id": "1428244"
+      },
+      {
+        "name": "Ginny & Georgia Cast",
+        "url": "https://genius.com/artists/Ginny-and-georgia-cast",
+        "type": "regular",
+        "id": "3400473"
+      },
+      {
+        "name": "Gino Mella",
+        "url": "https://genius.com/artists/Gino-mella",
+        "type": "regular",
+        "id": "1654190"
+      },
+      {
+        "name": "Gino Padilla",
+        "url": "https://genius.com/artists/Gino-padilla",
+        "type": "regular",
+        "id": "385508"
+      },
+      {
+        "name": "Gino Paoli",
+        "url": "https://genius.com/artists/Gino-paoli",
+        "type": "regular",
+        "id": "367887"
+      },
+      {
+        "name": "Gino Vannelli",
+        "url": "https://genius.com/artists/Gino-vannelli",
+        "type": "regular",
+        "id": "135888"
+      },
+      {
+        "name": "​gins&melodies",
+        "url": "https://genius.com/artists/Gins-melodies",
+        "type": "regular",
+        "id": "3482023"
+      },
+      {
+        "name": "Ginuwine",
+        "url": "https://genius.com/artists/Ginuwine",
+        "type": "regular",
+        "id": "816"
+      },
+      {
+        "name": "gio.",
+        "url": "https://genius.com/artists/Gio",
+        "type": "regular",
+        "id": "2303105"
+      },
+      {
+        "name": "Gioachino Rossini",
+        "url": "https://genius.com/artists/Gioachino-rossini",
+        "type": "regular",
+        "id": "384148"
+      },
+      {
+        "name": "Gio Evan",
+        "url": "https://genius.com/artists/Gio-evan",
+        "type": "regular",
+        "id": "1336519"
+      },
+      {
+        "name": "Giona Ostinelli",
+        "url": "https://genius.com/artists/Giona-ostinelli",
+        "type": "regular",
+        "id": "2064681"
+      },
+      {
+        "name": "Gionni Gioielli",
+        "url": "https://genius.com/artists/Gionni-gioielli",
+        "type": "regular",
+        "id": "563884"
+      },
+      {
+        "name": "Гио Пика (Gio Pika)",
+        "url": "https://genius.com/artists/Gio-pika",
+        "type": "regular",
+        "id": "1534084"
+      },
+      {
+        "name": "Giorgia",
+        "url": "https://genius.com/artists/Giorgia",
+        "type": "regular",
+        "id": "343666"
+      },
+      {
+        "name": "Giorgio Gaber",
+        "url": "https://genius.com/artists/Giorgio-gaber",
+        "type": "regular",
+        "id": "343992"
+      },
+      {
+        "name": "Giorgio Moroder",
+        "url": "https://genius.com/artists/Giorgio-moroder",
+        "type": "regular",
+        "id": "50122"
+      },
+      {
+        "name": "Giorgio Poi",
+        "url": "https://genius.com/artists/Giorgio-poi",
+        "type": "regular",
+        "id": "1041704"
+      },
+      {
+        "name": "Giorgio Vanni",
+        "url": "https://genius.com/artists/Giorgio-vanni",
+        "type": "regular",
+        "id": "384757"
+      },
+      {
+        "name": "Giorgos Mazonakis",
+        "url": "https://genius.com/artists/Giorgos-mazonakis",
+        "type": "regular",
+        "id": "452282"
+      },
+      {
+        "name": "Giovanni (ROU)",
+        "url": "https://genius.com/artists/Giovanni-rou",
+        "type": "regular",
+        "id": "2827086"
+      },
+      {
+        "name": "Giovanni Truppi",
+        "url": "https://genius.com/artists/Giovanni-truppi",
+        "type": "regular",
+        "id": "1117939"
+      },
+      {
+        "name": "Giovanni Zarrella",
+        "url": "https://genius.com/artists/Giovanni-zarrella",
+        "type": "regular",
+        "id": "1869316"
+      },
+      {
+        "name": "Gippy Grewal",
+        "url": "https://genius.com/artists/Gippy-grewal",
+        "type": "regular",
+        "id": "483966"
+      },
+      {
+        "name": "Gipsy Kings",
+        "url": "https://genius.com/artists/Gipsy-kings",
+        "type": "regular",
+        "id": "152641"
+      },
+      {
+        "name": "Girlfriend",
+        "url": "https://genius.com/artists/Girlfriend",
+        "type": "regular",
+        "id": "354936"
+      },
+      {
+        "name": "Girlhefunny1x",
+        "url": "https://genius.com/artists/Girlhefunny1x",
+        "type": "regular",
+        "id": "2678752"
+      },
+      {
+        "name": "girl in red",
+        "url": "https://genius.com/artists/Girl-in-red",
+        "type": "regular",
+        "id": "1307113"
+      },
+      {
+        "name": "Girls Aloud",
+        "url": "https://genius.com/artists/Girls-aloud",
+        "type": "regular",
+        "id": "137083"
+      },
+      {
+        "name": "Girls' Generation (소녀시대)",
+        "url": "https://genius.com/artists/Girls-generation",
+        "type": "regular",
+        "id": "21939"
+      },
+      {
+        "name": "Girls Rituals",
+        "url": "https://genius.com/artists/Girls-rituals",
+        "type": "regular",
+        "id": "1248490"
+      },
+      {
+        "name": "Girly Girl Productions",
+        "url": "https://genius.com/artists/Girly-girl-productions",
+        "type": "regular",
+        "id": "4068486"
+      },
+      {
+        "name": "Gisbert zu Knyphausen",
+        "url": "https://genius.com/artists/Gisbert-zu-knyphausen",
+        "type": "regular",
+        "id": "221609"
+      },
+      {
+        "name": "GISELLE",
+        "url": "https://genius.com/artists/Giselle",
+        "type": "regular",
+        "id": "2454509"
+      },
+      {
+        "name": "gitarakuru",
+        "url": "https://genius.com/artists/Gitarakuru",
+        "type": "regular",
+        "id": "2677711"
+      },
+      {
+        "name": "Git Fresh",
+        "url": "https://genius.com/artists/Git-fresh",
+        "type": "regular",
+        "id": "19766"
+      },
+      {
+        "name": "Giulia Mei",
+        "url": "https://genius.com/artists/Giulia-mei",
+        "type": "regular",
+        "id": "2679067"
+      },
+      {
+        "name": "Giulio Cercato",
+        "url": "https://genius.com/artists/Giulio-cercato",
+        "type": "regular",
+        "id": "1431096"
+      },
+      {
+        "name": "Giuseppe Verdi",
+        "url": "https://genius.com/artists/Giuseppe-verdi",
+        "type": "regular",
+        "id": "186842"
+      },
+      {
+        "name": "Giuse The Lizia",
+        "url": "https://genius.com/artists/Giuse-the-lizia",
+        "type": "regular",
+        "id": "2708113"
+      },
+      {
+        "name": "ギヴン (Given)",
+        "url": "https://genius.com/artists/Given",
+        "type": "regular",
+        "id": "1926940"
+      },
+      {
+        "name": "GIVĒON",
+        "url": "https://genius.com/artists/Giveon",
+        "type": "regular",
+        "id": "1610113"
+      },
+      {
+        "name": "Gizel Jiménez",
+        "url": "https://genius.com/artists/Gizel-jimenez",
+        "type": "regular",
+        "id": "1612167"
+      },
+      {
+        "name": "Gizwop",
+        "url": "https://genius.com/artists/Gizwop",
+        "type": "regular",
+        "id": "3230290"
+      },
+      {
+        "name": "Gjon's Tears",
+        "url": "https://genius.com/artists/Gjons-tears",
+        "type": "regular",
+        "id": "2133971"
+      },
+      {
+        "name": "Gökçe",
+        "url": "https://genius.com/artists/Gokce",
+        "type": "regular",
+        "id": "333241"
+      },
+      {
+        "name": "Gökhan Kırdar",
+        "url": "https://genius.com/artists/Gokhan-krdar",
+        "type": "regular",
+        "id": "986005"
+      },
+      {
+        "name": "Gökhan Türkmen",
+        "url": "https://genius.com/artists/Gokhan-turkmen",
+        "type": "regular",
+        "id": "390002"
+      },
+      {
+        "name": "Gökhan Özen",
+        "url": "https://genius.com/artists/Gokhan-ozen",
+        "type": "regular",
+        "id": "360263"
+      },
+      {
+        "name": "Göksel",
+        "url": "https://genius.com/artists/Goksel",
+        "type": "regular",
+        "id": "356326"
+      },
+      {
+        "name": "Göksel İpekçi",
+        "url": "https://genius.com/artists/Goksel-ipekci",
+        "type": "regular",
+        "id": "3989335"
+      },
+      {
+        "name": "Glad",
+        "url": "https://genius.com/artists/Glad",
+        "type": "regular",
+        "id": "358352"
+      },
+      {
+        "name": "Gladys Knight",
+        "url": "https://genius.com/artists/Gladys-knight",
+        "type": "regular",
+        "id": "40272"
+      },
+      {
+        "name": "Gladys Knight & The Pips",
+        "url": "https://genius.com/artists/Gladys-knight-and-the-pips",
+        "type": "regular",
+        "id": "40274"
+      },
+      {
+        "name": "glaive",
+        "url": "https://genius.com/artists/Glaive",
+        "type": "regular",
+        "id": "2155937"
+      },
+      {
+        "name": "GLAM GO GANG!",
+        "url": "https://genius.com/artists/Glam-go-gang",
+        "type": "regular",
+        "id": "1666907"
+      },
+      {
+        "name": "Glare",
+        "url": "https://genius.com/artists/Glare",
+        "type": "regular",
+        "id": "1553590"
+      },
+      {
+        "name": "Glasond",
+        "url": "https://genius.com/artists/Glasond",
+        "type": "regular",
+        "id": "656871"
+      },
+      {
+        "name": "Glass Animals",
+        "url": "https://genius.com/artists/Glass-animals",
+        "type": "regular",
+        "id": "87048"
+      },
+      {
+        "name": "glass beach",
+        "url": "https://genius.com/artists/Glass-beach",
+        "type": "regular",
+        "id": "1494817"
+      },
+      {
+        "name": "Glassjaw",
+        "url": "https://genius.com/artists/Glassjaw",
+        "type": "regular",
+        "id": "20307"
+      },
+      {
+        "name": "главный герой (glavniy geroy)",
+        "url": "https://genius.com/artists/Glavniy-geroy",
+        "type": "regular",
+        "id": "4343176"
+      },
+      {
+        "name": "​glb3ats",
+        "url": "https://genius.com/artists/Glb3ats",
+        "type": "regular",
+        "id": "1004311"
+      },
+      {
+        "name": "Gülben Ergen",
+        "url": "https://genius.com/artists/Gulben-ergen",
+        "type": "regular",
+        "id": "364522"
+      },
+      {
+        "name": "Gülden Karaböcek",
+        "url": "https://genius.com/artists/Gulden-karabocek",
+        "type": "regular",
+        "id": "479290"
+      },
+      {
+        "name": "Gleb",
+        "url": "https://genius.com/artists/Gleb",
+        "type": "regular",
+        "id": "564398"
+      },
+      {
+        "name": "ГЛЕБАС (GLEBASEE)",
+        "url": "https://genius.com/artists/Glebasee",
+        "type": "regular",
+        "id": "3908699"
+      },
+      {
+        "name": "Glee Cast",
+        "url": "https://genius.com/artists/Glee-cast",
+        "type": "regular",
+        "id": "275474"
+      },
+      {
+        "name": "Gülşen",
+        "url": "https://genius.com/artists/Gulsen",
+        "type": "regular",
+        "id": "395672"
+      },
+      {
+        "name": "Glen A. Larson",
+        "url": "https://genius.com/artists/Glen-a-larson",
+        "type": "regular",
+        "id": "403859"
+      },
+      {
+        "name": "Glen Campbell",
+        "url": "https://genius.com/artists/Glen-campbell",
+        "type": "regular",
+        "id": "68129"
+      },
+      {
+        "name": "GlenGang 030",
+        "url": "https://genius.com/artists/Glengang-030",
+        "type": "regular",
+        "id": "1328731"
+      },
+      {
+        "name": "Glen Hansard",
+        "url": "https://genius.com/artists/Glen-hansard",
+        "type": "regular",
+        "id": "21312"
+      },
+      {
+        "name": "Glenn Fredly",
+        "url": "https://genius.com/artists/Glenn-fredly",
+        "type": "regular",
+        "id": "367484"
+      },
+      {
+        "name": "Glenn Frey",
+        "url": "https://genius.com/artists/Glenn-frey",
+        "type": "regular",
+        "id": "363056"
+      },
+      {
+        "name": "Glenn Jones",
+        "url": "https://genius.com/artists/Glenn-jones",
+        "type": "regular",
+        "id": "367959"
+      },
+      {
+        "name": "Glenn Kezer",
+        "url": "https://genius.com/artists/Glenn-kezer",
+        "type": "regular",
+        "id": "3281861"
+      },
+      {
+        "name": "Glenn Miller",
+        "url": "https://genius.com/artists/Glenn-miller",
+        "type": "regular",
+        "id": "36292"
+      },
+      {
+        "name": "Glenn Miller and His Orchestra",
+        "url": "https://genius.com/artists/Glenn-miller-and-his-orchestra",
+        "type": "regular",
+        "id": "372472"
+      },
+      {
+        "name": "Glenn Osser",
+        "url": "https://genius.com/artists/Glenn-osser",
+        "type": "regular",
+        "id": "1892608"
+      },
+      {
+        "name": "Glenn Travis",
+        "url": "https://genius.com/artists/Glenn-travis",
+        "type": "regular",
+        "id": "589752"
+      },
+      {
+        "name": "GlitcheCalKatt",
+        "url": "https://genius.com/artists/Glitchecalkatt",
+        "type": "regular",
+        "id": "3757975"
+      },
+      {
+        "name": "Glitch Whisper",
+        "url": "https://genius.com/artists/Glitch-whisper",
+        "type": "regular",
+        "id": "3913455"
+      },
+      {
+        "name": "​glitterpop!",
+        "url": "https://genius.com/artists/Glitterpop",
+        "type": "regular",
+        "id": "3378695"
+      },
+      {
+        "name": "Glizz",
+        "url": "https://genius.com/artists/Glizz",
+        "type": "regular",
+        "id": "1588546"
+      },
+      {
+        "name": "Glizzy Gvng Inc.",
+        "url": "https://genius.com/artists/Glizzy-gvng-inc",
+        "type": "regular",
+        "id": "3370371"
+      },
+      {
+        "name": "Glo",
+        "url": "https://genius.com/artists/Glo",
+        "type": "regular",
+        "id": "2848432"
+      },
+      {
+        "name": "Gloc-9",
+        "url": "https://genius.com/artists/Gloc-9",
+        "type": "regular",
+        "id": "24047"
+      },
+      {
+        "name": "Glocca Morra",
+        "url": "https://genius.com/artists/Glocca-morra",
+        "type": "regular",
+        "id": "379536"
+      },
+      {
+        "name": "Glocky",
+        "url": "https://genius.com/artists/Glocky",
+        "type": "regular",
+        "id": "3064077"
+      },
+      {
+        "name": "Glokk40Spaz",
+        "url": "https://genius.com/artists/Glokk40spaz",
+        "type": "regular",
+        "id": "2671674"
+      },
+      {
+        "name": "Gloosito",
+        "url": "https://genius.com/artists/Gloosito",
+        "type": "regular",
+        "id": "2498575"
+      },
+      {
+        "name": "Glorb",
+        "url": "https://genius.com/artists/Glorb",
+        "type": "regular",
+        "id": "3577375"
+      },
+      {
+        "name": "Gloria Estefan",
+        "url": "https://genius.com/artists/Gloria-estefan",
+        "type": "regular",
+        "id": "83348"
+      },
+      {
+        "name": "Gloria Gaynor",
+        "url": "https://genius.com/artists/Gloria-gaynor",
+        "type": "regular",
+        "id": "50632"
+      },
+      {
+        "name": "Gloria Loring",
+        "url": "https://genius.com/artists/Gloria-loring",
+        "type": "regular",
+        "id": "352727"
+      },
+      {
+        "name": "Gloria Trevi",
+        "url": "https://genius.com/artists/Gloria-trevi",
+        "type": "regular",
+        "id": "344714"
+      },
+      {
+        "name": "Gloryhammer",
+        "url": "https://genius.com/artists/Gloryhammer",
+        "type": "regular",
+        "id": "361962"
+      },
+      {
+        "name": "GlorySixVain",
+        "url": "https://genius.com/artists/Glorysixvain",
+        "type": "regular",
+        "id": "2721171"
+      },
+      {
+        "name": "Gloss Up",
+        "url": "https://genius.com/artists/Gloss-up",
+        "type": "regular",
+        "id": "2265676"
+      },
+      {
+        "name": "Glukoza",
+        "url": "https://genius.com/artists/Glukoza",
+        "type": "regular",
+        "id": "4092151"
+      },
+      {
+        "name": "Glynis Johns",
+        "url": "https://genius.com/artists/Glynis-johns",
+        "type": "regular",
+        "id": "381205"
+      },
+      {
+        "name": "G.M. Ashraf",
+        "url": "https://genius.com/artists/Gm-ashraf",
+        "type": "regular",
+        "id": "2742537"
+      },
+      {
+        "name": "GMBeats Degranalo",
+        "url": "https://genius.com/artists/Gmbeats-degranalo",
+        "type": "regular",
+        "id": "3680693"
+      },
+      {
+        "name": "Gminxr",
+        "url": "https://genius.com/artists/Gminxr",
+        "type": "regular",
+        "id": "2513322"
+      },
+      {
+        "name": "Gnags",
+        "url": "https://genius.com/artists/Gnags",
+        "type": "regular",
+        "id": "343561"
+      },
+      {
+        "name": "Gnarls Barkley",
+        "url": "https://genius.com/artists/Gnarls-barkley",
+        "type": "regular",
+        "id": "2301"
+      },
+      {
+        "name": "gnash",
+        "url": "https://genius.com/artists/Gnash",
+        "type": "regular",
+        "id": "48185"
+      },
+      {
+        "name": "Gına (TUR)",
+        "url": "https://genius.com/artists/Gna-tur",
+        "type": "regular",
+        "id": "1914542"
+      },
+      {
+        "name": "Güneş",
+        "url": "https://genius.com/artists/Gunes",
+        "type": "regular",
+        "id": "2050095"
+      },
+      {
+        "name": "GNG",
+        "url": "https://genius.com/artists/Gng",
+        "type": "regular",
+        "id": "1489982"
+      },
+      {
+        "name": "гнилаялирика (gnilayalirika)",
+        "url": "https://genius.com/artists/Gnilayalirika",
+        "type": "regular",
+        "id": "1835224"
+      },
+      {
+        "name": "Günter Kallmann Choir",
+        "url": "https://genius.com/artists/Gunter-kallmann-choir",
+        "type": "regular",
+        "id": "2995295"
+      },
+      {
+        "name": "Günther",
+        "url": "https://genius.com/artists/Gunther",
+        "type": "regular",
+        "id": "365285"
+      },
+      {
+        "name": "Goa",
+        "url": "https://genius.com/artists/Goa",
+        "type": "regular",
+        "id": "572681"
+      },
+      {
+        "name": "Goanna",
+        "url": "https://genius.com/artists/Goanna",
+        "type": "regular",
+        "id": "386718"
+      },
+      {
+        "name": "Goapele",
+        "url": "https://genius.com/artists/Goapele",
+        "type": "regular",
+        "id": "2205"
+      },
+      {
+        "name": "Goats Aint Real",
+        "url": "https://genius.com/artists/Goats-aint-real",
+        "type": "regular",
+        "id": "4115287"
+      },
+      {
+        "name": "Gobs",
+        "url": "https://genius.com/artists/Gobs",
+        "type": "regular",
+        "id": "1484607"
+      },
+      {
+        "name": "Goca Lazarević",
+        "url": "https://genius.com/artists/Goca-lazarevic",
+        "type": "regular",
+        "id": "3582101"
+      },
+      {
+        "name": "Goca Tržan",
+        "url": "https://genius.com/artists/Goca-trzan",
+        "type": "regular",
+        "id": "1595804"
+      },
+      {
+        "name": "goddard.",
+        "url": "https://genius.com/artists/Goddard",
+        "type": "regular",
+        "id": "2708910"
+      },
+      {
+        "name": "Tha God Fahim",
+        "url": "https://genius.com/artists/Tha-god-fahim",
+        "type": "regular",
+        "id": "650439"
+      },
+      {
+        "name": "The Godfather (Film)",
+        "url": "https://genius.com/artists/The-godfather-film",
+        "type": "regular",
+        "id": "55470"
+      },
+      {
+        "name": "Godfather of Harlem",
+        "url": "https://genius.com/artists/Godfather-of-harlem",
+        "type": "regular",
+        "id": "1934380"
+      },
+      {
+        "name": "Godflesh",
+        "url": "https://genius.com/artists/Godflesh",
+        "type": "regular",
+        "id": "343833"
+      },
+      {
+        "name": "GODHANDUSA",
+        "url": "https://genius.com/artists/Godhandusa",
+        "type": "regular",
+        "id": "4000005"
+      },
+      {
+        "name": "God's Hate",
+        "url": "https://genius.com/artists/Gods-hate",
+        "type": "regular",
+        "id": "2641732"
+      },
+      {
+        "name": "Godsmack",
+        "url": "https://genius.com/artists/Godsmack",
+        "type": "regular",
+        "id": "67595"
+      },
+      {
+        "name": "Godspeed You! Black Emperor",
+        "url": "https://genius.com/artists/Godspeed-you-black-emperor",
+        "type": "regular",
+        "id": "33072"
+      },
+      {
+        "name": "Godspell",
+        "url": "https://genius.com/artists/Godspell",
+        "type": "regular",
+        "id": "375797"
+      },
+      {
+        "name": "God's Property",
+        "url": "https://genius.com/artists/Gods-property",
+        "type": "regular",
+        "id": "8095"
+      },
+      {
+        "name": "​godtearz",
+        "url": "https://genius.com/artists/Godtearz",
+        "type": "regular",
+        "id": "3668120"
+      },
+      {
+        "name": "Goga Sekulić",
+        "url": "https://genius.com/artists/Goga-sekulic",
+        "type": "regular",
+        "id": "1045391"
+      },
+      {
+        "name": "Gogol Bordello",
+        "url": "https://genius.com/artists/Gogol-bordello",
+        "type": "regular",
+        "id": "30187"
+      },
+      {
+        "name": "The Go-Go's",
+        "url": "https://genius.com/artists/The-go-gos",
+        "type": "regular",
+        "id": "279149"
+      },
+      {
+        "name": "Gojira",
+        "url": "https://genius.com/artists/Gojira",
+        "type": "regular",
+        "id": "336117"
+      },
+      {
+        "name": "Go-Jo (AUS)",
+        "url": "https://genius.com/artists/Go-jo-aus",
+        "type": "regular",
+        "id": "3478595"
+      },
+      {
+        "name": "Gola Gianni",
+        "url": "https://genius.com/artists/Gola-gianni",
+        "type": "regular",
+        "id": "2255460"
+      },
+      {
+        "name": "Golden Earring",
+        "url": "https://genius.com/artists/Golden-earring",
+        "type": "regular",
+        "id": "19456"
+      },
+      {
+        "name": "Goldenito",
+        "url": "https://genius.com/artists/Goldenito",
+        "type": "regular",
+        "id": "3057725"
+      },
+      {
+        "name": "Golden Years",
+        "url": "https://genius.com/artists/Golden-years",
+        "type": "regular",
+        "id": "2455616"
+      },
+      {
+        "name": "Goldfinger",
+        "url": "https://genius.com/artists/Goldfinger",
+        "type": "regular",
+        "id": "61627"
+      },
+      {
+        "name": "GoldFord",
+        "url": "https://genius.com/artists/Goldford",
+        "type": "regular",
+        "id": "252672"
+      },
+      {
+        "name": "Goldfrapp",
+        "url": "https://genius.com/artists/Goldfrapp",
+        "type": "regular",
+        "id": "107255"
+      },
+      {
+        "name": "Goldie Boutilier",
+        "url": "https://genius.com/artists/Goldie-boutilier",
+        "type": "regular",
+        "id": "991931"
+      },
+      {
+        "name": "GoldLink",
+        "url": "https://genius.com/artists/Goldlink",
+        "type": "regular",
+        "id": "64930"
+      },
+      {
+        "name": "Golfklubb",
+        "url": "https://genius.com/artists/Golfklubb",
+        "type": "regular",
+        "id": "3518026"
+      },
+      {
+        "name": "голодный (golodnyj)",
+        "url": "https://genius.com/artists/Golodnyj",
+        "type": "regular",
+        "id": "4046682"
+      },
+      {
+        "name": "Gomi",
+        "url": "https://genius.com/artists/Gomi",
+        "type": "regular",
+        "id": "3331522"
+      },
+      {
+        "name": "GONE.Fludd",
+        "url": "https://genius.com/artists/Gonefludd",
+        "type": "regular",
+        "id": "299966"
+      },
+      {
+        "name": "Gong",
+        "url": "https://genius.com/artists/Gong",
+        "type": "regular",
+        "id": "69182"
+      },
+      {
+        "name": "Gonzalo Genek",
+        "url": "https://genius.com/artists/Gonzalo-genek",
+        "type": "regular",
+        "id": "626332"
+      },
+      {
+        "name": "Gonzo (Muppet)",
+        "url": "https://genius.com/artists/Gonzo-muppet",
+        "type": "regular",
+        "id": "1071157"
+      },
+      {
+        "name": "Gonzy",
+        "url": "https://genius.com/artists/Gonzy",
+        "type": "regular",
+        "id": "1244609"
+      },
+      {
+        "name": "Goodboys",
+        "url": "https://genius.com/artists/Goodboys",
+        "type": "regular",
+        "id": "1381137"
+      },
+      {
+        "name": "Good Charlotte",
+        "url": "https://genius.com/artists/Good-charlotte",
+        "type": "regular",
+        "id": "1822"
+      },
+      {
+        "name": "Goodie Mob",
+        "url": "https://genius.com/artists/Goodie-mob",
+        "type": "regular",
+        "id": "748"
+      },
+      {
+        "name": "Good Kid",
+        "url": "https://genius.com/artists/Good-kid",
+        "type": "regular",
+        "id": "578307"
+      },
+      {
+        "name": "Good Morning",
+        "url": "https://genius.com/artists/Good-morning",
+        "type": "regular",
+        "id": "655156"
+      },
+      {
+        "name": "Good Neighbours",
+        "url": "https://genius.com/artists/Good-neighbours",
+        "type": "regular",
+        "id": "3807239"
+      },
+      {
+        "name": "Good Riddance",
+        "url": "https://genius.com/artists/Good-riddance",
+        "type": "regular",
+        "id": "77788"
+      },
+      {
+        "name": "Good Will Hunting",
+        "url": "https://genius.com/artists/Good-will-hunting",
+        "type": "regular",
+        "id": "207418"
+      },
+      {
+        "name": "​googly eyes",
+        "url": "https://genius.com/artists/Googly-eyes",
+        "type": "regular",
+        "id": "327412"
+      },
+      {
+        "name": "The Goo Goo Dolls",
+        "url": "https://genius.com/artists/The-goo-goo-dolls",
+        "type": "regular",
+        "id": "23517"
+      },
+      {
+        "name": "Googoosh",
+        "url": "https://genius.com/artists/Googoosh",
+        "type": "regular",
+        "id": "355128"
+      },
+      {
+        "name": "Goose (Band)",
+        "url": "https://genius.com/artists/Goose-band",
+        "type": "regular",
+        "id": "2722088"
+      },
+      {
+        "name": "Gooseworx",
+        "url": "https://genius.com/artists/Gooseworx",
+        "type": "regular",
+        "id": "1196430"
+      },
+      {
+        "name": "Gopi Sundar",
+        "url": "https://genius.com/artists/Gopi-sundar",
+        "type": "regular",
+        "id": "2956674"
+      },
+      {
+        "name": "Goran Bregović",
+        "url": "https://genius.com/artists/Goran-bregovic",
+        "type": "regular",
+        "id": "404702"
+      },
+      {
+        "name": "Gord Downie",
+        "url": "https://genius.com/artists/Gord-downie",
+        "type": "regular",
+        "id": "196529"
+      },
+      {
+        "name": "Gordo",
+        "url": "https://genius.com/artists/Gordo",
+        "type": "regular",
+        "id": "13046"
+      },
+      {
+        "name": "Gordon Lightfoot",
+        "url": "https://genius.com/artists/Gordon-lightfoot",
+        "type": "regular",
+        "id": "39004"
+      },
+      {
+        "name": "Gordon MacRae",
+        "url": "https://genius.com/artists/Gordon-macrae",
+        "type": "regular",
+        "id": "332696"
+      },
+      {
+        "name": "​goreshit",
+        "url": "https://genius.com/artists/Goreshit",
+        "type": "regular",
+        "id": "1262025"
+      },
+      {
+        "name": "Gorgon City",
+        "url": "https://genius.com/artists/Gorgon-city",
+        "type": "regular",
+        "id": "109623"
+      },
+      {
+        "name": "Gorgoroth",
+        "url": "https://genius.com/artists/Gorgoroth",
+        "type": "regular",
+        "id": "223458"
+      },
+      {
+        "name": "Gorilla Biscuits",
+        "url": "https://genius.com/artists/Gorilla-biscuits",
+        "type": "regular",
+        "id": "363174"
+      },
+      {
+        "name": "GORILLA GLUE",
+        "url": "https://genius.com/artists/Gorilla-glue",
+        "type": "regular",
+        "id": "2357499"
+      },
+      {
+        "name": "Gorilla Zoe",
+        "url": "https://genius.com/artists/Gorilla-zoe",
+        "type": "regular",
+        "id": "859"
+      },
+      {
+        "name": "Goro",
+        "url": "https://genius.com/artists/Goro",
+        "type": "regular",
+        "id": "2688834"
+      },
+      {
+        "name": "Gossip",
+        "url": "https://genius.com/artists/Gossip",
+        "type": "regular",
+        "id": "117934"
+      },
+      {
+        "name": "GOT7",
+        "url": "https://genius.com/artists/Got7",
+        "type": "regular",
+        "id": "361002"
+      },
+      {
+        "name": "Gotay \"El Autentiko\"",
+        "url": "https://genius.com/artists/Gotay-el-autentiko",
+        "type": "regular",
+        "id": "453464"
+      },
+      {
+        "name": "Gothart",
+        "url": "https://genius.com/artists/Gothart",
+        "type": "regular",
+        "id": "354437"
+      },
+      {
+        "name": "​goth girl",
+        "url": "https://genius.com/artists/Goth-girl",
+        "type": "regular",
+        "id": "3920500"
+      },
+      {
+        "name": "Gotthard",
+        "url": "https://genius.com/artists/Gotthard",
+        "type": "regular",
+        "id": "353990"
+      },
+      {
+        "name": "GOTTI (DEU)",
+        "url": "https://genius.com/artists/Gotti-deu",
+        "type": "regular",
+        "id": "3454309"
+      },
+      {
+        "name": "Gotts Street Park",
+        "url": "https://genius.com/artists/Gotts-street-park",
+        "type": "regular",
+        "id": "1657788"
+      },
+      {
+        "name": "Gotu Jim",
+        "url": "https://genius.com/artists/Gotu-jim",
+        "type": "regular",
+        "id": "1642413"
+      },
+      {
+        "name": "Gotye",
+        "url": "https://genius.com/artists/Gotye",
+        "type": "regular",
+        "id": "17395"
+      },
+      {
+        "name": "Govana",
+        "url": "https://genius.com/artists/Govana",
+        "type": "regular",
+        "id": "988660"
+      },
+      {
+        "name": "GoVanni!",
+        "url": "https://genius.com/artists/Govanni",
+        "type": "regular",
+        "id": "2622254"
+      },
+      {
+        "name": "Gov't Mule",
+        "url": "https://genius.com/artists/Govt-mule",
+        "type": "regular",
+        "id": "353657"
+      },
+      {
+        "name": "Gowan",
+        "url": "https://genius.com/artists/Gowan",
+        "type": "regular",
+        "id": "356109"
+      },
+      {
+        "name": "G Perico",
+        "url": "https://genius.com/artists/G-perico",
+        "type": "regular",
+        "id": "667081"
+      },
+      {
+        "name": "Grabbitz",
+        "url": "https://genius.com/artists/Grabbitz",
+        "type": "regular",
+        "id": "211676"
+      },
+      {
+        "name": "Grace Hodgett Young",
+        "url": "https://genius.com/artists/Grace-hodgett-young",
+        "type": "regular",
+        "id": "4167788"
+      },
+      {
+        "name": "Grace Jones",
+        "url": "https://genius.com/artists/Grace-jones",
+        "type": "regular",
+        "id": "7478"
+      },
+      {
+        "name": "Grace Nichols",
+        "url": "https://genius.com/artists/Grace-nichols",
+        "type": "regular",
+        "id": "144561"
+      },
+      {
+        "name": "Grace Phipps",
+        "url": "https://genius.com/artists/Grace-phipps",
+        "type": "regular",
+        "id": "160705"
+      },
+      {
+        "name": "Grace Potter",
+        "url": "https://genius.com/artists/Grace-potter",
+        "type": "regular",
+        "id": "62627"
+      },
+      {
+        "name": "Grace VanderWaal",
+        "url": "https://genius.com/artists/Grace-vanderwaal",
+        "type": "regular",
+        "id": "683289"
+      },
+      {
+        "name": "Gracie Binion",
+        "url": "https://genius.com/artists/Gracie-binion",
+        "type": "regular",
+        "id": "1029504"
+      },
+      {
+        "name": "Gracie's Corner",
+        "url": "https://genius.com/artists/Gracies-corner",
+        "type": "regular",
+        "id": "3228769"
+      },
+      {
+        "name": "Grad!ent",
+        "url": "https://genius.com/artists/Grad-ent",
+        "type": "regular",
+        "id": "3290926"
+      },
+      {
+        "name": "Gradur",
+        "url": "https://genius.com/artists/Gradur",
+        "type": "regular",
+        "id": "72710"
+      },
+      {
+        "name": "Градусы (Gradusy)",
+        "url": "https://genius.com/artists/Gradusy",
+        "type": "regular",
+        "id": "1323334"
+      },
+      {
+        "name": "GRAHAM",
+        "url": "https://genius.com/artists/Graham",
+        "type": "regular",
+        "id": "1992186"
+      },
+      {
+        "name": "Graham Barham",
+        "url": "https://genius.com/artists/Graham-barham",
+        "type": "regular",
+        "id": "3279485"
+      },
+      {
+        "name": "Graham Kendrick",
+        "url": "https://genius.com/artists/Graham-kendrick",
+        "type": "regular",
+        "id": "382085"
+      },
+      {
+        "name": "Graham Nash",
+        "url": "https://genius.com/artists/Graham-nash",
+        "type": "regular",
+        "id": "29615"
+      },
+      {
+        "name": "Gram Parsons",
+        "url": "https://genius.com/artists/Gram-parsons",
+        "type": "regular",
+        "id": "103057"
+      },
+      {
+        "name": "Grandaddy",
+        "url": "https://genius.com/artists/Grandaddy",
+        "type": "regular",
+        "id": "16000"
+      },
+      {
+        "name": "Grand Corps Malade",
+        "url": "https://genius.com/artists/Grand-corps-malade",
+        "type": "regular",
+        "id": "1712"
+      },
+      {
+        "name": "Grand Funk Railroad",
+        "url": "https://genius.com/artists/Grand-funk-railroad",
+        "type": "regular",
+        "id": "37783"
+      },
+      {
+        "name": "Grandmaster Flash & The Furious Five",
+        "url": "https://genius.com/artists/Grandmaster-flash-and-the-furious-five",
+        "type": "regular",
+        "id": "347"
+      },
+      {
+        "name": "grandson",
+        "url": "https://genius.com/artists/Grandson",
+        "type": "regular",
+        "id": "1046623"
+      },
+      {
+        "name": "Granger Smith",
+        "url": "https://genius.com/artists/Granger-smith",
+        "type": "regular",
+        "id": "362210"
+      },
+      {
+        "name": "Grant Kirkhope",
+        "url": "https://genius.com/artists/Grant-kirkhope",
+        "type": "regular",
+        "id": "527947"
+      },
+      {
+        "name": "Grant MacDonald",
+        "url": "https://genius.com/artists/Grant-macdonald",
+        "type": "regular",
+        "id": "992136"
+      },
+      {
+        "name": "Grant Steller",
+        "url": "https://genius.com/artists/Grant-steller",
+        "type": "regular",
+        "id": "3976749"
+      },
+      {
+        "name": "Granuja",
+        "url": "https://genius.com/artists/Granuja",
+        "type": "regular",
+        "id": "1030390"
+      },
+      {
+        "name": "Grasa",
+        "url": "https://genius.com/artists/Grasa",
+        "type": "regular",
+        "id": "1990787"
+      },
+      {
+        "name": "The Grass Roots",
+        "url": "https://genius.com/artists/The-grass-roots",
+        "type": "regular",
+        "id": "1264842"
+      },
+      {
+        "name": "Grateful",
+        "url": "https://genius.com/artists/Grateful",
+        "type": "regular",
+        "id": "4355083"
+      },
+      {
+        "name": "The Grateful Dead",
+        "url": "https://genius.com/artists/The-grateful-dead",
+        "type": "regular",
+        "id": "21900"
+      },
+      {
+        "name": "Gravediggaz",
+        "url": "https://genius.com/artists/Gravediggaz",
+        "type": "regular",
+        "id": "785"
+      },
+      {
+        "name": "Grayson Villanueva",
+        "url": "https://genius.com/artists/Grayson-villanueva",
+        "type": "regular",
+        "id": "2956256"
+      },
+      {
+        "name": "GrayWalf",
+        "url": "https://genius.com/artists/Graywalf",
+        "type": "regular",
+        "id": "2281483"
+      },
+      {
+        "name": "Гражданская Оборона (Grazhdanskaya Oborona)",
+        "url": "https://genius.com/artists/Grazhdanskaya-oborona",
+        "type": "regular",
+        "id": "303252"
+      },
+      {
+        "name": "Grca",
+        "url": "https://genius.com/artists/Grca",
+        "type": "regular",
+        "id": "3053503"
+      },
+      {
+        "name": "Grše",
+        "url": "https://genius.com/artists/Grse",
+        "type": "regular",
+        "id": "333854"
+      },
+      {
+        "name": "GREAF",
+        "url": "https://genius.com/artists/Greaf",
+        "type": "regular",
+        "id": "91572"
+      },
+      {
+        "name": "Great Big Sea",
+        "url": "https://genius.com/artists/Great-big-sea",
+        "type": "regular",
+        "id": "228162"
+      },
+      {
+        "name": "A Great Big World",
+        "url": "https://genius.com/artists/A-great-big-world",
+        "type": "regular",
+        "id": "87946"
+      },
+      {
+        "name": "Greater Vision",
+        "url": "https://genius.com/artists/Greater-vision",
+        "type": "regular",
+        "id": "380739"
+      },
+      {
+        "name": "The Greatest Showman Ensemble",
+        "url": "https://genius.com/artists/The-greatest-showman-ensemble",
+        "type": "regular",
+        "id": "1326236"
+      },
+      {
+        "name": "Great White",
+        "url": "https://genius.com/artists/Great-white",
+        "type": "regular",
+        "id": "17261"
+      },
+      {
+        "name": "GRECAS",
+        "url": "https://genius.com/artists/Grecas",
+        "type": "regular",
+        "id": "3645540"
+      },
+      {
+        "name": "гречка (grechka)",
+        "url": "https://genius.com/artists/Grechka",
+        "type": "regular",
+        "id": "1325712"
+      },
+      {
+        "name": "G-Recordz",
+        "url": "https://genius.com/artists/G-recordz",
+        "type": "regular",
+        "id": "1111839"
+      },
+      {
+        "name": "GReeeN",
+        "url": "https://genius.com/artists/Greeen",
+        "type": "regular",
+        "id": "35472"
+      },
+      {
+        "name": "Greeicy",
+        "url": "https://genius.com/artists/Greeicy",
+        "type": "regular",
+        "id": "1402753"
+      },
+      {
+        "name": "​greek",
+        "url": "https://genius.com/artists/Greek",
+        "type": "regular",
+        "id": "25374"
+      },
+      {
+        "name": "Greekazo",
+        "url": "https://genius.com/artists/Greekazo",
+        "type": "regular",
+        "id": "1895814"
+      },
+      {
+        "name": "Green Apelsin",
+        "url": "https://genius.com/artists/Green-apelsin",
+        "type": "regular",
+        "id": "2717748"
+      },
+      {
+        "name": "The Green (band)",
+        "url": "https://genius.com/artists/The-green-band",
+        "type": "regular",
+        "id": "652954"
+      },
+      {
+        "name": "Green Bay Packers",
+        "url": "https://genius.com/artists/Green-bay-packers",
+        "type": "regular",
+        "id": "227338"
+      },
+      {
+        "name": "Green Montana",
+        "url": "https://genius.com/artists/Green-montana",
+        "type": "regular",
+        "id": "1650901"
+      },
+      {
+        "name": "Greensky Bluegrass",
+        "url": "https://genius.com/artists/Greensky-bluegrass",
+        "type": "regular",
+        "id": "376565"
+      },
+      {
+        "name": "Greentea Peng",
+        "url": "https://genius.com/artists/Greentea-peng",
+        "type": "regular",
+        "id": "1469586"
+      },
+      {
+        "name": "Greer",
+        "url": "https://genius.com/artists/Greer",
+        "type": "regular",
+        "id": "1673889"
+      },
+      {
+        "name": "Greet Death",
+        "url": "https://genius.com/artists/Greet-death",
+        "type": "regular",
+        "id": "1459457"
+      },
+      {
+        "name": "Greg & Steve",
+        "url": "https://genius.com/artists/Greg-and-steve",
+        "type": "regular",
+        "id": "380991"
+      },
+      {
+        "name": "Greg Brown",
+        "url": "https://genius.com/artists/Greg-brown",
+        "type": "regular",
+        "id": "355572"
+      },
+      {
+        "name": "Greg Cipes",
+        "url": "https://genius.com/artists/Greg-cipes",
+        "type": "regular",
+        "id": "1267866"
+      },
+      {
+        "name": "greggreg",
+        "url": "https://genius.com/artists/Greggreg",
+        "type": "regular",
+        "id": "4193886"
+      },
+      {
+        "name": "Greg Kihn Band",
+        "url": "https://genius.com/artists/Greg-kihn-band",
+        "type": "regular",
+        "id": "68003"
+      },
+      {
+        "name": "Greg O'Quin 'n Joyful Noyze",
+        "url": "https://genius.com/artists/Greg-oquin-n-joyful-noyze",
+        "type": "regular",
+        "id": "405792"
+      },
+      {
+        "name": "Gregor Hägele",
+        "url": "https://genius.com/artists/Gregor-hagele",
+        "type": "regular",
+        "id": "1726223"
+      },
+      {
+        "name": "Gregorian",
+        "url": "https://genius.com/artists/Gregorian",
+        "type": "regular",
+        "id": "325495"
+      },
+      {
+        "name": "Gregorian Chant",
+        "url": "https://genius.com/artists/Gregorian-chant",
+        "type": "regular",
+        "id": "458487"
+      },
+      {
+        "name": "Gregor Magaš",
+        "url": "https://genius.com/artists/Gregor-magas",
+        "type": "regular",
+        "id": "4352023"
+      },
+      {
+        "name": "Gregory Alan Isakov",
+        "url": "https://genius.com/artists/Gregory-alan-isakov",
+        "type": "regular",
+        "id": "210793"
+      },
+      {
+        "name": "Gregory and the Hawk",
+        "url": "https://genius.com/artists/Gregory-and-the-hawk",
+        "type": "regular",
+        "id": "196665"
+      },
+      {
+        "name": "The Gregory Brothers",
+        "url": "https://genius.com/artists/The-gregory-brothers",
+        "type": "regular",
+        "id": "33205"
+      },
+      {
+        "name": "Gregory Diaz IV",
+        "url": "https://genius.com/artists/Gregory-diaz-iv",
+        "type": "regular",
+        "id": "2700064"
+      },
+      {
+        "name": "Gregory Isaacs",
+        "url": "https://genius.com/artists/Gregory-isaacs",
+        "type": "regular",
+        "id": "25762"
+      },
+      {
+        "name": "Gregory Porter",
+        "url": "https://genius.com/artists/Gregory-porter",
+        "type": "regular",
+        "id": "62352"
+      },
+      {
+        "name": "​grentperez",
+        "url": "https://genius.com/artists/Grentperez",
+        "type": "regular",
+        "id": "2104871"
+      },
+      {
+        "name": "Greta Van Fleet",
+        "url": "https://genius.com/artists/Greta-van-fleet",
+        "type": "regular",
+        "id": "1156175"
+      },
+      {
+        "name": "Gretchen Wilson",
+        "url": "https://genius.com/artists/Gretchen-wilson",
+        "type": "regular",
+        "id": "324154"
+      },
+      {
+        "name": "Grey",
+        "url": "https://genius.com/artists/Grey",
+        "type": "regular",
+        "id": "59748"
+      },
+      {
+        "name": "Grey Daze",
+        "url": "https://genius.com/artists/Grey-daze",
+        "type": "regular",
+        "id": "364296"
+      },
+      {
+        "name": "Greyhoundz (Rap)",
+        "url": "https://genius.com/artists/Greyhoundz-rap",
+        "type": "regular",
+        "id": "357483"
+      },
+      {
+        "name": "Greylan James",
+        "url": "https://genius.com/artists/Greylan-james",
+        "type": "regular",
+        "id": "2236841"
+      },
+      {
+        "name": "greyrock",
+        "url": "https://genius.com/artists/Greyrock",
+        "type": "regular",
+        "id": "3281557"
+      },
+      {
+        "name": "Greyson Chance",
+        "url": "https://genius.com/artists/Greyson-chance",
+        "type": "regular",
+        "id": "22444"
+      },
+      {
+        "name": "GRi",
+        "url": "https://genius.com/artists/Gri",
+        "type": "regular",
+        "id": "1973390"
+      },
+      {
+        "name": "Гриб Крабоид (Grib Kraboid)",
+        "url": "https://genius.com/artists/Grib-kraboid",
+        "type": "regular",
+        "id": "4237802"
+      },
+      {
+        "name": "Грибы (Griby)",
+        "url": "https://genius.com/artists/Griby",
+        "type": "regular",
+        "id": "672842"
+      },
+      {
+        "name": "Grieves",
+        "url": "https://genius.com/artists/Grieves",
+        "type": "regular",
+        "id": "2175"
+      },
+      {
+        "name": "Griff",
+        "url": "https://genius.com/artists/Griff",
+        "type": "regular",
+        "id": "189064"
+      },
+      {
+        "name": "Griffin and Quagmire",
+        "url": "https://genius.com/artists/Griffin-and-quagmire",
+        "type": "regular",
+        "id": "161193"
+      },
+      {
+        "name": "Griffinilla",
+        "url": "https://genius.com/artists/Griffinilla",
+        "type": "regular",
+        "id": "140579"
+      },
+      {
+        "name": "Григорий Лепс (Grigory Leps)",
+        "url": "https://genius.com/artists/Grigory-leps",
+        "type": "regular",
+        "id": "653260"
+      },
+      {
+        "name": "GRILLYAZH",
+        "url": "https://genius.com/artists/Grillyazh",
+        "type": "regular",
+        "id": "3288323"
+      },
+      {
+        "name": "Grimes",
+        "url": "https://genius.com/artists/Grimes",
+        "type": "regular",
+        "id": "18722"
+      },
+      {
+        "name": "Grim Salvo",
+        "url": "https://genius.com/artists/Grim-salvo",
+        "type": "regular",
+        "id": "2420321"
+      },
+      {
+        "name": "GrindHard E",
+        "url": "https://genius.com/artists/Grindhard-e",
+        "type": "regular",
+        "id": "2249925"
+      },
+      {
+        "name": "GRiNGO",
+        "url": "https://genius.com/artists/Gringo",
+        "type": "regular",
+        "id": "1207247"
+      },
+      {
+        "name": "GRIP",
+        "url": "https://genius.com/artists/Grip",
+        "type": "regular",
+        "id": "3473"
+      },
+      {
+        "name": "gripin",
+        "url": "https://genius.com/artists/Gripin",
+        "type": "regular",
+        "id": "378358"
+      },
+      {
+        "name": "Griselda",
+        "url": "https://genius.com/artists/Griselda",
+        "type": "regular",
+        "id": "1124868"
+      },
+      {
+        "name": "Grits",
+        "url": "https://genius.com/artists/Grits",
+        "type": "regular",
+        "id": "6294"
+      },
+      {
+        "name": "GRiZ",
+        "url": "https://genius.com/artists/Griz",
+        "type": "regular",
+        "id": "454074"
+      },
+      {
+        "name": "Grizzly Bear",
+        "url": "https://genius.com/artists/Grizzly-bear",
+        "type": "regular",
+        "id": "12531"
+      },
+      {
+        "name": "G.R.L.",
+        "url": "https://genius.com/artists/Grl",
+        "type": "regular",
+        "id": "56143"
+      },
+      {
+        "name": "GRLwood",
+        "url": "https://genius.com/artists/Grlwood",
+        "type": "regular",
+        "id": "1656246"
+      },
+      {
+        "name": "GRM Daily",
+        "url": "https://genius.com/artists/Grm-daily",
+        "type": "regular",
+        "id": "68399"
+      },
+      {
+        "name": "Grünt",
+        "url": "https://genius.com/artists/Grunt",
+        "type": "regular",
+        "id": "65817"
+      },
+      {
+        "name": "Groove Armada",
+        "url": "https://genius.com/artists/Groove-armada",
+        "type": "regular",
+        "id": "6828"
+      },
+      {
+        "name": "Грот (Grot)",
+        "url": "https://genius.com/artists/Grot",
+        "type": "regular",
+        "id": "1244151"
+      },
+      {
+        "name": "Groucho Marx",
+        "url": "https://genius.com/artists/Groucho-marx",
+        "type": "regular",
+        "id": "70242"
+      },
+      {
+        "name": "Groundbreaking",
+        "url": "https://genius.com/artists/Groundbreaking",
+        "type": "regular",
+        "id": "341696"
+      },
+      {
+        "name": "Grouper",
+        "url": "https://genius.com/artists/Grouper",
+        "type": "regular",
+        "id": "12787"
+      },
+      {
+        "name": "GROUPLOVE",
+        "url": "https://genius.com/artists/Grouplove",
+        "type": "regular",
+        "id": "12722"
+      },
+      {
+        "name": "Grover Washington Jr.",
+        "url": "https://genius.com/artists/Grover-washington-jr",
+        "type": "regular",
+        "id": "17709"
+      },
+      {
+        "name": "The Growlers",
+        "url": "https://genius.com/artists/The-growlers",
+        "type": "regular",
+        "id": "176172"
+      },
+      {
+        "name": "Гр. Полухутенко (Gr. Polukhutenko)",
+        "url": "https://genius.com/artists/Gr-polukhutenko",
+        "type": "regular",
+        "id": "2375359"
+      },
+      {
+        "name": "Gruby Mielzky",
+        "url": "https://genius.com/artists/Gruby-mielzky",
+        "type": "regular",
+        "id": "60380"
+      },
+      {
+        "name": "Grup Abdal",
+        "url": "https://genius.com/artists/Grup-abdal",
+        "type": "regular",
+        "id": "481647"
+      },
+      {
+        "name": "Grupo Codiciado",
+        "url": "https://genius.com/artists/Grupo-codiciado",
+        "type": "regular",
+        "id": "1255934"
+      },
+      {
+        "name": "Grupo Feroz",
+        "url": "https://genius.com/artists/Grupo-feroz",
+        "type": "regular",
+        "id": "3787146"
+      },
+      {
+        "name": "Grupo Firme",
+        "url": "https://genius.com/artists/Grupo-firme",
+        "type": "regular",
+        "id": "2044970"
+      },
+      {
+        "name": "Grupo Frontera",
+        "url": "https://genius.com/artists/Grupo-frontera",
+        "type": "regular",
+        "id": "3384041"
+      },
+      {
+        "name": "Grupo H Fierro",
+        "url": "https://genius.com/artists/Grupo-h-fierro",
+        "type": "regular",
+        "id": "4039677"
+      },
+      {
+        "name": "Grupo Marca Registrada",
+        "url": "https://genius.com/artists/Grupo-marca-registrada",
+        "type": "regular",
+        "id": "2076147"
+      },
+      {
+        "name": "Grupo Marrano",
+        "url": "https://genius.com/artists/Grupo-marrano",
+        "type": "regular",
+        "id": "375002"
+      },
+      {
+        "name": "Grupo Maximo Grado",
+        "url": "https://genius.com/artists/Grupo-maximo-grado",
+        "type": "regular",
+        "id": "484874"
+      },
+      {
+        "name": "Grupo Mojado",
+        "url": "https://genius.com/artists/Grupo-mojado",
+        "type": "regular",
+        "id": "353854"
+      },
+      {
+        "name": "Grupo Niche",
+        "url": "https://genius.com/artists/Grupo-niche",
+        "type": "regular",
+        "id": "355936"
+      },
+      {
+        "name": "Gruppa Skryptonite",
+        "url": "https://genius.com/artists/Gruppa-skryptonite",
+        "type": "regular",
+        "id": "1548950"
+      },
+      {
+        "name": "Grup Vitamin",
+        "url": "https://genius.com/artists/Grup-vitamin",
+        "type": "regular",
+        "id": "1306559"
+      },
+      {
+        "name": "Grup Yorum",
+        "url": "https://genius.com/artists/Grup-yorum",
+        "type": "regular",
+        "id": "363123"
+      },
+      {
+        "name": "Грязь (Gryaz)",
+        "url": "https://genius.com/artists/Gryaz",
+        "type": "regular",
+        "id": "1060711"
+      },
+      {
+        "name": "Gryffin",
+        "url": "https://genius.com/artists/Gryffin",
+        "type": "regular",
+        "id": "151092"
+      },
+      {
+        "name": "GSPD",
+        "url": "https://genius.com/artists/Gspd",
+        "type": "regular",
+        "id": "1125545"
+      },
+      {
+        "name": "GSP (POL)",
+        "url": "https://genius.com/artists/Gsp-pol",
+        "type": "regular",
+        "id": "1612801"
+      },
+      {
+        "name": "G Stank",
+        "url": "https://genius.com/artists/G-stank",
+        "type": "regular",
+        "id": "3826990"
+      },
+      {
+        "name": "G Sоund",
+        "url": "https://genius.com/artists/G-sund",
+        "type": "regular",
+        "id": "4394769"
+      },
+      {
+        "name": "G.T.",
+        "url": "https://genius.com/artists/Gt",
+        "type": "regular",
+        "id": "19988"
+      },
+      {
+        "name": "Guè",
+        "url": "https://genius.com/artists/Gue",
+        "type": "regular",
+        "id": "33880"
+      },
+      {
+        "name": "Guang Liang",
+        "url": "https://genius.com/artists/Guang-liang",
+        "type": "regular",
+        "id": "3661729"
+      },
+      {
+        "name": "Guano Apes",
+        "url": "https://genius.com/artists/Guano-apes",
+        "type": "regular",
+        "id": "83147"
+      },
+      {
+        "name": "​guapanova",
+        "url": "https://genius.com/artists/Guapanova",
+        "type": "regular",
+        "id": "1856696"
+      },
+      {
+        "name": "Guapdad 4000",
+        "url": "https://genius.com/artists/Guapdad-4000",
+        "type": "regular",
+        "id": "1270070"
+      },
+      {
+        "name": "guardin",
+        "url": "https://genius.com/artists/Guardin",
+        "type": "regular",
+        "id": "1091327"
+      },
+      {
+        "name": "Guaynaa",
+        "url": "https://genius.com/artists/Guaynaa",
+        "type": "regular",
+        "id": "1541604"
+      },
+      {
+        "name": "guccihighwaters",
+        "url": "https://genius.com/artists/Guccihighwaters",
+        "type": "regular",
+        "id": "1206591"
+      },
+      {
+        "name": "Gucci (IRN)",
+        "url": "https://genius.com/artists/Gucci-irn",
+        "type": "regular",
+        "id": "3767053"
+      },
+      {
+        "name": "Gucci Mane",
+        "url": "https://genius.com/artists/Gucci-mane",
+        "type": "regular",
+        "id": "13"
+      },
+      {
+        "name": "Gucci Prince",
+        "url": "https://genius.com/artists/Gucci-prince",
+        "type": "regular",
+        "id": "1719589"
+      },
+      {
+        "name": "Gucci Savage",
+        "url": "https://genius.com/artists/Gucci-savage",
+        "type": "regular",
+        "id": "1526033"
+      },
+      {
+        "name": "Gud",
+        "url": "https://genius.com/artists/Gud",
+        "type": "regular",
+        "id": "94499"
+      },
+      {
+        "name": "Gudda Gudda",
+        "url": "https://genius.com/artists/Gudda-gudda",
+        "type": "regular",
+        "id": "270"
+      },
+      {
+        "name": "Guddhist Gunatita",
+        "url": "https://genius.com/artists/Guddhist-gunatita",
+        "type": "regular",
+        "id": "2557914"
+      },
+      {
+        "name": "GueroX",
+        "url": "https://genius.com/artists/Guerox",
+        "type": "regular",
+        "id": "2395408"
+      },
+      {
+        "name": "Guerreros del Bajo",
+        "url": "https://genius.com/artists/Guerreros-del-bajo",
+        "type": "regular",
+        "id": "4092038"
+      },
+      {
+        "name": "Guesan",
+        "url": "https://genius.com/artists/Guesan",
+        "type": "regular",
+        "id": "608221"
+      },
+      {
+        "name": "Гости из будущего (Guests from the future)",
+        "url": "https://genius.com/artists/Guests-from-the-future",
+        "type": "regular",
+        "id": "1853562"
+      },
+      {
+        "name": "Гуф (Guf)",
+        "url": "https://genius.com/artists/Guf",
+        "type": "regular",
+        "id": "34707"
+      },
+      {
+        "name": "Gugu Mbatha-Raw",
+        "url": "https://genius.com/artists/Gugu-mbatha-raw",
+        "type": "regular",
+        "id": "329166"
+      },
+      {
+        "name": "Guided by Voices",
+        "url": "https://genius.com/artists/Guided-by-voices",
+        "type": "regular",
+        "id": "28684"
+      },
+      {
+        "name": "Guilt Trip",
+        "url": "https://genius.com/artists/Guilt-trip",
+        "type": "regular",
+        "id": "1377194"
+      },
+      {
+        "name": "Guitarricadelafuente",
+        "url": "https://genius.com/artists/Guitarricadelafuente",
+        "type": "regular",
+        "id": "1701658"
+      },
+      {
+        "name": "Guizmo",
+        "url": "https://genius.com/artists/Guizmo",
+        "type": "regular",
+        "id": "13640"
+      },
+      {
+        "name": "Gulddreng",
+        "url": "https://genius.com/artists/Gulddreng",
+        "type": "regular",
+        "id": "683031"
+      },
+      {
+        "name": "GULEED",
+        "url": "https://genius.com/artists/Guleed",
+        "type": "regular",
+        "id": "1059043"
+      },
+      {
+        "name": "GUM",
+        "url": "https://genius.com/artists/Gum",
+        "type": "regular",
+        "id": "131813"
+      },
+      {
+        "name": "Gummibär",
+        "url": "https://genius.com/artists/Gummibar",
+        "type": "regular",
+        "id": "373286"
+      },
+      {
+        "name": "GUMMY (거미)",
+        "url": "https://genius.com/artists/Gummy",
+        "type": "regular",
+        "id": "666924"
+      },
+      {
+        "name": "The Gun Club",
+        "url": "https://genius.com/artists/The-gun-club",
+        "type": "regular",
+        "id": "126487"
+      },
+      {
+        "name": "Gungor",
+        "url": "https://genius.com/artists/Gungor",
+        "type": "regular",
+        "id": "271214"
+      },
+      {
+        "name": "G-Unit",
+        "url": "https://genius.com/artists/G-unit",
+        "type": "regular",
+        "id": "2035"
+      },
+      {
+        "name": "Gunnr",
+        "url": "https://genius.com/artists/Gunnr",
+        "type": "regular",
+        "id": "1308969"
+      },
+      {
+        "name": "GUNSHIP",
+        "url": "https://genius.com/artists/Gunship",
+        "type": "regular",
+        "id": "556465"
+      },
+      {
+        "name": "Ганвест (Gunwest)",
+        "url": "https://genius.com/artists/Gunwest",
+        "type": "regular",
+        "id": "1595653"
+      },
+      {
+        "name": "Gurinder Gill",
+        "url": "https://genius.com/artists/Gurinder-gill",
+        "type": "regular",
+        "id": "2378406"
+      },
+      {
+        "name": "Gurshan Ridley",
+        "url": "https://genius.com/artists/Gurshan-ridley",
+        "type": "regular",
+        "id": "3376457"
+      },
+      {
+        "name": "Gur Sidhu",
+        "url": "https://genius.com/artists/Gur-sidhu",
+        "type": "regular",
+        "id": "1891044"
+      },
+      {
+        "name": "Guru",
+        "url": "https://genius.com/artists/Guru",
+        "type": "regular",
+        "id": "219"
+      },
+      {
+        "name": "Guru Randhawa",
+        "url": "https://genius.com/artists/Guru-randhawa",
+        "type": "regular",
+        "id": "579329"
+      },
+      {
+        "name": "Gus Dapperton",
+        "url": "https://genius.com/artists/Gus-dapperton",
+        "type": "regular",
+        "id": "1141733"
+      },
+      {
+        "name": "Gus Glasser",
+        "url": "https://genius.com/artists/Gus-glasser",
+        "type": "regular",
+        "id": "1282946"
+      },
+      {
+        "name": "Gustav",
+        "url": "https://genius.com/artists/Gustav",
+        "type": "regular",
+        "id": "2538210"
+      },
+      {
+        "name": "Gustavo Cerati",
+        "url": "https://genius.com/artists/Gustavo-cerati",
+        "type": "regular",
+        "id": "263298"
+      },
+      {
+        "name": "Gustavo Santaolalla",
+        "url": "https://genius.com/artists/Gustavo-santaolalla",
+        "type": "regular",
+        "id": "73385"
+      },
+      {
+        "name": "Guster",
+        "url": "https://genius.com/artists/Guster",
+        "type": "regular",
+        "id": "66688"
+      },
+      {
+        "name": "Gusti Irwan Wibowo",
+        "url": "https://genius.com/artists/Gusti-irwan-wibowo",
+        "type": "regular",
+        "id": "2137177"
+      },
+      {
+        "name": "Gusttavo Lima",
+        "url": "https://genius.com/artists/Gusttavo-lima",
+        "type": "regular",
+        "id": "75942"
+      },
+      {
+        "name": "Gutta",
+        "url": "https://genius.com/artists/Gutta",
+        "type": "regular",
+        "id": "3274986"
+      },
+      {
+        "name": "Guus Meeuwis",
+        "url": "https://genius.com/artists/Guus-meeuwis",
+        "type": "regular",
+        "id": "356642"
+      },
+      {
+        "name": "Guus Meeuwis & Vagant",
+        "url": "https://genius.com/artists/Guus-meeuwis-and-vagant",
+        "type": "regular",
+        "id": "372354"
+      },
+      {
+        "name": "Guxo",
+        "url": "https://genius.com/artists/Guxo",
+        "type": "regular",
+        "id": "2968318"
+      },
+      {
+        "name": "Guy",
+        "url": "https://genius.com/artists/Guy",
+        "type": "regular",
+        "id": "8431"
+      },
+      {
+        "name": "Guy2Bezbar",
+        "url": "https://genius.com/artists/Guy2bezbar",
+        "type": "regular",
+        "id": "466514"
+      },
+      {
+        "name": "Guy Clark",
+        "url": "https://genius.com/artists/Guy-clark",
+        "type": "regular",
+        "id": "240938"
+      },
+      {
+        "name": "Guy Sebastian",
+        "url": "https://genius.com/artists/Guy-sebastian",
+        "type": "regular",
+        "id": "23362"
+      },
+      {
+        "name": "Guzior",
+        "url": "https://genius.com/artists/Guzior",
+        "type": "regular",
+        "id": "194980"
+      },
+      {
+        "name": "G.V. Prakash Kumar",
+        "url": "https://genius.com/artists/Gv-prakash-kumar",
+        "type": "regular",
+        "id": "453853"
+      },
+      {
+        "name": "GWAR",
+        "url": "https://genius.com/artists/Gwar",
+        "type": "regular",
+        "id": "54588"
+      },
+      {
+        "name": "Gwen Stefani",
+        "url": "https://genius.com/artists/Gwen-stefani",
+        "type": "regular",
+        "id": "1893"
+      },
+      {
+        "name": "Gwyneth Paltrow",
+        "url": "https://genius.com/artists/Gwyneth-paltrow",
+        "type": "regular",
+        "id": "173899"
+      },
+      {
+        "name": "Gxhan (GRC)",
+        "url": "https://genius.com/artists/Gxhan-grc",
+        "type": "regular",
+        "id": "3318357"
+      },
+      {
+        "name": "Gyakie",
+        "url": "https://genius.com/artists/Gyakie",
+        "type": "regular",
+        "id": "1740065"
+      },
+      {
+        "name": "Gyllene Tider",
+        "url": "https://genius.com/artists/Gyllene-tider",
+        "type": "regular",
+        "id": "362449"
+      },
+      {
+        "name": "Gym Class Heroes",
+        "url": "https://genius.com/artists/Gym-class-heroes",
+        "type": "regular",
+        "id": "1083"
+      },
+      {
+        "name": "Gyptian",
+        "url": "https://genius.com/artists/Gyptian",
+        "type": "regular",
+        "id": "1293"
+      },
+      {
+        "name": "gyuris",
+        "url": "https://genius.com/artists/Gyuris",
+        "type": "regular",
+        "id": "1291403"
+      },
+      {
+        "name": "GZA",
+        "url": "https://genius.com/artists/Gza",
+        "type": "regular",
+        "id": "507"
+      },
+      {
+        "name": "Gzuz",
+        "url": "https://genius.com/artists/Gzuz",
+        "type": "regular",
+        "id": "18534"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4513 @@
+{
+  "letter": "L",
+  "timestamp": "2025-07-11T10:03:27.958Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Lady Gaga",
+        "url": "https://genius.com/artists/Lady-gaga",
+        "type": "popular",
+        "id": "447"
+      },
+      {
+        "name": "Lana Del Rey",
+        "url": "https://genius.com/artists/Lana-del-rey",
+        "type": "popular",
+        "id": "15740"
+      },
+      {
+        "name": "Laufey",
+        "url": "https://genius.com/artists/Laufey",
+        "type": "popular",
+        "id": "2195472"
+      },
+      {
+        "name": "Led Zeppelin",
+        "url": "https://genius.com/artists/Led-zeppelin",
+        "type": "popular",
+        "id": "562"
+      },
+      {
+        "name": "Leslie Odom Jr.",
+        "url": "https://genius.com/artists/Leslie-odom-jr",
+        "type": "popular",
+        "id": "570030"
+      },
+      {
+        "name": "Lewis Capaldi",
+        "url": "https://genius.com/artists/Lewis-capaldi",
+        "type": "popular",
+        "id": "1111338"
+      },
+      {
+        "name": "Lil Baby",
+        "url": "https://genius.com/artists/Lil-baby",
+        "type": "popular",
+        "id": "1110328"
+      },
+      {
+        "name": "Lil Durk",
+        "url": "https://genius.com/artists/Lil-durk",
+        "type": "popular",
+        "id": "21964"
+      },
+      {
+        "name": "Lil Peep",
+        "url": "https://genius.com/artists/Lil-peep",
+        "type": "popular",
+        "id": "569922"
+      },
+      {
+        "name": "Lil Tecca",
+        "url": "https://genius.com/artists/Lil-tecca",
+        "type": "popular",
+        "id": "1127156"
+      },
+      {
+        "name": "Lil Uzi Vert",
+        "url": "https://genius.com/artists/Lil-uzi-vert",
+        "type": "popular",
+        "id": "217208"
+      },
+      {
+        "name": "Lil Wayne",
+        "url": "https://genius.com/artists/Lil-wayne",
+        "type": "popular",
+        "id": "4"
+      },
+      {
+        "name": "Linkin Park",
+        "url": "https://genius.com/artists/Linkin-park",
+        "type": "popular",
+        "id": "1581"
+      },
+      {
+        "name": "Lin-Manuel Miranda",
+        "url": "https://genius.com/artists/Lin-manuel-miranda",
+        "type": "popular",
+        "id": "13426"
+      },
+      {
+        "name": "Lola Young",
+        "url": "https://genius.com/artists/Lola-young",
+        "type": "popular",
+        "id": "2000934"
+      },
+      {
+        "name": "Lorde",
+        "url": "https://genius.com/artists/Lorde",
+        "type": "popular",
+        "id": "36944"
+      },
+      {
+        "name": "Lorien Testard",
+        "url": "https://genius.com/artists/Lorien-testard",
+        "type": "popular",
+        "id": "4003427"
+      },
+      {
+        "name": "Louis Armstrong",
+        "url": "https://genius.com/artists/Louis-armstrong",
+        "type": "popular",
+        "id": "26349"
+      },
+      {
+        "name": "Luchè",
+        "url": "https://genius.com/artists/Luche",
+        "type": "popular",
+        "id": "92188"
+      },
+      {
+        "name": "Lukas Graham",
+        "url": "https://genius.com/artists/Lukas-graham",
+        "type": "popular",
+        "id": "60768"
+      }
+    ],
+    "regular": [
+      {
+        "name": "l0rna",
+        "url": "https://genius.com/artists/L0rna",
+        "type": "regular",
+        "id": "3496562"
+      },
+      {
+        "name": "L0VER",
+        "url": "https://genius.com/artists/L0ver",
+        "type": "regular",
+        "id": "3012268"
+      },
+      {
+        "name": "L2B",
+        "url": "https://genius.com/artists/L2b",
+        "type": "regular",
+        "id": "1262771"
+      },
+      {
+        "name": "L7",
+        "url": "https://genius.com/artists/L7",
+        "type": "regular",
+        "id": "65425"
+      },
+      {
+        "name": "La Adictiva",
+        "url": "https://genius.com/artists/La-adictiva",
+        "type": "regular",
+        "id": "482494"
+      },
+      {
+        "name": "Labelle",
+        "url": "https://genius.com/artists/Labelle",
+        "type": "regular",
+        "id": "288831"
+      },
+      {
+        "name": "Laberinto",
+        "url": "https://genius.com/artists/Laberinto",
+        "type": "regular",
+        "id": "455968"
+      },
+      {
+        "name": "La Bible de Jérusalem",
+        "url": "https://genius.com/artists/La-bible-de-jerusalem",
+        "type": "regular",
+        "id": "82086"
+      },
+      {
+        "name": "Labi Siffre",
+        "url": "https://genius.com/artists/Labi-siffre",
+        "type": "regular",
+        "id": "27637"
+      },
+      {
+        "name": "La Bouche",
+        "url": "https://genius.com/artists/La-bouche",
+        "type": "regular",
+        "id": "260367"
+      },
+      {
+        "name": "Labrinth",
+        "url": "https://genius.com/artists/Labrinth",
+        "type": "regular",
+        "id": "720"
+      },
+      {
+        "name": "L'A Capone",
+        "url": "https://genius.com/artists/La-capone",
+        "type": "regular",
+        "id": "76753"
+      },
+      {
+        "name": "LACAZETTE",
+        "url": "https://genius.com/artists/Lacazette",
+        "type": "regular",
+        "id": "3963853"
+      },
+      {
+        "name": "LaChanze",
+        "url": "https://genius.com/artists/Lachanze",
+        "type": "regular",
+        "id": "158548"
+      },
+      {
+        "name": "Laci Kaye Booth",
+        "url": "https://genius.com/artists/Laci-kaye-booth",
+        "type": "regular",
+        "id": "1813166"
+      },
+      {
+        "name": "Lacku",
+        "url": "https://genius.com/artists/Lacku",
+        "type": "regular",
+        "id": "991333"
+      },
+      {
+        "name": "La Cracka",
+        "url": "https://genius.com/artists/La-cracka",
+        "type": "regular",
+        "id": "2881420"
+      },
+      {
+        "name": "Lacrim",
+        "url": "https://genius.com/artists/Lacrim",
+        "type": "regular",
+        "id": "11650"
+      },
+      {
+        "name": "Lacrimosa",
+        "url": "https://genius.com/artists/Lacrimosa",
+        "type": "regular",
+        "id": "343510"
+      },
+      {
+        "name": "Lacuna Coil",
+        "url": "https://genius.com/artists/Lacuna-coil",
+        "type": "regular",
+        "id": "181459"
+      },
+      {
+        "name": "ladiferencia2006",
+        "url": "https://genius.com/artists/Ladiferencia2006",
+        "type": "regular",
+        "id": "4348720"
+      },
+      {
+        "name": "La Dispute",
+        "url": "https://genius.com/artists/La-dispute",
+        "type": "regular",
+        "id": "35981"
+      },
+      {
+        "name": "Ladrones",
+        "url": "https://genius.com/artists/Ladrones",
+        "type": "regular",
+        "id": "3769642"
+      },
+      {
+        "name": "Lady A",
+        "url": "https://genius.com/artists/Lady-a",
+        "type": "regular",
+        "id": "11610"
+      },
+      {
+        "name": "Lady Lamb",
+        "url": "https://genius.com/artists/Lady-lamb",
+        "type": "regular",
+        "id": "107200"
+      },
+      {
+        "name": "Lady Pank",
+        "url": "https://genius.com/artists/Lady-pank",
+        "type": "regular",
+        "id": "234880"
+      },
+      {
+        "name": "Lady Radiator",
+        "url": "https://genius.com/artists/Lady-radiator",
+        "type": "regular",
+        "id": "383256"
+      },
+      {
+        "name": "Lady Rafaella",
+        "url": "https://genius.com/artists/Lady-rafaella",
+        "type": "regular",
+        "id": "4315603"
+      },
+      {
+        "name": "Ladytron",
+        "url": "https://genius.com/artists/Ladytron",
+        "type": "regular",
+        "id": "71266"
+      },
+      {
+        "name": "La Femme",
+        "url": "https://genius.com/artists/La-femme",
+        "type": "regular",
+        "id": "230458"
+      },
+      {
+        "name": "La Fouine",
+        "url": "https://genius.com/artists/La-fouine",
+        "type": "regular",
+        "id": "1303"
+      },
+      {
+        "name": "Ólafur Arnalds",
+        "url": "https://genius.com/artists/Olafur-arnalds",
+        "type": "regular",
+        "id": "137310"
+      },
+      {
+        "name": "La Fève",
+        "url": "https://genius.com/artists/La-feve",
+        "type": "regular",
+        "id": "1676933"
+      },
+      {
+        "name": "Lagnajita Chakraborty",
+        "url": "https://genius.com/artists/Lagnajita-chakraborty",
+        "type": "regular",
+        "id": "1448092"
+      },
+      {
+        "name": "Lagwagon",
+        "url": "https://genius.com/artists/Lagwagon",
+        "type": "regular",
+        "id": "151013"
+      },
+      {
+        "name": "Lah Pat",
+        "url": "https://genius.com/artists/Lah-pat",
+        "type": "regular",
+        "id": "3452265"
+      },
+      {
+        "name": "Laibach",
+        "url": "https://genius.com/artists/Laibach",
+        "type": "regular",
+        "id": "28889"
+      },
+      {
+        "name": "Laila!",
+        "url": "https://genius.com/artists/Laila",
+        "type": "regular",
+        "id": "2150798"
+      },
+      {
+        "name": "ライララ (Lailala)",
+        "url": "https://genius.com/artists/Lailala",
+        "type": "regular",
+        "id": "4375414"
+      },
+      {
+        "name": "Lainey Wilson",
+        "url": "https://genius.com/artists/Lainey-wilson",
+        "type": "regular",
+        "id": "1149083"
+      },
+      {
+        "name": "Laioss",
+        "url": "https://genius.com/artists/Laioss",
+        "type": "regular",
+        "id": "3933101"
+      },
+      {
+        "name": "LAJA",
+        "url": "https://genius.com/artists/Laja",
+        "type": "regular",
+        "id": "4226266"
+      },
+      {
+        "name": "La Joaqui",
+        "url": "https://genius.com/artists/La-joaqui",
+        "type": "regular",
+        "id": "1209013"
+      },
+      {
+        "name": "La Kadrilla",
+        "url": "https://genius.com/artists/La-kadrilla",
+        "type": "regular",
+        "id": "1569635"
+      },
+      {
+        "name": "Lakamura",
+        "url": "https://genius.com/artists/Lakamura",
+        "type": "regular",
+        "id": "4450495"
+      },
+      {
+        "name": "Lake Street Dive",
+        "url": "https://genius.com/artists/Lake-street-dive",
+        "type": "regular",
+        "id": "143765"
+      },
+      {
+        "name": "Lakewood Music",
+        "url": "https://genius.com/artists/Lakewood-music",
+        "type": "regular",
+        "id": "2129391"
+      },
+      {
+        "name": "Lakewood Music En Español",
+        "url": "https://genius.com/artists/Lakewood-music-en-espanol",
+        "type": "regular",
+        "id": "4046188"
+      },
+      {
+        "name": "Lakeyah",
+        "url": "https://genius.com/artists/Lakeyah",
+        "type": "regular",
+        "id": "1786135"
+      },
+      {
+        "name": "La La Love You",
+        "url": "https://genius.com/artists/La-la-love-you",
+        "type": "regular",
+        "id": "1743141"
+      },
+      {
+        "name": "Laleh",
+        "url": "https://genius.com/artists/Laleh",
+        "type": "regular",
+        "id": "338891"
+      },
+      {
+        "name": "L'Algérino",
+        "url": "https://genius.com/artists/Lalgerino",
+        "type": "regular",
+        "id": "12302"
+      },
+      {
+        "name": "Lali",
+        "url": "https://genius.com/artists/Lali",
+        "type": "regular",
+        "id": "601277"
+      },
+      {
+        "name": "La Mafia del Amor",
+        "url": "https://genius.com/artists/La-mafia-del-amor",
+        "type": "regular",
+        "id": "654902"
+      },
+      {
+        "name": "La Mano 1.9",
+        "url": "https://genius.com/artists/La-mano-19",
+        "type": "regular",
+        "id": "3645131"
+      },
+      {
+        "name": "Lamar Davis",
+        "url": "https://genius.com/artists/Lamar-davis",
+        "type": "regular",
+        "id": "2417753"
+      },
+      {
+        "name": "Lambo4oe",
+        "url": "https://genius.com/artists/Lambo4oe",
+        "type": "regular",
+        "id": "3287848"
+      },
+      {
+        "name": "Lamb of God",
+        "url": "https://genius.com/artists/Lamb-of-god",
+        "type": "regular",
+        "id": "38929"
+      },
+      {
+        "name": "Lambrini Girls",
+        "url": "https://genius.com/artists/Lambrini-girls",
+        "type": "regular",
+        "id": "3539567"
+      },
+      {
+        "name": "Lamin",
+        "url": "https://genius.com/artists/Lamin",
+        "type": "regular",
+        "id": "1864782"
+      },
+      {
+        "name": "Lamis Kan - لميس كان",
+        "url": "https://genius.com/artists/Lamis-kan",
+        "type": "regular",
+        "id": "2930133"
+      },
+      {
+        "name": "Lamp",
+        "url": "https://genius.com/artists/Lamp",
+        "type": "regular",
+        "id": "1769149"
+      },
+      {
+        "name": "лампабикт (lampabikt)",
+        "url": "https://genius.com/artists/Lampabikt",
+        "type": "regular",
+        "id": "3013404"
+      },
+      {
+        "name": "LANA",
+        "url": "https://genius.com/artists/Lana",
+        "type": "regular",
+        "id": "2764168"
+      },
+      {
+        "name": "Lancey Foux",
+        "url": "https://genius.com/artists/Lancey-foux",
+        "type": "regular",
+        "id": "578300"
+      },
+      {
+        "name": "LANDMVRKS",
+        "url": "https://genius.com/artists/Landmvrks",
+        "type": "regular",
+        "id": "667805"
+      },
+      {
+        "name": "Lanek",
+        "url": "https://genius.com/artists/Lanek",
+        "type": "regular",
+        "id": "44710"
+      },
+      {
+        "name": "LA NIÑA",
+        "url": "https://genius.com/artists/La-nina",
+        "type": "regular",
+        "id": "1028469"
+      },
+      {
+        "name": "Lankum",
+        "url": "https://genius.com/artists/Lankum",
+        "type": "regular",
+        "id": "1255061"
+      },
+      {
+        "name": "Lanz Khan",
+        "url": "https://genius.com/artists/Lanz-khan",
+        "type": "regular",
+        "id": "553631"
+      },
+      {
+        "name": "La Nueva Escuela (URU)",
+        "url": "https://genius.com/artists/La-nueva-escuela-uru",
+        "type": "regular",
+        "id": "3708994"
+      },
+      {
+        "name": "LANY",
+        "url": "https://genius.com/artists/Lany",
+        "type": "regular",
+        "id": "247886"
+      },
+      {
+        "name": "La Oreja de Van Gogh",
+        "url": "https://genius.com/artists/La-oreja-de-van-gogh",
+        "type": "regular",
+        "id": "22863"
+      },
+      {
+        "name": "La Pantera",
+        "url": "https://genius.com/artists/La-pantera",
+        "type": "regular",
+        "id": "2842692"
+      },
+      {
+        "name": "Lapiz Conciente",
+        "url": "https://genius.com/artists/Lapiz-conciente",
+        "type": "regular",
+        "id": "137214"
+      },
+      {
+        "name": "La Polla Records",
+        "url": "https://genius.com/artists/La-polla-records",
+        "type": "regular",
+        "id": "344755"
+      },
+      {
+        "name": "Lara Fabian",
+        "url": "https://genius.com/artists/Lara-fabian",
+        "type": "regular",
+        "id": "172870"
+      },
+      {
+        "name": "Larcɇnia Roɇ",
+        "url": "https://genius.com/artists/Larcnia-ro",
+        "type": "regular",
+        "id": "3724545"
+      },
+      {
+        "name": "Лариса Долина (Larisa Dolina)",
+        "url": "https://genius.com/artists/Larisa-dolina",
+        "type": "regular",
+        "id": "2036361"
+      },
+      {
+        "name": "LARK2020",
+        "url": "https://genius.com/artists/Lark2020",
+        "type": "regular",
+        "id": "3215668"
+      },
+      {
+        "name": "Larnelle",
+        "url": "https://genius.com/artists/Larnelle",
+        "type": "regular",
+        "id": "362831"
+      },
+      {
+        "name": "La Roux",
+        "url": "https://genius.com/artists/La-roux",
+        "type": "regular",
+        "id": "811"
+      },
+      {
+        "name": "Larray",
+        "url": "https://genius.com/artists/Larray",
+        "type": "regular",
+        "id": "1394385"
+      },
+      {
+        "name": "Larry June",
+        "url": "https://genius.com/artists/Larry-june",
+        "type": "regular",
+        "id": "435019"
+      },
+      {
+        "name": "Larry McMurtry and Diana Ossana",
+        "url": "https://genius.com/artists/Larry-mcmurtry-and-diana-ossana",
+        "type": "regular",
+        "id": "219467"
+      },
+      {
+        "name": "Lars Winnerbäck",
+        "url": "https://genius.com/artists/Lars-winnerback",
+        "type": "regular",
+        "id": "354592"
+      },
+      {
+        "name": "Lartiste",
+        "url": "https://genius.com/artists/Lartiste",
+        "type": "regular",
+        "id": "62687"
+      },
+      {
+        "name": "LaRussell",
+        "url": "https://genius.com/artists/Larussell",
+        "type": "regular",
+        "id": "2897908"
+      },
+      {
+        "name": "La Rvfleuze",
+        "url": "https://genius.com/artists/La-rvfleuze",
+        "type": "regular",
+        "id": "3325569"
+      },
+      {
+        "name": "Lary Over",
+        "url": "https://genius.com/artists/Lary-over",
+        "type": "regular",
+        "id": "625137"
+      },
+      {
+        "name": "La Santa Grifa",
+        "url": "https://genius.com/artists/La-santa-grifa",
+        "type": "regular",
+        "id": "664545"
+      },
+      {
+        "name": "The La's (Band)",
+        "url": "https://genius.com/artists/The-las-band",
+        "type": "regular",
+        "id": "32247"
+      },
+      {
+        "name": "LASH CURRY",
+        "url": "https://genius.com/artists/Lash-curry",
+        "type": "regular",
+        "id": "3938459"
+      },
+      {
+        "name": "Las Ketchup",
+        "url": "https://genius.com/artists/Las-ketchup",
+        "type": "regular",
+        "id": "133142"
+      },
+      {
+        "name": "Ласковый Май (Laskoviy May)",
+        "url": "https://genius.com/artists/Laskoviy-may",
+        "type": "regular",
+        "id": "1733878"
+      },
+      {
+        "name": "La Sonora Dinamita",
+        "url": "https://genius.com/artists/La-sonora-dinamita",
+        "type": "regular",
+        "id": "379666"
+      },
+      {
+        "name": "Lasse Berghagen",
+        "url": "https://genius.com/artists/Lasse-berghagen",
+        "type": "regular",
+        "id": "405831"
+      },
+      {
+        "name": "Lasserexxx",
+        "url": "https://genius.com/artists/Lasserexxx",
+        "type": "regular",
+        "id": "4102214"
+      },
+      {
+        "name": "Last Child (band)",
+        "url": "https://genius.com/artists/Last-child-band",
+        "type": "regular",
+        "id": "1642944"
+      },
+      {
+        "name": "The Last Dinner Party",
+        "url": "https://genius.com/artists/The-last-dinner-party",
+        "type": "regular",
+        "id": "3507269"
+      },
+      {
+        "name": "Last Dinosaurs",
+        "url": "https://genius.com/artists/Last-dinosaurs",
+        "type": "regular",
+        "id": "79143"
+      },
+      {
+        "name": "The Last Shadow Puppets",
+        "url": "https://genius.com/artists/The-last-shadow-puppets",
+        "type": "regular",
+        "id": "28580"
+      },
+      {
+        "name": "Lata Mangeshkar",
+        "url": "https://genius.com/artists/Lata-mangeshkar",
+        "type": "regular",
+        "id": "60601"
+      },
+      {
+        "name": "​late night drive home",
+        "url": "https://genius.com/artists/Late-night-drive-home",
+        "type": "regular",
+        "id": "2910698"
+      },
+      {
+        "name": "La Texana",
+        "url": "https://genius.com/artists/La-texana",
+        "type": "regular",
+        "id": "3637985"
+      },
+      {
+        "name": "LATIN MAFIA",
+        "url": "https://genius.com/artists/Latin-mafia",
+        "type": "regular",
+        "id": "2851018"
+      },
+      {
+        "name": "Latrelle",
+        "url": "https://genius.com/artists/Latrelle",
+        "type": "regular",
+        "id": "3806106"
+      },
+      {
+        "name": "La Tropa Vallenata",
+        "url": "https://genius.com/artists/La-tropa-vallenata",
+        "type": "regular",
+        "id": "97183"
+      },
+      {
+        "name": "Latto",
+        "url": "https://genius.com/artists/Latto",
+        "type": "regular",
+        "id": "282208"
+      },
+      {
+        "name": "LAUNDRY DAY",
+        "url": "https://genius.com/artists/Laundry-day",
+        "type": "regular",
+        "id": "1166313"
+      },
+      {
+        "name": "Laura Bell Bundy",
+        "url": "https://genius.com/artists/Laura-bell-bundy",
+        "type": "regular",
+        "id": "334021"
+      },
+      {
+        "name": "Laura Branigan",
+        "url": "https://genius.com/artists/Laura-branigan",
+        "type": "regular",
+        "id": "48101"
+      },
+      {
+        "name": "Laura Dreyfuss",
+        "url": "https://genius.com/artists/Laura-dreyfuss",
+        "type": "regular",
+        "id": "1044641"
+      },
+      {
+        "name": "Laura Jane Grace",
+        "url": "https://genius.com/artists/Laura-jane-grace",
+        "type": "regular",
+        "id": "144997"
+      },
+      {
+        "name": "Laura Marling",
+        "url": "https://genius.com/artists/Laura-marling",
+        "type": "regular",
+        "id": "22081"
+      },
+      {
+        "name": "Laura Michelle Kelly",
+        "url": "https://genius.com/artists/Laura-michelle-kelly",
+        "type": "regular",
+        "id": "378786"
+      },
+      {
+        "name": "Laura Osnes",
+        "url": "https://genius.com/artists/Laura-osnes",
+        "type": "regular",
+        "id": "306697"
+      },
+      {
+        "name": "Laura Pausini",
+        "url": "https://genius.com/artists/Laura-pausini",
+        "type": "regular",
+        "id": "78828"
+      },
+      {
+        "name": "Laura Stevenson",
+        "url": "https://genius.com/artists/Laura-stevenson",
+        "type": "regular",
+        "id": "173907"
+      },
+      {
+        "name": "Laura Story",
+        "url": "https://genius.com/artists/Laura-story",
+        "type": "regular",
+        "id": "365400"
+      },
+      {
+        "name": "Laura Thorn",
+        "url": "https://genius.com/artists/Laura-thorn",
+        "type": "regular",
+        "id": "4241188"
+      },
+      {
+        "name": "Laura Williams",
+        "url": "https://genius.com/artists/Laura-williams",
+        "type": "regular",
+        "id": "158572"
+      },
+      {
+        "name": "Laura Wright",
+        "url": "https://genius.com/artists/Laura-wright",
+        "type": "regular",
+        "id": "109568"
+      },
+      {
+        "name": "Lauren Alaina",
+        "url": "https://genius.com/artists/Lauren-alaina",
+        "type": "regular",
+        "id": "248478"
+      },
+      {
+        "name": "Lauren Aquilina",
+        "url": "https://genius.com/artists/Lauren-aquilina",
+        "type": "regular",
+        "id": "263479"
+      },
+      {
+        "name": "Lauren Celentano",
+        "url": "https://genius.com/artists/Lauren-celentano",
+        "type": "regular",
+        "id": "4398448"
+      },
+      {
+        "name": "Lauren Daigle",
+        "url": "https://genius.com/artists/Lauren-daigle",
+        "type": "regular",
+        "id": "323622"
+      },
+      {
+        "name": "Lauren Pritchard",
+        "url": "https://genius.com/artists/Lauren-pritchard",
+        "type": "regular",
+        "id": "376569"
+      },
+      {
+        "name": "Lauren Spencer Smith",
+        "url": "https://genius.com/artists/Lauren-spencer-smith",
+        "type": "regular",
+        "id": "2682699"
+      },
+      {
+        "name": "Laurie Anderson",
+        "url": "https://genius.com/artists/Laurie-anderson",
+        "type": "regular",
+        "id": "43761"
+      },
+      {
+        "name": "Lauri Haav",
+        "url": "https://genius.com/artists/Lauri-haav",
+        "type": "regular",
+        "id": "1673784"
+      },
+      {
+        "name": "Lauryn Hill",
+        "url": "https://genius.com/artists/Lauryn-hill",
+        "type": "regular",
+        "id": "448"
+      },
+      {
+        "name": "Lauv",
+        "url": "https://genius.com/artists/Lauv",
+        "type": "regular",
+        "id": "338777"
+      },
+      {
+        "name": "LAVINIA",
+        "url": "https://genius.com/artists/Lavinia",
+        "type": "regular",
+        "id": "3928921"
+      },
+      {
+        "name": "Law and Order SVU",
+        "url": "https://genius.com/artists/Law-and-order-svu",
+        "type": "regular",
+        "id": "36248"
+      },
+      {
+        "name": "Lawrence",
+        "url": "https://genius.com/artists/Lawrence",
+        "type": "regular",
+        "id": "26955"
+      },
+      {
+        "name": "Lawrence Oyor",
+        "url": "https://genius.com/artists/Lawrence-oyor",
+        "type": "regular",
+        "id": "3911267"
+      },
+      {
+        "name": "Lay Bankz",
+        "url": "https://genius.com/artists/Lay-bankz",
+        "type": "regular",
+        "id": "3073799"
+      },
+      {
+        "name": "LAYLA",
+        "url": "https://genius.com/artists/Layla",
+        "type": "regular",
+        "id": "2136552"
+      },
+      {
+        "name": "Laylow",
+        "url": "https://genius.com/artists/Laylow",
+        "type": "regular",
+        "id": "308564"
+      },
+      {
+        "name": "လေးဖြူ (Lay Phyu)",
+        "url": "https://genius.com/artists/Lay-phyu",
+        "type": "regular",
+        "id": "1436817"
+      },
+      {
+        "name": "Layto",
+        "url": "https://genius.com/artists/Layto",
+        "type": "regular",
+        "id": "1492942"
+      },
+      {
+        "name": "Layton Greene",
+        "url": "https://genius.com/artists/Layton-greene",
+        "type": "regular",
+        "id": "1271549"
+      },
+      {
+        "name": "Layup",
+        "url": "https://genius.com/artists/Layup",
+        "type": "regular",
+        "id": "1381707"
+      },
+      {
+        "name": "LAZER DIM 700",
+        "url": "https://genius.com/artists/Lazer-dim-700",
+        "type": "regular",
+        "id": "3744510"
+      },
+      {
+        "name": "La Zowi",
+        "url": "https://genius.com/artists/La-zowi",
+        "type": "regular",
+        "id": "1034789"
+      },
+      {
+        "name": "LazyTown",
+        "url": "https://genius.com/artists/Lazytown",
+        "type": "regular",
+        "id": "19269"
+      },
+      {
+        "name": "Lazza",
+        "url": "https://genius.com/artists/Lazza",
+        "type": "regular",
+        "id": "380028"
+      },
+      {
+        "name": "LAZZY2WICE",
+        "url": "https://genius.com/artists/Lazzy2wice",
+        "type": "regular",
+        "id": "1657160"
+      },
+      {
+        "name": "LBI利比",
+        "url": "https://genius.com/artists/Lbi",
+        "type": "regular",
+        "id": "4076813"
+      },
+      {
+        "name": "LCD Soundsystem",
+        "url": "https://genius.com/artists/Lcd-soundsystem",
+        "type": "regular",
+        "id": "1169"
+      },
+      {
+        "name": "LD",
+        "url": "https://genius.com/artists/Ld",
+        "type": "regular",
+        "id": "673537"
+      },
+      {
+        "name": "LDMA",
+        "url": "https://genius.com/artists/Ldma",
+        "type": "regular",
+        "id": "550196"
+      },
+      {
+        "name": "LEA",
+        "url": "https://genius.com/artists/Lea",
+        "type": "regular",
+        "id": "1103006"
+      },
+      {
+        "name": "Lead Belly",
+        "url": "https://genius.com/artists/Lead-belly",
+        "type": "regular",
+        "id": "214559"
+      },
+      {
+        "name": "Leaf Ward",
+        "url": "https://genius.com/artists/Leaf-ward",
+        "type": "regular",
+        "id": "1486296"
+      },
+      {
+        "name": "League of Legends",
+        "url": "https://genius.com/artists/League-of-legends",
+        "type": "regular",
+        "id": "152927"
+      },
+      {
+        "name": "Leah Greenhaus",
+        "url": "https://genius.com/artists/Leah-greenhaus",
+        "type": "regular",
+        "id": "791347"
+      },
+      {
+        "name": "Leah Kate",
+        "url": "https://genius.com/artists/Leah-kate",
+        "type": "regular",
+        "id": "1870002"
+      },
+      {
+        "name": "Lea Michele",
+        "url": "https://genius.com/artists/Lea-michele",
+        "type": "regular",
+        "id": "108090"
+      },
+      {
+        "name": "LeanJe",
+        "url": "https://genius.com/artists/Leanje",
+        "type": "regular",
+        "id": "2101974"
+      },
+      {
+        "name": "Leanna Crawford",
+        "url": "https://genius.com/artists/Leanna-crawford",
+        "type": "regular",
+        "id": "1580441"
+      },
+      {
+        "name": "LeAnn Rimes",
+        "url": "https://genius.com/artists/Leann-rimes",
+        "type": "regular",
+        "id": "63143"
+      },
+      {
+        "name": "LEAP (UK)",
+        "url": "https://genius.com/artists/Leap-uk",
+        "type": "regular",
+        "id": "3536721"
+      },
+      {
+        "name": "Lea Salonga",
+        "url": "https://genius.com/artists/Lea-salonga",
+        "type": "regular",
+        "id": "151889"
+      },
+      {
+        "name": "Leathermouth",
+        "url": "https://genius.com/artists/Leathermouth",
+        "type": "regular",
+        "id": "405222"
+      },
+      {
+        "name": "Lebanon Hanover",
+        "url": "https://genius.com/artists/Lebanon-hanover",
+        "type": "regular",
+        "id": "372445"
+      },
+      {
+        "name": "Lebeey",
+        "url": "https://genius.com/artists/Lebeey",
+        "type": "regular",
+        "id": "608249"
+      },
+      {
+        "name": "Leblanco",
+        "url": "https://genius.com/artists/Leblanco",
+        "type": "regular",
+        "id": "3162098"
+      },
+      {
+        "name": "Lebo M",
+        "url": "https://genius.com/artists/Lebo-m",
+        "type": "regular",
+        "id": "122515"
+      },
+      {
+        "name": "Lecrae",
+        "url": "https://genius.com/artists/Lecrae",
+        "type": "regular",
+        "id": "1401"
+      },
+      {
+        "name": "Le Crime",
+        "url": "https://genius.com/artists/Le-crime",
+        "type": "regular",
+        "id": "4243923"
+      },
+      {
+        "name": "Ledisi",
+        "url": "https://genius.com/artists/Ledisi",
+        "type": "regular",
+        "id": "3826"
+      },
+      {
+        "name": "Ledri Vula",
+        "url": "https://genius.com/artists/Ledri-vula",
+        "type": "regular",
+        "id": "152260"
+      },
+      {
+        "name": "Lee Ann Womack",
+        "url": "https://genius.com/artists/Lee-ann-womack",
+        "type": "regular",
+        "id": "269562"
+      },
+      {
+        "name": "Lee Brice",
+        "url": "https://genius.com/artists/Lee-brice",
+        "type": "regular",
+        "id": "40003"
+      },
+      {
+        "name": "Lee Drilly",
+        "url": "https://genius.com/artists/Lee-drilly",
+        "type": "regular",
+        "id": "2979445"
+      },
+      {
+        "name": "Lee Greenwood",
+        "url": "https://genius.com/artists/Lee-greenwood",
+        "type": "regular",
+        "id": "30227"
+      },
+      {
+        "name": "Lee Hazlewood",
+        "url": "https://genius.com/artists/Lee-hazlewood",
+        "type": "regular",
+        "id": "150584"
+      },
+      {
+        "name": "LeeHi (이하이)",
+        "url": "https://genius.com/artists/Leehi",
+        "type": "regular",
+        "id": "372295"
+      },
+      {
+        "name": "LEE KNOW",
+        "url": "https://genius.com/artists/Lee-know",
+        "type": "regular",
+        "id": "1601328"
+      },
+      {
+        "name": "Leela James",
+        "url": "https://genius.com/artists/Leela-james",
+        "type": "regular",
+        "id": "9320"
+      },
+      {
+        "name": "Leeland",
+        "url": "https://genius.com/artists/Leeland",
+        "type": "regular",
+        "id": "367265"
+      },
+      {
+        "name": "Leevi And The Leavings",
+        "url": "https://genius.com/artists/Leevi-and-the-leavings",
+        "type": "regular",
+        "id": "358037"
+      },
+      {
+        "name": "Lee Wilkof",
+        "url": "https://genius.com/artists/Lee-wilkof",
+        "type": "regular",
+        "id": "652252"
+      },
+      {
+        "name": "Lee Young Ji (이영지)",
+        "url": "https://genius.com/artists/Lee-young-ji",
+        "type": "regular",
+        "id": "1767632"
+      },
+      {
+        "name": "Lefa",
+        "url": "https://genius.com/artists/Lefa",
+        "type": "regular",
+        "id": "15927"
+      },
+      {
+        "name": "The Left Banke",
+        "url": "https://genius.com/artists/The-left-banke",
+        "type": "regular",
+        "id": "69796"
+      },
+      {
+        "name": "Left Boy",
+        "url": "https://genius.com/artists/Left-boy",
+        "type": "regular",
+        "id": "21278"
+      },
+      {
+        "name": "Leftöver Crack",
+        "url": "https://genius.com/artists/Leftover-crack",
+        "type": "regular",
+        "id": "357406"
+      },
+      {
+        "name": "Lefty Gunplay",
+        "url": "https://genius.com/artists/Lefty-gunplay",
+        "type": "regular",
+        "id": "3828485"
+      },
+      {
+        "name": "Lefty Sm",
+        "url": "https://genius.com/artists/Lefty-sm",
+        "type": "regular",
+        "id": "1894563"
+      },
+      {
+        "name": "LEGADO 7",
+        "url": "https://genius.com/artists/Legado-7",
+        "type": "regular",
+        "id": "1124510"
+      },
+      {
+        "name": "Legally Blonde Ensemble",
+        "url": "https://genius.com/artists/Legally-blonde-ensemble",
+        "type": "regular",
+        "id": "3971098"
+      },
+      {
+        "name": "legallyrxx",
+        "url": "https://genius.com/artists/Legallyrxx",
+        "type": "regular",
+        "id": "2651401"
+      },
+      {
+        "name": "Lege-Cy - ليجي-سي",
+        "url": "https://genius.com/artists/Lege-cy",
+        "type": "regular",
+        "id": "1425380"
+      },
+      {
+        "name": "Leger and Lambert",
+        "url": "https://genius.com/artists/Leger-and-lambert",
+        "type": "regular",
+        "id": "2118226"
+      },
+      {
+        "name": "Leikeli47",
+        "url": "https://genius.com/artists/Leikeli47",
+        "type": "regular",
+        "id": "32805"
+      },
+      {
+        "name": "Leilani Jones",
+        "url": "https://genius.com/artists/Leilani-jones",
+        "type": "regular",
+        "id": "1041930"
+      },
+      {
+        "name": "Leire Martínez",
+        "url": "https://genius.com/artists/Leire-martinez",
+        "type": "regular",
+        "id": "1496097"
+      },
+      {
+        "name": "Leith Ross",
+        "url": "https://genius.com/artists/Leith-ross",
+        "type": "regular",
+        "id": "2225335"
+      },
+      {
+        "name": "Le John",
+        "url": "https://genius.com/artists/Le-john",
+        "type": "regular",
+        "id": "2144129"
+      },
+      {
+        "name": "Lele Blade",
+        "url": "https://genius.com/artists/Lele-blade",
+        "type": "regular",
+        "id": "550207"
+      },
+      {
+        "name": "Lele (CHE)",
+        "url": "https://genius.com/artists/Lele-che",
+        "type": "regular",
+        "id": "3868958"
+      },
+      {
+        "name": "Lella Fadda - للّا فضة",
+        "url": "https://genius.com/artists/Lella-fadda",
+        "type": "regular",
+        "id": "1634103"
+      },
+      {
+        "name": "Lelosa",
+        "url": "https://genius.com/artists/Lelosa",
+        "type": "regular",
+        "id": "3894295"
+      },
+      {
+        "name": "Lelo (USA)",
+        "url": "https://genius.com/artists/Lelo-usa",
+        "type": "regular",
+        "id": "3280862"
+      },
+      {
+        "name": "Lemaier",
+        "url": "https://genius.com/artists/Lemaier",
+        "type": "regular",
+        "id": "3966934"
+      },
+      {
+        "name": "Leman Sam",
+        "url": "https://genius.com/artists/Leman-sam",
+        "type": "regular",
+        "id": "359820"
+      },
+      {
+        "name": "Lemon Demon",
+        "url": "https://genius.com/artists/Lemon-demon",
+        "type": "regular",
+        "id": "17540"
+      },
+      {
+        "name": "The Lemonheads",
+        "url": "https://genius.com/artists/The-lemonheads",
+        "type": "regular",
+        "id": "112163"
+      },
+      {
+        "name": "Len",
+        "url": "https://genius.com/artists/Len",
+        "type": "regular",
+        "id": "3048647"
+      },
+      {
+        "name": "Lena",
+        "url": "https://genius.com/artists/Lena",
+        "type": "regular",
+        "id": "52353"
+      },
+      {
+        "name": "lena jade",
+        "url": "https://genius.com/artists/Lena-jade",
+        "type": "regular",
+        "id": "4291000"
+      },
+      {
+        "name": "Len (CAN)",
+        "url": "https://genius.com/artists/Len-can",
+        "type": "regular",
+        "id": "7402"
+      },
+      {
+        "name": "Len Cariou",
+        "url": "https://genius.com/artists/Len-cariou",
+        "type": "regular",
+        "id": "457519"
+      },
+      {
+        "name": "Ленина Пакет (Lenina Paket)",
+        "url": "https://genius.com/artists/Lenina-paket",
+        "type": "regular",
+        "id": "233190"
+      },
+      {
+        "name": "Ленинград (Leningrad)",
+        "url": "https://genius.com/artists/Leningrad",
+        "type": "regular",
+        "id": "233189"
+      },
+      {
+        "name": "Leni Woess",
+        "url": "https://genius.com/artists/Leni-woess",
+        "type": "regular",
+        "id": "4397352"
+      },
+      {
+        "name": "Lenka",
+        "url": "https://genius.com/artists/Lenka",
+        "type": "regular",
+        "id": "204592"
+      },
+      {
+        "name": "León Larregui",
+        "url": "https://genius.com/artists/Leon-larregui",
+        "type": "regular",
+        "id": "68582"
+      },
+      {
+        "name": "Lennon Stella",
+        "url": "https://genius.com/artists/Lennon-stella",
+        "type": "regular",
+        "id": "376704"
+      },
+      {
+        "name": "Lenny Kravitz",
+        "url": "https://genius.com/artists/Lenny-kravitz",
+        "type": "regular",
+        "id": "3329"
+      },
+      {
+        "name": "Lenny LeBlanc",
+        "url": "https://genius.com/artists/Lenny-leblanc",
+        "type": "regular",
+        "id": "362737"
+      },
+      {
+        "name": "Lenny Tavárez",
+        "url": "https://genius.com/artists/Lenny-tavarez",
+        "type": "regular",
+        "id": "1004877"
+      },
+      {
+        "name": "Lenzspot",
+        "url": "https://genius.com/artists/Lenzspot",
+        "type": "regular",
+        "id": "4326591"
+      },
+      {
+        "name": "Leona Lewis",
+        "url": "https://genius.com/artists/Leona-lewis",
+        "type": "regular",
+        "id": "12321"
+      },
+      {
+        "name": "Leonard Cohen",
+        "url": "https://genius.com/artists/Leonard-cohen",
+        "type": "regular",
+        "id": "629"
+      },
+      {
+        "name": "Leon Bridges",
+        "url": "https://genius.com/artists/Leon-bridges",
+        "type": "regular",
+        "id": "266191"
+      },
+      {
+        "name": "Le-One",
+        "url": "https://genius.com/artists/Le-one",
+        "type": "regular",
+        "id": "4096420"
+      },
+      {
+        "name": "Леонид Агутин (Leonid Agutin)",
+        "url": "https://genius.com/artists/Leonid-agutin",
+        "type": "regular",
+        "id": "1762475"
+      },
+      {
+        "name": "Leoni Torres",
+        "url": "https://genius.com/artists/Leoni-torres",
+        "type": "regular",
+        "id": "531146"
+      },
+      {
+        "name": "Leon Russell",
+        "url": "https://genius.com/artists/Leon-russell",
+        "type": "regular",
+        "id": "144951"
+      },
+      {
+        "name": "Leon Thomas",
+        "url": "https://genius.com/artists/Leon-thomas",
+        "type": "regular",
+        "id": "73646"
+      },
+      {
+        "name": "Leony",
+        "url": "https://genius.com/artists/Leony",
+        "type": "regular",
+        "id": "385124"
+      },
+      {
+        "name": "Leo Sayer",
+        "url": "https://genius.com/artists/Leo-sayer",
+        "type": "regular",
+        "id": "289513"
+      },
+      {
+        "name": "LeoStayTrill",
+        "url": "https://genius.com/artists/Leostaytrill",
+        "type": "regular",
+        "id": "3567637"
+      },
+      {
+        "name": "Leo Waters",
+        "url": "https://genius.com/artists/Leo-waters",
+        "type": "regular",
+        "id": "3936764"
+      },
+      {
+        "name": "Leowolf",
+        "url": "https://genius.com/artists/Leowolf",
+        "type": "regular",
+        "id": "3595815"
+      },
+      {
+        "name": "Leozera",
+        "url": "https://genius.com/artists/Leozera",
+        "type": "regular",
+        "id": "2337959"
+      },
+      {
+        "name": "Lepa Brena",
+        "url": "https://genius.com/artists/Lepa-brena",
+        "type": "regular",
+        "id": "457175"
+      },
+      {
+        "name": "Lepi",
+        "url": "https://genius.com/artists/Lepi",
+        "type": "regular",
+        "id": "3880397"
+      },
+      {
+        "name": "Леприконсы (Leprikonsy)",
+        "url": "https://genius.com/artists/Leprikonsy",
+        "type": "regular",
+        "id": "1533413"
+      },
+      {
+        "name": "leroy",
+        "url": "https://genius.com/artists/Leroy",
+        "type": "regular",
+        "id": "2730678"
+      },
+      {
+        "name": "Les Choristes",
+        "url": "https://genius.com/artists/Les-choristes",
+        "type": "regular",
+        "id": "346435"
+      },
+      {
+        "name": "Les Cowboys Fringants",
+        "url": "https://genius.com/artists/Les-cowboys-fringants",
+        "type": "regular",
+        "id": "359727"
+      },
+      {
+        "name": "Лёша Свик (Lesha Svik)",
+        "url": "https://genius.com/artists/Lesha-svik",
+        "type": "regular",
+        "id": "1542844"
+      },
+      {
+        "name": "Lesley Gore",
+        "url": "https://genius.com/artists/Lesley-gore",
+        "type": "regular",
+        "id": "51035"
+      },
+      {
+        "name": "Leslie Fish",
+        "url": "https://genius.com/artists/Leslie-fish",
+        "type": "regular",
+        "id": "354856"
+      },
+      {
+        "name": "Leslie Grace",
+        "url": "https://genius.com/artists/Leslie-grace",
+        "type": "regular",
+        "id": "405156"
+      },
+      {
+        "name": "Leslie Kritzer",
+        "url": "https://genius.com/artists/Leslie-kritzer",
+        "type": "regular",
+        "id": "990136"
+      },
+      {
+        "name": "Leslie Kritzner",
+        "url": "https://genius.com/artists/Leslie-kritzner",
+        "type": "regular",
+        "id": "3150625"
+      },
+      {
+        "name": "Les Miserables",
+        "url": "https://genius.com/artists/Les-miserables",
+        "type": "regular",
+        "id": "3491708"
+      },
+      {
+        "name": "Les Misérables Cast",
+        "url": "https://genius.com/artists/Les-miserables-cast",
+        "type": "regular",
+        "id": "452561"
+      },
+      {
+        "name": "Les Misérables: International Cast",
+        "url": "https://genius.com/artists/Les-miserables-international-cast",
+        "type": "regular",
+        "id": "480543"
+      },
+      {
+        "name": "Les Misérables Original London Cast Ensemble",
+        "url": "https://genius.com/artists/Les-miserables-original-london-cast-ensemble",
+        "type": "regular",
+        "id": "4257174"
+      },
+      {
+        "name": "LE SSERAFIM",
+        "url": "https://genius.com/artists/Le-sserafim",
+        "type": "regular",
+        "id": "3109717"
+      },
+      {
+        "name": "Less Than Jake",
+        "url": "https://genius.com/artists/Less-than-jake",
+        "type": "regular",
+        "id": "66769"
+      },
+      {
+        "name": "Letdown.",
+        "url": "https://genius.com/artists/Letdown",
+        "type": "regular",
+        "id": "2597935"
+      },
+      {
+        "name": "Le Tigre",
+        "url": "https://genius.com/artists/Le-tigre",
+        "type": "regular",
+        "id": "108740"
+      },
+      {
+        "name": "​letlive.",
+        "url": "https://genius.com/artists/Letlive",
+        "type": "regular",
+        "id": "60812"
+      },
+      {
+        "name": "Leto",
+        "url": "https://genius.com/artists/Leto",
+        "type": "regular",
+        "id": "183940"
+      },
+      {
+        "name": "Levante",
+        "url": "https://genius.com/artists/Levante",
+        "type": "regular",
+        "id": "343931"
+      },
+      {
+        "name": "Level 42",
+        "url": "https://genius.com/artists/Level-42",
+        "type": "regular",
+        "id": "207098"
+      },
+      {
+        "name": "Level Five",
+        "url": "https://genius.com/artists/Level-five",
+        "type": "regular",
+        "id": "4100075"
+      },
+      {
+        "name": "Levent Yüksel",
+        "url": "https://genius.com/artists/Levent-yuksel",
+        "type": "regular",
+        "id": "405073"
+      },
+      {
+        "name": "LeviathanJPTV",
+        "url": "https://genius.com/artists/Leviathanjptv",
+        "type": "regular",
+        "id": "1761376"
+      },
+      {
+        "name": "Levi Heron",
+        "url": "https://genius.com/artists/Levi-heron",
+        "type": "regular",
+        "id": "2697972"
+      },
+      {
+        "name": "Levin Liam",
+        "url": "https://genius.com/artists/Levin-liam",
+        "type": "regular",
+        "id": "3105540"
+      },
+      {
+        "name": "Лев Землинский (Lev Zemlinsky)",
+        "url": "https://genius.com/artists/Lev-zemlinsky",
+        "type": "regular",
+        "id": "3094530"
+      },
+      {
+        "name": "Lewis Somes",
+        "url": "https://genius.com/artists/Lewis-somes",
+        "type": "regular",
+        "id": "2854886"
+      },
+      {
+        "name": "Lexa Gates",
+        "url": "https://genius.com/artists/Lexa-gates",
+        "type": "regular",
+        "id": "1844121"
+      },
+      {
+        "name": "LEX (GRC)",
+        "url": "https://genius.com/artists/Lex-grc",
+        "type": "regular",
+        "id": "664779"
+      },
+      {
+        "name": "Lexie Liu",
+        "url": "https://genius.com/artists/Lexie-liu",
+        "type": "regular",
+        "id": "1328247"
+      },
+      {
+        "name": "Lexington",
+        "url": "https://genius.com/artists/Lexington",
+        "type": "regular",
+        "id": "1051787"
+      },
+      {
+        "name": "Lex Luger",
+        "url": "https://genius.com/artists/Lex-luger",
+        "type": "regular",
+        "id": "2268"
+      },
+      {
+        "name": "lexycat",
+        "url": "https://genius.com/artists/Lexycat",
+        "type": "regular",
+        "id": "3952915"
+      },
+      {
+        "name": "Ley Soul",
+        "url": "https://genius.com/artists/Ley-soul",
+        "type": "regular",
+        "id": "3802989"
+      },
+      {
+        "name": "Lferda",
+        "url": "https://genius.com/artists/Lferda",
+        "type": "regular",
+        "id": "1116768"
+      },
+      {
+        "name": "LFO",
+        "url": "https://genius.com/artists/Lfo",
+        "type": "regular",
+        "id": "8212"
+      },
+      {
+        "name": "LG Malique",
+        "url": "https://genius.com/artists/Lg-malique",
+        "type": "regular",
+        "id": "3224391"
+      },
+      {
+        "name": "L’haine",
+        "url": "https://genius.com/artists/Lhaine",
+        "type": "regular",
+        "id": "1851263"
+      },
+      {
+        "name": "Lhast",
+        "url": "https://genius.com/artists/Lhast",
+        "type": "regular",
+        "id": "625516"
+      },
+      {
+        "name": "​​lhugueny",
+        "url": "https://genius.com/artists/Lhugueny",
+        "type": "regular",
+        "id": "578837"
+      },
+      {
+        "name": "Liad Meir - ליעד מאיר",
+        "url": "https://genius.com/artists/Liad-meir",
+        "type": "regular",
+        "id": "1615148"
+      },
+      {
+        "name": "Lia Kali",
+        "url": "https://genius.com/artists/Lia-kali",
+        "type": "regular",
+        "id": "2178268"
+      },
+      {
+        "name": "Liam Clancy",
+        "url": "https://genius.com/artists/Liam-clancy",
+        "type": "regular",
+        "id": "377334"
+      },
+      {
+        "name": "Liam Gallagher",
+        "url": "https://genius.com/artists/Liam-gallagher",
+        "type": "regular",
+        "id": "56368"
+      },
+      {
+        "name": "Liam Payne",
+        "url": "https://genius.com/artists/Liam-payne",
+        "type": "regular",
+        "id": "581698"
+      },
+      {
+        "name": "Liana Flores",
+        "url": "https://genius.com/artists/Liana-flores",
+        "type": "regular",
+        "id": "1510301"
+      },
+      {
+        "name": "Lianne La Havas",
+        "url": "https://genius.com/artists/Lianne-la-havas",
+        "type": "regular",
+        "id": "21725"
+      },
+      {
+        "name": "Lia Shine",
+        "url": "https://genius.com/artists/Lia-shine",
+        "type": "regular",
+        "id": "1907510"
+      },
+      {
+        "name": "LIBERATO",
+        "url": "https://genius.com/artists/Liberato",
+        "type": "regular",
+        "id": "1088846"
+      },
+      {
+        "name": "Libertad García Fonzi",
+        "url": "https://genius.com/artists/Libertad-garcia-fonzi",
+        "type": "regular",
+        "id": "4319888"
+      },
+      {
+        "name": "The Libertines",
+        "url": "https://genius.com/artists/The-libertines",
+        "type": "regular",
+        "id": "20920"
+      },
+      {
+        "name": "Libianca",
+        "url": "https://genius.com/artists/Libianca",
+        "type": "regular",
+        "id": "3372852"
+      },
+      {
+        "name": "Lida",
+        "url": "https://genius.com/artists/Lida",
+        "type": "regular",
+        "id": "1458081"
+      },
+      {
+        "name": "Lido",
+        "url": "https://genius.com/artists/Lido",
+        "type": "regular",
+        "id": "20576"
+      },
+      {
+        "name": "lieu",
+        "url": "https://genius.com/artists/Lieu",
+        "type": "regular",
+        "id": "2224252"
+      },
+      {
+        "name": "Группа Поручик Ржевский (Lieutenant Rzhevsky Band)",
+        "url": "https://genius.com/artists/Lieutenant-rzhevsky-band",
+        "type": "regular",
+        "id": "4393346"
+      },
+      {
+        "name": "Lifehouse",
+        "url": "https://genius.com/artists/Lifehouse",
+        "type": "regular",
+        "id": "37206"
+      },
+      {
+        "name": "lifelessgarments",
+        "url": "https://genius.com/artists/Lifelessgarments",
+        "type": "regular",
+        "id": "2579492"
+      },
+      {
+        "name": "Lifelover",
+        "url": "https://genius.com/artists/Lifelover",
+        "type": "regular",
+        "id": "365947"
+      },
+      {
+        "name": "Ligabue",
+        "url": "https://genius.com/artists/Ligabue",
+        "type": "regular",
+        "id": "353217"
+      },
+      {
+        "name": "Light",
+        "url": "https://genius.com/artists/Light",
+        "type": "regular",
+        "id": "7872"
+      },
+      {
+        "name": "Lighthouse Family",
+        "url": "https://genius.com/artists/Lighthouse-family",
+        "type": "regular",
+        "id": "360628"
+      },
+      {
+        "name": "The Lightning Seeds",
+        "url": "https://genius.com/artists/The-lightning-seeds",
+        "type": "regular",
+        "id": "160424"
+      },
+      {
+        "name": "Lights",
+        "url": "https://genius.com/artists/Lights",
+        "type": "regular",
+        "id": "1551"
+      },
+      {
+        "name": "Liili",
+        "url": "https://genius.com/artists/Liili",
+        "type": "regular",
+        "id": "3244178"
+      },
+      {
+        "name": "Lijpe",
+        "url": "https://genius.com/artists/Lijpe",
+        "type": "regular",
+        "id": "256412"
+      },
+      {
+        "name": "LIKO (RUS)",
+        "url": "https://genius.com/artists/Liko-rus",
+        "type": "regular",
+        "id": "4260699"
+      },
+      {
+        "name": "Lil 2z",
+        "url": "https://genius.com/artists/Lil-2z",
+        "type": "regular",
+        "id": "1608403"
+      },
+      {
+        "name": "LILA (GRC)",
+        "url": "https://genius.com/artists/Lila-grc",
+        "type": "regular",
+        "id": "2737443"
+      },
+      {
+        "name": "Lil B",
+        "url": "https://genius.com/artists/Lil-b",
+        "type": "regular",
+        "id": "455"
+      },
+      {
+        "name": "Lil Bean",
+        "url": "https://genius.com/artists/Lil-bean",
+        "type": "regular",
+        "id": "1891554"
+      },
+      {
+        "name": "Lil Bibby",
+        "url": "https://genius.com/artists/Lil-bibby",
+        "type": "regular",
+        "id": "33238"
+      },
+      {
+        "name": "LILCAK3",
+        "url": "https://genius.com/artists/Lilcak3",
+        "type": "regular",
+        "id": "1176854"
+      },
+      {
+        "name": "Lil Candy Paint",
+        "url": "https://genius.com/artists/Lil-candy-paint",
+        "type": "regular",
+        "id": "1027392"
+      },
+      {
+        "name": "Lil Carthi",
+        "url": "https://genius.com/artists/Lil-carthi",
+        "type": "regular",
+        "id": "2167494"
+      },
+      {
+        "name": "LILCR",
+        "url": "https://genius.com/artists/Lilcr",
+        "type": "regular",
+        "id": "3113029"
+      },
+      {
+        "name": "Lil Crix",
+        "url": "https://genius.com/artists/Lil-crix",
+        "type": "regular",
+        "id": "1522341"
+      },
+      {
+        "name": "Lil Darkie",
+        "url": "https://genius.com/artists/Lil-darkie",
+        "type": "regular",
+        "id": "1614464"
+      },
+      {
+        "name": "Lil Dicky",
+        "url": "https://genius.com/artists/Lil-dicky",
+        "type": "regular",
+        "id": "47589"
+      },
+      {
+        "name": "Lil Double 0",
+        "url": "https://genius.com/artists/Lil-double-0",
+        "type": "regular",
+        "id": "2733503"
+      },
+      {
+        "name": "Lil Dre6o",
+        "url": "https://genius.com/artists/Lil-dre6o",
+        "type": "regular",
+        "id": "3229705"
+      },
+      {
+        "name": "LILDRUGHILL",
+        "url": "https://genius.com/artists/Lildrughill",
+        "type": "regular",
+        "id": "980841"
+      },
+      {
+        "name": "Lil Eddie",
+        "url": "https://genius.com/artists/Lil-eddie",
+        "type": "regular",
+        "id": "7541"
+      },
+      {
+        "name": "Lil Eggsoup",
+        "url": "https://genius.com/artists/Lil-eggsoup",
+        "type": "regular",
+        "id": "3271287"
+      },
+      {
+        "name": "LIL FITTED CAP",
+        "url": "https://genius.com/artists/Lil-fitted-cap",
+        "type": "regular",
+        "id": "3675050"
+      },
+      {
+        "name": "LiL Flash$ (UKR)",
+        "url": "https://genius.com/artists/Lil-flash-ukr",
+        "type": "regular",
+        "id": "2710916"
+      },
+      {
+        "name": "LIL GAZ",
+        "url": "https://genius.com/artists/Lil-gaz",
+        "type": "regular",
+        "id": "2021092"
+      },
+      {
+        "name": "Lil Gotit",
+        "url": "https://genius.com/artists/Lil-gotit",
+        "type": "regular",
+        "id": "1579594"
+      },
+      {
+        "name": "Lilith Max",
+        "url": "https://genius.com/artists/Lilith-max",
+        "type": "regular",
+        "id": "3825025"
+      },
+      {
+        "name": "Lil Jay (PHL)",
+        "url": "https://genius.com/artists/Lil-jay-phl",
+        "type": "regular",
+        "id": "2565484"
+      },
+      {
+        "name": "Lil Jon",
+        "url": "https://genius.com/artists/Lil-jon",
+        "type": "regular",
+        "id": "107"
+      },
+      {
+        "name": "Lil Jon & The East Side Boyz",
+        "url": "https://genius.com/artists/Lil-jon-and-the-east-side-boyz",
+        "type": "regular",
+        "id": "474"
+      },
+      {
+        "name": "Lil Kayla",
+        "url": "https://genius.com/artists/Lil-kayla",
+        "type": "regular",
+        "id": "990498"
+      },
+      {
+        "name": "Lil Kee",
+        "url": "https://genius.com/artists/Lil-kee",
+        "type": "regular",
+        "id": "2197955"
+      },
+      {
+        "name": "Lil Keed",
+        "url": "https://genius.com/artists/Lil-keed",
+        "type": "regular",
+        "id": "1508081"
+      },
+      {
+        "name": "Lil' Keke",
+        "url": "https://genius.com/artists/Lil-keke",
+        "type": "regular",
+        "id": "1536"
+      },
+      {
+        "name": "​lil Kidd",
+        "url": "https://genius.com/artists/Lil-kidd",
+        "type": "regular",
+        "id": "3766072"
+      },
+      {
+        "name": "Lil' Kim",
+        "url": "https://genius.com/artists/Lil-kim",
+        "type": "regular",
+        "id": "411"
+      },
+      {
+        "name": "Lil Kleine",
+        "url": "https://genius.com/artists/Lil-kleine",
+        "type": "regular",
+        "id": "145010"
+      },
+      {
+        "name": "LIL KRYSTALLL",
+        "url": "https://genius.com/artists/Lil-krystalll",
+        "type": "regular",
+        "id": "1470631"
+      },
+      {
+        "name": "Lillebjørn Nilsen",
+        "url": "https://genius.com/artists/Lillebjrn-nilsen",
+        "type": "regular",
+        "id": "34249"
+      },
+      {
+        "name": "lille Caesar",
+        "url": "https://genius.com/artists/Lille-caesar",
+        "type": "regular",
+        "id": "3499622"
+      },
+      {
+        "name": "Lillias White",
+        "url": "https://genius.com/artists/Lillias-white",
+        "type": "regular",
+        "id": "158547"
+      },
+      {
+        "name": "Lilli Cooper",
+        "url": "https://genius.com/artists/Lilli-cooper",
+        "type": "regular",
+        "id": "987305"
+      },
+      {
+        "name": "Lil Loaded",
+        "url": "https://genius.com/artists/Lil-loaded",
+        "type": "regular",
+        "id": "1899664"
+      },
+      {
+        "name": "Lil Mabu",
+        "url": "https://genius.com/artists/Lil-mabu",
+        "type": "regular",
+        "id": "2679113"
+      },
+      {
+        "name": "Lil Macks",
+        "url": "https://genius.com/artists/Lil-macks",
+        "type": "regular",
+        "id": "2680615"
+      },
+      {
+        "name": "Lil Man J",
+        "url": "https://genius.com/artists/Lil-man-j",
+        "type": "regular",
+        "id": "2133549"
+      },
+      {
+        "name": "LIL MORTY",
+        "url": "https://genius.com/artists/Lil-morty",
+        "type": "regular",
+        "id": "1074674"
+      },
+      {
+        "name": "Lil Mosey",
+        "url": "https://genius.com/artists/Lil-mosey",
+        "type": "regular",
+        "id": "1092626"
+      },
+      {
+        "name": "Lil Naay",
+        "url": "https://genius.com/artists/Lil-naay",
+        "type": "regular",
+        "id": "3959233"
+      },
+      {
+        "name": "LIL NAKUR",
+        "url": "https://genius.com/artists/Lil-nakur",
+        "type": "regular",
+        "id": "4249438"
+      },
+      {
+        "name": "Lil Nas X",
+        "url": "https://genius.com/artists/Lil-nas-x",
+        "type": "regular",
+        "id": "1770892"
+      },
+      {
+        "name": "Lil Noonie",
+        "url": "https://genius.com/artists/Lil-noonie",
+        "type": "regular",
+        "id": "4284672"
+      },
+      {
+        "name": "Lil Novi",
+        "url": "https://genius.com/artists/Lil-novi",
+        "type": "regular",
+        "id": "480347"
+      },
+      {
+        "name": "Lil Pete",
+        "url": "https://genius.com/artists/Lil-pete",
+        "type": "regular",
+        "id": "8057"
+      },
+      {
+        "name": "Lil Poppa",
+        "url": "https://genius.com/artists/Lil-poppa",
+        "type": "regular",
+        "id": "1621591"
+      },
+      {
+        "name": "Lil Pump",
+        "url": "https://genius.com/artists/Lil-pump",
+        "type": "regular",
+        "id": "654932"
+      },
+      {
+        "name": "Lil Rae",
+        "url": "https://genius.com/artists/Lil-rae",
+        "type": "regular",
+        "id": "3689861"
+      },
+      {
+        "name": "Lil Rob",
+        "url": "https://genius.com/artists/Lil-rob",
+        "type": "regular",
+        "id": "3295"
+      },
+      {
+        "name": "Lil Ron (PHL)",
+        "url": "https://genius.com/artists/Lil-ron-phl",
+        "type": "regular",
+        "id": "3294130"
+      },
+      {
+        "name": "Lil Sane",
+        "url": "https://genius.com/artists/Lil-sane",
+        "type": "regular",
+        "id": "4246211"
+      },
+      {
+        "name": "Lil Scoom89",
+        "url": "https://genius.com/artists/Lil-scoom89",
+        "type": "regular",
+        "id": "3790694"
+      },
+      {
+        "name": "LilSemmi",
+        "url": "https://genius.com/artists/Lilsemmi",
+        "type": "regular",
+        "id": "3667485"
+      },
+      {
+        "name": "Lil Shine",
+        "url": "https://genius.com/artists/Lil-shine",
+        "type": "regular",
+        "id": "1311382"
+      },
+      {
+        "name": "Lil Skies",
+        "url": "https://genius.com/artists/Lil-skies",
+        "type": "regular",
+        "id": "1015007"
+      },
+      {
+        "name": "Lil Supa",
+        "url": "https://genius.com/artists/Lil-supa",
+        "type": "regular",
+        "id": "221938"
+      },
+      {
+        "name": "Lil Tjay",
+        "url": "https://genius.com/artists/Lil-tjay",
+        "type": "regular",
+        "id": "1426407"
+      },
+      {
+        "name": "Lil Tony Official",
+        "url": "https://genius.com/artists/Lil-tony-official",
+        "type": "regular",
+        "id": "1688576"
+      },
+      {
+        "name": "Lil Tracy",
+        "url": "https://genius.com/artists/Lil-tracy",
+        "type": "regular",
+        "id": "659313"
+      },
+      {
+        "name": "Lil' Troy",
+        "url": "https://genius.com/artists/Lil-troy",
+        "type": "regular",
+        "id": "1670"
+      },
+      {
+        "name": "Lil Ugly Mane",
+        "url": "https://genius.com/artists/Lil-ugly-mane",
+        "type": "regular",
+        "id": "17011"
+      },
+      {
+        "name": "Lil Wudy",
+        "url": "https://genius.com/artists/Lil-wudy",
+        "type": "regular",
+        "id": "4290211"
+      },
+      {
+        "name": "Lil X21",
+        "url": "https://genius.com/artists/Lil-x21",
+        "type": "regular",
+        "id": "3826908"
+      },
+      {
+        "name": "Lil Xan",
+        "url": "https://genius.com/artists/Lil-xan",
+        "type": "regular",
+        "id": "1120888"
+      },
+      {
+        "name": "Lil Yachty",
+        "url": "https://genius.com/artists/Lil-yachty",
+        "type": "regular",
+        "id": "610968"
+      },
+      {
+        "name": "Lily Allen",
+        "url": "https://genius.com/artists/Lily-allen",
+        "type": "regular",
+        "id": "1185"
+      },
+      {
+        "name": "Lily Chou-Chou",
+        "url": "https://genius.com/artists/Lily-chou-chou",
+        "type": "regular",
+        "id": "3049010"
+      },
+      {
+        "name": "Lily Fitts",
+        "url": "https://genius.com/artists/Lily-fitts",
+        "type": "regular",
+        "id": "3619730"
+      },
+      {
+        "name": "Lilyisthatyou",
+        "url": "https://genius.com/artists/Lilyisthatyou",
+        "type": "regular",
+        "id": "2795937"
+      },
+      {
+        "name": "Lily James",
+        "url": "https://genius.com/artists/Lily-james",
+        "type": "regular",
+        "id": "481131"
+      },
+      {
+        "name": "LILY (NMIXX)",
+        "url": "https://genius.com/artists/Lily-nmixx",
+        "type": "regular",
+        "id": "3037010"
+      },
+      {
+        "name": "LILY (PHL)",
+        "url": "https://genius.com/artists/Lily-phl",
+        "type": "regular",
+        "id": "4380300"
+      },
+      {
+        "name": "LilyPichu",
+        "url": "https://genius.com/artists/Lilypichu",
+        "type": "regular",
+        "id": "152820"
+      },
+      {
+        "name": "Lily-Rose Depp",
+        "url": "https://genius.com/artists/Lily-rose-depp",
+        "type": "regular",
+        "id": "50151"
+      },
+      {
+        "name": "Lil Zay Osama",
+        "url": "https://genius.com/artists/Lil-zay-osama",
+        "type": "regular",
+        "id": "1677219"
+      },
+      {
+        "name": "Lil Zey",
+        "url": "https://genius.com/artists/Lil-zey",
+        "type": "regular",
+        "id": "1132963"
+      },
+      {
+        "name": "Limahl",
+        "url": "https://genius.com/artists/Limahl",
+        "type": "regular",
+        "id": "378994"
+      },
+      {
+        "name": "The Limba",
+        "url": "https://genius.com/artists/The-limba",
+        "type": "regular",
+        "id": "1684601"
+      },
+      {
+        "name": "Limbo (Pop)",
+        "url": "https://genius.com/artists/Limbo-pop",
+        "type": "regular",
+        "id": "1136385"
+      },
+      {
+        "name": "Limoblaze",
+        "url": "https://genius.com/artists/Limoblaze",
+        "type": "regular",
+        "id": "960412"
+      },
+      {
+        "name": "Limp Bizkit",
+        "url": "https://genius.com/artists/Limp-bizkit",
+        "type": "regular",
+        "id": "8346"
+      },
+      {
+        "name": "L'Impératrice",
+        "url": "https://genius.com/artists/Limperatrice",
+        "type": "regular",
+        "id": "29937"
+      },
+      {
+        "name": "Limsa d'Aulnay",
+        "url": "https://genius.com/artists/Limsa-daulnay",
+        "type": "regular",
+        "id": "93818"
+      },
+      {
+        "name": "Lincoln",
+        "url": "https://genius.com/artists/Lincoln",
+        "type": "regular",
+        "id": "365105"
+      },
+      {
+        "name": "Lincoln Brewster",
+        "url": "https://genius.com/artists/Lincoln-brewster",
+        "type": "regular",
+        "id": "230224"
+      },
+      {
+        "name": "Linda Caba",
+        "url": "https://genius.com/artists/Linda-caba",
+        "type": "regular",
+        "id": "3820525"
+      },
+      {
+        "name": "Линда (Linda Geiman)",
+        "url": "https://genius.com/artists/Linda-geiman",
+        "type": "regular",
+        "id": "1157276"
+      },
+      {
+        "name": "Linda Martell",
+        "url": "https://genius.com/artists/Linda-martell",
+        "type": "regular",
+        "id": "481719"
+      },
+      {
+        "name": "Linda McCartney",
+        "url": "https://genius.com/artists/Linda-mccartney",
+        "type": "regular",
+        "id": "212681"
+      },
+      {
+        "name": "Linda Ronstadt",
+        "url": "https://genius.com/artists/Linda-ronstadt",
+        "type": "regular",
+        "id": "60045"
+      },
+      {
+        "name": "Lindemann",
+        "url": "https://genius.com/artists/Lindemann",
+        "type": "regular",
+        "id": "337610"
+      },
+      {
+        "name": "Lindsey Stirling",
+        "url": "https://genius.com/artists/Lindsey-stirling",
+        "type": "regular",
+        "id": "161150"
+      },
+      {
+        "name": "Lindy Cofer & Circuit Rider Music",
+        "url": "https://genius.com/artists/Lindy-cofer-and-circuit-rider-music",
+        "type": "regular",
+        "id": "3114124"
+      },
+      {
+        "name": "Linea Personal",
+        "url": "https://genius.com/artists/Linea-personal",
+        "type": "regular",
+        "id": "3624661"
+      },
+      {
+        "name": "Linet",
+        "url": "https://genius.com/artists/Linet",
+        "type": "regular",
+        "id": "1518159"
+      },
+      {
+        "name": "Lingua Ignota",
+        "url": "https://genius.com/artists/Lingua-ignota",
+        "type": "regular",
+        "id": "1322937"
+      },
+      {
+        "name": "Link do Zap",
+        "url": "https://genius.com/artists/Link-do-zap",
+        "type": "regular",
+        "id": "2458105"
+      },
+      {
+        "name": "Linyeras Cru",
+        "url": "https://genius.com/artists/Linyeras-cru",
+        "type": "regular",
+        "id": "1484320"
+      },
+      {
+        "name": "Lionel Bart",
+        "url": "https://genius.com/artists/Lionel-bart",
+        "type": "regular",
+        "id": "490958"
+      },
+      {
+        "name": "Lionel Richie",
+        "url": "https://genius.com/artists/Lionel-richie",
+        "type": "regular",
+        "id": "22272"
+      },
+      {
+        "name": "The Lion King Ensemble",
+        "url": "https://genius.com/artists/The-lion-king-ensemble",
+        "type": "regular",
+        "id": "4360699"
+      },
+      {
+        "name": "Lipps, Inc.",
+        "url": "https://genius.com/artists/Lipps-inc",
+        "type": "regular",
+        "id": "18507"
+      },
+      {
+        "name": "Li Rye",
+        "url": "https://genius.com/artists/Li-rye",
+        "type": "regular",
+        "id": "3353531"
+      },
+      {
+        "name": "LISA",
+        "url": "https://genius.com/artists/Lisa",
+        "type": "regular",
+        "id": "1554112"
+      },
+      {
+        "name": "Lisa Brescia",
+        "url": "https://genius.com/artists/Lisa-brescia",
+        "type": "regular",
+        "id": "531038"
+      },
+      {
+        "name": "Lisa Gilroy",
+        "url": "https://genius.com/artists/Lisa-gilroy",
+        "type": "regular",
+        "id": "4405841"
+      },
+      {
+        "name": "Lisa Hannigan",
+        "url": "https://genius.com/artists/Lisa-hannigan",
+        "type": "regular",
+        "id": "91584"
+      },
+      {
+        "name": "LiSA (JPN)",
+        "url": "https://genius.com/artists/Lisa-jpn",
+        "type": "regular",
+        "id": "108915"
+      },
+      {
+        "name": "Lisa Knowles Smith",
+        "url": "https://genius.com/artists/Lisa-knowles-smith",
+        "type": "regular",
+        "id": "2349686"
+      },
+      {
+        "name": "Lisa Knowles-Smith & The Brown Singers",
+        "url": "https://genius.com/artists/Lisa-knowles-smith-and-the-brown-singers",
+        "type": "regular",
+        "id": "4090569"
+      },
+      {
+        "name": "Lisa Lisa and Cult Jam",
+        "url": "https://genius.com/artists/Lisa-lisa-and-cult-jam",
+        "type": "regular",
+        "id": "67252"
+      },
+      {
+        "name": "Lisa Ono",
+        "url": "https://genius.com/artists/Lisa-ono",
+        "type": "regular",
+        "id": "406047"
+      },
+      {
+        "name": "Lit",
+        "url": "https://genius.com/artists/Lit",
+        "type": "regular",
+        "id": "335348"
+      },
+      {
+        "name": "Lit Genius",
+        "url": "https://genius.com/artists/Lit-genius",
+        "type": "regular",
+        "id": "198916"
+      },
+      {
+        "name": "Lithe",
+        "url": "https://genius.com/artists/Lithe",
+        "type": "regular",
+        "id": "1297447"
+      },
+      {
+        "name": "Little Big",
+        "url": "https://genius.com/artists/Little-big",
+        "type": "regular",
+        "id": "331727"
+      },
+      {
+        "name": "Little Big Town",
+        "url": "https://genius.com/artists/Little-big-town",
+        "type": "regular",
+        "id": "62418"
+      },
+      {
+        "name": "Little Boogie",
+        "url": "https://genius.com/artists/Little-boogie",
+        "type": "regular",
+        "id": "1877527"
+      },
+      {
+        "name": "Little Brother",
+        "url": "https://genius.com/artists/Little-brother",
+        "type": "regular",
+        "id": "1130"
+      },
+      {
+        "name": "Little Dragon",
+        "url": "https://genius.com/artists/Little-dragon",
+        "type": "regular",
+        "id": "11734"
+      },
+      {
+        "name": "Little Feat",
+        "url": "https://genius.com/artists/Little-feat",
+        "type": "regular",
+        "id": "309210"
+      },
+      {
+        "name": "Little Homie",
+        "url": "https://genius.com/artists/Little-homie",
+        "type": "regular",
+        "id": "3921567"
+      },
+      {
+        "name": "Little Mix",
+        "url": "https://genius.com/artists/Little-mix",
+        "type": "regular",
+        "id": "25889"
+      },
+      {
+        "name": "Little Richard",
+        "url": "https://genius.com/artists/Little-richard",
+        "type": "regular",
+        "id": "37147"
+      },
+      {
+        "name": "Little River Band",
+        "url": "https://genius.com/artists/Little-river-band",
+        "type": "regular",
+        "id": "67151"
+      },
+      {
+        "name": "Little Simz",
+        "url": "https://genius.com/artists/Little-simz",
+        "type": "regular",
+        "id": "166056"
+      },
+      {
+        "name": "ЛИТВИН (LITVIN)",
+        "url": "https://genius.com/artists/Litvin",
+        "type": "regular",
+        "id": "3303600"
+      },
+      {
+        "name": "Литвиненко (Litvinenko)",
+        "url": "https://genius.com/artists/Litvinenko",
+        "type": "regular",
+        "id": "1955066"
+      },
+      {
+        "name": "LIVE",
+        "url": "https://genius.com/artists/Live",
+        "type": "regular",
+        "id": "8105"
+      },
+      {
+        "name": "Living Colour",
+        "url": "https://genius.com/artists/Living-colour",
+        "type": "regular",
+        "id": "10156"
+      },
+      {
+        "name": "Livingston",
+        "url": "https://genius.com/artists/Livingston",
+        "type": "regular",
+        "id": "355745"
+      },
+      {
+        "name": "The Living Tombstone",
+        "url": "https://genius.com/artists/The-living-tombstone",
+        "type": "regular",
+        "id": "18425"
+      },
+      {
+        "name": "Liza Minnelli",
+        "url": "https://genius.com/artists/Liza-minnelli",
+        "type": "regular",
+        "id": "359845"
+      },
+      {
+        "name": "Liz Callaway",
+        "url": "https://genius.com/artists/Liz-callaway",
+        "type": "regular",
+        "id": "382720"
+      },
+      {
+        "name": "Lizer",
+        "url": "https://genius.com/artists/Lizer",
+        "type": "regular",
+        "id": "1000730"
+      },
+      {
+        "name": "Liz Phair",
+        "url": "https://genius.com/artists/Liz-phair",
+        "type": "regular",
+        "id": "46283"
+      },
+      {
+        "name": "Lizz",
+        "url": "https://genius.com/artists/Lizz",
+        "type": "regular",
+        "id": "613327"
+      },
+      {
+        "name": "Lizzie Morgan",
+        "url": "https://genius.com/artists/Lizzie-morgan",
+        "type": "regular",
+        "id": "2514270"
+      },
+      {
+        "name": "Lizzo",
+        "url": "https://genius.com/artists/Lizzo",
+        "type": "regular",
+        "id": "84514"
+      },
+      {
+        "name": "Lizz Robinett",
+        "url": "https://genius.com/artists/Lizz-robinett",
+        "type": "regular",
+        "id": "986286"
+      },
+      {
+        "name": "Lizzy McAlpine",
+        "url": "https://genius.com/artists/Lizzy-mcalpine",
+        "type": "regular",
+        "id": "1424339"
+      },
+      {
+        "name": "лиззз (lizzz)",
+        "url": "https://genius.com/artists/Lizzz",
+        "type": "regular",
+        "id": "3114453"
+      },
+      {
+        "name": "​ljp2900",
+        "url": "https://genius.com/artists/Ljp2900",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "LL Clawz",
+        "url": "https://genius.com/artists/Ll-clawz",
+        "type": "regular",
+        "id": "1559526"
+      },
+      {
+        "name": "LL COOL J",
+        "url": "https://genius.com/artists/Ll-cool-j",
+        "type": "regular",
+        "id": "848"
+      },
+      {
+        "name": "Lloyd",
+        "url": "https://genius.com/artists/Lloyd",
+        "type": "regular",
+        "id": "196"
+      },
+      {
+        "name": "Lloyd Banks",
+        "url": "https://genius.com/artists/Lloyd-banks",
+        "type": "regular",
+        "id": "255"
+      },
+      {
+        "name": "Lloyiso",
+        "url": "https://genius.com/artists/Lloyiso",
+        "type": "regular",
+        "id": "1588705"
+      },
+      {
+        "name": "Lluni",
+        "url": "https://genius.com/artists/Lluni",
+        "type": "regular",
+        "id": "1159207"
+      },
+      {
+        "name": "LMFAO",
+        "url": "https://genius.com/artists/Lmfao",
+        "type": "regular",
+        "id": "2621"
+      },
+      {
+        "name": "L'Morphine",
+        "url": "https://genius.com/artists/Lmorphine",
+        "type": "regular",
+        "id": "309616"
+      },
+      {
+        "name": "Lương Khánh Vy",
+        "url": "https://genius.com/artists/Luong-khanh-vy",
+        "type": "regular",
+        "id": "2801250"
+      },
+      {
+        "name": "Loaded Honey",
+        "url": "https://genius.com/artists/Loaded-honey",
+        "type": "regular",
+        "id": "4347878"
+      },
+      {
+        "name": "Loathe",
+        "url": "https://genius.com/artists/Loathe",
+        "type": "regular",
+        "id": "976535"
+      },
+      {
+        "name": "Loatinover Pounds",
+        "url": "https://genius.com/artists/Loatinover-pounds",
+        "type": "regular",
+        "id": "1252633"
+      },
+      {
+        "name": "Lobo",
+        "url": "https://genius.com/artists/Lobo",
+        "type": "regular",
+        "id": "58765"
+      },
+      {
+        "name": "Loboda",
+        "url": "https://genius.com/artists/Loboda",
+        "type": "regular",
+        "id": "1107817"
+      },
+      {
+        "name": "L.O.C.",
+        "url": "https://genius.com/artists/Loc",
+        "type": "regular",
+        "id": "5931"
+      },
+      {
+        "name": "Local H",
+        "url": "https://genius.com/artists/Local-h",
+        "type": "regular",
+        "id": "262804"
+      },
+      {
+        "name": "Local Natives",
+        "url": "https://genius.com/artists/Local-natives",
+        "type": "regular",
+        "id": "26612"
+      },
+      {
+        "name": "Loc-Dog",
+        "url": "https://genius.com/artists/Loc-dog",
+        "type": "regular",
+        "id": "70691"
+      },
+      {
+        "name": "Locky",
+        "url": "https://genius.com/artists/Locky",
+        "type": "regular",
+        "id": "1237542"
+      },
+      {
+        "name": "Loco (로꼬)",
+        "url": "https://genius.com/artists/Loco",
+        "type": "regular",
+        "id": "39141"
+      },
+      {
+        "name": "LOE Shimmy",
+        "url": "https://genius.com/artists/Loe-shimmy",
+        "type": "regular",
+        "id": "2410558"
+      },
+      {
+        "name": "Lofty305",
+        "url": "https://genius.com/artists/Lofty305",
+        "type": "regular",
+        "id": "40470"
+      },
+      {
+        "name": "Logan Paul",
+        "url": "https://genius.com/artists/Logan-paul",
+        "type": "regular",
+        "id": "1054263"
+      },
+      {
+        "name": "Loggins & Messina",
+        "url": "https://genius.com/artists/Loggins-and-messina",
+        "type": "regular",
+        "id": "39693"
+      },
+      {
+        "name": "Logic",
+        "url": "https://genius.com/artists/Logic",
+        "type": "regular",
+        "id": "7922"
+      },
+      {
+        "name": "Logos Timis",
+        "url": "https://genius.com/artists/Logos-timis",
+        "type": "regular",
+        "id": "1410402"
+      },
+      {
+        "name": "lohleq",
+        "url": "https://genius.com/artists/Lohleq",
+        "type": "regular",
+        "id": "1957837"
+      },
+      {
+        "name": "Loituma",
+        "url": "https://genius.com/artists/Loituma",
+        "type": "regular",
+        "id": "26081"
+      },
+      {
+        "name": "Lojay",
+        "url": "https://genius.com/artists/Lojay",
+        "type": "regular",
+        "id": "29776"
+      },
+      {
+        "name": "Lo ki",
+        "url": "https://genius.com/artists/Lo-ki",
+        "type": "regular",
+        "id": "3087875"
+      },
+      {
+        "name": "LOKIMITDERMASKE",
+        "url": "https://genius.com/artists/Lokimitdermaske",
+        "type": "regular",
+        "id": "2483783"
+      },
+      {
+        "name": "Lola Amour",
+        "url": "https://genius.com/artists/Lola-amour",
+        "type": "regular",
+        "id": "1136118"
+      },
+      {
+        "name": "Lola Beltrán",
+        "url": "https://genius.com/artists/Lola-beltran",
+        "type": "regular",
+        "id": "348205"
+      },
+      {
+        "name": "Lola Indigo",
+        "url": "https://genius.com/artists/Lola-indigo",
+        "type": "regular",
+        "id": "1530427"
+      },
+      {
+        "name": "Lola Kirke",
+        "url": "https://genius.com/artists/Lola-kirke",
+        "type": "regular",
+        "id": "1033573"
+      },
+      {
+        "name": "Лолита (Lolita)",
+        "url": "https://genius.com/artists/Lolita",
+        "type": "regular",
+        "id": "1285854"
+      },
+      {
+        "name": "Lollia",
+        "url": "https://genius.com/artists/Lollia",
+        "type": "regular",
+        "id": "1017856"
+      },
+      {
+        "name": "LoLo Morales",
+        "url": "https://genius.com/artists/Lolo-morales",
+        "type": "regular",
+        "id": "2485787"
+      },
+      {
+        "name": "Lomba Sihir",
+        "url": "https://genius.com/artists/Lomba-sihir",
+        "type": "regular",
+        "id": "2617914"
+      },
+      {
+        "name": "Lomepal",
+        "url": "https://genius.com/artists/Lomepal",
+        "type": "regular",
+        "id": "16138"
+      },
+      {
+        "name": "Lomiiel",
+        "url": "https://genius.com/artists/Lomiiel",
+        "type": "regular",
+        "id": "3686659"
+      },
+      {
+        "name": "London After Midnight",
+        "url": "https://genius.com/artists/London-after-midnight",
+        "type": "regular",
+        "id": "363777"
+      },
+      {
+        "name": "London Grammar",
+        "url": "https://genius.com/artists/London-grammar",
+        "type": "regular",
+        "id": "53533"
+      },
+      {
+        "name": "London Symphony Orchestra",
+        "url": "https://genius.com/artists/London-symphony-orchestra",
+        "type": "regular",
+        "id": "38153"
+      },
+      {
+        "name": "L’One",
+        "url": "https://genius.com/artists/Lone",
+        "type": "regular",
+        "id": "1088358"
+      },
+      {
+        "name": "The Lonely Island",
+        "url": "https://genius.com/artists/The-lonely-island",
+        "type": "regular",
+        "id": "940"
+      },
+      {
+        "name": "Lonestar",
+        "url": "https://genius.com/artists/Lonestar",
+        "type": "regular",
+        "id": "123537"
+      },
+      {
+        "name": "The Longest Johns",
+        "url": "https://genius.com/artists/The-longest-johns",
+        "type": "regular",
+        "id": "1037950"
+      },
+      {
+        "name": "LongestSoloEver",
+        "url": "https://genius.com/artists/Longestsoloever",
+        "type": "regular",
+        "id": "3141933"
+      },
+      {
+        "name": "Longus Mongus",
+        "url": "https://genius.com/artists/Longus-mongus",
+        "type": "regular",
+        "id": "1415447"
+      },
+      {
+        "name": "Lonnie Donegan",
+        "url": "https://genius.com/artists/Lonnie-donegan",
+        "type": "regular",
+        "id": "189595"
+      },
+      {
+        "name": "LONOWN",
+        "url": "https://genius.com/artists/Lonown",
+        "type": "regular",
+        "id": "3595100"
+      },
+      {
+        "name": "LOOJAN",
+        "url": "https://genius.com/artists/Loojan",
+        "type": "regular",
+        "id": "2010117"
+      },
+      {
+        "name": "LOOKBUFFALO",
+        "url": "https://genius.com/artists/Lookbuffalo",
+        "type": "regular",
+        "id": "2042761"
+      },
+      {
+        "name": "Looking Glass",
+        "url": "https://genius.com/artists/Looking-glass",
+        "type": "regular",
+        "id": "365422"
+      },
+      {
+        "name": "LOONA",
+        "url": "https://genius.com/artists/Loona",
+        "type": "regular",
+        "id": "1117408"
+      },
+      {
+        "name": "Loonie",
+        "url": "https://genius.com/artists/Loonie",
+        "type": "regular",
+        "id": "21365"
+      },
+      {
+        "name": "Loqiemean",
+        "url": "https://genius.com/artists/Loqiemean",
+        "type": "regular",
+        "id": "637222"
+      },
+      {
+        "name": "Loraine",
+        "url": "https://genius.com/artists/Loraine",
+        "type": "regular",
+        "id": "2779799"
+      },
+      {
+        "name": "L'orchestra Cinematique",
+        "url": "https://genius.com/artists/Lorchestra-cinematique",
+        "type": "regular",
+        "id": "406299"
+      },
+      {
+        "name": "Lord Byron",
+        "url": "https://genius.com/artists/Lord-byron",
+        "type": "regular",
+        "id": "266919"
+      },
+      {
+        "name": "lord enemy",
+        "url": "https://genius.com/artists/Lord-enemy",
+        "type": "regular",
+        "id": "3458210"
+      },
+      {
+        "name": "Lord Huron",
+        "url": "https://genius.com/artists/Lord-huron",
+        "type": "regular",
+        "id": "118595"
+      },
+      {
+        "name": "Lordi",
+        "url": "https://genius.com/artists/Lordi",
+        "type": "regular",
+        "id": "64086"
+      },
+      {
+        "name": "Lordofon",
+        "url": "https://genius.com/artists/Lordofon",
+        "type": "regular",
+        "id": "2053705"
+      },
+      {
+        "name": "Lord of the Lost",
+        "url": "https://genius.com/artists/Lord-of-the-lost",
+        "type": "regular",
+        "id": "291896"
+      },
+      {
+        "name": "Loredana",
+        "url": "https://genius.com/artists/Loredana",
+        "type": "regular",
+        "id": "1452067"
+      },
+      {
+        "name": "Loredana Bertè",
+        "url": "https://genius.com/artists/Loredana-berte",
+        "type": "regular",
+        "id": "353212"
+      },
+      {
+        "name": "Loreen",
+        "url": "https://genius.com/artists/Loreen",
+        "type": "regular",
+        "id": "21816"
+      },
+      {
+        "name": "Loreena McKennitt",
+        "url": "https://genius.com/artists/Loreena-mckennitt",
+        "type": "regular",
+        "id": "59441"
+      },
+      {
+        "name": "Loren Allred",
+        "url": "https://genius.com/artists/Loren-allred",
+        "type": "regular",
+        "id": "1277364"
+      },
+      {
+        "name": "Loretta Lynn",
+        "url": "https://genius.com/artists/Loretta-lynn",
+        "type": "regular",
+        "id": "187271"
+      },
+      {
+        "name": "Lorna Cordeiro",
+        "url": "https://genius.com/artists/Lorna-cordeiro",
+        "type": "regular",
+        "id": "2638747"
+      },
+      {
+        "name": "Lorna Shore",
+        "url": "https://genius.com/artists/Lorna-shore",
+        "type": "regular",
+        "id": "372190"
+      },
+      {
+        "name": "Lorne Balfe",
+        "url": "https://genius.com/artists/Lorne-balfe",
+        "type": "regular",
+        "id": "522601"
+      },
+      {
+        "name": "Lor Slick",
+        "url": "https://genius.com/artists/Lor-slick",
+        "type": "regular",
+        "id": "4343213"
+      },
+      {
+        "name": "Los Alegres Del Barranco",
+        "url": "https://genius.com/artists/Los-alegres-del-barranco",
+        "type": "regular",
+        "id": "454837"
+      },
+      {
+        "name": "Los Ballers",
+        "url": "https://genius.com/artists/Los-ballers",
+        "type": "regular",
+        "id": "4462904"
+      },
+      {
+        "name": "Los Cadetes De Linares",
+        "url": "https://genius.com/artists/Los-cadetes-de-linares",
+        "type": "regular",
+        "id": "359614"
+      },
+      {
+        "name": "Los Caimanes De Sinaloa",
+        "url": "https://genius.com/artists/Los-caimanes-de-sinaloa",
+        "type": "regular",
+        "id": "2720804"
+      },
+      {
+        "name": "Los Campesinos!",
+        "url": "https://genius.com/artists/Los-campesinos",
+        "type": "regular",
+        "id": "60896"
+      },
+      {
+        "name": "Los Canelos de Durango",
+        "url": "https://genius.com/artists/Los-canelos-de-durango",
+        "type": "regular",
+        "id": "455214"
+      },
+      {
+        "name": "Los Crudos",
+        "url": "https://genius.com/artists/Los-crudos",
+        "type": "regular",
+        "id": "390820"
+      },
+      {
+        "name": "Los Cuates de Sinaloa",
+        "url": "https://genius.com/artists/Los-cuates-de-sinaloa",
+        "type": "regular",
+        "id": "114265"
+      },
+      {
+        "name": "Los Dareyes De La Sierra",
+        "url": "https://genius.com/artists/Los-dareyes-de-la-sierra",
+        "type": "regular",
+        "id": "352260"
+      },
+      {
+        "name": "Los del Río",
+        "url": "https://genius.com/artists/Los-del-rio",
+        "type": "regular",
+        "id": "49259"
+      },
+      {
+        "name": "Los Diablitos",
+        "url": "https://genius.com/artists/Los-diablitos",
+        "type": "regular",
+        "id": "343613"
+      },
+      {
+        "name": "Los Enanitos Verdes",
+        "url": "https://genius.com/artists/Los-enanitos-verdes",
+        "type": "regular",
+        "id": "357907"
+      },
+      {
+        "name": "Los Fabulosos Cadillacs",
+        "url": "https://genius.com/artists/Los-fabulosos-cadillacs",
+        "type": "regular",
+        "id": "72961"
+      },
+      {
+        "name": "Los G4",
+        "url": "https://genius.com/artists/Los-g4",
+        "type": "regular",
+        "id": "1467843"
+      },
+      {
+        "name": "Los Gemelos De Sinaloa",
+        "url": "https://genius.com/artists/Los-gemelos-de-sinaloa",
+        "type": "regular",
+        "id": "2975587"
+      },
+      {
+        "name": "Los Hermanos Ríos",
+        "url": "https://genius.com/artists/Los-hermanos-rios",
+        "type": "regular",
+        "id": "4408931"
+      },
+      {
+        "name": "Loski",
+        "url": "https://genius.com/artists/Loski",
+        "type": "regular",
+        "id": "932916"
+      },
+      {
+        "name": "Los Lobos",
+        "url": "https://genius.com/artists/Los-lobos",
+        "type": "regular",
+        "id": "337246"
+      },
+      {
+        "name": "Los Money Makers",
+        "url": "https://genius.com/artists/Los-money-makers",
+        "type": "regular",
+        "id": "3651108"
+      },
+      {
+        "name": "Los Ángeles Azules",
+        "url": "https://genius.com/artists/Los-angeles-azules",
+        "type": "regular",
+        "id": "367239"
+      },
+      {
+        "name": "Los Nuevos Rebeldes",
+        "url": "https://genius.com/artists/Los-nuevos-rebeldes",
+        "type": "regular",
+        "id": "454228"
+      },
+      {
+        "name": "Los Panchos",
+        "url": "https://genius.com/artists/Los-panchos",
+        "type": "regular",
+        "id": "354768"
+      },
+      {
+        "name": "Los Piojos",
+        "url": "https://genius.com/artists/Los-piojos",
+        "type": "regular",
+        "id": "357631"
+      },
+      {
+        "name": "Los Planetas",
+        "url": "https://genius.com/artists/Los-planetas",
+        "type": "regular",
+        "id": "353058"
+      },
+      {
+        "name": "Los Plebes del Rancho de Ariel Camacho",
+        "url": "https://genius.com/artists/Los-plebes-del-rancho-de-ariel-camacho",
+        "type": "regular",
+        "id": "615500"
+      },
+      {
+        "name": "Los Pleneros de la Cresta",
+        "url": "https://genius.com/artists/Los-pleneros-de-la-cresta",
+        "type": "regular",
+        "id": "3861323"
+      },
+      {
+        "name": "Los Prisioneros",
+        "url": "https://genius.com/artists/Los-prisioneros",
+        "type": "regular",
+        "id": "99229"
+      },
+      {
+        "name": "Los Rieleros Del Norte",
+        "url": "https://genius.com/artists/Los-rieleros-del-norte",
+        "type": "regular",
+        "id": "364258"
+      },
+      {
+        "name": "Los Sufridos",
+        "url": "https://genius.com/artists/Los-sufridos",
+        "type": "regular",
+        "id": "3575068"
+      },
+      {
+        "name": "Lost",
+        "url": "https://genius.com/artists/Lost",
+        "type": "regular",
+        "id": "330111"
+      },
+      {
+        "name": "Lost Frequencies",
+        "url": "https://genius.com/artists/Lost-frequencies",
+        "type": "regular",
+        "id": "248387"
+      },
+      {
+        "name": "Los Tigres Del Norte",
+        "url": "https://genius.com/artists/Los-tigres-del-norte",
+        "type": "regular",
+        "id": "68345"
+      },
+      {
+        "name": "Lost Sky",
+        "url": "https://genius.com/artists/Lost-sky",
+        "type": "regular",
+        "id": "1498680"
+      },
+      {
+        "name": "Los Tucanes De Tijuana",
+        "url": "https://genius.com/artists/Los-tucanes-de-tijuana",
+        "type": "regular",
+        "id": "357527"
+      },
+      {
+        "name": "A Lot Like Birds",
+        "url": "https://genius.com/artists/A-lot-like-birds",
+        "type": "regular",
+        "id": "220821"
+      },
+      {
+        "name": "LoToR",
+        "url": "https://genius.com/artists/Lotor",
+        "type": "regular",
+        "id": "3229731"
+      },
+      {
+        "name": "lots of hands",
+        "url": "https://genius.com/artists/Lots-of-hands",
+        "type": "regular",
+        "id": "1651147"
+      },
+      {
+        "name": "Lotus Juice",
+        "url": "https://genius.com/artists/Lotus-juice",
+        "type": "regular",
+        "id": "655189"
+      },
+      {
+        "name": "Lou",
+        "url": "https://genius.com/artists/Lou",
+        "type": "regular",
+        "id": "4342"
+      },
+      {
+        "name": "Louane",
+        "url": "https://genius.com/artists/Louane",
+        "type": "regular",
+        "id": "331073"
+      },
+      {
+        "name": "Lou Bega",
+        "url": "https://genius.com/artists/Lou-bega",
+        "type": "regular",
+        "id": "106322"
+      },
+      {
+        "name": "Lou Christie",
+        "url": "https://genius.com/artists/Lou-christie",
+        "type": "regular",
+        "id": "325604"
+      },
+      {
+        "name": "Lou Deezi",
+        "url": "https://genius.com/artists/Lou-deezi",
+        "type": "regular",
+        "id": "3573730"
+      },
+      {
+        "name": "Loud Luxury",
+        "url": "https://genius.com/artists/Loud-luxury",
+        "type": "regular",
+        "id": "989559"
+      },
+      {
+        "name": "Loudon Wainwright III",
+        "url": "https://genius.com/artists/Loudon-wainwright-iii",
+        "type": "regular",
+        "id": "149469"
+      },
+      {
+        "name": "Louie Ray",
+        "url": "https://genius.com/artists/Louie-ray",
+        "type": "regular",
+        "id": "2210461"
+      },
+      {
+        "name": "Louis Amoeba",
+        "url": "https://genius.com/artists/Louis-amoeba",
+        "type": "regular",
+        "id": "1253062"
+      },
+      {
+        "name": "Louis BPM",
+        "url": "https://genius.com/artists/Louis-bpm",
+        "type": "regular",
+        "id": "3644238"
+      },
+      {
+        "name": "Louise Bush",
+        "url": "https://genius.com/artists/Louise-bush",
+        "type": "regular",
+        "id": "1028063"
+      },
+      {
+        "name": "Louis Hobson",
+        "url": "https://genius.com/artists/Louis-hobson",
+        "type": "regular",
+        "id": "457056"
+      },
+      {
+        "name": "Louis Jordan",
+        "url": "https://genius.com/artists/Louis-jordan",
+        "type": "regular",
+        "id": "272972"
+      },
+      {
+        "name": "Louis Prima",
+        "url": "https://genius.com/artists/Louis-prima",
+        "type": "regular",
+        "id": "157029"
+      },
+      {
+        "name": "Louis Producer",
+        "url": "https://genius.com/artists/Louis-producer",
+        "type": "regular",
+        "id": "4179471"
+      },
+      {
+        "name": "Louis Theroux",
+        "url": "https://genius.com/artists/Louis-theroux",
+        "type": "regular",
+        "id": "1000869"
+      },
+      {
+        "name": "Louis Tomlinson",
+        "url": "https://genius.com/artists/Louis-tomlinson",
+        "type": "regular",
+        "id": "576610"
+      },
+      {
+        "name": "Lou Rawls",
+        "url": "https://genius.com/artists/Lou-rawls",
+        "type": "regular",
+        "id": "355697"
+      },
+      {
+        "name": "Lou Reed",
+        "url": "https://genius.com/artists/Lou-reed",
+        "type": "regular",
+        "id": "13277"
+      },
+      {
+        "name": "Lov1",
+        "url": "https://genius.com/artists/Lov1",
+        "type": "regular",
+        "id": "1991521"
+      },
+      {
+        "name": "Love",
+        "url": "https://genius.com/artists/Love",
+        "type": "regular",
+        "id": "13083"
+      },
+      {
+        "name": "Love and Deepspace",
+        "url": "https://genius.com/artists/Love-and-deepspace",
+        "type": "regular",
+        "id": "3802204"
+      },
+      {
+        "name": "Lovegang126",
+        "url": "https://genius.com/artists/Lovegang126",
+        "type": "regular",
+        "id": "1186987"
+      },
+      {
+        "name": "lovehead",
+        "url": "https://genius.com/artists/Lovehead",
+        "type": "regular",
+        "id": "4328738"
+      },
+      {
+        "name": "Lovejoy",
+        "url": "https://genius.com/artists/Lovejoy",
+        "type": "regular",
+        "id": "2706390"
+      },
+      {
+        "name": "LOVEKILLS",
+        "url": "https://genius.com/artists/Lovekills",
+        "type": "regular",
+        "id": "4426198"
+      },
+      {
+        "name": "LOVELI LORI",
+        "url": "https://genius.com/artists/Loveli-lori",
+        "type": "regular",
+        "id": "3948027"
+      },
+      {
+        "name": "lovelytheband",
+        "url": "https://genius.com/artists/Lovelytheband",
+        "type": "regular",
+        "id": "1120079"
+      },
+      {
+        "name": "Lover",
+        "url": "https://genius.com/artists/Lover",
+        "type": "regular",
+        "id": "3333168"
+      },
+      {
+        "name": "Loverboy",
+        "url": "https://genius.com/artists/Loverboy",
+        "type": "regular",
+        "id": "1776929"
+      },
+      {
+        "name": "Love Spells",
+        "url": "https://genius.com/artists/Love-spells",
+        "type": "regular",
+        "id": "3439770"
+      },
+      {
+        "name": "Loving Caliber",
+        "url": "https://genius.com/artists/Loving-caliber",
+        "type": "regular",
+        "id": "1160562"
+      },
+      {
+        "name": "The Lovin' Spoonful",
+        "url": "https://genius.com/artists/The-lovin-spoonful",
+        "type": "regular",
+        "id": "33611"
+      },
+      {
+        "name": "LOVV66",
+        "url": "https://genius.com/artists/Lovv66",
+        "type": "regular",
+        "id": "1989713"
+      },
+      {
+        "name": "Low",
+        "url": "https://genius.com/artists/Low",
+        "type": "regular",
+        "id": "12530"
+      },
+      {
+        "name": "Low G (VNM)",
+        "url": "https://genius.com/artists/Low-g-vnm",
+        "type": "regular",
+        "id": "2697255"
+      },
+      {
+        "name": "Lowkey",
+        "url": "https://genius.com/artists/Lowkey",
+        "type": "regular",
+        "id": "472"
+      },
+      {
+        "name": "Low Roar",
+        "url": "https://genius.com/artists/Low-roar",
+        "type": "regular",
+        "id": "183423"
+      },
+      {
+        "name": "The LOX",
+        "url": "https://genius.com/artists/The-lox",
+        "type": "regular",
+        "id": "233"
+      },
+      {
+        "name": "Loyle Carner",
+        "url": "https://genius.com/artists/Loyle-carner",
+        "type": "regular",
+        "id": "54851"
+      },
+      {
+        "name": "LP",
+        "url": "https://genius.com/artists/Lp",
+        "type": "regular",
+        "id": "7653"
+      },
+      {
+        "name": "LRB490",
+        "url": "https://genius.com/artists/Lrb490",
+        "type": "regular",
+        "id": "4037792"
+      },
+      {
+        "name": "LSD",
+        "url": "https://genius.com/artists/Lsd",
+        "type": "regular",
+        "id": "1462360"
+      },
+      {
+        "name": "LSD and the Search for God",
+        "url": "https://genius.com/artists/Lsd-and-the-search-for-god",
+        "type": "regular",
+        "id": "638865"
+      },
+      {
+        "name": "ЛСП (LSP)",
+        "url": "https://genius.com/artists/Lsp",
+        "type": "regular",
+        "id": "143013"
+      },
+      {
+        "name": "Lø Spirit",
+        "url": "https://genius.com/artists/L-spirit",
+        "type": "regular",
+        "id": "3095982"
+      },
+      {
+        "name": "L.T.D.",
+        "url": "https://genius.com/artists/Ltd",
+        "type": "regular",
+        "id": "169669"
+      },
+      {
+        "name": "Luar La L",
+        "url": "https://genius.com/artists/Luar-la-l",
+        "type": "regular",
+        "id": "1962155"
+      },
+      {
+        "name": "Любэ (Lubeh)",
+        "url": "https://genius.com/artists/Lubeh",
+        "type": "regular",
+        "id": "406287"
+      },
+      {
+        "name": "LUCA",
+        "url": "https://genius.com/artists/Luca",
+        "type": "regular",
+        "id": "1538739"
+      },
+      {
+        "name": "Luca Brassi10x",
+        "url": "https://genius.com/artists/Luca-brassi10x",
+        "type": "regular",
+        "id": "2284052"
+      },
+      {
+        "name": "Lucas Grabeel",
+        "url": "https://genius.com/artists/Lucas-grabeel",
+        "type": "regular",
+        "id": "184935"
+      },
+      {
+        "name": "LUCAVEROS",
+        "url": "https://genius.com/artists/Lucaveros",
+        "type": "regular",
+        "id": "1777391"
+      },
+      {
+        "name": "lucawts",
+        "url": "https://genius.com/artists/Lucawts",
+        "type": "regular",
+        "id": "3633719"
+      },
+      {
+        "name": "Lucenzo",
+        "url": "https://genius.com/artists/Lucenzo",
+        "type": "regular",
+        "id": "12291"
+      },
+      {
+        "name": "Lucho RK",
+        "url": "https://genius.com/artists/Lucho-rk",
+        "type": "regular",
+        "id": "3186234"
+      },
+      {
+        "name": "Lucho SSJ",
+        "url": "https://genius.com/artists/Lucho-ssj",
+        "type": "regular",
+        "id": "1397862"
+      },
+      {
+        "name": "Luci4",
+        "url": "https://genius.com/artists/Luci4",
+        "type": "regular",
+        "id": "2335779"
+      },
+      {
+        "name": "Luciano",
+        "url": "https://genius.com/artists/Luciano",
+        "type": "regular",
+        "id": "127606"
+      },
+      {
+        "name": "Luciano Pavarotti",
+        "url": "https://genius.com/artists/Luciano-pavarotti",
+        "type": "regular",
+        "id": "353490"
+      },
+      {
+        "name": "​​lucidbeatz",
+        "url": "https://genius.com/artists/Lucidbeatz",
+        "type": "regular",
+        "id": "138677"
+      },
+      {
+        "name": "Lucille",
+        "url": "https://genius.com/artists/Lucille",
+        "type": "regular",
+        "id": "2240907"
+      },
+      {
+        "name": "Lucinda Williams",
+        "url": "https://genius.com/artists/Lucinda-williams",
+        "type": "regular",
+        "id": "226120"
+      },
+      {
+        "name": "Lucio101",
+        "url": "https://genius.com/artists/Lucio101",
+        "type": "regular",
+        "id": "1496522"
+      },
+      {
+        "name": "Lucio Battisti",
+        "url": "https://genius.com/artists/Lucio-battisti",
+        "type": "regular",
+        "id": "353417"
+      },
+      {
+        "name": "Lucio Corsi",
+        "url": "https://genius.com/artists/Lucio-corsi",
+        "type": "regular",
+        "id": "1143539"
+      },
+      {
+        "name": "Lucio Dalla",
+        "url": "https://genius.com/artists/Lucio-dalla",
+        "type": "regular",
+        "id": "328592"
+      },
+      {
+        "name": "Lucio San Pedro",
+        "url": "https://genius.com/artists/Lucio-san-pedro",
+        "type": "regular",
+        "id": "1056720"
+      },
+      {
+        "name": "Lucius",
+        "url": "https://genius.com/artists/Lucius",
+        "type": "regular",
+        "id": "16558"
+      },
+      {
+        "name": "Lucke",
+        "url": "https://genius.com/artists/Lucke",
+        "type": "regular",
+        "id": "3933673"
+      },
+      {
+        "name": "LUCKI",
+        "url": "https://genius.com/artists/Lucki",
+        "type": "regular",
+        "id": "28583"
+      },
+      {
+        "name": "Lucky Ali",
+        "url": "https://genius.com/artists/Lucky-ali",
+        "type": "regular",
+        "id": "333875"
+      },
+      {
+        "name": "Lucky Brown",
+        "url": "https://genius.com/artists/Lucky-brown",
+        "type": "regular",
+        "id": "3361487"
+      },
+      {
+        "name": "Lucky Daye",
+        "url": "https://genius.com/artists/Lucky-daye",
+        "type": "regular",
+        "id": "647356"
+      },
+      {
+        "name": "Lucky Dube",
+        "url": "https://genius.com/artists/Lucky-dube",
+        "type": "regular",
+        "id": "198756"
+      },
+      {
+        "name": "Lucry & Suena",
+        "url": "https://genius.com/artists/Lucry-and-suena",
+        "type": "regular",
+        "id": "3604297"
+      },
+      {
+        "name": "LUCY (루시)",
+        "url": "https://genius.com/artists/Lucy",
+        "type": "regular",
+        "id": "2230872"
+      },
+      {
+        "name": "​Lucy Bedroque",
+        "url": "https://genius.com/artists/Lucy-bedroque",
+        "type": "regular",
+        "id": "3021045"
+      },
+      {
+        "name": "Lucy Dacus",
+        "url": "https://genius.com/artists/Lucy-dacus",
+        "type": "regular",
+        "id": "646493"
+      },
+      {
+        "name": "Ludacris",
+        "url": "https://genius.com/artists/Ludacris",
+        "type": "regular",
+        "id": "111"
+      },
+      {
+        "name": "Lud Foe",
+        "url": "https://genius.com/artists/Lud-foe",
+        "type": "regular",
+        "id": "639072"
+      },
+      {
+        "name": "Ludi Srbi",
+        "url": "https://genius.com/artists/Ludi-srbi",
+        "type": "regular",
+        "id": "1098490"
+      },
+      {
+        "name": "LUDMILLA",
+        "url": "https://genius.com/artists/Ludmilla",
+        "type": "regular",
+        "id": "452268"
+      },
+      {
+        "name": "Ludvig Forssell",
+        "url": "https://genius.com/artists/Ludvig-forssell",
+        "type": "regular",
+        "id": "1256701"
+      },
+      {
+        "name": "Ludwig Göransson",
+        "url": "https://genius.com/artists/Ludwig-goransson",
+        "type": "regular",
+        "id": "27935"
+      },
+      {
+        "name": "Luedji Luna",
+        "url": "https://genius.com/artists/Luedji-luna",
+        "type": "regular",
+        "id": "1211469"
+      },
+      {
+        "name": "Lugatti & 9ine",
+        "url": "https://genius.com/artists/Lugatti-and-9ine",
+        "type": "regular",
+        "id": "1282940"
+      },
+      {
+        "name": "Luhh Dyl",
+        "url": "https://genius.com/artists/Luhh-dyl",
+        "type": "regular",
+        "id": "3936665"
+      },
+      {
+        "name": "Luh Kel",
+        "url": "https://genius.com/artists/Luh-kel",
+        "type": "regular",
+        "id": "1779926"
+      },
+      {
+        "name": "Luh Tyler",
+        "url": "https://genius.com/artists/Luh-tyler",
+        "type": "regular",
+        "id": "3322947"
+      },
+      {
+        "name": "Luidji",
+        "url": "https://genius.com/artists/Luidji",
+        "type": "regular",
+        "id": "14723"
+      },
+      {
+        "name": "Luigi Tenco",
+        "url": "https://genius.com/artists/Luigi-tenco",
+        "type": "regular",
+        "id": "239041"
+      },
+      {
+        "name": "Luis Brown",
+        "url": "https://genius.com/artists/Luis-brown",
+        "type": "regular",
+        "id": "3737647"
+      },
+      {
+        "name": "Luis Eduardo Aute",
+        "url": "https://genius.com/artists/Luis-eduardo-aute",
+        "type": "regular",
+        "id": "353493"
+      },
+      {
+        "name": "Luis Fonsi",
+        "url": "https://genius.com/artists/Luis-fonsi",
+        "type": "regular",
+        "id": "344497"
+      },
+      {
+        "name": "Luis Mexia",
+        "url": "https://genius.com/artists/Luis-mexia",
+        "type": "regular",
+        "id": "2306813"
+      },
+      {
+        "name": "Luis Miguel",
+        "url": "https://genius.com/artists/Luis-miguel",
+        "type": "regular",
+        "id": "354376"
+      },
+      {
+        "name": "Luis R Conriquez",
+        "url": "https://genius.com/artists/Luis-r-conriquez",
+        "type": "regular",
+        "id": "2270523"
+      },
+      {
+        "name": "Lujipeka",
+        "url": "https://genius.com/artists/Lujipeka",
+        "type": "regular",
+        "id": "244692"
+      },
+      {
+        "name": "Lukas Nelson",
+        "url": "https://genius.com/artists/Lukas-nelson",
+        "type": "regular",
+        "id": "491090"
+      },
+      {
+        "name": "Luke",
+        "url": "https://genius.com/artists/Luke",
+        "type": "regular",
+        "id": "2604"
+      },
+      {
+        "name": "Luke Bryan",
+        "url": "https://genius.com/artists/Luke-bryan",
+        "type": "regular",
+        "id": "22764"
+      },
+      {
+        "name": "Luke Chiang",
+        "url": "https://genius.com/artists/Luke-chiang",
+        "type": "regular",
+        "id": "1790717"
+      },
+      {
+        "name": "Luke Combs",
+        "url": "https://genius.com/artists/Luke-combs",
+        "type": "regular",
+        "id": "330498"
+      },
+      {
+        "name": "Luke Dean",
+        "url": "https://genius.com/artists/Luke-dean",
+        "type": "regular",
+        "id": "3466839"
+      },
+      {
+        "name": "Luke Goji",
+        "url": "https://genius.com/artists/Luke-goji",
+        "type": "regular",
+        "id": "3855426"
+      },
+      {
+        "name": "Luke Hemmings",
+        "url": "https://genius.com/artists/Luke-hemmings",
+        "type": "regular",
+        "id": "550520"
+      },
+      {
+        "name": "Luke Holt",
+        "url": "https://genius.com/artists/Luke-holt",
+        "type": "regular",
+        "id": "3389070"
+      },
+      {
+        "name": "Luke Kelly",
+        "url": "https://genius.com/artists/Luke-kelly",
+        "type": "regular",
+        "id": "334785"
+      },
+      {
+        "name": "LuLuYam",
+        "url": "https://genius.com/artists/Luluyam",
+        "type": "regular",
+        "id": "3774168"
+      },
+      {
+        "name": "Lumen",
+        "url": "https://genius.com/artists/Lumen",
+        "type": "regular",
+        "id": "360165"
+      },
+      {
+        "name": "Lumi Athena",
+        "url": "https://genius.com/artists/Lumi-athena",
+        "type": "regular",
+        "id": "3309401"
+      },
+      {
+        "name": "Луна (Luna)",
+        "url": "https://genius.com/artists/Luna",
+        "type": "regular",
+        "id": "986106"
+      },
+      {
+        "name": "Lunatic",
+        "url": "https://genius.com/artists/Lunatic",
+        "type": "regular",
+        "id": "1945"
+      },
+      {
+        "name": "Luna van Kampen",
+        "url": "https://genius.com/artists/Luna-van-kampen",
+        "type": "regular",
+        "id": "4099683"
+      },
+      {
+        "name": "Lunay",
+        "url": "https://genius.com/artists/Lunay",
+        "type": "regular",
+        "id": "1440993"
+      },
+      {
+        "name": "Lune",
+        "url": "https://genius.com/artists/Lune",
+        "type": "regular",
+        "id": "2358691"
+      },
+      {
+        "name": "Luniz",
+        "url": "https://genius.com/artists/Luniz",
+        "type": "regular",
+        "id": "485"
+      },
+      {
+        "name": "Luny Tunes",
+        "url": "https://genius.com/artists/Luny-tunes",
+        "type": "regular",
+        "id": "143247"
+      },
+      {
+        "name": "Lupe de Lupe",
+        "url": "https://genius.com/artists/Lupe-de-lupe",
+        "type": "regular",
+        "id": "103756"
+      },
+      {
+        "name": "Lupe Fiasco",
+        "url": "https://genius.com/artists/Lupe-fiasco",
+        "type": "regular",
+        "id": "147"
+      },
+      {
+        "name": "​​luracks",
+        "url": "https://genius.com/artists/Luracks",
+        "type": "regular",
+        "id": "3498432"
+      },
+      {
+        "name": "Luísa Sonza",
+        "url": "https://genius.com/artists/Luisa-sonza",
+        "type": "regular",
+        "id": "665082"
+      },
+      {
+        "name": "Lush",
+        "url": "https://genius.com/artists/Lush",
+        "type": "regular",
+        "id": "61135"
+      },
+      {
+        "name": "Lusho",
+        "url": "https://genius.com/artists/Lusho",
+        "type": "regular",
+        "id": "3437903"
+      },
+      {
+        "name": "Lustra",
+        "url": "https://genius.com/artists/Lustra",
+        "type": "regular",
+        "id": "53920"
+      },
+      {
+        "name": "Lustrum U.V.S.V./N.V.V.S.U.",
+        "url": "https://genius.com/artists/Lustrum-uvsv-nvvsu",
+        "type": "regular",
+        "id": "4378064"
+      },
+      {
+        "name": "Люся Чеботина (Lusya Chebotina)",
+        "url": "https://genius.com/artists/Lusya-chebotina",
+        "type": "regular",
+        "id": "1718348"
+      },
+      {
+        "name": "Lute",
+        "url": "https://genius.com/artists/Lute",
+        "type": "regular",
+        "id": "18733"
+      },
+      {
+        "name": "Luther (lutherantz)",
+        "url": "https://genius.com/artists/Luther-lutherantz",
+        "type": "regular",
+        "id": "2332025"
+      },
+      {
+        "name": "Luther Vandross",
+        "url": "https://genius.com/artists/Luther-vandross",
+        "type": "regular",
+        "id": "7031"
+      },
+      {
+        "name": "Luvcat",
+        "url": "https://genius.com/artists/Luvcat",
+        "type": "regular",
+        "id": "3974920"
+      },
+      {
+        "name": "luvdakash",
+        "url": "https://genius.com/artists/Luvdakash",
+        "type": "regular",
+        "id": "2901161"
+      },
+      {
+        "name": "Luvre47",
+        "url": "https://genius.com/artists/Luvre47",
+        "type": "regular",
+        "id": "1119536"
+      },
+      {
+        "name": "Luv Resval",
+        "url": "https://genius.com/artists/Luv-resval",
+        "type": "regular",
+        "id": "1474324"
+      },
+      {
+        "name": "luvwillow",
+        "url": "https://genius.com/artists/Luvwillow",
+        "type": "regular",
+        "id": "2687033"
+      },
+      {
+        "name": "Álvaro Díaz",
+        "url": "https://genius.com/artists/Alvaro-diaz",
+        "type": "regular",
+        "id": "88360"
+      },
+      {
+        "name": "Lvbel C5",
+        "url": "https://genius.com/artists/Lvbel-c5",
+        "type": "regular",
+        "id": "1992530"
+      },
+      {
+        "name": "LX",
+        "url": "https://genius.com/artists/Lx",
+        "type": "regular",
+        "id": "21141"
+      },
+      {
+        "name": "LXNER",
+        "url": "https://genius.com/artists/Lxner",
+        "type": "regular",
+        "id": "2765788"
+      },
+      {
+        "name": "Lyanno",
+        "url": "https://genius.com/artists/Lyanno",
+        "type": "regular",
+        "id": "656696"
+      },
+      {
+        "name": "Ляпис Трубецкой (Lyapis Trubetskoy)",
+        "url": "https://genius.com/artists/Lyapis-trubetskoy",
+        "type": "regular",
+        "id": "460250"
+      },
+      {
+        "name": "лучнадежды (lychnadezhdy)",
+        "url": "https://genius.com/artists/Lychnadezhdy",
+        "type": "regular",
+        "id": "2347505"
+      },
+      {
+        "name": "Lydia the Bard",
+        "url": "https://genius.com/artists/Lydia-the-bard",
+        "type": "regular",
+        "id": "3470763"
+      },
+      {
+        "name": "Lyfe Jennings",
+        "url": "https://genius.com/artists/Lyfe-jennings",
+        "type": "regular",
+        "id": "2701"
+      },
+      {
+        "name": "Lykke Li",
+        "url": "https://genius.com/artists/Lykke-li",
+        "type": "regular",
+        "id": "1730"
+      },
+      {
+        "name": "LYKN",
+        "url": "https://genius.com/artists/Lykn",
+        "type": "regular",
+        "id": "3852075"
+      },
+      {
+        "name": "Lyle Lovett",
+        "url": "https://genius.com/artists/Lyle-lovett",
+        "type": "regular",
+        "id": "8657"
+      },
+      {
+        "name": "Lyn",
+        "url": "https://genius.com/artists/Lyn",
+        "type": "regular",
+        "id": "1122924"
+      },
+      {
+        "name": "Lynda Randle",
+        "url": "https://genius.com/artists/Lynda-randle",
+        "type": "regular",
+        "id": "405240"
+      },
+      {
+        "name": "Lyn Lapid",
+        "url": "https://genius.com/artists/Lyn-lapid",
+        "type": "regular",
+        "id": "2179420"
+      },
+      {
+        "name": "Lyno Nine8",
+        "url": "https://genius.com/artists/Lyno-nine8",
+        "type": "regular",
+        "id": "3120840"
+      },
+      {
+        "name": "Lynyrd Skynyrd",
+        "url": "https://genius.com/artists/Lynyrd-skynyrd",
+        "type": "regular",
+        "id": "641"
+      },
+      {
+        "name": "Lyrical Lemonade",
+        "url": "https://genius.com/artists/Lyrical-lemonade",
+        "type": "regular",
+        "id": "2178444"
+      },
+      {
+        "name": "Lyrical Son",
+        "url": "https://genius.com/artists/Lyrical-son",
+        "type": "regular",
+        "id": "32952"
+      },
+      {
+        "name": "LYRIQ",
+        "url": "https://genius.com/artists/Lyriq",
+        "type": "regular",
+        "id": "1641624"
+      },
+      {
+        "name": "Lytra",
+        "url": "https://genius.com/artists/Lytra",
+        "type": "regular",
+        "id": "3360750"
+      },
+      {
+        "name": "Любовные истории (Lyubovnye istorii)",
+        "url": "https://genius.com/artists/Lyubovnye-istorii",
+        "type": "regular",
+        "id": "3558790"
+      }
+    ]
+  }
+}

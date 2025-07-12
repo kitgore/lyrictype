@@ -1,0 +1,4513 @@
+{
+  "letter": "M",
+  "timestamp": "2025-07-11T10:23:11.538Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Mac Miller",
+        "url": "https://genius.com/artists/Mac-miller",
+        "type": "popular",
+        "id": "820"
+      },
+      {
+        "name": "madk1d",
+        "url": "https://genius.com/artists/Madk1d",
+        "type": "popular",
+        "id": "2975545"
+      },
+      {
+        "name": "Maki",
+        "url": "https://genius.com/artists/Maki",
+        "type": "popular",
+        "id": "3254630"
+      },
+      {
+        "name": "manifest",
+        "url": "https://genius.com/artists/Manifest",
+        "type": "popular",
+        "id": "4305328"
+      },
+      {
+        "name": "The Marías",
+        "url": "https://genius.com/artists/The-marias",
+        "type": "popular",
+        "id": "1127174"
+      },
+      {
+        "name": "Mariah Carey",
+        "url": "https://genius.com/artists/Mariah-carey",
+        "type": "popular",
+        "id": "1205"
+      },
+      {
+        "name": "Mariah the Scientist",
+        "url": "https://genius.com/artists/Mariah-the-scientist",
+        "type": "popular",
+        "id": "1496717"
+      },
+      {
+        "name": "MARINA",
+        "url": "https://genius.com/artists/Marina",
+        "type": "popular",
+        "id": "27048"
+      },
+      {
+        "name": "Mark Keali'i Ho'omalu",
+        "url": "https://genius.com/artists/Mark-kealii-hoomalu",
+        "type": "popular",
+        "id": "454146"
+      },
+      {
+        "name": "Maroon 5",
+        "url": "https://genius.com/artists/Maroon-5",
+        "type": "popular",
+        "id": "13539"
+      },
+      {
+        "name": "Meek Mill",
+        "url": "https://genius.com/artists/Meek-mill",
+        "type": "popular",
+        "id": "1319"
+      },
+      {
+        "name": "Metallica",
+        "url": "https://genius.com/artists/Metallica",
+        "type": "popular",
+        "id": "10662"
+      },
+      {
+        "name": "Metro Boomin",
+        "url": "https://genius.com/artists/Metro-boomin",
+        "type": "popular",
+        "id": "33010"
+      },
+      {
+        "name": "mgk",
+        "url": "https://genius.com/artists/Mgk",
+        "type": "popular",
+        "id": "1665"
+      },
+      {
+        "name": "Michael Jackson",
+        "url": "https://genius.com/artists/Michael-jackson",
+        "type": "popular",
+        "id": "835"
+      },
+      {
+        "name": "Miley Cyrus",
+        "url": "https://genius.com/artists/Miley-cyrus",
+        "type": "popular",
+        "id": "805"
+      },
+      {
+        "name": "Mitski",
+        "url": "https://genius.com/artists/Mitski",
+        "type": "popular",
+        "id": "265258"
+      },
+      {
+        "name": "Moliy",
+        "url": "https://genius.com/artists/Moliy",
+        "type": "popular",
+        "id": "2545428"
+      },
+      {
+        "name": "Morgan Wallen",
+        "url": "https://genius.com/artists/Morgan-wallen",
+        "type": "popular",
+        "id": "987153"
+      },
+      {
+        "name": "My Chemical Romance",
+        "url": "https://genius.com/artists/My-chemical-romance",
+        "type": "popular",
+        "id": "18261"
+      }
+    ],
+    "regular": [
+      {
+        "name": "MØ",
+        "url": "https://genius.com/artists/M",
+        "type": "regular",
+        "id": "21871"
+      },
+      {
+        "name": "​m1v",
+        "url": "https://genius.com/artists/M1v",
+        "type": "regular",
+        "id": "2469513"
+      },
+      {
+        "name": "M24",
+        "url": "https://genius.com/artists/M24",
+        "type": "regular",
+        "id": "1217033"
+      },
+      {
+        "name": "M2M",
+        "url": "https://genius.com/artists/M2m",
+        "type": "regular",
+        "id": "365825"
+      },
+      {
+        "name": "M83",
+        "url": "https://genius.com/artists/M83",
+        "type": "regular",
+        "id": "16002"
+      },
+      {
+        "name": "Mýa",
+        "url": "https://genius.com/artists/Mya",
+        "type": "regular",
+        "id": "339"
+      },
+      {
+        "name": "Maanu",
+        "url": "https://genius.com/artists/Maanu",
+        "type": "regular",
+        "id": "2656476"
+      },
+      {
+        "name": "Mabel",
+        "url": "https://genius.com/artists/Mabel",
+        "type": "regular",
+        "id": "378776"
+      },
+      {
+        "name": "Mabel Matiz",
+        "url": "https://genius.com/artists/Mabel-matiz",
+        "type": "regular",
+        "id": "480124"
+      },
+      {
+        "name": "MACAN",
+        "url": "https://genius.com/artists/Macan",
+        "type": "regular",
+        "id": "1849816"
+      },
+      {
+        "name": "Mac Ayres",
+        "url": "https://genius.com/artists/Mac-ayres",
+        "type": "regular",
+        "id": "1041465"
+      },
+      {
+        "name": "The Maccabees",
+        "url": "https://genius.com/artists/The-maccabees",
+        "type": "regular",
+        "id": "6988"
+      },
+      {
+        "name": "Mac DeMarco",
+        "url": "https://genius.com/artists/Mac-demarco",
+        "type": "regular",
+        "id": "30153"
+      },
+      {
+        "name": "Mac Dre",
+        "url": "https://genius.com/artists/Mac-dre",
+        "type": "regular",
+        "id": "651"
+      },
+      {
+        "name": "MACE",
+        "url": "https://genius.com/artists/Mace",
+        "type": "regular",
+        "id": "260109"
+      },
+      {
+        "name": "Machete",
+        "url": "https://genius.com/artists/Machete",
+        "type": "regular",
+        "id": "247683"
+      },
+      {
+        "name": "Mach-Hommy",
+        "url": "https://genius.com/artists/Mach-hommy",
+        "type": "regular",
+        "id": "650438"
+      },
+      {
+        "name": "Machine Girl",
+        "url": "https://genius.com/artists/Machine-girl",
+        "type": "regular",
+        "id": "1322230"
+      },
+      {
+        "name": "Machine Head",
+        "url": "https://genius.com/artists/Machine-head",
+        "type": "regular",
+        "id": "334192"
+      },
+      {
+        "name": "Macias",
+        "url": "https://genius.com/artists/Macias",
+        "type": "regular",
+        "id": "217560"
+      },
+      {
+        "name": "Mackenzie Carpenter",
+        "url": "https://genius.com/artists/Mackenzie-carpenter",
+        "type": "regular",
+        "id": "2644691"
+      },
+      {
+        "name": "Macklemore",
+        "url": "https://genius.com/artists/Macklemore",
+        "type": "regular",
+        "id": "2026"
+      },
+      {
+        "name": "Mada (KAZ)",
+        "url": "https://genius.com/artists/Mada-kaz",
+        "type": "regular",
+        "id": "3698818"
+      },
+      {
+        "name": "Madd",
+        "url": "https://genius.com/artists/Madd",
+        "type": "regular",
+        "id": "1011334"
+      },
+      {
+        "name": "Maddox Batson",
+        "url": "https://genius.com/artists/Maddox-batson",
+        "type": "regular",
+        "id": "3872763"
+      },
+      {
+        "name": "Madds Buckley",
+        "url": "https://genius.com/artists/Madds-buckley",
+        "type": "regular",
+        "id": "2350769"
+      },
+      {
+        "name": "Made",
+        "url": "https://genius.com/artists/Made",
+        "type": "regular",
+        "id": "1980054"
+      },
+      {
+        "name": "Madeline Juno",
+        "url": "https://genius.com/artists/Madeline-juno",
+        "type": "regular",
+        "id": "173163"
+      },
+      {
+        "name": "Madelline",
+        "url": "https://genius.com/artists/Madelline",
+        "type": "regular",
+        "id": "2689912"
+      },
+      {
+        "name": "Madhubanti Bagchi",
+        "url": "https://genius.com/artists/Madhubanti-bagchi",
+        "type": "regular",
+        "id": "1264150"
+      },
+      {
+        "name": "Madhushree",
+        "url": "https://genius.com/artists/Madhushree",
+        "type": "regular",
+        "id": "1259573"
+      },
+      {
+        "name": "Madilyn Mei",
+        "url": "https://genius.com/artists/Madilyn-mei",
+        "type": "regular",
+        "id": "2949868"
+      },
+      {
+        "name": "Madison Beer",
+        "url": "https://genius.com/artists/Madison-beer",
+        "type": "regular",
+        "id": "154127"
+      },
+      {
+        "name": "Madison Ryann Ward",
+        "url": "https://genius.com/artists/Madison-ryann-ward",
+        "type": "regular",
+        "id": "1175701"
+      },
+      {
+        "name": "Madlib",
+        "url": "https://genius.com/artists/Madlib",
+        "type": "regular",
+        "id": "6788"
+      },
+      {
+        "name": "MadMan",
+        "url": "https://genius.com/artists/Madman",
+        "type": "regular",
+        "id": "7923"
+      },
+      {
+        "name": "Madness",
+        "url": "https://genius.com/artists/Madness",
+        "type": "regular",
+        "id": "353230"
+      },
+      {
+        "name": "Madonna",
+        "url": "https://genius.com/artists/Madonna",
+        "type": "regular",
+        "id": "276"
+      },
+      {
+        "name": "Mad Tsai",
+        "url": "https://genius.com/artists/Mad-tsai",
+        "type": "regular",
+        "id": "2288591"
+      },
+      {
+        "name": "Madvillain",
+        "url": "https://genius.com/artists/Madvillain",
+        "type": "regular",
+        "id": "150"
+      },
+      {
+        "name": "Maejor",
+        "url": "https://genius.com/artists/Maejor",
+        "type": "regular",
+        "id": "37138"
+      },
+      {
+        "name": "Mae Muller",
+        "url": "https://genius.com/artists/Mae-muller",
+        "type": "regular",
+        "id": "1249431"
+      },
+      {
+        "name": "Maes",
+        "url": "https://genius.com/artists/Maes",
+        "type": "regular",
+        "id": "638160"
+      },
+      {
+        "name": "Maesic",
+        "url": "https://genius.com/artists/Maesic",
+        "type": "regular",
+        "id": "1445297"
+      },
+      {
+        "name": "Maestro",
+        "url": "https://genius.com/artists/Maestro",
+        "type": "regular",
+        "id": "1193114"
+      },
+      {
+        "name": "​mafalda cardenal",
+        "url": "https://genius.com/artists/Mafalda-cardenal",
+        "type": "regular",
+        "id": "3313523"
+      },
+      {
+        "name": "MAF Teeski",
+        "url": "https://genius.com/artists/Maf-teeski",
+        "type": "regular",
+        "id": "3494166"
+      },
+      {
+        "name": "Magazin",
+        "url": "https://genius.com/artists/Magazin",
+        "type": "regular",
+        "id": "358622"
+      },
+      {
+        "name": "The MAG (CZE)",
+        "url": "https://genius.com/artists/The-mag-cze",
+        "type": "regular",
+        "id": "3220355"
+      },
+      {
+        "name": "Magdalena Bay",
+        "url": "https://genius.com/artists/Magdalena-bay",
+        "type": "regular",
+        "id": "1115206"
+      },
+      {
+        "name": "Magdy El Zahar - مجدي الزهار",
+        "url": "https://genius.com/artists/Magdy-el-zahar",
+        "type": "regular",
+        "id": "3807132"
+      },
+      {
+        "name": "Maggie Lindemann",
+        "url": "https://genius.com/artists/Maggie-lindemann",
+        "type": "regular",
+        "id": "557178"
+      },
+      {
+        "name": "Maggie Rogers",
+        "url": "https://genius.com/artists/Maggie-rogers",
+        "type": "regular",
+        "id": "683813"
+      },
+      {
+        "name": "MAGIC!",
+        "url": "https://genius.com/artists/Magic",
+        "type": "regular",
+        "id": "188063"
+      },
+      {
+        "name": "Magixx",
+        "url": "https://genius.com/artists/Magixx",
+        "type": "regular",
+        "id": "2143378"
+      },
+      {
+        "name": "Maglera Doe Boy",
+        "url": "https://genius.com/artists/Maglera-doe-boy",
+        "type": "regular",
+        "id": "1790257"
+      },
+      {
+        "name": "The Magnetic Fields",
+        "url": "https://genius.com/artists/The-magnetic-fields",
+        "type": "regular",
+        "id": "21130"
+      },
+      {
+        "name": "Maha Ftouni - مهى فتوني",
+        "url": "https://genius.com/artists/Maha-ftouni",
+        "type": "regular",
+        "id": "3577008"
+      },
+      {
+        "name": "Mahalia Jackson",
+        "url": "https://genius.com/artists/Mahalia-jackson",
+        "type": "regular",
+        "id": "152498"
+      },
+      {
+        "name": "Maher Zain - ماهر زين",
+        "url": "https://genius.com/artists/Maher-zain",
+        "type": "regular",
+        "id": "120922"
+      },
+      {
+        "name": "Mahmood",
+        "url": "https://genius.com/artists/Mahmood",
+        "type": "regular",
+        "id": "1160503"
+      },
+      {
+        "name": "Mahmoud El Esseily - محمود العسيلي",
+        "url": "https://genius.com/artists/Mahmoud-el-esseily",
+        "type": "regular",
+        "id": "1624166"
+      },
+      {
+        "name": "Maia Mitchell",
+        "url": "https://genius.com/artists/Maia-mitchell",
+        "type": "regular",
+        "id": "389184"
+      },
+      {
+        "name": "Maia Wilson",
+        "url": "https://genius.com/artists/Maia-wilson",
+        "type": "regular",
+        "id": "152335"
+      },
+      {
+        "name": "MaimyMayo",
+        "url": "https://genius.com/artists/Maimymayo",
+        "type": "regular",
+        "id": "2936751"
+      },
+      {
+        "name": "The Maine",
+        "url": "https://genius.com/artists/The-maine",
+        "type": "regular",
+        "id": "36385"
+      },
+      {
+        "name": "Mairo",
+        "url": "https://genius.com/artists/Mairo",
+        "type": "regular",
+        "id": "1124963"
+      },
+      {
+        "name": "Maisie Peters",
+        "url": "https://genius.com/artists/Maisie-peters",
+        "type": "regular",
+        "id": "997186"
+      },
+      {
+        "name": "MAJAN",
+        "url": "https://genius.com/artists/Majan",
+        "type": "regular",
+        "id": "1818443"
+      },
+      {
+        "name": "Majida El Roumi - ماجدة الرومي",
+        "url": "https://genius.com/artists/Majida-el-roumi",
+        "type": "regular",
+        "id": "531311"
+      },
+      {
+        "name": "Majid Al Mohandis - ماجد المهندس",
+        "url": "https://genius.com/artists/Majid-al-mohandis",
+        "type": "regular",
+        "id": "3495239"
+      },
+      {
+        "name": "Majid Jordan",
+        "url": "https://genius.com/artists/Majid-jordan",
+        "type": "regular",
+        "id": "64585"
+      },
+      {
+        "name": "Major Lazer",
+        "url": "https://genius.com/artists/Major-lazer",
+        "type": "regular",
+        "id": "665"
+      },
+      {
+        "name": "Major Nine",
+        "url": "https://genius.com/artists/Major-nine",
+        "type": "regular",
+        "id": "1103131"
+      },
+      {
+        "name": "Makana XO",
+        "url": "https://genius.com/artists/Makana-xo",
+        "type": "regular",
+        "id": "3484501"
+      },
+      {
+        "name": "makko",
+        "url": "https://genius.com/artists/Makko",
+        "type": "regular",
+        "id": "2072750"
+      },
+      {
+        "name": "MAKSIM",
+        "url": "https://genius.com/artists/Maksim",
+        "type": "regular",
+        "id": "1787413"
+      },
+      {
+        "name": "Максим Фадеев (Maksim Fadeev)",
+        "url": "https://genius.com/artists/Maksim-fadeev",
+        "type": "regular",
+        "id": "1108955"
+      },
+      {
+        "name": "макулатура (makulatura)",
+        "url": "https://genius.com/artists/Makulatura",
+        "type": "regular",
+        "id": "1055301"
+      },
+      {
+        "name": "Malachi Barton",
+        "url": "https://genius.com/artists/Malachi-barton",
+        "type": "regular",
+        "id": "2214038"
+      },
+      {
+        "name": "Malachiii",
+        "url": "https://genius.com/artists/Malachiii",
+        "type": "regular",
+        "id": "2978292"
+      },
+      {
+        "name": "Maladoy Prince",
+        "url": "https://genius.com/artists/Maladoy-prince",
+        "type": "regular",
+        "id": "2278472"
+      },
+      {
+        "name": "Malandro",
+        "url": "https://genius.com/artists/Malandro",
+        "type": "regular",
+        "id": "1006660"
+      },
+      {
+        "name": "МАЛЬБЭК (MALBEK)",
+        "url": "https://genius.com/artists/Malbek",
+        "type": "regular",
+        "id": "1279517"
+      },
+      {
+        "name": "Malcolm Armwood",
+        "url": "https://genius.com/artists/Malcolm-armwood",
+        "type": "regular",
+        "id": "2492211"
+      },
+      {
+        "name": "Malcolm Todd",
+        "url": "https://genius.com/artists/Malcolm-todd",
+        "type": "regular",
+        "id": "3539258"
+      },
+      {
+        "name": "Maldita",
+        "url": "https://genius.com/artists/Maldita",
+        "type": "regular",
+        "id": "375940"
+      },
+      {
+        "name": "Malevolence",
+        "url": "https://genius.com/artists/Malevolence",
+        "type": "regular",
+        "id": "363790"
+      },
+      {
+        "name": "Malice Mizer",
+        "url": "https://genius.com/artists/Malice-mizer",
+        "type": "regular",
+        "id": "359577"
+      },
+      {
+        "name": "Malie Donn",
+        "url": "https://genius.com/artists/Malie-donn",
+        "type": "regular",
+        "id": "3467234"
+      },
+      {
+        "name": "Malik Montana",
+        "url": "https://genius.com/artists/Malik-montana",
+        "type": "regular",
+        "id": "507403"
+      },
+      {
+        "name": "Maliq & D'Essentials",
+        "url": "https://genius.com/artists/Maliq-and-dessentials",
+        "type": "regular",
+        "id": "362123"
+      },
+      {
+        "name": "Maluma",
+        "url": "https://genius.com/artists/Maluma",
+        "type": "regular",
+        "id": "405415"
+      },
+      {
+        "name": "Mama Duke",
+        "url": "https://genius.com/artists/Mama-duke",
+        "type": "regular",
+        "id": "3014296"
+      },
+      {
+        "name": "The Mamas & The Papas",
+        "url": "https://genius.com/artists/The-mamas-and-the-papas",
+        "type": "regular",
+        "id": "34017"
+      },
+      {
+        "name": "MamboLosco",
+        "url": "https://genius.com/artists/Mambolosco",
+        "type": "regular",
+        "id": "1225734"
+      },
+      {
+        "name": "Mame Khan",
+        "url": "https://genius.com/artists/Mame-khan",
+        "type": "regular",
+        "id": "532042"
+      },
+      {
+        "name": "Maná",
+        "url": "https://genius.com/artists/Mana",
+        "type": "regular",
+        "id": "52031"
+      },
+      {
+        "name": "Manchester Orchestra",
+        "url": "https://genius.com/artists/Manchester-orchestra",
+        "type": "regular",
+        "id": "61516"
+      },
+      {
+        "name": "Mandisa",
+        "url": "https://genius.com/artists/Mandisa",
+        "type": "regular",
+        "id": "16914"
+      },
+      {
+        "name": "Mando Diao",
+        "url": "https://genius.com/artists/Mando-diao",
+        "type": "regular",
+        "id": "214953"
+      },
+      {
+        "name": "mandy",
+        "url": "https://genius.com/artists/Mandy",
+        "type": "regular",
+        "id": "3890805"
+      },
+      {
+        "name": "Mandy Gonzalez",
+        "url": "https://genius.com/artists/Mandy-gonzalez",
+        "type": "regular",
+        "id": "576579"
+      },
+      {
+        "name": "Mandy Moore",
+        "url": "https://genius.com/artists/Mandy-moore",
+        "type": "regular",
+        "id": "64801"
+      },
+      {
+        "name": "Mandy Patinkin",
+        "url": "https://genius.com/artists/Mandy-patinkin",
+        "type": "regular",
+        "id": "370954"
+      },
+      {
+        "name": "Manfred Mann's Earth Band",
+        "url": "https://genius.com/artists/Manfred-manns-earth-band",
+        "type": "regular",
+        "id": "204948"
+      },
+      {
+        "name": "​maNga",
+        "url": "https://genius.com/artists/Manga",
+        "type": "regular",
+        "id": "356607"
+      },
+      {
+        "name": "The Manhattans",
+        "url": "https://genius.com/artists/The-manhattans",
+        "type": "regular",
+        "id": "61646"
+      },
+      {
+        "name": "The Manhattan Transfer",
+        "url": "https://genius.com/artists/The-manhattan-transfer",
+        "type": "regular",
+        "id": "353530"
+      },
+      {
+        "name": "Manic Street Preachers",
+        "url": "https://genius.com/artists/Manic-street-preachers",
+        "type": "regular",
+        "id": "38489"
+      },
+      {
+        "name": "Manna Dey",
+        "url": "https://genius.com/artists/Manna-dey",
+        "type": "regular",
+        "id": "1458659"
+      },
+      {
+        "name": "Mannequin Pussy",
+        "url": "https://genius.com/artists/Mannequin-pussy",
+        "type": "regular",
+        "id": "1027854"
+      },
+      {
+        "name": "Manny 4zz",
+        "url": "https://genius.com/artists/Manny-4zz",
+        "type": "regular",
+        "id": "3847513"
+      },
+      {
+        "name": "Manoj Muntashir",
+        "url": "https://genius.com/artists/Manoj-muntashir",
+        "type": "regular",
+        "id": "1063697"
+      },
+      {
+        "name": "Man on the Internet",
+        "url": "https://genius.com/artists/Man-on-the-internet",
+        "type": "regular",
+        "id": "988340"
+      },
+      {
+        "name": "Manowar",
+        "url": "https://genius.com/artists/Manowar",
+        "type": "regular",
+        "id": "271758"
+      },
+      {
+        "name": "Mansur",
+        "url": "https://genius.com/artists/Mansur",
+        "type": "regular",
+        "id": "4054471"
+      },
+      {
+        "name": "Manuş Baba",
+        "url": "https://genius.com/artists/Manus-baba",
+        "type": "regular",
+        "id": "1296853"
+      },
+      {
+        "name": "Manu Chao",
+        "url": "https://genius.com/artists/Manu-chao",
+        "type": "regular",
+        "id": "23108"
+      },
+      {
+        "name": "Manuel Herrera",
+        "url": "https://genius.com/artists/Manuel-herrera",
+        "type": "regular",
+        "id": "998514"
+      },
+      {
+        "name": "Manuel Straube",
+        "url": "https://genius.com/artists/Manuel-straube",
+        "type": "regular",
+        "id": "458701"
+      },
+      {
+        "name": "Manuel Turizo",
+        "url": "https://genius.com/artists/Manuel-turizo",
+        "type": "regular",
+        "id": "1132272"
+      },
+      {
+        "name": "Manu Pilas",
+        "url": "https://genius.com/artists/Manu-pilas",
+        "type": "regular",
+        "id": "1548162"
+      },
+      {
+        "name": "MAN WITH A MISSION",
+        "url": "https://genius.com/artists/Man-with-a-mission",
+        "type": "regular",
+        "id": "574018"
+      },
+      {
+        "name": "Maoli",
+        "url": "https://genius.com/artists/Maoli",
+        "type": "regular",
+        "id": "107637"
+      },
+      {
+        "name": "Małpa",
+        "url": "https://genius.com/artists/Mapa",
+        "type": "regular",
+        "id": "56349"
+      },
+      {
+        "name": "mapt0v",
+        "url": "https://genius.com/artists/Mapt0v",
+        "type": "regular",
+        "id": "3847094"
+      },
+      {
+        "name": "Maranatha! praise band",
+        "url": "https://genius.com/artists/Maranatha-praise-band",
+        "type": "regular",
+        "id": "454213"
+      },
+      {
+        "name": "Marca MP",
+        "url": "https://genius.com/artists/Marca-mp",
+        "type": "regular",
+        "id": "1985394"
+      },
+      {
+        "name": "Marc Anthony",
+        "url": "https://genius.com/artists/Marc-anthony",
+        "type": "regular",
+        "id": "13096"
+      },
+      {
+        "name": "Marcelo Zarvos",
+        "url": "https://genius.com/artists/Marcelo-zarvos",
+        "type": "regular",
+        "id": "1222497"
+      },
+      {
+        "name": "Marcia Griffiths",
+        "url": "https://genius.com/artists/Marcia-griffiths",
+        "type": "regular",
+        "id": "369537"
+      },
+      {
+        "name": "Marco Antonio Solís",
+        "url": "https://genius.com/artists/Marco-antonio-solis",
+        "type": "regular",
+        "id": "148995"
+      },
+      {
+        "name": "Marco Castello",
+        "url": "https://genius.com/artists/Marco-castello",
+        "type": "regular",
+        "id": "2228931"
+      },
+      {
+        "name": "Marco Mengoni",
+        "url": "https://genius.com/artists/Marco-mengoni",
+        "type": "regular",
+        "id": "50804"
+      },
+      {
+        "name": "Marcus & Martinus",
+        "url": "https://genius.com/artists/Marcus-and-martinus",
+        "type": "regular",
+        "id": "481245"
+      },
+      {
+        "name": "Marcus King",
+        "url": "https://genius.com/artists/Marcus-king",
+        "type": "regular",
+        "id": "229316"
+      },
+      {
+        "name": "The Marcus King Band",
+        "url": "https://genius.com/artists/The-marcus-king-band",
+        "type": "regular",
+        "id": "1204435"
+      },
+      {
+        "name": "Marc Velasco",
+        "url": "https://genius.com/artists/Marc-velasco",
+        "type": "regular",
+        "id": "3297057"
+      },
+      {
+        "name": "Maren Morris",
+        "url": "https://genius.com/artists/Maren-morris",
+        "type": "regular",
+        "id": "548314"
+      },
+      {
+        "name": "MARETU",
+        "url": "https://genius.com/artists/Maretu",
+        "type": "regular",
+        "id": "1011114"
+      },
+      {
+        "name": "Mareux",
+        "url": "https://genius.com/artists/Mareux",
+        "type": "regular",
+        "id": "1538852"
+      },
+      {
+        "name": "Margaret Atwood",
+        "url": "https://genius.com/artists/Margaret-atwood",
+        "type": "regular",
+        "id": "69694"
+      },
+      {
+        "name": "marguerite (FRA)",
+        "url": "https://genius.com/artists/Marguerite-fra",
+        "type": "regular",
+        "id": "4157855"
+      },
+      {
+        "name": "Maria Becerra",
+        "url": "https://genius.com/artists/Maria-becerra",
+        "type": "regular",
+        "id": "1536860"
+      },
+      {
+        "name": "Mariah Angeliq",
+        "url": "https://genius.com/artists/Mariah-angeliq",
+        "type": "regular",
+        "id": "1714974"
+      },
+      {
+        "name": "mariana froes",
+        "url": "https://genius.com/artists/Mariana-froes",
+        "type": "regular",
+        "id": "1917906"
+      },
+      {
+        "name": "Mariana Guerra",
+        "url": "https://genius.com/artists/Mariana-guerra",
+        "type": "regular",
+        "id": "669730"
+      },
+      {
+        "name": "Marianas Trench",
+        "url": "https://genius.com/artists/Marianas-trench",
+        "type": "regular",
+        "id": "55743"
+      },
+      {
+        "name": "Marianne Faithfull",
+        "url": "https://genius.com/artists/Marianne-faithfull",
+        "type": "regular",
+        "id": "184051"
+      },
+      {
+        "name": "Мария Янковская (Maria Yankovskaya)",
+        "url": "https://genius.com/artists/Maria-yankovskaya",
+        "type": "regular",
+        "id": "4140222"
+      },
+      {
+        "name": "Marietta",
+        "url": "https://genius.com/artists/Marietta",
+        "type": "regular",
+        "id": "329968"
+      },
+      {
+        "name": "Марія Чайковська (Mariia Chaikovska)",
+        "url": "https://genius.com/artists/Mariia-chaikovska",
+        "type": "regular",
+        "id": "1814636"
+      },
+      {
+        "name": "Marija Šerifović",
+        "url": "https://genius.com/artists/Marija-serifovic",
+        "type": "regular",
+        "id": "523335"
+      },
+      {
+        "name": "Мари Краймбрери (Mari Kraimbrery)",
+        "url": "https://genius.com/artists/Mari-kraimbrery",
+        "type": "regular",
+        "id": "1288510"
+      },
+      {
+        "name": "Marillion",
+        "url": "https://genius.com/artists/Marillion",
+        "type": "regular",
+        "id": "343896"
+      },
+      {
+        "name": "Marilyne Naaman - ماريلين نعمان",
+        "url": "https://genius.com/artists/Marilyne-naaman",
+        "type": "regular",
+        "id": "4086528"
+      },
+      {
+        "name": "Marilyn Manson",
+        "url": "https://genius.com/artists/Marilyn-manson",
+        "type": "regular",
+        "id": "2065"
+      },
+      {
+        "name": "Marina Satti",
+        "url": "https://genius.com/artists/Marina-satti",
+        "type": "regular",
+        "id": "1229723"
+      },
+      {
+        "name": "Marina Sena",
+        "url": "https://genius.com/artists/Marina-sena",
+        "type": "regular",
+        "id": "1873561"
+      },
+      {
+        "name": "Marina Spanou",
+        "url": "https://genius.com/artists/Marina-spanou",
+        "type": "regular",
+        "id": "2783928"
+      },
+      {
+        "name": "Marino",
+        "url": "https://genius.com/artists/Marino",
+        "type": "regular",
+        "id": "481798"
+      },
+      {
+        "name": "Mario",
+        "url": "https://genius.com/artists/Mario",
+        "type": "regular",
+        "id": "282"
+      },
+      {
+        "name": "Mario (HUN)",
+        "url": "https://genius.com/artists/Mario-hun",
+        "type": "regular",
+        "id": "3503247"
+      },
+      {
+        "name": "Mario Judah",
+        "url": "https://genius.com/artists/Mario-judah",
+        "type": "regular",
+        "id": "2287468"
+      },
+      {
+        "name": "Marioo",
+        "url": "https://genius.com/artists/Marioo",
+        "type": "regular",
+        "id": "1421247"
+      },
+      {
+        "name": "Marissa Jaret Winokur",
+        "url": "https://genius.com/artists/Marissa-jaret-winokur",
+        "type": "regular",
+        "id": "454065"
+      },
+      {
+        "name": "Marjorie -W.C. Sinclair",
+        "url": "https://genius.com/artists/Marjorie-wc-sinclair",
+        "type": "regular",
+        "id": "2510504"
+      },
+      {
+        "name": "MARK (마크)",
+        "url": "https://genius.com/artists/Mark",
+        "type": "regular",
+        "id": "994585"
+      },
+      {
+        "name": "Mark Ambor",
+        "url": "https://genius.com/artists/Mark-ambor",
+        "type": "regular",
+        "id": "2882592"
+      },
+      {
+        "name": "Марк Бернес (Mark Bernes)",
+        "url": "https://genius.com/artists/Mark-bernes",
+        "type": "regular",
+        "id": "1471252"
+      },
+      {
+        "name": "Marked for Deletion (DO NOT USE, USE THE FORUMS INSTEAD)",
+        "url": "https://genius.com/artists/Marked-for-deletion-do-not-use-use-the-forums-instead",
+        "type": "regular",
+        "id": "87999"
+      },
+      {
+        "name": "Mark Forster",
+        "url": "https://genius.com/artists/Mark-forster",
+        "type": "regular",
+        "id": "81998"
+      },
+      {
+        "name": "Mark Hollmann",
+        "url": "https://genius.com/artists/Mark-hollmann",
+        "type": "regular",
+        "id": "663928"
+      },
+      {
+        "name": "Mark Knopfler",
+        "url": "https://genius.com/artists/Mark-knopfler",
+        "type": "regular",
+        "id": "34364"
+      },
+      {
+        "name": "Mark Luna",
+        "url": "https://genius.com/artists/Mark-luna",
+        "type": "regular",
+        "id": "1188716"
+      },
+      {
+        "name": "Mark Morrison",
+        "url": "https://genius.com/artists/Mark-morrison",
+        "type": "regular",
+        "id": "4396"
+      },
+      {
+        "name": "Marko Glass",
+        "url": "https://genius.com/artists/Marko-glass",
+        "type": "regular",
+        "id": "1713720"
+      },
+      {
+        "name": "Marko Perković Thompson",
+        "url": "https://genius.com/artists/Marko-perkovic-thompson",
+        "type": "regular",
+        "id": "992439"
+      },
+      {
+        "name": "Mark Pritchard",
+        "url": "https://genius.com/artists/Mark-pritchard",
+        "type": "regular",
+        "id": "651689"
+      },
+      {
+        "name": "Mark Ronson",
+        "url": "https://genius.com/artists/Mark-ronson",
+        "type": "regular",
+        "id": "8231"
+      },
+      {
+        "name": "Mark Siemens",
+        "url": "https://genius.com/artists/Mark-siemens",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Mark Tuan",
+        "url": "https://genius.com/artists/Mark-tuan",
+        "type": "regular",
+        "id": "659577"
+      },
+      {
+        "name": "Markul",
+        "url": "https://genius.com/artists/Markul",
+        "type": "regular",
+        "id": "552422"
+      },
+      {
+        "name": "Mark Wahlberg",
+        "url": "https://genius.com/artists/Mark-wahlberg",
+        "type": "regular",
+        "id": "23227"
+      },
+      {
+        "name": "Marlon Funaki",
+        "url": "https://genius.com/artists/Marlon-funaki",
+        "type": "regular",
+        "id": "3899680"
+      },
+      {
+        "name": "Marnz Malone",
+        "url": "https://genius.com/artists/Marnz-malone",
+        "type": "regular",
+        "id": "3762340"
+      },
+      {
+        "name": "MARO",
+        "url": "https://genius.com/artists/Maro",
+        "type": "regular",
+        "id": "1735224"
+      },
+      {
+        "name": "Marracash",
+        "url": "https://genius.com/artists/Marracash",
+        "type": "regular",
+        "id": "33752"
+      },
+      {
+        "name": "Mars Argo",
+        "url": "https://genius.com/artists/Mars-argo",
+        "type": "regular",
+        "id": "977681"
+      },
+      {
+        "name": "Marseaux",
+        "url": "https://genius.com/artists/Marseaux",
+        "type": "regular",
+        "id": "1576549"
+      },
+      {
+        "name": "Marshall Jefferson",
+        "url": "https://genius.com/artists/Marshall-jefferson",
+        "type": "regular",
+        "id": "452588"
+      },
+      {
+        "name": "The Marshall Tucker Band",
+        "url": "https://genius.com/artists/The-marshall-tucker-band",
+        "type": "regular",
+        "id": "188564"
+      },
+      {
+        "name": "Marshmello",
+        "url": "https://genius.com/artists/Marshmello",
+        "type": "regular",
+        "id": "582361"
+      },
+      {
+        "name": "The Mars Volta",
+        "url": "https://genius.com/artists/The-mars-volta",
+        "type": "regular",
+        "id": "6427"
+      },
+      {
+        "name": "Martha Logue",
+        "url": "https://genius.com/artists/Martha-logue",
+        "type": "regular",
+        "id": "4007322"
+      },
+      {
+        "name": "Martha Reeves & The Vandellas",
+        "url": "https://genius.com/artists/Martha-reeves-and-the-vandellas",
+        "type": "regular",
+        "id": "330554"
+      },
+      {
+        "name": "Mart Hoogkamer",
+        "url": "https://genius.com/artists/Mart-hoogkamer",
+        "type": "regular",
+        "id": "2818067"
+      },
+      {
+        "name": "Marti Fischer",
+        "url": "https://genius.com/artists/Marti-fischer",
+        "type": "regular",
+        "id": "1683140"
+      },
+      {
+        "name": "мартин (martin)",
+        "url": "https://genius.com/artists/Martin",
+        "type": "regular",
+        "id": "3401087"
+      },
+      {
+        "name": "Martina McBride",
+        "url": "https://genius.com/artists/Martina-mcbride",
+        "type": "regular",
+        "id": "139719"
+      },
+      {
+        "name": "Martin Garrix",
+        "url": "https://genius.com/artists/Martin-garrix",
+        "type": "regular",
+        "id": "65238"
+      },
+      {
+        "name": "Martin Nievera",
+        "url": "https://genius.com/artists/Martin-nievera",
+        "type": "regular",
+        "id": "353473"
+      },
+      {
+        "name": "The Martins",
+        "url": "https://genius.com/artists/The-martins",
+        "type": "regular",
+        "id": "374263"
+      },
+      {
+        "name": "Martin Short",
+        "url": "https://genius.com/artists/Martin-short",
+        "type": "regular",
+        "id": "332880"
+      },
+      {
+        "name": "Martin Smith",
+        "url": "https://genius.com/artists/Martin-smith",
+        "type": "regular",
+        "id": "378095"
+      },
+      {
+        "name": "Marty Robbins",
+        "url": "https://genius.com/artists/Marty-robbins",
+        "type": "regular",
+        "id": "74665"
+      },
+      {
+        "name": "Marvin Gaye",
+        "url": "https://genius.com/artists/Marvin-gaye",
+        "type": "regular",
+        "id": "944"
+      },
+      {
+        "name": "Marvin Sapp",
+        "url": "https://genius.com/artists/Marvin-sapp",
+        "type": "regular",
+        "id": "15389"
+      },
+      {
+        "name": "Marwan Khoury - مروان خوري",
+        "url": "https://genius.com/artists/Marwan-khoury",
+        "type": "regular",
+        "id": "482555"
+      },
+      {
+        "name": "Marwan Moussa - مروان موسى",
+        "url": "https://genius.com/artists/Marwan-moussa",
+        "type": "regular",
+        "id": "1205075"
+      },
+      {
+        "name": "Marwan Pablo - مروان بابلو",
+        "url": "https://genius.com/artists/Marwan-pablo",
+        "type": "regular",
+        "id": "1456759"
+      },
+      {
+        "name": "Марьяна Локель (Maryana Lokel)",
+        "url": "https://genius.com/artists/Maryana-lokel",
+        "type": "regular",
+        "id": "4075730"
+      },
+      {
+        "name": "Mary Chapin Carpenter",
+        "url": "https://genius.com/artists/Mary-chapin-carpenter",
+        "type": "regular",
+        "id": "303434"
+      },
+      {
+        "name": "Mary Gu",
+        "url": "https://genius.com/artists/Mary-gu",
+        "type": "regular",
+        "id": "1344675"
+      },
+      {
+        "name": "Mary Harron",
+        "url": "https://genius.com/artists/Mary-harron",
+        "type": "regular",
+        "id": "76195"
+      },
+      {
+        "name": "Mary J. Blige",
+        "url": "https://genius.com/artists/Mary-j-blige",
+        "type": "regular",
+        "id": "358"
+      },
+      {
+        "name": "Mary Mary",
+        "url": "https://genius.com/artists/Mary-mary",
+        "type": "regular",
+        "id": "7598"
+      },
+      {
+        "name": "Mary Millar",
+        "url": "https://genius.com/artists/Mary-millar",
+        "type": "regular",
+        "id": "4261392"
+      },
+      {
+        "name": "The Mary Wallopers",
+        "url": "https://genius.com/artists/The-mary-wallopers",
+        "type": "regular",
+        "id": "3337210"
+      },
+      {
+        "name": "MAS",
+        "url": "https://genius.com/artists/Mas",
+        "type": "regular",
+        "id": "1997877"
+      },
+      {
+        "name": "祖堅正慶 (Masayoshi Soken)",
+        "url": "https://genius.com/artists/Masayoshi-soken",
+        "type": "regular",
+        "id": "1009021"
+      },
+      {
+        "name": "高中正義 (Masayoshi Takanaka)",
+        "url": "https://genius.com/artists/Masayoshi-takanaka",
+        "type": "regular",
+        "id": "1011464"
+      },
+      {
+        "name": "Ma$e",
+        "url": "https://genius.com/artists/Ma-e",
+        "type": "regular",
+        "id": "249"
+      },
+      {
+        "name": "Masego",
+        "url": "https://genius.com/artists/Masego",
+        "type": "regular",
+        "id": "15834"
+      },
+      {
+        "name": "Маша и Медведь (Masha i Medved')",
+        "url": "https://genius.com/artists/Masha-i-medved",
+        "type": "regular",
+        "id": "3497713"
+      },
+      {
+        "name": "Маша Мирова (Masha Mirova)",
+        "url": "https://genius.com/artists/Masha-mirova",
+        "type": "regular",
+        "id": "3836729"
+      },
+      {
+        "name": "MashBeatz",
+        "url": "https://genius.com/artists/Mashbeatz",
+        "type": "regular",
+        "id": "1012599"
+      },
+      {
+        "name": "MASHERA",
+        "url": "https://genius.com/artists/Mashera",
+        "type": "regular",
+        "id": "4442024"
+      },
+      {
+        "name": "Машина Времени (Mashina Vremeni)",
+        "url": "https://genius.com/artists/Mashina-vremeni",
+        "type": "regular",
+        "id": "1509153"
+      },
+      {
+        "name": "Mashrou' Leila - مشروع ليلى",
+        "url": "https://genius.com/artists/Mashrou-leila",
+        "type": "regular",
+        "id": "153362"
+      },
+      {
+        "name": "Masicka",
+        "url": "https://genius.com/artists/Masicka",
+        "type": "regular",
+        "id": "483968"
+      },
+      {
+        "name": "Masked Wolf",
+        "url": "https://genius.com/artists/Masked-wolf",
+        "type": "regular",
+        "id": "1691232"
+      },
+      {
+        "name": "масло черного тмина (maslo chyornogo tmina)",
+        "url": "https://genius.com/artists/Maslo-chyornogo-tmina",
+        "type": "regular",
+        "id": "1508047"
+      },
+      {
+        "name": "Mason Olshavsky",
+        "url": "https://genius.com/artists/Mason-olshavsky",
+        "type": "regular",
+        "id": "3922836"
+      },
+      {
+        "name": "Mason Temple",
+        "url": "https://genius.com/artists/Mason-temple",
+        "type": "regular",
+        "id": "1172633"
+      },
+      {
+        "name": "Masra",
+        "url": "https://genius.com/artists/Masra",
+        "type": "regular",
+        "id": "3723013"
+      },
+      {
+        "name": "Massaka",
+        "url": "https://genius.com/artists/Massaka",
+        "type": "regular",
+        "id": "25180"
+      },
+      {
+        "name": "Massimo Pericolo",
+        "url": "https://genius.com/artists/Massimo-pericolo",
+        "type": "regular",
+        "id": "1634956"
+      },
+      {
+        "name": "Massiv",
+        "url": "https://genius.com/artists/Massiv",
+        "type": "regular",
+        "id": "12885"
+      },
+      {
+        "name": "Massive Attack",
+        "url": "https://genius.com/artists/Massive-attack",
+        "type": "regular",
+        "id": "8823"
+      },
+      {
+        "name": "MASS OF THE FERMENTING DREGS",
+        "url": "https://genius.com/artists/Mass-of-the-fermenting-dregs",
+        "type": "regular",
+        "id": "1584731"
+      },
+      {
+        "name": "Mass (TUR)",
+        "url": "https://genius.com/artists/Mass-tur",
+        "type": "regular",
+        "id": "2386366"
+      },
+      {
+        "name": "Master KG",
+        "url": "https://genius.com/artists/Master-kg",
+        "type": "regular",
+        "id": "1691040"
+      },
+      {
+        "name": "Master P",
+        "url": "https://genius.com/artists/Master-p",
+        "type": "regular",
+        "id": "142"
+      },
+      {
+        "name": "Mastodon",
+        "url": "https://genius.com/artists/Mastodon",
+        "type": "regular",
+        "id": "14779"
+      },
+      {
+        "name": "Mata",
+        "url": "https://genius.com/artists/Mata",
+        "type": "regular",
+        "id": "51868"
+      },
+      {
+        "name": "Matchbox Twenty",
+        "url": "https://genius.com/artists/Matchbox-twenty",
+        "type": "regular",
+        "id": "71892"
+      },
+      {
+        "name": "Mathematics",
+        "url": "https://genius.com/artists/Mathematics",
+        "type": "regular",
+        "id": "7920"
+      },
+      {
+        "name": "Matilda the Musical Original Cast",
+        "url": "https://genius.com/artists/Matilda-the-musical-original-cast",
+        "type": "regular",
+        "id": "3410151"
+      },
+      {
+        "name": "matiorzel",
+        "url": "https://genius.com/artists/Matiorzel",
+        "type": "regular",
+        "id": "4440648"
+      },
+      {
+        "name": "Matisyahu",
+        "url": "https://genius.com/artists/Matisyahu",
+        "type": "regular",
+        "id": "2467"
+      },
+      {
+        "name": "MATRANG",
+        "url": "https://genius.com/artists/Matrang",
+        "type": "regular",
+        "id": "1310229"
+      },
+      {
+        "name": "Matt Berninger",
+        "url": "https://genius.com/artists/Matt-berninger",
+        "type": "regular",
+        "id": "67092"
+      },
+      {
+        "name": "Matt Berry",
+        "url": "https://genius.com/artists/Matt-berry",
+        "type": "regular",
+        "id": "351808"
+      },
+      {
+        "name": "Mattei",
+        "url": "https://genius.com/artists/Mattei",
+        "type": "regular",
+        "id": "4355254"
+      },
+      {
+        "name": "Matteo Milazzo",
+        "url": "https://genius.com/artists/Matteo-milazzo",
+        "type": "regular",
+        "id": "2901838"
+      },
+      {
+        "name": "Matt Hansen",
+        "url": "https://genius.com/artists/Matt-hansen",
+        "type": "regular",
+        "id": "1001953"
+      },
+      {
+        "name": "Matthew Risch",
+        "url": "https://genius.com/artists/Matthew-risch",
+        "type": "regular",
+        "id": "1009372"
+      },
+      {
+        "name": "Matthew West",
+        "url": "https://genius.com/artists/Matthew-west",
+        "type": "regular",
+        "id": "326940"
+      },
+      {
+        "name": "Matthew Wilder",
+        "url": "https://genius.com/artists/Matthew-wilder",
+        "type": "regular",
+        "id": "151884"
+      },
+      {
+        "name": "Matt Maeson",
+        "url": "https://genius.com/artists/Matt-maeson",
+        "type": "regular",
+        "id": "1042749"
+      },
+      {
+        "name": "Matt Maher",
+        "url": "https://genius.com/artists/Matt-maher",
+        "type": "regular",
+        "id": "46504"
+      },
+      {
+        "name": "Matt Maltese",
+        "url": "https://genius.com/artists/Matt-maltese",
+        "type": "regular",
+        "id": "547237"
+      },
+      {
+        "name": "Matt Monro",
+        "url": "https://genius.com/artists/Matt-monro",
+        "type": "regular",
+        "id": "359543"
+      },
+      {
+        "name": "Matt OX",
+        "url": "https://genius.com/artists/Matt-ox",
+        "type": "regular",
+        "id": "1110995"
+      },
+      {
+        "name": "Matt Redman",
+        "url": "https://genius.com/artists/Matt-redman",
+        "type": "regular",
+        "id": "76789"
+      },
+      {
+        "name": "Матвей Блантер (Matvey Blanter)",
+        "url": "https://genius.com/artists/Matvey-blanter",
+        "type": "regular",
+        "id": "1877062"
+      },
+      {
+        "name": "Mauro Castillo",
+        "url": "https://genius.com/artists/Mauro-castillo",
+        "type": "regular",
+        "id": "1543577"
+      },
+      {
+        "name": "MAUR (RUS)",
+        "url": "https://genius.com/artists/Maur-rus",
+        "type": "regular",
+        "id": "4125666"
+      },
+      {
+        "name": "Mavado",
+        "url": "https://genius.com/artists/Mavado",
+        "type": "regular",
+        "id": "2362"
+      },
+      {
+        "name": "Maverick City Music",
+        "url": "https://genius.com/artists/Maverick-city-music",
+        "type": "regular",
+        "id": "1986736"
+      },
+      {
+        "name": "MAVI",
+        "url": "https://genius.com/artists/Mavi",
+        "type": "regular",
+        "id": "1693509"
+      },
+      {
+        "name": "Mavi (TUR)",
+        "url": "https://genius.com/artists/Mavi-tur",
+        "type": "regular",
+        "id": "2050107"
+      },
+      {
+        "name": "Mawelele",
+        "url": "https://genius.com/artists/Mawelele",
+        "type": "regular",
+        "id": "4138057"
+      },
+      {
+        "name": "MaWhoo",
+        "url": "https://genius.com/artists/Mawhoo",
+        "type": "regular",
+        "id": "2408125"
+      },
+      {
+        "name": "MAX",
+        "url": "https://genius.com/artists/Max",
+        "type": "regular",
+        "id": "15071"
+      },
+      {
+        "name": "Max B",
+        "url": "https://genius.com/artists/Max-b",
+        "type": "regular",
+        "id": "1215"
+      },
+      {
+        "name": "MAX BARSKIH",
+        "url": "https://genius.com/artists/Max-barskih",
+        "type": "regular",
+        "id": "1124384"
+      },
+      {
+        "name": "Max Dean",
+        "url": "https://genius.com/artists/Max-dean",
+        "type": "regular",
+        "id": "3159142"
+      },
+      {
+        "name": "Max Fry",
+        "url": "https://genius.com/artists/Max-fry",
+        "type": "regular",
+        "id": "1769866"
+      },
+      {
+        "name": "Max Giesinger",
+        "url": "https://genius.com/artists/Max-giesinger",
+        "type": "regular",
+        "id": "455538"
+      },
+      {
+        "name": "Макс Корж (Max Korzh)",
+        "url": "https://genius.com/artists/Max-korzh",
+        "type": "regular",
+        "id": "1050560"
+      },
+      {
+        "name": "Max McNown",
+        "url": "https://genius.com/artists/Max-mcnown",
+        "type": "regular",
+        "id": "3608651"
+      },
+      {
+        "name": "Maxo Kream",
+        "url": "https://genius.com/artists/Maxo-kream",
+        "type": "regular",
+        "id": "20577"
+      },
+      {
+        "name": "Maxwell",
+        "url": "https://genius.com/artists/Maxwell",
+        "type": "regular",
+        "id": "3056"
+      },
+      {
+        "name": "Maxwell 187",
+        "url": "https://genius.com/artists/Maxwell-187",
+        "type": "regular",
+        "id": "1040924"
+      },
+      {
+        "name": "maxxytren",
+        "url": "https://genius.com/artists/Maxxytren",
+        "type": "regular",
+        "id": "4188418"
+      },
+      {
+        "name": "Maya Berović",
+        "url": "https://genius.com/artists/Maya-berovic",
+        "type": "regular",
+        "id": "484746"
+      },
+      {
+        "name": "Maya Hawke",
+        "url": "https://genius.com/artists/Maya-hawke",
+        "type": "regular",
+        "id": "1919787"
+      },
+      {
+        "name": "Мэйби Бэйби (Maybe Baby)",
+        "url": "https://genius.com/artists/Maybe-baby",
+        "type": "regular",
+        "id": "1512790"
+      },
+      {
+        "name": "Mayday Parade",
+        "url": "https://genius.com/artists/Mayday-parade",
+        "type": "regular",
+        "id": "18882"
+      },
+      {
+        "name": "​maye",
+        "url": "https://genius.com/artists/Maye",
+        "type": "regular",
+        "id": "992029"
+      },
+      {
+        "name": "Mayhem",
+        "url": "https://genius.com/artists/Mayhem",
+        "type": "regular",
+        "id": "322838"
+      },
+      {
+        "name": "Mayonnaise",
+        "url": "https://genius.com/artists/Mayonnaise",
+        "type": "regular",
+        "id": "383466"
+      },
+      {
+        "name": "MAYOT",
+        "url": "https://genius.com/artists/Mayot",
+        "type": "regular",
+        "id": "1724542"
+      },
+      {
+        "name": "May Wave$",
+        "url": "https://genius.com/artists/May-wave",
+        "type": "regular",
+        "id": "659084"
+      },
+      {
+        "name": "Maze featuring Frankie Beverly",
+        "url": "https://genius.com/artists/Maze-featuring-frankie-beverly",
+        "type": "regular",
+        "id": "528926"
+      },
+      {
+        "name": "Mazza_l20",
+        "url": "https://genius.com/artists/Mazza-l20",
+        "type": "regular",
+        "id": "3540699"
+      },
+      {
+        "name": "Mazzy Star",
+        "url": "https://genius.com/artists/Mazzy-star",
+        "type": "regular",
+        "id": "18099"
+      },
+      {
+        "name": "MBT",
+        "url": "https://genius.com/artists/Mbt",
+        "type": "regular",
+        "id": "1135002"
+      },
+      {
+        "name": "McCafferty",
+        "url": "https://genius.com/artists/Mccafferty",
+        "type": "regular",
+        "id": "482122"
+      },
+      {
+        "name": "McFadden & Whitehead",
+        "url": "https://genius.com/artists/Mcfadden-and-whitehead",
+        "type": "regular",
+        "id": "21339"
+      },
+      {
+        "name": "McFly",
+        "url": "https://genius.com/artists/Mcfly",
+        "type": "regular",
+        "id": "75818"
+      },
+      {
+        "name": "McGwire",
+        "url": "https://genius.com/artists/Mcgwire",
+        "type": "regular",
+        "id": "1877878"
+      },
+      {
+        "name": "MC Hammer",
+        "url": "https://genius.com/artists/Mc-hammer",
+        "type": "regular",
+        "id": "1039"
+      },
+      {
+        "name": "МС Хованский (MC Hovansky)",
+        "url": "https://genius.com/artists/Mc-hovansky",
+        "type": "regular",
+        "id": "1024954"
+      },
+      {
+        "name": "MC IG",
+        "url": "https://genius.com/artists/Mc-ig",
+        "type": "regular",
+        "id": "1382855"
+      },
+      {
+        "name": "MC Jhey",
+        "url": "https://genius.com/artists/Mc-jhey",
+        "type": "regular",
+        "id": "671707"
+      },
+      {
+        "name": "McKinley Dixon",
+        "url": "https://genius.com/artists/Mckinley-dixon",
+        "type": "regular",
+        "id": "2608479"
+      },
+      {
+        "name": "Mc Kresha",
+        "url": "https://genius.com/artists/Mc-kresha",
+        "type": "regular",
+        "id": "67654"
+      },
+      {
+        "name": "MC Lekão",
+        "url": "https://genius.com/artists/Mc-lekao",
+        "type": "regular",
+        "id": "1483156"
+      },
+      {
+        "name": "MC Magic",
+        "url": "https://genius.com/artists/Mc-magic",
+        "type": "regular",
+        "id": "3296"
+      },
+      {
+        "name": "MC Marlon PH",
+        "url": "https://genius.com/artists/Mc-marlon-ph",
+        "type": "regular",
+        "id": "4105110"
+      },
+      {
+        "name": "MC무현 (MC MOOHYUN)",
+        "url": "https://genius.com/artists/Mc-mc-moohyun",
+        "type": "regular",
+        "id": "2634779"
+      },
+      {
+        "name": "MC Menor JP",
+        "url": "https://genius.com/artists/Mc-menor-jp",
+        "type": "regular",
+        "id": "4158710"
+      },
+      {
+        "name": "MC Negão Original",
+        "url": "https://genius.com/artists/Mc-negao-original",
+        "type": "regular",
+        "id": "3797510"
+      },
+      {
+        "name": "МС Пох (MC Poh)",
+        "url": "https://genius.com/artists/Mc-poh",
+        "type": "regular",
+        "id": "544404"
+      },
+      {
+        "name": "MCR-T",
+        "url": "https://genius.com/artists/Mcr-t",
+        "type": "regular",
+        "id": "121026"
+      },
+      {
+        "name": "MC Ryan SP",
+        "url": "https://genius.com/artists/Mc-ryan-sp",
+        "type": "regular",
+        "id": "1735152"
+      },
+      {
+        "name": "MC Stan",
+        "url": "https://genius.com/artists/Mc-stan",
+        "type": "regular",
+        "id": "73347"
+      },
+      {
+        "name": "MC Tato",
+        "url": "https://genius.com/artists/Mc-tato",
+        "type": "regular",
+        "id": "3411894"
+      },
+      {
+        "name": "MC Virgins",
+        "url": "https://genius.com/artists/Mc-virgins",
+        "type": "regular",
+        "id": "1706168"
+      },
+      {
+        "name": "MC Xangai",
+        "url": "https://genius.com/artists/Mc-xangai",
+        "type": "regular",
+        "id": "3447641"
+      },
+      {
+        "name": "MD76",
+        "url": "https://genius.com/artists/Md76",
+        "type": "regular",
+        "id": "4450525"
+      },
+      {
+        "name": "Mda",
+        "url": "https://genius.com/artists/Mda",
+        "type": "regular",
+        "id": "2341334"
+      },
+      {
+        "name": "M'Dee",
+        "url": "https://genius.com/artists/Mdee",
+        "type": "regular",
+        "id": "54486"
+      },
+      {
+        "name": "Médine",
+        "url": "https://genius.com/artists/Medine",
+        "type": "regular",
+        "id": "1265"
+      },
+      {
+        "name": "MDL (LTU)",
+        "url": "https://genius.com/artists/Mdl-ltu",
+        "type": "regular",
+        "id": "4392508"
+      },
+      {
+        "name": "Mdot 59",
+        "url": "https://genius.com/artists/Mdot-59",
+        "type": "regular",
+        "id": "4126899"
+      },
+      {
+        "name": "M Dot R",
+        "url": "https://genius.com/artists/M-dot-r",
+        "type": "regular",
+        "id": "1063819"
+      },
+      {
+        "name": "Meat Loaf",
+        "url": "https://genius.com/artists/Meat-loaf",
+        "type": "regular",
+        "id": "39962"
+      },
+      {
+        "name": "Mecano",
+        "url": "https://genius.com/artists/Mecano",
+        "type": "regular",
+        "id": "355407"
+      },
+      {
+        "name": "The Mechanisms",
+        "url": "https://genius.com/artists/The-mechanisms",
+        "type": "regular",
+        "id": "1406605"
+      },
+      {
+        "name": "Mechatok",
+        "url": "https://genius.com/artists/Mechatok",
+        "type": "regular",
+        "id": "654384"
+      },
+      {
+        "name": "Medina (DNK)",
+        "url": "https://genius.com/artists/Medina-dnk",
+        "type": "regular",
+        "id": "36980"
+      },
+      {
+        "name": "Medium Build",
+        "url": "https://genius.com/artists/Medium-build",
+        "type": "regular",
+        "id": "1027397"
+      },
+      {
+        "name": "MEDUZA",
+        "url": "https://genius.com/artists/Meduza",
+        "type": "regular",
+        "id": "1820935"
+      },
+      {
+        "name": "Medy",
+        "url": "https://genius.com/artists/Medy",
+        "type": "regular",
+        "id": "1960917"
+      },
+      {
+        "name": "Meekz",
+        "url": "https://genius.com/artists/Meekz",
+        "type": "regular",
+        "id": "1978726"
+      },
+      {
+        "name": "Megadeth",
+        "url": "https://genius.com/artists/Megadeth",
+        "type": "regular",
+        "id": "19444"
+      },
+      {
+        "name": "Megan Hilty",
+        "url": "https://genius.com/artists/Megan-hilty",
+        "type": "regular",
+        "id": "363478"
+      },
+      {
+        "name": "Megan Moroney",
+        "url": "https://genius.com/artists/Megan-moroney",
+        "type": "regular",
+        "id": "2641780"
+      },
+      {
+        "name": "Megan Thee Stallion",
+        "url": "https://genius.com/artists/Megan-thee-stallion",
+        "type": "regular",
+        "id": "1125517"
+      },
+      {
+        "name": "Meg Donnelly",
+        "url": "https://genius.com/artists/Meg-donnelly",
+        "type": "regular",
+        "id": "1395498"
+      },
+      {
+        "name": "Meghan Trainor",
+        "url": "https://genius.com/artists/Meghan-trainor",
+        "type": "regular",
+        "id": "201194"
+      },
+      {
+        "name": "Mehnersmoos",
+        "url": "https://genius.com/artists/Mehnersmoos",
+        "type": "regular",
+        "id": "54431"
+      },
+      {
+        "name": "Mehrad Hidden",
+        "url": "https://genius.com/artists/Mehrad-hidden",
+        "type": "regular",
+        "id": "32437"
+      },
+      {
+        "name": "​mehro",
+        "url": "https://genius.com/artists/Mehro",
+        "type": "regular",
+        "id": "2128826"
+      },
+      {
+        "name": "Mekonnen Knife",
+        "url": "https://genius.com/artists/Mekonnen-knife",
+        "type": "regular",
+        "id": "4417933"
+      },
+      {
+        "name": "Melanie",
+        "url": "https://genius.com/artists/Melanie",
+        "type": "regular",
+        "id": "51684"
+      },
+      {
+        "name": "Melanie Martinez",
+        "url": "https://genius.com/artists/Melanie-martinez",
+        "type": "regular",
+        "id": "153995"
+      },
+      {
+        "name": "Mel Brooks",
+        "url": "https://genius.com/artists/Mel-brooks",
+        "type": "regular",
+        "id": "41667"
+      },
+      {
+        "name": "Melendi",
+        "url": "https://genius.com/artists/Melendi",
+        "type": "regular",
+        "id": "356622"
+      },
+      {
+        "name": "Melike Şahin",
+        "url": "https://genius.com/artists/Melike-sahin",
+        "type": "regular",
+        "id": "1308647"
+      },
+      {
+        "name": "Melina KB",
+        "url": "https://genius.com/artists/Melina-kb",
+        "type": "regular",
+        "id": "2211204"
+      },
+      {
+        "name": "Melissa Barrera",
+        "url": "https://genius.com/artists/Melissa-barrera",
+        "type": "regular",
+        "id": "2700066"
+      },
+      {
+        "name": "Melissa Etheridge",
+        "url": "https://genius.com/artists/Melissa-etheridge",
+        "type": "regular",
+        "id": "40112"
+      },
+      {
+        "name": "Melissa Lyons",
+        "url": "https://genius.com/artists/Melissa-lyons",
+        "type": "regular",
+        "id": "372913"
+      },
+      {
+        "name": "Melissa Manchester",
+        "url": "https://genius.com/artists/Melissa-manchester",
+        "type": "regular",
+        "id": "231586"
+      },
+      {
+        "name": "Mello Buckzz",
+        "url": "https://genius.com/artists/Mello-buckzz",
+        "type": "regular",
+        "id": "3405479"
+      },
+      {
+        "name": "MellSher",
+        "url": "https://genius.com/artists/Mellsher",
+        "type": "regular",
+        "id": "2657530"
+      },
+      {
+        "name": "Melly Mike",
+        "url": "https://genius.com/artists/Melly-mike",
+        "type": "regular",
+        "id": "589645"
+      },
+      {
+        "name": "Мельница (Melnitsa)",
+        "url": "https://genius.com/artists/Melnitsa",
+        "type": "regular",
+        "id": "2815853"
+      },
+      {
+        "name": "MELO",
+        "url": "https://genius.com/artists/Melo",
+        "type": "regular",
+        "id": "1545434"
+      },
+      {
+        "name": "melodybloom",
+        "url": "https://genius.com/artists/Melodybloom",
+        "type": "regular",
+        "id": "4038713"
+      },
+      {
+        "name": "Melody (ESP)",
+        "url": "https://genius.com/artists/Melody-esp",
+        "type": "regular",
+        "id": "8281"
+      },
+      {
+        "name": "MeloMance",
+        "url": "https://genius.com/artists/Melomance",
+        "type": "regular",
+        "id": "1172918"
+      },
+      {
+        "name": "Melons",
+        "url": "https://genius.com/artists/Melons",
+        "type": "regular",
+        "id": "2068970"
+      },
+      {
+        "name": "Melvins",
+        "url": "https://genius.com/artists/Melvins",
+        "type": "regular",
+        "id": "240959"
+      },
+      {
+        "name": "Memphis Bleek",
+        "url": "https://genius.com/artists/Memphis-bleek",
+        "type": "regular",
+        "id": "195"
+      },
+      {
+        "name": "Memphis Depay",
+        "url": "https://genius.com/artists/Memphis-depay",
+        "type": "regular",
+        "id": "1304733"
+      },
+      {
+        "name": "​menace Santana",
+        "url": "https://genius.com/artists/Menace-santana",
+        "type": "regular",
+        "id": "2628336"
+      },
+      {
+        "name": "Men at Work",
+        "url": "https://genius.com/artists/Men-at-work",
+        "type": "regular",
+        "id": "42422"
+      },
+      {
+        "name": "Mendler & Mendler",
+        "url": "https://genius.com/artists/Mendler-and-mendler",
+        "type": "regular",
+        "id": "4317382"
+      },
+      {
+        "name": "Men I Trust",
+        "url": "https://genius.com/artists/Men-i-trust",
+        "type": "regular",
+        "id": "655044"
+      },
+      {
+        "name": "Mentiras el Musical",
+        "url": "https://genius.com/artists/Mentiras-el-musical",
+        "type": "regular",
+        "id": "2178001"
+      },
+      {
+        "name": "Men Without Hats",
+        "url": "https://genius.com/artists/Men-without-hats",
+        "type": "regular",
+        "id": "25481"
+      },
+      {
+        "name": "The Menzingers",
+        "url": "https://genius.com/artists/The-menzingers",
+        "type": "regular",
+        "id": "25425"
+      },
+      {
+        "name": "MEOVV (미야오)",
+        "url": "https://genius.com/artists/Meovv",
+        "type": "regular",
+        "id": "4071429"
+      },
+      {
+        "name": "Merab Amzoevi",
+        "url": "https://genius.com/artists/Merab-amzoevi",
+        "type": "regular",
+        "id": "3922858"
+      },
+      {
+        "name": "Merchant Ships",
+        "url": "https://genius.com/artists/Merchant-ships",
+        "type": "regular",
+        "id": "62580"
+      },
+      {
+        "name": "Mercy Chinwo",
+        "url": "https://genius.com/artists/Mercy-chinwo",
+        "type": "regular",
+        "id": "2043258"
+      },
+      {
+        "name": "MercyMe",
+        "url": "https://genius.com/artists/Mercyme",
+        "type": "regular",
+        "id": "323613"
+      },
+      {
+        "name": "Meredith Brooks",
+        "url": "https://genius.com/artists/Meredith-brooks",
+        "type": "regular",
+        "id": "8348"
+      },
+      {
+        "name": "Merkules",
+        "url": "https://genius.com/artists/Merkules",
+        "type": "regular",
+        "id": "72445"
+      },
+      {
+        "name": "Merle Haggard",
+        "url": "https://genius.com/artists/Merle-haggard",
+        "type": "regular",
+        "id": "132134"
+      },
+      {
+        "name": "MERO",
+        "url": "https://genius.com/artists/Mero",
+        "type": "regular",
+        "id": "1586144"
+      },
+      {
+        "name": "Mert",
+        "url": "https://genius.com/artists/Mert",
+        "type": "regular",
+        "id": "81663"
+      },
+      {
+        "name": "Mert Demir",
+        "url": "https://genius.com/artists/Mert-demir",
+        "type": "regular",
+        "id": "2458253"
+      },
+      {
+        "name": "Merve Özbey",
+        "url": "https://genius.com/artists/Merve-ozbey",
+        "type": "regular",
+        "id": "235784"
+      },
+      {
+        "name": "Meryl Streep",
+        "url": "https://genius.com/artists/Meryl-streep",
+        "type": "regular",
+        "id": "219268"
+      },
+      {
+        "name": "Meshuggah",
+        "url": "https://genius.com/artists/Meshuggah",
+        "type": "regular",
+        "id": "80239"
+      },
+      {
+        "name": "METAN",
+        "url": "https://genius.com/artists/Metan",
+        "type": "regular",
+        "id": "2201226"
+      },
+      {
+        "name": "Method Man",
+        "url": "https://genius.com/artists/Method-man",
+        "type": "regular",
+        "id": "228"
+      },
+      {
+        "name": "Metox",
+        "url": "https://genius.com/artists/Metox",
+        "type": "regular",
+        "id": "2285453"
+      },
+      {
+        "name": "Metric",
+        "url": "https://genius.com/artists/Metric",
+        "type": "regular",
+        "id": "17675"
+      },
+      {
+        "name": "Metrickz",
+        "url": "https://genius.com/artists/Metrickz",
+        "type": "regular",
+        "id": "20541"
+      },
+      {
+        "name": "Metrika",
+        "url": "https://genius.com/artists/Metrika",
+        "type": "regular",
+        "id": "3530886"
+      },
+      {
+        "name": "Metronomy",
+        "url": "https://genius.com/artists/Metronomy",
+        "type": "regular",
+        "id": "20745"
+      },
+      {
+        "name": "mewithoutYou",
+        "url": "https://genius.com/artists/Mewithoutyou",
+        "type": "regular",
+        "id": "39450"
+      },
+      {
+        "name": "MexikoDro",
+        "url": "https://genius.com/artists/Mexikodro",
+        "type": "regular",
+        "id": "507607"
+      },
+      {
+        "name": "MezzoSangue",
+        "url": "https://genius.com/artists/Mezzosangue",
+        "type": "regular",
+        "id": "41714"
+      },
+      {
+        "name": "MF DOOM",
+        "url": "https://genius.com/artists/Mf-doom",
+        "type": "regular",
+        "id": "70"
+      },
+      {
+        "name": "MGK666",
+        "url": "https://genius.com/artists/Mgk666",
+        "type": "regular",
+        "id": "2332793"
+      },
+      {
+        "name": "M.G.L.",
+        "url": "https://genius.com/artists/Mgl",
+        "type": "regular",
+        "id": "2605492"
+      },
+      {
+        "name": "MGMT",
+        "url": "https://genius.com/artists/Mgmt",
+        "type": "regular",
+        "id": "764"
+      },
+      {
+        "name": "Mägo de Oz",
+        "url": "https://genius.com/artists/Mago-de-oz",
+        "type": "regular",
+        "id": "212232"
+      },
+      {
+        "name": "MHD",
+        "url": "https://genius.com/artists/Mhd",
+        "type": "regular",
+        "id": "327802"
+      },
+      {
+        "name": "M Huncho",
+        "url": "https://genius.com/artists/M-huncho",
+        "type": "regular",
+        "id": "1181389"
+      },
+      {
+        "name": "M.I.A.",
+        "url": "https://genius.com/artists/Mia",
+        "type": "regular",
+        "id": "1042"
+      },
+      {
+        "name": "MIA BOYKA",
+        "url": "https://genius.com/artists/Mia-boyka",
+        "type": "regular",
+        "id": "2346385"
+      },
+      {
+        "name": "Miach",
+        "url": "https://genius.com/artists/Miach",
+        "type": "regular",
+        "id": "3160761"
+      },
+      {
+        "name": "Miami Boys Choir",
+        "url": "https://genius.com/artists/Miami-boys-choir",
+        "type": "regular",
+        "id": "362738"
+      },
+      {
+        "name": "Michael Ball",
+        "url": "https://genius.com/artists/Michael-ball",
+        "type": "regular",
+        "id": "353424"
+      },
+      {
+        "name": "Michael Bolton",
+        "url": "https://genius.com/artists/Michael-bolton",
+        "type": "regular",
+        "id": "11634"
+      },
+      {
+        "name": "Michael Bublé",
+        "url": "https://genius.com/artists/Michael-buble",
+        "type": "regular",
+        "id": "59801"
+      },
+      {
+        "name": "Michael Clifford",
+        "url": "https://genius.com/artists/Michael-clifford",
+        "type": "regular",
+        "id": "579752"
+      },
+      {
+        "name": "Michael Crawford",
+        "url": "https://genius.com/artists/Michael-crawford",
+        "type": "regular",
+        "id": "367438"
+      },
+      {
+        "name": "Michael Graceffa",
+        "url": "https://genius.com/artists/Michael-graceffa",
+        "type": "regular",
+        "id": "4398449"
+      },
+      {
+        "name": "Michael Johnson",
+        "url": "https://genius.com/artists/Michael-johnson",
+        "type": "regular",
+        "id": "357100"
+      },
+      {
+        "name": "Michael Kiwanuka",
+        "url": "https://genius.com/artists/Michael-kiwanuka",
+        "type": "regular",
+        "id": "65500"
+      },
+      {
+        "name": "Michael Learns to Rock",
+        "url": "https://genius.com/artists/Michael-learns-to-rock",
+        "type": "regular",
+        "id": "60938"
+      },
+      {
+        "name": "Michael Martin Murphey",
+        "url": "https://genius.com/artists/Michael-martin-murphey",
+        "type": "regular",
+        "id": "330643"
+      },
+      {
+        "name": "Michael McDonald",
+        "url": "https://genius.com/artists/Michael-mcdonald",
+        "type": "regular",
+        "id": "37854"
+      },
+      {
+        "name": "Michael Minelli",
+        "url": "https://genius.com/artists/Michael-minelli",
+        "type": "regular",
+        "id": "1418213"
+      },
+      {
+        "name": "Michael Park",
+        "url": "https://genius.com/artists/Michael-park",
+        "type": "regular",
+        "id": "997845"
+      },
+      {
+        "name": "Michael V",
+        "url": "https://genius.com/artists/Michael-v",
+        "type": "regular",
+        "id": "384337"
+      },
+      {
+        "name": "Michael Williams",
+        "url": "https://genius.com/artists/Michael-williams",
+        "type": "regular",
+        "id": "1011273"
+      },
+      {
+        "name": "Michael W. Smith",
+        "url": "https://genius.com/artists/Michael-w-smith",
+        "type": "regular",
+        "id": "335658"
+      },
+      {
+        "name": "Μιχάλης Χατζηγιάννης (Michalis Hatzigiannis)",
+        "url": "https://genius.com/artists/Michalis-hatzigiannis",
+        "type": "regular",
+        "id": "480705"
+      },
+      {
+        "name": "Michelle Branch",
+        "url": "https://genius.com/artists/Michelle-branch",
+        "type": "regular",
+        "id": "71517"
+      },
+      {
+        "name": "Michelle Duffy",
+        "url": "https://genius.com/artists/Michelle-duffy",
+        "type": "regular",
+        "id": "4220265"
+      },
+      {
+        "name": "Michelle Federer",
+        "url": "https://genius.com/artists/Michelle-federer",
+        "type": "regular",
+        "id": "300413"
+      },
+      {
+        "name": "Michelle Gurevich",
+        "url": "https://genius.com/artists/Michelle-gurevich",
+        "type": "regular",
+        "id": "362453"
+      },
+      {
+        "name": "Michelle Ingrid Williams",
+        "url": "https://genius.com/artists/Michelle-ingrid-williams",
+        "type": "regular",
+        "id": "1266969"
+      },
+      {
+        "name": "Michelle Williams",
+        "url": "https://genius.com/artists/Michelle-williams",
+        "type": "regular",
+        "id": "35041"
+      },
+      {
+        "name": "Michel Teló",
+        "url": "https://genius.com/artists/Michel-telo",
+        "type": "regular",
+        "id": "66820"
+      },
+      {
+        "name": "Mickey Avalon",
+        "url": "https://genius.com/artists/Mickey-avalon",
+        "type": "regular",
+        "id": "7710"
+      },
+      {
+        "name": "The Mickey Mouse Club",
+        "url": "https://genius.com/artists/The-mickey-mouse-club",
+        "type": "regular",
+        "id": "381903"
+      },
+      {
+        "name": "Mick Jagger",
+        "url": "https://genius.com/artists/Mick-jagger",
+        "type": "regular",
+        "id": "44144"
+      },
+      {
+        "name": "Mick Jenkins",
+        "url": "https://genius.com/artists/Mick-jenkins",
+        "type": "regular",
+        "id": "34513"
+      },
+      {
+        "name": "MICO",
+        "url": "https://genius.com/artists/Mico",
+        "type": "regular",
+        "id": "1857374"
+      },
+      {
+        "name": "The Microphones",
+        "url": "https://genius.com/artists/The-microphones",
+        "type": "regular",
+        "id": "34000"
+      },
+      {
+        "name": "Micro TDH",
+        "url": "https://genius.com/artists/Micro-tdh",
+        "type": "regular",
+        "id": "1201018"
+      },
+      {
+        "name": "Midix",
+        "url": "https://genius.com/artists/Midix",
+        "type": "regular",
+        "id": "1621260"
+      },
+      {
+        "name": "Midland",
+        "url": "https://genius.com/artists/Midland",
+        "type": "regular",
+        "id": "1064680"
+      },
+      {
+        "name": "The Midnight",
+        "url": "https://genius.com/artists/The-midnight",
+        "type": "regular",
+        "id": "970241"
+      },
+      {
+        "name": "Midnight Oil",
+        "url": "https://genius.com/artists/Midnight-oil",
+        "type": "regular",
+        "id": "37186"
+      },
+      {
+        "name": "Midnvght",
+        "url": "https://genius.com/artists/Midnvght",
+        "type": "regular",
+        "id": "3459666"
+      },
+      {
+        "name": "Midwest Reese",
+        "url": "https://genius.com/artists/Midwest-reese",
+        "type": "regular",
+        "id": "3588528"
+      },
+      {
+        "name": "midwxst",
+        "url": "https://genius.com/artists/Midwxst",
+        "type": "regular",
+        "id": "1903241"
+      },
+      {
+        "name": "Miel San Marcos",
+        "url": "https://genius.com/artists/Miel-san-marcos",
+        "type": "regular",
+        "id": "452654"
+      },
+      {
+        "name": "Mig",
+        "url": "https://genius.com/artists/Mig",
+        "type": "regular",
+        "id": "2643391"
+      },
+      {
+        "name": "MIGAS",
+        "url": "https://genius.com/artists/Migas",
+        "type": "regular",
+        "id": "3849310"
+      },
+      {
+        "name": "Migos",
+        "url": "https://genius.com/artists/Migos",
+        "type": "regular",
+        "id": "44080"
+      },
+      {
+        "name": "Migrant (RUS)",
+        "url": "https://genius.com/artists/Migrant-rus",
+        "type": "regular",
+        "id": "3622893"
+      },
+      {
+        "name": "Miguel",
+        "url": "https://genius.com/artists/Miguel",
+        "type": "regular",
+        "id": "446"
+      },
+      {
+        "name": "MIIA",
+        "url": "https://genius.com/artists/Miia",
+        "type": "regular",
+        "id": "572303"
+      },
+      {
+        "name": "Miike Snow",
+        "url": "https://genius.com/artists/Miike-snow",
+        "type": "regular",
+        "id": "17659"
+      },
+      {
+        "name": "MIKA",
+        "url": "https://genius.com/artists/Mika",
+        "type": "regular",
+        "id": "25074"
+      },
+      {
+        "name": "MIKE",
+        "url": "https://genius.com/artists/Mike",
+        "type": "regular",
+        "id": "6421"
+      },
+      {
+        "name": "Mike Jones",
+        "url": "https://genius.com/artists/Mike-jones",
+        "type": "regular",
+        "id": "287"
+      },
+      {
+        "name": "mike. (Mike Stud)",
+        "url": "https://genius.com/artists/Mike-mike-stud",
+        "type": "regular",
+        "id": "12596"
+      },
+      {
+        "name": "Mike Oldfield",
+        "url": "https://genius.com/artists/Mike-oldfield",
+        "type": "regular",
+        "id": "69709"
+      },
+      {
+        "name": "Mike + The Mechanics",
+        "url": "https://genius.com/artists/Mike-the-mechanics",
+        "type": "regular",
+        "id": "362408"
+      },
+      {
+        "name": "Mike Posner",
+        "url": "https://genius.com/artists/Mike-posner",
+        "type": "regular",
+        "id": "654"
+      },
+      {
+        "name": "Mike Rivera",
+        "url": "https://genius.com/artists/Mike-rivera",
+        "type": "regular",
+        "id": "1056219"
+      },
+      {
+        "name": "Mike Sherm",
+        "url": "https://genius.com/artists/Mike-sherm",
+        "type": "regular",
+        "id": "996466"
+      },
+      {
+        "name": "Mike Shinoda",
+        "url": "https://genius.com/artists/Mike-shinoda",
+        "type": "regular",
+        "id": "4431"
+      },
+      {
+        "name": "Mike WiLL Made-It",
+        "url": "https://genius.com/artists/Mike-will-made-it",
+        "type": "regular",
+        "id": "29978"
+      },
+      {
+        "name": "Михаил Боярский (Mikhail Boyarskiy)",
+        "url": "https://genius.com/artists/Mikhail-boyarskiy",
+        "type": "regular",
+        "id": "1656084"
+      },
+      {
+        "name": "Михаил Елизаров (Mikhail Elizarov)",
+        "url": "https://genius.com/artists/Mikhail-elizarov",
+        "type": "regular",
+        "id": "2110227"
+      },
+      {
+        "name": "Михаил Круг (Mikhail Krug)",
+        "url": "https://genius.com/artists/Mikhail-krug",
+        "type": "regular",
+        "id": "1560149"
+      },
+      {
+        "name": "Михаил Шелег (Mikhail Sheleg)",
+        "url": "https://genius.com/artists/Mikhail-sheleg",
+        "type": "regular",
+        "id": "3530167"
+      },
+      {
+        "name": "Михаил Шуфутинский (Mikhail Shufutinsky)",
+        "url": "https://genius.com/artists/Mikhail-shufutinsky",
+        "type": "regular",
+        "id": "1209058"
+      },
+      {
+        "name": "Miksu / Macloud",
+        "url": "https://genius.com/artists/Miksu-macloud",
+        "type": "regular",
+        "id": "2297928"
+      },
+      {
+        "name": "Miky Woodz",
+        "url": "https://genius.com/artists/Miky-woodz",
+        "type": "regular",
+        "id": "642728"
+      },
+      {
+        "name": "Mila J",
+        "url": "https://genius.com/artists/Mila-j",
+        "type": "regular",
+        "id": "19285"
+      },
+      {
+        "name": "Милана Хаметова (Milana Khametova)",
+        "url": "https://genius.com/artists/Milana-khametova",
+        "type": "regular",
+        "id": "2888117"
+      },
+      {
+        "name": "Milana Star",
+        "url": "https://genius.com/artists/Milana-star",
+        "type": "regular",
+        "id": "2839760"
+      },
+      {
+        "name": "Милана Учайкина (Milana Uchaikina)",
+        "url": "https://genius.com/artists/Milana-uchaikina",
+        "type": "regular",
+        "id": "4408810"
+      },
+      {
+        "name": "Milano",
+        "url": "https://genius.com/artists/Milano",
+        "type": "regular",
+        "id": "1714197"
+      },
+      {
+        "name": "Milan Stanković",
+        "url": "https://genius.com/artists/Milan-stankovic",
+        "type": "regular",
+        "id": "405538"
+      },
+      {
+        "name": "Mila Robert",
+        "url": "https://genius.com/artists/Mila-robert",
+        "type": "regular",
+        "id": "1921408"
+      },
+      {
+        "name": "Mile Kitić",
+        "url": "https://genius.com/artists/Mile-kitic",
+        "type": "regular",
+        "id": "459996"
+      },
+      {
+        "name": "Milena Ćeranić",
+        "url": "https://genius.com/artists/Milena-ceranic",
+        "type": "regular",
+        "id": "1765618"
+      },
+      {
+        "name": "Miles Caton",
+        "url": "https://genius.com/artists/Miles-caton",
+        "type": "regular",
+        "id": "4390949"
+      },
+      {
+        "name": "Miles Minnick",
+        "url": "https://genius.com/artists/Miles-minnick",
+        "type": "regular",
+        "id": "1861112"
+      },
+      {
+        "name": "Mili",
+        "url": "https://genius.com/artists/Mili",
+        "type": "regular",
+        "id": "1596660"
+      },
+      {
+        "name": "Milica Pavlović",
+        "url": "https://genius.com/artists/Milica-pavlovic",
+        "type": "regular",
+        "id": "479762"
+      },
+      {
+        "name": "Mili (JPN)",
+        "url": "https://genius.com/artists/Mili-jpn",
+        "type": "regular",
+        "id": "566243"
+      },
+      {
+        "name": "Milk In The Microwave",
+        "url": "https://genius.com/artists/Milk-in-the-microwave",
+        "type": "regular",
+        "id": "3678706"
+      },
+      {
+        "name": "MILKOVSKYI",
+        "url": "https://genius.com/artists/Milkovskyi",
+        "type": "regular",
+        "id": "1486297"
+      },
+      {
+        "name": "Milkychan",
+        "url": "https://genius.com/artists/Milkychan",
+        "type": "regular",
+        "id": "651166"
+      },
+      {
+        "name": "Milky Chance",
+        "url": "https://genius.com/artists/Milky-chance",
+        "type": "regular",
+        "id": "111722"
+      },
+      {
+        "name": "Milkypossum",
+        "url": "https://genius.com/artists/Milkypossum",
+        "type": "regular",
+        "id": "4016827"
+      },
+      {
+        "name": "Mille",
+        "url": "https://genius.com/artists/Mille",
+        "type": "regular",
+        "id": "3942092"
+      },
+      {
+        "name": "MilleniumKid",
+        "url": "https://genius.com/artists/Milleniumkid",
+        "type": "regular",
+        "id": "3519293"
+      },
+      {
+        "name": "MILLI",
+        "url": "https://genius.com/artists/Milli",
+        "type": "regular",
+        "id": "2129414"
+      },
+      {
+        "name": "millkzy",
+        "url": "https://genius.com/artists/Millkzy",
+        "type": "regular",
+        "id": "4013925"
+      },
+      {
+        "name": "The Mills Brothers",
+        "url": "https://genius.com/artists/The-mills-brothers",
+        "type": "regular",
+        "id": "225410"
+      },
+      {
+        "name": "Milo j",
+        "url": "https://genius.com/artists/Milo-j",
+        "type": "regular",
+        "id": "3279852"
+      },
+      {
+        "name": "Milo Manheim",
+        "url": "https://genius.com/artists/Milo-manheim",
+        "type": "regular",
+        "id": "1395497"
+      },
+      {
+        "name": "Mimi Mercedez",
+        "url": "https://genius.com/artists/Mimi-mercedez",
+        "type": "regular",
+        "id": "220572"
+      },
+      {
+        "name": "Mimi Webb",
+        "url": "https://genius.com/artists/Mimi-webb",
+        "type": "regular",
+        "id": "1409266"
+      },
+      {
+        "name": "Mina",
+        "url": "https://genius.com/artists/Mina",
+        "type": "regular",
+        "id": "11631"
+      },
+      {
+        "name": "MINACELENTANO",
+        "url": "https://genius.com/artists/Minacelentano",
+        "type": "regular",
+        "id": "1262540"
+      },
+      {
+        "name": "Минаева (Minaeva)",
+        "url": "https://genius.com/artists/Minaeva",
+        "type": "regular",
+        "id": "2406013"
+      },
+      {
+        "name": "Mindless Self Indulgence",
+        "url": "https://genius.com/artists/Mindless-self-indulgence",
+        "type": "regular",
+        "id": "43391"
+      },
+      {
+        "name": "The Minds Of 99",
+        "url": "https://genius.com/artists/The-minds-of-99",
+        "type": "regular",
+        "id": "453001"
+      },
+      {
+        "name": "The Minions",
+        "url": "https://genius.com/artists/The-minions",
+        "type": "regular",
+        "id": "387485"
+      },
+      {
+        "name": "Minister GUC",
+        "url": "https://genius.com/artists/Minister-guc",
+        "type": "regular",
+        "id": "3147058"
+      },
+      {
+        "name": "Ministry",
+        "url": "https://genius.com/artists/Ministry",
+        "type": "regular",
+        "id": "71885"
+      },
+      {
+        "name": "MINNIE",
+        "url": "https://genius.com/artists/Minnie",
+        "type": "regular",
+        "id": "1559151"
+      },
+      {
+        "name": "Minnie Riperton",
+        "url": "https://genius.com/artists/Minnie-riperton",
+        "type": "regular",
+        "id": "25699"
+      },
+      {
+        "name": "Minor Threat",
+        "url": "https://genius.com/artists/Minor-threat",
+        "type": "regular",
+        "id": "17538"
+      },
+      {
+        "name": "Mint Condition",
+        "url": "https://genius.com/artists/Mint-condition",
+        "type": "regular",
+        "id": "40945"
+      },
+      {
+        "name": "Minutemen",
+        "url": "https://genius.com/artists/Minutemen",
+        "type": "regular",
+        "id": "75361"
+      },
+      {
+        "name": "Miracle Musical",
+        "url": "https://genius.com/artists/Miracle-musical",
+        "type": "regular",
+        "id": "963509"
+      },
+      {
+        "name": "Miracle of Sound",
+        "url": "https://genius.com/artists/Miracle-of-sound",
+        "type": "regular",
+        "id": "78159"
+      },
+      {
+        "name": "Miranda​!",
+        "url": "https://genius.com/artists/Miranda",
+        "type": "regular",
+        "id": "7779"
+      },
+      {
+        "name": "Miranda Cosgrove",
+        "url": "https://genius.com/artists/Miranda-cosgrove",
+        "type": "regular",
+        "id": "159426"
+      },
+      {
+        "name": "Miranda Lambert",
+        "url": "https://genius.com/artists/Miranda-lambert",
+        "type": "regular",
+        "id": "22511"
+      },
+      {
+        "name": "MIRAVI",
+        "url": "https://genius.com/artists/Miravi",
+        "type": "regular",
+        "id": "2793071"
+      },
+      {
+        "name": "Мираж (Mirazh Band)",
+        "url": "https://genius.com/artists/Mirazh-band",
+        "type": "regular",
+        "id": "3762662"
+      },
+      {
+        "name": "Mirella",
+        "url": "https://genius.com/artists/Mirella",
+        "type": "regular",
+        "id": "3709685"
+      },
+      {
+        "name": "Miriam Makeba",
+        "url": "https://genius.com/artists/Miriam-makeba",
+        "type": "regular",
+        "id": "277669"
+      },
+      {
+        "name": "Miriana Conte",
+        "url": "https://genius.com/artists/Miriana-conte",
+        "type": "regular",
+        "id": "3003907"
+      },
+      {
+        "name": "Mirèle",
+        "url": "https://genius.com/artists/Mirele",
+        "type": "regular",
+        "id": "1214007"
+      },
+      {
+        "name": "Mir Nicolás",
+        "url": "https://genius.com/artists/Mir-nicolas",
+        "type": "regular",
+        "id": "1504496"
+      },
+      {
+        "name": "MIROSLAVA (RUS)",
+        "url": "https://genius.com/artists/Miroslava-rus",
+        "type": "regular",
+        "id": "3593493"
+      },
+      {
+        "name": "Misfits",
+        "url": "https://genius.com/artists/Misfits",
+        "type": "regular",
+        "id": "711"
+      },
+      {
+        "name": "Миша Марвин (Misha Marvin)",
+        "url": "https://genius.com/artists/Misha-marvin",
+        "type": "regular",
+        "id": "1125709"
+      },
+      {
+        "name": "Miss Construction",
+        "url": "https://genius.com/artists/Miss-construction",
+        "type": "regular",
+        "id": "358620"
+      },
+      {
+        "name": "The Mississippi Mass Choir",
+        "url": "https://genius.com/artists/The-mississippi-mass-choir",
+        "type": "regular",
+        "id": "360065"
+      },
+      {
+        "name": "Miss Li",
+        "url": "https://genius.com/artists/Miss-li",
+        "type": "regular",
+        "id": "222095"
+      },
+      {
+        "name": "Missy Elliott",
+        "url": "https://genius.com/artists/Missy-elliott",
+        "type": "regular",
+        "id": "1529"
+      },
+      {
+        "name": "Mr. Big",
+        "url": "https://genius.com/artists/Mr-big",
+        "type": "regular",
+        "id": "189785"
+      },
+      {
+        "name": "Mr. Bungle",
+        "url": "https://genius.com/artists/Mr-bungle",
+        "type": "regular",
+        "id": "62761"
+      },
+      {
+        "name": "Mr. Cardamom",
+        "url": "https://genius.com/artists/Mr-cardamom",
+        "type": "regular",
+        "id": "1909829"
+      },
+      {
+        "name": "Mr. Credo",
+        "url": "https://genius.com/artists/Mr-credo",
+        "type": "regular",
+        "id": "362754"
+      },
+      {
+        "name": "Mr. Goatee",
+        "url": "https://genius.com/artists/Mr-goatee",
+        "type": "regular",
+        "id": "2203688"
+      },
+      {
+        "name": "Mr. Mister",
+        "url": "https://genius.com/artists/Mr-mister",
+        "type": "regular",
+        "id": "139628"
+      },
+      {
+        "name": "Mr. Vegas",
+        "url": "https://genius.com/artists/Mr-vegas",
+        "type": "regular",
+        "id": "5446"
+      },
+      {
+        "name": "Mr. Weebl",
+        "url": "https://genius.com/artists/Mr-weebl",
+        "type": "regular",
+        "id": "46658"
+      },
+      {
+        "name": "Mister You",
+        "url": "https://genius.com/artists/Mister-you",
+        "type": "regular",
+        "id": "1375"
+      },
+      {
+        "name": "Mitchell Hope",
+        "url": "https://genius.com/artists/Mitchell-hope",
+        "type": "regular",
+        "id": "582423"
+      },
+      {
+        "name": "Mithoon",
+        "url": "https://genius.com/artists/Mithoon",
+        "type": "regular",
+        "id": "386548"
+      },
+      {
+        "name": "Mix (RUS)",
+        "url": "https://genius.com/artists/Mix-rus",
+        "type": "regular",
+        "id": "3722215"
+      },
+      {
+        "name": "Mixtape Madness",
+        "url": "https://genius.com/artists/Mixtape-madness",
+        "type": "regular",
+        "id": "1272039"
+      },
+      {
+        "name": "Miyagi",
+        "url": "https://genius.com/artists/Miyagi",
+        "type": "regular",
+        "id": "70468"
+      },
+      {
+        "name": "Miyagi & Andy Panda",
+        "url": "https://genius.com/artists/Miyagi-and-andy-panda",
+        "type": "regular",
+        "id": "816522"
+      },
+      {
+        "name": "Miyagi & Эндшпиль (Endspiel)",
+        "url": "https://genius.com/artists/Miyagi-and-endspiel",
+        "type": "regular",
+        "id": "2945418"
+      },
+      {
+        "name": "MJ Cole",
+        "url": "https://genius.com/artists/Mj-cole",
+        "type": "regular",
+        "id": "189364"
+      },
+      {
+        "name": "MJ Lenderman",
+        "url": "https://genius.com/artists/Mj-lenderman",
+        "type": "regular",
+        "id": "1169786"
+      },
+      {
+        "name": "MK",
+        "url": "https://genius.com/artists/Mk",
+        "type": "regular",
+        "id": "14318"
+      },
+      {
+        "name": "Mk.gee",
+        "url": "https://genius.com/artists/Mkgee",
+        "type": "regular",
+        "id": "1238763"
+      },
+      {
+        "name": "MKTO",
+        "url": "https://genius.com/artists/Mkto",
+        "type": "regular",
+        "id": "37434"
+      },
+      {
+        "name": "M Lisa",
+        "url": "https://genius.com/artists/M-lisa",
+        "type": "regular",
+        "id": "3687076"
+      },
+      {
+        "name": "Måneskin",
+        "url": "https://genius.com/artists/Maneskin",
+        "type": "regular",
+        "id": "1271279"
+      },
+      {
+        "name": "Многоточие (Mnogotochie)",
+        "url": "https://genius.com/artists/Mnogotochie",
+        "type": "regular",
+        "id": "1250057"
+      },
+      {
+        "name": "Mnogoznaal",
+        "url": "https://genius.com/artists/Mnogoznaal",
+        "type": "regular",
+        "id": "186218"
+      },
+      {
+        "name": "MO3",
+        "url": "https://genius.com/artists/Mo3",
+        "type": "regular",
+        "id": "628981"
+      },
+      {
+        "name": "Mobb Deep",
+        "url": "https://genius.com/artists/Mobb-deep",
+        "type": "regular",
+        "id": "251"
+      },
+      {
+        "name": "Moby",
+        "url": "https://genius.com/artists/Moby",
+        "type": "regular",
+        "id": "8196"
+      },
+      {
+        "name": "Modà",
+        "url": "https://genius.com/artists/Moda",
+        "type": "regular",
+        "id": "3110"
+      },
+      {
+        "name": "Modd",
+        "url": "https://genius.com/artists/Modd",
+        "type": "regular",
+        "id": "1618392"
+      },
+      {
+        "name": "Model",
+        "url": "https://genius.com/artists/Model",
+        "type": "regular",
+        "id": "306292"
+      },
+      {
+        "name": "Model/Actriz",
+        "url": "https://genius.com/artists/Model-actriz",
+        "type": "regular",
+        "id": "2154904"
+      },
+      {
+        "name": "Modern Baseball",
+        "url": "https://genius.com/artists/Modern-baseball",
+        "type": "regular",
+        "id": "142540"
+      },
+      {
+        "name": "The Modern Lovers",
+        "url": "https://genius.com/artists/The-modern-lovers",
+        "type": "regular",
+        "id": "33323"
+      },
+      {
+        "name": "Modern Talking",
+        "url": "https://genius.com/artists/Modern-talking",
+        "type": "regular",
+        "id": "212270"
+      },
+      {
+        "name": "Modest Mouse",
+        "url": "https://genius.com/artists/Modest-mouse",
+        "type": "regular",
+        "id": "14075"
+      },
+      {
+        "name": "Młody West",
+        "url": "https://genius.com/artists/Mody-west",
+        "type": "regular",
+        "id": "1512712"
+      },
+      {
+        "name": "Mohab Omer - مهاب عمر",
+        "url": "https://genius.com/artists/Mohab-omer",
+        "type": "regular",
+        "id": "2273502"
+      },
+      {
+        "name": "Mohamed Hamaki - محمد حماقي",
+        "url": "https://genius.com/artists/Mohamed-hamaki",
+        "type": "regular",
+        "id": "480318"
+      },
+      {
+        "name": "Mohamed Mounir - محمد منير",
+        "url": "https://genius.com/artists/Mohamed-mounir",
+        "type": "regular",
+        "id": "1122153"
+      },
+      {
+        "name": "Mohammed Irfan",
+        "url": "https://genius.com/artists/Mohammed-irfan",
+        "type": "regular",
+        "id": "2439560"
+      },
+      {
+        "name": "Mohammed Rafi",
+        "url": "https://genius.com/artists/Mohammed-rafi",
+        "type": "regular",
+        "id": "353784"
+      },
+      {
+        "name": "Moheener Ghoraguli , Krosswindz",
+        "url": "https://genius.com/artists/Moheener-ghoraguli-krosswindz",
+        "type": "regular",
+        "id": "2548008"
+      },
+      {
+        "name": "Mohit Chauhan",
+        "url": "https://genius.com/artists/Mohit-chauhan",
+        "type": "regular",
+        "id": "17032"
+      },
+      {
+        "name": "Mohombi",
+        "url": "https://genius.com/artists/Mohombi",
+        "type": "regular",
+        "id": "19133"
+      },
+      {
+        "name": "Moira Dela Torre",
+        "url": "https://genius.com/artists/Moira-dela-torre",
+        "type": "regular",
+        "id": "531348"
+      },
+      {
+        "name": "Молчат Дома (Molchat Doma)",
+        "url": "https://genius.com/artists/Molchat-doma",
+        "type": "regular",
+        "id": "1737285"
+      },
+      {
+        "name": "Moldanazar",
+        "url": "https://genius.com/artists/Moldanazar",
+        "type": "regular",
+        "id": "2223018"
+      },
+      {
+        "name": "The Moldy Peaches",
+        "url": "https://genius.com/artists/The-moldy-peaches",
+        "type": "regular",
+        "id": "62102"
+      },
+      {
+        "name": "Molly Sandén",
+        "url": "https://genius.com/artists/Molly-sanden",
+        "type": "regular",
+        "id": "381965"
+      },
+      {
+        "name": "Molly Santana",
+        "url": "https://genius.com/artists/Molly-santana",
+        "type": "regular",
+        "id": "3701263"
+      },
+      {
+        "name": "молодёжьвыбираеткосмос (molodezhvibiraetkosmos)",
+        "url": "https://genius.com/artists/Molodezhvibiraetkosmos",
+        "type": "regular",
+        "id": "1666029"
+      },
+      {
+        "name": "молодой калуга (molodoy kaluga)",
+        "url": "https://genius.com/artists/Molodoy-kaluga",
+        "type": "regular",
+        "id": "3457857"
+      },
+      {
+        "name": "Молодой Платон (Molodoy Platon)",
+        "url": "https://genius.com/artists/Molodoy-platon",
+        "type": "regular",
+        "id": "1999112"
+      },
+      {
+        "name": "Molotov",
+        "url": "https://genius.com/artists/Molotov",
+        "type": "regular",
+        "id": "14483"
+      },
+      {
+        "name": "Mom Jeans.",
+        "url": "https://genius.com/artists/Mom-jeans",
+        "type": "regular",
+        "id": "1036748"
+      },
+      {
+        "name": "Mommy Long Legs",
+        "url": "https://genius.com/artists/Mommy-long-legs",
+        "type": "regular",
+        "id": "546304"
+      },
+      {
+        "name": "MONA",
+        "url": "https://genius.com/artists/Mona",
+        "type": "regular",
+        "id": "2152786"
+      },
+      {
+        "name": "Monaleo",
+        "url": "https://genius.com/artists/Monaleo",
+        "type": "regular",
+        "id": "2707700"
+      },
+      {
+        "name": "Monali Thakur",
+        "url": "https://genius.com/artists/Monali-thakur",
+        "type": "regular",
+        "id": "371079"
+      },
+      {
+        "name": "MONATIK",
+        "url": "https://genius.com/artists/Monatik",
+        "type": "regular",
+        "id": "1108418"
+      },
+      {
+        "name": "Mondo Marcio",
+        "url": "https://genius.com/artists/Mondo-marcio",
+        "type": "regular",
+        "id": "43257"
+      },
+      {
+        "name": "Monet192",
+        "url": "https://genius.com/artists/Monet192",
+        "type": "regular",
+        "id": "1218906"
+      },
+      {
+        "name": "Монеточка (Monetochka)",
+        "url": "https://genius.com/artists/Monetochka",
+        "type": "regular",
+        "id": "638315"
+      },
+      {
+        "name": "Moneybagg Yo",
+        "url": "https://genius.com/artists/Moneybagg-yo",
+        "type": "regular",
+        "id": "572354"
+      },
+      {
+        "name": "Money Boy",
+        "url": "https://genius.com/artists/Money-boy",
+        "type": "regular",
+        "id": "13383"
+      },
+      {
+        "name": "MONEYKEN",
+        "url": "https://genius.com/artists/Moneyken",
+        "type": "regular",
+        "id": "2260433"
+      },
+      {
+        "name": "Money Man",
+        "url": "https://genius.com/artists/Money-man",
+        "type": "regular",
+        "id": "26968"
+      },
+      {
+        "name": "MoneySign Suede",
+        "url": "https://genius.com/artists/Moneysign-suede",
+        "type": "regular",
+        "id": "2409799"
+      },
+      {
+        "name": "Monica",
+        "url": "https://genius.com/artists/Monica",
+        "type": "regular",
+        "id": "5437"
+      },
+      {
+        "name": "The Monkees",
+        "url": "https://genius.com/artists/The-monkees",
+        "type": "regular",
+        "id": "34609"
+      },
+      {
+        "name": "Mon Laferte",
+        "url": "https://genius.com/artists/Mon-laferte",
+        "type": "regular",
+        "id": "484307"
+      },
+      {
+        "name": "MONSTA X",
+        "url": "https://genius.com/artists/Monsta-x",
+        "type": "regular",
+        "id": "653084"
+      },
+      {
+        "name": "Monster High",
+        "url": "https://genius.com/artists/Monster-high",
+        "type": "regular",
+        "id": "531648"
+      },
+      {
+        "name": "Monster Magnet",
+        "url": "https://genius.com/artists/Monster-magnet",
+        "type": "regular",
+        "id": "60862"
+      },
+      {
+        "name": "Mont",
+        "url": "https://genius.com/artists/Mont",
+        "type": "regular",
+        "id": "12986"
+      },
+      {
+        "name": "Montana 700",
+        "url": "https://genius.com/artists/Montana-700",
+        "type": "regular",
+        "id": "3333905"
+      },
+      {
+        "name": "Montana of 300",
+        "url": "https://genius.com/artists/Montana-of-300",
+        "type": "regular",
+        "id": "35857"
+      },
+      {
+        "name": "Montell Fish",
+        "url": "https://genius.com/artists/Montell-fish",
+        "type": "regular",
+        "id": "325439"
+      },
+      {
+        "name": "Montez",
+        "url": "https://genius.com/artists/Montez",
+        "type": "regular",
+        "id": "4240"
+      },
+      {
+        "name": "Monty Python",
+        "url": "https://genius.com/artists/Monty-python",
+        "type": "regular",
+        "id": "42120"
+      },
+      {
+        "name": "The Moody Blues",
+        "url": "https://genius.com/artists/The-moody-blues",
+        "type": "regular",
+        "id": "35873"
+      },
+      {
+        "name": "Moonchild Sanelly",
+        "url": "https://genius.com/artists/Moonchild-sanelly",
+        "type": "regular",
+        "id": "1296878"
+      },
+      {
+        "name": "Moonstar88",
+        "url": "https://genius.com/artists/Moonstar88",
+        "type": "regular",
+        "id": "379523"
+      },
+      {
+        "name": "Moon Walker",
+        "url": "https://genius.com/artists/Moon-walker",
+        "type": "regular",
+        "id": "2266534"
+      },
+      {
+        "name": "Mora",
+        "url": "https://genius.com/artists/Mora",
+        "type": "regular",
+        "id": "1254985"
+      },
+      {
+        "name": "Morad",
+        "url": "https://genius.com/artists/Morad",
+        "type": "regular",
+        "id": "1900428"
+      },
+      {
+        "name": "Morat",
+        "url": "https://genius.com/artists/Morat",
+        "type": "regular",
+        "id": "491975"
+      },
+      {
+        "name": "Morcheeba",
+        "url": "https://genius.com/artists/Morcheeba",
+        "type": "regular",
+        "id": "7703"
+      },
+      {
+        "name": "MORGENSHTERN",
+        "url": "https://genius.com/artists/Morgenshtern",
+        "type": "regular",
+        "id": "1267272"
+      },
+      {
+        "name": "Mori Calliope",
+        "url": "https://genius.com/artists/Mori-calliope",
+        "type": "regular",
+        "id": "2394927"
+      },
+      {
+        "name": "Morissette",
+        "url": "https://genius.com/artists/Morissette",
+        "type": "regular",
+        "id": "484154"
+      },
+      {
+        "name": "Moro",
+        "url": "https://genius.com/artists/Moro",
+        "type": "regular",
+        "id": "1056519"
+      },
+      {
+        "name": "Morpheuz",
+        "url": "https://genius.com/artists/Morpheuz",
+        "type": "regular",
+        "id": "1733386"
+      },
+      {
+        "name": "Morphine",
+        "url": "https://genius.com/artists/Morphine",
+        "type": "regular",
+        "id": "314099"
+      },
+      {
+        "name": "Morray",
+        "url": "https://genius.com/artists/Morray",
+        "type": "regular",
+        "id": "2456788"
+      },
+      {
+        "name": "Morrissey",
+        "url": "https://genius.com/artists/Morrissey",
+        "type": "regular",
+        "id": "39064"
+      },
+      {
+        "name": "Mortal (POL)",
+        "url": "https://genius.com/artists/Mortal-pol",
+        "type": "regular",
+        "id": "3044904"
+      },
+      {
+        "name": "​mor ve ötesi",
+        "url": "https://genius.com/artists/Mor-ve-otesi",
+        "type": "regular",
+        "id": "359517"
+      },
+      {
+        "name": "MOSSBACK",
+        "url": "https://genius.com/artists/Mossback",
+        "type": "regular",
+        "id": "3649387"
+      },
+      {
+        "name": "Mostafa Elgen - مصطفى الجن",
+        "url": "https://genius.com/artists/Mostafa-elgen",
+        "type": "regular",
+        "id": "3144859"
+      },
+      {
+        "name": "Mostro",
+        "url": "https://genius.com/artists/Mostro",
+        "type": "regular",
+        "id": "101405"
+      },
+      {
+        "name": "Мосты (Mosty) (UKR)",
+        "url": "https://genius.com/artists/Mosty-ukr",
+        "type": "regular",
+        "id": "1077467"
+      },
+      {
+        "name": "МОТ (MOT)",
+        "url": "https://genius.com/artists/Mot",
+        "type": "regular",
+        "id": "1057027"
+      },
+      {
+        "name": "Mother Goose Club",
+        "url": "https://genius.com/artists/Mother-goose-club",
+        "type": "regular",
+        "id": "531868"
+      },
+      {
+        "name": "Mother Mother",
+        "url": "https://genius.com/artists/Mother-mother",
+        "type": "regular",
+        "id": "26948"
+      },
+      {
+        "name": "The Mothers of Invention",
+        "url": "https://genius.com/artists/The-mothers-of-invention",
+        "type": "regular",
+        "id": "2523835"
+      },
+      {
+        "name": "MOTHICA",
+        "url": "https://genius.com/artists/Mothica",
+        "type": "regular",
+        "id": "612062"
+      },
+      {
+        "name": "Motion City Soundtrack",
+        "url": "https://genius.com/artists/Motion-city-soundtrack",
+        "type": "regular",
+        "id": "21393"
+      },
+      {
+        "name": "Motionless in White",
+        "url": "https://genius.com/artists/Motionless-in-white",
+        "type": "regular",
+        "id": "33357"
+      },
+      {
+        "name": "Motive",
+        "url": "https://genius.com/artists/Motive",
+        "type": "regular",
+        "id": "1213575"
+      },
+      {
+        "name": "Motörhead",
+        "url": "https://genius.com/artists/Motorhead",
+        "type": "regular",
+        "id": "14780"
+      },
+      {
+        "name": "Mott the Hoople",
+        "url": "https://genius.com/artists/Mott-the-hoople",
+        "type": "regular",
+        "id": "39163"
+      },
+      {
+        "name": "The Mountain Goats",
+        "url": "https://genius.com/artists/The-mountain-goats",
+        "type": "regular",
+        "id": "25815"
+      },
+      {
+        "name": "Mount Eerie",
+        "url": "https://genius.com/artists/Mount-eerie",
+        "type": "regular",
+        "id": "187767"
+      },
+      {
+        "name": "Moushumi Bhowmik",
+        "url": "https://genius.com/artists/Moushumi-bhowmik",
+        "type": "regular",
+        "id": "3201731"
+      },
+      {
+        "name": "Mousv - موسى",
+        "url": "https://genius.com/artists/Mousv",
+        "type": "regular",
+        "id": "1423132"
+      },
+      {
+        "name": "Movements",
+        "url": "https://genius.com/artists/Movements",
+        "type": "regular",
+        "id": "549655"
+      },
+      {
+        "name": "Movie Scripts",
+        "url": "https://genius.com/artists/Movie-scripts",
+        "type": "regular",
+        "id": "4256051"
+      },
+      {
+        "name": "Moving In Silence",
+        "url": "https://genius.com/artists/Moving-in-silence",
+        "type": "regular",
+        "id": "3720321"
+      },
+      {
+        "name": "Moving Mountains",
+        "url": "https://genius.com/artists/Moving-mountains",
+        "type": "regular",
+        "id": "358864"
+      },
+      {
+        "name": "Mozzik",
+        "url": "https://genius.com/artists/Mozzik",
+        "type": "regular",
+        "id": "985073"
+      },
+      {
+        "name": "Mozzy",
+        "url": "https://genius.com/artists/Mozzy",
+        "type": "regular",
+        "id": "462535"
+      },
+      {
+        "name": "mraverageguy",
+        "url": "https://genius.com/artists/Mraverageguy",
+        "type": "regular",
+        "id": "4376260"
+      },
+      {
+        "name": "Mr Eazi",
+        "url": "https://genius.com/artists/Mr-eazi",
+        "type": "regular",
+        "id": "657162"
+      },
+      {
+        "name": "Mr.Kitty",
+        "url": "https://genius.com/artists/Mrkitty",
+        "type": "regular",
+        "id": "651608"
+      },
+      {
+        "name": "Mr Lambo",
+        "url": "https://genius.com/artists/Mr-lambo",
+        "type": "regular",
+        "id": "1741455"
+      },
+      {
+        "name": "​mrld",
+        "url": "https://genius.com/artists/Mrld",
+        "type": "regular",
+        "id": "2563374"
+      },
+      {
+        "name": "M Row",
+        "url": "https://genius.com/artists/M-row",
+        "type": "regular",
+        "id": "3576338"
+      },
+      {
+        "name": "Mrs. GREEN APPLE",
+        "url": "https://genius.com/artists/Mrs-green-apple",
+        "type": "regular",
+        "id": "1858267"
+      },
+      {
+        "name": "Mr Traumatik",
+        "url": "https://genius.com/artists/Mr-traumatik",
+        "type": "regular",
+        "id": "129673"
+      },
+      {
+        "name": "楊家成 (MrYang)",
+        "url": "https://genius.com/artists/Mryang",
+        "type": "regular",
+        "id": "4076385"
+      },
+      {
+        "name": "Müslüm Gürses",
+        "url": "https://genius.com/artists/Muslum-gurses",
+        "type": "regular",
+        "id": "370193"
+      },
+      {
+        "name": "Mt. Joy",
+        "url": "https://genius.com/artists/Mt-joy",
+        "type": "regular",
+        "id": "1025653"
+      },
+      {
+        "name": "Mötley Crüe",
+        "url": "https://genius.com/artists/Motley-crue",
+        "type": "regular",
+        "id": "34312"
+      },
+      {
+        "name": "Mucco",
+        "url": "https://genius.com/artists/Mucco",
+        "type": "regular",
+        "id": "3752529"
+      },
+      {
+        "name": "Muddy Waters",
+        "url": "https://genius.com/artists/Muddy-waters",
+        "type": "regular",
+        "id": "65145"
+      },
+      {
+        "name": "Mudvayne",
+        "url": "https://genius.com/artists/Mudvayne",
+        "type": "regular",
+        "id": "67442"
+      },
+      {
+        "name": "Mufasa069",
+        "url": "https://genius.com/artists/Mufasa069",
+        "type": "regular",
+        "id": "2341376"
+      },
+      {
+        "name": "Muhamed Brkić Hamo",
+        "url": "https://genius.com/artists/Muhamed-brkic-hamo",
+        "type": "regular",
+        "id": "3883116"
+      },
+      {
+        "name": "Mukesh",
+        "url": "https://genius.com/artists/Mukesh",
+        "type": "regular",
+        "id": "1697474"
+      },
+      {
+        "name": "Mukhtar Sahota",
+        "url": "https://genius.com/artists/Mukhtar-sahota",
+        "type": "regular",
+        "id": "4064186"
+      },
+      {
+        "name": "МУККА (MUKKA)",
+        "url": "https://genius.com/artists/Mukka",
+        "type": "regular",
+        "id": "1728073"
+      },
+      {
+        "name": "Mumford & Sons",
+        "url": "https://genius.com/artists/Mumford-and-sons",
+        "type": "regular",
+        "id": "1170"
+      },
+      {
+        "name": "Мумий Тролль (Mumiy Troll)",
+        "url": "https://genius.com/artists/Mumiy-troll",
+        "type": "regular",
+        "id": "1025544"
+      },
+      {
+        "name": "Mumle",
+        "url": "https://genius.com/artists/Mumle",
+        "type": "regular",
+        "id": "3669135"
+      },
+      {
+        "name": "MUNA",
+        "url": "https://genius.com/artists/Muna",
+        "type": "regular",
+        "id": "223308"
+      },
+      {
+        "name": "Muni Long",
+        "url": "https://genius.com/artists/Muni-long",
+        "type": "regular",
+        "id": "2418665"
+      },
+      {
+        "name": "MUPP",
+        "url": "https://genius.com/artists/Mupp",
+        "type": "regular",
+        "id": "2282932"
+      },
+      {
+        "name": "The Muppets",
+        "url": "https://genius.com/artists/The-muppets",
+        "type": "regular",
+        "id": "334479"
+      },
+      {
+        "name": "Murat Boz",
+        "url": "https://genius.com/artists/Murat-boz",
+        "type": "regular",
+        "id": "386590"
+      },
+      {
+        "name": "Murat Dalkılıç",
+        "url": "https://genius.com/artists/Murat-dalklc",
+        "type": "regular",
+        "id": "480081"
+      },
+      {
+        "name": "Murat Göğebakan",
+        "url": "https://genius.com/artists/Murat-gogebakan",
+        "type": "regular",
+        "id": "2467401"
+      },
+      {
+        "name": "Мурат Насыров (Murat Nasyrov)",
+        "url": "https://genius.com/artists/Murat-nasyrov",
+        "type": "regular",
+        "id": "1231658"
+      },
+      {
+        "name": "Murda",
+        "url": "https://genius.com/artists/Murda",
+        "type": "regular",
+        "id": "165091"
+      },
+      {
+        "name": "Murda Beatz",
+        "url": "https://genius.com/artists/Murda-beatz",
+        "type": "regular",
+        "id": "95489"
+      },
+      {
+        "name": "Murder by Death",
+        "url": "https://genius.com/artists/Murder-by-death",
+        "type": "regular",
+        "id": "94450"
+      },
+      {
+        "name": "Murovei",
+        "url": "https://genius.com/artists/Murovei",
+        "type": "regular",
+        "id": "1050884"
+      },
+      {
+        "name": "Murray Head",
+        "url": "https://genius.com/artists/Murray-head",
+        "type": "regular",
+        "id": "8230"
+      },
+      {
+        "name": "Murtuza Khan",
+        "url": "https://genius.com/artists/Murtuza-khan",
+        "type": "regular",
+        "id": "1272286"
+      },
+      {
+        "name": "Murubutu",
+        "url": "https://genius.com/artists/Murubutu",
+        "type": "regular",
+        "id": "251575"
+      },
+      {
+        "name": "Musa Eroğlu",
+        "url": "https://genius.com/artists/Musa-eroglu",
+        "type": "regular",
+        "id": "480774"
+      },
+      {
+        "name": "Muscadine Bloodline",
+        "url": "https://genius.com/artists/Muscadine-bloodline",
+        "type": "regular",
+        "id": "1047416"
+      },
+      {
+        "name": "Muse",
+        "url": "https://genius.com/artists/Muse",
+        "type": "regular",
+        "id": "13088"
+      },
+      {
+        "name": "Musikatha",
+        "url": "https://genius.com/artists/Musikatha",
+        "type": "regular",
+        "id": "1031757"
+      },
+      {
+        "name": "Musiq Soulchild",
+        "url": "https://genius.com/artists/Musiq-soulchild",
+        "type": "regular",
+        "id": "2605"
+      },
+      {
+        "name": "Muslim - مسلم",
+        "url": "https://genius.com/artists/Muslim",
+        "type": "regular",
+        "id": "20732"
+      },
+      {
+        "name": "Muslim (EG) - مُسلِم",
+        "url": "https://genius.com/artists/Muslim-eg",
+        "type": "regular",
+        "id": "3332185"
+      },
+      {
+        "name": "Муслим Магомаев (Muslim Magomaev)",
+        "url": "https://genius.com/artists/Muslim-magomaev",
+        "type": "regular",
+        "id": "1328918"
+      },
+      {
+        "name": "Mustafa",
+        "url": "https://genius.com/artists/Mustafa",
+        "type": "regular",
+        "id": "1034713"
+      },
+      {
+        "name": "Mustafa Sandal",
+        "url": "https://genius.com/artists/Mustafa-sandal",
+        "type": "regular",
+        "id": "355415"
+      },
+      {
+        "name": "Mustard",
+        "url": "https://genius.com/artists/Mustard",
+        "type": "regular",
+        "id": "29780"
+      },
+      {
+        "name": "Mustard Service",
+        "url": "https://genius.com/artists/Mustard-service",
+        "type": "regular",
+        "id": "1314938"
+      },
+      {
+        "name": "Muti",
+        "url": "https://genius.com/artists/Muti",
+        "type": "regular",
+        "id": "909467"
+      },
+      {
+        "name": "Da Muziqal Chef",
+        "url": "https://genius.com/artists/Da-muziqal-chef",
+        "type": "regular",
+        "id": "2607228"
+      },
+      {
+        "name": "MV Killa",
+        "url": "https://genius.com/artists/Mv-killa",
+        "type": "regular",
+        "id": "637316"
+      },
+      {
+        "name": "mvrk",
+        "url": "https://genius.com/artists/Mvrk",
+        "type": "regular",
+        "id": "3598897"
+      },
+      {
+        "name": "mxmtoon",
+        "url": "https://genius.com/artists/Mxmtoon",
+        "type": "regular",
+        "id": "1147436"
+      },
+      {
+        "name": "Mxrci",
+        "url": "https://genius.com/artists/Mxrci",
+        "type": "regular",
+        "id": "1877728"
+      },
+      {
+        "name": "MXZI",
+        "url": "https://genius.com/artists/Mxzi",
+        "type": "regular",
+        "id": "4368064"
+      },
+      {
+        "name": "Myaap",
+        "url": "https://genius.com/artists/Myaap",
+        "type": "regular",
+        "id": "3606812"
+      },
+      {
+        "name": "my bloody valentine",
+        "url": "https://genius.com/artists/My-bloody-valentine",
+        "type": "regular",
+        "id": "24533"
+      },
+      {
+        "name": "Myke Towers",
+        "url": "https://genius.com/artists/Myke-towers",
+        "type": "regular",
+        "id": "207701"
+      },
+      {
+        "name": "Myles Smith",
+        "url": "https://genius.com/artists/Myles-smith",
+        "type": "regular",
+        "id": "3680641"
+      },
+      {
+        "name": "My Little Pony",
+        "url": "https://genius.com/artists/My-little-pony",
+        "type": "regular",
+        "id": "2141809"
+      },
+      {
+        "name": "Mylène Farmer",
+        "url": "https://genius.com/artists/Mylene-farmer",
+        "type": "regular",
+        "id": "96493"
+      },
+      {
+        "name": "Моя Мишель (My Michelle)",
+        "url": "https://genius.com/artists/My-michelle",
+        "type": "regular",
+        "id": "1586467"
+      },
+      {
+        "name": "My Morning Jacket",
+        "url": "https://genius.com/artists/My-morning-jacket",
+        "type": "regular",
+        "id": "60652"
+      },
+      {
+        "name": "MYMP",
+        "url": "https://genius.com/artists/Mymp",
+        "type": "regular",
+        "id": "355054"
+      },
+      {
+        "name": "Myslovitz",
+        "url": "https://genius.com/artists/Myslovitz",
+        "type": "regular",
+        "id": "140564"
+      },
+      {
+        "name": "Mystikal",
+        "url": "https://genius.com/artists/Mystikal",
+        "type": "regular",
+        "id": "190"
+      },
+      {
+        "name": "mzlff",
+        "url": "https://genius.com/artists/Mzlff",
+        "type": "regular",
+        "id": "2322756"
+      }
+    ]
+  }
+}

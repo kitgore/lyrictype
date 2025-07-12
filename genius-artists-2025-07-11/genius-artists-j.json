@@ -1,0 +1,4513 @@
+{
+  "letter": "J",
+  "timestamp": "2025-07-11T09:23:58.190Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Jack Black",
+        "url": "https://genius.com/artists/Jack-black",
+        "type": "popular",
+        "id": "81195"
+      },
+      {
+        "name": "Jala Brat",
+        "url": "https://genius.com/artists/Jala-brat",
+        "type": "popular",
+        "id": "657927"
+      },
+      {
+        "name": "jaydes",
+        "url": "https://genius.com/artists/Jaydes",
+        "type": "popular",
+        "id": "2443871"
+      },
+      {
+        "name": "JAY-Z",
+        "url": "https://genius.com/artists/Jay-z",
+        "type": "popular",
+        "id": "2"
+      },
+      {
+        "name": "J. Cole",
+        "url": "https://genius.com/artists/J-cole",
+        "type": "popular",
+        "id": "69"
+      },
+      {
+        "name": "Jeff Buckley",
+        "url": "https://genius.com/artists/Jeff-buckley",
+        "type": "popular",
+        "id": "22481"
+      },
+      {
+        "name": "Jelly Roll",
+        "url": "https://genius.com/artists/Jelly-roll",
+        "type": "popular",
+        "id": "3333"
+      },
+      {
+        "name": "JENNIE",
+        "url": "https://genius.com/artists/Jennie",
+        "type": "popular",
+        "id": "95535"
+      },
+      {
+        "name": "Jessie Murph",
+        "url": "https://genius.com/artists/Jessie-murph",
+        "type": "popular",
+        "id": "2561089"
+      },
+      {
+        "name": "j-hope",
+        "url": "https://genius.com/artists/J-hope",
+        "type": "popular",
+        "id": "70112"
+      },
+      {
+        "name": "JID",
+        "url": "https://genius.com/artists/Jid",
+        "type": "popular",
+        "id": "324667"
+      },
+      {
+        "name": "JJ (AUT)",
+        "url": "https://genius.com/artists/Jj-aut",
+        "type": "popular",
+        "id": "4296414"
+      },
+      {
+        "name": "Johnny Cash",
+        "url": "https://genius.com/artists/Johnny-cash",
+        "type": "popular",
+        "id": "1167"
+      },
+      {
+        "name": "Jon Bellion",
+        "url": "https://genius.com/artists/Jon-bellion",
+        "type": "popular",
+        "id": "26593"
+      },
+      {
+        "name": "Jorge Rivera-Herrans",
+        "url": "https://genius.com/artists/Jorge-rivera-herrans",
+        "type": "popular",
+        "id": "2717914"
+      },
+      {
+        "name": "JPEGMAFIA",
+        "url": "https://genius.com/artists/Jpegmafia",
+        "type": "popular",
+        "id": "673285"
+      },
+      {
+        "name": "Judy Garland",
+        "url": "https://genius.com/artists/Judy-garland",
+        "type": "popular",
+        "id": "18193"
+      },
+      {
+        "name": "Juice WRLD",
+        "url": "https://genius.com/artists/Juice-wrld",
+        "type": "popular",
+        "id": "1237094"
+      },
+      {
+        "name": "Justin Bieber",
+        "url": "https://genius.com/artists/Justin-bieber",
+        "type": "popular",
+        "id": "357"
+      },
+      {
+        "name": "Justin Timberlake",
+        "url": "https://genius.com/artists/Justin-timberlake",
+        "type": "popular",
+        "id": "334"
+      }
+    ],
+    "regular": [
+      {
+        "name": "J9ueve",
+        "url": "https://genius.com/artists/J9ueve",
+        "type": "regular",
+        "id": "2310750"
+      },
+      {
+        "name": "Jaap Reesema",
+        "url": "https://genius.com/artists/Jaap-reesema",
+        "type": "regular",
+        "id": "458932"
+      },
+      {
+        "name": "Jašar Ahmedovski",
+        "url": "https://genius.com/artists/Jasar-ahmedovski",
+        "type": "regular",
+        "id": "1713931"
+      },
+      {
+        "name": "J Abdiel",
+        "url": "https://genius.com/artists/J-abdiel",
+        "type": "regular",
+        "id": "2412292"
+      },
+      {
+        "name": "J Abecia",
+        "url": "https://genius.com/artists/J-abecia",
+        "type": "regular",
+        "id": "2612840"
+      },
+      {
+        "name": "Jace!",
+        "url": "https://genius.com/artists/Jace",
+        "type": "regular",
+        "id": "2059531"
+      },
+      {
+        "name": "Jace June",
+        "url": "https://genius.com/artists/Jace-june",
+        "type": "regular",
+        "id": "2876442"
+      },
+      {
+        "name": "Jaci Velasquez",
+        "url": "https://genius.com/artists/Jaci-velasquez",
+        "type": "regular",
+        "id": "353626"
+      },
+      {
+        "name": "Jackboy",
+        "url": "https://genius.com/artists/Jackboy",
+        "type": "regular",
+        "id": "1036371"
+      },
+      {
+        "name": "JACKBOYS",
+        "url": "https://genius.com/artists/Jackboys",
+        "type": "regular",
+        "id": "2057199"
+      },
+      {
+        "name": "Jack Harlow",
+        "url": "https://genius.com/artists/Jack-harlow",
+        "type": "regular",
+        "id": "615747"
+      },
+      {
+        "name": "Jackie Hill Perry",
+        "url": "https://genius.com/artists/Jackie-hill-perry",
+        "type": "regular",
+        "id": "239957"
+      },
+      {
+        "name": "Jackie-O (RUS)",
+        "url": "https://genius.com/artists/Jackie-o-rus",
+        "type": "regular",
+        "id": "1079110"
+      },
+      {
+        "name": "Jackie Wilson",
+        "url": "https://genius.com/artists/Jackie-wilson",
+        "type": "regular",
+        "id": "91643"
+      },
+      {
+        "name": "Jack - J97",
+        "url": "https://genius.com/artists/Jack-j97",
+        "type": "regular",
+        "id": "2066201"
+      },
+      {
+        "name": "Jack Johnson",
+        "url": "https://genius.com/artists/Jack-johnson",
+        "type": "regular",
+        "id": "3833"
+      },
+      {
+        "name": "Jack Kays",
+        "url": "https://genius.com/artists/Jack-kays",
+        "type": "regular",
+        "id": "2329953"
+      },
+      {
+        "name": "Jack Murphy",
+        "url": "https://genius.com/artists/Jack-murphy",
+        "type": "regular",
+        "id": "117528"
+      },
+      {
+        "name": "Jack O'Connell",
+        "url": "https://genius.com/artists/Jack-oconnell",
+        "type": "regular",
+        "id": "1932408"
+      },
+      {
+        "name": "Jack Off Jill",
+        "url": "https://genius.com/artists/Jack-off-jill",
+        "type": "regular",
+        "id": "356599"
+      },
+      {
+        "name": "Jack's Mannequin",
+        "url": "https://genius.com/artists/Jacks-mannequin",
+        "type": "regular",
+        "id": "59540"
+      },
+      {
+        "name": "The Jackson 5",
+        "url": "https://genius.com/artists/The-jackson-5",
+        "type": "regular",
+        "id": "8662"
+      },
+      {
+        "name": "Jackson Browne",
+        "url": "https://genius.com/artists/Jackson-browne",
+        "type": "regular",
+        "id": "8658"
+      },
+      {
+        "name": "Jackson Dean",
+        "url": "https://genius.com/artists/Jackson-dean",
+        "type": "regular",
+        "id": "1840468"
+      },
+      {
+        "name": "The Jacksons",
+        "url": "https://genius.com/artists/The-jacksons",
+        "type": "regular",
+        "id": "92169"
+      },
+      {
+        "name": "Jackson Wang (王嘉爾)",
+        "url": "https://genius.com/artists/Jackson-wang",
+        "type": "regular",
+        "id": "1085294"
+      },
+      {
+        "name": "Jack Stauber",
+        "url": "https://genius.com/artists/Jack-stauber",
+        "type": "regular",
+        "id": "1369355"
+      },
+      {
+        "name": "Jack Stauber's Micropop",
+        "url": "https://genius.com/artists/Jack-staubers-micropop",
+        "type": "regular",
+        "id": "1878056"
+      },
+      {
+        "name": "Jack Van Cleaf",
+        "url": "https://genius.com/artists/Jack-van-cleaf",
+        "type": "regular",
+        "id": "1429834"
+      },
+      {
+        "name": "Jack White",
+        "url": "https://genius.com/artists/Jack-white",
+        "type": "regular",
+        "id": "12459"
+      },
+      {
+        "name": "Jack Wolfe",
+        "url": "https://genius.com/artists/Jack-wolfe",
+        "type": "regular",
+        "id": "3193034"
+      },
+      {
+        "name": "​jackzebra",
+        "url": "https://genius.com/artists/Jackzebra",
+        "type": "regular",
+        "id": "3333573"
+      },
+      {
+        "name": "Jacob Banks",
+        "url": "https://genius.com/artists/Jacob-banks",
+        "type": "regular",
+        "id": "56227"
+      },
+      {
+        "name": "Jacob Collier",
+        "url": "https://genius.com/artists/Jacob-collier",
+        "type": "regular",
+        "id": "530025"
+      },
+      {
+        "name": "Jacob Richmond",
+        "url": "https://genius.com/artists/Jacob-richmond",
+        "type": "regular",
+        "id": "2549160"
+      },
+      {
+        "name": "Jacquees",
+        "url": "https://genius.com/artists/Jacquees",
+        "type": "regular",
+        "id": "13616"
+      },
+      {
+        "name": "Jacqueline Chang",
+        "url": "https://genius.com/artists/Jacqueline-chang",
+        "type": "regular",
+        "id": "1151310"
+      },
+      {
+        "name": "Jacques Brel",
+        "url": "https://genius.com/artists/Jacques-brel",
+        "type": "regular",
+        "id": "26367"
+      },
+      {
+        "name": "Jada Kingdom",
+        "url": "https://genius.com/artists/Jada-kingdom",
+        "type": "regular",
+        "id": "1195010"
+      },
+      {
+        "name": "Jadakiss",
+        "url": "https://genius.com/artists/Jadakiss",
+        "type": "regular",
+        "id": "34"
+      },
+      {
+        "name": "JadaL - جدل",
+        "url": "https://genius.com/artists/Jadal",
+        "type": "regular",
+        "id": "1039083"
+      },
+      {
+        "name": "JADE",
+        "url": "https://genius.com/artists/Jade",
+        "type": "regular",
+        "id": "651264"
+      },
+      {
+        "name": "Jade LeMac",
+        "url": "https://genius.com/artists/Jade-lemac",
+        "type": "regular",
+        "id": "1522746"
+      },
+      {
+        "name": "Jaden",
+        "url": "https://genius.com/artists/Jaden",
+        "type": "regular",
+        "id": "12232"
+      },
+      {
+        "name": "Jaden Bojsen",
+        "url": "https://genius.com/artists/Jaden-bojsen",
+        "type": "regular",
+        "id": "1819884"
+      },
+      {
+        "name": "jades",
+        "url": "https://genius.com/artists/Jades",
+        "type": "regular",
+        "id": "1645499"
+      },
+      {
+        "name": "JAEHYUN (재현)",
+        "url": "https://genius.com/artists/Jaehyun",
+        "type": "regular",
+        "id": "1057425"
+      },
+      {
+        "name": "Jaeychino",
+        "url": "https://genius.com/artists/Jaeychino",
+        "type": "regular",
+        "id": "1997073"
+      },
+      {
+        "name": "Jagged Edge",
+        "url": "https://genius.com/artists/Jagged-edge",
+        "type": "regular",
+        "id": "869"
+      },
+      {
+        "name": "Jagjit Singh",
+        "url": "https://genius.com/artists/Jagjit-singh",
+        "type": "regular",
+        "id": "363409"
+      },
+      {
+        "name": "Jagwar Twin",
+        "url": "https://genius.com/artists/Jagwar-twin",
+        "type": "regular",
+        "id": "1572676"
+      },
+      {
+        "name": "Jah Cure",
+        "url": "https://genius.com/artists/Jah-cure",
+        "type": "regular",
+        "id": "15327"
+      },
+      {
+        "name": "Jaheim",
+        "url": "https://genius.com/artists/Jaheim",
+        "type": "regular",
+        "id": "93"
+      },
+      {
+        "name": "Jahh",
+        "url": "https://genius.com/artists/Jahh",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Jah Khalib",
+        "url": "https://genius.com/artists/Jah-khalib",
+        "type": "regular",
+        "id": "1128983"
+      },
+      {
+        "name": "Jahmal TGK",
+        "url": "https://genius.com/artists/Jahmal-tgk",
+        "type": "regular",
+        "id": "1198150"
+      },
+      {
+        "name": "Jahmiel",
+        "url": "https://genius.com/artists/Jahmiel",
+        "type": "regular",
+        "id": "456856"
+      },
+      {
+        "name": "Jaill",
+        "url": "https://genius.com/artists/Jaill",
+        "type": "regular",
+        "id": "1819477"
+      },
+      {
+        "name": "Jake Bugg",
+        "url": "https://genius.com/artists/Jake-bugg",
+        "type": "regular",
+        "id": "28963"
+      },
+      {
+        "name": "Jake Daniels",
+        "url": "https://genius.com/artists/Jake-daniels",
+        "type": "regular",
+        "id": "1667511"
+      },
+      {
+        "name": "Jake Hole",
+        "url": "https://genius.com/artists/Jake-hole",
+        "type": "regular",
+        "id": "3577650"
+      },
+      {
+        "name": "Jake La Furia",
+        "url": "https://genius.com/artists/Jake-la-furia",
+        "type": "regular",
+        "id": "33881"
+      },
+      {
+        "name": "Jake Miller",
+        "url": "https://genius.com/artists/Jake-miller",
+        "type": "regular",
+        "id": "23413"
+      },
+      {
+        "name": "​jake minch",
+        "url": "https://genius.com/artists/Jake-minch",
+        "type": "regular",
+        "id": "3525868"
+      },
+      {
+        "name": "Jakeneutron",
+        "url": "https://genius.com/artists/Jakeneutron",
+        "type": "regular",
+        "id": "1746165"
+      },
+      {
+        "name": "Jake Owen",
+        "url": "https://genius.com/artists/Jake-owen",
+        "type": "regular",
+        "id": "52309"
+      },
+      {
+        "name": "Jake Paul",
+        "url": "https://genius.com/artists/Jake-paul",
+        "type": "regular",
+        "id": "1147604"
+      },
+      {
+        "name": "Jakes Bejoy",
+        "url": "https://genius.com/artists/Jakes-bejoy",
+        "type": "regular",
+        "id": "1643071"
+      },
+      {
+        "name": "Jake Zyrus",
+        "url": "https://genius.com/artists/Jake-zyrus",
+        "type": "regular",
+        "id": "37247"
+      },
+      {
+        "name": "Jakone",
+        "url": "https://genius.com/artists/Jakone",
+        "type": "regular",
+        "id": "3221546"
+      },
+      {
+        "name": "Jalali Set",
+        "url": "https://genius.com/artists/Jalali-set",
+        "type": "regular",
+        "id": "3192556"
+      },
+      {
+        "name": "Jalen McMillan",
+        "url": "https://genius.com/artists/Jalen-mcmillan",
+        "type": "regular",
+        "id": "135503"
+      },
+      {
+        "name": "Jaloner",
+        "url": "https://genius.com/artists/Jaloner",
+        "type": "regular",
+        "id": "1049328"
+      },
+      {
+        "name": "Jamala",
+        "url": "https://genius.com/artists/Jamala",
+        "type": "regular",
+        "id": "354374"
+      },
+      {
+        "name": "Jamal (Blaq)",
+        "url": "https://genius.com/artists/Jamal-blaq",
+        "type": "regular",
+        "id": "3058924"
+      },
+      {
+        "name": "Jamal Roberts",
+        "url": "https://genius.com/artists/Jamal-roberts",
+        "type": "regular",
+        "id": "4442016"
+      },
+      {
+        "name": "JamBeatz",
+        "url": "https://genius.com/artists/Jambeatz",
+        "type": "regular",
+        "id": "59676"
+      },
+      {
+        "name": "Jamby El Favo",
+        "url": "https://genius.com/artists/Jamby-el-favo",
+        "type": "regular",
+        "id": "665887"
+      },
+      {
+        "name": "James",
+        "url": "https://genius.com/artists/James",
+        "type": "regular",
+        "id": "8384"
+      },
+      {
+        "name": "James and the Giant Peach Original Cast",
+        "url": "https://genius.com/artists/James-and-the-giant-peach-original-cast",
+        "type": "regular",
+        "id": "1098513"
+      },
+      {
+        "name": "James Arthur",
+        "url": "https://genius.com/artists/James-arthur",
+        "type": "regular",
+        "id": "34107"
+      },
+      {
+        "name": "James Bay",
+        "url": "https://genius.com/artists/James-bay",
+        "type": "regular",
+        "id": "221967"
+      },
+      {
+        "name": "James Blake",
+        "url": "https://genius.com/artists/James-blake",
+        "type": "regular",
+        "id": "13298"
+      },
+      {
+        "name": "James Blunt",
+        "url": "https://genius.com/artists/James-blunt",
+        "type": "regular",
+        "id": "11622"
+      },
+      {
+        "name": "James Brown",
+        "url": "https://genius.com/artists/James-brown",
+        "type": "regular",
+        "id": "8417"
+      },
+      {
+        "name": "James Brown & The Famous Flames",
+        "url": "https://genius.com/artists/James-brown-and-the-famous-flames",
+        "type": "regular",
+        "id": "344510"
+      },
+      {
+        "name": "James Cleveland",
+        "url": "https://genius.com/artists/James-cleveland",
+        "type": "regular",
+        "id": "375945"
+      },
+      {
+        "name": "James Corden",
+        "url": "https://genius.com/artists/James-corden",
+        "type": "regular",
+        "id": "181968"
+      },
+      {
+        "name": "James Hall & Worship And Praise",
+        "url": "https://genius.com/artists/James-hall-and-worship-and-praise",
+        "type": "regular",
+        "id": "351628"
+      },
+      {
+        "name": "James Hype",
+        "url": "https://genius.com/artists/James-hype",
+        "type": "regular",
+        "id": "1205384"
+      },
+      {
+        "name": "James Ingram",
+        "url": "https://genius.com/artists/James-ingram",
+        "type": "regular",
+        "id": "141661"
+      },
+      {
+        "name": "James Joyce",
+        "url": "https://genius.com/artists/James-joyce",
+        "type": "regular",
+        "id": "22971"
+      },
+      {
+        "name": "James Marriott",
+        "url": "https://genius.com/artists/James-marriott",
+        "type": "regular",
+        "id": "1950435"
+      },
+      {
+        "name": "James McMurtry",
+        "url": "https://genius.com/artists/James-mcmurtry",
+        "type": "regular",
+        "id": "246052"
+      },
+      {
+        "name": "James Monroe Iglehart",
+        "url": "https://genius.com/artists/James-monroe-iglehart",
+        "type": "regular",
+        "id": "998350"
+      },
+      {
+        "name": "James Morrison",
+        "url": "https://genius.com/artists/James-morrison",
+        "type": "regular",
+        "id": "70104"
+      },
+      {
+        "name": "James Newton Howard",
+        "url": "https://genius.com/artists/James-newton-howard",
+        "type": "regular",
+        "id": "44970"
+      },
+      {
+        "name": "James Reid",
+        "url": "https://genius.com/artists/James-reid",
+        "type": "regular",
+        "id": "383648"
+      },
+      {
+        "name": "James Taylor",
+        "url": "https://genius.com/artists/James-taylor",
+        "type": "regular",
+        "id": "34552"
+      },
+      {
+        "name": "Jamey Johnson",
+        "url": "https://genius.com/artists/Jamey-johnson",
+        "type": "regular",
+        "id": "86569"
+      },
+      {
+        "name": "Jamie Cullum",
+        "url": "https://genius.com/artists/Jamie-cullum",
+        "type": "regular",
+        "id": "87885"
+      },
+      {
+        "name": "Jamie Foxx",
+        "url": "https://genius.com/artists/Jamie-foxx",
+        "type": "regular",
+        "id": "73"
+      },
+      {
+        "name": "Jamie Miller",
+        "url": "https://genius.com/artists/Jamie-miller",
+        "type": "regular",
+        "id": "629117"
+      },
+      {
+        "name": "Jamie Muscato",
+        "url": "https://genius.com/artists/Jamie-muscato",
+        "type": "regular",
+        "id": "1585065"
+      },
+      {
+        "name": "Jamie Paige",
+        "url": "https://genius.com/artists/Jamie-paige",
+        "type": "regular",
+        "id": "1332572"
+      },
+      {
+        "name": "Jamie Rivera",
+        "url": "https://genius.com/artists/Jamie-rivera",
+        "type": "regular",
+        "id": "373732"
+      },
+      {
+        "name": "Jamie T",
+        "url": "https://genius.com/artists/Jamie-t",
+        "type": "regular",
+        "id": "14560"
+      },
+      {
+        "name": "Jamie Wiltshire",
+        "url": "https://genius.com/artists/Jamie-wiltshire",
+        "type": "regular",
+        "id": "2497564"
+      },
+      {
+        "name": "Jamie xx",
+        "url": "https://genius.com/artists/Jamie-xx",
+        "type": "regular",
+        "id": "31426"
+      },
+      {
+        "name": "Jamik",
+        "url": "https://genius.com/artists/Jamik",
+        "type": "regular",
+        "id": "2154686"
+      },
+      {
+        "name": "Jamiroquai",
+        "url": "https://genius.com/artists/Jamiroquai",
+        "type": "regular",
+        "id": "6234"
+      },
+      {
+        "name": "JamsDX",
+        "url": "https://genius.com/artists/Jamsdx",
+        "type": "regular",
+        "id": "3907322"
+      },
+      {
+        "name": "Jamule",
+        "url": "https://genius.com/artists/Jamule",
+        "type": "regular",
+        "id": "1616483"
+      },
+      {
+        "name": "JamWayne",
+        "url": "https://genius.com/artists/Jamwayne",
+        "type": "regular",
+        "id": "3833012"
+      },
+      {
+        "name": "Jana",
+        "url": "https://genius.com/artists/Jana",
+        "type": "regular",
+        "id": "485027"
+      },
+      {
+        "name": "JANAGA",
+        "url": "https://genius.com/artists/Janaga",
+        "type": "regular",
+        "id": "2183796"
+      },
+      {
+        "name": "Jan & Dean",
+        "url": "https://genius.com/artists/Jan-and-dean",
+        "type": "regular",
+        "id": "31638"
+      },
+      {
+        "name": "Janani K. Jha",
+        "url": "https://genius.com/artists/Janani-k-jha",
+        "type": "regular",
+        "id": "2543812"
+      },
+      {
+        "name": "Jane Air",
+        "url": "https://genius.com/artists/Jane-air",
+        "type": "regular",
+        "id": "1081113"
+      },
+      {
+        "name": "Janelle Monáe",
+        "url": "https://genius.com/artists/Janelle-monae",
+        "type": "regular",
+        "id": "783"
+      },
+      {
+        "name": "Jane Remover",
+        "url": "https://genius.com/artists/Jane-remover",
+        "type": "regular",
+        "id": "1543480"
+      },
+      {
+        "name": "Jane's Addiction",
+        "url": "https://genius.com/artists/Janes-addiction",
+        "type": "regular",
+        "id": "30312"
+      },
+      {
+        "name": "Janet Dacal",
+        "url": "https://genius.com/artists/Janet-dacal",
+        "type": "regular",
+        "id": "456734"
+      },
+      {
+        "name": "Janet Devenish",
+        "url": "https://genius.com/artists/Janet-devenish",
+        "type": "regular",
+        "id": "4261379"
+      },
+      {
+        "name": "Ja'net Dubois",
+        "url": "https://genius.com/artists/Janet-dubois",
+        "type": "regular",
+        "id": "389059"
+      },
+      {
+        "name": "Janet Jackson",
+        "url": "https://genius.com/artists/Janet-jackson",
+        "type": "regular",
+        "id": "2122"
+      },
+      {
+        "name": "JANI",
+        "url": "https://genius.com/artists/Jani",
+        "type": "regular",
+        "id": "1025317"
+      },
+      {
+        "name": "Janine",
+        "url": "https://genius.com/artists/Janine",
+        "type": "regular",
+        "id": "169203"
+      },
+      {
+        "name": "Janine Berdin",
+        "url": "https://genius.com/artists/Janine-berdin",
+        "type": "regular",
+        "id": "1593726"
+      },
+      {
+        "name": "Janine (PHL)",
+        "url": "https://genius.com/artists/Janine-phl",
+        "type": "regular",
+        "id": "1047861"
+      },
+      {
+        "name": "Janis Ian",
+        "url": "https://genius.com/artists/Janis-ian",
+        "type": "regular",
+        "id": "104451"
+      },
+      {
+        "name": "Janis Joplin",
+        "url": "https://genius.com/artists/Janis-joplin",
+        "type": "regular",
+        "id": "24360"
+      },
+      {
+        "name": "Janko",
+        "url": "https://genius.com/artists/Janko",
+        "type": "regular",
+        "id": "278409"
+      },
+      {
+        "name": "JANNABI (잔나비)",
+        "url": "https://genius.com/artists/Jannabi",
+        "type": "regular",
+        "id": "1509383"
+      },
+      {
+        "name": "Jann Arden",
+        "url": "https://genius.com/artists/Jann-arden",
+        "type": "regular",
+        "id": "349420"
+      },
+      {
+        "name": "Jannat - جنات",
+        "url": "https://genius.com/artists/Jannat",
+        "type": "regular",
+        "id": "3616402"
+      },
+      {
+        "name": "Jan Neuberger",
+        "url": "https://genius.com/artists/Jan-neuberger",
+        "type": "regular",
+        "id": "300563"
+      },
+      {
+        "name": "Janno Gibbs",
+        "url": "https://genius.com/artists/Janno-gibbs",
+        "type": "regular",
+        "id": "360975"
+      },
+      {
+        "name": "Jann (POL)",
+        "url": "https://genius.com/artists/Jann-pol",
+        "type": "regular",
+        "id": "3441139"
+      },
+      {
+        "name": "Jan-rapowanie",
+        "url": "https://genius.com/artists/Jan-rapowanie",
+        "type": "regular",
+        "id": "1125735"
+      },
+      {
+        "name": "Jan Roberts",
+        "url": "https://genius.com/artists/Jan-roberts",
+        "type": "regular",
+        "id": "3055564"
+      },
+      {
+        "name": "​janu4ryss",
+        "url": "https://genius.com/artists/Janu4ryss",
+        "type": "regular",
+        "id": "4057259"
+      },
+      {
+        "name": "Jan Valta",
+        "url": "https://genius.com/artists/Jan-valta",
+        "type": "regular",
+        "id": "2569506"
+      },
+      {
+        "name": "Japanese Breakfast",
+        "url": "https://genius.com/artists/Japanese-breakfast",
+        "type": "regular",
+        "id": "653821"
+      },
+      {
+        "name": "The Japanese House",
+        "url": "https://genius.com/artists/The-japanese-house",
+        "type": "regular",
+        "id": "334101"
+      },
+      {
+        "name": "Jarabe de Palo",
+        "url": "https://genius.com/artists/Jarabe-de-palo",
+        "type": "regular",
+        "id": "356386"
+      },
+      {
+        "name": "Jaron and the Long Road to Love",
+        "url": "https://genius.com/artists/Jaron-and-the-long-road-to-love",
+        "type": "regular",
+        "id": "375828"
+      },
+      {
+        "name": "Jarrod Alonge",
+        "url": "https://genius.com/artists/Jarrod-alonge",
+        "type": "regular",
+        "id": "418745"
+      },
+      {
+        "name": "Ja Rule",
+        "url": "https://genius.com/artists/Ja-rule",
+        "type": "regular",
+        "id": "183"
+      },
+      {
+        "name": "Jasiel Nuñez",
+        "url": "https://genius.com/artists/Jasiel-nunez",
+        "type": "regular",
+        "id": "2384854"
+      },
+      {
+        "name": "Jasleen Royal",
+        "url": "https://genius.com/artists/Jasleen-royal",
+        "type": "regular",
+        "id": "1621346"
+      },
+      {
+        "name": "​​​​jasmine.4.t",
+        "url": "https://genius.com/artists/Jasmine4t",
+        "type": "regular",
+        "id": "4032794"
+      },
+      {
+        "name": "Jasmine Amy Rogers",
+        "url": "https://genius.com/artists/Jasmine-amy-rogers",
+        "type": "regular",
+        "id": "4350033"
+      },
+      {
+        "name": "Jasmine Cephas Jones",
+        "url": "https://genius.com/artists/Jasmine-cephas-jones",
+        "type": "regular",
+        "id": "570730"
+      },
+      {
+        "name": "Jasmine Thompson",
+        "url": "https://genius.com/artists/Jasmine-thompson",
+        "type": "regular",
+        "id": "276414"
+      },
+      {
+        "name": "Jason Aldean",
+        "url": "https://genius.com/artists/Jason-aldean",
+        "type": "regular",
+        "id": "17949"
+      },
+      {
+        "name": "Jason Charles Miller",
+        "url": "https://genius.com/artists/Jason-charles-miller",
+        "type": "regular",
+        "id": "390226"
+      },
+      {
+        "name": "Jason Derulo",
+        "url": "https://genius.com/artists/Jason-derulo",
+        "type": "regular",
+        "id": "17764"
+      },
+      {
+        "name": "Jason Donovan",
+        "url": "https://genius.com/artists/Jason-donovan",
+        "type": "regular",
+        "id": "178714"
+      },
+      {
+        "name": "Jason Howland",
+        "url": "https://genius.com/artists/Jason-howland",
+        "type": "regular",
+        "id": "1018552"
+      },
+      {
+        "name": "Jason Isbell",
+        "url": "https://genius.com/artists/Jason-isbell",
+        "type": "regular",
+        "id": "234896"
+      },
+      {
+        "name": "Jason Isbell and the 400 Unit",
+        "url": "https://genius.com/artists/Jason-isbell-and-the-400-unit",
+        "type": "regular",
+        "id": "357771"
+      },
+      {
+        "name": "Jason Kimmel",
+        "url": "https://genius.com/artists/Jason-kimmel",
+        "type": "regular",
+        "id": "4297626"
+      },
+      {
+        "name": "Jason Kravits",
+        "url": "https://genius.com/artists/Jason-kravits",
+        "type": "regular",
+        "id": "1212029"
+      },
+      {
+        "name": "Jason LaPierre",
+        "url": "https://genius.com/artists/Jason-lapierre",
+        "type": "regular",
+        "id": "3145314"
+      },
+      {
+        "name": "JasonMartin",
+        "url": "https://genius.com/artists/Jasonmartin",
+        "type": "regular",
+        "id": "9477"
+      },
+      {
+        "name": "Jason Momoa",
+        "url": "https://genius.com/artists/Jason-momoa",
+        "type": "regular",
+        "id": "660994"
+      },
+      {
+        "name": "Jason Mraz",
+        "url": "https://genius.com/artists/Jason-mraz",
+        "type": "regular",
+        "id": "13663"
+      },
+      {
+        "name": "Jason Nelson",
+        "url": "https://genius.com/artists/Jason-nelson",
+        "type": "regular",
+        "id": "368769"
+      },
+      {
+        "name": "Jason Ranti",
+        "url": "https://genius.com/artists/Jason-ranti",
+        "type": "regular",
+        "id": "1247030"
+      },
+      {
+        "name": "Jason Schmidt",
+        "url": "https://genius.com/artists/Jason-schmidt",
+        "type": "regular",
+        "id": "2113674"
+      },
+      {
+        "name": "jasontheween",
+        "url": "https://genius.com/artists/Jasontheween",
+        "type": "regular",
+        "id": "3444870"
+      },
+      {
+        "name": "Jason Weaver",
+        "url": "https://genius.com/artists/Jason-weaver",
+        "type": "regular",
+        "id": "11154"
+      },
+      {
+        "name": "Jaspal Singh",
+        "url": "https://genius.com/artists/Jaspal-singh",
+        "type": "regular",
+        "id": "1688013"
+      },
+      {
+        "name": "Jass & MixSingh",
+        "url": "https://genius.com/artists/Jass-and-mixsingh",
+        "type": "regular",
+        "id": "4027346"
+      },
+      {
+        "name": "Jass Manak",
+        "url": "https://genius.com/artists/Jass-manak",
+        "type": "regular",
+        "id": "1442984"
+      },
+      {
+        "name": "Jastin Martin",
+        "url": "https://genius.com/artists/Jastin-martin",
+        "type": "regular",
+        "id": "2448952"
+      },
+      {
+        "name": "Jauria Santa",
+        "url": "https://genius.com/artists/Jauria-santa",
+        "type": "regular",
+        "id": "2657270"
+      },
+      {
+        "name": "Javed Ali",
+        "url": "https://genius.com/artists/Javed-ali",
+        "type": "regular",
+        "id": "456793"
+      },
+      {
+        "name": "Javed Bashir",
+        "url": "https://genius.com/artists/Javed-bashir",
+        "type": "regular",
+        "id": "457301"
+      },
+      {
+        "name": "Jawbreaker",
+        "url": "https://genius.com/artists/Jawbreaker",
+        "type": "regular",
+        "id": "246883"
+      },
+      {
+        "name": "JAWNY",
+        "url": "https://genius.com/artists/Jawny",
+        "type": "regular",
+        "id": "1472144"
+      },
+      {
+        "name": "白鲨 JAWS (CHN)",
+        "url": "https://genius.com/artists/Jaws-chn",
+        "type": "regular",
+        "id": "2792796"
+      },
+      {
+        "name": "J-Ax",
+        "url": "https://genius.com/artists/J-ax",
+        "type": "regular",
+        "id": "33884"
+      },
+      {
+        "name": "Jax Jones",
+        "url": "https://genius.com/artists/Jax-jones",
+        "type": "regular",
+        "id": "168236"
+      },
+      {
+        "name": "Jax (USA)",
+        "url": "https://genius.com/artists/Jax-usa",
+        "type": "regular",
+        "id": "461595"
+      },
+      {
+        "name": "JAY1",
+        "url": "https://genius.com/artists/Jay1",
+        "type": "regular",
+        "id": "1455236"
+      },
+      {
+        "name": "Jay5ive",
+        "url": "https://genius.com/artists/Jay5ive",
+        "type": "regular",
+        "id": "3450231"
+      },
+      {
+        "name": "Jaya",
+        "url": "https://genius.com/artists/Jaya",
+        "type": "regular",
+        "id": "14487"
+      },
+      {
+        "name": "周杰倫 (Jay Chou)",
+        "url": "https://genius.com/artists/Jay-chou",
+        "type": "regular",
+        "id": "30874"
+      },
+      {
+        "name": "Jay Critch",
+        "url": "https://genius.com/artists/Jay-critch",
+        "type": "regular",
+        "id": "1041767"
+      },
+      {
+        "name": "JayDaYoungan",
+        "url": "https://genius.com/artists/Jaydayoungan",
+        "type": "regular",
+        "id": "1123440"
+      },
+      {
+        "name": "JayDon",
+        "url": "https://genius.com/artists/Jaydon",
+        "type": "regular",
+        "id": "1040647"
+      },
+      {
+        "name": "Jayel",
+        "url": "https://genius.com/artists/Jayel",
+        "type": "regular",
+        "id": "70450"
+      },
+      {
+        "name": "Jay Electronica",
+        "url": "https://genius.com/artists/Jay-electronica",
+        "type": "regular",
+        "id": "198"
+      },
+      {
+        "name": "Jay (ENHYPEN)",
+        "url": "https://genius.com/artists/Jay-enhypen",
+        "type": "regular",
+        "id": "2405215"
+      },
+      {
+        "name": "Jaye Thomas",
+        "url": "https://genius.com/artists/Jaye-thomas",
+        "type": "regular",
+        "id": "406275"
+      },
+      {
+        "name": "Jay Hound",
+        "url": "https://genius.com/artists/Jay-hound",
+        "type": "regular",
+        "id": "3414592"
+      },
+      {
+        "name": "Jay Lewis",
+        "url": "https://genius.com/artists/Jay-lewis",
+        "type": "regular",
+        "id": "1066700"
+      },
+      {
+        "name": "Jayme Lawson",
+        "url": "https://genius.com/artists/Jayme-lawson",
+        "type": "regular",
+        "id": "4395331"
+      },
+      {
+        "name": "Jay Melody",
+        "url": "https://genius.com/artists/Jay-melody",
+        "type": "regular",
+        "id": "1405927"
+      },
+      {
+        "name": "Jay Park (박재범)",
+        "url": "https://genius.com/artists/Jay-park",
+        "type": "regular",
+        "id": "11593"
+      },
+      {
+        "name": "Jay-R",
+        "url": "https://genius.com/artists/Jay-r",
+        "type": "regular",
+        "id": "58194"
+      },
+      {
+        "name": "Jay Rock",
+        "url": "https://genius.com/artists/Jay-rock",
+        "type": "regular",
+        "id": "1403"
+      },
+      {
+        "name": "Jay Sean",
+        "url": "https://genius.com/artists/Jay-sean",
+        "type": "regular",
+        "id": "395"
+      },
+      {
+        "name": "Jay Webb",
+        "url": "https://genius.com/artists/Jay-webb",
+        "type": "regular",
+        "id": "2587389"
+      },
+      {
+        "name": "Jay Wheeler",
+        "url": "https://genius.com/artists/Jay-wheeler",
+        "type": "regular",
+        "id": "1421995"
+      },
+      {
+        "name": "Jaywillz",
+        "url": "https://genius.com/artists/Jaywillz",
+        "type": "regular",
+        "id": "2282092"
+      },
+      {
+        "name": "Jazeek",
+        "url": "https://genius.com/artists/Jazeek",
+        "type": "regular",
+        "id": "2976669"
+      },
+      {
+        "name": "Jazmin Bean",
+        "url": "https://genius.com/artists/Jazmin-bean",
+        "type": "regular",
+        "id": "1903150"
+      },
+      {
+        "name": "Jazmine Sullivan",
+        "url": "https://genius.com/artists/Jazmine-sullivan",
+        "type": "regular",
+        "id": "1234"
+      },
+      {
+        "name": "Jazzdauren",
+        "url": "https://genius.com/artists/Jazzdauren",
+        "type": "regular",
+        "id": "3923120"
+      },
+      {
+        "name": "Jazzworx (Producer)",
+        "url": "https://genius.com/artists/Jazzworx-producer",
+        "type": "regular",
+        "id": "4409021"
+      },
+      {
+        "name": "Jazzy Bazz",
+        "url": "https://genius.com/artists/Jazzy-bazz",
+        "type": "regular",
+        "id": "13956"
+      },
+      {
+        "name": "Jazzy (IRL)",
+        "url": "https://genius.com/artists/Jazzy-irl",
+        "type": "regular",
+        "id": "3602188"
+      },
+      {
+        "name": "JB",
+        "url": "https://genius.com/artists/Jb",
+        "type": "regular",
+        "id": "639890"
+      },
+      {
+        "name": "J Balvin",
+        "url": "https://genius.com/artists/J-balvin",
+        "type": "regular",
+        "id": "223925"
+      },
+      {
+        "name": "JBEE",
+        "url": "https://genius.com/artists/Jbee",
+        "type": "regular",
+        "id": "2322867"
+      },
+      {
+        "name": "J Boog",
+        "url": "https://genius.com/artists/J-boog",
+        "type": "regular",
+        "id": "14298"
+      },
+      {
+        "name": "J. B. Priestley",
+        "url": "https://genius.com/artists/J-b-priestley",
+        "type": "regular",
+        "id": "57090"
+      },
+      {
+        "name": "JBS",
+        "url": "https://genius.com/artists/Jbs",
+        "type": "regular",
+        "id": "3621055"
+      },
+      {
+        "name": "JC Reyes",
+        "url": "https://genius.com/artists/Jc-reyes",
+        "type": "regular",
+        "id": "1797029"
+      },
+      {
+        "name": "JDFLAG",
+        "url": "https://genius.com/artists/Jdflag",
+        "type": "regular",
+        "id": "3362695"
+      },
+      {
+        "name": "J Dilla",
+        "url": "https://genius.com/artists/J-dilla",
+        "type": "regular",
+        "id": "224"
+      },
+      {
+        "name": "Jdot Breezy",
+        "url": "https://genius.com/artists/Jdot-breezy",
+        "type": "regular",
+        "id": "2148742"
+      },
+      {
+        "name": "Jean Dawson",
+        "url": "https://genius.com/artists/Jean-dawson",
+        "type": "regular",
+        "id": "1826780"
+      },
+      {
+        "name": "Jeanette",
+        "url": "https://genius.com/artists/Jeanette",
+        "type": "regular",
+        "id": "344727"
+      },
+      {
+        "name": "JeanJass",
+        "url": "https://genius.com/artists/Jeanjass",
+        "type": "regular",
+        "id": "25823"
+      },
+      {
+        "name": "Jean Leloup",
+        "url": "https://genius.com/artists/Jean-leloup",
+        "type": "regular",
+        "id": "290891"
+      },
+      {
+        "name": "Жанна Фриске (Jeanna Friske)",
+        "url": "https://genius.com/artists/Jeanna-friske",
+        "type": "regular",
+        "id": "1326235"
+      },
+      {
+        "name": "Jean Ritchie",
+        "url": "https://genius.com/artists/Jean-ritchie",
+        "type": "regular",
+        "id": "375070"
+      },
+      {
+        "name": "Jean Sibelius",
+        "url": "https://genius.com/artists/Jean-sibelius",
+        "type": "regular",
+        "id": "376695"
+      },
+      {
+        "name": "Jean Stapleton",
+        "url": "https://genius.com/artists/Jean-stapleton",
+        "type": "regular",
+        "id": "1402031"
+      },
+      {
+        "name": "Jedi Mind Tricks",
+        "url": "https://genius.com/artists/Jedi-mind-tricks",
+        "type": "regular",
+        "id": "512"
+      },
+      {
+        "name": "Jeeiph",
+        "url": "https://genius.com/artists/Jeeiph",
+        "type": "regular",
+        "id": "1126930"
+      },
+      {
+        "name": "JEEMBO",
+        "url": "https://genius.com/artists/Jeembo",
+        "type": "regular",
+        "id": "106687"
+      },
+      {
+        "name": "Jeet Gannguli",
+        "url": "https://genius.com/artists/Jeet-gannguli",
+        "type": "regular",
+        "id": "1029117"
+      },
+      {
+        "name": "Jeezy",
+        "url": "https://genius.com/artists/Jeezy",
+        "type": "regular",
+        "id": "67"
+      },
+      {
+        "name": "Jefe",
+        "url": "https://genius.com/artists/Jefe",
+        "type": "regular",
+        "id": "1976669"
+      },
+      {
+        "name": "Jeff & Sheri Easter",
+        "url": "https://genius.com/artists/Jeff-and-sheri-easter",
+        "type": "regular",
+        "id": "370450"
+      },
+      {
+        "name": "Jeff Bernat",
+        "url": "https://genius.com/artists/Jeff-bernat",
+        "type": "regular",
+        "id": "55433"
+      },
+      {
+        "name": "Jefferson Airplane",
+        "url": "https://genius.com/artists/Jefferson-airplane",
+        "type": "regular",
+        "id": "16842"
+      },
+      {
+        "name": "Jefferson Starship",
+        "url": "https://genius.com/artists/Jefferson-starship",
+        "type": "regular",
+        "id": "240049"
+      },
+      {
+        "name": "Jeff Lewis",
+        "url": "https://genius.com/artists/Jeff-lewis",
+        "type": "regular",
+        "id": "549697"
+      },
+      {
+        "name": "Jeff Morrow",
+        "url": "https://genius.com/artists/Jeff-morrow",
+        "type": "regular",
+        "id": "1247407"
+      },
+      {
+        "name": "Jeff Redd",
+        "url": "https://genius.com/artists/Jeff-redd",
+        "type": "regular",
+        "id": "2940473"
+      },
+      {
+        "name": "Jeffrey Osborne",
+        "url": "https://genius.com/artists/Jeffrey-osborne",
+        "type": "regular",
+        "id": "292519"
+      },
+      {
+        "name": "Jeff Rosenstock",
+        "url": "https://genius.com/artists/Jeff-rosenstock",
+        "type": "regular",
+        "id": "333799"
+      },
+      {
+        "name": "Jeff Satur",
+        "url": "https://genius.com/artists/Jeff-satur",
+        "type": "regular",
+        "id": "3170412"
+      },
+      {
+        "name": "Jeff Williams",
+        "url": "https://genius.com/artists/Jeff-williams",
+        "type": "regular",
+        "id": "104261"
+      },
+      {
+        "name": "Jekalyn Carr",
+        "url": "https://genius.com/artists/Jekalyn-carr",
+        "type": "regular",
+        "id": "406010"
+      },
+      {
+        "name": "JELEEL!",
+        "url": "https://genius.com/artists/Jeleel",
+        "type": "regular",
+        "id": "2078146"
+      },
+      {
+        "name": "Jelena Karleuša",
+        "url": "https://genius.com/artists/Jelena-karleusa",
+        "type": "regular",
+        "id": "377401"
+      },
+      {
+        "name": "Jelena Rozga",
+        "url": "https://genius.com/artists/Jelena-rozga",
+        "type": "regular",
+        "id": "385952"
+      },
+      {
+        "name": "Jelly House",
+        "url": "https://genius.com/artists/Jelly-house",
+        "type": "regular",
+        "id": "2728026"
+      },
+      {
+        "name": "Jemsii",
+        "url": "https://genius.com/artists/Jemsii",
+        "type": "regular",
+        "id": "3777374"
+      },
+      {
+        "name": "Jenevieve",
+        "url": "https://genius.com/artists/Jenevieve",
+        "type": "regular",
+        "id": "2182229"
+      },
+      {
+        "name": "Женя Любич (Jenia Lubich)",
+        "url": "https://genius.com/artists/Jenia-lubich",
+        "type": "regular",
+        "id": "1656208"
+      },
+      {
+        "name": "Jenna Davis",
+        "url": "https://genius.com/artists/Jenna-davis",
+        "type": "regular",
+        "id": "1129951"
+      },
+      {
+        "name": "Jenna Raine",
+        "url": "https://genius.com/artists/Jenna-raine",
+        "type": "regular",
+        "id": "1660841"
+      },
+      {
+        "name": "Jenn Carter",
+        "url": "https://genius.com/artists/Jenn-carter",
+        "type": "regular",
+        "id": "3031110"
+      },
+      {
+        "name": "Jennifer Damiano",
+        "url": "https://genius.com/artists/Jennifer-damiano",
+        "type": "regular",
+        "id": "65893"
+      },
+      {
+        "name": "Jennifer Hudson",
+        "url": "https://genius.com/artists/Jennifer-hudson",
+        "type": "regular",
+        "id": "1444"
+      },
+      {
+        "name": "Jennifer Laura Thompson",
+        "url": "https://genius.com/artists/Jennifer-laura-thompson",
+        "type": "regular",
+        "id": "1023304"
+      },
+      {
+        "name": "Jennifer Lawrence",
+        "url": "https://genius.com/artists/Jennifer-lawrence",
+        "type": "regular",
+        "id": "75968"
+      },
+      {
+        "name": "Jennifer Leigh Warren",
+        "url": "https://genius.com/artists/Jennifer-leigh-warren",
+        "type": "regular",
+        "id": "1041929"
+      },
+      {
+        "name": "Jennifer Lopez",
+        "url": "https://genius.com/artists/Jennifer-lopez",
+        "type": "regular",
+        "id": "2487"
+      },
+      {
+        "name": "Jennifer Rush",
+        "url": "https://genius.com/artists/Jennifer-rush",
+        "type": "regular",
+        "id": "53273"
+      },
+      {
+        "name": "Jennifer Simard",
+        "url": "https://genius.com/artists/Jennifer-simard",
+        "type": "regular",
+        "id": "1422868"
+      },
+      {
+        "name": "Jennifer Warnes",
+        "url": "https://genius.com/artists/Jennifer-warnes",
+        "type": "regular",
+        "id": "59800"
+      },
+      {
+        "name": "Jenni Rivera",
+        "url": "https://genius.com/artists/Jenni-rivera",
+        "type": "regular",
+        "id": "37725"
+      },
+      {
+        "name": "Jenni Vartiainen",
+        "url": "https://genius.com/artists/Jenni-vartiainen",
+        "type": "regular",
+        "id": "362570"
+      },
+      {
+        "name": "Jenn Johnson",
+        "url": "https://genius.com/artists/Jenn-johnson",
+        "type": "regular",
+        "id": "326331"
+      },
+      {
+        "name": "Jenny",
+        "url": "https://genius.com/artists/Jenny",
+        "type": "regular",
+        "id": "214069"
+      },
+      {
+        "name": "Jenny Johal",
+        "url": "https://genius.com/artists/Jenny-johal",
+        "type": "regular",
+        "id": "2023861"
+      },
+      {
+        "name": "Jenny Slate",
+        "url": "https://genius.com/artists/Jenny-slate",
+        "type": "regular",
+        "id": "1541901"
+      },
+      {
+        "name": "Jensen McRae",
+        "url": "https://genius.com/artists/Jensen-mcrae",
+        "type": "regular",
+        "id": "1726364"
+      },
+      {
+        "name": "Jere Klein",
+        "url": "https://genius.com/artists/Jere-klein",
+        "type": "regular",
+        "id": "3166404"
+      },
+      {
+        "name": "JEREMIAS",
+        "url": "https://genius.com/artists/Jeremias",
+        "type": "regular",
+        "id": "1862798"
+      },
+      {
+        "name": "Jeremih",
+        "url": "https://genius.com/artists/Jeremih",
+        "type": "regular",
+        "id": "278"
+      },
+      {
+        "name": "Jeremy Camp",
+        "url": "https://genius.com/artists/Jeremy-camp",
+        "type": "regular",
+        "id": "324408"
+      },
+      {
+        "name": "Jeremy Jordan",
+        "url": "https://genius.com/artists/Jeremy-jordan",
+        "type": "regular",
+        "id": "77956"
+      },
+      {
+        "name": "Jeremy Passion",
+        "url": "https://genius.com/artists/Jeremy-passion",
+        "type": "regular",
+        "id": "82214"
+      },
+      {
+        "name": "Jeremy Riddle",
+        "url": "https://genius.com/artists/Jeremy-riddle",
+        "type": "regular",
+        "id": "355506"
+      },
+      {
+        "name": "Jeremy Swift",
+        "url": "https://genius.com/artists/Jeremy-swift",
+        "type": "regular",
+        "id": "4351484"
+      },
+      {
+        "name": "Jeremy Zucker",
+        "url": "https://genius.com/artists/Jeremy-zucker",
+        "type": "regular",
+        "id": "398381"
+      },
+      {
+        "name": "Jeris Johnson",
+        "url": "https://genius.com/artists/Jeris-johnson",
+        "type": "regular",
+        "id": "2114659"
+      },
+      {
+        "name": "Jermaine Dupri",
+        "url": "https://genius.com/artists/Jermaine-dupri",
+        "type": "regular",
+        "id": "3264"
+      },
+      {
+        "name": "Jerome Kern",
+        "url": "https://genius.com/artists/Jerome-kern",
+        "type": "regular",
+        "id": "361688"
+      },
+      {
+        "name": "Jerry Cantrell",
+        "url": "https://genius.com/artists/Jerry-cantrell",
+        "type": "regular",
+        "id": "159296"
+      },
+      {
+        "name": "Jerry Di",
+        "url": "https://genius.com/artists/Jerry-di",
+        "type": "regular",
+        "id": "1104420"
+      },
+      {
+        "name": "Jerry Garcia",
+        "url": "https://genius.com/artists/Jerry-garcia",
+        "type": "regular",
+        "id": "105059"
+      },
+      {
+        "name": "Jerry Garcia Band",
+        "url": "https://genius.com/artists/Jerry-garcia-band",
+        "type": "regular",
+        "id": "347648"
+      },
+      {
+        "name": "Jerry Heil",
+        "url": "https://genius.com/artists/Jerry-heil",
+        "type": "regular",
+        "id": "1794150"
+      },
+      {
+        "name": "Jerry Herman",
+        "url": "https://genius.com/artists/Jerry-herman",
+        "type": "regular",
+        "id": "362135"
+      },
+      {
+        "name": "Jerry Jeff Walker",
+        "url": "https://genius.com/artists/Jerry-jeff-walker",
+        "type": "regular",
+        "id": "63859"
+      },
+      {
+        "name": "Jerry Lee Lewis",
+        "url": "https://genius.com/artists/Jerry-lee-lewis",
+        "type": "regular",
+        "id": "65490"
+      },
+      {
+        "name": "Jerry Orbach",
+        "url": "https://genius.com/artists/Jerry-orbach",
+        "type": "regular",
+        "id": "158579"
+      },
+      {
+        "name": "Jerry Reed",
+        "url": "https://genius.com/artists/Jerry-reed",
+        "type": "regular",
+        "id": "33886"
+      },
+      {
+        "name": "Jesús Adrián Romero",
+        "url": "https://genius.com/artists/Jesus-adrian-romero",
+        "type": "regular",
+        "id": "363139"
+      },
+      {
+        "name": "Jessa Zaragoza",
+        "url": "https://genius.com/artists/Jessa-zaragoza",
+        "type": "regular",
+        "id": "379451"
+      },
+      {
+        "name": "Jesse®",
+        "url": "https://genius.com/artists/Jesse",
+        "type": "regular",
+        "id": "61137"
+      },
+      {
+        "name": "Jesse & Joy",
+        "url": "https://genius.com/artists/Jesse-and-joy",
+        "type": "regular",
+        "id": "34098"
+      },
+      {
+        "name": "Jesse Corti",
+        "url": "https://genius.com/artists/Jesse-corti",
+        "type": "regular",
+        "id": "453716"
+      },
+      {
+        "name": "Jesse Frederick",
+        "url": "https://genius.com/artists/Jesse-frederick",
+        "type": "regular",
+        "id": "68580"
+      },
+      {
+        "name": "Jesse McCartney",
+        "url": "https://genius.com/artists/Jesse-mccartney",
+        "type": "regular",
+        "id": "1810"
+      },
+      {
+        "name": "Jesse Powell",
+        "url": "https://genius.com/artists/Jesse-powell",
+        "type": "regular",
+        "id": "8403"
+      },
+      {
+        "name": "Jesse Welles",
+        "url": "https://genius.com/artists/Jesse-welles",
+        "type": "regular",
+        "id": "2378878"
+      },
+      {
+        "name": "Jess Glynne",
+        "url": "https://genius.com/artists/Jess-glynne",
+        "type": "regular",
+        "id": "106694"
+      },
+      {
+        "name": "Jessi (제시)",
+        "url": "https://genius.com/artists/Jessi",
+        "type": "regular",
+        "id": "672794"
+      },
+      {
+        "name": "Jessica Andrews",
+        "url": "https://genius.com/artists/Jessica-andrews",
+        "type": "regular",
+        "id": "248494"
+      },
+      {
+        "name": "Jessica Baio",
+        "url": "https://genius.com/artists/Jessica-baio",
+        "type": "regular",
+        "id": "2118324"
+      },
+      {
+        "name": "Jessica Darrow",
+        "url": "https://genius.com/artists/Jessica-darrow",
+        "type": "regular",
+        "id": "2958546"
+      },
+      {
+        "name": "Jessica Keenan Wynn",
+        "url": "https://genius.com/artists/Jessica-keenan-wynn",
+        "type": "regular",
+        "id": "634903"
+      },
+      {
+        "name": "Jessica Pratt",
+        "url": "https://genius.com/artists/Jessica-pratt",
+        "type": "regular",
+        "id": "260522"
+      },
+      {
+        "name": "Jessica Shy",
+        "url": "https://genius.com/artists/Jessica-shy",
+        "type": "regular",
+        "id": "2220771"
+      },
+      {
+        "name": "Jessica Simpson",
+        "url": "https://genius.com/artists/Jessica-simpson",
+        "type": "regular",
+        "id": "8535"
+      },
+      {
+        "name": "Jessica Vosk",
+        "url": "https://genius.com/artists/Jessica-vosk",
+        "type": "regular",
+        "id": "1622043"
+      },
+      {
+        "name": "Jessie J",
+        "url": "https://genius.com/artists/Jessie-j",
+        "type": "regular",
+        "id": "2517"
+      },
+      {
+        "name": "Jessie Mueller",
+        "url": "https://genius.com/artists/Jessie-mueller",
+        "type": "regular",
+        "id": "458965"
+      },
+      {
+        "name": "Jessie Reyez",
+        "url": "https://genius.com/artists/Jessie-reyez",
+        "type": "regular",
+        "id": "292980"
+      },
+      {
+        "name": "Jessie Shelton",
+        "url": "https://genius.com/artists/Jessie-shelton",
+        "type": "regular",
+        "id": "1158128"
+      },
+      {
+        "name": "Jessie Ware",
+        "url": "https://genius.com/artists/Jessie-ware",
+        "type": "regular",
+        "id": "21712"
+      },
+      {
+        "name": "Jesús Ojeda Y Sus Parientes",
+        "url": "https://genius.com/artists/Jesus-ojeda-y-sus-parientes",
+        "type": "regular",
+        "id": "405381"
+      },
+      {
+        "name": "The Jesus and Mary Chain",
+        "url": "https://genius.com/artists/The-jesus-and-mary-chain",
+        "type": "regular",
+        "id": "29596"
+      },
+      {
+        "name": "Jesus Christ Superstar Cast",
+        "url": "https://genius.com/artists/Jesus-christ-superstar-cast",
+        "type": "regular",
+        "id": "1458122"
+      },
+      {
+        "name": "Jesus Christ Superstar Original Studio Cast",
+        "url": "https://genius.com/artists/Jesus-christ-superstar-original-studio-cast",
+        "type": "regular",
+        "id": "43076"
+      },
+      {
+        "name": "Jesus Culture",
+        "url": "https://genius.com/artists/Jesus-culture",
+        "type": "regular",
+        "id": "356827"
+      },
+      {
+        "name": "Jesus Image",
+        "url": "https://genius.com/artists/Jesus-image",
+        "type": "regular",
+        "id": "3131643"
+      },
+      {
+        "name": "Jet",
+        "url": "https://genius.com/artists/Jet",
+        "type": "regular",
+        "id": "45228"
+      },
+      {
+        "name": "Jethro Tull",
+        "url": "https://genius.com/artists/Jethro-tull",
+        "type": "regular",
+        "id": "64699"
+      },
+      {
+        "name": "Jeune Morty",
+        "url": "https://genius.com/artists/Jeune-morty",
+        "type": "regular",
+        "id": "2338406"
+      },
+      {
+        "name": "jev.",
+        "url": "https://genius.com/artists/Jev",
+        "type": "regular",
+        "id": "3409038"
+      },
+      {
+        "name": "Jewel",
+        "url": "https://genius.com/artists/Jewel",
+        "type": "regular",
+        "id": "584449"
+      },
+      {
+        "name": "Jewelle Blackman",
+        "url": "https://genius.com/artists/Jewelle-blackman",
+        "type": "regular",
+        "id": "1844682"
+      },
+      {
+        "name": "Jeyceu",
+        "url": "https://genius.com/artists/Jeyceu",
+        "type": "regular",
+        "id": "4400761"
+      },
+      {
+        "name": "Jey One",
+        "url": "https://genius.com/artists/Jey-one",
+        "type": "regular",
+        "id": "3281946"
+      },
+      {
+        "name": "Jeyyff",
+        "url": "https://genius.com/artists/Jeyyff",
+        "type": "regular",
+        "id": "3142694"
+      },
+      {
+        "name": "The J. Geils Band",
+        "url": "https://genius.com/artists/The-j-geils-band",
+        "type": "regular",
+        "id": "96808"
+      },
+      {
+        "name": "JG Wentworth",
+        "url": "https://genius.com/artists/Jg-wentworth",
+        "type": "regular",
+        "id": "1663288"
+      },
+      {
+        "name": "Jhariah",
+        "url": "https://genius.com/artists/Jhariah",
+        "type": "regular",
+        "id": "1199624"
+      },
+      {
+        "name": "JHAYCO",
+        "url": "https://genius.com/artists/Jhayco",
+        "type": "regular",
+        "id": "1015573"
+      },
+      {
+        "name": "Jhené Aiko",
+        "url": "https://genius.com/artists/Jhene-aiko",
+        "type": "regular",
+        "id": "1020"
+      },
+      {
+        "name": "Jhonny Bull",
+        "url": "https://genius.com/artists/Jhonny-bull",
+        "type": "regular",
+        "id": "2434722"
+      },
+      {
+        "name": "J Hus",
+        "url": "https://genius.com/artists/J-hus",
+        "type": "regular",
+        "id": "328822"
+      },
+      {
+        "name": "JibJab",
+        "url": "https://genius.com/artists/Jibjab",
+        "type": "regular",
+        "id": "63105"
+      },
+      {
+        "name": "Jidenna",
+        "url": "https://genius.com/artists/Jidenna",
+        "type": "regular",
+        "id": "330697"
+      },
+      {
+        "name": "JIHYO",
+        "url": "https://genius.com/artists/Jihyo",
+        "type": "regular",
+        "id": "1440800"
+      },
+      {
+        "name": "Jiinzo",
+        "url": "https://genius.com/artists/Jiinzo",
+        "type": "regular",
+        "id": "3981261"
+      },
+      {
+        "name": "Jill Scott",
+        "url": "https://genius.com/artists/Jill-scott",
+        "type": "regular",
+        "id": "1731"
+      },
+      {
+        "name": "Jillzay",
+        "url": "https://genius.com/artists/Jillzay",
+        "type": "regular",
+        "id": "631097"
+      },
+      {
+        "name": "Jim Brickman",
+        "url": "https://genius.com/artists/Jim-brickman",
+        "type": "regular",
+        "id": "189096"
+      },
+      {
+        "name": "Jim Carrey",
+        "url": "https://genius.com/artists/Jim-carrey",
+        "type": "regular",
+        "id": "3352"
+      },
+      {
+        "name": "Jim Croce",
+        "url": "https://genius.com/artists/Jim-croce",
+        "type": "regular",
+        "id": "46236"
+      },
+      {
+        "name": "Jim Cummings",
+        "url": "https://genius.com/artists/Jim-cummings",
+        "type": "regular",
+        "id": "158570"
+      },
+      {
+        "name": "The Jim Henson Company",
+        "url": "https://genius.com/artists/The-jim-henson-company",
+        "type": "regular",
+        "id": "1502947"
+      },
+      {
+        "name": "Jimi Hendrix",
+        "url": "https://genius.com/artists/Jimi-hendrix",
+        "type": "regular",
+        "id": "746"
+      },
+      {
+        "name": "The Jimi Hendrix Experience",
+        "url": "https://genius.com/artists/The-jimi-hendrix-experience",
+        "type": "regular",
+        "id": "634985"
+      },
+      {
+        "name": "Jimilian",
+        "url": "https://genius.com/artists/Jimilian",
+        "type": "regular",
+        "id": "453730"
+      },
+      {
+        "name": "Jimin (지민)",
+        "url": "https://genius.com/artists/Jimin",
+        "type": "regular",
+        "id": "1016911"
+      },
+      {
+        "name": "Jim Johnston",
+        "url": "https://genius.com/artists/Jim-johnston",
+        "type": "regular",
+        "id": "373478"
+      },
+      {
+        "name": "Jim Jones",
+        "url": "https://genius.com/artists/Jim-jones",
+        "type": "regular",
+        "id": "79"
+      },
+      {
+        "name": "Jim Legxacy",
+        "url": "https://genius.com/artists/Jim-legxacy",
+        "type": "regular",
+        "id": "2716531"
+      },
+      {
+        "name": "Jimmie Davis",
+        "url": "https://genius.com/artists/Jimmie-davis",
+        "type": "regular",
+        "id": "217139"
+      },
+      {
+        "name": "Jimmie Rodgers",
+        "url": "https://genius.com/artists/Jimmie-rodgers",
+        "type": "regular",
+        "id": "74862"
+      },
+      {
+        "name": "Jimmii Nguyễn",
+        "url": "https://genius.com/artists/Jimmii-nguyen",
+        "type": "regular",
+        "id": "4396057"
+      },
+      {
+        "name": "Jim Morrison",
+        "url": "https://genius.com/artists/Jim-morrison",
+        "type": "regular",
+        "id": "7035"
+      },
+      {
+        "name": "Jimmy Barnes",
+        "url": "https://genius.com/artists/Jimmy-barnes",
+        "type": "regular",
+        "id": "354397"
+      },
+      {
+        "name": "Jimmy Bondoc",
+        "url": "https://genius.com/artists/Jimmy-bondoc",
+        "type": "regular",
+        "id": "361471"
+      },
+      {
+        "name": "Jimmy Buffett",
+        "url": "https://genius.com/artists/Jimmy-buffett",
+        "type": "regular",
+        "id": "119328"
+      },
+      {
+        "name": "Jimmy Cliff",
+        "url": "https://genius.com/artists/Jimmy-cliff",
+        "type": "regular",
+        "id": "17799"
+      },
+      {
+        "name": "Jimmy Eat World",
+        "url": "https://genius.com/artists/Jimmy-eat-world",
+        "type": "regular",
+        "id": "17341"
+      },
+      {
+        "name": "Jimmy Fallon",
+        "url": "https://genius.com/artists/Jimmy-fallon",
+        "type": "regular",
+        "id": "41925"
+      },
+      {
+        "name": "Jimmy Palikat",
+        "url": "https://genius.com/artists/Jimmy-palikat",
+        "type": "regular",
+        "id": "2771135"
+      },
+      {
+        "name": "Jimmy Webb",
+        "url": "https://genius.com/artists/Jimmy-webb",
+        "type": "regular",
+        "id": "343497"
+      },
+      {
+        "name": "Jim Reeves",
+        "url": "https://genius.com/artists/Jim-reeves",
+        "type": "regular",
+        "id": "207643"
+      },
+      {
+        "name": "Jin (진)",
+        "url": "https://genius.com/artists/Jin",
+        "type": "regular",
+        "id": "520162"
+      },
+      {
+        "name": "Jinjer",
+        "url": "https://genius.com/artists/Jinjer",
+        "type": "regular",
+        "id": "359945"
+      },
+      {
+        "name": "Jinkx Monsoon",
+        "url": "https://genius.com/artists/Jinkx-monsoon",
+        "type": "regular",
+        "id": "533751"
+      },
+      {
+        "name": "Jireel",
+        "url": "https://genius.com/artists/Jireel",
+        "type": "regular",
+        "id": "615992"
+      },
+      {
+        "name": "Jireh Lim",
+        "url": "https://genius.com/artists/Jireh-lim",
+        "type": "regular",
+        "id": "393664"
+      },
+      {
+        "name": "JISOO",
+        "url": "https://genius.com/artists/Jisoo",
+        "type": "regular",
+        "id": "1554113"
+      },
+      {
+        "name": "Jit4 Stan",
+        "url": "https://genius.com/artists/Jit4-stan",
+        "type": "regular",
+        "id": "2524980"
+      },
+      {
+        "name": "J.I the Prince of N.Y",
+        "url": "https://genius.com/artists/Ji-the-prince-of-ny",
+        "type": "regular",
+        "id": "42502"
+      },
+      {
+        "name": "JIWOO (NMIXX)",
+        "url": "https://genius.com/artists/Jiwoo-nmixx",
+        "type": "regular",
+        "id": "3046016"
+      },
+      {
+        "name": "jixwang",
+        "url": "https://genius.com/artists/Jixwang",
+        "type": "regular",
+        "id": "4033656"
+      },
+      {
+        "name": "JJ47",
+        "url": "https://genius.com/artists/Jj47",
+        "type": "regular",
+        "id": "255830"
+      },
+      {
+        "name": "J.J. Cale",
+        "url": "https://genius.com/artists/Jj-cale",
+        "type": "regular",
+        "id": "219436"
+      },
+      {
+        "name": "J.J. Hairston & Youthful Praise",
+        "url": "https://genius.com/artists/Jj-hairston-and-youthful-praise",
+        "type": "regular",
+        "id": "1208946"
+      },
+      {
+        "name": "林俊傑 (JJ Lin)",
+        "url": "https://genius.com/artists/Jj-lin",
+        "type": "regular",
+        "id": "1024123"
+      },
+      {
+        "name": "J. Karjalainen & Mustat Lasit",
+        "url": "https://genius.com/artists/J-karjalainen-and-mustat-lasit",
+        "type": "regular",
+        "id": "454673"
+      },
+      {
+        "name": "jkinss",
+        "url": "https://genius.com/artists/Jkinss",
+        "type": "regular",
+        "id": "4196843"
+      },
+      {
+        "name": "JKT48",
+        "url": "https://genius.com/artists/Jkt48",
+        "type": "regular",
+        "id": "354042"
+      },
+      {
+        "name": "J-Kwon",
+        "url": "https://genius.com/artists/J-kwon",
+        "type": "regular",
+        "id": "1206"
+      },
+      {
+        "name": "JLS",
+        "url": "https://genius.com/artists/Jls",
+        "type": "regular",
+        "id": "104872"
+      },
+      {
+        "name": "J Álvarez",
+        "url": "https://genius.com/artists/J-alvarez",
+        "type": "regular",
+        "id": "1018114"
+      },
+      {
+        "name": "Jme",
+        "url": "https://genius.com/artists/Jme",
+        "type": "regular",
+        "id": "11848"
+      },
+      {
+        "name": "JMSN",
+        "url": "https://genius.com/artists/Jmsn",
+        "type": "regular",
+        "id": "16517"
+      },
+      {
+        "name": "jnhygs",
+        "url": "https://genius.com/artists/Jnhygs",
+        "type": "regular",
+        "id": "3390274"
+      },
+      {
+        "name": "Jónsi",
+        "url": "https://genius.com/artists/Jonsi",
+        "type": "regular",
+        "id": "50421"
+      },
+      {
+        "name": "Jnske",
+        "url": "https://genius.com/artists/Jnske",
+        "type": "regular",
+        "id": "1340894"
+      },
+      {
+        "name": "Joan Armatrading",
+        "url": "https://genius.com/artists/Joan-armatrading",
+        "type": "regular",
+        "id": "357007"
+      },
+      {
+        "name": "Joan Baez",
+        "url": "https://genius.com/artists/Joan-baez",
+        "type": "regular",
+        "id": "37184"
+      },
+      {
+        "name": "Joan Jett",
+        "url": "https://genius.com/artists/Joan-jett",
+        "type": "regular",
+        "id": "63682"
+      },
+      {
+        "name": "Joan Jett and the Blackhearts",
+        "url": "https://genius.com/artists/Joan-jett-and-the-blackhearts",
+        "type": "regular",
+        "id": "73858"
+      },
+      {
+        "name": "Joanna Newsom",
+        "url": "https://genius.com/artists/Joanna-newsom",
+        "type": "regular",
+        "id": "15351"
+      },
+      {
+        "name": "Joanne Robertson",
+        "url": "https://genius.com/artists/Joanne-robertson",
+        "type": "regular",
+        "id": "623306"
+      },
+      {
+        "name": "Joan Osborne",
+        "url": "https://genius.com/artists/Joan-osborne",
+        "type": "regular",
+        "id": "34266"
+      },
+      {
+        "name": "Joan Sebastian",
+        "url": "https://genius.com/artists/Joan-sebastian",
+        "type": "regular",
+        "id": "355570"
+      },
+      {
+        "name": "Joaquín Sabina",
+        "url": "https://genius.com/artists/Joaquin-sabina",
+        "type": "regular",
+        "id": "315233"
+      },
+      {
+        "name": "Jodeci",
+        "url": "https://genius.com/artists/Jodeci",
+        "type": "regular",
+        "id": "1342"
+      },
+      {
+        "name": "Jo Dee Messina",
+        "url": "https://genius.com/artists/Jo-dee-messina",
+        "type": "regular",
+        "id": "257237"
+      },
+      {
+        "name": "Jodi Benson",
+        "url": "https://genius.com/artists/Jodi-benson",
+        "type": "regular",
+        "id": "158334"
+      },
+      {
+        "name": "Jodie Steele",
+        "url": "https://genius.com/artists/Jodie-steele",
+        "type": "regular",
+        "id": "1746406"
+      },
+      {
+        "name": "Joé Dwèt Filé",
+        "url": "https://genius.com/artists/Joe-dwet-file",
+        "type": "regular",
+        "id": "1506247"
+      },
+      {
+        "name": "Joe",
+        "url": "https://genius.com/artists/Joe",
+        "type": "regular",
+        "id": "220229"
+      },
+      {
+        "name": "Joe Bonamassa",
+        "url": "https://genius.com/artists/Joe-bonamassa",
+        "type": "regular",
+        "id": "331810"
+      },
+      {
+        "name": "Joeboy",
+        "url": "https://genius.com/artists/Joeboy",
+        "type": "regular",
+        "id": "1734204"
+      },
+      {
+        "name": "Joe Budden",
+        "url": "https://genius.com/artists/Joe-budden",
+        "type": "regular",
+        "id": "179"
+      },
+      {
+        "name": "Joe Cocker",
+        "url": "https://genius.com/artists/Joe-cocker",
+        "type": "regular",
+        "id": "11749"
+      },
+      {
+        "name": "Joe Dassin",
+        "url": "https://genius.com/artists/Joe-dassin",
+        "type": "regular",
+        "id": "353445"
+      },
+      {
+        "name": "Joe Diffie",
+        "url": "https://genius.com/artists/Joe-diffie",
+        "type": "regular",
+        "id": "303378"
+      },
+      {
+        "name": "Joe Fagin",
+        "url": "https://genius.com/artists/Joe-fagin",
+        "type": "regular",
+        "id": "531636"
+      },
+      {
+        "name": "Joe Hawley",
+        "url": "https://genius.com/artists/Joe-hawley",
+        "type": "regular",
+        "id": "963506"
+      },
+      {
+        "name": "久石譲 (Joe Hisaishi)",
+        "url": "https://genius.com/artists/Joe-hisaishi",
+        "type": "regular",
+        "id": "405505"
+      },
+      {
+        "name": "Joe Jackson",
+        "url": "https://genius.com/artists/Joe-jackson",
+        "type": "regular",
+        "id": "136692"
+      },
+      {
+        "name": "Joe Jonas",
+        "url": "https://genius.com/artists/Joe-jonas",
+        "type": "regular",
+        "id": "16515"
+      },
+      {
+        "name": "Joe L Barnes",
+        "url": "https://genius.com/artists/Joe-l-barnes",
+        "type": "regular",
+        "id": "2187324"
+      },
+      {
+        "name": "Joel Corry",
+        "url": "https://genius.com/artists/Joel-corry",
+        "type": "regular",
+        "id": "1811361"
+      },
+      {
+        "name": "Joel Grey",
+        "url": "https://genius.com/artists/Joel-grey",
+        "type": "regular",
+        "id": "300558"
+      },
+      {
+        "name": "Joel Perez",
+        "url": "https://genius.com/artists/Joel-perez",
+        "type": "regular",
+        "id": "631647"
+      },
+      {
+        "name": "Joe Mettle",
+        "url": "https://genius.com/artists/Joe-mettle",
+        "type": "regular",
+        "id": "2035568"
+      },
+      {
+        "name": "Joe Raposo",
+        "url": "https://genius.com/artists/Joe-raposo",
+        "type": "regular",
+        "id": "366395"
+      },
+      {
+        "name": "Joe Walsh",
+        "url": "https://genius.com/artists/Joe-walsh",
+        "type": "regular",
+        "id": "127017"
+      },
+      {
+        "name": "Joey Bada$$",
+        "url": "https://genius.com/artists/Joey-bada",
+        "type": "regular",
+        "id": "18047"
+      },
+      {
+        "name": "Joey Contreras",
+        "url": "https://genius.com/artists/Joey-contreras",
+        "type": "regular",
+        "id": "1239463"
+      },
+      {
+        "name": "Joey Cool",
+        "url": "https://genius.com/artists/Joey-cool",
+        "type": "regular",
+        "id": "178028"
+      },
+      {
+        "name": "Joey Quinones and The Sinseers",
+        "url": "https://genius.com/artists/Joey-quinones-and-the-sinseers",
+        "type": "regular",
+        "id": "2673096"
+      },
+      {
+        "name": "Joey Valence & Brae",
+        "url": "https://genius.com/artists/Joey-valence-and-brae",
+        "type": "regular",
+        "id": "3145243"
+      },
+      {
+        "name": "Joeyy",
+        "url": "https://genius.com/artists/Joeyy",
+        "type": "regular",
+        "id": "1609881"
+      },
+      {
+        "name": "Johannes Oerding",
+        "url": "https://genius.com/artists/Johannes-oerding",
+        "type": "regular",
+        "id": "73841"
+      },
+      {
+        "name": "John Anderson",
+        "url": "https://genius.com/artists/John-anderson",
+        "type": "regular",
+        "id": "187413"
+      },
+      {
+        "name": "John Bolton",
+        "url": "https://genius.com/artists/John-bolton",
+        "type": "regular",
+        "id": "1145799"
+      },
+      {
+        "name": "John Butler Trio",
+        "url": "https://genius.com/artists/John-butler-trio",
+        "type": "regular",
+        "id": "155168"
+      },
+      {
+        "name": "John Cale",
+        "url": "https://genius.com/artists/John-cale",
+        "type": "regular",
+        "id": "29392"
+      },
+      {
+        "name": "John Cena",
+        "url": "https://genius.com/artists/John-cena",
+        "type": "regular",
+        "id": "1535"
+      },
+      {
+        "name": "John Coltrane",
+        "url": "https://genius.com/artists/John-coltrane",
+        "type": "regular",
+        "id": "70125"
+      },
+      {
+        "name": "John Conlee",
+        "url": "https://genius.com/artists/John-conlee",
+        "type": "regular",
+        "id": "342188"
+      },
+      {
+        "name": "John Cooper Clarke",
+        "url": "https://genius.com/artists/John-cooper-clarke",
+        "type": "regular",
+        "id": "24240"
+      },
+      {
+        "name": "John C. Reilly",
+        "url": "https://genius.com/artists/John-c-reilly",
+        "type": "regular",
+        "id": "55483"
+      },
+      {
+        "name": "John Denver",
+        "url": "https://genius.com/artists/John-denver",
+        "type": "regular",
+        "id": "1318"
+      },
+      {
+        "name": "John Farnham",
+        "url": "https://genius.com/artists/John-farnham",
+        "type": "regular",
+        "id": "42773"
+      },
+      {
+        "name": "John Fogerty",
+        "url": "https://genius.com/artists/John-fogerty",
+        "type": "regular",
+        "id": "36322"
+      },
+      {
+        "name": "John Frusciante",
+        "url": "https://genius.com/artists/John-frusciante",
+        "type": "regular",
+        "id": "1695"
+      },
+      {
+        "name": "John Gallagher, Jr.",
+        "url": "https://genius.com/artists/John-gallagher-jr",
+        "type": "regular",
+        "id": "654383"
+      },
+      {
+        "name": "Джон Гарик (John Garik)",
+        "url": "https://genius.com/artists/John-garik",
+        "type": "regular",
+        "id": "4221241"
+      },
+      {
+        "name": "John Hartford",
+        "url": "https://genius.com/artists/John-hartford",
+        "type": "regular",
+        "id": "364206"
+      },
+      {
+        "name": "John Hiatt",
+        "url": "https://genius.com/artists/John-hiatt",
+        "type": "regular",
+        "id": "239955"
+      },
+      {
+        "name": "John Keats",
+        "url": "https://genius.com/artists/John-keats",
+        "type": "regular",
+        "id": "23147"
+      },
+      {
+        "name": "John Krause",
+        "url": "https://genius.com/artists/John-krause",
+        "type": "regular",
+        "id": "2492155"
+      },
+      {
+        "name": "John Lee Hooker",
+        "url": "https://genius.com/artists/John-lee-hooker",
+        "type": "regular",
+        "id": "59462"
+      },
+      {
+        "name": "John Legend",
+        "url": "https://genius.com/artists/John-legend",
+        "type": "regular",
+        "id": "365"
+      },
+      {
+        "name": "John Lennon",
+        "url": "https://genius.com/artists/John-lennon",
+        "type": "regular",
+        "id": "16450"
+      },
+      {
+        "name": "John Mackk",
+        "url": "https://genius.com/artists/John-mackk",
+        "type": "regular",
+        "id": "1012437"
+      },
+      {
+        "name": "John Mark McMillan",
+        "url": "https://genius.com/artists/John-mark-mcmillan",
+        "type": "regular",
+        "id": "81375"
+      },
+      {
+        "name": "John Maus",
+        "url": "https://genius.com/artists/John-maus",
+        "type": "regular",
+        "id": "231573"
+      },
+      {
+        "name": "John Mayer",
+        "url": "https://genius.com/artists/John-mayer",
+        "type": "regular",
+        "id": "488"
+      },
+      {
+        "name": "John McCormack",
+        "url": "https://genius.com/artists/John-mccormack",
+        "type": "regular",
+        "id": "382985"
+      },
+      {
+        "name": "John McDermott",
+        "url": "https://genius.com/artists/John-mcdermott",
+        "type": "regular",
+        "id": "40258"
+      },
+      {
+        "name": "John Mellencamp",
+        "url": "https://genius.com/artists/John-mellencamp",
+        "type": "regular",
+        "id": "8140"
+      },
+      {
+        "name": "John Michael Howell",
+        "url": "https://genius.com/artists/John-michael-howell",
+        "type": "regular",
+        "id": "1626805"
+      },
+      {
+        "name": "John Michael Montgomery",
+        "url": "https://genius.com/artists/John-michael-montgomery",
+        "type": "regular",
+        "id": "41511"
+      },
+      {
+        "name": "John michel",
+        "url": "https://genius.com/artists/John-michel",
+        "type": "regular",
+        "id": "2163956"
+      },
+      {
+        "name": "John Mulaney",
+        "url": "https://genius.com/artists/John-mulaney",
+        "type": "regular",
+        "id": "454473"
+      },
+      {
+        "name": "Johnnie Guilbert",
+        "url": "https://genius.com/artists/Johnnie-guilbert",
+        "type": "regular",
+        "id": "662714"
+      },
+      {
+        "name": "Johnny Depp",
+        "url": "https://genius.com/artists/Johnny-depp",
+        "type": "regular",
+        "id": "35529"
+      },
+      {
+        "name": "Johnny Drille",
+        "url": "https://genius.com/artists/Johnny-drille",
+        "type": "regular",
+        "id": "1116426"
+      },
+      {
+        "name": "Johnny Flynn",
+        "url": "https://genius.com/artists/Johnny-flynn",
+        "type": "regular",
+        "id": "58180"
+      },
+      {
+        "name": "JOHNNYFUU",
+        "url": "https://genius.com/artists/Johnnyfuu",
+        "type": "regular",
+        "id": "3767541"
+      },
+      {
+        "name": "Johnny Gill",
+        "url": "https://genius.com/artists/Johnny-gill",
+        "type": "regular",
+        "id": "170085"
+      },
+      {
+        "name": "Johnny Hallyday",
+        "url": "https://genius.com/artists/Johnny-hallyday",
+        "type": "regular",
+        "id": "96830"
+      },
+      {
+        "name": "Johnny Hates Jazz",
+        "url": "https://genius.com/artists/Johnny-hates-jazz",
+        "type": "regular",
+        "id": "364369"
+      },
+      {
+        "name": "Johnny Horton",
+        "url": "https://genius.com/artists/Johnny-horton",
+        "type": "regular",
+        "id": "195358"
+      },
+      {
+        "name": "Johnny Huynh",
+        "url": "https://genius.com/artists/Johnny-huynh",
+        "type": "regular",
+        "id": "3716209"
+      },
+      {
+        "name": "Johnny Mandel",
+        "url": "https://genius.com/artists/Johnny-mandel",
+        "type": "regular",
+        "id": "376190"
+      },
+      {
+        "name": "Johnny Mathis",
+        "url": "https://genius.com/artists/Johnny-mathis",
+        "type": "regular",
+        "id": "309211"
+      },
+      {
+        "name": "Johnny Mercer",
+        "url": "https://genius.com/artists/Johnny-mercer",
+        "type": "regular",
+        "id": "354113"
+      },
+      {
+        "name": "Johnny Nash",
+        "url": "https://genius.com/artists/Johnny-nash",
+        "type": "regular",
+        "id": "100728"
+      },
+      {
+        "name": "Johnny Orlando",
+        "url": "https://genius.com/artists/Johnny-orlando",
+        "type": "regular",
+        "id": "652735"
+      },
+      {
+        "name": "Johnny Paycheck",
+        "url": "https://genius.com/artists/Johnny-paycheck",
+        "type": "regular",
+        "id": "355206"
+      },
+      {
+        "name": "Johnny Rivers",
+        "url": "https://genius.com/artists/Johnny-rivers",
+        "type": "regular",
+        "id": "70278"
+      },
+      {
+        "name": "John Parr",
+        "url": "https://genius.com/artists/John-parr",
+        "type": "regular",
+        "id": "127104"
+      },
+      {
+        "name": "John Paul Young",
+        "url": "https://genius.com/artists/John-paul-young",
+        "type": "regular",
+        "id": "327438"
+      },
+      {
+        "name": "John Philip Sousa",
+        "url": "https://genius.com/artists/John-philip-sousa",
+        "type": "regular",
+        "id": "24328"
+      },
+      {
+        "name": "John P. Kee",
+        "url": "https://genius.com/artists/John-p-kee",
+        "type": "regular",
+        "id": "367124"
+      },
+      {
+        "name": "John + Jane Q. Public",
+        "url": "https://genius.com/artists/John-jane-q-public",
+        "type": "regular",
+        "id": "3412462"
+      },
+      {
+        "name": "John Powell",
+        "url": "https://genius.com/artists/John-powell",
+        "type": "regular",
+        "id": "385551"
+      },
+      {
+        "name": "John Prine",
+        "url": "https://genius.com/artists/John-prine",
+        "type": "regular",
+        "id": "29383"
+      },
+      {
+        "name": "John Roa",
+        "url": "https://genius.com/artists/John-roa",
+        "type": "regular",
+        "id": "1320725"
+      },
+      {
+        "name": "John Rubinstein",
+        "url": "https://genius.com/artists/John-rubinstein",
+        "type": "regular",
+        "id": "699747"
+      },
+      {
+        "name": "John Rutter",
+        "url": "https://genius.com/artists/John-rutter",
+        "type": "regular",
+        "id": "344850"
+      },
+      {
+        "name": "John Savident",
+        "url": "https://genius.com/artists/John-savident",
+        "type": "regular",
+        "id": "4261391"
+      },
+      {
+        "name": "John Stewart",
+        "url": "https://genius.com/artists/John-stewart",
+        "type": "regular",
+        "id": "359672"
+      },
+      {
+        "name": "John Sullivan",
+        "url": "https://genius.com/artists/John-sullivan",
+        "type": "regular",
+        "id": "37016"
+      },
+      {
+        "name": "John Summit",
+        "url": "https://genius.com/artists/John-summit",
+        "type": "regular",
+        "id": "2250695"
+      },
+      {
+        "name": "John Tartaglia",
+        "url": "https://genius.com/artists/John-tartaglia",
+        "type": "regular",
+        "id": "405392"
+      },
+      {
+        "name": "John Travolta",
+        "url": "https://genius.com/artists/John-travolta",
+        "type": "regular",
+        "id": "44718"
+      },
+      {
+        "name": "John Valby",
+        "url": "https://genius.com/artists/John-valby",
+        "type": "regular",
+        "id": "380080"
+      },
+      {
+        "name": "John Waite",
+        "url": "https://genius.com/artists/John-waite",
+        "type": "regular",
+        "id": "355341"
+      },
+      {
+        "name": "John Wilds",
+        "url": "https://genius.com/artists/John-wilds",
+        "type": "regular",
+        "id": "2158345"
+      },
+      {
+        "name": "John Williams",
+        "url": "https://genius.com/artists/John-williams",
+        "type": "regular",
+        "id": "55741"
+      },
+      {
+        "name": "Johnyboy",
+        "url": "https://genius.com/artists/Johnyboy",
+        "type": "regular",
+        "id": "26127"
+      },
+      {
+        "name": "Johny Romano",
+        "url": "https://genius.com/artists/Johny-romano",
+        "type": "regular",
+        "id": "2962274"
+      },
+      {
+        "name": "Joint One",
+        "url": "https://genius.com/artists/Joint-one",
+        "type": "regular",
+        "id": "1299624"
+      },
+      {
+        "name": "Joje",
+        "url": "https://genius.com/artists/Joje",
+        "type": "regular",
+        "id": "1999478"
+      },
+      {
+        "name": "Joji",
+        "url": "https://genius.com/artists/Joji",
+        "type": "regular",
+        "id": "630470"
+      },
+      {
+        "name": "JoJo",
+        "url": "https://genius.com/artists/Jojo",
+        "type": "regular",
+        "id": "2663"
+      },
+      {
+        "name": "JoJo Siwa",
+        "url": "https://genius.com/artists/Jojo-siwa",
+        "type": "regular",
+        "id": "673238"
+      },
+      {
+        "name": "Jok'Air",
+        "url": "https://genius.com/artists/Jokair",
+        "type": "regular",
+        "id": "35421"
+      },
+      {
+        "name": "Joker",
+        "url": "https://genius.com/artists/Joker",
+        "type": "regular",
+        "id": "259355"
+      },
+      {
+        "name": "Joker OTV",
+        "url": "https://genius.com/artists/Joker-otv",
+        "type": "regular",
+        "id": "4282969"
+      },
+      {
+        "name": "薛之谦 (Joker Xue)",
+        "url": "https://genius.com/artists/Joker-xue",
+        "type": "regular",
+        "id": "1153316"
+      },
+      {
+        "name": "Jokhay",
+        "url": "https://genius.com/artists/Jokhay",
+        "type": "regular",
+        "id": "2151377"
+      },
+      {
+        "name": "Jolagreen23",
+        "url": "https://genius.com/artists/Jolagreen23",
+        "type": "regular",
+        "id": "3336375"
+      },
+      {
+        "name": "蔡依林 (JOLIN)",
+        "url": "https://genius.com/artists/Jolin",
+        "type": "regular",
+        "id": "587674"
+      },
+      {
+        "name": "jolle",
+        "url": "https://genius.com/artists/Jolle",
+        "type": "regular",
+        "id": "2996602"
+      },
+      {
+        "name": "Jombriel",
+        "url": "https://genius.com/artists/Jombriel",
+        "type": "regular",
+        "id": "2965323"
+      },
+      {
+        "name": "Jona",
+        "url": "https://genius.com/artists/Jona",
+        "type": "regular",
+        "id": "663393"
+      },
+      {
+        "name": "Jonah Kagen",
+        "url": "https://genius.com/artists/Jonah-kagen",
+        "type": "regular",
+        "id": "2582522"
+      },
+      {
+        "name": "Jonas Blue",
+        "url": "https://genius.com/artists/Jonas-blue",
+        "type": "regular",
+        "id": "632979"
+      },
+      {
+        "name": "Jonas Brothers",
+        "url": "https://genius.com/artists/Jonas-brothers",
+        "type": "regular",
+        "id": "8436"
+      },
+      {
+        "name": "​jonatan leandoer96",
+        "url": "https://genius.com/artists/Jonatan-leandoer96",
+        "type": "regular",
+        "id": "1230849"
+      },
+      {
+        "name": "Jonathan Butler",
+        "url": "https://genius.com/artists/Jonathan-butler",
+        "type": "regular",
+        "id": "365417"
+      },
+      {
+        "name": "Jonathan B. Wright",
+        "url": "https://genius.com/artists/Jonathan-b-wright",
+        "type": "regular",
+        "id": "1036625"
+      },
+      {
+        "name": "Jonathan Caro",
+        "url": "https://genius.com/artists/Jonathan-caro",
+        "type": "regular",
+        "id": "3706414"
+      },
+      {
+        "name": "Jonathan Coulton",
+        "url": "https://genius.com/artists/Jonathan-coulton",
+        "type": "regular",
+        "id": "12541"
+      },
+      {
+        "name": "Jonathan Groff",
+        "url": "https://genius.com/artists/Jonathan-groff",
+        "type": "regular",
+        "id": "83410"
+      },
+      {
+        "name": "Jonathan Larson",
+        "url": "https://genius.com/artists/Jonathan-larson",
+        "type": "regular",
+        "id": "343690"
+      },
+      {
+        "name": "Jonathan McReynolds",
+        "url": "https://genius.com/artists/Jonathan-mcreynolds",
+        "type": "regular",
+        "id": "184028"
+      },
+      {
+        "name": "Jonathan Michael Fleming",
+        "url": "https://genius.com/artists/Jonathan-michael-fleming",
+        "type": "regular",
+        "id": "3518852"
+      },
+      {
+        "name": "Jonathan Nelson",
+        "url": "https://genius.com/artists/Jonathan-nelson",
+        "type": "regular",
+        "id": "364082"
+      },
+      {
+        "name": "Jonathan Young",
+        "url": "https://genius.com/artists/Jonathan-young",
+        "type": "regular",
+        "id": "1065150"
+      },
+      {
+        "name": "Jon B",
+        "url": "https://genius.com/artists/Jon-b",
+        "type": "regular",
+        "id": "7305"
+      },
+      {
+        "name": "Jon Batiste",
+        "url": "https://genius.com/artists/Jon-batiste",
+        "type": "regular",
+        "id": "1022976"
+      },
+      {
+        "name": "Jon Eidson",
+        "url": "https://genius.com/artists/Jon-eidson",
+        "type": "regular",
+        "id": "648952"
+      },
+      {
+        "name": "Jon English",
+        "url": "https://genius.com/artists/Jon-english",
+        "type": "regular",
+        "id": "361656"
+      },
+      {
+        "name": "Jon Hopkins",
+        "url": "https://genius.com/artists/Jon-hopkins",
+        "type": "regular",
+        "id": "29973"
+      },
+      {
+        "name": "Jonica",
+        "url": "https://genius.com/artists/Jonica",
+        "type": "regular",
+        "id": "4244650"
+      },
+      {
+        "name": "Joni Mitchell",
+        "url": "https://genius.com/artists/Joni-mitchell",
+        "type": "regular",
+        "id": "989"
+      },
+      {
+        "name": "Jonita Gandhi",
+        "url": "https://genius.com/artists/Jonita-gandhi",
+        "type": "regular",
+        "id": "1192977"
+      },
+      {
+        "name": "Jon Keith",
+        "url": "https://genius.com/artists/Jon-keith",
+        "type": "regular",
+        "id": "1200465"
+      },
+      {
+        "name": "Jon Lajoie",
+        "url": "https://genius.com/artists/Jon-lajoie",
+        "type": "regular",
+        "id": "6893"
+      },
+      {
+        "name": "Jonna Fraser",
+        "url": "https://genius.com/artists/Jonna-fraser",
+        "type": "regular",
+        "id": "336947"
+      },
+      {
+        "name": "Jon Pardi",
+        "url": "https://genius.com/artists/Jon-pardi",
+        "type": "regular",
+        "id": "268932"
+      },
+      {
+        "name": "Jon Reddick",
+        "url": "https://genius.com/artists/Jon-reddick",
+        "type": "regular",
+        "id": "675922"
+      },
+      {
+        "name": "Jon Rua",
+        "url": "https://genius.com/artists/Jon-rua",
+        "type": "regular",
+        "id": "572167"
+      },
+      {
+        "name": "Jontae",
+        "url": "https://genius.com/artists/Jontae",
+        "type": "regular",
+        "id": "2223636"
+      },
+      {
+        "name": "Jon Thurlow",
+        "url": "https://genius.com/artists/Jon-thurlow",
+        "type": "regular",
+        "id": "390564"
+      },
+      {
+        "name": "JONY",
+        "url": "https://genius.com/artists/Jony",
+        "type": "regular",
+        "id": "255587"
+      },
+      {
+        "name": "Jon Z",
+        "url": "https://genius.com/artists/Jon-z",
+        "type": "regular",
+        "id": "1036798"
+      },
+      {
+        "name": "João Gilberto",
+        "url": "https://genius.com/artists/Joao-gilberto",
+        "type": "regular",
+        "id": "357761"
+      },
+      {
+        "name": "JoonQT",
+        "url": "https://genius.com/artists/Joonqt",
+        "type": "regular",
+        "id": "2908018"
+      },
+      {
+        "name": "Joost",
+        "url": "https://genius.com/artists/Joost",
+        "type": "regular",
+        "id": "1029095"
+      },
+      {
+        "name": "Jopke van Dobbenburgh",
+        "url": "https://genius.com/artists/Jopke-van-dobbenburgh",
+        "type": "regular",
+        "id": "4378066"
+      },
+      {
+        "name": "Jordana",
+        "url": "https://genius.com/artists/Jordana",
+        "type": "regular",
+        "id": "1813895"
+      },
+      {
+        "name": "Jordan Adetunji",
+        "url": "https://genius.com/artists/Jordan-adetunji",
+        "type": "regular",
+        "id": "1488056"
+      },
+      {
+        "name": "Jordan Davis",
+        "url": "https://genius.com/artists/Jordan-davis",
+        "type": "regular",
+        "id": "1103408"
+      },
+      {
+        "name": "Jordan Fisher",
+        "url": "https://genius.com/artists/Jordan-fisher",
+        "type": "regular",
+        "id": "506800"
+      },
+      {
+        "name": "Jordan Ward",
+        "url": "https://genius.com/artists/Jordan-ward",
+        "type": "regular",
+        "id": "617732"
+      },
+      {
+        "name": "Jordin Sparks",
+        "url": "https://genius.com/artists/Jordin-sparks",
+        "type": "regular",
+        "id": "10207"
+      },
+      {
+        "name": "Jore & Zpoppa",
+        "url": "https://genius.com/artists/Jore-and-zpoppa",
+        "type": "regular",
+        "id": "2076524"
+      },
+      {
+        "name": "Jorge Ben Jor",
+        "url": "https://genius.com/artists/Jorge-ben-jor",
+        "type": "regular",
+        "id": "5086"
+      },
+      {
+        "name": "Jorja Smith",
+        "url": "https://genius.com/artists/Jorja-smith",
+        "type": "regular",
+        "id": "632912"
+      },
+      {
+        "name": "Jorjiana",
+        "url": "https://genius.com/artists/Jorjiana",
+        "type": "regular",
+        "id": "4185609"
+      },
+      {
+        "name": "Jorsshh",
+        "url": "https://genius.com/artists/Jorsshh",
+        "type": "regular",
+        "id": "3688982"
+      },
+      {
+        "name": "Jory Boy",
+        "url": "https://genius.com/artists/Jory-boy",
+        "type": "regular",
+        "id": "150855"
+      },
+      {
+        "name": "José Alfredo Jiménez",
+        "url": "https://genius.com/artists/Jose-alfredo-jimenez",
+        "type": "regular",
+        "id": "360164"
+      },
+      {
+        "name": "Joseline Hernandez",
+        "url": "https://genius.com/artists/Joseline-hernandez",
+        "type": "regular",
+        "id": "1204680"
+      },
+      {
+        "name": "Jose Mari Chan",
+        "url": "https://genius.com/artists/Jose-mari-chan",
+        "type": "regular",
+        "id": "348589"
+      },
+      {
+        "name": "Joseph Ren",
+        "url": "https://genius.com/artists/Joseph-ren",
+        "type": "regular",
+        "id": "4339523"
+      },
+      {
+        "name": "Joseph Williams",
+        "url": "https://genius.com/artists/Joseph-williams",
+        "type": "regular",
+        "id": "158567"
+      },
+      {
+        "name": "José Feliciano",
+        "url": "https://genius.com/artists/Jose-feliciano",
+        "type": "regular",
+        "id": "354244"
+      },
+      {
+        "name": "José González",
+        "url": "https://genius.com/artists/Jose-gonzalez",
+        "type": "regular",
+        "id": "290017"
+      },
+      {
+        "name": "Josh A",
+        "url": "https://genius.com/artists/Josh-a",
+        "type": "regular",
+        "id": "251773"
+      },
+      {
+        "name": "Josh Baldwin",
+        "url": "https://genius.com/artists/Josh-baldwin",
+        "type": "regular",
+        "id": "479678"
+      },
+      {
+        "name": "Josh Breaks",
+        "url": "https://genius.com/artists/Josh-breaks",
+        "type": "regular",
+        "id": "1422200"
+      },
+      {
+        "name": "Josh Gad",
+        "url": "https://genius.com/artists/Josh-gad",
+        "type": "regular",
+        "id": "138574"
+      },
+      {
+        "name": "Josh Garrels",
+        "url": "https://genius.com/artists/Josh-garrels",
+        "type": "regular",
+        "id": "43072"
+      },
+      {
+        "name": "Josh Groban",
+        "url": "https://genius.com/artists/Josh-groban",
+        "type": "regular",
+        "id": "31919"
+      },
+      {
+        "name": "Josh Levi",
+        "url": "https://genius.com/artists/Josh-levi",
+        "type": "regular",
+        "id": "481207"
+      },
+      {
+        "name": "Josh Ritter",
+        "url": "https://genius.com/artists/Josh-ritter",
+        "type": "regular",
+        "id": "41614"
+      },
+      {
+        "name": "Josh Ross",
+        "url": "https://genius.com/artists/Josh-ross",
+        "type": "regular",
+        "id": "2114887"
+      },
+      {
+        "name": "Josh Turner",
+        "url": "https://genius.com/artists/Josh-turner",
+        "type": "regular",
+        "id": "57363"
+      },
+      {
+        "name": "Joshua Baraka",
+        "url": "https://genius.com/artists/Joshua-baraka",
+        "type": "regular",
+        "id": "2816167"
+      },
+      {
+        "name": "Joshua Bassett",
+        "url": "https://genius.com/artists/Joshua-bassett",
+        "type": "regular",
+        "id": "2006609"
+      },
+      {
+        "name": "Joshua Boone",
+        "url": "https://genius.com/artists/Joshua-boone",
+        "type": "regular",
+        "id": "1164185"
+      },
+      {
+        "name": "Joshua Fisher",
+        "url": "https://genius.com/artists/Joshua-fisher",
+        "type": "regular",
+        "id": "1159978"
+      },
+      {
+        "name": "Joshua Henry",
+        "url": "https://genius.com/artists/Joshua-henry",
+        "type": "regular",
+        "id": "1018622"
+      },
+      {
+        "name": "Josiah Queen",
+        "url": "https://genius.com/artists/Josiah-queen",
+        "type": "regular",
+        "id": "3196220"
+      },
+      {
+        "name": "Josie Edwards",
+        "url": "https://genius.com/artists/Josie-edwards",
+        "type": "regular",
+        "id": "4439133"
+      },
+      {
+        "name": "José José",
+        "url": "https://genius.com/artists/Jose-jose",
+        "type": "regular",
+        "id": "344501"
+      },
+      {
+        "name": "José Madero",
+        "url": "https://genius.com/artists/Jose-madero",
+        "type": "regular",
+        "id": "661338"
+      },
+      {
+        "name": "Josman",
+        "url": "https://genius.com/artists/Josman",
+        "type": "regular",
+        "id": "153477"
+      },
+      {
+        "name": "Jossie A",
+        "url": "https://genius.com/artists/Jossie-a",
+        "type": "regular",
+        "id": "3867014"
+      },
+      {
+        "name": "Josylvio",
+        "url": "https://genius.com/artists/Josylvio",
+        "type": "regular",
+        "id": "626456"
+      },
+      {
+        "name": "Journey",
+        "url": "https://genius.com/artists/Journey",
+        "type": "regular",
+        "id": "13184"
+      },
+      {
+        "name": "Jovaan",
+        "url": "https://genius.com/artists/Jovaan",
+        "type": "regular",
+        "id": "2748762"
+      },
+      {
+        "name": "Jovana Pajić",
+        "url": "https://genius.com/artists/Jovana-pajic",
+        "type": "regular",
+        "id": "1886525"
+      },
+      {
+        "name": "Jovanotti",
+        "url": "https://genius.com/artists/Jovanotti",
+        "type": "regular",
+        "id": "6942"
+      },
+      {
+        "name": "Jowell & Randy",
+        "url": "https://genius.com/artists/Jowell-and-randy",
+        "type": "regular",
+        "id": "352137"
+      },
+      {
+        "name": "Joy Again",
+        "url": "https://genius.com/artists/Joy-again",
+        "type": "regular",
+        "id": "982144"
+      },
+      {
+        "name": "Joyce Manor",
+        "url": "https://genius.com/artists/Joyce-manor",
+        "type": "regular",
+        "id": "64191"
+      },
+      {
+        "name": "Joy Crookes",
+        "url": "https://genius.com/artists/Joy-crookes",
+        "type": "regular",
+        "id": "995986"
+      },
+      {
+        "name": "Joy Division",
+        "url": "https://genius.com/artists/Joy-division",
+        "type": "regular",
+        "id": "28034"
+      },
+      {
+        "name": "Joyner Lucas",
+        "url": "https://genius.com/artists/Joyner-lucas",
+        "type": "regular",
+        "id": "345077"
+      },
+      {
+        "name": "Joy Oladokun",
+        "url": "https://genius.com/artists/Joy-oladokun",
+        "type": "regular",
+        "id": "1180934"
+      },
+      {
+        "name": "Joyous Celebration",
+        "url": "https://genius.com/artists/Joyous-celebration",
+        "type": "regular",
+        "id": "480365"
+      },
+      {
+        "name": "Joy Woods",
+        "url": "https://genius.com/artists/Joy-woods",
+        "type": "regular",
+        "id": "2051021"
+      },
+      {
+        "name": "JPCC Worship",
+        "url": "https://genius.com/artists/Jpcc-worship",
+        "type": "regular",
+        "id": "325271"
+      },
+      {
+        "name": "JP Cooper",
+        "url": "https://genius.com/artists/Jp-cooper",
+        "type": "regular",
+        "id": "67349"
+      },
+      {
+        "name": "JP Saxe",
+        "url": "https://genius.com/artists/Jp-saxe",
+        "type": "regular",
+        "id": "652829"
+      },
+      {
+        "name": "JRK 19",
+        "url": "https://genius.com/artists/Jrk-19",
+        "type": "regular",
+        "id": "2521781"
+      },
+      {
+        "name": "JR king24",
+        "url": "https://genius.com/artists/Jr-king24",
+        "type": "regular",
+        "id": "4368326"
+      },
+      {
+        "name": "J. Robert Spencer",
+        "url": "https://genius.com/artists/J-robert-spencer",
+        "type": "regular",
+        "id": "405320"
+      },
+      {
+        "name": "J.R.R. Tolkien",
+        "url": "https://genius.com/artists/Jrr-tolkien",
+        "type": "regular",
+        "id": "33659"
+      },
+      {
+        "name": "JSOL (Nguyễn Thái Sơn)",
+        "url": "https://genius.com/artists/Jsol-nguyen-thai-son",
+        "type": "regular",
+        "id": "2045267"
+      },
+      {
+        "name": "​jssr",
+        "url": "https://genius.com/artists/Jssr",
+        "type": "regular",
+        "id": "2257102"
+      },
+      {
+        "name": "Js da Torre",
+        "url": "https://genius.com/artists/Js-da-torre",
+        "type": "regular",
+        "id": "4208293"
+      },
+      {
+        "name": "JT",
+        "url": "https://genius.com/artists/Jt",
+        "type": "regular",
+        "id": "1401807"
+      },
+      {
+        "name": "J. Tajor",
+        "url": "https://genius.com/artists/J-tajor",
+        "type": "regular",
+        "id": "3150035"
+      },
+      {
+        "name": "JT Music",
+        "url": "https://genius.com/artists/Jt-music",
+        "type": "regular",
+        "id": "40721"
+      },
+      {
+        "name": "Jøtta",
+        "url": "https://genius.com/artists/Jtta",
+        "type": "regular",
+        "id": "4230301"
+      },
+      {
+        "name": "Juacko",
+        "url": "https://genius.com/artists/Juacko",
+        "type": "regular",
+        "id": "1224826"
+      },
+      {
+        "name": "Juan 97",
+        "url": "https://genius.com/artists/Juan-97",
+        "type": "regular",
+        "id": "3974248"
+      },
+      {
+        "name": "Juancho Marqués",
+        "url": "https://genius.com/artists/Juancho-marques",
+        "type": "regular",
+        "id": "682383"
+      },
+      {
+        "name": "Juan dela Cruz Band",
+        "url": "https://genius.com/artists/Juan-dela-cruz-band",
+        "type": "regular",
+        "id": "374252"
+      },
+      {
+        "name": "Juanes",
+        "url": "https://genius.com/artists/Juanes",
+        "type": "regular",
+        "id": "54791"
+      },
+      {
+        "name": "Juan Gabriel",
+        "url": "https://genius.com/artists/Juan-gabriel",
+        "type": "regular",
+        "id": "354949"
+      },
+      {
+        "name": "Juanita Bynum",
+        "url": "https://genius.com/artists/Juanita-bynum",
+        "type": "regular",
+        "id": "353803"
+      },
+      {
+        "name": "juan karlos",
+        "url": "https://genius.com/artists/Juan-karlos",
+        "type": "regular",
+        "id": "2845348"
+      },
+      {
+        "name": "Juan Luis Guerra",
+        "url": "https://genius.com/artists/Juan-luis-guerra",
+        "type": "regular",
+        "id": "48368"
+      },
+      {
+        "name": "Juan Magán",
+        "url": "https://genius.com/artists/Juan-magan",
+        "type": "regular",
+        "id": "388604"
+      },
+      {
+        "name": "Juanpa Salazar",
+        "url": "https://genius.com/artists/Juanpa-salazar",
+        "type": "regular",
+        "id": "3448874"
+      },
+      {
+        "name": "The Juans",
+        "url": "https://genius.com/artists/The-juans",
+        "type": "regular",
+        "id": "1173178"
+      },
+      {
+        "name": "Juanthugs",
+        "url": "https://genius.com/artists/Juanthugs",
+        "type": "regular",
+        "id": "1311659"
+      },
+      {
+        "name": "Jubilee",
+        "url": "https://genius.com/artists/Jubilee",
+        "type": "regular",
+        "id": "154977"
+      },
+      {
+        "name": "Jubilee Worship",
+        "url": "https://genius.com/artists/Jubilee-worship",
+        "type": "regular",
+        "id": "1624810"
+      },
+      {
+        "name": "Jubin Nautiyal",
+        "url": "https://genius.com/artists/Jubin-nautiyal",
+        "type": "regular",
+        "id": "1196348"
+      },
+      {
+        "name": "JubyPhonic",
+        "url": "https://genius.com/artists/Jubyphonic",
+        "type": "regular",
+        "id": "276471"
+      },
+      {
+        "name": "Judas Priest",
+        "url": "https://genius.com/artists/Judas-priest",
+        "type": "regular",
+        "id": "17236"
+      },
+      {
+        "name": "The Judds",
+        "url": "https://genius.com/artists/The-judds",
+        "type": "regular",
+        "id": "332505"
+      },
+      {
+        "name": "Judeline",
+        "url": "https://genius.com/artists/Judeline",
+        "type": "regular",
+        "id": "2205736"
+      },
+      {
+        "name": "Judith Christie McAllister",
+        "url": "https://genius.com/artists/Judith-christie-mcallister",
+        "type": "regular",
+        "id": "402462"
+      },
+      {
+        "name": "Judy Collins",
+        "url": "https://genius.com/artists/Judy-collins",
+        "type": "regular",
+        "id": "33317"
+      },
+      {
+        "name": "Judy Kuhn",
+        "url": "https://genius.com/artists/Judy-kuhn",
+        "type": "regular",
+        "id": "158552"
+      },
+      {
+        "name": "Juelz Santana",
+        "url": "https://genius.com/artists/Juelz-santana",
+        "type": "regular",
+        "id": "78"
+      },
+      {
+        "name": "Jugglerz",
+        "url": "https://genius.com/artists/Jugglerz",
+        "type": "regular",
+        "id": "960281"
+      },
+      {
+        "name": "Juha Tapio",
+        "url": "https://genius.com/artists/Juha-tapio",
+        "type": "regular",
+        "id": "360353"
+      },
+      {
+        "name": "Juha Vainio",
+        "url": "https://genius.com/artists/Juha-vainio",
+        "type": "regular",
+        "id": "375442"
+      },
+      {
+        "name": "Juhn",
+        "url": "https://genius.com/artists/Juhn",
+        "type": "regular",
+        "id": "656331"
+      },
+      {
+        "name": "Juice",
+        "url": "https://genius.com/artists/Juice",
+        "type": "regular",
+        "id": "140122"
+      },
+      {
+        "name": "Juice Leskinen Grand Slam",
+        "url": "https://genius.com/artists/Juice-leskinen-grand-slam",
+        "type": "regular",
+        "id": "384042"
+      },
+      {
+        "name": "Juice Leskinen Slam",
+        "url": "https://genius.com/artists/Juice-leskinen-slam",
+        "type": "regular",
+        "id": "381922"
+      },
+      {
+        "name": "Juice Newton",
+        "url": "https://genius.com/artists/Juice-newton",
+        "type": "regular",
+        "id": "229954"
+      },
+      {
+        "name": "Juicy BAE",
+        "url": "https://genius.com/artists/Juicy-bae",
+        "type": "regular",
+        "id": "1853675"
+      },
+      {
+        "name": "Juicy J",
+        "url": "https://genius.com/artists/Juicy-j",
+        "type": "regular",
+        "id": "1073"
+      },
+      {
+        "name": "Juicy Luicy",
+        "url": "https://genius.com/artists/Juicy-luicy",
+        "type": "regular",
+        "id": "1663811"
+      },
+      {
+        "name": "JuL",
+        "url": "https://genius.com/artists/Jul",
+        "type": "regular",
+        "id": "74283"
+      },
+      {
+        "name": "Julia Church",
+        "url": "https://genius.com/artists/Julia-church",
+        "type": "regular",
+        "id": "1025513"
+      },
+      {
+        "name": "Julia Engelmann",
+        "url": "https://genius.com/artists/Julia-engelmann",
+        "type": "regular",
+        "id": "131701"
+      },
+      {
+        "name": "Julia Harriman",
+        "url": "https://genius.com/artists/Julia-harriman",
+        "type": "regular",
+        "id": "645990"
+      },
+      {
+        "name": "Julia Jacklin",
+        "url": "https://genius.com/artists/Julia-jacklin",
+        "type": "regular",
+        "id": "1002717"
+      },
+      {
+        "name": "Julia Lester",
+        "url": "https://genius.com/artists/Julia-lester",
+        "type": "regular",
+        "id": "2011622"
+      },
+      {
+        "name": "Julia Michaels",
+        "url": "https://genius.com/artists/Julia-michaels",
+        "type": "regular",
+        "id": "409643"
+      },
+      {
+        "name": "Julian Lerner",
+        "url": "https://genius.com/artists/Julian-lerner",
+        "type": "regular",
+        "id": "4417932"
+      },
+      {
+        "name": "Julianno Sosa",
+        "url": "https://genius.com/artists/Julianno-sosa",
+        "type": "regular",
+        "id": "1575617"
+      },
+      {
+        "name": "Julian Sommer",
+        "url": "https://genius.com/artists/Julian-sommer",
+        "type": "regular",
+        "id": "3097536"
+      },
+      {
+        "name": "Julia Wolf",
+        "url": "https://genius.com/artists/Julia-wolf",
+        "type": "regular",
+        "id": "2090145"
+      },
+      {
+        "name": "​julie",
+        "url": "https://genius.com/artists/Julie",
+        "type": "regular",
+        "id": "29402"
+      },
+      {
+        "name": "Julie Andrews",
+        "url": "https://genius.com/artists/Julie-andrews",
+        "type": "regular",
+        "id": "32811"
+      },
+      {
+        "name": "Julie and the Phantoms Cast",
+        "url": "https://genius.com/artists/Julie-and-the-phantoms-cast",
+        "type": "regular",
+        "id": "2391510"
+      },
+      {
+        "name": "Julie Anne San Jose",
+        "url": "https://genius.com/artists/Julie-anne-san-jose",
+        "type": "regular",
+        "id": "405219"
+      },
+      {
+        "name": "Julie Doiron",
+        "url": "https://genius.com/artists/Julie-doiron",
+        "type": "regular",
+        "id": "71251"
+      },
+      {
+        "name": "Julie London",
+        "url": "https://genius.com/artists/Julie-london",
+        "type": "regular",
+        "id": "364681"
+      },
+      {
+        "name": "Julien Baker",
+        "url": "https://genius.com/artists/Julien-baker",
+        "type": "regular",
+        "id": "536618"
+      },
+      {
+        "name": "Julien Bam",
+        "url": "https://genius.com/artists/Julien-bam",
+        "type": "regular",
+        "id": "531095"
+      },
+      {
+        "name": "Julie Stevens",
+        "url": "https://genius.com/artists/Julie-stevens",
+        "type": "regular",
+        "id": "1837053"
+      },
+      {
+        "name": "Julieta",
+        "url": "https://genius.com/artists/Julieta",
+        "type": "regular",
+        "id": "3236009"
+      },
+      {
+        "name": "Julieta Venegas",
+        "url": "https://genius.com/artists/Julieta-venegas",
+        "type": "regular",
+        "id": "56067"
+      },
+      {
+        "name": "Julie Walters",
+        "url": "https://genius.com/artists/Julie-walters",
+        "type": "regular",
+        "id": "452571"
+      },
+      {
+        "name": "Julión Álvarez y su Norteño Banda",
+        "url": "https://genius.com/artists/Julion-alvarez-y-su-norteno-banda",
+        "type": "regular",
+        "id": "349674"
+      },
+      {
+        "name": "Julio Iglesias",
+        "url": "https://genius.com/artists/Julio-iglesias",
+        "type": "regular",
+        "id": "31762"
+      },
+      {
+        "name": "Джуманджи (Jumangee)",
+        "url": "https://genius.com/artists/Jumangee",
+        "type": "regular",
+        "id": "4254620"
+      },
+      {
+        "name": "JUMPA",
+        "url": "https://genius.com/artists/Jumpa",
+        "type": "regular",
+        "id": "39931"
+      },
+      {
+        "name": "June Carter Cash",
+        "url": "https://genius.com/artists/June-carter-cash",
+        "type": "regular",
+        "id": "153456"
+      },
+      {
+        "name": "June Henry",
+        "url": "https://genius.com/artists/June-henry",
+        "type": "regular",
+        "id": "3099330"
+      },
+      {
+        "name": "Jung Jaeil (정재일)",
+        "url": "https://genius.com/artists/Jung-jaeil",
+        "type": "regular",
+        "id": "1062030"
+      },
+      {
+        "name": "Jung Kook (정국)",
+        "url": "https://genius.com/artists/Jung-kook",
+        "type": "regular",
+        "id": "1016907"
+      },
+      {
+        "name": "Jungle",
+        "url": "https://genius.com/artists/Jungle",
+        "type": "regular",
+        "id": "301799"
+      },
+      {
+        "name": "Jungle Jack",
+        "url": "https://genius.com/artists/Jungle-jack",
+        "type": "regular",
+        "id": "2992883"
+      },
+      {
+        "name": "Jung Yong Hwa (정용화)",
+        "url": "https://genius.com/artists/Jung-yong-hwa",
+        "type": "regular",
+        "id": "1026848"
+      },
+      {
+        "name": "Junior H",
+        "url": "https://genius.com/artists/Junior-h",
+        "type": "regular",
+        "id": "1954034"
+      },
+      {
+        "name": "Junior M.A.F.I.A.",
+        "url": "https://genius.com/artists/Junior-mafia",
+        "type": "regular",
+        "id": "129"
+      },
+      {
+        "name": "Junior Senior",
+        "url": "https://genius.com/artists/Junior-senior",
+        "type": "regular",
+        "id": "369114"
+      },
+      {
+        "name": "Jun Munthe",
+        "url": "https://genius.com/artists/Jun-munthe",
+        "type": "regular",
+        "id": "4009278"
+      },
+      {
+        "name": "juno",
+        "url": "https://genius.com/artists/Juno",
+        "type": "regular",
+        "id": "1846747"
+      },
+      {
+        "name": "Juno Kilometar",
+        "url": "https://genius.com/artists/Juno-kilometar",
+        "type": "regular",
+        "id": "4340477"
+      },
+      {
+        "name": "麥浚龍 (Juno Mak)",
+        "url": "https://genius.com/artists/Juno-mak",
+        "type": "regular",
+        "id": "2300880"
+      },
+      {
+        "name": "Juno Songs",
+        "url": "https://genius.com/artists/Juno-songs",
+        "type": "regular",
+        "id": "1936607"
+      },
+      {
+        "name": "Юпи (Jupi)",
+        "url": "https://genius.com/artists/Jupi",
+        "type": "regular",
+        "id": "3706713"
+      },
+      {
+        "name": "Jurassic 5",
+        "url": "https://genius.com/artists/Jurassic-5",
+        "type": "regular",
+        "id": "1191"
+      },
+      {
+        "name": "Juris",
+        "url": "https://genius.com/artists/Juris",
+        "type": "regular",
+        "id": "405236"
+      },
+      {
+        "name": "JUST BANG",
+        "url": "https://genius.com/artists/Just-bang",
+        "type": "regular",
+        "id": "2246813"
+      },
+      {
+        "name": "JUSTHIS (저스디스)",
+        "url": "https://genius.com/artists/Justhis",
+        "type": "regular",
+        "id": "614519"
+      },
+      {
+        "name": "Just Hush",
+        "url": "https://genius.com/artists/Just-hush",
+        "type": "regular",
+        "id": "1135133"
+      },
+      {
+        "name": "Justice",
+        "url": "https://genius.com/artists/Justice",
+        "type": "regular",
+        "id": "68154"
+      },
+      {
+        "name": "Justine Skye",
+        "url": "https://genius.com/artists/Justine-skye",
+        "type": "regular",
+        "id": "18469"
+      },
+      {
+        "name": "Justin Quiles",
+        "url": "https://genius.com/artists/Justin-quiles",
+        "type": "regular",
+        "id": "525432"
+      },
+      {
+        "name": "Justin Vasquez",
+        "url": "https://genius.com/artists/Justin-vasquez",
+        "type": "regular",
+        "id": "1582241"
+      },
+      {
+        "name": "justjack6382",
+        "url": "https://genius.com/artists/Justjack6382",
+        "type": "regular",
+        "id": "4366311"
+      },
+      {
+        "name": "Justyna Steczkowska",
+        "url": "https://genius.com/artists/Justyna-steczkowska",
+        "type": "regular",
+        "id": "354898"
+      },
+      {
+        "name": "Jutes",
+        "url": "https://genius.com/artists/Jutes",
+        "type": "regular",
+        "id": "646552"
+      },
+      {
+        "name": "Juvenile",
+        "url": "https://genius.com/artists/Juvenile",
+        "type": "regular",
+        "id": "38"
+      },
+      {
+        "name": "Jux.",
+        "url": "https://genius.com/artists/Jux",
+        "type": "regular",
+        "id": "76773"
+      },
+      {
+        "name": "JVG",
+        "url": "https://genius.com/artists/Jvg",
+        "type": "regular",
+        "id": "381383"
+      },
+      {
+        "name": "JVKE",
+        "url": "https://genius.com/artists/Jvke",
+        "type": "regular",
+        "id": "310335"
+      },
+      {
+        "name": "Jvnior",
+        "url": "https://genius.com/artists/Jvnior",
+        "type": "regular",
+        "id": "982537"
+      },
+      {
+        "name": "jxdn",
+        "url": "https://genius.com/artists/Jxdn",
+        "type": "regular",
+        "id": "2127113"
+      },
+      {
+        "name": "Jyotica Tangri",
+        "url": "https://genius.com/artists/Jyotica-tangri",
+        "type": "regular",
+        "id": "1594587"
+      },
+      {
+        "name": "jzxdx",
+        "url": "https://genius.com/artists/Jzxdx",
+        "type": "regular",
+        "id": "3451212"
+      }
+    ]
+  }
+}

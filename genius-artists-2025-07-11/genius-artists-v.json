@@ -1,0 +1,4513 @@
+{
+  "letter": "V",
+  "timestamp": "2025-07-11T12:58:23.052Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Валентин Стрыкало (Valentin Strikalo)",
+        "url": "https://genius.com/artists/Valentin-strikalo",
+        "type": "popular",
+        "id": "1210595"
+      },
+      {
+        "name": "Vane Lily",
+        "url": "https://genius.com/artists/Vane-lily",
+        "type": "popular",
+        "id": "2388645"
+      },
+      {
+        "name": "Vanessa Carlton",
+        "url": "https://genius.com/artists/Vanessa-carlton",
+        "type": "popular",
+        "id": "32552"
+      },
+      {
+        "name": "Vanessa Hudgens",
+        "url": "https://genius.com/artists/Vanessa-hudgens",
+        "type": "popular",
+        "id": "184931"
+      },
+      {
+        "name": "Van Halen",
+        "url": "https://genius.com/artists/Van-halen",
+        "type": "popular",
+        "id": "38215"
+      },
+      {
+        "name": "Van Morrison",
+        "url": "https://genius.com/artists/Van-morrison",
+        "type": "popular",
+        "id": "32544"
+      },
+      {
+        "name": "VEDO",
+        "url": "https://genius.com/artists/Vedo",
+        "type": "popular",
+        "id": "963914"
+      },
+      {
+        "name": "Veigh",
+        "url": "https://genius.com/artists/Veigh",
+        "type": "popular",
+        "id": "1996269"
+      },
+      {
+        "name": "Velet",
+        "url": "https://genius.com/artists/Velet",
+        "type": "popular",
+        "id": "1271121"
+      },
+      {
+        "name": "The Velvet Underground",
+        "url": "https://genius.com/artists/The-velvet-underground",
+        "type": "popular",
+        "id": "23011"
+      },
+      {
+        "name": "Versus Battle",
+        "url": "https://genius.com/artists/Versus-battle",
+        "type": "popular",
+        "id": "349224"
+      },
+      {
+        "name": "Victor Borba",
+        "url": "https://genius.com/artists/Victor-borba",
+        "type": "popular",
+        "id": "2405204"
+      },
+      {
+        "name": "Victor Mendivil",
+        "url": "https://genius.com/artists/Victor-mendivil",
+        "type": "popular",
+        "id": "3721906"
+      },
+      {
+        "name": "Village People",
+        "url": "https://genius.com/artists/Village-people",
+        "type": "popular",
+        "id": "17646"
+      },
+      {
+        "name": "Vince Vance & The Valiants",
+        "url": "https://genius.com/artists/Vince-vance-and-the-valiants",
+        "type": "popular",
+        "id": "372122"
+      },
+      {
+        "name": "Винтаж (Vintage)",
+        "url": "https://genius.com/artists/Vintage",
+        "type": "popular",
+        "id": "450473"
+      },
+      {
+        "name": "Volbeat",
+        "url": "https://genius.com/artists/Volbeat",
+        "type": "popular",
+        "id": "49644"
+      },
+      {
+        "name": "Voskresenskii",
+        "url": "https://genius.com/artists/Voskresenskii",
+        "type": "popular",
+        "id": "3422822"
+      },
+      {
+        "name": "V $ X V PRiNCE",
+        "url": "https://genius.com/artists/V-x-v-prince",
+        "type": "popular",
+        "id": "1693043"
+      },
+      {
+        "name": "Vybz Kartel",
+        "url": "https://genius.com/artists/Vybz-kartel",
+        "type": "popular",
+        "id": "885"
+      }
+    ],
+    "regular": [
+      {
+        "name": "V (뷔)",
+        "url": "https://genius.com/artists/V",
+        "type": "regular",
+        "id": "520161"
+      },
+      {
+        "name": "V6",
+        "url": "https://genius.com/artists/V6",
+        "type": "regular",
+        "id": "354941"
+      },
+      {
+        "name": "V9",
+        "url": "https://genius.com/artists/V9",
+        "type": "regular",
+        "id": "1817868"
+      },
+      {
+        "name": "Vaas Montenegro",
+        "url": "https://genius.com/artists/Vaas-montenegro",
+        "type": "regular",
+        "id": "226598"
+      },
+      {
+        "name": "Vacations",
+        "url": "https://genius.com/artists/Vacations",
+        "type": "regular",
+        "id": "648989"
+      },
+      {
+        "name": "Vacca",
+        "url": "https://genius.com/artists/Vacca",
+        "type": "regular",
+        "id": "453220"
+      },
+      {
+        "name": "The Vaccines",
+        "url": "https://genius.com/artists/The-vaccines",
+        "type": "regular",
+        "id": "22750"
+      },
+      {
+        "name": "VACÍO",
+        "url": "https://genius.com/artists/Vacio",
+        "type": "regular",
+        "id": "1832893"
+      },
+      {
+        "name": "Vacra",
+        "url": "https://genius.com/artists/Vacra",
+        "type": "regular",
+        "id": "1493727"
+      },
+      {
+        "name": "Vader",
+        "url": "https://genius.com/artists/Vader",
+        "type": "regular",
+        "id": "20152"
+      },
+      {
+        "name": "Vader Abraham",
+        "url": "https://genius.com/artists/Vader-abraham",
+        "type": "regular",
+        "id": "454456"
+      },
+      {
+        "name": "Vado",
+        "url": "https://genius.com/artists/Vado",
+        "type": "regular",
+        "id": "780"
+      },
+      {
+        "name": "Вадяра Блюз (Vadyara Blues)",
+        "url": "https://genius.com/artists/Vadyara-blues",
+        "type": "regular",
+        "id": "38858"
+      },
+      {
+        "name": "Vaeo",
+        "url": "https://genius.com/artists/Vaeo",
+        "type": "regular",
+        "id": "1818509"
+      },
+      {
+        "name": "VAE VISTIC",
+        "url": "https://genius.com/artists/Vae-vistic",
+        "type": "regular",
+        "id": "1083324"
+      },
+      {
+        "name": "​vai5000",
+        "url": "https://genius.com/artists/Vai5000",
+        "type": "regular",
+        "id": "3158974"
+      },
+      {
+        "name": "Vaidas Baumila",
+        "url": "https://genius.com/artists/Vaidas-baumila",
+        "type": "regular",
+        "id": "1523177"
+      },
+      {
+        "name": "Vaiko Eplik",
+        "url": "https://genius.com/artists/Vaiko-eplik",
+        "type": "regular",
+        "id": "480916"
+      },
+      {
+        "name": "Vai Mahina",
+        "url": "https://genius.com/artists/Vai-mahina",
+        "type": "regular",
+        "id": "1028073"
+      },
+      {
+        "name": "Vainy",
+        "url": "https://genius.com/artists/Vainy",
+        "type": "regular",
+        "id": "2574029"
+      },
+      {
+        "name": "Vajèn van den Bosch",
+        "url": "https://genius.com/artists/Vajen-van-den-bosch",
+        "type": "regular",
+        "id": "483031"
+      },
+      {
+        "name": "Vajta",
+        "url": "https://genius.com/artists/Vajta",
+        "type": "regular",
+        "id": "3053889"
+      },
+      {
+        "name": "Vakho Brooklyn",
+        "url": "https://genius.com/artists/Vakho-brooklyn",
+        "type": "regular",
+        "id": "3802498"
+      },
+      {
+        "name": "Valahia",
+        "url": "https://genius.com/artists/Valahia",
+        "type": "regular",
+        "id": "3383948"
+      },
+      {
+        "name": "Vald",
+        "url": "https://genius.com/artists/Vald",
+        "type": "regular",
+        "id": "19217"
+      },
+      {
+        "name": "Valderrama Flow",
+        "url": "https://genius.com/artists/Valderrama-flow",
+        "type": "regular",
+        "id": "2159957"
+      },
+      {
+        "name": "Val Doonican",
+        "url": "https://genius.com/artists/Val-doonican",
+        "type": "regular",
+        "id": "459179"
+      },
+      {
+        "name": "VALE",
+        "url": "https://genius.com/artists/Vale",
+        "type": "regular",
+        "id": "2660098"
+      },
+      {
+        "name": "Valee",
+        "url": "https://genius.com/artists/Valee",
+        "type": "regular",
+        "id": "1019698"
+      },
+      {
+        "name": "Vale Garzón",
+        "url": "https://genius.com/artists/Vale-garzon",
+        "type": "regular",
+        "id": "3817701"
+      },
+      {
+        "name": "Vale Lambo",
+        "url": "https://genius.com/artists/Vale-lambo",
+        "type": "regular",
+        "id": "569967"
+      },
+      {
+        "name": "Valen LU",
+        "url": "https://genius.com/artists/Valen-lu",
+        "type": "regular",
+        "id": "3548813"
+      },
+      {
+        "name": "VALEN (MAR)",
+        "url": "https://genius.com/artists/Valen-mar",
+        "type": "regular",
+        "id": "2870472"
+      },
+      {
+        "name": "Валентин Дядька (Valentin Dyad'ka)",
+        "url": "https://genius.com/artists/Valentin-dyadka",
+        "type": "regular",
+        "id": "3060030"
+      },
+      {
+        "name": "Valentinna",
+        "url": "https://genius.com/artists/Valentinna",
+        "type": "regular",
+        "id": "3765603"
+      },
+      {
+        "name": "Valentino",
+        "url": "https://genius.com/artists/Valentino",
+        "type": "regular",
+        "id": "44271"
+      },
+      {
+        "name": "Valentino Bošković",
+        "url": "https://genius.com/artists/Valentino-boskovic",
+        "type": "regular",
+        "id": "2932078"
+      },
+      {
+        "name": "Valentino Perutina",
+        "url": "https://genius.com/artists/Valentino-perutina",
+        "type": "regular",
+        "id": "1987761"
+      },
+      {
+        "name": "Valentín Elizalde",
+        "url": "https://genius.com/artists/Valentin-elizalde",
+        "type": "regular",
+        "id": "91228"
+      },
+      {
+        "name": "Vale Pain",
+        "url": "https://genius.com/artists/Vale-pain",
+        "type": "regular",
+        "id": "1397992"
+      },
+      {
+        "name": "Valeria Andrews",
+        "url": "https://genius.com/artists/Valeria-andrews",
+        "type": "regular",
+        "id": "390841"
+      },
+      {
+        "name": "Валерия Козлова (Valeria Kozlova)",
+        "url": "https://genius.com/artists/Valeria-kozlova",
+        "type": "regular",
+        "id": "3222732"
+      },
+      {
+        "name": "Valerieblud",
+        "url": "https://genius.com/artists/Valerieblud",
+        "type": "regular",
+        "id": "3978133"
+      },
+      {
+        "name": "Valerie Broussard",
+        "url": "https://genius.com/artists/Valerie-broussard",
+        "type": "regular",
+        "id": "640962"
+      },
+      {
+        "name": "Valerie June",
+        "url": "https://genius.com/artists/Valerie-june",
+        "type": "regular",
+        "id": "280185"
+      },
+      {
+        "name": "Valerie Wright",
+        "url": "https://genius.com/artists/Valerie-wright",
+        "type": "regular",
+        "id": "1058171"
+      },
+      {
+        "name": "Valerio Lundini",
+        "url": "https://genius.com/artists/Valerio-lundini",
+        "type": "regular",
+        "id": "2491214"
+      },
+      {
+        "name": "Valeriu Sterian",
+        "url": "https://genius.com/artists/Valeriu-sterian",
+        "type": "regular",
+        "id": "1447003"
+      },
+      {
+        "name": "Валерия (Valeriya)",
+        "url": "https://genius.com/artists/Valeriya",
+        "type": "regular",
+        "id": "1294544"
+      },
+      {
+        "name": "Valeriya Force",
+        "url": "https://genius.com/artists/Valeriya-force",
+        "type": "regular",
+        "id": "4371041"
+      },
+      {
+        "name": "Валерий Леонтьев (Valery Leontiev)",
+        "url": "https://genius.com/artists/Valery-leontiev",
+        "type": "regular",
+        "id": "2057176"
+      },
+      {
+        "name": "Валерий Меладзе (Valery Meladze)",
+        "url": "https://genius.com/artists/Valery-meladze",
+        "type": "regular",
+        "id": "1401436"
+      },
+      {
+        "name": "Валерий Сюткин (Valery Syutkin)",
+        "url": "https://genius.com/artists/Valery-syutkin",
+        "type": "regular",
+        "id": "2131462"
+      },
+      {
+        "name": "Valeska Gerhart",
+        "url": "https://genius.com/artists/Valeska-gerhart",
+        "type": "regular",
+        "id": "454777"
+      },
+      {
+        "name": "Valete",
+        "url": "https://genius.com/artists/Valete",
+        "type": "regular",
+        "id": "27525"
+      },
+      {
+        "name": "Valge Tüdruk",
+        "url": "https://genius.com/artists/Valge-tudruk",
+        "type": "regular",
+        "id": "2489752"
+      },
+      {
+        "name": "Valiant",
+        "url": "https://genius.com/artists/Valiant",
+        "type": "regular",
+        "id": "2156975"
+      },
+      {
+        "name": "Valiant Hearts",
+        "url": "https://genius.com/artists/Valiant-hearts",
+        "type": "regular",
+        "id": "1641448"
+      },
+      {
+        "name": "Vali Miron",
+        "url": "https://genius.com/artists/Vali-miron",
+        "type": "regular",
+        "id": "3758480"
+      },
+      {
+        "name": "Valka",
+        "url": "https://genius.com/artists/Valka",
+        "type": "regular",
+        "id": "2370239"
+      },
+      {
+        "name": "Valkyrien Allstars",
+        "url": "https://genius.com/artists/Valkyrien-allstars",
+        "type": "regular",
+        "id": "459440"
+      },
+      {
+        "name": "VALL (BGR)",
+        "url": "https://genius.com/artists/Vall-bgr",
+        "type": "regular",
+        "id": "3959794"
+      },
+      {
+        "name": "Valley",
+        "url": "https://genius.com/artists/Valley",
+        "type": "regular",
+        "id": "482269"
+      },
+      {
+        "name": "Valley One Worship",
+        "url": "https://genius.com/artists/Valley-one-worship",
+        "type": "regular",
+        "id": "4329265"
+      },
+      {
+        "name": "VALMAR",
+        "url": "https://genius.com/artists/Valmar",
+        "type": "regular",
+        "id": "2314545"
+      },
+      {
+        "name": "VALORANT",
+        "url": "https://genius.com/artists/Valorant",
+        "type": "regular",
+        "id": "2785530"
+      },
+      {
+        "name": "Valter Lobo",
+        "url": "https://genius.com/artists/Valter-lobo",
+        "type": "regular",
+        "id": "1292649"
+      },
+      {
+        "name": "Value Select",
+        "url": "https://genius.com/artists/Value-select",
+        "type": "regular",
+        "id": "1734222"
+      },
+      {
+        "name": "Valuto",
+        "url": "https://genius.com/artists/Valuto",
+        "type": "regular",
+        "id": "3945015"
+      },
+      {
+        "name": "Valve",
+        "url": "https://genius.com/artists/Valve",
+        "type": "regular",
+        "id": "1586210"
+      },
+      {
+        "name": "валюта скуратов (valyuta skuratov)",
+        "url": "https://genius.com/artists/Valyuta-skuratov",
+        "type": "regular",
+        "id": "2324490"
+      },
+      {
+        "name": "Vama Veche",
+        "url": "https://genius.com/artists/Vama-veche",
+        "type": "regular",
+        "id": "2354916"
+      },
+      {
+        "name": "Vamp",
+        "url": "https://genius.com/artists/Vamp",
+        "type": "regular",
+        "id": "92785"
+      },
+      {
+        "name": "Vampire Weekend",
+        "url": "https://genius.com/artists/Vampire-weekend",
+        "type": "regular",
+        "id": "269"
+      },
+      {
+        "name": "The Vamps",
+        "url": "https://genius.com/artists/The-vamps",
+        "type": "regular",
+        "id": "72916"
+      },
+      {
+        "name": "VampViolence",
+        "url": "https://genius.com/artists/Vampviolence",
+        "type": "regular",
+        "id": "3791472"
+      },
+      {
+        "name": "Vampyx",
+        "url": "https://genius.com/artists/Vampyx",
+        "type": "regular",
+        "id": "2606684"
+      },
+      {
+        "name": "Vana",
+        "url": "https://genius.com/artists/Vana",
+        "type": "regular",
+        "id": "1477921"
+      },
+      {
+        "name": "Vance Joy",
+        "url": "https://genius.com/artists/Vance-joy",
+        "type": "regular",
+        "id": "81818"
+      },
+      {
+        "name": "​vanchss",
+        "url": "https://genius.com/artists/Vanchss",
+        "type": "regular",
+        "id": "3115910"
+      },
+      {
+        "name": "Vanco",
+        "url": "https://genius.com/artists/Vanco",
+        "type": "regular",
+        "id": "2137125"
+      },
+      {
+        "name": "Vancouver Sleep Clinic",
+        "url": "https://genius.com/artists/Vancouver-sleep-clinic",
+        "type": "regular",
+        "id": "182598"
+      },
+      {
+        "name": "Da Vancy",
+        "url": "https://genius.com/artists/Da-vancy",
+        "type": "regular",
+        "id": "2257149"
+      },
+      {
+        "name": "Vandal Moon",
+        "url": "https://genius.com/artists/Vandal-moon",
+        "type": "regular",
+        "id": "2748468"
+      },
+      {
+        "name": "The Vandals",
+        "url": "https://genius.com/artists/The-vandals",
+        "type": "regular",
+        "id": "63826"
+      },
+      {
+        "name": "Van der Graaf Generator",
+        "url": "https://genius.com/artists/Van-der-graaf-generator",
+        "type": "regular",
+        "id": "325879"
+      },
+      {
+        "name": "VanDiBog",
+        "url": "https://genius.com/artists/Vandibog",
+        "type": "regular",
+        "id": "4380565"
+      },
+      {
+        "name": "Van Dik Hout",
+        "url": "https://genius.com/artists/Van-dik-hout",
+        "type": "regular",
+        "id": "360887"
+      },
+      {
+        "name": "Vandoliers",
+        "url": "https://genius.com/artists/Vandoliers",
+        "type": "regular",
+        "id": "1734416"
+      },
+      {
+        "name": "Van Dyke Parks",
+        "url": "https://genius.com/artists/Van-dyke-parks",
+        "type": "regular",
+        "id": "47498"
+      },
+      {
+        "name": "Vanella",
+        "url": "https://genius.com/artists/Vanella",
+        "type": "regular",
+        "id": "4396496"
+      },
+      {
+        "name": "VANÈS",
+        "url": "https://genius.com/artists/Vanes",
+        "type": "regular",
+        "id": "3279263"
+      },
+      {
+        "name": "Vanesa Martín",
+        "url": "https://genius.com/artists/Vanesa-martin",
+        "type": "regular",
+        "id": "405352"
+      },
+      {
+        "name": "Vanesa Šokčić",
+        "url": "https://genius.com/artists/Vanesa-sokcic",
+        "type": "regular",
+        "id": "2604260"
+      },
+      {
+        "name": "Vanéese Y. Thomas",
+        "url": "https://genius.com/artists/Vaneese-y-thomas",
+        "type": "regular",
+        "id": "158551"
+      },
+      {
+        "name": "Vanessa Amorosi",
+        "url": "https://genius.com/artists/Vanessa-amorosi",
+        "type": "regular",
+        "id": "350140"
+      },
+      {
+        "name": "Vanessa Bell Armstrong",
+        "url": "https://genius.com/artists/Vanessa-bell-armstrong",
+        "type": "regular",
+        "id": "368930"
+      },
+      {
+        "name": "Ванеса (VANE$$A) (BGR)",
+        "url": "https://genius.com/artists/Vane-a-bgr",
+        "type": "regular",
+        "id": "3761069"
+      },
+      {
+        "name": "Vanessa Bling",
+        "url": "https://genius.com/artists/Vanessa-bling",
+        "type": "regular",
+        "id": "74174"
+      },
+      {
+        "name": "Vanessa Doll",
+        "url": "https://genius.com/artists/Vanessa-doll",
+        "type": "regular",
+        "id": "3584350"
+      },
+      {
+        "name": "Vanessa Doofenshmirtz",
+        "url": "https://genius.com/artists/Vanessa-doofenshmirtz",
+        "type": "regular",
+        "id": "1025692"
+      },
+      {
+        "name": "Vanessa Mai",
+        "url": "https://genius.com/artists/Vanessa-mai",
+        "type": "regular",
+        "id": "1111496"
+      },
+      {
+        "name": "Vanessa Paradis",
+        "url": "https://genius.com/artists/Vanessa-paradis",
+        "type": "regular",
+        "id": "50143"
+      },
+      {
+        "name": "Vanessa da Mata",
+        "url": "https://genius.com/artists/Vanessa-da-mata",
+        "type": "regular",
+        "id": "368241"
+      },
+      {
+        "name": "Vanessa Williams",
+        "url": "https://genius.com/artists/Vanessa-williams",
+        "type": "regular",
+        "id": "270235"
+      },
+      {
+        "name": "​​vangdale",
+        "url": "https://genius.com/artists/Vangdale",
+        "type": "regular",
+        "id": "1687868"
+      },
+      {
+        "name": "Vangelis",
+        "url": "https://genius.com/artists/Vangelis",
+        "type": "regular",
+        "id": "356777"
+      },
+      {
+        "name": "Van Gogh",
+        "url": "https://genius.com/artists/Van-gogh",
+        "type": "regular",
+        "id": "1560786"
+      },
+      {
+        "name": "Vanilla Beans",
+        "url": "https://genius.com/artists/Vanilla-beans",
+        "type": "regular",
+        "id": "2872071"
+      },
+      {
+        "name": "Vanilla Fudge",
+        "url": "https://genius.com/artists/Vanilla-fudge",
+        "type": "regular",
+        "id": "355594"
+      },
+      {
+        "name": "Vanilla Ice",
+        "url": "https://genius.com/artists/Vanilla-ice",
+        "type": "regular",
+        "id": "1137"
+      },
+      {
+        "name": "VANILLA (ROU)",
+        "url": "https://genius.com/artists/Vanilla-rou",
+        "type": "regular",
+        "id": "4403955"
+      },
+      {
+        "name": "Vanille",
+        "url": "https://genius.com/artists/Vanille",
+        "type": "regular",
+        "id": "1937171"
+      },
+      {
+        "name": "The Vanished People",
+        "url": "https://genius.com/artists/The-vanished-people",
+        "type": "regular",
+        "id": "3025842"
+      },
+      {
+        "name": "VANISHING GIRL",
+        "url": "https://genius.com/artists/Vanishing-girl",
+        "type": "regular",
+        "id": "2320265"
+      },
+      {
+        "name": "Vanities: A New Musical",
+        "url": "https://genius.com/artists/Vanities-a-new-musical",
+        "type": "regular",
+        "id": "2506750"
+      },
+      {
+        "name": "Vanity",
+        "url": "https://genius.com/artists/Vanity",
+        "type": "regular",
+        "id": "24724"
+      },
+      {
+        "name": "Vanity 6",
+        "url": "https://genius.com/artists/Vanity-6",
+        "type": "regular",
+        "id": "404161"
+      },
+      {
+        "name": "​vanity (xanity)",
+        "url": "https://genius.com/artists/Vanity-xanity",
+        "type": "regular",
+        "id": "3315708"
+      },
+      {
+        "name": "V.A.N.M.I.L (RUS)",
+        "url": "https://genius.com/artists/Vanmil-rus",
+        "type": "regular",
+        "id": "4403241"
+      },
+      {
+        "name": "Vanna",
+        "url": "https://genius.com/artists/Vanna",
+        "type": "regular",
+        "id": "200268"
+      },
+      {
+        "name": "Vanna Rainelle",
+        "url": "https://genius.com/artists/Vanna-rainelle",
+        "type": "regular",
+        "id": "2944550"
+      },
+      {
+        "name": "VannDa",
+        "url": "https://genius.com/artists/Vannda",
+        "type": "regular",
+        "id": "1769670"
+      },
+      {
+        "name": "The Vanns",
+        "url": "https://genius.com/artists/The-vanns",
+        "type": "regular",
+        "id": "1643055"
+      },
+      {
+        "name": "VANO 3000",
+        "url": "https://genius.com/artists/Vano-3000",
+        "type": "regular",
+        "id": "2764847"
+      },
+      {
+        "name": "Vanotek",
+        "url": "https://genius.com/artists/Vanotek",
+        "type": "regular",
+        "id": "1217834"
+      },
+      {
+        "name": "Vansire",
+        "url": "https://genius.com/artists/Vansire",
+        "type": "regular",
+        "id": "1035661"
+      },
+      {
+        "name": "Ваня Дмитриенко (Vanya Dmitrienko)",
+        "url": "https://genius.com/artists/Vanya-dmitrienko",
+        "type": "regular",
+        "id": "2502479"
+      },
+      {
+        "name": "Van Zee",
+        "url": "https://genius.com/artists/Van-zee",
+        "type": "regular",
+        "id": "1536877"
+      },
+      {
+        "name": "The Vapors",
+        "url": "https://genius.com/artists/The-vapors",
+        "type": "regular",
+        "id": "231644"
+      },
+      {
+        "name": "Varg²™",
+        "url": "https://genius.com/artists/Varg2tm",
+        "type": "regular",
+        "id": "1676684"
+      },
+      {
+        "name": "Vargas",
+        "url": "https://genius.com/artists/Vargas",
+        "type": "regular",
+        "id": "483099"
+      },
+      {
+        "name": "Vargskelethor",
+        "url": "https://genius.com/artists/Vargskelethor",
+        "type": "regular",
+        "id": "977565"
+      },
+      {
+        "name": "Varios Artistas (Español)",
+        "url": "https://genius.com/artists/Varios-artistas-espanol",
+        "type": "regular",
+        "id": "4349678"
+      },
+      {
+        "name": "Various Artists",
+        "url": "https://genius.com/artists/Various-artists",
+        "type": "regular",
+        "id": "768"
+      },
+      {
+        "name": "Varrosi",
+        "url": "https://genius.com/artists/Varrosi",
+        "type": "regular",
+        "id": "147972"
+      },
+      {
+        "name": "Varun Jain",
+        "url": "https://genius.com/artists/Varun-jain",
+        "type": "regular",
+        "id": "3598848"
+      },
+      {
+        "name": "Варвара (Varvara) (RUS)",
+        "url": "https://genius.com/artists/Varvara-rus",
+        "type": "regular",
+        "id": "1808729"
+      },
+      {
+        "name": "VASA (NGA)",
+        "url": "https://genius.com/artists/Vasa-nga",
+        "type": "regular",
+        "id": "4177611"
+      },
+      {
+        "name": "Vasco Brondi",
+        "url": "https://genius.com/artists/Vasco-brondi",
+        "type": "regular",
+        "id": "1595487"
+      },
+      {
+        "name": "Vasco Rossi",
+        "url": "https://genius.com/artists/Vasco-rossi",
+        "type": "regular",
+        "id": "354880"
+      },
+      {
+        "name": "The Vaselines",
+        "url": "https://genius.com/artists/The-vaselines",
+        "type": "regular",
+        "id": "364779"
+      },
+      {
+        "name": "VaShawn Mitchell",
+        "url": "https://genius.com/artists/Vashawn-mitchell",
+        "type": "regular",
+        "id": "364037"
+      },
+      {
+        "name": "Vashish",
+        "url": "https://genius.com/artists/Vashish",
+        "type": "regular",
+        "id": "542869"
+      },
+      {
+        "name": "Vashti Bunyan",
+        "url": "https://genius.com/artists/Vashti-bunyan",
+        "type": "regular",
+        "id": "309167"
+      },
+      {
+        "name": "Vasilis Karras",
+        "url": "https://genius.com/artists/Vasilis-karras",
+        "type": "regular",
+        "id": "1519177"
+      },
+      {
+        "name": "Vasilya Fattakhova",
+        "url": "https://genius.com/artists/Vasilya-fattakhova",
+        "type": "regular",
+        "id": "3379024"
+      },
+      {
+        "name": "Vassendgutane",
+        "url": "https://genius.com/artists/Vassendgutane",
+        "type": "regular",
+        "id": "130761"
+      },
+      {
+        "name": "Vast",
+        "url": "https://genius.com/artists/Vast",
+        "type": "regular",
+        "id": "86926"
+      },
+      {
+        "name": "Vastive",
+        "url": "https://genius.com/artists/Vastive",
+        "type": "regular",
+        "id": "2658198"
+      },
+      {
+        "name": "Vasudo",
+        "url": "https://genius.com/artists/Vasudo",
+        "type": "regular",
+        "id": "4299134"
+      },
+      {
+        "name": "Vasundhara Das",
+        "url": "https://genius.com/artists/Vasundhara-das",
+        "type": "regular",
+        "id": "1908180"
+      },
+      {
+        "name": "Вася Обломов (Vasya Oblomov)",
+        "url": "https://genius.com/artists/Vasya-oblomov",
+        "type": "regular",
+        "id": "1694470"
+      },
+      {
+        "name": "Vato Gonzalez",
+        "url": "https://genius.com/artists/Vato-gonzalez",
+        "type": "regular",
+        "id": "389002"
+      },
+      {
+        "name": "Vatreni Poljubac",
+        "url": "https://genius.com/artists/Vatreni-poljubac",
+        "type": "regular",
+        "id": "403958"
+      },
+      {
+        "name": "Vaudeville Smash",
+        "url": "https://genius.com/artists/Vaudeville-smash",
+        "type": "regular",
+        "id": "195691"
+      },
+      {
+        "name": "The Vaughan Brothers",
+        "url": "https://genius.com/artists/The-vaughan-brothers",
+        "type": "regular",
+        "id": "359493"
+      },
+      {
+        "name": "Vaughn Monroe",
+        "url": "https://genius.com/artists/Vaughn-monroe",
+        "type": "regular",
+        "id": "360865"
+      },
+      {
+        "name": "vaultboy",
+        "url": "https://genius.com/artists/Vaultboy",
+        "type": "regular",
+        "id": "2583617"
+      },
+      {
+        "name": "Vaundy",
+        "url": "https://genius.com/artists/Vaundy",
+        "type": "regular",
+        "id": "2032792"
+      },
+      {
+        "name": "Vavan",
+        "url": "https://genius.com/artists/Vavan",
+        "type": "regular",
+        "id": "1133625"
+      },
+      {
+        "name": "Vaya Con Dios",
+        "url": "https://genius.com/artists/Vaya-con-dios",
+        "type": "regular",
+        "id": "249447"
+      },
+      {
+        "name": "Vayda",
+        "url": "https://genius.com/artists/Vayda",
+        "type": "regular",
+        "id": "1222291"
+      },
+      {
+        "name": "Vazelina Bilopphøggers",
+        "url": "https://genius.com/artists/Vazelina-bilopphggers",
+        "type": "regular",
+        "id": "359674"
+      },
+      {
+        "name": "Vaz Tè",
+        "url": "https://genius.com/artists/Vaz-te",
+        "type": "regular",
+        "id": "569116"
+      },
+      {
+        "name": "VÆB (ISL)",
+        "url": "https://genius.com/artists/Vb-isl",
+        "type": "regular",
+        "id": "3820441"
+      },
+      {
+        "name": "VBS",
+        "url": "https://genius.com/artists/Vbs",
+        "type": "regular",
+        "id": "654933"
+      },
+      {
+        "name": "VC Barre",
+        "url": "https://genius.com/artists/Vc-barre",
+        "type": "regular",
+        "id": "2106476"
+      },
+      {
+        "name": "VCC Left Hand",
+        "url": "https://genius.com/artists/Vcc-left-hand",
+        "type": "regular",
+        "id": "2642816"
+      },
+      {
+        "name": "VCHA",
+        "url": "https://genius.com/artists/Vcha",
+        "type": "regular",
+        "id": "3672944"
+      },
+      {
+        "name": "в чем дело? (v chem delo?)",
+        "url": "https://genius.com/artists/V-chem-delo",
+        "type": "regular",
+        "id": "2966620"
+      },
+      {
+        "name": "VCTMS",
+        "url": "https://genius.com/artists/Vctms",
+        "type": "regular",
+        "id": "1489287"
+      },
+      {
+        "name": "Víctor Cárdenas",
+        "url": "https://genius.com/artists/Victor-cardenas",
+        "type": "regular",
+        "id": "1977354"
+      },
+      {
+        "name": "Víctor García (MEX)",
+        "url": "https://genius.com/artists/Victor-garcia-mex",
+        "type": "regular",
+        "id": "3265395"
+      },
+      {
+        "name": "Víctor Jara",
+        "url": "https://genius.com/artists/Victor-jara",
+        "type": "regular",
+        "id": "234233"
+      },
+      {
+        "name": "Víctor Manuel",
+        "url": "https://genius.com/artists/Victor-manuel",
+        "type": "regular",
+        "id": "357138"
+      },
+      {
+        "name": "Víctor Manuelle",
+        "url": "https://genius.com/artists/Victor-manuelle",
+        "type": "regular",
+        "id": "355014"
+      },
+      {
+        "name": "Vũ Cát Tường",
+        "url": "https://genius.com/artists/Vu-cat-tuong",
+        "type": "regular",
+        "id": "1620905"
+      },
+      {
+        "name": "V Don",
+        "url": "https://genius.com/artists/V-don",
+        "type": "regular",
+        "id": "29935"
+      },
+      {
+        "name": "VDSIS",
+        "url": "https://genius.com/artists/Vdsis",
+        "type": "regular",
+        "id": "2019521"
+      },
+      {
+        "name": "Vector",
+        "url": "https://genius.com/artists/Vector",
+        "type": "regular",
+        "id": "24386"
+      },
+      {
+        "name": "Вектор А (Vector A)",
+        "url": "https://genius.com/artists/Vector-a",
+        "type": "regular",
+        "id": "2771327"
+      },
+      {
+        "name": "Vedan",
+        "url": "https://genius.com/artists/Vedan",
+        "type": "regular",
+        "id": "2764994"
+      },
+      {
+        "name": "Veela",
+        "url": "https://genius.com/artists/Veela",
+        "type": "regular",
+        "id": "44394"
+      },
+      {
+        "name": "The Veer Union",
+        "url": "https://genius.com/artists/The-veer-union",
+        "type": "regular",
+        "id": "357401"
+      },
+      {
+        "name": "Veerus",
+        "url": "https://genius.com/artists/Veerus",
+        "type": "regular",
+        "id": "17454"
+      },
+      {
+        "name": "Veeyam",
+        "url": "https://genius.com/artists/Veeyam",
+        "type": "regular",
+        "id": "1046779"
+      },
+      {
+        "name": "Veeze",
+        "url": "https://genius.com/artists/Veeze",
+        "type": "regular",
+        "id": "1847232"
+      },
+      {
+        "name": "Ève (FR)",
+        "url": "https://genius.com/artists/Eve-fr",
+        "type": "regular",
+        "id": "3921757"
+      },
+      {
+        "name": "Vega",
+        "url": "https://genius.com/artists/Vega",
+        "type": "regular",
+        "id": "12630"
+      },
+      {
+        "name": "Vegas Jones",
+        "url": "https://genius.com/artists/Vegas-jones",
+        "type": "regular",
+        "id": "556414"
+      },
+      {
+        "name": "Vega (TUR)",
+        "url": "https://genius.com/artists/Vega-tur",
+        "type": "regular",
+        "id": "1406343"
+      },
+      {
+        "name": "Vegedream",
+        "url": "https://genius.com/artists/Vegedream",
+        "type": "regular",
+        "id": "1206608"
+      },
+      {
+        "name": "VeggieTales",
+        "url": "https://genius.com/artists/Veggietales",
+        "type": "regular",
+        "id": "354035"
+      },
+      {
+        "name": "Vegyn",
+        "url": "https://genius.com/artists/Vegyn",
+        "type": "regular",
+        "id": "991444"
+      },
+      {
+        "name": "VEIGEL",
+        "url": "https://genius.com/artists/Veigel",
+        "type": "regular",
+        "id": "3835689"
+      },
+      {
+        "name": "VEI HABACHE",
+        "url": "https://genius.com/artists/Vei-habache",
+        "type": "regular",
+        "id": "3381493"
+      },
+      {
+        "name": "Veil of Maya",
+        "url": "https://genius.com/artists/Veil-of-maya",
+        "type": "regular",
+        "id": "83292"
+      },
+      {
+        "name": "The Veils",
+        "url": "https://genius.com/artists/The-veils",
+        "type": "regular",
+        "id": "306412"
+      },
+      {
+        "name": "Vein.fm",
+        "url": "https://genius.com/artists/Veinfm",
+        "type": "regular",
+        "id": "1498360"
+      },
+      {
+        "name": "Veintiuno",
+        "url": "https://genius.com/artists/Veintiuno",
+        "type": "regular",
+        "id": "1768768"
+      },
+      {
+        "name": "Vekac",
+        "url": "https://genius.com/artists/Vekac",
+        "type": "regular",
+        "id": "1586670"
+      },
+      {
+        "name": "Veldhuis & Kemper",
+        "url": "https://genius.com/artists/Veldhuis-and-kemper",
+        "type": "regular",
+        "id": "179977"
+      },
+      {
+        "name": "VELES CULT",
+        "url": "https://genius.com/artists/Veles-cult",
+        "type": "regular",
+        "id": "4288854"
+      },
+      {
+        "name": "VELIAL SQUAD",
+        "url": "https://genius.com/artists/Velial-squad",
+        "type": "regular",
+        "id": "283919"
+      },
+      {
+        "name": "Vella",
+        "url": "https://genius.com/artists/Vella",
+        "type": "regular",
+        "id": "1876062"
+      },
+      {
+        "name": "Velly Vellz",
+        "url": "https://genius.com/artists/Velly-vellz",
+        "type": "regular",
+        "id": "2987589"
+      },
+      {
+        "name": "Velocity Girl",
+        "url": "https://genius.com/artists/Velocity-girl",
+        "type": "regular",
+        "id": "358922"
+      },
+      {
+        "name": "Velo Sound Station",
+        "url": "https://genius.com/artists/Velo-sound-station",
+        "type": "regular",
+        "id": "2486228"
+      },
+      {
+        "name": "Velvet Acid Christ",
+        "url": "https://genius.com/artists/Velvet-acid-christ",
+        "type": "regular",
+        "id": "347449"
+      },
+      {
+        "name": "VELVETEARS",
+        "url": "https://genius.com/artists/Velvetears",
+        "type": "regular",
+        "id": "683083"
+      },
+      {
+        "name": "Velvet Lune",
+        "url": "https://genius.com/artists/Velvet-lune",
+        "type": "regular",
+        "id": "2330932"
+      },
+      {
+        "name": "Velvet Revolver",
+        "url": "https://genius.com/artists/Velvet-revolver",
+        "type": "regular",
+        "id": "139756"
+      },
+      {
+        "name": "Velvet (SWE)",
+        "url": "https://genius.com/artists/Velvet-swe",
+        "type": "regular",
+        "id": "1161716"
+      },
+      {
+        "name": "VEN1",
+        "url": "https://genius.com/artists/Ven1",
+        "type": "regular",
+        "id": "3777334"
+      },
+      {
+        "name": "venbee",
+        "url": "https://genius.com/artists/Venbee",
+        "type": "regular",
+        "id": "3133632"
+      },
+      {
+        "name": "VENDED",
+        "url": "https://genius.com/artists/Vended",
+        "type": "regular",
+        "id": "2680051"
+      },
+      {
+        "name": "Vendetta (UKR)",
+        "url": "https://genius.com/artists/Vendetta-ukr",
+        "type": "regular",
+        "id": "1757223"
+      },
+      {
+        "name": "Vendi",
+        "url": "https://genius.com/artists/Vendi",
+        "type": "regular",
+        "id": "2882676"
+      },
+      {
+        "name": "Vendredi sur Mer",
+        "url": "https://genius.com/artists/Vendredi-sur-mer",
+        "type": "regular",
+        "id": "1010143"
+      },
+      {
+        "name": "Venen Beats",
+        "url": "https://genius.com/artists/Venen-beats",
+        "type": "regular",
+        "id": "3468054"
+      },
+      {
+        "name": "Venerus",
+        "url": "https://genius.com/artists/Venerus",
+        "type": "regular",
+        "id": "1467302"
+      },
+      {
+        "name": "Venetian Snares",
+        "url": "https://genius.com/artists/Venetian-snares",
+        "type": "regular",
+        "id": "47414"
+      },
+      {
+        "name": "Vengaboys",
+        "url": "https://genius.com/artists/Vengaboys",
+        "type": "regular",
+        "id": "272220"
+      },
+      {
+        "name": "ВЕНЫ (Veni)",
+        "url": "https://genius.com/artists/Veni",
+        "type": "regular",
+        "id": "1194076"
+      },
+      {
+        "name": "Venjent",
+        "url": "https://genius.com/artists/Venjent",
+        "type": "regular",
+        "id": "2882401"
+      },
+      {
+        "name": "Venna",
+        "url": "https://genius.com/artists/Venna",
+        "type": "regular",
+        "id": "2065638"
+      },
+      {
+        "name": "Vennaskond",
+        "url": "https://genius.com/artists/Vennaskond",
+        "type": "regular",
+        "id": "358209"
+      },
+      {
+        "name": "Vennisay",
+        "url": "https://genius.com/artists/Vennisay",
+        "type": "regular",
+        "id": "1940670"
+      },
+      {
+        "name": "Vennu Mallesh",
+        "url": "https://genius.com/artists/Vennu-mallesh",
+        "type": "regular",
+        "id": "24735"
+      },
+      {
+        "name": "Venok",
+        "url": "https://genius.com/artists/Venok",
+        "type": "regular",
+        "id": "139021"
+      },
+      {
+        "name": "Venom",
+        "url": "https://genius.com/artists/Venom",
+        "type": "regular",
+        "id": "991412"
+      },
+      {
+        "name": "Ventrilo Quistian",
+        "url": "https://genius.com/artists/Ventrilo-quistian",
+        "type": "regular",
+        "id": "3337717"
+      },
+      {
+        "name": "Ventura Profana",
+        "url": "https://genius.com/artists/Ventura-profana",
+        "type": "regular",
+        "id": "2002300"
+      },
+      {
+        "name": "The Ventures",
+        "url": "https://genius.com/artists/The-ventures",
+        "type": "regular",
+        "id": "353232"
+      },
+      {
+        "name": "venturing",
+        "url": "https://genius.com/artists/Venturing",
+        "type": "regular",
+        "id": "3151736"
+      },
+      {
+        "name": "Venus and The Flytraps",
+        "url": "https://genius.com/artists/Venus-and-the-flytraps",
+        "type": "regular",
+        "id": "2678650"
+      },
+      {
+        "name": "Веня Д’ркин (Venya D'rkin)",
+        "url": "https://genius.com/artists/Venya-drkin",
+        "type": "regular",
+        "id": "1437478"
+      },
+      {
+        "name": "Ve'ondre",
+        "url": "https://genius.com/artists/Veondre",
+        "type": "regular",
+        "id": "3759818"
+      },
+      {
+        "name": "Vera",
+        "url": "https://genius.com/artists/Vera",
+        "type": "regular",
+        "id": "24805"
+      },
+      {
+        "name": "Vera Blue",
+        "url": "https://genius.com/artists/Vera-blue",
+        "type": "regular",
+        "id": "648590"
+      },
+      {
+        "name": "Вера Брежнева (Vera Brezhneva)",
+        "url": "https://genius.com/artists/Vera-brezhneva",
+        "type": "regular",
+        "id": "328946"
+      },
+      {
+        "name": "Vera GRV",
+        "url": "https://genius.com/artists/Vera-grv",
+        "type": "regular",
+        "id": "1889407"
+      },
+      {
+        "name": "Vera Ivković",
+        "url": "https://genius.com/artists/Vera-ivkovic",
+        "type": "regular",
+        "id": "3711316"
+      },
+      {
+        "name": "Vera Lynn",
+        "url": "https://genius.com/artists/Vera-lynn",
+        "type": "regular",
+        "id": "357835"
+      },
+      {
+        "name": "Vera Matović",
+        "url": "https://genius.com/artists/Vera-matovic",
+        "type": "regular",
+        "id": "2628948"
+      },
+      {
+        "name": "Vera Nešić",
+        "url": "https://genius.com/artists/Vera-nesic",
+        "type": "regular",
+        "id": "3312159"
+      },
+      {
+        "name": "Verba",
+        "url": "https://genius.com/artists/Verba",
+        "type": "regular",
+        "id": "322794"
+      },
+      {
+        "name": "VerbalAse",
+        "url": "https://genius.com/artists/Verbalase",
+        "type": "regular",
+        "id": "1763779"
+      },
+      {
+        "name": "VerbalAse’s Cartoon Beatbox Battles",
+        "url": "https://genius.com/artists/Verbalases-cartoon-beatbox-battles",
+        "type": "regular",
+        "id": "2001899"
+      },
+      {
+        "name": "A Verbal Equinox",
+        "url": "https://genius.com/artists/A-verbal-equinox",
+        "type": "regular",
+        "id": "2695510"
+      },
+      {
+        "name": "Verbal Jint (버벌진트)",
+        "url": "https://genius.com/artists/Verbal-jint",
+        "type": "regular",
+        "id": "73061"
+      },
+      {
+        "name": "VERBEE",
+        "url": "https://genius.com/artists/Verbee",
+        "type": "regular",
+        "id": "1718378"
+      },
+      {
+        "name": "Verbo y Vida",
+        "url": "https://genius.com/artists/Verbo-y-vida",
+        "type": "regular",
+        "id": "2174304"
+      },
+      {
+        "name": "Verb T",
+        "url": "https://genius.com/artists/Verb-t",
+        "type": "regular",
+        "id": "61535"
+      },
+      {
+        "name": "Vercetti CG",
+        "url": "https://genius.com/artists/Vercetti-cg",
+        "type": "regular",
+        "id": "2422061"
+      },
+      {
+        "name": "Verdena",
+        "url": "https://genius.com/artists/Verdena",
+        "type": "regular",
+        "id": "338147"
+      },
+      {
+        "name": "Verica Šerifović",
+        "url": "https://genius.com/artists/Verica-serifovic",
+        "type": "regular",
+        "id": "3343065"
+      },
+      {
+        "name": "Veridis Project",
+        "url": "https://genius.com/artists/Veridis-project",
+        "type": "regular",
+        "id": "3994763"
+      },
+      {
+        "name": "verifiziert",
+        "url": "https://genius.com/artists/Verifiziert",
+        "type": "regular",
+        "id": "2190896"
+      },
+      {
+        "name": "Верка Сердючка (Verka Serdyuchka)",
+        "url": "https://genius.com/artists/Verka-serdyuchka",
+        "type": "regular",
+        "id": "2139449"
+      },
+      {
+        "name": "The Verkkars",
+        "url": "https://genius.com/artists/The-verkkars",
+        "type": "regular",
+        "id": "1748703"
+      },
+      {
+        "name": "Vern Gosdin",
+        "url": "https://genius.com/artists/Vern-gosdin",
+        "type": "regular",
+        "id": "354358"
+      },
+      {
+        "name": "VERNON (버논)",
+        "url": "https://genius.com/artists/Vernon",
+        "type": "regular",
+        "id": "1007180"
+      },
+      {
+        "name": "Vernon Scannell",
+        "url": "https://genius.com/artists/Vernon-scannell",
+        "type": "regular",
+        "id": "181811"
+      },
+      {
+        "name": "Veronica Jackson",
+        "url": "https://genius.com/artists/Veronica-jackson",
+        "type": "regular",
+        "id": "2836248"
+      },
+      {
+        "name": "Veronica Maggio",
+        "url": "https://genius.com/artists/Veronica-maggio",
+        "type": "regular",
+        "id": "36986"
+      },
+      {
+        "name": "The Veronicas",
+        "url": "https://genius.com/artists/The-veronicas",
+        "type": "regular",
+        "id": "22134"
+      },
+      {
+        "name": "Ver$ace (RUS)",
+        "url": "https://genius.com/artists/Ver-ace-rus",
+        "type": "regular",
+        "id": "3541366"
+      },
+      {
+        "name": "Versailles",
+        "url": "https://genius.com/artists/Versailles",
+        "type": "regular",
+        "id": "354864"
+      },
+      {
+        "name": "Versatile",
+        "url": "https://genius.com/artists/Versatile",
+        "type": "regular",
+        "id": "5871"
+      },
+      {
+        "name": "Verse",
+        "url": "https://genius.com/artists/Verse",
+        "type": "regular",
+        "id": "11094"
+      },
+      {
+        "name": "Versengold",
+        "url": "https://genius.com/artists/Versengold",
+        "type": "regular",
+        "id": "479703"
+      },
+      {
+        "name": "Verse Simmonds",
+        "url": "https://genius.com/artists/Verse-simmonds",
+        "type": "regular",
+        "id": "14996"
+      },
+      {
+        "name": "Vershon",
+        "url": "https://genius.com/artists/Vershon",
+        "type": "regular",
+        "id": "659230"
+      },
+      {
+        "name": "Vertical Horizon",
+        "url": "https://genius.com/artists/Vertical-horizon",
+        "type": "regular",
+        "id": "39207"
+      },
+      {
+        "name": "Vertical Worship",
+        "url": "https://genius.com/artists/Vertical-worship",
+        "type": "regular",
+        "id": "405732"
+      },
+      {
+        "name": "Vertile",
+        "url": "https://genius.com/artists/Vertile",
+        "type": "regular",
+        "id": "3141512"
+      },
+      {
+        "name": "вертуля газманова (vertulya gazmanova)",
+        "url": "https://genius.com/artists/Vertulya-gazmanova",
+        "type": "regular",
+        "id": "3961965"
+      },
+      {
+        "name": "Вертушка Газманова (Vertushka Gazmanova)",
+        "url": "https://genius.com/artists/Vertushka-gazmanova",
+        "type": "regular",
+        "id": "1663763"
+      },
+      {
+        "name": "Verty",
+        "url": "https://genius.com/artists/Verty",
+        "type": "regular",
+        "id": "2853781"
+      },
+      {
+        "name": "Veruca Salt",
+        "url": "https://genius.com/artists/Veruca-salt",
+        "type": "regular",
+        "id": "356519"
+      },
+      {
+        "name": "The Verve",
+        "url": "https://genius.com/artists/The-verve",
+        "type": "regular",
+        "id": "11800"
+      },
+      {
+        "name": "The Verve Pipe",
+        "url": "https://genius.com/artists/The-verve-pipe",
+        "type": "regular",
+        "id": "24218"
+      },
+      {
+        "name": "very cool tutorials",
+        "url": "https://genius.com/artists/Very-cool-tutorials",
+        "type": "regular",
+        "id": "4331681"
+      },
+      {
+        "name": "Verzache",
+        "url": "https://genius.com/artists/Verzache",
+        "type": "regular",
+        "id": "611245"
+      },
+      {
+        "name": "Vesala",
+        "url": "https://genius.com/artists/Vesala",
+        "type": "regular",
+        "id": "870687"
+      },
+      {
+        "name": "Vesa-Matti Loiri",
+        "url": "https://genius.com/artists/Vesa-matti-loiri",
+        "type": "regular",
+        "id": "452720"
+      },
+      {
+        "name": "Vesca",
+        "url": "https://genius.com/artists/Vesca",
+        "type": "regular",
+        "id": "3580048"
+      },
+      {
+        "name": "Veseli Bosanci",
+        "url": "https://genius.com/artists/Veseli-bosanci",
+        "type": "regular",
+        "id": "4029916"
+      },
+      {
+        "name": "VESNA305",
+        "url": "https://genius.com/artists/Vesna305",
+        "type": "regular",
+        "id": "2917237"
+      },
+      {
+        "name": "Vesna Pisarović",
+        "url": "https://genius.com/artists/Vesna-pisarovic",
+        "type": "regular",
+        "id": "2163065"
+      },
+      {
+        "name": "Vesna Zmijanac",
+        "url": "https://genius.com/artists/Vesna-zmijanac",
+        "type": "regular",
+        "id": "3016105"
+      },
+      {
+        "name": "Vessel (Electronic)",
+        "url": "https://genius.com/artists/Vessel-electronic",
+        "type": "regular",
+        "id": "1636266"
+      },
+      {
+        "name": "Vesta",
+        "url": "https://genius.com/artists/Vesta",
+        "type": "regular",
+        "id": "377066"
+      },
+      {
+        "name": "Vesta Williams",
+        "url": "https://genius.com/artists/Vesta-williams",
+        "type": "regular",
+        "id": "390121"
+      },
+      {
+        "name": "Vesterinen Yhtyeineen",
+        "url": "https://genius.com/artists/Vesterinen-yhtyeineen",
+        "type": "regular",
+        "id": "453703"
+      },
+      {
+        "name": "Vestia Zeta",
+        "url": "https://genius.com/artists/Vestia-zeta",
+        "type": "regular",
+        "id": "3496939"
+      },
+      {
+        "name": "Vestron Vulture",
+        "url": "https://genius.com/artists/Vestron-vulture",
+        "type": "regular",
+        "id": "1233036"
+      },
+      {
+        "name": "Vetusta Morla",
+        "url": "https://genius.com/artists/Vetusta-morla",
+        "type": "regular",
+        "id": "354605"
+      },
+      {
+        "name": "VeucroX",
+        "url": "https://genius.com/artists/Veucrox",
+        "type": "regular",
+        "id": "2477540"
+      },
+      {
+        "name": "Veust",
+        "url": "https://genius.com/artists/Veust",
+        "type": "regular",
+        "id": "150401"
+      },
+      {
+        "name": "Vevilos",
+        "url": "https://genius.com/artists/Vevilos",
+        "type": "regular",
+        "id": "1680894"
+      },
+      {
+        "name": "Veysel",
+        "url": "https://genius.com/artists/Veysel",
+        "type": "regular",
+        "id": "20847"
+      },
+      {
+        "name": "Veysel.Blaq",
+        "url": "https://genius.com/artists/Veyselblaq",
+        "type": "regular",
+        "id": "3058927"
+      },
+      {
+        "name": "Veysel Mutlu",
+        "url": "https://genius.com/artists/Veysel-mutlu",
+        "type": "regular",
+        "id": "1331908"
+      },
+      {
+        "name": "Veztalone",
+        "url": "https://genius.com/artists/Veztalone",
+        "type": "regular",
+        "id": "1365454"
+      },
+      {
+        "name": "Vəfa Şərifova",
+        "url": "https://genius.com/artists/Vfa-srifova",
+        "type": "regular",
+        "id": "4224392"
+      },
+      {
+        "name": "Vhong Navarro",
+        "url": "https://genius.com/artists/Vhong-navarro",
+        "type": "regular",
+        "id": "406151"
+      },
+      {
+        "name": "ВИА «Ариэль» (VIA “Ariel”)",
+        "url": "https://genius.com/artists/Via-ariel",
+        "type": "regular",
+        "id": "3265995"
+      },
+      {
+        "name": "Vița de Vie",
+        "url": "https://genius.com/artists/Vita-de-vie",
+        "type": "regular",
+        "id": "404804"
+      },
+      {
+        "name": "ВИА \"Фестиваль\" (VIA Festival)",
+        "url": "https://genius.com/artists/Via-festival",
+        "type": "regular",
+        "id": "4245615"
+      },
+      {
+        "name": "Viagra Boys",
+        "url": "https://genius.com/artists/Viagra-boys",
+        "type": "regular",
+        "id": "1521282"
+      },
+      {
+        "name": "VIAL",
+        "url": "https://genius.com/artists/Vial",
+        "type": "regular",
+        "id": "2035799"
+      },
+      {
+        "name": "Viangogh",
+        "url": "https://genius.com/artists/Viangogh",
+        "type": "regular",
+        "id": "2410018"
+      },
+      {
+        "name": "Vianney",
+        "url": "https://genius.com/artists/Vianney",
+        "type": "regular",
+        "id": "454305"
+      },
+      {
+        "name": "vianova",
+        "url": "https://genius.com/artists/Vianova",
+        "type": "regular",
+        "id": "2057954"
+      },
+      {
+        "name": "ВИА «Самоцветы» (VIA Samotsvety)",
+        "url": "https://genius.com/artists/Via-samotsvety",
+        "type": "regular",
+        "id": "2157206"
+      },
+      {
+        "name": "ВИА «Синяя птица» (VIA “Sinyaya Ptitsa”)",
+        "url": "https://genius.com/artists/Via-sinyaya-ptitsa",
+        "type": "regular",
+        "id": "3526381"
+      },
+      {
+        "name": "ВИА Сливки (VIA Slivki)",
+        "url": "https://genius.com/artists/Via-slivki",
+        "type": "regular",
+        "id": "2019905"
+      },
+      {
+        "name": "Via Vallen",
+        "url": "https://genius.com/artists/Via-vallen",
+        "type": "regular",
+        "id": "1208250"
+      },
+      {
+        "name": "ВИА «Весёлые ребята» (VIA Vesyolye Rebyata)",
+        "url": "https://genius.com/artists/Via-vesyolye-rebyata",
+        "type": "regular",
+        "id": "1502197"
+      },
+      {
+        "name": "Vibe (BGD)",
+        "url": "https://genius.com/artists/Vibe-bgd",
+        "type": "regular",
+        "id": "3469658"
+      },
+      {
+        "name": "Vibe Chemistry",
+        "url": "https://genius.com/artists/Vibe-chemistry",
+        "type": "regular",
+        "id": "1542016"
+      },
+      {
+        "name": "Vibe Ish - וייב איש",
+        "url": "https://genius.com/artists/Vibe-ish",
+        "type": "regular",
+        "id": "1770092"
+      },
+      {
+        "name": "VibeTGK",
+        "url": "https://genius.com/artists/Vibetgk",
+        "type": "regular",
+        "id": "1418864"
+      },
+      {
+        "name": "Vibez Inc",
+        "url": "https://genius.com/artists/Vibez-inc",
+        "type": "regular",
+        "id": "3578746"
+      },
+      {
+        "name": "Vibha Saraf",
+        "url": "https://genius.com/artists/Vibha-saraf",
+        "type": "regular",
+        "id": "1986754"
+      },
+      {
+        "name": "The Vibrators",
+        "url": "https://genius.com/artists/The-vibrators",
+        "type": "regular",
+        "id": "344404"
+      },
+      {
+        "name": "V.I.C.",
+        "url": "https://genius.com/artists/Vic",
+        "type": "regular",
+        "id": "3502"
+      },
+      {
+        "name": "Vic Chesnutt",
+        "url": "https://genius.com/artists/Vic-chesnutt",
+        "type": "regular",
+        "id": "350214"
+      },
+      {
+        "name": "Vic Damone",
+        "url": "https://genius.com/artists/Vic-damone",
+        "type": "regular",
+        "id": "2505"
+      },
+      {
+        "name": "Vic Deal",
+        "url": "https://genius.com/artists/Vic-deal",
+        "type": "regular",
+        "id": "1055779"
+      },
+      {
+        "name": "Vic Desucatan",
+        "url": "https://genius.com/artists/Vic-desucatan",
+        "type": "regular",
+        "id": "1971291"
+      },
+      {
+        "name": "ViceArnold",
+        "url": "https://genius.com/artists/Vicearnold",
+        "type": "regular",
+        "id": "1886740"
+      },
+      {
+        "name": "Vice Ganda",
+        "url": "https://genius.com/artists/Vice-ganda",
+        "type": "regular",
+        "id": "387223"
+      },
+      {
+        "name": "Vicente Fernández",
+        "url": "https://genius.com/artists/Vicente-fernandez",
+        "type": "regular",
+        "id": "359607"
+      },
+      {
+        "name": "Vicente García",
+        "url": "https://genius.com/artists/Vicente-garcia",
+        "type": "regular",
+        "id": "403547"
+      },
+      {
+        "name": "Vicentico",
+        "url": "https://genius.com/artists/Vicentico",
+        "type": "regular",
+        "id": "378288"
+      },
+      {
+        "name": "VICESET",
+        "url": "https://genius.com/artists/Viceset",
+        "type": "regular",
+        "id": "2057025"
+      },
+      {
+        "name": "Vicetone",
+        "url": "https://genius.com/artists/Vicetone",
+        "type": "regular",
+        "id": "366199"
+      },
+      {
+        "name": "Vice (TUR)",
+        "url": "https://genius.com/artists/Vice-tur",
+        "type": "regular",
+        "id": "1444158"
+      },
+      {
+        "name": "​vichaar",
+        "url": "https://genius.com/artists/Vichaar",
+        "type": "regular",
+        "id": "3815901"
+      },
+      {
+        "name": "VickeeLo",
+        "url": "https://genius.com/artists/Vickeelo",
+        "type": "regular",
+        "id": "1991380"
+      },
+      {
+        "name": "Vickie Winans",
+        "url": "https://genius.com/artists/Vickie-winans",
+        "type": "regular",
+        "id": "368625"
+      },
+      {
+        "name": "Vicki Feaver",
+        "url": "https://genius.com/artists/Vicki-feaver",
+        "type": "regular",
+        "id": "183967"
+      },
+      {
+        "name": "Vicki Lawrence",
+        "url": "https://genius.com/artists/Vicki-lawrence",
+        "type": "regular",
+        "id": "286652"
+      },
+      {
+        "name": "Vicki Vox",
+        "url": "https://genius.com/artists/Vicki-vox",
+        "type": "regular",
+        "id": "1636456"
+      },
+      {
+        "name": "Vicki Yohe",
+        "url": "https://genius.com/artists/Vicki-yohe",
+        "type": "regular",
+        "id": "155862"
+      },
+      {
+        "name": "Vick Reputation",
+        "url": "https://genius.com/artists/Vick-reputation",
+        "type": "regular",
+        "id": "3185826"
+      },
+      {
+        "name": "VICKY",
+        "url": "https://genius.com/artists/Vicky",
+        "type": "regular",
+        "id": "4252060"
+      },
+      {
+        "name": "Vicky Leandros",
+        "url": "https://genius.com/artists/Vicky-leandros",
+        "type": "regular",
+        "id": "368732"
+      },
+      {
+        "name": "Vicky Nhung",
+        "url": "https://genius.com/artists/Vicky-nhung",
+        "type": "regular",
+        "id": "1980807"
+      },
+      {
+        "name": "VIC MENSA",
+        "url": "https://genius.com/artists/Vic-mensa",
+        "type": "regular",
+        "id": "18814"
+      },
+      {
+        "name": "Vic Mirallas",
+        "url": "https://genius.com/artists/Vic-mirallas",
+        "type": "regular",
+        "id": "1779085"
+      },
+      {
+        "name": "Vic Mizzy",
+        "url": "https://genius.com/artists/Vic-mizzy",
+        "type": "regular",
+        "id": "38460"
+      },
+      {
+        "name": "Vico C",
+        "url": "https://genius.com/artists/Vico-c",
+        "type": "regular",
+        "id": "11097"
+      },
+      {
+        "name": "Vicoka",
+        "url": "https://genius.com/artists/Vicoka",
+        "type": "regular",
+        "id": "4163746"
+      },
+      {
+        "name": "Vic Reeves",
+        "url": "https://genius.com/artists/Vic-reeves",
+        "type": "regular",
+        "id": "389456"
+      },
+      {
+        "name": "Vic Spencer",
+        "url": "https://genius.com/artists/Vic-spencer",
+        "type": "regular",
+        "id": "24343"
+      },
+      {
+        "name": "Victony",
+        "url": "https://genius.com/artists/Victony",
+        "type": "regular",
+        "id": "2317367"
+      },
+      {
+        "name": "Victor & Leo",
+        "url": "https://genius.com/artists/Victor-and-leo",
+        "type": "regular",
+        "id": "452219"
+      },
+      {
+        "name": "Victor Cibrian",
+        "url": "https://genius.com/artists/Victor-cibrian",
+        "type": "regular",
+        "id": "2893041"
+      },
+      {
+        "name": "Victor Garber",
+        "url": "https://genius.com/artists/Victor-garber",
+        "type": "regular",
+        "id": "457701"
+      },
+      {
+        "name": "Victor Herbert",
+        "url": "https://genius.com/artists/Victor-herbert",
+        "type": "regular",
+        "id": "380195"
+      },
+      {
+        "name": "Victor Hugo",
+        "url": "https://genius.com/artists/Victor-hugo",
+        "type": "regular",
+        "id": "33518"
+      },
+      {
+        "name": "Victoria",
+        "url": "https://genius.com/artists/Victoria",
+        "type": "regular",
+        "id": "1429480"
+      },
+      {
+        "name": "Victoria Carbol",
+        "url": "https://genius.com/artists/Victoria-carbol",
+        "type": "regular",
+        "id": "1419470"
+      },
+      {
+        "name": "Victoria Clark",
+        "url": "https://genius.com/artists/Victoria-clark",
+        "type": "regular",
+        "id": "1030836"
+      },
+      {
+        "name": "Victoria Justice",
+        "url": "https://genius.com/artists/Victoria-justice",
+        "type": "regular",
+        "id": "20517"
+      },
+      {
+        "name": "Victoria Mallory",
+        "url": "https://genius.com/artists/Victoria-mallory",
+        "type": "regular",
+        "id": "2818824"
+      },
+      {
+        "name": "Victoria Monét",
+        "url": "https://genius.com/artists/Victoria-monet",
+        "type": "regular",
+        "id": "21798"
+      },
+      {
+        "name": "Victoria Nadine",
+        "url": "https://genius.com/artists/Victoria-nadine",
+        "type": "regular",
+        "id": "2568754"
+      },
+      {
+        "name": "Victoria Skie",
+        "url": "https://genius.com/artists/Victoria-skie",
+        "type": "regular",
+        "id": "1031301"
+      },
+      {
+        "name": "Victoria Wood",
+        "url": "https://genius.com/artists/Victoria-wood",
+        "type": "regular",
+        "id": "71492"
+      },
+      {
+        "name": "Victorious Cast",
+        "url": "https://genius.com/artists/Victorious-cast",
+        "type": "regular",
+        "id": "38570"
+      },
+      {
+        "name": "Victor J Sefo",
+        "url": "https://genius.com/artists/Victor-j-sefo",
+        "type": "regular",
+        "id": "2007127"
+      },
+      {
+        "name": "Victor Leksell",
+        "url": "https://genius.com/artists/Victor-leksell",
+        "type": "regular",
+        "id": "1483853"
+      },
+      {
+        "name": "Victor Lundberg",
+        "url": "https://genius.com/artists/Victor-lundberg",
+        "type": "regular",
+        "id": "2976915"
+      },
+      {
+        "name": "Victor McGuire",
+        "url": "https://genius.com/artists/Victor-mcguire",
+        "type": "regular",
+        "id": "1931062"
+      },
+      {
+        "name": "Victor McKnight",
+        "url": "https://genius.com/artists/Victor-mcknight",
+        "type": "regular",
+        "id": "1266912"
+      },
+      {
+        "name": "Victor Mühlethaler",
+        "url": "https://genius.com/artists/Victor-muhlethaler",
+        "type": "regular",
+        "id": "1683270"
+      },
+      {
+        "name": "Victor Nordis",
+        "url": "https://genius.com/artists/Victor-nordis",
+        "type": "regular",
+        "id": "1494565"
+      },
+      {
+        "name": "Victor Ray",
+        "url": "https://genius.com/artists/Victor-ray",
+        "type": "regular",
+        "id": "3404906"
+      },
+      {
+        "name": "Victor Tavares",
+        "url": "https://genius.com/artists/Victor-tavares",
+        "type": "regular",
+        "id": "3454220"
+      },
+      {
+        "name": "Victor Thompson",
+        "url": "https://genius.com/artists/Victor-thompson",
+        "type": "regular",
+        "id": "2975107"
+      },
+      {
+        "name": "Victor Valverde",
+        "url": "https://genius.com/artists/Victor-valverde",
+        "type": "regular",
+        "id": "4373970"
+      },
+      {
+        "name": "Victor Wood",
+        "url": "https://genius.com/artists/Victor-wood",
+        "type": "regular",
+        "id": "406352"
+      },
+      {
+        "name": "Victory",
+        "url": "https://genius.com/artists/Victory",
+        "type": "regular",
+        "id": "1461252"
+      },
+      {
+        "name": "Victory Alabang Music",
+        "url": "https://genius.com/artists/Victory-alabang-music",
+        "type": "regular",
+        "id": "3731176"
+      },
+      {
+        "name": "Victory (Band)",
+        "url": "https://genius.com/artists/Victory-band",
+        "type": "regular",
+        "id": "344682"
+      },
+      {
+        "name": "Victory Worship",
+        "url": "https://genius.com/artists/Victory-worship",
+        "type": "regular",
+        "id": "987622"
+      },
+      {
+        "name": "V.I.C (UK)",
+        "url": "https://genius.com/artists/Vic-uk",
+        "type": "regular",
+        "id": "2637125"
+      },
+      {
+        "name": "Vida Pavlović",
+        "url": "https://genius.com/artists/Vida-pavlovic",
+        "type": "regular",
+        "id": "3682492"
+      },
+      {
+        "name": "VIDEOCLUB",
+        "url": "https://genius.com/artists/Videoclub",
+        "type": "regular",
+        "id": "1576711"
+      },
+      {
+        "name": "​videogamedunkey",
+        "url": "https://genius.com/artists/Videogamedunkey",
+        "type": "regular",
+        "id": "35000"
+      },
+      {
+        "name": "VideoGameRapBattles",
+        "url": "https://genius.com/artists/Videogamerapbattles",
+        "type": "regular",
+        "id": "1647222"
+      },
+      {
+        "name": "Videosex",
+        "url": "https://genius.com/artists/Videosex",
+        "type": "regular",
+        "id": "2677610"
+      },
+      {
+        "name": "VIDI",
+        "url": "https://genius.com/artists/Vidi",
+        "type": "regular",
+        "id": "1146618"
+      },
+      {
+        "name": "Vidya Vox",
+        "url": "https://genius.com/artists/Vidya-vox",
+        "type": "regular",
+        "id": "1116374"
+      },
+      {
+        "name": "Viejas Locas",
+        "url": "https://genius.com/artists/Viejas-locas",
+        "type": "regular",
+        "id": "355251"
+      },
+      {
+        "name": "Vienna Teng",
+        "url": "https://genius.com/artists/Vienna-teng",
+        "type": "regular",
+        "id": "85846"
+      },
+      {
+        "name": "Vienna Vienna",
+        "url": "https://genius.com/artists/Vienna-vienna",
+        "type": "regular",
+        "id": "4072850"
+      },
+      {
+        "name": "Vierra",
+        "url": "https://genius.com/artists/Vierra",
+        "type": "regular",
+        "id": "1655981"
+      },
+      {
+        "name": "󠁪vierre cloud",
+        "url": "https://genius.com/artists/Vierre-cloud",
+        "type": "regular",
+        "id": "1814773"
+      },
+      {
+        "name": "The View",
+        "url": "https://genius.com/artists/The-view",
+        "type": "regular",
+        "id": "354278"
+      },
+      {
+        "name": "Vieze Asbak",
+        "url": "https://genius.com/artists/Vieze-asbak",
+        "type": "regular",
+        "id": "3072073"
+      },
+      {
+        "name": "Vigö",
+        "url": "https://genius.com/artists/Vigo",
+        "type": "regular",
+        "id": "3561846"
+      },
+      {
+        "name": "Vigro Deep",
+        "url": "https://genius.com/artists/Vigro-deep",
+        "type": "regular",
+        "id": "2329975"
+      },
+      {
+        "name": "VII",
+        "url": "https://genius.com/artists/Vii",
+        "type": "regular",
+        "id": "14307"
+      },
+      {
+        "name": "Viikate",
+        "url": "https://genius.com/artists/Viikate",
+        "type": "regular",
+        "id": "356393"
+      },
+      {
+        "name": "VIIVI",
+        "url": "https://genius.com/artists/Viivi",
+        "type": "regular",
+        "id": "2553373"
+      },
+      {
+        "name": "Vijay Dk",
+        "url": "https://genius.com/artists/Vijay-dk",
+        "type": "regular",
+        "id": "2985515"
+      },
+      {
+        "name": "Vika Jigulina",
+        "url": "https://genius.com/artists/Vika-jigulina",
+        "type": "regular",
+        "id": "610"
+      },
+      {
+        "name": "Viki Miljković",
+        "url": "https://genius.com/artists/Viki-miljkovic",
+        "type": "regular",
+        "id": "481052"
+      },
+      {
+        "name": "Vikingarna",
+        "url": "https://genius.com/artists/Vikingarna",
+        "type": "regular",
+        "id": "391949"
+      },
+      {
+        "name": "Viki Show",
+        "url": "https://genius.com/artists/Viki-show",
+        "type": "regular",
+        "id": "3772153"
+      },
+      {
+        "name": "Vikkstar",
+        "url": "https://genius.com/artists/Vikkstar",
+        "type": "regular",
+        "id": "670225"
+      },
+      {
+        "name": "Виктория Дайнеко (Viktoria Dayneko)",
+        "url": "https://genius.com/artists/Viktoria-dayneko",
+        "type": "regular",
+        "id": "1199263"
+      },
+      {
+        "name": "Viktorija",
+        "url": "https://genius.com/artists/Viktorija",
+        "type": "regular",
+        "id": "3055764"
+      },
+      {
+        "name": "Виктор Салтыков (Viktor Saltykov)",
+        "url": "https://genius.com/artists/Viktor-saltykov",
+        "type": "regular",
+        "id": "2103888"
+      },
+      {
+        "name": "Viktor Sheen",
+        "url": "https://genius.com/artists/Viktor-sheen",
+        "type": "regular",
+        "id": "610937"
+      },
+      {
+        "name": "Viktor Vaughn",
+        "url": "https://genius.com/artists/Viktor-vaughn",
+        "type": "regular",
+        "id": "712"
+      },
+      {
+        "name": "Vildhjarta",
+        "url": "https://genius.com/artists/Vildhjarta",
+        "type": "regular",
+        "id": "82564"
+      },
+      {
+        "name": "Vilen",
+        "url": "https://genius.com/artists/Vilen",
+        "type": "regular",
+        "id": "2158589"
+      },
+      {
+        "name": "Vilhelm.",
+        "url": "https://genius.com/artists/Vilhelm",
+        "type": "regular",
+        "id": "1516733"
+      },
+      {
+        "name": "Viljo Vesterinen",
+        "url": "https://genius.com/artists/Viljo-vesterinen",
+        "type": "regular",
+        "id": "1318219"
+      },
+      {
+        "name": "VillaBanks",
+        "url": "https://genius.com/artists/Villabanks",
+        "type": "regular",
+        "id": "1633759"
+      },
+      {
+        "name": "Villagers",
+        "url": "https://genius.com/artists/Villagers",
+        "type": "regular",
+        "id": "59136"
+      },
+      {
+        "name": "Villagers of Motunui",
+        "url": "https://genius.com/artists/Villagers-of-motunui",
+        "type": "regular",
+        "id": "4204216"
+      },
+      {
+        "name": "Villain of the Story",
+        "url": "https://genius.com/artists/Villain-of-the-story",
+        "type": "regular",
+        "id": "1006109"
+      },
+      {
+        "name": "Villano Antillano",
+        "url": "https://genius.com/artists/Villano-antillano",
+        "type": "regular",
+        "id": "1758130"
+      },
+      {
+        "name": "Villax",
+        "url": "https://genius.com/artists/Villax",
+        "type": "regular",
+        "id": "3782821"
+      },
+      {
+        "name": "​villemdrillem",
+        "url": "https://genius.com/artists/Villemdrillem",
+        "type": "regular",
+        "id": "1518119"
+      },
+      {
+        "name": "Ville Valo",
+        "url": "https://genius.com/artists/Ville-valo",
+        "type": "regular",
+        "id": "65314"
+      },
+      {
+        "name": "Vilma Palma e Vampiros",
+        "url": "https://genius.com/artists/Vilma-palma-e-vampiros",
+        "type": "regular",
+        "id": "295580"
+      },
+      {
+        "name": "Vinak",
+        "url": "https://genius.com/artists/Vinak",
+        "type": "regular",
+        "id": "1562829"
+      },
+      {
+        "name": "Vina Panduwinata",
+        "url": "https://genius.com/artists/Vina-panduwinata",
+        "type": "regular",
+        "id": "374418"
+      },
+      {
+        "name": "​vinayvvs",
+        "url": "https://genius.com/artists/Vinayvvs",
+        "type": "regular",
+        "id": "2130959"
+      },
+      {
+        "name": "Vince Gill",
+        "url": "https://genius.com/artists/Vince-gill",
+        "type": "regular",
+        "id": "22718"
+      },
+      {
+        "name": "Vince Guaraldi",
+        "url": "https://genius.com/artists/Vince-guaraldi",
+        "type": "regular",
+        "id": "369532"
+      },
+      {
+        "name": "Vince Guaraldi Trio",
+        "url": "https://genius.com/artists/Vince-guaraldi-trio",
+        "type": "regular",
+        "id": "364372"
+      },
+      {
+        "name": "Vincemp3",
+        "url": "https://genius.com/artists/Vincemp3",
+        "type": "regular",
+        "id": "3986902"
+      },
+      {
+        "name": "Vincent Blue (빈센트블루)",
+        "url": "https://genius.com/artists/Vincent-blue",
+        "type": "regular",
+        "id": "1796647"
+      },
+      {
+        "name": "Vincent Bohanan & SOV",
+        "url": "https://genius.com/artists/Vincent-bohanan-and-sov",
+        "type": "regular",
+        "id": "2636868"
+      },
+      {
+        "name": "Vincent Cassel",
+        "url": "https://genius.com/artists/Vincent-cassel",
+        "type": "regular",
+        "id": "164497"
+      },
+      {
+        "name": "Vincent Gross",
+        "url": "https://genius.com/artists/Vincent-gross",
+        "type": "regular",
+        "id": "2318323"
+      },
+      {
+        "name": "Vincent Lima",
+        "url": "https://genius.com/artists/Vincent-lima",
+        "type": "regular",
+        "id": "1631260"
+      },
+      {
+        "name": "Vincent Mason",
+        "url": "https://genius.com/artists/Vincent-mason",
+        "type": "regular",
+        "id": "3319262"
+      },
+      {
+        "name": "Vince Staples",
+        "url": "https://genius.com/artists/Vince-staples",
+        "type": "regular",
+        "id": "941"
+      },
+      {
+        "name": "Da Vinci's Notebook",
+        "url": "https://genius.com/artists/Da-vincis-notebook",
+        "type": "regular",
+        "id": "340765"
+      },
+      {
+        "name": "Vinícius de Moraes",
+        "url": "https://genius.com/artists/Vinicius-de-moraes",
+        "type": "regular",
+        "id": "402331"
+      },
+      {
+        "name": "Vineeth Sreenivasan",
+        "url": "https://genius.com/artists/Vineeth-sreenivasan",
+        "type": "regular",
+        "id": "3697528"
+      },
+      {
+        "name": "The Vines",
+        "url": "https://genius.com/artists/The-vines",
+        "type": "regular",
+        "id": "211365"
+      },
+      {
+        "name": "Vineyard Worship",
+        "url": "https://genius.com/artists/Vineyard-worship",
+        "type": "regular",
+        "id": "457499"
+      },
+      {
+        "name": "Vingo",
+        "url": "https://genius.com/artists/Vingo",
+        "type": "regular",
+        "id": "1263115"
+      },
+      {
+        "name": "Vinicio Capossela",
+        "url": "https://genius.com/artists/Vinicio-capossela",
+        "type": "regular",
+        "id": "358286"
+      },
+      {
+        "name": "万妮达 (Vinida Weng)",
+        "url": "https://genius.com/artists/Vinida-weng",
+        "type": "regular",
+        "id": "1566968"
+      },
+      {
+        "name": "VINI (HUN)",
+        "url": "https://genius.com/artists/Vini-hun",
+        "type": "regular",
+        "id": "3193075"
+      },
+      {
+        "name": "Vini Vici",
+        "url": "https://genius.com/artists/Vini-vici",
+        "type": "regular",
+        "id": "75835"
+      },
+      {
+        "name": "Vin Jay",
+        "url": "https://genius.com/artists/Vin-jay",
+        "type": "regular",
+        "id": "1748904"
+      },
+      {
+        "name": "Vinko Coce",
+        "url": "https://genius.com/artists/Vinko-coce",
+        "type": "regular",
+        "id": "388101"
+      },
+      {
+        "name": "vinni",
+        "url": "https://genius.com/artists/Vinni",
+        "type": "regular",
+        "id": "26002"
+      },
+      {
+        "name": "Vinnie Dollar",
+        "url": "https://genius.com/artists/Vinnie-dollar",
+        "type": "regular",
+        "id": "2706074"
+      },
+      {
+        "name": "Vinnie Paz",
+        "url": "https://genius.com/artists/Vinnie-paz",
+        "type": "regular",
+        "id": "319"
+      },
+      {
+        "name": "Vinny Marchi",
+        "url": "https://genius.com/artists/Vinny-marchi",
+        "type": "regular",
+        "id": "2707554"
+      },
+      {
+        "name": "Vinod Rathod",
+        "url": "https://genius.com/artists/Vinod-rathod",
+        "type": "regular",
+        "id": "1678781"
+      },
+      {
+        "name": "Vinod Sehgal",
+        "url": "https://genius.com/artists/Vinod-sehgal",
+        "type": "regular",
+        "id": "3040935"
+      },
+      {
+        "name": "Vino nuevo",
+        "url": "https://genius.com/artists/Vino-nuevo",
+        "type": "regular",
+        "id": "454728"
+      },
+      {
+        "name": "V.I.N. (R&B)",
+        "url": "https://genius.com/artists/Vin-r-b",
+        "type": "regular",
+        "id": "4188828"
+      },
+      {
+        "name": "Vin’s",
+        "url": "https://genius.com/artists/Vins",
+        "type": "regular",
+        "id": "149845"
+      },
+      {
+        "name": "Vinz (ALB)",
+        "url": "https://genius.com/artists/Vinz-alb",
+        "type": "regular",
+        "id": "1410015"
+      },
+      {
+        "name": "VINSON",
+        "url": "https://genius.com/artists/Vinson",
+        "type": "regular",
+        "id": "2868419"
+      },
+      {
+        "name": "Vintage Culture",
+        "url": "https://genius.com/artists/Vintage-culture",
+        "type": "regular",
+        "id": "659368"
+      },
+      {
+        "name": "Vin Vinci",
+        "url": "https://genius.com/artists/Vin-vinci",
+        "type": "regular",
+        "id": "2158751"
+      },
+      {
+        "name": "VINXEN (빈첸)",
+        "url": "https://genius.com/artists/Vinxen",
+        "type": "regular",
+        "id": "1423453"
+      },
+      {
+        "name": "Vinyl Obscura",
+        "url": "https://genius.com/artists/Vinyl-obscura",
+        "type": "regular",
+        "id": "990038"
+      },
+      {
+        "name": "VinylTracker",
+        "url": "https://genius.com/artists/Vinyltracker",
+        "type": "regular",
+        "id": "3425542"
+      },
+      {
+        "name": "Vio",
+        "url": "https://genius.com/artists/Vio",
+        "type": "regular",
+        "id": "75241"
+      },
+      {
+        "name": "Violadores del Verso",
+        "url": "https://genius.com/artists/Violadores-del-verso",
+        "type": "regular",
+        "id": "27133"
+      },
+      {
+        "name": "Violent Femmes",
+        "url": "https://genius.com/artists/Violent-femmes",
+        "type": "regular",
+        "id": "27225"
+      },
+      {
+        "name": "Violent J",
+        "url": "https://genius.com/artists/Violent-j",
+        "type": "regular",
+        "id": "3147"
+      },
+      {
+        "name": "Violent Soho",
+        "url": "https://genius.com/artists/Violent-soho",
+        "type": "regular",
+        "id": "109805"
+      },
+      {
+        "name": "VIOLENT VIRA",
+        "url": "https://genius.com/artists/Violent-vira",
+        "type": "regular",
+        "id": "2968246"
+      },
+      {
+        "name": "VIOLETA",
+        "url": "https://genius.com/artists/Violeta",
+        "type": "regular",
+        "id": "3751469"
+      },
+      {
+        "name": "Violeta Parra",
+        "url": "https://genius.com/artists/Violeta-parra",
+        "type": "regular",
+        "id": "104535"
+      },
+      {
+        "name": "Violetta",
+        "url": "https://genius.com/artists/Violetta",
+        "type": "regular",
+        "id": "188378"
+      },
+      {
+        "name": "Violetta Sokolova",
+        "url": "https://genius.com/artists/Violetta-sokolova",
+        "type": "regular",
+        "id": "3166981"
+      },
+      {
+        "name": "Violette Wautier",
+        "url": "https://genius.com/artists/Violette-wautier",
+        "type": "regular",
+        "id": "2132939"
+      },
+      {
+        "name": "V.I.P.",
+        "url": "https://genius.com/artists/Vip",
+        "type": "regular",
+        "id": "2329394"
+      },
+      {
+        "name": "Viper",
+        "url": "https://genius.com/artists/Viper",
+        "type": "regular",
+        "id": "48746"
+      },
+      {
+        "name": "VIP Mass Choir",
+        "url": "https://genius.com/artists/Vip-mass-choir",
+        "type": "regular",
+        "id": "405527"
+      },
+      {
+        "name": "ViraCocha",
+        "url": "https://genius.com/artists/Viracocha",
+        "type": "regular",
+        "id": "3951735"
+      },
+      {
+        "name": "Vira Talisa",
+        "url": "https://genius.com/artists/Vira-talisa",
+        "type": "regular",
+        "id": "1202005"
+      },
+      {
+        "name": "Virgin Black",
+        "url": "https://genius.com/artists/Virgin-black",
+        "type": "regular",
+        "id": "354092"
+      },
+      {
+        "name": "virgingod*",
+        "url": "https://genius.com/artists/Virgingod",
+        "type": "regular",
+        "id": "1507754"
+      },
+      {
+        "name": "Virginia Bocelli",
+        "url": "https://genius.com/artists/Virginia-bocelli",
+        "type": "regular",
+        "id": "2987291"
+      },
+      {
+        "name": "Virginia to Vegas",
+        "url": "https://genius.com/artists/Virginia-to-vegas",
+        "type": "regular",
+        "id": "321082"
+      },
+      {
+        "name": "Virginia Woolf",
+        "url": "https://genius.com/artists/Virginia-woolf",
+        "type": "regular",
+        "id": "45847"
+      },
+      {
+        "name": "Virgin Prunes",
+        "url": "https://genius.com/artists/Virgin-prunes",
+        "type": "regular",
+        "id": "360182"
+      },
+      {
+        "name": "Virgin Steele",
+        "url": "https://genius.com/artists/Virgin-steele",
+        "type": "regular",
+        "id": "355153"
+      },
+      {
+        "name": "Virgoun",
+        "url": "https://genius.com/artists/Virgoun",
+        "type": "regular",
+        "id": "1084471"
+      },
+      {
+        "name": "Virlán García",
+        "url": "https://genius.com/artists/Virlan-garcia",
+        "type": "regular",
+        "id": "1228503"
+      },
+      {
+        "name": "Virna Lisa",
+        "url": "https://genius.com/artists/Virna-lisa",
+        "type": "regular",
+        "id": "3676193"
+      },
+      {
+        "name": "Virtual Flavor",
+        "url": "https://genius.com/artists/Virtual-flavor",
+        "type": "regular",
+        "id": "3356791"
+      },
+      {
+        "name": "Virtual Riot",
+        "url": "https://genius.com/artists/Virtual-riot",
+        "type": "regular",
+        "id": "271608"
+      },
+      {
+        "name": "Virtual Swag",
+        "url": "https://genius.com/artists/Virtual-swag",
+        "type": "regular",
+        "id": "2387863"
+      },
+      {
+        "name": "The Virus and Antidote",
+        "url": "https://genius.com/artists/The-virus-and-antidote",
+        "type": "regular",
+        "id": "663753"
+      },
+      {
+        "name": "Virus (ARG)",
+        "url": "https://genius.com/artists/Virus-arg",
+        "type": "regular",
+        "id": "605885"
+      },
+      {
+        "name": "Вирус! (Virus Band)",
+        "url": "https://genius.com/artists/Virus-band",
+        "type": "regular",
+        "id": "2443731"
+      },
+      {
+        "name": "Virve Rosti",
+        "url": "https://genius.com/artists/Virve-rosti",
+        "type": "regular",
+        "id": "454433"
+      },
+      {
+        "name": "VisaGangBeatz",
+        "url": "https://genius.com/artists/Visagangbeatz",
+        "type": "regular",
+        "id": "1596828"
+      },
+      {
+        "name": "Visage",
+        "url": "https://genius.com/artists/Visage",
+        "type": "regular",
+        "id": "61976"
+      },
+      {
+        "name": "Visca",
+        "url": "https://genius.com/artists/Visca",
+        "type": "regular",
+        "id": "2611194"
+      },
+      {
+        "name": "VI Seconds",
+        "url": "https://genius.com/artists/Vi-seconds",
+        "type": "regular",
+        "id": "181978"
+      },
+      {
+        "name": "Vishal & Shekhar",
+        "url": "https://genius.com/artists/Vishal-and-shekhar",
+        "type": "regular",
+        "id": "151831"
+      },
+      {
+        "name": "Vishal Dadlani",
+        "url": "https://genius.com/artists/Vishal-dadlani",
+        "type": "regular",
+        "id": "384048"
+      },
+      {
+        "name": "Vishal Mishra",
+        "url": "https://genius.com/artists/Vishal-mishra",
+        "type": "regular",
+        "id": "1475624"
+      },
+      {
+        "name": "Vishnusahasranama",
+        "url": "https://genius.com/artists/Vishnusahasranama",
+        "type": "regular",
+        "id": "75792"
+      },
+      {
+        "name": "Vishnu Vijay",
+        "url": "https://genius.com/artists/Vishnu-vijay",
+        "type": "regular",
+        "id": "1250215"
+      },
+      {
+        "name": "Vishvesh Parmar",
+        "url": "https://genius.com/artists/Vishvesh-parmar",
+        "type": "regular",
+        "id": "3876435"
+      },
+      {
+        "name": "Visionary76",
+        "url": "https://genius.com/artists/Visionary76",
+        "type": "regular",
+        "id": "3169612"
+      },
+      {
+        "name": "Vision juvenil",
+        "url": "https://genius.com/artists/Vision-juvenil",
+        "type": "regular",
+        "id": "452515"
+      },
+      {
+        "name": "Visions of Atlantis",
+        "url": "https://genius.com/artists/Visions-of-atlantis",
+        "type": "regular",
+        "id": "365342"
+      },
+      {
+        "name": "VISION SOUND",
+        "url": "https://genius.com/artists/Vision-sound",
+        "type": "regular",
+        "id": "4016217"
+      },
+      {
+        "name": "Vision Video",
+        "url": "https://genius.com/artists/Vision-video",
+        "type": "regular",
+        "id": "2279763"
+      },
+      {
+        "name": "魏晨 (Vision Wei)",
+        "url": "https://genius.com/artists/Vision-wei",
+        "type": "regular",
+        "id": "3499620"
+      },
+      {
+        "name": "The Visitors (AKA The Mists)",
+        "url": "https://genius.com/artists/The-visitors-aka-the-mists",
+        "type": "regular",
+        "id": "3926758"
+      },
+      {
+        "name": "visixn [вижн]",
+        "url": "https://genius.com/artists/Visixn",
+        "type": "regular",
+        "id": "3097623"
+      },
+      {
+        "name": "Високосный Год (Visokosny God)",
+        "url": "https://genius.com/artists/Visokosny-god",
+        "type": "regular",
+        "id": "1410590"
+      },
+      {
+        "name": "Vista Kicks",
+        "url": "https://genius.com/artists/Vista-kicks",
+        "type": "regular",
+        "id": "674417"
+      },
+      {
+        "name": "Vistoso Bosses",
+        "url": "https://genius.com/artists/Vistoso-bosses",
+        "type": "regular",
+        "id": "185038"
+      },
+      {
+        "name": "Vitaa",
+        "url": "https://genius.com/artists/Vitaa",
+        "type": "regular",
+        "id": "13327"
+      },
+      {
+        "name": "Vita (DEU)",
+        "url": "https://genius.com/artists/Vita-deu",
+        "type": "regular",
+        "id": "3238605"
+      },
+      {
+        "name": "Віталій Козловський (Vitaliy Kozlovskiy)",
+        "url": "https://genius.com/artists/Vitaliy-kozlovskiy",
+        "type": "regular",
+        "id": "3263253"
+      },
+      {
+        "name": "Vital Signs",
+        "url": "https://genius.com/artists/Vital-signs",
+        "type": "regular",
+        "id": "371396"
+      },
+      {
+        "name": "Vitalya ALBATROSS",
+        "url": "https://genius.com/artists/Vitalya-albatross",
+        "type": "regular",
+        "id": "2190736"
+      },
+      {
+        "name": "Vitalya Dzha",
+        "url": "https://genius.com/artists/Vitalya-dzha",
+        "type": "regular",
+        "id": "3504742"
+      },
+      {
+        "name": "Виталя Виталя (Vitalya Vitalya)",
+        "url": "https://genius.com/artists/Vitalya-vitalya",
+        "type": "regular",
+        "id": "2873801"
+      },
+      {
+        "name": "Виталий Гогунский (Vitaly Gogunsky)",
+        "url": "https://genius.com/artists/Vitaly-gogunsky",
+        "type": "regular",
+        "id": "3179521"
+      },
+      {
+        "name": "Vitamin C",
+        "url": "https://genius.com/artists/Vitamin-c",
+        "type": "regular",
+        "id": "8485"
+      },
+      {
+        "name": "Vitamin String Quartet",
+        "url": "https://genius.com/artists/Vitamin-string-quartet",
+        "type": "regular",
+        "id": "454633"
+      },
+      {
+        "name": "ΒΗΤΑ ΠΕΙΣ | VITA PEIS",
+        "url": "https://genius.com/artists/Vita-peis",
+        "type": "regular",
+        "id": "54531"
+      },
+      {
+        "name": "Витас (Vitas)",
+        "url": "https://genius.com/artists/Vitas",
+        "type": "regular",
+        "id": "458954"
+      },
+      {
+        "name": "Vito Bambino",
+        "url": "https://genius.com/artists/Vito-bambino",
+        "type": "regular",
+        "id": "1176314"
+      },
+      {
+        "name": "Vito (David Rebollo)",
+        "url": "https://genius.com/artists/Vito-david-rebollo",
+        "type": "regular",
+        "id": "325574"
+      },
+      {
+        "name": "Vito Petroccitto Jr.",
+        "url": "https://genius.com/artists/Vito-petroccitto-jr",
+        "type": "regular",
+        "id": "2902636"
+      },
+      {
+        "name": "Vittorio Matteucci",
+        "url": "https://genius.com/artists/Vittorio-matteucci",
+        "type": "regular",
+        "id": "2385428"
+      },
+      {
+        "name": "Витя АК (Vitya AK)",
+        "url": "https://genius.com/artists/Vitya-ak",
+        "type": "regular",
+        "id": "1188308"
+      },
+      {
+        "name": "Витя Классик (Vitya Classic)",
+        "url": "https://genius.com/artists/Vitya-classic",
+        "type": "regular",
+        "id": "1076854"
+      },
+      {
+        "name": "Витя Исаев (Vitya Isaev)",
+        "url": "https://genius.com/artists/Vitya-isaev",
+        "type": "regular",
+        "id": "1155440"
+      },
+      {
+        "name": "Витя Матанга (Vitya Matanga)",
+        "url": "https://genius.com/artists/Vitya-matanga",
+        "type": "regular",
+        "id": "3060564"
+      },
+      {
+        "name": "Viva Belgrado",
+        "url": "https://genius.com/artists/Viva-belgrado",
+        "type": "regular",
+        "id": "681364"
+      },
+      {
+        "name": "Viva Hot Babes",
+        "url": "https://genius.com/artists/Viva-hot-babes",
+        "type": "regular",
+        "id": "3210405"
+      },
+      {
+        "name": "Viva Suecia",
+        "url": "https://genius.com/artists/Viva-suecia",
+        "type": "regular",
+        "id": "1525745"
+      },
+      {
+        "name": "Vivian Blaine",
+        "url": "https://genius.com/artists/Vivian-blaine",
+        "type": "regular",
+        "id": "967346"
+      },
+      {
+        "name": "Vivian Green",
+        "url": "https://genius.com/artists/Vivian-green",
+        "type": "regular",
+        "id": "57697"
+      },
+      {
+        "name": "Vivian Nixon",
+        "url": "https://genius.com/artists/Vivian-nixon",
+        "type": "regular",
+        "id": "3325552"
+      },
+      {
+        "name": "Vivid BAD SQUAD",
+        "url": "https://genius.com/artists/Vivid-bad-squad",
+        "type": "regular",
+        "id": "2990114"
+      },
+      {
+        "name": "Vivienne Eastwood",
+        "url": "https://genius.com/artists/Vivienne-eastwood",
+        "type": "regular",
+        "id": "2924728"
+      },
+      {
+        "name": "Vivienne Mort",
+        "url": "https://genius.com/artists/Vivienne-mort",
+        "type": "regular",
+        "id": "1768278"
+      },
+      {
+        "name": "VIVINOS",
+        "url": "https://genius.com/artists/Vivinos",
+        "type": "regular",
+        "id": "3095233"
+      },
+      {
+        "name": "VIVIZ (비비지)",
+        "url": "https://genius.com/artists/Viviz",
+        "type": "regular",
+        "id": "2936705"
+      },
+      {
+        "name": "Vivziepop",
+        "url": "https://genius.com/artists/Vivziepop",
+        "type": "regular",
+        "id": "1496994"
+      },
+      {
+        "name": "Vixen Marq",
+        "url": "https://genius.com/artists/Vixen-marq",
+        "type": "regular",
+        "id": "4018431"
+      },
+      {
+        "name": "Vix.N",
+        "url": "https://genius.com/artists/Vixn",
+        "type": "regular",
+        "id": "105483"
+      },
+      {
+        "name": "VIXX (빅스)",
+        "url": "https://genius.com/artists/Vixx",
+        "type": "regular",
+        "id": "181847"
+      },
+      {
+        "name": "Viza",
+        "url": "https://genius.com/artists/Viza",
+        "type": "regular",
+        "id": "284996"
+      },
+      {
+        "name": "VIZE",
+        "url": "https://genius.com/artists/Vize",
+        "type": "regular",
+        "id": "1212426"
+      },
+      {
+        "name": "Vizelj",
+        "url": "https://genius.com/artists/Vizelj",
+        "type": "regular",
+        "id": "3474620"
+      },
+      {
+        "name": "Vizinhos",
+        "url": "https://genius.com/artists/Vizinhos",
+        "type": "regular",
+        "id": "4365216"
+      },
+      {
+        "name": "VJ",
+        "url": "https://genius.com/artists/Vj",
+        "type": "regular",
+        "id": "3333481"
+      },
+      {
+        "name": "ВКГД (VKGD)",
+        "url": "https://genius.com/artists/Vkgd",
+        "type": "regular",
+        "id": "3095432"
+      },
+      {
+        "name": "​vkie",
+        "url": "https://genius.com/artists/Vkie",
+        "type": "regular",
+        "id": "1147271"
+      },
+      {
+        "name": "Şövkət Ələkbərova",
+        "url": "https://genius.com/artists/Sovkt-lkbrova",
+        "type": "regular",
+        "id": "2380134"
+      },
+      {
+        "name": "Vlada Divljan",
+        "url": "https://genius.com/artists/Vlada-divljan",
+        "type": "regular",
+        "id": "1401703"
+      },
+      {
+        "name": "Vlada Divljan Old Stars Bend",
+        "url": "https://genius.com/artists/Vlada-divljan-old-stars-bend",
+        "type": "regular",
+        "id": "1401702"
+      },
+      {
+        "name": "Vlad Darwin",
+        "url": "https://genius.com/artists/Vlad-darwin",
+        "type": "regular",
+        "id": "3387945"
+      },
+      {
+        "name": "Vlad Dobrescu",
+        "url": "https://genius.com/artists/Vlad-dobrescu",
+        "type": "regular",
+        "id": "38256"
+      },
+      {
+        "name": "Vlad Holiday",
+        "url": "https://genius.com/artists/Vlad-holiday",
+        "type": "regular",
+        "id": "1202869"
+      },
+      {
+        "name": "Vladimir Cauchemar",
+        "url": "https://genius.com/artists/Vladimir-cauchemar",
+        "type": "regular",
+        "id": "1452406"
+      },
+      {
+        "name": "Владимир Ферапонтов (Vladimir Ferapontov) (Singer)",
+        "url": "https://genius.com/artists/Vladimir-ferapontov-singer",
+        "type": "regular",
+        "id": "3705455"
+      },
+      {
+        "name": "Владимир Клявин (Vladimir Klyavin)",
+        "url": "https://genius.com/artists/Vladimir-klyavin",
+        "type": "regular",
+        "id": "3773786"
+      },
+      {
+        "name": "Владимир Кузьмин (Vladimir Kuzmin)",
+        "url": "https://genius.com/artists/Vladimir-kuzmin",
+        "type": "regular",
+        "id": "2027256"
+      },
+      {
+        "name": "Владимир Маркин (Vladimir Markin)",
+        "url": "https://genius.com/artists/Vladimir-markin",
+        "type": "regular",
+        "id": "2033776"
+      },
+      {
+        "name": "Vladimir Nabokov",
+        "url": "https://genius.com/artists/Vladimir-nabokov",
+        "type": "regular",
+        "id": "34451"
+      },
+      {
+        "name": "Владимир Пресняков (Vladimir Presnyakov)",
+        "url": "https://genius.com/artists/Vladimir-presnyakov",
+        "type": "regular",
+        "id": "556062"
+      },
+      {
+        "name": "ВладиМир (VladiMir) (RUS)",
+        "url": "https://genius.com/artists/Vladimir-rus",
+        "type": "regular",
+        "id": "3063577"
+      },
+      {
+        "name": "Владимир Трошин (Vladimir Troshin)",
+        "url": "https://genius.com/artists/Vladimir-troshin",
+        "type": "regular",
+        "id": "3386976"
+      },
+      {
+        "name": "Владимир Высоцкий (Vladimir Vysotsky)",
+        "url": "https://genius.com/artists/Vladimir-vysotsky",
+        "type": "regular",
+        "id": "38320"
+      },
+      {
+        "name": "Владимир Ждамиров (Vladimir Zhdamirov)",
+        "url": "https://genius.com/artists/Vladimir-zhdamirov",
+        "type": "regular",
+        "id": "2139017"
+      },
+      {
+        "name": "Vlado Georgiev",
+        "url": "https://genius.com/artists/Vlado-georgiev",
+        "type": "regular",
+        "id": "373495"
+      },
+      {
+        "name": "vladosikos17",
+        "url": "https://genius.com/artists/Vladosikos17",
+        "type": "regular",
+        "id": "4401242"
+      },
+      {
+        "name": "влад пиво (vlad pivo)",
+        "url": "https://genius.com/artists/Vlad-pivo",
+        "type": "regular",
+        "id": "3804291"
+      },
+      {
+        "name": "Влади (Vlady)",
+        "url": "https://genius.com/artists/Vlady",
+        "type": "regular",
+        "id": "288081"
+      },
+      {
+        "name": "ВЛАЖНОСТЬ (VLAJNOST')",
+        "url": "https://genius.com/artists/Vlajnost",
+        "type": "regular",
+        "id": "2311385"
+      },
+      {
+        "name": "VL Deck",
+        "url": "https://genius.com/artists/Vl-deck",
+        "type": "regular",
+        "id": "268793"
+      },
+      {
+        "name": "Vli Weezy - علي ويزي",
+        "url": "https://genius.com/artists/Vli-weezy",
+        "type": "regular",
+        "id": "1790938"
+      },
+      {
+        "name": "Vlospa",
+        "url": "https://genius.com/artists/Vlospa",
+        "type": "regular",
+        "id": "1511861"
+      },
+      {
+        "name": "Vømmøl Spellmannslag",
+        "url": "https://genius.com/artists/Vmml-spellmannslag",
+        "type": "regular",
+        "id": "387753"
+      },
+      {
+        "name": "VMonster",
+        "url": "https://genius.com/artists/Vmonster",
+        "type": "regular",
+        "id": "1485460"
+      },
+      {
+        "name": "VND",
+        "url": "https://genius.com/artists/Vnd",
+        "type": "regular",
+        "id": "1220783"
+      },
+      {
+        "name": "внимание брусника! (vnimanie brusnika!)",
+        "url": "https://genius.com/artists/Vnimanie-brusnika",
+        "type": "regular",
+        "id": "2994798"
+      },
+      {
+        "name": "VNM",
+        "url": "https://genius.com/artists/Vnm",
+        "type": "regular",
+        "id": "28955"
+      },
+      {
+        "name": "Văn Mai Hương",
+        "url": "https://genius.com/artists/Van-mai-huong",
+        "type": "regular",
+        "id": "1487917"
+      },
+      {
+        "name": "Vnuk",
+        "url": "https://genius.com/artists/Vnuk",
+        "type": "regular",
+        "id": "626503"
+      },
+      {
+        "name": "VNV Nation",
+        "url": "https://genius.com/artists/Vnv-nation",
+        "type": "regular",
+        "id": "353655"
+      },
+      {
+        "name": "Voda Fuji",
+        "url": "https://genius.com/artists/Voda-fuji",
+        "type": "regular",
+        "id": "1232910"
+      },
+      {
+        "name": "Водичка-Пузырьки (Vodichka-Puzyrki)",
+        "url": "https://genius.com/artists/Vodichka-puzyrki",
+        "type": "regular",
+        "id": "3105407"
+      },
+      {
+        "name": "VOF De Kunst",
+        "url": "https://genius.com/artists/Vof-de-kunst",
+        "type": "regular",
+        "id": "379175"
+      },
+      {
+        "name": "Vogeljongen",
+        "url": "https://genius.com/artists/Vogeljongen",
+        "type": "regular",
+        "id": "1445991"
+      },
+      {
+        "name": "The Vogues",
+        "url": "https://genius.com/artists/The-vogues",
+        "type": "regular",
+        "id": "169048"
+      },
+      {
+        "name": "Voice",
+        "url": "https://genius.com/artists/Voice",
+        "type": "regular",
+        "id": "1039524"
+      },
+      {
+        "name": "Voice of Baceprot",
+        "url": "https://genius.com/artists/Voice-of-baceprot",
+        "type": "regular",
+        "id": "2227549"
+      },
+      {
+        "name": "Голос Омерики (Voice of Omerica)",
+        "url": "https://genius.com/artists/Voice-of-omerica",
+        "type": "regular",
+        "id": "1945266"
+      },
+      {
+        "name": "Voiceplay",
+        "url": "https://genius.com/artists/Voiceplay",
+        "type": "regular",
+        "id": "482709"
+      },
+      {
+        "name": "​void",
+        "url": "https://genius.com/artists/Void",
+        "type": "regular",
+        "id": "1473342"
+      },
+      {
+        "name": "void (LXM)",
+        "url": "https://genius.com/artists/Void-lxm",
+        "type": "regular",
+        "id": "4356411"
+      },
+      {
+        "name": "Void of Vision",
+        "url": "https://genius.com/artists/Void-of-vision",
+        "type": "regular",
+        "id": "998109"
+      },
+      {
+        "name": "The Voidz",
+        "url": "https://genius.com/artists/The-voidz",
+        "type": "regular",
+        "id": "224920"
+      },
+      {
+        "name": "voidvoice717",
+        "url": "https://genius.com/artists/Voidvoice717",
+        "type": "regular",
+        "id": "3783017"
+      },
+      {
+        "name": "VOILÀ",
+        "url": "https://genius.com/artists/Voila",
+        "type": "regular",
+        "id": "1306926"
+      },
+      {
+        "name": "Voivod",
+        "url": "https://genius.com/artists/Voivod",
+        "type": "regular",
+        "id": "360691"
+      },
+      {
+        "name": "VOJ",
+        "url": "https://genius.com/artists/Voj",
+        "type": "regular",
+        "id": "2543225"
+      },
+      {
+        "name": "Vojke",
+        "url": "https://genius.com/artists/Vojke",
+        "type": "regular",
+        "id": "2049152"
+      },
+      {
+        "name": "Vojko V",
+        "url": "https://genius.com/artists/Vojko-v",
+        "type": "regular",
+        "id": "621100"
+      },
+      {
+        "name": "VOLA",
+        "url": "https://genius.com/artists/Vola",
+        "type": "regular",
+        "id": "1004248"
+      },
+      {
+        "name": "Volcano Choir",
+        "url": "https://genius.com/artists/Volcano-choir",
+        "type": "regular",
+        "id": "65738"
+      },
+      {
+        "name": "Voleur pnz",
+        "url": "https://genius.com/artists/Voleur-pnz",
+        "type": "regular",
+        "id": "3500239"
+      },
+      {
+        "name": "​volhey",
+        "url": "https://genius.com/artists/Volhey",
+        "type": "regular",
+        "id": "3514907"
+      },
+      {
+        "name": "Volkan Konak",
+        "url": "https://genius.com/artists/Volkan-konak",
+        "type": "regular",
+        "id": "380246"
+      },
+      {
+        "name": "Volker Rosin",
+        "url": "https://genius.com/artists/Volker-rosin",
+        "type": "regular",
+        "id": "386022"
+      },
+      {
+        "name": "VOLO",
+        "url": "https://genius.com/artists/Volo",
+        "type": "regular",
+        "id": "2423501"
+      },
+      {
+        "name": "Volodymyr Dantes",
+        "url": "https://genius.com/artists/Volodymyr-dantes",
+        "type": "regular",
+        "id": "1981918"
+      },
+      {
+        "name": "Voltio",
+        "url": "https://genius.com/artists/Voltio",
+        "type": "regular",
+        "id": "11105"
+      },
+      {
+        "name": "Volumes",
+        "url": "https://genius.com/artists/Volumes",
+        "type": "regular",
+        "id": "229645"
+      },
+      {
+        "name": "The Volunteers",
+        "url": "https://genius.com/artists/The-volunteers",
+        "type": "regular",
+        "id": "1669228"
+      },
+      {
+        "name": "Vonda Shepard",
+        "url": "https://genius.com/artists/Vonda-shepard",
+        "type": "regular",
+        "id": "60040"
+      },
+      {
+        "name": "Vonni.5",
+        "url": "https://genius.com/artists/Vonni5",
+        "type": "regular",
+        "id": "4415012"
+      },
+      {
+        "name": "VonOff1700",
+        "url": "https://genius.com/artists/Vonoff1700",
+        "type": "regular",
+        "id": "2704273"
+      },
+      {
+        "name": "Vonte*",
+        "url": "https://genius.com/artists/Vonte",
+        "type": "regular",
+        "id": "2108296"
+      },
+      {
+        "name": "Vontee the Singer",
+        "url": "https://genius.com/artists/Vontee-the-singer",
+        "type": "regular",
+        "id": "1240632"
+      },
+      {
+        "name": "Von Wegen Lisbeth",
+        "url": "https://genius.com/artists/Von-wegen-lisbeth",
+        "type": "regular",
+        "id": "455660"
+      },
+      {
+        "name": "Voo-Doo Church",
+        "url": "https://genius.com/artists/Voo-doo-church",
+        "type": "regular",
+        "id": "387017"
+      },
+      {
+        "name": "Voodoo Glow Skulls",
+        "url": "https://genius.com/artists/Voodoo-glow-skulls",
+        "type": "regular",
+        "id": "354521"
+      },
+      {
+        "name": "Voodoo Jürgens",
+        "url": "https://genius.com/artists/Voodoo-jurgens",
+        "type": "regular",
+        "id": "1050286"
+      },
+      {
+        "name": "พัด Vorapat",
+        "url": "https://genius.com/artists/Vorapat",
+        "type": "regular",
+        "id": "3050458"
+      },
+      {
+        "name": "Voreia Asteria",
+        "url": "https://genius.com/artists/Voreia-asteria",
+        "type": "regular",
+        "id": "1650173"
+      },
+      {
+        "name": "Воровайки (Vorovaiki)",
+        "url": "https://genius.com/artists/Vorovaiki",
+        "type": "regular",
+        "id": "1888473"
+      },
+      {
+        "name": "Воровская Лапа (Vorovskaya Lapa)",
+        "url": "https://genius.com/artists/Vorovskaya-lapa",
+        "type": "regular",
+        "id": "3085256"
+      },
+      {
+        "name": "Vorsa",
+        "url": "https://genius.com/artists/Vorsa",
+        "type": "regular",
+        "id": "1191146"
+      },
+      {
+        "name": "Vortex - فورتكس",
+        "url": "https://genius.com/artists/Vortex",
+        "type": "regular",
+        "id": "1224544"
+      },
+      {
+        "name": "Vory",
+        "url": "https://genius.com/artists/Vory",
+        "type": "regular",
+        "id": "1217171"
+      },
+      {
+        "name": "Воскресение (Voskresenie)",
+        "url": "https://genius.com/artists/Voskresenie",
+        "type": "regular",
+        "id": "1343351"
+      },
+      {
+        "name": "Восточный Округ (Vostochnyi Okrug)",
+        "url": "https://genius.com/artists/Vostochnyi-okrug",
+        "type": "regular",
+        "id": "1752614"
+      },
+      {
+        "name": "Vought International",
+        "url": "https://genius.com/artists/Vought-international",
+        "type": "regular",
+        "id": "3219996"
+      },
+      {
+        "name": "VOUS Worship",
+        "url": "https://genius.com/artists/Vous-worship",
+        "type": "regular",
+        "id": "1494632"
+      },
+      {
+        "name": "Вова Солодков (Vova Solodkov)",
+        "url": "https://genius.com/artists/Vova-solodkov",
+        "type": "regular",
+        "id": "4258939"
+      },
+      {
+        "name": "VovaZiL'vova",
+        "url": "https://genius.com/artists/Vovazilvova",
+        "type": "regular",
+        "id": "1172493"
+      },
+      {
+        "name": "Vo Williams",
+        "url": "https://genius.com/artists/Vo-williams",
+        "type": "regular",
+        "id": "830666"
+      },
+      {
+        "name": "Voxtrot",
+        "url": "https://genius.com/artists/Voxtrot",
+        "type": "regular",
+        "id": "129399"
+      },
+      {
+        "name": "Voyage",
+        "url": "https://genius.com/artists/Voyage",
+        "type": "regular",
+        "id": "1781468"
+      },
+      {
+        "name": "Voyou",
+        "url": "https://genius.com/artists/Voyou",
+        "type": "regular",
+        "id": "1307699"
+      },
+      {
+        "name": "VOYT",
+        "url": "https://genius.com/artists/Voyt",
+        "type": "regular",
+        "id": "3530467"
+      },
+      {
+        "name": "Voz de Mando",
+        "url": "https://genius.com/artists/Voz-de-mando",
+        "type": "regular",
+        "id": "155144"
+      },
+      {
+        "name": "VPK Klinok (ВПК Клинок)",
+        "url": "https://genius.com/artists/Vpk-klinok",
+        "type": "regular",
+        "id": "1619069"
+      },
+      {
+        "name": "Vũ. (R&B)",
+        "url": "https://genius.com/artists/Vu-r-b",
+        "type": "regular",
+        "id": "49185"
+      },
+      {
+        "name": "Vrednoblog",
+        "url": "https://genius.com/artists/Vrednoblog",
+        "type": "regular",
+        "id": "4411735"
+      },
+      {
+        "name": "Время и Стекло (Vremya i Steklo)",
+        "url": "https://genius.com/artists/Vremya-i-steklo",
+        "type": "regular",
+        "id": "1148736"
+      },
+      {
+        "name": "V:RGO",
+        "url": "https://genius.com/artists/V-rgo",
+        "type": "regular",
+        "id": "1154723"
+      },
+      {
+        "name": "VÉRITÉ",
+        "url": "https://genius.com/artists/Verite",
+        "type": "regular",
+        "id": "234514"
+      },
+      {
+        "name": "Véronique Sanson",
+        "url": "https://genius.com/artists/Veronique-sanson",
+        "type": "regular",
+        "id": "344398"
+      },
+      {
+        "name": "VRSTY",
+        "url": "https://genius.com/artists/Vrsty",
+        "type": "regular",
+        "id": "1491438"
+      },
+      {
+        "name": "Värttinä",
+        "url": "https://genius.com/artists/Varttina",
+        "type": "regular",
+        "id": "354416"
+      },
+      {
+        "name": "Vîrus",
+        "url": "https://genius.com/artists/Virus",
+        "type": "regular",
+        "id": "15908"
+      },
+      {
+        "name": "Все Диджеи (Vse Didjeyi)",
+        "url": "https://genius.com/artists/Vse-didjeyi",
+        "type": "regular",
+        "id": "4378727"
+      },
+      {
+        "name": "​vslush",
+        "url": "https://genius.com/artists/Vslush",
+        "type": "regular",
+        "id": "3189014"
+      },
+      {
+        "name": "VS Mosquito",
+        "url": "https://genius.com/artists/Vs-mosquito",
+        "type": "regular",
+        "id": "4099449"
+      },
+      {
+        "name": "Vspak",
+        "url": "https://genius.com/artists/Vspak",
+        "type": "regular",
+        "id": "2633226"
+      },
+      {
+        "name": "VSP AST",
+        "url": "https://genius.com/artists/Vsp-ast",
+        "type": "regular",
+        "id": "3106373"
+      },
+      {
+        "name": "Vs Self",
+        "url": "https://genius.com/artists/Vs-self",
+        "type": "regular",
+        "id": "3467265"
+      },
+      {
+        "name": "VST & Company",
+        "url": "https://genius.com/artists/Vst-and-company",
+        "type": "regular",
+        "id": "370638"
+      },
+      {
+        "name": "VSTRA",
+        "url": "https://genius.com/artists/Vstra",
+        "type": "regular",
+        "id": "1923132"
+      },
+      {
+        "name": "VT",
+        "url": "https://genius.com/artists/Vt",
+        "type": "regular",
+        "id": "2258144"
+      },
+      {
+        "name": "VTEN",
+        "url": "https://genius.com/artists/Vten",
+        "type": "regular",
+        "id": "1461018"
+      },
+      {
+        "name": "Vũ Thảo My",
+        "url": "https://genius.com/artists/Vu-thao-my",
+        "type": "regular",
+        "id": "3107887"
+      },
+      {
+        "name": "VTORNIK",
+        "url": "https://genius.com/artists/Vtornik",
+        "type": "regular",
+        "id": "1650788"
+      },
+      {
+        "name": "Второй Ка (Vtoroi Ka)",
+        "url": "https://genius.com/artists/Vtoroi-ka",
+        "type": "regular",
+        "id": "2119888"
+      },
+      {
+        "name": "VTSS",
+        "url": "https://genius.com/artists/Vtss",
+        "type": "regular",
+        "id": "3083312"
+      },
+      {
+        "name": "VUDOO",
+        "url": "https://genius.com/artists/Vudoo",
+        "type": "regular",
+        "id": "3270906"
+      },
+      {
+        "name": "Vuk Mob",
+        "url": "https://genius.com/artists/Vuk-mob",
+        "type": "regular",
+        "id": "250280"
+      },
+      {
+        "name": "Vukovi",
+        "url": "https://genius.com/artists/Vukovi",
+        "type": "regular",
+        "id": "1065831"
+      },
+      {
+        "name": "Vule Vu",
+        "url": "https://genius.com/artists/Vule-vu",
+        "type": "regular",
+        "id": "3976304"
+      },
+      {
+        "name": "ВУЛЬФ (VULF)",
+        "url": "https://genius.com/artists/Vulf",
+        "type": "regular",
+        "id": "3963378"
+      },
+      {
+        "name": "Vulfmon",
+        "url": "https://genius.com/artists/Vulfmon",
+        "type": "regular",
+        "id": "3188166"
+      },
+      {
+        "name": "Vulfpeck",
+        "url": "https://genius.com/artists/Vulfpeck",
+        "type": "regular",
+        "id": "195434"
+      },
+      {
+        "name": "Vulgo FK",
+        "url": "https://genius.com/artists/Vulgo-fk",
+        "type": "regular",
+        "id": "2245970"
+      },
+      {
+        "name": "Vulpess",
+        "url": "https://genius.com/artists/Vulpess",
+        "type": "regular",
+        "id": "2390182"
+      },
+      {
+        "name": "VULPES VULT!",
+        "url": "https://genius.com/artists/Vulpes-vult",
+        "type": "regular",
+        "id": "2638277"
+      },
+      {
+        "name": "Vulture Love",
+        "url": "https://genius.com/artists/Vulture-love",
+        "type": "regular",
+        "id": "3491539"
+      },
+      {
+        "name": "Vulvodynia",
+        "url": "https://genius.com/artists/Vulvodynia",
+        "type": "regular",
+        "id": "1018500"
+      },
+      {
+        "name": "Vundabar",
+        "url": "https://genius.com/artists/Vundabar",
+        "type": "regular",
+        "id": "635206"
+      },
+      {
+        "name": "Vusi Nova",
+        "url": "https://genius.com/artists/Vusi-nova",
+        "type": "regular",
+        "id": "1465767"
+      },
+      {
+        "name": "V V Brown",
+        "url": "https://genius.com/artists/V-v-brown",
+        "type": "regular",
+        "id": "2329"
+      },
+      {
+        "name": "VVELVET",
+        "url": "https://genius.com/artists/Vvelvet",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "vvherearewe",
+        "url": "https://genius.com/artists/Vvherearewe",
+        "type": "regular",
+        "id": "3489887"
+      },
+      {
+        "name": "VVS Collective",
+        "url": "https://genius.com/artists/Vvs-collective",
+        "type": "regular",
+        "id": "1946109"
+      },
+      {
+        "name": "VVS (븨븨에스) (KOR)",
+        "url": "https://genius.com/artists/Vvs-kor",
+        "type": "regular",
+        "id": "4386412"
+      },
+      {
+        "name": "VV (Ville Valo)",
+        "url": "https://genius.com/artists/Vv-ville-valo",
+        "type": "regular",
+        "id": "2154718"
+      },
+      {
+        "name": "Vwillz",
+        "url": "https://genius.com/artists/Vwillz",
+        "type": "regular",
+        "id": "2897522"
+      },
+      {
+        "name": "VXICE",
+        "url": "https://genius.com/artists/Vxice",
+        "type": "regular",
+        "id": "4243188"
+      },
+      {
+        "name": "Vxlious",
+        "url": "https://genius.com/artists/Vxlious",
+        "type": "regular",
+        "id": "2342128"
+      },
+      {
+        "name": "VXON",
+        "url": "https://genius.com/artists/Vxon",
+        "type": "regular",
+        "id": "3011812"
+      },
+      {
+        "name": "ЯАVЬ (YAAV)",
+        "url": "https://genius.com/artists/V-yaav",
+        "type": "regular",
+        "id": "1705951"
+      },
+      {
+        "name": "Вячеслав Добрынин (Vyacheslav Dobrynin)",
+        "url": "https://genius.com/artists/Vyacheslav-dobrynin",
+        "type": "regular",
+        "id": "1990836"
+      },
+      {
+        "name": "Вячеслав Константинов (Vyacheslav Konstantinov)",
+        "url": "https://genius.com/artists/Vyacheslav-konstantinov",
+        "type": "regular",
+        "id": "3180436"
+      },
+      {
+        "name": "В'ячеслав Кукоба (Vyacheslav Kukoba)",
+        "url": "https://genius.com/artists/Vyacheslav-kukoba",
+        "type": "regular",
+        "id": "4033732"
+      },
+      {
+        "name": "Вячеслав Мясников (Vyacheslav Myasnikov)",
+        "url": "https://genius.com/artists/Vyacheslav-myasnikov",
+        "type": "regular",
+        "id": "3062248"
+      },
+      {
+        "name": "Véyah",
+        "url": "https://genius.com/artists/Veyah",
+        "type": "regular",
+        "id": "3045987"
+      },
+      {
+        "name": "Vybes (ITA)",
+        "url": "https://genius.com/artists/Vybes-ita",
+        "type": "regular",
+        "id": "3194718"
+      },
+      {
+        "name": "Vylet Pony",
+        "url": "https://genius.com/artists/Vylet-pony",
+        "type": "regular",
+        "id": "1528637"
+      },
+      {
+        "name": "Vyrus Records",
+        "url": "https://genius.com/artists/Vyrus-records",
+        "type": "regular",
+        "id": "4209426"
+      },
+      {
+        "name": "вышел покурить (vyshel pokurit')",
+        "url": "https://genius.com/artists/Vyshel-pokurit",
+        "type": "regular",
+        "id": "1192058"
+      },
+      {
+        "name": "Vytautas Kernagis",
+        "url": "https://genius.com/artists/Vytautas-kernagis",
+        "type": "regular",
+        "id": "2863501"
+      },
+      {
+        "name": "Vyva Melinkolya",
+        "url": "https://genius.com/artists/Vyva-melinkolya",
+        "type": "regular",
+        "id": "3500133"
+      },
+      {
+        "name": "Vyvavych",
+        "url": "https://genius.com/artists/Vyvavych",
+        "type": "regular",
+        "id": "3485252"
+      },
+      {
+        "name": "Vyzer",
+        "url": "https://genius.com/artists/Vyzer",
+        "type": "regular",
+        "id": "2477221"
+      },
+      {
+        "name": "VZE",
+        "url": "https://genius.com/artists/Vze",
+        "type": "regular",
+        "id": "1798030"
+      },
+      {
+        "name": "VZk1ll Turbo 2000",
+        "url": "https://genius.com/artists/Vzk1ll-turbo-2000",
+        "type": "regular",
+        "id": "3393823"
+      },
+      {
+        "name": "VZS",
+        "url": "https://genius.com/artists/Vzs",
+        "type": "regular",
+        "id": "3328799"
+      }
+    ]
+  }
+}

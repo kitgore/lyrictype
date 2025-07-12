@@ -1,0 +1,221 @@
+{
+  "successful": [
+    {
+      "letter": "A",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 748,
+      "filepath": "genius-artists-2025-07-11/genius-artists-a.json"
+    },
+    {
+      "letter": "B",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-b.json"
+    },
+    {
+      "letter": "C",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-c.json"
+    },
+    {
+      "letter": "D",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 748,
+      "filepath": "genius-artists-2025-07-11/genius-artists-d.json"
+    },
+    {
+      "letter": "E",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-e.json"
+    },
+    {
+      "letter": "F",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 750,
+      "filepath": "genius-artists-2025-07-11/genius-artists-f.json"
+    },
+    {
+      "letter": "G",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 750,
+      "filepath": "genius-artists-2025-07-11/genius-artists-g.json"
+    },
+    {
+      "letter": "H",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-h.json"
+    },
+    {
+      "letter": "I",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 746,
+      "filepath": "genius-artists-2025-07-11/genius-artists-i.json"
+    },
+    {
+      "letter": "J",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-j.json"
+    },
+    {
+      "letter": "K",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-k.json"
+    },
+    {
+      "letter": "L",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-l.json"
+    },
+    {
+      "letter": "M",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-m.json"
+    },
+    {
+      "letter": "N",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 750,
+      "filepath": "genius-artists-2025-07-11/genius-artists-n.json"
+    },
+    {
+      "letter": "O",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 747,
+      "filepath": "genius-artists-2025-07-11/genius-artists-o.json"
+    },
+    {
+      "letter": "P",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 750,
+      "filepath": "genius-artists-2025-07-11/genius-artists-p.json"
+    },
+    {
+      "letter": "Q",
+      "popular": 20,
+      "regular": 213,
+      "total": 233,
+      "withIds": 229,
+      "filepath": "genius-artists-2025-07-11/genius-artists-q.json"
+    },
+    {
+      "letter": "R",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-r.json"
+    },
+    {
+      "letter": "S",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-s.json"
+    },
+    {
+      "letter": "T",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 747,
+      "filepath": "genius-artists-2025-07-11/genius-artists-t.json"
+    },
+    {
+      "letter": "U",
+      "popular": 20,
+      "regular": 642,
+      "total": 662,
+      "withIds": 657,
+      "filepath": "genius-artists-2025-07-11/genius-artists-u.json"
+    },
+    {
+      "letter": "V",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-v.json"
+    },
+    {
+      "letter": "W",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 749,
+      "filepath": "genius-artists-2025-07-11/genius-artists-w.json"
+    },
+    {
+      "letter": "X",
+      "popular": 20,
+      "regular": 298,
+      "total": 318,
+      "withIds": 310,
+      "filepath": "genius-artists-2025-07-11/genius-artists-x.json"
+    },
+    {
+      "letter": "Y",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 747,
+      "filepath": "genius-artists-2025-07-11/genius-artists-y.json"
+    },
+    {
+      "letter": "Z",
+      "popular": 20,
+      "regular": 730,
+      "total": 750,
+      "withIds": 747,
+      "filepath": "genius-artists-2025-07-11/genius-artists-z.json"
+    }
+  ],
+  "failed": [],
+  "totalArtists": 18463,
+  "totalPopular": 520,
+  "totalRegular": 17943,
+  "totalWithIds": 18414,
+  "startTime": "2025-07-11T06:14:54.369Z",
+  "outputDirectory": "genius-artists-2025-07-11",
+  "endTime": "2025-07-11T14:03:02.309Z",
+  "duration": 468
+}

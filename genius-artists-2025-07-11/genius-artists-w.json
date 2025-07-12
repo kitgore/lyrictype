@@ -1,0 +1,4513 @@
+{
+  "letter": "W",
+  "timestamp": "2025-07-11T13:17:27.700Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Waking the Cadaver",
+        "url": "https://genius.com/artists/Waking-the-cadaver",
+        "type": "popular",
+        "id": "359065"
+      },
+      {
+        "name": "wave to earth",
+        "url": "https://genius.com/artists/Wave-to-earth",
+        "type": "popular",
+        "id": "2894691"
+      },
+      {
+        "name": "The Weeknd",
+        "url": "https://genius.com/artists/The-weeknd",
+        "type": "popular",
+        "id": "2358"
+      },
+      {
+        "name": "Weezer",
+        "url": "https://genius.com/artists/Weezer",
+        "type": "popular",
+        "id": "12925"
+      },
+      {
+        "name": "Werenoi",
+        "url": "https://genius.com/artists/Werenoi",
+        "type": "popular",
+        "id": "2591697"
+      },
+      {
+        "name": "Westlife",
+        "url": "https://genius.com/artists/Westlife",
+        "type": "popular",
+        "id": "187972"
+      },
+      {
+        "name": "Westside Gunn",
+        "url": "https://genius.com/artists/Westside-gunn",
+        "type": "popular",
+        "id": "451539"
+      },
+      {
+        "name": "Wet Leg",
+        "url": "https://genius.com/artists/Wet-leg",
+        "type": "popular",
+        "id": "2774674"
+      },
+      {
+        "name": "Wheatus",
+        "url": "https://genius.com/artists/Wheatus",
+        "type": "popular",
+        "id": "35539"
+      },
+      {
+        "name": "The White Stripes",
+        "url": "https://genius.com/artists/The-white-stripes",
+        "type": "popular",
+        "id": "749"
+      },
+      {
+        "name": "Whitney Houston",
+        "url": "https://genius.com/artists/Whitney-houston",
+        "type": "popular",
+        "id": "8534"
+      },
+      {
+        "name": "The Who",
+        "url": "https://genius.com/artists/The-who",
+        "type": "popular",
+        "id": "17846"
+      },
+      {
+        "name": "wifiskeleton",
+        "url": "https://genius.com/artists/Wifiskeleton",
+        "type": "popular",
+        "id": "3292132"
+      },
+      {
+        "name": "Willie Nelson",
+        "url": "https://genius.com/artists/Willie-nelson",
+        "type": "popular",
+        "id": "23004"
+      },
+      {
+        "name": "Will Stetson",
+        "url": "https://genius.com/artists/Will-stetson",
+        "type": "popular",
+        "id": "1546109"
+      },
+      {
+        "name": "Will Wood",
+        "url": "https://genius.com/artists/Will-wood",
+        "type": "popular",
+        "id": "1852925"
+      },
+      {
+        "name": "Wir sind Helden",
+        "url": "https://genius.com/artists/Wir-sind-helden",
+        "type": "popular",
+        "id": "54439"
+      },
+      {
+        "name": "Wiz Khalifa",
+        "url": "https://genius.com/artists/Wiz-khalifa",
+        "type": "popular",
+        "id": "310"
+      },
+      {
+        "name": "Wolf Alice",
+        "url": "https://genius.com/artists/Wolf-alice",
+        "type": "popular",
+        "id": "326078"
+      },
+      {
+        "name": "Wu-Tang Clan",
+        "url": "https://genius.com/artists/Wu-tang-clan",
+        "type": "popular",
+        "id": "21"
+      }
+    ],
+    "regular": [
+      {
+        "name": "W1reh3ad_411",
+        "url": "https://genius.com/artists/W1reh3ad-411",
+        "type": "regular",
+        "id": "2877113"
+      },
+      {
+        "name": "W2S",
+        "url": "https://genius.com/artists/W2s",
+        "type": "regular",
+        "id": "1192358"
+      },
+      {
+        "name": "The Wachowskis",
+        "url": "https://genius.com/artists/The-wachowskis",
+        "type": "regular",
+        "id": "127073"
+      },
+      {
+        "name": "Wacotron",
+        "url": "https://genius.com/artists/Wacotron",
+        "type": "regular",
+        "id": "2515374"
+      },
+      {
+        "name": "Wac Toja",
+        "url": "https://genius.com/artists/Wac-toja",
+        "type": "regular",
+        "id": "221538"
+      },
+      {
+        "name": "Wadali Brothers",
+        "url": "https://genius.com/artists/Wadali-brothers",
+        "type": "regular",
+        "id": "3580923"
+      },
+      {
+        "name": "Wade Bowen",
+        "url": "https://genius.com/artists/Wade-bowen",
+        "type": "regular",
+        "id": "330720"
+      },
+      {
+        "name": "Wade Hemsworth",
+        "url": "https://genius.com/artists/Wade-hemsworth",
+        "type": "regular",
+        "id": "1045591"
+      },
+      {
+        "name": "Wael Jassar - وائل جسار",
+        "url": "https://genius.com/artists/Wael-jassar",
+        "type": "regular",
+        "id": "457834"
+      },
+      {
+        "name": "Wael Kfoury - وائل كفوري",
+        "url": "https://genius.com/artists/Wael-kfoury",
+        "type": "regular",
+        "id": "452782"
+      },
+      {
+        "name": "Wafande",
+        "url": "https://genius.com/artists/Wafande",
+        "type": "regular",
+        "id": "15167"
+      },
+      {
+        "name": "Wafia",
+        "url": "https://genius.com/artists/Wafia",
+        "type": "regular",
+        "id": "212741"
+      },
+      {
+        "name": "Wage War",
+        "url": "https://genius.com/artists/Wage-war",
+        "type": "regular",
+        "id": "497377"
+      },
+      {
+        "name": "Wagner",
+        "url": "https://genius.com/artists/Wagner",
+        "type": "regular",
+        "id": "638587"
+      },
+      {
+        "name": "Wagner Group",
+        "url": "https://genius.com/artists/Wagner-group",
+        "type": "regular",
+        "id": "3527203"
+      },
+      {
+        "name": "Вагнеровские музыканты (Wagnerian musicians)",
+        "url": "https://genius.com/artists/Wagnerian-musicians",
+        "type": "regular",
+        "id": "4255397"
+      },
+      {
+        "name": "Waifu Jackson",
+        "url": "https://genius.com/artists/Waifu-jackson",
+        "type": "regular",
+        "id": "4066037"
+      },
+      {
+        "name": "WAIIAN",
+        "url": "https://genius.com/artists/Waiian",
+        "type": "regular",
+        "id": "1255559"
+      },
+      {
+        "name": "Wailing Souls",
+        "url": "https://genius.com/artists/Wailing-souls",
+        "type": "regular",
+        "id": "372206"
+      },
+      {
+        "name": "The Wailin' Jennys",
+        "url": "https://genius.com/artists/The-wailin-jennys",
+        "type": "regular",
+        "id": "228646"
+      },
+      {
+        "name": "Waima",
+        "url": "https://genius.com/artists/Waima",
+        "type": "regular",
+        "id": "2274199"
+      },
+      {
+        "name": "Waitress",
+        "url": "https://genius.com/artists/Waitress",
+        "type": "regular",
+        "id": "2077846"
+      },
+      {
+        "name": "The Waitresses",
+        "url": "https://genius.com/artists/The-waitresses",
+        "type": "regular",
+        "id": "26083"
+      },
+      {
+        "name": "Waitress Original Broadway Cast Ensemble",
+        "url": "https://genius.com/artists/Waitress-original-broadway-cast-ensemble",
+        "type": "regular",
+        "id": "2206837"
+      },
+      {
+        "name": "Wajid",
+        "url": "https://genius.com/artists/Wajid",
+        "type": "regular",
+        "id": "484749"
+      },
+      {
+        "name": "Wajid Layaq",
+        "url": "https://genius.com/artists/Wajid-layaq",
+        "type": "regular",
+        "id": "4103214"
+      },
+      {
+        "name": "Wakadinali",
+        "url": "https://genius.com/artists/Wakadinali",
+        "type": "regular",
+        "id": "1492191"
+      },
+      {
+        "name": "Waka Flocka Flame",
+        "url": "https://genius.com/artists/Waka-flocka-flame",
+        "type": "regular",
+        "id": "257"
+      },
+      {
+        "name": "A Wake In Providence",
+        "url": "https://genius.com/artists/A-wake-in-providence",
+        "type": "regular",
+        "id": "1694694"
+      },
+      {
+        "name": "Wale",
+        "url": "https://genius.com/artists/Wale",
+        "type": "regular",
+        "id": "396"
+      },
+      {
+        "name": "Waleska Morales",
+        "url": "https://genius.com/artists/Waleska-morales",
+        "type": "regular",
+        "id": "4240684"
+      },
+      {
+        "name": "Wale The Sage",
+        "url": "https://genius.com/artists/Wale-the-sage",
+        "type": "regular",
+        "id": "2596459"
+      },
+      {
+        "name": "Wali (Band)",
+        "url": "https://genius.com/artists/Wali-band",
+        "type": "regular",
+        "id": "1229736"
+      },
+      {
+        "name": "Walid maknin",
+        "url": "https://genius.com/artists/Walid-maknin",
+        "type": "regular",
+        "id": "334789"
+      },
+      {
+        "name": "The Walker Brothers",
+        "url": "https://genius.com/artists/The-walker-brothers",
+        "type": "regular",
+        "id": "358758"
+      },
+      {
+        "name": "Walker Hayes",
+        "url": "https://genius.com/artists/Walker-hayes",
+        "type": "regular",
+        "id": "54632"
+      },
+      {
+        "name": "Walker Montgomery",
+        "url": "https://genius.com/artists/Walker-montgomery",
+        "type": "regular",
+        "id": "1457398"
+      },
+      {
+        "name": "The Walkers & Alan Walker",
+        "url": "https://genius.com/artists/The-walkers-and-alan-walker",
+        "type": "regular",
+        "id": "3185761"
+      },
+      {
+        "name": "Walkie",
+        "url": "https://genius.com/artists/Walkie",
+        "type": "regular",
+        "id": "292750"
+      },
+      {
+        "name": "Walking On Cars",
+        "url": "https://genius.com/artists/Walking-on-cars",
+        "type": "regular",
+        "id": "348443"
+      },
+      {
+        "name": "The Walkmen",
+        "url": "https://genius.com/artists/The-walkmen",
+        "type": "regular",
+        "id": "5660"
+      },
+      {
+        "name": "Walk off the Earth",
+        "url": "https://genius.com/artists/Walk-off-the-earth",
+        "type": "regular",
+        "id": "58849"
+      },
+      {
+        "name": "WALK THE MOON",
+        "url": "https://genius.com/artists/Walk-the-moon",
+        "type": "regular",
+        "id": "20425"
+      },
+      {
+        "name": "Wallace Cleaver",
+        "url": "https://genius.com/artists/Wallace-cleaver",
+        "type": "regular",
+        "id": "1538361"
+      },
+      {
+        "name": "Wallace Collection",
+        "url": "https://genius.com/artists/Wallace-collection",
+        "type": "regular",
+        "id": "357891"
+      },
+      {
+        "name": "Wallace Stevens",
+        "url": "https://genius.com/artists/Wallace-stevens",
+        "type": "regular",
+        "id": "1004"
+      },
+      {
+        "name": "Wallem",
+        "url": "https://genius.com/artists/Wallem",
+        "type": "regular",
+        "id": "3446274"
+      },
+      {
+        "name": "Wallen",
+        "url": "https://genius.com/artists/Wallen",
+        "type": "regular",
+        "id": "13323"
+      },
+      {
+        "name": "The Wallflowers",
+        "url": "https://genius.com/artists/The-wallflowers",
+        "type": "regular",
+        "id": "39006"
+      },
+      {
+        "name": "Wallice",
+        "url": "https://genius.com/artists/Wallice",
+        "type": "regular",
+        "id": "1530042"
+      },
+      {
+        "name": "Wallie the Sensei",
+        "url": "https://genius.com/artists/Wallie-the-sensei",
+        "type": "regular",
+        "id": "2215841"
+      },
+      {
+        "name": "Wall of Voodoo",
+        "url": "https://genius.com/artists/Wall-of-voodoo",
+        "type": "regular",
+        "id": "264468"
+      },
+      {
+        "name": "Wallows",
+        "url": "https://genius.com/artists/Wallows",
+        "type": "regular",
+        "id": "1117824"
+      },
+      {
+        "name": "Walls",
+        "url": "https://genius.com/artists/Walls",
+        "type": "regular",
+        "id": "1751621"
+      },
+      {
+        "name": "The Walls Group",
+        "url": "https://genius.com/artists/The-walls-group",
+        "type": "regular",
+        "id": "361140"
+      },
+      {
+        "name": "Walls Of Jericho",
+        "url": "https://genius.com/artists/Walls-of-jericho",
+        "type": "regular",
+        "id": "356753"
+      },
+      {
+        "name": "Walt Disney Records",
+        "url": "https://genius.com/artists/Walt-disney-records",
+        "type": "regular",
+        "id": "32992"
+      },
+      {
+        "name": "Walter Brennan",
+        "url": "https://genius.com/artists/Walter-brennan",
+        "type": "regular",
+        "id": "364010"
+      },
+      {
+        "name": "Walter Egan",
+        "url": "https://genius.com/artists/Walter-egan",
+        "type": "regular",
+        "id": "368342"
+      },
+      {
+        "name": "Walter Hawkins",
+        "url": "https://genius.com/artists/Walter-hawkins",
+        "type": "regular",
+        "id": "367903"
+      },
+      {
+        "name": "Walter Mitty And His Makeshift Orchestra",
+        "url": "https://genius.com/artists/Walter-mitty-and-his-makeshift-orchestra",
+        "type": "regular",
+        "id": "350749"
+      },
+      {
+        "name": "The Walters",
+        "url": "https://genius.com/artists/The-walters",
+        "type": "regular",
+        "id": "648218"
+      },
+      {
+        "name": "Walter Trout",
+        "url": "https://genius.com/artists/Walter-trout",
+        "type": "regular",
+        "id": "355168"
+      },
+      {
+        "name": "Walter Wanderley",
+        "url": "https://genius.com/artists/Walter-wanderley",
+        "type": "regular",
+        "id": "389155"
+      },
+      {
+        "name": "Walter Williams Sr.",
+        "url": "https://genius.com/artists/Walter-williams-sr",
+        "type": "regular",
+        "id": "1442910"
+      },
+      {
+        "name": "Walt Whitman",
+        "url": "https://genius.com/artists/Walt-whitman",
+        "type": "regular",
+        "id": "1080"
+      },
+      {
+        "name": "Walt Whitman & Soul Children Of Chicago",
+        "url": "https://genius.com/artists/Walt-whitman-and-soul-children-of-chicago",
+        "type": "regular",
+        "id": "1499429"
+      },
+      {
+        "name": "Wamdue Project",
+        "url": "https://genius.com/artists/Wamdue-project",
+        "type": "regular",
+        "id": "376401"
+      },
+      {
+        "name": "Wamen",
+        "url": "https://genius.com/artists/Wamen",
+        "type": "regular",
+        "id": "4245036"
+      },
+      {
+        "name": "Wam SpinThaBin",
+        "url": "https://genius.com/artists/Wam-spinthabin",
+        "type": "regular",
+        "id": "2661874"
+      },
+      {
+        "name": "Wand",
+        "url": "https://genius.com/artists/Wand",
+        "type": "regular",
+        "id": "671589"
+      },
+      {
+        "name": "Wanda",
+        "url": "https://genius.com/artists/Wanda",
+        "type": "regular",
+        "id": "279737"
+      },
+      {
+        "name": "Wanda Herrans",
+        "url": "https://genius.com/artists/Wanda-herrans",
+        "type": "regular",
+        "id": "3929174"
+      },
+      {
+        "name": "Wanda Jackson",
+        "url": "https://genius.com/artists/Wanda-jackson",
+        "type": "regular",
+        "id": "353688"
+      },
+      {
+        "name": "Wande Coal",
+        "url": "https://genius.com/artists/Wande-coal",
+        "type": "regular",
+        "id": "325939"
+      },
+      {
+        "name": "W&W",
+        "url": "https://genius.com/artists/W-w",
+        "type": "regular",
+        "id": "325794"
+      },
+      {
+        "name": "Wang Chung",
+        "url": "https://genius.com/artists/Wang-chung",
+        "type": "regular",
+        "id": "53860"
+      },
+      {
+        "name": "Wangden Phintso Sherpa",
+        "url": "https://genius.com/artists/Wangden-phintso-sherpa",
+        "type": "regular",
+        "id": "3067780"
+      },
+      {
+        "name": "WANG (GRC)",
+        "url": "https://genius.com/artists/Wang-grc",
+        "type": "regular",
+        "id": "2501403"
+      },
+      {
+        "name": "王一博 (Wang Yibo)",
+        "url": "https://genius.com/artists/Wang-yibo",
+        "type": "regular",
+        "id": "1989428"
+      },
+      {
+        "name": "王以太 (Wang Yitai)",
+        "url": "https://genius.com/artists/Wang-yitai",
+        "type": "regular",
+        "id": "1088103"
+      },
+      {
+        "name": "Wanitwa Mos",
+        "url": "https://genius.com/artists/Wanitwa-mos",
+        "type": "regular",
+        "id": "3011101"
+      },
+      {
+        "name": "Wankelmut",
+        "url": "https://genius.com/artists/Wankelmut",
+        "type": "regular",
+        "id": "360774"
+      },
+      {
+        "name": "The Wannadies",
+        "url": "https://genius.com/artists/The-wannadies",
+        "type": "regular",
+        "id": "138580"
+      },
+      {
+        "name": "WANNA ONE",
+        "url": "https://genius.com/artists/Wanna-one",
+        "type": "regular",
+        "id": "1367932"
+      },
+      {
+        "name": "хочуспать (wannasleep)",
+        "url": "https://genius.com/artists/Wannasleep",
+        "type": "regular",
+        "id": "1431563"
+      },
+      {
+        "name": "The Wanted",
+        "url": "https://genius.com/artists/The-wanted",
+        "type": "regular",
+        "id": "19105"
+      },
+      {
+        "name": "Wantons",
+        "url": "https://genius.com/artists/Wantons",
+        "type": "regular",
+        "id": "671619"
+      },
+      {
+        "name": "War",
+        "url": "https://genius.com/artists/War",
+        "type": "regular",
+        "id": "4111"
+      },
+      {
+        "name": "Warak",
+        "url": "https://genius.com/artists/Warak",
+        "type": "regular",
+        "id": "1048597"
+      },
+      {
+        "name": "The War and Treaty",
+        "url": "https://genius.com/artists/The-war-and-treaty",
+        "type": "regular",
+        "id": "1002335"
+      },
+      {
+        "name": "Warbringer",
+        "url": "https://genius.com/artists/Warbringer",
+        "type": "regular",
+        "id": "367163"
+      },
+      {
+        "name": "Warda - وردة",
+        "url": "https://genius.com/artists/Warda",
+        "type": "regular",
+        "id": "20141"
+      },
+      {
+        "name": "WarDoc",
+        "url": "https://genius.com/artists/Wardoc",
+        "type": "regular",
+        "id": "1037342"
+      },
+      {
+        "name": "Wardruna",
+        "url": "https://genius.com/artists/Wardruna",
+        "type": "regular",
+        "id": "359744"
+      },
+      {
+        "name": "Ward van Klinken",
+        "url": "https://genius.com/artists/Ward-van-klinken",
+        "type": "regular",
+        "id": "4400451"
+      },
+      {
+        "name": "WarEnd",
+        "url": "https://genius.com/artists/Warend",
+        "type": "regular",
+        "id": "2292717"
+      },
+      {
+        "name": "Warfaze",
+        "url": "https://genius.com/artists/Warfaze",
+        "type": "regular",
+        "id": "2243909"
+      },
+      {
+        "name": "WARFRAME",
+        "url": "https://genius.com/artists/Warframe",
+        "type": "regular",
+        "id": "1638627"
+      },
+      {
+        "name": "WARGASM",
+        "url": "https://genius.com/artists/Wargasm",
+        "type": "regular",
+        "id": "2124153"
+      },
+      {
+        "name": "Warhaus",
+        "url": "https://genius.com/artists/Warhaus",
+        "type": "regular",
+        "id": "1013112"
+      },
+      {
+        "name": "Warhol.SS",
+        "url": "https://genius.com/artists/Warholss",
+        "type": "regular",
+        "id": "579351"
+      },
+      {
+        "name": "W.A.R.I.S",
+        "url": "https://genius.com/artists/Waris",
+        "type": "regular",
+        "id": "395833"
+      },
+      {
+        "name": "Warkings",
+        "url": "https://genius.com/artists/Warkings",
+        "type": "regular",
+        "id": "1705522"
+      },
+      {
+        "name": "Warlord Colossus",
+        "url": "https://genius.com/artists/Warlord-colossus",
+        "type": "regular",
+        "id": "1259692"
+      },
+      {
+        "name": "Warmduscher",
+        "url": "https://genius.com/artists/Warmduscher",
+        "type": "regular",
+        "id": "399701"
+      },
+      {
+        "name": "Warner Case",
+        "url": "https://genius.com/artists/Warner-case",
+        "type": "regular",
+        "id": "1712514"
+      },
+      {
+        "name": "The Warning",
+        "url": "https://genius.com/artists/The-warning",
+        "type": "regular",
+        "id": "1192437"
+      },
+      {
+        "name": "Warning (UK)",
+        "url": "https://genius.com/artists/Warning-uk",
+        "type": "regular",
+        "id": "384933"
+      },
+      {
+        "name": "War of Ages",
+        "url": "https://genius.com/artists/War-of-ages",
+        "type": "regular",
+        "id": "323965"
+      },
+      {
+        "name": "The War on Drugs",
+        "url": "https://genius.com/artists/The-war-on-drugs",
+        "type": "regular",
+        "id": "143728"
+      },
+      {
+        "name": "Warpaint",
+        "url": "https://genius.com/artists/Warpaint",
+        "type": "regular",
+        "id": "22765"
+      },
+      {
+        "name": "The Warp Zone",
+        "url": "https://genius.com/artists/The-warp-zone",
+        "type": "regular",
+        "id": "453568"
+      },
+      {
+        "name": "Warrant",
+        "url": "https://genius.com/artists/Warrant",
+        "type": "regular",
+        "id": "64226"
+      },
+      {
+        "name": "Warren Ellis",
+        "url": "https://genius.com/artists/Warren-ellis",
+        "type": "regular",
+        "id": "154153"
+      },
+      {
+        "name": "Warren G",
+        "url": "https://genius.com/artists/Warren-g",
+        "type": "regular",
+        "id": "169"
+      },
+      {
+        "name": "Warren Haynes",
+        "url": "https://genius.com/artists/Warren-haynes",
+        "type": "regular",
+        "id": "162371"
+      },
+      {
+        "name": "Warren Hue",
+        "url": "https://genius.com/artists/Warren-hue",
+        "type": "regular",
+        "id": "1685953"
+      },
+      {
+        "name": "Warren Saada",
+        "url": "https://genius.com/artists/Warren-saada",
+        "type": "regular",
+        "id": "3599377"
+      },
+      {
+        "name": "Warren Zeiders",
+        "url": "https://genius.com/artists/Warren-zeiders",
+        "type": "regular",
+        "id": "2550675"
+      },
+      {
+        "name": "Warren Zevon",
+        "url": "https://genius.com/artists/Warren-zevon",
+        "type": "regular",
+        "id": "19828"
+      },
+      {
+        "name": "Warriors of Zion",
+        "url": "https://genius.com/artists/Warriors-of-zion",
+        "type": "regular",
+        "id": "1743489"
+      },
+      {
+        "name": "Warriyo",
+        "url": "https://genius.com/artists/Warriyo",
+        "type": "regular",
+        "id": "1101745"
+      },
+      {
+        "name": "Warsan Shire",
+        "url": "https://genius.com/artists/Warsan-shire",
+        "type": "regular",
+        "id": "68970"
+      },
+      {
+        "name": "Warszafski Deszcz",
+        "url": "https://genius.com/artists/Warszafski-deszcz",
+        "type": "regular",
+        "id": "100341"
+      },
+      {
+        "name": "Warszawiak z Karsina",
+        "url": "https://genius.com/artists/Warszawiak-z-karsina",
+        "type": "regular",
+        "id": "3708805"
+      },
+      {
+        "name": "War Thunder",
+        "url": "https://genius.com/artists/War-thunder",
+        "type": "regular",
+        "id": "2484325"
+      },
+      {
+        "name": "WarVoid",
+        "url": "https://genius.com/artists/Warvoid",
+        "type": "regular",
+        "id": "2152814"
+      },
+      {
+        "name": "WARYKID",
+        "url": "https://genius.com/artists/Warykid",
+        "type": "regular",
+        "id": "2063359"
+      },
+      {
+        "name": "Warzone",
+        "url": "https://genius.com/artists/Warzone",
+        "type": "regular",
+        "id": "354867"
+      },
+      {
+        "name": "Washed Out",
+        "url": "https://genius.com/artists/Washed-out",
+        "type": "regular",
+        "id": "14083"
+      },
+      {
+        "name": "Washington Brasileiro",
+        "url": "https://genius.com/artists/Washington-brasileiro",
+        "type": "regular",
+        "id": "2073560"
+      },
+      {
+        "name": "Wasia Project",
+        "url": "https://genius.com/artists/Wasia-project",
+        "type": "regular",
+        "id": "3069944"
+      },
+      {
+        "name": "Wasiu",
+        "url": "https://genius.com/artists/Wasiu",
+        "type": "regular",
+        "id": "335818"
+      },
+      {
+        "name": "Was (Not Was)",
+        "url": "https://genius.com/artists/Was-not-was",
+        "type": "regular",
+        "id": "106346"
+      },
+      {
+        "name": "W.A.S.P.",
+        "url": "https://genius.com/artists/Wasp",
+        "type": "regular",
+        "id": "224217"
+      },
+      {
+        "name": "Wassabi Productions",
+        "url": "https://genius.com/artists/Wassabi-productions",
+        "type": "regular",
+        "id": "1215997"
+      },
+      {
+        "name": "вэйст! (waste!)",
+        "url": "https://genius.com/artists/Waste",
+        "type": "regular",
+        "id": "3749097"
+      },
+      {
+        "name": "​​wasting shit",
+        "url": "https://genius.com/artists/Wasting-shit",
+        "type": "regular",
+        "id": "3000135"
+      },
+      {
+        "name": "Watain",
+        "url": "https://genius.com/artists/Watain",
+        "type": "regular",
+        "id": "212522"
+      },
+      {
+        "name": "Watchhouse",
+        "url": "https://genius.com/artists/Watchhouse",
+        "type": "regular",
+        "id": "2710778"
+      },
+      {
+        "name": "The Watchmen",
+        "url": "https://genius.com/artists/The-watchmen",
+        "type": "regular",
+        "id": "324832"
+      },
+      {
+        "name": "The Waterboys",
+        "url": "https://genius.com/artists/The-waterboys",
+        "type": "regular",
+        "id": "343531"
+      },
+      {
+        "name": "Waterflame",
+        "url": "https://genius.com/artists/Waterflame",
+        "type": "regular",
+        "id": "405414"
+      },
+      {
+        "name": "Water From Your Eyes",
+        "url": "https://genius.com/artists/Water-from-your-eyes",
+        "type": "regular",
+        "id": "1388366"
+      },
+      {
+        "name": "Waterparks",
+        "url": "https://genius.com/artists/Waterparks",
+        "type": "regular",
+        "id": "608075"
+      },
+      {
+        "name": "Watsebha",
+        "url": "https://genius.com/artists/Watsebha",
+        "type": "regular",
+        "id": "2388603"
+      },
+      {
+        "name": "Watsky",
+        "url": "https://genius.com/artists/Watsky",
+        "type": "regular",
+        "id": "1720"
+      },
+      {
+        "name": "The Watson Brothers",
+        "url": "https://genius.com/artists/The-watson-brothers",
+        "type": "regular",
+        "id": "3176108"
+      },
+      {
+        "name": "Watson (JPN)",
+        "url": "https://genius.com/artists/Watson-jpn",
+        "type": "regular",
+        "id": "3060058"
+      },
+      {
+        "name": "waunty 812",
+        "url": "https://genius.com/artists/Waunty-812",
+        "type": "regular",
+        "id": "3779847"
+      },
+      {
+        "name": "Waveg0dd",
+        "url": "https://genius.com/artists/Waveg0dd",
+        "type": "regular",
+        "id": "2105609"
+      },
+      {
+        "name": "Wave (URU)",
+        "url": "https://genius.com/artists/Wave-uru",
+        "type": "regular",
+        "id": "2082393"
+      },
+      {
+        "name": "Waving The Guns",
+        "url": "https://genius.com/artists/Waving-the-guns",
+        "type": "regular",
+        "id": "511574"
+      },
+      {
+        "name": "Wavves",
+        "url": "https://genius.com/artists/Wavves",
+        "type": "regular",
+        "id": "30230"
+      },
+      {
+        "name": "Wavy (HUN)",
+        "url": "https://genius.com/artists/Wavy-hun",
+        "type": "regular",
+        "id": "3524771"
+      },
+      {
+        "name": "Wavy Jone$",
+        "url": "https://genius.com/artists/Wavy-jone",
+        "type": "regular",
+        "id": "276465"
+      },
+      {
+        "name": "Wavyrioo",
+        "url": "https://genius.com/artists/Wavyrioo",
+        "type": "regular",
+        "id": "4368472"
+      },
+      {
+        "name": "Wax",
+        "url": "https://genius.com/artists/Wax",
+        "type": "regular",
+        "id": "1476"
+      },
+      {
+        "name": "Waxahatchee",
+        "url": "https://genius.com/artists/Waxahatchee",
+        "type": "regular",
+        "id": "68428"
+      },
+      {
+        "name": "Wax-A-Million",
+        "url": "https://genius.com/artists/Wax-a-million",
+        "type": "regular",
+        "id": "2017284"
+      },
+      {
+        "name": "Wax Fang",
+        "url": "https://genius.com/artists/Wax-fang",
+        "type": "regular",
+        "id": "50286"
+      },
+      {
+        "name": "Wax Motif",
+        "url": "https://genius.com/artists/Wax-motif",
+        "type": "regular",
+        "id": "553260"
+      },
+      {
+        "name": "Wax Petz",
+        "url": "https://genius.com/artists/Wax-petz",
+        "type": "regular",
+        "id": "4401905"
+      },
+      {
+        "name": "Wax Tailor",
+        "url": "https://genius.com/artists/Wax-tailor",
+        "type": "regular",
+        "id": "48674"
+      },
+      {
+        "name": "wayb (TUR)",
+        "url": "https://genius.com/artists/Wayb-tur",
+        "type": "regular",
+        "id": "4299655"
+      },
+      {
+        "name": "​waykap",
+        "url": "https://genius.com/artists/Waykap",
+        "type": "regular",
+        "id": "1794946"
+      },
+      {
+        "name": "Waylon Jennings",
+        "url": "https://genius.com/artists/Waylon-jennings",
+        "type": "regular",
+        "id": "68102"
+      },
+      {
+        "name": "Waylon Wyatt",
+        "url": "https://genius.com/artists/Waylon-wyatt",
+        "type": "regular",
+        "id": "3731917"
+      },
+      {
+        "name": "Wayne Kirkpatrick",
+        "url": "https://genius.com/artists/Wayne-kirkpatrick",
+        "type": "regular",
+        "id": "73256"
+      },
+      {
+        "name": "Wayne Newton",
+        "url": "https://genius.com/artists/Wayne-newton",
+        "type": "regular",
+        "id": "331217"
+      },
+      {
+        "name": "Wayne Sleep",
+        "url": "https://genius.com/artists/Wayne-sleep",
+        "type": "regular",
+        "id": "4260872"
+      },
+      {
+        "name": "Wayne Smith",
+        "url": "https://genius.com/artists/Wayne-smith",
+        "type": "regular",
+        "id": "55521"
+      },
+      {
+        "name": "Wayne Watson",
+        "url": "https://genius.com/artists/Wayne-watson",
+        "type": "regular",
+        "id": "368124"
+      },
+      {
+        "name": "Wayne Wonder",
+        "url": "https://genius.com/artists/Wayne-wonder",
+        "type": "regular",
+        "id": "757"
+      },
+      {
+        "name": "Ways",
+        "url": "https://genius.com/artists/Ways",
+        "type": "regular",
+        "id": "1372138"
+      },
+      {
+        "name": "Ways Away",
+        "url": "https://genius.com/artists/Ways-away",
+        "type": "regular",
+        "id": "2311373"
+      },
+      {
+        "name": "WayV (威神V)",
+        "url": "https://genius.com/artists/Wayv-v",
+        "type": "regular",
+        "id": "1685342"
+      },
+      {
+        "name": "WAZE",
+        "url": "https://genius.com/artists/Waze",
+        "type": "regular",
+        "id": "57104"
+      },
+      {
+        "name": "Waze RRX",
+        "url": "https://genius.com/artists/Waze-rrx",
+        "type": "regular",
+        "id": "1792039"
+      },
+      {
+        "name": "Wazir Patar",
+        "url": "https://genius.com/artists/Wazir-patar",
+        "type": "regular",
+        "id": "2698342"
+      },
+      {
+        "name": "WBW",
+        "url": "https://genius.com/artists/Wbw",
+        "type": "regular",
+        "id": "155558"
+      },
+      {
+        "name": "WC",
+        "url": "https://genius.com/artists/Wc",
+        "type": "regular",
+        "id": "404"
+      },
+      {
+        "name": "W. C. Handy",
+        "url": "https://genius.com/artists/W-c-handy",
+        "type": "regular",
+        "id": "384976"
+      },
+      {
+        "name": "W. Corona",
+        "url": "https://genius.com/artists/W-corona",
+        "type": "regular",
+        "id": "533790"
+      },
+      {
+        "name": "WDFA",
+        "url": "https://genius.com/artists/Wdfa",
+        "type": "regular",
+        "id": "3759514"
+      },
+      {
+        "name": "МЫ (WE)",
+        "url": "https://genius.com/artists/We",
+        "type": "regular",
+        "id": "1214003"
+      },
+      {
+        "name": "The Weakerthans",
+        "url": "https://genius.com/artists/The-weakerthans",
+        "type": "regular",
+        "id": "64763"
+      },
+      {
+        "name": "Wean",
+        "url": "https://genius.com/artists/Wean",
+        "type": "regular",
+        "id": "2050828"
+      },
+      {
+        "name": "WE ARE FURY",
+        "url": "https://genius.com/artists/We-are-fury",
+        "type": "regular",
+        "id": "1178731"
+      },
+      {
+        "name": "We Are KING",
+        "url": "https://genius.com/artists/We-are-king",
+        "type": "regular",
+        "id": "197982"
+      },
+      {
+        "name": "We Are Messengers",
+        "url": "https://genius.com/artists/We-are-messengers",
+        "type": "regular",
+        "id": "648908"
+      },
+      {
+        "name": "We Are Scientists",
+        "url": "https://genius.com/artists/We-are-scientists",
+        "type": "regular",
+        "id": "143970"
+      },
+      {
+        "name": "We are the dirt",
+        "url": "https://genius.com/artists/We-are-the-dirt",
+        "type": "regular",
+        "id": "2654591"
+      },
+      {
+        "name": "WEARETHEGOOD",
+        "url": "https://genius.com/artists/Wearethegood",
+        "type": "regular",
+        "id": "2516489"
+      },
+      {
+        "name": "Weatherday",
+        "url": "https://genius.com/artists/Weatherday",
+        "type": "regular",
+        "id": "1881390"
+      },
+      {
+        "name": "The Weather Girls",
+        "url": "https://genius.com/artists/The-weather-girls",
+        "type": "regular",
+        "id": "35835"
+      },
+      {
+        "name": "Weathers",
+        "url": "https://genius.com/artists/Weathers",
+        "type": "regular",
+        "id": "679507"
+      },
+      {
+        "name": "The Weather Station",
+        "url": "https://genius.com/artists/The-weather-station",
+        "type": "regular",
+        "id": "331388"
+      },
+      {
+        "name": "Weather Systems",
+        "url": "https://genius.com/artists/Weather-systems",
+        "type": "regular",
+        "id": "4137707"
+      },
+      {
+        "name": "The Weavers",
+        "url": "https://genius.com/artists/The-weavers",
+        "type": "regular",
+        "id": "39105"
+      },
+      {
+        "name": "Weaves",
+        "url": "https://genius.com/artists/Weaves",
+        "type": "regular",
+        "id": "754603"
+      },
+      {
+        "name": "We Bare Bears",
+        "url": "https://genius.com/artists/We-bare-bears",
+        "type": "regular",
+        "id": "1191371"
+      },
+      {
+        "name": "Webbie",
+        "url": "https://genius.com/artists/Webbie",
+        "type": "regular",
+        "id": "929"
+      },
+      {
+        "name": "Webb Pierce",
+        "url": "https://genius.com/artists/Webb-pierce",
+        "type": "regular",
+        "id": "72151"
+      },
+      {
+        "name": "​webcage",
+        "url": "https://genius.com/artists/Webcage",
+        "type": "regular",
+        "id": "2520746"
+      },
+      {
+        "name": "We Butter The Bread With Butter",
+        "url": "https://genius.com/artists/We-butter-the-bread-with-butter",
+        "type": "regular",
+        "id": "347372"
+      },
+      {
+        "name": "We Came As Romans",
+        "url": "https://genius.com/artists/We-came-as-romans",
+        "type": "regular",
+        "id": "35453"
+      },
+      {
+        "name": "The Wedding Present",
+        "url": "https://genius.com/artists/The-wedding-present",
+        "type": "regular",
+        "id": "343787"
+      },
+      {
+        "name": "Wedding Singer Ensemble",
+        "url": "https://genius.com/artists/Wedding-singer-ensemble",
+        "type": "regular",
+        "id": "1541158"
+      },
+      {
+        "name": "Wednesday",
+        "url": "https://genius.com/artists/Wednesday",
+        "type": "regular",
+        "id": "381448"
+      },
+      {
+        "name": "Wednesday 13",
+        "url": "https://genius.com/artists/Wednesday-13",
+        "type": "regular",
+        "id": "355431"
+      },
+      {
+        "name": "水曜日のカンパネラ (WEDNESDAY CAMPANELLA)",
+        "url": "https://genius.com/artists/Wednesday-campanella",
+        "type": "regular",
+        "id": "1322918"
+      },
+      {
+        "name": "Wednesday Night Cypher",
+        "url": "https://genius.com/artists/Wednesday-night-cypher",
+        "type": "regular",
+        "id": "1945006"
+      },
+      {
+        "name": "Weedeater",
+        "url": "https://genius.com/artists/Weedeater",
+        "type": "regular",
+        "id": "371423"
+      },
+      {
+        "name": "Wee Goose",
+        "url": "https://genius.com/artists/Wee-goose",
+        "type": "regular",
+        "id": "1500407"
+      },
+      {
+        "name": "Weekend",
+        "url": "https://genius.com/artists/Weekend",
+        "type": "regular",
+        "id": "51628"
+      },
+      {
+        "name": "Weekend Nachos",
+        "url": "https://genius.com/artists/Weekend-nachos",
+        "type": "regular",
+        "id": "353827"
+      },
+      {
+        "name": "​weeklyn",
+        "url": "https://genius.com/artists/Weeklyn",
+        "type": "regular",
+        "id": "1642555"
+      },
+      {
+        "name": "Ween",
+        "url": "https://genius.com/artists/Ween",
+        "type": "regular",
+        "id": "30607"
+      },
+      {
+        "name": "The Weepies",
+        "url": "https://genius.com/artists/The-weepies",
+        "type": "regular",
+        "id": "222343"
+      },
+      {
+        "name": "WeevilDoing",
+        "url": "https://genius.com/artists/Weevildoing",
+        "type": "regular",
+        "id": "2973233"
+      },
+      {
+        "name": "We Five",
+        "url": "https://genius.com/artists/We-five",
+        "type": "regular",
+        "id": "370569"
+      },
+      {
+        "name": "Wegh",
+        "url": "https://genius.com/artists/Wegh",
+        "type": "regular",
+        "id": "2727651"
+      },
+      {
+        "name": "Wegz - ويجز",
+        "url": "https://genius.com/artists/Wegz",
+        "type": "regular",
+        "id": "1252442"
+      },
+      {
+        "name": "韋禮安 (WeiBird)",
+        "url": "https://genius.com/artists/Weibird",
+        "type": "regular",
+        "id": "2914619"
+      },
+      {
+        "name": "Weiland",
+        "url": "https://genius.com/artists/Weiland",
+        "type": "regular",
+        "id": "661044"
+      },
+      {
+        "name": "Weimar",
+        "url": "https://genius.com/artists/Weimar",
+        "type": "regular",
+        "id": "2798542"
+      },
+      {
+        "name": "\"Weird Al\" Yankovic",
+        "url": "https://genius.com/artists/Weird-al-yankovic",
+        "type": "regular",
+        "id": "899"
+      },
+      {
+        "name": "Weird Genius",
+        "url": "https://genius.com/artists/Weird-genius",
+        "type": "regular",
+        "id": "1066564"
+      },
+      {
+        "name": "Wejdene",
+        "url": "https://genius.com/artists/Wejdene",
+        "type": "regular",
+        "id": "2109365"
+      },
+      {
+        "name": "The Wellermen",
+        "url": "https://genius.com/artists/The-wellermen",
+        "type": "regular",
+        "id": "2611063"
+      },
+      {
+        "name": "Welles",
+        "url": "https://genius.com/artists/Welles",
+        "type": "regular",
+        "id": "1131468"
+      },
+      {
+        "name": "Wellhello",
+        "url": "https://genius.com/artists/Wellhello",
+        "type": "regular",
+        "id": "524061"
+      },
+      {
+        "name": "We Lost The Sea",
+        "url": "https://genius.com/artists/We-lost-the-sea",
+        "type": "regular",
+        "id": "1230253"
+      },
+      {
+        "name": "Welshly Arms",
+        "url": "https://genius.com/artists/Welshly-arms",
+        "type": "regular",
+        "id": "530032"
+      },
+      {
+        "name": "Welyar Kauntu",
+        "url": "https://genius.com/artists/Welyar-kauntu",
+        "type": "regular",
+        "id": "3081403"
+      },
+      {
+        "name": "WEN",
+        "url": "https://genius.com/artists/Wen",
+        "type": "regular",
+        "id": "2184973"
+      },
+      {
+        "name": "W.E.N.A.",
+        "url": "https://genius.com/artists/Wena",
+        "type": "regular",
+        "id": "33196"
+      },
+      {
+        "name": "WENARO",
+        "url": "https://genius.com/artists/Wenaro",
+        "type": "regular",
+        "id": "1717197"
+      },
+      {
+        "name": "Wenche Myhre",
+        "url": "https://genius.com/artists/Wenche-myhre",
+        "type": "regular",
+        "id": "455055"
+      },
+      {
+        "name": "Wencke Myhre",
+        "url": "https://genius.com/artists/Wencke-myhre",
+        "type": "regular",
+        "id": "378053"
+      },
+      {
+        "name": "Wency Cornejo",
+        "url": "https://genius.com/artists/Wency-cornejo",
+        "type": "regular",
+        "id": "378743"
+      },
+      {
+        "name": "Wende",
+        "url": "https://genius.com/artists/Wende",
+        "type": "regular",
+        "id": "379525"
+      },
+      {
+        "name": "Wendigo",
+        "url": "https://genius.com/artists/Wendigo",
+        "type": "regular",
+        "id": "1291281"
+      },
+      {
+        "name": "WENDY",
+        "url": "https://genius.com/artists/Wendy",
+        "type": "regular",
+        "id": "1049152"
+      },
+      {
+        "name": "Wendy Cope",
+        "url": "https://genius.com/artists/Wendy-cope",
+        "type": "regular",
+        "id": "68607"
+      },
+      {
+        "name": "Wengie",
+        "url": "https://genius.com/artists/Wengie",
+        "type": "regular",
+        "id": "1520843"
+      },
+      {
+        "name": "Wenszy",
+        "url": "https://genius.com/artists/Wenszy",
+        "type": "regular",
+        "id": "3738853"
+      },
+      {
+        "name": "温奕心 (Wen Yixin)",
+        "url": "https://genius.com/artists/Wen-yixin",
+        "type": "regular",
+        "id": "3798032"
+      },
+      {
+        "name": "We're Not Friends Anymore",
+        "url": "https://genius.com/artists/Were-not-friends-anymore",
+        "type": "regular",
+        "id": "2576889"
+      },
+      {
+        "name": "WERSOW",
+        "url": "https://genius.com/artists/Wersow",
+        "type": "regular",
+        "id": "2237776"
+      },
+      {
+        "name": "WesGhost",
+        "url": "https://genius.com/artists/Wesghost",
+        "type": "regular",
+        "id": "3659643"
+      },
+      {
+        "name": "Wesley Joseph",
+        "url": "https://genius.com/artists/Wesley-joseph",
+        "type": "regular",
+        "id": "2176329"
+      },
+      {
+        "name": "Wesley Schultz",
+        "url": "https://genius.com/artists/Wesley-schultz",
+        "type": "regular",
+        "id": "656660"
+      },
+      {
+        "name": "Wesley Willis",
+        "url": "https://genius.com/artists/Wesley-willis",
+        "type": "regular",
+        "id": "186396"
+      },
+      {
+        "name": "Wess Morgan",
+        "url": "https://genius.com/artists/Wess-morgan",
+        "type": "regular",
+        "id": "389876"
+      },
+      {
+        "name": "WestBerlinBandit",
+        "url": "https://genius.com/artists/Westberlinbandit",
+        "type": "regular",
+        "id": "3263272"
+      },
+      {
+        "name": "WestCoast G'Z",
+        "url": "https://genius.com/artists/Westcoast-gz",
+        "type": "regular",
+        "id": "1169546"
+      },
+      {
+        "name": "The West Coast Pop Art Experimental Band",
+        "url": "https://genius.com/artists/The-west-coast-pop-art-experimental-band",
+        "type": "regular",
+        "id": "266288"
+      },
+      {
+        "name": "WE$T DUBAI",
+        "url": "https://genius.com/artists/We-t-dubai",
+        "type": "regular",
+        "id": "1607739"
+      },
+      {
+        "name": "Westernhagen",
+        "url": "https://genius.com/artists/Westernhagen",
+        "type": "regular",
+        "id": "100945"
+      },
+      {
+        "name": "WEST. (JPN)",
+        "url": "https://genius.com/artists/West-jpn",
+        "type": "regular",
+        "id": "2083065"
+      },
+      {
+        "name": "WEST OF EDEN",
+        "url": "https://genius.com/artists/West-of-eden",
+        "type": "regular",
+        "id": "4241165"
+      },
+      {
+        "name": "Weston Estate",
+        "url": "https://genius.com/artists/Weston-estate",
+        "type": "regular",
+        "id": "1666120"
+      },
+      {
+        "name": "Weston Koury",
+        "url": "https://genius.com/artists/Weston-koury",
+        "type": "regular",
+        "id": "1200681"
+      },
+      {
+        "name": "WESTSIDE BOOGIE",
+        "url": "https://genius.com/artists/Westside-boogie",
+        "type": "regular",
+        "id": "28147"
+      },
+      {
+        "name": "Westside Connection",
+        "url": "https://genius.com/artists/Westside-connection",
+        "type": "regular",
+        "id": "1105"
+      },
+      {
+        "name": "WestsideDOOM",
+        "url": "https://genius.com/artists/Westsidedoom",
+        "type": "regular",
+        "id": "1212196"
+      },
+      {
+        "name": "West Side Family",
+        "url": "https://genius.com/artists/West-side-family",
+        "type": "regular",
+        "id": "1304201"
+      },
+      {
+        "name": "West Side Story Chorus",
+        "url": "https://genius.com/artists/West-side-story-chorus",
+        "type": "regular",
+        "id": "3093261"
+      },
+      {
+        "name": "West Side Story Ensemble",
+        "url": "https://genius.com/artists/West-side-story-ensemble",
+        "type": "regular",
+        "id": "3086812"
+      },
+      {
+        "name": "Wes Walker & Dyl",
+        "url": "https://genius.com/artists/Wes-walker-and-dyl",
+        "type": "regular",
+        "id": "581118"
+      },
+      {
+        "name": "Wet",
+        "url": "https://genius.com/artists/Wet",
+        "type": "regular",
+        "id": "102970"
+      },
+      {
+        "name": "Wet Bed Gang",
+        "url": "https://genius.com/artists/Wet-bed-gang",
+        "type": "regular",
+        "id": "675168"
+      },
+      {
+        "name": "We The Kingdom",
+        "url": "https://genius.com/artists/We-the-kingdom",
+        "type": "regular",
+        "id": "1919241"
+      },
+      {
+        "name": "We the Kings",
+        "url": "https://genius.com/artists/We-the-kings",
+        "type": "regular",
+        "id": "61787"
+      },
+      {
+        "name": "We The Sus Music",
+        "url": "https://genius.com/artists/We-the-sus-music",
+        "type": "regular",
+        "id": "2751611"
+      },
+      {
+        "name": "We Three",
+        "url": "https://genius.com/artists/We-three",
+        "type": "regular",
+        "id": "1407802"
+      },
+      {
+        "name": "Wet Wet Wet",
+        "url": "https://genius.com/artists/Wet-wet-wet",
+        "type": "regular",
+        "id": "353418"
+      },
+      {
+        "name": "wewantwraiths",
+        "url": "https://genius.com/artists/Wewantwraiths",
+        "type": "regular",
+        "id": "2405559"
+      },
+      {
+        "name": "We Were Promised Jetpacks",
+        "url": "https://genius.com/artists/We-were-promised-jetpacks",
+        "type": "regular",
+        "id": "37379"
+      },
+      {
+        "name": "Weyes Blood",
+        "url": "https://genius.com/artists/Weyes-blood",
+        "type": "regular",
+        "id": "481747"
+      },
+      {
+        "name": "Weyhv351",
+        "url": "https://genius.com/artists/Weyhv351",
+        "type": "regular",
+        "id": "3120348"
+      },
+      {
+        "name": "Whales",
+        "url": "https://genius.com/artists/Whales",
+        "type": "regular",
+        "id": "665233"
+      },
+      {
+        "name": "Wham!",
+        "url": "https://genius.com/artists/Wham",
+        "type": "regular",
+        "id": "15441"
+      },
+      {
+        "name": "WHATEVER, DAD",
+        "url": "https://genius.com/artists/Whatever-dad",
+        "type": "regular",
+        "id": "1094182"
+      },
+      {
+        "name": "what is your name?",
+        "url": "https://genius.com/artists/What-is-your-name",
+        "type": "regular",
+        "id": "3668687"
+      },
+      {
+        "name": "whatsaheart",
+        "url": "https://genius.com/artists/Whatsaheart",
+        "type": "regular",
+        "id": "3458205"
+      },
+      {
+        "name": "What So Not",
+        "url": "https://genius.com/artists/What-so-not",
+        "type": "regular",
+        "id": "59129"
+      },
+      {
+        "name": "What's UP",
+        "url": "https://genius.com/artists/Whats-up",
+        "type": "regular",
+        "id": "161638"
+      },
+      {
+        "name": "WHATUPRG",
+        "url": "https://genius.com/artists/Whatuprg",
+        "type": "regular",
+        "id": "185046"
+      },
+      {
+        "name": "W. H. Auden",
+        "url": "https://genius.com/artists/W-h-auden",
+        "type": "regular",
+        "id": "21275"
+      },
+      {
+        "name": "!казу (whaudo)",
+        "url": "https://genius.com/artists/Whaudo",
+        "type": "regular",
+        "id": "4306148"
+      },
+      {
+        "name": "Whee In",
+        "url": "https://genius.com/artists/Whee-in",
+        "type": "regular",
+        "id": "1003065"
+      },
+      {
+        "name": "Wheeler Walker Jr.",
+        "url": "https://genius.com/artists/Wheeler-walker-jr",
+        "type": "regular",
+        "id": "640699"
+      },
+      {
+        "name": "Wheezy",
+        "url": "https://genius.com/artists/Wheezy",
+        "type": "regular",
+        "id": "339721"
+      },
+      {
+        "name": "When Chai Met Toast",
+        "url": "https://genius.com/artists/When-chai-met-toast",
+        "type": "regular",
+        "id": "1578435"
+      },
+      {
+        "name": "When in Rome",
+        "url": "https://genius.com/artists/When-in-rome",
+        "type": "regular",
+        "id": "144170"
+      },
+      {
+        "name": "Whethan",
+        "url": "https://genius.com/artists/Whethan",
+        "type": "regular",
+        "id": "990491"
+      },
+      {
+        "name": "Whigfield",
+        "url": "https://genius.com/artists/Whigfield",
+        "type": "regular",
+        "id": "261249"
+      },
+      {
+        "name": "While She Sleeps",
+        "url": "https://genius.com/artists/While-she-sleeps",
+        "type": "regular",
+        "id": "337200"
+      },
+      {
+        "name": "Whiney",
+        "url": "https://genius.com/artists/Whiney",
+        "type": "regular",
+        "id": "1185487"
+      },
+      {
+        "name": "Whirr",
+        "url": "https://genius.com/artists/Whirr",
+        "type": "regular",
+        "id": "377654"
+      },
+      {
+        "name": "Whiskey Myers",
+        "url": "https://genius.com/artists/Whiskey-myers",
+        "type": "regular",
+        "id": "323974"
+      },
+      {
+        "name": "Whiskeytown",
+        "url": "https://genius.com/artists/Whiskeytown",
+        "type": "regular",
+        "id": "129767"
+      },
+      {
+        "name": "Whisper of Runes",
+        "url": "https://genius.com/artists/Whisper-of-runes",
+        "type": "regular",
+        "id": "3650777"
+      },
+      {
+        "name": "The Whispers",
+        "url": "https://genius.com/artists/The-whispers",
+        "type": "regular",
+        "id": "26776"
+      },
+      {
+        "name": "White 2115",
+        "url": "https://genius.com/artists/White-2115",
+        "type": "regular",
+        "id": "989939"
+      },
+      {
+        "name": "White-B",
+        "url": "https://genius.com/artists/White-b",
+        "type": "regular",
+        "id": "962497"
+      },
+      {
+        "name": "The White Buffalo",
+        "url": "https://genius.com/artists/The-white-buffalo",
+        "type": "regular",
+        "id": "134131"
+      },
+      {
+        "name": "Whitechapel",
+        "url": "https://genius.com/artists/Whitechapel",
+        "type": "regular",
+        "id": "58419"
+      },
+      {
+        "name": "White Chorus",
+        "url": "https://genius.com/artists/White-chorus",
+        "type": "regular",
+        "id": "2325477"
+      },
+      {
+        "name": "Whitecross",
+        "url": "https://genius.com/artists/Whitecross",
+        "type": "regular",
+        "id": "353674"
+      },
+      {
+        "name": "White Denim",
+        "url": "https://genius.com/artists/White-denim",
+        "type": "regular",
+        "id": "80643"
+      },
+      {
+        "name": "White Fence",
+        "url": "https://genius.com/artists/White-fence",
+        "type": "regular",
+        "id": "254344"
+      },
+      {
+        "name": "WhiteG",
+        "url": "https://genius.com/artists/Whiteg",
+        "type": "regular",
+        "id": "1518375"
+      },
+      {
+        "name": "WHITE GALLOWS",
+        "url": "https://genius.com/artists/White-gallows",
+        "type": "regular",
+        "id": "2934255"
+      },
+      {
+        "name": "White Gold",
+        "url": "https://genius.com/artists/White-gold",
+        "type": "regular",
+        "id": "1168635"
+      },
+      {
+        "name": "White Heart",
+        "url": "https://genius.com/artists/White-heart",
+        "type": "regular",
+        "id": "355237"
+      },
+      {
+        "name": "White Hot Ice",
+        "url": "https://genius.com/artists/White-hot-ice",
+        "type": "regular",
+        "id": "1232861"
+      },
+      {
+        "name": "Whitehouse",
+        "url": "https://genius.com/artists/Whitehouse",
+        "type": "regular",
+        "id": "63491"
+      },
+      {
+        "name": "White House Records",
+        "url": "https://genius.com/artists/White-house-records",
+        "type": "regular",
+        "id": "64570"
+      },
+      {
+        "name": "Whitehouse Studio",
+        "url": "https://genius.com/artists/Whitehouse-studio",
+        "type": "regular",
+        "id": "2243528"
+      },
+      {
+        "name": "whitek3d",
+        "url": "https://genius.com/artists/Whitek3d",
+        "type": "regular",
+        "id": "4180668"
+      },
+      {
+        "name": "White Lies",
+        "url": "https://genius.com/artists/White-lies",
+        "type": "regular",
+        "id": "211251"
+      },
+      {
+        "name": "White Lion",
+        "url": "https://genius.com/artists/White-lion",
+        "type": "regular",
+        "id": "166323"
+      },
+      {
+        "name": "WHITENER",
+        "url": "https://genius.com/artists/Whitener",
+        "type": "regular",
+        "id": "1308980"
+      },
+      {
+        "name": "White Punk",
+        "url": "https://genius.com/artists/White-punk",
+        "type": "regular",
+        "id": "515103"
+      },
+      {
+        "name": "White Reaper",
+        "url": "https://genius.com/artists/White-reaper",
+        "type": "regular",
+        "id": "482921"
+      },
+      {
+        "name": "White Shoes & The Couples Company",
+        "url": "https://genius.com/artists/White-shoes-and-the-couples-company",
+        "type": "regular",
+        "id": "1151527"
+      },
+      {
+        "name": "Whitesnake",
+        "url": "https://genius.com/artists/Whitesnake",
+        "type": "regular",
+        "id": "36682"
+      },
+      {
+        "name": "The Whitest Boy Alive",
+        "url": "https://genius.com/artists/The-whitest-boy-alive",
+        "type": "regular",
+        "id": "44544"
+      },
+      {
+        "name": "Whitest Kids U' Know",
+        "url": "https://genius.com/artists/Whitest-kids-u-know",
+        "type": "regular",
+        "id": "45822"
+      },
+      {
+        "name": "White Style (RUS)",
+        "url": "https://genius.com/artists/White-style-rus",
+        "type": "regular",
+        "id": "4225359"
+      },
+      {
+        "name": "White Town",
+        "url": "https://genius.com/artists/White-town",
+        "type": "regular",
+        "id": "184994"
+      },
+      {
+        "name": "White Widow (POL)",
+        "url": "https://genius.com/artists/White-widow-pol",
+        "type": "regular",
+        "id": "2060891"
+      },
+      {
+        "name": "Whitey",
+        "url": "https://genius.com/artists/Whitey",
+        "type": "regular",
+        "id": "34074"
+      },
+      {
+        "name": "Whitey en vogue",
+        "url": "https://genius.com/artists/Whitey-en-vogue",
+        "type": "regular",
+        "id": "1955904"
+      },
+      {
+        "name": "Whitey Morgan and the 78's",
+        "url": "https://genius.com/artists/Whitey-morgan-and-the-78s",
+        "type": "regular",
+        "id": "458130"
+      },
+      {
+        "name": "White Zombie",
+        "url": "https://genius.com/artists/White-zombie",
+        "type": "regular",
+        "id": "165622"
+      },
+      {
+        "name": "The Whitlams",
+        "url": "https://genius.com/artists/The-whitlams",
+        "type": "regular",
+        "id": "354645"
+      },
+      {
+        "name": "Whitney",
+        "url": "https://genius.com/artists/Whitney",
+        "type": "regular",
+        "id": "40717"
+      },
+      {
+        "name": "Whitney Avalon",
+        "url": "https://genius.com/artists/Whitney-avalon",
+        "type": "regular",
+        "id": "275699"
+      },
+      {
+        "name": "Whodini",
+        "url": "https://genius.com/artists/Whodini",
+        "type": "regular",
+        "id": "2438"
+      },
+      {
+        "name": "WhoHeem",
+        "url": "https://genius.com/artists/Whoheem",
+        "type": "regular",
+        "id": "2376234"
+      },
+      {
+        "name": "WHOKILLEDXIX",
+        "url": "https://genius.com/artists/Whokilledxix",
+        "type": "regular",
+        "id": "1559691"
+      },
+      {
+        "name": "Whole Lotta Swag",
+        "url": "https://genius.com/artists/Whole-lotta-swag",
+        "type": "regular",
+        "id": "3355201"
+      },
+      {
+        "name": "WhoMadeWho",
+        "url": "https://genius.com/artists/Whomadewho",
+        "type": "regular",
+        "id": "382255"
+      },
+      {
+        "name": "Whoopi Goldberg",
+        "url": "https://genius.com/artists/Whoopi-goldberg",
+        "type": "regular",
+        "id": "83086"
+      },
+      {
+        "name": "Whoppa Wit Da Choppa",
+        "url": "https://genius.com/artists/Whoppa-wit-da-choppa",
+        "type": "regular",
+        "id": "2595022"
+      },
+      {
+        "name": "Whores.",
+        "url": "https://genius.com/artists/Whores",
+        "type": "regular",
+        "id": "1231186"
+      },
+      {
+        "name": "Who See",
+        "url": "https://genius.com/artists/Who-see",
+        "type": "regular",
+        "id": "1182262"
+      },
+      {
+        "name": "Who's Who?",
+        "url": "https://genius.com/artists/Whos-who",
+        "type": "regular",
+        "id": "4331093"
+      },
+      {
+        "name": "​whxami",
+        "url": "https://genius.com/artists/Whxami",
+        "type": "regular",
+        "id": "1235219"
+      },
+      {
+        "name": "WHY?",
+        "url": "https://genius.com/artists/Why",
+        "type": "regular",
+        "id": "1389"
+      },
+      {
+        "name": "WhyBaby?",
+        "url": "https://genius.com/artists/Whybaby",
+        "type": "regular",
+        "id": "2736916"
+      },
+      {
+        "name": "WHY, BERRY",
+        "url": "https://genius.com/artists/Why-berry",
+        "type": "regular",
+        "id": "1702798"
+      },
+      {
+        "name": "WHY@DOLL",
+        "url": "https://genius.com/artists/Why-doll",
+        "type": "regular",
+        "id": "1226143"
+      },
+      {
+        "name": "Why Don't We",
+        "url": "https://genius.com/artists/Why-dont-we",
+        "type": "regular",
+        "id": "1028873"
+      },
+      {
+        "name": "Why G",
+        "url": "https://genius.com/artists/Why-g",
+        "type": "regular",
+        "id": "653133"
+      },
+      {
+        "name": "​whylovly",
+        "url": "https://genius.com/artists/Whylovly",
+        "type": "regular",
+        "id": "3048427"
+      },
+      {
+        "name": "​whyspurky",
+        "url": "https://genius.com/artists/Whyspurky",
+        "type": "regular",
+        "id": "3731738"
+      },
+      {
+        "name": "Wibal Y Alex",
+        "url": "https://genius.com/artists/Wibal-y-alex",
+        "type": "regular",
+        "id": "533604"
+      },
+      {
+        "name": "Wicca Phase Springs Eternal",
+        "url": "https://genius.com/artists/Wicca-phase-springs-eternal",
+        "type": "regular",
+        "id": "220274"
+      },
+      {
+        "name": "Wicked Movie Cast",
+        "url": "https://genius.com/artists/Wicked-movie-cast",
+        "type": "regular",
+        "id": "4204148"
+      },
+      {
+        "name": "​wicky",
+        "url": "https://genius.com/artists/Wicky",
+        "type": "regular",
+        "id": "2496352"
+      },
+      {
+        "name": "Wicsur",
+        "url": "https://genius.com/artists/Wicsur",
+        "type": "regular",
+        "id": "3303044"
+      },
+      {
+        "name": "Widespread Panic",
+        "url": "https://genius.com/artists/Widespread-panic",
+        "type": "regular",
+        "id": "155143"
+      },
+      {
+        "name": "​widowdusk",
+        "url": "https://genius.com/artists/Widowdusk",
+        "type": "regular",
+        "id": "4006950"
+      },
+      {
+        "name": "Widowspeak",
+        "url": "https://genius.com/artists/Widowspeak",
+        "type": "regular",
+        "id": "365669"
+      },
+      {
+        "name": "WIES",
+        "url": "https://genius.com/artists/Wies",
+        "type": "regular",
+        "id": "2100960"
+      },
+      {
+        "name": "Wiesulis",
+        "url": "https://genius.com/artists/Wiesulis",
+        "type": "regular",
+        "id": "2134612"
+      },
+      {
+        "name": "Świeży [YT]",
+        "url": "https://genius.com/artists/Swiezy-yt",
+        "type": "regular",
+        "id": "3053279"
+      },
+      {
+        "name": "WiFiGawd",
+        "url": "https://genius.com/artists/Wifigawd",
+        "type": "regular",
+        "id": "1047975"
+      },
+      {
+        "name": "wifisfuneral",
+        "url": "https://genius.com/artists/Wifisfuneral",
+        "type": "regular",
+        "id": "197704"
+      },
+      {
+        "name": "The Wiggles",
+        "url": "https://genius.com/artists/The-wiggles",
+        "type": "regular",
+        "id": "25534"
+      },
+      {
+        "name": "Wig Wam",
+        "url": "https://genius.com/artists/Wig-wam",
+        "type": "regular",
+        "id": "361773"
+      },
+      {
+        "name": "Wijaya 80",
+        "url": "https://genius.com/artists/Wijaya-80",
+        "type": "regular",
+        "id": "4313071"
+      },
+      {
+        "name": "Wiki",
+        "url": "https://genius.com/artists/Wiki",
+        "type": "regular",
+        "id": "18192"
+      },
+      {
+        "name": "wikuro",
+        "url": "https://genius.com/artists/Wikuro",
+        "type": "regular",
+        "id": "4235440"
+      },
+      {
+        "name": "Wilbert Harrison",
+        "url": "https://genius.com/artists/Wilbert-harrison",
+        "type": "regular",
+        "id": "367656"
+      },
+      {
+        "name": "Wilbur Soot",
+        "url": "https://genius.com/artists/Wilbur-soot",
+        "type": "regular",
+        "id": "1600198"
+      },
+      {
+        "name": "Wilco",
+        "url": "https://genius.com/artists/Wilco",
+        "type": "regular",
+        "id": "13442"
+      },
+      {
+        "name": "WILD",
+        "url": "https://genius.com/artists/Wild",
+        "type": "regular",
+        "id": "406296"
+      },
+      {
+        "name": "Wild Beasts",
+        "url": "https://genius.com/artists/Wild-beasts",
+        "type": "regular",
+        "id": "100938"
+      },
+      {
+        "name": "Wild Cherry",
+        "url": "https://genius.com/artists/Wild-cherry",
+        "type": "regular",
+        "id": "22041"
+      },
+      {
+        "name": "Wild Child",
+        "url": "https://genius.com/artists/Wild-child",
+        "type": "regular",
+        "id": "576169"
+      },
+      {
+        "name": "Wilderado",
+        "url": "https://genius.com/artists/Wilderado",
+        "type": "regular",
+        "id": "1017012"
+      },
+      {
+        "name": "The Wilder Blue",
+        "url": "https://genius.com/artists/The-wilder-blue",
+        "type": "regular",
+        "id": "2397125"
+      },
+      {
+        "name": "Wilderun",
+        "url": "https://genius.com/artists/Wilderun",
+        "type": "regular",
+        "id": "1144730"
+      },
+      {
+        "name": "Wilder Woods",
+        "url": "https://genius.com/artists/Wilder-woods",
+        "type": "regular",
+        "id": "1780051"
+      },
+      {
+        "name": "Wildflowers",
+        "url": "https://genius.com/artists/Wildflowers",
+        "type": "regular",
+        "id": "1842595"
+      },
+      {
+        "name": "wildkarduno",
+        "url": "https://genius.com/artists/Wildkarduno",
+        "type": "regular",
+        "id": "3169348"
+      },
+      {
+        "name": "Wild Nothing",
+        "url": "https://genius.com/artists/Wild-nothing",
+        "type": "regular",
+        "id": "21129"
+      },
+      {
+        "name": "Wild Party",
+        "url": "https://genius.com/artists/Wild-party",
+        "type": "regular",
+        "id": "258583"
+      },
+      {
+        "name": "Wild Pink",
+        "url": "https://genius.com/artists/Wild-pink",
+        "type": "regular",
+        "id": "1028597"
+      },
+      {
+        "name": "The Wild Reeds",
+        "url": "https://genius.com/artists/The-wild-reeds",
+        "type": "regular",
+        "id": "662314"
+      },
+      {
+        "name": "Wild Rivers",
+        "url": "https://genius.com/artists/Wild-rivers",
+        "type": "regular",
+        "id": "1133572"
+      },
+      {
+        "name": "wildrussianboy",
+        "url": "https://genius.com/artists/Wildrussianboy",
+        "type": "regular",
+        "id": "4322043"
+      },
+      {
+        "name": "Wildson",
+        "url": "https://genius.com/artists/Wildson",
+        "type": "regular",
+        "id": "1794930"
+      },
+      {
+        "name": "Wildstylez",
+        "url": "https://genius.com/artists/Wildstylez",
+        "type": "regular",
+        "id": "344100"
+      },
+      {
+        "name": "The Wild Swans",
+        "url": "https://genius.com/artists/The-wild-swans",
+        "type": "regular",
+        "id": "383569"
+      },
+      {
+        "name": "Wildways",
+        "url": "https://genius.com/artists/Wildways",
+        "type": "regular",
+        "id": "630300"
+      },
+      {
+        "name": "Wild Wes",
+        "url": "https://genius.com/artists/Wild-wes",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Wiley",
+        "url": "https://genius.com/artists/Wiley",
+        "type": "regular",
+        "id": "1639"
+      },
+      {
+        "name": "Wilfred Owen",
+        "url": "https://genius.com/artists/Wilfred-owen",
+        "type": "regular",
+        "id": "27332"
+      },
+      {
+        "name": "Wilfrido Vargas",
+        "url": "https://genius.com/artists/Wilfrido-vargas",
+        "type": "regular",
+        "id": "457259"
+      },
+      {
+        "name": "Wilhelmine",
+        "url": "https://genius.com/artists/Wilhelmine",
+        "type": "regular",
+        "id": "2124227"
+      },
+      {
+        "name": "A Wilhelm Scream",
+        "url": "https://genius.com/artists/A-wilhelm-scream",
+        "type": "regular",
+        "id": "236474"
+      },
+      {
+        "name": "Wilki",
+        "url": "https://genius.com/artists/Wilki",
+        "type": "regular",
+        "id": "373823"
+      },
+      {
+        "name": "Wilkinson",
+        "url": "https://genius.com/artists/Wilkinson",
+        "type": "regular",
+        "id": "133123"
+      },
+      {
+        "name": "Willam",
+        "url": "https://genius.com/artists/Willam",
+        "type": "regular",
+        "id": "452907"
+      },
+      {
+        "name": "Will Banister",
+        "url": "https://genius.com/artists/Will-banister",
+        "type": "regular",
+        "id": "2895478"
+      },
+      {
+        "name": "Will Connolly",
+        "url": "https://genius.com/artists/Will-connolly",
+        "type": "regular",
+        "id": "1010447"
+      },
+      {
+        "name": "Will Dempsey",
+        "url": "https://genius.com/artists/Will-dempsey",
+        "type": "regular",
+        "id": "2602148"
+      },
+      {
+        "name": "will (DNK)",
+        "url": "https://genius.com/artists/Will-dnk",
+        "type": "regular",
+        "id": "4177384"
+      },
+      {
+        "name": "Will Downing",
+        "url": "https://genius.com/artists/Will-downing",
+        "type": "regular",
+        "id": "358671"
+      },
+      {
+        "name": "Willeke Alberti",
+        "url": "https://genius.com/artists/Willeke-alberti",
+        "type": "regular",
+        "id": "455755"
+      },
+      {
+        "name": "Wille Mannila",
+        "url": "https://genius.com/artists/Wille-mannila",
+        "type": "regular",
+        "id": "2657890"
+      },
+      {
+        "name": "Willemijn Verkaik",
+        "url": "https://genius.com/artists/Willemijn-verkaik",
+        "type": "regular",
+        "id": "330051"
+      },
+      {
+        "name": "Will Ferrell",
+        "url": "https://genius.com/artists/Will-ferrell",
+        "type": "regular",
+        "id": "102290"
+      },
+      {
+        "name": "Will Hill",
+        "url": "https://genius.com/artists/Will-hill",
+        "type": "regular",
+        "id": "1059198"
+      },
+      {
+        "name": "Will Hoge",
+        "url": "https://genius.com/artists/Will-hoge",
+        "type": "regular",
+        "id": "345762"
+      },
+      {
+        "name": "​will hyde",
+        "url": "https://genius.com/artists/Will-hyde",
+        "type": "regular",
+        "id": "1252574"
+      },
+      {
+        "name": "will.i.am",
+        "url": "https://genius.com/artists/William",
+        "type": "regular",
+        "id": "713"
+      },
+      {
+        "name": "William Beckmann",
+        "url": "https://genius.com/artists/William-beckmann",
+        "type": "regular",
+        "id": "2846357"
+      },
+      {
+        "name": "William Bell",
+        "url": "https://genius.com/artists/William-bell",
+        "type": "regular",
+        "id": "373690"
+      },
+      {
+        "name": "William Black",
+        "url": "https://genius.com/artists/William-black",
+        "type": "regular",
+        "id": "1116034"
+      },
+      {
+        "name": "William Blake",
+        "url": "https://genius.com/artists/William-blake",
+        "type": "regular",
+        "id": "822"
+      },
+      {
+        "name": "William Bolcom",
+        "url": "https://genius.com/artists/William-bolcom",
+        "type": "regular",
+        "id": "1074810"
+      },
+      {
+        "name": "William Butler Yeats",
+        "url": "https://genius.com/artists/William-butler-yeats",
+        "type": "regular",
+        "id": "726"
+      },
+      {
+        "name": "William Clark Green",
+        "url": "https://genius.com/artists/William-clark-green",
+        "type": "regular",
+        "id": "150160"
+      },
+      {
+        "name": "William DeVaughn",
+        "url": "https://genius.com/artists/William-devaughn",
+        "type": "regular",
+        "id": "17982"
+      },
+      {
+        "name": "William Elliott Whitmore",
+        "url": "https://genius.com/artists/William-elliott-whitmore",
+        "type": "regular",
+        "id": "357996"
+      },
+      {
+        "name": "William Faulkner",
+        "url": "https://genius.com/artists/William-faulkner",
+        "type": "regular",
+        "id": "30975"
+      },
+      {
+        "name": "william (FIN)",
+        "url": "https://genius.com/artists/William-fin",
+        "type": "regular",
+        "id": "1858044"
+      },
+      {
+        "name": "William Finn",
+        "url": "https://genius.com/artists/William-finn",
+        "type": "regular",
+        "id": "365773"
+      },
+      {
+        "name": "William Fitzsimmons",
+        "url": "https://genius.com/artists/William-fitzsimmons",
+        "type": "regular",
+        "id": "356561"
+      },
+      {
+        "name": "William Gibson",
+        "url": "https://genius.com/artists/William-gibson",
+        "type": "regular",
+        "id": "53820"
+      },
+      {
+        "name": "William Golding",
+        "url": "https://genius.com/artists/William-golding",
+        "type": "regular",
+        "id": "79040"
+      },
+      {
+        "name": "William McDowell",
+        "url": "https://genius.com/artists/William-mcdowell",
+        "type": "regular",
+        "id": "355522"
+      },
+      {
+        "name": "William Murphy",
+        "url": "https://genius.com/artists/William-murphy",
+        "type": "regular",
+        "id": "341926"
+      },
+      {
+        "name": "William Orbit",
+        "url": "https://genius.com/artists/William-orbit",
+        "type": "regular",
+        "id": "68835"
+      },
+      {
+        "name": "William Prince",
+        "url": "https://genius.com/artists/William-prince",
+        "type": "regular",
+        "id": "1327077"
+      },
+      {
+        "name": "The Williams Brothers",
+        "url": "https://genius.com/artists/The-williams-brothers",
+        "type": "regular",
+        "id": "350234"
+      },
+      {
+        "name": "William S. Burroughs",
+        "url": "https://genius.com/artists/William-s-burroughs",
+        "type": "regular",
+        "id": "12644"
+      },
+      {
+        "name": "William Shakespeare",
+        "url": "https://genius.com/artists/William-shakespeare",
+        "type": "regular",
+        "id": "842"
+      },
+      {
+        "name": "William Shatner",
+        "url": "https://genius.com/artists/William-shatner",
+        "type": "regular",
+        "id": "227106"
+      },
+      {
+        "name": "William Singe",
+        "url": "https://genius.com/artists/William-singe",
+        "type": "regular",
+        "id": "658615"
+      },
+      {
+        "name": "William Sunshine",
+        "url": "https://genius.com/artists/William-sunshine",
+        "type": "regular",
+        "id": "3872054"
+      },
+      {
+        "name": "William Tabbert",
+        "url": "https://genius.com/artists/William-tabbert",
+        "type": "regular",
+        "id": "1029806"
+      },
+      {
+        "name": "William Tongi",
+        "url": "https://genius.com/artists/William-tongi",
+        "type": "regular",
+        "id": "4427009"
+      },
+      {
+        "name": "William “Wee Gee” Howard",
+        "url": "https://genius.com/artists/William-wee-gee-howard",
+        "type": "regular",
+        "id": "2481006"
+      },
+      {
+        "name": "William Wordsworth",
+        "url": "https://genius.com/artists/William-wordsworth",
+        "type": "regular",
+        "id": "11537"
+      },
+      {
+        "name": "Willi Carlisle",
+        "url": "https://genius.com/artists/Willi-carlisle",
+        "type": "regular",
+        "id": "2257833"
+      },
+      {
+        "name": "Willie Colón",
+        "url": "https://genius.com/artists/Willie-colon",
+        "type": "regular",
+        "id": "73184"
+      },
+      {
+        "name": "Willie DeVille",
+        "url": "https://genius.com/artists/Willie-deville",
+        "type": "regular",
+        "id": "660822"
+      },
+      {
+        "name": "Willie Dixon",
+        "url": "https://genius.com/artists/Willie-dixon",
+        "type": "regular",
+        "id": "65011"
+      },
+      {
+        "name": "Willie Dunn",
+        "url": "https://genius.com/artists/Willie-dunn",
+        "type": "regular",
+        "id": "1161226"
+      },
+      {
+        "name": "Willie Hutch",
+        "url": "https://genius.com/artists/Willie-hutch",
+        "type": "regular",
+        "id": "150173"
+      },
+      {
+        "name": "Willie Jones",
+        "url": "https://genius.com/artists/Willie-jones",
+        "type": "regular",
+        "id": "1506930"
+      },
+      {
+        "name": "Willie Moore Jr.",
+        "url": "https://genius.com/artists/Willie-moore-jr",
+        "type": "regular",
+        "id": "9258"
+      },
+      {
+        "name": "Willie Peyote",
+        "url": "https://genius.com/artists/Willie-peyote",
+        "type": "regular",
+        "id": "307456"
+      },
+      {
+        "name": "Willie Revillame",
+        "url": "https://genius.com/artists/Willie-revillame",
+        "type": "regular",
+        "id": "1858470"
+      },
+      {
+        "name": "Willie the Kid",
+        "url": "https://genius.com/artists/Willie-the-kid",
+        "type": "regular",
+        "id": "322"
+      },
+      {
+        "name": "Willie Watson",
+        "url": "https://genius.com/artists/Willie-watson",
+        "type": "regular",
+        "id": "459196"
+      },
+      {
+        "name": "WILLIS (Band)",
+        "url": "https://genius.com/artists/Willis-band",
+        "type": "regular",
+        "id": "1515676"
+      },
+      {
+        "name": "Will (ITA)",
+        "url": "https://genius.com/artists/Will-ita",
+        "type": "regular",
+        "id": "2322252"
+      },
+      {
+        "name": "Will Jay",
+        "url": "https://genius.com/artists/Will-jay",
+        "type": "regular",
+        "id": "611967"
+      },
+      {
+        "name": "Will Linley",
+        "url": "https://genius.com/artists/Will-linley",
+        "type": "regular",
+        "id": "2925719"
+      },
+      {
+        "name": "Willlow & Placeonme",
+        "url": "https://genius.com/artists/Willlow-and-placeonme",
+        "type": "regular",
+        "id": "3986735"
+      },
+      {
+        "name": "WILLOW",
+        "url": "https://genius.com/artists/Willow",
+        "type": "regular",
+        "id": "12224"
+      },
+      {
+        "name": "Willow Avalon",
+        "url": "https://genius.com/artists/Willow-avalon",
+        "type": "regular",
+        "id": "3045907"
+      },
+      {
+        "name": "Willowbrook",
+        "url": "https://genius.com/artists/Willowbrook",
+        "type": "regular",
+        "id": "3268640"
+      },
+      {
+        "name": "Willow Sage Hart",
+        "url": "https://genius.com/artists/Willow-sage-hart",
+        "type": "regular",
+        "id": "1600462"
+      },
+      {
+        "name": "Will Paquin",
+        "url": "https://genius.com/artists/Will-paquin",
+        "type": "regular",
+        "id": "2409541"
+      },
+      {
+        "name": "Will Reagan",
+        "url": "https://genius.com/artists/Will-reagan",
+        "type": "regular",
+        "id": "455825"
+      },
+      {
+        "name": "Will Roland",
+        "url": "https://genius.com/artists/Will-roland",
+        "type": "regular",
+        "id": "1024623"
+      },
+      {
+        "name": "Will Sass",
+        "url": "https://genius.com/artists/Will-sass",
+        "type": "regular",
+        "id": "4194906"
+      },
+      {
+        "name": "Will Smith",
+        "url": "https://genius.com/artists/Will-smith",
+        "type": "regular",
+        "id": "1148"
+      },
+      {
+        "name": "Will Sparks",
+        "url": "https://genius.com/artists/Will-sparks",
+        "type": "regular",
+        "id": "61533"
+      },
+      {
+        "name": "Will Spencer",
+        "url": "https://genius.com/artists/Will-spencer",
+        "type": "regular",
+        "id": "3755802"
+      },
+      {
+        "name": "WillThaRapper",
+        "url": "https://genius.com/artists/Willtharapper",
+        "type": "regular",
+        "id": "615749"
+      },
+      {
+        "name": "Will to Power",
+        "url": "https://genius.com/artists/Will-to-power",
+        "type": "regular",
+        "id": "380633"
+      },
+      {
+        "name": "Will Tura",
+        "url": "https://genius.com/artists/Will-tura",
+        "type": "regular",
+        "id": "455459"
+      },
+      {
+        "name": "Will Varley",
+        "url": "https://genius.com/artists/Will-varley",
+        "type": "regular",
+        "id": "1028149"
+      },
+      {
+        "name": "Will Wood and the Tapeworms",
+        "url": "https://genius.com/artists/Will-wood-and-the-tapeworms",
+        "type": "regular",
+        "id": "1379044"
+      },
+      {
+        "name": "Willy Anggawinata",
+        "url": "https://genius.com/artists/Willy-anggawinata",
+        "type": "regular",
+        "id": "3207532"
+      },
+      {
+        "name": "Willy DeVille",
+        "url": "https://genius.com/artists/Willy-deville",
+        "type": "regular",
+        "id": "355496"
+      },
+      {
+        "name": "WillyG",
+        "url": "https://genius.com/artists/Willyg",
+        "type": "regular",
+        "id": "4002900"
+      },
+      {
+        "name": "Will Young",
+        "url": "https://genius.com/artists/Will-young",
+        "type": "regular",
+        "id": "356720"
+      },
+      {
+        "name": "WillyRodriguezWasTaken",
+        "url": "https://genius.com/artists/Willyrodriguezwastaken",
+        "type": "regular",
+        "id": "3008772"
+      },
+      {
+        "name": "Willy William",
+        "url": "https://genius.com/artists/Willy-william",
+        "type": "regular",
+        "id": "623257"
+      },
+      {
+        "name": "Wilmer Roberts",
+        "url": "https://genius.com/artists/Wilmer-roberts",
+        "type": "regular",
+        "id": "2111006"
+      },
+      {
+        "name": "Wilson Phillips",
+        "url": "https://genius.com/artists/Wilson-phillips",
+        "type": "regular",
+        "id": "20635"
+      },
+      {
+        "name": "Wilson Pickett",
+        "url": "https://genius.com/artists/Wilson-pickett",
+        "type": "regular",
+        "id": "22384"
+      },
+      {
+        "name": "WIL$ON (USA)",
+        "url": "https://genius.com/artists/Wil-on-usa",
+        "type": "regular",
+        "id": "45386"
+      },
+      {
+        "name": "​wilt",
+        "url": "https://genius.com/artists/Wilt",
+        "type": "regular",
+        "id": "1424790"
+      },
+      {
+        "name": "WILYWNKA",
+        "url": "https://genius.com/artists/Wilywnka",
+        "type": "regular",
+        "id": "2375684"
+      },
+      {
+        "name": "WIM",
+        "url": "https://genius.com/artists/Wim",
+        "type": "regular",
+        "id": "2979313"
+      },
+      {
+        "name": "WIMY",
+        "url": "https://genius.com/artists/Wimy",
+        "type": "regular",
+        "id": "3657804"
+      },
+      {
+        "name": "The Winans",
+        "url": "https://genius.com/artists/The-winans",
+        "type": "regular",
+        "id": "372361"
+      },
+      {
+        "name": "Wincent Weiss",
+        "url": "https://genius.com/artists/Wincent-weiss",
+        "type": "regular",
+        "id": "568192"
+      },
+      {
+        "name": "Winchifrost",
+        "url": "https://genius.com/artists/Winchifrost",
+        "type": "regular",
+        "id": "3216405"
+      },
+      {
+        "name": "Wind",
+        "url": "https://genius.com/artists/Wind",
+        "type": "regular",
+        "id": "11194"
+      },
+      {
+        "name": "Windhand",
+        "url": "https://genius.com/artists/Windhand",
+        "type": "regular",
+        "id": "454597"
+      },
+      {
+        "name": "Windir",
+        "url": "https://genius.com/artists/Windir",
+        "type": "regular",
+        "id": "371703"
+      },
+      {
+        "name": "Window Kid",
+        "url": "https://genius.com/artists/Window-kid",
+        "type": "regular",
+        "id": "1403347"
+      },
+      {
+        "name": "Windows96",
+        "url": "https://genius.com/artists/Windows96",
+        "type": "regular",
+        "id": "1857358"
+      },
+      {
+        "name": "Wind Rose",
+        "url": "https://genius.com/artists/Wind-rose",
+        "type": "regular",
+        "id": "1176146"
+      },
+      {
+        "name": "Windwaker",
+        "url": "https://genius.com/artists/Windwaker",
+        "type": "regular",
+        "id": "651807"
+      },
+      {
+        "name": "Wind Walkers",
+        "url": "https://genius.com/artists/Wind-walkers",
+        "type": "regular",
+        "id": "1087951"
+      },
+      {
+        "name": "Wing",
+        "url": "https://genius.com/artists/Wing",
+        "type": "regular",
+        "id": "354420"
+      },
+      {
+        "name": "Winger",
+        "url": "https://genius.com/artists/Winger",
+        "type": "regular",
+        "id": "317022"
+      },
+      {
+        "name": "Wingii - وينجي",
+        "url": "https://genius.com/artists/Wingii",
+        "type": "regular",
+        "id": "3084067"
+      },
+      {
+        "name": "Wingnut Dishwashers Union",
+        "url": "https://genius.com/artists/Wingnut-dishwashers-union",
+        "type": "regular",
+        "id": "45530"
+      },
+      {
+        "name": "Wings",
+        "url": "https://genius.com/artists/Wings",
+        "type": "regular",
+        "id": "348424"
+      },
+      {
+        "name": "Wings (MS)",
+        "url": "https://genius.com/artists/Wings-ms",
+        "type": "regular",
+        "id": "1165527"
+      },
+      {
+        "name": "Wiśnia Bakajoko",
+        "url": "https://genius.com/artists/Wisnia-bakajoko",
+        "type": "regular",
+        "id": "1565585"
+      },
+      {
+        "name": "Winky D",
+        "url": "https://genius.com/artists/Winky-d",
+        "type": "regular",
+        "id": "1012549"
+      },
+      {
+        "name": "Winne",
+        "url": "https://genius.com/artists/Winne",
+        "type": "regular",
+        "id": "18301"
+      },
+      {
+        "name": "WINNER",
+        "url": "https://genius.com/artists/Winner",
+        "type": "regular",
+        "id": "405615"
+      },
+      {
+        "name": "winner (Rock)",
+        "url": "https://genius.com/artists/Winner-rock",
+        "type": "regular",
+        "id": "3925366"
+      },
+      {
+        "name": "Winnetka Bowling League",
+        "url": "https://genius.com/artists/Winnetka-bowling-league",
+        "type": "regular",
+        "id": "1551378"
+      },
+      {
+        "name": "Винни Пух (Winnie Pooh)",
+        "url": "https://genius.com/artists/Winnie-pooh",
+        "type": "regular",
+        "id": "3120813"
+      },
+      {
+        "name": "Винни Пух (Winnie Pooh) & Пятачок (Piglet)",
+        "url": "https://genius.com/artists/Winnie-pooh-and-piglet",
+        "type": "regular",
+        "id": "3596529"
+      },
+      {
+        "name": "Winno",
+        "url": "https://genius.com/artists/Winno",
+        "type": "regular",
+        "id": "2966769"
+      },
+      {
+        "name": "​​winnterzuko",
+        "url": "https://genius.com/artists/Winnterzuko",
+        "type": "regular",
+        "id": "2264918"
+      },
+      {
+        "name": "Winona Fighter",
+        "url": "https://genius.com/artists/Winona-fighter",
+        "type": "regular",
+        "id": "3546771"
+      },
+      {
+        "name": "Winona Oak",
+        "url": "https://genius.com/artists/Winona-oak",
+        "type": "regular",
+        "id": "1403931"
+      },
+      {
+        "name": "Winston Churchill",
+        "url": "https://genius.com/artists/Winston-churchill",
+        "type": "regular",
+        "id": "37103"
+      },
+      {
+        "name": "Winston Surfshirt",
+        "url": "https://genius.com/artists/Winston-surfshirt",
+        "type": "regular",
+        "id": "1005266"
+      },
+      {
+        "name": "Winter",
+        "url": "https://genius.com/artists/Winter",
+        "type": "regular",
+        "id": "368672"
+      },
+      {
+        "name": "WINTER (aespa)",
+        "url": "https://genius.com/artists/Winter-aespa",
+        "type": "regular",
+        "id": "2479059"
+      },
+      {
+        "name": "Wintersleep",
+        "url": "https://genius.com/artists/Wintersleep",
+        "type": "regular",
+        "id": "169618"
+      },
+      {
+        "name": "Wintersun",
+        "url": "https://genius.com/artists/Wintersun",
+        "type": "regular",
+        "id": "355518"
+      },
+      {
+        "name": "Wintertime",
+        "url": "https://genius.com/artists/Wintertime",
+        "type": "regular",
+        "id": "675549"
+      },
+      {
+        "name": "Winx Club",
+        "url": "https://genius.com/artists/Winx-club",
+        "type": "regular",
+        "id": "2751636"
+      },
+      {
+        "name": "Winx Club Russia",
+        "url": "https://genius.com/artists/Winx-club-russia",
+        "type": "regular",
+        "id": "3973030"
+      },
+      {
+        "name": "Winx Club Türkiye",
+        "url": "https://genius.com/artists/Winx-club-turkiye",
+        "type": "regular",
+        "id": "2744007"
+      },
+      {
+        "name": "Wipers",
+        "url": "https://genius.com/artists/Wipers",
+        "type": "regular",
+        "id": "43891"
+      },
+      {
+        "name": "Wipo",
+        "url": "https://genius.com/artists/Wipo",
+        "type": "regular",
+        "id": "2295861"
+      },
+      {
+        "name": "Wire",
+        "url": "https://genius.com/artists/Wire",
+        "type": "regular",
+        "id": "355897"
+      },
+      {
+        "name": "Wise Guys",
+        "url": "https://genius.com/artists/Wise-guys",
+        "type": "regular",
+        "id": "359754"
+      },
+      {
+        "name": "Wise \"The Gold Pen\"",
+        "url": "https://genius.com/artists/Wise-the-gold-pen",
+        "type": "regular",
+        "id": "583834"
+      },
+      {
+        "name": "Wishbone Ash",
+        "url": "https://genius.com/artists/Wishbone-ash",
+        "type": "regular",
+        "id": "344490"
+      },
+      {
+        "name": "Wish – Cast",
+        "url": "https://genius.com/artists/Wish-cast",
+        "type": "regular",
+        "id": "3704346"
+      },
+      {
+        "name": "Wishing",
+        "url": "https://genius.com/artists/Wishing",
+        "type": "regular",
+        "id": "1119318"
+      },
+      {
+        "name": "​wishlane",
+        "url": "https://genius.com/artists/Wishlane",
+        "type": "regular",
+        "id": "2447313"
+      },
+      {
+        "name": "Wisin",
+        "url": "https://genius.com/artists/Wisin",
+        "type": "regular",
+        "id": "32131"
+      },
+      {
+        "name": "Wisin & Yandel",
+        "url": "https://genius.com/artists/Wisin-and-yandel",
+        "type": "regular",
+        "id": "13157"
+      },
+      {
+        "name": "Wisp",
+        "url": "https://genius.com/artists/Wisp",
+        "type": "regular",
+        "id": "24984"
+      },
+      {
+        "name": "witchbox",
+        "url": "https://genius.com/artists/Witchbox",
+        "type": "regular",
+        "id": "2971845"
+      },
+      {
+        "name": "​​witchboy",
+        "url": "https://genius.com/artists/Witchboy",
+        "type": "regular",
+        "id": "2091244"
+      },
+      {
+        "name": "Witch Club Satan",
+        "url": "https://genius.com/artists/Witch-club-satan",
+        "type": "regular",
+        "id": "3454409"
+      },
+      {
+        "name": "Witchcraft",
+        "url": "https://genius.com/artists/Witchcraft",
+        "type": "regular",
+        "id": "378629"
+      },
+      {
+        "name": "Witchfinder General",
+        "url": "https://genius.com/artists/Witchfinder-general",
+        "type": "regular",
+        "id": "337239"
+      },
+      {
+        "name": "Witchouse 40k",
+        "url": "https://genius.com/artists/Witchouse-40k",
+        "type": "regular",
+        "id": "1713214"
+      },
+      {
+        "name": "WITCHZ",
+        "url": "https://genius.com/artists/Witchz",
+        "type": "regular",
+        "id": "2569596"
+      },
+      {
+        "name": "With Confidence",
+        "url": "https://genius.com/artists/With-confidence",
+        "type": "regular",
+        "id": "627194"
+      },
+      {
+        "name": "Within Temptation",
+        "url": "https://genius.com/artists/Within-temptation",
+        "type": "regular",
+        "id": "197503"
+      },
+      {
+        "name": "Within the Ruins",
+        "url": "https://genius.com/artists/Within-the-ruins",
+        "type": "regular",
+        "id": "360393"
+      },
+      {
+        "name": "Witt Lowry",
+        "url": "https://genius.com/artists/Witt-lowry",
+        "type": "regular",
+        "id": "36095"
+      },
+      {
+        "name": "WIU",
+        "url": "https://genius.com/artists/Wiu",
+        "type": "regular",
+        "id": "1176425"
+      },
+      {
+        "name": "Wiz",
+        "url": "https://genius.com/artists/Wiz",
+        "type": "regular",
+        "id": "3981"
+      },
+      {
+        "name": "Wizard Chan",
+        "url": "https://genius.com/artists/Wizard-chan",
+        "type": "regular",
+        "id": "3887598"
+      },
+      {
+        "name": "Wizards with Guns",
+        "url": "https://genius.com/artists/Wizards-with-guns",
+        "type": "regular",
+        "id": "3398684"
+      },
+      {
+        "name": "THE WIZ Cast",
+        "url": "https://genius.com/artists/The-wiz-cast",
+        "type": "regular",
+        "id": "3982882"
+      },
+      {
+        "name": "Wizkid",
+        "url": "https://genius.com/artists/Wizkid",
+        "type": "regular",
+        "id": "20148"
+      },
+      {
+        "name": "Wizo",
+        "url": "https://genius.com/artists/Wizo",
+        "type": "regular",
+        "id": "78119"
+      },
+      {
+        "name": "WizTheMc",
+        "url": "https://genius.com/artists/Wizthemc",
+        "type": "regular",
+        "id": "1011302"
+      },
+      {
+        "name": "Wizzard",
+        "url": "https://genius.com/artists/Wizzard",
+        "type": "regular",
+        "id": "32624"
+      },
+      {
+        "name": "Wizz Havinn",
+        "url": "https://genius.com/artists/Wizz-havinn",
+        "type": "regular",
+        "id": "3387693"
+      },
+      {
+        "name": "WJSN",
+        "url": "https://genius.com/artists/Wjsn",
+        "type": "regular",
+        "id": "975299"
+      },
+      {
+        "name": "Wk",
+        "url": "https://genius.com/artists/Wk",
+        "type": "regular",
+        "id": "70634"
+      },
+      {
+        "name": "The Wldlfe",
+        "url": "https://genius.com/artists/The-wldlfe",
+        "type": "regular",
+        "id": "973811"
+      },
+      {
+        "name": "Wülf Boi",
+        "url": "https://genius.com/artists/Wulf-boi",
+        "type": "regular",
+        "id": "1232728"
+      },
+      {
+        "name": "WNC Whop Bezzy",
+        "url": "https://genius.com/artists/Wnc-whop-bezzy",
+        "type": "regular",
+        "id": "1016827"
+      },
+      {
+        "name": "Wønder",
+        "url": "https://genius.com/artists/Wnder",
+        "type": "regular",
+        "id": "1496393"
+      },
+      {
+        "name": "W/N (VNM)",
+        "url": "https://genius.com/artists/W-n-vnm",
+        "type": "regular",
+        "id": "2040625"
+      },
+      {
+        "name": "Woah",
+        "url": "https://genius.com/artists/Woah",
+        "type": "regular",
+        "id": "2384118"
+      },
+      {
+        "name": "Восход (Wocxod)",
+        "url": "https://genius.com/artists/Wocxod",
+        "type": "regular",
+        "id": "3591524"
+      },
+      {
+        "name": "Woddy",
+        "url": "https://genius.com/artists/Woddy",
+        "type": "regular",
+        "id": "4137597"
+      },
+      {
+        "name": "Włodi",
+        "url": "https://genius.com/artists/Wodi",
+        "type": "regular",
+        "id": "59389"
+      },
+      {
+        "name": "woee33",
+        "url": "https://genius.com/artists/Woee33",
+        "type": "regular",
+        "id": "2848512"
+      },
+      {
+        "name": "Woe, Is Me",
+        "url": "https://genius.com/artists/Woe-is-me",
+        "type": "regular",
+        "id": "37600"
+      },
+      {
+        "name": "Wohdee",
+        "url": "https://genius.com/artists/Wohdee",
+        "type": "regular",
+        "id": "2697266"
+      },
+      {
+        "name": "​​​wokeups",
+        "url": "https://genius.com/artists/Wokeups",
+        "type": "regular",
+        "id": "3447130"
+      },
+      {
+        "name": "wokuzh",
+        "url": "https://genius.com/artists/Wokuzh",
+        "type": "regular",
+        "id": "4376791"
+      },
+      {
+        "name": "wolfacejoeyy",
+        "url": "https://genius.com/artists/Wolfacejoeyy",
+        "type": "regular",
+        "id": "1948879"
+      },
+      {
+        "name": "Wolf Biermann",
+        "url": "https://genius.com/artists/Wolf-biermann",
+        "type": "regular",
+        "id": "1252040"
+      },
+      {
+        "name": "W O L F C L U B",
+        "url": "https://genius.com/artists/W-o-l-f-c-l-u-b",
+        "type": "regular",
+        "id": "1812521"
+      },
+      {
+        "name": "​​wolf.cryman",
+        "url": "https://genius.com/artists/Wolfcryman",
+        "type": "regular",
+        "id": "3458469"
+      },
+      {
+        "name": "The Wolfe Tones",
+        "url": "https://genius.com/artists/The-wolfe-tones",
+        "type": "regular",
+        "id": "52939"
+      },
+      {
+        "name": "Wolfgang Amadeus Mozart",
+        "url": "https://genius.com/artists/Wolfgang-amadeus-mozart",
+        "type": "regular",
+        "id": "330734"
+      },
+      {
+        "name": "Wolfgang Ambros",
+        "url": "https://genius.com/artists/Wolfgang-ambros",
+        "type": "regular",
+        "id": "344767"
+      },
+      {
+        "name": "Wolfgang Peterson",
+        "url": "https://genius.com/artists/Wolfgang-peterson",
+        "type": "regular",
+        "id": "4341264"
+      },
+      {
+        "name": "Wolfgang Petry",
+        "url": "https://genius.com/artists/Wolfgang-petry",
+        "type": "regular",
+        "id": "173236"
+      },
+      {
+        "name": "Wolfgang (PHL)",
+        "url": "https://genius.com/artists/Wolfgang-phl",
+        "type": "regular",
+        "id": "3369555"
+      },
+      {
+        "name": "WolfGang (Producer)",
+        "url": "https://genius.com/artists/Wolfgang-producer",
+        "type": "regular",
+        "id": "14511"
+      },
+      {
+        "name": "Wolfgang Tillmans",
+        "url": "https://genius.com/artists/Wolfgang-tillmans",
+        "type": "regular",
+        "id": "991460"
+      },
+      {
+        "name": "Wolfie (Rap)",
+        "url": "https://genius.com/artists/Wolfie-rap",
+        "type": "regular",
+        "id": "4418830"
+      },
+      {
+        "name": "Wolfie's Just Fine",
+        "url": "https://genius.com/artists/Wolfies-just-fine",
+        "type": "regular",
+        "id": "645923"
+      },
+      {
+        "name": "Wolfine",
+        "url": "https://genius.com/artists/Wolfine",
+        "type": "regular",
+        "id": "455477"
+      },
+      {
+        "name": "Wolfmother",
+        "url": "https://genius.com/artists/Wolfmother",
+        "type": "regular",
+        "id": "21086"
+      },
+      {
+        "name": "Wolf Parade",
+        "url": "https://genius.com/artists/Wolf-parade",
+        "type": "regular",
+        "id": "21174"
+      },
+      {
+        "name": "Wolfsheim",
+        "url": "https://genius.com/artists/Wolfsheim",
+        "type": "regular",
+        "id": "322831"
+      },
+      {
+        "name": "Wolftyla",
+        "url": "https://genius.com/artists/Wolftyla",
+        "type": "regular",
+        "id": "182521"
+      },
+      {
+        "name": "Wolves At The Gate",
+        "url": "https://genius.com/artists/Wolves-at-the-gate",
+        "type": "regular",
+        "id": "360742"
+      },
+      {
+        "name": "Wolves of Glendale",
+        "url": "https://genius.com/artists/Wolves-of-glendale",
+        "type": "regular",
+        "id": "3509236"
+      },
+      {
+        "name": "Womack & Womack",
+        "url": "https://genius.com/artists/Womack-and-womack",
+        "type": "regular",
+        "id": "26738"
+      },
+      {
+        "name": "Woman Evolve Worship",
+        "url": "https://genius.com/artists/Woman-evolve-worship",
+        "type": "regular",
+        "id": "3696092"
+      },
+      {
+        "name": "Wombat",
+        "url": "https://genius.com/artists/Wombat",
+        "type": "regular",
+        "id": "1425034"
+      },
+      {
+        "name": "The Wombats",
+        "url": "https://genius.com/artists/The-wombats",
+        "type": "regular",
+        "id": "75841"
+      },
+      {
+        "name": "The Wombles",
+        "url": "https://genius.com/artists/The-wombles",
+        "type": "regular",
+        "id": "375008"
+      },
+      {
+        "name": "Wombo",
+        "url": "https://genius.com/artists/Wombo",
+        "type": "regular",
+        "id": "2668333"
+      },
+      {
+        "name": "Women",
+        "url": "https://genius.com/artists/Women",
+        "type": "regular",
+        "id": "357318"
+      },
+      {
+        "name": "Women of Faith",
+        "url": "https://genius.com/artists/Women-of-faith",
+        "type": "regular",
+        "id": "404076"
+      },
+      {
+        "name": "wonder",
+        "url": "https://genius.com/artists/Wonder",
+        "type": "regular",
+        "id": "1910074"
+      },
+      {
+        "name": "Wonder Girls",
+        "url": "https://genius.com/artists/Wonder-girls",
+        "type": "regular",
+        "id": "23806"
+      },
+      {
+        "name": "ワンダーランズ×ショウタイム (Wonderlands×Showtime)",
+        "url": "https://genius.com/artists/Wonderlandsshowtime",
+        "type": "regular",
+        "id": "2990137"
+      },
+      {
+        "name": "The Wonders",
+        "url": "https://genius.com/artists/The-wonders",
+        "type": "regular",
+        "id": "360483"
+      },
+      {
+        "name": "The Wonder Stuff",
+        "url": "https://genius.com/artists/The-wonder-stuff",
+        "type": "regular",
+        "id": "355459"
+      },
+      {
+        "name": "The Wonder Years",
+        "url": "https://genius.com/artists/The-wonder-years",
+        "type": "regular",
+        "id": "20034"
+      },
+      {
+        "name": "WONHEE (원희)",
+        "url": "https://genius.com/artists/Wonhee",
+        "type": "regular",
+        "id": "3857427"
+      },
+      {
+        "name": "WONHO (원호)",
+        "url": "https://genius.com/artists/Wonho",
+        "type": "regular",
+        "id": "1509339"
+      },
+      {
+        "name": "WONWOO (원우)",
+        "url": "https://genius.com/artists/Wonwoo",
+        "type": "regular",
+        "id": "1022188"
+      },
+      {
+        "name": "WOODBLOCK DJS",
+        "url": "https://genius.com/artists/Woodblock-djs",
+        "type": "regular",
+        "id": "4230528"
+      },
+      {
+        "name": "Woodboy Gee",
+        "url": "https://genius.com/artists/Woodboy-gee",
+        "type": "regular",
+        "id": "3201696"
+      },
+      {
+        "name": "The Wood Brothers",
+        "url": "https://genius.com/artists/The-wood-brothers",
+        "type": "regular",
+        "id": "29782"
+      },
+      {
+        "name": "WoodenToaster",
+        "url": "https://genius.com/artists/Woodentoaster",
+        "type": "regular",
+        "id": "23865"
+      },
+      {
+        "name": "Woodie",
+        "url": "https://genius.com/artists/Woodie",
+        "type": "regular",
+        "id": "2917"
+      },
+      {
+        "name": "Woodie Gochild (우디고차일드)",
+        "url": "https://genius.com/artists/Woodie-gochild",
+        "type": "regular",
+        "id": "1219387"
+      },
+      {
+        "name": "Woodkid",
+        "url": "https://genius.com/artists/Woodkid",
+        "type": "regular",
+        "id": "14980"
+      },
+      {
+        "name": "Woods of Ypres",
+        "url": "https://genius.com/artists/Woods-of-ypres",
+        "type": "regular",
+        "id": "344551"
+      },
+      {
+        "name": "‌woody (Dream Caster)",
+        "url": "https://genius.com/artists/Woody-dream-caster",
+        "type": "regular",
+        "id": "150107"
+      },
+      {
+        "name": "Woody Guthrie",
+        "url": "https://genius.com/artists/Woody-guthrie",
+        "type": "regular",
+        "id": "28623"
+      },
+      {
+        "name": "WOOD​Z",
+        "url": "https://genius.com/artists/Woodz",
+        "type": "regular",
+        "id": "1378784"
+      },
+      {
+        "name": "Wookiefoot",
+        "url": "https://genius.com/artists/Wookiefoot",
+        "type": "regular",
+        "id": "458996"
+      },
+      {
+        "name": "Wooli",
+        "url": "https://genius.com/artists/Wooli",
+        "type": "regular",
+        "id": "1049481"
+      },
+      {
+        "name": "Wooski",
+        "url": "https://genius.com/artists/Wooski",
+        "type": "regular",
+        "id": "1501238"
+      },
+      {
+        "name": "​woosubi",
+        "url": "https://genius.com/artists/Woosubi",
+        "type": "regular",
+        "id": "4017275"
+      },
+      {
+        "name": "WOOSUNG (김우성)",
+        "url": "https://genius.com/artists/Woosung",
+        "type": "regular",
+        "id": "1899822"
+      },
+      {
+        "name": "WOOYOUNG (우영)",
+        "url": "https://genius.com/artists/Wooyoung",
+        "type": "regular",
+        "id": "1628025"
+      },
+      {
+        "name": "WOOZI (우지)",
+        "url": "https://genius.com/artists/Woozi",
+        "type": "regular",
+        "id": "1022185"
+      },
+      {
+        "name": "The Word Alive",
+        "url": "https://genius.com/artists/The-word-alive",
+        "type": "regular",
+        "id": "190503"
+      },
+      {
+        "name": "Wordz",
+        "url": "https://genius.com/artists/Wordz",
+        "type": "regular",
+        "id": "137056"
+      },
+      {
+        "name": "Wordsplayed",
+        "url": "https://genius.com/artists/Wordsplayed",
+        "type": "regular",
+        "id": "299959"
+      },
+      {
+        "name": "Work It Out",
+        "url": "https://genius.com/artists/Work-it-out",
+        "type": "regular",
+        "id": "2503065"
+      },
+      {
+        "name": "Workrate",
+        "url": "https://genius.com/artists/Workrate",
+        "type": "regular",
+        "id": "1492439"
+      },
+      {
+        "name": "World Class Wreckin' Cru",
+        "url": "https://genius.com/artists/World-class-wreckin-cru",
+        "type": "regular",
+        "id": "11169"
+      },
+      {
+        "name": "Worldcorp Enterprises",
+        "url": "https://genius.com/artists/Worldcorp-enterprises",
+        "type": "regular",
+        "id": "1813143"
+      },
+      {
+        "name": "The World Famous Tony Williams",
+        "url": "https://genius.com/artists/The-world-famous-tony-williams",
+        "type": "regular",
+        "id": "951"
+      },
+      {
+        "name": "The World/Inferno Friendship Society",
+        "url": "https://genius.com/artists/The-world-inferno-friendship-society",
+        "type": "regular",
+        "id": "353388"
+      },
+      {
+        "name": "The World is a Beautiful Place & I am No Longer Afraid to Die",
+        "url": "https://genius.com/artists/The-world-is-a-beautiful-place-and-i-am-no-longer-afraid-to-die",
+        "type": "regular",
+        "id": "173153"
+      },
+      {
+        "name": "World Party",
+        "url": "https://genius.com/artists/World-party",
+        "type": "regular",
+        "id": "233654"
+      },
+      {
+        "name": "WormGanger",
+        "url": "https://genius.com/artists/Wormganger",
+        "type": "regular",
+        "id": "1040510"
+      },
+      {
+        "name": "Wormrot",
+        "url": "https://genius.com/artists/Wormrot",
+        "type": "regular",
+        "id": "482935"
+      },
+      {
+        "name": "Worm Shepherd",
+        "url": "https://genius.com/artists/Worm-shepherd",
+        "type": "regular",
+        "id": "2441660"
+      },
+      {
+        "name": "Worry Club",
+        "url": "https://genius.com/artists/Worry-club",
+        "type": "regular",
+        "id": "2436715"
+      },
+      {
+        "name": "Worship Central",
+        "url": "https://genius.com/artists/Worship-central",
+        "type": "regular",
+        "id": "454592"
+      },
+      {
+        "name": "The Worship Initiative",
+        "url": "https://genius.com/artists/The-worship-initiative",
+        "type": "regular",
+        "id": "2165247"
+      },
+      {
+        "name": "WorshipMob",
+        "url": "https://genius.com/artists/Worshipmob",
+        "type": "regular",
+        "id": "1209517"
+      },
+      {
+        "name": "Worship Together",
+        "url": "https://genius.com/artists/Worship-together",
+        "type": "regular",
+        "id": "483051"
+      },
+      {
+        "name": "Worst Party Ever",
+        "url": "https://genius.com/artists/Worst-party-ever",
+        "type": "regular",
+        "id": "1063392"
+      },
+      {
+        "name": "Worthikids",
+        "url": "https://genius.com/artists/Worthikids",
+        "type": "regular",
+        "id": "1000708"
+      },
+      {
+        "name": "Worthwhile",
+        "url": "https://genius.com/artists/Worthwhile",
+        "type": "regular",
+        "id": "405431"
+      },
+      {
+        "name": "WOS",
+        "url": "https://genius.com/artists/Wos",
+        "type": "regular",
+        "id": "1210589"
+      },
+      {
+        "name": "ヲタみん (Wotamin)",
+        "url": "https://genius.com/artists/Wotamin",
+        "type": "regular",
+        "id": "2374524"
+      },
+      {
+        "name": "Wovenhand",
+        "url": "https://genius.com/artists/Wovenhand",
+        "type": "regular",
+        "id": "288606"
+      },
+      {
+        "name": "​wowaka",
+        "url": "https://genius.com/artists/Wowaka",
+        "type": "regular",
+        "id": "619588"
+      },
+      {
+        "name": "WOWITSBROOKE",
+        "url": "https://genius.com/artists/Wowitsbrooke",
+        "type": "regular",
+        "id": "3681172"
+      },
+      {
+        "name": "大張偉 (Wowkie Da)",
+        "url": "https://genius.com/artists/Wowkie-da",
+        "type": "regular",
+        "id": "2278514"
+      },
+      {
+        "name": "WOWSHIT",
+        "url": "https://genius.com/artists/Wowshit",
+        "type": "regular",
+        "id": "3428380"
+      },
+      {
+        "name": "Вау Вероника (Wow Veronica)",
+        "url": "https://genius.com/artists/Wow-veronica",
+        "type": "regular",
+        "id": "4268402"
+      },
+      {
+        "name": "Wow! Wow! Wubbzy!",
+        "url": "https://genius.com/artists/Wow-wow-wubbzy",
+        "type": "regular",
+        "id": "2542229"
+      },
+      {
+        "name": "Wrabel",
+        "url": "https://genius.com/artists/Wrabel",
+        "type": "regular",
+        "id": "138561"
+      },
+      {
+        "name": "The Wreckers",
+        "url": "https://genius.com/artists/The-wreckers",
+        "type": "regular",
+        "id": "152327"
+      },
+      {
+        "name": "The Wrecks",
+        "url": "https://genius.com/artists/The-wrecks",
+        "type": "regular",
+        "id": "675354"
+      },
+      {
+        "name": "Wreckx-N-Effect",
+        "url": "https://genius.com/artists/Wreckx-n-effect",
+        "type": "regular",
+        "id": "11170"
+      },
+      {
+        "name": "Wrekonize",
+        "url": "https://genius.com/artists/Wrekonize",
+        "type": "regular",
+        "id": "5307"
+      },
+      {
+        "name": "Wren Evans",
+        "url": "https://genius.com/artists/Wren-evans",
+        "type": "regular",
+        "id": "2782443"
+      },
+      {
+        "name": "The Wrens",
+        "url": "https://genius.com/artists/The-wrens",
+        "type": "regular",
+        "id": "33741"
+      },
+      {
+        "name": "Wrest (UK)",
+        "url": "https://genius.com/artists/Wrest-uk",
+        "type": "regular",
+        "id": "1850972"
+      },
+      {
+        "name": "Wretch 32",
+        "url": "https://genius.com/artists/Wretch-32",
+        "type": "regular",
+        "id": "1600"
+      },
+      {
+        "name": "Write Out Loud",
+        "url": "https://genius.com/artists/Write-out-loud",
+        "type": "regular",
+        "id": "1955771"
+      },
+      {
+        "name": "Writers Well",
+        "url": "https://genius.com/artists/Writers-well",
+        "type": "regular",
+        "id": "3730038"
+      },
+      {
+        "name": "Written by Wolves",
+        "url": "https://genius.com/artists/Written-by-wolves",
+        "type": "regular",
+        "id": "1030344"
+      },
+      {
+        "name": "WRLD",
+        "url": "https://genius.com/artists/Wrld",
+        "type": "regular",
+        "id": "396320"
+      },
+      {
+        "name": "WS GANG",
+        "url": "https://genius.com/artists/Ws-gang",
+        "type": "regular",
+        "id": "3234552"
+      },
+      {
+        "name": "W Sound",
+        "url": "https://genius.com/artists/W-sound",
+        "type": "regular",
+        "id": "4037081"
+      },
+      {
+        "name": "WSRH",
+        "url": "https://genius.com/artists/Wsrh",
+        "type": "regular",
+        "id": "80092"
+      },
+      {
+        "name": "WSTR",
+        "url": "https://genius.com/artists/Wstr",
+        "type": "regular",
+        "id": "574324"
+      },
+      {
+        "name": "WSTRN",
+        "url": "https://genius.com/artists/Wstrn",
+        "type": "regular",
+        "id": "579541"
+      },
+      {
+        "name": "Wtwice",
+        "url": "https://genius.com/artists/Wtwice",
+        "type": "regular",
+        "id": "1525225"
+      },
+      {
+        "name": "伍佰 (Wu Bai) & China Blue",
+        "url": "https://genius.com/artists/Wu-bai-and-china-blue",
+        "type": "regular",
+        "id": "1518818"
+      },
+      {
+        "name": "wujek",
+        "url": "https://genius.com/artists/Wujek",
+        "type": "regular",
+        "id": "3034114"
+      },
+      {
+        "name": "WUMMS",
+        "url": "https://genius.com/artists/Wumms",
+        "type": "regular",
+        "id": "1491480"
+      },
+      {
+        "name": ":wumpscut:",
+        "url": "https://genius.com/artists/Wumpscut",
+        "type": "regular",
+        "id": "353757"
+      },
+      {
+        "name": "Wunderhorse",
+        "url": "https://genius.com/artists/Wunderhorse",
+        "type": "regular",
+        "id": "2828191"
+      },
+      {
+        "name": "wunderland",
+        "url": "https://genius.com/artists/Wunderland",
+        "type": "regular",
+        "id": "3866520"
+      },
+      {
+        "name": "WUNDERWORLD",
+        "url": "https://genius.com/artists/Wunderworld",
+        "type": "regular",
+        "id": "1578843"
+      },
+      {
+        "name": "Wun Two",
+        "url": "https://genius.com/artists/Wun-two",
+        "type": "regular",
+        "id": "116971"
+      },
+      {
+        "name": "吳青峰 (Wu Qing Feng)",
+        "url": "https://genius.com/artists/Wu-qing-feng",
+        "type": "regular",
+        "id": "1497546"
+      },
+      {
+        "name": "WurtS",
+        "url": "https://genius.com/artists/Wurts",
+        "type": "regular",
+        "id": "2733509"
+      },
+      {
+        "name": "The Wurzels",
+        "url": "https://genius.com/artists/The-wurzels",
+        "type": "regular",
+        "id": "35108"
+      },
+      {
+        "name": "Wussy",
+        "url": "https://genius.com/artists/Wussy",
+        "type": "regular",
+        "id": "262099"
+      },
+      {
+        "name": "Wu-Tang",
+        "url": "https://genius.com/artists/Wu-tang",
+        "type": "regular",
+        "id": "4295006"
+      },
+      {
+        "name": "Wuthering Waves",
+        "url": "https://genius.com/artists/Wuthering-waves",
+        "type": "regular",
+        "id": "4033640"
+      },
+      {
+        "name": "wuu",
+        "url": "https://genius.com/artists/Wuu",
+        "type": "regular",
+        "id": "3486568"
+      },
+      {
+        "name": "Wuuslime (우슬라임)",
+        "url": "https://genius.com/artists/Wuuslime",
+        "type": "regular",
+        "id": "4264884"
+      },
+      {
+        "name": "WWE",
+        "url": "https://genius.com/artists/Wwe",
+        "type": "regular",
+        "id": "8710"
+      },
+      {
+        "name": "WWO",
+        "url": "https://genius.com/artists/Wwo",
+        "type": "regular",
+        "id": "36449"
+      },
+      {
+        "name": "WXCHSXN",
+        "url": "https://genius.com/artists/Wxchsxn",
+        "type": "regular",
+        "id": "4263881"
+      },
+      {
+        "name": "WXRDIE",
+        "url": "https://genius.com/artists/Wxrdie",
+        "type": "regular",
+        "id": "2031239"
+      },
+      {
+        "name": "Wyatt Flores",
+        "url": "https://genius.com/artists/Wyatt-flores",
+        "type": "regular",
+        "id": "3268866"
+      },
+      {
+        "name": "​​wych elm",
+        "url": "https://genius.com/artists/Wych-elm",
+        "type": "regular",
+        "id": "1569810"
+      },
+      {
+        "name": "Wyclef Jean",
+        "url": "https://genius.com/artists/Wyclef-jean",
+        "type": "regular",
+        "id": "467"
+      },
+      {
+        "name": "Wydrob",
+        "url": "https://genius.com/artists/Wydrob",
+        "type": "regular",
+        "id": "3901816"
+      },
+      {
+        "name": "Wye Oak",
+        "url": "https://genius.com/artists/Wye-oak",
+        "type": "regular",
+        "id": "12419"
+      },
+      {
+        "name": "Wyguś",
+        "url": "https://genius.com/artists/Wygus",
+        "type": "regular",
+        "id": "2079761"
+      },
+      {
+        "name": "Wynne",
+        "url": "https://genius.com/artists/Wynne",
+        "type": "regular",
+        "id": "1200218"
+      },
+      {
+        "name": "Wynonie Harris",
+        "url": "https://genius.com/artists/Wynonie-harris",
+        "type": "regular",
+        "id": "373104"
+      },
+      {
+        "name": "Wynonna",
+        "url": "https://genius.com/artists/Wynonna",
+        "type": "regular",
+        "id": "330746"
+      },
+      {
+        "name": "Wyn Starks",
+        "url": "https://genius.com/artists/Wyn-starks",
+        "type": "regular",
+        "id": "1957595"
+      },
+      {
+        "name": "Wynton Marsalis",
+        "url": "https://genius.com/artists/Wynton-marsalis",
+        "type": "regular",
+        "id": "376750"
+      },
+      {
+        "name": "WYROLOWANY",
+        "url": "https://genius.com/artists/Wyrolowany",
+        "type": "regular",
+        "id": "4431151"
+      },
+      {
+        "name": "Wzgórze Ya-Pa 3",
+        "url": "https://genius.com/artists/Wzgorze-ya-pa-3",
+        "type": "regular",
+        "id": "186755"
+      },
+      {
+        "name": "WZRD",
+        "url": "https://genius.com/artists/Wzrd",
+        "type": "regular",
+        "id": "15049"
+      }
+    ]
+  }
+}

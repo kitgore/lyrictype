@@ -1,0 +1,1411 @@
+{
+  "letter": "Q",
+  "timestamp": "2025-07-11T11:24:46.877Z",
+  "totalArtists": 233,
+  "popularCount": 20,
+  "regularCount": 213,
+  "artists": {
+    "popular": [
+      {
+        "name": "Qadir Khan",
+        "url": "https://genius.com/artists/Qadir-khan",
+        "type": "popular",
+        "id": "1272287"
+      },
+      {
+        "name": "Qimp",
+        "url": "https://genius.com/artists/Qimp",
+        "type": "popular",
+        "id": "3068429"
+      },
+      {
+        "name": "Qing Madi",
+        "url": "https://genius.com/artists/Qing-madi",
+        "type": "popular",
+        "id": "3464652"
+      },
+      {
+        "name": "Qry",
+        "url": "https://genius.com/artists/Qry",
+        "type": "popular",
+        "id": "1163579"
+      },
+      {
+        "name": "Quadeca",
+        "url": "https://genius.com/artists/Quadeca",
+        "type": "popular",
+        "id": "683879"
+      },
+      {
+        "name": "Quality Control",
+        "url": "https://genius.com/artists/Quality-control",
+        "type": "popular",
+        "id": "995189"
+      },
+      {
+        "name": "Quando Rondo",
+        "url": "https://genius.com/artists/Quando-rondo",
+        "type": "popular",
+        "id": "1324733"
+      },
+      {
+        "name": "Quavo",
+        "url": "https://genius.com/artists/Quavo",
+        "type": "popular",
+        "id": "61600"
+      },
+      {
+        "name": "Quebonafide",
+        "url": "https://genius.com/artists/Quebonafide",
+        "type": "popular",
+        "id": "40889"
+      },
+      {
+        "name": "Queen",
+        "url": "https://genius.com/artists/Queen",
+        "type": "popular",
+        "id": "563"
+      },
+      {
+        "name": "Queen Key",
+        "url": "https://genius.com/artists/Queen-key",
+        "type": "popular",
+        "id": "630301"
+      },
+      {
+        "name": "Queen Latifah",
+        "url": "https://genius.com/artists/Queen-latifah",
+        "type": "popular",
+        "id": "3443"
+      },
+      {
+        "name": "Queens of the Stone Age",
+        "url": "https://genius.com/artists/Queens-of-the-stone-age",
+        "type": "popular",
+        "id": "25320"
+      },
+      {
+        "name": "Quest Pistols",
+        "url": "https://genius.com/artists/Quest-pistols",
+        "type": "popular",
+        "id": "531804"
+      },
+      {
+        "name": "Quevedo",
+        "url": "https://genius.com/artists/Quevedo",
+        "type": "popular",
+        "id": "2613457"
+      },
+      {
+        "name": "Quincy Jones",
+        "url": "https://genius.com/artists/Quincy-jones",
+        "type": "popular",
+        "id": "2726"
+      },
+      {
+        "name": "quinn",
+        "url": "https://genius.com/artists/Quinn",
+        "type": "popular",
+        "id": "2050527"
+      },
+      {
+        "name": "Quinn Salman",
+        "url": "https://genius.com/artists/Quinn-salman",
+        "type": "popular",
+        "id": "3709631"
+      },
+      {
+        "name": "Quinn XCII",
+        "url": "https://genius.com/artists/Quinn-xcii",
+        "type": "popular",
+        "id": "580637"
+      },
+      {
+        "name": "QWER",
+        "url": "https://genius.com/artists/Qwer",
+        "type": "popular",
+        "id": "1400219"
+      }
+    ],
+    "regular": [
+      {
+        "name": "Q",
+        "url": "https://genius.com/artists/Q",
+        "type": "regular",
+        "id": "2980"
+      },
+      {
+        "name": "Q2",
+        "url": "https://genius.com/artists/Q2",
+        "type": "regular",
+        "id": "4225117"
+      },
+      {
+        "name": "Q50WLil50",
+        "url": "https://genius.com/artists/Q50wlil50",
+        "type": "regular",
+        "id": "4161919"
+      },
+      {
+        "name": "Qaab",
+        "url": "https://genius.com/artists/Qaab",
+        "type": "regular",
+        "id": "1806923"
+      },
+      {
+        "name": "Qaayel",
+        "url": "https://genius.com/artists/Qaayel",
+        "type": "regular",
+        "id": "1357455"
+      },
+      {
+        "name": "Қайрат Нұртас (Qairat Nūrtas)",
+        "url": "https://genius.com/artists/Qairat-nurtas",
+        "type": "regular",
+        "id": "4273463"
+      },
+      {
+        "name": "Qaiser-Ul-Jafri",
+        "url": "https://genius.com/artists/Qaiser-ul-jafri",
+        "type": "regular",
+        "id": "3857931"
+      },
+      {
+        "name": "Қанат Ерлан (Qanat Erlan)",
+        "url": "https://genius.com/artists/Qanat-erlan",
+        "type": "regular",
+        "id": "3981819"
+      },
+      {
+        "name": "Q and Not U",
+        "url": "https://genius.com/artists/Q-and-not-u",
+        "type": "regular",
+        "id": "355200"
+      },
+      {
+        "name": "​qantreez x челс (chels)",
+        "url": "https://genius.com/artists/Qantreez-x-chels",
+        "type": "regular",
+        "id": "3058837"
+      },
+      {
+        "name": "Qarakesek",
+        "url": "https://genius.com/artists/Qarakesek",
+        "type": "regular",
+        "id": "2910396"
+      },
+      {
+        "name": "QARAN",
+        "url": "https://genius.com/artists/Qaran",
+        "type": "regular",
+        "id": "1475614"
+      },
+      {
+        "name": "Qaraqan",
+        "url": "https://genius.com/artists/Qaraqan",
+        "type": "regular",
+        "id": "334220"
+      },
+      {
+        "name": "QARAQSHY",
+        "url": "https://genius.com/artists/Qaraqshy",
+        "type": "regular",
+        "id": "4333545"
+      },
+      {
+        "name": "Qarpa",
+        "url": "https://genius.com/artists/Qarpa",
+        "type": "regular",
+        "id": "3531237"
+      },
+      {
+        "name": "qarz",
+        "url": "https://genius.com/artists/Qarz",
+        "type": "regular",
+        "id": "4371611"
+      },
+      {
+        "name": "Qassem",
+        "url": "https://genius.com/artists/Qassem",
+        "type": "regular",
+        "id": "4219071"
+      },
+      {
+        "name": "QAWI KAMRI",
+        "url": "https://genius.com/artists/Qawi-kamri",
+        "type": "regular",
+        "id": "1148532"
+      },
+      {
+        "name": "Qaya Qrupu",
+        "url": "https://genius.com/artists/Qaya-qrupu",
+        "type": "regular",
+        "id": "3455209"
+      },
+      {
+        "name": "QBA Loko",
+        "url": "https://genius.com/artists/Qba-loko",
+        "type": "regular",
+        "id": "3507682"
+      },
+      {
+        "name": "QB Finest",
+        "url": "https://genius.com/artists/Qb-finest",
+        "type": "regular",
+        "id": "108811"
+      },
+      {
+        "name": "Qbik",
+        "url": "https://genius.com/artists/Qbik",
+        "type": "regular",
+        "id": "674492"
+      },
+      {
+        "name": "Qbomb",
+        "url": "https://genius.com/artists/Qbomb",
+        "type": "regular",
+        "id": "2707815"
+      },
+      {
+        "name": "[Q]brick",
+        "url": "https://genius.com/artists/Q-brick",
+        "type": "regular",
+        "id": "1562448"
+      },
+      {
+        "name": "Qdot Alagbe",
+        "url": "https://genius.com/artists/Qdot-alagbe",
+        "type": "regular",
+        "id": "3008414"
+      },
+      {
+        "name": "Q.E Favelas",
+        "url": "https://genius.com/artists/Qe-favelas",
+        "type": "regular",
+        "id": "977594"
+      },
+      {
+        "name": "The Qemists",
+        "url": "https://genius.com/artists/The-qemists",
+        "type": "regular",
+        "id": "75178"
+      },
+      {
+        "name": "Qendresa",
+        "url": "https://genius.com/artists/Qendresa",
+        "type": "regular",
+        "id": "1642093"
+      },
+      {
+        "name": "​qeqoqeq",
+        "url": "https://genius.com/artists/Qeqoqeq",
+        "type": "regular",
+        "id": "3735304"
+      },
+      {
+        "name": "QG Meer",
+        "url": "https://genius.com/artists/Qg-meer",
+        "type": "regular",
+        "id": "3265377"
+      },
+      {
+        "name": "Qianti",
+        "url": "https://genius.com/artists/Qianti",
+        "type": "regular",
+        "id": "1255150"
+      },
+      {
+        "name": "Q.I.S.",
+        "url": "https://genius.com/artists/Qis",
+        "type": "regular",
+        "id": "3717020"
+      },
+      {
+        "name": "邱鋒澤 (Qiu Feng Ze)",
+        "url": "https://genius.com/artists/Qiu-feng-ze",
+        "type": "regular",
+        "id": "1898149"
+      },
+      {
+        "name": "Qiuntellii",
+        "url": "https://genius.com/artists/Qiuntellii",
+        "type": "regular",
+        "id": "2692535"
+      },
+      {
+        "name": "QKooK",
+        "url": "https://genius.com/artists/Qkook",
+        "type": "regular",
+        "id": "3760499"
+      },
+      {
+        "name": "QKReign",
+        "url": "https://genius.com/artists/Qkreign",
+        "type": "regular",
+        "id": "4004814"
+      },
+      {
+        "name": "Qlas",
+        "url": "https://genius.com/artists/Qlas",
+        "type": "regular",
+        "id": "2075634"
+      },
+      {
+        "name": "Qlas & Blacka",
+        "url": "https://genius.com/artists/Qlas-and-blacka",
+        "type": "regular",
+        "id": "1951759"
+      },
+      {
+        "name": "Q Lazzarus",
+        "url": "https://genius.com/artists/Q-lazzarus",
+        "type": "regular",
+        "id": "327449"
+      },
+      {
+        "name": "Q' Lokura",
+        "url": "https://genius.com/artists/Q-lokura",
+        "type": "regular",
+        "id": "3405050"
+      },
+      {
+        "name": "Q-Mark",
+        "url": "https://genius.com/artists/Q-mark",
+        "type": "regular",
+        "id": "627138"
+      },
+      {
+        "name": "Qmayb",
+        "url": "https://genius.com/artists/Qmayb",
+        "type": "regular",
+        "id": "1807657"
+      },
+      {
+        "name": "Q-mbia Juan",
+        "url": "https://genius.com/artists/Q-mbia-juan",
+        "type": "regular",
+        "id": "2213813"
+      },
+      {
+        "name": "QM (KOR)",
+        "url": "https://genius.com/artists/Qm-kor",
+        "type": "regular",
+        "id": "1467977"
+      },
+      {
+        "name": "Q Money",
+        "url": "https://genius.com/artists/Q-money",
+        "type": "regular",
+        "id": "1210751"
+      },
+      {
+        "name": "QNT",
+        "url": "https://genius.com/artists/Qnt",
+        "type": "regular",
+        "id": "2396828"
+      },
+      {
+        "name": "Qntal",
+        "url": "https://genius.com/artists/Qntal",
+        "type": "regular",
+        "id": "355203"
+      },
+      {
+        "name": "Qoiet",
+        "url": "https://genius.com/artists/Qoiet",
+        "type": "regular",
+        "id": "1476716"
+      },
+      {
+        "name": "Qontrast",
+        "url": "https://genius.com/artists/Qontrast",
+        "type": "regular",
+        "id": "2050630"
+      },
+      {
+        "name": "​​qori.",
+        "url": "https://genius.com/artists/Qori",
+        "type": "regular",
+        "id": "2817603"
+      },
+      {
+        "name": "Qpidcity",
+        "url": "https://genius.com/artists/Qpidcity",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "QQ",
+        "url": "https://genius.com/artists/Qq",
+        "type": "regular",
+        "id": "26453"
+      },
+      {
+        "name": "​qqdie",
+        "url": "https://genius.com/artists/Qqdie",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "QП (QP)",
+        "url": "https://genius.com/artists/Q-qp",
+        "type": "regular",
+        "id": "1471171"
+      },
+      {
+        "name": "Qrystral",
+        "url": "https://genius.com/artists/Qrystral",
+        "type": "regular",
+        "id": "2992585"
+      },
+      {
+        "name": "Q Strange",
+        "url": "https://genius.com/artists/Q-strange",
+        "type": "regular",
+        "id": "9551"
+      },
+      {
+        "name": "QT",
+        "url": "https://genius.com/artists/Qt",
+        "type": "regular",
+        "id": "650274"
+      },
+      {
+        "name": "​​qtae",
+        "url": "https://genius.com/artists/Qtae",
+        "type": "regular",
+        "id": "3223711"
+      },
+      {
+        "name": "Q Da Fool",
+        "url": "https://genius.com/artists/Q-da-fool",
+        "type": "regular",
+        "id": "615750"
+      },
+      {
+        "name": "Q-Tip",
+        "url": "https://genius.com/artists/Q-tip",
+        "type": "regular",
+        "id": "267"
+      },
+      {
+        "name": "QT (Quinn Thomas)",
+        "url": "https://genius.com/artists/Qt-quinn-thomas",
+        "type": "regular",
+        "id": "234229"
+      },
+      {
+        "name": "Q Twins",
+        "url": "https://genius.com/artists/Q-twins",
+        "type": "regular",
+        "id": "2074444"
+      },
+      {
+        "name": "Quackity",
+        "url": "https://genius.com/artists/Quackity",
+        "type": "regular",
+        "id": "1201188"
+      },
+      {
+        "name": "Quada",
+        "url": "https://genius.com/artists/Quada",
+        "type": "regular",
+        "id": "1165221"
+      },
+      {
+        "name": "Quad City DJ's",
+        "url": "https://genius.com/artists/Quad-city-djs",
+        "type": "regular",
+        "id": "9554"
+      },
+      {
+        "name": "Quadlips",
+        "url": "https://genius.com/artists/Quadlips",
+        "type": "regular",
+        "id": "3877081"
+      },
+      {
+        "name": "Quadron",
+        "url": "https://genius.com/artists/Quadron",
+        "type": "regular",
+        "id": "43346"
+      },
+      {
+        "name": "Quail P",
+        "url": "https://genius.com/artists/Quail-p",
+        "type": "regular",
+        "id": "1810557"
+      },
+      {
+        "name": "Quaker City Night Hawks",
+        "url": "https://genius.com/artists/Quaker-city-night-hawks",
+        "type": "regular",
+        "id": "1163256"
+      },
+      {
+        "name": "Quakers",
+        "url": "https://genius.com/artists/Quakers",
+        "type": "regular",
+        "id": "18723"
+      },
+      {
+        "name": "The Quakes",
+        "url": "https://genius.com/artists/The-quakes",
+        "type": "regular",
+        "id": "358906"
+      },
+      {
+        "name": "Qual",
+        "url": "https://genius.com/artists/Qual",
+        "type": "regular",
+        "id": "1503202"
+      },
+      {
+        "name": "Quan Get’Em Gone",
+        "url": "https://genius.com/artists/Quan-getem-gone",
+        "type": "regular",
+        "id": "4205442"
+      },
+      {
+        "name": "Quang Hung MasterD",
+        "url": "https://genius.com/artists/Quang-hung-masterd",
+        "type": "regular",
+        "id": "2634849"
+      },
+      {
+        "name": "Quang Lê",
+        "url": "https://genius.com/artists/Quang-le",
+        "type": "regular",
+        "id": "1020347"
+      },
+      {
+        "name": "Quang Trung",
+        "url": "https://genius.com/artists/Quang-trung",
+        "type": "regular",
+        "id": "2957118"
+      },
+      {
+        "name": "quannnic",
+        "url": "https://genius.com/artists/Quannnic",
+        "type": "regular",
+        "id": "3230166"
+      },
+      {
+        "name": "Quantic",
+        "url": "https://genius.com/artists/Quantic",
+        "type": "regular",
+        "id": "183872"
+      },
+      {
+        "name": "Quantum Jump",
+        "url": "https://genius.com/artists/Quantum-jump",
+        "type": "regular",
+        "id": "372604"
+      },
+      {
+        "name": "Quarapper",
+        "url": "https://genius.com/artists/Quarapper",
+        "type": "regular",
+        "id": "2529435"
+      },
+      {
+        "name": "Quarashi",
+        "url": "https://genius.com/artists/Quarashi",
+        "type": "regular",
+        "id": "20642"
+      },
+      {
+        "name": "Quarks",
+        "url": "https://genius.com/artists/Quarks",
+        "type": "regular",
+        "id": "1279634"
+      },
+      {
+        "name": "The Quarrymen",
+        "url": "https://genius.com/artists/The-quarrymen",
+        "type": "regular",
+        "id": "1930075"
+      },
+      {
+        "name": "Quarterflash",
+        "url": "https://genius.com/artists/Quarterflash",
+        "type": "regular",
+        "id": "338798"
+      },
+      {
+        "name": "Quarterhead",
+        "url": "https://genius.com/artists/Quarterhead",
+        "type": "regular",
+        "id": "543689"
+      },
+      {
+        "name": "QuarterJade",
+        "url": "https://genius.com/artists/Quarterjade",
+        "type": "regular",
+        "id": "4244121"
+      },
+      {
+        "name": "Quarters of Change",
+        "url": "https://genius.com/artists/Quarters-of-change",
+        "type": "regular",
+        "id": "1425164"
+      },
+      {
+        "name": "Quarteto em Cy",
+        "url": "https://genius.com/artists/Quarteto-em-cy",
+        "type": "regular",
+        "id": "326451"
+      },
+      {
+        "name": "Quartetto Cetra",
+        "url": "https://genius.com/artists/Quartetto-cetra",
+        "type": "regular",
+        "id": "369376"
+      },
+      {
+        "name": "Quarto Vazio",
+        "url": "https://genius.com/artists/Quarto-vazio",
+        "type": "regular",
+        "id": "3555522"
+      },
+      {
+        "name": "Quasi",
+        "url": "https://genius.com/artists/Quasi",
+        "type": "regular",
+        "id": "10382"
+      },
+      {
+        "name": "Quasimoto",
+        "url": "https://genius.com/artists/Quasimoto",
+        "type": "regular",
+        "id": "2092"
+      },
+      {
+        "name": "Quatrehuit",
+        "url": "https://genius.com/artists/Quatrehuit",
+        "type": "regular",
+        "id": "661686"
+      },
+      {
+        "name": "Quay Dash",
+        "url": "https://genius.com/artists/Quay-dash",
+        "type": "regular",
+        "id": "398601"
+      },
+      {
+        "name": "QuayDee",
+        "url": "https://genius.com/artists/Quaydee",
+        "type": "regular",
+        "id": "2269700"
+      },
+      {
+        "name": "Québec Redneck Bluegrass Project",
+        "url": "https://genius.com/artists/Quebec-redneck-bluegrass-project",
+        "type": "regular",
+        "id": "1008876"
+      },
+      {
+        "name": "QUE.",
+        "url": "https://genius.com/artists/Que",
+        "type": "regular",
+        "id": "9688"
+      },
+      {
+        "name": "Quedronol",
+        "url": "https://genius.com/artists/Quedronol",
+        "type": "regular",
+        "id": "2921806"
+      },
+      {
+        "name": "QUEEF JERKY",
+        "url": "https://genius.com/artists/Queef-jerky",
+        "type": "regular",
+        "id": "3293759"
+      },
+      {
+        "name": "QueenAdreena",
+        "url": "https://genius.com/artists/Queenadreena",
+        "type": "regular",
+        "id": "364344"
+      },
+      {
+        "name": "女王蜂 (Queen Bee)",
+        "url": "https://genius.com/artists/Queen-bee",
+        "type": "regular",
+        "id": "1019458"
+      },
+      {
+        "name": "Queen Chrysalis",
+        "url": "https://genius.com/artists/Queen-chrysalis",
+        "type": "regular",
+        "id": "2851785"
+      },
+      {
+        "name": "Queen Ifrica",
+        "url": "https://genius.com/artists/Queen-ifrica",
+        "type": "regular",
+        "id": "24953"
+      },
+      {
+        "name": "Queen J",
+        "url": "https://genius.com/artists/Queen-j",
+        "type": "regular",
+        "id": "1853575"
+      },
+      {
+        "name": "Queen Lili'uokalani",
+        "url": "https://genius.com/artists/Queen-liliuokalani",
+        "type": "regular",
+        "id": "221978"
+      },
+      {
+        "name": "Queen Manica Money",
+        "url": "https://genius.com/artists/Queen-manica-money",
+        "type": "regular",
+        "id": "3469653"
+      },
+      {
+        "name": "Queen Naija",
+        "url": "https://genius.com/artists/Queen-naija",
+        "type": "regular",
+        "id": "1304579"
+      },
+      {
+        "name": "Queen of Saba",
+        "url": "https://genius.com/artists/Queen-of-saba",
+        "type": "regular",
+        "id": "2470767"
+      },
+      {
+        "name": "Queen Omega",
+        "url": "https://genius.com/artists/Queen-omega",
+        "type": "regular",
+        "id": "482697"
+      },
+      {
+        "name": "Queen Omega & Chezidek & U Brown & Irie Ites",
+        "url": "https://genius.com/artists/Queen-omega-and-chezidek-and-u-brown-and-irie-ites",
+        "type": "regular",
+        "id": "4196735"
+      },
+      {
+        "name": "Queen Pen",
+        "url": "https://genius.com/artists/Queen-pen",
+        "type": "regular",
+        "id": "2597"
+      },
+      {
+        "name": "Queen + Paul Rodgers",
+        "url": "https://genius.com/artists/Queen-paul-rodgers",
+        "type": "regular",
+        "id": "363408"
+      },
+      {
+        "name": "Queen Queen",
+        "url": "https://genius.com/artists/Queen-queen",
+        "type": "regular",
+        "id": "2717965"
+      },
+      {
+        "name": "Queen Sarah Saturday",
+        "url": "https://genius.com/artists/Queen-sarah-saturday",
+        "type": "regular",
+        "id": "383284"
+      },
+      {
+        "name": "Queensbeats",
+        "url": "https://genius.com/artists/Queensbeats",
+        "type": "regular",
+        "id": "1959741"
+      },
+      {
+        "name": "Queens Cast",
+        "url": "https://genius.com/artists/Queens-cast",
+        "type": "regular",
+        "id": "2901846"
+      },
+      {
+        "name": "QueenServeantDonked",
+        "url": "https://genius.com/artists/Queenserveantdonked",
+        "type": "regular",
+        "id": "3535595"
+      },
+      {
+        "name": "Queensrÿche",
+        "url": "https://genius.com/artists/Queensryche",
+        "type": "regular",
+        "id": "106538"
+      },
+      {
+        "name": "The Queenstons",
+        "url": "https://genius.com/artists/The-queenstons",
+        "type": "regular",
+        "id": "332640"
+      },
+      {
+        "name": "Queensway",
+        "url": "https://genius.com/artists/Queensway",
+        "type": "regular",
+        "id": "2000816"
+      },
+      {
+        "name": "Queenzzielocthevoice",
+        "url": "https://genius.com/artists/Queenzzielocthevoice",
+        "type": "regular",
+        "id": "3191425"
+      },
+      {
+        "name": "The Queers",
+        "url": "https://genius.com/artists/The-queers",
+        "type": "regular",
+        "id": "343937"
+      },
+      {
+        "name": "QueHicisteBella",
+        "url": "https://genius.com/artists/Quehicistebella",
+        "type": "regular",
+        "id": "3566100"
+      },
+      {
+        "name": "Queiroz",
+        "url": "https://genius.com/artists/Queiroz",
+        "type": "regular",
+        "id": "3650510"
+      },
+      {
+        "name": "Quelle Chris",
+        "url": "https://genius.com/artists/Quelle-chris",
+        "type": "regular",
+        "id": "23512"
+      },
+      {
+        "name": "Quelly Woo",
+        "url": "https://genius.com/artists/Quelly-woo",
+        "type": "regular",
+        "id": "2426010"
+      },
+      {
+        "name": "Quelynah",
+        "url": "https://genius.com/artists/Quelynah",
+        "type": "regular",
+        "id": "376044"
+      },
+      {
+        "name": "Quentin40",
+        "url": "https://genius.com/artists/Quentin40",
+        "type": "regular",
+        "id": "987383"
+      },
+      {
+        "name": "Quentin Ford",
+        "url": "https://genius.com/artists/Quentin-ford",
+        "type": "regular",
+        "id": "2368555"
+      },
+      {
+        "name": "Quentin Lovejoy",
+        "url": "https://genius.com/artists/Quentin-lovejoy",
+        "type": "regular",
+        "id": "1581188"
+      },
+      {
+        "name": "Quentin Miller",
+        "url": "https://genius.com/artists/Quentin-miller",
+        "type": "regular",
+        "id": "537002"
+      },
+      {
+        "name": "Quentin Tarantino",
+        "url": "https://genius.com/artists/Quentin-tarantino",
+        "type": "regular",
+        "id": "37853"
+      },
+      {
+        "name": "Quentro",
+        "url": "https://genius.com/artists/Quentro",
+        "type": "regular",
+        "id": "4225107"
+      },
+      {
+        "name": "QueQuality",
+        "url": "https://genius.com/artists/Quequality",
+        "type": "regular",
+        "id": "662852"
+      },
+      {
+        "name": "Querbeat",
+        "url": "https://genius.com/artists/Querbeat",
+        "type": "regular",
+        "id": "329898"
+      },
+      {
+        "name": "Quercia",
+        "url": "https://genius.com/artists/Quercia",
+        "type": "regular",
+        "id": "1031337"
+      },
+      {
+        "name": "quererla",
+        "url": "https://genius.com/artists/Quererla",
+        "type": "regular",
+        "id": "4135375"
+      },
+      {
+        "name": "Queris",
+        "url": "https://genius.com/artists/Queris",
+        "type": "regular",
+        "id": "1598305"
+      },
+      {
+        "name": "Question Mark",
+        "url": "https://genius.com/artists/Question-mark",
+        "type": "regular",
+        "id": "391352"
+      },
+      {
+        "name": "Quest (PHL)",
+        "url": "https://genius.com/artists/Quest-phl",
+        "type": "regular",
+        "id": "187022"
+      },
+      {
+        "name": "Quest Pistols Show",
+        "url": "https://genius.com/artists/Quest-pistols-show",
+        "type": "regular",
+        "id": "3402184"
+      },
+      {
+        "name": "Quez2rr",
+        "url": "https://genius.com/artists/Quez2rr",
+        "type": "regular",
+        "id": "3218403"
+      },
+      {
+        "name": "Quez4Real",
+        "url": "https://genius.com/artists/Quez4real",
+        "type": "regular",
+        "id": "2062535"
+      },
+      {
+        "name": "Quezz Ruthless",
+        "url": "https://genius.com/artists/Quezz-ruthless",
+        "type": "regular",
+        "id": "2794613"
+      },
+      {
+        "name": "Quf",
+        "url": "https://genius.com/artists/Quf",
+        "type": "regular",
+        "id": "26943"
+      },
+      {
+        "name": "The Quick Brown Fox",
+        "url": "https://genius.com/artists/The-quick-brown-fox",
+        "type": "regular",
+        "id": "107617"
+      },
+      {
+        "name": "quickly, quickly",
+        "url": "https://genius.com/artists/Quickly-quickly",
+        "type": "regular",
+        "id": "1038391"
+      },
+      {
+        "name": "Quicksand",
+        "url": "https://genius.com/artists/Quicksand",
+        "type": "regular",
+        "id": "365635"
+      },
+      {
+        "name": "Quicksilver Messenger Service",
+        "url": "https://genius.com/artists/Quicksilver-messenger-service",
+        "type": "regular",
+        "id": "234289"
+      },
+      {
+        "name": "The Quick Style",
+        "url": "https://genius.com/artists/The-quick-style",
+        "type": "regular",
+        "id": "3531348"
+      },
+      {
+        "name": "Quido van de Graaf",
+        "url": "https://genius.com/artists/Quido-van-de-graaf",
+        "type": "regular",
+        "id": "3621086"
+      },
+      {
+        "name": "Quiet Company",
+        "url": "https://genius.com/artists/Quiet-company",
+        "type": "regular",
+        "id": "326692"
+      },
+      {
+        "name": "Quietdrive",
+        "url": "https://genius.com/artists/Quietdrive",
+        "type": "regular",
+        "id": "357913"
+      },
+      {
+        "name": "Quiet Hollers",
+        "url": "https://genius.com/artists/Quiet-hollers",
+        "type": "regular",
+        "id": "1438718"
+      },
+      {
+        "name": "Quiet Light",
+        "url": "https://genius.com/artists/Quiet-light",
+        "type": "regular",
+        "id": "4199469"
+      },
+      {
+        "name": "Quiet Riot",
+        "url": "https://genius.com/artists/Quiet-riot",
+        "type": "regular",
+        "id": "172169"
+      },
+      {
+        "name": "The Quiett (더 콰이엇)",
+        "url": "https://genius.com/artists/The-quiett",
+        "type": "regular",
+        "id": "39577"
+      },
+      {
+        "name": "quiizzzmeow",
+        "url": "https://genius.com/artists/Quiizzzmeow",
+        "type": "regular",
+        "id": "1867037"
+      },
+      {
+        "name": "Quilapayún",
+        "url": "https://genius.com/artists/Quilapayun",
+        "type": "regular",
+        "id": "66498"
+      },
+      {
+        "name": "Quilly",
+        "url": "https://genius.com/artists/Quilly",
+        "type": "regular",
+        "id": "300826"
+      },
+      {
+        "name": "Quim Barreiros",
+        "url": "https://genius.com/artists/Quim-barreiros",
+        "type": "regular",
+        "id": "367157"
+      },
+      {
+        "name": "Quimby",
+        "url": "https://genius.com/artists/Quimby",
+        "type": "regular",
+        "id": "361824"
+      },
+      {
+        "name": "Quim Roca",
+        "url": "https://genius.com/artists/Quim-roca",
+        "type": "regular",
+        "id": "4204474"
+      },
+      {
+        "name": "QUIN",
+        "url": "https://genius.com/artists/Quin",
+        "type": "regular",
+        "id": "612212"
+      },
+      {
+        "name": "Quincy Promes",
+        "url": "https://genius.com/artists/Quincy-promes",
+        "type": "regular",
+        "id": "1261546"
+      },
+      {
+        "name": "Quindon Tarver",
+        "url": "https://genius.com/artists/Quindon-tarver",
+        "type": "regular",
+        "id": "381607"
+      },
+      {
+        "name": "Quineros",
+        "url": "https://genius.com/artists/Quineros",
+        "type": "regular",
+        "id": "3591537"
+      },
+      {
+        "name": "Quin NFN",
+        "url": "https://genius.com/artists/Quin-nfn",
+        "type": "regular",
+        "id": "1387958"
+      },
+      {
+        "name": "quinnie",
+        "url": "https://genius.com/artists/Quinnie",
+        "type": "regular",
+        "id": "1713612"
+      },
+      {
+        "name": "Quinta Do Bill",
+        "url": "https://genius.com/artists/Quinta-do-bill",
+        "type": "regular",
+        "id": "348237"
+      },
+      {
+        "name": "Quintin Lamb",
+        "url": "https://genius.com/artists/Quintin-lamb",
+        "type": "regular",
+        "id": "1612581"
+      },
+      {
+        "name": "Quintino",
+        "url": "https://genius.com/artists/Quintino",
+        "type": "regular",
+        "id": "368389"
+      },
+      {
+        "name": "Quinto Andar",
+        "url": "https://genius.com/artists/Quinto-andar",
+        "type": "regular",
+        "id": "15122"
+      },
+      {
+        "name": "Quinton Griggs",
+        "url": "https://genius.com/artists/Quinton-griggs",
+        "type": "regular",
+        "id": "2769014"
+      },
+      {
+        "name": "Quinton Marks II",
+        "url": "https://genius.com/artists/Quinton-marks-ii",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Quintorigo",
+        "url": "https://genius.com/artists/Quintorigo",
+        "type": "regular",
+        "id": "354772"
+      },
+      {
+        "name": "Quique González",
+        "url": "https://genius.com/artists/Quique-gonzalez",
+        "type": "regular",
+        "id": "343652"
+      },
+      {
+        "name": "The Quireboys",
+        "url": "https://genius.com/artists/The-quireboys",
+        "type": "regular",
+        "id": "374752"
+      },
+      {
+        "name": "Quirrelll with three ls",
+        "url": "https://genius.com/artists/Quirrelll-with-three-ls",
+        "type": "regular",
+        "id": "3529769"
+      },
+      {
+        "name": "QuisActive",
+        "url": "https://genius.com/artists/Quisactive",
+        "type": "regular",
+        "id": "2650945"
+      },
+      {
+        "name": "Quitschi",
+        "url": "https://genius.com/artists/Quitschi",
+        "type": "regular",
+        "id": "3527879"
+      },
+      {
+        "name": "Quivers",
+        "url": "https://genius.com/artists/Quivers",
+        "type": "regular",
+        "id": "1833882"
+      },
+      {
+        "name": "QUIX",
+        "url": "https://genius.com/artists/Quix",
+        "type": "regular",
+        "id": "638428"
+      },
+      {
+        "name": "QuixSmell",
+        "url": "https://genius.com/artists/Quixsmell",
+        "type": "regular",
+        "id": "1494374"
+      },
+      {
+        "name": "Quiz",
+        "url": "https://genius.com/artists/Quiz",
+        "type": "regular",
+        "id": "30542"
+      },
+      {
+        "name": "Quiz (the WordPlaya)",
+        "url": "https://genius.com/artists/Quiz-the-wordplaya",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Químico Ultra Mega",
+        "url": "https://genius.com/artists/Quimico-ultra-mega",
+        "type": "regular",
+        "id": "166709"
+      },
+      {
+        "name": "Quân A.P",
+        "url": "https://genius.com/artists/Quan-ap",
+        "type": "regular",
+        "id": "2054501"
+      },
+      {
+        "name": "Quỳnh Anh Shyn",
+        "url": "https://genius.com/artists/Quynh-anh-shyn",
+        "type": "regular",
+        "id": "3259790"
+      },
+      {
+        "name": "Q-Unique",
+        "url": "https://genius.com/artists/Q-unique",
+        "type": "regular",
+        "id": "6633"
+      },
+      {
+        "name": "КУОК (QUOK)",
+        "url": "https://genius.com/artists/Quok",
+        "type": "regular",
+        "id": "713797"
+      },
+      {
+        "name": "Quratulain Balouch",
+        "url": "https://genius.com/artists/Quratulain-balouch",
+        "type": "regular",
+        "id": "1634684"
+      },
+      {
+        "name": "Құрмаш Махан (Qurmash Makhan)",
+        "url": "https://genius.com/artists/Qurmash-makhan",
+        "type": "regular",
+        "id": "3080403"
+      },
+      {
+        "name": "Qurram Hussain",
+        "url": "https://genius.com/artists/Qurram-hussain",
+        "type": "regular",
+        "id": "1504774"
+      },
+      {
+        "name": "‎‎qurt",
+        "url": "https://genius.com/artists/Qurt",
+        "type": "regular",
+        "id": "1683511"
+      },
+      {
+        "name": "Qusai",
+        "url": "https://genius.com/artists/Qusai",
+        "type": "regular",
+        "id": "1545"
+      },
+      {
+        "name": "Qustodi Del Tempo",
+        "url": "https://genius.com/artists/Qustodi-del-tempo",
+        "type": "regular",
+        "id": "657299"
+      },
+      {
+        "name": "Quvenzhané Wallis",
+        "url": "https://genius.com/artists/Quvenzhane-wallis",
+        "type": "regular",
+        "id": "154418"
+      },
+      {
+        "name": "曲婉婷 (Qu Wanting)",
+        "url": "https://genius.com/artists/Qu-wanting",
+        "type": "regular",
+        "id": "358735"
+      },
+      {
+        "name": "曲肖冰 (Qu Xiao Bing)",
+        "url": "https://genius.com/artists/Qu-xiao-bing",
+        "type": "regular",
+        "id": "4140743"
+      },
+      {
+        "name": "Qveen Herby",
+        "url": "https://genius.com/artists/Qveen-herby",
+        "type": "regular",
+        "id": "1140821"
+      },
+      {
+        "name": "Qvkata DLG",
+        "url": "https://genius.com/artists/Qvkata-dlg",
+        "type": "regular",
+        "id": "302541"
+      },
+      {
+        "name": "QVXNO",
+        "url": "https://genius.com/artists/Qvxno",
+        "type": "regular",
+        "id": "1116243"
+      },
+      {
+        "name": "Квазимодо (Qwazimodo)",
+        "url": "https://genius.com/artists/Qwazimodo",
+        "type": "regular",
+        "id": "1886038"
+      },
+      {
+        "name": "Qwel",
+        "url": "https://genius.com/artists/Qwel",
+        "type": "regular",
+        "id": "9561"
+      },
+      {
+        "name": "Qwellers",
+        "url": "https://genius.com/artists/Qwellers",
+        "type": "regular",
+        "id": "3945259"
+      },
+      {
+        "name": "qwertyhunter",
+        "url": "https://genius.com/artists/Qwertyhunter",
+        "type": "regular",
+        "id": "4179642"
+      },
+      {
+        "name": "​qwiza",
+        "url": "https://genius.com/artists/Qwiza",
+        "type": "regular",
+        "id": "3123312"
+      },
+      {
+        "name": "Qwolen",
+        "url": "https://genius.com/artists/Qwolen",
+        "type": "regular",
+        "id": "3071394"
+      },
+      {
+        "name": "Qwote",
+        "url": "https://genius.com/artists/Qwote",
+        "type": "regular",
+        "id": "60577"
+      },
+      {
+        "name": "QZENG",
+        "url": "https://genius.com/artists/Qzeng",
+        "type": "regular",
+        "id": "1440661"
+      },
+      {
+        "name": "QZERX",
+        "url": "https://genius.com/artists/Qzerx",
+        "type": "regular",
+        "id": "4019947"
+      },
+      {
+        "name": "Qzyn",
+        "url": "https://genius.com/artists/Qzyn",
+        "type": "regular",
+        "id": "3646941"
+      }
+    ]
+  }
+}

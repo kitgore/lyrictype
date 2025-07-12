@@ -1,0 +1,4513 @@
+{
+  "letter": "P",
+  "timestamp": "2025-07-11T11:20:13.239Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Panic! at the Disco",
+        "url": "https://genius.com/artists/Panic-at-the-disco",
+        "type": "popular",
+        "id": "50838"
+      },
+      {
+        "name": "Paramore",
+        "url": "https://genius.com/artists/Paramore",
+        "type": "popular",
+        "id": "22531"
+      },
+      {
+        "name": "Parokya Ni Edgar",
+        "url": "https://genius.com/artists/Parokya-ni-edgar",
+        "type": "popular",
+        "id": "100022"
+      },
+      {
+        "name": "PARTYNEXTDOOR",
+        "url": "https://genius.com/artists/Partynextdoor",
+        "type": "popular",
+        "id": "47131"
+      },
+      {
+        "name": "Pearl Jam",
+        "url": "https://genius.com/artists/Pearl-jam",
+        "type": "popular",
+        "id": "22696"
+      },
+      {
+        "name": "PHARAOH",
+        "url": "https://genius.com/artists/Pharaoh",
+        "type": "popular",
+        "id": "101583"
+      },
+      {
+        "name": "Pharrell Williams",
+        "url": "https://genius.com/artists/Pharrell-williams",
+        "type": "popular",
+        "id": "110"
+      },
+      {
+        "name": "Phil Collins",
+        "url": "https://genius.com/artists/Phil-collins",
+        "type": "popular",
+        "id": "3927"
+      },
+      {
+        "name": "Phillipa Soo",
+        "url": "https://genius.com/artists/Phillipa-soo",
+        "type": "popular",
+        "id": "570729"
+      },
+      {
+        "name": "Pierce The Veil",
+        "url": "https://genius.com/artists/Pierce-the-veil",
+        "type": "popular",
+        "id": "20751"
+      },
+      {
+        "name": "Pinguini Tattici Nucleari",
+        "url": "https://genius.com/artists/Pinguini-tattici-nucleari",
+        "type": "popular",
+        "id": "1023075"
+      },
+      {
+        "name": "Pink Floyd",
+        "url": "https://genius.com/artists/Pink-floyd",
+        "type": "popular",
+        "id": "694"
+      },
+      {
+        "name": "PinkPantheress",
+        "url": "https://genius.com/artists/Pinkpantheress",
+        "type": "popular",
+        "id": "2624803"
+      },
+      {
+        "name": "Pitbull",
+        "url": "https://genius.com/artists/Pitbull",
+        "type": "popular",
+        "id": "628"
+      },
+      {
+        "name": "PlaqueBoyMax",
+        "url": "https://genius.com/artists/Plaqueboymax",
+        "type": "popular",
+        "id": "3338654"
+      },
+      {
+        "name": "Playboi Carti",
+        "url": "https://genius.com/artists/Playboi-carti",
+        "type": "popular",
+        "id": "289976"
+      },
+      {
+        "name": "PLUTO",
+        "url": "https://genius.com/artists/Pluto",
+        "type": "popular",
+        "id": "3820175"
+      },
+      {
+        "name": "Post Malone",
+        "url": "https://genius.com/artists/Post-malone",
+        "type": "popular",
+        "id": "326362"
+      },
+      {
+        "name": "Pulp",
+        "url": "https://genius.com/artists/Pulp",
+        "type": "popular",
+        "id": "21139"
+      },
+      {
+        "name": "Pusha T",
+        "url": "https://genius.com/artists/Pusha-t",
+        "type": "popular",
+        "id": "643"
+      }
+    ],
+    "regular": [
+      {
+        "name": "P1Harmony",
+        "url": "https://genius.com/artists/P1harmony",
+        "type": "regular",
+        "id": "2446574"
+      },
+      {
+        "name": "P38",
+        "url": "https://genius.com/artists/P38",
+        "type": "regular",
+        "id": "2475834"
+      },
+      {
+        "name": "P9D",
+        "url": "https://genius.com/artists/P9d",
+        "type": "regular",
+        "id": "3999210"
+      },
+      {
+        "name": "Pabllo Vittar",
+        "url": "https://genius.com/artists/Pabllo-vittar",
+        "type": "regular",
+        "id": "682378"
+      },
+      {
+        "name": "Пабло (pablo5353)",
+        "url": "https://genius.com/artists/Pablo5353",
+        "type": "regular",
+        "id": "2651363"
+      },
+      {
+        "name": "Pablo Alborán",
+        "url": "https://genius.com/artists/Pablo-alboran",
+        "type": "regular",
+        "id": "277076"
+      },
+      {
+        "name": "Pablo Chill-E",
+        "url": "https://genius.com/artists/Pablo-chill-e",
+        "type": "regular",
+        "id": "1351988"
+      },
+      {
+        "name": "pablopablo",
+        "url": "https://genius.com/artists/Pablopablo",
+        "type": "regular",
+        "id": "2802284"
+      },
+      {
+        "name": "PABLO (SB19)",
+        "url": "https://genius.com/artists/Pablo-sb19",
+        "type": "regular",
+        "id": "2987527"
+      },
+      {
+        "name": "PACKGOD",
+        "url": "https://genius.com/artists/Packgod",
+        "type": "regular",
+        "id": "2701034"
+      },
+      {
+        "name": "Paco Stanley",
+        "url": "https://genius.com/artists/Paco-stanley",
+        "type": "regular",
+        "id": "361533"
+      },
+      {
+        "name": "paddybeatz",
+        "url": "https://genius.com/artists/Paddybeatz",
+        "type": "regular",
+        "id": "1491156"
+      },
+      {
+        "name": "Padi",
+        "url": "https://genius.com/artists/Padi",
+        "type": "regular",
+        "id": "360262"
+      },
+      {
+        "name": "Paige Fish",
+        "url": "https://genius.com/artists/Paige-fish",
+        "type": "regular",
+        "id": "3428295"
+      },
+      {
+        "name": "Paige O'Hara",
+        "url": "https://genius.com/artists/Paige-ohara",
+        "type": "regular",
+        "id": "362527"
+      },
+      {
+        "name": "Pailita",
+        "url": "https://genius.com/artists/Pailita",
+        "type": "regular",
+        "id": "2813333"
+      },
+      {
+        "name": "Pain of Salvation",
+        "url": "https://genius.com/artists/Pain-of-salvation",
+        "type": "regular",
+        "id": "158293"
+      },
+      {
+        "name": "Краски (Paints)",
+        "url": "https://genius.com/artists/Paints",
+        "type": "regular",
+        "id": "2288478"
+      },
+      {
+        "name": "邹沛沛 (Pairy Zou)",
+        "url": "https://genius.com/artists/Pairy-zou",
+        "type": "regular",
+        "id": "4092133"
+      },
+      {
+        "name": "Pajak",
+        "url": "https://genius.com/artists/Pajak",
+        "type": "regular",
+        "id": "2220922"
+      },
+      {
+        "name": "Pajel",
+        "url": "https://genius.com/artists/Pajel",
+        "type": "regular",
+        "id": "2651427"
+      },
+      {
+        "name": "ĆPAJ STAJL",
+        "url": "https://genius.com/artists/Cpaj-stajl",
+        "type": "regular",
+        "id": "1588767"
+      },
+      {
+        "name": "Paktofonika",
+        "url": "https://genius.com/artists/Paktofonika",
+        "type": "regular",
+        "id": "24597"
+      },
+      {
+        "name": "Paky",
+        "url": "https://genius.com/artists/Paky",
+        "type": "regular",
+        "id": "1967589"
+      },
+      {
+        "name": "Palace",
+        "url": "https://genius.com/artists/Palace",
+        "type": "regular",
+        "id": "383550"
+      },
+      {
+        "name": "Palak Muchhal",
+        "url": "https://genius.com/artists/Palak-muchhal",
+        "type": "regular",
+        "id": "1410238"
+      },
+      {
+        "name": "Palaye Royale",
+        "url": "https://genius.com/artists/Palaye-royale",
+        "type": "regular",
+        "id": "168229"
+      },
+      {
+        "name": "PALC",
+        "url": "https://genius.com/artists/Palc",
+        "type": "regular",
+        "id": "1710092"
+      },
+      {
+        "name": "Paleface Swiss",
+        "url": "https://genius.com/artists/Paleface-swiss",
+        "type": "regular",
+        "id": "3518983"
+      },
+      {
+        "name": "Pale Saints",
+        "url": "https://genius.com/artists/Pale-saints",
+        "type": "regular",
+        "id": "353628"
+      },
+      {
+        "name": "Pale Waves",
+        "url": "https://genius.com/artists/Pale-waves",
+        "type": "regular",
+        "id": "688638"
+      },
+      {
+        "name": "Palina",
+        "url": "https://genius.com/artists/Palina",
+        "type": "regular",
+        "id": "347953"
+      },
+      {
+        "name": "​паліндром (palindrom)",
+        "url": "https://genius.com/artists/Palindrom",
+        "type": "regular",
+        "id": "2494406"
+      },
+      {
+        "name": "Palmdropov",
+        "url": "https://genius.com/artists/Palmdropov",
+        "type": "regular",
+        "id": "1465808"
+      },
+      {
+        "name": "Paloma Faith",
+        "url": "https://genius.com/artists/Paloma-faith",
+        "type": "regular",
+        "id": "89582"
+      },
+      {
+        "name": "Paloma Morphy",
+        "url": "https://genius.com/artists/Paloma-morphy",
+        "type": "regular",
+        "id": "3928516"
+      },
+      {
+        "name": "Paluch",
+        "url": "https://genius.com/artists/Paluch",
+        "type": "regular",
+        "id": "59080"
+      },
+      {
+        "name": "Pamela Franco",
+        "url": "https://genius.com/artists/Pamela-franco",
+        "type": "regular",
+        "id": "4187468"
+      },
+      {
+        "name": "pami (THA)",
+        "url": "https://genius.com/artists/Pami-tha",
+        "type": "regular",
+        "id": "4394232"
+      },
+      {
+        "name": "Pamkutya",
+        "url": "https://genius.com/artists/Pamkutya",
+        "type": "regular",
+        "id": "2011624"
+      },
+      {
+        "name": "Pamungkas",
+        "url": "https://genius.com/artists/Pamungkas",
+        "type": "regular",
+        "id": "1657597"
+      },
+      {
+        "name": "The Panasdalam Bank",
+        "url": "https://genius.com/artists/The-panasdalam-bank",
+        "type": "regular",
+        "id": "1603161"
+      },
+      {
+        "name": "Panchiko",
+        "url": "https://genius.com/artists/Panchiko",
+        "type": "regular",
+        "id": "1515231"
+      },
+      {
+        "name": "Panchito Arredondo",
+        "url": "https://genius.com/artists/Panchito-arredondo",
+        "type": "regular",
+        "id": "2861192"
+      },
+      {
+        "name": "Panda Bear",
+        "url": "https://genius.com/artists/Panda-bear",
+        "type": "regular",
+        "id": "21569"
+      },
+      {
+        "name": "Panda Black",
+        "url": "https://genius.com/artists/Panda-black",
+        "type": "regular",
+        "id": "1429780"
+      },
+      {
+        "name": "Pango",
+        "url": "https://genius.com/artists/Pango",
+        "type": "regular",
+        "id": "1855834"
+      },
+      {
+        "name": "Panjabi MC",
+        "url": "https://genius.com/artists/Panjabi-mc",
+        "type": "regular",
+        "id": "38508"
+      },
+      {
+        "name": "Pankaj Udhas",
+        "url": "https://genius.com/artists/Pankaj-udhas",
+        "type": "regular",
+        "id": "483472"
+      },
+      {
+        "name": "Pano",
+        "url": "https://genius.com/artists/Pano",
+        "type": "regular",
+        "id": "3387678"
+      },
+      {
+        "name": "Panteón Rococó",
+        "url": "https://genius.com/artists/Panteon-rococo",
+        "type": "regular",
+        "id": "343645"
+      },
+      {
+        "name": "Pantera",
+        "url": "https://genius.com/artists/Pantera",
+        "type": "regular",
+        "id": "63725"
+      },
+      {
+        "name": "PANTERA BLUE",
+        "url": "https://genius.com/artists/Pantera-blue",
+        "type": "regular",
+        "id": "4098144"
+      },
+      {
+        "name": "Panter Bélico",
+        "url": "https://genius.com/artists/Panter-belico",
+        "type": "regular",
+        "id": "3597493"
+      },
+      {
+        "name": "The Panturas",
+        "url": "https://genius.com/artists/The-panturas",
+        "type": "regular",
+        "id": "1450640"
+      },
+      {
+        "name": "Panucci's Pizza",
+        "url": "https://genius.com/artists/Panuccis-pizza",
+        "type": "regular",
+        "id": "212051"
+      },
+      {
+        "name": "Paolo Conte",
+        "url": "https://genius.com/artists/Paolo-conte",
+        "type": "regular",
+        "id": "356932"
+      },
+      {
+        "name": "Paolo Nutini",
+        "url": "https://genius.com/artists/Paolo-nutini",
+        "type": "regular",
+        "id": "88709"
+      },
+      {
+        "name": "Paolo Santos",
+        "url": "https://genius.com/artists/Paolo-santos",
+        "type": "regular",
+        "id": "354308"
+      },
+      {
+        "name": "PapaBoyz",
+        "url": "https://genius.com/artists/Papaboyz",
+        "type": "regular",
+        "id": "3523447"
+      },
+      {
+        "name": "Papal Concluding Mass Choir",
+        "url": "https://genius.com/artists/Papal-concluding-mass-choir",
+        "type": "regular",
+        "id": "3543943"
+      },
+      {
+        "name": "Papa Roach",
+        "url": "https://genius.com/artists/Papa-roach",
+        "type": "regular",
+        "id": "424"
+      },
+      {
+        "name": "Papa V",
+        "url": "https://genius.com/artists/Papa-v",
+        "type": "regular",
+        "id": "2078847"
+      },
+      {
+        "name": "PaperBoxHouse",
+        "url": "https://genius.com/artists/Paperboxhouse",
+        "type": "regular",
+        "id": "1848858"
+      },
+      {
+        "name": "The Paper Chase",
+        "url": "https://genius.com/artists/The-paper-chase",
+        "type": "regular",
+        "id": "358704"
+      },
+      {
+        "name": "Paperi T",
+        "url": "https://genius.com/artists/Paperi-t",
+        "type": "regular",
+        "id": "50876"
+      },
+      {
+        "name": "The Paper Kites",
+        "url": "https://genius.com/artists/The-paper-kites",
+        "type": "regular",
+        "id": "66494"
+      },
+      {
+        "name": "Paper Lace",
+        "url": "https://genius.com/artists/Paper-lace",
+        "type": "regular",
+        "id": "122466"
+      },
+      {
+        "name": "Paper Route Empire",
+        "url": "https://genius.com/artists/Paper-route-empire",
+        "type": "regular",
+        "id": "1903287"
+      },
+      {
+        "name": "PapiKein",
+        "url": "https://genius.com/artists/Papikein",
+        "type": "regular",
+        "id": "2291759"
+      },
+      {
+        "name": "Папин Олимпос (Papin Olympos)",
+        "url": "https://genius.com/artists/Papin-olympos",
+        "type": "regular",
+        "id": "1689212"
+      },
+      {
+        "name": "Papi Santana",
+        "url": "https://genius.com/artists/Papi-santana",
+        "type": "regular",
+        "id": "1489077"
+      },
+      {
+        "name": "Papi Sousa",
+        "url": "https://genius.com/artists/Papi-sousa",
+        "type": "regular",
+        "id": "510110"
+      },
+      {
+        "name": "Papon",
+        "url": "https://genius.com/artists/Papon",
+        "type": "regular",
+        "id": "185172"
+      },
+      {
+        "name": "Papoose",
+        "url": "https://genius.com/artists/Papoose",
+        "type": "regular",
+        "id": "1281"
+      },
+      {
+        "name": "The Paps (Bandung)",
+        "url": "https://genius.com/artists/The-paps-bandung",
+        "type": "regular",
+        "id": "2545785"
+      },
+      {
+        "name": "Paradise",
+        "url": "https://genius.com/artists/Paradise",
+        "type": "regular",
+        "id": "8142"
+      },
+      {
+        "name": "Paradise Lost",
+        "url": "https://genius.com/artists/Paradise-lost",
+        "type": "regular",
+        "id": "343566"
+      },
+      {
+        "name": "Paradisio",
+        "url": "https://genius.com/artists/Paradisio",
+        "type": "regular",
+        "id": "387629"
+      },
+      {
+        "name": "Paradox",
+        "url": "https://genius.com/artists/Paradox",
+        "type": "regular",
+        "id": "3509765"
+      },
+      {
+        "name": "The Paradox (Band)",
+        "url": "https://genius.com/artists/The-paradox-band",
+        "type": "regular",
+        "id": "4059504"
+      },
+      {
+        "name": "Parampara Tandon",
+        "url": "https://genius.com/artists/Parampara-tandon",
+        "type": "regular",
+        "id": "2594683"
+      },
+      {
+        "name": "паранойя (@parano77a)",
+        "url": "https://genius.com/artists/Parano77a",
+        "type": "regular",
+        "id": "3039579"
+      },
+      {
+        "name": "PARANOiD DJ",
+        "url": "https://genius.com/artists/Paranoid-dj",
+        "type": "regular",
+        "id": "156735"
+      },
+      {
+        "name": "Paraziții",
+        "url": "https://genius.com/artists/Parazitii",
+        "type": "regular",
+        "id": "229900"
+      },
+      {
+        "name": "Parcels",
+        "url": "https://genius.com/artists/Parcels",
+        "type": "regular",
+        "id": "1124609"
+      },
+      {
+        "name": "Pardison Fontaine",
+        "url": "https://genius.com/artists/Pardison-fontaine",
+        "type": "regular",
+        "id": "1149147"
+      },
+      {
+        "name": "Pardyalone",
+        "url": "https://genius.com/artists/Pardyalone",
+        "type": "regular",
+        "id": "2212733"
+      },
+      {
+        "name": "Paresh Kamath",
+        "url": "https://genius.com/artists/Paresh-kamath",
+        "type": "regular",
+        "id": "2375905"
+      },
+      {
+        "name": "Parfeniuk",
+        "url": "https://genius.com/artists/Parfeniuk",
+        "type": "regular",
+        "id": "3373017"
+      },
+      {
+        "name": "PARG",
+        "url": "https://genius.com/artists/Parg",
+        "type": "regular",
+        "id": "4311221"
+      },
+      {
+        "name": "Paris Hilton",
+        "url": "https://genius.com/artists/Paris-hilton",
+        "type": "regular",
+        "id": "29297"
+      },
+      {
+        "name": "Paris Paloma",
+        "url": "https://genius.com/artists/Paris-paloma",
+        "type": "regular",
+        "id": "3147225"
+      },
+      {
+        "name": "Paris (Rap)",
+        "url": "https://genius.com/artists/Paris-rap",
+        "type": "regular",
+        "id": "1023"
+      },
+      {
+        "name": "Paris Texas",
+        "url": "https://genius.com/artists/Paris-texas",
+        "type": "regular",
+        "id": "2611173"
+      },
+      {
+        "name": "PARK BYEONG HOON",
+        "url": "https://genius.com/artists/Park-byeong-hoon",
+        "type": "regular",
+        "id": "3905732"
+      },
+      {
+        "name": "Parker Jack",
+        "url": "https://genius.com/artists/Parker-jack",
+        "type": "regular",
+        "id": "3090645"
+      },
+      {
+        "name": "Parker McCollum",
+        "url": "https://genius.com/artists/Parker-mccollum",
+        "type": "regular",
+        "id": "1223839"
+      },
+      {
+        "name": "Parkway Drive",
+        "url": "https://genius.com/artists/Parkway-drive",
+        "type": "regular",
+        "id": "179438"
+      },
+      {
+        "name": "Parliament",
+        "url": "https://genius.com/artists/Parliament",
+        "type": "regular",
+        "id": "19606"
+      },
+      {
+        "name": "Parmalee",
+        "url": "https://genius.com/artists/Parmalee",
+        "type": "regular",
+        "id": "124055"
+      },
+      {
+        "name": "Parni Valjak",
+        "url": "https://genius.com/artists/Parni-valjak",
+        "type": "regular",
+        "id": "356336"
+      },
+      {
+        "name": "Parov Stelar",
+        "url": "https://genius.com/artists/Parov-stelar",
+        "type": "regular",
+        "id": "340372"
+      },
+      {
+        "name": "Parquet Courts",
+        "url": "https://genius.com/artists/Parquet-courts",
+        "type": "regular",
+        "id": "66233"
+      },
+      {
+        "name": "Parry Gripp",
+        "url": "https://genius.com/artists/Parry-gripp",
+        "type": "regular",
+        "id": "82181"
+      },
+      {
+        "name": "Юля Паршута (Parshoota)",
+        "url": "https://genius.com/artists/Parshoota",
+        "type": "regular",
+        "id": "1124444"
+      },
+      {
+        "name": "Partibrejkers",
+        "url": "https://genius.com/artists/Partibrejkers",
+        "type": "regular",
+        "id": "360331"
+      },
+      {
+        "name": "The Partridge Family",
+        "url": "https://genius.com/artists/The-partridge-family",
+        "type": "regular",
+        "id": "47786"
+      },
+      {
+        "name": "Part Time",
+        "url": "https://genius.com/artists/Part-time",
+        "type": "regular",
+        "id": "382695"
+      },
+      {
+        "name": "Partybenjiz",
+        "url": "https://genius.com/artists/Partybenjiz",
+        "type": "regular",
+        "id": "3718433"
+      },
+      {
+        "name": "Party in Backyard",
+        "url": "https://genius.com/artists/Party-in-backyard",
+        "type": "regular",
+        "id": "1314676"
+      },
+      {
+        "name": "PARTYOF2",
+        "url": "https://genius.com/artists/Partyof2",
+        "type": "regular",
+        "id": "2006717"
+      },
+      {
+        "name": "Pa Salieu",
+        "url": "https://genius.com/artists/Pa-salieu",
+        "type": "regular",
+        "id": "1912261"
+      },
+      {
+        "name": "Pasek & Paul",
+        "url": "https://genius.com/artists/Pasek-and-paul",
+        "type": "regular",
+        "id": "650911"
+      },
+      {
+        "name": "Паша Изотов (Pasha Izotov)",
+        "url": "https://genius.com/artists/Pasha-izotov",
+        "type": "regular",
+        "id": "3393324"
+      },
+      {
+        "name": "Pashanim",
+        "url": "https://genius.com/artists/Pashanim",
+        "type": "regular",
+        "id": "1814801"
+      },
+      {
+        "name": "Паша Техник (Pasha Technique)",
+        "url": "https://genius.com/artists/Pasha-technique",
+        "type": "regular",
+        "id": "1138683"
+      },
+      {
+        "name": "Пасош (Pasosh)",
+        "url": "https://genius.com/artists/Pasosh",
+        "type": "regular",
+        "id": "1197671"
+      },
+      {
+        "name": "PA Sports",
+        "url": "https://genius.com/artists/Pa-sports",
+        "type": "regular",
+        "id": "18331"
+      },
+      {
+        "name": "Passenger",
+        "url": "https://genius.com/artists/Passenger",
+        "type": "regular",
+        "id": "44274"
+      },
+      {
+        "name": "Passion",
+        "url": "https://genius.com/artists/Passion",
+        "type": "regular",
+        "id": "6779"
+      },
+      {
+        "name": "Passion Mango",
+        "url": "https://genius.com/artists/Passion-mango",
+        "type": "regular",
+        "id": "3759393"
+      },
+      {
+        "name": "Passion Pit",
+        "url": "https://genius.com/artists/Passion-pit",
+        "type": "regular",
+        "id": "11423"
+      },
+      {
+        "name": "passmurny",
+        "url": "https://genius.com/artists/Passmurny",
+        "type": "regular",
+        "id": "2942640"
+      },
+      {
+        "name": "PASTEL GHOST",
+        "url": "https://genius.com/artists/Pastel-ghost",
+        "type": "regular",
+        "id": "564386"
+      },
+      {
+        "name": "The Pastelle Collective (Yedits)",
+        "url": "https://genius.com/artists/The-pastelle-collective-yedits",
+        "type": "regular",
+        "id": "3897706"
+      },
+      {
+        "name": "Paster",
+        "url": "https://genius.com/artists/Paster",
+        "type": "regular",
+        "id": "165090"
+      },
+      {
+        "name": "Pastor Jim Colerick",
+        "url": "https://genius.com/artists/Pastor-jim-colerick",
+        "type": "regular",
+        "id": "37896"
+      },
+      {
+        "name": "Pastor Mike Jr.",
+        "url": "https://genius.com/artists/Pastor-mike-jr",
+        "type": "regular",
+        "id": "2537736"
+      },
+      {
+        "name": "Pastor Troy",
+        "url": "https://genius.com/artists/Pastor-troy",
+        "type": "regular",
+        "id": "1008"
+      },
+      {
+        "name": "Pat Barrett",
+        "url": "https://genius.com/artists/Pat-barrett",
+        "type": "regular",
+        "id": "589065"
+      },
+      {
+        "name": "Pat Benatar",
+        "url": "https://genius.com/artists/Pat-benatar",
+        "type": "regular",
+        "id": "61486"
+      },
+      {
+        "name": "Pat Boone",
+        "url": "https://genius.com/artists/Pat-boone",
+        "type": "regular",
+        "id": "65638"
+      },
+      {
+        "name": "Pat Carroll",
+        "url": "https://genius.com/artists/Pat-carroll",
+        "type": "regular",
+        "id": "158343"
+      },
+      {
+        "name": "Pate Mustajärvi",
+        "url": "https://genius.com/artists/Pate-mustajarvi",
+        "type": "regular",
+        "id": "454757"
+      },
+      {
+        "name": "Pathetic",
+        "url": "https://genius.com/artists/Pathetic",
+        "type": "regular",
+        "id": "2078479"
+      },
+      {
+        "name": "Patience Agbabi",
+        "url": "https://genius.com/artists/Patience-agbabi",
+        "type": "regular",
+        "id": "622873"
+      },
+      {
+        "name": "Patience & Prudence",
+        "url": "https://genius.com/artists/Patience-and-prudence",
+        "type": "regular",
+        "id": "377705"
+      },
+      {
+        "name": "Patina Miller",
+        "url": "https://genius.com/artists/Patina-miller",
+        "type": "regular",
+        "id": "460415"
+      },
+      {
+        "name": "Pato (FRA)",
+        "url": "https://genius.com/artists/Pato-fra",
+        "type": "regular",
+        "id": "3816177"
+      },
+      {
+        "name": "Патология (Patologiya)",
+        "url": "https://genius.com/artists/Patologiya",
+        "type": "regular",
+        "id": "1929121"
+      },
+      {
+        "name": "Patoranking",
+        "url": "https://genius.com/artists/Patoranking",
+        "type": "regular",
+        "id": "466551"
+      },
+      {
+        "name": "Patrice Rushen",
+        "url": "https://genius.com/artists/Patrice-rushen",
+        "type": "regular",
+        "id": "53213"
+      },
+      {
+        "name": "Patricia Neway",
+        "url": "https://genius.com/artists/Patricia-neway",
+        "type": "regular",
+        "id": "2452124"
+      },
+      {
+        "name": "Patricia Taxxon",
+        "url": "https://genius.com/artists/Patricia-taxxon",
+        "type": "regular",
+        "id": "1480872"
+      },
+      {
+        "name": "Patricio Rey y sus Redonditos de Ricota",
+        "url": "https://genius.com/artists/Patricio-rey-y-sus-redonditos-de-ricota",
+        "type": "regular",
+        "id": "212065"
+      },
+      {
+        "name": "Patrick Doyle",
+        "url": "https://genius.com/artists/Patrick-doyle",
+        "type": "regular",
+        "id": "391230"
+      },
+      {
+        "name": "Patrick Hernandez",
+        "url": "https://genius.com/artists/Patrick-hernandez",
+        "type": "regular",
+        "id": "385019"
+      },
+      {
+        "name": "Patrick Page",
+        "url": "https://genius.com/artists/Patrick-page",
+        "type": "regular",
+        "id": "479230"
+      },
+      {
+        "name": "Patrick Stump",
+        "url": "https://genius.com/artists/Patrick-stump",
+        "type": "regular",
+        "id": "6343"
+      },
+      {
+        "name": "Patrick Watson",
+        "url": "https://genius.com/artists/Patrick-watson",
+        "type": "regular",
+        "id": "60324"
+      },
+      {
+        "name": "Patrick Wilson (Actor)",
+        "url": "https://genius.com/artists/Patrick-wilson-actor",
+        "type": "regular",
+        "id": "4196578"
+      },
+      {
+        "name": "Patrick Wolf",
+        "url": "https://genius.com/artists/Patrick-wolf",
+        "type": "regular",
+        "id": "69450"
+      },
+      {
+        "name": "Patron",
+        "url": "https://genius.com/artists/Patron",
+        "type": "regular",
+        "id": "42545"
+      },
+      {
+        "name": "Patsy Cline",
+        "url": "https://genius.com/artists/Patsy-cline",
+        "type": "regular",
+        "id": "43843"
+      },
+      {
+        "name": "Patsy Montana",
+        "url": "https://genius.com/artists/Patsy-montana",
+        "type": "regular",
+        "id": "391159"
+      },
+      {
+        "name": "Pat the Bunny",
+        "url": "https://genius.com/artists/Pat-the-bunny",
+        "type": "regular",
+        "id": "329630"
+      },
+      {
+        "name": "Patti Austin",
+        "url": "https://genius.com/artists/Patti-austin",
+        "type": "regular",
+        "id": "60306"
+      },
+      {
+        "name": "Patti LaBelle",
+        "url": "https://genius.com/artists/Patti-labelle",
+        "type": "regular",
+        "id": "1146"
+      },
+      {
+        "name": "Patti LaBelle & Michael McDonald",
+        "url": "https://genius.com/artists/Patti-labelle-and-michael-mcdonald",
+        "type": "regular",
+        "id": "3580620"
+      },
+      {
+        "name": "Patti LuPone",
+        "url": "https://genius.com/artists/Patti-lupone",
+        "type": "regular",
+        "id": "160984"
+      },
+      {
+        "name": "Patti Page",
+        "url": "https://genius.com/artists/Patti-page",
+        "type": "regular",
+        "id": "29339"
+      },
+      {
+        "name": "Patti Smith",
+        "url": "https://genius.com/artists/Patti-smith",
+        "type": "regular",
+        "id": "26395"
+      },
+      {
+        "name": "Patti Smith Group",
+        "url": "https://genius.com/artists/Patti-smith-group",
+        "type": "regular",
+        "id": "385142"
+      },
+      {
+        "name": "PattyCake Productions",
+        "url": "https://genius.com/artists/Pattycake-productions",
+        "type": "regular",
+        "id": "1258380"
+      },
+      {
+        "name": "Patty Griffin",
+        "url": "https://genius.com/artists/Patty-griffin",
+        "type": "regular",
+        "id": "59543"
+      },
+      {
+        "name": "Patty Gurdy",
+        "url": "https://genius.com/artists/Patty-gurdy",
+        "type": "regular",
+        "id": "1684170"
+      },
+      {
+        "name": "Patty Loveless",
+        "url": "https://genius.com/artists/Patty-loveless",
+        "type": "regular",
+        "id": "330949"
+      },
+      {
+        "name": "Patty Pravo",
+        "url": "https://genius.com/artists/Patty-pravo",
+        "type": "regular",
+        "id": "357621"
+      },
+      {
+        "name": "Patty Smyth",
+        "url": "https://genius.com/artists/Patty-smyth",
+        "type": "regular",
+        "id": "360824"
+      },
+      {
+        "name": "Paul",
+        "url": "https://genius.com/artists/Paul",
+        "type": "regular",
+        "id": "2547616"
+      },
+      {
+        "name": "Paula Abdul",
+        "url": "https://genius.com/artists/Paula-abdul",
+        "type": "regular",
+        "id": "12068"
+      },
+      {
+        "name": "Paula Cole",
+        "url": "https://genius.com/artists/Paula-cole",
+        "type": "regular",
+        "id": "8457"
+      },
+      {
+        "name": "Paula Hartmann",
+        "url": "https://genius.com/artists/Paula-hartmann",
+        "type": "regular",
+        "id": "2862860"
+      },
+      {
+        "name": "Paul Anka",
+        "url": "https://genius.com/artists/Paul-anka",
+        "type": "regular",
+        "id": "42458"
+      },
+      {
+        "name": "Paul Baloche",
+        "url": "https://genius.com/artists/Paul-baloche",
+        "type": "regular",
+        "id": "323631"
+      },
+      {
+        "name": "Paul Brady",
+        "url": "https://genius.com/artists/Paul-brady",
+        "type": "regular",
+        "id": "360445"
+      },
+      {
+        "name": "Paul Davis",
+        "url": "https://genius.com/artists/Paul-davis",
+        "type": "regular",
+        "id": "43126"
+      },
+      {
+        "name": "Paul Keating",
+        "url": "https://genius.com/artists/Paul-keating",
+        "type": "regular",
+        "id": "519976"
+      },
+      {
+        "name": "Paul Kelly",
+        "url": "https://genius.com/artists/Paul-kelly",
+        "type": "regular",
+        "id": "221768"
+      },
+      {
+        "name": "Paul Kelly and the Messengers",
+        "url": "https://genius.com/artists/Paul-kelly-and-the-messengers",
+        "type": "regular",
+        "id": "349853"
+      },
+      {
+        "name": "Paul McCartney",
+        "url": "https://genius.com/artists/Paul-mccartney",
+        "type": "regular",
+        "id": "1601"
+      },
+      {
+        "name": "Paul Nicholas",
+        "url": "https://genius.com/artists/Paul-nicholas",
+        "type": "regular",
+        "id": "374063"
+      },
+      {
+        "name": "Paulo Cursino",
+        "url": "https://genius.com/artists/Paulo-cursino",
+        "type": "regular",
+        "id": "381861"
+      },
+      {
+        "name": "Paulo Londra",
+        "url": "https://genius.com/artists/Paulo-londra",
+        "type": "regular",
+        "id": "1147558"
+      },
+      {
+        "name": "Paul Partohap",
+        "url": "https://genius.com/artists/Paul-partohap",
+        "type": "regular",
+        "id": "1632404"
+      },
+      {
+        "name": "Paul Piché",
+        "url": "https://genius.com/artists/Paul-piche",
+        "type": "regular",
+        "id": "355078"
+      },
+      {
+        "name": "Paul Revere and the Raiders",
+        "url": "https://genius.com/artists/Paul-revere-and-the-raiders",
+        "type": "regular",
+        "id": "118509"
+      },
+      {
+        "name": "Paul Robeson",
+        "url": "https://genius.com/artists/Paul-robeson",
+        "type": "regular",
+        "id": "41320"
+      },
+      {
+        "name": "Paul Russell",
+        "url": "https://genius.com/artists/Paul-russell",
+        "type": "regular",
+        "id": "1254251"
+      },
+      {
+        "name": "Paul Shapera",
+        "url": "https://genius.com/artists/Paul-shapera",
+        "type": "regular",
+        "id": "625646"
+      },
+      {
+        "name": "Paul Simon",
+        "url": "https://genius.com/artists/Paul-simon",
+        "type": "regular",
+        "id": "15474"
+      },
+      {
+        "name": "Paul Wall",
+        "url": "https://genius.com/artists/Paul-wall",
+        "type": "regular",
+        "id": "289"
+      },
+      {
+        "name": "Paul Weller",
+        "url": "https://genius.com/artists/Paul-weller",
+        "type": "regular",
+        "id": "308664"
+      },
+      {
+        "name": "Paul Westerberg",
+        "url": "https://genius.com/artists/Paul-westerberg",
+        "type": "regular",
+        "id": "31208"
+      },
+      {
+        "name": "PaulWetz",
+        "url": "https://genius.com/artists/Paulwetz",
+        "type": "regular",
+        "id": "1029234"
+      },
+      {
+        "name": "Paul Wilbur",
+        "url": "https://genius.com/artists/Paul-wilbur",
+        "type": "regular",
+        "id": "360583"
+      },
+      {
+        "name": "Paul Williams",
+        "url": "https://genius.com/artists/Paul-williams",
+        "type": "regular",
+        "id": "13906"
+      },
+      {
+        "name": "Paul Young",
+        "url": "https://genius.com/artists/Paul-young",
+        "type": "regular",
+        "id": "100914"
+      },
+      {
+        "name": "Pause Flow",
+        "url": "https://genius.com/artists/Pause-flow",
+        "type": "regular",
+        "id": "1134374"
+      },
+      {
+        "name": "Павел Кузьмин (Pavel Kuzmin)",
+        "url": "https://genius.com/artists/Pavel-kuzmin",
+        "type": "regular",
+        "id": "4317865"
+      },
+      {
+        "name": "Pave Maijanen",
+        "url": "https://genius.com/artists/Pave-maijanen",
+        "type": "regular",
+        "id": "454344"
+      },
+      {
+        "name": "Pavement",
+        "url": "https://genius.com/artists/Pavement",
+        "type": "regular",
+        "id": "11523"
+      },
+      {
+        "name": "Paves 16",
+        "url": "https://genius.com/artists/Paves-16",
+        "type": "regular",
+        "id": "3668060"
+      },
+      {
+        "name": "Pavlos Pavlidis",
+        "url": "https://genius.com/artists/Pavlos-pavlidis",
+        "type": "regular",
+        "id": "1380052"
+      },
+      {
+        "name": "PAW Patrol",
+        "url": "https://genius.com/artists/Paw-patrol",
+        "type": "regular",
+        "id": "2236613"
+      },
+      {
+        "name": "PAWSA",
+        "url": "https://genius.com/artists/Pawsa",
+        "type": "regular",
+        "id": "3414064"
+      },
+      {
+        "name": "PayGotti",
+        "url": "https://genius.com/artists/Paygotti",
+        "type": "regular",
+        "id": "4137302"
+      },
+      {
+        "name": "Payroll Giovanni",
+        "url": "https://genius.com/artists/Payroll-giovanni",
+        "type": "regular",
+        "id": "582820"
+      },
+      {
+        "name": "payton",
+        "url": "https://genius.com/artists/Payton",
+        "type": "regular",
+        "id": "2196904"
+      },
+      {
+        "name": "Payung Teduh",
+        "url": "https://genius.com/artists/Payung-teduh",
+        "type": "regular",
+        "id": "370950"
+      },
+      {
+        "name": "Pöbel MC",
+        "url": "https://genius.com/artists/Pobel-mc",
+        "type": "regular",
+        "id": "584208"
+      },
+      {
+        "name": "Peabo Bryson",
+        "url": "https://genius.com/artists/Peabo-bryson",
+        "type": "regular",
+        "id": "34966"
+      },
+      {
+        "name": "Peaches",
+        "url": "https://genius.com/artists/Peaches",
+        "type": "regular",
+        "id": "6099"
+      },
+      {
+        "name": "Peaches & Herb",
+        "url": "https://genius.com/artists/Peaches-and-herb",
+        "type": "regular",
+        "id": "357485"
+      },
+      {
+        "name": "Peach Pit",
+        "url": "https://genius.com/artists/Peach-pit",
+        "type": "regular",
+        "id": "1080938"
+      },
+      {
+        "name": "Peđa Jovanović",
+        "url": "https://genius.com/artists/Pea-jovanovic",
+        "type": "regular",
+        "id": "1808733"
+      },
+      {
+        "name": "Pearce Joza",
+        "url": "https://genius.com/artists/Pearce-joza",
+        "type": "regular",
+        "id": "2063638"
+      },
+      {
+        "name": "Pearly Drops",
+        "url": "https://genius.com/artists/Pearly-drops",
+        "type": "regular",
+        "id": "2504436"
+      },
+      {
+        "name": "Pebbles&TamTam",
+        "url": "https://genius.com/artists/Pebbles-tamtam",
+        "type": "regular",
+        "id": "3953134"
+      },
+      {
+        "name": "Peder Elias",
+        "url": "https://genius.com/artists/Peder-elias",
+        "type": "regular",
+        "id": "1717448"
+      },
+      {
+        "name": "Pedja Medenica",
+        "url": "https://genius.com/artists/Pedja-medenica",
+        "type": "regular",
+        "id": "1051740"
+      },
+      {
+        "name": "Pedro Capó",
+        "url": "https://genius.com/artists/Pedro-capo",
+        "type": "regular",
+        "id": "373171"
+      },
+      {
+        "name": "Pedro Infante",
+        "url": "https://genius.com/artists/Pedro-infante",
+        "type": "regular",
+        "id": "344471"
+      },
+      {
+        "name": "Pedro LaDroga",
+        "url": "https://genius.com/artists/Pedro-ladroga",
+        "type": "regular",
+        "id": "1106559"
+      },
+      {
+        "name": "PEDRO SAMPAIO",
+        "url": "https://genius.com/artists/Pedro-sampaio",
+        "type": "regular",
+        "id": "1816093"
+      },
+      {
+        "name": "PeelingFlesh",
+        "url": "https://genius.com/artists/Peelingflesh",
+        "type": "regular",
+        "id": "3330318"
+      },
+      {
+        "name": "Peer Tasi - פאר טסי",
+        "url": "https://genius.com/artists/Peer-tasi",
+        "type": "regular",
+        "id": "1191794"
+      },
+      {
+        "name": "Peewee Longway",
+        "url": "https://genius.com/artists/Peewee-longway",
+        "type": "regular",
+        "id": "47103"
+      },
+      {
+        "name": "Peezy",
+        "url": "https://genius.com/artists/Peezy",
+        "type": "regular",
+        "id": "64242"
+      },
+      {
+        "name": "PEGGY",
+        "url": "https://genius.com/artists/Peggy",
+        "type": "regular",
+        "id": "2712493"
+      },
+      {
+        "name": "Peggy Gou",
+        "url": "https://genius.com/artists/Peggy-gou",
+        "type": "regular",
+        "id": "1568660"
+      },
+      {
+        "name": "Peggy Lee",
+        "url": "https://genius.com/artists/Peggy-lee",
+        "type": "regular",
+        "id": "31787"
+      },
+      {
+        "name": "Peggy Zina",
+        "url": "https://genius.com/artists/Peggy-zina",
+        "type": "regular",
+        "id": "405625"
+      },
+      {
+        "name": "​pehmoaino",
+        "url": "https://genius.com/artists/Pehmoaino",
+        "type": "regular",
+        "id": "2648486"
+      },
+      {
+        "name": "Peja",
+        "url": "https://genius.com/artists/Peja",
+        "type": "regular",
+        "id": "63842"
+      },
+      {
+        "name": "Peki (HRV)",
+        "url": "https://genius.com/artists/Peki-hrv",
+        "type": "regular",
+        "id": "3030768"
+      },
+      {
+        "name": "Peking Opera",
+        "url": "https://genius.com/artists/Peking-opera",
+        "type": "regular",
+        "id": "3535983"
+      },
+      {
+        "name": "Пелагея (Pelageya)",
+        "url": "https://genius.com/artists/Pelageya",
+        "type": "regular",
+        "id": "1289825"
+      },
+      {
+        "name": "Pendulum",
+        "url": "https://genius.com/artists/Pendulum",
+        "type": "regular",
+        "id": "38216"
+      },
+      {
+        "name": "Penelope Road",
+        "url": "https://genius.com/artists/Penelope-road",
+        "type": "regular",
+        "id": "4201259"
+      },
+      {
+        "name": "Penelope Scott",
+        "url": "https://genius.com/artists/Penelope-scott",
+        "type": "regular",
+        "id": "2231947"
+      },
+      {
+        "name": "Pennines",
+        "url": "https://genius.com/artists/Pennines",
+        "type": "regular",
+        "id": "2329193"
+      },
+      {
+        "name": "Penny Parker",
+        "url": "https://genius.com/artists/Penny-parker",
+        "type": "regular",
+        "id": "1593787"
+      },
+      {
+        "name": "Pennywise",
+        "url": "https://genius.com/artists/Pennywise",
+        "type": "regular",
+        "id": "9619"
+      },
+      {
+        "name": "Penpals",
+        "url": "https://genius.com/artists/Penpals",
+        "type": "regular",
+        "id": "388690"
+      },
+      {
+        "name": "Pentagram",
+        "url": "https://genius.com/artists/Pentagram",
+        "type": "regular",
+        "id": "355521"
+      },
+      {
+        "name": "Pentagram (TUR)",
+        "url": "https://genius.com/artists/Pentagram-tur",
+        "type": "regular",
+        "id": "1491823"
+      },
+      {
+        "name": "Pentangle",
+        "url": "https://genius.com/artists/Pentangle",
+        "type": "regular",
+        "id": "361806"
+      },
+      {
+        "name": "Pentatonix",
+        "url": "https://genius.com/artists/Pentatonix",
+        "type": "regular",
+        "id": "62578"
+      },
+      {
+        "name": "Pent Up Pup",
+        "url": "https://genius.com/artists/Pent-up-pup",
+        "type": "regular",
+        "id": "3383895"
+      },
+      {
+        "name": "Penyair",
+        "url": "https://genius.com/artists/Penyair",
+        "type": "regular",
+        "id": "2651321"
+      },
+      {
+        "name": "People & Songs",
+        "url": "https://genius.com/artists/People-and-songs",
+        "type": "regular",
+        "id": "1412490"
+      },
+      {
+        "name": "Pepe Aguilar",
+        "url": "https://genius.com/artists/Pepe-aguilar",
+        "type": "regular",
+        "id": "346345"
+      },
+      {
+        "name": "Pepel Nahudi",
+        "url": "https://genius.com/artists/Pepel-nahudi",
+        "type": "regular",
+        "id": "2230204"
+      },
+      {
+        "name": "Peppa Pig",
+        "url": "https://genius.com/artists/Peppa-pig",
+        "type": "regular",
+        "id": "619755"
+      },
+      {
+        "name": "Pepper",
+        "url": "https://genius.com/artists/Pepper",
+        "type": "regular",
+        "id": "11706"
+      },
+      {
+        "name": "Pepper Coyote",
+        "url": "https://genius.com/artists/Pepper-coyote",
+        "type": "regular",
+        "id": "623125"
+      },
+      {
+        "name": "Peppe Soks",
+        "url": "https://genius.com/artists/Peppe-soks",
+        "type": "regular",
+        "id": "995444"
+      },
+      {
+        "name": "Peppino Di Capri",
+        "url": "https://genius.com/artists/Peppino-di-capri",
+        "type": "regular",
+        "id": "374571"
+      },
+      {
+        "name": "Percy Bysshe Shelley",
+        "url": "https://genius.com/artists/Percy-bysshe-shelley",
+        "type": "regular",
+        "id": "40205"
+      },
+      {
+        "name": "Перемотка (Peremotka)",
+        "url": "https://genius.com/artists/Peremotka",
+        "type": "regular",
+        "id": "2086743"
+      },
+      {
+        "name": "A Perfect Circle",
+        "url": "https://genius.com/artists/A-perfect-circle",
+        "type": "regular",
+        "id": "59876"
+      },
+      {
+        "name": "Perfume",
+        "url": "https://genius.com/artists/Perfume",
+        "type": "regular",
+        "id": "357699"
+      },
+      {
+        "name": "Perfume Genius",
+        "url": "https://genius.com/artists/Perfume-genius",
+        "type": "regular",
+        "id": "18091"
+      },
+      {
+        "name": "Periphery",
+        "url": "https://genius.com/artists/Periphery",
+        "type": "regular",
+        "id": "186659"
+      },
+      {
+        "name": "Perry Como",
+        "url": "https://genius.com/artists/Perry-como",
+        "type": "regular",
+        "id": "60354"
+      },
+      {
+        "name": "Perry Maysun",
+        "url": "https://genius.com/artists/Perry-maysun",
+        "type": "regular",
+        "id": "2605091"
+      },
+      {
+        "name": "The Perrys",
+        "url": "https://genius.com/artists/The-perrys",
+        "type": "regular",
+        "id": "479578"
+      },
+      {
+        "name": "Pertinence",
+        "url": "https://genius.com/artists/Pertinence",
+        "type": "regular",
+        "id": "1476403"
+      },
+      {
+        "name": "Perturbator",
+        "url": "https://genius.com/artists/Perturbator",
+        "type": "regular",
+        "id": "403488"
+      },
+      {
+        "name": "Perunggu",
+        "url": "https://genius.com/artists/Perunggu",
+        "type": "regular",
+        "id": "3046191"
+      },
+      {
+        "name": "Pesado",
+        "url": "https://genius.com/artists/Pesado",
+        "type": "regular",
+        "id": "344945"
+      },
+      {
+        "name": "Pescado Rabioso",
+        "url": "https://genius.com/artists/Pescado-rabioso",
+        "type": "regular",
+        "id": "357615"
+      },
+      {
+        "name": "PE$O PETE",
+        "url": "https://genius.com/artists/Pe-o-pete",
+        "type": "regular",
+        "id": "619192"
+      },
+      {
+        "name": "Peso Pluma",
+        "url": "https://genius.com/artists/Peso-pluma",
+        "type": "regular",
+        "id": "3329756"
+      },
+      {
+        "name": "Petar Grašo",
+        "url": "https://genius.com/artists/Petar-graso",
+        "type": "regular",
+        "id": "1605793"
+      },
+      {
+        "name": "Pete & Bas",
+        "url": "https://genius.com/artists/Pete-and-bas",
+        "type": "regular",
+        "id": "1307722"
+      },
+      {
+        "name": "Pete Murray",
+        "url": "https://genius.com/artists/Pete-murray",
+        "type": "regular",
+        "id": "354951"
+      },
+      {
+        "name": "Peter Allen",
+        "url": "https://genius.com/artists/Peter-allen",
+        "type": "regular",
+        "id": "352355"
+      },
+      {
+        "name": "Peter & Gordon",
+        "url": "https://genius.com/artists/Peter-and-gordon",
+        "type": "regular",
+        "id": "355972"
+      },
+      {
+        "name": "Peter Andre",
+        "url": "https://genius.com/artists/Peter-andre",
+        "type": "regular",
+        "id": "8373"
+      },
+      {
+        "name": "Peter Bjorn and John",
+        "url": "https://genius.com/artists/Peter-bjorn-and-john",
+        "type": "regular",
+        "id": "2005"
+      },
+      {
+        "name": "Peter Cat Recording Co.",
+        "url": "https://genius.com/artists/Peter-cat-recording-co",
+        "type": "regular",
+        "id": "1884488"
+      },
+      {
+        "name": "Peter Cetera",
+        "url": "https://genius.com/artists/Peter-cetera",
+        "type": "regular",
+        "id": "186680"
+      },
+      {
+        "name": "Peter Dreams",
+        "url": "https://genius.com/artists/Peter-dreams",
+        "type": "regular",
+        "id": "4035857"
+      },
+      {
+        "name": "Peter Fox",
+        "url": "https://genius.com/artists/Peter-fox",
+        "type": "regular",
+        "id": "852"
+      },
+      {
+        "name": "Peter Frampton",
+        "url": "https://genius.com/artists/Peter-frampton",
+        "type": "regular",
+        "id": "51113"
+      },
+      {
+        "name": "Peter Gabriel",
+        "url": "https://genius.com/artists/Peter-gabriel",
+        "type": "regular",
+        "id": "36564"
+      },
+      {
+        "name": "Peter Hammill",
+        "url": "https://genius.com/artists/Peter-hammill",
+        "type": "regular",
+        "id": "359856"
+      },
+      {
+        "name": "Peter Hannan",
+        "url": "https://genius.com/artists/Peter-hannan",
+        "type": "regular",
+        "id": "2025004"
+      },
+      {
+        "name": "Peter Hollens",
+        "url": "https://genius.com/artists/Peter-hollens",
+        "type": "regular",
+        "id": "374860"
+      },
+      {
+        "name": "Peter LeMarc",
+        "url": "https://genius.com/artists/Peter-lemarc",
+        "type": "regular",
+        "id": "357594"
+      },
+      {
+        "name": "Peter Maffay",
+        "url": "https://genius.com/artists/Peter-maffay",
+        "type": "regular",
+        "id": "14147"
+      },
+      {
+        "name": "Peter McPoland",
+        "url": "https://genius.com/artists/Peter-mcpoland",
+        "type": "regular",
+        "id": "1466866"
+      },
+      {
+        "name": "Pete Rock",
+        "url": "https://genius.com/artists/Pete-rock",
+        "type": "regular",
+        "id": "100"
+      },
+      {
+        "name": "Pete Rock & CL Smooth",
+        "url": "https://genius.com/artists/Pete-rock-and-cl-smooth",
+        "type": "regular",
+        "id": "1125"
+      },
+      {
+        "name": "Peterpan",
+        "url": "https://genius.com/artists/Peterpan",
+        "type": "regular",
+        "id": "156633"
+      },
+      {
+        "name": "Peter Pann",
+        "url": "https://genius.com/artists/Peter-pann",
+        "type": "regular",
+        "id": "1121618"
+      },
+      {
+        "name": "Peter, Paul and Mary",
+        "url": "https://genius.com/artists/Peter-paul-and-mary",
+        "type": "regular",
+        "id": "26960"
+      },
+      {
+        "name": "Peter Plate",
+        "url": "https://genius.com/artists/Peter-plate",
+        "type": "regular",
+        "id": "480847"
+      },
+      {
+        "name": "Peter Schilling",
+        "url": "https://genius.com/artists/Peter-schilling",
+        "type": "regular",
+        "id": "22237"
+      },
+      {
+        "name": "Peter Sommer",
+        "url": "https://genius.com/artists/Peter-sommer",
+        "type": "regular",
+        "id": "184890"
+      },
+      {
+        "name": "Peter Tosh",
+        "url": "https://genius.com/artists/Peter-tosh",
+        "type": "regular",
+        "id": "1250"
+      },
+      {
+        "name": "Peter Wackel",
+        "url": "https://genius.com/artists/Peter-wackel",
+        "type": "regular",
+        "id": "374546"
+      },
+      {
+        "name": "Pete Seeger",
+        "url": "https://genius.com/artists/Pete-seeger",
+        "type": "regular",
+        "id": "35816"
+      },
+      {
+        "name": "Pete Townshend",
+        "url": "https://genius.com/artists/Pete-townshend",
+        "type": "regular",
+        "id": "40963"
+      },
+      {
+        "name": "Petey",
+        "url": "https://genius.com/artists/Petey",
+        "type": "regular",
+        "id": "2821088"
+      },
+      {
+        "name": "Petey Pablo",
+        "url": "https://genius.com/artists/Petey-pablo",
+        "type": "regular",
+        "id": "1629"
+      },
+      {
+        "name": "Petra",
+        "url": "https://genius.com/artists/Petra",
+        "type": "regular",
+        "id": "63412"
+      },
+      {
+        "name": "Petra Marklund",
+        "url": "https://genius.com/artists/Petra-marklund",
+        "type": "regular",
+        "id": "370745"
+      },
+      {
+        "name": "Petra Mede",
+        "url": "https://genius.com/artists/Petra-mede",
+        "type": "regular",
+        "id": "669254"
+      },
+      {
+        "name": "Petra Sihombing",
+        "url": "https://genius.com/artists/Petra-sihombing",
+        "type": "regular",
+        "id": "1460097"
+      },
+      {
+        "name": "Petre Ștefan",
+        "url": "https://genius.com/artists/Petre-stefan",
+        "type": "regular",
+        "id": "2201073"
+      },
+      {
+        "name": "Petri Laaksonen",
+        "url": "https://genius.com/artists/Petri-laaksonen",
+        "type": "regular",
+        "id": "365167"
+      },
+      {
+        "name": "Petri Nygård",
+        "url": "https://genius.com/artists/Petri-nygard",
+        "type": "regular",
+        "id": "17573"
+      },
+      {
+        "name": "Petroleros Del Bravo",
+        "url": "https://genius.com/artists/Petroleros-del-bravo",
+        "type": "regular",
+        "id": "3895081"
+      },
+      {
+        "name": "Petrov",
+        "url": "https://genius.com/artists/Petrov",
+        "type": "regular",
+        "id": "2859654"
+      },
+      {
+        "name": "Pet Shop Boys",
+        "url": "https://genius.com/artists/Pet-shop-boys",
+        "type": "regular",
+        "id": "41831"
+      },
+      {
+        "name": "Pet Symmetry",
+        "url": "https://genius.com/artists/Pet-symmetry",
+        "type": "regular",
+        "id": "574392"
+      },
+      {
+        "name": "Petter",
+        "url": "https://genius.com/artists/Petter",
+        "type": "regular",
+        "id": "32186"
+      },
+      {
+        "name": "Petula Clark",
+        "url": "https://genius.com/artists/Petula-clark",
+        "type": "regular",
+        "id": "358214"
+      },
+      {
+        "name": "PewDiePie",
+        "url": "https://genius.com/artists/Pewdiepie",
+        "type": "regular",
+        "id": "71151"
+      },
+      {
+        "name": "Peysoh",
+        "url": "https://genius.com/artists/Peysoh",
+        "type": "regular",
+        "id": "2608474"
+      },
+      {
+        "name": "Peyton Parrish",
+        "url": "https://genius.com/artists/Peyton-parrish",
+        "type": "regular",
+        "id": "2721418"
+      },
+      {
+        "name": "Pezet",
+        "url": "https://genius.com/artists/Pezet",
+        "type": "regular",
+        "id": "36890"
+      },
+      {
+        "name": "​pH-1",
+        "url": "https://genius.com/artists/Ph-1",
+        "type": "regular",
+        "id": "1008975"
+      },
+      {
+        "name": "Phantogram",
+        "url": "https://genius.com/artists/Phantogram",
+        "type": "regular",
+        "id": "12520"
+      },
+      {
+        "name": "ファントムシータ (Phantom Siita)",
+        "url": "https://genius.com/artists/Phantom-siita",
+        "type": "regular",
+        "id": "4008858"
+      },
+      {
+        "name": "The Pharcyde",
+        "url": "https://genius.com/artists/The-pharcyde",
+        "type": "regular",
+        "id": "521"
+      },
+      {
+        "name": "PHARITA (BABYMONSTER)",
+        "url": "https://genius.com/artists/Pharita-babymonster",
+        "type": "regular",
+        "id": "3474237"
+      },
+      {
+        "name": "Pharoahe Monch",
+        "url": "https://genius.com/artists/Pharoahe-monch",
+        "type": "regular",
+        "id": "684"
+      },
+      {
+        "name": "Pheelz",
+        "url": "https://genius.com/artists/Pheelz",
+        "type": "regular",
+        "id": "88888"
+      },
+      {
+        "name": "PhemieC",
+        "url": "https://genius.com/artists/Phemiec",
+        "type": "regular",
+        "id": "204606"
+      },
+      {
+        "name": "Phil Harris",
+        "url": "https://genius.com/artists/Phil-harris",
+        "type": "regular",
+        "id": "160714"
+      },
+      {
+        "name": "Philip Bailey",
+        "url": "https://genius.com/artists/Philip-bailey",
+        "type": "regular",
+        "id": "4414"
+      },
+      {
+        "name": "Philip Glass",
+        "url": "https://genius.com/artists/Philip-glass",
+        "type": "regular",
+        "id": "370763"
+      },
+      {
+        "name": "Philip Larkin",
+        "url": "https://genius.com/artists/Philip-larkin",
+        "type": "regular",
+        "id": "1029"
+      },
+      {
+        "name": "Philip Oakey",
+        "url": "https://genius.com/artists/Philip-oakey",
+        "type": "regular",
+        "id": "111514"
+      },
+      {
+        "name": "Филипп Киркоров (Philipp Kirkorov)",
+        "url": "https://genius.com/artists/Philipp-kirkorov",
+        "type": "regular",
+        "id": "667373"
+      },
+      {
+        "name": "Philip Quast",
+        "url": "https://genius.com/artists/Philip-quast",
+        "type": "regular",
+        "id": "664767"
+      },
+      {
+        "name": "Phillip Phillips",
+        "url": "https://genius.com/artists/Phillip-phillips",
+        "type": "regular",
+        "id": "49866"
+      },
+      {
+        "name": "Phillips, Craig & Dean",
+        "url": "https://genius.com/artists/Phillips-craig-and-dean",
+        "type": "regular",
+        "id": "349878"
+      },
+      {
+        "name": "Phil Ochs",
+        "url": "https://genius.com/artists/Phil-ochs",
+        "type": "regular",
+        "id": "35904"
+      },
+      {
+        "name": "Phil Thompson",
+        "url": "https://genius.com/artists/Phil-thompson",
+        "type": "regular",
+        "id": "1218235"
+      },
+      {
+        "name": "Philthy Rich",
+        "url": "https://genius.com/artists/Philthy-rich",
+        "type": "regular",
+        "id": "29745"
+      },
+      {
+        "name": "Phil Wickham",
+        "url": "https://genius.com/artists/Phil-wickham",
+        "type": "regular",
+        "id": "69561"
+      },
+      {
+        "name": "Phineas",
+        "url": "https://genius.com/artists/Phineas",
+        "type": "regular",
+        "id": "405749"
+      },
+      {
+        "name": "Phineas and Ferb",
+        "url": "https://genius.com/artists/Phineas-and-ferb",
+        "type": "regular",
+        "id": "406081"
+      },
+      {
+        "name": "Phineas and the Ferbtones",
+        "url": "https://genius.com/artists/Phineas-and-the-ferbtones",
+        "type": "regular",
+        "id": "92209"
+      },
+      {
+        "name": "Phish",
+        "url": "https://genius.com/artists/Phish",
+        "type": "regular",
+        "id": "25796"
+      },
+      {
+        "name": "Phix",
+        "url": "https://genius.com/artists/Phix",
+        "type": "regular",
+        "id": "1369221"
+      },
+      {
+        "name": "Phương Ly",
+        "url": "https://genius.com/artists/Phuong-ly",
+        "type": "regular",
+        "id": "1596125"
+      },
+      {
+        "name": "Phương Mỹ Chi",
+        "url": "https://genius.com/artists/Phuong-my-chi",
+        "type": "regular",
+        "id": "1472681"
+      },
+      {
+        "name": "Pháo",
+        "url": "https://genius.com/artists/Phao",
+        "type": "regular",
+        "id": "2105056"
+      },
+      {
+        "name": "Phobia Isaac",
+        "url": "https://genius.com/artists/Phobia-isaac",
+        "type": "regular",
+        "id": "572689"
+      },
+      {
+        "name": "Phoebe Bridgers",
+        "url": "https://genius.com/artists/Phoebe-bridgers",
+        "type": "regular",
+        "id": "1012909"
+      },
+      {
+        "name": "Phoebe Buffay And The Hairballs",
+        "url": "https://genius.com/artists/Phoebe-buffay-and-the-hairballs",
+        "type": "regular",
+        "id": "2412519"
+      },
+      {
+        "name": "Phoebe Strole",
+        "url": "https://genius.com/artists/Phoebe-strole",
+        "type": "regular",
+        "id": "1036599"
+      },
+      {
+        "name": "Phoenix",
+        "url": "https://genius.com/artists/Phoenix",
+        "type": "regular",
+        "id": "763"
+      },
+      {
+        "name": "Phoneboy",
+        "url": "https://genius.com/artists/Phoneboy",
+        "type": "regular",
+        "id": "1992788"
+      },
+      {
+        "name": "Phora",
+        "url": "https://genius.com/artists/Phora",
+        "type": "regular",
+        "id": "20424"
+      },
+      {
+        "name": "Phosphorescent",
+        "url": "https://genius.com/artists/Phosphorescent",
+        "type": "regular",
+        "id": "42274"
+      },
+      {
+        "name": "phreshboyswag",
+        "url": "https://genius.com/artists/Phreshboyswag",
+        "type": "regular",
+        "id": "2400513"
+      },
+      {
+        "name": "Phum Viphurit",
+        "url": "https://genius.com/artists/Phum-viphurit",
+        "type": "regular",
+        "id": "1205221"
+      },
+      {
+        "name": "Phyllis Hyman",
+        "url": "https://genius.com/artists/Phyllis-hyman",
+        "type": "regular",
+        "id": "359087"
+      },
+      {
+        "name": "Phyno",
+        "url": "https://genius.com/artists/Phyno",
+        "type": "regular",
+        "id": "188233"
+      },
+      {
+        "name": "Pia Allgaier",
+        "url": "https://genius.com/artists/Pia-allgaier",
+        "type": "regular",
+        "id": "480664"
+      },
+      {
+        "name": "Pia Mia",
+        "url": "https://genius.com/artists/Pia-mia",
+        "type": "regular",
+        "id": "148412"
+      },
+      {
+        "name": "Piano Dreamers",
+        "url": "https://genius.com/artists/Piano-dreamers",
+        "type": "regular",
+        "id": "1938825"
+      },
+      {
+        "name": "Piano Project",
+        "url": "https://genius.com/artists/Piano-project",
+        "type": "regular",
+        "id": "3025886"
+      },
+      {
+        "name": "Picture Me Broken",
+        "url": "https://genius.com/artists/Picture-me-broken",
+        "type": "regular",
+        "id": "191863"
+      },
+      {
+        "name": "Picture This",
+        "url": "https://genius.com/artists/Picture-this",
+        "type": "regular",
+        "id": "624636"
+      },
+      {
+        "name": "Pidżama Porno",
+        "url": "https://genius.com/artists/Pidzama-porno",
+        "type": "regular",
+        "id": "331663"
+      },
+      {
+        "name": "Pidar",
+        "url": "https://genius.com/artists/Pidar",
+        "type": "regular",
+        "id": "3732809"
+      },
+      {
+        "name": "Pięć Dwa",
+        "url": "https://genius.com/artists/Piec-dwa",
+        "type": "regular",
+        "id": "74375"
+      },
+      {
+        "name": "Pierce Brosnan",
+        "url": "https://genius.com/artists/Pierce-brosnan",
+        "type": "regular",
+        "id": "405639"
+      },
+      {
+        "name": "The Pierces",
+        "url": "https://genius.com/artists/The-pierces",
+        "type": "regular",
+        "id": "79472"
+      },
+      {
+        "name": "Pi'erre Bourne",
+        "url": "https://genius.com/artists/Pierre-bourne",
+        "type": "regular",
+        "id": "1047738"
+      },
+      {
+        "name": "Pietro Basile",
+        "url": "https://genius.com/artists/Pietro-basile",
+        "type": "regular",
+        "id": "1958543"
+      },
+      {
+        "name": "Piezas",
+        "url": "https://genius.com/artists/Piezas",
+        "type": "regular",
+        "id": "54276"
+      },
+      {
+        "name": "Piezas & Jayder",
+        "url": "https://genius.com/artists/Piezas-and-jayder",
+        "type": "regular",
+        "id": "452801"
+      },
+      {
+        "name": "Pig Destroyer",
+        "url": "https://genius.com/artists/Pig-destroyer",
+        "type": "regular",
+        "id": "164461"
+      },
+      {
+        "name": "Pigeon Pit",
+        "url": "https://genius.com/artists/Pigeon-pit",
+        "type": "regular",
+        "id": "1433864"
+      },
+      {
+        "name": "Пика (Pika)",
+        "url": "https://genius.com/artists/Pika",
+        "type": "regular",
+        "id": "36230"
+      },
+      {
+        "name": "Pikers",
+        "url": "https://genius.com/artists/Pikers",
+        "type": "regular",
+        "id": "97190"
+      },
+      {
+        "name": "Пикник (PiknikBand)",
+        "url": "https://genius.com/artists/Piknikband",
+        "type": "regular",
+        "id": "1088400"
+      },
+      {
+        "name": "PIKOTARO",
+        "url": "https://genius.com/artists/Pikotaro",
+        "type": "regular",
+        "id": "1008160"
+      },
+      {
+        "name": "Pil C",
+        "url": "https://genius.com/artists/Pil-c",
+        "type": "regular",
+        "id": "1001556"
+      },
+      {
+        "name": "Pile",
+        "url": "https://genius.com/artists/Pile",
+        "type": "regular",
+        "id": "366859"
+      },
+      {
+        "name": "Pilli Bebek",
+        "url": "https://genius.com/artists/Pilli-bebek",
+        "type": "regular",
+        "id": "373293"
+      },
+      {
+        "name": "The Pillows",
+        "url": "https://genius.com/artists/The-pillows",
+        "type": "regular",
+        "id": "356237"
+      },
+      {
+        "name": "Pimmie",
+        "url": "https://genius.com/artists/Pimmie",
+        "type": "regular",
+        "id": "1409653"
+      },
+      {
+        "name": "Pimp C",
+        "url": "https://genius.com/artists/Pimp-c",
+        "type": "regular",
+        "id": "2444"
+      },
+      {
+        "name": "Pinback",
+        "url": "https://genius.com/artists/Pinback",
+        "type": "regular",
+        "id": "44434"
+      },
+      {
+        "name": "Pinegrove",
+        "url": "https://genius.com/artists/Pinegrove",
+        "type": "regular",
+        "id": "634657"
+      },
+      {
+        "name": "Pinhani",
+        "url": "https://genius.com/artists/Pinhani",
+        "type": "regular",
+        "id": "357511"
+      },
+      {
+        "name": "Pinkfong (핑크퐁)",
+        "url": "https://genius.com/artists/Pinkfong",
+        "type": "regular",
+        "id": "1266228"
+      },
+      {
+        "name": "Pink Guy",
+        "url": "https://genius.com/artists/Pink-guy",
+        "type": "regular",
+        "id": "44083"
+      },
+      {
+        "name": "Pinkie Pie",
+        "url": "https://genius.com/artists/Pinkie-pie",
+        "type": "regular",
+        "id": "18395"
+      },
+      {
+        "name": "PiNKII",
+        "url": "https://genius.com/artists/Pinkii",
+        "type": "regular",
+        "id": "2038679"
+      },
+      {
+        "name": "Pink Martini",
+        "url": "https://genius.com/artists/Pink-martini",
+        "type": "regular",
+        "id": "307409"
+      },
+      {
+        "name": "Pinkshift",
+        "url": "https://genius.com/artists/Pinkshift",
+        "type": "regular",
+        "id": "2354287"
+      },
+      {
+        "name": "Pink Siifu",
+        "url": "https://genius.com/artists/Pink-siifu",
+        "type": "regular",
+        "id": "1412323"
+      },
+      {
+        "name": "Pink Sweat$",
+        "url": "https://genius.com/artists/Pink-sweat",
+        "type": "regular",
+        "id": "1533381"
+      },
+      {
+        "name": "ピノキオピー (PinocchioP)",
+        "url": "https://genius.com/artists/Pinocchiop",
+        "type": "regular",
+        "id": "1011048"
+      },
+      {
+        "name": "Pino D'Angiò",
+        "url": "https://genius.com/artists/Pino-dangio",
+        "type": "regular",
+        "id": "456752"
+      },
+      {
+        "name": "Pino Daniele",
+        "url": "https://genius.com/artists/Pino-daniele",
+        "type": "regular",
+        "id": "354073"
+      },
+      {
+        "name": "PINQ",
+        "url": "https://genius.com/artists/Pinq",
+        "type": "regular",
+        "id": "2070055"
+      },
+      {
+        "name": "Pio Balbuena",
+        "url": "https://genius.com/artists/Pio-balbuena",
+        "type": "regular",
+        "id": "1844917"
+      },
+      {
+        "name": "Пионерлагерь Пыльная Радуга (Pionerlager' Pyl'naya Raduga)",
+        "url": "https://genius.com/artists/Pionerlager-pylnaya-raduga",
+        "type": "regular",
+        "id": "1066609"
+      },
+      {
+        "name": "Pip Millett",
+        "url": "https://genius.com/artists/Pip-millett",
+        "type": "regular",
+        "id": "1496768"
+      },
+      {
+        "name": "Pirates of the Caribbean",
+        "url": "https://genius.com/artists/Pirates-of-the-caribbean",
+        "type": "regular",
+        "id": "3826032"
+      },
+      {
+        "name": "Pirlo",
+        "url": "https://genius.com/artists/Pirlo",
+        "type": "regular",
+        "id": "3312509"
+      },
+      {
+        "name": "Piso 21",
+        "url": "https://genius.com/artists/Piso-21",
+        "type": "regular",
+        "id": "405706"
+      },
+      {
+        "name": "Pisse",
+        "url": "https://genius.com/artists/Pisse",
+        "type": "regular",
+        "id": "1758035"
+      },
+      {
+        "name": "Pistol. P0",
+        "url": "https://genius.com/artists/Pistol-p0",
+        "type": "regular",
+        "id": "3676210"
+      },
+      {
+        "name": "Pit10",
+        "url": "https://genius.com/artists/Pit10",
+        "type": "regular",
+        "id": "42552"
+      },
+      {
+        "name": "Pitch Perfect 3 Cast",
+        "url": "https://genius.com/artists/Pitch-perfect-3-cast",
+        "type": "regular",
+        "id": "1288602"
+      },
+      {
+        "name": "Pittkiid",
+        "url": "https://genius.com/artists/Pittkiid",
+        "type": "regular",
+        "id": "2822647"
+      },
+      {
+        "name": "Pity Party Girls Club",
+        "url": "https://genius.com/artists/Pity-party-girls-club",
+        "type": "regular",
+        "id": "1045145"
+      },
+      {
+        "name": "Pixel Grip",
+        "url": "https://genius.com/artists/Pixel-grip",
+        "type": "regular",
+        "id": "2045145"
+      },
+      {
+        "name": "Pixie Lott",
+        "url": "https://genius.com/artists/Pixie-lott",
+        "type": "regular",
+        "id": "16997"
+      },
+      {
+        "name": "Pixies",
+        "url": "https://genius.com/artists/Pixies",
+        "type": "regular",
+        "id": "1787"
+      },
+      {
+        "name": "Pixl Girl",
+        "url": "https://genius.com/artists/Pixl-girl",
+        "type": "regular",
+        "id": "4365231"
+      },
+      {
+        "name": "PiXXiE",
+        "url": "https://genius.com/artists/Pixxie",
+        "type": "regular",
+        "id": "2687025"
+      },
+      {
+        "name": "Piyush Mishra",
+        "url": "https://genius.com/artists/Piyush-mishra",
+        "type": "regular",
+        "id": "387645"
+      },
+      {
+        "name": "PIZZA",
+        "url": "https://genius.com/artists/Pizza",
+        "type": "regular",
+        "id": "563469"
+      },
+      {
+        "name": "Pj Glizzy",
+        "url": "https://genius.com/artists/Pj-glizzy",
+        "type": "regular",
+        "id": "2926491"
+      },
+      {
+        "name": "PJ Harvey",
+        "url": "https://genius.com/artists/Pj-harvey",
+        "type": "regular",
+        "id": "33879"
+      },
+      {
+        "name": "PJ Morton",
+        "url": "https://genius.com/artists/Pj-morton",
+        "type": "regular",
+        "id": "18792"
+      },
+      {
+        "name": "Placebo",
+        "url": "https://genius.com/artists/Placebo",
+        "type": "regular",
+        "id": "64367"
+      },
+      {
+        "name": "Plain White T's",
+        "url": "https://genius.com/artists/Plain-white-ts",
+        "type": "regular",
+        "id": "53121"
+      },
+      {
+        "name": "Plan B",
+        "url": "https://genius.com/artists/Plan-b",
+        "type": "regular",
+        "id": "351610"
+      },
+      {
+        "name": "Plan B (UK)",
+        "url": "https://genius.com/artists/Plan-b-uk",
+        "type": "regular",
+        "id": "1463"
+      },
+      {
+        "name": "​planetboom",
+        "url": "https://genius.com/artists/Planetboom",
+        "type": "regular",
+        "id": "1117658"
+      },
+      {
+        "name": "Planetshakers",
+        "url": "https://genius.com/artists/Planetshakers",
+        "type": "regular",
+        "id": "353089"
+      },
+      {
+        "name": "Планка (Planka)",
+        "url": "https://genius.com/artists/Planka",
+        "type": "regular",
+        "id": "3334232"
+      },
+      {
+        "name": "Planxty",
+        "url": "https://genius.com/artists/Planxty",
+        "type": "regular",
+        "id": "375326"
+      },
+      {
+        "name": "Plasterbrain",
+        "url": "https://genius.com/artists/Plasterbrain",
+        "type": "regular",
+        "id": "460665"
+      },
+      {
+        "name": "Plastic Ono Band",
+        "url": "https://genius.com/artists/Plastic-ono-band",
+        "type": "regular",
+        "id": "383191"
+      },
+      {
+        "name": "Plastic Tree",
+        "url": "https://genius.com/artists/Plastic-tree",
+        "type": "regular",
+        "id": "365048"
+      },
+      {
+        "name": "Plastilina Mosh",
+        "url": "https://genius.com/artists/Plastilina-mosh",
+        "type": "regular",
+        "id": "362853"
+      },
+      {
+        "name": "Платина (Platina)",
+        "url": "https://genius.com/artists/Platina",
+        "type": "regular",
+        "id": "1325589"
+      },
+      {
+        "name": "platov",
+        "url": "https://genius.com/artists/Platov",
+        "type": "regular",
+        "id": "2734338"
+      },
+      {
+        "name": "The Platters",
+        "url": "https://genius.com/artists/The-platters",
+        "type": "regular",
+        "id": "244914"
+      },
+      {
+        "name": "PLAVE",
+        "url": "https://genius.com/artists/Plave",
+        "type": "regular",
+        "id": "3470495"
+      },
+      {
+        "name": "Plavi Orkestar",
+        "url": "https://genius.com/artists/Plavi-orkestar",
+        "type": "regular",
+        "id": "405125"
+      },
+      {
+        "name": "Player",
+        "url": "https://genius.com/artists/Player",
+        "type": "regular",
+        "id": "265189"
+      },
+      {
+        "name": "playingtheangel",
+        "url": "https://genius.com/artists/Playingtheangel",
+        "type": "regular",
+        "id": "1065682"
+      },
+      {
+        "name": "PLAZA",
+        "url": "https://genius.com/artists/Plaza",
+        "type": "regular",
+        "id": "388976"
+      },
+      {
+        "name": "Pleasantries",
+        "url": "https://genius.com/artists/Pleasantries",
+        "type": "regular",
+        "id": "2597782"
+      },
+      {
+        "name": "Pleasure P",
+        "url": "https://genius.com/artists/Pleasure-p",
+        "type": "regular",
+        "id": "5897"
+      },
+      {
+        "name": "Plies",
+        "url": "https://genius.com/artists/Plies",
+        "type": "regular",
+        "id": "272"
+      },
+      {
+        "name": "Pljugica",
+        "url": "https://genius.com/artists/Pljugica",
+        "type": "regular",
+        "id": "2038646"
+      },
+      {
+        "name": "PLK",
+        "url": "https://genius.com/artists/Plk",
+        "type": "regular",
+        "id": "128813"
+      },
+      {
+        "name": "P-LO",
+        "url": "https://genius.com/artists/P-lo",
+        "type": "regular",
+        "id": "30206"
+      },
+      {
+        "name": "PLOHOYPAREN",
+        "url": "https://genius.com/artists/Plohoyparen",
+        "type": "regular",
+        "id": "1576206"
+      },
+      {
+        "name": "The Plot In You",
+        "url": "https://genius.com/artists/The-plot-in-you",
+        "type": "regular",
+        "id": "343839"
+      },
+      {
+        "name": "Plumb",
+        "url": "https://genius.com/artists/Plumb",
+        "type": "regular",
+        "id": "44542"
+      },
+      {
+        "name": "Plume Latraverse",
+        "url": "https://genius.com/artists/Plume-latraverse",
+        "type": "regular",
+        "id": "344659"
+      },
+      {
+        "name": "PLUMMCORP RECORDS",
+        "url": "https://genius.com/artists/Plummcorp-records",
+        "type": "regular",
+        "id": "3638483"
+      },
+      {
+        "name": "+44",
+        "url": "https://genius.com/artists/44",
+        "type": "regular",
+        "id": "136713"
+      },
+      {
+        "name": "Plutonio",
+        "url": "https://genius.com/artists/Plutonio",
+        "type": "regular",
+        "id": "545339"
+      },
+      {
+        "name": "PLVTINUM",
+        "url": "https://genius.com/artists/Plvtinum",
+        "type": "regular",
+        "id": "1003336"
+      },
+      {
+        "name": "P.M. Dawn",
+        "url": "https://genius.com/artists/Pm-dawn",
+        "type": "regular",
+        "id": "2013"
+      },
+      {
+        "name": "PMMP",
+        "url": "https://genius.com/artists/Pmmp",
+        "type": "regular",
+        "id": "356580"
+      },
+      {
+        "name": "P Money",
+        "url": "https://genius.com/artists/P-money",
+        "type": "regular",
+        "id": "443"
+      },
+      {
+        "name": "PNAU",
+        "url": "https://genius.com/artists/Pnau",
+        "type": "regular",
+        "id": "73681"
+      },
+      {
+        "name": "PnB Rock",
+        "url": "https://genius.com/artists/Pnb-rock",
+        "type": "regular",
+        "id": "248458"
+      },
+      {
+        "name": "Пневмослон (Pnevmoslon)",
+        "url": "https://genius.com/artists/Pnevmoslon",
+        "type": "regular",
+        "id": "2955190"
+      },
+      {
+        "name": "P!nk",
+        "url": "https://genius.com/artists/P-nk",
+        "type": "regular",
+        "id": "345"
+      },
+      {
+        "name": "PNL",
+        "url": "https://genius.com/artists/Pnl",
+        "type": "regular",
+        "id": "335710"
+      },
+      {
+        "name": "Pobre Drums",
+        "url": "https://genius.com/artists/Pobre-drums",
+        "type": "regular",
+        "id": "634079"
+      },
+      {
+        "name": "Pochonbo Electronic Ensemble",
+        "url": "https://genius.com/artists/Pochonbo-electronic-ensemble",
+        "type": "regular",
+        "id": "1829770"
+      },
+      {
+        "name": "ПОЧТИСЧАСТЛИВ (POCHTISCHASTLIV)",
+        "url": "https://genius.com/artists/Pochtischastliv",
+        "type": "regular",
+        "id": "3727251"
+      },
+      {
+        "name": "Poco",
+        "url": "https://genius.com/artists/Poco",
+        "type": "regular",
+        "id": "185606"
+      },
+      {
+        "name": "P.O.D.",
+        "url": "https://genius.com/artists/Pod",
+        "type": "regular",
+        "id": "8311"
+      },
+      {
+        "name": "Poe",
+        "url": "https://genius.com/artists/Poe",
+        "type": "regular",
+        "id": "17346"
+      },
+      {
+        "name": "POESY",
+        "url": "https://genius.com/artists/Poesy",
+        "type": "regular",
+        "id": "1366014"
+      },
+      {
+        "name": "Da Poet",
+        "url": "https://genius.com/artists/Da-poet",
+        "type": "regular",
+        "id": "9386"
+      },
+      {
+        "name": "Poets of the Fall",
+        "url": "https://genius.com/artists/Poets-of-the-fall",
+        "type": "regular",
+        "id": "38437"
+      },
+      {
+        "name": "Pogány Induló",
+        "url": "https://genius.com/artists/Pogany-indulo",
+        "type": "regular",
+        "id": "3189382"
+      },
+      {
+        "name": "Pogo",
+        "url": "https://genius.com/artists/Pogo",
+        "type": "regular",
+        "id": "31604"
+      },
+      {
+        "name": "The Pogues",
+        "url": "https://genius.com/artists/The-pogues",
+        "type": "regular",
+        "id": "30191"
+      },
+      {
+        "name": "The Pointer Sisters",
+        "url": "https://genius.com/artists/The-pointer-sisters",
+        "type": "regular",
+        "id": "44020"
+      },
+      {
+        "name": "Point Of Grace",
+        "url": "https://genius.com/artists/Point-of-grace",
+        "type": "regular",
+        "id": "353818"
+      },
+      {
+        "name": "Poison",
+        "url": "https://genius.com/artists/Poison",
+        "type": "regular",
+        "id": "32611"
+      },
+      {
+        "name": "Poison the Well",
+        "url": "https://genius.com/artists/Poison-the-well",
+        "type": "regular",
+        "id": "291917"
+      },
+      {
+        "name": "Poissonchat",
+        "url": "https://genius.com/artists/Poissonchat",
+        "type": "regular",
+        "id": "3523034"
+      },
+      {
+        "name": "Poizi",
+        "url": "https://genius.com/artists/Poizi",
+        "type": "regular",
+        "id": "3198963"
+      },
+      {
+        "name": "Poke",
+        "url": "https://genius.com/artists/Poke",
+        "type": "regular",
+        "id": "305426"
+      },
+      {
+        "name": "ポケットモンスター (Pokémon)",
+        "url": "https://genius.com/artists/Pokemon",
+        "type": "regular",
+        "id": "36392"
+      },
+      {
+        "name": "POL1Z1STENS0HN a.k.a. Jan Böhmermann",
+        "url": "https://genius.com/artists/Pol1z1stens0hn-aka-jan-bohmermann",
+        "type": "regular",
+        "id": "247003"
+      },
+      {
+        "name": "Pola & Bryson",
+        "url": "https://genius.com/artists/Pola-and-bryson",
+        "type": "regular",
+        "id": "985264"
+      },
+      {
+        "name": "Polaris",
+        "url": "https://genius.com/artists/Polaris",
+        "type": "regular",
+        "id": "647203"
+      },
+      {
+        "name": "Поларойд (Polaroi6)",
+        "url": "https://genius.com/artists/Polaroi6",
+        "type": "regular",
+        "id": "1665082"
+      },
+      {
+        "name": "Pol Granch",
+        "url": "https://genius.com/artists/Pol-granch",
+        "type": "regular",
+        "id": "1719376"
+      },
+      {
+        "name": "The Police",
+        "url": "https://genius.com/artists/The-police",
+        "type": "regular",
+        "id": "16735"
+      },
+      {
+        "name": "Polimá Westcoast",
+        "url": "https://genius.com/artists/Polima-westcoast",
+        "type": "regular",
+        "id": "1453887"
+      },
+      {
+        "name": "Полина Гагарина (Polina Gagarina)",
+        "url": "https://genius.com/artists/Polina-gagarina",
+        "type": "regular",
+        "id": "415577"
+      },
+      {
+        "name": "POLI (RUS)",
+        "url": "https://genius.com/artists/Poli-rus",
+        "type": "regular",
+        "id": "3660378"
+      },
+      {
+        "name": "Полка (polkapretty)",
+        "url": "https://genius.com/artists/Polkapretty",
+        "type": "regular",
+        "id": "3352479"
+      },
+      {
+        "name": "ПОЛМАТЕРИ (POLMATERI)",
+        "url": "https://genius.com/artists/Polmateri",
+        "type": "regular",
+        "id": "1565586"
+      },
+      {
+        "name": "polnalyubvi",
+        "url": "https://genius.com/artists/Polnalyubvi",
+        "type": "regular",
+        "id": "1535245"
+      },
+      {
+        "name": "Polo & Pan",
+        "url": "https://genius.com/artists/Polo-and-pan",
+        "type": "regular",
+        "id": "546784"
+      },
+      {
+        "name": "Polo G",
+        "url": "https://genius.com/artists/Polo-g",
+        "type": "regular",
+        "id": "1553158"
+      },
+      {
+        "name": "Polskie tłumaczenia Genius",
+        "url": "https://genius.com/artists/Polskie-tumaczenia-genius",
+        "type": "regular",
+        "id": "161407"
+      },
+      {
+        "name": "PolSM25",
+        "url": "https://genius.com/artists/Polsm25",
+        "type": "regular",
+        "id": "4404354"
+      },
+      {
+        "name": "Полумягкие (Polumyagkie)",
+        "url": "https://genius.com/artists/Polumyagkie",
+        "type": "regular",
+        "id": "1164101"
+      },
+      {
+        "name": "Polyana",
+        "url": "https://genius.com/artists/Polyana",
+        "type": "regular",
+        "id": "983728"
+      },
+      {
+        "name": "Polyphia",
+        "url": "https://genius.com/artists/Polyphia",
+        "type": "regular",
+        "id": "454450"
+      },
+      {
+        "name": "Pomme",
+        "url": "https://genius.com/artists/Pomme",
+        "type": "regular",
+        "id": "573581"
+      },
+      {
+        "name": "Pommelien Thijs",
+        "url": "https://genius.com/artists/Pommelien-thijs",
+        "type": "regular",
+        "id": "1711895"
+      },
+      {
+        "name": "Pompey",
+        "url": "https://genius.com/artists/Pompey",
+        "type": "regular",
+        "id": "3038568"
+      },
+      {
+        "name": "Pomplamoose",
+        "url": "https://genius.com/artists/Pomplamoose",
+        "type": "regular",
+        "id": "304434"
+      },
+      {
+        "name": "Pond",
+        "url": "https://genius.com/artists/Pond",
+        "type": "regular",
+        "id": "16888"
+      },
+      {
+        "name": "Pony Bradshaw",
+        "url": "https://genius.com/artists/Pony-bradshaw",
+        "type": "regular",
+        "id": "1863659"
+      },
+      {
+        "name": "Poo Bear",
+        "url": "https://genius.com/artists/Poo-bear",
+        "type": "regular",
+        "id": "5763"
+      },
+      {
+        "name": "Pooh",
+        "url": "https://genius.com/artists/Pooh",
+        "type": "regular",
+        "id": "123523"
+      },
+      {
+        "name": "Pooh Shiesty",
+        "url": "https://genius.com/artists/Pooh-shiesty",
+        "type": "regular",
+        "id": "1619658"
+      },
+      {
+        "name": "Pooja Misrra",
+        "url": "https://genius.com/artists/Pooja-misrra",
+        "type": "regular",
+        "id": "1783014"
+      },
+      {
+        "name": "Poolhouse",
+        "url": "https://genius.com/artists/Poolhouse",
+        "type": "regular",
+        "id": "2937326"
+      },
+      {
+        "name": "Poori",
+        "url": "https://genius.com/artists/Poori",
+        "type": "regular",
+        "id": "2423672"
+      },
+      {
+        "name": "Poor Man's Poison",
+        "url": "https://genius.com/artists/Poor-mans-poison",
+        "type": "regular",
+        "id": "1162926"
+      },
+      {
+        "name": "POORSTACY",
+        "url": "https://genius.com/artists/Poorstacy",
+        "type": "regular",
+        "id": "1755947"
+      },
+      {
+        "name": "Popcaan",
+        "url": "https://genius.com/artists/Popcaan",
+        "type": "regular",
+        "id": "17195"
+      },
+      {
+        "name": "Popeda",
+        "url": "https://genius.com/artists/Popeda",
+        "type": "regular",
+        "id": "372247"
+      },
+      {
+        "name": "Popek",
+        "url": "https://genius.com/artists/Popek",
+        "type": "regular",
+        "id": "151510"
+      },
+      {
+        "name": "Pop Evil",
+        "url": "https://genius.com/artists/Pop-evil",
+        "type": "regular",
+        "id": "230499"
+      },
+      {
+        "name": "Popeye Bangladesh",
+        "url": "https://genius.com/artists/Popeye-bangladesh",
+        "type": "regular",
+        "id": "2772517"
+      },
+      {
+        "name": "PopKill",
+        "url": "https://genius.com/artists/Popkill",
+        "type": "regular",
+        "id": "2506824"
+      },
+      {
+        "name": "Pop Kreep",
+        "url": "https://genius.com/artists/Pop-kreep",
+        "type": "regular",
+        "id": "4301754"
+      },
+      {
+        "name": "PopLord",
+        "url": "https://genius.com/artists/Poplord",
+        "type": "regular",
+        "id": "1855654"
+      },
+      {
+        "name": "Popov",
+        "url": "https://genius.com/artists/Popov",
+        "type": "regular",
+        "id": "1824292"
+      },
+      {
+        "name": "Popp Hunna",
+        "url": "https://genius.com/artists/Popp-hunna",
+        "type": "regular",
+        "id": "2171633"
+      },
+      {
+        "name": "Poppy",
+        "url": "https://genius.com/artists/Poppy",
+        "type": "regular",
+        "id": "540191"
+      },
+      {
+        "name": "​po prostu Kajtek",
+        "url": "https://genius.com/artists/Po-prostu-kajtek",
+        "type": "regular",
+        "id": "1555171"
+      },
+      {
+        "name": "Pop Smoke",
+        "url": "https://genius.com/artists/Pop-smoke",
+        "type": "regular",
+        "id": "1801970"
+      },
+      {
+        "name": "Porçay",
+        "url": "https://genius.com/artists/Porcay",
+        "type": "regular",
+        "id": "1168413"
+      },
+      {
+        "name": "Porcelain Black",
+        "url": "https://genius.com/artists/Porcelain-black",
+        "type": "regular",
+        "id": "2440"
+      },
+      {
+        "name": "The \"Porcelain Pal\" Collective",
+        "url": "https://genius.com/artists/The-porcelain-pal-collective",
+        "type": "regular",
+        "id": "4339612"
+      },
+      {
+        "name": "Porches",
+        "url": "https://genius.com/artists/Porches",
+        "type": "regular",
+        "id": "222056"
+      },
+      {
+        "name": "Porch Light",
+        "url": "https://genius.com/artists/Porch-light",
+        "type": "regular",
+        "id": "4297691"
+      },
+      {
+        "name": "PORCHY",
+        "url": "https://genius.com/artists/Porchy",
+        "type": "regular",
+        "id": "48423"
+      },
+      {
+        "name": "Porcupine Tree",
+        "url": "https://genius.com/artists/Porcupine-tree",
+        "type": "regular",
+        "id": "17189"
+      },
+      {
+        "name": "Порез на Собаке (Porez na Sobake)",
+        "url": "https://genius.com/artists/Porez-na-sobake",
+        "type": "regular",
+        "id": "1615725"
+      },
+      {
+        "name": "Порнофильмы (Pornofilmy)",
+        "url": "https://genius.com/artists/Pornofilmy",
+        "type": "regular",
+        "id": "1692812"
+      },
+      {
+        "name": "Poro",
+        "url": "https://genius.com/artists/Poro",
+        "type": "regular",
+        "id": "2852717"
+      },
+      {
+        "name": "Porta",
+        "url": "https://genius.com/artists/Porta",
+        "type": "regular",
+        "id": "59298"
+      },
+      {
+        "name": "Porter Robinson",
+        "url": "https://genius.com/artists/Porter-robinson",
+        "type": "regular",
+        "id": "155207"
+      },
+      {
+        "name": "The Porter's Gate",
+        "url": "https://genius.com/artists/The-porters-gate",
+        "type": "regular",
+        "id": "1235504"
+      },
+      {
+        "name": "Porter Wagoner",
+        "url": "https://genius.com/artists/Porter-wagoner",
+        "type": "regular",
+        "id": "353177"
+      },
+      {
+        "name": "Portion Boys",
+        "url": "https://genius.com/artists/Portion-boys",
+        "type": "regular",
+        "id": "523528"
+      },
+      {
+        "name": "Portishead",
+        "url": "https://genius.com/artists/Portishead",
+        "type": "regular",
+        "id": "12528"
+      },
+      {
+        "name": "Portugal No Beat",
+        "url": "https://genius.com/artists/Portugal-no-beat",
+        "type": "regular",
+        "id": "1213395"
+      },
+      {
+        "name": "Portugal. The Man",
+        "url": "https://genius.com/artists/Portugal-the-man",
+        "type": "regular",
+        "id": "52078"
+      },
+      {
+        "name": "Пошлая Молли (Poshlaya Molly)",
+        "url": "https://genius.com/artists/Poshlaya-molly",
+        "type": "regular",
+        "id": "1090746"
+      },
+      {
+        "name": "Poskok DJ",
+        "url": "https://genius.com/artists/Poskok-dj",
+        "type": "regular",
+        "id": "4425914"
+      },
+      {
+        "name": "Posse (CZE)",
+        "url": "https://genius.com/artists/Posse-cze",
+        "type": "regular",
+        "id": "3231675"
+      },
+      {
+        "name": "The Postal Service",
+        "url": "https://genius.com/artists/The-postal-service",
+        "type": "regular",
+        "id": "32060"
+      },
+      {
+        "name": "Post Animal",
+        "url": "https://genius.com/artists/Post-animal",
+        "type": "regular",
+        "id": "1297380"
+      },
+      {
+        "name": "Postgirobygget",
+        "url": "https://genius.com/artists/Postgirobygget",
+        "type": "regular",
+        "id": "357504"
+      },
+      {
+        "name": "Postirol",
+        "url": "https://genius.com/artists/Postirol",
+        "type": "regular",
+        "id": "1426367"
+      },
+      {
+        "name": "Потап и Настя (Potap & Nastya)",
+        "url": "https://genius.com/artists/Potap-and-nastya",
+        "type": "regular",
+        "id": "1255389"
+      },
+      {
+        "name": "Potter Payper",
+        "url": "https://genius.com/artists/Potter-payper",
+        "type": "regular",
+        "id": "187860"
+      },
+      {
+        "name": "Potty Monkey",
+        "url": "https://genius.com/artists/Potty-monkey",
+        "type": "regular",
+        "id": "1950555"
+      },
+      {
+        "name": "Pousi - بوسي",
+        "url": "https://genius.com/artists/Pousi",
+        "type": "regular",
+        "id": "2949398"
+      },
+      {
+        "name": "Pouya",
+        "url": "https://genius.com/artists/Pouya",
+        "type": "regular",
+        "id": "38638"
+      },
+      {
+        "name": "Powderfinger",
+        "url": "https://genius.com/artists/Powderfinger",
+        "type": "regular",
+        "id": "230151"
+      },
+      {
+        "name": "Powerman 5000",
+        "url": "https://genius.com/artists/Powerman-5000",
+        "type": "regular",
+        "id": "356088"
+      },
+      {
+        "name": "The Powerpuff Girls",
+        "url": "https://genius.com/artists/The-powerpuff-girls",
+        "type": "regular",
+        "id": "391498"
+      },
+      {
+        "name": "Power Rangers",
+        "url": "https://genius.com/artists/Power-rangers",
+        "type": "regular",
+        "id": "380995"
+      },
+      {
+        "name": "Powerwolf",
+        "url": "https://genius.com/artists/Powerwolf",
+        "type": "regular",
+        "id": "64105"
+      },
+      {
+        "name": "Powfu",
+        "url": "https://genius.com/artists/Powfu",
+        "type": "regular",
+        "id": "1496514"
+      },
+      {
+        "name": "Pozer",
+        "url": "https://genius.com/artists/Pozer",
+        "type": "regular",
+        "id": "3813418"
+      },
+      {
+        "name": "ppcocaine",
+        "url": "https://genius.com/artists/Ppcocaine",
+        "type": "regular",
+        "id": "2287211"
+      },
+      {
+        "name": "PRACI",
+        "url": "https://genius.com/artists/Praci",
+        "type": "regular",
+        "id": "2308473"
+      },
+      {
+        "name": "Pradabagshawty",
+        "url": "https://genius.com/artists/Pradabagshawty",
+        "type": "regular",
+        "id": "2648531"
+      },
+      {
+        "name": "Pra(Killa'Gramm)",
+        "url": "https://genius.com/artists/Prakillagramm",
+        "type": "regular",
+        "id": "1150986"
+      },
+      {
+        "name": "P. Ramlee",
+        "url": "https://genius.com/artists/P-ramlee",
+        "type": "regular",
+        "id": "357849"
+      },
+      {
+        "name": "Prateek Kuhad",
+        "url": "https://genius.com/artists/Prateek-kuhad",
+        "type": "regular",
+        "id": "1057717"
+      },
+      {
+        "name": "Preashea Hilliard",
+        "url": "https://genius.com/artists/Preashea-hilliard",
+        "type": "regular",
+        "id": "405646"
+      },
+      {
+        "name": "PRECEDE",
+        "url": "https://genius.com/artists/Precede",
+        "type": "regular",
+        "id": "2402395"
+      },
+      {
+        "name": "Precious Pepala",
+        "url": "https://genius.com/artists/Precious-pepala",
+        "type": "regular",
+        "id": "3201576"
+      },
+      {
+        "name": "Prefab Sprout",
+        "url": "https://genius.com/artists/Prefab-sprout",
+        "type": "regular",
+        "id": "89647"
+      },
+      {
+        "name": "Premo Rice",
+        "url": "https://genius.com/artists/Premo-rice",
+        "type": "regular",
+        "id": "1019825"
+      },
+      {
+        "name": "President",
+        "url": "https://genius.com/artists/President",
+        "type": "regular",
+        "id": "74792"
+      },
+      {
+        "name": "The Presidents of the United States of America",
+        "url": "https://genius.com/artists/The-presidents-of-the-united-states-of-america",
+        "type": "regular",
+        "id": "24626"
+      },
+      {
+        "name": "President (UK)",
+        "url": "https://genius.com/artists/President-uk",
+        "type": "regular",
+        "id": "4437649"
+      },
+      {
+        "name": "Преслава (Preslava)",
+        "url": "https://genius.com/artists/Preslava",
+        "type": "regular",
+        "id": "2266261"
+      },
+      {
+        "name": "Presley Regier",
+        "url": "https://genius.com/artists/Presley-regier",
+        "type": "regular",
+        "id": "1776062"
+      },
+      {
+        "name": "Pressa",
+        "url": "https://genius.com/artists/Pressa",
+        "type": "regular",
+        "id": "648965"
+      },
+      {
+        "name": "Pressure 9X19",
+        "url": "https://genius.com/artists/Pressure-9x19",
+        "type": "regular",
+        "id": "3754470"
+      },
+      {
+        "name": "Preston Nyman",
+        "url": "https://genius.com/artists/Preston-nyman",
+        "type": "regular",
+        "id": "4222172"
+      },
+      {
+        "name": "Pretenders",
+        "url": "https://genius.com/artists/Pretenders",
+        "type": "regular",
+        "id": "67804"
+      },
+      {
+        "name": "prettifun",
+        "url": "https://genius.com/artists/Prettifun",
+        "type": "regular",
+        "id": "3528032"
+      },
+      {
+        "name": "PRETTYMUCH",
+        "url": "https://genius.com/artists/Prettymuch",
+        "type": "regular",
+        "id": "1180141"
+      },
+      {
+        "name": "Pretty Patterns",
+        "url": "https://genius.com/artists/Pretty-patterns",
+        "type": "regular",
+        "id": "2634564"
+      },
+      {
+        "name": "The Pretty Reckless",
+        "url": "https://genius.com/artists/The-pretty-reckless",
+        "type": "regular",
+        "id": "78372"
+      },
+      {
+        "name": "Pretty Ricky",
+        "url": "https://genius.com/artists/Pretty-ricky",
+        "type": "regular",
+        "id": "9450"
+      },
+      {
+        "name": "Pretty Scream",
+        "url": "https://genius.com/artists/Pretty-scream",
+        "type": "regular",
+        "id": "1128222"
+      },
+      {
+        "name": "Pretty Sick",
+        "url": "https://genius.com/artists/Pretty-sick",
+        "type": "regular",
+        "id": "1866423"
+      },
+      {
+        "name": "The Pretty Wild",
+        "url": "https://genius.com/artists/The-pretty-wild",
+        "type": "regular",
+        "id": "3443804"
+      },
+      {
+        "name": "Preye Odede",
+        "url": "https://genius.com/artists/Preye-odede",
+        "type": "regular",
+        "id": "3580537"
+      },
+      {
+        "name": "Президенттік оркестр (Prezïdenttik orkestr)",
+        "url": "https://genius.com/artists/Prezidenttik-orkestr",
+        "type": "regular",
+        "id": "3985003"
+      },
+      {
+        "name": "Prezident",
+        "url": "https://genius.com/artists/Prezident",
+        "type": "regular",
+        "id": "16099"
+      },
+      {
+        "name": "Prezioso",
+        "url": "https://genius.com/artists/Prezioso",
+        "type": "regular",
+        "id": "56038"
+      },
+      {
+        "name": "Priddy Ugly",
+        "url": "https://genius.com/artists/Priddy-ugly",
+        "type": "regular",
+        "id": "41179"
+      },
+      {
+        "name": "Primal Scream",
+        "url": "https://genius.com/artists/Primal-scream",
+        "type": "regular",
+        "id": "49527"
+      },
+      {
+        "name": "prima stanza a destra",
+        "url": "https://genius.com/artists/Prima-stanza-a-destra",
+        "type": "regular",
+        "id": "4210329"
+      },
+      {
+        "name": "Primitive Radio Gods",
+        "url": "https://genius.com/artists/Primitive-radio-gods",
+        "type": "regular",
+        "id": "233649"
+      },
+      {
+        "name": "The Primitives",
+        "url": "https://genius.com/artists/The-primitives",
+        "type": "regular",
+        "id": "359864"
+      },
+      {
+        "name": "Primus",
+        "url": "https://genius.com/artists/Primus",
+        "type": "regular",
+        "id": "2474"
+      },
+      {
+        "name": "Prince",
+        "url": "https://genius.com/artists/Prince",
+        "type": "regular",
+        "id": "660"
+      },
+      {
+        "name": "Prince and the New Power Generation",
+        "url": "https://genius.com/artists/Prince-and-the-new-power-generation",
+        "type": "regular",
+        "id": "352191"
+      },
+      {
+        "name": "Prince and the Revolution",
+        "url": "https://genius.com/artists/Prince-and-the-revolution",
+        "type": "regular",
+        "id": "43316"
+      },
+      {
+        "name": "Prince Dre",
+        "url": "https://genius.com/artists/Prince-dre",
+        "type": "regular",
+        "id": "141304"
+      },
+      {
+        "name": "Prince Poetiray",
+        "url": "https://genius.com/artists/Prince-poetiray",
+        "type": "regular",
+        "id": "4369175"
+      },
+      {
+        "name": "Prince Royce",
+        "url": "https://genius.com/artists/Prince-royce",
+        "type": "regular",
+        "id": "13246"
+      },
+      {
+        "name": "Princess Cadance",
+        "url": "https://genius.com/artists/Princess-cadance",
+        "type": "regular",
+        "id": "4416484"
+      },
+      {
+        "name": "Princess Chelsea",
+        "url": "https://genius.com/artists/Princess-chelsea",
+        "type": "regular",
+        "id": "214308"
+      },
+      {
+        "name": "Princess Nokia",
+        "url": "https://genius.com/artists/Princess-nokia",
+        "type": "regular",
+        "id": "151480"
+      },
+      {
+        "name": "​princess paparazzi",
+        "url": "https://genius.com/artists/Princess-paparazzi",
+        "type": "regular",
+        "id": "2212274"
+      },
+      {
+        "name": "​​princessrica",
+        "url": "https://genius.com/artists/Princessrica",
+        "type": "regular",
+        "id": "2915791"
+      },
+      {
+        "name": "Prince Swanny",
+        "url": "https://genius.com/artists/Prince-swanny",
+        "type": "regular",
+        "id": "1790818"
+      },
+      {
+        "name": "Prinz",
+        "url": "https://genius.com/artists/Prinz",
+        "type": "regular",
+        "id": "3306963"
+      },
+      {
+        "name": "Prinz Pi",
+        "url": "https://genius.com/artists/Prinz-pi",
+        "type": "regular",
+        "id": "12011"
+      },
+      {
+        "name": "Priscilla Bueno",
+        "url": "https://genius.com/artists/Priscilla-bueno",
+        "type": "regular",
+        "id": "1589489"
+      },
+      {
+        "name": "Pritam",
+        "url": "https://genius.com/artists/Pritam",
+        "type": "regular",
+        "id": "36123"
+      },
+      {
+        "name": "Pritom Hasan",
+        "url": "https://genius.com/artists/Pritom-hasan",
+        "type": "regular",
+        "id": "1891160"
+      },
+      {
+        "name": "Priya Saraiya",
+        "url": "https://genius.com/artists/Priya-saraiya",
+        "type": "regular",
+        "id": "645554"
+      },
+      {
+        "name": "Prljavo Kazalište",
+        "url": "https://genius.com/artists/Prljavo-kazaliste",
+        "type": "regular",
+        "id": "362788"
+      },
+      {
+        "name": "PRO8L3M",
+        "url": "https://genius.com/artists/Pro8l3m",
+        "type": "regular",
+        "id": "104301"
+      },
+      {
+        "name": "The Proclaimers",
+        "url": "https://genius.com/artists/The-proclaimers",
+        "type": "regular",
+        "id": "18714"
+      },
+      {
+        "name": "Procol Harum",
+        "url": "https://genius.com/artists/Procol-harum",
+        "type": "regular",
+        "id": "40662"
+      },
+      {
+        "name": "prodbysky",
+        "url": "https://genius.com/artists/Prodbysky",
+        "type": "regular",
+        "id": "3561380"
+      },
+      {
+        "name": "proderics",
+        "url": "https://genius.com/artists/Proderics",
+        "type": "regular",
+        "id": "3952617"
+      },
+      {
+        "name": "Prod.gabbinz",
+        "url": "https://genius.com/artists/Prodgabbinz",
+        "type": "regular",
+        "id": "4199725"
+      },
+      {
+        "name": "Prodigy",
+        "url": "https://genius.com/artists/Prodigy",
+        "type": "regular",
+        "id": "122"
+      },
+      {
+        "name": "Producer Genius",
+        "url": "https://genius.com/artists/Producer-genius",
+        "type": "regular",
+        "id": "72393"
+      },
+      {
+        "name": "Pro Era",
+        "url": "https://genius.com/artists/Pro-era",
+        "type": "regular",
+        "id": "21457"
+      },
+      {
+        "name": "Prof",
+        "url": "https://genius.com/artists/Prof",
+        "type": "regular",
+        "id": "13498"
+      },
+      {
+        "name": "Professor Green",
+        "url": "https://genius.com/artists/Professor-green",
+        "type": "regular",
+        "id": "1164"
+      },
+      {
+        "name": "ProfJam",
+        "url": "https://genius.com/artists/Profjam",
+        "type": "regular",
+        "id": "66588"
+      },
+      {
+        "name": "The Prof. (Prod)",
+        "url": "https://genius.com/artists/The-prof-prod",
+        "type": "regular",
+        "id": "4258742"
+      },
+      {
+        "name": "PROJECT JASP.ER",
+        "url": "https://genius.com/artists/Project-jasper",
+        "type": "regular",
+        "id": "4241323"
+      },
+      {
+        "name": "ProjectMoon",
+        "url": "https://genius.com/artists/Projectmoon",
+        "type": "regular",
+        "id": "2776212"
+      },
+      {
+        "name": "Проект Увечье (Project Mutilation)",
+        "url": "https://genius.com/artists/Project-mutilation",
+        "type": "regular",
+        "id": "38202"
+      },
+      {
+        "name": "Project Pat",
+        "url": "https://genius.com/artists/Project-pat",
+        "type": "regular",
+        "id": "167"
+      },
+      {
+        "name": "prombl",
+        "url": "https://genius.com/artists/Prombl",
+        "type": "regular",
+        "id": "1084589"
+      },
+      {
+        "name": "Promessa",
+        "url": "https://genius.com/artists/Promessa",
+        "type": "regular",
+        "id": "2098476"
+      },
+      {
+        "name": "Proof",
+        "url": "https://genius.com/artists/Proof",
+        "type": "regular",
+        "id": "1333"
+      },
+      {
+        "name": "Proof (MEX)",
+        "url": "https://genius.com/artists/Proof-mex",
+        "type": "regular",
+        "id": "104389"
+      },
+      {
+        "name": "Пропаганда (Propaganda) (RUS)",
+        "url": "https://genius.com/artists/Propaganda-rus",
+        "type": "regular",
+        "id": "1758049"
+      },
+      {
+        "name": "Propagandhi",
+        "url": "https://genius.com/artists/Propagandhi",
+        "type": "regular",
+        "id": "97310"
+      },
+      {
+        "name": "The PropheC",
+        "url": "https://genius.com/artists/The-prophec",
+        "type": "regular",
+        "id": "479908"
+      },
+      {
+        "name": "Prostitute",
+        "url": "https://genius.com/artists/Prostitute",
+        "type": "regular",
+        "id": "4261769"
+      },
+      {
+        "name": "просто Лера (prosto Lera)",
+        "url": "https://genius.com/artists/Prosto-lera",
+        "type": "regular",
+        "id": "2056671"
+      },
+      {
+        "name": "Protect",
+        "url": "https://genius.com/artists/Protect",
+        "type": "regular",
+        "id": "3976684"
+      },
+      {
+        "name": "Protest The Hero",
+        "url": "https://genius.com/artists/Protest-the-hero",
+        "type": "regular",
+        "id": "94877"
+      },
+      {
+        "name": "Protoje",
+        "url": "https://genius.com/artists/Protoje",
+        "type": "regular",
+        "id": "25745"
+      },
+      {
+        "name": "Protomartyr",
+        "url": "https://genius.com/artists/Protomartyr",
+        "type": "regular",
+        "id": "259534"
+      },
+      {
+        "name": "The Protomen",
+        "url": "https://genius.com/artists/The-protomen",
+        "type": "regular",
+        "id": "123094"
+      },
+      {
+        "name": "Provinz",
+        "url": "https://genius.com/artists/Provinz",
+        "type": "regular",
+        "id": "1755024"
+      },
+      {
+        "name": "Provoker",
+        "url": "https://genius.com/artists/Provoker",
+        "type": "regular",
+        "id": "1617055"
+      },
+      {
+        "name": "PROXIE (THA)",
+        "url": "https://genius.com/artists/Proxie-tha",
+        "type": "regular",
+        "id": "3148358"
+      },
+      {
+        "name": "Pröz",
+        "url": "https://genius.com/artists/Proz",
+        "type": "regular",
+        "id": "2808615"
+      },
+      {
+        "name": "Prāta Vētra",
+        "url": "https://genius.com/artists/Prata-vetra",
+        "type": "regular",
+        "id": "480448"
+      },
+      {
+        "name": "Prti Bee Gee",
+        "url": "https://genius.com/artists/Prti-bee-gee",
+        "type": "regular",
+        "id": "19621"
+      },
+      {
+        "name": "PryAnnya",
+        "url": "https://genius.com/artists/Pryannya",
+        "type": "regular",
+        "id": "3588675"
+      },
+      {
+        "name": "PRYVT",
+        "url": "https://genius.com/artists/Pryvt",
+        "type": "regular",
+        "id": "3640593"
+      },
+      {
+        "name": "Przemekbestgames",
+        "url": "https://genius.com/artists/Przemekbestgames",
+        "type": "regular",
+        "id": "3185285"
+      },
+      {
+        "name": "PS Hitsquad",
+        "url": "https://genius.com/artists/Ps-hitsquad",
+        "type": "regular",
+        "id": "1479879"
+      },
+      {
+        "name": "PSICOLOGI",
+        "url": "https://genius.com/artists/Psicologi",
+        "type": "regular",
+        "id": "1731735"
+      },
+      {
+        "name": "Psihomodo Pop",
+        "url": "https://genius.com/artists/Psihomodo-pop",
+        "type": "regular",
+        "id": "358138"
+      },
+      {
+        "name": "P-Square",
+        "url": "https://genius.com/artists/P-square",
+        "type": "regular",
+        "id": "40355"
+      },
+      {
+        "name": "PSY",
+        "url": "https://genius.com/artists/Psy",
+        "type": "regular",
+        "id": "24364"
+      },
+      {
+        "name": "Психея (Psychea)",
+        "url": "https://genius.com/artists/Psychea",
+        "type": "regular",
+        "id": "1663851"
+      },
+      {
+        "name": "The Psychedelic Furs",
+        "url": "https://genius.com/artists/The-psychedelic-furs",
+        "type": "regular",
+        "id": "132757"
+      },
+      {
+        "name": "Psychedelic Porn Crumpets",
+        "url": "https://genius.com/artists/Psychedelic-porn-crumpets",
+        "type": "regular",
+        "id": "1099810"
+      },
+      {
+        "name": "PSYCHIC FEVER from EXILE TRIBE",
+        "url": "https://genius.com/artists/Psychic-fever-from-exile-tribe",
+        "type": "regular",
+        "id": "3390286"
+      },
+      {
+        "name": "Psychic TV",
+        "url": "https://genius.com/artists/Psychic-tv",
+        "type": "regular",
+        "id": "159304"
+      },
+      {
+        "name": "PSYCHO-FRAME",
+        "url": "https://genius.com/artists/Psycho-frame",
+        "type": "regular",
+        "id": "3480527"
+      },
+      {
+        "name": "Psychonaut 4",
+        "url": "https://genius.com/artists/Psychonaut-4",
+        "type": "regular",
+        "id": "1108956"
+      },
+      {
+        "name": "Psycho Realm",
+        "url": "https://genius.com/artists/Psycho-realm",
+        "type": "regular",
+        "id": "1335"
+      },
+      {
+        "name": "Psychosis",
+        "url": "https://genius.com/artists/Psychosis",
+        "type": "regular",
+        "id": "3401261"
+      },
+      {
+        "name": "Psycho teddy",
+        "url": "https://genius.com/artists/Psycho-teddy",
+        "type": "regular",
+        "id": "483880"
+      },
+      {
+        "name": "PsySoubi",
+        "url": "https://genius.com/artists/Psysoubi",
+        "type": "regular",
+        "id": "3654034"
+      },
+      {
+        "name": "P.T. Adamczyk",
+        "url": "https://genius.com/artists/Pt-adamczyk",
+        "type": "regular",
+        "id": "1961333"
+      },
+      {
+        "name": "PTAF",
+        "url": "https://genius.com/artists/Ptaf",
+        "type": "regular",
+        "id": "69957"
+      },
+      {
+        "name": "Птаха (Ptaha)",
+        "url": "https://genius.com/artists/Ptaha",
+        "type": "regular",
+        "id": "1049039"
+      },
+      {
+        "name": "Птицу ЕМЪ (Pticu EM)",
+        "url": "https://genius.com/artists/Pticu-em",
+        "type": "regular",
+        "id": "1487671"
+      },
+      {
+        "name": "Ptite Soeur",
+        "url": "https://genius.com/artists/Ptite-soeur",
+        "type": "regular",
+        "id": "3067930"
+      },
+      {
+        "name": "P T K",
+        "url": "https://genius.com/artists/P-t-k",
+        "type": "regular",
+        "id": "1275799"
+      },
+      {
+        "name": "PUBLIC",
+        "url": "https://genius.com/artists/Public",
+        "type": "regular",
+        "id": "530129"
+      },
+      {
+        "name": "Public Announcement",
+        "url": "https://genius.com/artists/Public-announcement",
+        "type": "regular",
+        "id": "8442"
+      },
+      {
+        "name": "Public Enemy",
+        "url": "https://genius.com/artists/Public-enemy",
+        "type": "regular",
+        "id": "203"
+      },
+      {
+        "name": "Public Image Ltd.",
+        "url": "https://genius.com/artists/Public-image-ltd",
+        "type": "regular",
+        "id": "81209"
+      },
+      {
+        "name": "Puddle of Mudd",
+        "url": "https://genius.com/artists/Puddle-of-mudd",
+        "type": "regular",
+        "id": "43979"
+      },
+      {
+        "name": "Puentes",
+        "url": "https://genius.com/artists/Puentes",
+        "type": "regular",
+        "id": "3145868"
+      },
+      {
+        "name": "PUFFY",
+        "url": "https://genius.com/artists/Puffy",
+        "type": "regular",
+        "id": "18187"
+      },
+      {
+        "name": "Pulcino Pio",
+        "url": "https://genius.com/artists/Pulcino-pio",
+        "type": "regular",
+        "id": "37231"
+      },
+      {
+        "name": "Pulp Musicals",
+        "url": "https://genius.com/artists/Pulp-musicals",
+        "type": "regular",
+        "id": "2970329"
+      },
+      {
+        "name": "Puma Blue",
+        "url": "https://genius.com/artists/Puma-blue",
+        "type": "regular",
+        "id": "1145709"
+      },
+      {
+        "name": "PUN",
+        "url": "https://genius.com/artists/Pun",
+        "type": "regular",
+        "id": "3863204"
+      },
+      {
+        "name": "Punch (펀치) (KOR)",
+        "url": "https://genius.com/artists/Punch-kor",
+        "type": "regular",
+        "id": "1154855"
+      },
+      {
+        "name": "Punchmade Dev",
+        "url": "https://genius.com/artists/Punchmade-dev",
+        "type": "regular",
+        "id": "2774076"
+      },
+      {
+        "name": "​Punkinloveee",
+        "url": "https://genius.com/artists/Punkinloveee",
+        "type": "regular",
+        "id": "2326672"
+      },
+      {
+        "name": "PUP",
+        "url": "https://genius.com/artists/Pup",
+        "type": "regular",
+        "id": "8830"
+      },
+      {
+        "name": "Pupis",
+        "url": "https://genius.com/artists/Pupis",
+        "type": "regular",
+        "id": "2792592"
+      },
+      {
+        "name": "Pupo",
+        "url": "https://genius.com/artists/Pupo",
+        "type": "regular",
+        "id": "365924"
+      },
+      {
+        "name": "Pur",
+        "url": "https://genius.com/artists/Pur",
+        "type": "regular",
+        "id": "124102"
+      },
+      {
+        "name": "Pureojuice",
+        "url": "https://genius.com/artists/Pureojuice",
+        "type": "regular",
+        "id": "2902439"
+      },
+      {
+        "name": "Pure Prairie League",
+        "url": "https://genius.com/artists/Pure-prairie-league",
+        "type": "regular",
+        "id": "354871"
+      },
+      {
+        "name": "Purity Ring",
+        "url": "https://genius.com/artists/Purity-ring",
+        "type": "regular",
+        "id": "22229"
+      },
+      {
+        "name": "Purple Disco Machine",
+        "url": "https://genius.com/artists/Purple-disco-machine",
+        "type": "regular",
+        "id": "1043984"
+      },
+      {
+        "name": "Purple Mountains",
+        "url": "https://genius.com/artists/Purple-mountains",
+        "type": "regular",
+        "id": "1819524"
+      },
+      {
+        "name": "Puscifer",
+        "url": "https://genius.com/artists/Puscifer",
+        "type": "regular",
+        "id": "72513"
+      },
+      {
+        "name": "The Pussycat Dolls",
+        "url": "https://genius.com/artists/The-pussycat-dolls",
+        "type": "regular",
+        "id": "8390"
+      },
+      {
+        "name": "PUSSYKILLER",
+        "url": "https://genius.com/artists/Pussykiller",
+        "type": "regular",
+        "id": "1232898"
+      },
+      {
+        "name": "​​putri dahlia",
+        "url": "https://genius.com/artists/Putri-dahlia",
+        "type": "regular",
+        "id": "3408883"
+      },
+      {
+        "name": "Puya",
+        "url": "https://genius.com/artists/Puya",
+        "type": "regular",
+        "id": "49664"
+      },
+      {
+        "name": "Puyalo Pantera",
+        "url": "https://genius.com/artists/Puyalo-pantera",
+        "type": "regular",
+        "id": "4046007"
+      },
+      {
+        "name": "Puzzle (Fletcher Shears)",
+        "url": "https://genius.com/artists/Puzzle-fletcher-shears",
+        "type": "regular",
+        "id": "1321034"
+      },
+      {
+        "name": "PVRIS",
+        "url": "https://genius.com/artists/Pvris",
+        "type": "regular",
+        "id": "234524"
+      },
+      {
+        "name": "PXNDX",
+        "url": "https://genius.com/artists/Pxndx",
+        "type": "regular",
+        "id": "980228"
+      },
+      {
+        "name": "PXXR GVNG",
+        "url": "https://genius.com/artists/Pxxr-gvng",
+        "type": "regular",
+        "id": "1992812"
+      },
+      {
+        "name": "Pyhimys",
+        "url": "https://genius.com/artists/Pyhimys",
+        "type": "regular",
+        "id": "40880"
+      },
+      {
+        "name": "pyrokinesis",
+        "url": "https://genius.com/artists/Pyrokinesis",
+        "type": "regular",
+        "id": "501686"
+      }
+    ]
+  }
+}

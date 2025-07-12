@@ -1,0 +1,4513 @@
+{
+  "letter": "D",
+  "timestamp": "2025-07-11T07:31:21.501Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "d4vd",
+        "url": "https://genius.com/artists/D4vd",
+        "type": "popular",
+        "id": "3214453"
+      },
+      {
+        "name": "Damiano David",
+        "url": "https://genius.com/artists/Damiano-david",
+        "type": "popular",
+        "id": "1429481"
+      },
+      {
+        "name": "Damso",
+        "url": "https://genius.com/artists/Damso",
+        "type": "popular",
+        "id": "45855"
+      },
+      {
+        "name": "Daniel Caesar",
+        "url": "https://genius.com/artists/Daniel-caesar",
+        "type": "popular",
+        "id": "161892"
+      },
+      {
+        "name": "Danny Chung",
+        "url": "https://genius.com/artists/Danny-chung",
+        "type": "popular",
+        "id": "987215"
+      },
+      {
+        "name": "Daveed Diggs",
+        "url": "https://genius.com/artists/Daveed-diggs",
+        "type": "popular",
+        "id": "76034"
+      },
+      {
+        "name": "David Bowie",
+        "url": "https://genius.com/artists/David-bowie",
+        "type": "popular",
+        "id": "9534"
+      },
+      {
+        "name": "David Guetta",
+        "url": "https://genius.com/artists/David-guetta",
+        "type": "popular",
+        "id": "2578"
+      },
+      {
+        "name": "Davido",
+        "url": "https://genius.com/artists/Davido",
+        "type": "popular",
+        "id": "20698"
+      },
+      {
+        "name": "Deftones",
+        "url": "https://genius.com/artists/Deftones",
+        "type": "popular",
+        "id": "14195"
+      },
+      {
+        "name": "Destroy Lonely",
+        "url": "https://genius.com/artists/Destroy-lonely",
+        "type": "popular",
+        "id": "1695589"
+      },
+      {
+        "name": "Devito",
+        "url": "https://genius.com/artists/Devito",
+        "type": "popular",
+        "id": "1214734"
+      },
+      {
+        "name": "Doechii",
+        "url": "https://genius.com/artists/Doechii",
+        "type": "popular",
+        "id": "2413226"
+      },
+      {
+        "name": "Doja Cat",
+        "url": "https://genius.com/artists/Doja-cat",
+        "type": "popular",
+        "id": "139478"
+      },
+      {
+        "name": "Dolly Parton",
+        "url": "https://genius.com/artists/Dolly-parton",
+        "type": "popular",
+        "id": "20955"
+      },
+      {
+        "name": "Don McLean",
+        "url": "https://genius.com/artists/Don-mclean",
+        "type": "popular",
+        "id": "14086"
+      },
+      {
+        "name": "Don Toliver",
+        "url": "https://genius.com/artists/Don-toliver",
+        "type": "popular",
+        "id": "1523930"
+      },
+      {
+        "name": "Drake",
+        "url": "https://genius.com/artists/Drake",
+        "type": "popular",
+        "id": "130"
+      },
+      {
+        "name": "Dr. Dre",
+        "url": "https://genius.com/artists/Dr-dre",
+        "type": "popular",
+        "id": "123"
+      },
+      {
+        "name": "Dua Lipa",
+        "url": "https://genius.com/artists/Dua-lipa",
+        "type": "popular",
+        "id": "555561"
+      }
+    ],
+    "regular": [
+      {
+        "name": "D12",
+        "url": "https://genius.com/artists/D12",
+        "type": "regular",
+        "id": "303"
+      },
+      {
+        "name": "D1MA",
+        "url": "https://genius.com/artists/D1ma",
+        "type": "regular",
+        "id": "3084080"
+      },
+      {
+        "name": "D1NO",
+        "url": "https://genius.com/artists/D1no",
+        "type": "regular",
+        "id": "2152030"
+      },
+      {
+        "name": "D3",
+        "url": "https://genius.com/artists/D3",
+        "type": "regular",
+        "id": "2840632"
+      },
+      {
+        "name": "D3llano",
+        "url": "https://genius.com/artists/D3llano",
+        "type": "regular",
+        "id": "1598432"
+      },
+      {
+        "name": "d3r",
+        "url": "https://genius.com/artists/D3r",
+        "type": "regular",
+        "id": "3381827"
+      },
+      {
+        "name": "D4M $loan",
+        "url": "https://genius.com/artists/D4m-sloan",
+        "type": "regular",
+        "id": "2316955"
+      },
+      {
+        "name": "DaBaby",
+        "url": "https://genius.com/artists/Dababy",
+        "type": "regular",
+        "id": "1162342"
+      },
+      {
+        "name": "dabbackwood",
+        "url": "https://genius.com/artists/Dabbackwood",
+        "type": "regular",
+        "id": "3590939"
+      },
+      {
+        "name": "Dabeull",
+        "url": "https://genius.com/artists/Dabeull",
+        "type": "regular",
+        "id": "1046300"
+      },
+      {
+        "name": "Dabin Lee",
+        "url": "https://genius.com/artists/Dabin-lee",
+        "type": "regular",
+        "id": "455779"
+      },
+      {
+        "name": "DaBoii",
+        "url": "https://genius.com/artists/Daboii",
+        "type": "regular",
+        "id": "1048961"
+      },
+      {
+        "name": "Dabro",
+        "url": "https://genius.com/artists/Dabro",
+        "type": "regular",
+        "id": "1069392"
+      },
+      {
+        "name": "Dabzee",
+        "url": "https://genius.com/artists/Dabzee",
+        "type": "regular",
+        "id": "3300050"
+      },
+      {
+        "name": "Dacoito",
+        "url": "https://genius.com/artists/Dacoito",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "D-A-D",
+        "url": "https://genius.com/artists/D-a-d",
+        "type": "regular",
+        "id": "42368"
+      },
+      {
+        "name": "DADAROMA",
+        "url": "https://genius.com/artists/Dadaroma",
+        "type": "regular",
+        "id": "2554552"
+      },
+      {
+        "name": "Daddyphatsnaps",
+        "url": "https://genius.com/artists/Daddyphatsnaps",
+        "type": "regular",
+        "id": "1105340"
+      },
+      {
+        "name": "Daddy Yankee",
+        "url": "https://genius.com/artists/Daddy-yankee",
+        "type": "regular",
+        "id": "1823"
+      },
+      {
+        "name": "Dadju",
+        "url": "https://genius.com/artists/Dadju",
+        "type": "regular",
+        "id": "18906"
+      },
+      {
+        "name": "Daecolm",
+        "url": "https://genius.com/artists/Daecolm",
+        "type": "regular",
+        "id": "1021595"
+      },
+      {
+        "name": "DAESUNG (대성)",
+        "url": "https://genius.com/artists/Daesung",
+        "type": "regular",
+        "id": "20586"
+      },
+      {
+        "name": "Dafina Zeqiri",
+        "url": "https://genius.com/artists/Dafina-zeqiri",
+        "type": "regular",
+        "id": "99879"
+      },
+      {
+        "name": "Daft Punk",
+        "url": "https://genius.com/artists/Daft-punk",
+        "type": "regular",
+        "id": "13585"
+      },
+      {
+        "name": "DAGames",
+        "url": "https://genius.com/artists/Dagames",
+        "type": "regular",
+        "id": "344136"
+      },
+      {
+        "name": "Dahmane El Harrachi - دحمان الحرّاشي",
+        "url": "https://genius.com/artists/Dahmane-el-harrachi",
+        "type": "regular",
+        "id": "979049"
+      },
+      {
+        "name": "DAIKI (AWSM.)",
+        "url": "https://genius.com/artists/Daiki-awsm",
+        "type": "regular",
+        "id": "1155535"
+      },
+      {
+        "name": "DAIMA",
+        "url": "https://genius.com/artists/Daima",
+        "type": "regular",
+        "id": "4320456"
+      },
+      {
+        "name": "ハセガワダイスケ (Daisuke Hasegawa)",
+        "url": "https://genius.com/artists/Daisuke-hasegawa",
+        "type": "regular",
+        "id": "1760389"
+      },
+      {
+        "name": "Daisuke Ishiwatari",
+        "url": "https://genius.com/artists/Daisuke-ishiwatari",
+        "type": "regular",
+        "id": "638813"
+      },
+      {
+        "name": "Daisy Jones & The Six",
+        "url": "https://genius.com/artists/Daisy-jones-and-the-six",
+        "type": "regular",
+        "id": "3119932"
+      },
+      {
+        "name": "Daisy the Great",
+        "url": "https://genius.com/artists/Daisy-the-great",
+        "type": "regular",
+        "id": "1255589"
+      },
+      {
+        "name": "Дайте танк (!) (Daite Tank)",
+        "url": "https://genius.com/artists/Daite-tank",
+        "type": "regular",
+        "id": "1417031"
+      },
+      {
+        "name": "DAK",
+        "url": "https://genius.com/artists/Dak",
+        "type": "regular",
+        "id": "2413689"
+      },
+      {
+        "name": "Dakait",
+        "url": "https://genius.com/artists/Dakait",
+        "type": "regular",
+        "id": "1773515"
+      },
+      {
+        "name": "DAKOOKA",
+        "url": "https://genius.com/artists/Dakooka",
+        "type": "regular",
+        "id": "1561009"
+      },
+      {
+        "name": "Daler Mehndi",
+        "url": "https://genius.com/artists/Daler-mehndi",
+        "type": "regular",
+        "id": "377714"
+      },
+      {
+        "name": "Dalex",
+        "url": "https://genius.com/artists/Dalex",
+        "type": "regular",
+        "id": "57724"
+      },
+      {
+        "name": "DALEXA",
+        "url": "https://genius.com/artists/Dalexa",
+        "type": "regular",
+        "id": "4294694"
+      },
+      {
+        "name": "Dalí (FR)",
+        "url": "https://genius.com/artists/Dali-fr",
+        "type": "regular",
+        "id": "3485099"
+      },
+      {
+        "name": "Dalida",
+        "url": "https://genius.com/artists/Dalida",
+        "type": "regular",
+        "id": "344905"
+      },
+      {
+        "name": "Dallas Holm",
+        "url": "https://genius.com/artists/Dallas-holm",
+        "type": "regular",
+        "id": "371169"
+      },
+      {
+        "name": "Ədalət Şükürov",
+        "url": "https://genius.com/artists/Dalt-sukurov",
+        "type": "regular",
+        "id": "2605391"
+      },
+      {
+        "name": "Damedot",
+        "url": "https://genius.com/artists/Damedot",
+        "type": "regular",
+        "id": "1177282"
+      },
+      {
+        "name": "Damian Marley",
+        "url": "https://genius.com/artists/Damian-marley",
+        "type": "regular",
+        "id": "1132"
+      },
+      {
+        "name": "Damien Rice",
+        "url": "https://genius.com/artists/Damien-rice",
+        "type": "regular",
+        "id": "86546"
+      },
+      {
+        "name": "The Damned",
+        "url": "https://genius.com/artists/The-damned",
+        "type": "regular",
+        "id": "36530"
+      },
+      {
+        "name": "Damn Yankees",
+        "url": "https://genius.com/artists/Damn-yankees",
+        "type": "regular",
+        "id": "183120"
+      },
+      {
+        "name": "​damon r.",
+        "url": "https://genius.com/artists/Damon-r",
+        "type": "regular",
+        "id": "3398930"
+      },
+      {
+        "name": "Dan Bălan",
+        "url": "https://genius.com/artists/Dan-balan",
+        "type": "regular",
+        "id": "378186"
+      },
+      {
+        "name": "Dan Bull",
+        "url": "https://genius.com/artists/Dan-bull",
+        "type": "regular",
+        "id": "19004"
+      },
+      {
+        "name": "Dance Gavin Dance",
+        "url": "https://genius.com/artists/Dance-gavin-dance",
+        "type": "regular",
+        "id": "49350"
+      },
+      {
+        "name": "Dancing Cow",
+        "url": "https://genius.com/artists/Dancing-cow",
+        "type": "regular",
+        "id": "3215090"
+      },
+      {
+        "name": "Dan Deacon",
+        "url": "https://genius.com/artists/Dan-deacon",
+        "type": "regular",
+        "id": "26484"
+      },
+      {
+        "name": "dandelion hands",
+        "url": "https://genius.com/artists/Dandelion-hands",
+        "type": "regular",
+        "id": "4023478"
+      },
+      {
+        "name": "Dan Domenech",
+        "url": "https://genius.com/artists/Dan-domenech",
+        "type": "regular",
+        "id": "4220264"
+      },
+      {
+        "name": "The Dandy Warhols",
+        "url": "https://genius.com/artists/The-dandy-warhols",
+        "type": "regular",
+        "id": "29202"
+      },
+      {
+        "name": "Dan Fogelberg",
+        "url": "https://genius.com/artists/Dan-fogelberg",
+        "type": "regular",
+        "id": "354424"
+      },
+      {
+        "name": "D'Angelo",
+        "url": "https://genius.com/artists/Dangelo",
+        "type": "regular",
+        "id": "2270"
+      },
+      {
+        "name": "D'Angelo and the Vanguard",
+        "url": "https://genius.com/artists/Dangelo-and-the-vanguard",
+        "type": "regular",
+        "id": "412248"
+      },
+      {
+        "name": "Danger Dan",
+        "url": "https://genius.com/artists/Danger-dan",
+        "type": "regular",
+        "id": "24783"
+      },
+      {
+        "name": "DANGERDOOM",
+        "url": "https://genius.com/artists/Dangerdoom",
+        "type": "regular",
+        "id": "1277"
+      },
+      {
+        "name": "Danger Mouse",
+        "url": "https://genius.com/artists/Danger-mouse",
+        "type": "regular",
+        "id": "8957"
+      },
+      {
+        "name": "Dangrangto",
+        "url": "https://genius.com/artists/Dangrangto",
+        "type": "regular",
+        "id": "2696965"
+      },
+      {
+        "name": "Dan Hartman",
+        "url": "https://genius.com/artists/Dan-hartman",
+        "type": "regular",
+        "id": "181829"
+      },
+      {
+        "name": "Danica Crnogorčević",
+        "url": "https://genius.com/artists/Danica-crnogorcevic",
+        "type": "regular",
+        "id": "3023127"
+      },
+      {
+        "name": "Daniel Bedingfield",
+        "url": "https://genius.com/artists/Daniel-bedingfield",
+        "type": "regular",
+        "id": "160298"
+      },
+      {
+        "name": "Daniel Cooney",
+        "url": "https://genius.com/artists/Daniel-cooney",
+        "type": "regular",
+        "id": "4220263"
+      },
+      {
+        "name": "Daniel Di Angelo",
+        "url": "https://genius.com/artists/Daniel-di-angelo",
+        "type": "regular",
+        "id": "1276078"
+      },
+      {
+        "name": "Daniel Everidge",
+        "url": "https://genius.com/artists/Daniel-everidge",
+        "type": "regular",
+        "id": "1277363"
+      },
+      {
+        "name": "Daniel Johnston",
+        "url": "https://genius.com/artists/Daniel-johnston",
+        "type": "regular",
+        "id": "30242"
+      },
+      {
+        "name": "Daniel Kim (김다니엘)",
+        "url": "https://genius.com/artists/Daniel-kim",
+        "type": "regular",
+        "id": "2587335"
+      },
+      {
+        "name": "Daniella Monet",
+        "url": "https://genius.com/artists/Daniella-monet",
+        "type": "regular",
+        "id": "2021495"
+      },
+      {
+        "name": "Daniel Lanois",
+        "url": "https://genius.com/artists/Daniel-lanois",
+        "type": "regular",
+        "id": "34285"
+      },
+      {
+        "name": "Danielle Ferland",
+        "url": "https://genius.com/artists/Danielle-ferland",
+        "type": "regular",
+        "id": "455366"
+      },
+      {
+        "name": "Danielle Hope",
+        "url": "https://genius.com/artists/Danielle-hope",
+        "type": "regular",
+        "id": "393875"
+      },
+      {
+        "name": "Daniel O'Donnell",
+        "url": "https://genius.com/artists/Daniel-odonnell",
+        "type": "regular",
+        "id": "354177"
+      },
+      {
+        "name": "Daniel Padilla",
+        "url": "https://genius.com/artists/Daniel-padilla",
+        "type": "regular",
+        "id": "382476"
+      },
+      {
+        "name": "Daniel Powter",
+        "url": "https://genius.com/artists/Daniel-powter",
+        "type": "regular",
+        "id": "20629"
+      },
+      {
+        "name": "Daniel Seavey",
+        "url": "https://genius.com/artists/Daniel-seavey",
+        "type": "regular",
+        "id": "1150051"
+      },
+      {
+        "name": "Daniel Shake",
+        "url": "https://genius.com/artists/Daniel-shake",
+        "type": "regular",
+        "id": "1214006"
+      },
+      {
+        "name": "Dani Faiv",
+        "url": "https://genius.com/artists/Dani-faiv",
+        "type": "regular",
+        "id": "1038863"
+      },
+      {
+        "name": "Dani Flow",
+        "url": "https://genius.com/artists/Dani-flow",
+        "type": "regular",
+        "id": "2069546"
+      },
+      {
+        "name": "Dani Gambino",
+        "url": "https://genius.com/artists/Dani-gambino",
+        "type": "regular",
+        "id": "1670644"
+      },
+      {
+        "name": "Dani Mocanu",
+        "url": "https://genius.com/artists/Dani-mocanu",
+        "type": "regular",
+        "id": "1511998"
+      },
+      {
+        "name": "Danna Paola",
+        "url": "https://genius.com/artists/Danna-paola",
+        "type": "regular",
+        "id": "358252"
+      },
+      {
+        "name": "Dan Navarro",
+        "url": "https://genius.com/artists/Dan-navarro",
+        "type": "regular",
+        "id": "553737"
+      },
+      {
+        "name": "Danny Bond",
+        "url": "https://genius.com/artists/Danny-bond",
+        "type": "regular",
+        "id": "453838"
+      },
+      {
+        "name": "Danny Brown",
+        "url": "https://genius.com/artists/Danny-brown",
+        "type": "regular",
+        "id": "1422"
+      },
+      {
+        "name": "Danny Elfman",
+        "url": "https://genius.com/artists/Danny-elfman",
+        "type": "regular",
+        "id": "62436"
+      },
+      {
+        "name": "Danny Gokey",
+        "url": "https://genius.com/artists/Danny-gokey",
+        "type": "regular",
+        "id": "370757"
+      },
+      {
+        "name": "Danny Kaye",
+        "url": "https://genius.com/artists/Danny-kaye",
+        "type": "regular",
+        "id": "363814"
+      },
+      {
+        "name": "DannyLux",
+        "url": "https://genius.com/artists/Dannylux",
+        "type": "regular",
+        "id": "2464477"
+      },
+      {
+        "name": "Danny Ocean",
+        "url": "https://genius.com/artists/Danny-ocean",
+        "type": "regular",
+        "id": "49549"
+      },
+      {
+        "name": "Danny O'Keefe",
+        "url": "https://genius.com/artists/Danny-okeefe",
+        "type": "regular",
+        "id": "360122"
+      },
+      {
+        "name": "Danny Pudi",
+        "url": "https://genius.com/artists/Danny-pudi",
+        "type": "regular",
+        "id": "15529"
+      },
+      {
+        "name": "Danny Vera",
+        "url": "https://genius.com/artists/Danny-vera",
+        "type": "regular",
+        "id": "458021"
+      },
+      {
+        "name": "Dano",
+        "url": "https://genius.com/artists/Dano",
+        "type": "regular",
+        "id": "54259"
+      },
+      {
+        "name": "Dan + Shay",
+        "url": "https://genius.com/artists/Dan-shay",
+        "type": "regular",
+        "id": "271199"
+      },
+      {
+        "name": "Dan Salvato",
+        "url": "https://genius.com/artists/Dan-salvato",
+        "type": "regular",
+        "id": "1244143"
+      },
+      {
+        "name": "Dan Schutte",
+        "url": "https://genius.com/artists/Dan-schutte",
+        "type": "regular",
+        "id": "484759"
+      },
+      {
+        "name": "Dan Seals",
+        "url": "https://genius.com/artists/Dan-seals",
+        "type": "regular",
+        "id": "255631"
+      },
+      {
+        "name": "Dan Stevens",
+        "url": "https://genius.com/artists/Dan-stevens",
+        "type": "regular",
+        "id": "1064730"
+      },
+      {
+        "name": "Dante YN",
+        "url": "https://genius.com/artists/Dante-yn",
+        "type": "regular",
+        "id": "2343825"
+      },
+      {
+        "name": "Danzig",
+        "url": "https://genius.com/artists/Danzig",
+        "type": "regular",
+        "id": "49962"
+      },
+      {
+        "name": "Daphne Rubin-Vega",
+        "url": "https://genius.com/artists/Daphne-rubin-vega",
+        "type": "regular",
+        "id": "367797"
+      },
+      {
+        "name": "DARA (BGR)",
+        "url": "https://genius.com/artists/Dara-bgr",
+        "type": "regular",
+        "id": "1778245"
+      },
+      {
+        "name": "Dara Bubamara",
+        "url": "https://genius.com/artists/Dara-bubamara",
+        "type": "regular",
+        "id": "453327"
+      },
+      {
+        "name": "Darby Cupit",
+        "url": "https://genius.com/artists/Darby-cupit",
+        "type": "regular",
+        "id": "1196393"
+      },
+      {
+        "name": "Darci",
+        "url": "https://genius.com/artists/Darci",
+        "type": "regular",
+        "id": "1084930"
+      },
+      {
+        "name": "Dardan",
+        "url": "https://genius.com/artists/Dardan",
+        "type": "regular",
+        "id": "1006113"
+      },
+      {
+        "name": "The Dare",
+        "url": "https://genius.com/artists/The-dare",
+        "type": "regular",
+        "id": "3262677"
+      },
+      {
+        "name": "Darell",
+        "url": "https://genius.com/artists/Darell",
+        "type": "regular",
+        "id": "269600"
+      },
+      {
+        "name": "Dargen D'Amico",
+        "url": "https://genius.com/artists/Dargen-damico",
+        "type": "regular",
+        "id": "163012"
+      },
+      {
+        "name": "Dariu$h (Rapper)",
+        "url": "https://genius.com/artists/Dariu-h-rapper",
+        "type": "regular",
+        "id": "65187"
+      },
+      {
+        "name": "Darius Rucker",
+        "url": "https://genius.com/artists/Darius-rucker",
+        "type": "regular",
+        "id": "21867"
+      },
+      {
+        "name": "Dark Divine",
+        "url": "https://genius.com/artists/Dark-divine",
+        "type": "regular",
+        "id": "3143013"
+      },
+      {
+        "name": "The Darkness",
+        "url": "https://genius.com/artists/The-darkness",
+        "type": "regular",
+        "id": "22667"
+      },
+      {
+        "name": "Darko Lazić",
+        "url": "https://genius.com/artists/Darko-lazic",
+        "type": "regular",
+        "id": "454448"
+      },
+      {
+        "name": "Darkoo",
+        "url": "https://genius.com/artists/Darkoo",
+        "type": "regular",
+        "id": "2009723"
+      },
+      {
+        "name": "Darko US",
+        "url": "https://genius.com/artists/Darko-us",
+        "type": "regular",
+        "id": "2200370"
+      },
+      {
+        "name": "Dark Polo Gang",
+        "url": "https://genius.com/artists/Dark-polo-gang",
+        "type": "regular",
+        "id": "576120"
+      },
+      {
+        "name": "тёмный принц (darkprinceee)",
+        "url": "https://genius.com/artists/Darkprinceee",
+        "type": "regular",
+        "id": "4121823"
+      },
+      {
+        "name": "Darkthrone",
+        "url": "https://genius.com/artists/Darkthrone",
+        "type": "regular",
+        "id": "353722"
+      },
+      {
+        "name": "Darlene Zschech",
+        "url": "https://genius.com/artists/Darlene-zschech",
+        "type": "regular",
+        "id": "235245"
+      },
+      {
+        "name": "Daron Malakian and Scars On Broadway",
+        "url": "https://genius.com/artists/Daron-malakian-and-scars-on-broadway",
+        "type": "regular",
+        "id": "259336"
+      },
+      {
+        "name": "Darpo",
+        "url": "https://genius.com/artists/Darpo",
+        "type": "regular",
+        "id": "3493829"
+      },
+      {
+        "name": "Darren Criss",
+        "url": "https://genius.com/artists/Darren-criss",
+        "type": "regular",
+        "id": "66624"
+      },
+      {
+        "name": "Darren Espanto",
+        "url": "https://genius.com/artists/Darren-espanto",
+        "type": "regular",
+        "id": "405628"
+      },
+      {
+        "name": "Darren Hayes",
+        "url": "https://genius.com/artists/Darren-hayes",
+        "type": "regular",
+        "id": "123531"
+      },
+      {
+        "name": "Darren Holden",
+        "url": "https://genius.com/artists/Darren-holden",
+        "type": "regular",
+        "id": "4407285"
+      },
+      {
+        "name": "Darren Korb",
+        "url": "https://genius.com/artists/Darren-korb",
+        "type": "regular",
+        "id": "207650"
+      },
+      {
+        "name": "Darshan Raval",
+        "url": "https://genius.com/artists/Darshan-raval",
+        "type": "regular",
+        "id": "1702767"
+      },
+      {
+        "name": "​dArtagnan",
+        "url": "https://genius.com/artists/Dartagnan",
+        "type": "regular",
+        "id": "1208384"
+      },
+      {
+        "name": "daryana",
+        "url": "https://genius.com/artists/Daryana",
+        "type": "regular",
+        "id": "3476369"
+      },
+      {
+        "name": "Daryl Hall & John Oates",
+        "url": "https://genius.com/artists/Daryl-hall-and-john-oates",
+        "type": "regular",
+        "id": "49926"
+      },
+      {
+        "name": "Dascha Polanco",
+        "url": "https://genius.com/artists/Dascha-polanco",
+        "type": "regular",
+        "id": "1727478"
+      },
+      {
+        "name": "Dasha",
+        "url": "https://genius.com/artists/Dasha",
+        "type": "regular",
+        "id": "34120"
+      },
+      {
+        "name": "Dashboard Confessional",
+        "url": "https://genius.com/artists/Dashboard-confessional",
+        "type": "regular",
+        "id": "60171"
+      },
+      {
+        "name": "Das Sound Machine",
+        "url": "https://genius.com/artists/Das-sound-machine",
+        "type": "regular",
+        "id": "406496"
+      },
+      {
+        "name": "DATA404",
+        "url": "https://genius.com/artists/Data404",
+        "type": "regular",
+        "id": "2882051"
+      },
+      {
+        "name": "Dato’ Sri Siti Nurhaliza",
+        "url": "https://genius.com/artists/Dato-sri-siti-nurhaliza",
+        "type": "regular",
+        "id": "1595647"
+      },
+      {
+        "name": "Daughter",
+        "url": "https://genius.com/artists/Daughter",
+        "type": "regular",
+        "id": "35483"
+      },
+      {
+        "name": "Daughters",
+        "url": "https://genius.com/artists/Daughters",
+        "type": "regular",
+        "id": "80230"
+      },
+      {
+        "name": "Daughtry",
+        "url": "https://genius.com/artists/Daughtry",
+        "type": "regular",
+        "id": "7802"
+      },
+      {
+        "name": "Dauner",
+        "url": "https://genius.com/artists/Dauner",
+        "type": "regular",
+        "id": "1218974"
+      },
+      {
+        "name": "Dave",
+        "url": "https://genius.com/artists/Dave",
+        "type": "regular",
+        "id": "628723"
+      },
+      {
+        "name": "Dave Blunts",
+        "url": "https://genius.com/artists/Dave-blunts",
+        "type": "regular",
+        "id": "2514585"
+      },
+      {
+        "name": "Dave East",
+        "url": "https://genius.com/artists/Dave-east",
+        "type": "regular",
+        "id": "103654"
+      },
+      {
+        "name": "Dave Malloy",
+        "url": "https://genius.com/artists/Dave-malloy",
+        "type": "regular",
+        "id": "627032"
+      },
+      {
+        "name": "Dave Matthews",
+        "url": "https://genius.com/artists/Dave-matthews",
+        "type": "regular",
+        "id": "6930"
+      },
+      {
+        "name": "Dave Matthews Band",
+        "url": "https://genius.com/artists/Dave-matthews-band",
+        "type": "regular",
+        "id": "18451"
+      },
+      {
+        "name": "Dave Rodgers",
+        "url": "https://genius.com/artists/Dave-rodgers",
+        "type": "regular",
+        "id": "369543"
+      },
+      {
+        "name": "Dave Van Ronk",
+        "url": "https://genius.com/artists/Dave-van-ronk",
+        "type": "regular",
+        "id": "61934"
+      },
+      {
+        "name": "DAVI",
+        "url": "https://genius.com/artists/Davi",
+        "type": "regular",
+        "id": "1080912"
+      },
+      {
+        "name": "David Allan Coe",
+        "url": "https://genius.com/artists/David-allan-coe",
+        "type": "regular",
+        "id": "332250"
+      },
+      {
+        "name": "David & Nicole Binion",
+        "url": "https://genius.com/artists/David-and-nicole-binion",
+        "type": "regular",
+        "id": "532482"
+      },
+      {
+        "name": "David Archuleta",
+        "url": "https://genius.com/artists/David-archuleta",
+        "type": "regular",
+        "id": "60096"
+      },
+      {
+        "name": "David Baker",
+        "url": "https://genius.com/artists/David-baker",
+        "type": "regular",
+        "id": "580577"
+      },
+      {
+        "name": "David Banner",
+        "url": "https://genius.com/artists/David-banner",
+        "type": "regular",
+        "id": "383"
+      },
+      {
+        "name": "David Brymer",
+        "url": "https://genius.com/artists/David-brymer",
+        "type": "regular",
+        "id": "452676"
+      },
+      {
+        "name": "David Burt",
+        "url": "https://genius.com/artists/David-burt",
+        "type": "regular",
+        "id": "384006"
+      },
+      {
+        "name": "David Byrne",
+        "url": "https://genius.com/artists/David-byrne",
+        "type": "regular",
+        "id": "12994"
+      },
+      {
+        "name": "David Crowder Band",
+        "url": "https://genius.com/artists/David-crowder-band",
+        "type": "regular",
+        "id": "1212420"
+      },
+      {
+        "name": "David Dennis",
+        "url": "https://genius.com/artists/David-dennis",
+        "type": "regular",
+        "id": "2632615"
+      },
+      {
+        "name": "David Firth",
+        "url": "https://genius.com/artists/David-firth",
+        "type": "regular",
+        "id": "1682183"
+      },
+      {
+        "name": "David Foster",
+        "url": "https://genius.com/artists/David-foster",
+        "type": "regular",
+        "id": "58311"
+      },
+      {
+        "name": "David Ganly",
+        "url": "https://genius.com/artists/David-ganly",
+        "type": "regular",
+        "id": "1992522"
+      },
+      {
+        "name": "David Gilmour",
+        "url": "https://genius.com/artists/David-gilmour",
+        "type": "regular",
+        "id": "33622"
+      },
+      {
+        "name": "David Gray",
+        "url": "https://genius.com/artists/David-gray",
+        "type": "regular",
+        "id": "78829"
+      },
+      {
+        "name": "David Grisman",
+        "url": "https://genius.com/artists/David-grisman",
+        "type": "regular",
+        "id": "360339"
+      },
+      {
+        "name": "David Kushner",
+        "url": "https://genius.com/artists/David-kushner",
+        "type": "regular",
+        "id": "153163"
+      },
+      {
+        "name": "David Lee Roth",
+        "url": "https://genius.com/artists/David-lee-roth",
+        "type": "regular",
+        "id": "164956"
+      },
+      {
+        "name": "David O’Dowda",
+        "url": "https://genius.com/artists/David-odowda",
+        "type": "regular",
+        "id": "455816"
+      },
+      {
+        "name": "David Pomeranz",
+        "url": "https://genius.com/artists/David-pomeranz",
+        "type": "regular",
+        "id": "358800"
+      },
+      {
+        "name": "David Seville",
+        "url": "https://genius.com/artists/David-seville",
+        "type": "regular",
+        "id": "97178"
+      },
+      {
+        "name": "David Shawty",
+        "url": "https://genius.com/artists/David-shawty",
+        "type": "regular",
+        "id": "1017463"
+      },
+      {
+        "name": "David Slater",
+        "url": "https://genius.com/artists/David-slater",
+        "type": "regular",
+        "id": "389542"
+      },
+      {
+        "name": "David Sylvian",
+        "url": "https://genius.com/artists/David-sylvian",
+        "type": "regular",
+        "id": "343879"
+      },
+      {
+        "name": "Davut Güloğlu",
+        "url": "https://genius.com/artists/Davut-guloglu",
+        "type": "regular",
+        "id": "2310945"
+      },
+      {
+        "name": "Dawes",
+        "url": "https://genius.com/artists/Dawes",
+        "type": "regular",
+        "id": "23706"
+      },
+      {
+        "name": "Dawid Podsiadło",
+        "url": "https://genius.com/artists/Dawid-podsiado",
+        "type": "regular",
+        "id": "221947"
+      },
+      {
+        "name": "The Dawn (PHL)",
+        "url": "https://genius.com/artists/The-dawn-phl",
+        "type": "regular",
+        "id": "171947"
+      },
+      {
+        "name": "Dax",
+        "url": "https://genius.com/artists/Dax",
+        "type": "regular",
+        "id": "16711"
+      },
+      {
+        "name": "DAY6",
+        "url": "https://genius.com/artists/Day6",
+        "type": "regular",
+        "id": "893747"
+      },
+      {
+        "name": "Daya",
+        "url": "https://genius.com/artists/Daya",
+        "type": "regular",
+        "id": "508218"
+      },
+      {
+        "name": "Dayang Nurfaizah",
+        "url": "https://genius.com/artists/Dayang-nurfaizah",
+        "type": "regular",
+        "id": "1100670"
+      },
+      {
+        "name": "daybe",
+        "url": "https://genius.com/artists/Daybe",
+        "type": "regular",
+        "id": "2018505"
+      },
+      {
+        "name": "D’Aydrian Harding",
+        "url": "https://genius.com/artists/Daydrian-harding",
+        "type": "regular",
+        "id": "3322020"
+      },
+      {
+        "name": "Dayerteq",
+        "url": "https://genius.com/artists/Dayerteq",
+        "type": "regular",
+        "id": "3610018"
+      },
+      {
+        "name": "Dayglow",
+        "url": "https://genius.com/artists/Dayglow",
+        "type": "regular",
+        "id": "1486849"
+      },
+      {
+        "name": "Daylyt",
+        "url": "https://genius.com/artists/Daylyt",
+        "type": "regular",
+        "id": "52688"
+      },
+      {
+        "name": "Dayseeker",
+        "url": "https://genius.com/artists/Dayseeker",
+        "type": "regular",
+        "id": "406061"
+      },
+      {
+        "name": "Days N' Daze",
+        "url": "https://genius.com/artists/Days-n-daze",
+        "type": "regular",
+        "id": "453489"
+      },
+      {
+        "name": "A Day to Remember",
+        "url": "https://genius.com/artists/A-day-to-remember",
+        "type": "regular",
+        "id": "16783"
+      },
+      {
+        "name": "Daz Dillinger",
+        "url": "https://genius.com/artists/Daz-dillinger",
+        "type": "regular",
+        "id": "3431"
+      },
+      {
+        "name": "Dazey and the Scouts",
+        "url": "https://genius.com/artists/Dazey-and-the-scouts",
+        "type": "regular",
+        "id": "1201859"
+      },
+      {
+        "name": "D-azy (TUR)",
+        "url": "https://genius.com/artists/D-azy-tur",
+        "type": "regular",
+        "id": "1642814"
+      },
+      {
+        "name": "The Dazzlings",
+        "url": "https://genius.com/artists/The-dazzlings",
+        "type": "regular",
+        "id": "2136713"
+      },
+      {
+        "name": "D'Banj",
+        "url": "https://genius.com/artists/Dbanj",
+        "type": "regular",
+        "id": "13407"
+      },
+      {
+        "name": "D.Basto",
+        "url": "https://genius.com/artists/Dbasto",
+        "type": "regular",
+        "id": "2729162"
+      },
+      {
+        "name": "D-Block Europe",
+        "url": "https://genius.com/artists/D-block-europe",
+        "type": "regular",
+        "id": "1183830"
+      },
+      {
+        "name": "DC2Trill",
+        "url": "https://genius.com/artists/Dc2trill",
+        "type": "regular",
+        "id": "1969715"
+      },
+      {
+        "name": "DC3",
+        "url": "https://genius.com/artists/Dc3",
+        "type": "regular",
+        "id": "3007296"
+      },
+      {
+        "name": "DC Talk",
+        "url": "https://genius.com/artists/Dc-talk",
+        "type": "regular",
+        "id": "5080"
+      },
+      {
+        "name": "DC The Don",
+        "url": "https://genius.com/artists/Dc-the-don",
+        "type": "regular",
+        "id": "1149640"
+      },
+      {
+        "name": "DCUP",
+        "url": "https://genius.com/artists/Dcup",
+        "type": "regular",
+        "id": "455174"
+      },
+      {
+        "name": "D.D.E.",
+        "url": "https://genius.com/artists/Dde",
+        "type": "regular",
+        "id": "365776"
+      },
+      {
+        "name": "DDG",
+        "url": "https://genius.com/artists/Ddg",
+        "type": "regular",
+        "id": "1081422"
+      },
+      {
+        "name": "DD Osama",
+        "url": "https://genius.com/artists/Dd-osama",
+        "type": "regular",
+        "id": "3230884"
+      },
+      {
+        "name": "ДДТ (DDT)",
+        "url": "https://genius.com/artists/Ddt",
+        "type": "regular",
+        "id": "1498047"
+      },
+      {
+        "name": "Deacon Blue",
+        "url": "https://genius.com/artists/Deacon-blue",
+        "type": "regular",
+        "id": "39107"
+      },
+      {
+        "name": "DEAD BLONDE",
+        "url": "https://genius.com/artists/Dead-blonde",
+        "type": "regular",
+        "id": "2109675"
+      },
+      {
+        "name": "Dead Calm",
+        "url": "https://genius.com/artists/Dead-calm",
+        "type": "regular",
+        "id": "3681387"
+      },
+      {
+        "name": "Dead Can Dance",
+        "url": "https://genius.com/artists/Dead-can-dance",
+        "type": "regular",
+        "id": "54034"
+      },
+      {
+        "name": "Dead Dawg",
+        "url": "https://genius.com/artists/Dead-dawg",
+        "type": "regular",
+        "id": "1415448"
+      },
+      {
+        "name": "Deadeye Dick",
+        "url": "https://genius.com/artists/Deadeye-dick",
+        "type": "regular",
+        "id": "367730"
+      },
+      {
+        "name": "Dead Kennedys",
+        "url": "https://genius.com/artists/Dead-kennedys",
+        "type": "regular",
+        "id": "19853"
+      },
+      {
+        "name": "deadmau5",
+        "url": "https://genius.com/artists/Deadmau5",
+        "type": "regular",
+        "id": "743"
+      },
+      {
+        "name": "The Dead Milkmen",
+        "url": "https://genius.com/artists/The-dead-milkmen",
+        "type": "regular",
+        "id": "20619"
+      },
+      {
+        "name": "Dead or Alive",
+        "url": "https://genius.com/artists/Dead-or-alive",
+        "type": "regular",
+        "id": "349148"
+      },
+      {
+        "name": "Dead Poet Society",
+        "url": "https://genius.com/artists/Dead-poet-society",
+        "type": "regular",
+        "id": "1134434"
+      },
+      {
+        "name": "dead prez",
+        "url": "https://genius.com/artists/Dead-prez",
+        "type": "regular",
+        "id": "236"
+      },
+      {
+        "name": "The Dead South",
+        "url": "https://genius.com/artists/The-dead-south",
+        "type": "regular",
+        "id": "676266"
+      },
+      {
+        "name": "Deafheaven",
+        "url": "https://genius.com/artists/Deafheaven",
+        "type": "regular",
+        "id": "53101"
+      },
+      {
+        "name": "DEAN (딘)",
+        "url": "https://genius.com/artists/Dean",
+        "type": "regular",
+        "id": "589362"
+      },
+      {
+        "name": "Dean Blunt",
+        "url": "https://genius.com/artists/Dean-blunt",
+        "type": "regular",
+        "id": "366792"
+      },
+      {
+        "name": "Dean Lewis",
+        "url": "https://genius.com/artists/Dean-lewis",
+        "type": "regular",
+        "id": "1026378"
+      },
+      {
+        "name": "Dean Martin",
+        "url": "https://genius.com/artists/Dean-martin",
+        "type": "regular",
+        "id": "29189"
+      },
+      {
+        "name": "Dearheart42",
+        "url": "https://genius.com/artists/Dearheart42",
+        "type": "regular",
+        "id": "2393673"
+      },
+      {
+        "name": "The Dear Hunter",
+        "url": "https://genius.com/artists/The-dear-hunter",
+        "type": "regular",
+        "id": "109536"
+      },
+      {
+        "name": "Death",
+        "url": "https://genius.com/artists/Death",
+        "type": "regular",
+        "id": "1129717"
+      },
+      {
+        "name": "'Death Becomes Her' Original Broadway Cast",
+        "url": "https://genius.com/artists/Death-becomes-her-original-broadway-cast",
+        "type": "regular",
+        "id": "4205899"
+      },
+      {
+        "name": "DeathbyRomy",
+        "url": "https://genius.com/artists/Deathbyromy",
+        "type": "regular",
+        "id": "1408596"
+      },
+      {
+        "name": "Death Cab for Cutie",
+        "url": "https://genius.com/artists/Death-cab-for-cutie",
+        "type": "regular",
+        "id": "22559"
+      },
+      {
+        "name": "Death Grips",
+        "url": "https://genius.com/artists/Death-grips",
+        "type": "regular",
+        "id": "11778"
+      },
+      {
+        "name": "Death in June",
+        "url": "https://genius.com/artists/Death-in-june",
+        "type": "regular",
+        "id": "343632"
+      },
+      {
+        "name": "​death's dynamic shroud",
+        "url": "https://genius.com/artists/Deaths-dynamic-shroud",
+        "type": "regular",
+        "id": "1580405"
+      },
+      {
+        "name": "DeBarge",
+        "url": "https://genius.com/artists/Debarge",
+        "type": "regular",
+        "id": "282404"
+      },
+      {
+        "name": "Debbie Gibson",
+        "url": "https://genius.com/artists/Debbie-gibson",
+        "type": "regular",
+        "id": "210767"
+      },
+      {
+        "name": "Debbie Reynolds",
+        "url": "https://genius.com/artists/Debbie-reynolds",
+        "type": "regular",
+        "id": "370616"
+      },
+      {
+        "name": "Deborah Cox",
+        "url": "https://genius.com/artists/Deborah-cox",
+        "type": "regular",
+        "id": "8598"
+      },
+      {
+        "name": "The Debut: Dream Academy",
+        "url": "https://genius.com/artists/The-debut-dream-academy",
+        "type": "regular",
+        "id": "3724712"
+      },
+      {
+        "name": "Decalius",
+        "url": "https://genius.com/artists/Decalius",
+        "type": "regular",
+        "id": "3772309"
+      },
+      {
+        "name": "December Avenue",
+        "url": "https://genius.com/artists/December-avenue",
+        "type": "regular",
+        "id": "480475"
+      },
+      {
+        "name": "The Decemberists",
+        "url": "https://genius.com/artists/The-decemberists",
+        "type": "regular",
+        "id": "21125"
+      },
+      {
+        "name": "Declan McKenna",
+        "url": "https://genius.com/artists/Declan-mckenna",
+        "type": "regular",
+        "id": "586623"
+      },
+      {
+        "name": "DECO*27",
+        "url": "https://genius.com/artists/Deco27",
+        "type": "regular",
+        "id": "373451"
+      },
+      {
+        "name": "DeCody",
+        "url": "https://genius.com/artists/Decody",
+        "type": "regular",
+        "id": "3111824"
+      },
+      {
+        "name": "Dedublüman",
+        "url": "https://genius.com/artists/Dedubluman",
+        "type": "regular",
+        "id": "2907658"
+      },
+      {
+        "name": "DeeBaby",
+        "url": "https://genius.com/artists/Deebaby",
+        "type": "regular",
+        "id": "1760589"
+      },
+      {
+        "name": "Dee Billz",
+        "url": "https://genius.com/artists/Dee-billz",
+        "type": "regular",
+        "id": "3031111"
+      },
+      {
+        "name": "Deee-Lite",
+        "url": "https://genius.com/artists/Deee-lite",
+        "type": "regular",
+        "id": "23107"
+      },
+      {
+        "name": "DEE GLOKK",
+        "url": "https://genius.com/artists/Dee-glokk",
+        "type": "regular",
+        "id": "3910343"
+      },
+      {
+        "name": "Deejay Telio",
+        "url": "https://genius.com/artists/Deejay-telio",
+        "type": "regular",
+        "id": "1206990"
+      },
+      {
+        "name": "Deemz",
+        "url": "https://genius.com/artists/Deemz",
+        "type": "regular",
+        "id": "159755"
+      },
+      {
+        "name": "Dee Mula",
+        "url": "https://genius.com/artists/Dee-mula",
+        "type": "regular",
+        "id": "1306774"
+      },
+      {
+        "name": "Deep Blue Something",
+        "url": "https://genius.com/artists/Deep-blue-something",
+        "type": "regular",
+        "id": "49592"
+      },
+      {
+        "name": "DEEP-EX-SENSE",
+        "url": "https://genius.com/artists/Deep-ex-sense",
+        "type": "regular",
+        "id": "461389"
+      },
+      {
+        "name": "Dee Play4Keeps",
+        "url": "https://genius.com/artists/Dee-play4keeps",
+        "type": "regular",
+        "id": "2926601"
+      },
+      {
+        "name": "Deep Purple",
+        "url": "https://genius.com/artists/Deep-purple",
+        "type": "regular",
+        "id": "34310"
+      },
+      {
+        "name": "Deerhoof",
+        "url": "https://genius.com/artists/Deerhoof",
+        "type": "regular",
+        "id": "188108"
+      },
+      {
+        "name": "Deeski (Producer)",
+        "url": "https://genius.com/artists/Deeski-producer",
+        "type": "regular",
+        "id": "3972628"
+      },
+      {
+        "name": "DeeVoe",
+        "url": "https://genius.com/artists/Deevoe",
+        "type": "regular",
+        "id": "2057098"
+      },
+      {
+        "name": "Def Jam Recordings World Tour: Poland",
+        "url": "https://genius.com/artists/Def-jam-recordings-world-tour-poland",
+        "type": "regular",
+        "id": "3940641"
+      },
+      {
+        "name": "Defkhan",
+        "url": "https://genius.com/artists/Defkhan",
+        "type": "regular",
+        "id": "24949"
+      },
+      {
+        "name": "Def Leppard",
+        "url": "https://genius.com/artists/Def-leppard",
+        "type": "regular",
+        "id": "38335"
+      },
+      {
+        "name": "def rebel",
+        "url": "https://genius.com/artists/Def-rebel",
+        "type": "regular",
+        "id": "2251749"
+      },
+      {
+        "name": "DEHA INC.",
+        "url": "https://genius.com/artists/Deha-inc",
+        "type": "regular",
+        "id": "2437757"
+      },
+      {
+        "name": "Deichkind",
+        "url": "https://genius.com/artists/Deichkind",
+        "type": "regular",
+        "id": "36209"
+      },
+      {
+        "name": "Dei V",
+        "url": "https://genius.com/artists/Dei-v",
+        "type": "regular",
+        "id": "2766192"
+      },
+      {
+        "name": "Džej",
+        "url": "https://genius.com/artists/Dzej",
+        "type": "regular",
+        "id": "479287"
+      },
+      {
+        "name": "Dejan Matić",
+        "url": "https://genius.com/artists/Dejan-matic",
+        "type": "regular",
+        "id": "460347"
+      },
+      {
+        "name": "De Jeugd van Tegenwoordig",
+        "url": "https://genius.com/artists/De-jeugd-van-tegenwoordig",
+        "type": "regular",
+        "id": "18140"
+      },
+      {
+        "name": "Džejla Ramović",
+        "url": "https://genius.com/artists/Dzejla-ramovic",
+        "type": "regular",
+        "id": "2041233"
+      },
+      {
+        "name": "DeJ Loaf",
+        "url": "https://genius.com/artists/Dej-loaf",
+        "type": "regular",
+        "id": "222357"
+      },
+      {
+        "name": "dekma",
+        "url": "https://genius.com/artists/Dekma",
+        "type": "regular",
+        "id": "1890157"
+      },
+      {
+        "name": "De Lacure",
+        "url": "https://genius.com/artists/De-lacure",
+        "type": "regular",
+        "id": "1847437"
+      },
+      {
+        "name": "De La Ghetto",
+        "url": "https://genius.com/artists/De-la-ghetto",
+        "type": "regular",
+        "id": "72601"
+      },
+      {
+        "name": "Delaney Bailey",
+        "url": "https://genius.com/artists/Delaney-bailey",
+        "type": "regular",
+        "id": "2291409"
+      },
+      {
+        "name": "Delaossa",
+        "url": "https://genius.com/artists/Delaossa",
+        "type": "regular",
+        "id": "1468067"
+      },
+      {
+        "name": "De La Rose",
+        "url": "https://genius.com/artists/De-la-rose",
+        "type": "regular",
+        "id": "2993048"
+      },
+      {
+        "name": "Delarue",
+        "url": "https://genius.com/artists/Delarue",
+        "type": "regular",
+        "id": "1886496"
+      },
+      {
+        "name": "De La Soul",
+        "url": "https://genius.com/artists/De-la-soul",
+        "type": "regular",
+        "id": "225"
+      },
+      {
+        "name": "Delerium",
+        "url": "https://genius.com/artists/Delerium",
+        "type": "regular",
+        "id": "309145"
+      },
+      {
+        "name": "Deleted Artist",
+        "url": "https://genius.com/artists/Deleted-artist",
+        "type": "regular",
+        "id": "2849883"
+      },
+      {
+        "name": "The Delfonics",
+        "url": "https://genius.com/artists/The-delfonics",
+        "type": "regular",
+        "id": "12323"
+      },
+      {
+        "name": "Delia",
+        "url": "https://genius.com/artists/Delia",
+        "type": "regular",
+        "id": "395949"
+      },
+      {
+        "name": "Delil",
+        "url": "https://genius.com/artists/Delil",
+        "type": "regular",
+        "id": "1319442"
+      },
+      {
+        "name": "​deLillos",
+        "url": "https://genius.com/artists/Delillos",
+        "type": "regular",
+        "id": "356098"
+      },
+      {
+        "name": "Deliric",
+        "url": "https://genius.com/artists/Deliric",
+        "type": "regular",
+        "id": "552703"
+      },
+      {
+        "name": "Delirious?",
+        "url": "https://genius.com/artists/Delirious",
+        "type": "regular",
+        "id": "168408"
+      },
+      {
+        "name": "DELLAFUENTE",
+        "url": "https://genius.com/artists/Dellafuente",
+        "type": "regular",
+        "id": "463998"
+      },
+      {
+        "name": "Dell Mac",
+        "url": "https://genius.com/artists/Dell-mac",
+        "type": "regular",
+        "id": "2925514"
+      },
+      {
+        "name": "Del the Funky Homosapien",
+        "url": "https://genius.com/artists/Del-the-funky-homosapien",
+        "type": "regular",
+        "id": "1012"
+      },
+      {
+        "name": "Deltron 3030",
+        "url": "https://genius.com/artists/Deltron-3030",
+        "type": "regular",
+        "id": "675"
+      },
+      {
+        "name": "Del Water Gap",
+        "url": "https://genius.com/artists/Del-water-gap",
+        "type": "regular",
+        "id": "1029220"
+      },
+      {
+        "name": "Demarco Flamenco",
+        "url": "https://genius.com/artists/Demarco-flamenco",
+        "type": "regular",
+        "id": "1304140"
+      },
+      {
+        "name": "Demet Akalın",
+        "url": "https://genius.com/artists/Demet-akaln",
+        "type": "regular",
+        "id": "479252"
+      },
+      {
+        "name": "Demet Özdemir",
+        "url": "https://genius.com/artists/Demet-ozdemir",
+        "type": "regular",
+        "id": "2143310"
+      },
+      {
+        "name": "Dem Franchize Boyz",
+        "url": "https://genius.com/artists/Dem-franchize-boyz",
+        "type": "regular",
+        "id": "1251"
+      },
+      {
+        "name": "Demi Lovato",
+        "url": "https://genius.com/artists/Demi-lovato",
+        "type": "regular",
+        "id": "13531"
+      },
+      {
+        "name": "Demis Roussos",
+        "url": "https://genius.com/artists/Demis-roussos",
+        "type": "regular",
+        "id": "344028"
+      },
+      {
+        "name": "Demon Hunter",
+        "url": "https://genius.com/artists/Demon-hunter",
+        "type": "regular",
+        "id": "94437"
+      },
+      {
+        "name": "De Mthuda",
+        "url": "https://genius.com/artists/De-mthuda",
+        "type": "regular",
+        "id": "2339740"
+      },
+      {
+        "name": "demxntia",
+        "url": "https://genius.com/artists/Demxntia",
+        "type": "regular",
+        "id": "1176116"
+      },
+      {
+        "name": "Dženan Lončarević",
+        "url": "https://genius.com/artists/Dzenan-loncarevic",
+        "type": "regular",
+        "id": "530051"
+      },
+      {
+        "name": "Deniece Williams",
+        "url": "https://genius.com/artists/Deniece-williams",
+        "type": "regular",
+        "id": "2686"
+      },
+      {
+        "name": "Denise Julia",
+        "url": "https://genius.com/artists/Denise-julia",
+        "type": "regular",
+        "id": "2709774"
+      },
+      {
+        "name": "Денис Майданов (Denis Maidanov)",
+        "url": "https://genius.com/artists/Denis-maidanov",
+        "type": "regular",
+        "id": "2006791"
+      },
+      {
+        "name": "Deniz Seki",
+        "url": "https://genius.com/artists/Deniz-seki",
+        "type": "regular",
+        "id": "370018"
+      },
+      {
+        "name": "DENNIS",
+        "url": "https://genius.com/artists/Dennis",
+        "type": "regular",
+        "id": "264404"
+      },
+      {
+        "name": "Dennis Brown",
+        "url": "https://genius.com/artists/Dennis-brown",
+        "type": "regular",
+        "id": "34750"
+      },
+      {
+        "name": "Dennis Diaz",
+        "url": "https://genius.com/artists/Dennis-diaz",
+        "type": "regular",
+        "id": "2886283"
+      },
+      {
+        "name": "Dennis Jernigan",
+        "url": "https://genius.com/artists/Dennis-jernigan",
+        "type": "regular",
+        "id": "371523"
+      },
+      {
+        "name": "Dennis Lloyd",
+        "url": "https://genius.com/artists/Dennis-lloyd",
+        "type": "regular",
+        "id": "1064869"
+      },
+      {
+        "name": "Denzel Curry",
+        "url": "https://genius.com/artists/Denzel-curry",
+        "type": "regular",
+        "id": "16690"
+      },
+      {
+        "name": "Deorro",
+        "url": "https://genius.com/artists/Deorro",
+        "type": "regular",
+        "id": "155057"
+      },
+      {
+        "name": "Depeche Mode",
+        "url": "https://genius.com/artists/Depeche-mode",
+        "type": "regular",
+        "id": "943"
+      },
+      {
+        "name": "Depresión Sonora",
+        "url": "https://genius.com/artists/Depresion-sonora",
+        "type": "regular",
+        "id": "2263831"
+      },
+      {
+        "name": "Dept (뎁트)",
+        "url": "https://genius.com/artists/Dept",
+        "type": "regular",
+        "id": "2448756"
+      },
+      {
+        "name": "Dequina Moore",
+        "url": "https://genius.com/artists/Dequina-moore",
+        "type": "regular",
+        "id": "990135"
+      },
+      {
+        "name": "Derald Cannon Jr.",
+        "url": "https://genius.com/artists/Derald-cannon-jr",
+        "type": "regular",
+        "id": "1944099"
+      },
+      {
+        "name": "Derek",
+        "url": "https://genius.com/artists/Derek",
+        "type": "regular",
+        "id": "15747"
+      },
+      {
+        "name": "Derek and the Dominos",
+        "url": "https://genius.com/artists/Derek-and-the-dominos",
+        "type": "regular",
+        "id": "41916"
+      },
+      {
+        "name": "Derek Klena",
+        "url": "https://genius.com/artists/Derek-klena",
+        "type": "regular",
+        "id": "661606"
+      },
+      {
+        "name": "Derek Minor",
+        "url": "https://genius.com/artists/Derek-minor",
+        "type": "regular",
+        "id": "54032"
+      },
+      {
+        "name": "Derik Fein",
+        "url": "https://genius.com/artists/Derik-fein",
+        "type": "regular",
+        "id": "1453071"
+      },
+      {
+        "name": "Derivakat",
+        "url": "https://genius.com/artists/Derivakat",
+        "type": "regular",
+        "id": "2483850"
+      },
+      {
+        "name": "Dermot Kennedy",
+        "url": "https://genius.com/artists/Dermot-kennedy",
+        "type": "regular",
+        "id": "656224"
+      },
+      {
+        "name": "Derya Bedavacı",
+        "url": "https://genius.com/artists/Derya-bedavac",
+        "type": "regular",
+        "id": "1917664"
+      },
+      {
+        "name": "Der Yavuz",
+        "url": "https://genius.com/artists/Der-yavuz",
+        "type": "regular",
+        "id": "3532136"
+      },
+      {
+        "name": "Descendents",
+        "url": "https://genius.com/artists/Descendents",
+        "type": "regular",
+        "id": "44950"
+      },
+      {
+        "name": "DESH",
+        "url": "https://genius.com/artists/Desh",
+        "type": "regular",
+        "id": "2697492"
+      },
+      {
+        "name": "Desiigner",
+        "url": "https://genius.com/artists/Desiigner",
+        "type": "regular",
+        "id": "626678"
+      },
+      {
+        "name": "Desingerica",
+        "url": "https://genius.com/artists/Desingerica",
+        "type": "regular",
+        "id": "3259499"
+      },
+      {
+        "name": "Desmond Dekker",
+        "url": "https://genius.com/artists/Desmond-dekker",
+        "type": "regular",
+        "id": "24053"
+      },
+      {
+        "name": "Despina Vandi",
+        "url": "https://genius.com/artists/Despina-vandi",
+        "type": "regular",
+        "id": "355917"
+      },
+      {
+        "name": "Despo Rutti",
+        "url": "https://genius.com/artists/Despo-rutti",
+        "type": "regular",
+        "id": "1750"
+      },
+      {
+        "name": "Des'ree",
+        "url": "https://genius.com/artists/Desree",
+        "type": "regular",
+        "id": "361521"
+      },
+      {
+        "name": "DESTIN CONRAD",
+        "url": "https://genius.com/artists/Destin-conrad",
+        "type": "regular",
+        "id": "2012684"
+      },
+      {
+        "name": "Destiny's Child",
+        "url": "https://genius.com/artists/Destinys-child",
+        "type": "regular",
+        "id": "2831"
+      },
+      {
+        "name": "DESTROY BORING",
+        "url": "https://genius.com/artists/Destroy-boring",
+        "type": "regular",
+        "id": "3562309"
+      },
+      {
+        "name": "Destroy Boys",
+        "url": "https://genius.com/artists/Destroy-boys",
+        "type": "regular",
+        "id": "1233140"
+      },
+      {
+        "name": "Destroyer",
+        "url": "https://genius.com/artists/Destroyer",
+        "type": "regular",
+        "id": "16351"
+      },
+      {
+        "name": "Dethklok",
+        "url": "https://genius.com/artists/Dethklok",
+        "type": "regular",
+        "id": "72511"
+      },
+      {
+        "name": "Децл (Detsl aka Le Truk)",
+        "url": "https://genius.com/artists/Detsl-aka-le-truk",
+        "type": "regular",
+        "id": "1043446"
+      },
+      {
+        "name": "Dev",
+        "url": "https://genius.com/artists/Dev",
+        "type": "regular",
+        "id": "1038"
+      },
+      {
+        "name": "Devendra Banhart",
+        "url": "https://genius.com/artists/Devendra-banhart",
+        "type": "regular",
+        "id": "71175"
+      },
+      {
+        "name": "DEVILISH TRIO",
+        "url": "https://genius.com/artists/Devilish-trio",
+        "type": "regular",
+        "id": "1029951"
+      },
+      {
+        "name": "The Devil Makes Three",
+        "url": "https://genius.com/artists/The-devil-makes-three",
+        "type": "regular",
+        "id": "197014"
+      },
+      {
+        "name": "The Devil Wears Prada",
+        "url": "https://genius.com/artists/The-devil-wears-prada",
+        "type": "regular",
+        "id": "21361"
+      },
+      {
+        "name": "Devi McCallion",
+        "url": "https://genius.com/artists/Devi-mccallion",
+        "type": "regular",
+        "id": "1415632"
+      },
+      {
+        "name": "Devin the Dude",
+        "url": "https://genius.com/artists/Devin-the-dude",
+        "type": "regular",
+        "id": "416"
+      },
+      {
+        "name": "Devi Sri Prasad",
+        "url": "https://genius.com/artists/Devi-sri-prasad",
+        "type": "regular",
+        "id": "455667"
+      },
+      {
+        "name": "Dev Lemons",
+        "url": "https://genius.com/artists/Dev-lemons",
+        "type": "regular",
+        "id": "2334489"
+      },
+      {
+        "name": "Devo",
+        "url": "https://genius.com/artists/Devo",
+        "type": "regular",
+        "id": "70215"
+      },
+      {
+        "name": "Devon Gabriella",
+        "url": "https://genius.com/artists/Devon-gabriella",
+        "type": "regular",
+        "id": "3045596"
+      },
+      {
+        "name": "Devon Hendryx",
+        "url": "https://genius.com/artists/Devon-hendryx",
+        "type": "regular",
+        "id": "401266"
+      },
+      {
+        "name": "Devstacks",
+        "url": "https://genius.com/artists/Devstacks",
+        "type": "regular",
+        "id": "1728276"
+      },
+      {
+        "name": "Dewa",
+        "url": "https://genius.com/artists/Dewa",
+        "type": "regular",
+        "id": "479888"
+      },
+      {
+        "name": "Dewa 19",
+        "url": "https://genius.com/artists/Dewa-19",
+        "type": "regular",
+        "id": "279875"
+      },
+      {
+        "name": "Dexta Daps",
+        "url": "https://genius.com/artists/Dexta-daps",
+        "type": "regular",
+        "id": "484175"
+      },
+      {
+        "name": "Dexys",
+        "url": "https://genius.com/artists/Dexys",
+        "type": "regular",
+        "id": "75256"
+      },
+      {
+        "name": "Dez Duron",
+        "url": "https://genius.com/artists/Dez-duron",
+        "type": "regular",
+        "id": "66553"
+      },
+      {
+        "name": "DFZM",
+        "url": "https://genius.com/artists/Dfzm",
+        "type": "regular",
+        "id": "3671752"
+      },
+      {
+        "name": "Dhanda Nyoliwala",
+        "url": "https://genius.com/artists/Dhanda-nyoliwala",
+        "type": "regular",
+        "id": "3704167"
+      },
+      {
+        "name": "DHeusta",
+        "url": "https://genius.com/artists/Dheusta",
+        "type": "regular",
+        "id": "1494278"
+      },
+      {
+        "name": "​dhruv",
+        "url": "https://genius.com/artists/Dhruv",
+        "type": "regular",
+        "id": "1864530"
+      },
+      {
+        "name": "Dhurata Dora",
+        "url": "https://genius.com/artists/Dhurata-dora",
+        "type": "regular",
+        "id": "151161"
+      },
+      {
+        "name": "Dialryckx",
+        "url": "https://genius.com/artists/Dialryckx",
+        "type": "regular",
+        "id": "4371928"
+      },
+      {
+        "name": "Diamond Platnumz",
+        "url": "https://genius.com/artists/Diamond-platnumz",
+        "type": "regular",
+        "id": "529925"
+      },
+      {
+        "name": "Diamond Rio",
+        "url": "https://genius.com/artists/Diamond-rio",
+        "type": "regular",
+        "id": "330739"
+      },
+      {
+        "name": "DiamondsOnMyDick",
+        "url": "https://genius.com/artists/Diamondsonmydick",
+        "type": "regular",
+        "id": "1047976"
+      },
+      {
+        "name": "Diam's",
+        "url": "https://genius.com/artists/Diams",
+        "type": "regular",
+        "id": "12061"
+      },
+      {
+        "name": "Диана Арбенина (Diana Arbenina)",
+        "url": "https://genius.com/artists/Diana-arbenina",
+        "type": "regular",
+        "id": "1524190"
+      },
+      {
+        "name": "Diana Krall",
+        "url": "https://genius.com/artists/Diana-krall",
+        "type": "regular",
+        "id": "310322"
+      },
+      {
+        "name": "Diana Rivera-Herrans",
+        "url": "https://genius.com/artists/Diana-rivera-herrans",
+        "type": "regular",
+        "id": "4180911"
+      },
+      {
+        "name": "Diana Ross",
+        "url": "https://genius.com/artists/Diana-ross",
+        "type": "regular",
+        "id": "65182"
+      },
+      {
+        "name": "Diane Guerrero",
+        "url": "https://genius.com/artists/Diane-guerrero",
+        "type": "regular",
+        "id": "2965214"
+      },
+      {
+        "name": "Dianne Reeves",
+        "url": "https://genius.com/artists/Dianne-reeves",
+        "type": "regular",
+        "id": "358831"
+      },
+      {
+        "name": "Diary Of A Wimpy Kid Ensemble",
+        "url": "https://genius.com/artists/Diary-of-a-wimpy-kid-ensemble",
+        "type": "regular",
+        "id": "3771393"
+      },
+      {
+        "name": "Dice & K9",
+        "url": "https://genius.com/artists/Dice-and-k9",
+        "type": "regular",
+        "id": "383955"
+      },
+      {
+        "name": "DICE (THA)",
+        "url": "https://genius.com/artists/Dice-tha",
+        "type": "regular",
+        "id": "3879662"
+      },
+      {
+        "name": "李迪文 (Dick Lee)",
+        "url": "https://genius.com/artists/Dick-lee",
+        "type": "regular",
+        "id": "1533126"
+      },
+      {
+        "name": "Dick Van Dyke",
+        "url": "https://genius.com/artists/Dick-van-dyke",
+        "type": "regular",
+        "id": "247043"
+      },
+      {
+        "name": "Diddy",
+        "url": "https://genius.com/artists/Diddy",
+        "type": "regular",
+        "id": "82"
+      },
+      {
+        "name": "Diddy – Dirty Money",
+        "url": "https://genius.com/artists/Diddy-dirty-money",
+        "type": "regular",
+        "id": "350633"
+      },
+      {
+        "name": "Didi B",
+        "url": "https://genius.com/artists/Didi-b",
+        "type": "regular",
+        "id": "56648"
+      },
+      {
+        "name": "Didine Canon 16",
+        "url": "https://genius.com/artists/Didine-canon-16",
+        "type": "regular",
+        "id": "556025"
+      },
+      {
+        "name": "Dido",
+        "url": "https://genius.com/artists/Dido",
+        "type": "regular",
+        "id": "435"
+      },
+      {
+        "name": "Die anonyme Giddarischde",
+        "url": "https://genius.com/artists/Die-anonyme-giddarischde",
+        "type": "regular",
+        "id": "351168"
+      },
+      {
+        "name": "Die Antwoord",
+        "url": "https://genius.com/artists/Die-antwoord",
+        "type": "regular",
+        "id": "2032"
+      },
+      {
+        "name": "Die Fantastischen Vier",
+        "url": "https://genius.com/artists/Die-fantastischen-vier",
+        "type": "regular",
+        "id": "21467"
+      },
+      {
+        "name": "Diego 900",
+        "url": "https://genius.com/artists/Diego-900",
+        "type": "regular",
+        "id": "2038005"
+      },
+      {
+        "name": "Diego Gonzalez (USA)",
+        "url": "https://genius.com/artists/Diego-gonzalez-usa",
+        "type": "regular",
+        "id": "3449042"
+      },
+      {
+        "name": "Diego Luna",
+        "url": "https://genius.com/artists/Diego-luna",
+        "type": "regular",
+        "id": "455369"
+      },
+      {
+        "name": "Die Prinzen",
+        "url": "https://genius.com/artists/Die-prinzen",
+        "type": "regular",
+        "id": "288260"
+      },
+      {
+        "name": "Dierks Bentley",
+        "url": "https://genius.com/artists/Dierks-bentley",
+        "type": "regular",
+        "id": "58622"
+      },
+      {
+        "name": "Die Ärzte",
+        "url": "https://genius.com/artists/Die-arzte",
+        "type": "regular",
+        "id": "69293"
+      },
+      {
+        "name": "Die Toten Hosen",
+        "url": "https://genius.com/artists/Die-toten-hosen",
+        "type": "regular",
+        "id": "67105"
+      },
+      {
+        "name": "Digable Planets",
+        "url": "https://genius.com/artists/Digable-planets",
+        "type": "regular",
+        "id": "1502"
+      },
+      {
+        "name": "DigBar",
+        "url": "https://genius.com/artists/Digbar",
+        "type": "regular",
+        "id": "2818760"
+      },
+      {
+        "name": "Di Genius",
+        "url": "https://genius.com/artists/Di-genius",
+        "type": "regular",
+        "id": "69949"
+      },
+      {
+        "name": "Digga D",
+        "url": "https://genius.com/artists/Digga-d",
+        "type": "regular",
+        "id": "1236061"
+      },
+      {
+        "name": "Diggy Graves",
+        "url": "https://genius.com/artists/Diggy-graves",
+        "type": "regular",
+        "id": "3514683"
+      },
+      {
+        "name": "Digital Underground",
+        "url": "https://genius.com/artists/Digital-underground",
+        "type": "regular",
+        "id": "668"
+      },
+      {
+        "name": "Diho",
+        "url": "https://genius.com/artists/Diho",
+        "type": "regular",
+        "id": "323595"
+      },
+      {
+        "name": "​Dijon",
+        "url": "https://genius.com/artists/Dijon",
+        "type": "regular",
+        "id": "57189"
+      },
+      {
+        "name": "DIKKA",
+        "url": "https://genius.com/artists/Dikka",
+        "type": "regular",
+        "id": "2433675"
+      },
+      {
+        "name": "diklor",
+        "url": "https://genius.com/artists/Diklor",
+        "type": "regular",
+        "id": "2706787"
+      },
+      {
+        "name": "Dilaw",
+        "url": "https://genius.com/artists/Dilaw",
+        "type": "regular",
+        "id": "468526"
+      },
+      {
+        "name": "DILBLIN",
+        "url": "https://genius.com/artists/Dilblin",
+        "type": "regular",
+        "id": "3104594"
+      },
+      {
+        "name": "Diljit Dosanjh",
+        "url": "https://genius.com/artists/Diljit-dosanjh",
+        "type": "regular",
+        "id": "67489"
+      },
+      {
+        "name": "The Dillinger Escape Plan",
+        "url": "https://genius.com/artists/The-dillinger-escape-plan",
+        "type": "regular",
+        "id": "53795"
+      },
+      {
+        "name": "Dillom",
+        "url": "https://genius.com/artists/Dillom",
+        "type": "regular",
+        "id": "1636407"
+      },
+      {
+        "name": "Дима Билан (Dima Bilan)",
+        "url": "https://genius.com/artists/Dima-bilan",
+        "type": "regular",
+        "id": "12163"
+      },
+      {
+        "name": "Декодер (Dima Decoder)",
+        "url": "https://genius.com/artists/Dima-decoder",
+        "type": "regular",
+        "id": "3267827"
+      },
+      {
+        "name": "Диман Брюханов (Diman Brukhanov)",
+        "url": "https://genius.com/artists/Diman-brukhanov",
+        "type": "regular",
+        "id": "2890482"
+      },
+      {
+        "name": "Dimash Qudaibergen",
+        "url": "https://genius.com/artists/Dimash-qudaibergen",
+        "type": "regular",
+        "id": "1563613"
+      },
+      {
+        "name": "Dimitri Vegas & Like Mike",
+        "url": "https://genius.com/artists/Dimitri-vegas-and-like-mike",
+        "type": "regular",
+        "id": "350871"
+      },
+      {
+        "name": "Dimmu Borgir",
+        "url": "https://genius.com/artists/Dimmu-borgir",
+        "type": "regular",
+        "id": "174288"
+      },
+      {
+        "name": "Dinah Shore",
+        "url": "https://genius.com/artists/Dinah-shore",
+        "type": "regular",
+        "id": "343916"
+      },
+      {
+        "name": "Dinah Washington",
+        "url": "https://genius.com/artists/Dinah-washington",
+        "type": "regular",
+        "id": "49636"
+      },
+      {
+        "name": "Dinamarca",
+        "url": "https://genius.com/artists/Dinamarca",
+        "type": "regular",
+        "id": "984306"
+      },
+      {
+        "name": "丁禹兮 (Ding Yuxi)",
+        "url": "https://genius.com/artists/Ding-yuxi",
+        "type": "regular",
+        "id": "4198476"
+      },
+      {
+        "name": "Dino Dvornik",
+        "url": "https://genius.com/artists/Dino-dvornik",
+        "type": "regular",
+        "id": "354347"
+      },
+      {
+        "name": "Dino James",
+        "url": "https://genius.com/artists/Dino-james",
+        "type": "regular",
+        "id": "1481789"
+      },
+      {
+        "name": "Dino Merlin",
+        "url": "https://genius.com/artists/Dino-merlin",
+        "type": "regular",
+        "id": "12133"
+      },
+      {
+        "name": "Dinos",
+        "url": "https://genius.com/artists/Dinos",
+        "type": "regular",
+        "id": "14806"
+      },
+      {
+        "name": "Dinosaur Jr.",
+        "url": "https://genius.com/artists/Dinosaur-jr",
+        "type": "regular",
+        "id": "5114"
+      },
+      {
+        "name": "Dio",
+        "url": "https://genius.com/artists/Dio",
+        "type": "regular",
+        "id": "4059607"
+      },
+      {
+        "name": "Diomedes Diaz",
+        "url": "https://genius.com/artists/Diomedes-diaz",
+        "type": "regular",
+        "id": "402440"
+      },
+      {
+        "name": "Dion",
+        "url": "https://genius.com/artists/Dion",
+        "type": "regular",
+        "id": "2825"
+      },
+      {
+        "name": "Dionela",
+        "url": "https://genius.com/artists/Dionela",
+        "type": "regular",
+        "id": "3220527"
+      },
+      {
+        "name": "Dionne Warwick",
+        "url": "https://genius.com/artists/Dionne-warwick",
+        "type": "regular",
+        "id": "8674"
+      },
+      {
+        "name": "Diorvsyou",
+        "url": "https://genius.com/artists/Diorvsyou",
+        "type": "regular",
+        "id": "2205871"
+      },
+      {
+        "name": "Diplo",
+        "url": "https://genius.com/artists/Diplo",
+        "type": "regular",
+        "id": "12908"
+      },
+      {
+        "name": "The Diplomats",
+        "url": "https://genius.com/artists/The-diplomats",
+        "type": "regular",
+        "id": "80"
+      },
+      {
+        "name": "Dire Straits",
+        "url": "https://genius.com/artists/Dire-straits",
+        "type": "regular",
+        "id": "34365"
+      },
+      {
+        "name": "Dirty Heads",
+        "url": "https://genius.com/artists/Dirty-heads",
+        "type": "regular",
+        "id": "19161"
+      },
+      {
+        "name": "Dirty Suc",
+        "url": "https://genius.com/artists/Dirty-suc",
+        "type": "regular",
+        "id": "1838747"
+      },
+      {
+        "name": "Disarstar",
+        "url": "https://genius.com/artists/Disarstar",
+        "type": "regular",
+        "id": "26604"
+      },
+      {
+        "name": "Disciples",
+        "url": "https://genius.com/artists/Disciples",
+        "type": "regular",
+        "id": "340319"
+      },
+      {
+        "name": "Disclosure",
+        "url": "https://genius.com/artists/Disclosure",
+        "type": "regular",
+        "id": "43384"
+      },
+      {
+        "name": "Disco Lines",
+        "url": "https://genius.com/artists/Disco-lines",
+        "type": "regular",
+        "id": "2418663"
+      },
+      {
+        "name": "Disembodied Tyrant",
+        "url": "https://genius.com/artists/Disembodied-tyrant",
+        "type": "regular",
+        "id": "3200238"
+      },
+      {
+        "name": "Dishwalla",
+        "url": "https://genius.com/artists/Dishwalla",
+        "type": "regular",
+        "id": "106452"
+      },
+      {
+        "name": "Disiz",
+        "url": "https://genius.com/artists/Disiz",
+        "type": "regular",
+        "id": "2252"
+      },
+      {
+        "name": "Diskoria",
+        "url": "https://genius.com/artists/Diskoria",
+        "type": "regular",
+        "id": "1734916"
+      },
+      {
+        "name": "Дискотека Авария (Diskoteka Avaria)",
+        "url": "https://genius.com/artists/Diskoteka-avaria",
+        "type": "regular",
+        "id": "1171108"
+      },
+      {
+        "name": "The Dismemberment Plan",
+        "url": "https://genius.com/artists/The-dismemberment-plan",
+        "type": "regular",
+        "id": "45867"
+      },
+      {
+        "name": "Disney",
+        "url": "https://genius.com/artists/Disney",
+        "type": "regular",
+        "id": "358722"
+      },
+      {
+        "name": "Disney Chorus",
+        "url": "https://genius.com/artists/Disney-chorus",
+        "type": "regular",
+        "id": "380014"
+      },
+      {
+        "name": "Disney Jr.",
+        "url": "https://genius.com/artists/Disney-jr",
+        "type": "regular",
+        "id": "3003400"
+      },
+      {
+        "name": "Disneyland Children's Chorus",
+        "url": "https://genius.com/artists/Disneyland-childrens-chorus",
+        "type": "regular",
+        "id": "455708"
+      },
+      {
+        "name": "Disney's Snow White - Ensemble",
+        "url": "https://genius.com/artists/Disneys-snow-white-ensemble",
+        "type": "regular",
+        "id": "4351487"
+      },
+      {
+        "name": "Disney Studio Chorus",
+        "url": "https://genius.com/artists/Disney-studio-chorus",
+        "type": "regular",
+        "id": "2222863"
+      },
+      {
+        "name": "Dispatch",
+        "url": "https://genius.com/artists/Dispatch",
+        "type": "regular",
+        "id": "57265"
+      },
+      {
+        "name": "Dissection",
+        "url": "https://genius.com/artists/Dissection",
+        "type": "regular",
+        "id": "220127"
+      },
+      {
+        "name": "Diss Gacha",
+        "url": "https://genius.com/artists/Diss-gacha",
+        "type": "regular",
+        "id": "2177448"
+      },
+      {
+        "name": "The Distillers",
+        "url": "https://genius.com/artists/The-distillers",
+        "type": "regular",
+        "id": "67199"
+      },
+      {
+        "name": "Disturbed",
+        "url": "https://genius.com/artists/Disturbed",
+        "type": "regular",
+        "id": "28631"
+      },
+      {
+        "name": "Édith Piaf",
+        "url": "https://genius.com/artists/Edith-piaf",
+        "type": "regular",
+        "id": "350904"
+      },
+      {
+        "name": "Divanhana",
+        "url": "https://genius.com/artists/Divanhana",
+        "type": "regular",
+        "id": "2981387"
+      },
+      {
+        "name": "Divide Music",
+        "url": "https://genius.com/artists/Divide-music",
+        "type": "regular",
+        "id": "1432839"
+      },
+      {
+        "name": "DIVINE",
+        "url": "https://genius.com/artists/Divine",
+        "type": "regular",
+        "id": "1191283"
+      },
+      {
+        "name": "The Divine Comedy",
+        "url": "https://genius.com/artists/The-divine-comedy",
+        "type": "regular",
+        "id": "124798"
+      },
+      {
+        "name": "Divinyls",
+        "url": "https://genius.com/artists/Divinyls",
+        "type": "regular",
+        "id": "47180"
+      },
+      {
+        "name": "Divlje jagode",
+        "url": "https://genius.com/artists/Divlje-jagode",
+        "type": "regular",
+        "id": "358299"
+      },
+      {
+        "name": "Divya Kumar",
+        "url": "https://genius.com/artists/Divya-kumar",
+        "type": "regular",
+        "id": "406018"
+      },
+      {
+        "name": "Dixie",
+        "url": "https://genius.com/artists/Dixie",
+        "type": "regular",
+        "id": "2297506"
+      },
+      {
+        "name": "The Dixie Cups",
+        "url": "https://genius.com/artists/The-dixie-cups",
+        "type": "regular",
+        "id": "364115"
+      },
+      {
+        "name": "Dixon Dallas",
+        "url": "https://genius.com/artists/Dixon-dallas",
+        "type": "regular",
+        "id": "3574579"
+      },
+      {
+        "name": "Dizzee Rascal",
+        "url": "https://genius.com/artists/Dizzee-rascal",
+        "type": "regular",
+        "id": "1393"
+      },
+      {
+        "name": "Dizzy",
+        "url": "https://genius.com/artists/Dizzy",
+        "type": "regular",
+        "id": "1682901"
+      },
+      {
+        "name": "Dizzy DROS",
+        "url": "https://genius.com/artists/Dizzy-dros",
+        "type": "regular",
+        "id": "71279"
+      },
+      {
+        "name": "DizzyEight",
+        "url": "https://genius.com/artists/Dizzyeight",
+        "type": "regular",
+        "id": "1181320"
+      },
+      {
+        "name": "Djadja & Dinaz",
+        "url": "https://genius.com/artists/Djadja-and-dinaz",
+        "type": "regular",
+        "id": "327448"
+      },
+      {
+        "name": "Django",
+        "url": "https://genius.com/artists/Django",
+        "type": "regular",
+        "id": "985064"
+      },
+      {
+        "name": "Djani",
+        "url": "https://genius.com/artists/Djani",
+        "type": "regular",
+        "id": "301160"
+      },
+      {
+        "name": "DJ Billybool",
+        "url": "https://genius.com/artists/Dj-billybool",
+        "type": "regular",
+        "id": "3795982"
+      },
+      {
+        "name": "DJ Damyan",
+        "url": "https://genius.com/artists/Dj-damyan",
+        "type": "regular",
+        "id": "3578056"
+      },
+      {
+        "name": "DJ Diamond Kuts",
+        "url": "https://genius.com/artists/Dj-diamond-kuts",
+        "type": "regular",
+        "id": "1594834"
+      },
+      {
+        "name": "DJ Drama",
+        "url": "https://genius.com/artists/Dj-drama",
+        "type": "regular",
+        "id": "301"
+      },
+      {
+        "name": "DJ ESCO",
+        "url": "https://genius.com/artists/Dj-esco",
+        "type": "regular",
+        "id": "49470"
+      },
+      {
+        "name": "Djexon",
+        "url": "https://genius.com/artists/Djexon",
+        "type": "regular",
+        "id": "253082"
+      },
+      {
+        "name": "DJEZJA",
+        "url": "https://genius.com/artists/Djezja",
+        "type": "regular",
+        "id": "973689"
+      },
+      {
+        "name": "DJ Flippp",
+        "url": "https://genius.com/artists/Dj-flippp",
+        "type": "regular",
+        "id": "663701"
+      },
+      {
+        "name": "dj gummy bear",
+        "url": "https://genius.com/artists/Dj-gummy-bear",
+        "type": "regular",
+        "id": "3552195"
+      },
+      {
+        "name": "DJ Harsh",
+        "url": "https://genius.com/artists/Dj-harsh",
+        "type": "regular",
+        "id": "199045"
+      },
+      {
+        "name": "DJ Jazzy Jeff & The Fresh Prince",
+        "url": "https://genius.com/artists/Dj-jazzy-jeff-and-the-fresh-prince",
+        "type": "regular",
+        "id": "348422"
+      },
+      {
+        "name": "Dj Junior Sales",
+        "url": "https://genius.com/artists/Dj-junior-sales",
+        "type": "regular",
+        "id": "4201074"
+      },
+      {
+        "name": "DJ Kawest",
+        "url": "https://genius.com/artists/Dj-kawest",
+        "type": "regular",
+        "id": "3593413"
+      },
+      {
+        "name": "DJ Kay Slay",
+        "url": "https://genius.com/artists/Dj-kay-slay",
+        "type": "regular",
+        "id": "2046"
+      },
+      {
+        "name": "DJ Khaled",
+        "url": "https://genius.com/artists/Dj-khaled",
+        "type": "regular",
+        "id": "158"
+      },
+      {
+        "name": "DJ Lag",
+        "url": "https://genius.com/artists/Dj-lag",
+        "type": "regular",
+        "id": "1577782"
+      },
+      {
+        "name": "DJ Link",
+        "url": "https://genius.com/artists/Dj-link",
+        "type": "regular",
+        "id": "1438246"
+      },
+      {
+        "name": "DJ Luian",
+        "url": "https://genius.com/artists/Dj-luian",
+        "type": "regular",
+        "id": "461475"
+      },
+      {
+        "name": "DJ Mac",
+        "url": "https://genius.com/artists/Dj-mac",
+        "type": "regular",
+        "id": "1142727"
+      },
+      {
+        "name": "DJ Maphorisa",
+        "url": "https://genius.com/artists/Dj-maphorisa",
+        "type": "regular",
+        "id": "816604"
+      },
+      {
+        "name": "DJ Muggs",
+        "url": "https://genius.com/artists/Dj-muggs",
+        "type": "regular",
+        "id": "5273"
+      },
+      {
+        "name": "DJ Myke",
+        "url": "https://genius.com/artists/Dj-myke",
+        "type": "regular",
+        "id": "294036"
+      },
+      {
+        "name": "Djo",
+        "url": "https://genius.com/artists/Djo",
+        "type": "regular",
+        "id": "180747"
+      },
+      {
+        "name": "DJ Paul",
+        "url": "https://genius.com/artists/Dj-paul",
+        "type": "regular",
+        "id": "5339"
+      },
+      {
+        "name": "DJ PHAT",
+        "url": "https://genius.com/artists/Dj-phat",
+        "type": "regular",
+        "id": "351384"
+      },
+      {
+        "name": "DJ Premier",
+        "url": "https://genius.com/artists/Dj-premier",
+        "type": "regular",
+        "id": "2260"
+      },
+      {
+        "name": "DJ Quik",
+        "url": "https://genius.com/artists/Dj-quik",
+        "type": "regular",
+        "id": "217"
+      },
+      {
+        "name": "DJ SA",
+        "url": "https://genius.com/artists/Dj-sa",
+        "type": "regular",
+        "id": "2843861"
+      },
+      {
+        "name": "DJ Scheme",
+        "url": "https://genius.com/artists/Dj-scheme",
+        "type": "regular",
+        "id": "1231120"
+      },
+      {
+        "name": "DJ Screw",
+        "url": "https://genius.com/artists/Dj-screw",
+        "type": "regular",
+        "id": "5367"
+      },
+      {
+        "name": "DJ Shadow",
+        "url": "https://genius.com/artists/Dj-shadow",
+        "type": "regular",
+        "id": "5407"
+      },
+      {
+        "name": "DJ Shocca",
+        "url": "https://genius.com/artists/Dj-shocca",
+        "type": "regular",
+        "id": "211278"
+      },
+      {
+        "name": "DJ Smash",
+        "url": "https://genius.com/artists/Dj-smash",
+        "type": "regular",
+        "id": "327516"
+      },
+      {
+        "name": "Djsmell",
+        "url": "https://genius.com/artists/Djsmell",
+        "type": "regular",
+        "id": "634920"
+      },
+      {
+        "name": "DJ Smokey",
+        "url": "https://genius.com/artists/Dj-smokey",
+        "type": "regular",
+        "id": "36018"
+      },
+      {
+        "name": "DJ Snake",
+        "url": "https://genius.com/artists/Dj-snake",
+        "type": "regular",
+        "id": "41287"
+      },
+      {
+        "name": "DJ Stonik1917",
+        "url": "https://genius.com/artists/Dj-stonik1917",
+        "type": "regular",
+        "id": "3685123"
+      },
+      {
+        "name": "DJ Tchouzen",
+        "url": "https://genius.com/artists/Dj-tchouzen",
+        "type": "regular",
+        "id": "4033463"
+      },
+      {
+        "name": "dj trippie flameboy",
+        "url": "https://genius.com/artists/Dj-trippie-flameboy",
+        "type": "regular",
+        "id": "3478234"
+      },
+      {
+        "name": "DJ Ötzi",
+        "url": "https://genius.com/artists/Dj-otzi",
+        "type": "regular",
+        "id": "173077"
+      },
+      {
+        "name": "DK",
+        "url": "https://genius.com/artists/Dk",
+        "type": "regular",
+        "id": "1167232"
+      },
+      {
+        "name": "Dlala Thukzin",
+        "url": "https://genius.com/artists/Dlala-thukzin",
+        "type": "regular",
+        "id": "2631985"
+      },
+      {
+        "name": "Dú Maroc",
+        "url": "https://genius.com/artists/Du-maroc",
+        "type": "regular",
+        "id": "29157"
+      },
+      {
+        "name": "DM DOKURO",
+        "url": "https://genius.com/artists/Dm-dokuro",
+        "type": "regular",
+        "id": "1488922"
+      },
+      {
+        "name": "Дмитрий Маликов (Dmitry Malikov)",
+        "url": "https://genius.com/artists/Dmitry-malikov",
+        "type": "regular",
+        "id": "1140339"
+      },
+      {
+        "name": "​дмитрий уткин (dmitry utkin)",
+        "url": "https://genius.com/artists/Dmitry-utkin",
+        "type": "regular",
+        "id": "3305677"
+      },
+      {
+        "name": "DMS",
+        "url": "https://genius.com/artists/Dms",
+        "type": "regular",
+        "id": "36517"
+      },
+      {
+        "name": "dmtboy",
+        "url": "https://genius.com/artists/Dmtboy",
+        "type": "regular",
+        "id": "1087445"
+      },
+      {
+        "name": "DMX",
+        "url": "https://genius.com/artists/Dmx",
+        "type": "regular",
+        "id": "77"
+      },
+      {
+        "name": "DNCE",
+        "url": "https://genius.com/artists/Dnce",
+        "type": "regular",
+        "id": "565381"
+      },
+      {
+        "name": "Dobie Gray",
+        "url": "https://genius.com/artists/Dobie-gray",
+        "type": "regular",
+        "id": "18918"
+      },
+      {
+        "name": "Doble Porcion",
+        "url": "https://genius.com/artists/Doble-porcion",
+        "type": "regular",
+        "id": "1050455"
+      },
+      {
+        "name": "Doc Watson",
+        "url": "https://genius.com/artists/Doc-watson",
+        "type": "regular",
+        "id": "355758"
+      },
+      {
+        "name": "dodie",
+        "url": "https://genius.com/artists/Dodie",
+        "type": "regular",
+        "id": "338841"
+      },
+      {
+        "name": "D.O. (Doh Kyung Soo)",
+        "url": "https://genius.com/artists/Do-doh-kyung-soo",
+        "type": "regular",
+        "id": "1177115"
+      },
+      {
+        "name": "Dodo Nyoka",
+        "url": "https://genius.com/artists/Dodo-nyoka",
+        "type": "regular",
+        "id": "3789497"
+      },
+      {
+        "name": "Doe Boy",
+        "url": "https://genius.com/artists/Doe-boy",
+        "type": "regular",
+        "id": "3095"
+      },
+      {
+        "name": "Doe Maar",
+        "url": "https://genius.com/artists/Doe-maar",
+        "type": "regular",
+        "id": "66322"
+      },
+      {
+        "name": "Tha Dogg Pound",
+        "url": "https://genius.com/artists/Tha-dogg-pound",
+        "type": "regular",
+        "id": "464"
+      },
+      {
+        "name": "Dogma (Metal)",
+        "url": "https://genius.com/artists/Dogma-metal",
+        "type": "regular",
+        "id": "3643758"
+      },
+      {
+        "name": "Dokken",
+        "url": "https://genius.com/artists/Dokken",
+        "type": "regular",
+        "id": "357579"
+      },
+      {
+        "name": "Doli",
+        "url": "https://genius.com/artists/Doli",
+        "type": "regular",
+        "id": "338900"
+      },
+      {
+        "name": "DOLLA (MYS)",
+        "url": "https://genius.com/artists/Dolla-mys",
+        "type": "regular",
+        "id": "2455913"
+      },
+      {
+        "name": "Dollar Prync",
+        "url": "https://genius.com/artists/Dollar-prync",
+        "type": "regular",
+        "id": "1703597"
+      },
+      {
+        "name": "Dollypran",
+        "url": "https://genius.com/artists/Dollypran",
+        "type": "regular",
+        "id": "1474400"
+      },
+      {
+        "name": "Дельфин (Dolphin)",
+        "url": "https://genius.com/artists/Dolphin",
+        "type": "regular",
+        "id": "19433"
+      },
+      {
+        "name": "Dolu Kadehi Ters Tut",
+        "url": "https://genius.com/artists/Dolu-kadehi-ters-tut",
+        "type": "regular",
+        "id": "1255393"
+      },
+      {
+        "name": "Doly Flackko",
+        "url": "https://genius.com/artists/Doly-flackko",
+        "type": "regular",
+        "id": "2651229"
+      },
+      {
+        "name": "Dom Corleo",
+        "url": "https://genius.com/artists/Dom-corleo",
+        "type": "regular",
+        "id": "1661798"
+      },
+      {
+        "name": "Dom Dolla",
+        "url": "https://genius.com/artists/Dom-dolla",
+        "type": "regular",
+        "id": "1164675"
+      },
+      {
+        "name": "Domenico Modugno",
+        "url": "https://genius.com/artists/Domenico-modugno",
+        "type": "regular",
+        "id": "50153"
+      },
+      {
+        "name": "Dom Guyot",
+        "url": "https://genius.com/artists/Dom-guyot",
+        "type": "regular",
+        "id": "2094566"
+      },
+      {
+        "name": "Dominic Andersen",
+        "url": "https://genius.com/artists/Dominic-andersen",
+        "type": "regular",
+        "id": "1746407"
+      },
+      {
+        "name": "Dominic Cooper",
+        "url": "https://genius.com/artists/Dominic-cooper",
+        "type": "regular",
+        "id": "452256"
+      },
+      {
+        "name": "Dominic Fike",
+        "url": "https://genius.com/artists/Dominic-fike",
+        "type": "regular",
+        "id": "586729"
+      },
+      {
+        "name": "Dom Innarella",
+        "url": "https://genius.com/artists/Dom-innarella",
+        "type": "regular",
+        "id": "4352107"
+      },
+      {
+        "name": "DOM KENNEDY",
+        "url": "https://genius.com/artists/Dom-kennedy",
+        "type": "regular",
+        "id": "633"
+      },
+      {
+        "name": "Domo Genesis",
+        "url": "https://genius.com/artists/Domo-genesis",
+        "type": "regular",
+        "id": "1190"
+      },
+      {
+        "name": "Donald Fagen",
+        "url": "https://genius.com/artists/Donald-fagen",
+        "type": "regular",
+        "id": "124113"
+      },
+      {
+        "name": "Donald Glover",
+        "url": "https://genius.com/artists/Donald-glover",
+        "type": "regular",
+        "id": "50285"
+      },
+      {
+        "name": "Donald Lawrence",
+        "url": "https://genius.com/artists/Donald-lawrence",
+        "type": "regular",
+        "id": "367380"
+      },
+      {
+        "name": "Donald Lawrence & The Tri-City Singers",
+        "url": "https://genius.com/artists/Donald-lawrence-and-the-tri-city-singers",
+        "type": "regular",
+        "id": "361018"
+      },
+      {
+        "name": "Donald O'Connor",
+        "url": "https://genius.com/artists/Donald-oconnor",
+        "type": "regular",
+        "id": "359321"
+      },
+      {
+        "name": "Don Bigg",
+        "url": "https://genius.com/artists/Don-bigg",
+        "type": "regular",
+        "id": "20768"
+      },
+      {
+        "name": "Don Darryl Rivera",
+        "url": "https://genius.com/artists/Don-darryl-rivera",
+        "type": "regular",
+        "id": "998606"
+      },
+      {
+        "name": "Donell Jones",
+        "url": "https://genius.com/artists/Donell-jones",
+        "type": "regular",
+        "id": "3682"
+      },
+      {
+        "name": "Dongker",
+        "url": "https://genius.com/artists/Dongker",
+        "type": "regular",
+        "id": "2588552"
+      },
+      {
+        "name": "donGURALesko",
+        "url": "https://genius.com/artists/Donguralesko",
+        "type": "regular",
+        "id": "42469"
+      },
+      {
+        "name": "Don Henley",
+        "url": "https://genius.com/artists/Don-henley",
+        "type": "regular",
+        "id": "41201"
+      },
+      {
+        "name": "Don Ho",
+        "url": "https://genius.com/artists/Don-ho",
+        "type": "regular",
+        "id": "165284"
+      },
+      {
+        "name": "Don Joe",
+        "url": "https://genius.com/artists/Don-joe",
+        "type": "regular",
+        "id": "33747"
+      },
+      {
+        "name": "Don Julin",
+        "url": "https://genius.com/artists/Don-julin",
+        "type": "regular",
+        "id": "1431492"
+      },
+      {
+        "name": "Don L",
+        "url": "https://genius.com/artists/Don-l",
+        "type": "regular",
+        "id": "49771"
+      },
+      {
+        "name": "DON MALIK (던말릭)",
+        "url": "https://genius.com/artists/Don-malik",
+        "type": "regular",
+        "id": "1255168"
+      },
+      {
+        "name": "Don Miguelo",
+        "url": "https://genius.com/artists/Don-miguelo",
+        "type": "regular",
+        "id": "209855"
+      },
+      {
+        "name": "Don Moen",
+        "url": "https://genius.com/artists/Don-moen",
+        "type": "regular",
+        "id": "204540"
+      },
+      {
+        "name": "Donna Ares",
+        "url": "https://genius.com/artists/Donna-ares",
+        "type": "regular",
+        "id": "532289"
+      },
+      {
+        "name": "Donna Cruz",
+        "url": "https://genius.com/artists/Donna-cruz",
+        "type": "regular",
+        "id": "380003"
+      },
+      {
+        "name": "Donna Lewis",
+        "url": "https://genius.com/artists/Donna-lewis",
+        "type": "regular",
+        "id": "368613"
+      },
+      {
+        "name": "Donnalyn",
+        "url": "https://genius.com/artists/Donnalyn",
+        "type": "regular",
+        "id": "340615"
+      },
+      {
+        "name": "Donna Murphy",
+        "url": "https://genius.com/artists/Donna-murphy",
+        "type": "regular",
+        "id": "64804"
+      },
+      {
+        "name": "Donna Summer",
+        "url": "https://genius.com/artists/Donna-summer",
+        "type": "regular",
+        "id": "223454"
+      },
+      {
+        "name": "Donnie",
+        "url": "https://genius.com/artists/Donnie",
+        "type": "regular",
+        "id": "1058519"
+      },
+      {
+        "name": "Donnie McClurkin",
+        "url": "https://genius.com/artists/Donnie-mcclurkin",
+        "type": "regular",
+        "id": "354594"
+      },
+      {
+        "name": "Donny Hathaway",
+        "url": "https://genius.com/artists/Donny-hathaway",
+        "type": "regular",
+        "id": "56468"
+      },
+      {
+        "name": "Donny Osmond",
+        "url": "https://genius.com/artists/Donny-osmond",
+        "type": "regular",
+        "id": "151899"
+      },
+      {
+        "name": "Don Omar",
+        "url": "https://genius.com/artists/Don-omar",
+        "type": "regular",
+        "id": "5510"
+      },
+      {
+        "name": "Donovan",
+        "url": "https://genius.com/artists/Donovan",
+        "type": "regular",
+        "id": "24192"
+      },
+      {
+        "name": "Don't Hug Me I'm Scared",
+        "url": "https://genius.com/artists/Dont-hug-me-im-scared",
+        "type": "regular",
+        "id": "617735"
+      },
+      {
+        "name": "Don Trip",
+        "url": "https://genius.com/artists/Don-trip",
+        "type": "regular",
+        "id": "11647"
+      },
+      {
+        "name": "DON WEST",
+        "url": "https://genius.com/artists/Don-west",
+        "type": "regular",
+        "id": "57005"
+      },
+      {
+        "name": "Don Williams",
+        "url": "https://genius.com/artists/Don-williams",
+        "type": "regular",
+        "id": "204386"
+      },
+      {
+        "name": "DON XHONI",
+        "url": "https://genius.com/artists/Don-xhoni",
+        "type": "regular",
+        "id": "2209552"
+      },
+      {
+        "name": "Doobie",
+        "url": "https://genius.com/artists/Doobie",
+        "type": "regular",
+        "id": "9894"
+      },
+      {
+        "name": "The Doobie Brothers",
+        "url": "https://genius.com/artists/The-doobie-brothers",
+        "type": "regular",
+        "id": "619"
+      },
+      {
+        "name": "DOODLES",
+        "url": "https://genius.com/artists/Doodles",
+        "type": "regular",
+        "id": "4070069"
+      },
+      {
+        "name": "DooMee",
+        "url": "https://genius.com/artists/Doomee",
+        "type": "regular",
+        "id": "1105756"
+      },
+      {
+        "name": "Doony Graff",
+        "url": "https://genius.com/artists/Doony-graff",
+        "type": "regular",
+        "id": "3972193"
+      },
+      {
+        "name": "Do or Die",
+        "url": "https://genius.com/artists/Do-or-die",
+        "type": "regular",
+        "id": "1243"
+      },
+      {
+        "name": "The Doors",
+        "url": "https://genius.com/artists/The-doors",
+        "type": "regular",
+        "id": "601"
+      },
+      {
+        "name": "Dope",
+        "url": "https://genius.com/artists/Dope",
+        "type": "regular",
+        "id": "17518"
+      },
+      {
+        "name": "dope17",
+        "url": "https://genius.com/artists/Dope17",
+        "type": "regular",
+        "id": "3076213"
+      },
+      {
+        "name": "Dopebwoy",
+        "url": "https://genius.com/artists/Dopebwoy",
+        "type": "regular",
+        "id": "635360"
+      },
+      {
+        "name": "DOPECLVBWORLD",
+        "url": "https://genius.com/artists/Dopeclvbworld",
+        "type": "regular",
+        "id": "587088"
+      },
+      {
+        "name": "DOPE LEMON",
+        "url": "https://genius.com/artists/Dope-lemon",
+        "type": "regular",
+        "id": "685348"
+      },
+      {
+        "name": "​dopesmoke",
+        "url": "https://genius.com/artists/Dopesmoke",
+        "type": "regular",
+        "id": "2615515"
+      },
+      {
+        "name": "Дора (Dora)",
+        "url": "https://genius.com/artists/Dora",
+        "type": "regular",
+        "id": "1756687"
+      },
+      {
+        "name": "Dora Jar",
+        "url": "https://genius.com/artists/Dora-jar",
+        "type": "regular",
+        "id": "2487377"
+      },
+      {
+        "name": "Dora the Explorer",
+        "url": "https://genius.com/artists/Dora-the-explorer",
+        "type": "regular",
+        "id": "358761"
+      },
+      {
+        "name": "Dorcci",
+        "url": "https://genius.com/artists/Dorcci",
+        "type": "regular",
+        "id": "3129364"
+      },
+      {
+        "name": "Dorian",
+        "url": "https://genius.com/artists/Dorian",
+        "type": "regular",
+        "id": "3297580"
+      },
+      {
+        "name": "Dorian Electra",
+        "url": "https://genius.com/artists/Dorian-electra",
+        "type": "regular",
+        "id": "1007285"
+      },
+      {
+        "name": "Doris Day",
+        "url": "https://genius.com/artists/Doris-day",
+        "type": "regular",
+        "id": "806"
+      },
+      {
+        "name": "Doris Dragović",
+        "url": "https://genius.com/artists/Doris-dragovic",
+        "type": "regular",
+        "id": "404872"
+      },
+      {
+        "name": "DOROFEEVA",
+        "url": "https://genius.com/artists/Dorofeeva",
+        "type": "regular",
+        "id": "2574971"
+      },
+      {
+        "name": "Dorrough Music",
+        "url": "https://genius.com/artists/Dorrough-music",
+        "type": "regular",
+        "id": "5518"
+      },
+      {
+        "name": "Doruk Ereşter",
+        "url": "https://genius.com/artists/Doruk-erester",
+        "type": "regular",
+        "id": "1907250"
+      },
+      {
+        "name": "DOSHIK",
+        "url": "https://genius.com/artists/Doshik",
+        "type": "regular",
+        "id": "3233462"
+      },
+      {
+        "name": "Dosseh",
+        "url": "https://genius.com/artists/Dosseh",
+        "type": "regular",
+        "id": "2223"
+      },
+      {
+        "name": "Dota Kehr",
+        "url": "https://genius.com/artists/Dota-kehr",
+        "type": "regular",
+        "id": "458783"
+      },
+      {
+        "name": "Dottie Peoples",
+        "url": "https://genius.com/artists/Dottie-peoples",
+        "type": "regular",
+        "id": "362778"
+      },
+      {
+        "name": "Doug E. Fresh & The Get Fresh Crew",
+        "url": "https://genius.com/artists/Doug-e-fresh-and-the-get-fresh-crew",
+        "type": "regular",
+        "id": "665851"
+      },
+      {
+        "name": "Dougie B",
+        "url": "https://genius.com/artists/Dougie-b",
+        "type": "regular",
+        "id": "2729732"
+      },
+      {
+        "name": "Dougie Maclean",
+        "url": "https://genius.com/artists/Dougie-maclean",
+        "type": "regular",
+        "id": "343532"
+      },
+      {
+        "name": "Doğukan Sarıtaş",
+        "url": "https://genius.com/artists/Dogukan-sartas",
+        "type": "regular",
+        "id": "2089750"
+      },
+      {
+        "name": "Dove Cameron",
+        "url": "https://genius.com/artists/Dove-cameron",
+        "type": "regular",
+        "id": "330390"
+      },
+      {
+        "name": "Dowba Montana",
+        "url": "https://genius.com/artists/Dowba-montana",
+        "type": "regular",
+        "id": "2196277"
+      },
+      {
+        "name": "Down",
+        "url": "https://genius.com/artists/Down",
+        "type": "regular",
+        "id": "9692"
+      },
+      {
+        "name": "Downstait",
+        "url": "https://genius.com/artists/Downstait",
+        "type": "regular",
+        "id": "60743"
+      },
+      {
+        "name": "DOYOUNG (도영)",
+        "url": "https://genius.com/artists/Doyoung",
+        "type": "regular",
+        "id": "1072119"
+      },
+      {
+        "name": "DPR IAN",
+        "url": "https://genius.com/artists/Dpr-ian",
+        "type": "regular",
+        "id": "1158210"
+      },
+      {
+        "name": "Drabusheyka",
+        "url": "https://genius.com/artists/Drabusheyka",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Draft Day",
+        "url": "https://genius.com/artists/Draft-day",
+        "type": "regular",
+        "id": "1452884"
+      },
+      {
+        "name": "Dragana Mirković",
+        "url": "https://genius.com/artists/Dragana-mirkovic",
+        "type": "regular",
+        "id": "452736"
+      },
+      {
+        "name": "Draganov",
+        "url": "https://genius.com/artists/Draganov",
+        "type": "regular",
+        "id": "1146299"
+      },
+      {
+        "name": "Драгни (Dragni)",
+        "url": "https://genius.com/artists/Dragni",
+        "type": "regular",
+        "id": "1478846"
+      },
+      {
+        "name": "Dragonette",
+        "url": "https://genius.com/artists/Dragonette",
+        "type": "regular",
+        "id": "15696"
+      },
+      {
+        "name": "DragonForce",
+        "url": "https://genius.com/artists/Dragonforce",
+        "type": "regular",
+        "id": "162090"
+      },
+      {
+        "name": "Drake Bell",
+        "url": "https://genius.com/artists/Drake-bell",
+        "type": "regular",
+        "id": "45120"
+      },
+      {
+        "name": "Drakeo the Ruler",
+        "url": "https://genius.com/artists/Drakeo-the-ruler",
+        "type": "regular",
+        "id": "394800"
+      },
+      {
+        "name": "Dr. Alban",
+        "url": "https://genius.com/artists/Dr-alban",
+        "type": "regular",
+        "id": "332373"
+      },
+      {
+        "name": "DRAM",
+        "url": "https://genius.com/artists/Dram",
+        "type": "regular",
+        "id": "241761"
+      },
+      {
+        "name": "DR. CREEP",
+        "url": "https://genius.com/artists/Dr-creep",
+        "type": "regular",
+        "id": "2176053"
+      },
+      {
+        "name": "Dr. Dog",
+        "url": "https://genius.com/artists/Dr-dog",
+        "type": "regular",
+        "id": "66338"
+      },
+      {
+        "name": "The Dreadnoughts",
+        "url": "https://genius.com/artists/The-dreadnoughts",
+        "type": "regular",
+        "id": "228453"
+      },
+      {
+        "name": "Dream",
+        "url": "https://genius.com/artists/Dream",
+        "type": "regular",
+        "id": "2423635"
+      },
+      {
+        "name": "Dreamcatcher",
+        "url": "https://genius.com/artists/Dreamcatcher",
+        "type": "regular",
+        "id": "1112505"
+      },
+      {
+        "name": "Dream, Ivory",
+        "url": "https://genius.com/artists/Dream-ivory",
+        "type": "regular",
+        "id": "1316234"
+      },
+      {
+        "name": "DreamLlifeRizzy",
+        "url": "https://genius.com/artists/Dreamlliferizzy",
+        "type": "regular",
+        "id": "4415374"
+      },
+      {
+        "name": "Dream Theater",
+        "url": "https://genius.com/artists/Dream-theater",
+        "type": "regular",
+        "id": "19712"
+      },
+      {
+        "name": "Dreamville",
+        "url": "https://genius.com/artists/Dreamville",
+        "type": "regular",
+        "id": "618445"
+      },
+      {
+        "name": "Dree Low",
+        "url": "https://genius.com/artists/Dree-low",
+        "type": "regular",
+        "id": "1098579"
+      },
+      {
+        "name": "DrefGold",
+        "url": "https://genius.com/artists/Drefgold",
+        "type": "regular",
+        "id": "1109672"
+      },
+      {
+        "name": "DRE (ITA)",
+        "url": "https://genius.com/artists/Dre-ita",
+        "type": "regular",
+        "id": "3411842"
+      },
+      {
+        "name": "Drenchszn",
+        "url": "https://genius.com/artists/Drenchszn",
+        "type": "regular",
+        "id": "4254363"
+      },
+      {
+        "name": "The Dresden Dolls",
+        "url": "https://genius.com/artists/The-dresden-dolls",
+        "type": "regular",
+        "id": "31069"
+      },
+      {
+        "name": "Drevo (UKR)",
+        "url": "https://genius.com/artists/Drevo-ukr",
+        "type": "regular",
+        "id": "3756111"
+      },
+      {
+        "name": "Drew Holcomb & The Neighbors",
+        "url": "https://genius.com/artists/Drew-holcomb-and-the-neighbors",
+        "type": "regular",
+        "id": "35713"
+      },
+      {
+        "name": "Drew Seeley",
+        "url": "https://genius.com/artists/Drew-seeley",
+        "type": "regular",
+        "id": "59016"
+      },
+      {
+        "name": "Dr. Hook",
+        "url": "https://genius.com/artists/Dr-hook",
+        "type": "regular",
+        "id": "353334"
+      },
+      {
+        "name": "The Drifters",
+        "url": "https://genius.com/artists/The-drifters",
+        "type": "regular",
+        "id": "47791"
+      },
+      {
+        "name": "Drippin So Pretty",
+        "url": "https://genius.com/artists/Drippin-so-pretty",
+        "type": "regular",
+        "id": "630663"
+      },
+      {
+        "name": "DripReport",
+        "url": "https://genius.com/artists/Dripreport",
+        "type": "regular",
+        "id": "1922039"
+      },
+      {
+        "name": "Drive-By Truckers",
+        "url": "https://genius.com/artists/Drive-by-truckers",
+        "type": "regular",
+        "id": "39299"
+      },
+      {
+        "name": "THE DRIVER ERA",
+        "url": "https://genius.com/artists/The-driver-era",
+        "type": "regular",
+        "id": "1421185"
+      },
+      {
+        "name": "Driveways",
+        "url": "https://genius.com/artists/Driveways",
+        "type": "regular",
+        "id": "1114249"
+      },
+      {
+        "name": "Dr. John",
+        "url": "https://genius.com/artists/Dr-john",
+        "type": "regular",
+        "id": "44704"
+      },
+      {
+        "name": "Dro Kenji",
+        "url": "https://genius.com/artists/Dro-kenji",
+        "type": "regular",
+        "id": "2057958"
+      },
+      {
+        "name": "Dropkick Murphys",
+        "url": "https://genius.com/artists/Dropkick-murphys",
+        "type": "regular",
+        "id": "30732"
+      },
+      {
+        "name": "Drowning Pool",
+        "url": "https://genius.com/artists/Drowning-pool",
+        "type": "regular",
+        "id": "15619"
+      },
+      {
+        "name": "Dr. Seuss",
+        "url": "https://genius.com/artists/Dr-seuss",
+        "type": "regular",
+        "id": "44415"
+      },
+      {
+        "name": "Drugdealer",
+        "url": "https://genius.com/artists/Drugdealer",
+        "type": "regular",
+        "id": "1032527"
+      },
+      {
+        "name": "Dru Hill",
+        "url": "https://genius.com/artists/Dru-hill",
+        "type": "regular",
+        "id": "5998"
+      },
+      {
+        "name": "The Drums",
+        "url": "https://genius.com/artists/The-drums",
+        "type": "regular",
+        "id": "17661"
+      },
+      {
+        "name": "Drunken Masters",
+        "url": "https://genius.com/artists/Drunken-masters",
+        "type": "regular",
+        "id": "281657"
+      },
+      {
+        "name": "Drużyna 2115",
+        "url": "https://genius.com/artists/Druzyna-2115",
+        "type": "regular",
+        "id": "1077534"
+      },
+      {
+        "name": "D. Savage",
+        "url": "https://genius.com/artists/D-savage",
+        "type": "regular",
+        "id": "655347"
+      },
+      {
+        "name": "Dschinghis Khan",
+        "url": "https://genius.com/artists/Dschinghis-khan",
+        "type": "regular",
+        "id": "341146"
+      },
+      {
+        "name": "DTF",
+        "url": "https://genius.com/artists/Dtf",
+        "type": "regular",
+        "id": "563477"
+      },
+      {
+        "name": "DThang",
+        "url": "https://genius.com/artists/Dthang",
+        "type": "regular",
+        "id": "2473294"
+      },
+      {
+        "name": "Dubioza Kolektiv",
+        "url": "https://genius.com/artists/Dubioza-kolektiv",
+        "type": "regular",
+        "id": "356148"
+      },
+      {
+        "name": "The Dubliners",
+        "url": "https://genius.com/artists/The-dubliners",
+        "type": "regular",
+        "id": "52941"
+      },
+      {
+        "name": "Duccly",
+        "url": "https://genius.com/artists/Duccly",
+        "type": "regular",
+        "id": "3964824"
+      },
+      {
+        "name": "渡 (Du) (CHN)",
+        "url": "https://genius.com/artists/Du-chn",
+        "type": "regular",
+        "id": "4442542"
+      },
+      {
+        "name": "DUCKBOY",
+        "url": "https://genius.com/artists/Duckboy",
+        "type": "regular",
+        "id": "1361316"
+      },
+      {
+        "name": "DUCKWRTH",
+        "url": "https://genius.com/artists/Duckwrth",
+        "type": "regular",
+        "id": "35115"
+      },
+      {
+        "name": "DudeyLo",
+        "url": "https://genius.com/artists/Dudeylo",
+        "type": "regular",
+        "id": "3238839"
+      },
+      {
+        "name": "Duffy",
+        "url": "https://genius.com/artists/Duffy",
+        "type": "regular",
+        "id": "11110"
+      },
+      {
+        "name": "Duke & Jones",
+        "url": "https://genius.com/artists/Duke-and-jones",
+        "type": "regular",
+        "id": "1583983"
+      },
+      {
+        "name": "Duke Dumont",
+        "url": "https://genius.com/artists/Duke-dumont",
+        "type": "regular",
+        "id": "45313"
+      },
+      {
+        "name": "Duke Ellington",
+        "url": "https://genius.com/artists/Duke-ellington",
+        "type": "regular",
+        "id": "67808"
+      },
+      {
+        "name": "Duke Ellington and His Orchestra",
+        "url": "https://genius.com/artists/Duke-ellington-and-his-orchestra",
+        "type": "regular",
+        "id": "355676"
+      },
+      {
+        "name": "Duki",
+        "url": "https://genius.com/artists/Duki",
+        "type": "regular",
+        "id": "1037443"
+      },
+      {
+        "name": "Duman",
+        "url": "https://genius.com/artists/Duman",
+        "type": "regular",
+        "id": "78774"
+      },
+      {
+        "name": "Duncan Laurence",
+        "url": "https://genius.com/artists/Duncan-laurence",
+        "type": "regular",
+        "id": "1706381"
+      },
+      {
+        "name": "Duncan Sheik",
+        "url": "https://genius.com/artists/Duncan-sheik",
+        "type": "regular",
+        "id": "83407"
+      },
+      {
+        "name": "Dunsin Oyekan",
+        "url": "https://genius.com/artists/Dunsin-oyekan",
+        "type": "regular",
+        "id": "1683653"
+      },
+      {
+        "name": "Durand Bernarr",
+        "url": "https://genius.com/artists/Durand-bernarr",
+        "type": "regular",
+        "id": "1086308"
+      },
+      {
+        "name": "Durand Jones & The Indications",
+        "url": "https://genius.com/artists/Durand-jones-and-the-indications",
+        "type": "regular",
+        "id": "960709"
+      },
+      {
+        "name": "Duran Duran",
+        "url": "https://genius.com/artists/Duran-duran",
+        "type": "regular",
+        "id": "22720"
+      },
+      {
+        "name": "DURRY",
+        "url": "https://genius.com/artists/Durry",
+        "type": "regular",
+        "id": "2925283"
+      },
+      {
+        "name": "Duster",
+        "url": "https://genius.com/artists/Duster",
+        "type": "regular",
+        "id": "364902"
+      },
+      {
+        "name": "Dustin Lynch",
+        "url": "https://genius.com/artists/Dustin-lynch",
+        "type": "regular",
+        "id": "214513"
+      },
+      {
+        "name": "Dusty Springfield",
+        "url": "https://genius.com/artists/Dusty-springfield",
+        "type": "regular",
+        "id": "31371"
+      },
+      {
+        "name": "Dutch Melrose",
+        "url": "https://genius.com/artists/Dutch-melrose",
+        "type": "regular",
+        "id": "1505585"
+      },
+      {
+        "name": "Duvy",
+        "url": "https://genius.com/artists/Duvy",
+        "type": "regular",
+        "id": "2116674"
+      },
+      {
+        "name": "Duwap Kaine",
+        "url": "https://genius.com/artists/Duwap-kaine",
+        "type": "regular",
+        "id": "657311"
+      },
+      {
+        "name": "D.Valentino",
+        "url": "https://genius.com/artists/Dvalentino",
+        "type": "regular",
+        "id": "1008185"
+      },
+      {
+        "name": "DVDA",
+        "url": "https://genius.com/artists/Dvda",
+        "type": "regular",
+        "id": "71037"
+      },
+      {
+        "name": "две тысячи ярдов (dve tysyachi yardov)",
+        "url": "https://genius.com/artists/Dve-tysyachi-yardov",
+        "type": "regular",
+        "id": "3397113"
+      },
+      {
+        "name": "DVM CORP",
+        "url": "https://genius.com/artists/Dvm-corp",
+        "type": "regular",
+        "id": "3703831"
+      },
+      {
+        "name": "dvsn",
+        "url": "https://genius.com/artists/Dvsn",
+        "type": "regular",
+        "id": "574414"
+      },
+      {
+        "name": "Dwa Sławy",
+        "url": "https://genius.com/artists/Dwa-sawy",
+        "type": "regular",
+        "id": "48113"
+      },
+      {
+        "name": "Dwayne Johnson",
+        "url": "https://genius.com/artists/Dwayne-johnson",
+        "type": "regular",
+        "id": "8725"
+      },
+      {
+        "name": "Dwight Yoakam",
+        "url": "https://genius.com/artists/Dwight-yoakam",
+        "type": "regular",
+        "id": "332524"
+      },
+      {
+        "name": "​dwta",
+        "url": "https://genius.com/artists/Dwta",
+        "type": "regular",
+        "id": "3427751"
+      },
+      {
+        "name": "D'Yani",
+        "url": "https://genius.com/artists/Dyani",
+        "type": "regular",
+        "id": "2334372"
+      },
+      {
+        "name": "Dying Fetus",
+        "url": "https://genius.com/artists/Dying-fetus",
+        "type": "regular",
+        "id": "360166"
+      },
+      {
+        "name": "Dylan",
+        "url": "https://genius.com/artists/Dylan",
+        "type": "regular",
+        "id": "2217228"
+      },
+      {
+        "name": "Dylan Gossett",
+        "url": "https://genius.com/artists/Dylan-gossett",
+        "type": "regular",
+        "id": "3593248"
+      },
+      {
+        "name": "Dylan Marlowe",
+        "url": "https://genius.com/artists/Dylan-marlowe",
+        "type": "regular",
+        "id": "2614108"
+      },
+      {
+        "name": "Dylan Playfair",
+        "url": "https://genius.com/artists/Dylan-playfair",
+        "type": "regular",
+        "id": "1162055"
+      },
+      {
+        "name": "Dylan Scott",
+        "url": "https://genius.com/artists/Dylan-scott",
+        "type": "regular",
+        "id": "262856"
+      },
+      {
+        "name": "DYSTINCT",
+        "url": "https://genius.com/artists/Dystinct",
+        "type": "regular",
+        "id": "1013018"
+      },
+      {
+        "name": "Dystopia",
+        "url": "https://genius.com/artists/Dystopia",
+        "type": "regular",
+        "id": "63375"
+      },
+      {
+        "name": "Джарахов (Dzharakhov)",
+        "url": "https://genius.com/artists/Dzharakhov",
+        "type": "regular",
+        "id": "1077834"
+      },
+      {
+        "name": "Джизус (Dzhizus)",
+        "url": "https://genius.com/artists/Dzhizus",
+        "type": "regular",
+        "id": "1317002"
+      },
+      {
+        "name": "Dzsúdló",
+        "url": "https://genius.com/artists/Dzsudlo",
+        "type": "regular",
+        "id": "1775620"
+      },
+      {
+        "name": "DZWS",
+        "url": "https://genius.com/artists/Dzws",
+        "type": "regular",
+        "id": "3110515"
+      }
+    ]
+  }
+}

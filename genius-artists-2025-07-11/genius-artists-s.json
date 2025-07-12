@@ -1,0 +1,4513 @@
+{
+  "letter": "S",
+  "timestamp": "2025-07-11T12:04:18.621Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Sabrina Carpenter",
+        "url": "https://genius.com/artists/Sabrina-carpenter",
+        "type": "popular",
+        "id": "249592"
+      },
+      {
+        "name": "Sam Smith",
+        "url": "https://genius.com/artists/Sam-smith",
+        "type": "popular",
+        "id": "43383"
+      },
+      {
+        "name": "SamUIL",
+        "url": "https://genius.com/artists/Samuil",
+        "type": "popular",
+        "id": "2201355"
+      },
+      {
+        "name": "Selena Gomez",
+        "url": "https://genius.com/artists/Selena-gomez",
+        "type": "popular",
+        "id": "45372"
+      },
+      {
+        "name": "Sexyy Red",
+        "url": "https://genius.com/artists/Sexyy-red",
+        "type": "popular",
+        "id": "1517379"
+      },
+      {
+        "name": "Sezen Aksu",
+        "url": "https://genius.com/artists/Sezen-aksu",
+        "type": "popular",
+        "id": "31763"
+      },
+      {
+        "name": "Shakira",
+        "url": "https://genius.com/artists/Shakira",
+        "type": "popular",
+        "id": "1405"
+      },
+      {
+        "name": "Shawn Mendes",
+        "url": "https://genius.com/artists/Shawn-mendes",
+        "type": "popular",
+        "id": "195029"
+      },
+      {
+        "name": "Shenseea",
+        "url": "https://genius.com/artists/Shenseea",
+        "type": "popular",
+        "id": "1020968"
+      },
+      {
+        "name": "Sia",
+        "url": "https://genius.com/artists/Sia",
+        "type": "popular",
+        "id": "16775"
+      },
+      {
+        "name": "silent addy",
+        "url": "https://genius.com/artists/Silent-addy",
+        "type": "popular",
+        "id": "4173603"
+      },
+      {
+        "name": "揽佬 (SKAI isyourgod)",
+        "url": "https://genius.com/artists/Skai-isyourgod",
+        "type": "popular",
+        "id": "4203316"
+      },
+      {
+        "name": "Skillibeng",
+        "url": "https://genius.com/artists/Skillibeng",
+        "type": "popular",
+        "id": "2012146"
+      },
+      {
+        "name": "Skusta Clee",
+        "url": "https://genius.com/artists/Skusta-clee",
+        "type": "popular",
+        "id": "1226548"
+      },
+      {
+        "name": "Sleep Token",
+        "url": "https://genius.com/artists/Sleep-token",
+        "type": "popular",
+        "id": "1257521"
+      },
+      {
+        "name": "sombr",
+        "url": "https://genius.com/artists/Sombr",
+        "type": "popular",
+        "id": "3199447"
+      },
+      {
+        "name": "Stray Kids",
+        "url": "https://genius.com/artists/Stray-kids",
+        "type": "popular",
+        "id": "1233909"
+      },
+      {
+        "name": "$uicideboy$",
+        "url": "https://genius.com/artists/Uicideboy",
+        "type": "popular",
+        "id": "213444"
+      },
+      {
+        "name": "System Of A Down",
+        "url": "https://genius.com/artists/System-of-a-down",
+        "type": "popular",
+        "id": "16259"
+      },
+      {
+        "name": "SZA",
+        "url": "https://genius.com/artists/Sza",
+        "type": "popular",
+        "id": "41579"
+      }
+    ],
+    "regular": [
+      {
+        "name": "S10",
+        "url": "https://genius.com/artists/S10",
+        "type": "regular",
+        "id": "1250936"
+      },
+      {
+        "name": "S3RL",
+        "url": "https://genius.com/artists/S3rl",
+        "type": "regular",
+        "id": "322062"
+      },
+      {
+        "name": "Saša Kovačević",
+        "url": "https://genius.com/artists/Sasa-kovacevic",
+        "type": "regular",
+        "id": "480507"
+      },
+      {
+        "name": "Saša Matić",
+        "url": "https://genius.com/artists/Sasa-matic",
+        "type": "regular",
+        "id": "457946"
+      },
+      {
+        "name": "Saba",
+        "url": "https://genius.com/artists/Saba",
+        "type": "regular",
+        "id": "35599"
+      },
+      {
+        "name": "Sabaton",
+        "url": "https://genius.com/artists/Sabaton",
+        "type": "regular",
+        "id": "47960"
+      },
+      {
+        "name": "Sabi (RUS)",
+        "url": "https://genius.com/artists/Sabi-rus",
+        "type": "regular",
+        "id": "4427100"
+      },
+      {
+        "name": "Sabrina Claudio",
+        "url": "https://genius.com/artists/Sabrina-claudio",
+        "type": "regular",
+        "id": "962169"
+      },
+      {
+        "name": "Sachet Tandon",
+        "url": "https://genius.com/artists/Sachet-tandon",
+        "type": "regular",
+        "id": "1833277"
+      },
+      {
+        "name": "Sachin-Jigar",
+        "url": "https://genius.com/artists/Sachin-jigar",
+        "type": "regular",
+        "id": "1273689"
+      },
+      {
+        "name": "Sada Baby",
+        "url": "https://genius.com/artists/Sada-baby",
+        "type": "regular",
+        "id": "1088915"
+      },
+      {
+        "name": "Sade",
+        "url": "https://genius.com/artists/Sade",
+        "type": "regular",
+        "id": "691"
+      },
+      {
+        "name": "Sadhana Sargam",
+        "url": "https://genius.com/artists/Sadhana-sargam",
+        "type": "regular",
+        "id": "1115932"
+      },
+      {
+        "name": "Sadie Jean",
+        "url": "https://genius.com/artists/Sadie-jean",
+        "type": "regular",
+        "id": "2661694"
+      },
+      {
+        "name": "SadiQ",
+        "url": "https://genius.com/artists/Sadiq",
+        "type": "regular",
+        "id": "14785"
+      },
+      {
+        "name": "Sadraddin",
+        "url": "https://genius.com/artists/Sadraddin",
+        "type": "regular",
+        "id": "2883912"
+      },
+      {
+        "name": "SadSvit",
+        "url": "https://genius.com/artists/Sadsvit",
+        "type": "regular",
+        "id": "2968685"
+      },
+      {
+        "name": "Saïf (FRA)",
+        "url": "https://genius.com/artists/Saif-fra",
+        "type": "regular",
+        "id": "3816180"
+      },
+      {
+        "name": "Sagopa Kajmer",
+        "url": "https://genius.com/artists/Sagopa-kajmer",
+        "type": "regular",
+        "id": "20770"
+      },
+      {
+        "name": "Sahana Bajpaie",
+        "url": "https://genius.com/artists/Sahana-bajpaie",
+        "type": "regular",
+        "id": "2119792"
+      },
+      {
+        "name": "SahBabii",
+        "url": "https://genius.com/artists/Sahbabii",
+        "type": "regular",
+        "id": "1017857"
+      },
+      {
+        "name": "Saian",
+        "url": "https://genius.com/artists/Saian",
+        "type": "regular",
+        "id": "42547"
+      },
+      {
+        "name": "SAIKO",
+        "url": "https://genius.com/artists/Saiko",
+        "type": "regular",
+        "id": "2629646"
+      },
+      {
+        "name": "SAILORR",
+        "url": "https://genius.com/artists/Sailorr",
+        "type": "regular",
+        "id": "3956804"
+      },
+      {
+        "name": "Sainté",
+        "url": "https://genius.com/artists/Sainte",
+        "type": "regular",
+        "id": "2298775"
+      },
+      {
+        "name": "Saint Avangeline",
+        "url": "https://genius.com/artists/Saint-avangeline",
+        "type": "regular",
+        "id": "3242874"
+      },
+      {
+        "name": "SAINt JHN",
+        "url": "https://genius.com/artists/Saint-jhn",
+        "type": "regular",
+        "id": "987736"
+      },
+      {
+        "name": "Saint Levant",
+        "url": "https://genius.com/artists/Saint-levant",
+        "type": "regular",
+        "id": "3328322"
+      },
+      {
+        "name": "Saint Motel",
+        "url": "https://genius.com/artists/Saint-motel",
+        "type": "regular",
+        "id": "102433"
+      },
+      {
+        "name": "SaintPrince 52",
+        "url": "https://genius.com/artists/Saintprince-52",
+        "type": "regular",
+        "id": "3341526"
+      },
+      {
+        "name": "Sajad Shahi",
+        "url": "https://genius.com/artists/Sajad-shahi",
+        "type": "regular",
+        "id": "3619599"
+      },
+      {
+        "name": "Sajfer",
+        "url": "https://genius.com/artists/Sajfer",
+        "type": "regular",
+        "id": "409647"
+      },
+      {
+        "name": "SAKXRA",
+        "url": "https://genius.com/artists/Sakxra",
+        "type": "regular",
+        "id": "4405223"
+      },
+      {
+        "name": "SALEM",
+        "url": "https://genius.com/artists/Salem",
+        "type": "regular",
+        "id": "13135"
+      },
+      {
+        "name": "salem ilese",
+        "url": "https://genius.com/artists/Salem-ilese",
+        "type": "regular",
+        "id": "2300784"
+      },
+      {
+        "name": "Sally Dworsky",
+        "url": "https://genius.com/artists/Sally-dworsky",
+        "type": "regular",
+        "id": "158573"
+      },
+      {
+        "name": "Sally Kim",
+        "url": "https://genius.com/artists/Sally-kim",
+        "type": "regular",
+        "id": "3227397"
+      },
+      {
+        "name": "Salmo",
+        "url": "https://genius.com/artists/Salmo",
+        "type": "regular",
+        "id": "33882"
+      },
+      {
+        "name": "Salomé Das",
+        "url": "https://genius.com/artists/Salome-das",
+        "type": "regular",
+        "id": "4385738"
+      },
+      {
+        "name": "Saloni Thakkar",
+        "url": "https://genius.com/artists/Saloni-thakkar",
+        "type": "regular",
+        "id": "3856760"
+      },
+      {
+        "name": "Sal Priadi",
+        "url": "https://genius.com/artists/Sal-priadi",
+        "type": "regular",
+        "id": "1682206"
+      },
+      {
+        "name": "Sal da Vinci",
+        "url": "https://genius.com/artists/Sal-da-vinci",
+        "type": "regular",
+        "id": "381110"
+      },
+      {
+        "name": "Salt-N-Pepa",
+        "url": "https://genius.com/artists/Salt-n-pepa",
+        "type": "regular",
+        "id": "1554"
+      },
+      {
+        "name": "SALUKI",
+        "url": "https://genius.com/artists/Saluki",
+        "type": "regular",
+        "id": "516658"
+      },
+      {
+        "name": "$AM",
+        "url": "https://genius.com/artists/Am",
+        "type": "regular",
+        "id": "3259136"
+      },
+      {
+        "name": "Samara Cyn",
+        "url": "https://genius.com/artists/Samara-cyn",
+        "type": "regular",
+        "id": "2188208"
+      },
+      {
+        "name": "Sam Barber",
+        "url": "https://genius.com/artists/Sam-barber",
+        "type": "regular",
+        "id": "3502892"
+      },
+      {
+        "name": "SAMBATA",
+        "url": "https://genius.com/artists/Sambata",
+        "type": "regular",
+        "id": "2815860"
+      },
+      {
+        "name": "Sam Concepcion",
+        "url": "https://genius.com/artists/Sam-concepcion",
+        "type": "regular",
+        "id": "405167"
+      },
+      {
+        "name": "Sam Cooke",
+        "url": "https://genius.com/artists/Sam-cooke",
+        "type": "regular",
+        "id": "21689"
+      },
+      {
+        "name": "Sam Dew",
+        "url": "https://genius.com/artists/Sam-dew",
+        "type": "regular",
+        "id": "51160"
+      },
+      {
+        "name": "Sam Fender",
+        "url": "https://genius.com/artists/Sam-fender",
+        "type": "regular",
+        "id": "1190713"
+      },
+      {
+        "name": "Sam Haft",
+        "url": "https://genius.com/artists/Sam-haft",
+        "type": "regular",
+        "id": "1317746"
+      },
+      {
+        "name": "Sam Hunt",
+        "url": "https://genius.com/artists/Sam-hunt",
+        "type": "regular",
+        "id": "214050"
+      },
+      {
+        "name": "Samia",
+        "url": "https://genius.com/artists/Samia",
+        "type": "regular",
+        "id": "186594"
+      },
+      {
+        "name": "Sami Brielle",
+        "url": "https://genius.com/artists/Sami-brielle",
+        "type": "regular",
+        "id": "4266216"
+      },
+      {
+        "name": "Sami G",
+        "url": "https://genius.com/artists/Sami-g",
+        "type": "regular",
+        "id": "3807270"
+      },
+      {
+        "name": "Sami Yusuf",
+        "url": "https://genius.com/artists/Sami-yusuf",
+        "type": "regular",
+        "id": "368387"
+      },
+      {
+        "name": "Sammy Davis Jr.",
+        "url": "https://genius.com/artists/Sammy-davis-jr",
+        "type": "regular",
+        "id": "344691"
+      },
+      {
+        "name": "Sammy Hagar",
+        "url": "https://genius.com/artists/Sammy-hagar",
+        "type": "regular",
+        "id": "37892"
+      },
+      {
+        "name": "Sampaguita",
+        "url": "https://genius.com/artists/Sampaguita",
+        "type": "regular",
+        "id": "374502"
+      },
+      {
+        "name": "Sampha",
+        "url": "https://genius.com/artists/Sampha",
+        "type": "regular",
+        "id": "26868"
+      },
+      {
+        "name": "Samra",
+        "url": "https://genius.com/artists/Samra",
+        "type": "regular",
+        "id": "669519"
+      },
+      {
+        "name": "SamTheBozz",
+        "url": "https://genius.com/artists/Samthebozz",
+        "type": "regular",
+        "id": "1141789"
+      },
+      {
+        "name": "Sam Tinnesz",
+        "url": "https://genius.com/artists/Sam-tinnesz",
+        "type": "regular",
+        "id": "657245"
+      },
+      {
+        "name": "Samuel Welten",
+        "url": "https://genius.com/artists/Samuel-welten",
+        "type": "regular",
+        "id": "4361801"
+      },
+      {
+        "name": "SAMURAI (Cyberpunk)",
+        "url": "https://genius.com/artists/Samurai-cyberpunk",
+        "type": "regular",
+        "id": "2067285"
+      },
+      {
+        "name": "​sanah",
+        "url": "https://genius.com/artists/Sanah",
+        "type": "regular",
+        "id": "1855497"
+      },
+      {
+        "name": "Sandeep Shrivastava",
+        "url": "https://genius.com/artists/Sandeep-shrivastava",
+        "type": "regular",
+        "id": "3551074"
+      },
+      {
+        "name": "Sandi334_",
+        "url": "https://genius.com/artists/Sandi334",
+        "type": "regular",
+        "id": "3253446"
+      },
+      {
+        "name": "Sandi Patty",
+        "url": "https://genius.com/artists/Sandi-patty",
+        "type": "regular",
+        "id": "354217"
+      },
+      {
+        "name": "Sansar Salvo",
+        "url": "https://genius.com/artists/Sansar-salvo",
+        "type": "regular",
+        "id": "155777"
+      },
+      {
+        "name": "Santa Fe Klan",
+        "url": "https://genius.com/artists/Santa-fe-klan",
+        "type": "regular",
+        "id": "1119678"
+      },
+      {
+        "name": "Santana",
+        "url": "https://genius.com/artists/Santana",
+        "type": "regular",
+        "id": "8439"
+      },
+      {
+        "name": "Santiano",
+        "url": "https://genius.com/artists/Santiano",
+        "type": "regular",
+        "id": "89634"
+      },
+      {
+        "name": "Santigold",
+        "url": "https://genius.com/artists/Santigold",
+        "type": "regular",
+        "id": "2532"
+      },
+      {
+        "name": "Santino Fontana",
+        "url": "https://genius.com/artists/Santino-fontana",
+        "type": "regular",
+        "id": "133481"
+      },
+      {
+        "name": "Santiz",
+        "url": "https://genius.com/artists/Santiz",
+        "type": "regular",
+        "id": "1567504"
+      },
+      {
+        "name": "Sanya Lopez",
+        "url": "https://genius.com/artists/Sanya-lopez",
+        "type": "regular",
+        "id": "2756751"
+      },
+      {
+        "name": "Saosin",
+        "url": "https://genius.com/artists/Saosin",
+        "type": "regular",
+        "id": "40650"
+      },
+      {
+        "name": "sapientdream",
+        "url": "https://genius.com/artists/Sapientdream",
+        "type": "regular",
+        "id": "1452795"
+      },
+      {
+        "name": "Sara Bareilles",
+        "url": "https://genius.com/artists/Sara-bareilles",
+        "type": "regular",
+        "id": "19936"
+      },
+      {
+        "name": "Sarah Brightman",
+        "url": "https://genius.com/artists/Sarah-brightman",
+        "type": "regular",
+        "id": "344626"
+      },
+      {
+        "name": "Sarah Connor",
+        "url": "https://genius.com/artists/Sarah-connor",
+        "type": "regular",
+        "id": "8595"
+      },
+      {
+        "name": "Sarah Geronimo",
+        "url": "https://genius.com/artists/Sarah-geronimo",
+        "type": "regular",
+        "id": "353111"
+      },
+      {
+        "name": "Sarah McLachlan",
+        "url": "https://genius.com/artists/Sarah-mclachlan",
+        "type": "regular",
+        "id": "5427"
+      },
+      {
+        "name": "Sarah Vaughan",
+        "url": "https://genius.com/artists/Sarah-vaughan",
+        "type": "regular",
+        "id": "90980"
+      },
+      {
+        "name": "Saramalacara",
+        "url": "https://genius.com/artists/Saramalacara",
+        "type": "regular",
+        "id": "1886088"
+      },
+      {
+        "name": "Sara Rikas",
+        "url": "https://genius.com/artists/Sara-rikas",
+        "type": "regular",
+        "id": "3911578"
+      },
+      {
+        "name": "​saraunh0ly",
+        "url": "https://genius.com/artists/Saraunh0ly",
+        "type": "regular",
+        "id": "3153770"
+      },
+      {
+        "name": "Sarettii",
+        "url": "https://genius.com/artists/Sarettii",
+        "type": "regular",
+        "id": "2149471"
+      },
+      {
+        "name": "Sarkodie",
+        "url": "https://genius.com/artists/Sarkodie",
+        "type": "regular",
+        "id": "26128"
+      },
+      {
+        "name": "Sasha Alex Sloan",
+        "url": "https://genius.com/artists/Sasha-alex-sloan",
+        "type": "regular",
+        "id": "571100"
+      },
+      {
+        "name": "Sasha Hutchings",
+        "url": "https://genius.com/artists/Sasha-hutchings",
+        "type": "regular",
+        "id": "661349"
+      },
+      {
+        "name": "Sasha Keable",
+        "url": "https://genius.com/artists/Sasha-keable",
+        "type": "regular",
+        "id": "53530"
+      },
+      {
+        "name": "Саша Скул (Sasha Skul)",
+        "url": "https://genius.com/artists/Sasha-skul",
+        "type": "regular",
+        "id": "645933"
+      },
+      {
+        "name": "Saske (GRC)",
+        "url": "https://genius.com/artists/Saske-grc",
+        "type": "regular",
+        "id": "1278903"
+      },
+      {
+        "name": "Sati Akura",
+        "url": "https://genius.com/artists/Sati-akura",
+        "type": "regular",
+        "id": "1443028"
+      },
+      {
+        "name": "Satinder Sartaaj",
+        "url": "https://genius.com/artists/Satinder-sartaaj",
+        "type": "regular",
+        "id": "1457778"
+      },
+      {
+        "name": "SativaMusic",
+        "url": "https://genius.com/artists/Sativamusic",
+        "type": "regular",
+        "id": "2989210"
+      },
+      {
+        "name": "Saturday Night Live",
+        "url": "https://genius.com/artists/Saturday-night-live",
+        "type": "regular",
+        "id": "179296"
+      },
+      {
+        "name": "Сатир (Satyr)",
+        "url": "https://genius.com/artists/Satyr",
+        "type": "regular",
+        "id": "1687914"
+      },
+      {
+        "name": "Sauce Walka",
+        "url": "https://genius.com/artists/Sauce-walka",
+        "type": "regular",
+        "id": "228743"
+      },
+      {
+        "name": "SAULT",
+        "url": "https://genius.com/artists/Sault",
+        "type": "regular",
+        "id": "1760695"
+      },
+      {
+        "name": "SAVAGE GARDEN",
+        "url": "https://genius.com/artists/Savage-garden",
+        "type": "regular",
+        "id": "123530"
+      },
+      {
+        "name": "Savatage",
+        "url": "https://genius.com/artists/Savatage",
+        "type": "regular",
+        "id": "37575"
+      },
+      {
+        "name": "Savv4x",
+        "url": "https://genius.com/artists/Savv4x",
+        "type": "regular",
+        "id": "4023427"
+      },
+      {
+        "name": "SawanoHiroyuki[nZk]",
+        "url": "https://genius.com/artists/Sawanohiroyuki-nzk",
+        "type": "regular",
+        "id": "1046155"
+      },
+      {
+        "name": "Saweetie",
+        "url": "https://genius.com/artists/Saweetie",
+        "type": "regular",
+        "id": "1240328"
+      },
+      {
+        "name": "SAWTOWNE",
+        "url": "https://genius.com/artists/Sawtowne",
+        "type": "regular",
+        "id": "3914687"
+      },
+      {
+        "name": "Say Anything",
+        "url": "https://genius.com/artists/Say-anything",
+        "type": "regular",
+        "id": "16826"
+      },
+      {
+        "name": "Sayf",
+        "url": "https://genius.com/artists/Sayf",
+        "type": "regular",
+        "id": "1679123"
+      },
+      {
+        "name": "Sayfalse",
+        "url": "https://genius.com/artists/Sayfalse",
+        "type": "regular",
+        "id": "3403534"
+      },
+      {
+        "name": "SAYGRACE",
+        "url": "https://genius.com/artists/Saygrace",
+        "type": "regular",
+        "id": "1984417"
+      },
+      {
+        "name": "Say Now",
+        "url": "https://genius.com/artists/Say-now",
+        "type": "regular",
+        "id": "3509194"
+      },
+      {
+        "name": "SB19",
+        "url": "https://genius.com/artists/Sb19",
+        "type": "regular",
+        "id": "1944322"
+      },
+      {
+        "name": "SB Maffija",
+        "url": "https://genius.com/artists/Sb-maffija",
+        "type": "regular",
+        "id": "256390"
+      },
+      {
+        "name": "Scally Milano",
+        "url": "https://genius.com/artists/Scally-milano",
+        "type": "regular",
+        "id": "2040265"
+      },
+      {
+        "name": "Scarface",
+        "url": "https://genius.com/artists/Scarface",
+        "type": "regular",
+        "id": "127"
+      },
+      {
+        "name": "Scarlxrd",
+        "url": "https://genius.com/artists/Scarlxrd",
+        "type": "regular",
+        "id": "988514"
+      },
+      {
+        "name": "Óscar Maydon",
+        "url": "https://genius.com/artists/Oscar-maydon",
+        "type": "regular",
+        "id": "2673421"
+      },
+      {
+        "name": "Scene Queen",
+        "url": "https://genius.com/artists/Scene-queen",
+        "type": "regular",
+        "id": "2860765"
+      },
+      {
+        "name": "SCH",
+        "url": "https://genius.com/artists/Sch",
+        "type": "regular",
+        "id": "276476"
+      },
+      {
+        "name": "​schafter",
+        "url": "https://genius.com/artists/Schafter",
+        "type": "regular",
+        "id": "1251445"
+      },
+      {
+        "name": "ЩЕНКИ (SCHENKI)",
+        "url": "https://genius.com/artists/Schenki",
+        "type": "regular",
+        "id": "1505051"
+      },
+      {
+        "name": "Schnuffel",
+        "url": "https://genius.com/artists/Schnuffel",
+        "type": "regular",
+        "id": "386068"
+      },
+      {
+        "name": "Schokk",
+        "url": "https://genius.com/artists/Schokk",
+        "type": "regular",
+        "id": "24799"
+      },
+      {
+        "name": "ScHoolboy Q",
+        "url": "https://genius.com/artists/Schoolboy-q",
+        "type": "regular",
+        "id": "11353"
+      },
+      {
+        "name": "SCIRENA",
+        "url": "https://genius.com/artists/Scirena",
+        "type": "regular",
+        "id": "2932415"
+      },
+      {
+        "name": "Scissor Sisters",
+        "url": "https://genius.com/artists/Scissor-sisters",
+        "type": "regular",
+        "id": "25104"
+      },
+      {
+        "name": "Scooter",
+        "url": "https://genius.com/artists/Scooter",
+        "type": "regular",
+        "id": "31528"
+      },
+      {
+        "name": "The Score",
+        "url": "https://genius.com/artists/The-score",
+        "type": "regular",
+        "id": "548770"
+      },
+      {
+        "name": "Scorpions",
+        "url": "https://genius.com/artists/Scorpions",
+        "type": "regular",
+        "id": "27166"
+      },
+      {
+        "name": "Scott",
+        "url": "https://genius.com/artists/Scott",
+        "type": "regular",
+        "id": "2304513"
+      },
+      {
+        "name": "Scott Cawthon",
+        "url": "https://genius.com/artists/Scott-cawthon",
+        "type": "regular",
+        "id": "527263"
+      },
+      {
+        "name": "Scotts Maphuma",
+        "url": "https://genius.com/artists/Scotts-maphuma",
+        "type": "regular",
+        "id": "2954993"
+      },
+      {
+        "name": "Scott Walker",
+        "url": "https://genius.com/artists/Scott-walker",
+        "type": "regular",
+        "id": "53293"
+      },
+      {
+        "name": "Scotty McCreery",
+        "url": "https://genius.com/artists/Scotty-mccreery",
+        "type": "regular",
+        "id": "40289"
+      },
+      {
+        "name": "Screwly G",
+        "url": "https://genius.com/artists/Screwly-g",
+        "type": "regular",
+        "id": "3776921"
+      },
+      {
+        "name": "Scrim",
+        "url": "https://genius.com/artists/Scrim",
+        "type": "regular",
+        "id": "400362"
+      },
+      {
+        "name": "The Script",
+        "url": "https://genius.com/artists/The-script",
+        "type": "regular",
+        "id": "15445"
+      },
+      {
+        "name": "Scylla",
+        "url": "https://genius.com/artists/Scylla",
+        "type": "regular",
+        "id": "17103"
+      },
+      {
+        "name": "Scythermane",
+        "url": "https://genius.com/artists/Scythermane",
+        "type": "regular",
+        "id": "2300462"
+      },
+      {
+        "name": "Südkurve München",
+        "url": "https://genius.com/artists/Sudkurve-munchen",
+        "type": "regular",
+        "id": "4334486"
+      },
+      {
+        "name": "SDM",
+        "url": "https://genius.com/artists/Sdm",
+        "type": "regular",
+        "id": "1904845"
+      },
+      {
+        "name": "Sdot Go",
+        "url": "https://genius.com/artists/Sdot-go",
+        "type": "regular",
+        "id": "3414590"
+      },
+      {
+        "name": "SDP",
+        "url": "https://genius.com/artists/Sdp",
+        "type": "regular",
+        "id": "25402"
+      },
+      {
+        "name": "Seafret",
+        "url": "https://genius.com/artists/Seafret",
+        "type": "regular",
+        "id": "326712"
+      },
+      {
+        "name": "Seal",
+        "url": "https://genius.com/artists/Seal",
+        "type": "regular",
+        "id": "11597"
+      },
+      {
+        "name": "Seals and Crofts",
+        "url": "https://genius.com/artists/Seals-and-crofts",
+        "type": "regular",
+        "id": "349841"
+      },
+      {
+        "name": "Seamus Heaney",
+        "url": "https://genius.com/artists/Seamus-heaney",
+        "type": "regular",
+        "id": "21375"
+      },
+      {
+        "name": "Sean Kingston",
+        "url": "https://genius.com/artists/Sean-kingston",
+        "type": "regular",
+        "id": "933"
+      },
+      {
+        "name": "Sean Leon",
+        "url": "https://genius.com/artists/Sean-leon",
+        "type": "regular",
+        "id": "45180"
+      },
+      {
+        "name": "Sean Paul",
+        "url": "https://genius.com/artists/Sean-paul",
+        "type": "regular",
+        "id": "740"
+      },
+      {
+        "name": "Searows",
+        "url": "https://genius.com/artists/Searows",
+        "type": "regular",
+        "id": "3233951"
+      },
+      {
+        "name": "Sea Shanty",
+        "url": "https://genius.com/artists/Sea-shanty",
+        "type": "regular",
+        "id": "2714367"
+      },
+      {
+        "name": "Sebastian Ledher",
+        "url": "https://genius.com/artists/Sebastian-ledher",
+        "type": "regular",
+        "id": "4339522"
+      },
+      {
+        "name": "Sebastián Yatra",
+        "url": "https://genius.com/artists/Sebastian-yatra",
+        "type": "regular",
+        "id": "458858"
+      },
+      {
+        "name": "SEBii",
+        "url": "https://genius.com/artists/Sebii",
+        "type": "regular",
+        "id": "1383459"
+      },
+      {
+        "name": "Seb Lowe",
+        "url": "https://genius.com/artists/Seb-lowe",
+        "type": "regular",
+        "id": "2970344"
+      },
+      {
+        "name": "Sech",
+        "url": "https://genius.com/artists/Sech",
+        "type": "regular",
+        "id": "1202698"
+      },
+      {
+        "name": "Secondhand Serenade",
+        "url": "https://genius.com/artists/Secondhand-serenade",
+        "type": "regular",
+        "id": "74150"
+      },
+      {
+        "name": "Secret Garden",
+        "url": "https://genius.com/artists/Secret-garden",
+        "type": "regular",
+        "id": "372320"
+      },
+      {
+        "name": "Seda Tripkolic",
+        "url": "https://genius.com/artists/Seda-tripkolic",
+        "type": "regular",
+        "id": "1582873"
+      },
+      {
+        "name": "Seeb",
+        "url": "https://genius.com/artists/Seeb",
+        "type": "regular",
+        "id": "648391"
+      },
+      {
+        "name": "Seedhe Maut",
+        "url": "https://genius.com/artists/Seedhe-maut",
+        "type": "regular",
+        "id": "1165798"
+      },
+      {
+        "name": "The Seekers",
+        "url": "https://genius.com/artists/The-seekers",
+        "type": "regular",
+        "id": "37739"
+      },
+      {
+        "name": "SEEMEE",
+        "url": "https://genius.com/artists/Seemee",
+        "type": "regular",
+        "id": "1650122"
+      },
+      {
+        "name": "Seether",
+        "url": "https://genius.com/artists/Seether",
+        "type": "regular",
+        "id": "20913"
+      },
+      {
+        "name": "Sef",
+        "url": "https://genius.com/artists/Sef",
+        "type": "regular",
+        "id": "15406"
+      },
+      {
+        "name": "Sefo",
+        "url": "https://genius.com/artists/Sefo",
+        "type": "regular",
+        "id": "2074520"
+      },
+      {
+        "name": "SEGA",
+        "url": "https://genius.com/artists/Sega",
+        "type": "regular",
+        "id": "139783"
+      },
+      {
+        "name": "Seiler und Speer",
+        "url": "https://genius.com/artists/Seiler-und-speer",
+        "type": "regular",
+        "id": "479955"
+      },
+      {
+        "name": "Seka Aleksić",
+        "url": "https://genius.com/artists/Seka-aleksic",
+        "type": "regular",
+        "id": "406306"
+      },
+      {
+        "name": "Sekou (UK)",
+        "url": "https://genius.com/artists/Sekou-uk",
+        "type": "regular",
+        "id": "2950011"
+      },
+      {
+        "name": "Seksendört",
+        "url": "https://genius.com/artists/Seksendort",
+        "type": "regular",
+        "id": "479184"
+      },
+      {
+        "name": "Seksi",
+        "url": "https://genius.com/artists/Seksi",
+        "type": "regular",
+        "id": "2451120"
+      },
+      {
+        "name": "Сектор Газа (Sektor Gaza)",
+        "url": "https://genius.com/artists/Sektor-gaza",
+        "type": "regular",
+        "id": "1583227"
+      },
+      {
+        "name": "Selah",
+        "url": "https://genius.com/artists/Selah",
+        "type": "regular",
+        "id": "55749"
+      },
+      {
+        "name": "Selda Bağcan",
+        "url": "https://genius.com/artists/Selda-bagcan",
+        "type": "regular",
+        "id": "485111"
+      },
+      {
+        "name": "Selena",
+        "url": "https://genius.com/artists/Selena",
+        "type": "regular",
+        "id": "138995"
+      },
+      {
+        "name": "Selena Gomez & The Scene",
+        "url": "https://genius.com/artists/Selena-gomez-and-the-scene",
+        "type": "regular",
+        "id": "17191"
+      },
+      {
+        "name": "​sElf",
+        "url": "https://genius.com/artists/Self",
+        "type": "regular",
+        "id": "56562"
+      },
+      {
+        "name": "Self Esteem",
+        "url": "https://genius.com/artists/Self-esteem",
+        "type": "regular",
+        "id": "1290380"
+      },
+      {
+        "name": "Selin",
+        "url": "https://genius.com/artists/Selin",
+        "type": "regular",
+        "id": "2921508"
+      },
+      {
+        "name": "Sematary",
+        "url": "https://genius.com/artists/Sematary",
+        "type": "regular",
+        "id": "1822853"
+      },
+      {
+        "name": "SemDen",
+        "url": "https://genius.com/artists/Semden",
+        "type": "regular",
+        "id": "4430559"
+      },
+      {
+        "name": "Semicenk",
+        "url": "https://genius.com/artists/Semicenk",
+        "type": "regular",
+        "id": "3235380"
+      },
+      {
+        "name": "семьсот семь (sem'sot sem')",
+        "url": "https://genius.com/artists/Semsot-sem",
+        "type": "regular",
+        "id": "2216028"
+      },
+      {
+        "name": "Sena Şener",
+        "url": "https://genius.com/artists/Sena-sener",
+        "type": "regular",
+        "id": "1029235"
+      },
+      {
+        "name": "Senidah",
+        "url": "https://genius.com/artists/Senidah",
+        "type": "regular",
+        "id": "258538"
+      },
+      {
+        "name": "Sen Senra",
+        "url": "https://genius.com/artists/Sen-senra",
+        "type": "regular",
+        "id": "1074432"
+      },
+      {
+        "name": "Senses Fail",
+        "url": "https://genius.com/artists/Senses-fail",
+        "type": "regular",
+        "id": "23656"
+      },
+      {
+        "name": "Sentino",
+        "url": "https://genius.com/artists/Sentino",
+        "type": "regular",
+        "id": "19129"
+      },
+      {
+        "name": "Senzawa",
+        "url": "https://genius.com/artists/Senzawa",
+        "type": "regular",
+        "id": "1627997"
+      },
+      {
+        "name": "Separ",
+        "url": "https://genius.com/artists/Separ",
+        "type": "regular",
+        "id": "139406"
+      },
+      {
+        "name": "Seph Schlueter",
+        "url": "https://genius.com/artists/Seph-schlueter",
+        "type": "regular",
+        "id": "2005541"
+      },
+      {
+        "name": "Sepultura",
+        "url": "https://genius.com/artists/Sepultura",
+        "type": "regular",
+        "id": "344507"
+      },
+      {
+        "name": "Serdar Ortaç",
+        "url": "https://genius.com/artists/Serdar-ortac",
+        "type": "regular",
+        "id": "404689"
+      },
+      {
+        "name": "SEREBRO",
+        "url": "https://genius.com/artists/Serebro",
+        "type": "regular",
+        "id": "355746"
+      },
+      {
+        "name": "СЕРЕГА ПИРАТ (SEREGA PIRAT)",
+        "url": "https://genius.com/artists/Serega-pirat",
+        "type": "regular",
+        "id": "1950899"
+      },
+      {
+        "name": "Serena Brancale",
+        "url": "https://genius.com/artists/Serena-brancale",
+        "type": "regular",
+        "id": "2551375"
+      },
+      {
+        "name": "Serge Gainsbourg",
+        "url": "https://genius.com/artists/Serge-gainsbourg",
+        "type": "regular",
+        "id": "19226"
+      },
+      {
+        "name": "Сергей Трофимов (Sergei Trofimov)",
+        "url": "https://genius.com/artists/Sergei-trofimov",
+        "type": "regular",
+        "id": "1651743"
+      },
+      {
+        "name": "Сергей Лазарев (Sergey Lazarev)",
+        "url": "https://genius.com/artists/Sergey-lazarev",
+        "type": "regular",
+        "id": "406011"
+      },
+      {
+        "name": "Serhat Özen",
+        "url": "https://genius.com/artists/Serhat-ozen",
+        "type": "regular",
+        "id": "3090664"
+      },
+      {
+        "name": "Serial Podcast",
+        "url": "https://genius.com/artists/Serial-podcast",
+        "type": "regular",
+        "id": "263336"
+      },
+      {
+        "name": "Serj Tankian",
+        "url": "https://genius.com/artists/Serj-tankian",
+        "type": "regular",
+        "id": "11189"
+      },
+      {
+        "name": "Serkan Kaya",
+        "url": "https://genius.com/artists/Serkan-kaya",
+        "type": "regular",
+        "id": "630135"
+      },
+      {
+        "name": "Sertab Erener",
+        "url": "https://genius.com/artists/Sertab-erener",
+        "type": "regular",
+        "id": "174284"
+      },
+      {
+        "name": "SERYABKINA",
+        "url": "https://genius.com/artists/Seryabkina",
+        "type": "regular",
+        "id": "1143882"
+      },
+      {
+        "name": "Серёга (Seryoga)",
+        "url": "https://genius.com/artists/Seryoga",
+        "type": "regular",
+        "id": "164715"
+      },
+      {
+        "name": "Sesame Street",
+        "url": "https://genius.com/artists/Sesame-street",
+        "type": "regular",
+        "id": "154061"
+      },
+      {
+        "name": "Session Road",
+        "url": "https://genius.com/artists/Session-road",
+        "type": "regular",
+        "id": "354146"
+      },
+      {
+        "name": "Seth MacFarlane",
+        "url": "https://genius.com/artists/Seth-macfarlane",
+        "type": "regular",
+        "id": "23228"
+      },
+      {
+        "name": "Set It Off",
+        "url": "https://genius.com/artists/Set-it-off",
+        "type": "regular",
+        "id": "266989"
+      },
+      {
+        "name": "SEUNGMIN",
+        "url": "https://genius.com/artists/Seungmin",
+        "type": "regular",
+        "id": "1601325"
+      },
+      {
+        "name": "SEU Worship",
+        "url": "https://genius.com/artists/Seu-worship",
+        "type": "regular",
+        "id": "480710"
+      },
+      {
+        "name": "Sevdaliza",
+        "url": "https://genius.com/artists/Sevdaliza",
+        "type": "regular",
+        "id": "481313"
+      },
+      {
+        "name": "Seven Mary Three",
+        "url": "https://genius.com/artists/Seven-mary-three",
+        "type": "regular",
+        "id": "110540"
+      },
+      {
+        "name": "SEVENTEEN (세븐틴)",
+        "url": "https://genius.com/artists/Seventeen",
+        "type": "regular",
+        "id": "961718"
+      },
+      {
+        "name": "Severina",
+        "url": "https://genius.com/artists/Severina",
+        "type": "regular",
+        "id": "364649"
+      },
+      {
+        "name": "Sewerperson",
+        "url": "https://genius.com/artists/Sewerperson",
+        "type": "regular",
+        "id": "1728942"
+      },
+      {
+        "name": "Sewerslvt",
+        "url": "https://genius.com/artists/Sewerslvt",
+        "type": "regular",
+        "id": "2145354"
+      },
+      {
+        "name": "SEXBOMBA31",
+        "url": "https://genius.com/artists/Sexbomba31",
+        "type": "regular",
+        "id": "1929227"
+      },
+      {
+        "name": "Sexbomb Girls",
+        "url": "https://genius.com/artists/Sexbomb-girls",
+        "type": "regular",
+        "id": "365960"
+      },
+      {
+        "name": "Sexion d'Assaut",
+        "url": "https://genius.com/artists/Sexion-dassaut",
+        "type": "regular",
+        "id": "1261"
+      },
+      {
+        "name": "Sexmane",
+        "url": "https://genius.com/artists/Sexmane",
+        "type": "regular",
+        "id": "1825180"
+      },
+      {
+        "name": "Sex Pistols",
+        "url": "https://genius.com/artists/Sex-pistols",
+        "type": "regular",
+        "id": "20831"
+      },
+      {
+        "name": "Sexton",
+        "url": "https://genius.com/artists/Sexton",
+        "type": "regular",
+        "id": "1115043"
+      },
+      {
+        "name": "Seyi Vibez",
+        "url": "https://genius.com/artists/Seyi-vibez",
+        "type": "regular",
+        "id": "2299344"
+      },
+      {
+        "name": "Sez on the Beat",
+        "url": "https://genius.com/artists/Sez-on-the-beat",
+        "type": "regular",
+        "id": "1168855"
+      },
+      {
+        "name": "SFDK",
+        "url": "https://genius.com/artists/Sfdk",
+        "type": "regular",
+        "id": "55782"
+      },
+      {
+        "name": "Sfera Ebbasta",
+        "url": "https://genius.com/artists/Sfera-ebbasta",
+        "type": "regular",
+        "id": "339757"
+      },
+      {
+        "name": "Shaan",
+        "url": "https://genius.com/artists/Shaan",
+        "type": "regular",
+        "id": "24950"
+      },
+      {
+        "name": "Shabab",
+        "url": "https://genius.com/artists/Shabab",
+        "type": "regular",
+        "id": "1872151"
+      },
+      {
+        "name": "Shabjdeed - شب جديد",
+        "url": "https://genius.com/artists/Shabjdeed",
+        "type": "regular",
+        "id": "3693246"
+      },
+      {
+        "name": "Shablo",
+        "url": "https://genius.com/artists/Shablo",
+        "type": "regular",
+        "id": "69754"
+      },
+      {
+        "name": "Shaboozey",
+        "url": "https://genius.com/artists/Shaboozey",
+        "type": "regular",
+        "id": "69508"
+      },
+      {
+        "name": "Shadab Faridi",
+        "url": "https://genius.com/artists/Shadab-faridi",
+        "type": "regular",
+        "id": "1547673"
+      },
+      {
+        "name": "Shadow of Intent",
+        "url": "https://genius.com/artists/Shadow-of-intent",
+        "type": "regular",
+        "id": "1054845"
+      },
+      {
+        "name": "shadowraze",
+        "url": "https://genius.com/artists/Shadowraze",
+        "type": "regular",
+        "id": "2029908"
+      },
+      {
+        "name": "SHAD (PHL)",
+        "url": "https://genius.com/artists/Shad-phl",
+        "type": "regular",
+        "id": "3887719"
+      },
+      {
+        "name": "Sha EK",
+        "url": "https://genius.com/artists/Sha-ek",
+        "type": "regular",
+        "id": "2751499"
+      },
+      {
+        "name": "Shafqat Amanat Ali",
+        "url": "https://genius.com/artists/Shafqat-amanat-ali",
+        "type": "regular",
+        "id": "384735"
+      },
+      {
+        "name": "Shaggy",
+        "url": "https://genius.com/artists/Shaggy",
+        "type": "regular",
+        "id": "7280"
+      },
+      {
+        "name": "Shakey Graves",
+        "url": "https://genius.com/artists/Shakey-graves",
+        "type": "regular",
+        "id": "236408"
+      },
+      {
+        "name": "Shallipopi",
+        "url": "https://genius.com/artists/Shallipopi",
+        "type": "regular",
+        "id": "3562555"
+      },
+      {
+        "name": "Shallum Lama",
+        "url": "https://genius.com/artists/Shallum-lama",
+        "type": "regular",
+        "id": "3965966"
+      },
+      {
+        "name": "SHAMAN",
+        "url": "https://genius.com/artists/Shaman",
+        "type": "regular",
+        "id": "2721135"
+      },
+      {
+        "name": "Shana Wilson-Williams",
+        "url": "https://genius.com/artists/Shana-wilson-williams",
+        "type": "regular",
+        "id": "1412214"
+      },
+      {
+        "name": "Shane & Shane",
+        "url": "https://genius.com/artists/Shane-and-shane",
+        "type": "regular",
+        "id": "360452"
+      },
+      {
+        "name": "Shania Twain",
+        "url": "https://genius.com/artists/Shania-twain",
+        "type": "regular",
+        "id": "139398"
+      },
+      {
+        "name": "Shankar–Ehsaan–Loy",
+        "url": "https://genius.com/artists/Shankarehsaanloy",
+        "type": "regular",
+        "id": "452664"
+      },
+      {
+        "name": "Shankar Mahadevan",
+        "url": "https://genius.com/artists/Shankar-mahadevan",
+        "type": "regular",
+        "id": "383940"
+      },
+      {
+        "name": "Shanti Dope",
+        "url": "https://genius.com/artists/Shanti-dope",
+        "type": "regular",
+        "id": "1098603"
+      },
+      {
+        "name": "单依纯 (Shan Yichun)",
+        "url": "https://genius.com/artists/Shan-yichun",
+        "type": "regular",
+        "id": "2672863"
+      },
+      {
+        "name": "Shareh",
+        "url": "https://genius.com/artists/Shareh",
+        "type": "regular",
+        "id": "2076052"
+      },
+      {
+        "name": "Sharn",
+        "url": "https://genius.com/artists/Sharn",
+        "type": "regular",
+        "id": "1464600"
+      },
+      {
+        "name": "Sharon Van Etten",
+        "url": "https://genius.com/artists/Sharon-van-etten",
+        "type": "regular",
+        "id": "24728"
+      },
+      {
+        "name": "Shashaa Tirupati",
+        "url": "https://genius.com/artists/Shashaa-tirupati",
+        "type": "regular",
+        "id": "1595463"
+      },
+      {
+        "name": "Shashwat Singh",
+        "url": "https://genius.com/artists/Shashwat-singh",
+        "type": "regular",
+        "id": "1301572"
+      },
+      {
+        "name": "Shatta Wale",
+        "url": "https://genius.com/artists/Shatta-wale",
+        "type": "regular",
+        "id": "482612"
+      },
+      {
+        "name": "Shaw",
+        "url": "https://genius.com/artists/Shaw",
+        "type": "regular",
+        "id": "984311"
+      },
+      {
+        "name": "Shawn James",
+        "url": "https://genius.com/artists/Shawn-james",
+        "type": "regular",
+        "id": "532298"
+      },
+      {
+        "name": "Shayfer James",
+        "url": "https://genius.com/artists/Shayfer-james",
+        "type": "regular",
+        "id": "1145708"
+      },
+      {
+        "name": "Shayne Ward",
+        "url": "https://genius.com/artists/Shayne-ward",
+        "type": "regular",
+        "id": "227846"
+      },
+      {
+        "name": "Shearling",
+        "url": "https://genius.com/artists/Shearling",
+        "type": "regular",
+        "id": "4408981"
+      },
+      {
+        "name": "Sheck Wes",
+        "url": "https://genius.com/artists/Sheck-wes",
+        "type": "regular",
+        "id": "1024052"
+      },
+      {
+        "name": "Shedeur Sanders",
+        "url": "https://genius.com/artists/Shedeur-sanders",
+        "type": "regular",
+        "id": "4043212"
+      },
+      {
+        "name": "Sheena Easton",
+        "url": "https://genius.com/artists/Sheena-easton",
+        "type": "regular",
+        "id": "338024"
+      },
+      {
+        "name": "椎名林檎 (Sheena Ringo)",
+        "url": "https://genius.com/artists/Sheena-ringo",
+        "type": "regular",
+        "id": "386126"
+      },
+      {
+        "name": "Sheff G",
+        "url": "https://genius.com/artists/Sheff-g",
+        "type": "regular",
+        "id": "1167746"
+      },
+      {
+        "name": "Shehab - شهاب",
+        "url": "https://genius.com/artists/Shehab",
+        "type": "regular",
+        "id": "154416"
+      },
+      {
+        "name": "Sheila On 7",
+        "url": "https://genius.com/artists/Sheila-on-7",
+        "type": "regular",
+        "id": "343924"
+      },
+      {
+        "name": "Shelast",
+        "url": "https://genius.com/artists/Shelast",
+        "type": "regular",
+        "id": "4440633"
+      },
+      {
+        "name": "Shelly",
+        "url": "https://genius.com/artists/Shelly",
+        "type": "regular",
+        "id": "153559"
+      },
+      {
+        "name": "Sherine - شيرين",
+        "url": "https://genius.com/artists/Sherine",
+        "type": "regular",
+        "id": "1051998"
+      },
+      {
+        "name": "Sheryl Crow",
+        "url": "https://genius.com/artists/Sheryl-crow",
+        "type": "regular",
+        "id": "7109"
+      },
+      {
+        "name": "She Wants Revenge",
+        "url": "https://genius.com/artists/She-wants-revenge",
+        "type": "regular",
+        "id": "7813"
+      },
+      {
+        "name": "SHEZAN",
+        "url": "https://genius.com/artists/Shezan",
+        "type": "regular",
+        "id": "1860528"
+      },
+      {
+        "name": "平田志穂子 (Shihoko Hirata)",
+        "url": "https://genius.com/artists/Shihoko-hirata",
+        "type": "regular",
+        "id": "655188"
+      },
+      {
+        "name": "Shiki-TMNS",
+        "url": "https://genius.com/artists/Shiki-tmns",
+        "type": "regular",
+        "id": "419251"
+      },
+      {
+        "name": "Shiloh Dynasty",
+        "url": "https://genius.com/artists/Shiloh-dynasty",
+        "type": "regular",
+        "id": "1027596"
+      },
+      {
+        "name": "Shilpa Rao",
+        "url": "https://genius.com/artists/Shilpa-rao",
+        "type": "regular",
+        "id": "456277"
+      },
+      {
+        "name": "Shimza",
+        "url": "https://genius.com/artists/Shimza",
+        "type": "regular",
+        "id": "2098383"
+      },
+      {
+        "name": "Shinda Kahlon",
+        "url": "https://genius.com/artists/Shinda-kahlon",
+        "type": "regular",
+        "id": "2513323"
+      },
+      {
+        "name": "Shindy",
+        "url": "https://genius.com/artists/Shindy",
+        "type": "regular",
+        "id": "18236"
+      },
+      {
+        "name": "Shinedown",
+        "url": "https://genius.com/artists/Shinedown",
+        "type": "regular",
+        "id": "12997"
+      },
+      {
+        "name": "SHINee",
+        "url": "https://genius.com/artists/Shinee",
+        "type": "regular",
+        "id": "183121"
+      },
+      {
+        "name": "shinigami (MA)",
+        "url": "https://genius.com/artists/Shinigami-ma",
+        "type": "regular",
+        "id": "3977824"
+      },
+      {
+        "name": "The Shins",
+        "url": "https://genius.com/artists/The-shins",
+        "type": "regular",
+        "id": "18053"
+      },
+      {
+        "name": "Shirebound and Busking",
+        "url": "https://genius.com/artists/Shirebound-and-busking",
+        "type": "regular",
+        "id": "1002052"
+      },
+      {
+        "name": "Shirin David",
+        "url": "https://genius.com/artists/Shirin-david",
+        "type": "regular",
+        "id": "308692"
+      },
+      {
+        "name": "Shirley Bassey",
+        "url": "https://genius.com/artists/Shirley-bassey",
+        "type": "regular",
+        "id": "39885"
+      },
+      {
+        "name": "Shironamhin",
+        "url": "https://genius.com/artists/Shironamhin",
+        "type": "regular",
+        "id": "1109428"
+      },
+      {
+        "name": "鷺巣詩郎 (Shiro Sagisu)",
+        "url": "https://genius.com/artists/Shiro-sagisu",
+        "type": "regular",
+        "id": "513086"
+      },
+      {
+        "name": "Shiva",
+        "url": "https://genius.com/artists/Shiva",
+        "type": "regular",
+        "id": "667428"
+      },
+      {
+        "name": "Shkodra Elektronike",
+        "url": "https://genius.com/artists/Shkodra-elektronike",
+        "type": "regular",
+        "id": "2975550"
+      },
+      {
+        "name": "Shocking Blue",
+        "url": "https://genius.com/artists/Shocking-blue",
+        "type": "regular",
+        "id": "298323"
+      },
+      {
+        "name": "目黒将司 (Shoji Meguro)",
+        "url": "https://genius.com/artists/Shoji-meguro",
+        "type": "regular",
+        "id": "290325"
+      },
+      {
+        "name": "Shonar Bangla Circus",
+        "url": "https://genius.com/artists/Shonar-bangla-circus",
+        "type": "regular",
+        "id": "2205236"
+      },
+      {
+        "name": "Shordie Shordie",
+        "url": "https://genius.com/artists/Shordie-shordie",
+        "type": "regular",
+        "id": "1357331"
+      },
+      {
+        "name": "Shoreline Mafia",
+        "url": "https://genius.com/artists/Shoreline-mafia",
+        "type": "regular",
+        "id": "1149818"
+      },
+      {
+        "name": "Shortparis",
+        "url": "https://genius.com/artists/Shortparis",
+        "type": "regular",
+        "id": "1525659"
+      },
+      {
+        "name": "Shouse",
+        "url": "https://genius.com/artists/Shouse",
+        "type": "regular",
+        "id": "1299396"
+      },
+      {
+        "name": "Show Me the Body",
+        "url": "https://genius.com/artists/Show-me-the-body",
+        "type": "regular",
+        "id": "991125"
+      },
+      {
+        "name": "Shreya Ghoshal",
+        "url": "https://genius.com/artists/Shreya-ghoshal",
+        "type": "regular",
+        "id": "254315"
+      },
+      {
+        "name": "SHTRIHCOD",
+        "url": "https://genius.com/artists/Shtrihcod",
+        "type": "regular",
+        "id": "3138189"
+      },
+      {
+        "name": "Shubh",
+        "url": "https://genius.com/artists/Shubh",
+        "type": "regular",
+        "id": "2969320"
+      },
+      {
+        "name": "Shu-bi-dua",
+        "url": "https://genius.com/artists/Shu-bi-dua",
+        "type": "regular",
+        "id": "454022"
+      },
+      {
+        "name": "Shuvendu Das Shuvo",
+        "url": "https://genius.com/artists/Shuvendu-das-shuvo",
+        "type": "regular",
+        "id": "3594819"
+      },
+      {
+        "name": "Shygirl",
+        "url": "https://genius.com/artists/Shygirl",
+        "type": "regular",
+        "id": "1242065"
+      },
+      {
+        "name": "Шайни (Shyney)",
+        "url": "https://genius.com/artists/Shyney",
+        "type": "regular",
+        "id": "2467773"
+      },
+      {
+        "name": "Siakol",
+        "url": "https://genius.com/artists/Siakol",
+        "type": "regular",
+        "id": "354993"
+      },
+      {
+        "name": "Sica",
+        "url": "https://genius.com/artists/Sica",
+        "type": "regular",
+        "id": "1956957"
+      },
+      {
+        "name": "Sicario (GRC)",
+        "url": "https://genius.com/artists/Sicario-grc",
+        "type": "regular",
+        "id": "3383818"
+      },
+      {
+        "name": "Sick Budd",
+        "url": "https://genius.com/artists/Sick-budd",
+        "type": "regular",
+        "id": "998869"
+      },
+      {
+        "name": "Sickick",
+        "url": "https://genius.com/artists/Sickick",
+        "type": "regular",
+        "id": "193068"
+      },
+      {
+        "name": "Sidhu Moose Wala",
+        "url": "https://genius.com/artists/Sidhu-moose-wala",
+        "type": "regular",
+        "id": "2242064"
+      },
+      {
+        "name": "Sidney Mohede",
+        "url": "https://genius.com/artists/Sidney-mohede",
+        "type": "regular",
+        "id": "69939"
+      },
+      {
+        "name": "Sido",
+        "url": "https://genius.com/artists/Sido",
+        "type": "regular",
+        "id": "12073"
+      },
+      {
+        "name": "SIDODGI DUBOSHIT",
+        "url": "https://genius.com/artists/Sidodgi-duboshit",
+        "type": "regular",
+        "id": "1065771"
+      },
+      {
+        "name": "SIDxRAM",
+        "url": "https://genius.com/artists/Sidxram",
+        "type": "regular",
+        "id": "323240"
+      },
+      {
+        "name": "SIENNA SPIRO",
+        "url": "https://genius.com/artists/Sienna-spiro",
+        "type": "regular",
+        "id": "3966222"
+      },
+      {
+        "name": "Sierra Ferrell",
+        "url": "https://genius.com/artists/Sierra-ferrell",
+        "type": "regular",
+        "id": "1926159"
+      },
+      {
+        "name": "Sierra Kidd",
+        "url": "https://genius.com/artists/Sierra-kidd",
+        "type": "regular",
+        "id": "35586"
+      },
+      {
+        "name": "Sigala",
+        "url": "https://genius.com/artists/Sigala",
+        "type": "regular",
+        "id": "513419"
+      },
+      {
+        "name": "Signature By SB",
+        "url": "https://genius.com/artists/Signature-by-sb",
+        "type": "regular",
+        "id": "1962119"
+      },
+      {
+        "name": "sign crushes motorist",
+        "url": "https://genius.com/artists/Sign-crushes-motorist",
+        "type": "regular",
+        "id": "3357010"
+      },
+      {
+        "name": "Sigur Rós",
+        "url": "https://genius.com/artists/Sigur-ros",
+        "type": "regular",
+        "id": "47522"
+      },
+      {
+        "name": "SIL3A",
+        "url": "https://genius.com/artists/Sil3a",
+        "type": "regular",
+        "id": "2411807"
+      },
+      {
+        "name": "Sil-A",
+        "url": "https://genius.com/artists/Sil-a",
+        "type": "regular",
+        "id": "459233"
+      },
+      {
+        "name": "汪蘇瀧 (Silence Wang)",
+        "url": "https://genius.com/artists/Silence-wang",
+        "type": "regular",
+        "id": "2048236"
+      },
+      {
+        "name": "Silent Bob",
+        "url": "https://genius.com/artists/Silent-bob",
+        "type": "regular",
+        "id": "1171918"
+      },
+      {
+        "name": "Silent Planet",
+        "url": "https://genius.com/artists/Silent-planet",
+        "type": "regular",
+        "id": "253671"
+      },
+      {
+        "name": "Silent Sanctuary",
+        "url": "https://genius.com/artists/Silent-sanctuary",
+        "type": "regular",
+        "id": "357442"
+      },
+      {
+        "name": "Silent Strike",
+        "url": "https://genius.com/artists/Silent-strike",
+        "type": "regular",
+        "id": "38149"
+      },
+      {
+        "name": "Silk",
+        "url": "https://genius.com/artists/Silk",
+        "type": "regular",
+        "id": "5232"
+      },
+      {
+        "name": "Silk Sonic",
+        "url": "https://genius.com/artists/Silk-sonic",
+        "type": "regular",
+        "id": "2622290"
+      },
+      {
+        "name": "Silvana Estrada",
+        "url": "https://genius.com/artists/Silvana-estrada",
+        "type": "regular",
+        "id": "1437865"
+      },
+      {
+        "name": "Silverchair",
+        "url": "https://genius.com/artists/Silverchair",
+        "type": "regular",
+        "id": "38582"
+      },
+      {
+        "name": "Silver Jews",
+        "url": "https://genius.com/artists/Silver-jews",
+        "type": "regular",
+        "id": "30077"
+      },
+      {
+        "name": "Silverstein",
+        "url": "https://genius.com/artists/Silverstein",
+        "type": "regular",
+        "id": "41718"
+      },
+      {
+        "name": "Silversun Pickups",
+        "url": "https://genius.com/artists/Silversun-pickups",
+        "type": "regular",
+        "id": "28985"
+      },
+      {
+        "name": "Silvio Rodríguez",
+        "url": "https://genius.com/artists/Silvio-rodriguez",
+        "type": "regular",
+        "id": "154366"
+      },
+      {
+        "name": "SiM",
+        "url": "https://genius.com/artists/Sim",
+        "type": "regular",
+        "id": "332510"
+      },
+      {
+        "name": "Simba La Rue",
+        "url": "https://genius.com/artists/Simba-la-rue",
+        "type": "regular",
+        "id": "2547184"
+      },
+      {
+        "name": "Simge",
+        "url": "https://genius.com/artists/Simge",
+        "type": "regular",
+        "id": "668750"
+      },
+      {
+        "name": "Simon & Garfunkel",
+        "url": "https://genius.com/artists/Simon-and-garfunkel",
+        "type": "regular",
+        "id": "14688"
+      },
+      {
+        "name": "Simon Armitage",
+        "url": "https://genius.com/artists/Simon-armitage",
+        "type": "regular",
+        "id": "38921"
+      },
+      {
+        "name": "Simple Minds",
+        "url": "https://genius.com/artists/Simple-minds",
+        "type": "regular",
+        "id": "48889"
+      },
+      {
+        "name": "Simple Plan",
+        "url": "https://genius.com/artists/Simple-plan",
+        "type": "regular",
+        "id": "59451"
+      },
+      {
+        "name": "Simply Red",
+        "url": "https://genius.com/artists/Simply-red",
+        "type": "regular",
+        "id": "133145"
+      },
+      {
+        "name": "The Simpsons",
+        "url": "https://genius.com/artists/The-simpsons",
+        "type": "regular",
+        "id": "22497"
+      },
+      {
+        "name": "Sinach",
+        "url": "https://genius.com/artists/Sinach",
+        "type": "regular",
+        "id": "365066"
+      },
+      {
+        "name": "Sinéad O'Connor",
+        "url": "https://genius.com/artists/Sinead-oconnor",
+        "type": "regular",
+        "id": "152284"
+      },
+      {
+        "name": "Sinan Sakić",
+        "url": "https://genius.com/artists/Sinan-sakic",
+        "type": "regular",
+        "id": "1713930"
+      },
+      {
+        "name": "Sina Sae",
+        "url": "https://genius.com/artists/Sina-sae",
+        "type": "regular",
+        "id": "1056145"
+      },
+      {
+        "name": "Sin Boy",
+        "url": "https://genius.com/artists/Sin-boy",
+        "type": "regular",
+        "id": "666226"
+      },
+      {
+        "name": "Синдром Восьмиклассника (Sindrom Vosmiklassnika)",
+        "url": "https://genius.com/artists/Sindrom-vosmiklassnika",
+        "type": "regular",
+        "id": "2064936"
+      },
+      {
+        "name": "Siouxsie and the Banshees",
+        "url": "https://genius.com/artists/Siouxsie-and-the-banshees",
+        "type": "regular",
+        "id": "36594"
+      },
+      {
+        "name": "SiR",
+        "url": "https://genius.com/artists/Sir",
+        "type": "regular",
+        "id": "41168"
+      },
+      {
+        "name": "SIRA",
+        "url": "https://genius.com/artists/Sira",
+        "type": "regular",
+        "id": "3137623"
+      },
+      {
+        "name": "Sir Chloe",
+        "url": "https://genius.com/artists/Sir-chloe",
+        "type": "regular",
+        "id": "1838741"
+      },
+      {
+        "name": "Sir Mix-a-Lot",
+        "url": "https://genius.com/artists/Sir-mix-a-lot",
+        "type": "regular",
+        "id": "656"
+      },
+      {
+        "name": "Sisqó",
+        "url": "https://genius.com/artists/Sisqo",
+        "type": "regular",
+        "id": "1701"
+      },
+      {
+        "name": "Sissal",
+        "url": "https://genius.com/artists/Sissal",
+        "type": "regular",
+        "id": "4306949"
+      },
+      {
+        "name": "Sister Nancy",
+        "url": "https://genius.com/artists/Sister-nancy",
+        "type": "regular",
+        "id": "14297"
+      },
+      {
+        "name": "Sister Sledge",
+        "url": "https://genius.com/artists/Sister-sledge",
+        "type": "regular",
+        "id": "53451"
+      },
+      {
+        "name": "The Sisters of Mercy",
+        "url": "https://genius.com/artists/The-sisters-of-mercy",
+        "type": "regular",
+        "id": "341911"
+      },
+      {
+        "name": "Sivas",
+        "url": "https://genius.com/artists/Sivas",
+        "type": "regular",
+        "id": "79028"
+      },
+      {
+        "name": "SIX Cast",
+        "url": "https://genius.com/artists/Six-cast",
+        "type": "regular",
+        "id": "2402628"
+      },
+      {
+        "name": "Sixpence None the Richer",
+        "url": "https://genius.com/artists/Sixpence-none-the-richer",
+        "type": "regular",
+        "id": "196075"
+      },
+      {
+        "name": "Six Sex",
+        "url": "https://genius.com/artists/Six-sex",
+        "type": "regular",
+        "id": "2828550"
+      },
+      {
+        "name": "SixTONES",
+        "url": "https://genius.com/artists/Sixtones",
+        "type": "regular",
+        "id": "2130399"
+      },
+      {
+        "name": "Sizzla",
+        "url": "https://genius.com/artists/Sizzla",
+        "type": "regular",
+        "id": "5988"
+      },
+      {
+        "name": "Sjava",
+        "url": "https://genius.com/artists/Sjava",
+        "type": "regular",
+        "id": "1014070"
+      },
+      {
+        "name": "skaiwater",
+        "url": "https://genius.com/artists/Skaiwater",
+        "type": "regular",
+        "id": "1425324"
+      },
+      {
+        "name": "¥$, Kanye West & Ty Dolla $ign",
+        "url": "https://genius.com/artists/Kanye-west-and-ty-dolla-sign",
+        "type": "regular",
+        "id": "3688827"
+      },
+      {
+        "name": "Skee-Lo",
+        "url": "https://genius.com/artists/Skee-lo",
+        "type": "regular",
+        "id": "139"
+      },
+      {
+        "name": "Skeeter Davis",
+        "url": "https://genius.com/artists/Skeeter-davis",
+        "type": "regular",
+        "id": "150942"
+      },
+      {
+        "name": "Skeng",
+        "url": "https://genius.com/artists/Skeng",
+        "type": "regular",
+        "id": "2953049"
+      },
+      {
+        "name": "Skepta",
+        "url": "https://genius.com/artists/Skepta",
+        "type": "regular",
+        "id": "1713"
+      },
+      {
+        "name": "Ski Aggu",
+        "url": "https://genius.com/artists/Ski-aggu",
+        "type": "regular",
+        "id": "2627688"
+      },
+      {
+        "name": "Skid Row",
+        "url": "https://genius.com/artists/Skid-row",
+        "type": "regular",
+        "id": "38337"
+      },
+      {
+        "name": "Skilla Baby",
+        "url": "https://genius.com/artists/Skilla-baby",
+        "type": "regular",
+        "id": "1966788"
+      },
+      {
+        "name": "Skillet",
+        "url": "https://genius.com/artists/Skillet",
+        "type": "regular",
+        "id": "42566"
+      },
+      {
+        "name": "Ski Mask the Slump God",
+        "url": "https://genius.com/artists/Ski-mask-the-slump-god",
+        "type": "regular",
+        "id": "396531"
+      },
+      {
+        "name": "The Skin Cells",
+        "url": "https://genius.com/artists/The-skin-cells",
+        "type": "regular",
+        "id": "4012422"
+      },
+      {
+        "name": "Skinny E",
+        "url": "https://genius.com/artists/Skinny-e",
+        "type": "regular",
+        "id": "4398846"
+      },
+      {
+        "name": "Skinny (ITA)",
+        "url": "https://genius.com/artists/Skinny-ita",
+        "type": "regular",
+        "id": "2341099"
+      },
+      {
+        "name": "Skinny Puppy",
+        "url": "https://genius.com/artists/Skinny-puppy",
+        "type": "regular",
+        "id": "227260"
+      },
+      {
+        "name": "Skorap",
+        "url": "https://genius.com/artists/Skorap",
+        "type": "regular",
+        "id": "1753218"
+      },
+      {
+        "name": "Skrilla",
+        "url": "https://genius.com/artists/Skrilla",
+        "type": "regular",
+        "id": "10443"
+      },
+      {
+        "name": "Skrillex",
+        "url": "https://genius.com/artists/Skrillex",
+        "type": "regular",
+        "id": "15496"
+      },
+      {
+        "name": "Скрябін (Skryabin)",
+        "url": "https://genius.com/artists/Skryabin",
+        "type": "regular",
+        "id": "2301803"
+      },
+      {
+        "name": "Скриптонит (Skryptonite)",
+        "url": "https://genius.com/artists/Skryptonite",
+        "type": "regular",
+        "id": "154390"
+      },
+      {
+        "name": "Skunk Anansie",
+        "url": "https://genius.com/artists/Skunk-anansie",
+        "type": "regular",
+        "id": "283428"
+      },
+      {
+        "name": "SkyDxddy",
+        "url": "https://genius.com/artists/Skydxddy",
+        "type": "regular",
+        "id": "1470007"
+      },
+      {
+        "name": "Skye Newman",
+        "url": "https://genius.com/artists/Skye-newman",
+        "type": "regular",
+        "id": "4370688"
+      },
+      {
+        "name": "Sky Ferreira",
+        "url": "https://genius.com/artists/Sky-ferreira",
+        "type": "regular",
+        "id": "70088"
+      },
+      {
+        "name": "SKY-HI",
+        "url": "https://genius.com/artists/Sky-hi",
+        "type": "regular",
+        "id": "63974"
+      },
+      {
+        "name": "Sky Lakota-Lynch",
+        "url": "https://genius.com/artists/Sky-lakota-lynch",
+        "type": "regular",
+        "id": "3913995"
+      },
+      {
+        "name": "Skylar Astin",
+        "url": "https://genius.com/artists/Skylar-astin",
+        "type": "regular",
+        "id": "1008491"
+      },
+      {
+        "name": "Skylar Grey",
+        "url": "https://genius.com/artists/Skylar-grey",
+        "type": "regular",
+        "id": "1102"
+      },
+      {
+        "name": "SKY RAE",
+        "url": "https://genius.com/artists/Sky-rae",
+        "type": "regular",
+        "id": "2472008"
+      },
+      {
+        "name": "SL",
+        "url": "https://genius.com/artists/Sl",
+        "type": "regular",
+        "id": "181895"
+      },
+      {
+        "name": "Sıla",
+        "url": "https://genius.com/artists/Sla",
+        "type": "regular",
+        "id": "72003"
+      },
+      {
+        "name": "Slade",
+        "url": "https://genius.com/artists/Slade",
+        "type": "regular",
+        "id": "32618"
+      },
+      {
+        "name": "SLANDER",
+        "url": "https://genius.com/artists/Slander",
+        "type": "regular",
+        "id": "1029420"
+      },
+      {
+        "name": "Slank",
+        "url": "https://genius.com/artists/Slank",
+        "type": "regular",
+        "id": "362605"
+      },
+      {
+        "name": "Slash",
+        "url": "https://genius.com/artists/Slash",
+        "type": "regular",
+        "id": "10939"
+      },
+      {
+        "name": "Slaughter Beach, Dog",
+        "url": "https://genius.com/artists/Slaughter-beach-dog",
+        "type": "regular",
+        "id": "1006689"
+      },
+      {
+        "name": "Slaughter to Prevail",
+        "url": "https://genius.com/artists/Slaughter-to-prevail",
+        "type": "regular",
+        "id": "345487"
+      },
+      {
+        "name": "Слава КПСС (Slava KPSS)",
+        "url": "https://genius.com/artists/Slava-kpss",
+        "type": "regular",
+        "id": "993773"
+      },
+      {
+        "name": "SLAVA MARLOW",
+        "url": "https://genius.com/artists/Slava-marlow",
+        "type": "regular",
+        "id": "1675137"
+      },
+      {
+        "name": "SLAVA SKRIPKA",
+        "url": "https://genius.com/artists/Slava-skripka",
+        "type": "regular",
+        "id": "4236967"
+      },
+      {
+        "name": "Slayer",
+        "url": "https://genius.com/artists/Slayer",
+        "type": "regular",
+        "id": "6596"
+      },
+      {
+        "name": "Slayter",
+        "url": "https://genius.com/artists/Slayter",
+        "type": "regular",
+        "id": "430414"
+      },
+      {
+        "name": "Slayyyter",
+        "url": "https://genius.com/artists/Slayyyter",
+        "type": "regular",
+        "id": "1554051"
+      },
+      {
+        "name": "Sleeping At Last",
+        "url": "https://genius.com/artists/Sleeping-at-last",
+        "type": "regular",
+        "id": "222773"
+      },
+      {
+        "name": "Sleeping With Sirens",
+        "url": "https://genius.com/artists/Sleeping-with-sirens",
+        "type": "regular",
+        "id": "17782"
+      },
+      {
+        "name": "Sleep Theory",
+        "url": "https://genius.com/artists/Sleep-theory",
+        "type": "regular",
+        "id": "3619176"
+      },
+      {
+        "name": "Sleepy Hallow",
+        "url": "https://genius.com/artists/Sleepy-hallow",
+        "type": "regular",
+        "id": "1200233"
+      },
+      {
+        "name": "Sleigh Bells",
+        "url": "https://genius.com/artists/Sleigh-bells",
+        "type": "regular",
+        "id": "17372"
+      },
+      {
+        "name": "SLF",
+        "url": "https://genius.com/artists/Slf",
+        "type": "regular",
+        "id": "2066524"
+      },
+      {
+        "name": "Slick Rick",
+        "url": "https://genius.com/artists/Slick-rick",
+        "type": "regular",
+        "id": "306"
+      },
+      {
+        "name": "Slightly Stoopid",
+        "url": "https://genius.com/artists/Slightly-stoopid",
+        "type": "regular",
+        "id": "28882"
+      },
+      {
+        "name": "SlimeGetEm",
+        "url": "https://genius.com/artists/Slimegetem",
+        "type": "regular",
+        "id": "3566675"
+      },
+      {
+        "name": "Slimesito",
+        "url": "https://genius.com/artists/Slimesito",
+        "type": "regular",
+        "id": "978945"
+      },
+      {
+        "name": "Slim Thug",
+        "url": "https://genius.com/artists/Slim-thug",
+        "type": "regular",
+        "id": "286"
+      },
+      {
+        "name": "SLIMUS",
+        "url": "https://genius.com/artists/Slimus",
+        "type": "regular",
+        "id": "1060349"
+      },
+      {
+        "name": "Slings",
+        "url": "https://genius.com/artists/Slings",
+        "type": "regular",
+        "id": "1528151"
+      },
+      {
+        "name": "Slint",
+        "url": "https://genius.com/artists/Slint",
+        "type": "regular",
+        "id": "53103"
+      },
+      {
+        "name": "Slipknot",
+        "url": "https://genius.com/artists/Slipknot",
+        "type": "regular",
+        "id": "20222"
+      },
+      {
+        "name": "Slowdive",
+        "url": "https://genius.com/artists/Slowdive",
+        "type": "regular",
+        "id": "65120"
+      },
+      {
+        "name": "slowthai",
+        "url": "https://genius.com/artists/Slowthai",
+        "type": "regular",
+        "id": "977414"
+      },
+      {
+        "name": "Slums Attack",
+        "url": "https://genius.com/artists/Slums-attack",
+        "type": "regular",
+        "id": "68063"
+      },
+      {
+        "name": "Slum Village",
+        "url": "https://genius.com/artists/Slum-village",
+        "type": "regular",
+        "id": "688"
+      },
+      {
+        "name": "слушай экзорцист (slushay ekzortsist)",
+        "url": "https://genius.com/artists/Slushay-ekzortsist",
+        "type": "regular",
+        "id": "579960"
+      },
+      {
+        "name": "Sly & the Family Stone",
+        "url": "https://genius.com/artists/Sly-and-the-family-stone",
+        "type": "regular",
+        "id": "19504"
+      },
+      {
+        "name": "МакSим (MakSim)",
+        "url": "https://genius.com/artists/S-maksim",
+        "type": "regular",
+        "id": "1089237"
+      },
+      {
+        "name": "SMART",
+        "url": "https://genius.com/artists/Smart",
+        "type": "regular",
+        "id": "1156133"
+      },
+      {
+        "name": "SMASH Cast",
+        "url": "https://genius.com/artists/Smash-cast",
+        "type": "regular",
+        "id": "373641"
+      },
+      {
+        "name": "The Smashing Pumpkins",
+        "url": "https://genius.com/artists/The-smashing-pumpkins",
+        "type": "regular",
+        "id": "12025"
+      },
+      {
+        "name": "Smash Into Pieces",
+        "url": "https://genius.com/artists/Smash-into-pieces",
+        "type": "regular",
+        "id": "457633"
+      },
+      {
+        "name": "Smash Mouth",
+        "url": "https://genius.com/artists/Smash-mouth",
+        "type": "regular",
+        "id": "1371"
+      },
+      {
+        "name": "Smerz",
+        "url": "https://genius.com/artists/Smerz",
+        "type": "regular",
+        "id": "1001826"
+      },
+      {
+        "name": "Smiley",
+        "url": "https://genius.com/artists/Smiley",
+        "type": "regular",
+        "id": "2625199"
+      },
+      {
+        "name": "Smino",
+        "url": "https://genius.com/artists/Smino",
+        "type": "regular",
+        "id": "329078"
+      },
+      {
+        "name": "The Smiths",
+        "url": "https://genius.com/artists/The-smiths",
+        "type": "regular",
+        "id": "16669"
+      },
+      {
+        "name": "smokedope2016",
+        "url": "https://genius.com/artists/Smokedope2016",
+        "type": "regular",
+        "id": "3282973"
+      },
+      {
+        "name": "Smoke Mardeljano",
+        "url": "https://genius.com/artists/Smoke-mardeljano",
+        "type": "regular",
+        "id": "227123"
+      },
+      {
+        "name": "Smokey Mountain",
+        "url": "https://genius.com/artists/Smokey-mountain",
+        "type": "regular",
+        "id": "371808"
+      },
+      {
+        "name": "Smokey Robinson",
+        "url": "https://genius.com/artists/Smokey-robinson",
+        "type": "regular",
+        "id": "1223"
+      },
+      {
+        "name": "Smokie",
+        "url": "https://genius.com/artists/Smokie",
+        "type": "regular",
+        "id": "98912"
+      },
+      {
+        "name": "Смоки Мо (Smoky Mo)",
+        "url": "https://genius.com/artists/Smoky-mo",
+        "type": "regular",
+        "id": "1274961"
+      },
+      {
+        "name": "Snik",
+        "url": "https://genius.com/artists/Snik",
+        "type": "regular",
+        "id": "130443"
+      },
+      {
+        "name": "Snoh Aalegra",
+        "url": "https://genius.com/artists/Snoh-aalegra",
+        "type": "regular",
+        "id": "72997"
+      },
+      {
+        "name": "Snoop Dogg",
+        "url": "https://genius.com/artists/Snoop-dogg",
+        "type": "regular",
+        "id": "46"
+      },
+      {
+        "name": "$NOT",
+        "url": "https://genius.com/artists/Not",
+        "type": "regular",
+        "id": "1114363"
+      },
+      {
+        "name": "Snow",
+        "url": "https://genius.com/artists/Snow",
+        "type": "regular",
+        "id": "392"
+      },
+      {
+        "name": "Snowd4y",
+        "url": "https://genius.com/artists/Snowd4y",
+        "type": "regular",
+        "id": "3978158"
+      },
+      {
+        "name": "Snow Man",
+        "url": "https://genius.com/artists/Snow-man",
+        "type": "regular",
+        "id": "2089881"
+      },
+      {
+        "name": "Snow Patrol",
+        "url": "https://genius.com/artists/Snow-patrol",
+        "type": "regular",
+        "id": "29114"
+      },
+      {
+        "name": "Snow Strippers",
+        "url": "https://genius.com/artists/Snow-strippers",
+        "type": "regular",
+        "id": "3081543"
+      },
+      {
+        "name": "Snow Tha Product",
+        "url": "https://genius.com/artists/Snow-tha-product",
+        "type": "regular",
+        "id": "14955"
+      },
+      {
+        "name": "SNOW (TUR)",
+        "url": "https://genius.com/artists/Snow-tur",
+        "type": "regular",
+        "id": "4136878"
+      },
+      {
+        "name": "Snow Wife",
+        "url": "https://genius.com/artists/Snow-wife",
+        "type": "regular",
+        "id": "3600790"
+      },
+      {
+        "name": "Sơn Tùng M-TP",
+        "url": "https://genius.com/artists/Son-tung-m-tp",
+        "type": "regular",
+        "id": "1119810"
+      },
+      {
+        "name": "Soap&Skin",
+        "url": "https://genius.com/artists/Soap-skin",
+        "type": "regular",
+        "id": "40125"
+      },
+      {
+        "name": "Sobel",
+        "url": "https://genius.com/artists/Sobel",
+        "type": "regular",
+        "id": "25811"
+      },
+      {
+        "name": "Social Distortion",
+        "url": "https://genius.com/artists/Social-distortion",
+        "type": "regular",
+        "id": "59648"
+      },
+      {
+        "name": "Social House",
+        "url": "https://genius.com/artists/Social-house",
+        "type": "regular",
+        "id": "1496400"
+      },
+      {
+        "name": "SODA LUV",
+        "url": "https://genius.com/artists/Soda-luv",
+        "type": "regular",
+        "id": "1522798"
+      },
+      {
+        "name": "Soda Stereo",
+        "url": "https://genius.com/artists/Soda-stereo",
+        "type": "regular",
+        "id": "278419"
+      },
+      {
+        "name": "Sodikken",
+        "url": "https://genius.com/artists/Sodikken",
+        "type": "regular",
+        "id": "2911232"
+      },
+      {
+        "name": "Sodom",
+        "url": "https://genius.com/artists/Sodom",
+        "type": "regular",
+        "id": "219569"
+      },
+      {
+        "name": "SoFaygo",
+        "url": "https://genius.com/artists/Sofaygo",
+        "type": "regular",
+        "id": "1694747"
+      },
+      {
+        "name": "Sofia Carson",
+        "url": "https://genius.com/artists/Sofia-carson",
+        "type": "regular",
+        "id": "544039"
+      },
+      {
+        "name": "SOFIA ISELLA",
+        "url": "https://genius.com/artists/Sofia-isella",
+        "type": "regular",
+        "id": "3164483"
+      },
+      {
+        "name": "Sofiane",
+        "url": "https://genius.com/artists/Sofiane",
+        "type": "regular",
+        "id": "12085"
+      },
+      {
+        "name": "Sofian Medjmedj",
+        "url": "https://genius.com/artists/Sofian-medjmedj",
+        "type": "regular",
+        "id": "2197278"
+      },
+      {
+        "name": "SOFI TUKKER",
+        "url": "https://genius.com/artists/Sofi-tukker",
+        "type": "regular",
+        "id": "968628"
+      },
+      {
+        "name": "Soft Cell",
+        "url": "https://genius.com/artists/Soft-cell",
+        "type": "regular",
+        "id": "155778"
+      },
+      {
+        "name": "Soge Culebra",
+        "url": "https://genius.com/artists/Soge-culebra",
+        "type": "regular",
+        "id": "660250"
+      },
+      {
+        "name": "The Soggy Bottom Boys",
+        "url": "https://genius.com/artists/The-soggy-bottom-boys",
+        "type": "regular",
+        "id": "65806"
+      },
+      {
+        "name": "SoGone SoFlexy",
+        "url": "https://genius.com/artists/Sogone-soflexy",
+        "type": "regular",
+        "id": "2618917"
+      },
+      {
+        "name": "SOJA",
+        "url": "https://genius.com/artists/Soja",
+        "type": "regular",
+        "id": "134323"
+      },
+      {
+        "name": "Sokół",
+        "url": "https://genius.com/artists/Soko",
+        "type": "regular",
+        "id": "62633"
+      },
+      {
+        "name": "So La Lune",
+        "url": "https://genius.com/artists/So-la-lune",
+        "type": "regular",
+        "id": "1908116"
+      },
+      {
+        "name": "Solange",
+        "url": "https://genius.com/artists/Solange",
+        "type": "regular",
+        "id": "8371"
+      },
+      {
+        "name": "SOLIDNAYA",
+        "url": "https://genius.com/artists/Solidnaya",
+        "type": "regular",
+        "id": "4405222"
+      },
+      {
+        "name": "Solitario",
+        "url": "https://genius.com/artists/Solitario",
+        "type": "regular",
+        "id": "1198933"
+      },
+      {
+        "name": "Solmeister",
+        "url": "https://genius.com/artists/Solmeister",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "Sombra PR",
+        "url": "https://genius.com/artists/Sombra-pr",
+        "type": "regular",
+        "id": "3811915"
+      },
+      {
+        "name": "The Something Specials",
+        "url": "https://genius.com/artists/The-something-specials",
+        "type": "regular",
+        "id": "3755268"
+      },
+      {
+        "name": "Sonata Arctica",
+        "url": "https://genius.com/artists/Sonata-arctica",
+        "type": "regular",
+        "id": "50667"
+      },
+      {
+        "name": "Sondae",
+        "url": "https://genius.com/artists/Sondae",
+        "type": "regular",
+        "id": "2963137"
+      },
+      {
+        "name": "Sonder",
+        "url": "https://genius.com/artists/Sonder",
+        "type": "regular",
+        "id": "823260"
+      },
+      {
+        "name": "Songs: Ohia",
+        "url": "https://genius.com/artists/Songs-ohia",
+        "type": "regular",
+        "id": "42387"
+      },
+      {
+        "name": "Sonic Youth",
+        "url": "https://genius.com/artists/Sonic-youth",
+        "type": "regular",
+        "id": "29872"
+      },
+      {
+        "name": "Sonny & Cher",
+        "url": "https://genius.com/artists/Sonny-and-cher",
+        "type": "regular",
+        "id": "195405"
+      },
+      {
+        "name": "Sons of Legion",
+        "url": "https://genius.com/artists/Sons-of-legion",
+        "type": "regular",
+        "id": "2896864"
+      },
+      {
+        "name": "Sons Of Sunday",
+        "url": "https://genius.com/artists/Sons-of-sunday",
+        "type": "regular",
+        "id": "4241310"
+      },
+      {
+        "name": "Sonu Nigam",
+        "url": "https://genius.com/artists/Sonu-nigam",
+        "type": "regular",
+        "id": "178708"
+      },
+      {
+        "name": "Soolking",
+        "url": "https://genius.com/artists/Soolking",
+        "type": "regular",
+        "id": "693078"
+      },
+      {
+        "name": "SOPHIA",
+        "url": "https://genius.com/artists/Sophia",
+        "type": "regular",
+        "id": "2896557"
+      },
+      {
+        "name": "Sophia Anne Caruso",
+        "url": "https://genius.com/artists/Sophia-anne-caruso",
+        "type": "regular",
+        "id": "1056741"
+      },
+      {
+        "name": "SOPHIE",
+        "url": "https://genius.com/artists/Sophie",
+        "type": "regular",
+        "id": "210722"
+      },
+      {
+        "name": "Sophie Ellis-Bextor",
+        "url": "https://genius.com/artists/Sophie-ellis-bextor",
+        "type": "regular",
+        "id": "35398"
+      },
+      {
+        "name": "Sophie Thatcher",
+        "url": "https://genius.com/artists/Sophie-thatcher",
+        "type": "regular",
+        "id": "4064928"
+      },
+      {
+        "name": "Słoń (POL)",
+        "url": "https://genius.com/artists/Son-pol",
+        "type": "regular",
+        "id": "59083"
+      },
+      {
+        "name": "Sosa finesse",
+        "url": "https://genius.com/artists/Sosa-finesse",
+        "type": "regular",
+        "id": "4423607"
+      },
+      {
+        "name": "The S.O.S. Band",
+        "url": "https://genius.com/artists/The-sos-band",
+        "type": "regular",
+        "id": "147030"
+      },
+      {
+        "name": "SosMula",
+        "url": "https://genius.com/artists/Sosmula",
+        "type": "regular",
+        "id": "1109080"
+      },
+      {
+        "name": "sosocamo",
+        "url": "https://genius.com/artists/Sosocamo",
+        "type": "regular",
+        "id": "3306589"
+      },
+      {
+        "name": "So Supa",
+        "url": "https://genius.com/artists/So-supa",
+        "type": "regular",
+        "id": "3025844"
+      },
+      {
+        "name": "Soul Asylum",
+        "url": "https://genius.com/artists/Soul-asylum",
+        "type": "regular",
+        "id": "42640"
+      },
+      {
+        "name": "Soulja Boy",
+        "url": "https://genius.com/artists/Soulja-boy",
+        "type": "regular",
+        "id": "1194"
+      },
+      {
+        "name": "Souls of Mischief",
+        "url": "https://genius.com/artists/Souls-of-mischief",
+        "type": "regular",
+        "id": "522"
+      },
+      {
+        "name": "Souly",
+        "url": "https://genius.com/artists/Souly",
+        "type": "regular",
+        "id": "1076387"
+      },
+      {
+        "name": "Soundgarden",
+        "url": "https://genius.com/artists/Soundgarden",
+        "type": "regular",
+        "id": "19976"
+      },
+      {
+        "name": "South Arcade",
+        "url": "https://genius.com/artists/South-arcade",
+        "type": "regular",
+        "id": "3604008"
+      },
+      {
+        "name": "South Border",
+        "url": "https://genius.com/artists/South-border",
+        "type": "regular",
+        "id": "348296"
+      },
+      {
+        "name": "Southern Sons (Band)",
+        "url": "https://genius.com/artists/Southern-sons-band",
+        "type": "regular",
+        "id": "359774"
+      },
+      {
+        "name": "South Park",
+        "url": "https://genius.com/artists/South-park",
+        "type": "regular",
+        "id": "11636"
+      },
+      {
+        "name": "South Park Mexican",
+        "url": "https://genius.com/artists/South-park-mexican",
+        "type": "regular",
+        "id": "6791"
+      },
+      {
+        "name": "Southside",
+        "url": "https://genius.com/artists/Southside",
+        "type": "regular",
+        "id": "23315"
+      },
+      {
+        "name": "Сова (Sova)",
+        "url": "https://genius.com/artists/Sova",
+        "type": "regular",
+        "id": "2995407"
+      },
+      {
+        "name": "SP4K",
+        "url": "https://genius.com/artists/Sp4k",
+        "type": "regular",
+        "id": "616071"
+      },
+      {
+        "name": "SpaceGhostPurrp",
+        "url": "https://genius.com/artists/Spaceghostpurrp",
+        "type": "regular",
+        "id": "12229"
+      },
+      {
+        "name": "Spacey Jane",
+        "url": "https://genius.com/artists/Spacey-jane",
+        "type": "regular",
+        "id": "1559807"
+      },
+      {
+        "name": "Spandau Ballet",
+        "url": "https://genius.com/artists/Spandau-ballet",
+        "type": "regular",
+        "id": "36088"
+      },
+      {
+        "name": "Sparkbird",
+        "url": "https://genius.com/artists/Sparkbird",
+        "type": "regular",
+        "id": "3719724"
+      },
+      {
+        "name": "Sparks",
+        "url": "https://genius.com/artists/Sparks",
+        "type": "regular",
+        "id": "3490"
+      },
+      {
+        "name": "S.P. Balasubrahmanyam",
+        "url": "https://genius.com/artists/Sp-balasubrahmanyam",
+        "type": "regular",
+        "id": "998118"
+      },
+      {
+        "name": "Speaker Knockerz",
+        "url": "https://genius.com/artists/Speaker-knockerz",
+        "type": "regular",
+        "id": "27801"
+      },
+      {
+        "name": "The Speaks",
+        "url": "https://genius.com/artists/The-speaks",
+        "type": "regular",
+        "id": "3302092"
+      },
+      {
+        "name": "The Specials",
+        "url": "https://genius.com/artists/The-specials",
+        "type": "regular",
+        "id": "33876"
+      },
+      {
+        "name": "SPG",
+        "url": "https://genius.com/artists/Spg",
+        "type": "regular",
+        "id": "3705830"
+      },
+      {
+        "name": "Spice",
+        "url": "https://genius.com/artists/Spice",
+        "type": "regular",
+        "id": "25958"
+      },
+      {
+        "name": "Spice Girls",
+        "url": "https://genius.com/artists/Spice-girls",
+        "type": "regular",
+        "id": "13074"
+      },
+      {
+        "name": "The Spinners",
+        "url": "https://genius.com/artists/The-spinners",
+        "type": "regular",
+        "id": "18276"
+      },
+      {
+        "name": "Spiritbox",
+        "url": "https://genius.com/artists/Spiritbox",
+        "type": "regular",
+        "id": "1245395"
+      },
+      {
+        "name": "SpitLip",
+        "url": "https://genius.com/artists/Spitlip",
+        "type": "regular",
+        "id": "3704355"
+      },
+      {
+        "name": "Сплин (Splean)",
+        "url": "https://genius.com/artists/Splean",
+        "type": "regular",
+        "id": "1312676"
+      },
+      {
+        "name": "SpongeBob Schwammkopf",
+        "url": "https://genius.com/artists/Spongebob-schwammkopf",
+        "type": "regular",
+        "id": "2457547"
+      },
+      {
+        "name": "SpongeBob SquarePants",
+        "url": "https://genius.com/artists/Spongebob-squarepants",
+        "type": "regular",
+        "id": "26515"
+      },
+      {
+        "name": "SpongeBOZZ",
+        "url": "https://genius.com/artists/Spongebozz",
+        "type": "regular",
+        "id": "43254"
+      },
+      {
+        "name": "Sponge Cola",
+        "url": "https://genius.com/artists/Sponge-cola",
+        "type": "regular",
+        "id": "354703"
+      },
+      {
+        "name": "Spookynova",
+        "url": "https://genius.com/artists/Spookynova",
+        "type": "regular",
+        "id": "3291732"
+      },
+      {
+        "name": "Springless",
+        "url": "https://genius.com/artists/Springless",
+        "type": "regular",
+        "id": "3508643"
+      },
+      {
+        "name": "Squeeze",
+        "url": "https://genius.com/artists/Squeeze",
+        "type": "regular",
+        "id": "36089"
+      },
+      {
+        "name": "Sqwore",
+        "url": "https://genius.com/artists/Sqwore",
+        "type": "regular",
+        "id": "2670591"
+      },
+      {
+        "name": "SQWOZ BAB",
+        "url": "https://genius.com/artists/Sqwoz-bab",
+        "type": "regular",
+        "id": "1553055"
+      },
+      {
+        "name": "SR",
+        "url": "https://genius.com/artists/Sr",
+        "type": "regular",
+        "id": "2632291"
+      },
+      {
+        "name": "Sérgio Mendes",
+        "url": "https://genius.com/artists/Sergio-mendes",
+        "type": "regular",
+        "id": "10221"
+      },
+      {
+        "name": "SSGKobe",
+        "url": "https://genius.com/artists/Ssgkobe",
+        "type": "regular",
+        "id": "1613617"
+      },
+      {
+        "name": "SSIO",
+        "url": "https://genius.com/artists/Ssio",
+        "type": "regular",
+        "id": "20482"
+      },
+      {
+        "name": "ssshhhiiittt!",
+        "url": "https://genius.com/artists/Ssshhhiiittt",
+        "type": "regular",
+        "id": "1229426"
+      },
+      {
+        "name": "Stabil",
+        "url": "https://genius.com/artists/Stabil",
+        "type": "regular",
+        "id": "40871"
+      },
+      {
+        "name": "Staind",
+        "url": "https://genius.com/artists/Staind",
+        "type": "regular",
+        "id": "60680"
+      },
+      {
+        "name": "Stan Getz",
+        "url": "https://genius.com/artists/Stan-getz",
+        "type": "regular",
+        "id": "359587"
+      },
+      {
+        "name": "Stan Rogers",
+        "url": "https://genius.com/artists/Stan-rogers",
+        "type": "regular",
+        "id": "55980"
+      },
+      {
+        "name": "STAR BANDZ",
+        "url": "https://genius.com/artists/Star-bandz",
+        "type": "regular",
+        "id": "3915689"
+      },
+      {
+        "name": "Star Cast",
+        "url": "https://genius.com/artists/Star-cast",
+        "type": "regular",
+        "id": "1043514"
+      },
+      {
+        "name": "starfall",
+        "url": "https://genius.com/artists/Starfall",
+        "type": "regular",
+        "id": "1724905"
+      },
+      {
+        "name": "Starrkeisha",
+        "url": "https://genius.com/artists/Starrkeisha",
+        "type": "regular",
+        "id": "984668"
+      },
+      {
+        "name": "STARSET",
+        "url": "https://genius.com/artists/Starset",
+        "type": "regular",
+        "id": "253257"
+      },
+      {
+        "name": "Starship",
+        "url": "https://genius.com/artists/Starship",
+        "type": "regular",
+        "id": "54097"
+      },
+      {
+        "name": "The Starting Line",
+        "url": "https://genius.com/artists/The-starting-line",
+        "type": "regular",
+        "id": "24993"
+      },
+      {
+        "name": "Стас Михайлов (Stas Mikhaylov)",
+        "url": "https://genius.com/artists/Stas-mikhaylov",
+        "type": "regular",
+        "id": "1156666"
+      },
+      {
+        "name": "Static-X",
+        "url": "https://genius.com/artists/Static-x",
+        "type": "regular",
+        "id": "5089"
+      },
+      {
+        "name": "Statik Selektah",
+        "url": "https://genius.com/artists/Statik-selektah",
+        "type": "regular",
+        "id": "4736"
+      },
+      {
+        "name": "The Statler Brothers",
+        "url": "https://genius.com/artists/The-statler-brothers",
+        "type": "regular",
+        "id": "34412"
+      },
+      {
+        "name": "Status Quo",
+        "url": "https://genius.com/artists/Status-quo",
+        "type": "regular",
+        "id": "100912"
+      },
+      {
+        "name": "STAYC",
+        "url": "https://genius.com/artists/Stayc",
+        "type": "regular",
+        "id": "2464445"
+      },
+      {
+        "name": "STED.D",
+        "url": "https://genius.com/artists/Stedd",
+        "type": "regular",
+        "id": "657904"
+      },
+      {
+        "name": "Steelheart",
+        "url": "https://genius.com/artists/Steelheart",
+        "type": "regular",
+        "id": "232637"
+      },
+      {
+        "name": "Steely Dan",
+        "url": "https://genius.com/artists/Steely-dan",
+        "type": "regular",
+        "id": "25769"
+      },
+      {
+        "name": "Stefflon Don",
+        "url": "https://genius.com/artists/Stefflon-don",
+        "type": "regular",
+        "id": "618008"
+      },
+      {
+        "name": "Stellan Skarsgård",
+        "url": "https://genius.com/artists/Stellan-skarsgard",
+        "type": "regular",
+        "id": "658061"
+      },
+      {
+        "name": "Stephanie Beatriz",
+        "url": "https://genius.com/artists/Stephanie-beatriz",
+        "type": "regular",
+        "id": "1579656"
+      },
+      {
+        "name": "Stephanie J. Block",
+        "url": "https://genius.com/artists/Stephanie-j-block",
+        "type": "regular",
+        "id": "389454"
+      },
+      {
+        "name": "Stephen Flaherty",
+        "url": "https://genius.com/artists/Stephen-flaherty",
+        "type": "regular",
+        "id": "367492"
+      },
+      {
+        "name": "Stephen Sanchez",
+        "url": "https://genius.com/artists/Stephen-sanchez",
+        "type": "regular",
+        "id": "2315493"
+      },
+      {
+        "name": "Stephen Schwartz",
+        "url": "https://genius.com/artists/Stephen-schwartz",
+        "type": "regular",
+        "id": "158553"
+      },
+      {
+        "name": "Stephen Sondheim",
+        "url": "https://genius.com/artists/Stephen-sondheim",
+        "type": "regular",
+        "id": "25947"
+      },
+      {
+        "name": "Stephen Speaks",
+        "url": "https://genius.com/artists/Stephen-speaks",
+        "type": "regular",
+        "id": "328909"
+      },
+      {
+        "name": "Stephen Wilson Jr.",
+        "url": "https://genius.com/artists/Stephen-wilson-jr",
+        "type": "regular",
+        "id": "2270511"
+      },
+      {
+        "name": "Steppenwolf",
+        "url": "https://genius.com/artists/Steppenwolf",
+        "type": "regular",
+        "id": "40431"
+      },
+      {
+        "name": "Steps",
+        "url": "https://genius.com/artists/Steps",
+        "type": "regular",
+        "id": "1067591"
+      },
+      {
+        "name": "Stereolab",
+        "url": "https://genius.com/artists/Stereolab",
+        "type": "regular",
+        "id": "40049"
+      },
+      {
+        "name": "Stereophonics",
+        "url": "https://genius.com/artists/Stereophonics",
+        "type": "regular",
+        "id": "39021"
+      },
+      {
+        "name": "Steve Aoki",
+        "url": "https://genius.com/artists/Steve-aoki",
+        "type": "regular",
+        "id": "15792"
+      },
+      {
+        "name": "Steve Barton (Actor)",
+        "url": "https://genius.com/artists/Steve-barton-actor",
+        "type": "regular",
+        "id": "1076932"
+      },
+      {
+        "name": "Steve Crown",
+        "url": "https://genius.com/artists/Steve-crown",
+        "type": "regular",
+        "id": "2421721"
+      },
+      {
+        "name": "Steve Earle",
+        "url": "https://genius.com/artists/Steve-earle",
+        "type": "regular",
+        "id": "39054"
+      },
+      {
+        "name": "Steve Elmore",
+        "url": "https://genius.com/artists/Steve-elmore",
+        "type": "regular",
+        "id": "1018512"
+      },
+      {
+        "name": "Steve Goodman",
+        "url": "https://genius.com/artists/Steve-goodman",
+        "type": "regular",
+        "id": "292840"
+      },
+      {
+        "name": "Steve Green",
+        "url": "https://genius.com/artists/Steve-green",
+        "type": "regular",
+        "id": "332185"
+      },
+      {
+        "name": "Steve Lacy",
+        "url": "https://genius.com/artists/Steve-lacy",
+        "type": "regular",
+        "id": "512850"
+      },
+      {
+        "name": "Steve Miller Band",
+        "url": "https://genius.com/artists/Steve-miller-band",
+        "type": "regular",
+        "id": "25227"
+      },
+      {
+        "name": "Steven Curtis Chapman",
+        "url": "https://genius.com/artists/Steven-curtis-chapman",
+        "type": "regular",
+        "id": "8172"
+      },
+      {
+        "name": "Steven Dookie",
+        "url": "https://genius.com/artists/Steven-dookie",
+        "type": "regular",
+        "id": "3389334"
+      },
+      {
+        "name": "Steven Rodriguez",
+        "url": "https://genius.com/artists/Steven-rodriguez",
+        "type": "regular",
+        "id": "1608524"
+      },
+      {
+        "name": "Steven Universe",
+        "url": "https://genius.com/artists/Steven-universe",
+        "type": "regular",
+        "id": "983785"
+      },
+      {
+        "name": "Steven Wilson",
+        "url": "https://genius.com/artists/Steven-wilson",
+        "type": "regular",
+        "id": "114381"
+      },
+      {
+        "name": "Steve Perry",
+        "url": "https://genius.com/artists/Steve-perry",
+        "type": "regular",
+        "id": "63566"
+      },
+      {
+        "name": "Steve Terrell",
+        "url": "https://genius.com/artists/Steve-terrell",
+        "type": "regular",
+        "id": "3555550"
+      },
+      {
+        "name": "Steve Winwood",
+        "url": "https://genius.com/artists/Steve-winwood",
+        "type": "regular",
+        "id": "126406"
+      },
+      {
+        "name": "Stevie Nicks",
+        "url": "https://genius.com/artists/Stevie-nicks",
+        "type": "regular",
+        "id": "21747"
+      },
+      {
+        "name": "Stevie Ray Vaughan & Double Trouble",
+        "url": "https://genius.com/artists/Stevie-ray-vaughan-and-double-trouble",
+        "type": "regular",
+        "id": "348209"
+      },
+      {
+        "name": "Stevie Wonder",
+        "url": "https://genius.com/artists/Stevie-wonder",
+        "type": "regular",
+        "id": "1602"
+      },
+      {
+        "name": "Stick Figure",
+        "url": "https://genius.com/artists/Stick-figure",
+        "type": "regular",
+        "id": "373961"
+      },
+      {
+        "name": "Sticky Fingers",
+        "url": "https://genius.com/artists/Sticky-fingers",
+        "type": "regular",
+        "id": "185637"
+      },
+      {
+        "name": "Sticky M.A.",
+        "url": "https://genius.com/artists/Sticky-ma",
+        "type": "regular",
+        "id": "247015"
+      },
+      {
+        "name": "Sting",
+        "url": "https://genius.com/artists/Sting",
+        "type": "regular",
+        "id": "679"
+      },
+      {
+        "name": "Stixx",
+        "url": "https://genius.com/artists/Stixx",
+        "type": "regular",
+        "id": "3257881"
+      },
+      {
+        "name": "STMG DemGuyz",
+        "url": "https://genius.com/artists/Stmg-demguyz",
+        "type": "regular",
+        "id": "3411645"
+      },
+      {
+        "name": "Stoja",
+        "url": "https://genius.com/artists/Stoja",
+        "type": "regular",
+        "id": "481199"
+      },
+      {
+        "name": "STOMACH BOOK",
+        "url": "https://genius.com/artists/Stomach-book",
+        "type": "regular",
+        "id": "2927392"
+      },
+      {
+        "name": "The Stone Roses",
+        "url": "https://genius.com/artists/The-stone-roses",
+        "type": "regular",
+        "id": "24415"
+      },
+      {
+        "name": "Stone Sour",
+        "url": "https://genius.com/artists/Stone-sour",
+        "type": "regular",
+        "id": "59680"
+      },
+      {
+        "name": "Stone Temple Pilots",
+        "url": "https://genius.com/artists/Stone-temple-pilots",
+        "type": "regular",
+        "id": "32087"
+      },
+      {
+        "name": "The Stooges",
+        "url": "https://genius.com/artists/The-stooges",
+        "type": "regular",
+        "id": "62684"
+      },
+      {
+        "name": "STOPBAN",
+        "url": "https://genius.com/artists/Stopban",
+        "type": "regular",
+        "id": "3392306"
+      },
+      {
+        "name": "Stormy",
+        "url": "https://genius.com/artists/Stormy",
+        "type": "regular",
+        "id": "1439797"
+      },
+      {
+        "name": "Stormzy",
+        "url": "https://genius.com/artists/Stormzy",
+        "type": "regular",
+        "id": "212456"
+      },
+      {
+        "name": "The Story So Far",
+        "url": "https://genius.com/artists/The-story-so-far",
+        "type": "regular",
+        "id": "51619"
+      },
+      {
+        "name": "Stove God Cooks",
+        "url": "https://genius.com/artists/Stove-god-cooks",
+        "type": "regular",
+        "id": "625059"
+      },
+      {
+        "name": "STRANGEHUMAN",
+        "url": "https://genius.com/artists/Strangehuman",
+        "type": "regular",
+        "id": "1597749"
+      },
+      {
+        "name": "Stranger white",
+        "url": "https://genius.com/artists/Stranger-white",
+        "type": "regular",
+        "id": "2622466"
+      },
+      {
+        "name": "The Stranglers",
+        "url": "https://genius.com/artists/The-stranglers",
+        "type": "regular",
+        "id": "214013"
+      },
+      {
+        "name": "Strawberry Guy",
+        "url": "https://genius.com/artists/Strawberry-guy",
+        "type": "regular",
+        "id": "1456764"
+      },
+      {
+        "name": "Stray from the Path",
+        "url": "https://genius.com/artists/Stray-from-the-path",
+        "type": "regular",
+        "id": "160799"
+      },
+      {
+        "name": "Streetlight Manifesto",
+        "url": "https://genius.com/artists/Streetlight-manifesto",
+        "type": "regular",
+        "id": "49970"
+      },
+      {
+        "name": "The Streets",
+        "url": "https://genius.com/artists/The-streets",
+        "type": "regular",
+        "id": "368"
+      },
+      {
+        "name": "The Strokes",
+        "url": "https://genius.com/artists/The-strokes",
+        "type": "regular",
+        "id": "12524"
+      },
+      {
+        "name": "Stromae",
+        "url": "https://genius.com/artists/Stromae",
+        "type": "regular",
+        "id": "1484"
+      },
+      {
+        "name": "СТРУКТУРА ЩАСТЯ (STRUCTURA SHYASTYA)",
+        "url": "https://genius.com/artists/Structura-shyastya",
+        "type": "regular",
+        "id": "3278099"
+      },
+      {
+        "name": "Stryv",
+        "url": "https://genius.com/artists/Stryv",
+        "type": "regular",
+        "id": "2243953"
+      },
+      {
+        "name": "Studio Yuraki",
+        "url": "https://genius.com/artists/Studio-yuraki",
+        "type": "regular",
+        "id": "1541301"
+      },
+      {
+        "name": "Stunna 4 Vegas",
+        "url": "https://genius.com/artists/Stunna-4-vegas",
+        "type": "regular",
+        "id": "1691126"
+      },
+      {
+        "name": "Stunna Girl",
+        "url": "https://genius.com/artists/Stunna-girl",
+        "type": "regular",
+        "id": "1491868"
+      },
+      {
+        "name": "The Stupendium",
+        "url": "https://genius.com/artists/The-stupendium",
+        "type": "regular",
+        "id": "1235881"
+      },
+      {
+        "name": "Sturgill Simpson",
+        "url": "https://genius.com/artists/Sturgill-simpson",
+        "type": "regular",
+        "id": "202542"
+      },
+      {
+        "name": "St. Vincent",
+        "url": "https://genius.com/artists/St-vincent",
+        "type": "regular",
+        "id": "2373"
+      },
+      {
+        "name": "Styles P",
+        "url": "https://genius.com/artists/Styles-p",
+        "type": "regular",
+        "id": "75"
+      },
+      {
+        "name": "The Stylistics",
+        "url": "https://genius.com/artists/The-stylistics",
+        "type": "regular",
+        "id": "32541"
+      },
+      {
+        "name": "Styx",
+        "url": "https://genius.com/artists/Styx",
+        "type": "regular",
+        "id": "71202"
+      },
+      {
+        "name": "Sublime",
+        "url": "https://genius.com/artists/Sublime",
+        "type": "regular",
+        "id": "659"
+      },
+      {
+        "name": "Sub Urban",
+        "url": "https://genius.com/artists/Sub-urban",
+        "type": "regular",
+        "id": "56786"
+      },
+      {
+        "name": "SUD",
+        "url": "https://genius.com/artists/Sud",
+        "type": "regular",
+        "id": "960456"
+      },
+      {
+        "name": "Sudhir Vyas",
+        "url": "https://genius.com/artists/Sudhir-vyas",
+        "type": "regular",
+        "id": "3789933"
+      },
+      {
+        "name": "Sueco",
+        "url": "https://genius.com/artists/Sueco",
+        "type": "regular",
+        "id": "1634937"
+      },
+      {
+        "name": "Suede",
+        "url": "https://genius.com/artists/Suede",
+        "type": "regular",
+        "id": "58856"
+      },
+      {
+        "name": "​Suei",
+        "url": "https://genius.com/artists/Suei",
+        "type": "regular",
+        "id": "2098006"
+      },
+      {
+        "name": "Sufjan Stevens",
+        "url": "https://genius.com/artists/Sufjan-stevens",
+        "type": "regular",
+        "id": "958"
+      },
+      {
+        "name": "Sugababes",
+        "url": "https://genius.com/artists/Sugababes",
+        "type": "regular",
+        "id": "182442"
+      },
+      {
+        "name": "Sugarfree",
+        "url": "https://genius.com/artists/Sugarfree",
+        "type": "regular",
+        "id": "355446"
+      },
+      {
+        "name": "Sugarhill Ddot",
+        "url": "https://genius.com/artists/Sugarhill-ddot",
+        "type": "regular",
+        "id": "3238793"
+      },
+      {
+        "name": "Sugarhill Gang",
+        "url": "https://genius.com/artists/Sugarhill-gang",
+        "type": "regular",
+        "id": "313"
+      },
+      {
+        "name": "Sugarland",
+        "url": "https://genius.com/artists/Sugarland",
+        "type": "regular",
+        "id": "96792"
+      },
+      {
+        "name": "Sugar Ray",
+        "url": "https://genius.com/artists/Sugar-ray",
+        "type": "regular",
+        "id": "3079"
+      },
+      {
+        "name": "SUICIDAL-IDOL",
+        "url": "https://genius.com/artists/Suicidal-idol",
+        "type": "regular",
+        "id": "3064504"
+      },
+      {
+        "name": "Suicidal Tendencies",
+        "url": "https://genius.com/artists/Suicidal-tendencies",
+        "type": "regular",
+        "id": "26232"
+      },
+      {
+        "name": "Suicide Silence",
+        "url": "https://genius.com/artists/Suicide-silence",
+        "type": "regular",
+        "id": "27378"
+      },
+      {
+        "name": "Sukha",
+        "url": "https://genius.com/artists/Sukha",
+        "type": "regular",
+        "id": "1785268"
+      },
+      {
+        "name": "Sukhwinder Singh",
+        "url": "https://genius.com/artists/Sukhwinder-singh",
+        "type": "regular",
+        "id": "178512"
+      },
+      {
+        "name": "Suki Waterhouse",
+        "url": "https://genius.com/artists/Suki-waterhouse",
+        "type": "regular",
+        "id": "1045988"
+      },
+      {
+        "name": "Sukriti Bhardwaj",
+        "url": "https://genius.com/artists/Sukriti-bhardwaj",
+        "type": "regular",
+        "id": "4355828"
+      },
+      {
+        "name": "​sulga",
+        "url": "https://genius.com/artists/Sulga",
+        "type": "regular",
+        "id": "3353077"
+      },
+      {
+        "name": "Sultaan",
+        "url": "https://genius.com/artists/Sultaan",
+        "type": "regular",
+        "id": "2123264"
+      },
+      {
+        "name": "Sum 41",
+        "url": "https://genius.com/artists/Sum-41",
+        "type": "regular",
+        "id": "24908"
+      },
+      {
+        "name": "Summer Cem",
+        "url": "https://genius.com/artists/Summer-cem",
+        "type": "regular",
+        "id": "12078"
+      },
+      {
+        "name": "Summer Walker",
+        "url": "https://genius.com/artists/Summer-walker",
+        "type": "regular",
+        "id": "1417868"
+      },
+      {
+        "name": "Summrs",
+        "url": "https://genius.com/artists/Summrs",
+        "type": "regular",
+        "id": "1416771"
+      },
+      {
+        "name": "Sunday (1994)",
+        "url": "https://genius.com/artists/Sunday-1994",
+        "type": "regular",
+        "id": "3859239"
+      },
+      {
+        "name": "The Sundays",
+        "url": "https://genius.com/artists/The-sundays",
+        "type": "regular",
+        "id": "77163"
+      },
+      {
+        "name": "Sunidhi Chauhan",
+        "url": "https://genius.com/artists/Sunidhi-chauhan",
+        "type": "regular",
+        "id": "387930"
+      },
+      {
+        "name": "Sun Kil Moon",
+        "url": "https://genius.com/artists/Sun-kil-moon",
+        "type": "regular",
+        "id": "133170"
+      },
+      {
+        "name": "SunKissed Lola",
+        "url": "https://genius.com/artists/Sunkissed-lola",
+        "type": "regular",
+        "id": "3358613"
+      },
+      {
+        "name": "Sunny Day Real Estate",
+        "url": "https://genius.com/artists/Sunny-day-real-estate",
+        "type": "regular",
+        "id": "25325"
+      },
+      {
+        "name": "Sunset Shimmer",
+        "url": "https://genius.com/artists/Sunset-shimmer",
+        "type": "regular",
+        "id": "1642488"
+      },
+      {
+        "name": "Sunshine Anderson",
+        "url": "https://genius.com/artists/Sunshine-anderson",
+        "type": "regular",
+        "id": "9246"
+      },
+      {
+        "name": "SUPAFLY (PHL)",
+        "url": "https://genius.com/artists/Supafly-phl",
+        "type": "regular",
+        "id": "3516711"
+      },
+      {
+        "name": "​​superdupersultan",
+        "url": "https://genius.com/artists/Superdupersultan",
+        "type": "regular",
+        "id": "1833665"
+      },
+      {
+        "name": "Superfruit",
+        "url": "https://genius.com/artists/Superfruit",
+        "type": "regular",
+        "id": "332639"
+      },
+      {
+        "name": "Supergrass",
+        "url": "https://genius.com/artists/Supergrass",
+        "type": "regular",
+        "id": "161185"
+      },
+      {
+        "name": "Superheaven",
+        "url": "https://genius.com/artists/Superheaven",
+        "type": "regular",
+        "id": "396672"
+      },
+      {
+        "name": "SuperKitties - Cast",
+        "url": "https://genius.com/artists/Superkitties-cast",
+        "type": "regular",
+        "id": "3772088"
+      },
+      {
+        "name": "The Super Mario Players",
+        "url": "https://genius.com/artists/The-super-mario-players",
+        "type": "regular",
+        "id": "1236561"
+      },
+      {
+        "name": "​supernOva",
+        "url": "https://genius.com/artists/Supernova",
+        "type": "regular",
+        "id": "1677436"
+      },
+      {
+        "name": "Supertramp",
+        "url": "https://genius.com/artists/Supertramp",
+        "type": "regular",
+        "id": "114069"
+      },
+      {
+        "name": "The Supremes",
+        "url": "https://genius.com/artists/The-supremes",
+        "type": "regular",
+        "id": "100713"
+      },
+      {
+        "name": "Surfaces",
+        "url": "https://genius.com/artists/Surfaces",
+        "type": "regular",
+        "id": "1267432"
+      },
+      {
+        "name": "Surf Curse",
+        "url": "https://genius.com/artists/Surf-curse",
+        "type": "regular",
+        "id": "396577"
+      },
+      {
+        "name": "Surinder Kaur",
+        "url": "https://genius.com/artists/Surinder-kaur",
+        "type": "regular",
+        "id": "4100595"
+      },
+      {
+        "name": "Surreal",
+        "url": "https://genius.com/artists/Surreal",
+        "type": "regular",
+        "id": "4181"
+      },
+      {
+        "name": "Survivor",
+        "url": "https://genius.com/artists/Survivor",
+        "type": "regular",
+        "id": "44268"
+      },
+      {
+        "name": "Sus",
+        "url": "https://genius.com/artists/Sus",
+        "type": "regular",
+        "id": "2165777"
+      },
+      {
+        "name": "Susan Egan",
+        "url": "https://genius.com/artists/Susan-egan",
+        "type": "regular",
+        "id": "196472"
+      },
+      {
+        "name": "Susannah Joffe",
+        "url": "https://genius.com/artists/Susannah-joffe",
+        "type": "regular",
+        "id": "2291246"
+      },
+      {
+        "name": "Sushi Soucy",
+        "url": "https://genius.com/artists/Sushi-soucy",
+        "type": "regular",
+        "id": "2431371"
+      },
+      {
+        "name": "Suspekt",
+        "url": "https://genius.com/artists/Suspekt",
+        "type": "regular",
+        "id": "15131"
+      },
+      {
+        "name": "Sutton Foster",
+        "url": "https://genius.com/artists/Sutton-foster",
+        "type": "regular",
+        "id": "376296"
+      },
+      {
+        "name": "Suzan & Freek",
+        "url": "https://genius.com/artists/Suzan-and-freek",
+        "type": "regular",
+        "id": "1625539"
+      },
+      {
+        "name": "Suzanne Vega",
+        "url": "https://genius.com/artists/Suzanne-vega",
+        "type": "regular",
+        "id": "34602"
+      },
+      {
+        "name": "Свидетельство О Смерти (Svidetelstvo O Smerti)",
+        "url": "https://genius.com/artists/Svidetelstvo-o-smerti",
+        "type": "regular",
+        "id": "1835280"
+      },
+      {
+        "name": "SVM!R",
+        "url": "https://genius.com/artists/Svm-r",
+        "type": "regular",
+        "id": "3733024"
+      },
+      {
+        "name": "Swae Lee",
+        "url": "https://genius.com/artists/Swae-lee",
+        "type": "regular",
+        "id": "209139"
+      },
+      {
+        "name": "Swans",
+        "url": "https://genius.com/artists/Swans",
+        "type": "regular",
+        "id": "42141"
+      },
+      {
+        "name": "Swayam Bhatia",
+        "url": "https://genius.com/artists/Swayam-bhatia",
+        "type": "regular",
+        "id": "4417931"
+      },
+      {
+        "name": "Swedish House Mafia",
+        "url": "https://genius.com/artists/Swedish-house-mafia",
+        "type": "regular",
+        "id": "1016"
+      },
+      {
+        "name": "Sweet",
+        "url": "https://genius.com/artists/Sweet",
+        "type": "regular",
+        "id": "25230"
+      },
+      {
+        "name": "SWIRF",
+        "url": "https://genius.com/artists/Swirf",
+        "type": "regular",
+        "id": "1939305"
+      },
+      {
+        "name": "Switchfoot",
+        "url": "https://genius.com/artists/Switchfoot",
+        "type": "regular",
+        "id": "27207"
+      },
+      {
+        "name": "SWV",
+        "url": "https://genius.com/artists/Swv",
+        "type": "regular",
+        "id": "3258"
+      },
+      {
+        "name": "SXMPRA",
+        "url": "https://genius.com/artists/Sxmpra",
+        "type": "regular",
+        "id": "2338678"
+      },
+      {
+        "name": "Сява (Syava)",
+        "url": "https://genius.com/artists/Syava",
+        "type": "regular",
+        "id": "1278980"
+      },
+      {
+        "name": "Syd",
+        "url": "https://genius.com/artists/Syd",
+        "type": "regular",
+        "id": "12935"
+      },
+      {
+        "name": "Sydney James Harcourt",
+        "url": "https://genius.com/artists/Sydney-james-harcourt",
+        "type": "regular",
+        "id": "661346"
+      },
+      {
+        "name": "Sydney Rose",
+        "url": "https://genius.com/artists/Sydney-rose",
+        "type": "regular",
+        "id": "374276"
+      },
+      {
+        "name": "Sylvia Plath",
+        "url": "https://genius.com/artists/Sylvia-plath",
+        "type": "regular",
+        "id": "17824"
+      },
+      {
+        "name": "SYML",
+        "url": "https://genius.com/artists/Syml",
+        "type": "regular",
+        "id": "652572"
+      },
+      {
+        "name": "Symphony Worship",
+        "url": "https://genius.com/artists/Symphony-worship",
+        "type": "regular",
+        "id": "1530111"
+      },
+      {
+        "name": "Szpaku",
+        "url": "https://genius.com/artists/Szpaku",
+        "type": "regular",
+        "id": "1089238"
+      }
+    ]
+  }
+}

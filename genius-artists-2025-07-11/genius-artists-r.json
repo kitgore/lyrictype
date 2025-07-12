@@ -1,0 +1,4513 @@
+{
+  "letter": "R",
+  "timestamp": "2025-07-11T11:44:14.897Z",
+  "totalArtists": 750,
+  "popularCount": 20,
+  "regularCount": 730,
+  "artists": {
+    "popular": [
+      {
+        "name": "Radiohead",
+        "url": "https://genius.com/artists/Radiohead",
+        "type": "popular",
+        "id": "604"
+      },
+      {
+        "name": "Rage Against the Machine",
+        "url": "https://genius.com/artists/Rage-against-the-machine",
+        "type": "popular",
+        "id": "1499"
+      },
+      {
+        "name": "Rammstein",
+        "url": "https://genius.com/artists/Rammstein",
+        "type": "popular",
+        "id": "16045"
+      },
+      {
+        "name": "Randy Newman",
+        "url": "https://genius.com/artists/Randy-newman",
+        "type": "popular",
+        "id": "39053"
+      },
+      {
+        "name": "Rauw Alejandro",
+        "url": "https://genius.com/artists/Rauw-alejandro",
+        "type": "popular",
+        "id": "656695"
+      },
+      {
+        "name": "RAYE",
+        "url": "https://genius.com/artists/Raye",
+        "type": "popular",
+        "id": "7709"
+      },
+      {
+        "name": "Red Hot Chili Peppers",
+        "url": "https://genius.com/artists/Red-hot-chili-peppers",
+        "type": "popular",
+        "id": "1460"
+      },
+      {
+        "name": "REI AMI",
+        "url": "https://genius.com/artists/Rei-ami",
+        "type": "popular",
+        "id": "1917162"
+      },
+      {
+        "name": "Renée Elise Goldsberry",
+        "url": "https://genius.com/artists/Renee-elise-goldsberry",
+        "type": "popular",
+        "id": "570728"
+      },
+      {
+        "name": "Reneé Rapp",
+        "url": "https://genius.com/artists/Renee-rapp",
+        "type": "popular",
+        "id": "3127026"
+      },
+      {
+        "name": "Rihanna",
+        "url": "https://genius.com/artists/Rihanna",
+        "type": "popular",
+        "id": "89"
+      },
+      {
+        "name": "R. Kelly",
+        "url": "https://genius.com/artists/R-kelly",
+        "type": "popular",
+        "id": "535"
+      },
+      {
+        "name": "Rob49",
+        "url": "https://genius.com/artists/Rob49",
+        "type": "popular",
+        "id": "2751797"
+      },
+      {
+        "name": "Rod Stewart",
+        "url": "https://genius.com/artists/Rod-stewart",
+        "type": "popular",
+        "id": "97739"
+      },
+      {
+        "name": "Rod Wave",
+        "url": "https://genius.com/artists/Rod-wave",
+        "type": "popular",
+        "id": "1224811"
+      },
+      {
+        "name": "The Rolling Stones",
+        "url": "https://genius.com/artists/The-rolling-stones",
+        "type": "popular",
+        "id": "774"
+      },
+      {
+        "name": "ROSÉ",
+        "url": "https://genius.com/artists/Rose",
+        "type": "popular",
+        "id": "1032508"
+      },
+      {
+        "name": "Rupert Holmes",
+        "url": "https://genius.com/artists/Rupert-holmes",
+        "type": "popular",
+        "id": "147186"
+      },
+      {
+        "name": "Russ",
+        "url": "https://genius.com/artists/Russ",
+        "type": "popular",
+        "id": "22516"
+      },
+      {
+        "name": "Ryan Lewis",
+        "url": "https://genius.com/artists/Ryan-lewis",
+        "type": "popular",
+        "id": "2025"
+      }
+    ],
+    "regular": [
+      {
+        "name": "R2",
+        "url": "https://genius.com/artists/R2",
+        "type": "regular",
+        "id": "1138772"
+      },
+      {
+        "name": "R2R Moe",
+        "url": "https://genius.com/artists/R2r-moe",
+        "type": "regular",
+        "id": "3533830"
+      },
+      {
+        "name": "R3HAB",
+        "url": "https://genius.com/artists/R3hab",
+        "type": "regular",
+        "id": "34095"
+      },
+      {
+        "name": "R3 Da Chilliman",
+        "url": "https://genius.com/artists/R3-da-chilliman",
+        "type": "regular",
+        "id": "3020104"
+      },
+      {
+        "name": "Rabbi Shergill",
+        "url": "https://genius.com/artists/Rabbi-shergill",
+        "type": "regular",
+        "id": "377476"
+      },
+      {
+        "name": "Rabbitology",
+        "url": "https://genius.com/artists/Rabbitology",
+        "type": "regular",
+        "id": "3457734"
+      },
+      {
+        "name": "Rabindranath Tagore",
+        "url": "https://genius.com/artists/Rabindranath-tagore",
+        "type": "regular",
+        "id": "59473"
+      },
+      {
+        "name": "Rachel Alejandro",
+        "url": "https://genius.com/artists/Rachel-alejandro",
+        "type": "regular",
+        "id": "349246"
+      },
+      {
+        "name": "Rachel Bay Jones",
+        "url": "https://genius.com/artists/Rachel-bay-jones",
+        "type": "regular",
+        "id": "482589"
+      },
+      {
+        "name": "Rachel Chinouriri",
+        "url": "https://genius.com/artists/Rachel-chinouriri",
+        "type": "regular",
+        "id": "1539286"
+      },
+      {
+        "name": "Rachel House",
+        "url": "https://genius.com/artists/Rachel-house",
+        "type": "regular",
+        "id": "1028051"
+      },
+      {
+        "name": "Rachel Platten",
+        "url": "https://genius.com/artists/Rachel-platten",
+        "type": "regular",
+        "id": "271204"
+      },
+      {
+        "name": "Rachel Zegler",
+        "url": "https://genius.com/artists/Rachel-zegler",
+        "type": "regular",
+        "id": "1711132"
+      },
+      {
+        "name": "Rachie",
+        "url": "https://genius.com/artists/Rachie",
+        "type": "regular",
+        "id": "632716"
+      },
+      {
+        "name": "Racionais MC's",
+        "url": "https://genius.com/artists/Racionais-mcs",
+        "type": "regular",
+        "id": "2336"
+      },
+      {
+        "name": "RACK",
+        "url": "https://genius.com/artists/Rack",
+        "type": "regular",
+        "id": "1929634"
+      },
+      {
+        "name": "The Raconteurs",
+        "url": "https://genius.com/artists/The-raconteurs",
+        "type": "regular",
+        "id": "35306"
+      },
+      {
+        "name": "Racoon",
+        "url": "https://genius.com/artists/Racoon",
+        "type": "regular",
+        "id": "179978"
+      },
+      {
+        "name": "Rada Manojlović",
+        "url": "https://genius.com/artists/Rada-manojlovic",
+        "type": "regular",
+        "id": "452427"
+      },
+      {
+        "name": "Radical Face",
+        "url": "https://genius.com/artists/Radical-face",
+        "type": "regular",
+        "id": "35913"
+      },
+      {
+        "name": "RADii",
+        "url": "https://genius.com/artists/Radii",
+        "type": "regular",
+        "id": "3962237"
+      },
+      {
+        "name": "Radik",
+        "url": "https://genius.com/artists/Radik",
+        "type": "regular",
+        "id": "2885113"
+      },
+      {
+        "name": "Radio Company",
+        "url": "https://genius.com/artists/Radio-company",
+        "type": "regular",
+        "id": "1967041"
+      },
+      {
+        "name": "The Radio Dept.",
+        "url": "https://genius.com/artists/The-radio-dept",
+        "type": "regular",
+        "id": "150992"
+      },
+      {
+        "name": "Radio Free Alice",
+        "url": "https://genius.com/artists/Radio-free-alice",
+        "type": "regular",
+        "id": "2256586"
+      },
+      {
+        "name": "RADIO TAPOK",
+        "url": "https://genius.com/artists/Radio-tapok",
+        "type": "regular",
+        "id": "1737321"
+      },
+      {
+        "name": "RADWIMPS",
+        "url": "https://genius.com/artists/Radwimps",
+        "type": "regular",
+        "id": "383998"
+      },
+      {
+        "name": "Rae Khalil",
+        "url": "https://genius.com/artists/Rae-khalil",
+        "type": "regular",
+        "id": "1866260"
+      },
+      {
+        "name": "Raekwon",
+        "url": "https://genius.com/artists/Raekwon",
+        "type": "regular",
+        "id": "76"
+      },
+      {
+        "name": "Rae Sremmurd",
+        "url": "https://genius.com/artists/Rae-sremmurd",
+        "type": "regular",
+        "id": "177756"
+      },
+      {
+        "name": "Raf",
+        "url": "https://genius.com/artists/Raf",
+        "type": "regular",
+        "id": "69528"
+      },
+      {
+        "name": "Rafaell Cocoa",
+        "url": "https://genius.com/artists/Rafaell-cocoa",
+        "type": "regular",
+        "id": "3155863"
+      },
+      {
+        "name": "Rafael Lechowski",
+        "url": "https://genius.com/artists/Rafael-lechowski",
+        "type": "regular",
+        "id": "92771"
+      },
+      {
+        "name": "RAF Camora",
+        "url": "https://genius.com/artists/Raf-camora",
+        "type": "regular",
+        "id": "12767"
+      },
+      {
+        "name": "Rafet El Roman",
+        "url": "https://genius.com/artists/Rafet-el-roman",
+        "type": "regular",
+        "id": "379238"
+      },
+      {
+        "name": "Raffaella Carrà",
+        "url": "https://genius.com/artists/Raffaella-carra",
+        "type": "regular",
+        "id": "454214"
+      },
+      {
+        "name": "Raffi",
+        "url": "https://genius.com/artists/Raffi",
+        "type": "regular",
+        "id": "357003"
+      },
+      {
+        "name": "Raffi Greco",
+        "url": "https://genius.com/artists/Raffi-greco",
+        "type": "regular",
+        "id": "4260780"
+      },
+      {
+        "name": "Rafonix",
+        "url": "https://genius.com/artists/Rafonix",
+        "type": "regular",
+        "id": "1074105"
+      },
+      {
+        "name": "Raftaar",
+        "url": "https://genius.com/artists/Raftaar",
+        "type": "regular",
+        "id": "540217"
+      },
+      {
+        "name": "Raga",
+        "url": "https://genius.com/artists/Raga",
+        "type": "regular",
+        "id": "1050178"
+      },
+      {
+        "name": "The Ragamuffins",
+        "url": "https://genius.com/artists/The-ragamuffins",
+        "type": "regular",
+        "id": "1935803"
+      },
+      {
+        "name": "Ragazzi_mp3",
+        "url": "https://genius.com/artists/Ragazzi-mp3",
+        "type": "regular",
+        "id": "4183894"
+      },
+      {
+        "name": "Raghav Chaitanya",
+        "url": "https://genius.com/artists/Raghav-chaitanya",
+        "type": "regular",
+        "id": "2191164"
+      },
+      {
+        "name": "Ragheb Alama - راغب علامة",
+        "url": "https://genius.com/artists/Ragheb-alama",
+        "type": "regular",
+        "id": "483380"
+      },
+      {
+        "name": "Rag'n'Bone Man",
+        "url": "https://genius.com/artists/Ragnbone-man",
+        "type": "regular",
+        "id": "50652"
+      },
+      {
+        "name": "Rahat Fateh Ali Khan",
+        "url": "https://genius.com/artists/Rahat-fateh-ali-khan",
+        "type": "regular",
+        "id": "74434"
+      },
+      {
+        "name": "Rahgir",
+        "url": "https://genius.com/artists/Rahgir",
+        "type": "regular",
+        "id": "3597604"
+      },
+      {
+        "name": "Raiche",
+        "url": "https://genius.com/artists/Raiche",
+        "type": "regular",
+        "id": "1614333"
+      },
+      {
+        "name": "Raid",
+        "url": "https://genius.com/artists/Raid",
+        "type": "regular",
+        "id": "57386"
+      },
+      {
+        "name": "RaiM (KAZ)",
+        "url": "https://genius.com/artists/Raim-kaz",
+        "type": "regular",
+        "id": "3332530"
+      },
+      {
+        "name": "Raim Laode",
+        "url": "https://genius.com/artists/Raim-laode",
+        "type": "regular",
+        "id": "3458298"
+      },
+      {
+        "name": "Raimonds Pauls",
+        "url": "https://genius.com/artists/Raimonds-pauls",
+        "type": "regular",
+        "id": "1446211"
+      },
+      {
+        "name": "RaiNao",
+        "url": "https://genius.com/artists/Rainao",
+        "type": "regular",
+        "id": "3140736"
+      },
+      {
+        "name": "The Rainbooms",
+        "url": "https://genius.com/artists/The-rainbooms",
+        "type": "regular",
+        "id": "2136710"
+      },
+      {
+        "name": "Rainbow",
+        "url": "https://genius.com/artists/Rainbow",
+        "type": "regular",
+        "id": "35787"
+      },
+      {
+        "name": "Rainbow Dash",
+        "url": "https://genius.com/artists/Rainbow-dash",
+        "type": "regular",
+        "id": "1819649"
+      },
+      {
+        "name": "Rainbow Kitten Surprise",
+        "url": "https://genius.com/artists/Rainbow-kitten-surprise",
+        "type": "regular",
+        "id": "395176"
+      },
+      {
+        "name": "Rain City Drive",
+        "url": "https://genius.com/artists/Rain-city-drive",
+        "type": "regular",
+        "id": "2949375"
+      },
+      {
+        "name": "Rainhard Fendrich",
+        "url": "https://genius.com/artists/Rainhard-fendrich",
+        "type": "regular",
+        "id": "375233"
+      },
+      {
+        "name": "Raini Rodriguez",
+        "url": "https://genius.com/artists/Raini-rodriguez",
+        "type": "regular",
+        "id": "459133"
+      },
+      {
+        "name": "RAIN (PHL)",
+        "url": "https://genius.com/artists/Rain-phl",
+        "type": "regular",
+        "id": "4455614"
+      },
+      {
+        "name": "Ra'is",
+        "url": "https://genius.com/artists/Rais",
+        "type": "regular",
+        "id": "1676096"
+      },
+      {
+        "name": "Raisa",
+        "url": "https://genius.com/artists/Raisa",
+        "type": "regular",
+        "id": "373902"
+      },
+      {
+        "name": "​raissa anggiani",
+        "url": "https://genius.com/artists/Raissa-anggiani",
+        "type": "regular",
+        "id": "2281187"
+      },
+      {
+        "name": "RajahWild",
+        "url": "https://genius.com/artists/Rajahwild",
+        "type": "regular",
+        "id": "3133247"
+      },
+      {
+        "name": "Rakhim",
+        "url": "https://genius.com/artists/Rakhim",
+        "type": "regular",
+        "id": "2208707"
+      },
+      {
+        "name": "Rakim",
+        "url": "https://genius.com/artists/Rakim",
+        "type": "regular",
+        "id": "126"
+      },
+      {
+        "name": "Раковая Выхухоль (Rakovaya Vihuhol)",
+        "url": "https://genius.com/artists/Rakovaya-vihuhol",
+        "type": "regular",
+        "id": "4142789"
+      },
+      {
+        "name": "Raúl Beltran",
+        "url": "https://genius.com/artists/Raul-beltran",
+        "type": "regular",
+        "id": "4017933"
+      },
+      {
+        "name": "Ralfy the Plug",
+        "url": "https://genius.com/artists/Ralfy-the-plug",
+        "type": "regular",
+        "id": "1249360"
+      },
+      {
+        "name": "​ralph",
+        "url": "https://genius.com/artists/Ralph",
+        "type": "regular",
+        "id": "2351093"
+      },
+      {
+        "name": "Ralph Fiennes",
+        "url": "https://genius.com/artists/Ralph-fiennes",
+        "type": "regular",
+        "id": "226580"
+      },
+      {
+        "name": "Ralphie Choo",
+        "url": "https://genius.com/artists/Ralphie-choo",
+        "type": "regular",
+        "id": "2494734"
+      },
+      {
+        "name": "Ralph Stanley",
+        "url": "https://genius.com/artists/Ralph-stanley",
+        "type": "regular",
+        "id": "187440"
+      },
+      {
+        "name": "RALY",
+        "url": "https://genius.com/artists/Raly",
+        "type": "regular",
+        "id": "3437689"
+      },
+      {
+        "name": "RAM",
+        "url": "https://genius.com/artists/Ram",
+        "type": "regular",
+        "id": "1065822"
+      },
+      {
+        "name": "Ramayan",
+        "url": "https://genius.com/artists/Ramayan",
+        "type": "regular",
+        "id": "2174295"
+      },
+      {
+        "name": "Rambo Amadeus",
+        "url": "https://genius.com/artists/Rambo-amadeus",
+        "type": "regular",
+        "id": "524271"
+      },
+      {
+        "name": "RAMI (BABYMONSTER)",
+        "url": "https://genius.com/artists/Rami-babymonster",
+        "type": "regular",
+        "id": "3480121"
+      },
+      {
+        "name": "Ramil'",
+        "url": "https://genius.com/artists/Ramil",
+        "type": "regular",
+        "id": "1715243"
+      },
+      {
+        "name": "Ramin Djawadi",
+        "url": "https://genius.com/artists/Ramin-djawadi",
+        "type": "regular",
+        "id": "52417"
+      },
+      {
+        "name": "Ramin Karimloo",
+        "url": "https://genius.com/artists/Ramin-karimloo",
+        "type": "regular",
+        "id": "381388"
+      },
+      {
+        "name": "Ramirez",
+        "url": "https://genius.com/artists/Ramirez",
+        "type": "regular",
+        "id": "549766"
+      },
+      {
+        "name": "Ram Jam",
+        "url": "https://genius.com/artists/Ram-jam",
+        "type": "regular",
+        "id": "385331"
+      },
+      {
+        "name": "Ramma",
+        "url": "https://genius.com/artists/Ramma",
+        "type": "regular",
+        "id": "2787468"
+      },
+      {
+        "name": "Ramón Ayala y Sus Bravos Del Norte",
+        "url": "https://genius.com/artists/Ramon-ayala-y-sus-bravos-del-norte",
+        "type": "regular",
+        "id": "415854"
+      },
+      {
+        "name": "Ramones",
+        "url": "https://genius.com/artists/Ramones",
+        "type": "regular",
+        "id": "765"
+      },
+      {
+        "name": "RAMONMIX",
+        "url": "https://genius.com/artists/Ramonmix",
+        "type": "regular",
+        "id": "4158711"
+      },
+      {
+        "name": "Ramoon",
+        "url": "https://genius.com/artists/Ramoon",
+        "type": "regular",
+        "id": "996662"
+      },
+      {
+        "name": "Rampa",
+        "url": "https://genius.com/artists/Rampa",
+        "type": "regular",
+        "id": "538554"
+      },
+      {
+        "name": "Ramp Worship",
+        "url": "https://genius.com/artists/Ramp-worship",
+        "type": "regular",
+        "id": "1178027"
+      },
+      {
+        "name": "Ram Sampath",
+        "url": "https://genius.com/artists/Ram-sampath",
+        "type": "regular",
+        "id": "1265400"
+      },
+      {
+        "name": "Ramsey",
+        "url": "https://genius.com/artists/Ramsey",
+        "type": "regular",
+        "id": "462084"
+      },
+      {
+        "name": "Ramshackle Glory",
+        "url": "https://genius.com/artists/Ramshackle-glory",
+        "type": "regular",
+        "id": "67139"
+      },
+      {
+        "name": "Ramy Gamal - رامي جمال",
+        "url": "https://genius.com/artists/Ramy-gamal",
+        "type": "regular",
+        "id": "3432579"
+      },
+      {
+        "name": "Ramy Sabry - رامي صبري",
+        "url": "https://genius.com/artists/Ramy-sabry",
+        "type": "regular",
+        "id": "458494"
+      },
+      {
+        "name": "Ramzey (DEU)",
+        "url": "https://genius.com/artists/Ramzey-deu",
+        "type": "regular",
+        "id": "3001863"
+      },
+      {
+        "name": "Raïna Raï - راينا راي",
+        "url": "https://genius.com/artists/Raina-rai",
+        "type": "regular",
+        "id": "1642981"
+      },
+      {
+        "name": "Rancid",
+        "url": "https://genius.com/artists/Rancid",
+        "type": "regular",
+        "id": "30419"
+      },
+      {
+        "name": "Rancore",
+        "url": "https://genius.com/artists/Rancore",
+        "type": "regular",
+        "id": "294035"
+      },
+      {
+        "name": "Ran-D",
+        "url": "https://genius.com/artists/Ran-d",
+        "type": "regular",
+        "id": "454552"
+      },
+      {
+        "name": "Random Encounters",
+        "url": "https://genius.com/artists/Random-encounters",
+        "type": "regular",
+        "id": "51310"
+      },
+      {
+        "name": "Randy",
+        "url": "https://genius.com/artists/Randy",
+        "type": "regular",
+        "id": "1399986"
+      },
+      {
+        "name": "Randy Crawford",
+        "url": "https://genius.com/artists/Randy-crawford",
+        "type": "regular",
+        "id": "356265"
+      },
+      {
+        "name": "Randy Crenshaw",
+        "url": "https://genius.com/artists/Randy-crenshaw",
+        "type": "regular",
+        "id": "377665"
+      },
+      {
+        "name": "Randy Rogers Band",
+        "url": "https://genius.com/artists/Randy-rogers-band",
+        "type": "regular",
+        "id": "344665"
+      },
+      {
+        "name": "Randy Rothwell",
+        "url": "https://genius.com/artists/Randy-rothwell",
+        "type": "regular",
+        "id": "532558"
+      },
+      {
+        "name": "Randy Travis",
+        "url": "https://genius.com/artists/Randy-travis",
+        "type": "regular",
+        "id": "39965"
+      },
+      {
+        "name": "Ранетки (Ranetki)",
+        "url": "https://genius.com/artists/Ranetki",
+        "type": "regular",
+        "id": "1282846"
+      },
+      {
+        "name": "RangeRoverHang",
+        "url": "https://genius.com/artists/Rangeroverhang",
+        "type": "regular",
+        "id": "2503588"
+      },
+      {
+        "name": "The Rankin Family",
+        "url": "https://genius.com/artists/The-rankin-family",
+        "type": "regular",
+        "id": "343710"
+      },
+      {
+        "name": "Ransom",
+        "url": "https://genius.com/artists/Ransom",
+        "type": "regular",
+        "id": "1878"
+      },
+      {
+        "name": "Rap Demon",
+        "url": "https://genius.com/artists/Rap-demon",
+        "type": "regular",
+        "id": "185594"
+      },
+      {
+        "name": "Rap Genius",
+        "url": "https://genius.com/artists/Rap-genius",
+        "type": "regular",
+        "id": "27983"
+      },
+      {
+        "name": "Rap Genius Deutschland",
+        "url": "https://genius.com/artists/Rap-genius-deutschland",
+        "type": "regular",
+        "id": "71621"
+      },
+      {
+        "name": "Rap Genius Editors",
+        "url": "https://genius.com/artists/Rap-genius-editors",
+        "type": "regular",
+        "id": "799"
+      },
+      {
+        "name": "Rap Genius Polska",
+        "url": "https://genius.com/artists/Rap-genius-polska",
+        "type": "regular",
+        "id": "71378"
+      },
+      {
+        "name": "Raphael Saadiq",
+        "url": "https://genius.com/artists/Raphael-saadiq",
+        "type": "regular",
+        "id": "2464"
+      },
+      {
+        "name": "Raphael (SVK)",
+        "url": "https://genius.com/artists/Raphael-svk",
+        "type": "regular",
+        "id": "3779517"
+      },
+      {
+        "name": "RAPK",
+        "url": "https://genius.com/artists/Rapk",
+        "type": "regular",
+        "id": "3005431"
+      },
+      {
+        "name": "Raplume",
+        "url": "https://genius.com/artists/Raplume",
+        "type": "regular",
+        "id": "1935880"
+      },
+      {
+        "name": "Rapsody",
+        "url": "https://genius.com/artists/Rapsody",
+        "type": "regular",
+        "id": "14148"
+      },
+      {
+        "name": "Raq Baby",
+        "url": "https://genius.com/artists/Raq-baby",
+        "type": "regular",
+        "id": "3179406"
+      },
+      {
+        "name": "Rare Americans",
+        "url": "https://genius.com/artists/Rare-americans",
+        "type": "regular",
+        "id": "1505990"
+      },
+      {
+        "name": "rareș bebelușul",
+        "url": "https://genius.com/artists/Rares-bebelusul",
+        "type": "regular",
+        "id": "4405606"
+      },
+      {
+        "name": "The Rare Occasions",
+        "url": "https://genius.com/artists/The-rare-occasions",
+        "type": "regular",
+        "id": "1059194"
+      },
+      {
+        "name": "Rare of Breed",
+        "url": "https://genius.com/artists/Rare-of-breed",
+        "type": "regular",
+        "id": "215570"
+      },
+      {
+        "name": "Rarin",
+        "url": "https://genius.com/artists/Rarin",
+        "type": "regular",
+        "id": "2151602"
+      },
+      {
+        "name": "Rarity (TV)",
+        "url": "https://genius.com/artists/Rarity-tv",
+        "type": "regular",
+        "id": "4402954"
+      },
+      {
+        "name": "RASA",
+        "url": "https://genius.com/artists/Rasa",
+        "type": "regular",
+        "id": "1517560"
+      },
+      {
+        "name": "Rasa (DEU)",
+        "url": "https://genius.com/artists/Rasa-deu",
+        "type": "regular",
+        "id": "3557320"
+      },
+      {
+        "name": "Rasam",
+        "url": "https://genius.com/artists/Rasam",
+        "type": "regular",
+        "id": "228268"
+      },
+      {
+        "name": "Rascal Flatts",
+        "url": "https://genius.com/artists/Rascal-flatts",
+        "type": "regular",
+        "id": "22932"
+      },
+      {
+        "name": "Rasheeda",
+        "url": "https://genius.com/artists/Rasheeda",
+        "type": "regular",
+        "id": "6130"
+      },
+      {
+        "name": "Rashid Khan",
+        "url": "https://genius.com/artists/Rashid-khan",
+        "type": "regular",
+        "id": "1775207"
+      },
+      {
+        "name": "Ras Kass",
+        "url": "https://genius.com/artists/Ras-kass",
+        "type": "regular",
+        "id": "1451"
+      },
+      {
+        "name": "RASKOL",
+        "url": "https://genius.com/artists/Raskol",
+        "type": "regular",
+        "id": "1197928"
+      },
+      {
+        "name": "The Rasmus",
+        "url": "https://genius.com/artists/The-rasmus",
+        "type": "regular",
+        "id": "158166"
+      },
+      {
+        "name": "Rasmus Gozzi",
+        "url": "https://genius.com/artists/Rasmus-gozzi",
+        "type": "regular",
+        "id": "1318924"
+      },
+      {
+        "name": "Rasmus Seebach",
+        "url": "https://genius.com/artists/Rasmus-seebach",
+        "type": "regular",
+        "id": "266121"
+      },
+      {
+        "name": "Rasta",
+        "url": "https://genius.com/artists/Rasta",
+        "type": "regular",
+        "id": "79371"
+      },
+      {
+        "name": "Rasty Kilo",
+        "url": "https://genius.com/artists/Rasty-kilo",
+        "type": "regular",
+        "id": "407357"
+      },
+      {
+        "name": "R.A. The Rugged Man",
+        "url": "https://genius.com/artists/Ra-the-rugged-man",
+        "type": "regular",
+        "id": "320"
+      },
+      {
+        "name": "‎‎ratrace90210",
+        "url": "https://genius.com/artists/Ratrace90210",
+        "type": "regular",
+        "id": "2353338"
+      },
+      {
+        "name": "Ratt",
+        "url": "https://genius.com/artists/Ratt",
+        "type": "regular",
+        "id": "39008"
+      },
+      {
+        "name": "Rattlesnake Milk",
+        "url": "https://genius.com/artists/Rattlesnake-milk",
+        "type": "regular",
+        "id": "3452205"
+      },
+      {
+        "name": "Rauf & Faik",
+        "url": "https://genius.com/artists/Rauf-and-faik",
+        "type": "regular",
+        "id": "1619976"
+      },
+      {
+        "name": "Rauhan Malik",
+        "url": "https://genius.com/artists/Rauhan-malik",
+        "type": "regular",
+        "id": "3881073"
+      },
+      {
+        "name": "Raul Clyde",
+        "url": "https://genius.com/artists/Raul-clyde",
+        "type": "regular",
+        "id": "2070557"
+      },
+      {
+        "name": "Rauli Badding Somerjoki",
+        "url": "https://genius.com/artists/Rauli-badding-somerjoki",
+        "type": "regular",
+        "id": "343719"
+      },
+      {
+        "name": "Raulin Rodriguez",
+        "url": "https://genius.com/artists/Raulin-rodriguez",
+        "type": "regular",
+        "id": "402648"
+      },
+      {
+        "name": "Raul Ws",
+        "url": "https://genius.com/artists/Raul-ws",
+        "type": "regular",
+        "id": "2626451"
+      },
+      {
+        "name": "Rav",
+        "url": "https://genius.com/artists/Rav",
+        "type": "regular",
+        "id": "28814"
+      },
+      {
+        "name": "RAVA",
+        "url": "https://genius.com/artists/Rava",
+        "type": "regular",
+        "id": "2081934"
+      },
+      {
+        "name": "ДЕТИ RAVE (DETI RAVE)",
+        "url": "https://genius.com/artists/Rave-deti-rave",
+        "type": "regular",
+        "id": "1651140"
+      },
+      {
+        "name": "Raveena",
+        "url": "https://genius.com/artists/Raveena",
+        "type": "regular",
+        "id": "569053"
+      },
+      {
+        "name": "Ravend",
+        "url": "https://genius.com/artists/Ravend",
+        "type": "regular",
+        "id": "1235257"
+      },
+      {
+        "name": "Ravid Plotnik - רביד פלוטניק",
+        "url": "https://genius.com/artists/Ravid-plotnik",
+        "type": "regular",
+        "id": "557478"
+      },
+      {
+        "name": "Ravyn Lenae",
+        "url": "https://genius.com/artists/Ravyn-lenae",
+        "type": "regular",
+        "id": "326173"
+      },
+      {
+        "name": "Rawal",
+        "url": "https://genius.com/artists/Rawal",
+        "type": "regular",
+        "id": "292945"
+      },
+      {
+        "name": "Rawayana",
+        "url": "https://genius.com/artists/Rawayana",
+        "type": "regular",
+        "id": "454200"
+      },
+      {
+        "name": "Rayan",
+        "url": "https://genius.com/artists/Rayan",
+        "type": "regular",
+        "id": "2137283"
+      },
+      {
+        "name": "Ray Boltz",
+        "url": "https://genius.com/artists/Ray-boltz",
+        "type": "regular",
+        "id": "344052"
+      },
+      {
+        "name": "Ray Charles",
+        "url": "https://genius.com/artists/Ray-charles",
+        "type": "regular",
+        "id": "22416"
+      },
+      {
+        "name": "Ray Charles (Songwriter)",
+        "url": "https://genius.com/artists/Ray-charles-songwriter",
+        "type": "regular",
+        "id": "1640954"
+      },
+      {
+        "name": "Ray J",
+        "url": "https://genius.com/artists/Ray-j",
+        "type": "regular",
+        "id": "436"
+      },
+      {
+        "name": "Ray LaMontagne",
+        "url": "https://genius.com/artists/Ray-lamontagne",
+        "type": "regular",
+        "id": "27239"
+      },
+      {
+        "name": "Ray Middleton",
+        "url": "https://genius.com/artists/Ray-middleton",
+        "type": "regular",
+        "id": "1507005"
+      },
+      {
+        "name": "Ray Parker Jr.",
+        "url": "https://genius.com/artists/Ray-parker-jr",
+        "type": "regular",
+        "id": "71122"
+      },
+      {
+        "name": "Ray Price",
+        "url": "https://genius.com/artists/Ray-price",
+        "type": "regular",
+        "id": "330092"
+      },
+      {
+        "name": "Ray Stevens",
+        "url": "https://genius.com/artists/Ray-stevens",
+        "type": "regular",
+        "id": "51534"
+      },
+      {
+        "name": "Rayvanny",
+        "url": "https://genius.com/artists/Rayvanny",
+        "type": "regular",
+        "id": "1216084"
+      },
+      {
+        "name": "Ray Vaughn",
+        "url": "https://genius.com/artists/Ray-vaughn",
+        "type": "regular",
+        "id": "1140787"
+      },
+      {
+        "name": "Ray Wylie Hubbard",
+        "url": "https://genius.com/artists/Ray-wylie-hubbard",
+        "type": "regular",
+        "id": "358865"
+      },
+      {
+        "name": "Razorlight",
+        "url": "https://genius.com/artists/Razorlight",
+        "type": "regular",
+        "id": "118117"
+      },
+      {
+        "name": "Raztaa",
+        "url": "https://genius.com/artists/Raztaa",
+        "type": "regular",
+        "id": "4258833"
+      },
+      {
+        "name": "RBD",
+        "url": "https://genius.com/artists/Rbd",
+        "type": "regular",
+        "id": "48433"
+      },
+      {
+        "name": "БумеR (BoomeR)",
+        "url": "https://genius.com/artists/R-boomer",
+        "type": "regular",
+        "id": "3075213"
+      },
+      {
+        "name": "R. City",
+        "url": "https://genius.com/artists/R-city",
+        "type": "regular",
+        "id": "544871"
+      },
+      {
+        "name": "R.D. Burman",
+        "url": "https://genius.com/artists/Rd-burman",
+        "type": "regular",
+        "id": "1474133"
+      },
+      {
+        "name": "re6ce",
+        "url": "https://genius.com/artists/Re6ce",
+        "type": "regular",
+        "id": "2792631"
+      },
+      {
+        "name": "Read Southall Band",
+        "url": "https://genius.com/artists/Read-southall-band",
+        "type": "regular",
+        "id": "1403653"
+      },
+      {
+        "name": "Ready for the World",
+        "url": "https://genius.com/artists/Ready-for-the-world",
+        "type": "regular",
+        "id": "175413"
+      },
+      {
+        "name": "RealBleeda",
+        "url": "https://genius.com/artists/Realbleeda",
+        "type": "regular",
+        "id": "3196803"
+      },
+      {
+        "name": "Real Boston Richey",
+        "url": "https://genius.com/artists/Real-boston-richey",
+        "type": "regular",
+        "id": "3029330"
+      },
+      {
+        "name": "Realest Cram",
+        "url": "https://genius.com/artists/Realest-cram",
+        "type": "regular",
+        "id": "3472351"
+      },
+      {
+        "name": "RealestK",
+        "url": "https://genius.com/artists/Realestk",
+        "type": "regular",
+        "id": "2832078"
+      },
+      {
+        "name": "ФРЭНК (Realganstafrank)",
+        "url": "https://genius.com/artists/Realganstafrank",
+        "type": "regular",
+        "id": "4132070"
+      },
+      {
+        "name": "Da Real Gee Money",
+        "url": "https://genius.com/artists/Da-real-gee-money",
+        "type": "regular",
+        "id": "1076017"
+      },
+      {
+        "name": "Reality Club",
+        "url": "https://genius.com/artists/Reality-club",
+        "type": "regular",
+        "id": "660855"
+      },
+      {
+        "name": "Really Introverted Producer",
+        "url": "https://genius.com/artists/Really-introverted-producer",
+        "type": "regular",
+        "id": "2243530"
+      },
+      {
+        "name": "Real Madrid CF",
+        "url": "https://genius.com/artists/Real-madrid-cf",
+        "type": "regular",
+        "id": "57420"
+      },
+      {
+        "name": "REAL-T",
+        "url": "https://genius.com/artists/Real-t",
+        "type": "regular",
+        "id": "2271503"
+      },
+      {
+        "name": "Real Talk",
+        "url": "https://genius.com/artists/Real-talk",
+        "type": "regular",
+        "id": "71014"
+      },
+      {
+        "name": "The Real Thing",
+        "url": "https://genius.com/artists/The-real-thing",
+        "type": "regular",
+        "id": "355190"
+      },
+      {
+        "name": "The Real Tuesday Weld",
+        "url": "https://genius.com/artists/The-real-tuesday-weld",
+        "type": "regular",
+        "id": "227935"
+      },
+      {
+        "name": "REAL WAYNE",
+        "url": "https://genius.com/artists/Real-wayne",
+        "type": "regular",
+        "id": "3921073"
+      },
+      {
+        "name": "Reamonn",
+        "url": "https://genius.com/artists/Reamonn",
+        "type": "regular",
+        "id": "150534"
+      },
+      {
+        "name": "REASON",
+        "url": "https://genius.com/artists/Reason",
+        "type": "regular",
+        "id": "1548940"
+      },
+      {
+        "name": "Reba McEntire",
+        "url": "https://genius.com/artists/Reba-mcentire",
+        "type": "regular",
+        "id": "59794"
+      },
+      {
+        "name": "Rebecca Ablack",
+        "url": "https://genius.com/artists/Rebecca-ablack",
+        "type": "regular",
+        "id": "2700150"
+      },
+      {
+        "name": "Rebecca Black",
+        "url": "https://genius.com/artists/Rebecca-black",
+        "type": "regular",
+        "id": "2304"
+      },
+      {
+        "name": "Rebecca Sugar",
+        "url": "https://genius.com/artists/Rebecca-sugar",
+        "type": "regular",
+        "id": "76079"
+      },
+      {
+        "name": "Rebelution",
+        "url": "https://genius.com/artists/Rebelution",
+        "type": "regular",
+        "id": "25087"
+      },
+      {
+        "name": "Rebzyyx",
+        "url": "https://genius.com/artists/Rebzyyx",
+        "type": "regular",
+        "id": "2662137"
+      },
+      {
+        "name": "Recall",
+        "url": "https://genius.com/artists/Recall",
+        "type": "regular",
+        "id": "1341458"
+      },
+      {
+        "name": "RecD",
+        "url": "https://genius.com/artists/Recd",
+        "type": "regular",
+        "id": "1657763"
+      },
+      {
+        "name": "Reckol",
+        "url": "https://genius.com/artists/Reckol",
+        "type": "regular",
+        "id": "2395482"
+      },
+      {
+        "name": "The Recovery System",
+        "url": "https://genius.com/artists/The-recovery-system",
+        "type": "regular",
+        "id": "4063573"
+      },
+      {
+        "name": "Recycled J",
+        "url": "https://genius.com/artists/Recycled-j",
+        "type": "regular",
+        "id": "624209"
+      },
+      {
+        "name": "Red",
+        "url": "https://genius.com/artists/Red",
+        "type": "regular",
+        "id": "326301"
+      },
+      {
+        "name": "The Red Army Choir",
+        "url": "https://genius.com/artists/The-red-army-choir",
+        "type": "regular",
+        "id": "351015"
+      },
+      {
+        "name": "Redbone",
+        "url": "https://genius.com/artists/Redbone",
+        "type": "regular",
+        "id": "240092"
+      },
+      {
+        "name": "Red Bull Sika - ريد بُل سيكا",
+        "url": "https://genius.com/artists/Red-bull-sika",
+        "type": "regular",
+        "id": "3202488"
+      },
+      {
+        "name": "The Red Clay Strays",
+        "url": "https://genius.com/artists/The-red-clay-strays",
+        "type": "regular",
+        "id": "2105391"
+      },
+      {
+        "name": "Redd",
+        "url": "https://genius.com/artists/Redd",
+        "type": "regular",
+        "id": "7435"
+      },
+      {
+        "name": "Redda",
+        "url": "https://genius.com/artists/Redda",
+        "type": "regular",
+        "id": "629830"
+      },
+      {
+        "name": "Reddit Copypastas",
+        "url": "https://genius.com/artists/Reddit-copypastas",
+        "type": "regular",
+        "id": "1789384"
+      },
+      {
+        "name": "Redferrin",
+        "url": "https://genius.com/artists/Redferrin",
+        "type": "regular",
+        "id": "2612535"
+      },
+      {
+        "name": "Redgum",
+        "url": "https://genius.com/artists/Redgum",
+        "type": "regular",
+        "id": "83411"
+      },
+      {
+        "name": "Red House Painters",
+        "url": "https://genius.com/artists/Red-house-painters",
+        "type": "regular",
+        "id": "139143"
+      },
+      {
+        "name": "Redimi2",
+        "url": "https://genius.com/artists/Redimi2",
+        "type": "regular",
+        "id": "215943"
+      },
+      {
+        "name": "The Red Jumpsuit Apparatus",
+        "url": "https://genius.com/artists/The-red-jumpsuit-apparatus",
+        "type": "regular",
+        "id": "11882"
+      },
+      {
+        "name": "Red Leather",
+        "url": "https://genius.com/artists/Red-leather",
+        "type": "regular",
+        "id": "3125723"
+      },
+      {
+        "name": "Redman",
+        "url": "https://genius.com/artists/Redman",
+        "type": "regular",
+        "id": "229"
+      },
+      {
+        "name": "Rednex",
+        "url": "https://genius.com/artists/Rednex",
+        "type": "regular",
+        "id": "60278"
+      },
+      {
+        "name": "Redo (TUR)",
+        "url": "https://genius.com/artists/Redo-tur",
+        "type": "regular",
+        "id": "1674616"
+      },
+      {
+        "name": "Redrama",
+        "url": "https://genius.com/artists/Redrama",
+        "type": "regular",
+        "id": "21366"
+      },
+      {
+        "name": "Red Rocks Worship",
+        "url": "https://genius.com/artists/Red-rocks-worship",
+        "type": "regular",
+        "id": "1014838"
+      },
+      {
+        "name": "redseas07",
+        "url": "https://genius.com/artists/Redseas07",
+        "type": "regular",
+        "id": "4176262"
+      },
+      {
+        "name": "Red Sovine",
+        "url": "https://genius.com/artists/Red-sovine",
+        "type": "regular",
+        "id": "328766"
+      },
+      {
+        "name": "Red Tips",
+        "url": "https://genius.com/artists/Red-tips",
+        "type": "regular",
+        "id": "1653100"
+      },
+      {
+        "name": "RedTv53",
+        "url": "https://genius.com/artists/Redtv53",
+        "type": "regular",
+        "id": "3506729"
+      },
+      {
+        "name": "Red Velvet (레드벨벳)",
+        "url": "https://genius.com/artists/Red-velvet",
+        "type": "regular",
+        "id": "457228"
+      },
+      {
+        "name": "Red Velvet - IRENE & SEULGI",
+        "url": "https://genius.com/artists/Red-velvet-irene-and-seulgi",
+        "type": "regular",
+        "id": "2256811"
+      },
+      {
+        "name": "Red Vox",
+        "url": "https://genius.com/artists/Red-vox",
+        "type": "regular",
+        "id": "654644"
+      },
+      {
+        "name": "Red Worship",
+        "url": "https://genius.com/artists/Red-worship",
+        "type": "regular",
+        "id": "3698620"
+      },
+      {
+        "name": "REDZED",
+        "url": "https://genius.com/artists/Redzed",
+        "type": "regular",
+        "id": "1275230"
+      },
+      {
+        "name": "Reed Wonder",
+        "url": "https://genius.com/artists/Reed-wonder",
+        "type": "regular",
+        "id": "3183841"
+      },
+      {
+        "name": "Reef",
+        "url": "https://genius.com/artists/Reef",
+        "type": "regular",
+        "id": "237"
+      },
+      {
+        "name": "Reel Big Fish",
+        "url": "https://genius.com/artists/Reel-big-fish",
+        "type": "regular",
+        "id": "51920"
+      },
+      {
+        "name": "Reeve Carney",
+        "url": "https://genius.com/artists/Reeve-carney",
+        "type": "regular",
+        "id": "389697"
+      },
+      {
+        "name": "reezy",
+        "url": "https://genius.com/artists/Reezy",
+        "type": "regular",
+        "id": "1028151"
+      },
+      {
+        "name": "REFLEX",
+        "url": "https://genius.com/artists/Reflex",
+        "type": "regular",
+        "id": "1328958"
+      },
+      {
+        "name": "ReFRESH Worship",
+        "url": "https://genius.com/artists/Refresh-worship",
+        "type": "regular",
+        "id": "3083015"
+      },
+      {
+        "name": "Refused",
+        "url": "https://genius.com/artists/Refused",
+        "type": "regular",
+        "id": "70160"
+      },
+      {
+        "name": "Regard",
+        "url": "https://genius.com/artists/Regard",
+        "type": "regular",
+        "id": "1897184"
+      },
+      {
+        "name": "Regina Belle",
+        "url": "https://genius.com/artists/Regina-belle",
+        "type": "regular",
+        "id": "352061"
+      },
+      {
+        "name": "Regina Blandón",
+        "url": "https://genius.com/artists/Regina-blandon",
+        "type": "regular",
+        "id": "2639663"
+      },
+      {
+        "name": "Regina Song",
+        "url": "https://genius.com/artists/Regina-song",
+        "type": "regular",
+        "id": "2879183"
+      },
+      {
+        "name": "Regina Spektor",
+        "url": "https://genius.com/artists/Regina-spektor",
+        "type": "regular",
+        "id": "19191"
+      },
+      {
+        "name": "Regine Velasquez",
+        "url": "https://genius.com/artists/Regine-velasquez",
+        "type": "regular",
+        "id": "353706"
+      },
+      {
+        "name": "Regular Show",
+        "url": "https://genius.com/artists/Regular-show",
+        "type": "regular",
+        "id": "82193"
+      },
+      {
+        "name": "Rehab",
+        "url": "https://genius.com/artists/Rehab",
+        "type": "regular",
+        "id": "8474"
+      },
+      {
+        "name": "Rehash",
+        "url": "https://genius.com/artists/Rehash",
+        "type": "regular",
+        "id": "2112812"
+      },
+      {
+        "name": "Rei 6",
+        "url": "https://genius.com/artists/Rei-6",
+        "type": "regular",
+        "id": "2659705"
+      },
+      {
+        "name": "Reik",
+        "url": "https://genius.com/artists/Reik",
+        "type": "regular",
+        "id": "346373"
+      },
+      {
+        "name": "Reinhard Mey",
+        "url": "https://genius.com/artists/Reinhard-mey",
+        "type": "regular",
+        "id": "102053"
+      },
+      {
+        "name": "เรนิษรา (Reinizra)",
+        "url": "https://genius.com/artists/Reinizra",
+        "type": "regular",
+        "id": "3415405"
+      },
+      {
+        "name": "​​​​​​​rejectedreyna",
+        "url": "https://genius.com/artists/Rejectedreyna",
+        "type": "regular",
+        "id": "1712417"
+      },
+      {
+        "name": "Rekky",
+        "url": "https://genius.com/artists/Rekky",
+        "type": "regular",
+        "id": "2053727"
+      },
+      {
+        "name": "Relient K",
+        "url": "https://genius.com/artists/Relient-k",
+        "type": "regular",
+        "id": "18124"
+      },
+      {
+        "name": "Religious Music / Hymns",
+        "url": "https://genius.com/artists/Religious-music-hymns",
+        "type": "regular",
+        "id": "353989"
+      },
+      {
+        "name": "Relja",
+        "url": "https://genius.com/artists/Relja",
+        "type": "regular",
+        "id": "623002"
+      },
+      {
+        "name": "Rell Vert",
+        "url": "https://genius.com/artists/Rell-vert",
+        "type": "regular",
+        "id": "4011320"
+      },
+      {
+        "name": "Relly 4zz",
+        "url": "https://genius.com/artists/Relly-4zz",
+        "type": "regular",
+        "id": "3847512"
+      },
+      {
+        "name": "Rels B",
+        "url": "https://genius.com/artists/Rels-b",
+        "type": "regular",
+        "id": "621216"
+      },
+      {
+        "name": "R.E.M.",
+        "url": "https://genius.com/artists/Rem",
+        "type": "regular",
+        "id": "8243"
+      },
+      {
+        "name": "Rema",
+        "url": "https://genius.com/artists/Rema",
+        "type": "regular",
+        "id": "1136327"
+      },
+      {
+        "name": "Remble",
+        "url": "https://genius.com/artists/Remble",
+        "type": "regular",
+        "id": "2563812"
+      },
+      {
+        "name": "The Rembrandts",
+        "url": "https://genius.com/artists/The-rembrandts",
+        "type": "regular",
+        "id": "38225"
+      },
+      {
+        "name": "Рем Дигга (Rem Digga)",
+        "url": "https://genius.com/artists/Rem-digga",
+        "type": "regular",
+        "id": "613306"
+      },
+      {
+        "name": "Remers",
+        "url": "https://genius.com/artists/Remers",
+        "type": "regular",
+        "id": "2749936"
+      },
+      {
+        "name": "REMINI",
+        "url": "https://genius.com/artists/Remini",
+        "type": "regular",
+        "id": "4073918"
+      },
+      {
+        "name": "Remi Wolf",
+        "url": "https://genius.com/artists/Remi-wolf",
+        "type": "regular",
+        "id": "1712043"
+      },
+      {
+        "name": "Remmy Valenzuela",
+        "url": "https://genius.com/artists/Remmy-valenzuela",
+        "type": "regular",
+        "id": "388552"
+      },
+      {
+        "name": "removeface",
+        "url": "https://genius.com/artists/Removeface",
+        "type": "regular",
+        "id": "2978650"
+      },
+      {
+        "name": "Remy Bond",
+        "url": "https://genius.com/artists/Remy-bond",
+        "type": "regular",
+        "id": "3750441"
+      },
+      {
+        "name": "Remy Ma",
+        "url": "https://genius.com/artists/Remy-ma",
+        "type": "regular",
+        "id": "2274"
+      },
+      {
+        "name": "Remy Zero",
+        "url": "https://genius.com/artists/Remy-zero",
+        "type": "regular",
+        "id": "50823"
+      },
+      {
+        "name": "Ren",
+        "url": "https://genius.com/artists/Ren",
+        "type": "regular",
+        "id": "27062"
+      },
+      {
+        "name": "Renato Carosone",
+        "url": "https://genius.com/artists/Renato-carosone",
+        "type": "regular",
+        "id": "361756"
+      },
+      {
+        "name": "Renaud",
+        "url": "https://genius.com/artists/Renaud",
+        "type": "regular",
+        "id": "24927"
+      },
+      {
+        "name": "Rend Collective",
+        "url": "https://genius.com/artists/Rend-collective",
+        "type": "regular",
+        "id": "267872"
+      },
+      {
+        "name": "Renée Christine",
+        "url": "https://genius.com/artists/Renee-christine",
+        "type": "regular",
+        "id": "4449738"
+      },
+      {
+        "name": "RENEE",
+        "url": "https://genius.com/artists/Renee",
+        "type": "regular",
+        "id": "1953251"
+      },
+      {
+        "name": "Renee Wagner",
+        "url": "https://genius.com/artists/Renee-wagner",
+        "type": "regular",
+        "id": "1186331"
+      },
+      {
+        "name": "Renée Zellweger",
+        "url": "https://genius.com/artists/Renee-zellweger",
+        "type": "regular",
+        "id": "335067"
+      },
+      {
+        "name": "Renz Verano",
+        "url": "https://genius.com/artists/Renz-verano",
+        "type": "regular",
+        "id": "3151323"
+      },
+      {
+        "name": "REO Speedwagon",
+        "url": "https://genius.com/artists/Reo-speedwagon",
+        "type": "regular",
+        "id": "35894"
+      },
+      {
+        "name": "Repablikan",
+        "url": "https://genius.com/artists/Repablikan",
+        "type": "regular",
+        "id": "56960"
+      },
+      {
+        "name": "The Replacements",
+        "url": "https://genius.com/artists/The-replacements",
+        "type": "regular",
+        "id": "4749"
+      },
+      {
+        "name": "Рэ.Прэса (Re.Presa)",
+        "url": "https://genius.com/artists/Represa",
+        "type": "regular",
+        "id": "3046062"
+      },
+      {
+        "name": "Repsaj",
+        "url": "https://genius.com/artists/Repsaj",
+        "type": "regular",
+        "id": "4406529"
+      },
+      {
+        "name": "Reptilian Club Boyz",
+        "url": "https://genius.com/artists/Reptilian-club-boyz",
+        "type": "regular",
+        "id": "2135572"
+      },
+      {
+        "name": "Republika ng Pilipinas",
+        "url": "https://genius.com/artists/Republika-ng-pilipinas",
+        "type": "regular",
+        "id": "3513452"
+      },
+      {
+        "name": "requiem for you",
+        "url": "https://genius.com/artists/Requiem-for-you",
+        "type": "regular",
+        "id": "3927854"
+      },
+      {
+        "name": "Resepsiyon",
+        "url": "https://genius.com/artists/Resepsiyon",
+        "type": "regular",
+        "id": "2331442"
+      },
+      {
+        "name": "Reshma",
+        "url": "https://genius.com/artists/Reshma",
+        "type": "regular",
+        "id": "1689995"
+      },
+      {
+        "name": "Residente",
+        "url": "https://genius.com/artists/Residente",
+        "type": "regular",
+        "id": "388726"
+      },
+      {
+        "name": "The Residents",
+        "url": "https://genius.com/artists/The-residents",
+        "type": "regular",
+        "id": "163777"
+      },
+      {
+        "name": "Restless Heart",
+        "url": "https://genius.com/artists/Restless-heart",
+        "type": "regular",
+        "id": "332499"
+      },
+      {
+        "name": "The Retired Helperbots",
+        "url": "https://genius.com/artists/The-retired-helperbots",
+        "type": "regular",
+        "id": "4352729"
+      },
+      {
+        "name": "ReTo",
+        "url": "https://genius.com/artists/Reto",
+        "type": "regular",
+        "id": "338143"
+      },
+      {
+        "name": "The Returners",
+        "url": "https://genius.com/artists/The-returners",
+        "type": "regular",
+        "id": "32965"
+      },
+      {
+        "name": "Re-Up Gang",
+        "url": "https://genius.com/artists/Re-up-gang",
+        "type": "regular",
+        "id": "4612"
+      },
+      {
+        "name": "Revelle",
+        "url": "https://genius.com/artists/Revelle",
+        "type": "regular",
+        "id": "1839856"
+      },
+      {
+        "name": "Rev. Gary Davis",
+        "url": "https://genius.com/artists/Rev-gary-davis",
+        "type": "regular",
+        "id": "389148"
+      },
+      {
+        "name": "Revival Cast of Pippin",
+        "url": "https://genius.com/artists/Revival-cast-of-pippin",
+        "type": "regular",
+        "id": "992122"
+      },
+      {
+        "name": "The Revivalists",
+        "url": "https://genius.com/artists/The-revivalists",
+        "type": "regular",
+        "id": "258539"
+      },
+      {
+        "name": "Rev. Milton Brunson",
+        "url": "https://genius.com/artists/Rev-milton-brunson",
+        "type": "regular",
+        "id": "406194"
+      },
+      {
+        "name": "Rev. Milton Brunson & The Thompson Community Singers",
+        "url": "https://genius.com/artists/Rev-milton-brunson-and-the-thompson-community-singers",
+        "type": "regular",
+        "id": "589018"
+      },
+      {
+        "name": "Rex Atirai",
+        "url": "https://genius.com/artists/Rex-atirai",
+        "type": "regular",
+        "id": "4418475"
+      },
+      {
+        "name": "Rexboxlive",
+        "url": "https://genius.com/artists/Rexboxlive",
+        "type": "regular",
+        "id": "4421641"
+      },
+      {
+        "name": "Rex Harrison",
+        "url": "https://genius.com/artists/Rex-harrison",
+        "type": "regular",
+        "id": "378223"
+      },
+      {
+        "name": "Rex Orange County",
+        "url": "https://genius.com/artists/Rex-orange-county",
+        "type": "regular",
+        "id": "989523"
+      },
+      {
+        "name": "rexv2",
+        "url": "https://genius.com/artists/Rexv2",
+        "type": "regular",
+        "id": "3661948"
+      },
+      {
+        "name": "рэйчи (reychi)",
+        "url": "https://genius.com/artists/Reychi",
+        "type": "regular",
+        "id": "2085414"
+      },
+      {
+        "name": "Reyna Roberts",
+        "url": "https://genius.com/artists/Reyna-roberts",
+        "type": "regular",
+        "id": "2333200"
+      },
+      {
+        "name": "Reynmen",
+        "url": "https://genius.com/artists/Reynmen",
+        "type": "regular",
+        "id": "1216286"
+      },
+      {
+        "name": "REYSHA RAMI",
+        "url": "https://genius.com/artists/Reysha-rami",
+        "type": "regular",
+        "id": "3189746"
+      },
+      {
+        "name": "Rey Valera",
+        "url": "https://genius.com/artists/Rey-valera",
+        "type": "regular",
+        "id": "344438"
+      },
+      {
+        "name": "Reza Artamevia",
+        "url": "https://genius.com/artists/Reza-artamevia",
+        "type": "regular",
+        "id": "987051"
+      },
+      {
+        "name": "Reza Pishro",
+        "url": "https://genius.com/artists/Reza-pishro",
+        "type": "regular",
+        "id": "140468"
+      },
+      {
+        "name": "Rezz",
+        "url": "https://genius.com/artists/Rezz",
+        "type": "regular",
+        "id": "1044412"
+      },
+      {
+        "name": "RÜFÜS DU SOL",
+        "url": "https://genius.com/artists/Rufus-du-sol",
+        "type": "regular",
+        "id": "526381"
+      },
+      {
+        "name": "Rhapsody of Fire",
+        "url": "https://genius.com/artists/Rhapsody-of-fire",
+        "type": "regular",
+        "id": "355361"
+      },
+      {
+        "name": "Rhenzy Feliz",
+        "url": "https://genius.com/artists/Rhenzy-feliz",
+        "type": "regular",
+        "id": "2965213"
+      },
+      {
+        "name": "Rhett and Link",
+        "url": "https://genius.com/artists/Rhett-and-link",
+        "type": "regular",
+        "id": "14721"
+      },
+      {
+        "name": "Rhiannon Giddens",
+        "url": "https://genius.com/artists/Rhiannon-giddens",
+        "type": "regular",
+        "id": "327548"
+      },
+      {
+        "name": "RHODES",
+        "url": "https://genius.com/artists/Rhodes",
+        "type": "regular",
+        "id": "364445"
+      },
+      {
+        "name": "Rhonda Vincent",
+        "url": "https://genius.com/artists/Rhonda-vincent",
+        "type": "regular",
+        "id": "67284"
+      },
+      {
+        "name": "Rhove",
+        "url": "https://genius.com/artists/Rhove",
+        "type": "regular",
+        "id": "2476422"
+      },
+      {
+        "name": "Rhye",
+        "url": "https://genius.com/artists/Rhye",
+        "type": "regular",
+        "id": "27994"
+      },
+      {
+        "name": "RIAN",
+        "url": "https://genius.com/artists/Rian",
+        "type": "regular",
+        "id": "152230"
+      },
+      {
+        "name": "Riblja čorba",
+        "url": "https://genius.com/artists/Riblja-corba",
+        "type": "regular",
+        "id": "402187"
+      },
+      {
+        "name": "RICARDO AND FRIENDS",
+        "url": "https://genius.com/artists/Ricardo-and-friends",
+        "type": "regular",
+        "id": "1423684"
+      },
+      {
+        "name": "Ricardo Arjona",
+        "url": "https://genius.com/artists/Ricardo-arjona",
+        "type": "regular",
+        "id": "358670"
+      },
+      {
+        "name": "Riccardo Cocciante",
+        "url": "https://genius.com/artists/Riccardo-cocciante",
+        "type": "regular",
+        "id": "357324"
+      },
+      {
+        "name": "Ricchi e Poveri",
+        "url": "https://genius.com/artists/Ricchi-e-poveri",
+        "type": "regular",
+        "id": "361841"
+      },
+      {
+        "name": "Rich",
+        "url": "https://genius.com/artists/Rich",
+        "type": "regular",
+        "id": "3232798"
+      },
+      {
+        "name": "RichaadEB",
+        "url": "https://genius.com/artists/Richaadeb",
+        "type": "regular",
+        "id": "1181496"
+      },
+      {
+        "name": "Rich Amiri",
+        "url": "https://genius.com/artists/Rich-amiri",
+        "type": "regular",
+        "id": "2142543"
+      },
+      {
+        "name": "Richard Ashcroft",
+        "url": "https://genius.com/artists/Richard-ashcroft",
+        "type": "regular",
+        "id": "124784"
+      },
+      {
+        "name": "Richard Cheese",
+        "url": "https://genius.com/artists/Richard-cheese",
+        "type": "regular",
+        "id": "370888"
+      },
+      {
+        "name": "Richard Dawson",
+        "url": "https://genius.com/artists/Richard-dawson",
+        "type": "regular",
+        "id": "258452"
+      },
+      {
+        "name": "Richard Gere",
+        "url": "https://genius.com/artists/Richard-gere",
+        "type": "regular",
+        "id": "226142"
+      },
+      {
+        "name": "Richard Harris",
+        "url": "https://genius.com/artists/Richard-harris",
+        "type": "regular",
+        "id": "17522"
+      },
+      {
+        "name": "Richard Hawley",
+        "url": "https://genius.com/artists/Richard-hawley",
+        "type": "regular",
+        "id": "61459"
+      },
+      {
+        "name": "Richard Marx",
+        "url": "https://genius.com/artists/Richard-marx",
+        "type": "regular",
+        "id": "188653"
+      },
+      {
+        "name": "Richard O'Brien",
+        "url": "https://genius.com/artists/Richard-obrien",
+        "type": "regular",
+        "id": "34579"
+      },
+      {
+        "name": "Richard Siken",
+        "url": "https://genius.com/artists/Richard-siken",
+        "type": "regular",
+        "id": "48877"
+      },
+      {
+        "name": "Richard Smallwood",
+        "url": "https://genius.com/artists/Richard-smallwood",
+        "type": "regular",
+        "id": "360442"
+      },
+      {
+        "name": "Richard Steven Horvitz",
+        "url": "https://genius.com/artists/Richard-steven-horvitz",
+        "type": "regular",
+        "id": "2077305"
+      },
+      {
+        "name": "Richard Thompson",
+        "url": "https://genius.com/artists/Richard-thompson",
+        "type": "regular",
+        "id": "39112"
+      },
+      {
+        "name": "Richard White",
+        "url": "https://genius.com/artists/Richard-white",
+        "type": "regular",
+        "id": "389081"
+      },
+      {
+        "name": "Rich Boy",
+        "url": "https://genius.com/artists/Rich-boy",
+        "type": "regular",
+        "id": "304"
+      },
+      {
+        "name": "Rich Brian",
+        "url": "https://genius.com/artists/Rich-brian",
+        "type": "regular",
+        "id": "566912"
+      },
+      {
+        "name": "Rich Gang",
+        "url": "https://genius.com/artists/Rich-gang",
+        "type": "regular",
+        "id": "46060"
+      },
+      {
+        "name": "Rich Homie Quan",
+        "url": "https://genius.com/artists/Rich-homie-quan",
+        "type": "regular",
+        "id": "24823"
+      },
+      {
+        "name": "Richie Goin Crazy",
+        "url": "https://genius.com/artists/Richie-goin-crazy",
+        "type": "regular",
+        "id": "2929035"
+      },
+      {
+        "name": "Richie Spice",
+        "url": "https://genius.com/artists/Richie-spice",
+        "type": "regular",
+        "id": "25261"
+      },
+      {
+        "name": "Rich Kidz",
+        "url": "https://genius.com/artists/Rich-kidz",
+        "type": "regular",
+        "id": "1486"
+      },
+      {
+        "name": "Rich Mullins",
+        "url": "https://genius.com/artists/Rich-mullins",
+        "type": "regular",
+        "id": "97055"
+      },
+      {
+        "name": "Rich The Kid",
+        "url": "https://genius.com/artists/Rich-the-kid",
+        "type": "regular",
+        "id": "65109"
+      },
+      {
+        "name": "Richy Mitch & The Coal Miners",
+        "url": "https://genius.com/artists/Richy-mitch-and-the-coal-miners",
+        "type": "regular",
+        "id": "1233756"
+      },
+      {
+        "name": "Rick and Morty",
+        "url": "https://genius.com/artists/Rick-and-morty",
+        "type": "regular",
+        "id": "559187"
+      },
+      {
+        "name": "Rick Astley",
+        "url": "https://genius.com/artists/Rick-astley",
+        "type": "regular",
+        "id": "23750"
+      },
+      {
+        "name": "Rickie Lee Jones",
+        "url": "https://genius.com/artists/Rickie-lee-jones",
+        "type": "regular",
+        "id": "188384"
+      },
+      {
+        "name": "Rick James",
+        "url": "https://genius.com/artists/Rick-james",
+        "type": "regular",
+        "id": "1648"
+      },
+      {
+        "name": "Rick Price",
+        "url": "https://genius.com/artists/Rick-price",
+        "type": "regular",
+        "id": "354030"
+      },
+      {
+        "name": "Rick Ross",
+        "url": "https://genius.com/artists/Rick-ross",
+        "type": "regular",
+        "id": "88"
+      },
+      {
+        "name": "Rick Springfield",
+        "url": "https://genius.com/artists/Rick-springfield",
+        "type": "regular",
+        "id": "195363"
+      },
+      {
+        "name": "Ricky Dillard",
+        "url": "https://genius.com/artists/Ricky-dillard",
+        "type": "regular",
+        "id": "384171"
+      },
+      {
+        "name": "Ricky Dillard & New G",
+        "url": "https://genius.com/artists/Ricky-dillard-and-new-g",
+        "type": "regular",
+        "id": "371701"
+      },
+      {
+        "name": "Ricky Hil",
+        "url": "https://genius.com/artists/Ricky-hil",
+        "type": "regular",
+        "id": "11707"
+      },
+      {
+        "name": "Ricky Martin",
+        "url": "https://genius.com/artists/Ricky-martin",
+        "type": "regular",
+        "id": "828"
+      },
+      {
+        "name": "Ricky Montgomery",
+        "url": "https://genius.com/artists/Ricky-montgomery",
+        "type": "regular",
+        "id": "406321"
+      },
+      {
+        "name": "Ricky Nelson",
+        "url": "https://genius.com/artists/Ricky-nelson",
+        "type": "regular",
+        "id": "44725"
+      },
+      {
+        "name": "Ricky Rich",
+        "url": "https://genius.com/artists/Ricky-rich",
+        "type": "regular",
+        "id": "117618"
+      },
+      {
+        "name": "Ricky Skaggs",
+        "url": "https://genius.com/artists/Ricky-skaggs",
+        "type": "regular",
+        "id": "332523"
+      },
+      {
+        "name": "Ricky Star",
+        "url": "https://genius.com/artists/Ricky-star",
+        "type": "regular",
+        "id": "2026309"
+      },
+      {
+        "name": "Rico Ace",
+        "url": "https://genius.com/artists/Rico-ace",
+        "type": "regular",
+        "id": "4069062"
+      },
+      {
+        "name": "Rico Blanco",
+        "url": "https://genius.com/artists/Rico-blanco",
+        "type": "regular",
+        "id": "348749"
+      },
+      {
+        "name": "Rico Nasty",
+        "url": "https://genius.com/artists/Rico-nasty",
+        "type": "regular",
+        "id": "881997"
+      },
+      {
+        "name": "Ric Segreto",
+        "url": "https://genius.com/artists/Ric-segreto",
+        "type": "regular",
+        "id": "365603"
+      },
+      {
+        "name": "RICTA",
+        "url": "https://genius.com/artists/Ricta",
+        "type": "regular",
+        "id": "2352642"
+      },
+      {
+        "name": "Ride",
+        "url": "https://genius.com/artists/Ride",
+        "type": "regular",
+        "id": "275501"
+      },
+      {
+        "name": "Ride the Cyclone 2016 Cast",
+        "url": "https://genius.com/artists/Ride-the-cyclone-2016-cast",
+        "type": "regular",
+        "id": "3918116"
+      },
+      {
+        "name": "Ride the Cyclone Original Off-Broadway Cast",
+        "url": "https://genius.com/artists/Ride-the-cyclone-original-off-broadway-cast",
+        "type": "regular",
+        "id": "1201779"
+      },
+      {
+        "name": "Ride the Cyclone World Premiere Cast Recording Ensemble",
+        "url": "https://genius.com/artists/Ride-the-cyclone-world-premiere-cast-recording-ensemble",
+        "type": "regular",
+        "id": "2733921"
+      },
+      {
+        "name": "The Ridleys",
+        "url": "https://genius.com/artists/The-ridleys",
+        "type": "regular",
+        "id": "1635612"
+      },
+      {
+        "name": "RIE",
+        "url": "https://genius.com/artists/Rie",
+        "type": "regular",
+        "id": "1337745"
+      },
+      {
+        "name": "RIELL",
+        "url": "https://genius.com/artists/Riell",
+        "type": "regular",
+        "id": "1767982"
+      },
+      {
+        "name": "RiFF RAFF",
+        "url": "https://genius.com/artists/Riff-raff",
+        "type": "regular",
+        "id": "12936"
+      },
+      {
+        "name": "The Righteous Brothers",
+        "url": "https://genius.com/artists/The-righteous-brothers",
+        "type": "regular",
+        "id": "68157"
+      },
+      {
+        "name": "Right Said Fred",
+        "url": "https://genius.com/artists/Right-said-fred",
+        "type": "regular",
+        "id": "43420"
+      },
+      {
+        "name": "Rigoberta Bandini",
+        "url": "https://genius.com/artists/Rigoberta-bandini",
+        "type": "regular",
+        "id": "2377625"
+      },
+      {
+        "name": "RIIZE",
+        "url": "https://genius.com/artists/Riize",
+        "type": "regular",
+        "id": "3615868"
+      },
+      {
+        "name": "Riky Rick",
+        "url": "https://genius.com/artists/Riky-rick",
+        "type": "regular",
+        "id": "154256"
+      },
+      {
+        "name": "RILEY BABY",
+        "url": "https://genius.com/artists/Riley-baby",
+        "type": "regular",
+        "id": "334413"
+      },
+      {
+        "name": "Riley Green",
+        "url": "https://genius.com/artists/Riley-green",
+        "type": "regular",
+        "id": "1210348"
+      },
+      {
+        "name": "Riley Reid",
+        "url": "https://genius.com/artists/Riley-reid",
+        "type": "regular",
+        "id": "641108"
+      },
+      {
+        "name": "Riley Roth",
+        "url": "https://genius.com/artists/Riley-roth",
+        "type": "regular",
+        "id": "1965856"
+      },
+      {
+        "name": "Rilo Kiley",
+        "url": "https://genius.com/artists/Rilo-kiley",
+        "type": "regular",
+        "id": "51488"
+      },
+      {
+        "name": "Rilès",
+        "url": "https://genius.com/artists/Riles",
+        "type": "regular",
+        "id": "170851"
+      },
+      {
+        "name": "RIMALDI",
+        "url": "https://genius.com/artists/Rimaldi",
+        "type": "regular",
+        "id": "3980398"
+      },
+      {
+        "name": "Rimera",
+        "url": "https://genius.com/artists/Rimera",
+        "type": "regular",
+        "id": "2016643"
+      },
+      {
+        "name": "Rim'K",
+        "url": "https://genius.com/artists/Rimk",
+        "type": "regular",
+        "id": "2455"
+      },
+      {
+        "name": "RIMON",
+        "url": "https://genius.com/artists/Rimon",
+        "type": "regular",
+        "id": "1417774"
+      },
+      {
+        "name": "Rimski",
+        "url": "https://genius.com/artists/Rimski",
+        "type": "regular",
+        "id": "220114"
+      },
+      {
+        "name": "RIN",
+        "url": "https://genius.com/artists/Rin",
+        "type": "regular",
+        "id": "51819"
+      },
+      {
+        "name": "Rina (DEU)",
+        "url": "https://genius.com/artists/Rina-deu",
+        "type": "regular",
+        "id": "2287881"
+      },
+      {
+        "name": "Rina Sawayama",
+        "url": "https://genius.com/artists/Rina-sawayama",
+        "type": "regular",
+        "id": "713500"
+      },
+      {
+        "name": "Ringo Starr",
+        "url": "https://genius.com/artists/Ringo-starr",
+        "type": "regular",
+        "id": "39235"
+      },
+      {
+        "name": "RINI",
+        "url": "https://genius.com/artists/Rini",
+        "type": "regular",
+        "id": "1145745"
+      },
+      {
+        "name": "Rino Gaetano",
+        "url": "https://genius.com/artists/Rino-gaetano",
+        "type": "regular",
+        "id": "272173"
+      },
+      {
+        "name": "Rin (@seaurchrin)",
+        "url": "https://genius.com/artists/Rin-seaurchrin",
+        "type": "regular",
+        "id": "3652738"
+      },
+      {
+        "name": "Rio Reiser",
+        "url": "https://genius.com/artists/Rio-reiser",
+        "type": "regular",
+        "id": "76505"
+      },
+      {
+        "name": "Rio Romeo",
+        "url": "https://genius.com/artists/Rio-romeo",
+        "type": "regular",
+        "id": "2425324"
+      },
+      {
+        "name": "Riosse",
+        "url": "https://genius.com/artists/Riosse",
+        "type": "regular",
+        "id": "1447112"
+      },
+      {
+        "name": "Rio Da Yung OG",
+        "url": "https://genius.com/artists/Rio-da-yung-og",
+        "type": "regular",
+        "id": "1918525"
+      },
+      {
+        "name": "Riovaz",
+        "url": "https://genius.com/artists/Riovaz",
+        "type": "regular",
+        "id": "2227493"
+      },
+      {
+        "name": "Rise Against",
+        "url": "https://genius.com/artists/Rise-against",
+        "type": "regular",
+        "id": "16582"
+      },
+      {
+        "name": "Rise of the Northstar",
+        "url": "https://genius.com/artists/Rise-of-the-northstar",
+        "type": "regular",
+        "id": "455288"
+      },
+      {
+        "name": "Róisín Murphy",
+        "url": "https://genius.com/artists/Roisin-murphy",
+        "type": "regular",
+        "id": "357065"
+      },
+      {
+        "name": "Rita Coolidge",
+        "url": "https://genius.com/artists/Rita-coolidge",
+        "type": "regular",
+        "id": "331430"
+      },
+      {
+        "name": "Rita Moreno",
+        "url": "https://genius.com/artists/Rita-moreno",
+        "type": "regular",
+        "id": "226771"
+      },
+      {
+        "name": "Rita Ora",
+        "url": "https://genius.com/artists/Rita-ora",
+        "type": "regular",
+        "id": "17853"
+      },
+      {
+        "name": "Rita Payés",
+        "url": "https://genius.com/artists/Rita-payes",
+        "type": "regular",
+        "id": "2717931"
+      },
+      {
+        "name": "Rita Springer",
+        "url": "https://genius.com/artists/Rita-springer",
+        "type": "regular",
+        "id": "359816"
+      },
+      {
+        "name": "Ritchie Valens",
+        "url": "https://genius.com/artists/Ritchie-valens",
+        "type": "regular",
+        "id": "58042"
+      },
+      {
+        "name": "Riton",
+        "url": "https://genius.com/artists/Riton",
+        "type": "regular",
+        "id": "482806"
+      },
+      {
+        "name": "Ritter Lean",
+        "url": "https://genius.com/artists/Ritter-lean",
+        "type": "regular",
+        "id": "3291310"
+      },
+      {
+        "name": "Rittz",
+        "url": "https://genius.com/artists/Rittz",
+        "type": "regular",
+        "id": "12199"
+      },
+      {
+        "name": "Ritu Raj",
+        "url": "https://genius.com/artists/Ritu-raj",
+        "type": "regular",
+        "id": "3355464"
+      },
+      {
+        "name": "Rival",
+        "url": "https://genius.com/artists/Rival",
+        "type": "regular",
+        "id": "1437513"
+      },
+      {
+        "name": "River Black",
+        "url": "https://genius.com/artists/River-black",
+        "type": "regular",
+        "id": "4069880"
+      },
+      {
+        "name": "Rivermaya",
+        "url": "https://genius.com/artists/Rivermaya",
+        "type": "regular",
+        "id": "354725"
+      },
+      {
+        "name": "Rivers of Nihil",
+        "url": "https://genius.com/artists/Rivers-of-nihil",
+        "type": "regular",
+        "id": "357985"
+      },
+      {
+        "name": "Rivio",
+        "url": "https://genius.com/artists/Rivio",
+        "type": "regular",
+        "id": "2821529"
+      },
+      {
+        "name": "Rizky Ayuba",
+        "url": "https://genius.com/artists/Rizky-ayuba",
+        "type": "regular",
+        "id": "2500268"
+      },
+      {
+        "name": "rizza",
+        "url": "https://genius.com/artists/Rizza",
+        "type": "regular",
+        "id": "1953435"
+      },
+      {
+        "name": "Rizzle Kicks",
+        "url": "https://genius.com/artists/Rizzle-kicks",
+        "type": "regular",
+        "id": "14532"
+      },
+      {
+        "name": "Rizz Records",
+        "url": "https://genius.com/artists/Rizz-records",
+        "type": "regular",
+        "id": "3916202"
+      },
+      {
+        "name": "RJ Helton",
+        "url": "https://genius.com/artists/Rj-helton",
+        "type": "regular",
+        "id": "365892"
+      },
+      {
+        "name": "RJmrLA",
+        "url": "https://genius.com/artists/Rjmrla",
+        "type": "regular",
+        "id": "34731"
+      },
+      {
+        "name": "RJ Pasin",
+        "url": "https://genius.com/artists/Rj-pasin",
+        "type": "regular",
+        "id": "648166"
+      },
+      {
+        "name": "RK",
+        "url": "https://genius.com/artists/Rk",
+        "type": "regular",
+        "id": "1415345"
+      },
+      {
+        "name": "RKM & Ken-Y",
+        "url": "https://genius.com/artists/Rkm-and-ken-y",
+        "type": "regular",
+        "id": "344522"
+      },
+      {
+        "name": "Rkomi",
+        "url": "https://genius.com/artists/Rkomi",
+        "type": "regular",
+        "id": "639036"
+      },
+      {
+        "name": "R.L. Burnside",
+        "url": "https://genius.com/artists/Rl-burnside",
+        "type": "regular",
+        "id": "372434"
+      },
+      {
+        "name": "RM",
+        "url": "https://genius.com/artists/Rm",
+        "type": "regular",
+        "id": "70110"
+      },
+      {
+        "name": "R. master",
+        "url": "https://genius.com/artists/R-master",
+        "type": "regular",
+        "id": "490745"
+      },
+      {
+        "name": "RMC Mike",
+        "url": "https://genius.com/artists/Rmc-mike",
+        "type": "regular",
+        "id": "1969638"
+      },
+      {
+        "name": "RM (UK)",
+        "url": "https://genius.com/artists/Rm-uk",
+        "type": "regular",
+        "id": "1222157"
+      },
+      {
+        "name": "RMW",
+        "url": "https://genius.com/artists/Rmw",
+        "type": "regular",
+        "id": null
+      },
+      {
+        "name": "RNB.FOEMOB",
+        "url": "https://genius.com/artists/Rnbfoemob",
+        "type": "regular",
+        "id": "3827649"
+      },
+      {
+        "name": "RnBoi",
+        "url": "https://genius.com/artists/Rnboi",
+        "type": "regular",
+        "id": "3505970"
+      },
+      {
+        "name": "ROA",
+        "url": "https://genius.com/artists/Roa",
+        "type": "regular",
+        "id": "2382741"
+      },
+      {
+        "name": "Roachmg777",
+        "url": "https://genius.com/artists/Roachmg777",
+        "type": "regular",
+        "id": "1181990"
+      },
+      {
+        "name": "Roar",
+        "url": "https://genius.com/artists/Roar",
+        "type": "regular",
+        "id": "184771"
+      },
+      {
+        "name": "Rob Base & DJ E-Z Rock",
+        "url": "https://genius.com/artists/Rob-base-and-dj-e-z-rock",
+        "type": "regular",
+        "id": "63719"
+      },
+      {
+        "name": "Robb Bank$",
+        "url": "https://genius.com/artists/Robb-bank",
+        "type": "regular",
+        "id": "19084"
+      },
+      {
+        "name": "Robbensohn",
+        "url": "https://genius.com/artists/Robbensohn",
+        "type": "regular",
+        "id": "2725738"
+      },
+      {
+        "name": "Robbie London",
+        "url": "https://genius.com/artists/Robbie-london",
+        "type": "regular",
+        "id": "1474745"
+      },
+      {
+        "name": "Robbie Williams",
+        "url": "https://genius.com/artists/Robbie-williams",
+        "type": "regular",
+        "id": "2215"
+      },
+      {
+        "name": "Rob Cantor",
+        "url": "https://genius.com/artists/Rob-cantor",
+        "type": "regular",
+        "id": "338189"
+      },
+      {
+        "name": "Rob Deniel",
+        "url": "https://genius.com/artists/Rob-deniel",
+        "type": "regular",
+        "id": "2424549"
+      },
+      {
+        "name": "Rob de Nijs",
+        "url": "https://genius.com/artists/Rob-de-nijs",
+        "type": "regular",
+        "id": "355590"
+      },
+      {
+        "name": "Roberta Flack",
+        "url": "https://genius.com/artists/Roberta-flack",
+        "type": "regular",
+        "id": "34967"
+      },
+      {
+        "name": "Robert Earl Keen",
+        "url": "https://genius.com/artists/Robert-earl-keen",
+        "type": "regular",
+        "id": "334663"
+      },
+      {
+        "name": "Robert Frost",
+        "url": "https://genius.com/artists/Robert-frost",
+        "type": "regular",
+        "id": "778"
+      },
+      {
+        "name": "Robert Glasper",
+        "url": "https://genius.com/artists/Robert-glasper",
+        "type": "regular",
+        "id": "17235"
+      },
+      {
+        "name": "Robert Johnson",
+        "url": "https://genius.com/artists/Robert-johnson",
+        "type": "regular",
+        "id": "35851"
+      },
+      {
+        "name": "Robert Lopez",
+        "url": "https://genius.com/artists/Robert-lopez",
+        "type": "regular",
+        "id": "137891"
+      },
+      {
+        "name": "Roberto Carlos",
+        "url": "https://genius.com/artists/Roberto-carlos",
+        "type": "regular",
+        "id": "79421"
+      },
+      {
+        "name": "Robert Palmer",
+        "url": "https://genius.com/artists/Robert-palmer",
+        "type": "regular",
+        "id": "204915"
+      },
+      {
+        "name": "Robert Plant",
+        "url": "https://genius.com/artists/Robert-plant",
+        "type": "regular",
+        "id": "12999"
+      },
+      {
+        "name": "Robert Preston",
+        "url": "https://genius.com/artists/Robert-preston",
+        "type": "regular",
+        "id": "198843"
+      },
+      {
+        "name": "Robert Westenberg",
+        "url": "https://genius.com/artists/Robert-westenberg",
+        "type": "regular",
+        "id": "455846"
+      },
+      {
+        "name": "Robi (BGR)",
+        "url": "https://genius.com/artists/Robi-bgr",
+        "type": "regular",
+        "id": "3843476"
+      },
+      {
+        "name": "Robin de Jesús",
+        "url": "https://genius.com/artists/Robin-de-jesus",
+        "type": "regular",
+        "id": "576600"
+      },
+      {
+        "name": "Robin (Honkai: Star Rail)",
+        "url": "https://genius.com/artists/Robin-honkai-star-rail",
+        "type": "regular",
+        "id": "3832776"
+      },
+      {
+        "name": "Robin Mark",
+        "url": "https://genius.com/artists/Robin-mark",
+        "type": "regular",
+        "id": "354652"
+      },
+      {
+        "name": "Robin Packalen",
+        "url": "https://genius.com/artists/Robin-packalen",
+        "type": "regular",
+        "id": "8089"
+      },
+      {
+        "name": "Robin S.",
+        "url": "https://genius.com/artists/Robin-s",
+        "type": "regular",
+        "id": "8430"
+      },
+      {
+        "name": "Robin Schulz",
+        "url": "https://genius.com/artists/Robin-schulz",
+        "type": "regular",
+        "id": "175579"
+      },
+      {
+        "name": "Robin Thicke",
+        "url": "https://genius.com/artists/Robin-thicke",
+        "type": "regular",
+        "id": "459"
+      },
+      {
+        "name": "Robin Trower",
+        "url": "https://genius.com/artists/Robin-trower",
+        "type": "regular",
+        "id": "39196"
+      },
+      {
+        "name": "Robin Williams",
+        "url": "https://genius.com/artists/Robin-williams",
+        "type": "regular",
+        "id": "22683"
+      },
+      {
+        "name": "Robin Zoot",
+        "url": "https://genius.com/artists/Robin-zoot",
+        "type": "regular",
+        "id": "306640"
+      },
+      {
+        "name": "Robledo Timido",
+        "url": "https://genius.com/artists/Robledo-timido",
+        "type": "regular",
+        "id": "3850350"
+      },
+      {
+        "name": "Rob McClure",
+        "url": "https://genius.com/artists/Rob-mcclure",
+        "type": "regular",
+        "id": "1042374"
+      },
+      {
+        "name": "Rob Riggle",
+        "url": "https://genius.com/artists/Rob-riggle",
+        "type": "regular",
+        "id": "1541897"
+      },
+      {
+        "name": "Rob Rokicki",
+        "url": "https://genius.com/artists/Rob-rokicki",
+        "type": "regular",
+        "id": "1087214"
+      },
+      {
+        "name": "Rob Thomas",
+        "url": "https://genius.com/artists/Rob-thomas",
+        "type": "regular",
+        "id": "37260"
+      },
+      {
+        "name": "Robyn",
+        "url": "https://genius.com/artists/Robyn",
+        "type": "regular",
+        "id": "1182"
+      },
+      {
+        "name": "Robyn Ottolini",
+        "url": "https://genius.com/artists/Robyn-ottolini",
+        "type": "regular",
+        "id": "2099124"
+      },
+      {
+        "name": "Rob Zombie",
+        "url": "https://genius.com/artists/Rob-zombie",
+        "type": "regular",
+        "id": "68661"
+      },
+      {
+        "name": "Roc Boyz",
+        "url": "https://genius.com/artists/Roc-boyz",
+        "type": "regular",
+        "id": "1954749"
+      },
+      {
+        "name": "Rocci",
+        "url": "https://genius.com/artists/Rocci",
+        "type": "regular",
+        "id": "1769224"
+      },
+      {
+        "name": "Rocco Hunt",
+        "url": "https://genius.com/artists/Rocco-hunt",
+        "type": "regular",
+        "id": "42537"
+      },
+      {
+        "name": "Rocco (Pop)",
+        "url": "https://genius.com/artists/Rocco-pop",
+        "type": "regular",
+        "id": "3269435"
+      },
+      {
+        "name": "Rochak Kohli",
+        "url": "https://genius.com/artists/Rochak-kohli",
+        "type": "regular",
+        "id": "1243899"
+      },
+      {
+        "name": "Rochy RD",
+        "url": "https://genius.com/artists/Rochy-rd",
+        "type": "regular",
+        "id": "1543374"
+      },
+      {
+        "name": "Rockapella",
+        "url": "https://genius.com/artists/Rockapella",
+        "type": "regular",
+        "id": "358421"
+      },
+      {
+        "name": "ROCKET",
+        "url": "https://genius.com/artists/Rocket",
+        "type": "regular",
+        "id": "1051538"
+      },
+      {
+        "name": "Rocketship",
+        "url": "https://genius.com/artists/Rocketship",
+        "type": "regular",
+        "id": "370471"
+      },
+      {
+        "name": "A Rocket to the Moon",
+        "url": "https://genius.com/artists/A-rocket-to-the-moon",
+        "type": "regular",
+        "id": "334708"
+      },
+      {
+        "name": "Rockit Music",
+        "url": "https://genius.com/artists/Rockit-music",
+        "type": "regular",
+        "id": "611269"
+      },
+      {
+        "name": "Rocko",
+        "url": "https://genius.com/artists/Rocko",
+        "type": "regular",
+        "id": "1424"
+      },
+      {
+        "name": "Rockout Danny",
+        "url": "https://genius.com/artists/Rockout-danny",
+        "type": "regular",
+        "id": "3190205"
+      },
+      {
+        "name": "Rockstar",
+        "url": "https://genius.com/artists/Rockstar",
+        "type": "regular",
+        "id": "772"
+      },
+      {
+        "name": "Rockstar 2",
+        "url": "https://genius.com/artists/Rockstar-2",
+        "type": "regular",
+        "id": "484124"
+      },
+      {
+        "name": "Rockstar Games",
+        "url": "https://genius.com/artists/Rockstar-games",
+        "type": "regular",
+        "id": "52263"
+      },
+      {
+        "name": "Rockwell",
+        "url": "https://genius.com/artists/Rockwell",
+        "type": "regular",
+        "id": "105686"
+      },
+      {
+        "name": "Rocky CDE",
+        "url": "https://genius.com/artists/Rocky-cde",
+        "type": "regular",
+        "id": "3989243"
+      },
+      {
+        "name": "Rockywhereyoubeen",
+        "url": "https://genius.com/artists/Rockywhereyoubeen",
+        "type": "regular",
+        "id": "1442130"
+      },
+      {
+        "name": "Roc Marciano",
+        "url": "https://genius.com/artists/Roc-marciano",
+        "type": "regular",
+        "id": "5841"
+      },
+      {
+        "name": "Rocío Dúrcal",
+        "url": "https://genius.com/artists/Rocio-durcal",
+        "type": "regular",
+        "id": "344454"
+      },
+      {
+        "name": "Roddy Ricch",
+        "url": "https://genius.com/artists/Roddy-ricch",
+        "type": "regular",
+        "id": "1517491"
+      },
+      {
+        "name": "RODEO (FIN)",
+        "url": "https://genius.com/artists/Rodeo-fin",
+        "type": "regular",
+        "id": "4161608"
+      },
+      {
+        "name": "Rodney Atkins",
+        "url": "https://genius.com/artists/Rodney-atkins",
+        "type": "regular",
+        "id": "40900"
+      },
+      {
+        "name": "Rodney Carrington",
+        "url": "https://genius.com/artists/Rodney-carrington",
+        "type": "regular",
+        "id": "357721"
+      },
+      {
+        "name": "Rodney Crowell",
+        "url": "https://genius.com/artists/Rodney-crowell",
+        "type": "regular",
+        "id": "332504"
+      },
+      {
+        "name": "Rodrigo Amarante",
+        "url": "https://genius.com/artists/Rodrigo-amarante",
+        "type": "regular",
+        "id": "453701"
+      },
+      {
+        "name": "Rodriguez",
+        "url": "https://genius.com/artists/Rodriguez",
+        "type": "regular",
+        "id": "35608"
+      },
+      {
+        "name": "Roeland Beelen",
+        "url": "https://genius.com/artists/Roeland-beelen",
+        "type": "regular",
+        "id": "3139524"
+      },
+      {
+        "name": "Rogal DDL",
+        "url": "https://genius.com/artists/Rogal-ddl",
+        "type": "regular",
+        "id": "632584"
+      },
+      {
+        "name": "Roger Allam",
+        "url": "https://genius.com/artists/Roger-allam",
+        "type": "regular",
+        "id": "332236"
+      },
+      {
+        "name": "Roger Bart",
+        "url": "https://genius.com/artists/Roger-bart",
+        "type": "regular",
+        "id": "352115"
+      },
+      {
+        "name": "Roger Miller",
+        "url": "https://genius.com/artists/Roger-miller",
+        "type": "regular",
+        "id": "190517"
+      },
+      {
+        "name": "Roger Pontare",
+        "url": "https://genius.com/artists/Roger-pontare",
+        "type": "regular",
+        "id": "383511"
+      },
+      {
+        "name": "Roger Waters",
+        "url": "https://genius.com/artists/Roger-waters",
+        "type": "regular",
+        "id": "33624"
+      },
+      {
+        "name": "Roger Whittaker",
+        "url": "https://genius.com/artists/Roger-whittaker",
+        "type": "regular",
+        "id": "225413"
+      },
+      {
+        "name": "Rohff",
+        "url": "https://genius.com/artists/Rohff",
+        "type": "regular",
+        "id": "1908"
+      },
+      {
+        "name": "Roisee",
+        "url": "https://genius.com/artists/Roisee",
+        "type": "regular",
+        "id": "3552586"
+      },
+      {
+        "name": "Rojuu",
+        "url": "https://genius.com/artists/Rojuu",
+        "type": "regular",
+        "id": "1023559"
+      },
+      {
+        "name": "Rokas Yan",
+        "url": "https://genius.com/artists/Rokas-yan",
+        "type": "regular",
+        "id": "3269640"
+      },
+      {
+        "name": "Rokero",
+        "url": "https://genius.com/artists/Rokero",
+        "type": "regular",
+        "id": "1435463"
+      },
+      {
+        "name": "Роки (Roky)",
+        "url": "https://genius.com/artists/Roky",
+        "type": "regular",
+        "id": "1475787"
+      },
+      {
+        "name": "Roland Kaiser",
+        "url": "https://genius.com/artists/Roland-kaiser",
+        "type": "regular",
+        "id": "355888"
+      },
+      {
+        "name": "ROLE MODEL",
+        "url": "https://genius.com/artists/Role-model",
+        "type": "regular",
+        "id": "1053726"
+      },
+      {
+        "name": "Rolf Harris",
+        "url": "https://genius.com/artists/Rolf-harris",
+        "type": "regular",
+        "id": "44200"
+      },
+      {
+        "name": "Rolf Zuckowski",
+        "url": "https://genius.com/artists/Rolf-zuckowski",
+        "type": "regular",
+        "id": "361820"
+      },
+      {
+        "name": "Rolling Stone",
+        "url": "https://genius.com/artists/Rolling-stone",
+        "type": "regular",
+        "id": "69844"
+      },
+      {
+        "name": "Rollins Band",
+        "url": "https://genius.com/artists/Rollins-band",
+        "type": "regular",
+        "id": "146449"
+      },
+      {
+        "name": "Рома Факти (Roma Fakty)",
+        "url": "https://genius.com/artists/Roma-fakty",
+        "type": "regular",
+        "id": "4113084"
+      },
+      {
+        "name": "The Romantics",
+        "url": "https://genius.com/artists/The-romantics",
+        "type": "regular",
+        "id": "155593"
+      },
+      {
+        "name": "Рома Желудь (Roma Zhelud)",
+        "url": "https://genius.com/artists/Roma-zhelud",
+        "type": "regular",
+        "id": "1526071"
+      },
+      {
+        "name": "Rome",
+        "url": "https://genius.com/artists/Rome",
+        "type": "regular",
+        "id": "32067"
+      },
+      {
+        "name": "Romeo Santos",
+        "url": "https://genius.com/artists/Romeo-santos",
+        "type": "regular",
+        "id": "14717"
+      },
+      {
+        "name": "Rome Streetz",
+        "url": "https://genius.com/artists/Rome-streetz",
+        "type": "regular",
+        "id": "1575401"
+      },
+      {
+        "name": "Romina Power",
+        "url": "https://genius.com/artists/Romina-power",
+        "type": "regular",
+        "id": "482447"
+      },
+      {
+        "name": "rommulas",
+        "url": "https://genius.com/artists/Rommulas",
+        "type": "regular",
+        "id": "4339898"
+      },
+      {
+        "name": "Romsii",
+        "url": "https://genius.com/artists/Romsii",
+        "type": "regular",
+        "id": "3453603"
+      },
+      {
+        "name": "Romy Indy",
+        "url": "https://genius.com/artists/Romy-indy",
+        "type": "regular",
+        "id": "4401983"
+      },
+      {
+        "name": "Romy Mars",
+        "url": "https://genius.com/artists/Romy-mars",
+        "type": "regular",
+        "id": "3962223"
+      },
+      {
+        "name": "Ronan Keating",
+        "url": "https://genius.com/artists/Ronan-keating",
+        "type": "regular",
+        "id": "299808"
+      },
+      {
+        "name": "Rondodasosa",
+        "url": "https://genius.com/artists/Rondodasosa",
+        "type": "regular",
+        "id": "2125083"
+      },
+      {
+        "name": "The Ronettes",
+        "url": "https://genius.com/artists/The-ronettes",
+        "type": "regular",
+        "id": "60712"
+      },
+      {
+        "name": "Ron Hayun - רון חיון",
+        "url": "https://genius.com/artists/Ron-hayun",
+        "type": "regular",
+        "id": "3136824"
+      },
+      {
+        "name": "Ron Henley",
+        "url": "https://genius.com/artists/Ron-henley",
+        "type": "regular",
+        "id": "405462"
+      },
+      {
+        "name": "Ron Kenoly",
+        "url": "https://genius.com/artists/Ron-kenoly",
+        "type": "regular",
+        "id": "358213"
+      },
+      {
+        "name": "Ron Killings",
+        "url": "https://genius.com/artists/Ron-killings",
+        "type": "regular",
+        "id": "8727"
+      },
+      {
+        "name": "Ronnie Flex",
+        "url": "https://genius.com/artists/Ronnie-flex",
+        "type": "regular",
+        "id": "29926"
+      },
+      {
+        "name": "Ronnie Liang",
+        "url": "https://genius.com/artists/Ronnie-liang",
+        "type": "regular",
+        "id": "389260"
+      },
+      {
+        "name": "Ronnie Milsap",
+        "url": "https://genius.com/artists/Ronnie-milsap",
+        "type": "regular",
+        "id": "247000"
+      },
+      {
+        "name": "Ronpe 99",
+        "url": "https://genius.com/artists/Ronpe-99",
+        "type": "regular",
+        "id": "1956924"
+      },
+      {
+        "name": "Ron Wasserman",
+        "url": "https://genius.com/artists/Ron-wasserman",
+        "type": "regular",
+        "id": "42730"
+      },
+      {
+        "name": "Rony Parulian",
+        "url": "https://genius.com/artists/Rony-parulian",
+        "type": "regular",
+        "id": "4003357"
+      },
+      {
+        "name": "Roomie",
+        "url": "https://genius.com/artists/Roomie",
+        "type": "regular",
+        "id": "155468"
+      },
+      {
+        "name": "roomtrash6",
+        "url": "https://genius.com/artists/Roomtrash6",
+        "type": "regular",
+        "id": "3137430"
+      },
+      {
+        "name": "THE ROOP",
+        "url": "https://genius.com/artists/The-roop",
+        "type": "regular",
+        "id": "2095426"
+      },
+      {
+        "name": "Roop Kumar Rathod",
+        "url": "https://genius.com/artists/Roop-kumar-rathod",
+        "type": "regular",
+        "id": "389376"
+      },
+      {
+        "name": "The Roots",
+        "url": "https://genius.com/artists/The-roots",
+        "type": "regular",
+        "id": "244"
+      },
+      {
+        "name": "Rope (TUR)",
+        "url": "https://genius.com/artists/Rope-tur",
+        "type": "regular",
+        "id": "2328401"
+      },
+      {
+        "name": "RORA (BABYMONSTER)",
+        "url": "https://genius.com/artists/Rora-babymonster",
+        "type": "regular",
+        "id": "3480122"
+      },
+      {
+        "name": "Ro Ransom",
+        "url": "https://genius.com/artists/Ro-ransom",
+        "type": "regular",
+        "id": "14628"
+      },
+      {
+        "name": "​roro (ARG)",
+        "url": "https://genius.com/artists/Roro-arg",
+        "type": "regular",
+        "id": "3744594"
+      },
+      {
+        "name": "Rory",
+        "url": "https://genius.com/artists/Rory",
+        "type": "regular",
+        "id": "3233645"
+      },
+      {
+        "name": "Rory Gallagher",
+        "url": "https://genius.com/artists/Rory-gallagher",
+        "type": "regular",
+        "id": "345315"
+      },
+      {
+        "name": "Rosa Chemical",
+        "url": "https://genius.com/artists/Rosa-chemical",
+        "type": "regular",
+        "id": "1432731"
+      },
+      {
+        "name": "ROSALÍA",
+        "url": "https://genius.com/artists/Rosalia",
+        "type": "regular",
+        "id": "973774"
+      },
+      {
+        "name": "Rosa Linn",
+        "url": "https://genius.com/artists/Rosa-linn",
+        "type": "regular",
+        "id": "2876547"
+      },
+      {
+        "name": "Ro$ama",
+        "url": "https://genius.com/artists/Ro-ama",
+        "type": "regular",
+        "id": "3223867"
+      },
+      {
+        "name": "Rosario Tijeras",
+        "url": "https://genius.com/artists/Rosario-tijeras",
+        "type": "regular",
+        "id": "3703281"
+      },
+      {
+        "name": "Rosa Walton",
+        "url": "https://genius.com/artists/Rosa-walton",
+        "type": "regular",
+        "id": "990798"
+      },
+      {
+        "name": "The Rose (더 로즈)",
+        "url": "https://genius.com/artists/The-rose",
+        "type": "regular",
+        "id": "1188837"
+      },
+      {
+        "name": "Rose Betts",
+        "url": "https://genius.com/artists/Rose-betts",
+        "type": "regular",
+        "id": "2135429"
+      },
+      {
+        "name": "Rose Gray",
+        "url": "https://genius.com/artists/Rose-gray",
+        "type": "regular",
+        "id": "1263571"
+      },
+      {
+        "name": "Roselle Nava",
+        "url": "https://genius.com/artists/Roselle-nava",
+        "type": "regular",
+        "id": "371554"
+      },
+      {
+        "name": "Rosemary Ashe",
+        "url": "https://genius.com/artists/Rosemary-ashe",
+        "type": "regular",
+        "id": "1569366"
+      },
+      {
+        "name": "Rosemary Clooney",
+        "url": "https://genius.com/artists/Rosemary-clooney",
+        "type": "regular",
+        "id": "353179"
+      },
+      {
+        "name": "Rosendale",
+        "url": "https://genius.com/artists/Rosendale",
+        "type": "regular",
+        "id": "1068077"
+      },
+      {
+        "name": "Rosenstolz",
+        "url": "https://genius.com/artists/Rosenstolz",
+        "type": "regular",
+        "id": "203881"
+      },
+      {
+        "name": "Rose Royce",
+        "url": "https://genius.com/artists/Rose-royce",
+        "type": "regular",
+        "id": "45182"
+      },
+      {
+        "name": "rosevile sucks",
+        "url": "https://genius.com/artists/Rosevile-sucks",
+        "type": "regular",
+        "id": "4210571"
+      },
+      {
+        "name": "Rose Villain",
+        "url": "https://genius.com/artists/Rose-villain",
+        "type": "regular",
+        "id": "1018981"
+      },
+      {
+        "name": "Roshi",
+        "url": "https://genius.com/artists/Roshi",
+        "type": "regular",
+        "id": "1320878"
+      },
+      {
+        "name": "ROSIE",
+        "url": "https://genius.com/artists/Rosie",
+        "type": "regular",
+        "id": "8864"
+      },
+      {
+        "name": "Rosie & The Originals",
+        "url": "https://genius.com/artists/Rosie-and-the-originals",
+        "type": "regular",
+        "id": "350922"
+      },
+      {
+        "name": "Rossa",
+        "url": "https://genius.com/artists/Rossa",
+        "type": "regular",
+        "id": "369203"
+      },
+      {
+        "name": "Ross Lynch",
+        "url": "https://genius.com/artists/Ross-lynch",
+        "type": "regular",
+        "id": "32993"
+      },
+      {
+        "name": "Ross Tregenza",
+        "url": "https://genius.com/artists/Ross-tregenza",
+        "type": "regular",
+        "id": "2959147"
+      },
+      {
+        "name": "Rostam",
+        "url": "https://genius.com/artists/Rostam",
+        "type": "regular",
+        "id": "491040"
+      },
+      {
+        "name": "Rota",
+        "url": "https://genius.com/artists/Rota",
+        "type": "regular",
+        "id": "417697"
+      },
+      {
+        "name": "Rotting Christ",
+        "url": "https://genius.com/artists/Rotting-christ",
+        "type": "regular",
+        "id": "360291"
+      },
+      {
+        "name": "Rounhaa",
+        "url": "https://genius.com/artists/Rounhaa",
+        "type": "regular",
+        "id": "1492258"
+      },
+      {
+        "name": "Rowan Atkinson",
+        "url": "https://genius.com/artists/Rowan-atkinson",
+        "type": "regular",
+        "id": "158571"
+      },
+      {
+        "name": "Rowli",
+        "url": "https://genius.com/artists/Rowli",
+        "type": "regular",
+        "id": "1871643"
+      },
+      {
+        "name": "Roxas555",
+        "url": "https://genius.com/artists/Roxas555",
+        "type": "regular",
+        "id": "3767367"
+      },
+      {
+        "name": "Roxette",
+        "url": "https://genius.com/artists/Roxette",
+        "type": "regular",
+        "id": "173074"
+      },
+      {
+        "name": "Roxxy (RUS)",
+        "url": "https://genius.com/artists/Roxxy-rus",
+        "type": "regular",
+        "id": "3424793"
+      },
+      {
+        "name": "Roxy Dekker",
+        "url": "https://genius.com/artists/Roxy-dekker",
+        "type": "regular",
+        "id": "3112977"
+      },
+      {
+        "name": "Roxy Music",
+        "url": "https://genius.com/artists/Roxy-music",
+        "type": "regular",
+        "id": "25333"
+      },
+      {
+        "name": "Royal & the Serpent",
+        "url": "https://genius.com/artists/Royal-and-the-serpent",
+        "type": "regular",
+        "id": "1569857"
+      },
+      {
+        "name": "Royal Blood",
+        "url": "https://genius.com/artists/Royal-blood",
+        "type": "regular",
+        "id": "156442"
+      },
+      {
+        "name": "Royale Lynn",
+        "url": "https://genius.com/artists/Royale-lynn",
+        "type": "regular",
+        "id": "3282038"
+      },
+      {
+        "name": "Royal Philharmonic Orchestra",
+        "url": "https://genius.com/artists/Royal-philharmonic-orchestra",
+        "type": "regular",
+        "id": "353205"
+      },
+      {
+        "name": "The Royal Scots Dragoon Guards (Carabiniers and Greys)",
+        "url": "https://genius.com/artists/The-royal-scots-dragoon-guards-carabiniers-and-greys",
+        "type": "regular",
+        "id": "484005"
+      },
+      {
+        "name": "Royalty24kt",
+        "url": "https://genius.com/artists/Royalty24kt",
+        "type": "regular",
+        "id": "4433713"
+      },
+      {
+        "name": "Roy Ayers Ubiquity",
+        "url": "https://genius.com/artists/Roy-ayers-ubiquity",
+        "type": "regular",
+        "id": "260718"
+      },
+      {
+        "name": "Roy Bianco & Die Abbrunzati Boys",
+        "url": "https://genius.com/artists/Roy-bianco-and-die-abbrunzati-boys",
+        "type": "regular",
+        "id": "4245775"
+      },
+      {
+        "name": "Royce Da 5'9\"",
+        "url": "https://genius.com/artists/Royce-da-59",
+        "type": "regular",
+        "id": "471"
+      },
+      {
+        "name": "Royel Otis",
+        "url": "https://genius.com/artists/Royel-otis",
+        "type": "regular",
+        "id": "2506360"
+      },
+      {
+        "name": "Roy Harper",
+        "url": "https://genius.com/artists/Roy-harper",
+        "type": "regular",
+        "id": "35316"
+      },
+      {
+        "name": "Roy Orbison",
+        "url": "https://genius.com/artists/Roy-orbison",
+        "type": "regular",
+        "id": "47372"
+      },
+      {
+        "name": "Roy Rogers & Dale Evans",
+        "url": "https://genius.com/artists/Roy-rogers-and-dale-evans",
+        "type": "regular",
+        "id": "373904"
+      },
+      {
+        "name": "The Royston Club",
+        "url": "https://genius.com/artists/The-royston-club",
+        "type": "regular",
+        "id": "2024429"
+      },
+      {
+        "name": "Roy Woods",
+        "url": "https://genius.com/artists/Roy-woods",
+        "type": "regular",
+        "id": "325757"
+      },
+      {
+        "name": "Rozalia",
+        "url": "https://genius.com/artists/Rozalia",
+        "type": "regular",
+        "id": "2325869"
+      },
+      {
+        "name": "Rozhden",
+        "url": "https://genius.com/artists/Rozhden",
+        "type": "regular",
+        "id": "1098872"
+      },
+      {
+        "name": "Roz Ryan",
+        "url": "https://genius.com/artists/Roz-ryan",
+        "type": "regular",
+        "id": "158549"
+      },
+      {
+        "name": "Rozz Dyliams",
+        "url": "https://genius.com/artists/Rozz-dyliams",
+        "type": "regular",
+        "id": "306248"
+      },
+      {
+        "name": "RPT MCK",
+        "url": "https://genius.com/artists/Rpt-mck",
+        "type": "regular",
+        "id": "2457939"
+      },
+      {
+        "name": "RRARI DAL TACCO",
+        "url": "https://genius.com/artists/Rrari-dal-tacco",
+        "type": "regular",
+        "id": "3405797"
+      },
+      {
+        "name": "RRoxket",
+        "url": "https://genius.com/artists/Rroxket",
+        "type": "regular",
+        "id": "4037760"
+      },
+      {
+        "name": "RSAC",
+        "url": "https://genius.com/artists/Rsac",
+        "type": "regular",
+        "id": "1304659"
+      },
+      {
+        "name": "Rsko",
+        "url": "https://genius.com/artists/Rsko",
+        "type": "regular",
+        "id": "2643166"
+      },
+      {
+        "name": "Rua",
+        "url": "https://genius.com/artists/Rua",
+        "type": "regular",
+        "id": "2399604"
+      },
+      {
+        "name": "Rubby Pérez",
+        "url": "https://genius.com/artists/Rubby-perez",
+        "type": "regular",
+        "id": "364519"
+      },
+      {
+        "name": "Rubel",
+        "url": "https://genius.com/artists/Rubel",
+        "type": "regular",
+        "id": "479750"
+      },
+      {
+        "name": "Ruben Slikk",
+        "url": "https://genius.com/artists/Ruben-slikk",
+        "type": "regular",
+        "id": "16697"
+      },
+      {
+        "name": "RUBII",
+        "url": "https://genius.com/artists/Rubii",
+        "type": "regular",
+        "id": "2122872"
+      },
+      {
+        "name": "RUBI (RUS)",
+        "url": "https://genius.com/artists/Rubi-rus",
+        "type": "regular",
+        "id": "3795448"
+      },
+      {
+        "name": "Rubén Blades",
+        "url": "https://genius.com/artists/Ruben-blades",
+        "type": "regular",
+        "id": "73183"
+      },
+      {
+        "name": "Rubyeye",
+        "url": "https://genius.com/artists/Rubyeye",
+        "type": "regular",
+        "id": "3716427"
+      },
+      {
+        "name": "Ruby da Cherry",
+        "url": "https://genius.com/artists/Ruby-da-cherry",
+        "type": "regular",
+        "id": "673220"
+      },
+      {
+        "name": "Ruby Waters",
+        "url": "https://genius.com/artists/Ruby-waters",
+        "type": "regular",
+        "id": "2016406"
+      },
+      {
+        "name": "Rudi Carrell",
+        "url": "https://genius.com/artists/Rudi-carrell",
+        "type": "regular",
+        "id": "381045"
+      },
+      {
+        "name": "Rudimental",
+        "url": "https://genius.com/artists/Rudimental",
+        "type": "regular",
+        "id": "36416"
+      },
+      {
+        "name": "Rudimentary Peni",
+        "url": "https://genius.com/artists/Rudimentary-peni",
+        "type": "regular",
+        "id": "218798"
+      },
+      {
+        "name": "Rudyard Kipling",
+        "url": "https://genius.com/artists/Rudyard-kipling",
+        "type": "regular",
+        "id": "11460"
+      },
+      {
+        "name": "Rudy Francisco",
+        "url": "https://genius.com/artists/Rudy-francisco",
+        "type": "regular",
+        "id": "17788"
+      },
+      {
+        "name": "RudyWade",
+        "url": "https://genius.com/artists/Rudywade",
+        "type": "regular",
+        "id": "1682044"
+      },
+      {
+        "name": "Ruel",
+        "url": "https://genius.com/artists/Ruel",
+        "type": "regular",
+        "id": "1136794"
+      },
+      {
+        "name": "Ruelle",
+        "url": "https://genius.com/artists/Ruelle",
+        "type": "regular",
+        "id": "332699"
+      },
+      {
+        "name": "Rufus",
+        "url": "https://genius.com/artists/Rufus",
+        "type": "regular",
+        "id": "47998"
+      },
+      {
+        "name": "Rufus Wainwright",
+        "url": "https://genius.com/artists/Rufus-wainwright",
+        "type": "regular",
+        "id": "22436"
+      },
+      {
+        "name": "Ruger",
+        "url": "https://genius.com/artists/Ruger",
+        "type": "regular",
+        "id": "1037710"
+      },
+      {
+        "name": "RUGGERO",
+        "url": "https://genius.com/artists/Ruggero",
+        "type": "regular",
+        "id": "457686"
+      },
+      {
+        "name": "Rui Da Silva",
+        "url": "https://genius.com/artists/Rui-da-silva",
+        "type": "regular",
+        "id": "185787"
+      },
+      {
+        "name": "RUKA (BABYMONSTER)",
+        "url": "https://genius.com/artists/Ruka-babymonster",
+        "type": "regular",
+        "id": "3434493"
+      },
+      {
+        "name": "Руки Вверх! (Ruki Vverh!)",
+        "url": "https://genius.com/artists/Ruki-vverh",
+        "type": "regular",
+        "id": "1011970"
+      },
+      {
+        "name": "Rumahsakit",
+        "url": "https://genius.com/artists/Rumahsakit",
+        "type": "regular",
+        "id": "1533234"
+      },
+      {
+        "name": "Rumbombe",
+        "url": "https://genius.com/artists/Rumbombe",
+        "type": "regular",
+        "id": "3287204"
+      },
+      {
+        "name": "​rum.gold",
+        "url": "https://genius.com/artists/Rumgold",
+        "type": "regular",
+        "id": "1534899"
+      },
+      {
+        "name": "Rumi Carter",
+        "url": "https://genius.com/artists/Rumi-carter",
+        "type": "regular",
+        "id": "2995316"
+      },
+      {
+        "name": "The Runaways",
+        "url": "https://genius.com/artists/The-runaways",
+        "type": "regular",
+        "id": "37911"
+      },
+      {
+        "name": "Run–DMC",
+        "url": "https://genius.com/artists/Rundmc",
+        "type": "regular",
+        "id": "1124"
+      },
+      {
+        "name": "Rundown Spaz",
+        "url": "https://genius.com/artists/Rundown-spaz",
+        "type": "regular",
+        "id": "3498000"
+      },
+      {
+        "name": "Rune Rask",
+        "url": "https://genius.com/artists/Rune-rask",
+        "type": "regular",
+        "id": "35207"
+      },
+      {
+        "name": "Runrig",
+        "url": "https://genius.com/artists/Runrig",
+        "type": "regular",
+        "id": "333024"
+      },
+      {
+        "name": "Run The Jewels",
+        "url": "https://genius.com/artists/Run-the-jewels",
+        "type": "regular",
+        "id": "48147"
+      },
+      {
+        "name": "Runtown",
+        "url": "https://genius.com/artists/Runtown",
+        "type": "regular",
+        "id": "290839"
+      },
+      {
+        "name": "RuPaul",
+        "url": "https://genius.com/artists/Rupaul",
+        "type": "regular",
+        "id": "148803"
+      },
+      {
+        "name": "Rush",
+        "url": "https://genius.com/artists/Rush",
+        "type": "regular",
+        "id": "4384"
+      },
+      {
+        "name": "Rushil Aswal",
+        "url": "https://genius.com/artists/Rushil-aswal",
+        "type": "regular",
+        "id": "4140290"
+      },
+      {
+        "name": "‎Rusina",
+        "url": "https://genius.com/artists/Rusina",
+        "type": "regular",
+        "id": "2421728"
+      },
+      {
+        "name": "Руслан Набиев (Ruslan Nabiev)",
+        "url": "https://genius.com/artists/Ruslan-nabiev",
+        "type": "regular",
+        "id": "1616193"
+      },
+      {
+        "name": "rusowsky",
+        "url": "https://genius.com/artists/Rusowsky",
+        "type": "regular",
+        "id": "2026833"
+      },
+      {
+        "name": "Russell Crowe",
+        "url": "https://genius.com/artists/Russell-crowe",
+        "type": "regular",
+        "id": "44167"
+      },
+      {
+        "name": "Russell Dickerson",
+        "url": "https://genius.com/artists/Russell-dickerson",
+        "type": "regular",
+        "id": "334027"
+      },
+      {
+        "name": "@russianmafiaextra",
+        "url": "https://genius.com/artists/Russianmafiaextra",
+        "type": "regular",
+        "id": "3404950"
+      },
+      {
+        "name": "Цинк Уродов (russianzinc)",
+        "url": "https://genius.com/artists/Russianzinc",
+        "type": "regular",
+        "id": "2461138"
+      },
+      {
+        "name": "Russ Millions",
+        "url": "https://genius.com/artists/Russ-millions",
+        "type": "regular",
+        "id": "1050803"
+      },
+      {
+        "name": "Russo",
+        "url": "https://genius.com/artists/Russo",
+        "type": "regular",
+        "id": "1030056"
+      },
+      {
+        "name": "Rustage",
+        "url": "https://genius.com/artists/Rustage",
+        "type": "regular",
+        "id": "396389"
+      },
+      {
+        "name": "Rusted Root",
+        "url": "https://genius.com/artists/Rusted-root",
+        "type": "regular",
+        "id": "42581"
+      },
+      {
+        "name": "Ruston Kelly",
+        "url": "https://genius.com/artists/Ruston-kelly",
+        "type": "regular",
+        "id": "980740"
+      },
+      {
+        "name": "Rusty Cage",
+        "url": "https://genius.com/artists/Rusty-cage",
+        "type": "regular",
+        "id": "44797"
+      },
+      {
+        "name": "Ruth B.",
+        "url": "https://genius.com/artists/Ruth-b",
+        "type": "regular",
+        "id": "326061"
+      },
+      {
+        "name": "Ruthie Ann Miles",
+        "url": "https://genius.com/artists/Ruthie-ann-miles",
+        "type": "regular",
+        "id": "1126053"
+      },
+      {
+        "name": "Ruth Wallis",
+        "url": "https://genius.com/artists/Ruth-wallis",
+        "type": "regular",
+        "id": "385592"
+      },
+      {
+        "name": "Rvfv",
+        "url": "https://genius.com/artists/Rvfv",
+        "type": "regular",
+        "id": "1237468"
+      },
+      {
+        "name": "Rvssian",
+        "url": "https://genius.com/artists/Rvssian",
+        "type": "regular",
+        "id": "612017"
+      },
+      {
+        "name": "rów babicze",
+        "url": "https://genius.com/artists/Row-babicze",
+        "type": "regular",
+        "id": "3507543"
+      },
+      {
+        "name": "RXKNephew",
+        "url": "https://genius.com/artists/Rxknephew",
+        "type": "regular",
+        "id": "2379736"
+      },
+      {
+        "name": "Rx Papi",
+        "url": "https://genius.com/artists/Rx-papi",
+        "type": "regular",
+        "id": "2338660"
+      },
+      {
+        "name": "Rxseboy",
+        "url": "https://genius.com/artists/Rxseboy",
+        "type": "regular",
+        "id": "1540430"
+      },
+      {
+        "name": "Röya",
+        "url": "https://genius.com/artists/Roya",
+        "type": "regular",
+        "id": "581150"
+      },
+      {
+        "name": "Ryan Adams",
+        "url": "https://genius.com/artists/Ryan-adams",
+        "type": "regular",
+        "id": "39052"
+      },
+      {
+        "name": "Ryan Beatty",
+        "url": "https://genius.com/artists/Ryan-beatty",
+        "type": "regular",
+        "id": "379073"
+      },
+      {
+        "name": "Ryan Bingham",
+        "url": "https://genius.com/artists/Ryan-bingham",
+        "type": "regular",
+        "id": "69187"
+      },
+      {
+        "name": "Ryan Castro",
+        "url": "https://genius.com/artists/Ryan-castro",
+        "type": "regular",
+        "id": "1847455"
+      },
+      {
+        "name": "Ryan Ellis",
+        "url": "https://genius.com/artists/Ryan-ellis",
+        "type": "regular",
+        "id": "663368"
+      },
+      {
+        "name": "Ryan Gosling",
+        "url": "https://genius.com/artists/Ryan-gosling",
+        "type": "regular",
+        "id": "220055"
+      },
+      {
+        "name": "Ryan Harris",
+        "url": "https://genius.com/artists/Ryan-harris",
+        "type": "regular",
+        "id": "1450859"
+      },
+      {
+        "name": "Ryan Mack",
+        "url": "https://genius.com/artists/Ryan-mack",
+        "type": "regular",
+        "id": "1194266"
+      },
+      {
+        "name": "Ryan McCartan",
+        "url": "https://genius.com/artists/Ryan-mccartan",
+        "type": "regular",
+        "id": "647492"
+      },
+      {
+        "name": "Ryan Oakes",
+        "url": "https://genius.com/artists/Ryan-oakes",
+        "type": "regular",
+        "id": "467311"
+      },
+      {
+        "name": "Ryan Scott Oliver",
+        "url": "https://genius.com/artists/Ryan-scott-oliver",
+        "type": "regular",
+        "id": "1085935"
+      },
+      {
+        "name": "Rybeena",
+        "url": "https://genius.com/artists/Rybeena",
+        "type": "regular",
+        "id": "3726191"
+      },
+      {
+        "name": "Ryce",
+        "url": "https://genius.com/artists/Ryce",
+        "type": "regular",
+        "id": "1291533"
+      },
+      {
+        "name": "Ry Cooder",
+        "url": "https://genius.com/artists/Ry-cooder",
+        "type": "regular",
+        "id": "154459"
+      },
+      {
+        "name": "RYKEYDADDY.X",
+        "url": "https://genius.com/artists/Rykeydaddyx",
+        "type": "regular",
+        "id": "638881"
+      },
+      {
+        "name": "Röyksopp",
+        "url": "https://genius.com/artists/Royksopp",
+        "type": "regular",
+        "id": "34555"
+      },
+      {
+        "name": "Rylo Rodriguez",
+        "url": "https://genius.com/artists/Rylo-rodriguez",
+        "type": "regular",
+        "id": "1273022"
+      },
+      {
+        "name": "Рыночные отношения (Rynochnye otnosheniya)",
+        "url": "https://genius.com/artists/Rynochnye-otnosheniya",
+        "type": "regular",
+        "id": "1739521"
+      },
+      {
+        "name": "Ryn Weaver",
+        "url": "https://genius.com/artists/Ryn-weaver",
+        "type": "regular",
+        "id": "196015"
+      },
+      {
+        "name": "高橋諒 (Ryo Takahashi)",
+        "url": "https://genius.com/artists/Ryo-takahashi",
+        "type": "regular",
+        "id": "1200164"
+      },
+      {
+        "name": "Ryouji",
+        "url": "https://genius.com/artists/Ryouji",
+        "type": "regular",
+        "id": "3472353"
+      },
+      {
+        "name": "RYUHEI (BE:FIRST)",
+        "url": "https://genius.com/artists/Ryuhei-be-first",
+        "type": "regular",
+        "id": "3078725"
+      },
+      {
+        "name": "坂本龍一 (Ryuichi Sakamoto)",
+        "url": "https://genius.com/artists/Ryuichi-sakamoto",
+        "type": "regular",
+        "id": "119346"
+      },
+      {
+        "name": "RY X",
+        "url": "https://genius.com/artists/Ry-x",
+        "type": "regular",
+        "id": "139758"
+      },
+      {
+        "name": "RZA",
+        "url": "https://genius.com/artists/Rza",
+        "type": "regular",
+        "id": "307"
+      },
+      {
+        "name": "Rıza Tamer",
+        "url": "https://genius.com/artists/Rza-tamer",
+        "type": "regular",
+        "id": "4360952"
+      }
+    ]
+  }
+}
