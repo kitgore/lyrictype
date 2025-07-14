@@ -3,6 +3,7 @@
     import TextInput from '$lib/components/TextInput.svelte';
     import LyricDisplay from '$lib/components/LyricDisplay.svelte';
     import ArtistButton from './ArtistButton.svelte';
+    import ArtistSearchDropdown from './ArtistSearchDropdown.svelte';
     import { onMount, getContext } from 'svelte';
     import { recentArtists } from '$lib/services/store'
     import LoadingAnimation from '$lib/components/LoadingAnimation.svelte';
@@ -33,6 +34,7 @@
     let songId = '';
     let blink = false;
     let inputElement;
+    let searchDropdown;
     let displayedArtist = 'Artist';
     let loading = false;
     let currentSong;
@@ -48,7 +50,39 @@
         console.log(inputTabIndex)
     }
 
-    // Set the artist input to whats in the input field
+    // Handle artist selection from dropdown
+    async function handleArtistSelected(event) {
+        const artist = event.detail;
+        console.log('Artist selected:', artist);
+        
+        // Use artist name for the search
+        const artistName = artist.name || artist;
+        
+        lyrics = '';
+        loading = true;
+        
+        try {
+            currentSong = await getArtistLyrics(artistName);
+            console.log("HANDLE ARTIST SELECTED DATA:", currentSong);
+            setDisplayFromData(currentSong);
+            setNewRecentArtist({
+                name: currentSong.initialArtist, 
+                imageUrl: currentSong.initialArtistImg, 
+                seenSongs: [currentSong.songIndex], 
+                artistId: currentSong.initialArtistId, 
+                songQueue: {}
+            });
+            // set song queue of current artist
+            prepareQueue(currentSong.initialArtistId);
+        } catch (error) {
+            console.error('Error loading artist:', error);
+            lyrics = "Error loading artist. Please try again.";
+        } finally {
+            loading = false;
+        }
+    }
+
+    // Legacy function for backward compatibility
     async function handleArtistInput(event) {
         artistInput = event.target.value;
     }
@@ -195,8 +229,12 @@
     }
 
     function focusInput() {
-        inputElement.focus();
-        blink = true;
+        if (searchDropdown) {
+            searchDropdown.focusInput();
+        } else if (inputElement) {
+            inputElement.focus();
+            blink = true;
+        }
     }
     function blurInput() {
         console.log("blur");
@@ -208,9 +246,12 @@
 
     onMount(() => {
         focusInput();
-        inputElement.addEventListener('input', handleArtistInput);
-        inputElement.addEventListener('keydown', handleEnter);
-        inputElement.addEventListener('blur', blurInput);
+        // Legacy input element event listeners (if using fallback input)
+        if (inputElement) {
+            inputElement.addEventListener('input', handleArtistInput);
+            inputElement.addEventListener('keydown', handleEnter);
+            inputElement.addEventListener('blur', blurInput);
+        }
     });
 
     $: fullArtistList = [...$recentArtists, ...Array(7 - $recentArtists.length).fill({ name: null, imageUrl: null, artistId: null })];
@@ -224,26 +265,18 @@
             <div class="sidebarTitle">
                 <h3 style:font-size="{windowHeight*0.03}px">Recently Played</h3>
             </div>
-                         <!-- svelte-ignore a11y-no-static-element-interactions -->
-             <div class="headerInputContainer" on:click={focusInput} on:keydown={handleKeydown}>
-                 <div class="headerInputLabel" style:font-size="{windowHeight*0.03}px">Artist:</div>
-                 <div class="headerInputField" on:click={focusInput} on:keydown={handleKeydown} style:font-size="{windowHeight*0.03}px">
-                    {#each artistInput.split('') as char, i}
-                        <span class="headerInputChar">{char}</span>
-                    {/each}
-                    {#if blink}
-                        <span class="headerCursor"></span>
-                    {/if}
+            <div class="headerInputSection">
+                <div class="headerInputLabel" style:font-size="{windowHeight*0.035}px">Artist:</div>
+                <div class="headerInputContainer">
+                    <div class="searchDropdownWrapper">
+                        <ArtistSearchDropdown 
+                            bind:this={searchDropdown}
+                            tabIndex={inputTabIndex}
+                            fontSize="{windowHeight*0.035}px"
+                            on:artistSelected={handleArtistSelected}
+                        />
+                    </div>
                 </div>
-                <input  
-                    bind:this={inputElement} 
-                    class="headerHiddenInput" 
-                    type="textbox"
-                    bind:value={artistInput}
-                    on:focus={focusInput}
-                    on:blur={blurInput}
-                    tabindex={inputTabIndex}
-                />
             </div>
             <div class="typingToggleButtons" style:gap={windowHeight * 0.007 + 'px'}>
                 <ToggleButton bind:isToggled={$capitalization} displayText="Aa" buttonSize={windowHeight*.05}/>
@@ -482,67 +515,40 @@
      }
 
      /* Header Input Styles */
-     .headerInputContainer {
+     .headerInputSection {
          display: flex;
          align-items: center;
          margin-left: 2%;
          height: 60%;
-         border: 2px solid var(--primary-color);
-         background-color: var(--secondary-color);
-         border-radius: 4px;
-         padding: 0 8px;
          flex: 1;
          margin-right: 2%;
+         gap: 12px;
      }
 
      .headerInputLabel {
          font-family: "Geneva", sans-serif;
          color: var(--primary-color);
-         margin-right: 8px;
          white-space: nowrap;
+         font-weight: 600;
      }
 
-     .headerInputField {
+     .headerInputContainer {
+         display: flex;
+         align-items: center;
+         height: 100%;
+         border: 2px solid var(--primary-color);
+         background-color: var(--secondary-color);
+         border-radius: 4px;
+         padding: 0 12px;
          flex: 1;
-         white-space: pre-wrap;
-         letter-spacing: -.05em;
-         font-family: "Geneva", sans-serif;
-         line-height: 130%;
-         font-weight: 400;
-         color: var(--primary-color);
-         min-width: 120px;
+     }
+
+     .searchDropdownWrapper {
+         flex: 1;
          position: relative;
      }
 
-     .headerInputChar {
-         display: inline-block;
-         font-family: "Geneva", sans-serif;
-         font-weight: 200;
-         color: var(--primary-color);
-     }
 
-     .headerCursor {
-         display: inline-block;
-         width: 2px;
-         height: 80%;
-         margin-left: -4px;
-         position: absolute;
-         top: 50%;
-         transform: translateY(-60%);
-         background-color: currentColor;
-         animation: blink-animation 1s steps(1) infinite;
-         color: var(--primary-color);
-     }
-
-     .headerHiddenInput {
-         position: absolute;
-         top: 0;
-         left: 0;
-         opacity: 0;
-         height: 0;
-         width: 0;
-         pointer-events: none;
-     }
 
     /* Sidebar */
     .sidebar {
