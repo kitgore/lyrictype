@@ -265,15 +265,17 @@
             <div class="sidebarTitle">
                 <h3 style:font-size="{windowHeight*0.03}px">Recently Played</h3>
             </div>
-                        <div class="headerInputContainer">
-                <div class="headerInputLabel" style:font-size="{windowHeight*0.03}px">Artist:</div>
-                <div class="searchDropdownWrapper">
-                    <ArtistSearchDropdown 
-                        bind:this={searchDropdown}
-                        placeholder="Search for an artist..."
-                        tabIndex={inputTabIndex}
-                        on:artistSelected={handleArtistSelected}
-                    />
+            <div class="headerInputSection">
+                <div class="headerInputLabel" style:font-size="{windowHeight*0.035}px">Artist:</div>
+                <div class="headerInputContainer">
+                    <div class="searchDropdownWrapper">
+                        <ArtistSearchDropdown 
+                            bind:this={searchDropdown}
+                            tabIndex={inputTabIndex}
+                            fontSize="{windowHeight*0.035}px"
+                            on:artistSelected={handleArtistSelected}
+                        />
+                    </div>
                 </div>
             </div>
             <div class="typingToggleButtons" style:gap={windowHeight * 0.007 + 'px'}>
@@ -513,24 +515,32 @@
      }
 
      /* Header Input Styles */
-     .headerInputContainer {
+     .headerInputSection {
          display: flex;
          align-items: center;
          margin-left: 2%;
          height: 60%;
-         border: 2px solid var(--primary-color);
-         background-color: var(--secondary-color);
-         border-radius: 4px;
-         padding: 0 8px;
          flex: 1;
          margin-right: 2%;
+         gap: 12px;
      }
 
      .headerInputLabel {
          font-family: "Geneva", sans-serif;
          color: var(--primary-color);
-         margin-right: 8px;
          white-space: nowrap;
+         font-weight: 600;
+     }
+
+     .headerInputContainer {
+         display: flex;
+         align-items: center;
+         height: 100%;
+         border: 2px solid var(--primary-color);
+         background-color: var(--secondary-color);
+         border-radius: 4px;
+         padding: 0 12px;
+         flex: 1;
      }
 
      .searchDropdownWrapper {
