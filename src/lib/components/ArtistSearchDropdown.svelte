@@ -8,8 +8,8 @@
     
     const dispatch = createEventDispatcher();
     
-    // Calculate responsive dropdown offset based on window height
-    $: dropdownOffset = windowHeight ? windowHeight * 0.032 : 15; // 1.5% of window height, increased from 1%
+    // Calculate responsive dropdown offset - using very small fixed value
+    $: dropdownOffset = 2; // Very small fixed offset
     $: dropdownMaxHeight = windowHeight ? windowHeight * 0.25 : 200; // 25% of window height, fallback 200px
     
     // Calculate responsive dropdown item dimensions
@@ -17,6 +17,10 @@
     $: itemPaddingHorizontal = windowHeight ? windowHeight * 0.012 : 12; // 1.2% of window height, fallback 12px
     $: itemBorderWidth = windowHeight ? Math.max(1, windowHeight * 0.001) : 1; // 0.1% of window height, minimum 1px
     $: itemMinHeight = windowHeight ? windowHeight * 0.045 : 36; // 4.5% of window height, fallback 36px
+    
+    // Calculate responsive text positioning and cursor gap
+    $: textLeftOffset = windowHeight ? windowHeight * 0.004 : 4; // 0.4% of window height, fallback 4px
+    $: cursorGap = windowHeight ? windowHeight * 0.002 : 2; // 0.2% of window height, fallback 2px
     
     let searchTerm = '';
     let suggestions = [];
@@ -137,7 +141,7 @@
                 keyboardLockTimeout = setTimeout(() => {
                     keyboardLocked = false;
                     console.log('Keyboard lock released');
-                }, 300); // 300ms lock period
+                }, 100); // 100ms lock period
                 break;
                 
             case 'Enter':
@@ -187,9 +191,13 @@
     function focusInput() {
         console.log('focusInput called');
         if (inputElement) {
+            console.log('inputElement exists, attempting to focus');
             inputElement.focus();
             blink = true;
             console.log('focusInput - blink set to:', blink);
+            console.log('activeElement after focus:', document.activeElement);
+        } else {
+            console.log('inputElement is null or undefined');
         }
     }
     
@@ -235,6 +243,13 @@
         }, 150);
     }
     
+    function handleWrapperClick(event) {
+        console.log('Wrapper clicked!', event.target);
+        console.log('Current searchTerm:', searchTerm);
+        console.log('searchChars length:', searchChars.length);
+        focusInput();
+    }
+    
     // Export focus function for parent component
     export { focusInput };
     
@@ -261,13 +276,17 @@
     clearTimeout(keyboardLockTimeout);
 }} />
 
-<div class="artist-search-container" style="--search-font-size: {fontSize};">
-    <div class="search-input-wrapper">
+<div class="artist-search-container" style="--search-font-size: {fontSize}; --text-left-offset: {textLeftOffset}px; --cursor-gap: {cursorGap}px;">
+    <div class="search-input-wrapper" on:click={handleWrapperClick}>
         <!-- Visual text display with cursor (like old TypingTest) -->
-        <div class="visual-text">
+        <div class="visual-text" on:click={focusInput}>
             {#each searchChars as char, index}
                 <span class="char">{char}</span>
             {/each}
+            {#if searchChars.length === 0}
+                <!-- Invisible placeholder to ensure clickable area when empty -->
+                <span class="placeholder">&nbsp;</span>
+            {/if}
             {#if blink}
                 <span class="search-cursor"></span>
             {/if}
@@ -281,6 +300,7 @@
             on:keydown={handleKeydown}
             on:focus={focusInput}
             on:blur={blurInput}
+            on:click={focusInput}
             {tabIndex}
             class="hidden-input"
             autocomplete="off"
@@ -326,11 +346,14 @@
         display: flex;
         align-items: center;
         height: 100%;
+        width: 100%;
+        min-height: 30px;
+        cursor: text;
     }
     
     .visual-text {
         position: absolute;
-        left: 8px;
+        left: var(--text-left-offset, 4px);
         top: 50%;
         transform: translateY(-50%);
         font-size: var(--search-font-size, inherit);
@@ -343,8 +366,10 @@
         display: flex;
         align-items: center;
         min-height: 70%;
-        width: calc(100% - 16px);
-        pointer-events: none;
+        min-width: calc(100% - calc(var(--text-left-offset, 4px) * 2));
+        width: calc(100% - calc(var(--text-left-offset, 4px) * 2));
+        background: transparent;
+        z-index: 1;
     }
     
     .char {
@@ -354,11 +379,20 @@
         color: var(--primary-color, black);
     }
     
+    .placeholder {
+        display: inline-block;
+        font-family: "Geneva", sans-serif;
+        font-weight: 600;
+        color: transparent;
+        min-width: 1px;
+        height: 1em;
+    }
+    
     .search-cursor {
         display: inline-block;
         width: 2px;
         height: 1.2em;
-        margin-left: -4px;
+        margin-left: var(--cursor-gap, 2px);
         background-color: var(--primary-color, black);
         animation: blink-animation 1s steps(1) infinite;
         vertical-align: text-bottom;
@@ -375,8 +409,10 @@
         background: transparent;
         outline: none;
         font-size: var(--search-font-size, inherit);
-        padding: 4px 8px;
+        padding: 0;
+        margin: 0;
         box-sizing: border-box;
+        cursor: text;
     }
     
     @keyframes blink-animation {
@@ -390,6 +426,8 @@
         right: 12px;
         display: flex;
         align-items: center;
+        z-index: 3;
+        pointer-events: none;
     }
     
     .spinner {
