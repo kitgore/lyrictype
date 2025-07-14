@@ -273,6 +273,7 @@
                             bind:this={searchDropdown}
                             tabIndex={inputTabIndex}
                             fontSize="{windowHeight*0.035}px"
+                            windowHeight={windowHeight}
                             on:artistSelected={handleArtistSelected}
                         />
                     </div>
