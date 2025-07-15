@@ -9,8 +9,8 @@
     const dispatch = createEventDispatcher();
     
     // Calculate responsive dropdown offset - using very small fixed value
-    $: dropdownOffset = 2; // Very small fixed offset
-    $: dropdownMaxHeight = windowHeight ? windowHeight * 0.25 : 200; // 25% of window height, fallback 200px
+    $: dropdownOffset = windowHeight * 0.028; // Very small fixed offset
+    $: dropdownMaxHeight = windowHeight * 0.25; // 25% of window height, fallback 200px
     
     // Calculate responsive dropdown item dimensions
     $: itemPaddingVertical = windowHeight ? windowHeight * 0.008 : 8; // 0.8% of window height, fallback 8px
@@ -347,13 +347,12 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        min-height: 30px;
         cursor: text;
     }
     
     .visual-text {
         position: absolute;
-        left: var(--text-left-offset, 4px);
+        left: var(--item-padding-horizontal, 4px);
         top: 50%;
         transform: translateY(-50%);
         font-size: var(--search-font-size, inherit);
