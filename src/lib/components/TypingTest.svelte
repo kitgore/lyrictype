@@ -540,7 +540,7 @@
          border: 2px solid var(--primary-color);
          background-color: var(--secondary-color);
          border-radius: 4px;
-         padding: 0 12px;
+         /* padding: 0 12px; */
          flex: 1;
      }
 
