@@ -34,6 +34,7 @@
 	let blink = false;
   
 	$: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
+
 	
 	async function preloadAndDitherImage(src) {
 		try {

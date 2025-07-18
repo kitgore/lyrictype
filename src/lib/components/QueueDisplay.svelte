@@ -4,6 +4,7 @@
     
     export let windowHeight = 600;
     export let isVisible = false;
+    export let embedded = false;
     
     const dispatch = createEventDispatcher();
     
@@ -11,6 +12,14 @@
     $: itemHeight = windowHeight * 0.06; // 6% of window height
     $: fontSize = windowHeight * 0.025; // 2.5% of window height
     $: maxHeight = windowHeight * 0.4; // 40% of window height
+    $: headerHeight = windowHeight * 0.03; // 8% of window height - thinner than before
+    $: headerFontSize = windowHeight * 0.03; // 3% of window height
+    $: headerPadding = windowHeight * 0.02; // 2% of window height
+    $: closeButtonSize = windowHeight * 0.06; // Square button size
+    $: closeButtonFontSize = windowHeight * 0.04; // Font size for close button
+
+    $: vertQueuePadding = windowHeight * 0.1;
+    $: horizQueuePadding = windowHeight * 0.05;
     
     function handleSongClick(futureIndex) {
         // Convert future index to actual queue index
@@ -35,8 +44,8 @@
 </script>
 
 {#if isVisible}
-    <div class="queue-overlay" on:click={() => dispatch('close')}>
-        <div class="queue-container" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px;" on:click|stopPropagation>
+    {#if embedded}
+        <div class="queue-container embedded" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px;">
             <div class="queue-header">
                 <h3>Up Next</h3>
                 <button class="close-button" on:click={() => dispatch('close')}>×</button>
@@ -59,14 +68,46 @@
                 {/each}
                 
                 {#if futureSongs.length === 0}
-                    <div class="empty-queue">
+                    <div class="empty-queue" style="--vert-queue-padding: {vertQueuePadding}px; --horiz-queue-padding: {horizQueuePadding}px;">
                         <p>No upcoming songs</p>
-                        <p>Continue playing to add more songs to your queue!</p>
                     </div>
                 {/if}
             </div>
         </div>
-    </div>
+    {:else}
+        <div class="queue-overlay" on:click={() => dispatch('close')}>
+            <div class="queue-container" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px;" on:click|stopPropagation>
+                <div class="queue-header">
+                    <h3>Up Next</h3>
+                    <button class="close-button" on:click={() => dispatch('close')}>×</button>
+                </div>
+                
+                <div class="queue-list">
+                    {#each futureSongs as song, index}
+                        <div 
+                            class="queue-item future"
+                            on:click={() => handleSongClick(index)}
+                        >
+                            <div class="song-info">
+                                <div class="song-title">{formatSongTitle(song)}</div>
+                                <div class="song-artist">{truncateText(song.artist)}</div>
+                            </div>
+                            <div class="queue-position">
+                                <div class="position-number">{$songQueue.currentIndex + 2 + index}</div>
+                            </div>
+                        </div>
+                    {/each}
+                    
+                    {#if futureSongs.length === 0}
+                        <div class="empty-queue">
+                            <p>No upcoming songs</p>
+                            <p>Continue playing to add more songs to your queue!</p>
+                        </div>
+                    {/if}
+                </div>
+            </div>
+        </div>
+    {/if}
 {/if}
 
 <style>
@@ -95,36 +136,53 @@
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
+    .queue-container.embedded {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+    
     .queue-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 20px;
+        padding: var(--header-padding, 16px);
         border-bottom: 2px solid var(--primary-color);
-        background: var(--primary-color);
-        color: var(--secondary-color);
+        height: var(--header-height, 60px);
+        background: var(--secondary-color);
+        background-size: 2px 2px;
+        background-image:
+            linear-gradient(45deg, var(--primary-color) 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
+            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color) 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+        background-position: 0 0, 1px 1px;
+        color: var(--primary-color);
     }
     
     .queue-header h3 {
         margin: 0;
         font-family: "Geneva", sans-serif;
-        font-size: calc(var(--font-size) * 1.2);
+        font-size: var(--header-font-size, calc(var(--font-size) * 1.2));
         font-weight: 600;
     }
     
     .close-button {
-        background: none;
-        border: none;
-        color: var(--secondary-color);
-        font-size: calc(var(--font-size) * 1.8);
+        background: var(--secondary-color);
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        font-size: var(--close-button-font-size, calc(var(--header-font-size, var(--font-size)) * 1.2));
         cursor: pointer;
-        padding: 4px 8px;
-        border-radius: 4px;
-        transition: background-color 0.2s ease;
-    }
-    
-    .close-button:hover {
-        background: rgba(255, 255, 255, 0.1);
+        width: var(--close-button-size, 24px);
+        height: var(--close-button-size, 24px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-shrink: 0;
+        box-sizing: border-box;
     }
     
     .queue-list {
@@ -192,8 +250,13 @@
     }
     
     .empty-queue {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        padding: 40px 20px;
+        padding: var(--vert-queue-padding)px var(--horiz-queue-padding)px;
+        height: 100%;
         color: var(--primary-color);
         opacity: 0.6;
     }
