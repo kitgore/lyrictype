@@ -426,7 +426,7 @@ function calculateResponsiveDimensions(width, height, windowId) {
         } else {
             // Narrow screen
             return {
-                width: width * 0.4,
+                width: width * 0.5 * 0.8,
                 height: width * 0.5
             };
         }
@@ -478,3 +478,109 @@ export function getElementTabIndex(windowId, elementIndex) {
     const baseTabIndex = tabIndexMap.get(windowId);
     return baseTabIndex + elementIndex;
 }
+
+// Song Queue Store
+export const songQueue = writable({
+    songs: [], // Array of song objects
+    currentIndex: -1, // Index of currently playing song
+    maxQueueSize: 50 // Maximum number of songs to keep in queue
+});
+
+// Helper functions for queue management
+export const queueActions = {
+    // Add a song to the queue and set it as current
+    addSong: (song) => {
+        songQueue.update(queue => {
+            const newQueue = { ...queue };
+            
+            // If we're not at the end of the queue, remove everything after current position
+            if (newQueue.currentIndex < newQueue.songs.length - 1) {
+                newQueue.songs = newQueue.songs.slice(0, newQueue.currentIndex + 1);
+            }
+            
+            // Add the new song
+            newQueue.songs.push(song);
+            newQueue.currentIndex = newQueue.songs.length - 1;
+            
+            // Trim queue if it exceeds max size
+            if (newQueue.songs.length > newQueue.maxQueueSize) {
+                const trimAmount = newQueue.songs.length - newQueue.maxQueueSize;
+                newQueue.songs = newQueue.songs.slice(trimAmount);
+                newQueue.currentIndex = newQueue.songs.length - 1;
+            }
+            
+            return newQueue;
+        });
+    },
+    
+    // Navigate to previous song
+    goToPrevious: () => {
+        let previousSong = null;
+        songQueue.update(queue => {
+            if (queue.currentIndex > 0) {
+                queue.currentIndex--;
+                previousSong = queue.songs[queue.currentIndex];
+            }
+            return queue;
+        });
+        return previousSong;
+    },
+    
+    // Navigate to next song
+    goToNext: () => {
+        let nextSong = null;
+        songQueue.update(queue => {
+            if (queue.currentIndex < queue.songs.length - 1) {
+                queue.currentIndex++;
+                nextSong = queue.songs[queue.currentIndex];
+            }
+            return queue;
+        });
+        return nextSong;
+    },
+    
+    // Jump to specific song in queue
+    jumpToSong: (index) => {
+        let song = null;
+        songQueue.update(queue => {
+            if (index >= 0 && index < queue.songs.length) {
+                queue.currentIndex = index;
+                song = queue.songs[index];
+            }
+            return queue;
+        });
+        return song;
+    },
+    
+    // Get current song
+    getCurrentSong: () => {
+        let currentSong = null;
+        const unsubscribe = songQueue.subscribe(queue => {
+            if (queue.currentIndex >= 0 && queue.currentIndex < queue.songs.length) {
+                currentSong = queue.songs[queue.currentIndex];
+            }
+        });
+        unsubscribe();
+        return currentSong;
+    },
+    
+    // Check if we can go to previous song
+    canGoPrevious: () => {
+        let canGo = false;
+        const unsubscribe = songQueue.subscribe(queue => {
+            canGo = queue.currentIndex > 0;
+        });
+        unsubscribe();
+        return canGo;
+    },
+    
+    // Check if we can go to next song
+    canGoNext: () => {
+        let canGo = false;
+        const unsubscribe = songQueue.subscribe(queue => {
+            canGo = queue.currentIndex < queue.songs.length - 1;
+        });
+        unsubscribe();
+        return canGo;
+    }
+};

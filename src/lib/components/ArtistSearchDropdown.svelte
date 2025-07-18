@@ -7,10 +7,12 @@
     export let windowHeight = 600; // Default fallback value
     
     const dispatch = createEventDispatcher();
+    const maxSuggestions = 10;
     
     // Calculate responsive dropdown offset - using very small fixed value
     $: dropdownOffset = windowHeight * 0.028; // Very small fixed offset
-    $: dropdownMaxHeight = windowHeight * 0.25; // 25% of window height, fallback 200px
+    // Use itemMinHeight directly as it's closer to actual rendered height
+    $: dropdownMaxHeight = windowHeight * 0.65;
     
     // Calculate responsive dropdown item dimensions
     $: itemPaddingVertical = windowHeight ? windowHeight * 0.008 : 8; // 0.8% of window height, fallback 8px
@@ -43,7 +45,7 @@
             if (term.trim().length > 0) {
                 searching = true;
                 try {
-                    suggestions = await searchArtists(term, 8);
+                    suggestions = await searchArtists(term, maxSuggestions);
                     isOpen = suggestions.length > 0;
                     if (isOpen) {
                         // Reset navigation mode when dropdown opens

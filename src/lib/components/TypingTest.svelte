@@ -7,8 +7,9 @@
     import { onMount, getContext } from 'svelte';
     import { recentArtists } from '$lib/services/store'
     import LoadingAnimation from '$lib/components/LoadingAnimation.svelte';
-    import { themeColors, getElementTabIndex, windowStore, punctuation, capitalization } from '$lib/services/store.js';
+    import { themeColors, getElementTabIndex, windowStore, punctuation, capitalization, songQueue, queueActions } from '$lib/services/store.js';
     import ToggleButton from './ToggleButton.svelte'
+    import QueueDisplay from './QueueDisplay.svelte'
     
     export let id; //window id
 
@@ -39,8 +40,14 @@
     let loading = false;
     let currentSong;
     let isPaused = false;
+    let showQueue = false;
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
+
+    // Reactive statements for queue functionality
+    $: canGoPrevious = $songQueue.currentIndex > 0;
+    $: canGoNext = $songQueue.currentIndex < $songQueue.songs.length - 1;
+    $: futureSongsCount = $songQueue.songs.length - $songQueue.currentIndex - 1;
 
     function handleKeydown(event) {
         if (event.key === 'Enter') {
@@ -180,22 +187,71 @@
             artistId = data.artistId;
             songId = data.songId;
             geniusUrl = data.url;
+            
+            // Add song to queue
+            queueActions.addSong({
+                title: data.title,
+                artist: data.artist,
+                image: data.image,
+                lyrics: data.lyrics,
+                artistId: data.artistId,
+                songId: data.songId,
+                url: data.url,
+                primaryArtist: data.primaryArtist,
+                artistImg: data.artistImg
+            });
         } else {
             lyrics = "Lyrics not found.";
         }
         console.log($recentArtists);
     }
 
+    // Helper function to set display without adding to queue (for navigation)
+    function setDisplayFromDataWithoutQueue(data){
+        console.log("DISPLAYING DATA (NO QUEUE):" , data)
+        if (data && data.lyrics) {
+            lyrics = data.lyrics;
+            songTitle = data.title;
+            artistName = data.artist;
+            imageUrl = data.image;
+            primaryArtist = data.primaryArtist;
+            artistImg = data.artistImg;
+            artistId = data.artistId;
+            songId = data.songId;
+            geniusUrl = data.url;
+        } else {
+            lyrics = "Lyrics not found.";
+        }
+    }
+
     function playPreviousSong() {
-        // TODO: Implement previous song functionality
         isPaused = false;
+        const previousSong = queueActions.goToPrevious();
+        if (previousSong) {
+            currentSong = previousSong;
+            setDisplayFromDataWithoutQueue(previousSong);
+            
+            // Reset typing test state
+            const restartEvent = new CustomEvent('restartTest', {
+                detail: { songData: previousSong }
+            });
+            window.dispatchEvent(restartEvent);
+        }
         console.log("Previous song clicked");
     }
 
     function playNextSong() {
-        // Use the existing continueFromQueue function
         isPaused = false;
-        continueFromQueue();
+        
+        // Try to get next song from queue first
+        const nextSong = queueActions.goToNext();
+        if (nextSong) {
+            currentSong = nextSong;
+            setDisplayFromDataWithoutQueue(nextSong);
+        } else {
+            // If no next song in queue, use the existing continueFromQueue function
+            continueFromQueue();
+        }
 
         const restartEvent = new CustomEvent('restartTest', {
             detail: { songData: currentSong }
@@ -226,6 +282,30 @@
         }
         
         console.log("Pause toggled:", isPaused);
+    }
+
+    function toggleQueue() {
+        showQueue = !showQueue;
+    }
+
+    function handleQueueSongSelected(event) {
+        const song = event.detail;
+        if (song) {
+            isPaused = false;
+            currentSong = song;
+            setDisplayFromDataWithoutQueue(song);
+            
+            // Reset typing test state
+            const restartEvent = new CustomEvent('restartTest', {
+                detail: { songData: song }
+            });
+            window.dispatchEvent(restartEvent);
+        }
+        showQueue = false; // Close queue after selection
+    }
+
+    function handleQueueClose() {
+        showQueue = false;
     }
 
     function focusInput() {
@@ -341,9 +421,14 @@
                 {/if}
             </div>
             <div class="musicControls">
-                <button class="controlButton" on:click={restartSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                <button class="controlButton" on:click={playPreviousSong} disabled={!canGoPrevious} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                    </svg>
+                </button>
+                <button class="controlButton" on:click={restartSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 4h2v12H6zm8-2v16l6-8z"/>
                     </svg>
                 </button>
                 <button class="controlButton" on:click={togglePause} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
@@ -356,10 +441,26 @@
                         <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
                     </svg>
                 </button>
+                <button class="controlButton queueButton" on:click={toggleQueue} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                    </svg>
+                    {#if futureSongsCount > 0}
+                        <span class="queue-indicator">{futureSongsCount}</span>
+                    {/if}
+                </button>
             </div>
         </div>
      </div>
  </div>
+
+<!-- Queue Display -->
+<QueueDisplay 
+    {windowHeight}
+    bind:isVisible={showQueue}
+    on:songSelected={handleQueueSongSelected}
+    on:close={handleQueueClose}
+/>
 
 <style>
     * {
@@ -449,10 +550,63 @@
         outline: none
     }
 
+    .controlButton:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    .controlButton:disabled:hover,
+    .controlButton:disabled:active,
+    .controlButton:disabled:focus {
+        background-image: none;
+        background-color: var(--secondary-color);
+    }
+
 
      .controlIcon {
         height: 75%;
         aspect-ratio: 1/1;
+    }
+
+    .queueButton {
+        position: relative;
+    }
+
+    .queueButton::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 8px;
+        height: 8px;
+        background: var(--primary-color);
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .queueButton:hover::after {
+        opacity: 0.6;
+    }
+
+    .queue-indicator {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Geneva", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border: 2px solid var(--secondary-color);
+        min-width: 20px;
+        pointer-events: none;
     }
 
     /* Header Section */
