@@ -13,6 +13,11 @@
     $: screenDimensions = $windowStore.screenDimensions;
     $: padding = screenDimensions.height * 0.01;
     
+    // Calculate responsive title bar dimensions based on window height, not screen height
+    $: titleBarHeight = dimensions.height * 0.06; // 6% of window height
+    $: closeButtonSize = dimensions.height * 0.045; // 4.5% of window height
+    $: titleBarPadding = dimensions.height * 0.016; // 1.6% of window height
+    
     let contentElement;
     let isDragging = false;
     let startPos = { x: 0, y: 0 };
@@ -124,8 +129,8 @@
     "
 >
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div class="title-bar" style:height="{screenDimensions.height*0.038}px" on:mousedown|preventDefault={onDragStart}>
-            <div style="padding:0 {screenDimensions.height*0.01}px; display:flex; height: 100%; width: 100%;">
+    <div class="title-bar" style:height="{titleBarHeight}px" on:mousedown|preventDefault={onDragStart}>
+            <div style="padding:0 {titleBarPadding}px; display:flex; height: 100%; width: 100%;">
                 <div class="lines-container" >
                     <svg 
                         width="100%" 
@@ -146,8 +151,8 @@
             </div>
             
 
-        <div class="title-text" style:font-size="{screenDimensions.height*0.026}px">{title}</div>
-        <button class="close-button" style="width:{screenDimensions.height * .028}px; height:{screenDimensions.height * .028}px;" on:click={onClose} style:right="{screenDimensions.height*0.04}px"></button>
+        <div class="title-text" style:font-size="{dimensions.height*0.042}px">{title}</div>
+        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px;" on:click={onClose} style:right="{titleBarPadding * 2.5}px"></button>
     </div>
     <div class="window-content" bind:this={contentElement}>
         <div class="content-area">
