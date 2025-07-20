@@ -16,6 +16,7 @@
     $: inputTabIndex = getElementTabIndex(id, 10);
     $: buttonTabIndex = getElementTabIndex(id, 2);
 
+    // SVG Paths
     const PLAY_D  = "M8 5V19L19 12L8 5Z";
     const PAUSE_D = "M6 4H10V20H6V4ZM14 4H18V20H14V4Z";
 
@@ -68,23 +69,26 @@
         
         // Close queue display when new artist is selected
         showQueue = false;
-        
+
         lyrics = '';
         loading = true;
-        
+
         try {
-            currentSong = await getArtistLyrics(artistName);
-            console.log("HANDLE ARTIST SELECTED DATA:", currentSong);
+            // currentSong = await getArtistLyrics(artistName);
+            // console.log("HANDLE ARTIST SELECTED DATA:", currentSong);
+            const currentSong = await searchByArtistId(artist.geniusId, []);
+            console.log("CURRENT SONG:", currentSong);
+
             setDisplayFromData(currentSong);
             setNewRecentArtist({
-                name: currentSong.initialArtist, 
-                imageUrl: currentSong.initialArtistImg, 
+                name: artist.name, 
+                imageUrl: 'https://images.genius.com/dbc2e3b4fe018596fd3cca47fd315541.1000x1000x1.jpg', //placeholder image
                 seenSongs: [currentSong.songIndex], 
-                artistId: currentSong.initialArtistId, 
-                songQueue: {}
+                artistId: artist.geniusId, 
+                songQueue: currentSong
             });
             // set song queue of current artist
-            prepareQueue(currentSong.initialArtistId);
+            prepareQueue(artist.geniusId);
         } catch (error) {
             console.error('Error loading artist:', error);
             lyrics = "Error loading artist. Please try again.";
