@@ -44,6 +44,7 @@
     let showQueue = false;
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
+    $: bottomButtonGap = windowHeight * 0.0075;
 
     // Reactive statements for queue functionality
     $: canGoPrevious = $songQueue.currentIndex > 0;
@@ -63,6 +64,12 @@
         const artist = event.detail;
         console.log('Artist selected:', artist);
         
+        // Use artist name for the search
+        const artistName = artist.name || artist;
+        
+        // Close queue display when new artist is selected
+        showQueue = false;
+
         lyrics = '';
         loading = true;
 
@@ -99,6 +106,7 @@
         if (event.key === 'Enter') {
             blurInput(); // Remove focus from the input field
             event.preventDefault(); // Prevent form submission
+            showQueue = false; // Close queue display
             lyrics = '';
             loading = true;
             currentSong = await getArtistLyrics(artistInput)
@@ -116,6 +124,7 @@
         const artist = $recentArtists.find(artist => artist.artistId === artistId);
         recentArtists.set([artist, ...$recentArtists.filter(artist => artist.artistId !== artistId)]);
         displayedArtist = artist.name;
+        showQueue = false; // Close queue display
         continueFromQueue();
         prepareQueue(artistId);
     }
@@ -137,6 +146,7 @@
 
     function continueFromQueue(){
         isPaused = false;
+        showQueue = false; // Close queue display
         const currentArtistId = $recentArtists[0].artistId;
         playNextFromQueue(currentArtistId);
 
@@ -148,6 +158,7 @@
     }
 
     function replaySong(){
+        showQueue = false; // Close queue display
         setDisplayFromData(currentSong);
         loading = false;
     }
@@ -227,6 +238,8 @@
 
     function playPreviousSong() {
         isPaused = false;
+        showQueue = false; // Close queue display
+        
         const previousSong = queueActions.goToPrevious();
         if (previousSong) {
             currentSong = previousSong;
@@ -243,6 +256,7 @@
 
     function playNextSong() {
         isPaused = false;
+        showQueue = false; // Close queue display
         
         // Try to get next song from queue first
         const nextSong = queueActions.goToNext();
@@ -262,6 +276,8 @@
 
     function restartSong() {
         isPaused = false;
+        showQueue = false; // Close queue display
+        
         // Reset the current song by calling the existing replaySong function
         replaySong();
         
@@ -275,6 +291,7 @@
 
     function togglePause() {
         isPaused = !isPaused;
+        showQueue = false; // Close queue display
         
         // When unpausing, restore focus to lyrics and make cursor blink
         if (!isPaused) {
@@ -384,7 +401,15 @@
             </div>
             <div class="mainContent">
                 <div class="lyricsContainer">
-                    {#if lyrics}
+                    {#if showQueue}
+                        <QueueDisplay 
+                            {windowHeight}
+                            isVisible={true}
+                            on:songSelected={handleQueueSongSelected}
+                            on:close={handleQueueClose}
+                            embedded={true}
+                        />
+                    {:else if lyrics}
                         <LyricDisplay 
                             {lyrics} 
                             {songTitle} 
@@ -410,18 +435,7 @@
             </div>
         </div>
         <div class="bottomArtistRow">
-            <div class="currentArtistContainer">
-                <div class="musicIconContainer" style:width="{windowHeight*0.05}px" style:height="{windowHeight*0.040}px">
-                    <svg class="musicIcon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6779 0.220394C18.4735 0.0457943 18.2035 -0.0307252 17.9372 0.0112826L6.29208 1.84998C5.84528 1.92052 5.51616 2.30568 5.51616 2.75804V6.43547V12.258H3.67743C1.6497 12.2581 0 13.7703 0 15.629C0 17.4878 1.6497 19 3.67743 19C5.70516 19 7.35485 17.4878 7.35485 15.629V13.1774V7.22104L17.1613 5.67265V10.7258H15.3226C13.2949 10.7258 11.6452 12.238 11.6452 14.0968C11.6452 15.9555 13.2949 17.4678 15.3226 17.4678C17.3503 17.4678 19 15.9555 19 14.0968V11.6451V4.59678V0.919349C19 0.650492 18.8822 0.395068 18.6779 0.220394Z" fill="{$themeColors.primary}"/>
-                    </svg>      
-                </div>
-                <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>
-                {#if songTitle}
-                    <div class="songTitle" style:font-size="{windowHeight*0.034}px"> - {songTitle}</div>
-                {/if}
-            </div>
-            <div class="musicControls">
+            <div class="musicControls" style="--bottom-button-gap: {bottomButtonGap}px;">
                 <button class="controlButton" on:click={playPreviousSong} disabled={!canGoPrevious} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
@@ -451,17 +465,20 @@
                     {/if}
                 </button>
             </div>
+            <div class="currentArtistContainer">
+                <div class="musicIconContainer" style:width="{windowHeight*0.05}px" style:height="{windowHeight*0.040}px">
+                    <svg class="musicIcon"  viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6779 0.220394C18.4735 0.0457943 18.2035 -0.0307252 17.9372 0.0112826L6.29208 1.84998C5.84528 1.92052 5.51616 2.30568 5.51616 2.75804V6.43547V12.258H3.67743C1.6497 12.2581 0 13.7703 0 15.629C0 17.4878 1.6497 19 3.67743 19C5.70516 19 7.35485 17.4878 7.35485 15.629V13.1774V7.22104L17.1613 5.67265V10.7258H15.3226C13.2949 10.7258 11.6452 12.238 11.6452 14.0968C11.6452 15.9555 13.2949 17.4678 15.3226 17.4678C17.3503 17.4678 19 15.9555 19 14.0968V11.6451V4.59678V0.919349C19 0.650492 18.8822 0.395068 18.6779 0.220394Z" fill="{$themeColors.primary}"/>
+                    </svg>      
+                </div>
+                <div class="currentArtist" style:font-size="{windowHeight*0.038}px">{displayedArtist}</div>
+                {#if songTitle}
+                    <div class="songTitle" style:font-size="{windowHeight*0.034}px"> - {songTitle}</div>
+                {/if}
+            </div>
         </div>
      </div>
  </div>
-
-<!-- Queue Display -->
-<QueueDisplay 
-    {windowHeight}
-    bind:isVisible={showQueue}
-    on:songSelected={handleQueueSongSelected}
-    on:close={handleQueueClose}
-/>
 
 <style>
     * {
@@ -475,7 +492,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 3%;
+        /* padding-left: 1%; */
         font-size: 2vh;
         max-width: 60%;  /* Maximum allowed width */
 
@@ -512,18 +529,17 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         justify-content: space-around;
+         justify-content: flex-start;
 
          height: 13%;
-         padding: 0 3%;
+         padding: 0 1.8%;
      }
 
      .musicControls {
          display: flex;
          align-items: center;
-         gap: 10px;
+         gap: var(--bottom-button-gap);
          flex-shrink: 0;
-         margin-left: 20px;
      }
 
      .controlButton {
@@ -533,12 +549,12 @@
         background-color: var(--secondary-color);
         cursor: pointer;
         border-radius: 4px;
-        height: 100%;
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: background-color 0.2s ease;
+        flex-shrink: 0;
+        box-sizing: border-box;
     }
 
     .controlButton:hover,
@@ -657,7 +673,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         padding-left: 20%;
+         padding-left: 5%;
          gap: .5em;
          font-size: 2vh;
          flex: 1;
