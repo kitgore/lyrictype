@@ -582,5 +582,44 @@ export const queueActions = {
         });
         unsubscribe();
         return canGo;
+    },
+    
+    // Add multiple songs to the queue efficiently
+    addMultipleSongs: (songs) => {
+        songQueue.update(queue => {
+            const newQueue = { ...queue };
+            
+            // If we're not at the end of the queue, remove everything after current position
+            if (newQueue.currentIndex < newQueue.songs.length - 1) {
+                newQueue.songs = newQueue.songs.slice(0, newQueue.currentIndex + 1);
+            }
+            
+            // Add all new songs
+            newQueue.songs.push(...songs);
+            
+            // Set current index to the first added song if queue was empty
+            if (newQueue.currentIndex === -1 && songs.length > 0) {
+                newQueue.currentIndex = 0;
+            }
+            
+            // Trim queue if it exceeds max size (keep most recent songs)
+            if (newQueue.songs.length > newQueue.maxQueueSize) {
+                const trimAmount = newQueue.songs.length - newQueue.maxQueueSize;
+                newQueue.songs = newQueue.songs.slice(trimAmount);
+                // Adjust current index to account for trimmed songs
+                newQueue.currentIndex = Math.max(0, newQueue.currentIndex - trimAmount);
+            }
+            
+            return newQueue;
+        });
+    },
+    
+    // Clear the queue and reset to initial state
+    clearQueue: () => {
+        songQueue.update(queue => ({
+            ...queue,
+            songs: [],
+            currentIndex: -1
+        }));
     }
 };

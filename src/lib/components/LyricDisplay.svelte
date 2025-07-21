@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
 	import { applyDitheringToImage } from '$lib/services/dither-utils';
-	import { ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
+	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
 	import { normalizeDiacritics } from 'normalize-text';
 	export let lyrics;
 	export let songTitle;
@@ -513,7 +513,7 @@ $: {
         {#if isPaused}
             <div class="pause-overlay">
                 <div class="pause-message" style="width: {windowHeight * 0.20}px; height: {windowHeight * 0.20}px; font-size: {windowHeight * 0.03}px; padding: {windowHeight * 0.02}px; border-width: {windowHeight * 0.015}px; border-radius: {windowHeight * 0.008}px;">
-                    <svg viewBox="0 0 24 24" fill="white" style="width: 90%; height: 90%;">
+                    <svg class="pause-icon" viewBox="0 0 24 24" style="width: 90%; height: 90%;">
                         <path d="M6 4H10V20H6V4ZM14 4H18V20H14V4Z"/>
                     </svg>
                 </div>
@@ -660,6 +660,10 @@ $: {
 
 	.incorrect {
 		color: var(--incorrect-color);
+	}
+
+	.pause-icon {
+		fill: var(--secondary-color);
 	}
 
 	.blinking-cursor {

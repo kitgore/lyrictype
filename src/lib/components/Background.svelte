@@ -10,8 +10,8 @@
     
     // Calculate responsive background size
     $: backgroundSize = aspectRatio > 1.65 ? 
-        Math.max(screenDimensions.height / 50, 1) : 
-        Math.max(screenDimensions.width / 83, 1); // Smaller factor for width to prevent jump
+        Math.max(screenDimensions.height / 250, 1) : 
+        Math.max(screenDimensions.width / 415, 1); // Smaller factor for width to prevent jump
     $: hotbarHeight = aspectRatio > 1.65 ? 
         screenDimensions.height * 0.04 : 
         screenDimensions.width * 0.024; // Smaller factor for width to prevent jump

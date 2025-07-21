@@ -12,14 +12,23 @@
     $: itemHeight = windowHeight * 0.06; // 6% of window height
     $: fontSize = windowHeight * 0.025; // 2.5% of window height
     $: maxHeight = windowHeight * 0.4; // 40% of window height
-    $: headerHeight = windowHeight * 0.03; // 8% of window height - thinner than before
+    $: headerHeight = windowHeight * 0.03; // 3% of window height
     $: headerFontSize = windowHeight * 0.03; // 3% of window height
     $: headerPadding = windowHeight * 0.02; // 2% of window height
     $: closeButtonSize = windowHeight * 0.06; // Square button size
     $: closeButtonFontSize = windowHeight * 0.04; // Font size for close button
 
+    // Additional responsive sizing for padding, margins, and spacing
     $: vertQueuePadding = windowHeight * 0.1;
     $: horizQueuePadding = windowHeight * 0.05;
+    $: listPadding = windowHeight * 0.01; // Responsive list padding
+    $: itemPaddingVert = windowHeight * 0.012; // Responsive item vertical padding  
+    $: itemPaddingHoriz = windowHeight * 0.018; // Responsive item horizontal padding
+    $: itemMargin = windowHeight * 0.006; // Responsive item margin
+    $: borderRadius = windowHeight * 0.006; // Responsive border radius
+    $: positionMargin = windowHeight * 0.018; // Responsive position margin
+    $: positionMinWidth = windowHeight * 0.035; // Responsive position number min width
+    $: emptyQueueMargin = windowHeight * 0.012; // Responsive empty queue margins
     
     function handleSongClick(futureIndex) {
         // Convert future index to actual queue index
@@ -39,13 +48,13 @@
         return `${truncateText(song.artist)} - ${truncateText(song.title)}`;
     }
     
-    // Get only future songs
-    $: futureSongs = $songQueue.songs.slice($songQueue.currentIndex + 1);
+    // Get only future songs (limit to 5 for display)
+    $: futureSongs = $songQueue.songs.slice($songQueue.currentIndex + 1, $songQueue.currentIndex + 6);
 </script>
 
 {#if isVisible}
     {#if embedded}
-        <div class="queue-container embedded" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px;">
+        <div class="queue-container embedded" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px; --vert-queue-padding: {vertQueuePadding}px; --horiz-queue-padding: {horizQueuePadding}px; --list-padding: {listPadding}px; --item-padding-vert: {itemPaddingVert}px; --item-padding-horiz: {itemPaddingHoriz}px; --item-margin: {itemMargin}px; --border-radius: {borderRadius}px; --position-margin: {positionMargin}px; --position-min-width: {positionMinWidth}px; --empty-queue-margin: {emptyQueueMargin}px;">
             <div class="queue-header">
                 <h3>Up Next</h3>
                 <button class="close-button" on:click={() => dispatch('close')}>×</button>
@@ -76,7 +85,7 @@
         </div>
     {:else}
         <div class="queue-overlay" on:click={() => dispatch('close')}>
-            <div class="queue-container" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px;" on:click|stopPropagation>
+            <div class="queue-container" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px; --vert-queue-padding: {vertQueuePadding}px; --horiz-queue-padding: {horizQueuePadding}px; --list-padding: {listPadding}px; --item-padding-vert: {itemPaddingVert}px; --item-padding-horiz: {itemPaddingHoriz}px; --item-margin: {itemMargin}px; --border-radius: {borderRadius}px; --position-margin: {positionMargin}px; --position-min-width: {positionMinWidth}px; --empty-queue-margin: {emptyQueueMargin}px;" on:click|stopPropagation>
                 <div class="queue-header">
                     <h3>Up Next</h3>
                     <button class="close-button" on:click={() => dispatch('close')}>×</button>
@@ -188,16 +197,16 @@
     .queue-list {
         flex: 1;
         overflow-y: auto;
-        padding: 8px;
+        padding: var(--list-padding);
     }
     
     .queue-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 12px;
-        margin: 4px 0;
-        border-radius: 4px;
+        padding: var(--item-padding-vert) var(--item-padding-horiz);
+        margin: var(--item-margin) 0;
+        border-radius: var(--border-radius);
         cursor: pointer;
         transition: background-color 0.2s ease;
         min-height: var(--item-height);
@@ -238,14 +247,14 @@
     .queue-position {
         display: flex;
         align-items: center;
-        margin-left: 12px;
+        margin-left: var(--position-margin);
     }
     
     .position-number {
         font-family: "Geneva", sans-serif;
         font-size: calc(var(--font-size) * 0.8);
         opacity: 0.7;
-        min-width: 24px;
+        min-width: var(--position-min-width);
         text-align: center;
     }
     
@@ -262,7 +271,7 @@
     }
     
     .empty-queue p {
-        margin: 8px 0;
+        margin: var(--empty-queue-margin) 0;
         font-family: "Geneva", sans-serif;
         font-size: var(--font-size);
     }
