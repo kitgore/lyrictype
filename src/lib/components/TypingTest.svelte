@@ -208,7 +208,7 @@
             // Use a setTimeout to ensure this runs after the UI has updated
             setTimeout(async () => {
                 try {
-                    // Fetch queue songs (8 songs as per user's setting)
+                    // Fetch queue songs (5 songs as per user's setting)
                     const queueSongs = await fetchMultipleSongs(artistId, seenSongs, 5);
                     
                     if (queueSongs.length > 0) {
