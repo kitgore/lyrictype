@@ -39,8 +39,8 @@
         return `${truncateText(song.artist)} - ${truncateText(song.title)}`;
     }
     
-    // Get only future songs
-    $: futureSongs = $songQueue.songs.slice($songQueue.currentIndex + 1);
+    // Get only future songs (limit to 5 for display)
+    $: futureSongs = $songQueue.songs.slice($songQueue.currentIndex + 1, $songQueue.currentIndex + 6);
 </script>
 
 {#if isVisible}

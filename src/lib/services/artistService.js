@@ -36,6 +36,57 @@ export async function searchByArtistId(artistId, seenSongs) {
 }
 
 /**
+ * Efficiently fetch multiple songs for an artist sequentially
+ * @param {number} artistId - The artist's Genius ID
+ * @param {Array} seenSongs - Array of already seen song indices
+ * @param {number} count - Number of songs to fetch (default: 8)
+ * @returns {Promise<Array>} Array of song objects
+ */
+export async function fetchMultipleSongs(artistId, seenSongs = [], count = 5) {
+  const functions = getFunctions(app);
+  const callSearch = httpsCallable(functions, 'searchByArtistId');
+  
+  try {
+    const fetchedSongs = [];
+    let currentSeenSongs = [...seenSongs];
+    
+    for (let i = 0; i < count; i++) {
+      try {
+        const result = await callSearch({ 
+          artistId, 
+          seenSongs: currentSeenSongs 
+        });
+        
+        if (result.data && result.data.songIndex) {
+          fetchedSongs.push(result.data);
+          // Add this song index to seen songs for next request
+          currentSeenSongs.push(result.data.songIndex);
+        } else {
+          // If we get no valid song, we might have exhausted the artist's songs
+          console.log(`No more songs available for artist ${artistId} after ${i} songs`);
+          break;
+        }
+      } catch (error) {
+        console.warn(`Error fetching song ${i + 1} for artist ${artistId}:`, error);
+        // Continue trying to fetch remaining songs even if one fails
+      }
+      
+      // Small delay to be respectful to the server
+      if (i < count - 1) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+    }
+    
+    console.log(`Successfully fetched ${fetchedSongs.length}/${count} songs for artist ${artistId}`);
+    return fetchedSongs;
+    
+  } catch (error) {
+    console.error("Error in fetchMultipleSongs:", error);
+    return [];
+  }
+}
+
+/**
  * Search for artists using Firestore search tokens
  * @param {string} searchTerm - The search term entered by the user
  * @param {number} maxResults - Maximum number of results to return (default: 10)
