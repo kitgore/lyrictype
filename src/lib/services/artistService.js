@@ -39,7 +39,7 @@ export async function searchByArtistId(artistId, seenSongs) {
  * Efficiently fetch multiple songs for an artist sequentially
  * @param {number} artistId - The artist's Genius ID
  * @param {Array} seenSongs - Array of already seen song indices
- * @param {number} count - Number of songs to fetch (default: 8)
+ * @param {number} count - Number of songs to fetch (default: 5)
  * @returns {Promise<Array>} Array of song objects
  */
 export async function fetchMultipleSongs(artistId, seenSongs = [], count = 5) {

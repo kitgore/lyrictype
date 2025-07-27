@@ -9,28 +9,28 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "18"
+    "node": "22"
   },
   "main": "index.js",
   "type": "module",
   "dependencies": {
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "cheerio": "^1.0.0-rc.12",
     "chrome-aws-lambda": "^9.1.0",
     "cross-fetch": "^4.0.0",
     "firebase": "^10.x.x",
     "firebase-admin": "^12.1.0",
-    "firebase-functions": "^4.9.0",
+    "firebase-functions": "^6.4.0",
     "genius-lyrics": "^4.4.6",
+    "js-cookie": "^3.0.5",
     "node-fetch": "^3.x.x",
     "normalize-strings": "^1.1.1",
-    "@sveltejs/kit": "^2.0.0",
-    "@sveltejs/vite-plugin-svelte": "^3.0.0",
-    "svelte": "^4.2.7",
+    "normalize-text": "^2.5.0",
     "puppeteer": "^22.6.3",
-    "js-cookie": "^3.0.5",
-		"robocopy": "^0.1.16",
-		"textfit": "^2.4.0",
-    "normalize-text": "^2.5.0"
+    "robocopy": "^0.1.16",
+    "svelte": "^4.2.7",
+    "textfit": "^2.4.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^3.1.0"

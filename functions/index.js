@@ -4,7 +4,8 @@ import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 import fs from 'node:fs';
 import path from 'node:path';
-import { handler } from './server.js';
+// Dynamic import for SSR handler to avoid module loading issues
+let handler = null;
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -20,6 +21,11 @@ export const ssrServer = onRequest({
     invoker: 'public'  // This makes the function publicly accessible
 }, async (request, response) => {
     try {
+        // Dynamically import handler only when needed
+        if (!handler) {
+            const { handler: importedHandler } = await import('./server.js');
+            handler = importedHandler;
+        }
         return await handler(request, response);
     } catch (error) {
         console.error('SSR Error:', error);
@@ -45,7 +51,7 @@ async function getInitialSearch(artist_name) {
     }
 
     const headers = {
-        "Authorization": geniusApiKey
+        "Authorization": `Bearer ${geniusApiKey}`
     };
 
     const params = new URLSearchParams({ q: artist_name });
@@ -89,6 +95,33 @@ export const initialArtistSearch = onCall({
     }
 });
 
+export async function getAllSongIdsByArtist(artistId){
+    //getAllSongIdsByArtist(16775);
+    const searchUrl = "https://api.genius.com/artists/";
+    let geniusApiKey = geniusApiKeyParam.value();
+
+    // Fallback to local config if the Firebase config is null
+    if (!geniusApiKey) {
+        try {
+            const localConfigPath = path.join(__dirname, 'local-config.json');
+            const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
+            geniusApiKey = localConfig.genius.key;
+        } catch (error) {
+            console.error('Error loading local config:', error);
+            throw new Error('API key not found. Please configure your API key.');
+        }
+    }
+    const headers = {
+        "Authorization": `Bearer ${geniusApiKey}`
+    };
+    const response = await fetch(`${searchUrl}${artistId}/songs?per_page=50&sort=popularity`, { headers });
+    const data = await response.json();
+    if (!data.response || !data.response.songs || !data.response.songs[0]) {
+        console.error("Unexpected API response structure:", data);
+        throw new Error('Invalid API response structure');
+    }
+    console.log(data)
+}
 
 async function getSongsById(artistId, seenSongs) {
     const searchUrl = "https://api.genius.com/artists/";
@@ -107,7 +140,7 @@ async function getSongsById(artistId, seenSongs) {
         }
     }
     const headers = {
-        "Authorization": geniusApiKey
+        "Authorization": `Bearer ${geniusApiKey}`
     };
     try {
         const pageNum = Math.floor(seenSongs.length / pageSize) + 1;
@@ -205,7 +238,7 @@ async function getSongsById(artistId, seenSongs) {
 
         // Ensure there are at least four lines to choose from
         if (filteredLines.length < 4) {
-            return { songTitle, lyrics }; // Or handle differently if needed
+            return { songTitle: song.title, lyrics }; // Or handle differently if needed
         }
 
         // Choose a random start index, ensuring it allows for four consecutive lines
@@ -250,6 +283,23 @@ export const searchByArtistId = onCall({
     } catch (error) {
         console.error("Error fetching artist lyrics:", error);
         throw new HttpsError('internal', '...')
+    }
+});
+
+// Callable version of getAllSongIdsByArtist for testing
+export const testGetAllSongIds = onCall({
+    timeoutSeconds: 60,
+    minInstances: 0,
+    maxInstances: 100,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { artistId } = request.data;
+    try {
+        const result = await getAllSongIdsByArtist(artistId);
+        return { success: true, result };
+    } catch (error) {
+        console.error("Error in testGetAllSongIds:", error);
+        throw new HttpsError('internal', error.message);
     }
 });
 
