@@ -7,32 +7,35 @@
         "node_modules",
         ".git",
         "firebase-debug.log",
-        "firebase-debug.*.log"
+        "firebase-debug.*.log",
+        "*.local"
       ]
     }
   ],
   "hosting": {
-    "site": "lyrictype",
-    "public": "build/client",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
         "function": "ssrServer"
       }
-    ],
-    "ignore": [
-      "**/node_modules/**"
     ]
   },
   "emulators": {
     "functions": {
       "port": 5001
     },
-    "hosting": {
-      "port": 5000
+    "firestore": {
+      "port": 8080
     },
     "ui": {
-      "enabled": true
+      "enabled": true,
+      "port": 4000
     },
     "singleProjectMode": true
   }
