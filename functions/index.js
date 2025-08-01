@@ -1,25 +1,67 @@
 import { onRequest, onCall, HttpsError } from 'firebase-functions/v2/https';
 import { defineString } from 'firebase-functions/params';
-import fetch from 'node-fetch';
+import { getFirestore, doc, getDoc, updateDoc, writeBatch, collection, arrayUnion, increment } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
 import * as cheerio from 'cheerio';
 import fs from 'node:fs';
 import path from 'node:path';
-import { handler } from './server.js';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Firebase configuration - using the same config as the client
+const firebaseConfig = {
+  apiKey: "AIzaSyCX53dpNUbjeJhP_CstO6yOzSe76CLbgc4",
+  authDomain: "lyrictype-cdf2c.firebaseapp.com",
+  projectId: "lyrictype-cdf2c",
+  storageBucket: "lyrictype-cdf2c.appspot.com",
+  messagingSenderId: "835790496614",
+  appId: "1:835790496614:web:a87481404a0eb63104dea7",
+  measurementId: "G-6N60MSG8SL"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 const geniusApiKeyParam = defineString('GENIUS_KEY');
 
+// Use the global fetch that comes with Node.js 18+ instead of node-fetch
+// This is more compatible with Firebase Functions environment
+const fetchWithTimeout = async (url, options = {}) => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), options.timeout || 10000);
+  
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+    return response;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    if (error.name === 'AbortError') {
+      throw new Error(`Request timeout after ${options.timeout || 10000}ms`);
+    }
+    throw error;
+  }
+};
+
+// Keep existing SSR server for backward compatibility
+let handler = null;
 export const ssrServer = onRequest({
     timeoutSeconds: 60,
     minInstances: 0,
     maxInstances: 100,
     region: 'us-central1',
-    invoker: 'public'  // This makes the function publicly accessible
+    invoker: 'public'
 }, async (request, response) => {
     try {
+        if (!handler) {
+            const { handler: importedHandler } = await import('./server.js');
+            handler = importedHandler;
+        }
         return await handler(request, response);
     } catch (error) {
         console.error('SSR Error:', error);
@@ -27,232 +69,7 @@ export const ssrServer = onRequest({
     }
 });
 
-// ensure that the first result matches the search
-async function getInitialSearch(artist_name) {
-    const searchUrl = "https://api.genius.com/search";
-    let geniusApiKey = geniusApiKeyParam.value();
-
-    // Fallback to local config if the Firebase config is null
-    if (!geniusApiKey) {
-        try {
-            const localConfigPath = path.join(__dirname, 'local-config.json');
-            const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
-            geniusApiKey = localConfig.genius.key;
-        } catch (error) {
-            console.error('Error loading local config:', error);
-            throw new Error('API key not found. Please configure your API key.');
-        }
-    }
-
-    const headers = {
-        "Authorization": geniusApiKey
-    };
-
-    const params = new URLSearchParams({ q: artist_name });
-    const response = await fetch(`${searchUrl}?${params}`, { headers });
-    const data = await response.json();
-    const songs = data.response.hits;
-
-    if (songs.length === 0) {
-        return { songTitle: "No songs found.", lyrics: "" };
-    }
-
-    const artistId = songs[0].result.primary_artist.id;
-    let songReturn = await getSongsById(artistId, []);
-    songReturn.initialArtist = songs[0].result.primary_artist.name;
-    songReturn.initialArtistImg = songs[0].result.primary_artist.image_url;
-    songReturn.initialArtistId = artistId;
-    return songReturn;
-}
-
-export const initialArtistSearch = onCall({
-    timeoutSeconds: 60,
-    minInstances: 0,
-    maxInstances: 100,
-    region: 'us-central1'
-}, async (request, context) => {
-    // Access the nested data property
-    const { artistName } = request.data;
-    
-    if (!artistName) {
-        console.error("artistName is undefined. Full data object:", request);
-        throw new HttpsError('invalid-argument', 'Artist name is required');
-    }
-
-    try {
-        console.log("Processing artist name:", artistName);
-        const returnJSON = await getInitialSearch(artistName);
-        return returnJSON;
-    } catch (error) {
-        console.error("Error fetching artist lyrics:", error);
-        throw new HttpsError('internal', 'Failed to fetch artist lyrics', error.toString());
-    }
-});
-
-
-async function getSongsById(artistId, seenSongs) {
-    const searchUrl = "https://api.genius.com/artists/";
-    let geniusApiKey = geniusApiKeyParam.value();
-    const pageSize = 10;
-
-    // Fallback to local config if the Firebase config is null
-    if (!geniusApiKey) {
-        try {
-            const localConfigPath = path.join(__dirname, 'local-config.json');
-            const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
-            geniusApiKey = localConfig.genius.key;
-        } catch (error) {
-            console.error('Error loading local config:', error);
-            throw new Error('API key not found. Please configure your API key.');
-        }
-    }
-    const headers = {
-        "Authorization": geniusApiKey
-    };
-    try {
-        const pageNum = Math.floor(seenSongs.length / pageSize) + 1;
-
-        function removeValuesEfficient(sourceArray, valuesToRemove) {
-            const removeSet = new Set(valuesToRemove);
-            return sourceArray.filter(item => !removeSet.has(item));
-        }
-    
-        function getRandomArrayValue(array) {
-            return array[Math.floor(Math.random() * array.length)];
-        }
-    
-        // generate indices for songs in page
-        const pageIndices = Array.from({length: pageSize}, (_, i) => (i + (pageNum - 1) * pageSize) + 1);
-    
-        // get random song index from pageIndices that is not in seenSongs
-        const songIndex = getRandomArrayValue(removeValuesEfficient(pageIndices, seenSongs));
-    
-        // console.log(`${searchUrl}${artistId}/songs?per_page=1&page=${songIndex}&sort=popularity`)
-        const response = await fetch(`${searchUrl}${artistId}/songs?per_page=1&page=${songIndex}&sort=popularity`, { headers });
-        const data = await response.json();
-        if (!data.response || !data.response.songs || !data.response.songs[0]) {
-            console.error("Unexpected API response structure:", data);
-            throw new Error('Invalid API response structure');
-        }
-        const song = data.response.songs[0];
-
-        
-
-        let lyrics = '';
-
-        // Fetch the song page
-        const songPageResponse = await fetch(song.url);
-        const songPageHtml = await songPageResponse.text();
-
-        // Parse the page with load
-        const $ = cheerio.load(songPageHtml);
-        let lyricsHtml = '';
-        
-
-        // Select the container that includes the lyrics and retrieve the HTML
-        // Try this updated selector
-        const lyricsContainer = $('div[class*="Lyrics__Container"]');
-        if (lyricsContainer.length > 0) {
-            lyricsHtml = lyricsContainer.html();
-        } else {
-            lyricsHtml = "Lyrics not found.";
-        }
-
-        // Clean the lyrics HTML more thoroughly
-        // First, remove all button elements and their contents
-        lyrics = lyricsHtml.replace(/<button[^>]*>[\s\S]*?<\/button>/gi, '');
-        
-        // Remove all SVG elements and their contents
-        lyrics = lyrics.replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '');
-        
-        // Remove all ul and li elements
-        lyrics = lyrics.replace(/<ul[^>]*>[\s\S]*?<\/ul>/gi, '');
-        lyrics = lyrics.replace(/<li[^>]*>[\s\S]*?<\/li>/gi, '');
-        
-        // Remove all h2 elements
-        lyrics = lyrics.replace(/<h2[^>]*>[\s\S]*?<\/h2>/gi, '');
-        
-        // Replace <br> tags with \n to maintain formatting
-        lyrics = lyrics.replace(/<br\s*\/?>/gi, '\n');
-
-        // Remove any script or style elements entirely
-        lyrics = lyrics.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '');
-        lyrics = lyrics.replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, '');
-
-        lyrics = lyrics.replace(/<\/?a[^>]*>/gi, ''); // Remove anchor tags but preserve their text
-        lyrics = lyrics.replace(/<span[^>]*>/gi, ''); // Remove start span tags
-        lyrics = lyrics.replace(/<\/span>/gi, '');    // Remove end span tags
-        lyrics = lyrics.replace(/<div[^>]*>/gi, '\n');// Replace start div tags with new lines
-        lyrics = lyrics.replace(/<\/div>/gi, '');     // Remove end div tags
-        lyrics = lyrics.replace(/\[.*?\]/g, '');      // Remove text within square brackets
-        lyrics = lyrics.replace(/<\/?(i|b)>/gi, '');  // Remove italic and bold tags
-        
-        // Remove any remaining HTML tags
-        lyrics = lyrics.replace(/<[^>]*>/g, '');
-
-        // Decode HTML entities
-        lyrics = $('<textarea/>').html(lyrics).text();
-
-        console.log("LYRICS: ", lyrics)
-
-        // Trim the final string to remove any leading/trailing whitespace
-        lyrics = lyrics.trim();
-
-        const lines = lyrics.split('\n');
-
-        // Filter out empty lines and lines with text in square brackets
-        const filteredLines = lines.filter(line => line.trim() !== '' && !line.trim().match(/\[.*?\]/));
-
-        // Ensure there are at least four lines to choose from
-        if (filteredLines.length < 4) {
-            return { songTitle, lyrics }; // Or handle differently if needed
-        }
-
-        // Choose a random start index, ensuring it allows for four consecutive lines
-        const startIndex = Math.floor(Math.random() * (filteredLines.length - 3));
-        const selectedLines = filteredLines.slice(startIndex, startIndex + 4).join('\n');
-
-        // Use selectedLines instead of the full lyrics
-        lyrics = selectedLines;
-        
-        // Add the song attributes to returned JSON
-        const returnJSON = {
-            title: song.title,
-            url: song.url,
-            image: song.song_art_image_url,
-            artist: song.artist_names,
-            artistImg: song.primary_artist.image_url,
-            artistId: song.primary_artist.id,
-            songId: song.id,
-            songIndex: songIndex,
-            lyrics: lyrics,
-        };
-        console.log(returnJSON)
-        return returnJSON;
-    } catch (error) {
-        console.error("Error navigating to song URL:", error);
-        throw error;
-    }
-}
-
-
-export const searchByArtistId = onCall({
-    timeoutSeconds: 60,
-    minInstances: 0,
-    maxInstances: 100,
-    region: 'us-central1'
-}, async (request, context) => {
-    const { artistId, seenSongs } = request.data;
-    try {
-        const returnJSON = await getSongsById(artistId, seenSongs);
-        console.log(returnJSON)
-        return returnJSON;
-    } catch (error) {
-        console.error("Error fetching artist lyrics:", error);
-        throw new HttpsError('internal', '...')
-    }
-});
-
+// Keep existing health check
 export const healthCheck = onRequest({
     timeoutSeconds: 10,
     region: 'us-central1'
@@ -260,218 +77,1071 @@ export const healthCheck = onRequest({
     res.status(200).send('OK');
 });
 
-// console.log(getInitialSearch("Bladee"));
-// console.log(getSongsById(1421, []));
+// ========================================
+// NEW CACHE STRATEGY FUNCTIONS
+// ========================================
 
-
-
-// GET SONGS USING SONG IDS IN SEENSONGS
-// async function getSongsById(artistId, seenSongs, numSongs) {
-//     const searchUrl = "https://api.genius.com/artists/";
-//     let geniusApiKey = functions.config().genius ? functions.config().genius.key : null;
-//     const pageSize = 1;
-
-//     // Fallback to local config if the Firebase config is null
-//     if (!geniusApiKey) {
-//         try {
-//             const localConfigPath = path.join(__dirname, 'local-config.json');
-//             const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
-//             geniusApiKey = localConfig.genius.key;
-//         } catch (error) {
-//             console.error('Error loading local config:', error);
-//             throw new Error('API key not found. Please configure your API key.');
-//         }
-//     }
-//     const headers = {
-//         "Authorization": geniusApiKey
-//     };
-
-//     //TODO: GET NEXT PAGE IF NECESSARY
-//     const pageNum = Math.floor(seenSongs.length / pageSize) + 1;
-//     const response = await fetch(`${searchUrl}${artistId}/songs?per_page=${pageSize}&page=${pageNum}&sort=popularity`, { headers });
-//     const data = await response.json();
-//     const songs = data.response.songs;
-
-//     const filteredSongs = songs.filter(song => !seenSongs.includes(song.id));
-//     const returnJSON = {}
-    
-//     // get specif random songs from the filteredSongs
-//     for(let i = 0; i < numSongs; i++) {
-//         if (filteredSongs.length === 0) {
-//             break;
-//         }
-//         const randomIndex = Math.floor(Math.random() * filteredSongs.length);
-//         const randomSong = filteredSongs[randomIndex];
-//         let lyrics = '';
-//         try {
-//             // Fetch the song page
-//             const songPageResponse = await fetch(randomSong.url);
-//             const songPageHtml = await songPageResponse.text();
-    
-//             // Parse the page with load
-//             const $ = load.load(songPageHtml);
-//             let lyricsHtml = '';
-    
-//             // Select the container that includes the lyrics and retrieve the HTML
-//             const lyricsContainer = $('[class^="Lyrics-"]');
-//             if (lyricsContainer.length > 0) {
-//                 lyricsHtml = lyricsContainer.html();
-//             } else {
-//                 lyricsHtml = "Lyrics not found.";
-//             }
-    
-    
-//             // Replace <br> tags with \n to maintain formatting
-//             lyrics = lyricsHtml.replace(/<br\s*\/?>/gi, '\n');
-    
-//             // Remove any script or style elements entirely
-//             lyrics = lyrics.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '');
-//             lyrics = lyrics.replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, '');
-    
-//             lyrics = lyrics.replace(/<\/?a[^>]*>/gi, ''); // Remove anchor tags but preserve their text
-//             lyrics = lyrics.replace(/<span[^>]*>/gi, ''); // Remove start span tags
-//             lyrics = lyrics.replace(/<\/span>/gi, '');    // Remove end span tags
-//             lyrics = lyrics.replace(/<div[^>]*>/gi, '\n');// Replace start div tags with new lines
-//             lyrics = lyrics.replace(/<\/div>/gi, '');     // Remove end div tags
-//             lyrics = lyrics.replace(/\[.*?\]/g, '');      // Remove text within square brackets
-//             lyrics = lyrics.replace(/<\/?(i|b)>/gi, '');  // Remove italic and bold tags
-    
-//             console.log(lyrics)
-    
-//             // Decode HTML entities
-//             lyrics = $('<textarea/>').html(lyrics).text();
-    
-//             // Trim the final string to remove any leading/trailing whitespace
-//             lyrics = lyrics.trim();
-    
-//             const lines = lyrics.split('\n');
-    
-//             // Filter out empty lines and lines with text in square brackets
-//             const filteredLines = lines.filter(line => line.trim() !== '' && !line.trim().match(/\[.*?\]/));
-    
-//             // Ensure there are at least four lines to choose from
-//             if (filteredLines.length < 4) {
-//                 return { songTitle, lyrics }; // Or handle differently if needed
-//             }
-    
-//             // Choose a random start index, ensuring it allows for four consecutive lines
-//             const startIndex = Math.floor(Math.random() * (filteredLines.length - 3));
-//             const selectedLines = filteredLines.slice(startIndex, startIndex + 4).join('\n');
-    
-//             // Use selectedLines instead of the full lyrics
-//             lyrics = selectedLines;
-    
-//         } catch (error) {
-//             console.error("Error navigating to song URL:", error);
-//             throw error;
-//         }
-        
-//         // Add the song attributes to returned JSON
-//         returnJSON[randomSong.id] = {
-//             title: randomSong.title,
-//             url: randomSong.url,
-//             image: randomSong.song_art_image_url,
-//             artist: randomSong.artist_names,
-//             artistImg: randomSong.primary_artist.image_url,
-//             artistId: randomSong.primary_artist.id,
-//             songId: randomSong.id,
-//             lyrics: lyrics
-//         };
-
-//         filteredSongs.splice(randomIndex, 1); // Remove the song from the list
-//     }
-//     return returnJSON;
-// }
-
-//searchArtistAndFetchLyrics({data: {artistName: "playboi carti"}}).then(result => console.log(result));
-
-// OLD CODE
 /**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
+ * Helper function to get Genius API key with fallback
+ * @returns {string} The Genius API key
  */
+async function getGeniusApiKey() {
+    let geniusApiKey = geniusApiKeyParam.value();
+    
+    if (!geniusApiKey) {
+        try {
+            const localConfigPath = path.join(__dirname, 'local-config.json');
+            const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
+            geniusApiKey = localConfig.genius.key;
+        } catch (error) {
+            console.error('Error loading local config:', error);
+            throw new Error('API key not found. Please configure your API key.');
+        }
+    }
+    
+    return geniusApiKey;
+}
 
-// const {onRequest} = require("firebase-functions/v2/https");
-// const logger = require("firebase-functions/logger");
+/**
+ * Helper function to check if artist songs need refresh (older than 1 week)
+ * @param {Date} songsLastUpdated - Last update timestamp
+ * @returns {boolean} Whether refresh is needed
+ */
+function needsRefresh(songsLastUpdated) {
+    if (!songsLastUpdated) return true;
+    
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+    
+    return new Date(songsLastUpdated) < oneWeekAgo;
+}
 
-// Create and deploy your first functions
-// functions/index.js
-// const functions = require('firebase-functions');
-// const Genius = require("genius-lyrics");
-// const normalize = require('normalize-strings');
+/**
+ * Fetch song metadata from Genius API for a specific artist page
+ * @param {number} artistId - Genius artist ID
+ * @param {number} page - Page number (1-based)
+ * @returns {Object} { songs: Song[], hasMore: boolean, totalSongs: number }
+ */
+async function getSongsByArtist(artistId, page = 1) {
+    console.log(`Fetching songs for artist ${artistId}, page ${page}`);
+    
+    try {
+        const geniusApiKey = await getGeniusApiKey();
+        const headers = { "Authorization": `Bearer ${geniusApiKey}` };
+        
+        // Fetch 50 songs per page, sorted by popularity
+        const response = await fetchWithTimeout(
+            `https://api.genius.com/artists/${artistId}/songs?per_page=50&page=${page}&sort=popularity`,
+            { headers }
+        );
+        
+        if (!response.ok) {
+            throw new Error(`Genius API error: ${response.status} ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        if (!data.response || !data.response.songs) {
+            throw new Error('Invalid API response structure');
+        }
+        
+        const songs = data.response.songs;
+        console.log(`Fetched ${songs.length} songs for artist ${artistId}, page ${page}`);
+        
+        // Transform songs to our schema format
+        const transformedSongs = songs.map(song => ({
+            id: song.id.toString(), // Use as Firestore document ID
+            title: song.title,
+            url: song.url,
+            songArtImageUrl: song.song_art_image_url,
+            artistNames: song.artist_names,
+            primaryArtist: {
+                id: song.primary_artist.id,
+                name: song.primary_artist.name,
+                url: song.primary_artist.url
+            },
+            // Lyrics fields - initially null
+            lyrics: null,
+            lyricsScrapedAt: null,
+            scrapingAttempts: 0,
+            scrapingError: null,
+            // Metadata
+            addedAt: new Date(),
+            scrapingStatus: 'pending'
+        }));
+        
+        const hasMore = songs.length === 50; // If we got a full page, there might be more
+        
+        return {
+            songs: transformedSongs,
+            hasMore,
+            totalSongs: songs.length, // This is just for current page, will be updated later
+            pageNumber: page
+        };
+        
+    } catch (error) {
+        console.error(`Error fetching songs for artist ${artistId}, page ${page}:`, error);
+        throw error;
+    }
+}
 
-// // Initialize Genius Client with your API key
-// const geniusApiKey = functions.config().genius.key;
-// const Client = new Genius.Client(geniusApiKey);
+/**
+ * Store song documents in Firestore songs collection
+ * @param {Object[]} songs - Array of song objects
+ * @returns {Promise<string[]>} Array of song IDs that were stored
+ */
+async function storeSongsInFirestore(songs) {
+    console.log(`Storing ${songs.length} songs in Firestore`);
+    
+    try {
+        const batch = writeBatch(db);
+        const songsCollection = collection(db, 'songs');
+        const storedSongIds = [];
+        
+        for (const song of songs) {
+            const songRef = doc(songsCollection, song.id);
+            
+            // Check if song already exists to avoid overwriting existing data
+            const existingDoc = await getDoc(songRef);
+            
+            if (!existingDoc.exists()) {
+                // Remove the id from the document data since it's used as the document ID
+                const { id, ...songData } = song;
+                batch.set(songRef, songData);
+                storedSongIds.push(song.id);
+                console.log(`Queued song ${song.id} for storage: ${song.title}`);
+            } else {
+                console.log(`Song ${song.id} already exists, skipping: ${song.title}`);
+                storedSongIds.push(song.id); // Still include in list since it's available
+            }
+        }
+        
+        if (storedSongIds.length > 0) {
+            await batch.commit();
+            console.log(`Successfully stored ${storedSongIds.length} songs in Firestore`);
+        } else {
+            console.log('No new songs to store');
+        }
+        
+        return storedSongIds;
+        
+    } catch (error) {
+        console.error('Error storing songs in Firestore:', error);
+        throw error;
+    }
+}
 
+/**
+ * Update artist document with new song IDs and metadata
+ * @param {string} artistUrlKey - Artist document ID (URL slug)
+ * @param {string[]} newSongIds - Array of new song IDs to add
+ * @param {Object} metadata - Additional metadata to update
+ */
+async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
+    console.log(`Updating artist ${artistUrlKey} with ${newSongIds.length} new songs`);
+    
+    try {
+        const artistRef = doc(db, 'artists', artistUrlKey);
+        
+        // First, get the current artist document to check existing songIds
+        const artistDoc = await getDoc(artistRef);
+        if (!artistDoc.exists()) {
+            throw new Error(`Artist document not found: ${artistUrlKey}`);
+        }
+        
+        const artistData = artistDoc.data();
+        const existingSongIds = artistData.songIds || [];
+        
+        // Filter out song IDs that are already in the artist's list
+        const trulyNewSongIds = newSongIds.filter(id => !existingSongIds.includes(id));
+        
+        if (trulyNewSongIds.length === 0) {
+            console.log('No new song IDs to add to artist document');
+            return;
+        }
+        
+        const updateData = {
+            songIds: arrayUnion(...trulyNewSongIds),
+            songsFetched: metadata.songsFetched,
+            totalSongs: metadata.totalSongs,
+            songsLastUpdated: new Date(),
+            isFullyCached: metadata.isFullyCached || false,
+            cacheVersion: 1
+        };
+        
+        await updateDoc(artistRef, updateData);
+        console.log(`Successfully updated artist ${artistUrlKey} with ${trulyNewSongIds.length} new song IDs`);
+        
+    } catch (error) {
+        console.error(`Error updating artist song list for ${artistUrlKey}:`, error);
+        throw error;
+    }
+}
 
-// // Helper function to format characters
-// function formatChars(input) {
-//     let output = "";
-//     const replacements = {
-//         "‘": "'", "’": "'", "❛": "'", "❜": "'", "＇": "'",
-//         "“": '"', "”": '"', "‟": '"', "❝": '"', "❞": '"', "〝": '"', "〞": '"', "＂": '"',
-//         "‚": ",",
-//         // Add more replacements as needed
-//     };
-//     for (let i = 0; i < input.length; i++) {
-//         output += replacements[input.charAt(i)] || input.charAt(i);
-//     }
-//     return normalize(output).toLowerCase();
-// }
+/**
+ * Core logic for populating artist songs (without Firebase Functions wrapper)
+ * @param {string} artistUrlKey - Artist document ID
+ * @returns {Promise<Object>} Result object
+ */
+async function populateArtistSongsCore(artistUrlKey) {
+    console.log(`Starting song population for artist: ${artistUrlKey}`);
+    
+    // Get artist document from Firestore
+    const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+    if (!artistDoc.exists()) {
+        throw new Error('Artist not found');
+    }
+    
+    const artistData = artistDoc.data();
+    console.log(`Found artist: ${artistData.name} (Genius ID: ${artistData.geniusId})`);
+    
+    // Check if refresh is needed
+    if (!needsRefresh(artistData.songsLastUpdated)) {
+        console.log('Artist songs are up to date, no refresh needed');
+        return { 
+            success: true, 
+            message: 'Songs already up to date',
+            totalSongs: (artistData.songIds || []).length,
+            isUpToDate: true
+        };
+    }
+    
+    const artistId = artistData.geniusId;
+    if (!artistId) {
+        throw new Error('Artist does not have a Genius ID');
+    }
+    
+    let page = 1;
+    let allSongIds = [...(artistData.songIds || [])];
+    let totalFetched = 0;
+    const maxSongs = 1000;
+    
+    console.log(`Starting with ${allSongIds.length} existing songs`);
+    
+    // Fetch songs page by page
+    while (totalFetched < maxSongs) {
+        console.log(`Fetching page ${page}...`);
+        
+        const result = await getSongsByArtist(artistId, page);
+        
+        if (result.songs.length === 0) {
+            console.log('No more songs available');
+            break;
+        }
+        
+        // Store songs in Firestore
+        const storedSongIds = await storeSongsInFirestore(result.songs);
+        
+        // Add new song IDs to our list (filter out duplicates)
+        const newSongIds = storedSongIds.filter(id => !allSongIds.includes(id));
+        allSongIds.push(...newSongIds);
+        
+        totalFetched += result.songs.length;
+        
+        // Update artist document with progress
+        await updateArtistSongList(artistUrlKey, storedSongIds, {
+            songsFetched: allSongIds.length,
+            totalSongs: allSongIds.length,
+            isFullyCached: !result.hasMore
+        });
+        
+        console.log(`Page ${page} complete: ${newSongIds.length} new songs, ${allSongIds.length} total`);
+        
+        // Break if no more pages
+        if (!result.hasMore) {
+            console.log('Reached end of songs for artist');
+            break;
+        }
+        
+        page++;
+        
+        // Small delay to be respectful to the API
+        await new Promise(resolve => setTimeout(resolve, 200));
+    }
+    
+    console.log(`Completed song population for ${artistUrlKey}: ${allSongIds.length} total songs`);
+    
+    return {
+        success: true,
+        totalSongs: allSongIds.length,
+        newSongs: totalFetched,
+        isFullyCached: totalFetched < maxSongs,
+        pagesProcessed: page - 1
+    };
+}
 
-// // Helper function to extract random 4 lines from lyrics
-// function extractRandomLyricsSegment(lyrics) {
-//     const lines = lyrics.split('\n').filter(line => line.trim() !== '');
-//     if (lines.length <= 4) {
-//         return lines.join('\n');
-//     }
+/**
+ * Orchestrates fetching all songs for an artist (up to 1000 songs)
+ * Called when client finds empty songIds array or when refresh is needed
+ */
+export const populateArtistSongs = onCall({
+    timeoutSeconds: 300, // 5 minutes for large artists
+    minInstances: 0,
+    maxInstances: 10,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { artistUrlKey } = request.data;
+    
+    if (!artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Artist URL key is required');
+    }
+    
+    try {
+        return await populateArtistSongsCore(artistUrlKey);
+    } catch (error) {
+        console.error(`Error populating songs for artist ${artistUrlKey}:`, error);
+        throw new HttpsError('internal', `Failed to populate artist songs: ${error.message}`);
+    }
+});
 
-//     const start = Math.floor(Math.random() * (lines.length - 4));
-//     return lines.slice(start, start + 4).join('\n');
-// }
+/**
+ * Core logic for scraping song lyrics (without Firebase Functions wrapper)
+ * @param {string[]} songIds - Array of song IDs to scrape
+ * @param {string} artistUrlKey - Artist document ID
+ * @returns {Promise<Object>} Result object
+ */
+async function scrapeSongLyricsCore(songIds, artistUrlKey) {
+    console.log(`Starting lyrics scraping for ${songIds.length} songs`);
+    
+    const results = {
+        successful: [],
+        failed: [],
+        skipped: []
+    };
+    
+    for (const songId of songIds) {
+        try {
+            console.log(`Scraping lyrics for song ${songId}`);
+            
+            // Get song document from Firestore
+            const songDoc = await getDoc(doc(db, 'songs', songId));
+            if (!songDoc.exists()) {
+                results.failed.push({ songId, error: 'Song not found' });
+                continue;
+            }
+            
+            const songData = songDoc.data();
+            
+            // Skip if already has lyrics or failed permanently
+            if (songData.lyrics || songData.scrapingStatus === 'failed') {
+                console.log(`Skipping song ${songId}: already processed`);
+                results.skipped.push(songId);
+                continue;
+            }
+            
+            // Check retry limit
+            if (songData.scrapingAttempts >= 2) {
+                console.log(`Skipping song ${songId}: max retries exceeded`);
+                results.failed.push({ songId, error: 'Max retries exceeded' });
+                continue;
+            }
+            
+            // Update status to 'scraping'
+            await updateDoc(doc(db, 'songs', songId), { 
+                scrapingStatus: 'scraping',
+                scrapingAttempts: (songData.scrapingAttempts || 0) + 1
+            });
+            
+            // Use existing lyrics scraping logic
+            const lyrics = await scrapeLyricsFromUrl(songData.url);
+            
+            if (lyrics && lyrics.trim().length > 0) {
+                // Update song document with lyrics
+                await updateDoc(doc(db, 'songs', songId), {
+                    lyrics: lyrics,
+                    lyricsScrapedAt: new Date(),
+                    scrapingStatus: 'completed',
+                    scrapingError: null
+                });
+                
+                results.successful.push(songId);
+                console.log(`Successfully scraped lyrics for song ${songId}: ${songData.title}`);
+            } else {
+                throw new Error('No lyrics found or empty lyrics');
+            }
+            
+        } catch (error) {
+            console.error(`Error scraping song ${songId}:`, error);
+            
+            // Update song document with error
+            await updateDoc(doc(db, 'songs', songId), {
+                scrapingStatus: 'failed',
+                scrapingError: error.message
+            });
+            
+            results.failed.push({ songId, error: error.message });
+        }
+        
+        // Small delay between songs
+        await new Promise(resolve => setTimeout(resolve, 300));
+    }
+    
+    // Update artist's cachedSongIds array
+    if (results.successful.length > 0) {
+        await updateDoc(doc(db, 'artists', artistUrlKey), {
+            cachedSongIds: arrayUnion(...results.successful),
+            lyricsScraped: increment(results.successful.length)
+        });
+    }
+    
+    console.log(`Lyrics scraping completed: ${results.successful.length} successful, ${results.failed.length} failed, ${results.skipped.length} skipped`);
+    
+    return {
+        success: true,
+        results: results,
+        scrapedCount: results.successful.length
+    };
+}
 
-// // Helper function to shuffle an array
-// function shuffleArray(array) {
-//     for (let i = array.length - 1; i > 0; i--) {
-//         const j = Math.floor(Math.random() * (i + 1));
-//         [array[i], array[j]] = [array[j], array[i]];
-//     }
-//     return array;
-// }
+/**
+ * Scrape lyrics for specified songs using existing scraping logic
+ * Batch operation for efficiency with retry logic
+ */
+export const scrapeSongLyrics = onCall({
+    timeoutSeconds: 300, // 5 minutes for batch scraping
+    minInstances: 0,
+    maxInstances: 20,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { songIds, artistUrlKey } = request.data;
+    
+    if (!songIds || !Array.isArray(songIds) || songIds.length === 0) {
+        throw new HttpsError('invalid-argument', 'Song IDs array is required');
+    }
+    
+    if (!artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Artist URL key is required');
+    }
+    
+    try {
+        return await scrapeSongLyricsCore(songIds, artistUrlKey);
+    } catch (error) {
+        console.error('Error in scrapeSongLyrics:', error);
+        throw new HttpsError('internal', `Failed to scrape lyrics: ${error.message}`);
+    }
+});
 
-// // Firebase Function to search for an artist and fetch lyrics
-// exports.searchArtistAndFetchLyrics = functions.https.onCall(async (data, context) => {
-//     const { artistName } = data;
+//TODO: Scrape entire lyrics for a song not just 4 lines
 
-//     try {
-//         const searches = await Client.songs.search(artistName);
-//         if (searches.length === 0) {
-//             throw new functions.https.HttpsError('not-found', 'Artist not found.');
-//         }
+/**
+ * Extract lyrics from a Genius song URL using existing scraping logic
+ * @param {string} songUrl - The Genius song URL
+ * @returns {Promise<string>} The extracted lyrics (4 lines)
+ */
+async function scrapeLyricsFromUrl(songUrl) {
+    try {
+        console.log(`Attempting to scrape lyrics from: ${songUrl}`);
+        
+        // Validate URL format
+        if (!songUrl || typeof songUrl !== 'string') {
+            throw new Error(`Invalid song URL: ${songUrl}`);
+        }
+        
+        if (!songUrl.includes('genius.com')) {
+            throw new Error(`URL does not appear to be a Genius URL: ${songUrl}`);
+        }
+        
+        // Fetch the song page with proper error handling
+        const songPageResponse = await fetchWithTimeout(songUrl, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+            }
+        });
+        
+        if (!songPageResponse.ok) {
+            throw new Error(`HTTP ${songPageResponse.status}: ${songPageResponse.statusText} for URL: ${songUrl}`);
+        }
+        
+        const songPageHtml = await songPageResponse.text();
+        
+        if (!songPageHtml || songPageHtml.length < 100) {
+            throw new Error('Received empty or invalid HTML response');
+        }
 
-//         // Shuffle search results to randomize song selection
-//         const shuffledSearches = shuffleArray(searches);
-//         const song = shuffledSearches[0]; // Select the first song after shuffling
-//         const lyrics = await song.lyrics();
-//         const songInfo = await song.fetch();
-//         const formattedLyrics = formatChars(lyrics);
-//         const randomLyricsSegment = extractRandomLyricsSegment(formattedLyrics);
+        // Parse the page with cheerio
+        const $ = cheerio.load(songPageHtml);
+        let lyricsHtml = '';
 
-//         const response = {
-//             title: song.title,
-//             artist: song.artist.name,
-//             lyrics: randomLyricsSegment,
-//             image: songInfo.album ? songInfo.album.image : null,
-//         };
+        // Select the container that includes the lyrics and retrieve the HTML
+        const lyricsContainer = $('div[class*="Lyrics__Container"]');
+        if (lyricsContainer.length > 0) {
+            lyricsHtml = lyricsContainer.html();
+        } else {
+            // Try alternative selectors
+            const altLyricsContainer = $('div[data-lyrics-container="true"]') || $('[class*="lyrics"]');
+            if (altLyricsContainer.length > 0) {
+                lyricsHtml = altLyricsContainer.html();
+            } else {
+                throw new Error('Lyrics container not found on page');
+            }
+        }
 
-//         return response;
-//     } catch (error) {
-//         console.error("Error fetching artist lyrics:", error);
-//         throw new functions.https.HttpsError('internal', 'Failed to fetch artist lyrics', error);
-//     }
-// });
+        if (!lyricsHtml || lyricsHtml.trim().length === 0) {
+            throw new Error('No lyrics content found in container');
+        }
+
+        // Clean the lyrics HTML (existing logic from getSongsById)
+        let lyrics = lyricsHtml.replace(/<button[^>]*>[\s\S]*?<\/button>/gi, '');
+        lyrics = lyrics.replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '');
+        lyrics = lyrics.replace(/<ul[^>]*>[\s\S]*?<\/ul>/gi, '');
+        lyrics = lyrics.replace(/<li[^>]*>[\s\S]*?<\/li>/gi, '');
+        lyrics = lyrics.replace(/<h2[^>]*>[\s\S]*?<\/h2>/gi, '');
+        lyrics = lyrics.replace(/<br\s*\/?>/gi, '\n');
+        lyrics = lyrics.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '');
+        lyrics = lyrics.replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, '');
+        lyrics = lyrics.replace(/<\/?a[^>]*>/gi, '');
+        lyrics = lyrics.replace(/<span[^>]*>/gi, '');
+        lyrics = lyrics.replace(/<\/span>/gi, '');
+        lyrics = lyrics.replace(/<div[^>]*>/gi, '\n');
+        lyrics = lyrics.replace(/<\/div>/gi, '');
+        lyrics = lyrics.replace(/\[.*?\]/g, '');
+        lyrics = lyrics.replace(/<\/?(i|b)>/gi, '');
+        lyrics = lyrics.replace(/<[^>]*>/g, '');
+
+        // Decode HTML entities
+        lyrics = $('<textarea/>').html(lyrics).text();
+        lyrics = lyrics.trim();
+
+        if (!lyrics || lyrics.length < 10) {
+            throw new Error('Extracted lyrics are too short or empty');
+        }
+
+        const lines = lyrics.split('\n');
+        const filteredLines = lines.filter(line => line.trim() !== '' && !line.trim().match(/\[.*?\]/));
+
+        return filteredLines.join('\n');
+
+    } catch (error) {
+        console.error(`Error scraping lyrics from ${songUrl}:`, error);
+        // Include more context in the error for debugging
+        throw new Error(`Failed to scrape lyrics from ${songUrl}: ${error.message}`);
+    }
+}
+
+//TODO: Push songs to db when they are scraped instead of waiting for all songs to be scraped
+/**
+ * Core logic for loading songs around a specific position (without Firebase Functions wrapper)
+ * @param {string} songId - The song ID to start from
+ * @param {boolean} shouldReverse - Whether to load previous songs
+ * @param {string} artistUrlKey - Artist document ID
+ * @returns {Promise<Object>} Result object
+ */
+async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKey) {
+    console.log(`Loading songs starting from ${songId} for artist ${artistUrlKey}, reverse: ${shouldReverse}`);
+    
+    // Get artist document to find songIds array
+    const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+    if (!artistDoc.exists()) {
+        throw new Error('Artist not found');
+    }
+    
+    const artistData = artistDoc.data();
+    const songIds = artistData.songIds || [];
+    const cachedSongIds = artistData.cachedSongIds || [];
+    
+    console.log(`Artist has ${songIds.length} total songs, ${cachedSongIds.length} cached`);
+    
+    // Find position of songId in the songIds array
+    const currentPosition = songIds.indexOf(songId.toString());
+    if (currentPosition === -1) {
+        throw new Error('Song not found in artist song list');
+    }
+    
+    console.log(`Found song at position ${currentPosition}`);
+    
+    // Determine target range (10 songs in the specified direction)
+    let startPos, endPos;
+    if (shouldReverse) {
+        // Load previous 10 songs
+        startPos = Math.max(0, currentPosition - 10);
+        endPos = currentPosition;
+    } else {
+        // Load next 10 songs
+        startPos = currentPosition;
+        endPos = Math.min(songIds.length, currentPosition + 10);
+    }
+    
+    const targetSongIds = songIds.slice(startPos, endPos);
+    
+    // Filter out songs that already have lyrics cached
+    const songsNeedingLyrics = targetSongIds.filter(id => !cachedSongIds.includes(id));
+    
+    console.log(`Found ${songsNeedingLyrics.length} songs needing lyrics out of ${targetSongIds.length} target songs`);
+    
+    // Scrape missing lyrics if any
+    let scrapingResults = null;
+    if (songsNeedingLyrics.length > 0) {
+        try {
+            console.log(`Attempting to scrape lyrics for ${songsNeedingLyrics.length} songs`);
+            
+            // Call core scraping function directly
+            const scrapingResponse = await scrapeSongLyricsCore(songsNeedingLyrics, artistUrlKey);
+            scrapingResults = scrapingResponse.results;
+            
+            console.log(`Scraping completed: ${scrapingResults.successful.length} successful, ${scrapingResults.failed.length} failed`);
+            
+        } catch (scrapingError) {
+            console.error('Error during lyrics scraping:', scrapingError);
+            // Don't fail the entire function if scraping fails
+            // Just log the error and continue with what we have
+            scrapingResults = {
+                successful: [],
+                failed: songsNeedingLyrics.map(id => ({ songId: id, error: scrapingError.message })),
+                skipped: []
+            };
+        }
+    } else {
+        console.log('All target songs already have cached lyrics');
+    }
+    
+    // Fetch and return the loaded songs
+    const loadedSongs = {};
+    let songsLoadedCount = 0;
+    
+    for (const songId of targetSongIds) {
+        try {
+            const songDoc = await getDoc(doc(db, 'songs', songId));
+            if (songDoc.exists()) {
+                loadedSongs[songId] = { id: songId, ...songDoc.data() };
+                songsLoadedCount++;
+            } else {
+                console.warn(`Song document not found for ID: ${songId}`);
+            }
+        } catch (songError) {
+            console.error(`Error loading song ${songId}:`, songError);
+            // Continue with other songs even if one fails
+        }
+    }
+    
+    console.log(`Successfully loaded ${songsLoadedCount} songs`);
+    
+    return {
+        success: true,
+        queuePosition: currentPosition,
+        loadedSongs: loadedSongs,
+        scrapingResults: scrapingResults,
+        targetRange: { start: startPos, end: endPos },
+        songsScraped: scrapingResults ? scrapingResults.successful.length : 0,
+        songsLoaded: songsLoadedCount,
+        totalTargetSongs: targetSongIds.length
+    };
+}
+
+/**
+ * Intelligently loads songs around a specific position in the queue
+ * Handles forward/backward navigation efficiently
+ */
+export const loadStartingFromId = onCall({
+    timeoutSeconds: 120,
+    minInstances: 0,
+    maxInstances: 20,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { songId, shouldReverse = false, artistUrlKey } = request.data;
+    
+    if (!songId || !artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Song ID and artist URL key are required');
+    }
+    
+    try {
+        return await loadStartingFromIdCore(songId, shouldReverse, artistUrlKey);
+    } catch (error) {
+        console.error(`Error in loadStartingFromId for song ${songId}:`, error);
+        
+        // Provide more detailed error information
+        if (error instanceof HttpsError) {
+            throw error; // Re-throw HttpsError as-is
+        } else {
+            throw new HttpsError('internal', `Failed to load songs: ${error.message}`, {
+                songId,
+                artistUrlKey,
+                shouldReverse,
+                originalError: error.message
+            });
+        }
+    }
+});
+
+// ========================================
+// LEGACY FUNCTIONS (Keep for backward compatibility during transition)
+// ========================================
+
+/**
+ * Legacy function - keep for backward compatibility
+ * TODO: Gradually migrate clients to use new system
+ */
+export const initialArtistSearch = onCall({
+    timeoutSeconds: 60,
+    minInstances: 0,
+    maxInstances: 100,
+    region: 'us-central1'
+}, async (request, context) => {
+    // TODO: Implement legacy compatibility or redirect to new system
+    console.log('Legacy initialArtistSearch called - consider migrating to new system');
+    throw new HttpsError('unimplemented', 'This function is being migrated to the new caching system');
+});
+
+/**
+ * Legacy function - keep for backward compatibility
+ * TODO: Gradually migrate clients to use new system
+ */
+export const searchByArtistId = onCall({
+    timeoutSeconds: 60,
+    minInstances: 0,
+    maxInstances: 100,
+    region: 'us-central1'
+}, async (request, context) => {
+    // TODO: Implement legacy compatibility or redirect to new system
+    console.log('Legacy searchByArtistId called - consider migrating to new system');
+    throw new HttpsError('unimplemented', 'This function is being migrated to the new caching system');
+});
+
+// ========================================
+// UTILITY FUNCTIONS FOR TESTING
+// ========================================
+
+/**
+ * Test function to validate the new caching system
+ */
+export const testCacheSystem = onCall({
+    timeoutSeconds: 120,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { artistUrlKey, testType = 'populate' } = request.data;
+    
+    if (!artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Artist URL key is required for testing');
+    }
+    
+    // Initialize results at the beginning to avoid reference errors
+    const results = {
+        testType: testType,
+        artistUrlKey: artistUrlKey,
+        timestamp: new Date(),
+        steps: []
+    };
+    
+    try {
+        console.log(`Running cache system test for artist: ${artistUrlKey}`);
+        
+        // Test song population
+        if (testType === 'full' || testType === 'populate') {
+            console.log('Testing song population...');
+            try {
+                const populateResult = await populateArtistSongsCore(artistUrlKey);
+                results.steps.push({
+                    step: 'populate',
+                    success: populateResult.success,
+                    data: populateResult
+                });
+            } catch (error) {
+                console.error('Error in populate step:', error);
+                results.steps.push({
+                    step: 'populate',
+                    success: false,
+                    error: error.message
+                });
+            }
+        }
+        
+        // Test lyrics scraping
+        if (testType === 'full' || testType === 'scrape') {
+            console.log('Testing lyrics scraping...');
+            
+            try {
+                // Get first few song IDs from artist for testing
+                const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+                if (artistDoc.exists()) {
+                    const artistData = artistDoc.data();
+                    const testSongIds = (artistData.songIds || []).slice(0, 2); // Test with first 2 songs
+                    
+                    if (testSongIds.length > 0) {
+                        const scrapeResult = await scrapeSongLyricsCore(testSongIds, artistUrlKey);
+                        results.steps.push({
+                            step: 'scrape',
+                            success: scrapeResult.success,
+                            data: scrapeResult
+                        });
+                    } else {
+                        results.steps.push({
+                            step: 'scrape',
+                            success: false,
+                            error: 'No songs available for testing'
+                        });
+                    }
+                } else {
+                    results.steps.push({
+                        step: 'scrape',
+                        success: false,
+                        error: 'Artist not found'
+                    });
+                }
+            } catch (error) {
+                console.error('Error in scrape step:', error);
+                results.steps.push({
+                    step: 'scrape',
+                    success: false,
+                    error: error.message
+                });
+            }
+        }
+        
+        // Test smart loading
+        if (testType === 'full' || testType === 'load') {
+            console.log('Testing smart loading...');
+            
+            try {
+                const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+                if (artistDoc.exists()) {
+                    const artistData = artistDoc.data();
+                    const songIds = artistData.songIds || [];
+                    
+                    if (songIds.length > 5) {
+                        const testSongId = songIds[2]; // Test with 3rd song
+                        const loadResult = await loadStartingFromIdCore(testSongId, false, artistUrlKey);
+                        results.steps.push({
+                            step: 'load',
+                            success: loadResult.success,
+                            data: loadResult
+                        });
+                    } else {
+                        results.steps.push({
+                            step: 'load',
+                            success: false,
+                            error: 'Not enough songs for testing smart loading'
+                        });
+                    }
+                } else {
+                    results.steps.push({
+                        step: 'load',
+                        success: false,
+                        error: 'Artist not found'
+                    });
+                }
+            } catch (error) {
+                console.error('Error in load step:', error);
+                results.steps.push({
+                    step: 'load',
+                    success: false,
+                    error: error.message
+                });
+            }
+        }
+        
+        // Determine overall success
+        const allStepsSuccessful = results.steps.every(step => step.success);
+        
+        return {
+            success: allStepsSuccessful,
+            testResults: results,
+            summary: {
+                totalSteps: results.steps.length,
+                successfulSteps: results.steps.filter(step => step.success).length,
+                failedSteps: results.steps.filter(step => !step.success).length
+            }
+        };
+        
+    } catch (error) {
+        console.error('Error in cache system test:', error);
+        
+        // Add the error as a failed step
+        results.steps.push({
+            step: 'error',
+            success: false,
+            error: error.message
+        });
+        
+        return {
+            success: false,
+            error: error.message,
+            testResults: results,
+            summary: {
+                totalSteps: results.steps.length,
+                successfulSteps: results.steps.filter(step => step.success).length,
+                failedSteps: results.steps.filter(step => !step.success).length
+            }
+        };
+    }
+});
+
+/**
+ * Helper function to get artist information for testing
+ */
+export const getArtistInfo = onCall({
+    timeoutSeconds: 30,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { artistUrlKey } = request.data;
+    
+    if (!artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Artist URL key is required');
+    }
+    
+    try {
+        const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+        if (!artistDoc.exists()) {
+            throw new HttpsError('not-found', 'Artist not found');
+        }
+        
+        const artistData = artistDoc.data();
+        
+        return {
+            success: true,
+            artist: {
+                name: artistData.name,
+                geniusId: artistData.geniusId,
+                totalSongs: (artistData.songIds || []).length,
+                cachedSongs: (artistData.cachedSongIds || []).length,
+                lastUpdated: artistData.songsLastUpdated,
+                isFullyCached: artistData.isFullyCached || false
+            }
+        };
+        
+    } catch (error) {
+        console.error(`Error getting artist info for ${artistUrlKey}:`, error);
+        throw new HttpsError('internal', `Failed to get artist info: ${error.message}`);
+    }
+});
+
+/**
+ * Diagnostic function to inspect song data and URLs
+ */
+export const diagnoseSongData = onCall({
+    timeoutSeconds: 60,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { artistUrlKey, songId } = request.data;
+    
+    if (!artistUrlKey) {
+        throw new HttpsError('invalid-argument', 'Artist URL key is required');
+    }
+    
+    try {
+        const results = {
+            timestamp: new Date(),
+            artistUrlKey: artistUrlKey,
+            diagnostics: {}
+        };
+        
+        // Get artist info
+        const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
+        if (!artistDoc.exists()) {
+            throw new HttpsError('not-found', 'Artist not found');
+        }
+        
+        const artistData = artistDoc.data();
+        results.diagnostics.artist = {
+            name: artistData.name,
+            totalSongs: (artistData.songIds || []).length,
+            cachedSongs: (artistData.cachedSongIds || []).length,
+            firstFewSongIds: (artistData.songIds || []).slice(0, 5)
+        };
+        
+        // If specific song ID provided, examine it
+        if (songId) {
+            const songDoc = await getDoc(doc(db, 'songs', songId));
+            if (songDoc.exists()) {
+                const songData = songDoc.data();
+                results.diagnostics.specificSong = {
+                    id: songId,
+                    title: songData.title,
+                    url: songData.url,
+                    urlValid: songData.url && songData.url.includes('genius.com'),
+                    hasLyrics: !!songData.lyrics,
+                    scrapingStatus: songData.scrapingStatus,
+                    scrapingAttempts: songData.scrapingAttempts,
+                    scrapingError: songData.scrapingError
+                };
+            } else {
+                results.diagnostics.specificSong = {
+                    id: songId,
+                    exists: false
+                };
+            }
+        } else {
+            // Examine first few songs
+            const songIds = (artistData.songIds || []).slice(0, 3);
+            results.diagnostics.sampleSongs = [];
+            
+            for (const id of songIds) {
+                const songDoc = await getDoc(doc(db, 'songs', id));
+                if (songDoc.exists()) {
+                    const songData = songDoc.data();
+                    results.diagnostics.sampleSongs.push({
+                        id: id,
+                        title: songData.title,
+                        url: songData.url,
+                        urlValid: songData.url && songData.url.includes('genius.com'),
+                        hasLyrics: !!songData.lyrics,
+                        scrapingStatus: songData.scrapingStatus
+                    });
+                } else {
+                    results.diagnostics.sampleSongs.push({
+                        id: id,
+                        exists: false
+                    });
+                }
+            }
+        }
+        
+        return {
+            success: true,
+            diagnostics: results
+        };
+        
+    } catch (error) {
+        console.error(`Error in diagnoseSongData:`, error);
+        throw new HttpsError('internal', `Failed to diagnose song data: ${error.message}`);
+    }
+});
+
+/**
+ * Test lyrics scraping for a specific song URL
+ */
+export const testLyricsScraping = onCall({
+    timeoutSeconds: 60,
+    region: 'us-central1'
+}, async (request, context) => {
+    const { songUrl, songId } = request.data;
+    
+    if (!songUrl && !songId) {
+        throw new HttpsError('invalid-argument', 'Either songUrl or songId is required');
+    }
+    
+    try {
+        let testUrl = songUrl;
+        
+        // If songId provided, get URL from database
+        if (songId && !songUrl) {
+            const songDoc = await getDoc(doc(db, 'songs', songId));
+            if (!songDoc.exists()) {
+                throw new HttpsError('not-found', 'Song not found');
+            }
+            testUrl = songDoc.data().url;
+        }
+        
+        console.log(`Testing lyrics scraping for URL: ${testUrl}`);
+        
+        const startTime = Date.now();
+        const lyrics = await scrapeLyricsFromUrl(testUrl);
+        const duration = Date.now() - startTime;
+        
+        return {
+            success: true,
+            url: testUrl,
+            lyrics: lyrics,
+            lyricsLength: lyrics.length,
+            lyricsLines: lyrics.split('\n').length,
+            scrapingDuration: duration
+        };
+        
+    } catch (error) {
+        console.error(`Error testing lyrics scraping:`, error);
+        return {
+            success: false,
+            url: songUrl || 'unknown',
+            error: error.message,
+            errorType: error.constructor.name
+        };
+    }
+});
