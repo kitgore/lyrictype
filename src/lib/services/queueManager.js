@@ -1,0 +1,325 @@
+// src/lib/services/queueManager.js
+import { loadArtistForQueue, loadSongsForNavigation } from './artistService.js';
+
+/**
+ * New Queue Manager that integrates with the caching system
+ * This replaces the legacy queue functionality with cache-aware operations
+ */
+export class CacheAwareQueueManager {
+    constructor() {
+        this.songs = [];
+        this.currentIndex = 0;
+        this.artistUrlKey = null;
+        this.artistData = null;
+        this.songIds = []; // Master list from Firebase
+        this.loadedSongs = new Map(); // Cache of loaded song data
+        this.isLoading = false;
+        this.preloadRadius = 5; // Number of songs to keep loaded around current position
+    }
+
+    /**
+     * Initialize queue with a new artist
+     * Step 1 of your queue process: Check if songList is populated, create queue
+     */
+    async initializeWithArtist(artist) {
+        console.log('🚀 Initializing queue with artist:', artist.name);
+        
+        try {
+            this.isLoading = true;
+            
+            // Load artist and get initial song
+            const result = await loadArtistForQueue(artist);
+            
+            // Set up queue metadata
+            this.artistUrlKey = result.queueInfo.artistUrlKey;
+            this.artistData = result.artistData;
+            this.songIds = result.queueInfo.songIds;
+            this.currentIndex = 0;
+            
+            // Clear and initialize songs array with placeholders
+            this.songs = this.songIds.map((id, index) => ({
+                id: id,
+                index: index,
+                loaded: false,
+                cached: result.queueInfo.cachedSongs > index, // Assume first N songs are cached
+                title: `Loading...`,
+                artist: artist.name
+            }));
+            
+            // Load the first song immediately
+            this.loadedSongs.set(result.song.id, result.song);
+            this.songs[0] = {
+                ...result.song,
+                index: 0,
+                loaded: true,
+                cached: true
+            };
+            
+            console.log(`📋 Queue initialized: ${this.songs.length} songs, starting with "${result.song.title}"`);
+            
+            // Start preloading next songs in background
+            this.preloadAroundCurrentPosition();
+            
+            return result.song;
+            
+        } catch (error) {
+            console.error('Error initializing queue:', error);
+            throw error;
+        } finally {
+            this.isLoading = false;
+        }
+    }
+
+    /**
+     * Get current song
+     */
+    getCurrentSong() {
+        if (this.currentIndex >= 0 && this.currentIndex < this.songs.length) {
+            return this.songs[this.currentIndex];
+        }
+        return null;
+    }
+
+    /**
+     * Move to next song with smart loading
+     * Step 3 of your queue process: Check if songs are cached, load if needed
+     */
+    async goToNext() {
+        if (this.currentIndex >= this.songs.length - 1) {
+            console.log('📭 Reached end of queue');
+            return null;
+        }
+
+        this.currentIndex++;
+        const nextSong = this.songs[this.currentIndex];
+        
+        console.log(`⏭️ Moving to next song: ${nextSong.title} (${this.currentIndex + 1}/${this.songs.length})`);
+        
+        // If song is not loaded, load it now
+        if (!nextSong.loaded) {
+            await this.loadSongAtIndex(this.currentIndex);
+        }
+        
+        // Preload surrounding songs
+        this.preloadAroundCurrentPosition();
+        
+        return this.songs[this.currentIndex];
+    }
+
+    /**
+     * Move to previous song
+     */
+    async goToPrevious() {
+        if (this.currentIndex <= 0) {
+            console.log('📭 Already at beginning of queue');
+            return null;
+        }
+
+        this.currentIndex--;
+        const prevSong = this.songs[this.currentIndex];
+        
+        console.log(`⏮️ Moving to previous song: ${prevSong.title} (${this.currentIndex + 1}/${this.songs.length})`);
+        
+        // If song is not loaded, load it now
+        if (!prevSong.loaded) {
+            await this.loadSongAtIndex(this.currentIndex);
+        }
+        
+        // Preload surrounding songs
+        this.preloadAroundCurrentPosition();
+        
+        return this.songs[this.currentIndex];
+    }
+
+    /**
+     * Jump to specific song in queue
+     */
+    async goToIndex(index) {
+        if (index < 0 || index >= this.songs.length) {
+            throw new Error(`Invalid queue index: ${index}`);
+        }
+
+        this.currentIndex = index;
+        const targetSong = this.songs[index];
+        
+        console.log(`🎯 Jumping to song: ${targetSong.title} (${index + 1}/${this.songs.length})`);
+        
+        // If song is not loaded, load it now
+        if (!targetSong.loaded) {
+            await this.loadSongAtIndex(index);
+        }
+        
+        // Preload surrounding songs
+        this.preloadAroundCurrentPosition();
+        
+        return this.songs[index];
+    }
+
+    /**
+     * Load a specific song by index
+     */
+    async loadSongAtIndex(index) {
+        if (index < 0 || index >= this.songs.length) {
+            throw new Error(`Invalid song index: ${index}`);
+        }
+
+        const songId = this.songIds[index];
+        
+        // Check if already loaded
+        if (this.loadedSongs.has(songId)) {
+            const loadedSong = this.loadedSongs.get(songId);
+            this.songs[index] = { ...loadedSong, index, loaded: true, cached: true };
+            return this.songs[index];
+        }
+
+        try {
+            console.log(`🔄 Loading song at index ${index}: ${songId}`);
+            
+            // Use the navigation loader to get this song and surrounding ones
+            const result = await loadSongsForNavigation(songId, false, this.artistUrlKey);
+            
+            // Update loaded songs cache
+            Object.entries(result.songs).forEach(([id, songData]) => {
+                this.loadedSongs.set(id, songData);
+                
+                // Find and update the song in our queue
+                const songIndex = this.songIds.indexOf(id);
+                if (songIndex !== -1) {
+                    this.songs[songIndex] = {
+                        ...songData,
+                        index: songIndex,
+                        loaded: true,
+                        cached: true
+                    };
+                }
+            });
+            
+            console.log(`✅ Loaded ${Object.keys(result.songs).length} songs around position ${index}`);
+            
+            return this.songs[index];
+            
+        } catch (error) {
+            console.error(`Error loading song at index ${index}:`, error);
+            
+            // Mark as failed but keep placeholder
+            this.songs[index] = {
+                ...this.songs[index],
+                loaded: false,
+                error: error.message,
+                title: 'Failed to load',
+                lyrics: 'This song could not be loaded. Please try the next song.'
+            };
+            
+            throw error;
+        }
+    }
+
+    /**
+     * Preload songs around current position for smooth navigation
+     * This implements the smart preloading from your plan
+     */
+    async preloadAroundCurrentPosition() {
+        if (this.isLoading) return; // Avoid concurrent loading
+        
+        const startIndex = Math.max(0, this.currentIndex - 2);
+        const endIndex = Math.min(this.songs.length - 1, this.currentIndex + this.preloadRadius);
+        
+        console.log(`🔄 Preloading songs ${startIndex}-${endIndex} around current position ${this.currentIndex}`);
+        
+        // Find songs that need loading
+        const songsToLoad = [];
+        for (let i = startIndex; i <= endIndex; i++) {
+            if (!this.songs[i].loaded && !this.loadedSongs.has(this.songIds[i])) {
+                songsToLoad.push(i);
+            }
+        }
+        
+        if (songsToLoad.length === 0) {
+            console.log('✅ All nearby songs already loaded');
+            return;
+        }
+        
+        // Load songs in background (don't await to avoid blocking)
+        this.loadSongsInBackground(songsToLoad);
+    }
+
+    /**
+     * Load multiple songs in background without blocking UI
+     */
+    async loadSongsInBackground(indices) {
+        console.log(`🔄 Background loading ${indices.length} songs:`, indices);
+        
+        // Load songs in small batches to avoid overwhelming the system
+        const batchSize = 3;
+        for (let i = 0; i < indices.length; i += batchSize) {
+            const batch = indices.slice(i, i + batchSize);
+            
+            // Load batch in parallel
+            const loadPromises = batch.map(async (index) => {
+                try {
+                    await this.loadSongAtIndex(index);
+                } catch (error) {
+                    console.warn(`Background load failed for song ${index}:`, error);
+                }
+            });
+            
+            await Promise.all(loadPromises);
+            
+            // Small delay between batches
+            if (i + batchSize < indices.length) {
+                await new Promise(resolve => setTimeout(resolve, 500));
+            }
+        }
+        
+        console.log(`✅ Background loading complete for ${indices.length} songs`);
+    }
+
+    /**
+     * Get queue status for UI
+     */
+    getQueueStatus() {
+        const loadedCount = this.songs.filter(song => song.loaded).length;
+        const cachedCount = this.songs.filter(song => song.cached).length;
+        
+        return {
+            totalSongs: this.songs.length,
+            loadedSongs: loadedCount,
+            cachedSongs: cachedCount,
+            currentIndex: this.currentIndex,
+            currentSong: this.getCurrentSong(),
+            canGoNext: this.currentIndex < this.songs.length - 1,
+            canGoPrevious: this.currentIndex > 0,
+            artistName: this.artistData?.name,
+            artistUrlKey: this.artistUrlKey
+        };
+    }
+
+    /**
+     * Get songs for queue display (next N songs)
+     */
+    getUpcomingSongs(count = 5) {
+        const upcoming = [];
+        for (let i = this.currentIndex + 1; i < Math.min(this.currentIndex + 1 + count, this.songs.length); i++) {
+            upcoming.push(this.songs[i]);
+        }
+        return upcoming;
+    }
+
+    /**
+     * Clear queue
+     */
+    clear() {
+        this.songs = [];
+        this.currentIndex = 0;
+        this.artistUrlKey = null;
+        this.artistData = null;
+        this.songIds = [];
+        this.loadedSongs.clear();
+        this.isLoading = false;
+        
+        console.log('🗑️ Queue cleared');
+    }
+}
+
+// Export singleton instance for global use
+export const queueManager = new CacheAwareQueueManager();

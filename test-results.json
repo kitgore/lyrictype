@@ -1,20 +1,20 @@
 {
-  "timestamp": "2025-07-31T04:40:43.287Z",
+  "timestamp": "2025-08-05T09:14:26.594Z",
   "tests": [
     {
       "test": "getArtistInfo",
       "success": true,
-      "timestamp": "2025-07-31T04:40:43.901Z",
+      "timestamp": "2025-08-05T09:14:27.280Z",
       "data": {
         "success": true,
         "artist": {
-          "name": "0",
-          "geniusId": "38078",
-          "totalSongs": 49,
+          "name": "0 похвал (0 pohval)",
+          "geniusId": "3398874",
+          "totalSongs": 88,
           "cachedSongs": 22,
           "lastUpdated": {
-            "seconds": 1753849159,
-            "nanoseconds": 850000000
+            "seconds": 1754085355,
+            "nanoseconds": 493000000
           },
           "isFullyCached": true
         }
@@ -24,11 +24,11 @@
     {
       "test": "populateArtistSongs",
       "success": true,
-      "timestamp": "2025-07-31T04:40:44.484Z",
+      "timestamp": "2025-08-05T09:14:27.964Z",
       "data": {
         "success": true,
         "message": "Songs already up to date",
-        "totalSongs": 49,
+        "totalSongs": 88,
         "isUpToDate": true
       },
       "error": null
@@ -36,16 +36,16 @@
     {
       "test": "scrapeSongLyrics",
       "success": true,
-      "timestamp": "2025-07-31T04:40:45.307Z",
+      "timestamp": "2025-08-05T09:14:28.799Z",
       "data": {
         "success": true,
         "results": {
           "successful": [],
           "failed": [],
           "skipped": [
-            "3789007",
-            "3667543",
-            "3681864"
+            "9086519",
+            "8928399",
+            "9121403"
           ]
         },
         "scrapedCount": 0
@@ -55,256 +55,256 @@
     {
       "test": "loadStartingFromId",
       "success": true,
-      "timestamp": "2025-07-31T04:40:46.532Z",
+      "timestamp": "2025-08-05T09:14:29.853Z",
       "data": {
         "success": true,
-        "queuePosition": 24,
+        "queuePosition": 44,
         "loadedSongs": {
-          "4103317": {
-            "id": "4103317",
-            "artistNames": "SYKI",
-            "title": "​the wicked will never die!!",
+          "8890116": {
+            "id": "8890116",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "scrapingStatus": "completed",
+            "lyrics": "Захотел бб пока\nЗахотел бм — собрал\nЗахотел бф — собрал\nЗахотел байбек — прожал",
+            "scrapingAttempts": 1,
+            "scrapingError": null,
+            "url": "https://genius.com/0-0-pohval-andreyimmersion-song-about-andreyimmersion-lyrics",
+            "songArtImageUrl": "https://images.genius.com/640994eb5d66e6e216b2b35acaa2fdf0.1000x1000x1.png",
             "lyricsScrapedAt": {
-              "seconds": 1753851565,
-              "nanoseconds": 950000000
+              "seconds": 1754085370,
+              "nanoseconds": 836000000
+            },
+            "artistNames": "0 похвал (0 pohval)",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "id": 3398874,
+              "name": "0 похвал (0 pohval)"
+            },
+            "title": "Трек про andreyIMMERSION (Song about AndreyIMMERSION)"
+          },
+          "9068023": {
+            "id": "9068023",
+            "songArtImageUrl": "https://images.genius.com/9a590e08e0eb37b13c01cbc8cbe54645.892x892x1.png",
+            "title": "Сузуя Джузо (Suzuya Juuzou)",
+            "lyrics": "Я не смог тебя спасти\nТебя снова потерял, прости. Прости меня\nПомнишь прогулки? Долгие ночи?\nРуки на шее? Ты — моё украшение",
+            "artistNames": "0 похвал (0 pohval) & LikArt",
+            "lyricsScrapedAt": {
+              "seconds": 1754085369,
+              "nanoseconds": 492000000
             },
             "scrapingError": null,
             "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "songArtImageUrl": "https://images.genius.com/ccb1031ba9923d28120980f556a9f2f9.500x500x1.jpg",
-            "primaryArtist": {
-              "url": "https://genius.com/artists/Syki",
-              "id": 1288367,
-              "name": "SYKI"
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
             },
             "scrapingStatus": "completed",
             "scrapingAttempts": 1,
-            "lyrics": "Cause I'm bathing in desire and got hallow in my blood!\nAll the lights out, I live in the dark!\nAin't no turning back, I'm stuck where I belong!\nI've found the wicked never die after all!",
-            "url": "https://genius.com/Syki-the-wicked-will-never-die-lyrics"
-          },
-          "4891360": {
-            "id": "4891360",
-            "url": "https://genius.com/Syki-autumnals-revival-lyrics",
-            "scrapingStatus": "completed",
-            "title": "​autumnal’s :”REVIVAL”:",
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "songArtImageUrl": "https://images.genius.com/4d4c2a917baedb28381319cae75373fe.500x500x1.jpg",
-            "lyrics": "Yeah, yeah, silent\nI'm the one who knew I'm great\nWhen I came by, you laughed\nWhen I came by, you left",
-            "scrapingAttempts": 1,
-            "lyricsScrapedAt": {
-              "seconds": 1753851573,
-              "nanoseconds": 599000000
-            },
-            "scrapingError": null,
+            "url": "https://genius.com/0-0-pohval-and-likart-suzuya-juuzou-lyrics",
             "primaryArtist": {
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki",
-              "name": "SYKI"
-            },
-            "artistNames": "SYKI"
-          },
-          "5127236": {
-            "id": "5127236",
-            "primaryArtist": {
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki",
-              "name": "SYKI"
-            },
-            "lyrics": "Uh\nI don't sleep anymore\nThink I'd rather be a stumbling corpse\nYeah yeah",
-            "title": ":NIGHTMARES AWAIT.. i’m not sleepy anymore.",
-            "scrapingError": null,
-            "url": "https://genius.com/Syki-nightmares-await-im-not-sleepy-anymore-lyrics",
-            "scrapingAttempts": 1,
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "scrapingStatus": "completed",
-            "songArtImageUrl": "https://images.genius.com/c822e7085a19c9f5603429c2854b0f99.500x500x1.jpg",
-            "lyricsScrapedAt": {
-              "seconds": 1753851570,
-              "nanoseconds": 504000000
-            },
-            "artistNames": "SYKI"
-          },
-          "5685388": {
-            "id": "5685388",
-            "scrapingAttempts": 1,
-            "artistNames": "SYKI",
-            "url": "https://genius.com/Syki-eve-lyrics",
-            "lyricsScrapedAt": {
-              "seconds": 1753851574,
-              "nanoseconds": 666000000
-            },
-            "scrapingError": null,
-            "primaryArtist": {
-              "url": "https://genius.com/artists/Syki",
-              "name": "SYKI",
-              "id": 1288367
-            },
-            "lyrics": "Uh, you said\nI can't take this anymore\nYou said\nI can't live without you here",
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
-            "title": "​eve",
-            "scrapingStatus": "completed"
-          },
-          "5685389": {
-            "id": "5685389",
-            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
-            "scrapingStatus": "completed",
-            "title": "​i am the one who sinks into the night.. ::evils of the night::",
-            "primaryArtist": {
-              "name": "SYKI",
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki"
-            },
-            "url": "https://genius.com/Syki-i-am-the-one-who-sinks-into-the-night-evils-of-the-night-lyrics",
-            "lyrics": "You sit before the one, who sinks into the night\nDeep within the night\nEvils of the night\nI await as they arise, knowing I would never die",
-            "scrapingError": null,
-            "lyricsScrapedAt": {
-              "seconds": 1753851577,
-              "nanoseconds": 669000000
-            },
-            "artistNames": "SYKI",
-            "scrapingAttempts": 1,
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
+              "id": 3398874,
+              "name": "0 похвал (0 pohval)",
+              "url": "https://genius.com/artists/0-0-pohval"
             }
           },
-          "5685390": {
-            "id": "5685390",
-            "title": "​burn the city.",
-            "scrapingAttempts": 1,
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "scrapingStatus": "completed",
-            "artistNames": "SYKI",
-            "lyricsScrapedAt": {
-              "seconds": 1753851569,
-              "nanoseconds": 147000000
-            },
-            "lyrics": "Deceptive? Thought I told you I would never die\nDeceptive men are who rule you\nDeception is what rules you\nYou'll get handled",
-            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
-            "url": "https://genius.com/Syki-burn-the-city-lyrics",
+          "9169658": {
+            "id": "9169658",
+            "lyrics": "Идёт минута сорок, у челов смертей под сто\nНа фоне разборок ему тащить это дерьмо\nСто gold, Refresher Orb\nHyperstone второй от нехватки слотов",
+            "songArtImageUrl": "https://images.genius.com/c316abe434dbb6cefc6e8ce0bcf07088.1000x1000x1.png",
             "primaryArtist": {
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki",
-              "name": "SYKI"
-            },
-            "scrapingError": null
-          },
-          "5685391": {
-            "id": "5685391",
-            "url": "https://genius.com/Syki-satin-lyrics",
-            "artistNames": "SYKI",
-            "primaryArtist": {
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki",
-              "name": "SYKI"
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)"
             },
             "lyricsScrapedAt": {
-              "seconds": 1753851579,
-              "nanoseconds": 409000000
+              "seconds": 1754085372,
+              "nanoseconds": 173000000
             },
-            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "scrapingStatus": "completed",
-            "lyrics": "So dancer\nCan you make it go faster?\nI'm not coming down off this Fanta\nWith every Percocet, I'm feelin' like a phantom",
-            "scrapingAttempts": 1,
-            "title": "::::::SATIN::::::",
-            "scrapingError": null
-          },
-          "5685392": {
-            "id": "5685392",
-            "scrapingStatus": "completed",
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "artistNames": "SYKI",
-            "lyrics": "Made me step out in that Burberry, yeah\nAin't nobody gonna break me, yeah\nTeach the law just like the Pharisees, yeah\nYeah, ain't they tell you 'bout a prophecy? Yeah",
-            "primaryArtist": {
-              "name": "SYKI",
-              "id": 1288367,
-              "url": "https://genius.com/artists/Syki"
-            },
-            "title": "00sanctity00 =’PROTOTYPE’=",
-            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
-            "lyricsScrapedAt": {
-              "seconds": 1753851567,
-              "nanoseconds": 386000000
-            },
+            "url": "https://genius.com/0-0-pohval-solo-speed-up-lyrics",
             "scrapingError": null,
             "scrapingAttempts": 1,
-            "url": "https://genius.com/Syki-00sanctity00-prototype-lyrics"
-          },
-          "5831992": {
-            "id": "5831992",
-            "artistNames": "SYKI",
-            "url": "https://genius.com/Syki-veil-lyrics",
-            "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            },
-            "scrapingAttempts": 1,
             "scrapingStatus": "completed",
-            "songArtImageUrl": "https://images.genius.com/d4da50954d1f2f2d1008358fe4711010.500x500x1.jpg",
-            "lyrics": "I'm sprayin' shit\nMake 'em exhale knowin' that I'm sprayin' shit\n(C'mon, be honest you can't even relate with us)\nPromise",
-            "lyricsScrapedAt": {
-              "seconds": 1753851576,
-              "nanoseconds": 94000000
-            },
-            "scrapingError": null,
-            "title": "​veil ’",
-            "primaryArtist": {
-              "id": 1288367,
-              "name": "SYKI",
-              "url": "https://genius.com/artists/Syki"
+            "artistNames": "0 похвал (0 pohval)",
+            "title": "SOLO (Speed Up)",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
             }
           },
-          "8514728": {
-            "id": "8514728",
-            "title": "​withered.",
+          "9250185": {
+            "id": "9250185",
+            "title": "CSGORUN",
+            "primaryArtist": {
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)"
+            },
+            "songArtImageUrl": "https://images.genius.com/640994eb5d66e6e216b2b35acaa2fdf0.1000x1000x1.png",
+            "lyrics": "Сам поднял, просто играл, мог бы сдохнуть от голода\nПолучаю, но в день — это спидран\nЗалетаю на краш, выбиваю баш\nЯ вордил на тачку в CSGO RUN",
+            "url": "https://genius.com/0-0-pohval-csgorun-lyrics",
             "scrapingError": null,
+            "artistNames": "0 похвал (0 pohval)",
+            "scrapingStatus": "completed",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085375,
+              "nanoseconds": 78000000
+            },
+            "scrapingAttempts": 1
+          },
+          "9498528": {
+            "id": "9498528",
+            "scrapingError": null,
+            "url": "https://genius.com/0-0-pohval-keep-it-up-lyrics",
+            "lyricsScrapedAt": {
+              "seconds": 1754085366,
+              "nanoseconds": 556000000
+            },
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "title": "KEEP IT UP",
+            "lyrics": "Life! Believe is not to dream\nSo dark as sages say\nOft a little morning rain\nForetells a pleasant day",
+            "artistNames": "0 похвал (0 pohval)",
+            "songArtImageUrl": "https://images.genius.com/b15054439be122ea4ceac4dbf812419e.1000x1000x1.png",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "primaryArtist": {
+              "name": "0 похвал (0 pohval)",
+              "url": "https://genius.com/artists/0-0-pohval",
+              "id": 3398874
+            }
+          },
+          "9756135": {
+            "id": "9756135",
+            "lyrics": "Yeah, I feel like go star\nWrite or call me\nAnd I will always be in your mind\nЗавернув на тротуар с дороги я замечаю, что знаю",
+            "scrapingStatus": "completed",
+            "artistNames": "0 похвал (0 pohval)",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085377,
+              "nanoseconds": 807000000
+            },
+            "scrapingAttempts": 1,
+            "url": "https://genius.com/0-0-pohval-resonance-lyrics",
+            "songArtImageUrl": "https://images.genius.com/eeaeb309fede8097af4d1e79c25fc525.999x999x1.png",
+            "scrapingError": null,
+            "title": "РЕЗОНАНС (RESONANCE)",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            }
+          },
+          "10234626": {
+            "id": "10234626",
+            "scrapingError": null,
+            "artistNames": "0 похвал (0 pohval)",
+            "url": "https://genius.com/0-0-pohval-fall-asleep-lyrics",
+            "songArtImageUrl": "https://images.genius.com/a5c5e47e5de372febc1b4e1db4ef95e4.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "title": "Fall asleep",
+            "lyricsScrapedAt": {
+              "seconds": 1754085376,
+              "nanoseconds": 445000000
+            },
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
             "scrapingAttempts": 1,
             "primaryArtist": {
-              "url": "https://genius.com/artists/Syki",
-              "id": 1288367,
-              "name": "SYKI"
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "lyrics": "Я не могу уснуть...\nМеня не спасет повязка на глаза\nИ в одеяле я не ощущаю прелесть сна\nМой мозг ищет угрозу там, где нету зла"
+          },
+          "10255125": {
+            "id": "10255125",
+            "lyrics": "Пиздец будет, вы щас ахуеете, вы знаете о чём щас подумаете, такого уж точно я не ожидал\nБлин реально не ожидал? То что Серёга Пират возьмёт мой трек годовалой давности и ничего не поменяет в нём и прямо так зальёт на площадки, хух, горжусь-горжусь\nТут только я талант, ха, и это так\nЯ не думал год назад что мою демку спиздят",
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "url": "https://genius.com/0-0-pohval-diss-diss-on-serega-pirat-lyrics",
+            "scrapingError": null,
+            "songArtImageUrl": "https://images.genius.com/a993edb4d6227175d39c80a7cb9abb82.706x709x1.png",
+            "artistNames": "0 похвал (0 pohval)",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "title": "DISS на СЕРЕГУ ПИРАТА (DISS on SEREGA PIRAT)",
+            "lyricsScrapedAt": {
+              "seconds": 1754085373,
+              "nanoseconds": 549000000
+            }
+          },
+          "10557181": {
+            "id": "10557181",
+            "songArtImageUrl": "https://images.genius.com/5a8745f5b4e24cd54b9155c16f4f2525.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "lyrics": "Архангел сказал: «Не предайся греху», у-у\nНо я так не могу, у-у\nPayment to God and I'll pay to life\nСейчас деньги решают, кто в Ад, кто в Рай",
+            "title": "Payment to God",
+            "url": "https://genius.com/0-0-pohval-payment-to-god-lyrics",
+            "artistNames": "0 похвал (0 pohval)",
+            "scrapingAttempts": 1,
+            "lyricsScrapedAt": {
+              "seconds": 1754085364,
+              "nanoseconds": 993000000
+            },
+            "scrapingError": null,
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            }
+          },
+          "10711068": {
+            "id": "10711068",
+            "primaryArtist": {
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval"
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085367,
+              "nanoseconds": 997000000
             },
             "scrapingStatus": "completed",
-            "lyricsScrapedAt": {
-              "seconds": 1753851571,
-              "nanoseconds": 900000000
-            },
-            "artistNames": "SYKI",
-            "lyrics": "Never knew you'd ever go\nCut open and I'll leave it so\nMy dear lady, whom I'll never know\nIs driven by a withered soul",
-            "songArtImageUrl": "https://images.genius.com/1139e4b951664daf2e47432204c95ffd.500x500x1.jpg",
-            "url": "https://genius.com/Syki-withered-lyrics",
             "addedAt": {
-              "seconds": 1753849158,
-              "nanoseconds": 99000000
-            }
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "title": "НЕДЕЛЯ (WEEK)",
+            "url": "https://genius.com/0-0-pohval-and-syzzarp-week-lyrics",
+            "lyrics": "Zero-zero\nНеделя, столько нужно чтобы сделать кэша смело\nЯ поставил сроки сам себе и сделал\nМного кэша сделал, много кэша сделал",
+            "artistNames": "0 похвал (0 pohval) & Syzzarp",
+            "scrapingError": null,
+            "songArtImageUrl": "https://images.genius.com/cd2cd3d09158e3c8e61f818c7f7c22c4.1000x1000x1.png",
+            "scrapingAttempts": 1
           }
         },
         "scrapingResults": null,
         "targetRange": {
-          "start": 24,
-          "end": 34
+          "start": 44,
+          "end": 54
         },
         "songsScraped": 0,
         "songsLoaded": 10,
@@ -315,12 +315,12 @@
     {
       "test": "comprehensiveFlow",
       "success": true,
-      "timestamp": "2025-07-31T04:40:47.448Z",
+      "timestamp": "2025-08-05T09:14:31.159Z",
       "data": {
         "success": true,
         "testResults": {
           "testType": "full",
-          "artistUrlKey": "0",
+          "artistUrlKey": "0-0-pohval",
           "timestamp": {},
           "steps": [
             {
@@ -329,7 +329,7 @@
               "data": {
                 "success": true,
                 "message": "Songs already up to date",
-                "totalSongs": 49,
+                "totalSongs": 88,
                 "isUpToDate": true
               }
             },
@@ -342,8 +342,8 @@
                   "successful": [],
                   "failed": [],
                   "skipped": [
-                    "3789007",
-                    "3667543"
+                    "9086519",
+                    "8928399"
                   ]
                 },
                 "scrapedCount": 0
@@ -356,245 +356,245 @@
                 "success": true,
                 "queuePosition": 2,
                 "loadedSongs": {
-                  "3681864": {
-                    "id": "3681864",
-                    "url": "https://genius.com/Syki-pissed-off-lyrics",
+                  "8701174": {
+                    "id": "8701174",
                     "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
                     },
-                    "artistNames": "SYKI",
-                    "lyricsScrapedAt": {
-                      "seconds": 1753849165,
-                      "nanoseconds": 284000000
-                    },
-                    "primaryArtist": {
-                      "name": "SYKI",
-                      "url": "https://genius.com/artists/Syki",
-                      "id": 1288367
-                    },
-                    "title": "​pissed off.",
+                    "artistNames": "0 похвал (0 pohval) (Ft. Kijin)",
                     "scrapingAttempts": 1,
-                    "lyrics": "I can't say that you wanna ride, yeah\nDone, I'm done, I can't feel shit\nSaid that she can heal it\nI won't trust shorty, she just wanna seal it",
-                    "songArtImageUrl": "https://images.genius.com/8abac3d7d3db8890351a8a336312629a.500x500x1.jpg",
-                    "scrapingStatus": "completed",
-                    "scrapingError": null
-                  },
-                  "3773548": {
-                    "id": "3773548",
-                    "url": "https://genius.com/Syki-love-in-the-grave-lyrics",
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851592,
-                      "nanoseconds": 552000000
-                    },
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
+                    "songArtImageUrl": "https://images.genius.com/90fed42409e47446b8b584f904c68c22.358x358x1.jpg",
                     "scrapingError": null,
+                    "title": "Spirit Breaker",
+                    "url": "https://genius.com/0-0-pohval-spirit-breaker-lyrics",
                     "primaryArtist": {
-                      "name": "SYKI",
-                      "id": 1288367,
-                      "url": "https://genius.com/artists/Syki"
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
                     },
-                    "lyrics": "I never claimed the bitch so I had to remove her\nHow she attached when she a mover?\nShorty a brat, she a Buford\nI deleted the thot cause she a loser",
-                    "title": "​love in the grave",
-                    "scrapingAttempts": 1,
-                    "artistNames": "SYKI",
-                    "songArtImageUrl": "https://images.genius.com/a0524a3e21da46205431f944e27ea9ee.800x795x1.jpg",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085389,
+                      "nanoseconds": 456000000
+                    },
+                    "lyrics": "Закупаю травела с фейзами\nРазгоняюсь с треском\nНе оборачивайся\nНа трон удаляющийся",
                     "scrapingStatus": "completed"
                   },
-                  "3773598": {
-                    "id": "3773598",
-                    "lyrics": "Fucked his bitch, did the race, uh-oh\nSkrt skrt, screamin' in a Ghost\nFuck that, I'ma do the most\nPull up sprayin' out the rolls",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "scrapingError": null,
-                    "url": "https://genius.com/Syki-f-m-l-lyrics",
+                  "8701187": {
+                    "id": "8701187",
                     "scrapingAttempts": 1,
-                    "artistNames": "SYKI",
-                    "scrapingStatus": "completed",
-                    "title": "F M L",
-                    "songArtImageUrl": "https://images.genius.com/753edd43b34164851cec24683956e609.300x300x1.jpg",
+                    "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/0a781e9626f469914f7a5c91fec5741b.1000x1000x1.png",
+                    "title": "Антимаг pos 5 (Antimage pos 5)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085394,
+                      "nanoseconds": 609000000
+                    },
+                    "lyrics": "Когда челы не шарят (Шарят) — не люблю (Люблю)\nЯ ноунейм, меняю никнейм\nЧтобы собрать на антимага pos 5\nВарды скупаю, тима опять",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "url": "https://genius.com/0-0-pohval-pos-5-antimage-pos-5-lyrics",
                     "primaryArtist": {
-                      "name": "SYKI",
-                      "url": "https://genius.com/artists/Syki",
-                      "id": 1288367
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "scrapingStatus": "completed"
+                  },
+                  "8705930": {
+                    "id": "8705930",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
                     },
                     "lyricsScrapedAt": {
-                      "seconds": 1753851591,
-                      "nanoseconds": 122000000
+                      "seconds": 1754085388,
+                      "nanoseconds": 271000000
+                    },
+                    "lyrics": "Эй, парень, правило один, а так же два:\nНикому не говори, ха-ха, где стримит Пират\nСегодня проснулся рано, не опоздаю вроде\nСтрим сегодня, ха, пойду отдыхать",
+                    "primaryArtist": {
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874
+                    },
+                    "artistNames": "0 похвал (0 pohval)",
+                    "title": "Гимн Серёги пирата (Serega Pirat hymn)",
+                    "scrapingAttempts": 1,
+                    "songArtImageUrl": "https://images.genius.com/ba59a40bfb218f9603437f9a2df94fe0.1000x1000x1.png",
+                    "url": "https://genius.com/0-0-pohval-serega-pirat-hymn-lyrics",
+                    "scrapingError": null,
+                    "scrapingStatus": "completed"
+                  },
+                  "8887276": {
+                    "id": "8887276",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085385,
+                      "nanoseconds": 491000000
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "scrapingStatus": "completed",
+                    "title": "КАК ТВАРИ (LIKE CREATURES)",
+                    "lyrics": "Суки broken, они смотрят, как меня гасит мидер\nВсе в войс чате хотят с ними сраться на автомате\nОни мутят сразу пять, так быстро\nDamn, как вы заебали",
+                    "songArtImageUrl": "https://images.genius.com/054f34f40de006c1e46b477b3bbd7e73.1000x563x1.jpg",
+                    "url": "https://genius.com/0-0-pohval-like-creatures-lyrics",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "primaryArtist": {
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
                     }
                   },
-                  "3971713": {
-                    "id": "3971713",
-                    "lyrics": "Hell in the chamber!\nCame from December!\nI don't think I'll learn to love, never ever!\nThink you're clever, huh? Well, I'm better!",
-                    "url": "https://genius.com/Syki-ember-lyrics",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851594,
-                      "nanoseconds": 307000000
-                    },
+                  "9101490": {
+                    "id": "9101490",
+                    "title": "ROSTY",
                     "scrapingStatus": "completed",
-                    "title": "​ember",
+                    "url": "https://genius.com/0-0-pohval-rosty-lyrics",
                     "primaryArtist": {
-                      "id": 1288367,
-                      "url": "https://genius.com/artists/Syki",
-                      "name": "SYKI"
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
                     },
-                    "artistNames": "SYKI",
-                    "songArtImageUrl": "https://images.genius.com/2b7c363cc83503ad6c6a48f85221c836.500x500x1.jpg",
+                    "songArtImageUrl": "https://images.genius.com/7312af6be8bccbcb394c819a53203ddb.640x640x1.jpg",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "lyrics": "Танцуй как в последний раз, ага\nТвой вайб приковывает глаз, ага\nКак будто что-то с тобой не так, да\nТы спросишь как, а я отвечу: брат, а что случилось?",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085393,
+                      "nanoseconds": 457000000
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    }
+                  },
+                  "9121403": {
+                    "id": "9121403",
+                    "songArtImageUrl": "https://images.genius.com/c316abe434dbb6cefc6e8ce0bcf07088.1000x1000x1.png",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "lyrics": "Фастом Bloodthorn, Aghanim сожрал, и в целом готов\nСоло (О-о-о-о-о)\nСоло (О-о-о-о-о)\nСоло (О-о-о-о-о)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085360,
+                      "nanoseconds": 704000000
+                    },
+                    "title": "SOLO",
+                    "url": "https://genius.com/0-0-pohval-solo-lyrics",
+                    "primaryArtist": {
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingStatus": "completed",
                     "scrapingError": null,
                     "scrapingAttempts": 1
                   },
-                  "3991397": {
-                    "id": "3991397",
-                    "title": "​anger fills my blood..",
-                    "scrapingStatus": "completed",
+                  "9155887": {
+                    "id": "9155887",
                     "scrapingError": null,
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851585,
-                      "nanoseconds": 191000000
-                    },
-                    "lyrics": "All alone without an answer\nAnger fills my blood, it drains me slow, kill me slow\nLove is never present in my heart, cold as snow\nLike the strongest dose of venom, I can't cure, can't be cured",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "url": "https://genius.com/Syki-anger-fills-my-blood-lyrics",
-                    "primaryArtist": {
-                      "name": "SYKI",
-                      "url": "https://genius.com/artists/Syki",
-                      "id": 1288367
-                    },
-                    "artistNames": "SYKI",
-                    "songArtImageUrl": "https://images.genius.com/5fd8c30580ef37f4339bf7fc28c8bd24.500x500x1.jpg",
-                    "scrapingAttempts": 1
-                  },
-                  "4422813": {
-                    "id": "4422813",
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851586,
-                      "nanoseconds": 725000000
-                    },
-                    "artistNames": "SYKI",
-                    "url": "https://genius.com/Syki-im-starting-to-hate-you-lyrics",
-                    "scrapingStatus": "completed",
-                    "songArtImageUrl": "https://images.genius.com/3914c9eeae36d49a1c442372cced22c6.500x500x1.jpg",
-                    "lyrics": "Drivin' me mad, I can't erase you\nI’m stuck in this hell, startin’ to hate you\nThrow me away, are you afraid too?\nBreak me apart, you know you have to",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "title": "​i’m starting to hate you..",
-                    "primaryArtist": {
-                      "id": 1288367,
-                      "name": "SYKI",
-                      "url": "https://genius.com/artists/Syki"
-                    },
+                    "title": "Dyrachyo",
                     "scrapingAttempts": 1,
-                    "scrapingError": null
-                  },
-                  "5223021": {
-                    "id": "5223021",
-                    "title": "​don’t care​ (Demo)*",
-                    "songArtImageUrl": "https://images.genius.com/13db8a77e0f64651b018acec1ca164e0.500x500x1.jpg",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "url": "https://genius.com/Syki-and-juice-wrld-dont-care-demo-lyrics",
-                    "scrapingAttempts": 1,
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851590,
-                      "nanoseconds": 170000000
-                    },
-                    "scrapingError": null,
-                    "lyrics": "'Cause I got a bitch right here, ayy\nRed beam like a reindeer, ooh\nRudolph with the new Glock, ooh\nHad rocks in the tube socks, oh",
-                    "artistNames": "SYKI & Juice WRLD",
                     "scrapingStatus": "completed",
+                    "artistNames": "0 похвал (0 pohval) & ​phantom (RU)",
+                    "songArtImageUrl": "https://images.genius.com/d8374bd0059605f8441e621504c3d41a.1000x1000x1.png",
+                    "url": "https://genius.com/0-0-pohval-and-phantom-ru-dyrachyo-lyrics",
                     "primaryArtist": {
-                      "name": "SYKI",
-                      "id": 1288367,
-                      "url": "https://genius.com/artists/Syki"
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "lyrics": "О, ты знаешь лор, Рубик же по лору спеллов вор?\nДа, а что потом? Двадцать раз фидил на позор\nGG stack, easy игра\nФакаю не только в пабликах",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085387,
+                      "nanoseconds": 39000000
                     }
                   },
-                  "5386019": {
-                    "id": "5386019",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "url": "https://genius.com/Syki-lovely-lyrics",
-                    "scrapingStatus": "completed",
-                    "title": "​lovely+",
-                    "primaryArtist": {
-                      "name": "SYKI",
-                      "id": 1288367,
-                      "url": "https://genius.com/artists/Syki"
-                    },
-                    "artistNames": "SYKI",
-                    "songArtImageUrl": "https://images.genius.com/368da16b5825f50ccf3ddeb879152917.500x500x1.jpg",
+                  "9173001": {
+                    "id": "9173001",
                     "lyricsScrapedAt": {
-                      "seconds": 1753851596,
-                      "nanoseconds": 514000000
+                      "seconds": 1754085392,
+                      "nanoseconds": 152000000
                     },
-                    "scrapingAttempts": 1,
-                    "lyrics": "Lately, all the haze is feeling lovely\nI can't see in front of me\nAnd maybe I don't wanna see you\nI sing tales about my misery",
-                    "scrapingError": null
-                  },
-                  "6441136": {
-                    "id": "6441136",
-                    "songArtImageUrl": "https://images.genius.com/93c6c5a3056c77f25508d78d3ffa1372.1000x1000x1.png",
-                    "url": "https://genius.com/Syki-hauntr-lyrics",
-                    "primaryArtist": {
-                      "url": "https://genius.com/artists/Syki",
-                      "name": "SYKI",
-                      "id": 1288367
-                    },
-                    "scrapingAttempts": 1,
-                    "lyricsScrapedAt": {
-                      "seconds": 1753851597,
-                      "nanoseconds": 934000000
-                    },
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
-                    },
-                    "scrapingError": null,
-                    "artistNames": "SYKI",
-                    "lyrics": "Feelings always tend to get the best of me\nMaybe it's better that way, better that way (Ayy)\nMy desire gets the best of me\nBut it's better that way, better that way (Ayy)",
-                    "title": ".:HAUNTR:.+",
-                    "scrapingStatus": "completed"
-                  },
-                  "7428399": {
-                    "id": "7428399",
-                    "url": "https://genius.com/Syki-dye-lyrics",
-                    "primaryArtist": {
-                      "id": 1288367,
-                      "name": "SYKI",
-                      "url": "https://genius.com/artists/Syki"
-                    },
-                    "songArtImageUrl": "https://images.genius.com/159a3cef889a357876602ffa38f920fa.1000x1000x1.png",
+                    "title": "Barbie boy",
+                    "url": "https://genius.com/0-0-pohval-barbie-boy-lyrics",
+                    "lyrics": "Так много людей имеют тот же mindset\nЯ не в списке Forbes\nНо мне похуй — это просто\nMade in plastic",
                     "scrapingStatus": "completed",
-                    "addedAt": {
-                      "seconds": 1753849158,
-                      "nanoseconds": 99000000
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874
                     },
-                    "lyrics": "I'm the big dawg, shawty, let the G's up, it's a mob attack\nThe phantoms keep me up, don't be foolish, know that they'll protect\nIf I say the word the numbers swarming in as silhouette\nStop asking where we at if you tryna rob this new patek",
+                    "artistNames": "0 похвал (0 pohval)",
                     "scrapingAttempts": 1,
                     "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/871c1381f0389383a728d8a88386b2f9.1000x1000x1.png",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    }
+                  },
+                  "9232765": {
+                    "id": "9232765",
+                    "title": "Я не затаймил реквием (I Didn’t Time Requiem)",
                     "lyricsScrapedAt": {
-                      "seconds": 1753851588,
-                      "nanoseconds": 432000000
+                      "seconds": 1754085384,
+                      "nanoseconds": 267000000
                     },
-                    "artistNames": "SYKI",
-                    "title": "D.Y.E."
+                    "scrapingStatus": "completed",
+                    "songArtImageUrl": "https://images.genius.com/0cb1e0f2856dd8a54a66ec397eaa196b.999x999x1.png",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "url": "https://genius.com/0-0-pohval-i-didnt-time-requiem-lyrics",
+                    "lyrics": "Есть КД у амулета\nГде сейчас мой скилл? Нету\nА-а-а, простите меня\nЯ не затаймил реквием, простите",
+                    "primaryArtist": {
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874,
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "artistNames": "0 похвал (0 pohval)"
+                  },
+                  "9438610": {
+                    "id": "9438610",
+                    "songArtImageUrl": "https://images.genius.com/0cb1e0f2856dd8a54a66ec397eaa196b.999x999x1.png",
+                    "lyrics": "Я очень быстро учусь, не понимаю всех чувств\nВесь мир на пальце кручу, но, а на время не надо чувств\nИз своих снов я кричу, я с небоскрёба лечу\nНо, если я захочу, я целый мир захвачу",
+                    "title": "Я голоден (I’m Hungry)",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
+                    },
+                    "scrapingError": null,
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "url": "https://genius.com/0-0-pohval-im-hungry-lyrics",
+                    "scrapingStatus": "completed",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingAttempts": 1,
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085390,
+                      "nanoseconds": 892000000
+                    }
                   }
                 },
                 "scrapingResults": null,
@@ -620,13 +620,13 @@
     {
       "test": "databaseValidation",
       "success": true,
-      "timestamp": "2025-07-31T04:40:47.658Z",
+      "timestamp": "2025-08-05T09:14:31.364Z",
       "data": {
         "artistExists": true,
         "artistHasSongs": true,
         "artistHasCachedSongs": true,
         "songsCollectionExists": true,
-        "totalSongs": 49,
+        "totalSongs": 88,
         "cachedSongs": 22
       },
       "error": null

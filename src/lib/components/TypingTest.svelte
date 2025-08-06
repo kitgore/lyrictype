@@ -1,5 +1,6 @@
 <script>
-    import { getArtistLyrics, searchByArtistId, fetchMultipleSongs } from '$lib/services/artistService';
+    import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue } from '$lib/services/artistService';
+    import { queueManager } from '$lib/services/queueManager.js';
     import TextInput from '$lib/components/TextInput.svelte';
     import LyricDisplay from '$lib/components/LyricDisplay.svelte';
     import ArtistButton from './ArtistButton.svelte';
@@ -46,10 +47,16 @@
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     $: bottomButtonGap = windowHeight * 0.0075;
 
-    // Reactive statements for queue functionality
-    $: canGoPrevious = $songQueue.currentIndex > 0;
-    $: canGoNext = $songQueue.currentIndex < $songQueue.songs.length - 1;
-    $: futureSongsCount = Math.min(5, $songQueue.songs.length - $songQueue.currentIndex - 1);
+    // Reactive statements for NEW queue functionality
+    let queueStatus = queueManager.getQueueStatus();
+    $: canGoPrevious = queueStatus.canGoPrevious;
+    $: canGoNext = queueStatus.canGoNext;
+    $: futureSongsCount = Math.min(5, queueStatus.totalSongs - queueStatus.currentIndex - 1);
+    
+    // Update queue status reactively
+    $: if (currentSong) {
+        queueStatus = queueManager.getQueueStatus();
+    }
 
     function handleKeydown(event) {
         if (event.key === 'Enter') {
@@ -59,54 +66,48 @@
         console.log(inputTabIndex)
     }
 
-    // Handle artist selection from dropdown
+    // Handle artist selection from dropdown - NEW CACHING SYSTEM
     async function handleArtistSelected(event) {
         const artist = event.detail;
-        console.log('Artist selected:', artist);
-        
-        // Use artist name for the search
-        const artistName = artist.name || artist;
+        console.log('🎵 Artist selected (NEW SYSTEM):', artist);
         
         // Close queue display when new artist is selected
         showQueue = false;
-
         lyrics = '';
         loading = true;
 
         try {
-            // Load only the first song immediately so user can start typing
-            console.log("Fetching first song for artist:", artist.geniusId);
-            const firstSong = await searchByArtistId(artist.geniusId, []);
+            // STEP 1: Initialize queue with new caching system
+            console.log('🚀 Initializing artist with caching system...');
+            const firstSong = await queueManager.initializeWithArtist(artist);
             
             if (!firstSong) {
                 lyrics = "No songs found for this artist.";
                 return;
             }
 
-            console.log("CURRENT SONG:", firstSong);
+            console.log("✅ FIRST SONG LOADED:", firstSong);
 
-            // Clear existing queue and add the first song
-            queueActions.clearQueue();
-            queueActions.addSong(firstSong);
-            
-            // Set currentSong so reset button works properly
+            // Set currentSong and display
             currentSong = firstSong;
-
-            // Set display immediately so user can start typing
             setDisplayFromDataWithoutQueue(firstSong);
+            
+            // Update recent artists with new format
             setNewRecentArtist({
                 name: artist.name, 
-                imageUrl: 'https://images.genius.com/dbc2e3b4fe018596fd3cca47fd315541.1000x1000x1.jpg', //placeholder image
-                seenSongs: [firstSong.songIndex], 
-                artistId: artist.geniusId, 
-                songQueue: {} // Clear old queue data since we're using global queue now
+                imageUrl: artist.imageUrl || 'https://images.genius.com/dbc2e3b4fe018596fd3cca47fd315541.1000x1000x1.jpg',
+                artistId: artist.geniusId,
+                urlKey: queueManager.artistUrlKey, // Store the URL key for future use
+                songQueue: {} // Legacy field, kept for compatibility
             });
 
-            // Now load the rest of the queue in the background asynchronously
-            loadQueueInBackground(artist.geniusId, [firstSong.songIndex]);
+            // Update queue status for reactive UI updates
+            queueStatus = queueManager.getQueueStatus();
+            
+            console.log(`📊 Queue initialized: ${queueStatus.totalSongs} songs, ${queueStatus.cachedSongs} cached`);
             
         } catch (error) {
-            console.error('Error loading artist:', error);
+            console.error('❌ Error loading artist (NEW SYSTEM):', error);
             lyrics = "Error loading artist. Please try again.";
         } finally {
             loading = false;
@@ -160,26 +161,30 @@
         const artist = $recentArtists.find(artist => artist.artistId === artistId);
         if (!artist) return;
         
+        console.log('🔄 Requeueing artist (NEW SYSTEM):', artist.name);
+        
         recentArtists.set([artist, ...$recentArtists.filter(artist => artist.artistId !== artistId)]);
         displayedArtist = artist.name;
         showQueue = false; // Close queue display
         
-        // Clear current queue
-        queueActions.clearQueue();
-        
         try {
             loading = true;
-            // Load only first song immediately so user can start typing
-            const firstSong = await searchByArtistId(artistId, []);
+            lyrics = '';
+            
+            // Use the new queue system
+            const firstSong = await queueManager.initializeWithArtist({
+                name: artist.name,
+                geniusId: artist.artistId,
+                id: artist.urlKey || artist.name, // Use stored urlKey or fallback to name
+                imageUrl: artist.imageUrl
+            });
             
             if (firstSong) {
-                // Add first song to queue and set display
-                queueActions.addSong(firstSong);
-                
-                // Set currentSong so reset button works properly
                 currentSong = firstSong;
-                
                 setDisplayFromDataWithoutQueue(firstSong);
+                
+                // Update queue status
+                queueStatus = queueManager.getQueueStatus();
                 
                 // Reset typing test
                 const restartEvent = new CustomEvent('restartTest', {
@@ -187,136 +192,20 @@
                 });
                 window.dispatchEvent(restartEvent);
                 
-                // Load rest of queue in background
-                loadQueueInBackground(artistId, [firstSong.songIndex]);
+                console.log(`✅ Artist requeued: ${queueStatus.totalSongs} songs available`);
             } else {
                 lyrics = "No songs found for this artist.";
             }
         } catch (error) {
-            console.error('Error requeueing artist:', error);
+            console.error('❌ Error requeueing artist (NEW SYSTEM):', error);
             lyrics = "Error loading artist songs.";
         } finally {
             loading = false;
         }
     }
 
-    // Load queue songs in the background without blocking UI
-    async function loadQueueInBackground(artistId, seenSongs = []) {
-        try {
-            console.log("Loading queue in background for artistId:", artistId, "seenSongs:", seenSongs.length);
-            
-            // Use a setTimeout to ensure this runs after the UI has updated
-            setTimeout(async () => {
-                try {
-                    // Fetch queue songs (5 songs as per user's setting)
-                    const queueSongs = await fetchMultipleSongs(artistId, seenSongs, 5);
-                    
-                    if (queueSongs.length > 0) {
-                        // Add new songs to queue
-                        queueActions.addMultipleSongs(queueSongs);
-                        
-                        // Update seen songs for the artist
-                        const existingArtist = $recentArtists.find(artist => artist.artistId === artistId);
-                        if (existingArtist) {
-                            const updatedSeenSongs = [...seenSongs, ...queueSongs.map(song => song.songIndex)];
-                            setNewRecentArtist({
-                                name: existingArtist.name, 
-                                imageUrl: existingArtist.imageUrl, 
-                                seenSongs: updatedSeenSongs, 
-                                artistId: existingArtist.artistId, 
-                                songQueue: {} // Using global queue now
-                            });
-                        }
-                        
-                        console.log(`Loaded ${queueSongs.length} songs to queue in background`);
-                    }
-                } catch (error) {
-                    console.warn("Error loading queue in background:", error);
-                    // Don't throw error since this is background loading
-                }
-            }, 100); // Small delay to ensure UI is responsive
-        } catch (error) {
-            console.warn("Error starting background queue load:", error);
-        }
-    }
-
-    async function loadMoreSongsForQueue(artistId) {
-        try {
-            // Find existing artist to get seen songs
-            const existingArtist = $recentArtists.find(artist => artist.artistId === artistId);
-            const seenSongs = existingArtist?.seenSongs || [];
-            
-            console.log("Loading more songs for queue, artistId:", artistId, "seenSongs:", seenSongs.length);
-            
-            // Fetch more songs (up to 8 more)
-            const newSongs = await fetchMultipleSongs(artistId, seenSongs, 5);
-            
-            if (newSongs.length > 0) {
-                // Add new songs to queue
-                queueActions.addMultipleSongs(newSongs);
-                
-                // Update seen songs for the artist
-                const updatedSeenSongs = [...seenSongs, ...newSongs.map(song => song.songIndex)];
-                setNewRecentArtist({
-                    name: existingArtist.name, 
-                    imageUrl: existingArtist.imageUrl, 
-                    seenSongs: updatedSeenSongs, 
-                    artistId: existingArtist.artistId, 
-                    songQueue: {} // Using global queue now
-                });
-                
-                console.log(`Added ${newSongs.length} more songs to queue`);
-            } else {
-                console.log("No more songs available for artist", artistId);
-            }
-            
-            return newSongs.length > 0;
-        } catch (error) {
-            console.error("Error loading more songs for queue:", error);
-            return false;
-        }
-    }
-
-    // Legacy function - now redirects to loadMoreSongsForQueue
-    async function prepareQueue(artistId) {
-        return await loadMoreSongsForQueue(artistId);
-    }
-
-    async function continueFromQueue(){
-        isPaused = false;
-        showQueue = false; // Close queue display
-        
-        // Try to get next song from global queue first
-        const nextSong = queueActions.goToNext();
-        
-        if (nextSong) {
-            currentSong = nextSong;
-            setDisplayFromDataWithoutQueue(nextSong);
-        } else {
-            // If no more songs in queue, try to load more for current artist
-            const currentArtistId = $recentArtists[0]?.artistId;
-            if (currentArtistId) {
-                await loadMoreSongsForQueue(currentArtistId);
-                const newNextSong = queueActions.goToNext();
-                if (newNextSong) {
-                    currentSong = newNextSong;
-                    setDisplayFromDataWithoutQueue(newNextSong);
-                } else {
-                    lyrics = "No more songs available for this artist.";
-                    return;
-                }
-            } else {
-                lyrics = "No more songs available.";
-                return;
-            }
-        }
-
-        // Reset the typing test
-        const restartEvent = new CustomEvent('restartTest', {
-            detail: { songData: currentSong }
-        });
-        window.dispatchEvent(restartEvent);
-    }
+    // LEGACY FUNCTIONS - Kept for compatibility but no longer used with new caching system
+    // These will be removed once we confirm the new system is working properly
 
     function replaySong(){
         showQueue = false; // Close queue display
@@ -382,51 +271,67 @@
         }
     }
 
-    function playPreviousSong() {
+    async function playPreviousSong() {
         isPaused = false;
         showQueue = false; // Close queue display
         
-        const previousSong = queueActions.goToPrevious();
-        if (previousSong) {
-            currentSong = previousSong;
-            setDisplayFromDataWithoutQueue(previousSong);
+        try {
+            console.log('⏮️ Going to previous song (NEW SYSTEM)...');
+            const previousSong = await queueManager.goToPrevious();
             
-            // Reset typing test state
-            const restartEvent = new CustomEvent('restartTest', {
-                detail: { songData: previousSong }
-            });
-            window.dispatchEvent(restartEvent);
+            if (previousSong) {
+                currentSong = previousSong;
+                setDisplayFromDataWithoutQueue(previousSong);
+                
+                // Update queue status
+                queueStatus = queueManager.getQueueStatus();
+                
+                // Reset typing test state
+                const restartEvent = new CustomEvent('restartTest', {
+                    detail: { songData: previousSong }
+                });
+                window.dispatchEvent(restartEvent);
+                
+                console.log(`✅ Previous song loaded: ${previousSong.title}`);
+            } else {
+                console.log('📭 No previous song available');
+            }
+        } catch (error) {
+            console.error('❌ Error loading previous song:', error);
+            lyrics = "Error loading previous song.";
         }
-        console.log("Previous song clicked");
     }
 
     async function playNextSong() {
         isPaused = false;
         showQueue = false; // Close queue display
         
-        // Try to get next song from queue first
-        const nextSong = queueActions.goToNext();
-        if (nextSong) {
-            currentSong = nextSong;
-            setDisplayFromDataWithoutQueue(nextSong);
+        try {
+            console.log('⏭️ Going to next song (NEW SYSTEM)...');
+            const nextSong = await queueManager.goToNext();
             
-            // If queue is getting low (less than 2 songs remaining), load more
-            const actualFutureSongsCount = $songQueue.songs.length - $songQueue.currentIndex - 1;
-            if (actualFutureSongsCount < 2) {
-                const currentArtistId = $recentArtists[0]?.artistId;
-                if (currentArtistId) {
-                    loadMoreSongsForQueue(currentArtistId); // Don't await - load in background
-                }
+            if (nextSong) {
+                currentSong = nextSong;
+                setDisplayFromDataWithoutQueue(nextSong);
+                
+                // Update queue status
+                queueStatus = queueManager.getQueueStatus();
+                
+                // Reset typing test state
+                const restartEvent = new CustomEvent('restartTest', {
+                    detail: { songData: nextSong }
+                });
+                window.dispatchEvent(restartEvent);
+                
+                console.log(`✅ Next song loaded: ${nextSong.title}`);
+            } else {
+                console.log('📭 No next song available');
+                lyrics = "No more songs available for this artist.";
             }
-        } else {
-            // If no next song in queue, use the existing continueFromQueue function
-            await continueFromQueue();
+        } catch (error) {
+            console.error('❌ Error loading next song:', error);
+            lyrics = "Error loading next song.";
         }
-
-        const restartEvent = new CustomEvent('restartTest', {
-            detail: { songData: currentSong }
-        });
-        window.dispatchEvent(restartEvent);
     }
 
     function restartSong() {
@@ -461,18 +366,34 @@
         showQueue = !showQueue;
     }
 
-    function handleQueueSongSelected(event) {
-        const song = event.detail;
-        if (song) {
-            isPaused = false;
-            currentSong = song;
-            setDisplayFromDataWithoutQueue(song);
-            
-            // Reset typing test state
-            const restartEvent = new CustomEvent('restartTest', {
-                detail: { songData: song }
-            });
-            window.dispatchEvent(restartEvent);
+    async function handleQueueSongSelected(event) {
+        const songSelection = event.detail;
+        if (songSelection && songSelection.index !== undefined) {
+            try {
+                console.log('🎯 Jumping to queue song at index:', songSelection.index);
+                
+                isPaused = false;
+                const selectedSong = await queueManager.goToIndex(songSelection.index);
+                
+                if (selectedSong) {
+                    currentSong = selectedSong;
+                    setDisplayFromDataWithoutQueue(selectedSong);
+                    
+                    // Update queue status
+                    queueStatus = queueManager.getQueueStatus();
+                    
+                    // Reset typing test state
+                    const restartEvent = new CustomEvent('restartTest', {
+                        detail: { songData: selectedSong }
+                    });
+                    window.dispatchEvent(restartEvent);
+                    
+                    console.log(`✅ Jumped to song: ${selectedSong.title}`);
+                }
+            } catch (error) {
+                console.error('❌ Error jumping to queue song:', error);
+                lyrics = "Error loading selected song.";
+            }
         }
         showQueue = false; // Close queue after selection
     }
@@ -563,6 +484,9 @@
                             on:songSelected={handleQueueSongSelected}
                             on:close={handleQueueClose}
                             embedded={true}
+                            songs={queueManager.getUpcomingSongs(10)}
+                            currentIndex={queueStatus.currentIndex}
+                            totalSongs={queueStatus.totalSongs}
                         />
                     {:else if lyrics}
                         <LyricDisplay 
@@ -570,7 +494,7 @@
                             {songTitle} 
                             {artistName} 
                             {imageUrl}
-                            {continueFromQueue}
+                            continueFromQueue={playNextSong}
                             {replaySong} 
                             {geniusUrl}
                             {isPaused}
