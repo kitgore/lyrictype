@@ -267,7 +267,7 @@ async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
             songsLastUpdated: new Date(),
             isFullyCached: metadata.isFullyCached || false,
             cacheVersion: 1
-        };
+        };   
         
         await updateDoc(artistRef, updateData);
         console.log(`Successfully updated artist ${artistUrlKey} with ${trulyNewSongIds.length} new song IDs`);
@@ -456,6 +456,12 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
                 
                 results.successful.push(songId);
                 console.log(`Successfully scraped lyrics for song ${songId}: ${songData.title}`);
+                
+                // Update artist cachedSongIds immediately for real-time access
+                await updateDoc(doc(db, 'artists', artistUrlKey), {
+                    cachedSongIds: arrayUnion(songId),
+                    lyricsScraped: increment(1)
+                });
             } else {
                 throw new Error('No lyrics found or empty lyrics');
             }
@@ -476,13 +482,7 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
         await new Promise(resolve => setTimeout(resolve, 300));
     }
     
-    // Update artist's cachedSongIds array
-    if (results.successful.length > 0) {
-        await updateDoc(doc(db, 'artists', artistUrlKey), {
-            cachedSongIds: arrayUnion(...results.successful),
-            lyricsScraped: increment(results.successful.length)
-        });
-    }
+    // Artist cachedSongIds are now updated individually after each successful scrape
     
     console.log(`Lyrics scraping completed: ${results.successful.length} successful, ${results.failed.length} failed, ${results.skipped.length} skipped`);
     
@@ -521,12 +521,15 @@ export const scrapeSongLyrics = onCall({
     }
 });
 
-//TODO: Scrape entire lyrics for a song not just 4 lines
+// Note: This function scrapes the complete lyrics for each song
 
 /**
- * Extract lyrics from a Genius song URL using existing scraping logic
+ * Scrape only the actual lyrics from a Genius song URL
+ * This function extracts ONLY the actual song lyrics, avoiding annotations,
+ * descriptions, and other non-lyrical content from the start.
+ * 
  * @param {string} songUrl - The Genius song URL
- * @returns {Promise<string>} The extracted lyrics (4 lines)
+ * @returns {Promise<string>} The complete extracted lyrics
  */
 async function scrapeLyricsFromUrl(songUrl) {
     try {
@@ -560,56 +563,82 @@ async function scrapeLyricsFromUrl(songUrl) {
 
         // Parse the page with cheerio
         const $ = cheerio.load(songPageHtml);
-        let lyricsHtml = '';
+        
+        // Target ALL lyrics containers - Genius often splits lyrics across multiple divs
+        const lyricsContainers = $('div[data-lyrics-container="true"]');
+        
+        if (lyricsContainers.length === 0) {
+            throw new Error('No lyrics containers found');
+        }
 
-        // Select the container that includes the lyrics and retrieve the HTML
-        const lyricsContainer = $('div[class*="Lyrics__Container"]');
-        if (lyricsContainer.length > 0) {
-            lyricsHtml = lyricsContainer.html();
-        } else {
-            // Try alternative selectors
-            const altLyricsContainer = $('div[data-lyrics-container="true"]') || $('[class*="lyrics"]');
-            if (altLyricsContainer.length > 0) {
-                lyricsHtml = altLyricsContainer.html();
-            } else {
-                throw new Error('Lyrics container not found on page');
+        console.log(`Found ${lyricsContainers.length} lyrics container(s)`);
+        
+        let allLyricsText = '';
+        
+        // Process each lyrics container
+        lyricsContainers.each((index, container) => {
+            const $container = $(container);
+            
+            // Remove elements that should be excluded from lyrics
+            $container.find('[data-exclude-from-selection="true"]').remove();
+            
+            // Remove headers, footers, and annotation elements
+            $container.find('.LyricsHeader__Container, .LyricsFooter__Container').remove();
+            $container.find('a[href*="/annotations/"]').remove();
+            
+            // Get the raw text content, preserving line breaks
+            let containerText = $container.html() || '';
+            
+            // Convert HTML to clean text
+            containerText = containerText
+                // Convert <br> tags to newlines
+                .replace(/<br\s*\/?>/gi, '\n')
+                // Remove all HTML tags completely (including <i>, section headers, etc.)
+                .replace(/<[^>]*>/gi, '')
+                // Decode HTML entities
+                .replace(/&amp;/g, '&')
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&quot;/g, '"')
+                .replace(/&#x27;/g, "'")
+                .replace(/&nbsp;/g, ' ')
+                // Clean up whitespace
+                .split('\n')
+                .map(line => line.trim())
+                .filter(line => {
+                    // Filter out section headers and empty lines
+                    if (!line) return false;
+                    if (line.match(/^\[.*\]$/)) return false; // Remove [Intro], [Verse], etc.
+                    if (line.match(/^(Intro|Verse|Chorus|Bridge|Outro|Pre-Chorus|Post-Chorus|Hook|Refrain)(\s|\d|$)/i)) return false;
+                    return true;
+                })
+                .join('\n');
+            
+            if (containerText.trim()) {
+                if (allLyricsText) allLyricsText += '\n\n';
+                allLyricsText += containerText.trim();
             }
-        }
-
-        if (!lyricsHtml || lyricsHtml.trim().length === 0) {
-            throw new Error('No lyrics content found in container');
-        }
-
-        // Clean the lyrics HTML (existing logic from getSongsById)
-        let lyrics = lyricsHtml.replace(/<button[^>]*>[\s\S]*?<\/button>/gi, '');
-        lyrics = lyrics.replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, '');
-        lyrics = lyrics.replace(/<ul[^>]*>[\s\S]*?<\/ul>/gi, '');
-        lyrics = lyrics.replace(/<li[^>]*>[\s\S]*?<\/li>/gi, '');
-        lyrics = lyrics.replace(/<h2[^>]*>[\s\S]*?<\/h2>/gi, '');
-        lyrics = lyrics.replace(/<br\s*\/?>/gi, '\n');
-        lyrics = lyrics.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '');
-        lyrics = lyrics.replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, '');
-        lyrics = lyrics.replace(/<\/?a[^>]*>/gi, '');
-        lyrics = lyrics.replace(/<span[^>]*>/gi, '');
-        lyrics = lyrics.replace(/<\/span>/gi, '');
-        lyrics = lyrics.replace(/<div[^>]*>/gi, '\n');
-        lyrics = lyrics.replace(/<\/div>/gi, '');
-        lyrics = lyrics.replace(/\[.*?\]/g, '');
-        lyrics = lyrics.replace(/<\/?(i|b)>/gi, '');
-        lyrics = lyrics.replace(/<[^>]*>/g, '');
-
-        // Decode HTML entities
-        lyrics = $('<textarea/>').html(lyrics).text();
-        lyrics = lyrics.trim();
+        });
+        
+        // Final cleanup
+        let lyrics = allLyricsText
+            // Remove multiple consecutive newlines
+            .replace(/\n{3,}/g, '\n\n')
+            // Remove any remaining section markers that might have slipped through
+            .replace(/^\[.*\]$/gm, '')
+            // Clean up any remaining whitespace issues
+            .split('\n')
+            .map(line => line.trim())
+            .filter(line => line.length > 0)
+            .join('\n')
+            .trim();
 
         if (!lyrics || lyrics.length < 10) {
             throw new Error('Extracted lyrics are too short or empty');
         }
 
-        const lines = lyrics.split('\n');
-        const filteredLines = lines.filter(line => line.trim() !== '' && !line.trim().match(/\[.*?\]/));
-
-        return filteredLines.join('\n');
+        console.log(`Successfully scraped ${lyrics.length} characters of clean lyrics`);
+        return lyrics;
 
     } catch (error) {
         console.error(`Error scraping lyrics from ${songUrl}:`, error);
