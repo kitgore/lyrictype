@@ -175,7 +175,8 @@
             const firstSong = await queueManager.initializeWithArtist({
                 name: artist.name,
                 geniusId: artist.artistId,
-                id: artist.urlKey || artist.name, // Use stored urlKey or fallback to name
+                id: artist.urlKey || artist.name, // Use stored urlKey for Firestore doc id
+                urlKey: artist.urlKey,
                 imageUrl: artist.imageUrl
             });
             
@@ -215,10 +216,13 @@
 
 
 
-    function setNewRecentArtist({ name, imageUrl, seenSongs, artistId, songQueue }){
+    function setNewRecentArtist({ name, imageUrl, seenSongs, artistId, songQueue, urlKey }){
         displayedArtist = name;
-        recentArtists.set([{ name: name, imageUrl: imageUrl, seenSongs: seenSongs, artistId: artistId, songQueue: songQueue }, 
-        ...$recentArtists.filter(artist => artist.artistId !== artistId)]);
+        // Persist the artist's Firestore URL key so we can requeue quickly later
+        recentArtists.set([
+            { name, imageUrl, seenSongs, artistId, songQueue, urlKey },
+            ...$recentArtists.filter(artist => artist.artistId !== artistId)
+        ]);
     }
 
     function setDisplayFromData(data){
@@ -484,7 +488,7 @@
                             on:songSelected={handleQueueSongSelected}
                             on:close={handleQueueClose}
                             embedded={true}
-                            songs={queueManager.getUpcomingSongs(10)}
+                            songs={queueManager.getUpcomingSongs(5)}
                             currentIndex={queueStatus.currentIndex}
                             totalSongs={queueStatus.totalSongs}
                         />

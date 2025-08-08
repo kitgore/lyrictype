@@ -1019,8 +1019,10 @@ export const getArtistInfo = onCall({
             artist: {
                 name: artistData.name,
                 geniusId: artistData.geniusId,
+                urlKey: artistUrlKey, // Add the URL key to the response
                 totalSongs: (artistData.songIds || []).length,
                 cachedSongs: (artistData.cachedSongIds || []).length,
+                songIds: artistData.songIds || [], // Include songIds array
                 lastUpdated: artistData.songsLastUpdated,
                 isFullyCached: artistData.isFullyCached || false
             }

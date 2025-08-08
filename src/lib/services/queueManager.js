@@ -18,12 +18,54 @@ export class CacheAwareQueueManager {
     }
 
     /**
+     * Ensure the song has a stable 4-line excerpt and store it on the song object.
+     * The excerpt is chosen once per song and kept in memory with the queue so
+     * navigating back to the song reuses the same lines.
+     */
+    ensureExcerptForSong(song) {
+        if (!song || !song.lyrics || typeof song.lyrics !== 'string') return song;
+
+        // If we've already selected lines for this song in this session, reuse them
+        if (song.displayLineIndices && Array.isArray(song.displayLineIndices) && song.displayLineIndices.length > 0) {
+            // If lyrics currently hold the full lyrics and we have indices, rebuild excerpt
+            if (song.fullLyrics && song.lyrics === song.fullLyrics) {
+                const lines = song.fullLyrics.split('\n');
+                song.lyrics = song.displayLineIndices.map(i => lines[i] ?? '').join('\n');
+            }
+            return song;
+        }
+
+        const original = song.lyrics;
+        const lines = original.split('\n').filter(l => l.trim().length > 0);
+        const count = 4;
+        if (lines.length === 0) return song;
+
+        let indices = [];
+        if (lines.length <= count) {
+            indices = Array.from({ length: lines.length }, (_, i) => i);
+        } else {
+            // Pick a random consecutive window of 4 lines for coherent typing context
+            const start = Math.floor(Math.random() * (lines.length - count + 1));
+            indices = [start, start + 1, start + 2, start + 3];
+        }
+
+        const excerpt = indices.map(i => lines[i]).join('\n');
+        song.fullLyrics = original; // keep full lyrics for reference
+        song.displayLineIndices = indices; // persist selection in queue
+        song.lyrics = excerpt; // what the UI will render
+        song.displayLyrics = excerpt; // optional, explicit field
+        console.log("Excerpt for song", song.title + ":\n", excerpt);
+
+        return song;
+    }
+
+    /**
      * Initialize queue with a new artist
      * Step 1 of your queue process: Check if songList is populated, create queue
      */
     async initializeWithArtist(artist) {
         console.log('🚀 Initializing queue with artist:', artist.name);
-        
+        console.log("Artist ID:", artist.id);
         try {
             this.isLoading = true;
             
@@ -47,20 +89,22 @@ export class CacheAwareQueueManager {
             }));
             
             // Load the first song immediately
-            this.loadedSongs.set(result.song.id, result.song);
+            const firstWithExcerpt = this.ensureExcerptForSong({ ...result.song });
+            this.loadedSongs.set(firstWithExcerpt.id, firstWithExcerpt);
             this.songs[0] = {
-                ...result.song,
+                ...firstWithExcerpt,
                 index: 0,
                 loaded: true,
                 cached: true
             };
-            
+            console.log("First song with excerpt lyrics:", firstWithExcerpt.lyrics);
             console.log(`📋 Queue initialized: ${this.songs.length} songs, starting with "${result.song.title}"`);
-            
-            // Start preloading next songs in background
+
+            // Allow background preload immediately after first song is ready
+            this.isLoading = false;
             this.preloadAroundCurrentPosition();
-            
-            return result.song;
+
+            return firstWithExcerpt;
             
         } catch (error) {
             console.error('Error initializing queue:', error);
@@ -178,15 +222,16 @@ export class CacheAwareQueueManager {
             // Use the navigation loader to get this song and surrounding ones
             const result = await loadSongsForNavigation(songId, false, this.artistUrlKey);
             
-            // Update loaded songs cache
+            // Update loaded songs cache and ensure each has a 4-line excerpt
             Object.entries(result.songs).forEach(([id, songData]) => {
-                this.loadedSongs.set(id, songData);
+                const withExcerpt = this.ensureExcerptForSong({ ...songData });
+                this.loadedSongs.set(id, withExcerpt);
                 
                 // Find and update the song in our queue
                 const songIndex = this.songIds.indexOf(id);
                 if (songIndex !== -1) {
                     this.songs[songIndex] = {
-                        ...songData,
+                        ...withExcerpt,
                         index: songIndex,
                         loaded: true,
                         cached: true

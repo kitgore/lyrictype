@@ -1,10 +1,7 @@
 // src/lib/services/artistService.js
-import { getFunctions, httpsCallable } from 'firebase/functions';
-import { getFirestore, collection, query, where, limit, getDocs } from 'firebase/firestore';
-import app from './initFirebase'; // Adjust the path as necessary to import your Firebase app instance
-
-// Initialize Firestore
-const db = getFirestore(app);
+import { httpsCallable } from 'firebase/functions';
+import { collection, query, where, limit, getDocs, doc, getDoc } from 'firebase/firestore';
+import app, { functions, db } from './initFirebase'; // Import the configured instances
 
 // NEW CACHING SYSTEM FUNCTIONS
 
@@ -14,15 +11,36 @@ const db = getFirestore(app);
  * @returns {Promise<Object>} Artist data with songIds array
  */
 export async function getArtistWithSongs(artistUrlKey) {
-    const functions = getFunctions(app);
-    
     try {
+        console.log('🔍 Getting artist with songs for URL key:', artistUrlKey);
+        
         // First get artist info to check cache status
         const getArtistInfo = httpsCallable(functions, 'getArtistInfo');
         const artistInfo = await getArtistInfo({ artistUrlKey });
+        let artist = artistInfo.data?.artist || {};
+        
+        // If the callable doesn't include songIds/urlKey, fetch directly from Firestore as a fallback
+        if (!artist.songIds || !Array.isArray(artist.songIds) || artist.songIds.length === 0 || !artist.urlKey) {
+            try {
+                const artistRef = doc(db, 'artists', artistUrlKey);
+                const snapshot = await getDoc(artistRef);
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    artist = {
+                        ...artist,
+                        urlKey: artist.urlKey || artistUrlKey,
+                        songIds: data.songIds || [],
+                        totalSongs: artist.totalSongs ?? (data.songIds ? data.songIds.length : 0),
+                        cachedSongs: artist.cachedSongs ?? (data.cachedSongIds ? data.cachedSongIds.length : 0)
+                    };
+                }
+            } catch (fallbackError) {
+                console.warn('Fallback Firestore fetch for artist failed:', fallbackError);
+            }
+        }
         
         // If no songs cached or cache is stale, populate
-        if (!artistInfo.data.artist.totalSongs || artistInfo.data.artist.totalSongs === 0) {
+        if (!artist.totalSongs || artist.totalSongs === 0) {
             console.log(`Populating songs for artist: ${artistUrlKey}`);
             const populateArtistSongs = httpsCallable(functions, 'populateArtistSongs');
             await populateArtistSongs({ artistUrlKey });
@@ -32,7 +50,7 @@ export async function getArtistWithSongs(artistUrlKey) {
             return updatedInfo.data.artist;
         }
         
-        return artistInfo.data.artist;
+        return artist;
     } catch (error) {
         console.error("Error getting artist with songs:", error);
         throw error;
@@ -46,13 +64,16 @@ export async function getArtistWithSongs(artistUrlKey) {
  * @returns {Promise<Object>} Initial song and queue setup info
  */
 export async function loadArtistForQueue(artist) {
-    const functions = getFunctions(app);
-    
     try {
         console.log('🎵 Loading artist for new queue system:', artist.name);
+        console.log('🔍 Full artist object:', JSON.stringify(artist, null, 2));
         
         // Step 1: Get or populate artist songs
         const artistUrlKey = artist.id || artist.urlKey || artist.name; // Flexible key handling
+        console.log('🎵 Artist URL Key being used:', artistUrlKey);
+        console.log('🎵 Artist.id:', artist.id);
+        console.log('🎵 Artist.urlKey:', artist.urlKey);
+        console.log('🎵 Artist.name:', artist.name);
         const artistData = await getArtistWithSongs(artistUrlKey);
         
         console.log(`📋 Artist has ${artistData.totalSongs} total songs, ${artistData.cachedSongs} cached`);
@@ -63,7 +84,7 @@ export async function loadArtistForQueue(artist) {
         }
         
         // Use loadStartingFromId to get the first song (position 0)
-        const songIds = artistData.songIds || [];
+        const songIds = artistData.songIds || artist.songIds || [];
         if (songIds.length === 0) {
             throw new Error('No song IDs available for artist');
         }
@@ -160,7 +181,6 @@ export async function loadSongsForNavigation(songId, goingBackward, artistUrlKey
  * @returns {Promise<Object>} Loaded songs and queue info
  */
 export async function loadSongsFromPosition(songId, shouldReverse = false, artistUrlKey) {
-    const functions = getFunctions(app);
     const loadStartingFromId = httpsCallable(functions, 'loadStartingFromId');
     
     try {
@@ -174,7 +194,6 @@ export async function loadSongsFromPosition(songId, shouldReverse = false, artis
 
 // LEGACY FUNCTION - Consider migrating to getArtistWithSongs
 export async function getArtistLyrics(artistName) {
-    const functions = getFunctions(app);
     const callGetArtistLyrics = httpsCallable(functions, 'initialArtistSearch');
   
     try {
@@ -189,7 +208,6 @@ export async function getArtistLyrics(artistName) {
 
 
 export async function searchByArtistId(artistId, seenSongs) {
-  const functions = getFunctions(app);
   const callSearch = httpsCallable(functions, 'searchByArtistId');
 
   try {
@@ -210,7 +228,6 @@ export async function searchByArtistId(artistId, seenSongs) {
  * @returns {Promise<Array>} Array of song objects
  */
 export async function fetchMultipleSongs(artistId, seenSongs = [], count = 5) {
-  const functions = getFunctions(app);
   const callSearch = httpsCallable(functions, 'searchByArtistId');
   
   try {
