@@ -655,8 +655,8 @@ async function scrapeLyricsFromUrl(songUrl) {
  * @param {string} artistUrlKey - Artist document ID
  * @returns {Promise<Object>} Result object
  */
-async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKey) {
-    console.log(`Loading songs starting from ${songId} for artist ${artistUrlKey}, reverse: ${shouldReverse}`);
+async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKey, rangeSize = 10) {
+    console.log(`Loading songs starting from ${songId} for artist ${artistUrlKey}, reverse: ${shouldReverse}, rangeSize: ${rangeSize}`);
     
     // Get artist document to find songIds array
     const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
@@ -678,16 +678,17 @@ async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKe
     
     console.log(`Found song at position ${currentPosition}`);
     
-    // Determine target range (10 songs in the specified direction)
+    // Determine target range (configurable number of songs in the specified direction)
+    const windowSize = Math.max(1, Number(rangeSize) || 10);
     let startPos, endPos;
     if (shouldReverse) {
-        // Load previous 10 songs
-        startPos = Math.max(0, currentPosition - 10);
-        endPos = currentPosition;
+        // Load the current song and up to (windowSize-1) previous songs
+        startPos = Math.max(0, currentPosition - (windowSize - 1));
+        endPos = currentPosition + 1; // end is non-inclusive, so +1 to include current
     } else {
-        // Load next 10 songs
+        // Load the current song and up to (windowSize-1) next songs
         startPos = currentPosition;
-        endPos = Math.min(songIds.length, currentPosition + 10);
+        endPos = Math.min(songIds.length, currentPosition + windowSize);
     }
     
     const targetSongIds = songIds.slice(startPos, endPos);
@@ -766,14 +767,14 @@ export const loadStartingFromId = onCall({
     maxInstances: 20,
     region: 'us-central1'
 }, async (request, context) => {
-    const { songId, shouldReverse = false, artistUrlKey } = request.data;
+    const { songId, shouldReverse = false, artistUrlKey, rangeSize = 10 } = request.data;
     
     if (!songId || !artistUrlKey) {
         throw new HttpsError('invalid-argument', 'Song ID and artist URL key are required');
     }
     
     try {
-        return await loadStartingFromIdCore(songId, shouldReverse, artistUrlKey);
+        return await loadStartingFromIdCore(songId, shouldReverse, artistUrlKey, rangeSize);
     } catch (error) {
         console.error(`Error in loadStartingFromId for song ${songId}:`, error);
         

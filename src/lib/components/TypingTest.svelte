@@ -88,8 +88,9 @@
 
             console.log("✅ FIRST SONG LOADED:", firstSong);
 
-            // Set currentSong and display
+            // Set currentSong and display as soon as the first song resolves
             currentSong = firstSong;
+            console.log('✅ FIRST SONG LOADED:', firstSong);
             setDisplayFromDataWithoutQueue(firstSong);
             
             // Update recent artists with new format
@@ -103,6 +104,7 @@
 
             // Update queue status for reactive UI updates
             queueStatus = queueManager.getQueueStatus();
+            console.log('📊 Queue initialized:', queueStatus.totalSongs, 'songs,', queueStatus.cachedSongs, 'cached');
             
             console.log(`📊 Queue initialized: ${queueStatus.totalSongs} songs, ${queueStatus.cachedSongs} cached`);
             

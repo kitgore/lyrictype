@@ -97,12 +97,36 @@ export class CacheAwareQueueManager {
                 loaded: true,
                 cached: true
             };
+
+            // If backend preloaded a block of songs (and scraped missing lyrics),
+            // inject them into the queue now so they are instantly usable.
+            if (result.preloadedSongs && Object.keys(result.preloadedSongs).length > 0) {
+                Object.entries(result.preloadedSongs).forEach(([id, songData]) => {
+                    const idx = this.songIds.indexOf(id);
+                    if (idx !== -1) {
+                        const withExcerpt = this.ensureExcerptForSong({ ...songData });
+                        this.loadedSongs.set(id, withExcerpt);
+                        this.songs[idx] = {
+                            ...withExcerpt,
+                            index: idx,
+                            loaded: true,
+                            cached: Boolean(withExcerpt.lyrics && withExcerpt.lyrics.length > 0)
+                        };
+                    }
+                });
+            }
+
             console.log("First song with excerpt lyrics:", firstWithExcerpt.lyrics);
             console.log(`📋 Queue initialized: ${this.songs.length} songs, starting with "${result.song.title}"`);
 
             // Allow background preload immediately after first song is ready
             this.isLoading = false;
-            this.preloadAroundCurrentPosition();
+            // Defer preloading to the next macrotask so the first song can render immediately
+            setTimeout(() => {
+                this.preloadAroundCurrentPosition().catch((e) => {
+                    console.warn('Deferred preload error:', e);
+                });
+            }, 0);
 
             return firstWithExcerpt;
             
