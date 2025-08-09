@@ -1,11 +1,14 @@
 <script>
-    import { songQueue, queueActions } from '$lib/services/store.js';
     import { createEventDispatcher } from 'svelte';
-    
+
+    // Props
     export let windowHeight = 600;
     export let isVisible = false;
     export let embedded = false;
-    
+    export let songs = [];
+    export let currentIndex = 0;
+    export let totalSongs = 0;
+
     const dispatch = createEventDispatcher();
     
     // Calculate responsive sizing
@@ -31,12 +34,9 @@
     $: emptyQueueMargin = windowHeight * 0.012; // Responsive empty queue margins
     
     function handleSongClick(futureIndex) {
-        // Convert future index to actual queue index
-        const actualIndex = $songQueue.currentIndex + 1 + futureIndex;
-        const song = queueActions.jumpToSong(actualIndex);
-        if (song) {
-            dispatch('songSelected', song);
-        }
+        // Convert future index to absolute queue index and ask parent to navigate
+        const actualIndex = currentIndex + 1 + futureIndex;
+        dispatch('songSelected', { index: actualIndex });
     }
     
     function truncateText(text, maxLength = 30) {
@@ -45,11 +45,13 @@
     }
     
     function formatSongTitle(song) {
-        return `${truncateText(song.artist)} - ${truncateText(song.title)}`;
+        const a = truncateText(song?.artist || '');
+        const t = truncateText(song?.title || '');
+        return `${a}${a && t ? ' - ' : ''}${t}`;
     }
     
-    // Get only future songs (limit to 5 for display)
-    $: futureSongs = $songQueue.songs.slice($songQueue.currentIndex + 1, $songQueue.currentIndex + 6);
+    // Parent provides the next N songs; default to []
+    $: futureSongs = songs || [];
 </script>
 
 {#if isVisible}
@@ -71,7 +73,7 @@
                             <div class="song-artist">{truncateText(song.artist)}</div>
                         </div>
                         <div class="queue-position">
-                            <div class="position-number">{$songQueue.currentIndex + 2 + index}</div>
+                            <div class="position-number">{currentIndex + 2 + index}</div>
                         </div>
                     </div>
                 {/each}
@@ -102,7 +104,7 @@
                                 <div class="song-artist">{truncateText(song.artist)}</div>
                             </div>
                             <div class="queue-position">
-                                <div class="position-number">{$songQueue.currentIndex + 2 + index}</div>
+                                <div class="position-number">{currentIndex + 2 + index}</div>
                             </div>
                         </div>
                     {/each}
