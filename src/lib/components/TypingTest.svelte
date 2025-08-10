@@ -838,6 +838,10 @@
         background-color: var(--secondary-color);
         height: 100%;
         border-radius: .2em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     
