@@ -6,6 +6,44 @@ import app, { functions, db } from './initFirebase'; // Import the configured in
 // NEW CACHING SYSTEM FUNCTIONS
 
 /**
+ * Get basic artist info (useful for getting updated imageUrl after population)
+ * @param {string} artistUrlKey - Artist document ID (URL slug)
+ * @param {boolean} bypassCache - If true, reads directly from Firestore to avoid caching
+ * @returns {Promise<Object>} Basic artist data including imageUrl
+ */
+export async function getArtistInfo(artistUrlKey, bypassCache = false) {
+    try {
+        if (bypassCache) {
+            // Direct Firestore read to bypass any Firebase Functions caching
+            console.log('🔧 Reading artist info directly from Firestore to bypass cache');
+            const artistRef = doc(db, 'artists', artistUrlKey);
+            const snapshot = await getDoc(artistRef);
+            
+            if (snapshot.exists()) {
+                const data = snapshot.data();
+                return {
+                    name: data.name,
+                    geniusId: data.geniusId,
+                    imageUrl: data.imageUrl,
+                    urlKey: artistUrlKey,
+                    totalSongs: data.songIds?.length || 0,
+                    cachedSongs: data.cachedSongIds?.length || 0
+                };
+            }
+            return null;
+        } else {
+            // Normal Firebase Functions call
+            const getArtistInfoCallable = httpsCallable(functions, 'getArtistInfo');
+            const result = await getArtistInfoCallable({ artistUrlKey });
+            return result.data?.artist || null;
+        }
+    } catch (error) {
+        console.error('Error getting artist info:', error);
+        return null;
+    }
+}
+
+/**
  * Get artist with cached songs, populating cache if needed
  * @param {string} artistUrlKey - Artist document ID (URL slug)
  * @returns {Promise<Object>} Artist data with songIds array

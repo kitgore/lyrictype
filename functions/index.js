@@ -117,6 +117,49 @@ function needsRefresh(songsLastUpdated) {
 }
 
 /**
+ * Extract artist image URL from songs data
+ * Searches through songs to find a matching artist ID and returns their image_url
+ * @param {Object[]} songs - Array of song objects from Genius API
+ * @param {number} targetArtistId - The artist ID to search for
+ * @param {number} maxSongsToCheck - Maximum number of songs to check (default: 11)
+ * @returns {string|null} Artist image URL or null if not found
+ */
+function extractArtistImageUrl(songs, targetArtistId, maxSongsToCheck = 11) {
+    console.log(`Searching for image URL for artist ID ${targetArtistId} in ${Math.min(songs.length, maxSongsToCheck)} songs`);
+    
+    const songsToCheck = songs.slice(0, maxSongsToCheck);
+    // Ensure targetArtistId is a number for comparison with API response
+    const targetId = typeof targetArtistId === 'string' ? parseInt(targetArtistId, 10) : targetArtistId;
+    
+    for (const song of songsToCheck) {
+        // Check primary artist first
+        if (song.primary_artist && song.primary_artist.id === targetId) {
+            const imageUrl = song.primary_artist.image_url;
+            if (imageUrl) {
+                console.log(`Found artist image URL in primary artist: ${imageUrl}`);
+                return imageUrl;
+            }
+        }
+        
+        // Check featured artists if primary artist doesn't match
+        if (song.featured_artists && Array.isArray(song.featured_artists)) {
+            for (const featuredArtist of song.featured_artists) {
+                if (featuredArtist.id === targetId) {
+                    const imageUrl = featuredArtist.image_url;
+                    if (imageUrl) {
+                        console.log(`Found artist image URL in featured artists: ${imageUrl}`);
+                        return imageUrl;
+                    }
+                }
+            }
+        }
+    }
+    
+    console.log(`No image URL found for artist ID ${targetId} in ${songsToCheck.length} songs`);
+    return null;
+}
+
+/**
  * Fetch song metadata from Genius API for a specific artist page
  * @param {number} artistId - Genius artist ID
  * @param {number} page - Page number (1-based)
@@ -174,6 +217,7 @@ async function getSongsByArtist(artistId, page = 1) {
         
         return {
             songs: transformedSongs,
+            rawSongs: songs, // Include raw API response for image URL extraction
             hasMore,
             totalSongs: songs.length, // This is just for current page, will be updated later
             pageNumber: page
@@ -295,9 +339,93 @@ async function populateArtistSongsCore(artistUrlKey) {
     const artistData = artistDoc.data();
     console.log(`Found artist: ${artistData.name} (Genius ID: ${artistData.geniusId})`);
     
+    const artistId = artistData.geniusId;
+    if (!artistId) {
+        throw new Error('Artist does not have a Genius ID');
+    }
+    
     // Check if refresh is needed
     if (!needsRefresh(artistData.songsLastUpdated)) {
         console.log('Artist songs are up to date, no refresh needed');
+        
+        // Even if songs are up to date, check if we need to extract image URL
+        // Only attempt if imageUrl is undefined (never attempted), not null (already attempted)
+        if (artistData.imageUrl === undefined && artistData.songIds && artistData.songIds.length > 0) {
+            console.log('Songs up to date but missing image URL - attempting extraction from existing songs...');
+            
+            try {
+                // Try to extract image URL from first few existing songs
+                const firstSongIds = artistData.songIds.slice(0, 5); // Check first 5 songs
+                let foundImageUrl = null;
+                
+                for (const songId of firstSongIds) {
+                    const songDoc = await getDoc(doc(db, 'songs', songId));
+                    if (songDoc.exists()) {
+                        const songData = songDoc.data();
+                        if (songData.primaryArtist && songData.primaryArtist.id === artistId) {
+                            // This is a bit tricky since we don't have the full API response here
+                            // We need to make a small API call to get the artist image
+                            console.log('Found matching song, need to fetch from API for image URL...');
+                            
+                            // Make a quick API call to get the artist details
+                            const geniusApiKey = await getGeniusApiKey();
+                            const headers = { "Authorization": `Bearer ${geniusApiKey}` };
+                            
+                            const artistResponse = await fetchWithTimeout(
+                                `https://api.genius.com/artists/${artistId}`,
+                                { headers }
+                            );
+                            
+                            if (artistResponse.ok) {
+                                const artistApiData = await artistResponse.json();
+                                if (artistApiData.response && artistApiData.response.artist) {
+                                    foundImageUrl = artistApiData.response.artist.image_url;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // If no image URL found through songs, try direct artist API call as fallback
+                if (!foundImageUrl) {
+                    console.log('No matching songs found, trying direct artist API call...');
+                    try {
+                        const geniusApiKey = await getGeniusApiKey();
+                        const headers = { "Authorization": `Bearer ${geniusApiKey}` };
+                        
+                        const artistResponse = await fetchWithTimeout(
+                            `https://api.genius.com/artists/${artistId}`,
+                            { headers }
+                        );
+                        
+                        if (artistResponse.ok) {
+                            const artistApiData = await artistResponse.json();
+                            if (artistApiData.response && artistApiData.response.artist) {
+                                foundImageUrl = artistApiData.response.artist.image_url;
+                                console.log(`Found image URL via direct artist API call: ${foundImageUrl}`);
+                            }
+                        }
+                    } catch (directApiError) {
+                        console.error('Error in direct artist API call:', directApiError);
+                    }
+                }
+                
+                // Update artist document with found image URL (or null if not found)
+                await updateDoc(doc(db, 'artists', artistUrlKey), {
+                    imageUrl: foundImageUrl
+                });
+                
+                console.log(foundImageUrl ? 
+                    `Successfully extracted and stored image URL: ${foundImageUrl}` : 
+                    'No image URL found, stored null');
+                    
+            } catch (imageError) {
+                console.error('Error extracting image URL for up-to-date artist:', imageError);
+                // Don't fail the entire operation if image extraction fails
+            }
+        }
+        
         return { 
             success: true, 
             message: 'Songs already up to date',
@@ -306,15 +434,11 @@ async function populateArtistSongsCore(artistUrlKey) {
         };
     }
     
-    const artistId = artistData.geniusId;
-    if (!artistId) {
-        throw new Error('Artist does not have a Genius ID');
-    }
-    
     let page = 1;
     let allSongIds = [...(artistData.songIds || [])];
     let totalFetched = 0;
     const maxSongs = 1000;
+    let artistImageUrlExtracted = false; // Track if we've already extracted the image URL
     
     console.log(`Starting with ${allSongIds.length} existing songs`);
     
@@ -327,6 +451,49 @@ async function populateArtistSongsCore(artistUrlKey) {
         if (result.songs.length === 0) {
             console.log('No more songs available');
             break;
+        }
+        
+        // Extract and store artist image URL (only once, from first few songs)
+        if (!artistImageUrlExtracted && artistData.imageUrl === undefined) {
+            console.log('Attempting to extract artist image URL from songs data...');
+            
+            // Calculate how many songs we should check based on which page we're on
+            // We want to check up to 11 songs total across pages
+            const songsCheckedSoFar = (page - 1) * 50;
+            const maxSongsToCheckThisPage = Math.max(0, 11 - songsCheckedSoFar);
+            
+            if (maxSongsToCheckThisPage > 0) {
+                // Use raw songs data from API response for image URL extraction
+                const artistImageUrl = extractArtistImageUrl(result.rawSongs, artistId, maxSongsToCheckThisPage);
+                
+                if (artistImageUrl) {
+                    try {
+                        // Update artist document with image URL
+                        await updateDoc(doc(db, 'artists', artistUrlKey), {
+                            imageUrl: artistImageUrl
+                        });
+                        console.log(`Successfully stored artist image URL: ${artistImageUrl}`);
+                        artistImageUrlExtracted = true;
+                    } catch (imageUpdateError) {
+                        console.error('Error updating artist image URL:', imageUpdateError);
+                        // Don't fail the entire operation if image update fails
+                    }
+                }
+            }
+            
+            // If we've checked 11 songs total and still haven't found an image URL, store null
+            const totalSongsChecked = Math.min(songsCheckedSoFar + result.songs.length, 11);
+            if (totalSongsChecked >= 11 && !artistImageUrlExtracted) {
+                try {
+                    await updateDoc(doc(db, 'artists', artistUrlKey), {
+                        imageUrl: null
+                    });
+                    console.log('No artist image URL found after checking 11 songs, stored null');
+                } catch (imageUpdateError) {
+                    console.error('Error updating artist image URL to null:', imageUpdateError);
+                }
+                artistImageUrlExtracted = true;
+            }
         }
         
         // Store songs in Firestore
