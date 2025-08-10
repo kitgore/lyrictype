@@ -528,7 +528,7 @@ $: {
 			
 			<!-- Handle words (spaces handled within words (attached to end)) -->
 			{#if item.type === 'word'}
-				<span class="word" style="display: inline-block; white-space: prewrap;">
+				<span class="word" style="margin-bottom: {windowHeight * 0.025}px;">
 					<!-- Add cursor to beginning of word -->
 					{#if cursorAtWordStart || cursorAtBeginning && blink}			
 						<span class="blinking-cursor" style={cursorStyle}></span>
@@ -551,20 +551,20 @@ $: {
 						{/if}
 					{/each}
 
-					<!-- Check if this is followed by a space, and if so, include it -->
-					{#if wordIndex < formattedLyrics.length - 1 && formattedLyrics[wordIndex + 1].type === 'space'}
-						<!-- Include trailing space in the same word span -->
-						<span
-							class={typingState.classes[wordIndex + 1]?.class || ''}
-							style={textStyle}
-						>
-							{formattedLyrics[wordIndex + 1].char === ' ' ? ' ' : formattedLyrics[wordIndex + 1].char}
-						</span>
-					{/if}
+									<!-- Check if this is followed by a space, and if so, include it -->
+				{#if wordIndex < formattedLyrics.length - 1 && formattedLyrics[wordIndex + 1].type === 'space'}
+					<!-- Include trailing space in the same word span -->
+					<span
+						class={typingState.classes[wordIndex + 1]?.class || ''}
+						style={textStyle}
+					>
+						{formattedLyrics[wordIndex + 1].char === ' ' ? '\u00A0' : formattedLyrics[wordIndex + 1].char}
+					</span>
+				{/if}
 				</span>
 			<!-- Handle only newlines separately -->
 			{:else if item.type === 'space' && item.char === '\n'}
-				<span class="newline">
+				<span class="newline" style="flex-basis: 100%; height: 0; width: 0;">
 					{"\n"}
 				</span>
 			{/if}
@@ -609,12 +609,22 @@ $: {
 	}
 
 	.quote-display{
-		white-space: pre-wrap;
 		padding: 1.5%;
 		font-family: "Geneva", sans-serif;
 		font-weight: 500;
 		color: var(--primary-color);
 		position: relative;
+		max-width: 100%;
+		box-sizing: border-box;
+		width: 100%;
+		/* Flexbox for word-based wrapping */
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		align-items: baseline;
+		/* Safari-specific fixes */
+		-webkit-flex-wrap: wrap;
+		-webkit-align-content: flex-start;
 	}
 
 	.pause-overlay {
@@ -660,6 +670,29 @@ $: {
 
 	.incorrect {
 		color: var(--incorrect-color);
+	}
+
+	.word {
+		/* Ensure words behave as flex items */
+		display: inline-flex;
+		flex: none;
+		align-items: baseline;
+		white-space: pre;
+		/* Add bottom margin for line spacing */
+		margin-bottom: 1em;
+		margin-right: 0;
+		/* Safari-specific flexbox fixes */
+		-webkit-flex: none;
+		-webkit-align-items: baseline;
+	}
+
+	.newline {
+		/* Force line breaks in flexbox */
+		flex-basis: 100%;
+		height: 0;
+		width: 0;
+		/* Safari-specific */
+		-webkit-flex-basis: 100%;
 	}
 
 	.pause-icon {

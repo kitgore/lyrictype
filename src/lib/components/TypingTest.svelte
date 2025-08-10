@@ -93,13 +93,64 @@
             console.log('✅ FIRST SONG LOADED:', firstSong);
             setDisplayFromDataWithoutQueue(firstSong);
             
-            // Update recent artists with new format
+            // Get the updated artist info (including newly extracted imageUrl) after song population
+            // Use a delayed check to allow background image extraction to complete
+            const checkForUpdatedImageUrl = async (attempt = 1, maxAttempts = 3) => {
+                try {
+                    const { getArtistInfo } = await import('$lib/services/artistService');
+                    // Use cache bypass for attempts 2 and beyond to get fresh data
+                    const bypassCache = attempt > 1;
+                    const updatedArtistInfo = await getArtistInfo(queueManager.artistUrlKey, bypassCache);
+                    
+                    console.log(`🔍 Attempt ${attempt} ${bypassCache ? '(bypassing cache)' : ''} - Retrieved artist info:`, {
+                        name: updatedArtistInfo?.name,
+                        imageUrl: updatedArtistInfo?.imageUrl,
+                        originalImageUrl: artist.imageUrl,
+                        urlKey: queueManager.artistUrlKey
+                    });
+                    
+                    // Check if we found a new imageUrl (comparing against null/undefined original)
+                    const hasNewImageUrl = updatedArtistInfo?.imageUrl && 
+                                          updatedArtistInfo.imageUrl !== artist.imageUrl &&
+                                          updatedArtistInfo.imageUrl !== null &&
+                                          updatedArtistInfo.imageUrl !== undefined;
+                    
+                    if (hasNewImageUrl) {
+                        console.log(`🖼️ Found updated imageUrl (attempt ${attempt}):`, updatedArtistInfo.imageUrl);
+                        
+                        // Update the recent artist with the newly extracted imageUrl
+                        setNewRecentArtist({
+                            name: artist.name, 
+                            imageUrl: updatedArtistInfo.imageUrl,
+                            artistId: artist.geniusId,
+                            urlKey: queueManager.artistUrlKey,
+                            songQueue: {}
+                        });
+                        return true; // Success
+                    } else if (attempt < maxAttempts) {
+                        // Try again if we haven't reached max attempts
+                        console.log(`🖼️ No imageUrl yet (attempt ${attempt}) - current: ${updatedArtistInfo?.imageUrl}, original: ${artist.imageUrl}`);
+                        setTimeout(() => checkForUpdatedImageUrl(attempt + 1, maxAttempts), 1500);
+                    } else {
+                        console.log('🖼️ No new imageUrl found after all attempts');
+                        console.log('Final check - imageUrl in DB:', updatedArtistInfo?.imageUrl);
+                    }
+                } catch (imageUpdateError) {
+                    console.warn(`Could not fetch updated artist imageUrl (attempt ${attempt}):`, imageUpdateError);
+                }
+                return false;
+            };
+            
+            // Start checking after a short delay
+            setTimeout(() => checkForUpdatedImageUrl(), 1000);
+            
+            // Set initial recent artist data immediately (without waiting for imageUrl)
             setNewRecentArtist({
                 name: artist.name, 
-                imageUrl: artist.imageUrl || 'https://images.genius.com/dbc2e3b4fe018596fd3cca47fd315541.1000x1000x1.jpg',
+                imageUrl: artist.imageUrl, // Use original for now
                 artistId: artist.geniusId,
-                urlKey: queueManager.artistUrlKey, // Store the URL key for future use
-                songQueue: {} // Legacy field, kept for compatibility
+                urlKey: queueManager.artistUrlKey,
+                songQueue: {}
             });
 
             // Update queue status for reactive UI updates
@@ -838,6 +889,10 @@
         background-color: var(--secondary-color);
         height: 100%;
         border-radius: .2em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     
