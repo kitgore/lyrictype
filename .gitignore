@@ -10,3 +10,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 src/lib/services/initFirebase.js
 /functions/build
+firebase-debug.log
