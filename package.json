@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && robocopy build functions\\build /E",
+		"build": "vite build && cp -r build functions/build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
