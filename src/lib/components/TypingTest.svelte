@@ -43,6 +43,9 @@
     let currentSong;
     let isPaused = false;
     let showQueue = false;
+    
+    // Track which artists are currently loading their images
+    let loadingImageArtists = new Set();
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     $: bottomButtonGap = windowHeight * 0.0075;
@@ -118,6 +121,10 @@
                     if (hasNewImageUrl) {
                         console.log(`🖼️ Found updated imageUrl (attempt ${attempt}):`, updatedArtistInfo.imageUrl);
                         
+                        // Remove from loading set since we found the image
+                        loadingImageArtists.delete(artist.geniusId);
+                        loadingImageArtists = loadingImageArtists; // Trigger reactivity
+                        
                         // Update the recent artist with the newly extracted imageUrl
                         setNewRecentArtist({
                             name: artist.name, 
@@ -134,6 +141,10 @@
                     } else {
                         console.log('🖼️ No new imageUrl found after all attempts');
                         console.log('Final check - imageUrl in DB:', updatedArtistInfo?.imageUrl);
+                        
+                        // Remove from loading set since we're done trying
+                        loadingImageArtists.delete(artist.geniusId);
+                        loadingImageArtists = loadingImageArtists; // Trigger reactivity
                     }
                 } catch (imageUpdateError) {
                     console.warn(`Could not fetch updated artist imageUrl (attempt ${attempt}):`, imageUpdateError);
@@ -145,6 +156,12 @@
             setTimeout(() => checkForUpdatedImageUrl(), 1000);
             
             // Set initial recent artist data immediately (without waiting for imageUrl)
+            // Mark this artist as loading an image if they don't have one yet
+            if (!artist.imageUrl) {
+                loadingImageArtists.add(artist.geniusId);
+                loadingImageArtists = loadingImageArtists; // Trigger reactivity
+            }
+            
             setNewRecentArtist({
                 name: artist.name, 
                 imageUrl: artist.imageUrl, // Use original for now
@@ -522,6 +539,7 @@
                     <ArtistButton 
                         name={artist.name} 
                         imageUrl={artist.imageUrl || '/default-image.svg'} 
+                        isLoadingImage={loadingImageArtists.has(artist.artistId)}
                         on:click={() => requeueArtist(artist.artistId)} 
                         on:keydown={(e) => {
                         if (e.key === 'Enter') {

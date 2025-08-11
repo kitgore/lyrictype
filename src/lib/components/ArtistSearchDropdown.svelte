@@ -287,7 +287,7 @@
             {/each}
             {#if searchChars.length === 0}
                 <!-- Invisible placeholder to ensure clickable area when empty -->
-                <span class="placeholder">&nbsp;</span>
+                <span class="placeholder"></span>
             {/if}
             {#if blink}
                 <span class="search-cursor"></span>

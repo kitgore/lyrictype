@@ -3,23 +3,24 @@
     import { themeColors, ditherImages, imageColors, windowStore } from '$lib/services/store.js';
     export let name;
     export let imageUrl;
+    export let isLoadingImage = false; // External loading state (for when image is being extracted)
 
     let ditheredImageUrl = '';
-    let isLoading = true;
+    let isProcessing = true; // Internal processing state (for dithering)
     let currentImageUrl = ''; // Track the current image URL
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
     async function processDithering() {
         if (!imageUrl || imageUrl === '/default-image.svg') {
-            isLoading = false;
+            isProcessing = false;
             ditheredImageUrl = '';
             return;
         }
 
         // If this is a new image, reset state
         if (currentImageUrl !== imageUrl) {
-            isLoading = true;
+            isProcessing = true;
             ditheredImageUrl = '';
             currentImageUrl = imageUrl;
         }
@@ -37,7 +38,7 @@
             console.error('Error processing image:', error);
             ditheredImageUrl = imageUrl;
         } finally {
-            isLoading = false;
+            isProcessing = false;
         }
     }
 
@@ -55,7 +56,7 @@
     <!-- svelte-ignore a11y-interactive-supports-focus -->
     <div class="artist-button" role="button" on:click on:keydown  aria-label="Artist Button" tabindex=4 style:border-radius="{windowHeight*0.019}px">
         <div class="image-container">
-            {#if isLoading || !ditheredImageUrl}
+            {#if isLoadingImage || isProcessing || !ditheredImageUrl}
                 <div class="loading-placeholder"></div>
             {:else}
                 <img src={ditheredImageUrl} alt={""} class="artist-image"/>
