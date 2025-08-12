@@ -81,13 +81,24 @@ export async function getArtistWithSongs(artistUrlKey) {
             }
         }
         
-        // If no songs cached or cache is stale, populate
+        // If no songs cached or cache is stale, populate just the first page and continue in background
         if (!artist.totalSongs || artist.totalSongs === 0) {
-            console.log(`Populating songs for artist: ${artistUrlKey}`);
+            console.log(`Populating FIRST PAGE for artist: ${artistUrlKey}`);
             const populateArtistSongs = httpsCallable(functions, 'populateArtistSongs');
-            await populateArtistSongs({ artistUrlKey: authoritativeUrlKey });
-            
-            // Get updated artist info
+
+            // Fetch just the first 50 quickly so the queue can be built immediately
+            const t0 = Date.now();
+            await populateArtistSongs({ artistUrlKey: authoritativeUrlKey, onlyFirstPage: true });
+            const t1 = Date.now();
+            console.log(`⏱️ First 50 cached in ${t1 - t0} ms for ${authoritativeUrlKey}`);
+
+            // Fire-and-forget: continue full pagination in the background without blocking UI
+            setTimeout(() => {
+                console.log('📡 Continuing background pagination for', authoritativeUrlKey);
+                populateArtistSongs({ artistUrlKey: authoritativeUrlKey }).catch(() => {});
+            }, 0);
+
+            // Get updated artist info (now has at least the first page of songIds)
             const updatedInfo = await getArtistInfo({ artistUrlKey: authoritativeUrlKey });
             return updatedInfo.data.artist;
         }

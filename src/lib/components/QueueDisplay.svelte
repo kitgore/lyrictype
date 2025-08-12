@@ -144,7 +144,6 @@
         max-height: var(--max-height);
         display: flex;
         flex-direction: column;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     }
     
     .queue-container.embedded {
@@ -213,6 +212,7 @@
         transition: background-color 0.2s ease;
         min-height: var(--item-height);
         border: 1px solid transparent;
+        color: var(--primary-color);
     }
     
     .queue-item:hover {
@@ -235,6 +235,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        color: var(--primary-color);
     }
     
     .song-artist {
@@ -244,6 +245,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        color: var(--primary-color);
     }
     
     .queue-position {
@@ -258,6 +260,7 @@
         opacity: 0.7;
         min-width: var(--position-min-width);
         text-align: center;
+        color: var(--primary-color);
     }
     
     .empty-queue {
