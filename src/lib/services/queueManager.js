@@ -88,6 +88,7 @@ export class CacheAwareQueueManager {
                 artist: artist.name
             }));
             
+            console.log('🧱 Beginning queue build from first-page songIds (placeholders created)');
             // Load the first song immediately
             const firstWithExcerpt = this.ensureExcerptForSong({ ...result.song });
             this.loadedSongs.set(firstWithExcerpt.id, firstWithExcerpt);

@@ -107,12 +107,13 @@ async function getGeniusApiKey() {
  * @param {Date} songsLastUpdated - Last update timestamp
  * @returns {boolean} Whether refresh is needed
  */
-function needsRefresh(songsLastUpdated) {
+function needsRefresh(songsLastUpdated, isFullyCached) {
+    // If we know the artist is NOT fully cached, always continue fetching pages
+    if (isFullyCached === false) return true;
+
     if (!songsLastUpdated) return true;
-    
     const oneWeekAgo = new Date();
     oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
-    
     return new Date(songsLastUpdated) < oneWeekAgo;
 }
 
@@ -327,7 +328,7 @@ async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
  * @param {string} artistUrlKey - Artist document ID
  * @returns {Promise<Object>} Result object
  */
-async function populateArtistSongsCore(artistUrlKey) {
+async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } = {}) {
     console.log(`Starting song population for artist: ${artistUrlKey}`);
     
     // Get artist document from Firestore
@@ -345,7 +346,7 @@ async function populateArtistSongsCore(artistUrlKey) {
     }
     
     // Check if refresh is needed
-    if (!needsRefresh(artistData.songsLastUpdated)) {
+    if (!needsRefresh(artistData.songsLastUpdated, artistData.isFullyCached)) {
         console.log('Artist songs are up to date, no refresh needed');
         
         // Even if songs are up to date, check if we need to extract image URL
@@ -513,7 +514,17 @@ async function populateArtistSongsCore(artistUrlKey) {
         });
         
         console.log(`Page ${page} complete: ${newSongIds.length} new songs, ${allSongIds.length} total`);
+
+        if (page === 1) {
+            console.log(`✅ First 50 songs cached for ${artistUrlKey}. Triggering queue build on client...`);
+        }
         
+        // Early exit after first page if requested
+        if (onlyFirstPage) {
+            console.log(`⏹️ Early return after first page for ${artistUrlKey}`);
+            break;
+        }
+
         // Break if no more pages
         if (!result.hasMore) {
             console.log('Reached end of songs for artist');
@@ -547,14 +558,14 @@ export const populateArtistSongs = onCall({
     maxInstances: 10,
     region: 'us-central1'
 }, async (request, context) => {
-    const { artistUrlKey } = request.data;
+    const { artistUrlKey, onlyFirstPage = false } = request.data;
     
     if (!artistUrlKey) {
         throw new HttpsError('invalid-argument', 'Artist URL key is required');
     }
     
     try {
-        return await populateArtistSongsCore(artistUrlKey);
+        return await populateArtistSongsCore(artistUrlKey, { onlyFirstPage });
     } catch (error) {
         console.error(`Error populating songs for artist ${artistUrlKey}:`, error);
         throw new HttpsError('internal', `Failed to populate artist songs: ${error.message}`);

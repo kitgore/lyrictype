@@ -152,7 +152,7 @@
             
 
         <div class="title-text" style:font-size="{dimensions.height*0.042}px">{title}</div>
-        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px;" on:click={onClose} style:right="{titleBarPadding * 2.5}px"></button>
+        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px;" on:click={onClose} style:left="{titleBarPadding * 2.5}px"></button>
     </div>
     <div class="window-content" bind:this={contentElement}>
         <div class="content-area">
