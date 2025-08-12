@@ -22,7 +22,7 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "ssrServer"
+        "destination": "/index.html"
       }
     ]
   },
