@@ -1,6 +1,6 @@
 <script>
     import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue } from '$lib/services/artistService';
-    import { queueManager } from '$lib/services/queueManager.js';
+    import { queueManager, queueSongs, queueUpcomingSongs, queueIndex } from '$lib/services/queueManager.js';
     import TextInput from '$lib/components/TextInput.svelte';
     import LyricDisplay from '$lib/components/LyricDisplay.svelte';
     import ArtistButton from './ArtistButton.svelte';
@@ -56,10 +56,8 @@
     $: canGoNext = queueStatus.canGoNext;
     $: futureSongsCount = Math.min(5, queueStatus.totalSongs - queueStatus.currentIndex - 1);
     
-    // Update queue status reactively
-    $: if (currentSong) {
-        queueStatus = queueManager.getQueueStatus();
-    }
+    // Update queue status reactively whenever queue songs or index change
+    $: queueStatus = ($queueSongs, $queueIndex, queueManager.getQueueStatus());
 
     function handleKeydown(event) {
         if (event.key === 'Enter') {
@@ -559,7 +557,7 @@
                             on:songSelected={handleQueueSongSelected}
                             on:close={handleQueueClose}
                             embedded={true}
-                            songs={queueManager.getUpcomingSongs(5)}
+                            songs={$queueUpcomingSongs}
                             currentIndex={queueStatus.currentIndex}
                             totalSongs={queueStatus.totalSongs}
                         />
