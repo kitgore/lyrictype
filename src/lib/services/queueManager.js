@@ -1,5 +1,17 @@
 // src/lib/services/queueManager.js
 import { loadArtistForQueue, loadSongsForNavigation } from './artistService.js';
+import { writable, derived } from 'svelte/store';
+
+/* -------------------- Reactive stores -------------------- */
+// Full queue (all songs)
+export const queueSongs = writable([]);
+// Current queue position
+export const queueIndex = writable(0);
+// Reactive "next 5" (or fewer) based on both songs and index
+export const queueUpcomingSongs = derived(
+  [queueSongs, queueIndex],
+  ([$songs, $index]) => $songs.slice($index + 1, Math.min($songs.length, $index + 6))
+);
 
 /**
  * New Queue Manager that integrates with the caching system
@@ -15,6 +27,13 @@ export class CacheAwareQueueManager {
         this.loadedSongs = new Map(); // Cache of loaded song data
         this.isLoading = false;
         this.preloadRadius = 5; // Number of songs to keep loaded around current position
+    }
+
+    // Push queue changes to Svelte stores so the UI can update reactively
+    broadcast() {
+        // new array ref so Svelte notices changes to items
+        queueSongs.set([...this.songs]);
+        queueIndex.set(this.currentIndex);
     }
 
     /**
@@ -80,13 +99,14 @@ export class CacheAwareQueueManager {
             
             // Clear and initialize songs array with placeholders
             this.songs = this.songIds.map((id, index) => ({
-                id: id,
-                index: index,
+                id,
+                index,
                 loaded: false,
                 cached: result.queueInfo.cachedSongs > index, // Assume first N songs are cached
                 title: `Loading...`,
                 artist: artist.name
             }));
+            this.broadcast();
             
             console.log('🧱 Beginning queue build from first-page songIds (placeholders created)');
             // Load the first song immediately
@@ -98,6 +118,7 @@ export class CacheAwareQueueManager {
                 loaded: true,
                 cached: true
             };
+            this.broadcast();
 
             // If backend preloaded a block of songs (and scraped missing lyrics),
             // inject them into the queue now so they are instantly usable.
@@ -115,6 +136,7 @@ export class CacheAwareQueueManager {
                         };
                     }
                 });
+                this.broadcast();
             }
 
             console.log("First song with excerpt lyrics:", firstWithExcerpt.lyrics);
@@ -160,8 +182,9 @@ export class CacheAwareQueueManager {
         }
 
         this.currentIndex++;
+        this.broadcast(); // notify index change immediately
+
         const nextSong = this.songs[this.currentIndex];
-        
         console.log(`⏭️ Moving to next song: ${nextSong.title} (${this.currentIndex + 1}/${this.songs.length})`);
         
         // If song is not loaded, load it now
@@ -185,8 +208,9 @@ export class CacheAwareQueueManager {
         }
 
         this.currentIndex--;
+        this.broadcast(); // notify index change immediately
+
         const prevSong = this.songs[this.currentIndex];
-        
         console.log(`⏮️ Moving to previous song: ${prevSong.title} (${this.currentIndex + 1}/${this.songs.length})`);
         
         // If song is not loaded, load it now
@@ -209,8 +233,9 @@ export class CacheAwareQueueManager {
         }
 
         this.currentIndex = index;
+        this.broadcast(); // notify index change immediately
+
         const targetSong = this.songs[index];
-        
         console.log(`🎯 Jumping to song: ${targetSong.title} (${index + 1}/${this.songs.length})`);
         
         // If song is not loaded, load it now
@@ -238,6 +263,7 @@ export class CacheAwareQueueManager {
         if (this.loadedSongs.has(songId)) {
             const loadedSong = this.loadedSongs.get(songId);
             this.songs[index] = { ...loadedSong, index, loaded: true, cached: true };
+            this.broadcast();
             return this.songs[index];
         }
 
@@ -265,6 +291,7 @@ export class CacheAwareQueueManager {
             });
             
             console.log(`✅ Loaded ${Object.keys(result.songs).length} songs around position ${index}`);
+            this.broadcast();
             
             return this.songs[index];
             
@@ -279,7 +306,7 @@ export class CacheAwareQueueManager {
                 title: 'Failed to load',
                 lyrics: 'This song could not be loaded. Please try the next song.'
             };
-            
+            this.broadcast();
             throw error;
         }
     }
@@ -365,7 +392,7 @@ export class CacheAwareQueueManager {
     }
 
     /**
-     * Get songs for queue display (next N songs)
+     * (Optional) Plain helper if you still want it — but prefer $queueUpcomingSongs in components.
      */
     getUpcomingSongs(count = 5) {
         const upcoming = [];
@@ -388,6 +415,7 @@ export class CacheAwareQueueManager {
         this.isLoading = false;
         
         console.log('🗑️ Queue cleared');
+        this.broadcast();
     }
 }
 

@@ -1,6 +1,6 @@
 <script>
     import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue } from '$lib/services/artistService';
-    import { queueManager } from '$lib/services/queueManager.js';
+    import { queueManager, queueSongs, queueUpcomingSongs, queueIndex } from '$lib/services/queueManager.js';
     import TextInput from '$lib/components/TextInput.svelte';
     import LyricDisplay from '$lib/components/LyricDisplay.svelte';
     import ArtistButton from './ArtistButton.svelte';
@@ -46,6 +46,20 @@
     
     // Track which artists are currently loading their images
     let loadingImageArtists = new Set();
+    
+    // Lyrics scrolling functionality
+    let lyricsScrollUp = null;
+    let lyricsScrollDown = null;
+    
+    // Debug reactive statement to monitor scroll function binding
+    $: {
+        console.log('TypingTest: Scroll functions updated', {
+            hasScrollUp: !!lyricsScrollUp,
+            hasScrollDown: !!lyricsScrollDown,
+            scrollUpType: typeof lyricsScrollUp,
+            scrollDownType: typeof lyricsScrollDown
+        });
+    }
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     $: bottomButtonGap = windowHeight * 0.0075;
@@ -56,10 +70,8 @@
     $: canGoNext = queueStatus.canGoNext;
     $: futureSongsCount = Math.min(5, queueStatus.totalSongs - queueStatus.currentIndex - 1);
     
-    // Update queue status reactively
-    $: if (currentSong) {
-        queueStatus = queueManager.getQueueStatus();
-    }
+    // Update queue status reactively whenever queue songs or index change
+    $: queueStatus = ($queueSongs, $queueIndex, queueManager.getQueueStatus());
 
     function handleKeydown(event) {
         if (event.key === 'Enter') {
@@ -476,6 +488,8 @@
         showQueue = false;
     }
 
+
+
     function focusInput() {
         if (searchDropdown) {
             searchDropdown.focusInput();
@@ -500,6 +514,30 @@
             inputElement.addEventListener('keydown', handleEnter);
             inputElement.addEventListener('blur', blurInput);
         }
+        
+        // Add event listeners for lyrics scrolling
+        const handleScrollUp = () => {
+            console.log('TypingTest received lyricsScrollUp event');
+            if (lyricsScrollUp && typeof lyricsScrollUp === 'function') {
+                lyricsScrollUp();
+            }
+        };
+        
+        const handleScrollDown = () => {
+            console.log('TypingTest received lyricsScrollDown event');
+            if (lyricsScrollDown && typeof lyricsScrollDown === 'function') {
+                lyricsScrollDown();
+            }
+        };
+        
+        window.addEventListener('lyricsScrollUp', handleScrollUp);
+        window.addEventListener('lyricsScrollDown', handleScrollDown);
+        
+        // Cleanup function
+        return () => {
+            window.removeEventListener('lyricsScrollUp', handleScrollUp);
+            window.removeEventListener('lyricsScrollDown', handleScrollDown);
+        };
     });
 
     $: fullArtistList = [...$recentArtists, ...Array(7 - $recentArtists.length).fill({ name: null, imageUrl: null, artistId: null })];
@@ -507,7 +545,7 @@
 </script>
 
 <!-- Updated HTML structure -->
-<div class="appContainer">
+<div class="appContainer typing-test-component">
     <div class="mainSection">
         <div class="headerRow">
             <div class="sidebarTitle">
@@ -559,7 +597,7 @@
                             on:songSelected={handleQueueSongSelected}
                             on:close={handleQueueClose}
                             embedded={true}
-                            songs={queueManager.getUpcomingSongs(5)}
+                            songs={$queueUpcomingSongs}
                             currentIndex={queueStatus.currentIndex}
                             totalSongs={queueStatus.totalSongs}
                         />
@@ -575,6 +613,9 @@
                             {isPaused}
                             capitalization={$capitalization}
                             punctuation={$punctuation}
+                            fullLyrics={currentSong?.fullLyrics}
+                            bind:onScrollUp={lyricsScrollUp}
+                            bind:onScrollDown={lyricsScrollDown}
                         />
                     {:else}
                         {#if loading}

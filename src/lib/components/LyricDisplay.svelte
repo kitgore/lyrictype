@@ -14,6 +14,16 @@
 	export let isPaused = false;
 	export let capitalization = true;
 	export let punctuation = true;
+	export let fullLyrics = null; // Full lyrics for scrolling, if available
+	
+	// Lyrics scrolling functionality
+	export let onScrollUp = null;
+	export let onScrollDown = null;
+	let currentScrollLine = 0; // Track which line we're starting from
+	let lyricsLines = []; // Array of lyrics split by lines
+	let visibleLines = []; // Currently visible 4 lines
+	const VISIBLE_LINES_COUNT = 4;
+	
 	let userInput = '';
 	let startTime = null;
 	let endTime = null;
@@ -35,7 +45,100 @@
   
 	$: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
-	
+	// Process lyrics into lines and manage scrolling
+	function processLyricsIntoLines(lyricsText) {
+		if (!lyricsText) return [];
+		return lyricsText.split('\n').filter(line => line.trim() !== '');
+	}
+
+	// Check if we have full lyrics available for scrolling
+	function hasFullLyricsForScrolling() {
+		// Check if we have access to full lyrics through currentSong or other means
+		// For now, we'll work with whatever lyrics we have
+		return lyricsLines.length > VISIBLE_LINES_COUNT;
+	}
+
+	// Scroll up by 4 lines (or to the beginning)
+	function scrollLyricsUp() {
+		console.log("scrolling up");
+		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
+			// If we have 4 or fewer lines, just show all from the beginning
+			currentScrollLine = 0;
+		} else if (currentScrollLine > 0) {
+			// Move up by 4 lines, but don't go past the beginning
+			currentScrollLine = Math.max(0, currentScrollLine - VISIBLE_LINES_COUNT);
+		} else {
+			// Already at the top, no change needed
+			return;
+		}
+		updateVisibleLines();
+		console.log(`Scrolled up to line ${currentScrollLine}`);
+	}
+
+	// Scroll down by 4 lines (or to the end)
+	function scrollLyricsDown() {
+		console.log("scrolling down");
+		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
+			// If we have 4 or fewer lines, no scrolling needed
+			return;
+		} else if (currentScrollLine + VISIBLE_LINES_COUNT < lyricsLines.length) {
+			// Move down by 4 lines, but don't go past the end
+			const maxScrollLine = Math.max(0, lyricsLines.length - VISIBLE_LINES_COUNT);
+			currentScrollLine = Math.min(maxScrollLine, currentScrollLine + VISIBLE_LINES_COUNT);
+		} else {
+			// Already at the bottom, no change needed
+			return;
+		}
+		updateVisibleLines();
+		console.log(`Scrolled down to line ${currentScrollLine}`);
+	}
+
+	// Update the visible lines based on current scroll position
+	function updateVisibleLines() {
+		console.log("updating visible lines");
+		const endLine = Math.min(lyricsLines.length, currentScrollLine + VISIBLE_LINES_COUNT);
+		visibleLines = lyricsLines.slice(currentScrollLine, endLine);
+		
+		// If we don't have enough lines, pad with empty lines to maintain consistent display
+		while (visibleLines.length < VISIBLE_LINES_COUNT && lyricsLines.length > 0) {
+			visibleLines.push('');
+		}
+		
+		console.log(`Displaying lines ${currentScrollLine}-${endLine-1} of ${lyricsLines.length} total lines`);
+	}
+
+	// Reset scroll position when lyrics change
+	function resetScrollPosition() {
+		console.log("resetting scroll position");
+		currentScrollLine = 0;
+		updateVisibleLines();
+	}
+
+	// Reactive statement to process lyrics when they change
+	$: {
+		// Use full lyrics for scrolling if available, otherwise use the provided lyrics
+		const lyricsToProcess = fullLyrics || lyrics;
+		if (lyricsToProcess) {
+			lyricsLines = processLyricsIntoLines(lyricsToProcess);
+			resetScrollPosition();
+			console.log(`Processed lyrics: ${lyricsLines.length} lines total`, {
+				hasFullLyrics: !!fullLyrics,
+				usingFullLyrics: !!fullLyrics,
+				firstFewLines: lyricsLines.slice(0, 3)
+			});
+		}
+	}
+
+	// Expose scroll functions to parent components
+	$: {
+		onScrollUp = scrollLyricsUp;
+		onScrollDown = scrollLyricsDown;
+		console.log('LyricDisplay: Exposed scroll functions', { 
+			hasScrollUp: !!onScrollUp, 
+			hasScrollDown: !!onScrollDown 
+		});
+	}
+
 	async function preloadAndDitherImage(src) {
 		try {
 		// First dither the image
@@ -183,12 +286,14 @@
 		return normalized;
 	}
 
-	// Derived lyrics based on toggles
+	// Derived lyrics based on toggles and scrolling
 	$: transformedLyrics = (() => {
-    let out = lyrics ? (capitalization ? lyrics : lyrics.toLowerCase()) : '';
-    if (!punctuation) out = out.replace(/[^\p{L}\p{N}\s]/gu, '');
-    return out;
-})();
+		// Use visible lines if scrolling is active, otherwise use full lyrics
+		const lyricsToUse = visibleLines.length > 0 ? visibleLines.join('\n') : lyrics;
+		let out = lyricsToUse ? (capitalization ? lyricsToUse : lyricsToUse.toLowerCase()) : '';
+		if (!punctuation) out = out.replace(/[^\p{L}\p{N}\s]/gu, '');
+		return out;
+	})();
 
 // Reset test when toggles change
 let lastCap = capitalization;

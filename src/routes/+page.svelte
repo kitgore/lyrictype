@@ -142,6 +142,7 @@ style:--background-secondary-color={$backgroundColors.secondary}
         id={window.id}
         title={window.title}
         showScrollbar={window.showScrollbar}
+        lyricsMode={window.id === 'typingTestWindow'}
         position={window.position}
         dimensions={$windowStore.windowStates.find(w => w.id === window.id)?.dimensions}
         onClose={() => closeWindow(window.id)}

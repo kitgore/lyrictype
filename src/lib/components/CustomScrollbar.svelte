@@ -1,19 +1,64 @@
 <script>
-    import { onMount, afterUpdate, onDestroy } from 'svelte';
+    import { onMount, afterUpdate, onDestroy, createEventDispatcher } from 'svelte';
     import { themeColors } from '$lib/services/store.js';
 
-    export let content; // The content element that will be scrolled
+    const dispatch = createEventDispatcher();
+
+    export let content; // The content element that will be scrolled (legacy support)
+    export let onScrollUp = null; // Custom scroll up function (for lyrics)
+    export let onScrollDown = null; // Custom scroll down function (for lyrics)
+    export let lyricsMode = false; // Whether to use lyrics scrolling mode
     let contentHeight;
     let contentWidth;
   
     // Function to scroll the content up
     function scrollUp() {
-      content.scrollTop -= 20; // Adjust the scroll step size as needed
+        console.log('CustomScrollbar scrollUp called', { 
+            hasOnScrollUp: !!onScrollUp, 
+            lyricsMode, 
+            hasContent: !!content 
+        });
+        
+        // If custom scroll functions are provided, use them (for lyrics)
+        if (onScrollUp && typeof onScrollUp === 'function') {
+            console.log('Calling onScrollUp function');
+            onScrollUp();
+        } else if (lyricsMode) {
+            // Dispatch custom event for lyrics scrolling to the window
+            console.log('Dispatching lyricsScrollUp event to window');
+            window.dispatchEvent(new CustomEvent('lyricsScrollUp'));
+        } else if (content) {
+            // Legacy behavior for general content scrolling
+            console.log('Using legacy scroll behavior');
+            content.scrollTop -= 20;
+        } else {
+            console.log('No scroll action taken');
+        }
     }
   
     // Function to scroll the content down
     function scrollDown() {
-      content.scrollTop += 20; // Adjust the scroll step size as needed
+        console.log('CustomScrollbar scrollDown called', { 
+            hasOnScrollDown: !!onScrollDown, 
+            lyricsMode, 
+            hasContent: !!content 
+        });
+        
+        // If custom scroll functions are provided, use them (for lyrics)
+        if (onScrollDown && typeof onScrollDown === 'function') {
+            console.log('Calling onScrollDown function');
+            onScrollDown();
+        } else if (lyricsMode) {
+            // Dispatch custom event for lyrics scrolling to the window
+            console.log('Dispatching lyricsScrollDown event to window');
+            window.dispatchEvent(new CustomEvent('lyricsScrollDown'));
+        } else if (content) {
+            // Legacy behavior for general content scrolling
+            console.log('Using legacy scroll behavior');
+            content.scrollTop += 20;
+        } else {
+            console.log('No scroll action taken');
+        }
     }
 
     onMount(() => {
@@ -34,9 +79,15 @@
 
     // Function to calculate scrollbar width based on the content height
     function calculateContentDimensions() {
-        contentHeight = content.clientHeight;
-        contentWidth = content.clientWidth;
-        console.log(contentWidth, " ", contentHeight)
+        if (content) {
+            contentHeight = content.clientHeight;
+            contentWidth = content.clientWidth;
+            console.log(contentWidth, " ", contentHeight);
+        } else {
+            // Default dimensions when no content element is provided (for lyrics mode)
+            contentHeight = 400;
+            contentWidth = 300;
+        }
     }
   </script>
   

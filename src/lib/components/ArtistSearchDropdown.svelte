@@ -24,7 +24,10 @@
     $: textLeftOffset = windowHeight ? windowHeight * 0.004 : 4; // 0.4% of window height, fallback 4px
     $: cursorGap = windowHeight ? windowHeight * 0.002 : 2; // 0.2% of window height, fallback 2px
     
-    let searchTerm = '';
+	let searchTerm = '';
+	// Text to show when input is not focused (e.g., last selected artist)
+	let persistedText = '';
+	let isFocused = false;
     let suggestions = [];
     let isOpen = false;
     let selectedIndex = -1;
@@ -161,11 +164,14 @@
         }
     }
     
-    function selectArtist(artist) {
-        searchTerm = artist.name;
-        closeDropdown();
-        dispatch('artistSelected', artist);
-    }
+	function selectArtist(artist) {
+		// Keep the selected artist text visible when not focused
+		persistedText = artist.name;
+		// Clear the editable value so next focus starts fresh
+		searchTerm = '';
+		closeDropdown();
+		dispatch('artistSelected', artist);
+	}
     
     function closeDropdown() {
         isOpen = false;
@@ -190,12 +196,16 @@
         }
     }
     
-    function focusInput() {
+	function focusInput() {
         console.log('focusInput called');
         if (inputElement) {
             console.log('inputElement exists, attempting to focus');
             inputElement.focus();
-            blink = true;
+			blink = true;
+			isFocused = true;
+			// Clear any previous display text when user returns to search
+			persistedText = '';
+			searchTerm = '';
             console.log('focusInput - blink set to:', blink);
             console.log('activeElement after focus:', document.activeElement);
         } else {
@@ -203,10 +213,15 @@
         }
     }
     
-    function blurInput() {
-        blink = false;
-        console.log('blurInput - blink set to:', blink);
-    }
+	function blurInput() {
+		blink = false;
+		isFocused = false;
+		// Keep what the user last typed visible when leaving the field
+		if (searchTerm && searchTerm.trim().length > 0) {
+			persistedText = searchTerm;
+		}
+		console.log('blurInput - blink set to:', blink);
+	}
     
     function handleMouseEnter(index) {
         // Ignore mouse hover if keyboard navigation is locked
@@ -264,8 +279,8 @@
         }
     }
     
-    // Split search term into characters for display
-    $: searchChars = searchTerm.split('');
+	// Show persisted text when not focused; live input when focused
+	$: searchChars = (isFocused ? searchTerm : persistedText).split('');
     
     // Debug cursor visibility
     $: console.log('Cursor should be visible:', blink);
