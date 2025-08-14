@@ -5,6 +5,9 @@
     export let onClose;
     export let dimensions = { width: 80, height: 78 };
     export let showScrollbar = true;
+    export let onScrollUp = null;
+    export let onScrollDown = null;
+    export let lyricsMode = false;
     
     import { windowStore, windowActions } from '$lib/services/store.js';
     import CustomScrollbar from './CustomScrollbar.svelte';
@@ -160,7 +163,12 @@
         </div>
         <div class="scrollbar-container">
             {#if contentElement && showScrollbar}
-                <CustomScrollbar content={contentElement} />
+                <CustomScrollbar 
+                    content={contentElement} 
+                    {onScrollUp}
+                    {onScrollDown}
+                    {lyricsMode}
+                />
             {/if}
         </div>
     </div>
