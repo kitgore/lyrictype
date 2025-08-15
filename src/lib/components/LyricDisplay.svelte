@@ -461,13 +461,13 @@ function handleInput(event) {
 
   	// Function to end the test and calculate WPM and accuracy
 	function endTest() {
+		stopLiveWpmTracking();
 		endTime = new Date();
 		// Calculate actual typing time by subtracting pause time
 		const actualDuration = (endTime - startTime) - totalPauseTime;
 		const durationInMinutes = actualDuration / 60000;
 		const charactersTyped = userInput.length;
 		wpm = (charactersTyped / 5) / durationInMinutes;
-		stopLiveWpmTracking();
 
 		let incorrectChars = 0;
 		
@@ -508,8 +508,6 @@ function handleInput(event) {
 		testStarted = false;
 		totalPauseTime = 0;
 		pauseStartTime = null;
-		liveWpm = 0;
-		stopLiveWpmTracking();
 		setTimeout(() => { // Wait for the DOM to update before focusing the input
 			focusInput();
 		}, 0);
