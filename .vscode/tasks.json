@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start SvelteKit Dev Server",
+            "type": "shell",
+            "command": "npm run dev:vite",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Firebase Emulators",
+            "type": "shell",
+            "command": "npm run dev:emulators",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Both Dev Servers",
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "Start SvelteKit Dev Server",
+                "Start Firebase Emulators"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

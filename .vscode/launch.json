@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "🚀 Start Development Servers",
+            "configurations": [
+                "SvelteKit Dev Server",
+                "Firebase Emulators"
+            ],
+            "presentation": {
+                "hidden": false,
+                "group": "development",
+                "order": 1
+            }
+        }
+    ],
+    "configurations": [
+        {
+            "name": "SvelteKit Dev Server",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev:vite",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Firebase Emulators", 
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev:emulators",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

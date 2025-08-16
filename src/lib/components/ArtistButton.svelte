@@ -12,16 +12,17 @@
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
     async function processDithering() {
-        if (!imageUrl || imageUrl === '/default-image.svg') {
+        if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
             isProcessing = false;
             ditheredImageUrl = '';
+            currentImageUrl = ''; // Clear current URL to ensure fresh state
             return;
         }
 
         // If this is a new image, reset state
         if (currentImageUrl !== imageUrl) {
             isProcessing = true;
-            ditheredImageUrl = '';
+            ditheredImageUrl = ''; // Clear any previous image immediately
             currentImageUrl = imageUrl;
         }
 
@@ -42,12 +43,19 @@
         }
     }
 
-    $: if (imageUrl && imageUrl !== '/default-image.svg') {
+    // Clear image immediately when imageUrl becomes invalid
+    $: if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
+        ditheredImageUrl = '';
+        currentImageUrl = '';
+        isProcessing = false;
+    }
+
+    $: if (imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
         processDithering();
     }
 
     // Watch for changes in the dither setting
-    $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && $imageColors) {
+    $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined && $imageColors) {
         processDithering();
     }
 </script>

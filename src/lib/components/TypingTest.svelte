@@ -576,10 +576,10 @@
         <div class="contentLayout">
             <div class="sidebar">
                 <div class="artistList">
-                    {#each fullArtistList as artist, index}
+                    {#each fullArtistList as artist, index (artist.artistId || `empty-${index}`)}
                     <ArtistButton 
                         name={artist.name} 
-                        imageUrl={artist.imageUrl || '/default-image.svg'} 
+                        imageUrl={artist.imageUrl} 
                         isLoadingImage={loadingImageArtists.has(artist.artistId)}
                         on:click={() => requeueArtist(artist.artistId)} 
                         on:keydown={(e) => {

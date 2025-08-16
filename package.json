@@ -3,8 +3,13 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build && cp -r build functions/build",
+		"dev": "concurrently \"npm run dev:vite\" \"npm run dev:emulators\" --names \"SvelteKit,Firebase\" --prefix-colors \"cyan,yellow\"",
+		"dev:split": "osascript -e 'tell application \"Terminal\" to do script \"cd $(pwd) && npm run dev:vite\"' && osascript -e 'tell application \"Terminal\" to do script \"cd $(pwd) && npm run dev:emulators\"'",
+		"dev:vite": "vite dev",
+		"dev:emulators": "firebase emulators:start --only hosting,functions",
+		"dev:vite-only": "vite dev",
+		"dev:emulators-only": "firebase emulators:start --only hosting,functions",
+		"build": "vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
@@ -13,6 +18,7 @@
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"concurrently": "^9.2.0",
 		"svelte": "^4.2.7",
 		"vite": "^5.0.3"
 	},
