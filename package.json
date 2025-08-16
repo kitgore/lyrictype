@@ -27,6 +27,7 @@
 		"@thi.ng/pixel": "^7.3.14",
 		"@thi.ng/pixel-dither": "^1.1.154",
 		"axios": "^1.10.0",
+		"canvas": "^3.1.2",
 		"cheerio": "^1.0.0-rc.12",
 		"cors": "^2.8.5",
 		"firebase": "^10.8.0",

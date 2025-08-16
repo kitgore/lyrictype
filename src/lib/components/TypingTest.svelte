@@ -580,6 +580,7 @@
                     <ArtistButton 
                         name={artist.name} 
                         imageUrl={artist.imageUrl} 
+                        urlKey={artist.urlKey}
                         isLoadingImage={loadingImageArtists.has(artist.artistId)}
                         on:click={() => requeueArtist(artist.artistId)} 
                         on:keydown={(e) => {
