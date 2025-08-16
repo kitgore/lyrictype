@@ -42,6 +42,10 @@
 	let ditheredImageUrl = '';
 	let normalizedLyrics;
 	let blink = false;
+	
+	// Live WPM tracking
+	export let liveWpm = 0;
+	let liveWpmInterval = null;
   
 	$: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
@@ -72,6 +76,7 @@
 			return;
 		}
 		updateVisibleLines();
+		resetTypingTest();
 		console.log(`Scrolled up to line ${currentScrollLine}`);
 	}
 
@@ -90,6 +95,7 @@
 			return;
 		}
 		updateVisibleLines();
+		resetTypingTest();
 		console.log(`Scrolled down to line ${currentScrollLine}`);
 	}
 
@@ -112,6 +118,32 @@
 		console.log("resetting scroll position");
 		currentScrollLine = 0;
 		updateVisibleLines();
+	}
+
+	// Reset typing test state when scrolling to new lyrics section
+	function resetTypingTest() {
+		console.log("resetting typing test due to scroll");
+		// Reset all typing test state
+		showResults = false;
+		userInput = '';
+		testStarted = false;
+		startTime = null;
+		endTime = null;
+		cursorPosition = 0;
+		totalPauseTime = 0;
+		pauseStartTime = null;
+		liveWpm = 0;
+		
+		// Stop live WPM tracking
+		stopLiveWpmTracking();
+		
+		// Reset typing state classes
+		typingState.classes = [];
+		
+		// Focus the input after a short delay to ensure DOM is updated
+		setTimeout(() => {
+			focusInput();
+		}, 0);
 	}
 
 	// Reactive statement to process lyrics when they change
@@ -169,6 +201,70 @@
 			testStarted = true;
 			// Start dithering process when test starts
 			if (imageUrl) preloadAndDitherImage(imageUrl);
+			// Start live WPM tracking
+			startLiveWpmTracking();
+		}
+	}
+
+	// Calculate live WPM based on current progress
+	function calculateLiveWpm() {
+		if (!testStarted || !startTime) {
+			liveWpm = 0;
+			return;
+		}
+		
+		const currentTime = new Date();
+		// Calculate actual typing time by subtracting pause time
+		const currentPauseTime = pauseStartTime ? (currentTime - pauseStartTime) : 0;
+		const actualDuration = (currentTime - startTime) - totalPauseTime - currentPauseTime;
+		const durationInMinutes = actualDuration / 60000;
+		
+		if (durationInMinutes <= 0) {
+			liveWpm = 0;
+			return;
+		}
+		
+		const charactersTyped = userInput.length;
+		const rawWpm = (charactersTyped / 5) / durationInMinutes;
+		
+		// Calculate errors for penalty
+		let incorrectChars = 0;
+		if (typingState.classes) {
+			typingState.classes.forEach(item => {
+				if (item.type === 'word') {
+					item.chars.forEach(charClass => {
+						if (charClass === 'incorrect') {
+							incorrectChars++;
+						}
+					});
+				} else if (item.class === 'incorrect') {
+					incorrectChars++;
+				}
+			});
+		}
+		
+		// Apply error penalty (same as final calculation)
+		liveWpm = Math.max(rawWpm - (incorrectChars * 3), 0);
+	}
+
+	// Start live WPM tracking interval
+	function startLiveWpmTracking() {
+		if (liveWpmInterval) {
+			clearInterval(liveWpmInterval);
+		}
+		
+		liveWpmInterval = setInterval(() => {
+			if (testStarted && !isPaused) {
+				calculateLiveWpm();
+			}
+		}, 500); // Update every 500ms
+	}
+
+	// Stop live WPM tracking
+	function stopLiveWpmTracking() {
+		if (liveWpmInterval) {
+			clearInterval(liveWpmInterval);
+			liveWpmInterval = null;
 		}
 	}
 
@@ -176,6 +272,8 @@
 		showResults = false;
 		userInput = '';
 		testStarted = false;
+		liveWpm = 0;
+		stopLiveWpmTracking();
 		setTimeout(() => { // Wait for the DOM to update before focusing the input
 			focusInput();
 		}, 0);
@@ -211,6 +309,10 @@
 			cursorPosition = 0;
 			totalPauseTime = 0;
 			pauseStartTime = null;
+			liveWpm = 0;
+			
+			// Stop live WPM tracking
+			stopLiveWpmTracking();
 			
 			// Reset typing state classes
 			typingState.classes = [];
@@ -236,6 +338,7 @@
 		return () => {
 			window.removeEventListener('restartTest', handleRestartTest);
 			window.removeEventListener('unpauseTest', handleUnpauseTest);
+			stopLiveWpmTracking();
 		};
 	});
 
@@ -309,7 +412,11 @@ $: if ((capitalization !== lastCap || punctuation !== lastPunct) && (userInput.l
     totalPauseTime = 0;
     pauseStartTime = null;
     cursorPosition = 0;
+    liveWpm = 0;
     typingState.classes = [];
+
+    // Stop live WPM tracking
+    stopLiveWpmTracking();
 
     // Update last known values
     lastCap = capitalization;
@@ -354,6 +461,7 @@ function handleInput(event) {
 
   	// Function to end the test and calculate WPM and accuracy
 	function endTest() {
+		stopLiveWpmTracking();
 		endTime = new Date();
 		// Calculate actual typing time by subtracting pause time
 		const actualDuration = (endTime - startTime) - totalPauseTime;

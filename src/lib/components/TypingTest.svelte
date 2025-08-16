@@ -51,6 +51,9 @@
     let lyricsScrollUp = null;
     let lyricsScrollDown = null;
     
+    // Live WPM from LyricDisplay component
+    let liveWpm = 0;
+    
     // Debug reactive statement to monitor scroll function binding
     $: {
         console.log('TypingTest: Scroll functions updated', {
@@ -616,6 +619,7 @@
                             fullLyrics={currentSong?.fullLyrics}
                             bind:onScrollUp={lyricsScrollUp}
                             bind:onScrollDown={lyricsScrollDown}
+                            bind:liveWpm={liveWpm}
                         />
                     {:else}
                         {#if loading}
@@ -670,6 +674,10 @@
                 {#if songTitle}
                     <div class="songTitle" style:font-size="{windowHeight*0.034}px"> - {songTitle}</div>
                 {/if}
+            </div>
+            <div class="liveWpmContainer">
+                <p class="statLabel" style:font-size="{windowHeight*0.03}px">wpm:</p>
+                <p class="statValue" style:font-size="{windowHeight*0.045}px">{liveWpm.toFixed(1)}</p>
             </div>
         </div>
      </div>
@@ -807,8 +815,8 @@
 
     .queue-indicator {
         position: absolute;
-        top: -4px;
-        right: -4px;
+        top: -6.5px;
+        right: -6.5px;
         background: var(--primary-color);
         color: var(--secondary-color);
         border-radius: 50%;
@@ -818,7 +826,7 @@
         align-items: center;
         justify-content: center;
         font-family: "Geneva", sans-serif;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold;
         border: 2px solid var(--secondary-color);
         min-width: 20px;
@@ -877,6 +885,27 @@
          font-size: 2vh;
          flex: 1;
          min-width: 0;
+     }
+
+     .liveWpmContainer {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         padding-right: 2%;
+         min-width: 120px;
+     }
+
+     .statLabel {
+         font-size: 3vh;
+         margin: 0;
+         color: var(--primary-color);
+     }
+
+     .statValue {
+         font-size: 5vh;
+         margin: 0;
+         color: var(--primary-color);
      }
          .musicIconContainer {
          display: flex;
