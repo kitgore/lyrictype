@@ -1,13 +1,15 @@
 <script>
 	import { onMount } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
-	import { applyDitheringToImage } from '$lib/services/dither-utils';
+
 	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
 	import { normalizeDiacritics } from 'normalize-text';
 	export let lyrics;
 	export let songTitle;
 	export let artistName;
 	export let imageUrl;
+	export let albumArtId = null; // Album art ID for binary rendering
+	export let preloadedAlbumArt = null; // Preloaded binary album art data for instant results
 	export let continueFromQueue;
 	export let replaySong;
 	export let geniusUrl;
@@ -39,7 +41,6 @@
 	let wpm = 0;
 	let accuracy = 0;
 	let preloadedImage;
-	let ditheredImageUrl = '';
 	let normalizedLyrics;
 	let blink = false;
 	
@@ -171,27 +172,15 @@
 		});
 	}
 
-	async function preloadAndDitherImage(src) {
+	async function preloadImage(src) {
 		try {
-		// First dither the image
-		const dithered = await applyDitheringToImage(src, $imageColors.primary, $imageColors.secondary, $ditherImages);
-		ditheredImageUrl = dithered;
-		
-		// Then preload it
-		const img = new Image();
-		img.src = ditheredImageUrl;
-		img.onload = () => {
-			preloadedImage = img;
-		};
+			const img = new Image();
+			img.src = src;
+			img.onload = () => {
+				preloadedImage = img;
+			};
 		} catch (error) {
-		console.error('Error in preload and dither:', error);
-		// Fallback to original image
-		const img = new Image();
-		img.src = src;
-		img.onload = () => {
-			preloadedImage = img;
-			ditheredImageUrl = src;
-		};
+			console.error('Error preloading image:', error);
 		}
 	}
 
@@ -199,8 +188,8 @@
 		if (!testStarted) {
 			startTime = new Date();
 			testStarted = true;
-			// Start dithering process when test starts
-			if (imageUrl) preloadAndDitherImage(imageUrl);
+			// Start image preload when test starts
+			if (imageUrl) preloadImage(imageUrl);
 			// Start live WPM tracking
 			startLiveWpmTracking();
 		}
@@ -296,7 +285,7 @@
 
 	onMount(() => {
 		focusInput();
-		if (imageUrl) preloadAndDitherImage(imageUrl);
+		if (imageUrl) preloadImage(imageUrl);
 		
 		// Listen for restart test events
 		const handleRestartTest = (event) => {
@@ -694,11 +683,8 @@ $: {
 	$: cursorHeight = windowHeight * 0.038;
 	$: cursorYOffset = -windowHeight * 0.002;
 
-	$: if ($ditherImages || $imageColors) {
-		preloadAndDitherImage(imageUrl);
-	}
-	else{
-		ditheredImageUrl = imageUrl;
+	$: if (imageUrl) {
+		preloadImage(imageUrl);
 	}
 </script>
 
@@ -708,7 +694,9 @@ $: {
         {accuracy}
         {songTitle}
         {artistName}
-        imageUrl={ditheredImageUrl}
+        imageUrl={imageUrl}
+        {albumArtId}
+        {preloadedAlbumArt}
         {continueFromQueue}
         replaySong={replaySongInner}
         {geniusUrl}

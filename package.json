@@ -33,6 +33,7 @@
 		"firebase": "^10.8.0",
 		"js-cookie": "^3.0.5",
 		"normalize-text": "^2.5.0",
+		"pako": "^2.1.0",
 		"robocopy": "^0.1.16",
 		"textfit": "^2.4.0",
 		"unidecode": "^1.1.0"

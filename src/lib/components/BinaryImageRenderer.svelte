@@ -12,6 +12,7 @@
   export let width = 200;
   export let height = 200;
   export let alt = 'Binary rendered image';
+  export let borderRadius = '25%'; // Default border radius for artist images
   
   // Allow custom CSS class to be passed in
   let className = '';
@@ -372,7 +373,7 @@
 </script>
 
 <!-- Wrapper div for border-radius clipping -->
-<div class="canvas-wrapper {className}">
+<div class="canvas-wrapper {className}" style="border-radius: {borderRadius};">
   <canvas
     bind:this={canvas}
     width={width}
@@ -386,11 +387,7 @@
   .canvas-wrapper {
     display: block;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 25%;
+    aspect-ratio: 1/1;
     overflow: hidden;
     object-fit: cover;
   }

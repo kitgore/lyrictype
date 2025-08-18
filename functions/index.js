@@ -3,6 +3,7 @@ import { defineString } from 'firebase-functions/params';
 import { getFirestore, doc, getDoc, updateDoc, setDoc, writeBatch, collection, arrayUnion, increment } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import * as cheerio from 'cheerio';
+import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
@@ -48,26 +49,8 @@ const fetchWithTimeout = async (url, options = {}) => {
   }
 };
 
-// Keep existing SSR server for backward compatibility
-let handler = null;
-export const ssrServer = onRequest({
-    timeoutSeconds: 60,
-    minInstances: 0,
-    maxInstances: 100,
-    region: 'us-central1',
-    invoker: 'public'
-}, async (request, response) => {
-    try {
-        if (!handler) {
-            const { handler: importedHandler } = await import('./server.js');
-            handler = importedHandler;
-        }
-        return await handler(request, response);
-    } catch (error) {
-        console.error('SSR Error:', error);
-        response.status(500).send('Internal Server Error');
-    }
-});
+// SSR server removed - now using pure static hosting with optimized binary image system
+// All image processing is now done via dedicated Firebase Functions with Firestore caching
 
 // Keep existing health check
 export const healthCheck = onRequest({
@@ -208,8 +191,12 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
         
         console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
         
+        // Compress with Pako
+        const compressedData = pako.deflate(binaryData);
+        console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+        
         // Store in artist document
-        const base64Binary = Buffer.from(binaryData).toString('base64');
+        const base64Binary = Buffer.from(compressedData).toString('base64');
         const imageMetadata = {
             binaryImageData: base64Binary,
             imageWidth: targetSize,
@@ -217,9 +204,14 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
             originalImageUrl: imageUrl,
             originalSize: imageBuffer.byteLength,
             binarySize: analysis.totalBytes,
+            compressedSize: compressedData.length,
+            base64Size: base64Binary.length,
             compressionRatio: analysis.compressionRatio,
+            pakoCompressionRatio: compressedData.length / binaryData.length,
+            totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
             processedAt: new Date(),
-            processingVersion: '1.0'
+            processingVersion: '1.1-pako',
+            compressionMethod: 'pako-deflate'
         };
         
         // Update or create artist document with binary data
@@ -252,10 +244,17 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
                 height: targetSize,
                 originalSize: imageBuffer.byteLength,
                 binarySize: analysis.totalBytes,
+                compressedSize: compressedData.length,
+                base64Size: base64Binary.length,
                 compressionRatio: analysis.compressionRatio,
+                pakoCompressionRatio: compressedData.length / binaryData.length,
+                totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
                 compressionPercent: analysis.compressionPercent,
+                pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
                 whitePixelPercent: analysis.whitePercent,
-                processingTimeMs: Date.now() - startTime
+                processingTimeMs: Date.now() - startTime,
+                compressionMethod: 'pako-deflate'
             }
         };
         
@@ -304,6 +303,197 @@ export const processArtistImageBinary = onRequest({
         console.error('❌ Error in processArtistImageBinary:', error);
         res.status(500).json({ 
             error: 'Failed to process artist image', 
+            details: error.message 
+        });
+    }
+});
+
+/**
+ * Try to convert unsupported image formats to supported ones
+ * @param {string} imageUrl - Original image URL
+ * @returns {string} Modified URL that might work better
+ */
+function tryAlternativeImageFormat(imageUrl) {
+    // Convert .webp to .jpg - Genius often has both formats
+    if (imageUrl.includes('.webp')) {
+        const jpgUrl = imageUrl.replace('.webp', '.jpg');
+        console.log(`🔄 Trying alternative format: ${jpgUrl}`);
+        return jpgUrl;
+    }
+    
+    // For other formats, try to get a .jpg version by removing size specifications
+    // e.g., file.464x464x1.png -> file.jpg
+    const baseUrl = imageUrl.replace(/\.\d+x\d+x?\d*\.(png|gif|webp)$/i, '.jpg');
+    if (baseUrl !== imageUrl) {
+        console.log(`🔄 Trying simplified format: ${baseUrl}`);
+        return baseUrl;
+    }
+    
+    return imageUrl;
+}
+
+/**
+ * Process album art to binary format and store in database
+ * Similar to artist processing but stores in albumArt collection
+ * Uses 800x800 resolution for high quality on results screen
+ */
+async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
+    const startTime = Date.now();
+    let lastError = null;
+    
+    // Try original URL first, then alternative formats
+    const urlsToTry = [imageUrl];
+    
+    // Add alternative format if original might be problematic
+    const altUrl = tryAlternativeImageFormat(imageUrl);
+    if (altUrl !== imageUrl) {
+        urlsToTry.push(altUrl);
+    }
+    
+    // Also try without size specification for backup
+    const simpleUrl = imageUrl.replace(/\.\d+x\d+x?\d*\./g, '.');
+    if (simpleUrl !== imageUrl && !urlsToTry.includes(simpleUrl)) {
+        urlsToTry.push(simpleUrl);
+    }
+    
+    for (let i = 0; i < urlsToTry.length; i++) {
+        const currentUrl = urlsToTry[i];
+        
+        try {
+            console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
+            
+            // Fetch the image
+            const imageResponse = await fetchWithTimeout(currentUrl, { timeout: 8000 });
+            if (!imageResponse.ok) {
+                throw new Error(`Failed to fetch image: ${imageResponse.status}`);
+            }
+            
+            const imageBuffer = await imageResponse.arrayBuffer();
+            console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
+
+            // Process with canvas
+            const { createCanvas, loadImage } = await import('canvas');
+            const img = await loadImage(Buffer.from(imageBuffer));
+            
+            // Create canvas with target size
+            const canvas = createCanvas(targetSize, targetSize);
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, targetSize, targetSize);
+            
+            const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+            
+            // Apply dithering and get binary data
+            const binaryData = atkinsonDitherToBinary(imageData);
+            const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+            
+            console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
+            
+            // Compress with Pako
+            const compressedData = pako.deflate(binaryData);
+            console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+            
+            // Store in albumArt collection
+            const base64Binary = Buffer.from(compressedData).toString('base64');
+            const albumArtMetadata = {
+                binaryImageData: base64Binary,
+                imageWidth: targetSize,
+                imageHeight: targetSize,
+                originalImageUrl: imageUrl, // Store original URL for reference
+                processedImageUrl: currentUrl, // Store URL that actually worked
+                processedAt: new Date(),
+                processingVersion: '1.1-pako',
+                compressionMethod: 'pako-deflate'
+            };
+            
+            // Store in albumArt collection using the provided ID
+            await setDoc(doc(db, 'albumArt', albumArtId), albumArtMetadata);
+            
+            console.log(`💾 Stored album art binary data for ${albumArtId} in ${Date.now() - startTime}ms total${i > 0 ? ` (used fallback URL)` : ''}`);
+            
+            return {
+                success: true,
+                binaryData: base64Binary,
+                metadata: {
+                    albumArtId: albumArtId,
+                    width: targetSize,
+                    height: targetSize,
+                    originalSize: imageBuffer.byteLength,
+                    binarySize: analysis.totalBytes,
+                    compressedSize: compressedData.length,
+                    compressionRatio: analysis.compressionRatio,
+                    pakoCompressionRatio: compressedData.length / binaryData.length,
+                    totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+                    compressionPercent: analysis.compressionPercent,
+                    pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                    totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
+                    whitePixelPercent: analysis.whitePercent,
+                    processingTimeMs: Date.now() - startTime,
+                    compressionMethod: 'pako-deflate',
+                    usedFallbackUrl: i > 0
+                }
+            };
+            
+        } catch (error) {
+            lastError = error;
+            const isUnsupportedFormat = error.message.includes('Unsupported image type');
+            const isLastAttempt = i === urlsToTry.length - 1;
+            
+            if (isUnsupportedFormat && !isLastAttempt) {
+                console.log(`⚠️  Format not supported for ${currentUrl}, trying alternative...`);
+                continue; // Try next URL
+            } else if (isLastAttempt) {
+                console.error(`❌ Error processing album art ${albumArtId} (all ${urlsToTry.length} URLs failed):`, error.message);
+                break; // Give up after all attempts
+            } else {
+                console.log(`⚠️  Error with ${currentUrl}, trying alternative:`, error.message);
+                continue; // Try next URL
+            }
+        }
+    }
+    
+    // If we get here, all attempts failed
+    throw lastError || new Error('All image format attempts failed');
+}
+
+// Fast Album Art Processing - prioritizes speed for client response
+export const processAlbumArtBinary = onRequest({
+    timeoutSeconds: 15,
+    minInstances: 0,
+    maxInstances: 20,
+    region: 'us-central1',
+    invoker: 'public'
+}, async (req, res) => {
+    // Enable CORS
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        res.status(200).send('');
+        return;
+    }
+
+    const imageUrl = req.query.url || req.body?.url;
+    const albumArtId = req.query.albumArtId || req.body?.albumArtId;
+    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+
+    if (!imageUrl) {
+        res.status(400).json({ error: 'No image URL provided' });
+        return;
+    }
+    
+    if (!albumArtId) {
+        res.status(400).json({ error: 'No album art ID provided' });
+        return;
+    }
+
+    try {
+        const result = await processAndStoreAlbumArt(imageUrl, albumArtId, targetSize);
+        res.json(result);
+    } catch (error) {
+        console.error('❌ Error in processAlbumArtBinary:', error);
+        res.status(500).json({ 
+            error: 'Failed to process album art', 
             details: error.message 
         });
     }
@@ -562,6 +752,36 @@ async function getSongsByArtist(artistId, page = 1) {
 }
 
 /**
+ * Extract the hash/ID from a Genius image URL for album art deduplication
+ * Example: https://images.genius.com/bda1518357007cbd7ab978c4a6764e26.711x711x1.jpg
+ * Returns: bda1518357007cbd7ab978c4a6764e26
+ */
+function extractGeniusImageHash(imageUrl) {
+    try {
+        if (!imageUrl) return null;
+        
+        // Extract the filename from the URL
+        const filename = imageUrl.split('/').pop();
+        
+        // Extract the hash (everything before the first dot)
+        const hash = filename.split('.')[0];
+        
+        // Validate it looks like a hash (32 character hex string)
+        if (hash && /^[a-f0-9]{32}$/i.test(hash)) {
+            return hash.toLowerCase();
+        }
+        
+        // Fallback: use the full filename if it doesn't match expected pattern
+        console.warn(`Unexpected Genius URL format: ${imageUrl}, using filename as ID`);
+        return filename.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+        
+    } catch (error) {
+        console.error('Error extracting hash from Genius URL:', error);
+        return null;
+    }
+}
+
+/**
  * Store song documents in Firestore songs collection
  * @param {Object[]} songs - Array of song objects
  * @returns {Promise<string[]>} Array of song IDs that were stored
@@ -581,11 +801,21 @@ async function storeSongsInFirestore(songs) {
             const existingDoc = await getDoc(songRef);
             
             if (!existingDoc.exists()) {
+                // Extract album art ID for future processing (but don't process yet)
+                let albumArtId = null;
+                if (song.songArtImageUrl) {
+                    albumArtId = extractGeniusImageHash(song.songArtImageUrl);
+                }
+                
                 // Remove the id from the document data since it's used as the document ID
                 const { id, ...songData } = song;
+                
+                // Add album art ID to song data for later processing during lyric scraping
+                songData.albumArtId = albumArtId;
+                
                 batch.set(songRef, songData);
                 storedSongIds.push(song.id);
-                console.log(`Queued song ${song.id} for storage: ${song.title}`);
+                console.log(`Queued song ${song.id} for storage: ${song.title}${albumArtId ? ` (album art ID: ${albumArtId})` : ''}`);
             } else {
                 console.log(`Song ${song.id} already exists, skipping: ${song.title}`);
                 storedSongIds.push(song.id); // Still include in list since it's available
@@ -604,6 +834,35 @@ async function storeSongsInFirestore(songs) {
     } catch (error) {
         console.error('Error storing songs in Firestore:', error);
         throw error;
+    }
+}
+
+/**
+ * Check if album art exists, process if not
+ * @param {string} imageUrl - Original album art URL
+ * @param {string} albumArtId - Extracted hash ID
+ * @returns {Promise<boolean>} True if processed/exists, false if failed
+ */
+async function checkAndProcessAlbumArt(imageUrl, albumArtId) {
+    try {
+        // Check if album art already exists
+        const albumArtRef = doc(db, 'albumArt', albumArtId);
+        const albumArtDoc = await getDoc(albumArtRef);
+        
+        if (albumArtDoc.exists()) {
+            // Already processed
+            return true;
+        }
+        
+        // Process and store the album art
+        console.log(`🎨 Processing new album art: ${albumArtId}`);
+        await processAndStoreAlbumArt(imageUrl, albumArtId, 800);
+        console.log(`✅ Successfully processed album art: ${albumArtId}`);
+        return true;
+        
+    } catch (error) {
+        console.error(`❌ Error processing album art ${albumArtId}:`, error);
+        return false;
     }
 }
 
@@ -976,6 +1235,18 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             const lyrics = await scrapeLyricsFromUrl(songData.url);
             
             if (lyrics && lyrics.trim().length > 0) {
+                // Process album art now that we know this song will be used
+                if (songData.albumArtId && songData.songArtImageUrl) {
+                    try {
+                        console.log(`🎨 Processing album art for scraped song: ${songData.albumArtId}`);
+                        await checkAndProcessAlbumArt(songData.songArtImageUrl, songData.albumArtId);
+                        console.log(`✅ Album art processed for song ${songId}`);
+                    } catch (albumArtError) {
+                        console.warn(`⚠️  Album art processing failed for song ${songId}: ${albumArtError.message}`);
+                        // Don't fail lyric scraping if album art processing fails
+                    }
+                }
+                
                 // Update song document with lyrics
                 await updateDoc(doc(db, 'songs', songId), {
                     lyrics: lyrics,

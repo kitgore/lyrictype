@@ -138,7 +138,7 @@ class FirestoreUploader {
     }
 
     /**
-     * Generate search tokens for autocomplete functionality with normalization
+     * Generate search tokens for autocomplete functionality with normalization and punctuation removal
      * @param {string} name - The artist name
      * @returns {string[]} Array of search tokens
      */
@@ -147,10 +147,21 @@ class FirestoreUploader {
         const cleanName = name.toLowerCase().trim();
         const normalizedName = this.normalizeText(name);
         
-        // Generate tokens for both original and normalized versions
+        // Generate punctuation-free versions
+        const removePunctuation = (text) => text.replace(/[.,\-_'"!?&@#$%^*()+=\[\]{};:|<>\/\\`~]/g, '').replace(/\s+/g, ' ').trim();
+        const cleanNameNoPunct = removePunctuation(cleanName);
+        const normalizedNameNoPunct = removePunctuation(normalizedName);
+        
+        // Generate tokens for all versions: original, normalized, and punctuation-free
         const versions = [cleanName];
         if (normalizedName !== cleanName) {
             versions.push(normalizedName);
+        }
+        if (cleanNameNoPunct !== cleanName && cleanNameNoPunct.length > 0) {
+            versions.push(cleanNameNoPunct);
+        }
+        if (normalizedNameNoPunct !== normalizedName && normalizedNameNoPunct !== cleanNameNoPunct && normalizedNameNoPunct.length > 0) {
+            versions.push(normalizedNameNoPunct);
         }
         
         for (const version of versions) {

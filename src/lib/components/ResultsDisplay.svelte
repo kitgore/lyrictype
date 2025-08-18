@@ -7,16 +7,108 @@
     export let continueFromQueue;
     export let replaySong;
     export let geniusUrl;
+    export let albumArtId = null; // Album art ID for binary rendering
+    export let preloadedAlbumArt = null; // Preloaded binary album art data for instant display
     import textFit from 'textfit'
     import { onMount, afterUpdate } from 'svelte';
+    import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
+    import BinaryImageRenderer from './BinaryImageRenderer.svelte';
+    import { themeColors, ditherImages, windowStore } from '$lib/services/store.js';
+    
     let songContainer;
     let artistContainer;
-    import { themeColors, windowStore } from '$lib/services/store.js';
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     
+    // Album art state
+    let binaryImageData = null;
+    let imageMetadata = null;
     let isLoading = false;
+    let isProcessingAlbumArt = true;
+    let currentImageUrl = '';
+    let useFallback = false;
 
+    async function loadAlbumArt() {
+        if (!imageUrl || imageUrl === '/default-image.svg' || !albumArtId) {
+            isProcessingAlbumArt = false;
+            binaryImageData = null;
+            imageMetadata = null;
+            currentImageUrl = '';
+            useFallback = true;
+            return;
+        }
+
+        // If this is a new image, reset state
+        if (currentImageUrl !== imageUrl) {
+            isProcessingAlbumArt = true;
+            binaryImageData = null;
+            imageMetadata = null;
+            currentImageUrl = imageUrl;
+            useFallback = false;
+        }
+
+        try {
+            if (!$ditherImages) {
+                // If dithering is disabled, use fallback
+                useFallback = true;
+                isProcessingAlbumArt = false;
+                return;
+            }
+
+            // First try to use preloaded album art for instant display
+            if (preloadedAlbumArt && preloadedAlbumArt.binaryData && preloadedAlbumArt.metadata) {
+                console.log('⚡ Using preloaded album art for instant results display');
+                binaryImageData = preloadedAlbumArt.binaryData;
+                imageMetadata = preloadedAlbumArt.metadata;
+                useFallback = false;
+                isProcessingAlbumArt = false;
+                return;
+            }
+
+            // Fallback: load if not preloaded (shouldn't happen in normal flow)
+            console.log('🎨 Preload not available, loading album art binary image:', albumArtId);
+            const result = await getAlbumArtBinaryImage(imageUrl);
+            
+            if (result.success) {
+                binaryImageData = result.binaryData;
+                imageMetadata = result.metadata;
+                useFallback = false;
+                console.log('✅ Album art binary image loaded for results:', result.cached ? 'from cache' : 'processed');
+            } else {
+                console.warn('⚠️  Album art binary loading failed, using fallback:', result.error);
+                useFallback = true;
+            }
+        } catch (error) {
+            console.error('❌ Error loading album art binary image:', error);
+            useFallback = true;
+        } finally {
+            isProcessingAlbumArt = false;
+        }
+    }
+
+    // Reactive statements for album art loading
+    $: if (imageUrl && albumArtId && imageUrl !== '/default-image.svg') {
+        loadAlbumArt();
+    }
+
+    // Reload when dither setting changes
+    $: if ($ditherImages !== undefined && imageUrl && albumArtId && imageUrl !== '/default-image.svg') {
+        loadAlbumArt();
+    }
+
+    // Reload when preloaded album art changes (for instant display)
+    $: if (preloadedAlbumArt && imageUrl && albumArtId && imageUrl !== '/default-image.svg') {
+        loadAlbumArt();
+    }
+
+    // Clear image immediately when imageUrl becomes invalid
+    $: if (!imageUrl || imageUrl === '/default-image.svg' || !albumArtId) {
+        binaryImageData = null;
+        imageMetadata = null;
+        currentImageUrl = '';
+        isProcessingAlbumArt = false;
+        useFallback = true;
+    }
 
     function handleResize() {
         fitText();
@@ -71,10 +163,21 @@
     <div class="topSection">
         <div class="songDetails">
             <div class="albumCover">
-                {#if isLoading || !imageUrl}
+                {#if isLoading || isProcessingAlbumArt}
                     <div class="loading-placeholder"></div>
-                {:else}
+                {:else if binaryImageData && imageMetadata && !useFallback}
+                    <BinaryImageRenderer
+                        binaryData={binaryImageData}
+                        width={imageMetadata.width}
+                        height={imageMetadata.height}
+                        alt={songTitle || 'Album art'}
+                        class="albumArt"
+                        borderRadius="0"
+                    />
+                {:else if imageUrl && useFallback}
                     <img src={imageUrl} class="albumArt" alt="album art">
+                {:else}
+                    <div class="loading-placeholder"></div>
                 {/if}                
             </div>
             <div class="songText">
@@ -182,8 +285,9 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-        position: relative;  /* Add this */
-        aspect-ratio: 1/1;  /* Add this */
+        position: relative;
+        aspect-ratio: 1/1;
+        padding: 2%;
     }
 
     .loading-placeholder {
@@ -200,10 +304,16 @@
 
     .albumArt {
         margin: 0;
-        width: 85%;        /* Change from height to width */
-        aspect-ratio: 1/1; /* Add this */
-        object-fit: cover;  /* Change from contain to cover */
+        width: 90%; /* Match loading placeholder size */
+        aspect-ratio: 1/1;
+        object-fit: cover;
         display: block;
+        border: 2px solid var(--primary-color);
+        /* Remove border-radius for album art */
+    }
+
+    /* Additional styles for BinaryImageRenderer when used as album art */
+    :global(.albumArt .canvas-wrapper) {
         border: 2px solid var(--primary-color);
     }
 

@@ -21,10 +21,6 @@
     ],
     "rewrites": [
       {
-        "source": "/api/**",
-        "function": "ssrServer"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }

@@ -5,6 +5,32 @@
 
 import { db, functions } from './initFirebase.js';
 import { doc, getDoc } from 'firebase/firestore';
+import pako from 'pako';
+
+/**
+ * Decompress binary image data using Pako
+ * @param {string} compressedBase64 - Base64 encoded compressed binary data
+ * @returns {string} - Base64 encoded decompressed binary data
+ */
+function decompressBinaryData(compressedBase64) {
+    try {
+        // Decode from Base64
+        const compressedData = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
+        
+        // Decompress with Pako
+        const decompressedData = pako.inflate(compressedData);
+        
+        // Re-encode to Base64 for compatibility with existing WebGL code
+        const decompressedBase64 = btoa(String.fromCharCode(...decompressedData));
+        
+        console.log(`🗜️  Pako decompressed: ${compressedData.length} → ${decompressedData.length} bytes`);
+        
+        return decompressedBase64;
+    } catch (error) {
+        console.error('❌ Error decompressing binary data:', error);
+        throw error;
+    }
+}
 
 /**
  * Get binary image data for an artist
@@ -26,18 +52,32 @@ export async function getArtistBinaryImage(artistUrlKey, imageUrl) {
             if (artistData.binaryImageData && artistData.imageWidth && artistData.imageHeight) {
                 console.log(`✅ Found cached binary image data for ${artistUrlKey}`);
                 
+                // Check if this is compressed data (version 1.1-pako or has compression method)
+                const isCompressed = artistData.processingVersion === '1.1-pako' || artistData.compressionMethod === 'pako-deflate';
+                
+                let binaryData = artistData.binaryImageData;
+                if (isCompressed) {
+                    console.log(`🗜️  Decompressing cached data (${artistData.compressionMethod})`);
+                    binaryData = decompressBinaryData(artistData.binaryImageData);
+                }
+                
                 return {
                     success: true,
                     cached: true,
-                    binaryData: artistData.binaryImageData,
+                    binaryData: binaryData,
                     metadata: {
                         width: artistData.imageWidth,
                         height: artistData.imageHeight,
                         originalSize: artistData.originalSize,
                         binarySize: artistData.binarySize,
+                        compressedSize: artistData.compressedSize,
                         compressionRatio: artistData.compressionRatio,
+                        pakoCompressionRatio: artistData.pakoCompressionRatio,
+                        totalCompressionRatio: artistData.totalCompressionRatio,
                         processedAt: artistData.processedAt,
-                        originalImageUrl: artistData.originalImageUrl
+                        originalImageUrl: artistData.originalImageUrl,
+                        processingVersion: artistData.processingVersion,
+                        compressionMethod: artistData.compressionMethod
                     }
                 };
             }
@@ -106,10 +146,18 @@ async function processArtistImageToBinary(imageUrl, artistUrlKey) {
         const result = await response.json();
         const processingTime = Date.now() - startTime;
         
-        console.log(`🚀 Binary image processed in ${processingTime}ms (${result.metadata.compressionPercent}% compression)`);
+        console.log(`🚀 Binary image processed in ${processingTime}ms (${result.metadata.totalCompressionPercent}% total compression)`);
+        
+        // Decompress the binary data since it's now Pako compressed
+        let binaryData = result.binaryData;
+        if (result.metadata.compressionMethod === 'pako-deflate') {
+            console.log(`🗜️  Decompressing fresh data (${result.metadata.compressionMethod})`);
+            binaryData = decompressBinaryData(result.binaryData);
+        }
         
         return {
             ...result,
+            binaryData: binaryData,
             cached: false,
             clientProcessingTime: processingTime
         };
