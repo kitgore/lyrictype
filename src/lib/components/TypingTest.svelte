@@ -1,6 +1,7 @@
 <script>
     import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue } from '$lib/services/artistService';
     import { queueManager, queueSongs, queueUpcomingSongs, queueIndex } from '$lib/services/queueManager.js';
+    import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
     import TextInput from '$lib/components/TextInput.svelte';
     import LyricDisplay from '$lib/components/LyricDisplay.svelte';
     import ArtistButton from './ArtistButton.svelte';
@@ -29,6 +30,8 @@
     let songTitle = '';
     let artistName = '';
     let imageUrl = '';
+    let albumArtId = null; // Album art ID for binary rendering
+    let preloadedAlbumArt = null; // Preloaded album art binary data for instant results
     let geniusUrl = '';
     let primaryArtist = '';
     let artistImg = '';
@@ -342,6 +345,37 @@
         console.log($recentArtists);
     }
 
+    /**
+     * Preload album art binary data in the background
+     * This runs immediately when lyrics are loaded so the image is ready for results
+     */
+    async function preloadAlbumArt(imageUrl, albumArtId) {
+        if (!imageUrl || !albumArtId || imageUrl === '/default-image.svg') {
+            preloadedAlbumArt = null;
+            return;
+        }
+
+        try {
+            console.log('🖼️ Preloading album art for results screen:', albumArtId);
+            const result = await getAlbumArtBinaryImage(imageUrl);
+            
+            if (result.success) {
+                preloadedAlbumArt = {
+                    binaryData: result.binaryData,
+                    metadata: result.metadata,
+                    cached: result.cached
+                };
+                console.log('✅ Album art preloaded:', result.cached ? 'from cache' : 'processed');
+            } else {
+                console.warn('⚠️  Album art preload failed:', result.error);
+                preloadedAlbumArt = null;
+            }
+        } catch (error) {
+            console.error('❌ Error preloading album art:', error);
+            preloadedAlbumArt = null;
+        }
+    }
+
     // Helper function to set display without adding to queue (for navigation)
     function setDisplayFromDataWithoutQueue(data){
         console.log("DISPLAYING DATA (NO QUEUE):" , data)
@@ -350,13 +384,19 @@
             songTitle = data.title;
             artistName = data.artist;
             imageUrl = data.image;
+            albumArtId = data.albumArtId; // Add album art ID for binary rendering
             primaryArtist = data.primaryArtist;
             artistImg = data.artistImg;
             artistId = data.artistId;
             songId = data.songId;
             geniusUrl = data.url;
+            
+            // Preload album art immediately when lyrics are set
+            // This happens while user is typing, so image is ready for results
+            preloadAlbumArt(data.image, data.albumArtId);
         } else {
             lyrics = "Lyrics not found.";
+            preloadedAlbumArt = null; // Clear any previous preload
         }
     }
 
@@ -576,10 +616,11 @@
         <div class="contentLayout">
             <div class="sidebar">
                 <div class="artistList">
-                    {#each fullArtistList as artist, index}
+                    {#each fullArtistList as artist, index (artist.artistId || `empty-${index}`)}
                     <ArtistButton 
                         name={artist.name} 
-                        imageUrl={artist.imageUrl || '/default-image.svg'} 
+                        imageUrl={artist.imageUrl} 
+                        urlKey={artist.urlKey}
                         isLoadingImage={loadingImageArtists.has(artist.artistId)}
                         on:click={() => requeueArtist(artist.artistId)} 
                         on:keydown={(e) => {
@@ -610,6 +651,8 @@
                             {songTitle} 
                             {artistName} 
                             {imageUrl}
+                            {albumArtId}
+                            {preloadedAlbumArt}
                             continueFromQueue={playNextSong}
                             {replaySong} 
                             {geniusUrl}

@@ -179,6 +179,7 @@ export async function loadArtistForQueue(artist) {
             artist: firstSong.primaryArtist?.name || artistData.name,
             lyrics: firstSong.lyrics || '',
             image: firstSong.songArtImageUrl,
+            albumArtId: firstSong.albumArtId, // Add album art ID for binary rendering
             url: firstSong.url,
             artistId: artistData.geniusId,
             songId: firstSong.id,
@@ -198,6 +199,7 @@ export async function loadArtistForQueue(artist) {
                     artist: songData.primaryArtist?.name || songData.artistNames || artistData.name,
                     lyrics: songData.lyrics || '',
                     image: songData.songArtImageUrl,
+                    albumArtId: songData.albumArtId, // Add album art ID for binary rendering
                     url: songData.url,
                     songId: songData.id,
                     primaryArtist: songData.primaryArtist?.name || artistData.name
@@ -251,6 +253,7 @@ export async function loadSongsForNavigation(songId, goingBackward, artistUrlKey
                 artist: songData.primaryArtist?.name || songData.artistNames,
                 lyrics: songData.lyrics || '',
                 image: songData.songArtImageUrl,
+                albumArtId: songData.albumArtId, // Add album art ID for binary rendering
                 url: songData.url,
                 songId: songData.id,
                 primaryArtist: songData.primaryArtist?.name,

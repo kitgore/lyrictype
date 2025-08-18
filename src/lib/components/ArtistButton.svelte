@@ -1,54 +1,92 @@
 <script>
-    import { applyDitheringToImage } from '$lib/services/dither-utils';
+    import { getArtistBinaryImage } from '$lib/services/binaryImageService';
+    import BinaryImageRenderer from './BinaryImageRenderer.svelte';
     import { themeColors, ditherImages, imageColors, windowStore } from '$lib/services/store.js';
+    
     export let name;
     export let imageUrl;
+    export let urlKey; // Artist's Firestore document key
     export let isLoadingImage = false; // External loading state (for when image is being extracted)
 
-    let ditheredImageUrl = '';
-    let isProcessing = true; // Internal processing state (for dithering)
+    let binaryImageData = null;
+    let imageMetadata = null;
+    let isProcessing = true; // Internal processing state
     let currentImageUrl = ''; // Track the current image URL
+    let useFallback = false; // Whether to use fallback img tag
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
-    async function processDithering() {
-        if (!imageUrl || imageUrl === '/default-image.svg') {
+    async function loadBinaryImage() {
+        if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
             isProcessing = false;
-            ditheredImageUrl = '';
+            binaryImageData = null;
+            imageMetadata = null;
+            currentImageUrl = '';
+            useFallback = false;
             return;
         }
 
         // If this is a new image, reset state
         if (currentImageUrl !== imageUrl) {
             isProcessing = true;
-            ditheredImageUrl = '';
+            binaryImageData = null;
+            imageMetadata = null;
             currentImageUrl = imageUrl;
+            useFallback = false;
         }
 
         try {
-            console.log('Applying dithering to image:', imageUrl, $imageColors.primary, $imageColors.secondary, $ditherImages, 200)
-            ditheredImageUrl = $ditherImages ? await applyDitheringToImage(
-                imageUrl,
-                $imageColors.primary,
-                $imageColors.secondary,
-                $ditherImages,
-                200
-            ) : imageUrl;
+            console.log('🎨 Loading binary image for artist:', name, urlKey);
+            
+            if (!$ditherImages) {
+                // If dithering is disabled, use fallback
+                useFallback = true;
+                isProcessing = false;
+                return;
+            }
+
+            // Try to get binary image data
+            if (urlKey) {
+                const result = await getArtistBinaryImage(urlKey, imageUrl);
+                
+                if (result.success) {
+                    binaryImageData = result.binaryData;
+                    imageMetadata = result.metadata;
+                    useFallback = false;
+                    console.log('✅ Binary image loaded:', result.cached ? 'from cache' : 'processed');
+                } else {
+                    console.warn('⚠️  Binary image failed, using fallback:', result.error);
+                    useFallback = true;
+                }
+            } else {
+                console.warn('⚠️  No urlKey provided, using fallback');
+                useFallback = true;
+            }
         } catch (error) {
-            console.error('Error processing image:', error);
-            ditheredImageUrl = imageUrl;
+            console.error('❌ Error loading binary image:', error);
+            useFallback = true;
         } finally {
             isProcessing = false;
         }
     }
 
-    $: if (imageUrl && imageUrl !== '/default-image.svg') {
-        processDithering();
+    // Clear image immediately when imageUrl becomes invalid
+    $: if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
+        binaryImageData = null;
+        imageMetadata = null;
+        currentImageUrl = '';
+        isProcessing = false;
+        useFallback = false;
     }
 
-    // Watch for changes in the dither setting
-    $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && $imageColors) {
-        processDithering();
+    // Load binary image when imageUrl changes
+    $: if (imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
+        loadBinaryImage();
+    }
+
+    // Reload when dither setting changes
+    $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
+        loadBinaryImage();
     }
 </script>
 
@@ -56,10 +94,20 @@
     <!-- svelte-ignore a11y-interactive-supports-focus -->
     <div class="artist-button" role="button" on:click on:keydown  aria-label="Artist Button" tabindex=4 style:border-radius="{windowHeight*0.019}px">
         <div class="image-container">
-            {#if isLoadingImage || isProcessing || !ditheredImageUrl}
+            {#if isLoadingImage || isProcessing}
                 <div class="loading-placeholder"></div>
+            {:else if binaryImageData && imageMetadata && !useFallback}
+                <BinaryImageRenderer
+                    binaryData={binaryImageData}
+                    width={imageMetadata.width}
+                    height={imageMetadata.height}
+                    alt={name || 'Artist image'}
+                    class="artist-image"
+                />
+            {:else if imageUrl && useFallback}
+                <img src={imageUrl} alt={name || ''} class="artist-image"/>
             {:else}
-                <img src={ditheredImageUrl} alt={""} class="artist-image"/>
+                <div class="loading-placeholder"></div>
             {/if}
         </div>
         <span style:font-size="{windowHeight*0.026}px">{name}</span>

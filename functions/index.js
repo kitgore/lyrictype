@@ -1,8 +1,9 @@
 import { onRequest, onCall, HttpsError } from 'firebase-functions/v2/https';
 import { defineString } from 'firebase-functions/params';
-import { getFirestore, doc, getDoc, updateDoc, writeBatch, collection, arrayUnion, increment } from 'firebase/firestore';
+import { getFirestore, doc, getDoc, updateDoc, setDoc, writeBatch, collection, arrayUnion, increment } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import * as cheerio from 'cheerio';
+import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
@@ -48,26 +49,8 @@ const fetchWithTimeout = async (url, options = {}) => {
   }
 };
 
-// Keep existing SSR server for backward compatibility
-let handler = null;
-export const ssrServer = onRequest({
-    timeoutSeconds: 60,
-    minInstances: 0,
-    maxInstances: 100,
-    region: 'us-central1',
-    invoker: 'public'
-}, async (request, response) => {
-    try {
-        if (!handler) {
-            const { handler: importedHandler } = await import('./server.js');
-            handler = importedHandler;
-        }
-        return await handler(request, response);
-    } catch (error) {
-        console.error('SSR Error:', error);
-        response.status(500).send('Internal Server Error');
-    }
-});
+// SSR server removed - now using pure static hosting with optimized binary image system
+// All image processing is now done via dedicated Firebase Functions with Firestore caching
 
 // Keep existing health check
 export const healthCheck = onRequest({
@@ -75,6 +58,544 @@ export const healthCheck = onRequest({
     region: 'us-central1'
 }, (req, res) => {
     res.status(200).send('OK');
+});
+
+/**
+ * Server-side Atkinson dithering algorithm
+ * @param {object} imageData - Canvas ImageData object
+ * @returns {Uint8Array} Binary array (1 bit per pixel, packed into bytes)
+ */
+function atkinsonDitherToBinary(imageData) {
+    const width = imageData.width;
+    const height = imageData.height;
+    const data = new Uint8ClampedArray(imageData.data);
+    
+    // Convert to grayscale first
+    for (let i = 0; i < data.length; i += 4) {
+        const gray = (data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114);
+        data[i] = data[i + 1] = data[i + 2] = gray;
+    }
+
+    // Atkinson dithering matrix
+    const matrix = [
+        [0, 0, 1/8, 1/8],
+        [1/8, 1/8, 1/8, 0],
+        [0, 1/8, 0, 0]
+    ];
+
+    // Create binary output array (1 bit per pixel, packed into bytes)
+    const binarySize = Math.ceil((width * height) / 8);
+    const binaryData = new Uint8Array(binarySize);
+
+    for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
+            const idx = (y * width + x) * 4;
+            const oldPixel = data[idx];
+            
+            // Determine if pixel should be dark or light
+            const isDark = oldPixel < 128;
+            
+            // Store binary result (1 for light, 0 for dark)
+            const bitIndex = y * width + x;
+            const byteIndex = Math.floor(bitIndex / 8);
+            const bitPosition = 7 - (bitIndex % 8);
+            
+            if (!isDark) { // Light pixel = 1
+                binaryData[byteIndex] |= (1 << bitPosition);
+            }
+            
+            const newPixel = isDark ? 0 : 255;
+            const error = (oldPixel - newPixel) / 8;
+
+            // Propagate error using Atkinson matrix
+            for (let i = 0; i < matrix.length; i++) {
+                for (let j = 0; j < matrix[i].length; j++) {
+                    if (matrix[i][j] === 0) continue;
+                    
+                    const ny = y + i;
+                    const nx = x + j - 1;
+                    
+                    if (ny < height && nx >= 0 && nx < width) {
+                        const nidx = (ny * width + nx) * 4;
+                        data[nidx] += error;
+                        data[nidx + 1] += error;
+                        data[nidx + 2] += error;
+                    }
+                }
+            }
+        }
+    }
+
+    return binaryData;
+}
+
+/**
+ * Analyze binary dithered data for compression and statistics
+ */
+function analyzeBinaryData(binaryData, width, height) {
+    const totalPixels = width * height;
+    const totalBytes = binaryData.length;
+    const originalSize = totalPixels * 4; // RGBA
+    const compressionRatio = totalBytes / originalSize;
+    
+    // Calculate white pixel count
+    let setBits = 0;
+    for (let byte of binaryData) {
+        setBits += byte.toString(2).split('1').length - 1;
+    }
+    
+    return {
+        totalPixels,
+        totalBytes,
+        originalSize,
+        compressionRatio: compressionRatio.toFixed(3),
+        compressionPercent: ((1 - compressionRatio) * 100).toFixed(1),
+        setBits,
+        whiteFraction: (setBits / totalPixels).toFixed(3),
+        whitePercent: ((setBits / totalPixels) * 100).toFixed(1),
+    };
+}
+
+/**
+ * Process artist image to binary format and store in database
+ * Fast response - client gets binary data ASAP
+ */
+async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 200) {
+    try {
+        console.log(`🚀 FAST processing artist image: ${imageUrl}`);
+        const startTime = Date.now();
+        
+        // Fetch the image
+        const imageResponse = await fetchWithTimeout(imageUrl, { timeout: 8000 });
+        if (!imageResponse.ok) {
+            throw new Error(`Failed to fetch image: ${imageResponse.status}`);
+        }
+        
+        const imageBuffer = await imageResponse.arrayBuffer();
+        console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
+
+        // Process with canvas
+        const { createCanvas, loadImage } = await import('canvas');
+        const img = await loadImage(Buffer.from(imageBuffer));
+        
+        // Create canvas with target size
+        const canvas = createCanvas(targetSize, targetSize);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, targetSize, targetSize);
+        
+        const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+        
+        // Apply dithering and get binary data
+        const binaryData = atkinsonDitherToBinary(imageData);
+        const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+        
+        console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
+        
+        // Compress with Pako
+        const compressedData = pako.deflate(binaryData);
+        console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+        
+        // Store in artist document
+        const base64Binary = Buffer.from(compressedData).toString('base64');
+        const imageMetadata = {
+            binaryImageData: base64Binary,
+            imageWidth: targetSize,
+            imageHeight: targetSize,
+            originalImageUrl: imageUrl,
+            originalSize: imageBuffer.byteLength,
+            binarySize: analysis.totalBytes,
+            compressedSize: compressedData.length,
+            base64Size: base64Binary.length,
+            compressionRatio: analysis.compressionRatio,
+            pakoCompressionRatio: compressedData.length / binaryData.length,
+            totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+            processedAt: new Date(),
+            processingVersion: '1.1-pako',
+            compressionMethod: 'pako-deflate'
+        };
+        
+        // Update or create artist document with binary data
+        try {
+            await updateDoc(doc(db, 'artists', artistUrlKey), {
+                imageUrl: imageUrl,
+                ...imageMetadata
+            });
+        } catch (updateError) {
+            if (updateError.code === 'not-found') {
+                // Document doesn't exist, create it
+                console.log(`📝 Creating new artist document: ${artistUrlKey}`);
+                await setDoc(doc(db, 'artists', artistUrlKey), {
+                    imageUrl: imageUrl,
+                    ...imageMetadata,
+                    createdAt: new Date()
+                });
+            } else {
+                throw updateError;
+            }
+        }
+        
+        console.log(`💾 Stored binary data for artist ${artistUrlKey} in ${Date.now() - startTime}ms total`);
+        
+        return {
+            success: true,
+            binaryData: base64Binary,
+            metadata: {
+                width: targetSize,
+                height: targetSize,
+                originalSize: imageBuffer.byteLength,
+                binarySize: analysis.totalBytes,
+                compressedSize: compressedData.length,
+                base64Size: base64Binary.length,
+                compressionRatio: analysis.compressionRatio,
+                pakoCompressionRatio: compressedData.length / binaryData.length,
+                totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+                compressionPercent: analysis.compressionPercent,
+                pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
+                whitePixelPercent: analysis.whitePercent,
+                processingTimeMs: Date.now() - startTime,
+                compressionMethod: 'pako-deflate'
+            }
+        };
+        
+    } catch (error) {
+        console.error(`❌ Error processing artist image:`, error);
+        throw error;
+    }
+}
+
+// Fast Artist Image Processing - prioritizes speed for client response
+export const processArtistImageBinary = onRequest({
+    timeoutSeconds: 15,
+    minInstances: 0,
+    maxInstances: 20,
+    region: 'us-central1',
+    invoker: 'public'
+}, async (req, res) => {
+    // Enable CORS
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        res.status(200).send('');
+        return;
+    }
+
+    const imageUrl = req.query.url || req.body?.url;
+    const artistUrlKey = req.query.artistKey || req.body?.artistKey;
+    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+
+    if (!imageUrl) {
+        res.status(400).json({ error: 'No image URL provided' });
+        return;
+    }
+    
+    if (!artistUrlKey) {
+        res.status(400).json({ error: 'No artist key provided' });
+        return;
+    }
+
+    try {
+        const result = await processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize);
+        res.json(result);
+    } catch (error) {
+        console.error('❌ Error in processArtistImageBinary:', error);
+        res.status(500).json({ 
+            error: 'Failed to process artist image', 
+            details: error.message 
+        });
+    }
+});
+
+/**
+ * Try to convert unsupported image formats to supported ones
+ * @param {string} imageUrl - Original image URL
+ * @returns {string} Modified URL that might work better
+ */
+function tryAlternativeImageFormat(imageUrl) {
+    // Convert .webp to .jpg - Genius often has both formats
+    if (imageUrl.includes('.webp')) {
+        const jpgUrl = imageUrl.replace('.webp', '.jpg');
+        console.log(`🔄 Trying alternative format: ${jpgUrl}`);
+        return jpgUrl;
+    }
+    
+    // For other formats, try to get a .jpg version by removing size specifications
+    // e.g., file.464x464x1.png -> file.jpg
+    const baseUrl = imageUrl.replace(/\.\d+x\d+x?\d*\.(png|gif|webp)$/i, '.jpg');
+    if (baseUrl !== imageUrl) {
+        console.log(`🔄 Trying simplified format: ${baseUrl}`);
+        return baseUrl;
+    }
+    
+    return imageUrl;
+}
+
+/**
+ * Process album art to binary format and store in database
+ * Similar to artist processing but stores in albumArt collection
+ * Uses 800x800 resolution for high quality on results screen
+ */
+async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
+    const startTime = Date.now();
+    let lastError = null;
+    
+    // Try original URL first, then alternative formats
+    const urlsToTry = [imageUrl];
+    
+    // Add alternative format if original might be problematic
+    const altUrl = tryAlternativeImageFormat(imageUrl);
+    if (altUrl !== imageUrl) {
+        urlsToTry.push(altUrl);
+    }
+    
+    // Also try without size specification for backup
+    const simpleUrl = imageUrl.replace(/\.\d+x\d+x?\d*\./g, '.');
+    if (simpleUrl !== imageUrl && !urlsToTry.includes(simpleUrl)) {
+        urlsToTry.push(simpleUrl);
+    }
+    
+    for (let i = 0; i < urlsToTry.length; i++) {
+        const currentUrl = urlsToTry[i];
+        
+        try {
+            console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
+            
+            // Fetch the image
+            const imageResponse = await fetchWithTimeout(currentUrl, { timeout: 8000 });
+            if (!imageResponse.ok) {
+                throw new Error(`Failed to fetch image: ${imageResponse.status}`);
+            }
+            
+            const imageBuffer = await imageResponse.arrayBuffer();
+            console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
+
+            // Process with canvas
+            const { createCanvas, loadImage } = await import('canvas');
+            const img = await loadImage(Buffer.from(imageBuffer));
+            
+            // Create canvas with target size
+            const canvas = createCanvas(targetSize, targetSize);
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, targetSize, targetSize);
+            
+            const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+            
+            // Apply dithering and get binary data
+            const binaryData = atkinsonDitherToBinary(imageData);
+            const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+            
+            console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
+            
+            // Compress with Pako
+            const compressedData = pako.deflate(binaryData);
+            console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+            
+            // Store in albumArt collection
+            const base64Binary = Buffer.from(compressedData).toString('base64');
+            const albumArtMetadata = {
+                binaryImageData: base64Binary,
+                imageWidth: targetSize,
+                imageHeight: targetSize,
+                originalImageUrl: imageUrl, // Store original URL for reference
+                processedImageUrl: currentUrl, // Store URL that actually worked
+                processedAt: new Date(),
+                processingVersion: '1.1-pako',
+                compressionMethod: 'pako-deflate'
+            };
+            
+            // Store in albumArt collection using the provided ID
+            await setDoc(doc(db, 'albumArt', albumArtId), albumArtMetadata);
+            
+            console.log(`💾 Stored album art binary data for ${albumArtId} in ${Date.now() - startTime}ms total${i > 0 ? ` (used fallback URL)` : ''}`);
+            
+            return {
+                success: true,
+                binaryData: base64Binary,
+                metadata: {
+                    albumArtId: albumArtId,
+                    width: targetSize,
+                    height: targetSize,
+                    originalSize: imageBuffer.byteLength,
+                    binarySize: analysis.totalBytes,
+                    compressedSize: compressedData.length,
+                    compressionRatio: analysis.compressionRatio,
+                    pakoCompressionRatio: compressedData.length / binaryData.length,
+                    totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+                    compressionPercent: analysis.compressionPercent,
+                    pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                    totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
+                    whitePixelPercent: analysis.whitePercent,
+                    processingTimeMs: Date.now() - startTime,
+                    compressionMethod: 'pako-deflate',
+                    usedFallbackUrl: i > 0
+                }
+            };
+            
+        } catch (error) {
+            lastError = error;
+            const isUnsupportedFormat = error.message.includes('Unsupported image type');
+            const isLastAttempt = i === urlsToTry.length - 1;
+            
+            if (isUnsupportedFormat && !isLastAttempt) {
+                console.log(`⚠️  Format not supported for ${currentUrl}, trying alternative...`);
+                continue; // Try next URL
+            } else if (isLastAttempt) {
+                console.error(`❌ Error processing album art ${albumArtId} (all ${urlsToTry.length} URLs failed):`, error.message);
+                break; // Give up after all attempts
+            } else {
+                console.log(`⚠️  Error with ${currentUrl}, trying alternative:`, error.message);
+                continue; // Try next URL
+            }
+        }
+    }
+    
+    // If we get here, all attempts failed
+    throw lastError || new Error('All image format attempts failed');
+}
+
+// Fast Album Art Processing - prioritizes speed for client response
+export const processAlbumArtBinary = onRequest({
+    timeoutSeconds: 15,
+    minInstances: 0,
+    maxInstances: 20,
+    region: 'us-central1',
+    invoker: 'public'
+}, async (req, res) => {
+    // Enable CORS
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        res.status(200).send('');
+        return;
+    }
+
+    const imageUrl = req.query.url || req.body?.url;
+    const albumArtId = req.query.albumArtId || req.body?.albumArtId;
+    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+
+    if (!imageUrl) {
+        res.status(400).json({ error: 'No image URL provided' });
+        return;
+    }
+    
+    if (!albumArtId) {
+        res.status(400).json({ error: 'No album art ID provided' });
+        return;
+    }
+
+    try {
+        const result = await processAndStoreAlbumArt(imageUrl, albumArtId, targetSize);
+        res.json(result);
+    } catch (error) {
+        console.error('❌ Error in processAlbumArtBinary:', error);
+        res.status(500).json({ 
+            error: 'Failed to process album art', 
+            details: error.message 
+        });
+    }
+});
+
+// Binary Image Processing Function
+export const processImageBinary = onRequest({
+    timeoutSeconds: 30,
+    minInstances: 0,
+    maxInstances: 10,
+    region: 'us-central1',
+    invoker: 'public'
+}, async (req, res) => {
+    // Enable CORS
+    res.set('Access-Control-Allow-Origin', '*');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        res.status(200).send('');
+        return;
+    }
+
+    const imageUrl = req.query.url || req.body?.url;
+    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+    const returnBinary = req.query.binary === 'true' || req.body?.binary === true;
+    const logAnalysis = req.query.log === 'true' || req.body?.log === true;
+
+    if (!imageUrl) {
+        res.status(400).json({ error: 'No image URL provided' });
+        return;
+    }
+
+    try {
+        console.log(`🎨 Processing image: ${imageUrl} (size: ${targetSize}, binary: ${returnBinary})`);
+        
+        // Fetch the image
+        const imageResponse = await fetchWithTimeout(imageUrl, { timeout: 10000 });
+        if (!imageResponse.ok) {
+            throw new Error(`Failed to fetch image: ${imageResponse.status}`);
+        }
+        
+        const imageBuffer = await imageResponse.arrayBuffer();
+        console.log(`📦 Downloaded image: ${imageBuffer.byteLength} bytes`);
+
+        // Process with canvas
+        const { createCanvas, loadImage } = await import('canvas');
+        const img = await loadImage(Buffer.from(imageBuffer));
+        
+        // Create canvas with target size
+        const canvas = createCanvas(targetSize, targetSize);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, targetSize, targetSize);
+        
+        const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+        console.log(`🖼️  Got image data: ${imageData.width}x${imageData.height}`);
+        
+        if (returnBinary) {
+            // Apply dithering and get binary data
+            const binaryData = atkinsonDitherToBinary(imageData);
+            const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+            
+            if (logAnalysis) {
+                console.log('🔍 BINARY IMAGE ANALYSIS:');
+                console.log(`📊 Image: ${targetSize}x${targetSize} pixels`);
+                console.log(`📦 Original size: ${imageBuffer.byteLength} bytes`);
+                console.log(`🗜️  Binary size: ${analysis.totalBytes} bytes`);
+                console.log(`📉 Compression: ${analysis.compressionPercent}% reduction (${analysis.compressionRatio}x)`);
+                console.log(`⚫ White pixels: ${analysis.whitePercent}% (${analysis.setBits}/${analysis.totalPixels})`);
+            }
+            
+            // Return binary data with metadata
+            const base64Binary = Buffer.from(binaryData).toString('base64');
+            
+            res.json({
+                success: true,
+                format: 'binary',
+                data: base64Binary,
+                metadata: {
+                    width: targetSize,
+                    height: targetSize,
+                    originalSize: imageBuffer.byteLength,
+                    binarySize: analysis.totalBytes,
+                    compressionRatio: analysis.compressionRatio,
+                    compressionPercent: analysis.compressionPercent,
+                    whitePixelPercent: analysis.whitePercent
+                }
+            });
+        } else {
+            // Return original or processed image
+            const buffer = canvas.toBuffer('image/png');
+            res.set('Content-Type', 'image/png');
+            res.send(buffer);
+        }
+        
+    } catch (error) {
+        console.error('❌ Error processing image:', error);
+        res.status(500).json({ 
+            error: 'Failed to process image', 
+            details: error.message 
+        });
+    }
 });
 
 // ========================================
@@ -231,6 +752,36 @@ async function getSongsByArtist(artistId, page = 1) {
 }
 
 /**
+ * Extract the hash/ID from a Genius image URL for album art deduplication
+ * Example: https://images.genius.com/bda1518357007cbd7ab978c4a6764e26.711x711x1.jpg
+ * Returns: bda1518357007cbd7ab978c4a6764e26
+ */
+function extractGeniusImageHash(imageUrl) {
+    try {
+        if (!imageUrl) return null;
+        
+        // Extract the filename from the URL
+        const filename = imageUrl.split('/').pop();
+        
+        // Extract the hash (everything before the first dot)
+        const hash = filename.split('.')[0];
+        
+        // Validate it looks like a hash (32 character hex string)
+        if (hash && /^[a-f0-9]{32}$/i.test(hash)) {
+            return hash.toLowerCase();
+        }
+        
+        // Fallback: use the full filename if it doesn't match expected pattern
+        console.warn(`Unexpected Genius URL format: ${imageUrl}, using filename as ID`);
+        return filename.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+        
+    } catch (error) {
+        console.error('Error extracting hash from Genius URL:', error);
+        return null;
+    }
+}
+
+/**
  * Store song documents in Firestore songs collection
  * @param {Object[]} songs - Array of song objects
  * @returns {Promise<string[]>} Array of song IDs that were stored
@@ -250,11 +801,21 @@ async function storeSongsInFirestore(songs) {
             const existingDoc = await getDoc(songRef);
             
             if (!existingDoc.exists()) {
+                // Extract album art ID for future processing (but don't process yet)
+                let albumArtId = null;
+                if (song.songArtImageUrl) {
+                    albumArtId = extractGeniusImageHash(song.songArtImageUrl);
+                }
+                
                 // Remove the id from the document data since it's used as the document ID
                 const { id, ...songData } = song;
+                
+                // Add album art ID to song data for later processing during lyric scraping
+                songData.albumArtId = albumArtId;
+                
                 batch.set(songRef, songData);
                 storedSongIds.push(song.id);
-                console.log(`Queued song ${song.id} for storage: ${song.title}`);
+                console.log(`Queued song ${song.id} for storage: ${song.title}${albumArtId ? ` (album art ID: ${albumArtId})` : ''}`);
             } else {
                 console.log(`Song ${song.id} already exists, skipping: ${song.title}`);
                 storedSongIds.push(song.id); // Still include in list since it's available
@@ -273,6 +834,35 @@ async function storeSongsInFirestore(songs) {
     } catch (error) {
         console.error('Error storing songs in Firestore:', error);
         throw error;
+    }
+}
+
+/**
+ * Check if album art exists, process if not
+ * @param {string} imageUrl - Original album art URL
+ * @param {string} albumArtId - Extracted hash ID
+ * @returns {Promise<boolean>} True if processed/exists, false if failed
+ */
+async function checkAndProcessAlbumArt(imageUrl, albumArtId) {
+    try {
+        // Check if album art already exists
+        const albumArtRef = doc(db, 'albumArt', albumArtId);
+        const albumArtDoc = await getDoc(albumArtRef);
+        
+        if (albumArtDoc.exists()) {
+            // Already processed
+            return true;
+        }
+        
+        // Process and store the album art
+        console.log(`🎨 Processing new album art: ${albumArtId}`);
+        await processAndStoreAlbumArt(imageUrl, albumArtId, 800);
+        console.log(`✅ Successfully processed album art: ${albumArtId}`);
+        return true;
+        
+    } catch (error) {
+        console.error(`❌ Error processing album art ${albumArtId}:`, error);
+        return false;
     }
 }
 
@@ -412,14 +1002,26 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                     }
                 }
                 
-                // Update artist document with found image URL (or null if not found)
-                await updateDoc(doc(db, 'artists', artistUrlKey), {
-                    imageUrl: foundImageUrl
-                });
-                
-                console.log(foundImageUrl ? 
-                    `Successfully extracted and stored image URL: ${foundImageUrl}` : 
-                    'No image URL found, stored null');
+                // Process and store image if found, otherwise store null
+                if (foundImageUrl) {
+                    try {
+                        console.log(`🖼️  Found artist image via API, processing to binary format...`);
+                        await processAndStoreArtistImage(foundImageUrl, artistUrlKey, 200);
+                        console.log(`✅ Successfully processed and stored artist image binary data`);
+                    } catch (imageUpdateError) {
+                        console.error('Error processing/storing artist image:', imageUpdateError);
+                        // Fallback: store just the URL if binary processing fails
+                        await updateDoc(doc(db, 'artists', artistUrlKey), {
+                            imageUrl: foundImageUrl
+                        });
+                        console.log(`⚠️  Stored URL only due to processing error: ${foundImageUrl}`);
+                    }
+                } else {
+                    await updateDoc(doc(db, 'artists', artistUrlKey), {
+                        imageUrl: null
+                    });
+                    console.log('No image URL found, stored null');
+                }
                     
             } catch (imageError) {
                 console.error('Error extracting image URL for up-to-date artist:', imageError);
@@ -469,14 +1071,23 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                 
                 if (artistImageUrl) {
                     try {
-                        // Update artist document with image URL
-                        await updateDoc(doc(db, 'artists', artistUrlKey), {
-                            imageUrl: artistImageUrl
-                        });
-                        console.log(`Successfully stored artist image URL: ${artistImageUrl}`);
+                        // Process image to binary format and store immediately
+                        console.log(`🖼️  Found artist image, processing to binary format...`);
+                        await processAndStoreArtistImage(artistImageUrl, artistUrlKey, 200);
+                        console.log(`✅ Successfully processed and stored artist image binary data`);
                         artistImageUrlExtracted = true;
                     } catch (imageUpdateError) {
-                        console.error('Error updating artist image URL:', imageUpdateError);
+                        console.error('Error processing/storing artist image:', imageUpdateError);
+                        // Fallback: store just the URL if binary processing fails
+                        try {
+                            await updateDoc(doc(db, 'artists', artistUrlKey), {
+                                imageUrl: artistImageUrl
+                            });
+                            console.log(`⚠️  Stored URL only due to processing error: ${artistImageUrl}`);
+                            artistImageUrlExtracted = true;
+                        } catch (urlFallbackError) {
+                            console.error('Error storing artist image URL fallback:', urlFallbackError);
+                        }
                         // Don't fail the entire operation if image update fails
                     }
                 }
@@ -624,6 +1235,18 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             const lyrics = await scrapeLyricsFromUrl(songData.url);
             
             if (lyrics && lyrics.trim().length > 0) {
+                // Process album art now that we know this song will be used
+                if (songData.albumArtId && songData.songArtImageUrl) {
+                    try {
+                        console.log(`🎨 Processing album art for scraped song: ${songData.albumArtId}`);
+                        await checkAndProcessAlbumArt(songData.songArtImageUrl, songData.albumArtId);
+                        console.log(`✅ Album art processed for song ${songId}`);
+                    } catch (albumArtError) {
+                        console.warn(`⚠️  Album art processing failed for song ${songId}: ${albumArtError.message}`);
+                        // Don't fail lyric scraping if album art processing fails
+                    }
+                }
+                
                 // Update song document with lyrics
                 await updateDoc(doc(db, 'songs', songId), {
                     lyrics: lyrics,
