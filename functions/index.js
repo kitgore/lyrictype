@@ -1,7 +1,7 @@
 import { onRequest, onCall, HttpsError } from 'firebase-functions/v2/https';
 import { defineString } from 'firebase-functions/params';
-import { getFirestore, doc, getDoc, updateDoc, setDoc, writeBatch, collection, arrayUnion, increment } from 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase-admin/app';
+import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 import * as cheerio from 'cheerio';
 import pako from 'pako';
 import fs from 'node:fs';
@@ -11,18 +11,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Firebase configuration - using the same config as the client
-const firebaseConfig = {
-  apiKey: "AIzaSyCX53dpNUbjeJhP_CstO6yOzSe76CLbgc4",
-  authDomain: "lyrictype-cdf2c.firebaseapp.com",
-  projectId: "lyrictype-cdf2c",
-  storageBucket: "lyrictype-cdf2c.appspot.com",
-  messagingSenderId: "835790496614",
-  appId: "1:835790496614:web:a87481404a0eb63104dea7",
-  measurementId: "G-6N60MSG8SL"
-};
-
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase Admin SDK
+const app = initializeApp();
 const db = getFirestore(app);
 
 const geniusApiKeyParam = defineString('GENIUS_KEY');
@@ -216,7 +206,7 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
         
         // Update or create artist document with binary data
         try {
-            await updateDoc(doc(db, 'artists', artistUrlKey), {
+            await db.collection('artists').doc(artistUrlKey).update({
                 imageUrl: imageUrl,
                 ...imageMetadata
             });
@@ -224,7 +214,7 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
             if (updateError.code === 'not-found') {
                 // Document doesn't exist, create it
                 console.log(`📝 Creating new artist document: ${artistUrlKey}`);
-                await setDoc(doc(db, 'artists', artistUrlKey), {
+                await db.collection('artists').doc(artistUrlKey).set({
                     imageUrl: imageUrl,
                     ...imageMetadata,
                     createdAt: new Date()
@@ -406,7 +396,7 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
             };
             
             // Store in albumArt collection using the provided ID
-            await setDoc(doc(db, 'albumArt', albumArtId), albumArtMetadata);
+            await db.collection('albumArt').doc(albumArtId).set(albumArtMetadata);
             
             console.log(`💾 Stored album art binary data for ${albumArtId} in ${Date.now() - startTime}ms total${i > 0 ? ` (used fallback URL)` : ''}`);
             
@@ -790,17 +780,17 @@ async function storeSongsInFirestore(songs) {
     console.log(`Storing ${songs.length} songs in Firestore`);
     
     try {
-        const batch = writeBatch(db);
-        const songsCollection = collection(db, 'songs');
+        const batch = db.batch();
+        const songsCollection = db.collection('songs');
         const storedSongIds = [];
         
         for (const song of songs) {
-            const songRef = doc(songsCollection, song.id);
+            const songRef = songsCollection.doc(song.id);
             
             // Check if song already exists to avoid overwriting existing data
-            const existingDoc = await getDoc(songRef);
+            const existingDoc = await songRef.get();
             
-            if (!existingDoc.exists()) {
+            if (!existingDoc.exists) {
                 // Extract album art ID for future processing (but don't process yet)
                 let albumArtId = null;
                 if (song.songArtImageUrl) {
@@ -846,10 +836,10 @@ async function storeSongsInFirestore(songs) {
 async function checkAndProcessAlbumArt(imageUrl, albumArtId) {
     try {
         // Check if album art already exists
-        const albumArtRef = doc(db, 'albumArt', albumArtId);
-        const albumArtDoc = await getDoc(albumArtRef);
+        const albumArtRef = db.collection('albumArt').doc(albumArtId);
+        const albumArtDoc = await albumArtRef.get();
         
-        if (albumArtDoc.exists()) {
+        if (albumArtDoc.exists) {
             // Already processed
             return true;
         }
@@ -876,11 +866,11 @@ async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
     console.log(`Updating artist ${artistUrlKey} with ${newSongIds.length} new songs`);
     
     try {
-        const artistRef = doc(db, 'artists', artistUrlKey);
+        const artistRef = db.collection('artists').doc(artistUrlKey);
         
         // First, get the current artist document to check existing songIds
-        const artistDoc = await getDoc(artistRef);
-        if (!artistDoc.exists()) {
+        const artistDoc = await artistRef.get();
+        if (!artistDoc.exists) {
             throw new Error(`Artist document not found: ${artistUrlKey}`);
         }
         
@@ -896,7 +886,7 @@ async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
         }
         
         const updateData = {
-            songIds: arrayUnion(...trulyNewSongIds),
+            songIds: FieldValue.arrayUnion(...trulyNewSongIds),
             songsFetched: metadata.songsFetched,
             totalSongs: metadata.totalSongs,
             songsLastUpdated: new Date(),
@@ -922,8 +912,8 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
     console.log(`Starting song population for artist: ${artistUrlKey}`);
     
     // Get artist document from Firestore
-    const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-    if (!artistDoc.exists()) {
+    const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+    if (!artistDoc.exists) {
         throw new Error('Artist not found');
     }
     
@@ -950,8 +940,8 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                 let foundImageUrl = null;
                 
                 for (const songId of firstSongIds) {
-                    const songDoc = await getDoc(doc(db, 'songs', songId));
-                    if (songDoc.exists()) {
+                    const songDoc = await db.collection('songs').doc(songId).get();
+                    if (songDoc.exists) {
                         const songData = songDoc.data();
                         if (songData.primaryArtist && songData.primaryArtist.id === artistId) {
                             // This is a bit tricky since we don't have the full API response here
@@ -1011,13 +1001,13 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                     } catch (imageUpdateError) {
                         console.error('Error processing/storing artist image:', imageUpdateError);
                         // Fallback: store just the URL if binary processing fails
-                        await updateDoc(doc(db, 'artists', artistUrlKey), {
+                        await db.collection('artists').doc(artistUrlKey).update( {
                             imageUrl: foundImageUrl
                         });
                         console.log(`⚠️  Stored URL only due to processing error: ${foundImageUrl}`);
                     }
                 } else {
-                    await updateDoc(doc(db, 'artists', artistUrlKey), {
+                    await db.collection('artists').doc(artistUrlKey).update( {
                         imageUrl: null
                     });
                     console.log('No image URL found, stored null');
@@ -1080,7 +1070,7 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                         console.error('Error processing/storing artist image:', imageUpdateError);
                         // Fallback: store just the URL if binary processing fails
                         try {
-                            await updateDoc(doc(db, 'artists', artistUrlKey), {
+                            await db.collection('artists').doc(artistUrlKey).update( {
                                 imageUrl: artistImageUrl
                             });
                             console.log(`⚠️  Stored URL only due to processing error: ${artistImageUrl}`);
@@ -1097,7 +1087,7 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
             const totalSongsChecked = Math.min(songsCheckedSoFar + result.songs.length, 11);
             if (totalSongsChecked >= 11 && !artistImageUrlExtracted) {
                 try {
-                    await updateDoc(doc(db, 'artists', artistUrlKey), {
+                    await db.collection('artists').doc(artistUrlKey).update( {
                         imageUrl: null
                     });
                     console.log('No artist image URL found after checking 11 songs, stored null');
@@ -1203,8 +1193,8 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             console.log(`Scraping lyrics for song ${songId}`);
             
             // Get song document from Firestore
-            const songDoc = await getDoc(doc(db, 'songs', songId));
-            if (!songDoc.exists()) {
+            const songDoc = await db.collection('songs').doc(songId).get();
+            if (!songDoc.exists) {
                 results.failed.push({ songId, error: 'Song not found' });
                 continue;
             }
@@ -1226,7 +1216,7 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             }
             
             // Update status to 'scraping'
-            await updateDoc(doc(db, 'songs', songId), { 
+            await db.collection('songs').doc(songId).update( { 
                 scrapingStatus: 'scraping',
                 scrapingAttempts: (songData.scrapingAttempts || 0) + 1
             });
@@ -1248,7 +1238,7 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
                 }
                 
                 // Update song document with lyrics
-                await updateDoc(doc(db, 'songs', songId), {
+                await db.collection('songs').doc(songId).update( {
                     lyrics: lyrics,
                     lyricsScrapedAt: new Date(),
                     scrapingStatus: 'completed',
@@ -1259,9 +1249,9 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
                 console.log(`Successfully scraped lyrics for song ${songId}: ${songData.title}`);
                 
                 // Update artist cachedSongIds immediately for real-time access
-                await updateDoc(doc(db, 'artists', artistUrlKey), {
-                    cachedSongIds: arrayUnion(songId),
-                    lyricsScraped: increment(1)
+                await db.collection('artists').doc(artistUrlKey).update( {
+                    cachedSongIds: FieldValue.arrayUnion(songId),
+                    lyricsScraped: FieldValue.increment(1)
                 });
             } else {
                 throw new Error('No lyrics found or empty lyrics');
@@ -1271,7 +1261,7 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             console.error(`Error scraping song ${songId}:`, error);
             
             // Update song document with error
-            await updateDoc(doc(db, 'songs', songId), {
+            await db.collection('songs').doc(songId).update( {
                 scrapingStatus: 'failed',
                 scrapingError: error.message
             });
@@ -1460,8 +1450,8 @@ async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKe
     console.log(`Loading songs starting from ${songId} for artist ${artistUrlKey}, reverse: ${shouldReverse}, rangeSize: ${rangeSize}`);
     
     // Get artist document to find songIds array
-    const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-    if (!artistDoc.exists()) {
+    const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+    if (!artistDoc.exists) {
         throw new Error('Artist not found');
     }
     
@@ -1531,8 +1521,8 @@ async function loadStartingFromIdCore(songId, shouldReverse = false, artistUrlKe
     
     for (const songId of targetSongIds) {
         try {
-            const songDoc = await getDoc(doc(db, 'songs', songId));
-            if (songDoc.exists()) {
+            const songDoc = await db.collection('songs').doc(songId).get();
+            if (songDoc.exists) {
                 loadedSongs[songId] = { id: songId, ...songDoc.data() };
                 songsLoadedCount++;
             } else {
@@ -1681,8 +1671,8 @@ export const testCacheSystem = onCall({
             
             try {
                 // Get first few song IDs from artist for testing
-                const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-                if (artistDoc.exists()) {
+                const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+                if (artistDoc.exists) {
                     const artistData = artistDoc.data();
                     const testSongIds = (artistData.songIds || []).slice(0, 2); // Test with first 2 songs
                     
@@ -1722,8 +1712,8 @@ export const testCacheSystem = onCall({
             console.log('Testing smart loading...');
             
             try {
-                const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-                if (artistDoc.exists()) {
+                const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+                if (artistDoc.exists) {
                     const artistData = artistDoc.data();
                     const songIds = artistData.songIds || [];
                     
@@ -1809,8 +1799,8 @@ export const getArtistInfo = onCall({
     }
     
     try {
-        const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-        if (!artistDoc.exists()) {
+        const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+        if (!artistDoc.exists) {
             throw new HttpsError('not-found', 'Artist not found');
         }
         
@@ -1857,8 +1847,8 @@ export const diagnoseSongData = onCall({
         };
         
         // Get artist info
-        const artistDoc = await getDoc(doc(db, 'artists', artistUrlKey));
-        if (!artistDoc.exists()) {
+        const artistDoc = await db.collection('artists').doc(artistUrlKey).get();
+        if (!artistDoc.exists) {
             throw new HttpsError('not-found', 'Artist not found');
         }
         
@@ -1872,8 +1862,8 @@ export const diagnoseSongData = onCall({
         
         // If specific song ID provided, examine it
         if (songId) {
-            const songDoc = await getDoc(doc(db, 'songs', songId));
-            if (songDoc.exists()) {
+            const songDoc = await db.collection('songs').doc(songId).get();
+            if (songDoc.exists) {
                 const songData = songDoc.data();
                 results.diagnostics.specificSong = {
                     id: songId,
@@ -1897,8 +1887,8 @@ export const diagnoseSongData = onCall({
             results.diagnostics.sampleSongs = [];
             
             for (const id of songIds) {
-                const songDoc = await getDoc(doc(db, 'songs', id));
-                if (songDoc.exists()) {
+                const songDoc = await db.collection('songs').doc(id).get();
+                if (songDoc.exists) {
                     const songData = songDoc.data();
                     results.diagnostics.sampleSongs.push({
                         id: id,
@@ -1946,8 +1936,8 @@ export const testLyricsScraping = onCall({
         
         // If songId provided, get URL from database
         if (songId && !songUrl) {
-            const songDoc = await getDoc(doc(db, 'songs', songId));
-            if (!songDoc.exists()) {
+            const songDoc = await db.collection('songs').doc(songId).get();
+            if (!songDoc.exists) {
                 throw new HttpsError('not-found', 'Song not found');
             }
             testUrl = songDoc.data().url;
