@@ -123,7 +123,8 @@
     .artist-button, .artist-button-empty {
         border: 2px solid var(--primary-color);
         border-radius: .8rem;
-        height: calc(80% / 9);
+        height: calc(80% / 8); /* Adjusted for gap-based layout instead of space-between */
+        flex-shrink: 0; /* Prevent shrinking when using gap */
         display: flex;
         align-items: center;
         justify-content: left;

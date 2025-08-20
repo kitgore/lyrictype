@@ -894,7 +894,7 @@ async function updateArtistSongList(artistUrlKey, newSongIds, metadata) {
             cacheVersion: 1
         };   
         
-        await updateDoc(artistRef, updateData);
+        await artistRef.update(updateData);
         console.log(`Successfully updated artist ${artistUrlKey} with ${trulyNewSongIds.length} new song IDs`);
         
     } catch (error) {

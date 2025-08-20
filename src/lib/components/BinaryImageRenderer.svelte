@@ -385,11 +385,12 @@
 
 <style>
   .canvas-wrapper {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 100%;
     overflow: hidden;
-    object-fit: cover;
   }
   
   .binary-image-canvas {
