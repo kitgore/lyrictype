@@ -1006,7 +1006,8 @@
         display: flex;
         flex-direction: column;
         padding: 0 6% 0 10%;
-        justify-content: space-between;
+        gap: 2%; /* Fixed gap between buttons instead of space-between */
+        justify-content: flex-start;
     }
 
     /* Main Content */
