@@ -12,20 +12,46 @@ import pako from 'pako';
  * @param {string} compressedBase64 - Base64 encoded compressed grayscale data
  * @returns {string} - Base64 encoded decompressed grayscale data
  */
-function decompressGrayscaleData(compressedBase64) {
+function decompressGrayscaleData(compressedBase64, returnRawBytes = false) {
     try {
+        console.log(`🔍 Attempting to decompress ${compressedBase64.length} chars of Base64 data`);
+        
         // Decode from Base64
         const compressedData = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
+        console.log(`📦 Decoded Base64 to ${compressedData.length} bytes`);
         
         // Decompress with Pako
         const decompressedData = pako.inflate(compressedData);
+        console.log(`🗜️  Pako inflated to ${decompressedData.length} bytes`);
         
         // Re-encode to Base64 for compatibility with existing WebGL code
-        const decompressedBase64 = btoa(String.fromCharCode(...decompressedData));
+        // Process in chunks to avoid stack overflow with large arrays
+        console.log(`🔧 Converting ${decompressedData.length} bytes to Base64 in chunks...`);
+        let binaryString = '';
+        const chunkSize = 8192; // Process 8KB at a time
+        const totalChunks = Math.ceil(decompressedData.length / chunkSize);
+        
+        for (let i = 0; i < decompressedData.length; i += chunkSize) {
+            const chunk = decompressedData.slice(i, i + chunkSize);
+            binaryString += String.fromCharCode(...chunk);
+            
+            // Log progress for large files
+            if (totalChunks > 10 && (i / chunkSize) % 20 === 0) {
+                console.log(`🔧 Processed chunk ${Math.floor(i / chunkSize) + 1}/${totalChunks}`);
+            }
+        }
         
         console.log(`🗜️  Pako decompressed: ${compressedData.length} → ${decompressedData.length} bytes`);
         
-        return decompressedBase64;
+        if (returnRawBytes) {
+            // Return raw Uint8Array for WebGL
+            return decompressedData;
+        } else {
+            // Return Base64 for backward compatibility
+            console.log(`🔧 Converting binary string to Base64...`);
+            const decompressedBase64 = btoa(binaryString);
+            return decompressedBase64;
+        }
     } catch (error) {
         console.error('❌ Error decompressing grayscale data:', error);
         throw error;
@@ -48,23 +74,40 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
         if (artistDoc.exists()) {
             const artistData = artistDoc.data();
             
-            // Check if we have grayscale image data (new format)
-            if (artistData.grayscaleImageData && artistData.imageWidth && artistData.imageHeight) {
+            // Check for corrupted/legacy data first (wrong format stored in grayscaleImageData field)
+            if (artistData.grayscaleImageData && artistData.processingVersion !== '2.0-grayscale') {
+                console.log(`🔄 Found corrupted/legacy data in grayscaleImageData field for ${artistUrlKey}, reprocessing...`);
+                if (artistData.imageUrl) {
+                    return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
+                }
+            }
+            
+            // Check if we have valid grayscale image data (new format)
+            if (artistData.grayscaleImageData && artistData.imageWidth && artistData.imageHeight && artistData.processingVersion === '2.0-grayscale') {
                 console.log(`✅ Found cached grayscale image data for ${artistUrlKey} (${artistData.imageWidth}x${artistData.imageHeight})`);
                 
-                // Check if this is compressed data 
-                const isCompressed = artistData.processingVersion === '2.0-grayscale' || artistData.compressionMethod === 'pako-deflate';
-                
                 let grayscaleData = artistData.grayscaleImageData;
-                if (isCompressed) {
+                let rawGrayscaleBytes = null;
+                
+                if (artistData.compressionMethod === 'pako-deflate') {
                     console.log(`🗜️  Decompressing cached grayscale data (${artistData.compressionMethod})`);
-                    grayscaleData = decompressGrayscaleData(artistData.grayscaleImageData);
+                    try {
+                        grayscaleData = decompressGrayscaleData(artistData.grayscaleImageData);
+                        rawGrayscaleBytes = decompressGrayscaleData(artistData.grayscaleImageData, true); // Get raw bytes for WebGL
+                    } catch (error) {
+                        console.warn(`🔄 Failed to decompress cached data, reprocessing image: ${error.message}`);
+                        if (artistData.imageUrl) {
+                            return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
+                        }
+                        throw error;
+                    }
                 }
                 
                 return {
                     success: true,
                     cached: true,
                     grayscaleData: grayscaleData,
+                    rawGrayscaleBytes: rawGrayscaleBytes, // Raw bytes for WebGL
                     metadata: {
                         width: artistData.imageWidth,
                         height: artistData.imageHeight,
@@ -267,3 +310,6 @@ function hexToRgb(hex) {
         parseInt(result[3], 16)
     ] : [0, 0, 0];
 }
+
+// Backward compatibility alias
+export const getArtistBinaryImage = getArtistGrayscaleImage;

@@ -1,6 +1,6 @@
 <script>
-    import { getArtistBinaryImage } from '$lib/services/binaryImageService';
-    import BinaryImageRenderer from './BinaryImageRenderer.svelte';
+    import { getArtistBinaryImage } from '$lib/services/grayscaleImageService';
+    import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
     import { themeColors, ditherImages, imageColors, windowStore } from '$lib/services/store.js';
     
     export let name;
@@ -8,7 +8,8 @@
     export let urlKey; // Artist's Firestore document key
     export let isLoadingImage = false; // External loading state (for when image is being extracted)
 
-    let binaryImageData = null;
+    let grayscaleImageData = null;
+    let rawGrayscaleBytes = null; // Raw bytes for WebGL
     let imageMetadata = null;
     let isProcessing = true; // Internal processing state
     let currentImageUrl = ''; // Track the current image URL
@@ -16,10 +17,11 @@
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
 
-    async function loadBinaryImage() {
+    async function loadGrayscaleImage() {
         if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
             isProcessing = false;
-            binaryImageData = null;
+            grayscaleImageData = null;
+            rawGrayscaleBytes = null;
             imageMetadata = null;
             currentImageUrl = '';
             useFallback = false;
@@ -29,14 +31,15 @@
         // If this is a new image, reset state
         if (currentImageUrl !== imageUrl) {
             isProcessing = true;
-            binaryImageData = null;
+            grayscaleImageData = null;
+            rawGrayscaleBytes = null;
             imageMetadata = null;
             currentImageUrl = imageUrl;
             useFallback = false;
         }
 
         try {
-            console.log('🎨 Loading binary image for artist:', name, urlKey);
+            console.log('🎨 Loading grayscale image for artist:', name, urlKey);
             
             if (!$ditherImages) {
                 // If dithering is disabled, use fallback
@@ -45,17 +48,18 @@
                 return;
             }
 
-            // Try to get binary image data
+            // Try to get grayscale image data
             if (urlKey) {
                 const result = await getArtistBinaryImage(urlKey, imageUrl);
                 
                 if (result.success) {
-                    binaryImageData = result.binaryData;
+                    grayscaleImageData = result.grayscaleData || result.binaryData; // Backward compatibility
+                    rawGrayscaleBytes = result.rawGrayscaleBytes; // Raw bytes for WebGL
                     imageMetadata = result.metadata;
                     useFallback = false;
-                    console.log('✅ Binary image loaded:', result.cached ? 'from cache' : 'processed');
+                    console.log('✅ Grayscale image loaded:', result.cached ? 'from cache' : 'processed');
                 } else {
-                    console.warn('⚠️  Binary image failed, using fallback:', result.error);
+                    console.warn('⚠️  Grayscale image failed, using fallback:', result.error);
                     useFallback = true;
                 }
             } else {
@@ -63,7 +67,7 @@
                 useFallback = true;
             }
         } catch (error) {
-            console.error('❌ Error loading binary image:', error);
+            console.error('❌ Error loading grayscale image:', error);
             useFallback = true;
         } finally {
             isProcessing = false;
@@ -72,21 +76,22 @@
 
     // Clear image immediately when imageUrl becomes invalid
     $: if (!imageUrl || imageUrl === '/default-image.svg' || imageUrl === null || imageUrl === undefined) {
-        binaryImageData = null;
+        grayscaleImageData = null;
+        rawGrayscaleBytes = null;
         imageMetadata = null;
         currentImageUrl = '';
         isProcessing = false;
         useFallback = false;
     }
 
-    // Load binary image when imageUrl changes
+    // Load grayscale image when imageUrl changes
     $: if (imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
-        loadBinaryImage();
+        loadGrayscaleImage();
     }
 
     // Reload when dither setting changes
     $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
-        loadBinaryImage();
+        loadGrayscaleImage();
     }
 </script>
 
@@ -96,9 +101,10 @@
         <div class="image-container">
             {#if isLoadingImage || isProcessing}
                 <div class="loading-placeholder"></div>
-            {:else if binaryImageData && imageMetadata && !useFallback}
-                <BinaryImageRenderer
-                    binaryData={binaryImageData}
+            {:else if grayscaleImageData && imageMetadata && !useFallback}
+                <GrayscaleImageRenderer
+                    grayscaleData={grayscaleImageData}
+                    rawGrayscaleBytes={rawGrayscaleBytes}
                     width={imageMetadata.width}
                     height={imageMetadata.height}
                     alt={name || 'Artist image'}

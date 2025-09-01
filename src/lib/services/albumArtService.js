@@ -1,5 +1,5 @@
 /**
- * Album Art Service - handles binary dithered album art data
+ * Album Art Service - handles 8-bit grayscale album art data
  * Optimized for deduplication across songs from the same album
  */
 
@@ -37,11 +37,11 @@ export function extractGeniusImageHash(imageUrl) {
 }
 
 /**
- * Decompress binary image data using Pako
- * @param {string} compressedBase64 - Base64 encoded compressed binary data
- * @returns {string} - Base64 encoded decompressed binary data
+ * Decompress grayscale image data using Pako
+ * @param {string} compressedBase64 - Base64 encoded compressed grayscale data
+ * @returns {string} - Base64 encoded decompressed grayscale data
  */
-function decompressBinaryData(compressedBase64) {
+function decompressGrayscaleData(compressedBase64) {
     try {
         // Decode from Base64
         const compressedData = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
@@ -50,7 +50,24 @@ function decompressBinaryData(compressedBase64) {
         const decompressedData = pako.inflate(compressedData);
         
         // Re-encode to Base64 for compatibility with existing WebGL code
-        const decompressedBase64 = btoa(String.fromCharCode(...decompressedData));
+        // Process in chunks to avoid stack overflow with large arrays
+        console.log(`🔧 Converting ${decompressedData.length} bytes to Base64 in chunks...`);
+        let binaryString = '';
+        const chunkSize = 8192; // Process 8KB at a time
+        const totalChunks = Math.ceil(decompressedData.length / chunkSize);
+        
+        for (let i = 0; i < decompressedData.length; i += chunkSize) {
+            const chunk = decompressedData.slice(i, i + chunkSize);
+            binaryString += String.fromCharCode(...chunk);
+            
+            // Log progress for large files
+            if (totalChunks > 10 && (i / chunkSize) % 20 === 0) {
+                console.log(`🔧 Processed chunk ${Math.floor(i / chunkSize) + 1}/${totalChunks}`);
+            }
+        }
+        
+        console.log(`🔧 Converting binary string to Base64...`);
+        const decompressedBase64 = btoa(binaryString);
         
         console.log(`🗜️  Pako decompressed album art: ${compressedData.length} → ${decompressedData.length} bytes`);
         
@@ -68,9 +85,9 @@ function decompressBinaryData(compressedBase64) {
  * @param {string} songArtImageUrl - The album art URL from song data
  * @returns {Promise<{success: boolean, binaryData?: string, metadata?: object, cached?: boolean, error?: string}>}
  */
-export async function getAlbumArtBinaryImage(songArtImageUrl) {
+export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
     try {
-        console.log(`🔍 Looking for album art binary data: ${songArtImageUrl}`);
+        console.log(`🔍 Looking for album art grayscale data: ${songArtImageUrl}`);
         
         // Extract the hash from the Genius URL to use as document ID
         const albumArtId = extractGeniusImageHash(songArtImageUrl);
@@ -82,36 +99,63 @@ export async function getAlbumArtBinaryImage(songArtImageUrl) {
         
         if (albumArtDoc.exists()) {
             const albumArtData = albumArtDoc.data();
-            console.log(`✅ Found cached album art binary data for ${albumArtId}`);
             
-            // Check if this is compressed data (version 1.1-pako or has compression method)
-            const isCompressed = albumArtData.processingVersion === '1.1-pako' || albumArtData.compressionMethod === 'pako-deflate';
-            
-            let binaryData = albumArtData.binaryImageData;
-            if (isCompressed) {
-                console.log(`🗜️  Decompressing cached album art (${albumArtData.compressionMethod})`);
-                binaryData = decompressBinaryData(albumArtData.binaryImageData);
+            // Check for corrupted/legacy data first (wrong format stored in grayscaleImageData field)
+            if (albumArtData.grayscaleImageData && albumArtData.processingVersion !== '2.0-grayscale') {
+                console.log(`🔄 Found corrupted/legacy data in grayscaleImageData field for ${albumArtId}, reprocessing...`);
+                return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
             }
             
-            return {
-                success: true,
-                cached: true,
-                binaryData: binaryData,
-                metadata: {
-                    albumArtId: albumArtId,
-                    width: albumArtData.imageWidth,
-                    height: albumArtData.imageHeight,
-                    originalImageUrl: albumArtData.originalImageUrl,
-                    processedAt: albumArtData.processedAt,
-                    processingVersion: albumArtData.processingVersion,
-                    compressionMethod: albumArtData.compressionMethod
+            // Check if we have valid grayscale image data (new format)
+            if (albumArtData.grayscaleImageData && albumArtData.imageWidth && albumArtData.imageHeight && albumArtData.processingVersion === '2.0-grayscale') {
+                console.log(`✅ Found cached album art grayscale data for ${albumArtId} (${albumArtData.imageWidth}x${albumArtData.imageHeight})`);
+                
+                let grayscaleData = albumArtData.grayscaleImageData;
+                if (albumArtData.compressionMethod === 'pako-deflate') {
+                    console.log(`🗜️  Decompressing cached album art grayscale data (${albumArtData.compressionMethod})`);
+                    try {
+                        grayscaleData = decompressGrayscaleData(albumArtData.grayscaleImageData);
+                    } catch (error) {
+                        console.warn(`🔄 Failed to decompress cached album art data, reprocessing: ${error.message}`);
+                        return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                    }
                 }
-            };
+                
+                return {
+                    success: true,
+                    cached: true,
+                    grayscaleData: grayscaleData,
+                    metadata: {
+                        albumArtId: albumArtId,
+                        width: albumArtData.imageWidth,
+                        height: albumArtData.imageHeight,
+                        originalSize: albumArtData.originalSize,
+                        grayscaleSize: albumArtData.grayscaleSize,
+                        compressedSize: albumArtData.compressedSize,
+                        compressionRatio: albumArtData.compressionRatio,
+                        pakoCompressionRatio: albumArtData.pakoCompressionRatio,
+                        totalCompressionRatio: albumArtData.totalCompressionRatio,
+                        averageBrightness: albumArtData.averageBrightness,
+                        darkPercent: albumArtData.darkPercent,
+                        lightPercent: albumArtData.lightPercent,
+                        originalImageUrl: albumArtData.originalImageUrl,
+                        processedAt: albumArtData.processedAt,
+                        processingVersion: albumArtData.processingVersion,
+                        compressionMethod: albumArtData.compressionMethod
+                    }
+                };
+            }
+            
+            // Check for legacy binary data and suggest reprocessing
+            if (albumArtData.binaryImageData && albumArtData.imageWidth && albumArtData.imageHeight) {
+                console.log(`🔄 Found legacy binary data for ${albumArtId}, reprocessing to grayscale...`);
+                return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+            }
         }
         
         // If not found, trigger server-side processing
         console.log(`⏳ Album art not in cache, triggering server processing for ${albumArtId}`);
-        const result = await processAlbumArtToBinary(songArtImageUrl, albumArtId);
+        const result = await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
         return { ...result, cached: false };
         
     } catch (error) {
@@ -128,9 +172,9 @@ export async function getAlbumArtBinaryImage(songArtImageUrl) {
  * Process album art to binary format via Firebase Function
  * This function is optimized for speed - client gets data ASAP
  */
-async function processAlbumArtToBinary(imageUrl, albumArtId) {
+async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
     try {
-        console.log(`⚡ Processing album art to binary format...`);
+        console.log(`⚡ Processing album art to grayscale format...`);
         const startTime = Date.now();
         
         // Call our optimized Firebase Function (auto-detects environment)
@@ -145,8 +189,8 @@ async function processAlbumArtToBinary(imageUrl, albumArtId) {
             },
             body: JSON.stringify({
                 url: imageUrl,
-                albumArtId: albumArtId,
-                size: 800 // High resolution for album art displayed on results screen
+                albumArtId: albumArtId
+                // No size limit - use native resolution for grayscale
             })
         });
         
@@ -157,24 +201,27 @@ async function processAlbumArtToBinary(imageUrl, albumArtId) {
         const result = await response.json();
         const processingTime = Date.now() - startTime;
         
-        console.log(`🚀 Album art processed in ${processingTime}ms (${result.metadata.totalCompressionPercent}% total compression)`);
+        console.log(`🚀 Album art processed in ${processingTime}ms (${result.metadata.totalCompressionRatio}% total compression)`);
         
-        // Decompress the binary data since it's now Pako compressed
-        let binaryData = result.binaryData;
+        // Decompress the grayscale data since it's now Pako compressed
+        let grayscaleData = result.grayscaleData;
         if (result.metadata.compressionMethod === 'pako-deflate') {
             console.log(`🗜️  Decompressing fresh album art (${result.metadata.compressionMethod})`);
-            binaryData = decompressBinaryData(result.binaryData);
+            grayscaleData = decompressGrayscaleData(result.grayscaleData);
         }
         
         return {
             ...result,
-            binaryData: binaryData,
+            grayscaleData: grayscaleData,
             cached: false,
             clientProcessingTime: processingTime
         };
         
     } catch (error) {
-        console.error('Error processing album art to binary:', error);
+        console.error('Error processing album art to grayscale:', error);
         throw error;
     }
 }
+
+// Backward compatibility alias
+export const getAlbumArtBinaryImage = getAlbumArtGrayscaleImage;

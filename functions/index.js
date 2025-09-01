@@ -55,84 +55,50 @@ export const healthCheck = onRequest({
  * @param {object} imageData - Canvas ImageData object
  * @returns {Uint8Array} Binary array (1 bit per pixel, packed into bytes)
  */
-function atkinsonDitherToBinary(imageData) {
+function convertToGrayscale(imageData) {
     const width = imageData.width;
     const height = imageData.height;
-    const data = new Uint8ClampedArray(imageData.data);
+    const data = imageData.data;
     
-    // Convert to grayscale first
+    // Create 8-bit grayscale array (1 byte per pixel)
+    const grayscaleData = new Uint8Array(width * height);
+    
+    // Convert RGBA to grayscale using luminance formula
     for (let i = 0; i < data.length; i += 4) {
-        const gray = (data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114);
-        data[i] = data[i + 1] = data[i + 2] = gray;
+        const gray = Math.round(data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114);
+        const pixelIndex = i / 4;
+        grayscaleData[pixelIndex] = gray;
     }
-
-    // Atkinson dithering matrix
-    const matrix = [
-        [0, 0, 1/8, 1/8],
-        [1/8, 1/8, 1/8, 0],
-        [0, 1/8, 0, 0]
-    ];
-
-    // Create binary output array (1 bit per pixel, packed into bytes)
-    const binarySize = Math.ceil((width * height) / 8);
-    const binaryData = new Uint8Array(binarySize);
-
-    for (let y = 0; y < height; y++) {
-        for (let x = 0; x < width; x++) {
-            const idx = (y * width + x) * 4;
-            const oldPixel = data[idx];
-            
-            // Determine if pixel should be dark or light
-            const isDark = oldPixel < 128;
-            
-            // Store binary result (1 for light, 0 for dark)
-            const bitIndex = y * width + x;
-            const byteIndex = Math.floor(bitIndex / 8);
-            const bitPosition = 7 - (bitIndex % 8);
-            
-            if (!isDark) { // Light pixel = 1
-                binaryData[byteIndex] |= (1 << bitPosition);
-            }
-            
-            const newPixel = isDark ? 0 : 255;
-            const error = (oldPixel - newPixel) / 8;
-
-            // Propagate error using Atkinson matrix
-            for (let i = 0; i < matrix.length; i++) {
-                for (let j = 0; j < matrix[i].length; j++) {
-                    if (matrix[i][j] === 0) continue;
-                    
-                    const ny = y + i;
-                    const nx = x + j - 1;
-                    
-                    if (ny < height && nx >= 0 && nx < width) {
-                        const nidx = (ny * width + nx) * 4;
-                        data[nidx] += error;
-                        data[nidx + 1] += error;
-                        data[nidx + 2] += error;
-                    }
-                }
-            }
-        }
-    }
-
-    return binaryData;
+    
+    return grayscaleData;
 }
 
 /**
- * Analyze binary dithered data for compression and statistics
+ * Analyze grayscale data for compression and statistics
  */
-function analyzeBinaryData(binaryData, width, height) {
+function analyzeGrayscaleData(grayscaleData, width, height) {
     const totalPixels = width * height;
-    const totalBytes = binaryData.length;
+    const totalBytes = grayscaleData.length;
     const originalSize = totalPixels * 4; // RGBA
     const compressionRatio = totalBytes / originalSize;
     
-    // Calculate white pixel count
-    let setBits = 0;
-    for (let byte of binaryData) {
-        setBits += byte.toString(2).split('1').length - 1;
+    // Calculate brightness statistics
+    let totalBrightness = 0;
+    let darkPixels = 0;
+    let lightPixels = 0;
+    
+    for (let i = 0; i < grayscaleData.length; i++) {
+        const brightness = grayscaleData[i];
+        totalBrightness += brightness;
+        
+        if (brightness < 128) {
+            darkPixels++;
+        } else {
+            lightPixels++;
+        }
     }
+    
+    const averageBrightness = totalBrightness / totalPixels;
     
     return {
         totalPixels,
@@ -140,9 +106,11 @@ function analyzeBinaryData(binaryData, width, height) {
         originalSize,
         compressionRatio: compressionRatio.toFixed(3),
         compressionPercent: ((1 - compressionRatio) * 100).toFixed(1),
-        setBits,
-        whiteFraction: (setBits / totalPixels).toFixed(3),
-        whitePercent: ((setBits / totalPixels) * 100).toFixed(1),
+        averageBrightness: Math.round(averageBrightness),
+        darkPixels,
+        lightPixels,
+        darkPercent: ((darkPixels / totalPixels) * 100).toFixed(1),
+        lightPercent: ((lightPixels / totalPixels) * 100).toFixed(1)
     };
 }
 
@@ -150,9 +118,9 @@ function analyzeBinaryData(binaryData, width, height) {
  * Process artist image to binary format and store in database
  * Fast response - client gets binary data ASAP
  */
-async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 200) {
+async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
     try {
-        console.log(`🚀 FAST processing artist image: ${imageUrl}`);
+        console.log(`🚀 Processing artist image at native resolution: ${imageUrl}`);
         const startTime = Date.now();
         
         // Fetch the image
@@ -164,43 +132,52 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
         const imageBuffer = await imageResponse.arrayBuffer();
         console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
-        // Process with canvas
+        // Process with canvas at native resolution
         const { createCanvas, loadImage } = await import('canvas');
         const img = await loadImage(Buffer.from(imageBuffer));
         
-        // Create canvas with target size
-        const canvas = createCanvas(targetSize, targetSize);
+        // Use native image dimensions
+        const nativeWidth = img.naturalWidth || img.width;
+        const nativeHeight = img.naturalHeight || img.height;
+        
+        console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
+        
+        // Create canvas with native size
+        const canvas = createCanvas(nativeWidth, nativeHeight);
         const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, targetSize, targetSize);
+        ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
         
-        const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+        const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
         
-        // Apply dithering and get binary data
-        const binaryData = atkinsonDitherToBinary(imageData);
-        const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+        // Convert to 8-bit grayscale
+        const grayscaleData = convertToGrayscale(imageData);
+        const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
         
-        console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
+        console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
         
         // Compress with Pako
-        const compressedData = pako.deflate(binaryData);
-        console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+        const compressedData = pako.deflate(grayscaleData);
+        console.log(`🗜️  Pako compressed: ${grayscaleData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1)}% reduction)`);
         
         // Store in artist document
-        const base64Binary = Buffer.from(compressedData).toString('base64');
+        const base64Grayscale = Buffer.from(compressedData).toString('base64');
         const imageMetadata = {
-            binaryImageData: base64Binary,
-            imageWidth: targetSize,
-            imageHeight: targetSize,
+            grayscaleImageData: base64Grayscale,
+            imageWidth: nativeWidth,
+            imageHeight: nativeHeight,
             originalImageUrl: imageUrl,
             originalSize: imageBuffer.byteLength,
-            binarySize: analysis.totalBytes,
+            grayscaleSize: analysis.totalBytes,
             compressedSize: compressedData.length,
-            base64Size: base64Binary.length,
+            base64Size: base64Grayscale.length,
             compressionRatio: analysis.compressionRatio,
-            pakoCompressionRatio: compressedData.length / binaryData.length,
+            pakoCompressionRatio: compressedData.length / grayscaleData.length,
             totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+            averageBrightness: analysis.averageBrightness,
+            darkPercent: analysis.darkPercent,
+            lightPercent: analysis.lightPercent,
             processedAt: new Date(),
-            processingVersion: '1.1-pako',
+            processingVersion: '2.0-grayscale',
             compressionMethod: 'pako-deflate'
         };
         
@@ -228,21 +205,23 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize = 2
         
         return {
             success: true,
-            binaryData: base64Binary,
+            grayscaleData: base64Grayscale,
             metadata: {
-                width: targetSize,
-                height: targetSize,
+                width: nativeWidth,
+                height: nativeHeight,
                 originalSize: imageBuffer.byteLength,
-                binarySize: analysis.totalBytes,
+                grayscaleSize: analysis.totalBytes,
                 compressedSize: compressedData.length,
-                base64Size: base64Binary.length,
+                base64Size: base64Grayscale.length,
                 compressionRatio: analysis.compressionRatio,
-                pakoCompressionRatio: compressedData.length / binaryData.length,
+                pakoCompressionRatio: compressedData.length / grayscaleData.length,
                 totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
                 compressionPercent: analysis.compressionPercent,
-                pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
                 totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
-                whitePixelPercent: analysis.whitePercent,
+                averageBrightness: analysis.averageBrightness,
+                darkPercent: analysis.darkPercent,
+                lightPercent: analysis.lightPercent,
                 processingTimeMs: Date.now() - startTime,
                 compressionMethod: 'pako-deflate'
             }
@@ -287,7 +266,7 @@ export const processArtistImageBinary = onRequest({
     }
 
     try {
-        const result = await processAndStoreArtistImage(imageUrl, artistUrlKey, targetSize);
+        const result = await processAndStoreArtistImage(imageUrl, artistUrlKey);
         res.json(result);
     } catch (error) {
         console.error('❌ Error in processArtistImageBinary:', error);
@@ -327,7 +306,7 @@ function tryAlternativeImageFormat(imageUrl) {
  * Similar to artist processing but stores in albumArt collection
  * Uses 800x800 resolution for high quality on results screen
  */
-async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
+async function processAndStoreAlbumArt(imageUrl, albumArtId) {
     const startTime = Date.now();
     let lastError = null;
     
@@ -361,37 +340,49 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
             const imageBuffer = await imageResponse.arrayBuffer();
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
-            // Process with canvas
+            // Process with canvas at native resolution
             const { createCanvas, loadImage } = await import('canvas');
             const img = await loadImage(Buffer.from(imageBuffer));
             
-            // Create canvas with target size
-            const canvas = createCanvas(targetSize, targetSize);
+            // Use native image dimensions
+            const nativeWidth = img.naturalWidth || img.width;
+            const nativeHeight = img.naturalHeight || img.height;
+            
+            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
+            
+            // Create canvas with native size
+            const canvas = createCanvas(nativeWidth, nativeHeight);
             const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, targetSize, targetSize);
+            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
             
-            const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
+            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
             
-            // Apply dithering and get binary data
-            const binaryData = atkinsonDitherToBinary(imageData);
-            const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
+            // Convert to 8-bit grayscale
+            const grayscaleData = convertToGrayscale(imageData);
+            const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
             
-            console.log(`⚡ Binary processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% compression)`);
+            console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
             
             // Compress with Pako
-            const compressedData = pako.deflate(binaryData);
-            console.log(`🗜️  Pako compressed: ${binaryData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / binaryData.length) * 100).toFixed(1)}% reduction)`);
+            const compressedData = pako.deflate(grayscaleData);
+            console.log(`🗜️  Pako compressed: ${grayscaleData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1)}% reduction)`);
             
             // Store in albumArt collection
-            const base64Binary = Buffer.from(compressedData).toString('base64');
+            const base64Grayscale = Buffer.from(compressedData).toString('base64');
             const albumArtMetadata = {
-                binaryImageData: base64Binary,
-                imageWidth: targetSize,
-                imageHeight: targetSize,
+                grayscaleImageData: base64Grayscale,
+                imageWidth: nativeWidth,
+                imageHeight: nativeHeight,
                 originalImageUrl: imageUrl, // Store original URL for reference
                 processedImageUrl: currentUrl, // Store URL that actually worked
+                originalSize: imageBuffer.byteLength,
+                grayscaleSize: analysis.totalBytes,
+                compressedSize: compressedData.length,
+                averageBrightness: analysis.averageBrightness,
+                darkPercent: analysis.darkPercent,
+                lightPercent: analysis.lightPercent,
                 processedAt: new Date(),
-                processingVersion: '1.1-pako',
+                processingVersion: '2.0-grayscale',
                 compressionMethod: 'pako-deflate'
             };
             
@@ -402,28 +393,30 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId, targetSize = 800) {
             
             return {
                 success: true,
-                binaryData: base64Binary,
+                grayscaleData: base64Grayscale,
                 metadata: {
                     albumArtId: albumArtId,
-                    width: targetSize,
-                    height: targetSize,
+                    width: nativeWidth,
+                    height: nativeHeight,
                     originalSize: imageBuffer.byteLength,
-                    binarySize: analysis.totalBytes,
+                    grayscaleSize: analysis.totalBytes,
                     compressedSize: compressedData.length,
                     compressionRatio: analysis.compressionRatio,
-                    pakoCompressionRatio: compressedData.length / binaryData.length,
+                    pakoCompressionRatio: compressedData.length / grayscaleData.length,
                     totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
                     compressionPercent: analysis.compressionPercent,
-                    pakoCompressionPercent: ((1 - compressedData.length / binaryData.length) * 100).toFixed(1),
+                    pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
                     totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
-                    whitePixelPercent: analysis.whitePercent,
+                    averageBrightness: analysis.averageBrightness,
+                    darkPercent: analysis.darkPercent,
+                    lightPercent: analysis.lightPercent,
                     processingTimeMs: Date.now() - startTime,
                     compressionMethod: 'pako-deflate',
                     usedFallbackUrl: i > 0
                 }
             };
             
-        } catch (error) {
+    } catch (error) {
             lastError = error;
             const isUnsupportedFormat = error.message.includes('Unsupported image type');
             const isLastAttempt = i === urlsToTry.length - 1;
@@ -1002,8 +995,8 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                         console.error('Error processing/storing artist image:', imageUpdateError);
                         // Fallback: store just the URL if binary processing fails
                         await db.collection('artists').doc(artistUrlKey).update( {
-                            imageUrl: foundImageUrl
-                        });
+                    imageUrl: foundImageUrl
+                });
                         console.log(`⚠️  Stored URL only due to processing error: ${foundImageUrl}`);
                     }
                 } else {
@@ -1071,10 +1064,10 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                         // Fallback: store just the URL if binary processing fails
                         try {
                             await db.collection('artists').doc(artistUrlKey).update( {
-                                imageUrl: artistImageUrl
-                            });
+                            imageUrl: artistImageUrl
+                        });
                             console.log(`⚠️  Stored URL only due to processing error: ${artistImageUrl}`);
-                            artistImageUrlExtracted = true;
+                        artistImageUrlExtracted = true;
                         } catch (urlFallbackError) {
                             console.error('Error storing artist image URL fallback:', urlFallbackError);
                         }

@@ -7,12 +7,12 @@
     export let continueFromQueue;
     export let replaySong;
     export let geniusUrl;
-    export let albumArtId = null; // Album art ID for binary rendering
-    export let preloadedAlbumArt = null; // Preloaded binary album art data for instant display
+    export let albumArtId = null; // Album art ID for grayscale rendering
+    export let preloadedAlbumArt = null; // Preloaded grayscale album art data for instant display
     import textFit from 'textfit'
     import { onMount, afterUpdate } from 'svelte';
     import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
-    import BinaryImageRenderer from './BinaryImageRenderer.svelte';
+    import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
     import { themeColors, ditherImages, windowStore } from '$lib/services/store.js';
     
     let songContainer;
@@ -21,7 +21,7 @@
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     
     // Album art state
-    let binaryImageData = null;
+    let grayscaleImageData = null;
     let imageMetadata = null;
     let isLoading = false;
     let isProcessingAlbumArt = true;
@@ -31,7 +31,7 @@
     async function loadAlbumArt() {
         if (!imageUrl || imageUrl === '/default-image.svg' || !albumArtId) {
             isProcessingAlbumArt = false;
-            binaryImageData = null;
+            grayscaleImageData = null;
             imageMetadata = null;
             currentImageUrl = '';
             useFallback = true;
@@ -41,7 +41,7 @@
         // If this is a new image, reset state
         if (currentImageUrl !== imageUrl) {
             isProcessingAlbumArt = true;
-            binaryImageData = null;
+            grayscaleImageData = null;
             imageMetadata = null;
             currentImageUrl = imageUrl;
             useFallback = false;
@@ -56,9 +56,9 @@
             }
 
             // First try to use preloaded album art for instant display
-            if (preloadedAlbumArt && preloadedAlbumArt.binaryData && preloadedAlbumArt.metadata) {
+            if (preloadedAlbumArt && (preloadedAlbumArt.grayscaleData || preloadedAlbumArt.binaryData) && preloadedAlbumArt.metadata) {
                 console.log('⚡ Using preloaded album art for instant results display');
-                binaryImageData = preloadedAlbumArt.binaryData;
+                grayscaleImageData = preloadedAlbumArt.grayscaleData || preloadedAlbumArt.binaryData; // Backward compatibility
                 imageMetadata = preloadedAlbumArt.metadata;
                 useFallback = false;
                 isProcessingAlbumArt = false;
@@ -66,20 +66,20 @@
             }
 
             // Fallback: load if not preloaded (shouldn't happen in normal flow)
-            console.log('🎨 Preload not available, loading album art binary image:', albumArtId);
+            console.log('🎨 Preload not available, loading album art grayscale image:', albumArtId);
             const result = await getAlbumArtBinaryImage(imageUrl);
             
             if (result.success) {
-                binaryImageData = result.binaryData;
+                grayscaleImageData = result.grayscaleData || result.binaryData; // Backward compatibility
                 imageMetadata = result.metadata;
                 useFallback = false;
-                console.log('✅ Album art binary image loaded for results:', result.cached ? 'from cache' : 'processed');
+                console.log('✅ Album art grayscale image loaded for results:', result.cached ? 'from cache' : 'processed');
             } else {
-                console.warn('⚠️  Album art binary loading failed, using fallback:', result.error);
+                console.warn('⚠️  Album art grayscale loading failed, using fallback:', result.error);
                 useFallback = true;
             }
         } catch (error) {
-            console.error('❌ Error loading album art binary image:', error);
+            console.error('❌ Error loading album art grayscale image:', error);
             useFallback = true;
         } finally {
             isProcessingAlbumArt = false;
@@ -103,7 +103,7 @@
 
     // Clear image immediately when imageUrl becomes invalid
     $: if (!imageUrl || imageUrl === '/default-image.svg' || !albumArtId) {
-        binaryImageData = null;
+        grayscaleImageData = null;
         imageMetadata = null;
         currentImageUrl = '';
         isProcessingAlbumArt = false;
@@ -165,9 +165,9 @@
             <div class="albumCover">
                 {#if isLoading || isProcessingAlbumArt}
                     <div class="loading-placeholder"></div>
-                {:else if binaryImageData && imageMetadata && !useFallback}
-                    <BinaryImageRenderer
-                        binaryData={binaryImageData}
+                {:else if grayscaleImageData && imageMetadata && !useFallback}
+                    <GrayscaleImageRenderer
+                        grayscaleData={grayscaleImageData}
                         width={imageMetadata.width}
                         height={imageMetadata.height}
                         alt={songTitle || 'Album art'}
@@ -300,21 +300,6 @@
         background-color: var(--primary-color);
         opacity: 0.2;
         animation: pulse 1.5s infinite;
-    }
-
-    .albumArt {
-        margin: 0;
-        width: 90%; /* Match loading placeholder size */
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        display: block;
-        border: 2px solid var(--primary-color);
-        /* Remove border-radius for album art */
-    }
-
-    /* Additional styles for BinaryImageRenderer when used as album art */
-    :global(.albumArt .canvas-wrapper) {
-        border: 2px solid var(--primary-color);
     }
 
     .songText {
