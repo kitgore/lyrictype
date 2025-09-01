@@ -371,4 +371,11 @@
         height: 75%;
         aspect-ratio: 1/1;
     }
+
+    .albumArt {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
 </style>
