@@ -69,6 +69,9 @@
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     $: bottomButtonGap = windowHeight * 0.0075;
+    
+    // Pure responsive button sizing that scales with window size without limits
+    $: buttonSize = windowHeight * 0.06;
 
     // Reactive statements for NEW queue functionality
     let queueStatus = queueManager.getQueueStatus();
@@ -615,12 +618,13 @@
         </div>
         <div class="contentLayout">
             <div class="sidebar">
-                <div class="artistList">
+                <div class="artistList" style:gap="{windowHeight*0.01}px">
                     {#each fullArtistList as artist, index (artist.artistId || `empty-${index}`)}
                     <ArtistButton 
                         name={artist.name} 
                         imageUrl={artist.imageUrl} 
                         urlKey={artist.urlKey}
+                        {windowHeight}
                         isLoadingImage={loadingImageArtists.has(artist.artistId)}
                         on:click={() => requeueArtist(artist.artistId)} 
                         on:keydown={(e) => {
@@ -677,28 +681,28 @@
             </div>
         </div>
         <div class="bottomArtistRow">
-            <div class="musicControls" style="--bottom-button-gap: {bottomButtonGap}px;">
-                <button class="controlButton" on:click={playPreviousSong} disabled={!canGoPrevious} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+            <div class="musicControls" style="--bottom-button-gap: {bottomButtonGap}px;" style:gap="{windowHeight*0.007}px">
+                <button class="controlButton" on:click={playPreviousSong} disabled={!canGoPrevious} style:width="{buttonSize}px" style:height="{buttonSize}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
                     </svg>
                 </button>
-                <button class="controlButton" on:click={restartSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                <button class="controlButton" on:click={restartSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 4h2v12H6zm8-2v16l6-8z"/>
                     </svg>
                 </button>
-                <button class="controlButton" class:paused={isPaused} on:click={togglePause} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                <button class="controlButton" class:paused={isPaused} on:click={togglePause} style:width="{buttonSize}px" style:height="{buttonSize}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d={controlPath}/>
                     </svg>
                 </button>
-                <button class="controlButton" on:click={playNextSong} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                <button class="controlButton" on:click={playNextSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
                     </svg>
                 </button>
-                <button class="controlButton queueButton" class:queue-active={showQueue} on:click={toggleQueue} style:width="{windowHeight*0.06}px" style:height="{windowHeight*0.06}px">
+                <button class="controlButton queueButton" class:queue-active={showQueue} on:click={toggleQueue} style:width="{buttonSize}px" style:height="{buttonSize}px">
                     <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
                     </svg>
@@ -763,34 +767,33 @@
         flex: 1;
     }
 
-         .loadingAnimationContainer {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100%;
-     }
+    .loadingAnimationContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
-     /* Bottom Artist Row */
-     .bottomArtistRow {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: flex-start;
+    /* Bottom Artist Row */
+    .bottomArtistRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
 
-         height: 13%;
-         padding: 0 1.8%;
-     }
+        height: 13%;
+        padding: 0 1.8%;
+    }
 
-     .musicControls {
-         display: flex;
-         align-items: center;
-         gap: var(--bottom-button-gap);
-         flex-shrink: 0;
-     }
+    .musicControls {
+        display: flex;
+        align-items: center;
+        /* gap: var(--bottom-button-gap); */
+        flex-shrink: 0;
+    }
 
      .controlButton {
         font-size: 2em;
-        /* padding: 0.5em 1em; */
         border: 2px solid var(--primary-color);
         background-color: var(--secondary-color);
         cursor: pointer;
@@ -798,9 +801,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: background-color 0.2s ease;
         flex-shrink: 0;
         box-sizing: border-box;
+        /* Enforce square aspect ratio - scales with window size without limits */
+        aspect-ratio: 1 / 1;
     }
 
     .controlButton:hover,
@@ -894,102 +898,104 @@
         color: var(--primary-color);
     }
 
-         .currentArtist {
-         font-family: "Geneva", sans-serif;
-         line-height: 150%;
-         overflow: hidden;
-         text-overflow: ellipsis;
-         white-space: nowrap;
-         width: fit-content;  /* Only take up as much space as needed */
-         min-width: 0;  /* Allow text truncation */
-         font-size: 3vh;
-         font-weight: 600;
-         color: var(--primary-color);
-     }
+    .currentArtist {
+        font-family: "Geneva", sans-serif;
+        line-height: 150%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: fit-content;  /* Only take up as much space as needed */
+        min-width: 0;  /* Allow text truncation */
+        font-size: 3vh;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
 
-     .songTitle {
-         font-family: "Geneva", sans-serif;
-         line-height: 150%;
-         overflow: hidden;
-         text-overflow: ellipsis;
-         white-space: nowrap;
-         width: fit-content;
-         min-width: 0;
-         font-weight: 400;
-         color: var(--primary-color);
-         opacity: 0.8;
-     }
-         .currentArtistContainer {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         padding-left: 5%;
-         gap: .5em;
-         font-size: 2vh;
-         flex: 1;
-         min-width: 0;
-     }
+    .songTitle {
+        font-family: "Geneva", sans-serif;
+        line-height: 150%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: fit-content;
+        min-width: 0;
+        font-weight: 400;
+        color: var(--primary-color);
+        opacity: 0.8;
+    }
+    
+    .currentArtistContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 5%;
+        gap: .5em;
+        font-size: 2vh;
+        flex: 1;
+        min-width: 0;
+    }
 
-     .liveWpmContainer {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         padding-right: 2%;
-         min-width: 120px;
-     }
+    .liveWpmContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 2%;
+        min-width: 120px;
+    }
 
-     .statLabel {
-         font-size: 3vh;
-         margin: 0;
-         color: var(--primary-color);
-     }
+    .statLabel {
+        font-size: 3vh;
+        margin: 0;
+        color: var(--primary-color);
+    }
 
-     .statValue {
-         font-size: 5vh;
-         margin: 0;
-         color: var(--primary-color);
-     }
-         .musicIconContainer {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         padding-left: 1%;
-     }
+    .statValue {
+        font-size: 5vh;
+        margin: 0;
+        color: var(--primary-color);
+    }
 
-     /* Header Input Styles */
-     .headerInputSection {
-         display: flex;
-         align-items: center;
-         margin-left: 2%;
-         height: 60%;
-         flex: 1;
-         margin-right: 2%;
-         gap: 12px;
-     }
+    .musicIconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 1%; */
+    }
 
-     .headerInputLabel {
-         font-family: "Geneva", sans-serif;
-         color: var(--primary-color);
-         white-space: nowrap;
-         font-weight: 600;
-     }
+    /* Header Input Styles */
+    .headerInputSection {
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+        height: 60%;
+        flex: 1;
+        margin-right: 2%;
+        gap: 12px;
+    }
 
-     .headerInputContainer {
-         display: flex;
-         align-items: center;
-         height: 100%;
-         border: 2px solid var(--primary-color);
-         background-color: var(--secondary-color);
-         border-radius: 4px;
-         /* padding: 0 12px; */
-         flex: 1;
-     }
+    .headerInputLabel {
+        font-family: "Geneva", sans-serif;
+        color: var(--primary-color);
+        white-space: nowrap;
+        font-weight: 600;
+    }
 
-     .searchDropdownWrapper {
-         flex: 1;
-         position: relative;
-     }
+    .headerInputContainer {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border: 2px solid var(--primary-color);
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+        /* padding: 0 12px; */
+        flex: 1;
+    }
+
+    .searchDropdownWrapper {
+        flex: 1;
+        position: relative;
+    }
 
 
 
@@ -1006,7 +1012,6 @@
         display: flex;
         flex-direction: column;
         padding: 0 6% 0 10%;
-        gap: 2%; /* Fixed gap between buttons instead of space-between */
         justify-content: flex-start;
     }
 

@@ -402,48 +402,69 @@ export const windowActions = {
 function calculateResponsiveDimensions(width, height, windowId) {
     const ratio = width / height;
     console.log("WindowID: " + windowId)
+    
+    // Define minimum dimensions to prevent windows from becoming too small
+    const MIN_TYPING_WINDOW_WIDTH = 600;
+    const MIN_TYPING_WINDOW_HEIGHT = 300;
+    const MIN_ABOUT_WINDOW_WIDTH = 300;
+    const MIN_ABOUT_WINDOW_HEIGHT = 200;
+    const MIN_SETTINGS_WINDOW_WIDTH = 250;
+    const MIN_SETTINGS_WINDOW_HEIGHT = 200;
+    
     if(windowId === 'typingTestWindow') {
+        let calculatedWidth, calculatedHeight;
+        
         if (ratio > 1.65) {
             // Wide screen
-            return {
-                width: height * 0.8 * 2,
-                height: height * 0.8
-            };
+            calculatedWidth = height * 0.8 * 2;
+            calculatedHeight = height * 0.8;
         } else {
             // Narrow screen
-            return {
-                width: width * 0.94,
-                height: width * 0.94 / 2
-            };
+            calculatedWidth = width * 0.94;
+            calculatedHeight = width * 0.94 / 2;
         }
+        
+        // Apply minimum size constraints
+        return {
+            width: Math.max(calculatedWidth, MIN_TYPING_WINDOW_WIDTH),
+            height: Math.max(calculatedHeight, MIN_TYPING_WINDOW_HEIGHT)
+        };
     } else if(windowId === 'aboutDisplayWindow'){
+        let calculatedWidth, calculatedHeight;
+        
         if (ratio > 1.65) {
             // Wide screen
-            return {
-                width: height * 0.7 * 0.8,
-                height: height * 0.7
-            };
+            calculatedWidth = height * 0.7 * 0.8;
+            calculatedHeight = height * 0.7;
         } else {
             // Narrow screen
-            return {
-                width: width * 0.5 * 0.8,
-                height: width * 0.5
-            };
+            calculatedWidth = width * 0.5 * 0.8;
+            calculatedHeight = width * 0.5;
         }
+        
+        // Apply minimum size constraints
+        return {
+            width: Math.max(calculatedWidth, MIN_ABOUT_WINDOW_WIDTH),
+            height: Math.max(calculatedHeight, MIN_ABOUT_WINDOW_HEIGHT)
+        };
     } else if(windowId === 'settingsWindow'){
+        let calculatedWidth, calculatedHeight;
+        
         if (ratio > 1.65) {
             // Wide screen
-            return {
-                width: height * 0.6,
-                height: height * 0.7
-            };
+            calculatedWidth = height * 0.6;
+            calculatedHeight = height * 0.7;
         } else {
             // Narrow screen
-            return {
-                width: width * 0.7 / 2,
-                height: width * 0.41
-            };
+            calculatedWidth = width * 0.7 / 2;
+            calculatedHeight = width * 0.41;
         }
+        
+        // Apply minimum size constraints
+        return {
+            width: Math.max(calculatedWidth, MIN_SETTINGS_WINDOW_WIDTH),
+            height: Math.max(calculatedHeight, MIN_SETTINGS_WINDOW_HEIGHT)
+        };
     }
 }
 

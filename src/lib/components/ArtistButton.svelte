@@ -6,6 +6,7 @@
     export let name;
     export let imageUrl;
     export let urlKey; // Artist's Firestore document key
+    export let windowHeight; // Window height for responsive sizing
     export let isLoadingImage = false; // External loading state (for when image is being extracted)
 
     let grayscaleImageData = null;
@@ -97,7 +98,7 @@
 
 {#if name}
     <!-- svelte-ignore a11y-interactive-supports-focus -->
-    <div class="artist-button" role="button" on:click on:keydown  aria-label="Artist Button" tabindex=4 style:border-radius="{windowHeight*0.019}px">
+    <div class="artist-button" role="button" on:click on:keydown  aria-label="Artist Button" tabindex=4 style:border-radius="{windowHeight*0.019}px" style:height="{windowHeight*0.0897}px" >
         <div class="image-container">
             {#if isLoadingImage || isProcessing}
                 <div class="loading-placeholder"></div>
@@ -119,7 +120,7 @@
         <span style:font-size="{windowHeight*0.026}px">{name}</span>
     </div>
 {:else}
-    <div class="artist-button-empty" style:border-radius="{windowHeight*0.019}px">
+    <div class="artist-button-empty" style:border-radius="{windowHeight*0.019}px" style:height="{windowHeight*0.0897}px">
         <div class="artist-placeholder-image"></div>
         <div class="artist-placeholder-text"></div>
     </div>
@@ -129,14 +130,17 @@
     .artist-button, .artist-button-empty {
         border: 2px solid var(--primary-color);
         border-radius: .8rem;
-        height: calc(80% / 8); /* Adjusted for gap-based layout instead of space-between */
+        /* height: 3vh; Responsive height that scales with viewport */
         flex-shrink: 0; /* Prevent shrinking when using gap */
         display: flex;
         align-items: center;
         justify-content: left;
         text-align: left;
         padding: 2%;
-        outline: none
+        outline: none;
+        width: 100%; /* Ensure full width */
+        min-width: 0; /* Allow content to shrink if needed */
+        box-sizing: border-box; /* Include padding and border in size calculations */
     }
     .artist-button {
         cursor: pointer;
