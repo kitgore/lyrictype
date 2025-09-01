@@ -1,6 +1,6 @@
 <!--
-  Binary Image WebGL Renderer
-  Renders 1-bit binary image data with dynamic theme colors
+  Grayscale Image WebGL Renderer
+  Renders 8-bit grayscale image data with dynamic theme colors
   Optimized for performance and instant theme changes
 -->
 
@@ -8,10 +8,11 @@
   import { onMount, onDestroy } from 'svelte';
   import { imageColors } from '$lib/services/store.js';
 
-  export let binaryData = ''; // Base64 encoded binary image data
+  export let grayscaleData = ''; // Base64 encoded grayscale image data
+  export let rawGrayscaleBytes = null; // Raw Uint8Array for WebGL (preferred)
   export let width = 200; // Storage resolution width
   export let height = 200; // Storage resolution height
-  export let alt = 'Binary rendered image';
+  export let alt = 'Grayscale rendered image';
   export let borderRadius = '25%'; // Default border radius for artist images
   
   // Allow custom CSS class to be passed in
@@ -48,23 +49,23 @@
     }
   `;
 
-  // Fragment shader - maps binary data to theme colors (Pass 1)
+  // Fragment shader - maps grayscale data to theme colors (Pass 1)
   const fragmentShaderSource = `
     precision mediump float;
     
     uniform sampler2D u_texture;
-    uniform vec3 u_primaryColor;   // Dark pixels (0 bits)
-    uniform vec3 u_secondaryColor; // Light pixels (1 bits)
+    uniform vec3 u_primaryColor;   // Dark pixels (low grayscale values)
+    uniform vec3 u_secondaryColor; // Light pixels (high grayscale values)
     
     varying vec2 v_texCoord;
     
     void main() {
-      // Sample the binary texture (stored as grayscale)
-      float binaryValue = texture2D(u_texture, v_texCoord).r;
+      // Sample the grayscale texture (8-bit values normalized to 0.0-1.0)
+      float grayscaleValue = texture2D(u_texture, v_texCoord).r;
       
-      // Map binary value to theme colors
+      // Map grayscale value to theme colors
       // 0.0 = dark (primary), 1.0 = light (secondary)
-      vec3 color = mix(u_primaryColor, u_secondaryColor, binaryValue);
+      vec3 color = mix(u_primaryColor, u_secondaryColor, grayscaleValue);
       
       gl_FragColor = vec4(color, 1.0);
     }
@@ -127,37 +128,31 @@
     ] : [0, 0, 0];
   }
 
-  function binaryDataToImageData(binaryBase64, width, height) {
+  function grayscaleDataToImageData(grayscaleBase64, width, height) {
     try {
-      // Decode base64 to binary data
-      const binaryString = atob(binaryBase64);
-      const binaryData = new Uint8Array(binaryString.length);
-      for (let i = 0; i < binaryString.length; i++) {
-        binaryData[i] = binaryString.charCodeAt(i);
+      // Decode base64 to grayscale data
+      const grayscaleString = atob(grayscaleBase64);
+      const grayscaleData = new Uint8Array(grayscaleString.length);
+      for (let i = 0; i < grayscaleString.length; i++) {
+        grayscaleData[i] = grayscaleString.charCodeAt(i);
       }
       
-      // Create grayscale image data from binary (for WebGL texture)
-      const imageData = new Uint8Array(width * height);
-      
-      for (let i = 0; i < width * height; i++) {
-        const byteIndex = Math.floor(i / 8);
-        const bitPosition = 7 - (i % 8);
-        const isLight = (binaryData[byteIndex] & (1 << bitPosition)) !== 0;
-        
-        // Store as grayscale: 0 = dark, 255 = light
-        imageData[i] = isLight ? 255 : 0;
+      // Grayscale data is already 8-bit per pixel, just return it
+      // Data should already be width * height bytes
+      if (grayscaleData.length !== width * height) {
+        console.warn(`Grayscale data size mismatch: expected ${width * height}, got ${grayscaleData.length}`);
       }
       
-      return imageData;
+      return grayscaleData;
       
     } catch (error) {
-      console.error('Error converting binary to image data:', error);
+      console.error('Error converting grayscale to image data:', error);
       throw error;
     }
   }
 
   function initWebGL() {
-    if (!canvas || !binaryData) return false;
+    if (!canvas || !grayscaleData) return false;
 
     try {
       gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -223,8 +218,8 @@
       downsampleProgram.framebufferTextureLocation = framebufferTextureLocation;
       downsampleProgram.positionBuffer = positionBuffer;
 
-      // Create and upload binary texture
-      createBinaryTexture();
+      // Create and upload grayscale texture
+      createGrayscaleTexture();
 
       // Create framebuffer for 4x rendering
       if (!createFramebuffer()) {
@@ -232,7 +227,7 @@
       }
 
       isInitialized = true;
-      console.log('✅ WebGL two-pass binary image renderer initialized');
+      console.log('✅ WebGL two-pass grayscale image renderer initialized');
       return true;
 
     } catch (error) {
@@ -241,18 +236,29 @@
     }
   }
 
-  function createBinaryTexture() {
-    if (!gl || !program || !binaryData) return;
+  function createGrayscaleTexture() {
+    if (!gl || !program || !grayscaleData) return;
 
     try {
-      // Convert binary data to grayscale image data
-      const imageData = binaryDataToImageData(binaryData, width, height);
+      // Use raw bytes if available, otherwise convert from base64
+      let luminanceData;
+      if (rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array) {
+        console.log(`🚀 Using raw grayscale bytes: ${rawGrayscaleBytes.length} bytes`);
+        luminanceData = rawGrayscaleBytes;
+      } else {
+        console.log(`🔄 Converting base64 grayscale data to Uint8Array`);
+        const binaryString = atob(grayscaleData);
+        luminanceData = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          luminanceData[i] = binaryString.charCodeAt(i);
+        }
+      }
 
       // Create texture
       texture = gl.createTexture();
       gl.bindTexture(gl.TEXTURE_2D, texture);
 
-      // Upload image data
+      // Upload luminance data directly
       gl.texImage2D(
         gl.TEXTURE_2D, 
         0, 
@@ -262,7 +268,7 @@
         0, 
         gl.LUMINANCE, 
         gl.UNSIGNED_BYTE, 
-        imageData
+        luminanceData
       );
 
       // Set texture parameters for smooth anti-aliasing
@@ -271,10 +277,10 @@
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
 
-      console.log(`🖼️  Created binary texture: ${width}x${height}`);
+      console.log(`🖼️  Created grayscale texture: ${width}x${height}`);
 
     } catch (error) {
-      console.error('Error creating binary texture:', error);
+      console.error('Error creating grayscale texture:', error);
     }
   }
 
@@ -344,12 +350,30 @@
   }
 
   function updateDisplaySize() {
-    if (!canvasWrapper) return;
+    if (!canvasWrapper || !width || !height) return;
 
     // Get the actual displayed size of the wrapper element
     const rect = canvasWrapper.getBoundingClientRect();
-    const newDisplayWidth = Math.round(rect.width * window.devicePixelRatio);
-    const newDisplayHeight = Math.round(rect.height * window.devicePixelRatio);
+    
+    // Calculate original image aspect ratio
+    const imageAspectRatio = width / height;
+    const containerAspectRatio = rect.width / rect.height;
+    
+    // Size to fit within container while maintaining original aspect ratio
+    let targetWidth, targetHeight;
+    
+    if (imageAspectRatio > containerAspectRatio) {
+      // Image is wider - fit to container width
+      targetWidth = rect.width;
+      targetHeight = rect.width / imageAspectRatio;
+    } else {
+      // Image is taller - fit to container height
+      targetHeight = rect.height;
+      targetWidth = rect.height * imageAspectRatio;
+    }
+    
+    const newDisplayWidth = Math.round(targetWidth * window.devicePixelRatio);
+    const newDisplayHeight = Math.round(targetHeight * window.devicePixelRatio);
     
     // Calculate 4x render resolution for intermediate framebuffer
     const newRenderWidth = newDisplayWidth * 4;
@@ -363,11 +387,11 @@
       renderHeight = Math.max(1, newRenderHeight);
 
       if (canvas) {
-        // Set canvas resolution to actual display size
-        canvas.width = displayWidth;
-        canvas.height = displayHeight;
+        // Set canvas resolution to high-res render size for anti-aliasing
+        canvas.width = renderWidth;
+        canvas.height = renderHeight;
         
-        console.log(`📐 Two-pass rendering: ${renderWidth}x${renderHeight} → ${displayWidth}x${displayHeight} (from storage: ${width}x${height})`);
+        console.log(`📐 High-res rendering: Canvas ${renderWidth}x${renderHeight}, Display ${displayWidth}x${displayHeight}, Original ${width}x${height} (AR: ${imageAspectRatio.toFixed(2)})`);
         
         // Recreate framebuffer with new size
         if (isInitialized) {
@@ -424,7 +448,7 @@
     
     // Bind back to default framebuffer (screen)
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-    gl.viewport(0, 0, displayWidth, displayHeight);
+    gl.viewport(0, 0, renderWidth, renderHeight);
 
     // Clear screen
     gl.clearColor(0, 0, 0, 0);
@@ -480,18 +504,18 @@
 
   // Fallback canvas rendering for non-WebGL browsers
   function renderFallback() {
-    if (!canvas || !binaryData) return;
+    if (!canvas || !grayscaleData) return;
 
     try {
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
 
-      // Set canvas resolution to display size
-      canvas.width = displayWidth;
-      canvas.height = displayHeight;
+      // Set canvas resolution to high-res render size for anti-aliasing
+      canvas.width = renderWidth;
+      canvas.height = renderHeight;
 
-      // Convert binary data to ImageData with theme colors
-      const imageData = binaryDataToImageData(binaryData, width, height);
+      // Convert grayscale data to ImageData with theme colors
+      const imageData = grayscaleDataToImageData(grayscaleData, width, height);
       
       // Create a temporary canvas for the source image
       const tempCanvas = document.createElement('canvas');
@@ -506,8 +530,12 @@
       const secondary = hexToRgb($imageColors.secondary);
 
       for (let i = 0; i < imageData.length; i++) {
-        const isLight = imageData[i] === 255;
-        const color = isLight ? secondary : primary;
+        const grayscaleValue = imageData[i] / 255; // Normalize to 0-1
+        const color = [
+          primary[0] * (1 - grayscaleValue) + secondary[0] * grayscaleValue,
+          primary[1] * (1 - grayscaleValue) + secondary[1] * grayscaleValue,
+          primary[2] * (1 - grayscaleValue) + secondary[2] * grayscaleValue
+        ];
         const pixelIndex = i * 4;
 
         tempData[pixelIndex] = color[0] * 255;     // R
@@ -530,8 +558,8 @@
     }
   }
 
-  // Initialize when component mounts and when binary data changes
-  $: if (canvas && binaryData) {
+  // Initialize when component mounts and when grayscale data changes
+  $: if (canvas && grayscaleData) {
     if (isInitialized) {
       stopRenderLoop();
     }
@@ -592,24 +620,26 @@
   <canvas
     bind:this={canvas}
     {alt}
-    class="binary-image-canvas"
+    class="grayscale-image-canvas"
+    style="width: {displayWidth / (window.devicePixelRatio || 1)}px; height: {displayHeight / (window.devicePixelRatio || 1)}px;"
   />
 </div>
 
 <style>
   .canvas-wrapper {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .binary-image-canvas {
+  .grayscale-image-canvas {
     display: block;
-    width: 100%;
-    height: 100%;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
