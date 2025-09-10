@@ -8,6 +8,8 @@
     export let onScrollUp = null;
     export let onScrollDown = null;
     export let lyricsMode = false;
+    export let showCustomScrollbars = false;
+    export let displayScrollThumb = true;
     
     import { windowStore, windowActions } from '$lib/services/store.js';
     import CustomScrollbar from './CustomScrollbar.svelte';
@@ -20,6 +22,13 @@
     $: titleBarHeight = dimensions.height * 0.06; // 6% of window height
     $: closeButtonSize = dimensions.height * 0.045; // 4.5% of window height
     $: titleBarPadding = dimensions.height * 0.016; // 1.6% of window height
+    $: closeButtonOutlineWidth = Math.max(2, dimensions.height * 0.006); // 1% of window height, minimum 2px
+    
+    // Custom scrollbar sizing (from TrashDisplay)
+    $: customScrollbarWidth = dimensions.height * 0.07;
+    $: customScrollArrowSize = dimensions.height * 0.07;
+    $: customScrollThumbSize = dimensions.height * 0.16;
+    $: customScrollArrowFontSize = dimensions.height * 0.036;
     
     let contentElement;
     let isDragging = false;
@@ -155,22 +164,79 @@
             
 
         <div class="title-text" style:font-size="{dimensions.height*0.042}px">{title}</div>
-        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px;" on:click={onClose} style:left="{titleBarPadding * 2.5}px"></button>
+        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px; outline-width:{closeButtonOutlineWidth}px;" on:click={onClose} style:left="{titleBarPadding * 2.5}px"></button>
     </div>
     <div class="window-content" bind:this={contentElement}>
-        <div class="content-area">
-            <slot {id}></slot>
-        </div>
-        <div class="scrollbar-container">
-            {#if contentElement && showScrollbar}
-                <CustomScrollbar 
-                    content={contentElement} 
-                    {onScrollUp}
-                    {onScrollDown}
-                    {lyricsMode}
-                />
+        {#if showCustomScrollbars}
+            <div class="custom-scrollbar-wrapper" 
+                 style="--custom-scrollbar-width: {customScrollbarWidth}px; 
+                        --custom-scroll-arrow-size: {customScrollArrowSize}px; 
+                        --custom-scroll-thumb-size: {customScrollThumbSize}px; 
+                        --custom-scroll-arrow-font-size: {customScrollArrowFontSize}px;">
+                <div class="custom-content-area">
+                    <slot {id}></slot>
+                </div>
+                
+                <!-- Right scrollbar -->
+                <div class="custom-scrollbar-right">
+                    <div class="custom-scrollbar-track">
+                        {#if displayScrollThumb}
+                            <div class="custom-scrollbar-thumb"></div>
+                        {/if}
+                    </div>
+                    <div class="custom-scrollbar-arrows">
+                        <div class="custom-scroll-arrow custom-scroll-up">
+                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="custom-scroll-arrow custom-scroll-down">
+                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom scrollbar -->
+                <div class="custom-scrollbar-bottom">
+                    <div class="custom-scrollbar-track-horizontal">
+                        {#if displayScrollThumb}
+                            <div class="custom-scrollbar-thumb-horizontal"></div>
+                        {/if}
+                    </div>
+                    <div class="custom-scrollbar-arrows-horizontal">
+                        <div class="custom-scroll-arrow custom-scroll-left">
+                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);">
+                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="custom-scroll-arrow custom-scroll-right">
+                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
+                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Corner element -->
+                <div class="custom-scrollbar-corner"></div>
+            </div>
+        {:else}
+            <div class="content-area" class:full-width={!showScrollbar}>
+                <slot {id}></slot>
+            </div>
+            {#if showScrollbar}
+                <div class="scrollbar-container">
+                    <CustomScrollbar 
+                        content={contentElement} 
+                        {onScrollUp}
+                        {onScrollDown}
+                        {lyricsMode}
+                    />
+                </div>
             {/if}
-        </div>
+        {/if}
     </div>
 </div>
 <style>
@@ -233,15 +299,16 @@
     width: 2.6vh; 
     height: 2.6vh;
     background-color: var(--secondary-color);
-    border: 2px solid var(--primary-color);;
+    border: solid var(--primary-color) 2px;
     font-size: 1.5vh;
-    color: var(--primary-color);;
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    outline: none;
+    outline: solid var(--secondary-color);
     padding: 0;
+    line-height: 1;
 }
 
 .window-content {
@@ -257,6 +324,10 @@
     overflow-y: auto;
     height: 100%;
 }
+
+.content-area.full-width {
+    width: 100%;
+}
 .scrollbar-container {
     width: 8%;
     height: 100%;
@@ -264,6 +335,181 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Custom scrollbars styles (from TrashDisplay) */
+.custom-scrollbar-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr var(--custom-scrollbar-width);
+    grid-template-rows: 1fr var(--custom-scrollbar-width);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-content-area {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Right scrollbar */
+.custom-scrollbar-right {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-left: 2px solid var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.custom-scrollbar-track {
+    flex: 1;
+    background-color: var(--secondary-color);
+    position: relative;
+    margin: var(--custom-scroll-arrow-size) 0;
+}
+
+.custom-scrollbar-thumb {
+    width: 100%;
+    height: var(--custom-scroll-thumb-size);
+    background-color: var(--secondary-color);
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    background-size: 2px 2px;
+        background-image:
+            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
+            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+    position: absolute;
+    top: 20%;
+}
+
+.custom-scrollbar-arrows {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-scroll-arrow {
+    height: var(--custom-scroll-arrow-size);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--custom-scroll-arrow-font-size);
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-scroll-arrow svg {
+    width: calc(var(--custom-scroll-arrow-size) * 0.65);
+    height: calc(var(--custom-scroll-arrow-size) * 0.65);
+}
+
+/* Vertical arrows can be slightly larger */
+.custom-scroll-up svg,
+.custom-scroll-down svg {
+    width: calc(var(--custom-scroll-arrow-size) * 0.7);
+    height: calc(var(--custom-scroll-arrow-size) * 0.7);
+}
+
+.custom-scroll-up {
+    border-left: none;
+    border-right: none;
+}
+
+.custom-scroll-down {
+    margin-top: auto;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Bottom scrollbar */
+.custom-scrollbar-bottom {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    border-top: 2px solid var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.custom-scrollbar-track-horizontal {
+    flex: 1;
+    background-color: var(--secondary-color);
+    position: relative;
+    margin: 0 var(--custom-scroll-arrow-size);
+}
+
+.custom-scrollbar-thumb-horizontal {
+    height: 100%;
+    width: var(--custom-scroll-thumb-size);
+    background-color: var(--secondary-color);
+    background-size: 2px 2px;
+        background-image:
+            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
+            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    position: absolute;
+    left: 30%;
+}
+
+.custom-scrollbar-arrows-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-scroll-left {
+    width: var(--custom-scroll-arrow-size);
+    height: var(--custom-scroll-arrow-size);
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-scroll-right {
+    width: var(--custom-scroll-arrow-size);
+    height: var(--custom-scroll-arrow-size);
+    margin-left: auto;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Corner element */
+.custom-scrollbar-corner {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--secondary-color);
+    border-left: 2px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* .app-window.active .title-bar {
     background-color: var(--secondary-color);

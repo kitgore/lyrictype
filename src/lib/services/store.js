@@ -406,10 +406,12 @@ function calculateResponsiveDimensions(width, height, windowId) {
     // Define minimum dimensions to prevent windows from becoming too small
     const MIN_TYPING_WINDOW_WIDTH = 600;
     const MIN_TYPING_WINDOW_HEIGHT = 300;
-    const MIN_ABOUT_WINDOW_WIDTH = 300;
-    const MIN_ABOUT_WINDOW_HEIGHT = 200;
+    const MIN_ABOUT_WINDOW_WIDTH = 280;
+    const MIN_ABOUT_WINDOW_HEIGHT = 350;
     const MIN_SETTINGS_WINDOW_WIDTH = 250;
-    const MIN_SETTINGS_WINDOW_HEIGHT = 200;
+    const MIN_SETTINGS_WINDOW_HEIGHT = 290;
+    const MIN_TRASH_WINDOW_WIDTH = 500;
+    const MIN_TRASH_WINDOW_HEIGHT = 250;
     
     if(windowId === 'typingTestWindow') {
         let calculatedWidth, calculatedHeight;
@@ -464,6 +466,24 @@ function calculateResponsiveDimensions(width, height, windowId) {
         return {
             width: Math.max(calculatedWidth, MIN_SETTINGS_WINDOW_WIDTH),
             height: Math.max(calculatedHeight, MIN_SETTINGS_WINDOW_HEIGHT)
+        };
+    } else if(windowId === 'trashWindow'){
+        let calculatedWidth, calculatedHeight;
+        
+        if (ratio > 1.65) {
+            // Wide screen
+            calculatedWidth = height * 0.6 * 2;
+            calculatedHeight = height * 0.6;
+        } else {
+            // Narrow screen
+            calculatedWidth = width * 0.71;
+            calculatedHeight = width * 0.71 / 2;
+        }
+        
+        // Apply minimum size constraints
+        return {
+            width: Math.max(calculatedWidth, MIN_TRASH_WINDOW_WIDTH),
+            height: Math.max(calculatedHeight, MIN_TRASH_WINDOW_HEIGHT)
         };
     }
 }
