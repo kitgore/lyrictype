@@ -8,10 +8,8 @@
     // Calculate responsive hotbar dimensions
     $: aspectRatio = screenDimensions.width / screenDimensions.height;
     
-    // Calculate responsive background size
-    $: backgroundSize = aspectRatio > 1.65 ? 
-        Math.max(screenDimensions.height / 250, 1) : 
-        Math.max(screenDimensions.width / 415, 1); // Smaller factor for width to prevent jump
+    // Fixed background size (no longer responsive)
+    const backgroundSize = 4; // Fixed size in pixels for checkerboard pattern
     $: hotbarHeight = aspectRatio > 1.65 ? 
         screenDimensions.height * 0.04 : 
         screenDimensions.width * 0.024; // Smaller factor for width to prevent jump
@@ -116,6 +114,8 @@ style="--bg-size: {backgroundSize}px; background-image: {pattern}"
             linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
             linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
         background-position: 0 0, calc(var(--bg-size) / 2) calc(var(--bg-size) / 2);
+        background-attachment: fixed; /* Keep pattern fixed during scrolling/resizing */
+        image-rendering: pixelated; /* Keep edges crisp */
         z-index: -2;
     }
 </style>

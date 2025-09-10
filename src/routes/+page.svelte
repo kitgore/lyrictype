@@ -11,6 +11,7 @@
     import DesktopIcon from '../lib/components/DesktopIcon.svelte';
     import AboutDisplay from '../lib/components/AboutDisplay.svelte';
     import SettingsDisplay from '../lib/components/SettingsDisplay.svelte';
+    import TrashDisplay from '../lib/components/TrashDisplay.svelte';
     import { themeColors, backgroundColors, windowStore, windowActions } from '$lib/services/store.js';
 
 
@@ -49,6 +50,7 @@
             title: 'System Info', 
             isOpen: false, 
             showScrollbar: false, 
+            showCustomScrollbars: true,
             component: AboutDisplay, 
             position: { x: 30, y: 10 }, 
             dimensions: {width: 37, height: 85} 
@@ -57,10 +59,21 @@
             id: 'settingsWindow', 
             title: 'Settings', 
             showScrollbar: false, 
+            showCustomScrollbars: true,
             isOpen: false, 
             component: SettingsDisplay, 
             position: { x: 10, y: 10 }, 
             dimensions: {width: 37, height: 78} 
+        },
+        { 
+            id: 'trashWindow', 
+            title: 'Trash', 
+            showScrollbar: false, 
+            showCustomScrollbars: true,
+            isOpen: false, 
+            component: TrashDisplay, 
+            position: { x: 25, y: 20 },
+            dimensions: {width: 45, height: 70} 
         }
     ];
 
@@ -134,7 +147,7 @@ style:--background-secondary-color={$backgroundColors.secondary}
 <DesktopIcon label="Settings" onClick={() => openWindow('settingsWindow')} position={ {x: 91, y: 48} }>
     <svg slot="icon" viewBox="-1 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 46.3475H44C45.1046 46.3475 46 45.4521 46 44.3475V8.23414C46 7.77527 45.8422 7.33034 45.5531 6.97401L41.3062 1.73986C40.9264 1.27182 40.3559 1 39.7531 1H3C1.89543 1 1 1.89543 1 3V44.3475C1 45.4521 1.89543 46.3475 3 46.3475Z" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/><path d="M7.0882 47V29.7518C7.0882 28.6472 7.98363 27.7518 9.0882 27.7518H38.4411C39.5457 27.7518 40.4411 28.6472 40.4411 29.7518V47" stroke="{$themeColors.primary}"/><path d="M34.6176 1L34.6176 14.0071C34.6176 15.1117 33.7222 16.0071 32.6176 16.0071L13.3235 16.0071C12.2189 16.0071 11.3235 15.1117 11.3235 14.0071L11.3235 1.00001" stroke="{$themeColors.primary}"/><rect x="24" y="4.10992" width="5.88235" height="8.78723" rx="1.5" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/></svg>
 </DesktopIcon>
-<DesktopIcon label="Trash" position={ {x: 91, y: 68} }>
+<DesktopIcon label="Trash" onClick={() => openWindow('trashWindow')} position={ {x: 91, y: 68} }>
     <svg slot="icon" viewBox="-6 0 44 46" fill="none" xmlns="http://www.w3.org/2000/svg">    <rect x="12.5" y="0.5" width="8" height="1.93617" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>    <rect x="0.5" y="2.45744" width="31" height="2.91489" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>    <path d="M1.5 5.39362H30.5V44C30.5 44.8284 29.8284 45.5 29 45.5H3C2.17157 45.5 1.5 44.8284 1.5 44V5.39362Z" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>    <path d="M6 9.78723L6.89893 10.667C7.28334 11.0433 7.5 11.5585 7.5 12.0964V39.0445C7.5 39.7203 7.1588 40.3503 6.5929 40.7195L6 41.1064" stroke="{$themeColors.primary}"/>    <path d="M12 9.78723L12.8989 10.667C13.2833 11.0433 13.5 11.5585 13.5 12.0964V39.0445C13.5 39.7203 13.1588 40.3503 12.5929 40.7195L12 41.1064" stroke="{$themeColors.primary}"/>    <path d="M18 9.78723L18.8989 10.667C19.2833 11.0433 19.5 11.5585 19.5 12.0964V39.0445C19.5 39.7203 19.1588 40.3503 18.5929 40.7195L18 41.1064" stroke="{$themeColors.primary}"/>    <path d="M24 9.78723L24.8989 10.667C25.2833 11.0433 25.5 11.5585 25.5 12.0964V39.0445C25.5 39.7203 25.1588 40.3503 24.5929 40.7195L24 41.1064" stroke="{$themeColors.primary}"/></svg>    
 </DesktopIcon>
 {#each windows.filter(w => w.isOpen) as window (window.id)}
@@ -142,6 +155,7 @@ style:--background-secondary-color={$backgroundColors.secondary}
         id={window.id}
         title={window.title}
         showScrollbar={window.showScrollbar}
+        showCustomScrollbars={window.showCustomScrollbars || false}
         lyricsMode={window.id === 'typingTestWindow'}
         position={window.position}
         dimensions={$windowStore.windowStates.find(w => w.id === window.id)?.dimensions}
