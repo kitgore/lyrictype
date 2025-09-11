@@ -19,7 +19,7 @@
         {
             "label": "Start Firebase Emulators",
             "type": "shell",
-            "command": "npm run dev:emulators",
+            "command": "npx firebase emulators:start --only hosting,functions",
             "group": "build",
             "presentation": {
                 "echo": true,
@@ -37,6 +37,33 @@
             "dependsOn": [
                 "Start SvelteKit Dev Server",
                 "Start Firebase Emulators"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Start Firebase Emulators (nvm)",
+            "type": "shell",
+            "command": "source ~/.nvm/nvm.sh && nvm use && npx firebase emulators:start --only hosting,functions",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Both Dev Servers (nvm)",
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "Start SvelteKit Dev Server",
+                "Start Firebase Emulators (nvm)"
             ],
             "group": {
                 "kind": "build",
