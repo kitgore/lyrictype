@@ -680,8 +680,8 @@ $: {
 	$: cursorPosition = userInput.length;
 	$: cursorWidth = windowHeight * 0.002;
 	$: cursorPadding = windowHeight * -0.0005;
-	$: cursorHeight = windowHeight * 0.038;
-	$: cursorYOffset = -windowHeight * 0.002;
+	$: cursorHeight = windowHeight * 0.040;
+	$: cursorYOffset = windowHeight * .004;
 
 	$: if (imageUrl) {
 		preloadImage(imageUrl);
@@ -724,7 +724,7 @@ $: {
 			{@const cursorAtBeginning = (cursorInfo.wordIndex === 0 && wordIndex === 0) && cursorInfo.charIndex === 0}
 			{@const cursorAtWordStart = cursorInfo.wordIndex + 1 === wordIndex}
 			{@const cursorStyle = `height:${cursorHeight}px; width:${Math.ceil(cursorWidth)}px;
-				margin:0 ${cursorPadding}px; margin-bottom: ${cursorYOffset}px`}
+				margin:0 ${cursorPadding}px; transform: translateY(${cursorYOffset}px);`}
 			{@const textStyle = `font-size:${windowHeight*0.04}px; height:${windowHeight*0.04}px`}
 			
 			<!-- Handle words (spaces handled within words (attached to end)) -->
@@ -902,9 +902,6 @@ $: {
 
 	.blinking-cursor {
 		display: inline-block;
-		width: 2px; 
-		height: 1.2em;
-		/* margin: 0; */
 		margin-right: -.15em;
 		margin-left: .15em;
 		background-color: currentColor;
@@ -914,11 +911,8 @@ $: {
 	}
 	.cursor-placeholder {
 		display: inline-block;
-		width: 2px; 
-		height: 1.2em;
 		margin-right: -.15em;
 		margin-left: .15em;
-		/* margin: 0; */
 	}
 
 	@keyframes blink-animation {
