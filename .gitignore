@@ -11,3 +11,5 @@ vite.config.ts.timestamp-*
 src/lib/services/initFirebase.js
 /functions/build
 *.log
+/prescraped-data-*/
+/prescraped-*.json
