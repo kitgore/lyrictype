@@ -418,12 +418,12 @@ function calculateResponsiveDimensions(width, height, windowId) {
         
         if (ratio > 1.65) {
             // Wide screen
-            calculatedWidth = height * 0.8 * 2;
-            calculatedHeight = height * 0.8;
+            calculatedWidth = height * 0.75 * 2;
+            calculatedHeight = height * 0.75;
         } else {
             // Narrow screen
-            calculatedWidth = width * 0.94;
-            calculatedHeight = width * 0.94 / 2;
+            calculatedWidth = width * 0.88125;
+            calculatedHeight = width * 0.88125 / 2;
         }
         
         // Apply minimum size constraints

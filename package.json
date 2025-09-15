@@ -1,10 +1,14 @@
 {
-  "name": "lyrictype-prescraper",
-  "version": "1.0.0",
-  "description": "Prescraping system for LyricType to bulk-fetch artist songs and lyrics",
-  "type": "module",
-  "main": "prescraper.js",
+  "name": "lyrictype-sk",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "dev:vite": "vite dev",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
     "start": "node prescraper.js",
     "test": "node prescraper.js --test 2 --letters a",
     "help": "node prescraper.js --help",
@@ -12,14 +16,37 @@
     "upload-dry": "node firebase-uploader.js --dry-run",
     "upload-help": "node firebase-uploader.js --help"
   },
+  "type": "module",
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/adapter-static": "^3.0.9",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "svelte": "^4.2.7",
+    "svelte-check": "^3.6.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.3"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "firebase-admin": "^12.1.0"
+    "firebase": "^12.2.1",
+    "firebase-admin": "^12.1.0",
+    "js-cookie": "^3.0.5",
+    "normalize-text": "^2.6.0",
+    "pako": "^2.1.0",
+    "textfit": "^2.4.0"
   },
   "engines": {
     "node": ">=18"
   },
   "author": "LyricType",
   "license": "MIT",
-  "keywords": ["lyrics", "scraping", "genius", "music"]
+  "keywords": [
+    "lyrics",
+    "scraping",
+    "genius",
+    "music",
+    "svelte",
+    "sveltekit"
+  ]
 }
