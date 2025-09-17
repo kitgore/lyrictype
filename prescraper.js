@@ -222,13 +222,13 @@ async function getSongsByArtist(artistId, geniusApiKey, page = 1) {
         // Transform songs to our schema format
         const transformedSongs = songs.map(song => ({
             id: song.id.toString(),
-            title: song.title,
+            title: cleanUnicodeText(song.title),
             url: song.url,
             songArtImageUrl: song.song_art_image_url,
-            artistNames: song.artist_names,
+            artistNames: cleanUnicodeText(song.artist_names),
             primaryArtist: {
                 id: song.primary_artist.id,
-                name: song.primary_artist.name,
+                name: cleanUnicodeText(song.primary_artist.name),
                 url: song.primary_artist.url
             },
             // Album art ID extraction (same logic as Firebase Functions)
@@ -365,6 +365,53 @@ async function getAllSongsForArtist(artist, geniusApiKey) {
 }
 
 /**
+ * Parse letter range input and return array of letters
+ * Supports: 'a,b,c', 'a-c', 'a c', 'all', or mixed formats
+ */
+function parseLetterRange(input) {
+    if (!input || input.toLowerCase() === 'all') {
+        return ['all'];
+    }
+    
+    const letters = new Set();
+    
+    // Split by commas and spaces, then process each part
+    const parts = input.toLowerCase().split(/[,\s]+/).filter(part => part.length > 0);
+    
+    for (const part of parts) {
+        if (part === 'all') {
+            return ['all'];
+        } else if (part.includes('-')) {
+            // Handle range like 'a-g' or 'c-f'
+            const [start, end] = part.split('-');
+            if (start && end && start.length === 1 && end.length === 1) {
+                const startCode = start.charCodeAt(0);
+                const endCode = end.charCodeAt(0);
+                
+                if (startCode >= 97 && startCode <= 122 && endCode >= 97 && endCode <= 122) {
+                    // Valid range (a-z)
+                    for (let code = startCode; code <= endCode; code++) {
+                        letters.add(String.fromCharCode(code));
+                    }
+                } else {
+                    console.warn(`⚠️  Invalid letter range: ${part} (must be a-z)`);
+                }
+            } else {
+                console.warn(`⚠️  Invalid range format: ${part} (use format like 'a-g')`);
+            }
+        } else if (part.length === 1 && part >= 'a' && part <= 'z') {
+            // Single letter
+            letters.add(part);
+        } else {
+            console.warn(`⚠️  Invalid letter: ${part} (must be a-z)`);
+        }
+    }
+    
+    // Convert to sorted array
+    return Array.from(letters).sort();
+}
+
+/**
  * Print configuration summary
  */
 function printConfig() {
@@ -373,7 +420,8 @@ function printConfig() {
     console.log('='.repeat(60));
     console.log(`📋 Configuration:`);
     console.log(`   Max songs to scrape per artist: ${config.maxSongsToScrape}`);
-    console.log(`   Target letters: ${config.artistFilters.letters.join(', ')}`);
+    const letterDisplay = config.artistFilters.letters[0] === 'all' ? 'all (a-z)' : config.artistFilters.letters.join(', ');
+    console.log(`   Target letters: ${letterDisplay}`);
     console.log(`   Artist types: ${config.artistFilters.types.join(', ')}`);
     if (config.artistFilters.maxArtistsPerLetter) {
         console.log(`   Max artists per letter: ${config.artistFilters.maxArtistsPerLetter}`);
@@ -381,6 +429,51 @@ function printConfig() {
     console.log(`   Output directory: ${config.output.directory}`);
     console.log(`   Resumable: ${config.output.resumable}`);
     console.log('='.repeat(60) + '\n');
+}
+
+/**
+ * Clean problematic Unicode characters from text
+ */
+function cleanUnicodeText(text) {
+    if (!text || typeof text !== 'string') {
+        return text;
+    }
+    
+    // Define problematic Unicode characters to remove or replace
+    const replacements = {
+        // Zero-width and invisible characters (remove)
+        '\u200B': '',  // ZERO WIDTH SPACE
+        '\u200C': '',  // ZERO WIDTH NON-JOINER  
+        '\u200D': '',  // ZERO WIDTH JOINER
+        '\u200E': '',  // LEFT-TO-RIGHT MARK
+        '\u200F': '',  // RIGHT-TO-LEFT MARK
+        '\u00AD': '',  // SOFT HYPHEN
+        '\uFEFF': '',  // BYTE ORDER MARK
+        
+        // Line separators (replace with regular newlines)
+        '\u2028': '\n',  // LINE SEPARATOR
+        '\u2029': '\n',  // PARAGRAPH SEPARATOR
+        '\u0085': '\n',  // NEXT LINE
+        
+        // Other problematic characters
+        '\u000B': '\n',  // VERTICAL TAB
+        '\u000C': '\n',  // FORM FEED
+        '\u001C': '',    // FILE SEPARATOR
+        '\u001D': '',    // GROUP SEPARATOR
+        '\u001E': '',    // RECORD SEPARATOR
+        '\u001F': '',    // UNIT SEPARATOR
+    };
+    
+    // Apply replacements
+    let cleaned = text;
+    for (const [oldChar, newChar] of Object.entries(replacements)) {
+        cleaned = cleaned.replace(new RegExp(oldChar, 'g'), newChar);
+    }
+    
+    // Clean up multiple consecutive newlines
+    cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+    
+    return cleaned;
 }
 
 /**
@@ -485,7 +578,10 @@ async function scrapeLyricsFromUrl(songUrl) {
             throw new Error('Extracted lyrics are too short or empty');
         }
 
-        return lyrics;
+        // Clean problematic Unicode characters
+        const cleanedLyrics = cleanUnicodeText(lyrics);
+        
+        return cleanedLyrics;
 
     } catch (error) {
         console.error(`    ❌ Error scraping lyrics from ${songUrl}:`, error.message);
@@ -647,8 +743,6 @@ async function main() {
     try {
         state.startTime = Date.now();
         
-        printConfig();
-        
         // Parse command line arguments
         if (process.argv.includes('--help') || process.argv.includes('-h')) {
             console.log(`
@@ -656,13 +750,23 @@ Usage: node prescraper.js [options]
 
 Options:
   --songs <number>     Number of songs to scrape per artist (default: ${config.maxSongsToScrape})
-  --letters <letters>  Letters to process, comma-separated (default: all)
+  --letters <letters>  Letters/ranges to process (default: all)
   --test <number>      Test mode: limit artists per letter
   --help, -h           Show this help message
 
+Letter Formats:
+  all                  Process all letters a-z
+  a,b,c               Process specific letters
+  a-g                 Process range from a to g
+  c g                 Process letters c and g (space-separated)
+  a-c,x,z             Mixed: range a-c plus letters x and z
+
 Examples:
   node prescraper.js --songs 5 --letters a,b,c
-  node prescraper.js --test 2  # Process only 2 artists per letter
+  node prescraper.js --letters a-g           # Process letters a through g
+  node prescraper.js --letters "c g"         # Process letters c and g
+  node prescraper.js --letters a-c,x-z       # Process a-c and x-z ranges
+  node prescraper.js --test 2                # Process only 2 artists per letter
             `);
             return;
         }
@@ -675,7 +779,9 @@ Examples:
         
         const lettersIndex = process.argv.indexOf('--letters');
         if (lettersIndex !== -1 && process.argv[lettersIndex + 1]) {
-            config.artistFilters.letters = process.argv[lettersIndex + 1].split(',');
+            const lettersArg = process.argv[lettersIndex + 1];
+            config.artistFilters.letters = parseLetterRange(lettersArg);
+            console.log(`📝 Parsed letters: ${lettersArg} → ${config.artistFilters.letters.join(', ')}`);
         }
         
         const testIndex = process.argv.indexOf('--test');
@@ -683,6 +789,9 @@ Examples:
             config.artistFilters.maxArtistsPerLetter = parseInt(process.argv[testIndex + 1], 10);
             console.log(`🧪 TEST MODE: Processing max ${config.artistFilters.maxArtistsPerLetter} artists per letter`);
         }
+        
+        // Show configuration after parsing CLI arguments
+        printConfig();
         
         // Load Genius API key
         console.log('🔑 Loading Genius API key...');
