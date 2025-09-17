@@ -2,3 +2,5 @@ node_modules/
 local-config.json
 build
 *.log
+/prescraped-data-*/
+/prescraped-*.json

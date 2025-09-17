@@ -9,7 +9,8 @@
     export let onScrollDown = null;
     export let lyricsMode = false;
     export let showCustomScrollbars = false;
-    export let displayScrollThumb = true;
+    export let displayScrollThumb = false;
+    export let showTopbar = false;
     
     import { windowStore, windowActions } from '$lib/services/store.js';
     import CustomScrollbar from './CustomScrollbar.svelte';
@@ -21,7 +22,7 @@
     // Calculate responsive title bar dimensions based on window height, not screen height
     $: titleBarHeight = dimensions.height * 0.06; // 6% of window height
     $: closeButtonSize = dimensions.height * 0.045; // 4.5% of window height
-    $: titleBarPadding = dimensions.height * 0.016; // 1.6% of window height
+    $: titleBarPadding = dimensions.height * 0.006; // 0.8% of window height
     $: closeButtonOutlineWidth = Math.max(2, dimensions.height * 0.006); // 1% of window height, minimum 2px
     
     // Custom scrollbar sizing (from TrashDisplay)
@@ -29,6 +30,11 @@
     $: customScrollArrowSize = dimensions.height * 0.07;
     $: customScrollThumbSize = dimensions.height * 0.16;
     $: customScrollArrowFontSize = dimensions.height * 0.036;
+    
+    // Topbar sizing
+    $: topbarHeight = dimensions.height * 0.07; // 8% of window height
+    // $: topbarPadding = dimensions.height * 0.01; // 1% of window height
+    $: topbarFontSize = dimensions.height * 0.025; // 2.5% of window height
     
     let contentElement;
     let isDragging = false;
@@ -164,8 +170,15 @@
             
 
         <div class="title-text" style:font-size="{dimensions.height*0.042}px">{title}</div>
-        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px; outline-width:{closeButtonOutlineWidth}px;" on:click={onClose} style:left="{titleBarPadding * 2.5}px"></button>
+        <button class="close-button" style="width:{closeButtonSize}px; height:{closeButtonSize}px; outline-width:{closeButtonOutlineWidth}px;" on:click={onClose} style:left="{titleBarPadding * 5.2}px"></button>
     </div>
+    
+    {#if showTopbar}
+        <div class="topbar" style:height="{topbarHeight}px" style:font-size="{topbarFontSize}px">
+            <slot name="topbar" {id}></slot>
+        </div>
+    {/if}
+    
     <div class="window-content" bind:this={contentElement}>
         {#if showCustomScrollbars}
             <div class="custom-scrollbar-wrapper" 
@@ -179,43 +192,47 @@
                 
                 <!-- Right scrollbar -->
                 <div class="custom-scrollbar-right">
+                    <div class="custom-scroll-arrow custom-scroll-up" 
+                         role="button" 
+                         tabindex="0"
+                         on:click={onScrollUp}
+                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollUp && onScrollUp()}>
+                        <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                        </svg>
+                    </div>
                     <div class="custom-scrollbar-track">
                         {#if displayScrollThumb}
                             <div class="custom-scrollbar-thumb"></div>
                         {/if}
                     </div>
-                    <div class="custom-scrollbar-arrows">
-                        <div class="custom-scroll-arrow custom-scroll-up">
-                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        <div class="custom-scroll-arrow custom-scroll-down">
-                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
-                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
-                            </svg>
-                        </div>
+                    <div class="custom-scroll-arrow custom-scroll-down" 
+                         role="button" 
+                         tabindex="0"
+                         on:click={onScrollDown}
+                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollDown && onScrollDown()}>
+                        <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                        </svg>
                     </div>
                 </div>
                 
                 <!-- Bottom scrollbar -->
                 <div class="custom-scrollbar-bottom">
+                    <div class="custom-scroll-arrow custom-scroll-left">
+                        <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);">
+                            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                        </svg>
+                    </div>
                     <div class="custom-scrollbar-track-horizontal">
                         {#if displayScrollThumb}
                             <div class="custom-scrollbar-thumb-horizontal"></div>
                         {/if}
                     </div>
-                    <div class="custom-scrollbar-arrows-horizontal">
-                        <div class="custom-scroll-arrow custom-scroll-left">
-                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);">
-                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        <div class="custom-scroll-arrow custom-scroll-right">
-                            <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
-                                <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
-                            </svg>
-                        </div>
+                    <div class="custom-scroll-arrow custom-scroll-right">
+                        <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
+                            <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
+                        </svg>
                     </div>
                 </div>
                 
@@ -311,6 +328,17 @@
     line-height: 1;
 }
 
+.topbar {
+    background-color: var(--secondary-color);
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+
 .window-content {
     display: flex;
     flex-direction: row;
@@ -372,7 +400,6 @@
     flex: 1;
     background-color: var(--secondary-color);
     position: relative;
-    margin: var(--custom-scroll-arrow-size) 0;
 }
 
 .custom-scrollbar-thumb {
@@ -389,10 +416,6 @@
     top: 20%;
 }
 
-.custom-scrollbar-arrows {
-    display: flex;
-    flex-direction: column;
-}
 
 .custom-scroll-arrow {
     height: var(--custom-scroll-arrow-size);
@@ -421,11 +444,10 @@
 .custom-scroll-up {
     border-left: none;
     border-right: none;
+    border-top: none;
 }
 
 .custom-scroll-down {
-    margin-top: auto;
-    border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -447,7 +469,6 @@
     flex: 1;
     background-color: var(--secondary-color);
     position: relative;
-    margin: 0 var(--custom-scroll-arrow-size);
 }
 
 .custom-scrollbar-thumb-horizontal {
@@ -464,16 +485,13 @@
     left: 30%;
 }
 
-.custom-scrollbar-arrows-horizontal {
-    display: flex;
-    flex-direction: row;
-}
 
 .custom-scroll-left {
     width: var(--custom-scroll-arrow-size);
     height: var(--custom-scroll-arrow-size);
     border-top: none;
     border-bottom: none;
+    border-left: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,10 +503,8 @@
 .custom-scroll-right {
     width: var(--custom-scroll-arrow-size);
     height: var(--custom-scroll-arrow-size);
-    margin-left: auto;
     border-top: none;
     border-bottom: none;
-    border-left: none;
     border-right: none;
     display: flex;
     align-items: center;

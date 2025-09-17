@@ -481,6 +481,59 @@
         window.dispatchEvent(restartEvent);
     }
 
+    // Export function to load a song from trash (replay functionality)
+    export async function loadSongFromTrash(songData) {
+        try {
+            isPaused = false;
+            showQueue = false;
+            loading = true;
+
+            // Create a song object in the expected format
+            const songToLoad = {
+                title: songData.title,
+                artist: songData.artist,
+                lyrics: null, // Will need to fetch lyrics
+                image: songData.imageUrl,
+                albumArtId: songData.albumArtId,
+                url: songData.geniusUrl,
+                songId: songData.songId,
+                primaryArtist: songData.artist,
+                artistImg: songData.imageUrl
+            };
+
+            // We need to get the full song data including lyrics
+            // For now, let's use the existing system to load by artist and then find the specific song
+            console.log('🔄 Loading song from trash:', songData.title);
+            
+            // Try to load the artist's songs and find the specific song
+            // This is a simplified approach - in a full implementation, we might want to store lyrics in trash
+            const artistData = {
+                name: songData.artist,
+                id: songData.songId // This might not work perfectly, but it's a start
+            };
+            
+            // For now, just display the song info we have (without lyrics)
+            // In a full implementation, we'd fetch the lyrics from the API
+            currentSong = songToLoad;
+            songTitle = songData.title;
+            artistName = songData.artist;
+            imageUrl = songData.imageUrl;
+            albumArtId = songData.albumArtId;
+            geniusUrl = songData.geniusUrl;
+            songId = songData.songId;
+            
+            // We can't replay without lyrics, so show a message
+            lyrics = "Song selected from trash. To replay this song, please search for the artist and select it from the queue.";
+            
+            loading = false;
+
+        } catch (error) {
+            console.error('Error loading song from trash:', error);
+            lyrics = "Error loading song from trash.";
+            loading = false;
+        }
+    }
+
     function togglePause() {
         isPaused = !isPaused;
         showQueue = false; // Close queue display
@@ -660,6 +713,7 @@
                             continueFromQueue={playNextSong}
                             {replaySong} 
                             {geniusUrl}
+                            {songId}
                             {isPaused}
                             capitalization={$capitalization}
                             punctuation={$punctuation}

@@ -13,6 +13,7 @@
     import SettingsDisplay from '../lib/components/SettingsDisplay.svelte';
     import TrashDisplay from '../lib/components/TrashDisplay.svelte';
     import { themeColors, backgroundColors, windowStore, windowActions } from '$lib/services/store.js';
+import { trashStore } from '$lib/services/trashService.js';
 
 
     onMount(async () => {
@@ -31,6 +32,18 @@
 
     let innerWidth;
     let innerHeight;
+    let trashDisplayRef;
+    let typingTestRef;
+    
+    // Get trash window dimensions for proportional topbar sizing
+    $: trashWindowState = $windowStore.windowStates.find(w => w.id === 'trashWindow');
+    $: trashWindowHeight = trashWindowState?.dimensions?.height || 400;
+    
+    // Calculate proportional sizes for topbar elements - matching Media Typer WPM style
+    // Topbar height is 8% of window height, padding is 1% each side, so available height is ~6%
+    $: topbarButtonSize = trashWindowHeight * 0.07; // Match full topbar height (8% of window height)
+    $: topbarItemCountSize = trashWindowHeight * 0.03; // Match Media Typer WPM label: windowHeight*0.03
+    $: topbarWordPadding = trashWindowHeight * 0.02; // 0.6% of window height
 
     $: if (innerWidth && innerHeight) {
         windowActions.updateScreenDimensions(innerWidth, innerHeight);
@@ -70,6 +83,7 @@
             title: 'Trash', 
             showScrollbar: false, 
             showCustomScrollbars: true,
+            showTopbar: true,
             isOpen: false, 
             component: TrashDisplay, 
             position: { x: 25, y: 20 },
@@ -89,8 +103,32 @@
             updateDimensions();
             window.addEventListener('resize', updateDimensions);
 
+            // Add event listener for song replay from trash
+            const handleReplaySong = async (event) => {
+                const songData = event.detail.songData;
+                console.log('🎵 Replay song requested:', songData.title);
+                
+                // Open Media Typer window if it's not open
+                const typingTestWindow = windows.find(w => w.id === 'typingTestWindow');
+                if (typingTestWindow && !typingTestWindow.isOpen) {
+                    openWindow('typingTestWindow');
+                    // Wait a bit for the component to mount
+                    setTimeout(() => {
+                        if (typingTestRef?.loadSongFromTrash) {
+                            typingTestRef.loadSongFromTrash(songData);
+                        }
+                    }, 100);
+                } else if (typingTestRef?.loadSongFromTrash) {
+                    // Window is already open, load the song directly
+                    typingTestRef.loadSongFromTrash(songData);
+                }
+            };
+
+            document.addEventListener('replaySong', handleReplaySong);
+
             return () => {
                 window.removeEventListener('resize', updateDimensions);
+                document.removeEventListener('replaySong', handleReplaySong);
             };
         }
     });
@@ -156,15 +194,129 @@ style:--background-secondary-color={$backgroundColors.secondary}
         title={window.title}
         showScrollbar={window.showScrollbar}
         showCustomScrollbars={window.showCustomScrollbars || false}
+        showTopbar={window.showTopbar || false}
         lyricsMode={window.id === 'typingTestWindow'}
         position={window.position}
         dimensions={$windowStore.windowStates.find(w => w.id === window.id)?.dimensions}
         onClose={() => closeWindow(window.id)}
+        onScrollUp={window.id === 'trashWindow' ? () => trashDisplayRef?.handleScrollUp() : null}
+        onScrollDown={window.id === 'trashWindow' ? () => trashDisplayRef?.handleScrollDown() : null}
     >
-        <svelte:component 
-            this={window.component} 
-            id={window.id}
-        />
+        <div slot="topbar" class="trash-topbar" 
+             style="--topbar-button-size: {topbarButtonSize}px;
+                    --topbar-item-count-size: {topbarItemCountSize}px;">
+            <span class="item-count" style="padding: 0 {topbarWordPadding}px;">{$trashStore.length} items</span>
+            <div class="topbar-spacer"></div>
+            <div class="view-toggle-container">
+                <button class="view-toggle-icon view-toggle-grid" on:click={() => trashDisplayRef?.setGridView()} title="Grid View">
+                    <!-- Grid View Icon -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                        <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                        <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                        <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="view-toggle-icon view-toggle-list" on:click={() => trashDisplayRef?.setListView()} title="List View">
+                    <!-- List View Icon -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <line x1="8" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2"/>
+                        <rect x="3" y="4" width="2" height="4" fill="currentColor"/>
+                        <rect x="3" y="10" width="2" height="4" fill="currentColor"/>
+                        <rect x="3" y="16" width="2" height="4" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        {#if window.id === 'trashWindow'}
+            <svelte:component 
+                this={window.component} 
+                id={window.id}
+                bind:this={trashDisplayRef}
+            />
+        {:else if window.id === 'typingTestWindow'}
+            <svelte:component 
+                this={window.component} 
+                id={window.id}
+                bind:this={typingTestRef}
+            />
+        {:else}
+            <svelte:component 
+                this={window.component} 
+                id={window.id}
+            />
+        {/if}
     </AppWindow>
 {/each}
 </div>
+
+<style>
+    .trash-topbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-family: "Geneva", sans-serif;
+        position: relative;
+    }
+
+    .topbar-spacer {
+        flex: 1;
+    }
+
+    .item-count {
+        font-size: var(--topbar-item-count-size);
+        color: var(--primary-color);
+        font-family: "Geneva", sans-serif;
+        margin: 0;
+    }
+
+    .view-toggle-container {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-shrink: 0;
+        align-items: stretch;
+    }
+
+    .view-toggle-icon {
+        width: var(--topbar-button-size);
+        height: var(--topbar-button-size);
+        background-color: var(--secondary-color);
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .view-toggle-grid {
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .view-toggle-list {
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .view-toggle-icon:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .view-toggle-icon svg {
+        width: 60%;
+        height: 60%;
+        display: block;
+    }
+</style>

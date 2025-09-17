@@ -3,6 +3,7 @@
 	import ResultsDisplay from './ResultsDisplay.svelte';
 
 	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
+	import { trashStore, formatTestResultsForTrash } from '$lib/services/trashService.js';
 	import { normalizeDiacritics } from 'normalize-text';
 	export let lyrics;
 	export let songTitle;
@@ -13,6 +14,7 @@
 	export let continueFromQueue;
 	export let replaySong;
 	export let geniusUrl;
+	export let songId = null; // Song ID for trash functionality
 	export let isPaused = false;
 	export let capitalization = true;
 	export let punctuation = true;
@@ -488,6 +490,27 @@ function handleInput(event) {
 		console.log(`WPM: ${wpm.toFixed(2)}, Accuracy: ${accuracy.toFixed(2)}%`);
 		console.log('Typed characters:', charactersTyped);
 		console.log('Incorrect characters:', incorrectChars);
+
+		// Save completed test to trash
+		if (songId && songTitle && artistName) {
+			const testResults = formatTestResultsForTrash({
+				songId,
+				songTitle,
+				artistName,
+				imageUrl,
+				albumArtId,
+				geniusUrl,
+				wpm,
+				accuracy,
+				charactersTyped,
+				incorrectChars,
+				testDuration: durationInMinutes,
+				lyricsLength: lyrics?.length || 0,
+			});
+			
+			trashStore.addCompletedSong(testResults);
+			console.log('Song saved to trash:', testResults.fileName);
+		}
 	}
   
 	$: if (lyrics && !userInput && !testStarted) {
