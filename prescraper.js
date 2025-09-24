@@ -125,7 +125,7 @@ async function loadArtistData() {
     
     try {
         const files = await fs.readdir(artistsDir);
-        const jsonFiles = files.filter(file => file.startsWith('genius-artists-') && file.endsWith('.json') && file !== 'genius-artists-0.json');
+        const jsonFiles = files.filter(file => file.startsWith('genius-artists-') && file.endsWith('.json'));
         
         console.log(`Found ${jsonFiles.length} artist files`);
         
@@ -399,16 +399,20 @@ function parseLetterRange(input) {
             } else {
                 console.warn(`⚠️  Invalid range format: ${part} (use format like 'a-g')`);
             }
-        } else if (part.length === 1 && part >= 'a' && part <= 'z') {
-            // Single letter
+        } else if ((part.length === 1 && part >= 'a' && part <= 'z') || part === '0') {
+            // Single letter or number indicator
             letters.add(part);
         } else {
-            console.warn(`⚠️  Invalid letter: ${part} (must be a-z)`);
+            console.warn(`⚠️  Invalid letter: ${part} (must be a-z or 0 for numbers)`);
         }
     }
     
-    // Convert to sorted array
-    return Array.from(letters).sort();
+    // Convert to sorted array, with '0' first
+    return Array.from(letters).sort((a, b) => {
+        if (a === '0') return -1;
+        if (b === '0') return 1;
+        return a.localeCompare(b);
+    });
 }
 
 /**
@@ -420,7 +424,7 @@ function printConfig() {
     console.log('='.repeat(60));
     console.log(`📋 Configuration:`);
     console.log(`   Max songs to scrape per artist: ${config.maxSongsToScrape}`);
-    const letterDisplay = config.artistFilters.letters[0] === 'all' ? 'all (a-z)' : config.artistFilters.letters.join(', ');
+    const letterDisplay = config.artistFilters.letters[0] === 'all' ? 'all (0, a-z)' : config.artistFilters.letters.join(', ');
     console.log(`   Target letters: ${letterDisplay}`);
     console.log(`   Artist types: ${config.artistFilters.types.join(', ')}`);
     if (config.artistFilters.maxArtistsPerLetter) {
@@ -755,17 +759,19 @@ Options:
   --help, -h           Show this help message
 
 Letter Formats:
-  all                  Process all letters a-z
+  all                  Process all letters (0, a-z)
+  0                    Process artists starting with numbers
   a,b,c               Process specific letters
   a-g                 Process range from a to g
   c g                 Process letters c and g (space-separated)
-  a-c,x,z             Mixed: range a-c plus letters x and z
+  0,a-c,x,z           Mixed: numbers, range a-c, plus letters x and z
 
 Examples:
   node prescraper.js --songs 5 --letters a,b,c
+  node prescraper.js --letters 0             # Process artists starting with numbers
   node prescraper.js --letters a-g           # Process letters a through g
   node prescraper.js --letters "c g"         # Process letters c and g
-  node prescraper.js --letters a-c,x-z       # Process a-c and x-z ranges
+  node prescraper.js --letters 0,a-c,x-z     # Process numbers, a-c and x-z ranges
   node prescraper.js --test 2                # Process only 2 artists per letter
             `);
             return;

@@ -3,8 +3,9 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { initializeApp, cert } from 'firebase-admin/app';
-import { getFirestore, FieldValue } from 'firebase-admin/firestore';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, writeBatch, doc, getDoc, setDoc } from 'firebase/firestore';
+import { firebaseConfig } from './src/lib/services/initFirebase.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -61,7 +62,7 @@ const state = {
     startTime: null
 };
 
-// Initialize Firebase Admin SDK
+// Initialize Firebase
 let db = null;
 
 /**
@@ -69,36 +70,17 @@ let db = null;
  */
 async function initializeFirebase() {
     try {
-        console.log('🔧 Initializing Firebase Admin SDK...');
+        console.log('🔧 Initializing Firebase...');
         
-        // Try to load service account key
-        let serviceAccountPath = path.join(__dirname, 'functions', 'serviceAccountKey.json');
-        let serviceAccount = null;
+        // Initialize Firebase using centralized config (same as working script)
+        const app = initializeApp(firebaseConfig);
+        db = getFirestore(app);
         
-        try {
-            const serviceAccountContent = await fs.readFile(serviceAccountPath, 'utf8');
-            serviceAccount = JSON.parse(serviceAccountContent);
-        } catch (error) {
-            console.log('⚠️  Service account key not found, trying alternative methods...');
-            
-            // Alternative: try loading from environment variable
-            if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-                serviceAccountPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-                const serviceAccountContent = await fs.readFile(serviceAccountPath, 'utf8');
-                serviceAccount = JSON.parse(serviceAccountContent);
-            } else {
-                console.log('ℹ️  Using default Firebase credentials (make sure you\'re authenticated)');
-            }
+        // Check if we should use emulator
+        if (process.env.FIRESTORE_EMULATOR_HOST) {
+            console.log('🧪 Using Firestore emulator at', process.env.FIRESTORE_EMULATOR_HOST);
         }
         
-        // Initialize the app
-        const app = serviceAccount 
-            ? initializeApp({
-                credential: cert(serviceAccount)
-            })
-            : initializeApp(); // Use default credentials
-        
-        db = getFirestore(app);
         console.log('✅ Firebase initialized successfully');
         
         return db;
@@ -152,9 +134,9 @@ async function loadPrescrapedData(inputDir) {
  */
 async function checkArtistExists(urlKey) {
     try {
-        const artistRef = db.collection(config.upload.collections.artists).doc(urlKey);
-        const doc = await artistRef.get();
-        return doc.exists;
+        const artistRef = doc(db, config.upload.collections.artists, urlKey);
+        const docSnap = await getDoc(artistRef);
+        return docSnap.exists();
     } catch (error) {
         console.error(`❌ Error checking if artist exists (${urlKey}):`, error);
         return false; // Assume doesn't exist if we can't check
@@ -198,8 +180,8 @@ async function uploadArtist(artistData) {
         };
         
         if (!config.processing.dryRun) {
-            const artistRef = db.collection(config.upload.collections.artists).doc(urlKey);
-            await artistRef.set(artistDoc);
+            const artistRef = doc(db, config.upload.collections.artists, urlKey);
+            await setDoc(artistRef, artistDoc);
         }
         
         console.log(`  ✅ Uploaded artist: ${artistData.name} (${artistData.totalSongs} songs, ${artistData.processingStats.lyricsScraped} lyrics)`);
@@ -259,12 +241,12 @@ async function uploadSongs(artistData) {
         let uploaded = 0;
         
         for (let i = 0; i < songsToUpload.length; i += batchSize) {
-            const batch = db.batch();
+            const batch = writeBatch(db);
             const batchSongs = songsToUpload.slice(i, i + batchSize);
             
             for (const song of batchSongs) {
                 if (!config.processing.dryRun) {
-                    const songRef = db.collection(config.upload.collections.songs).doc(song.id);
+                    const songRef = doc(db, config.upload.collections.songs, song.id);
                     batch.set(songRef, song.data);
                 }
             }
@@ -386,12 +368,14 @@ Options:
   --dir <directory>    Directory containing prescraped JSON files
   --dry-run           Don't actually upload, just show what would be done
   --force             Upload even if artists already exist
+  --emulator          Use local Firestore emulator (requires firebase emulators:start)
   --help, -h          Show this help message
 
 Examples:
   node firebase-uploader.js --dir ./prescraped-data-2025-09-14/
   node firebase-uploader.js --dry-run  # Test run without uploading
   node firebase-uploader.js --force    # Overwrite existing artists
+  node firebase-uploader.js --emulator # Use local emulator for testing
             `);
             return;
         }
@@ -410,6 +394,11 @@ Examples:
         if (process.argv.includes('--force')) {
             config.input.skipExisting = false;
             console.log('💪 FORCE MODE: Will overwrite existing artists');
+        }
+        
+        if (process.argv.includes('--emulator')) {
+            process.env.FIRESTORE_EMULATOR_HOST = 'localhost:8080';
+            console.log('🧪 EMULATOR MODE: Using local Firestore emulator');
         }
         
         // Determine input directory
