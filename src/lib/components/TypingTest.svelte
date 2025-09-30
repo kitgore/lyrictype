@@ -119,11 +119,11 @@
             
             // Get the updated artist info (including newly extracted imageUrl) after song population
             // Use a delayed check to allow background image extraction to complete
-            const checkForUpdatedImageUrl = async (attempt = 1, maxAttempts = 3) => {
+            const checkForUpdatedImageUrl = async (attempt = 1, maxAttempts = 5) => {
                 try {
                     const { getArtistInfo } = await import('$lib/services/artistService');
-                    // Use cache bypass for attempts 2 and beyond to get fresh data
-                    const bypassCache = attempt > 1;
+                    // Always bypass cache for fresh data
+                    const bypassCache = true;
                     const updatedArtistInfo = await getArtistInfo(queueManager.artistUrlKey, bypassCache);
                     
                     console.log(`🔍 Attempt ${attempt} ${bypassCache ? '(bypassing cache)' : ''} - Retrieved artist info:`, {
@@ -365,6 +365,7 @@
             if (result.success) {
                 preloadedAlbumArt = {
                     binaryData: result.binaryData,
+                    grayscaleData: result.grayscaleData, // Add grayscale data for new format
                     metadata: result.metadata,
                     cached: result.cached
                 };
@@ -375,7 +376,9 @@
             }
         } catch (error) {
             console.error('❌ Error preloading album art:', error);
+            console.warn('⚠️  Album art preload failed, but song will still work with fallback image');
             preloadedAlbumArt = null;
+            // Don't throw the error - album art failure shouldn't break song loading
         }
     }
 

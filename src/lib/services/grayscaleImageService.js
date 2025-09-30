@@ -145,8 +145,28 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
         
         // If we have an imageUrl parameter but no stored data, process it
         if (imageUrl) {
-            console.log(`🆕 Processing new image URL: ${imageUrl}`);
-            return await processArtistImageToGrayscale(imageUrl, artistUrlKey);
+            console.log(`🆕 Processing new image URL for artist: ${artistUrlKey}`);
+            console.log(`🔗 Image URL: ${imageUrl}`);
+            
+            // For new artists, we need to be more aggressive about processing
+            try {
+                const result = await processArtistImageToGrayscale(imageUrl, artistUrlKey);
+                if (result.success) {
+                    console.log(`✅ Successfully processed new artist image: ${artistUrlKey}`);
+                    return result;
+                } else {
+                    console.warn(`⚠️  Failed to process new artist image: ${artistUrlKey}`, result.error);
+                }
+            } catch (processingError) {
+                console.error(`❌ Error processing new artist image: ${artistUrlKey}`, processingError);
+            }
+            
+            // If processing failed, return failure so UI can fallback
+            return {
+                success: false,
+                error: 'Failed to process new artist image',
+                cached: false
+            };
         }
         
         // No image data available
@@ -194,7 +214,13 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         });
         
         if (!response.ok) {
-            throw new Error(`Processing failed: ${response.status}`);
+            const errorText = await response.text();
+            console.error(`Firebase function error for ${artistUrlKey}:`, {
+                status: response.status,
+                statusText: response.statusText,
+                error: errorText
+            });
+            throw new Error(`Processing failed: ${response.status} - ${errorText}`);
         }
         
         const result = await response.json();

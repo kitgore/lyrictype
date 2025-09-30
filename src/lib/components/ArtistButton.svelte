@@ -51,6 +51,9 @@
 
             // Try to get grayscale image data
             if (urlKey) {
+                console.log(`🎨 Attempting to load grayscale image for: ${name} (${urlKey})`);
+                console.log(`🔗 Image URL: ${imageUrl}`);
+                
                 const result = await getArtistBinaryImage(urlKey, imageUrl);
                 
                 if (result.success) {
@@ -58,13 +61,14 @@
                     rawGrayscaleBytes = result.rawGrayscaleBytes; // Raw bytes for WebGL
                     imageMetadata = result.metadata;
                     useFallback = false;
-                    console.log('✅ Grayscale image loaded:', result.cached ? 'from cache' : 'processed');
+                    console.log(`✅ Grayscale image loaded for ${name}:`, result.cached ? 'from cache' : 'processed');
                 } else {
-                    console.warn('⚠️  Grayscale image failed, using fallback:', result.error);
+                    console.warn(`⚠️  Grayscale image failed for ${name}, using fallback:`, result.error);
+                    console.warn(`🔍 Debug info:`, { urlKey, imageUrl, hasImageUrl: !!imageUrl });
                     useFallback = true;
                 }
             } else {
-                console.warn('⚠️  No urlKey provided, using fallback');
+                console.warn(`⚠️  No urlKey provided for ${name}, using fallback`);
                 useFallback = true;
             }
         } catch (error) {
@@ -93,6 +97,19 @@
     // Reload when dither setting changes
     $: if ($ditherImages !== undefined && imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined) {
         loadGrayscaleImage();
+    }
+    
+    // Retry mechanism for new artists - if we have an imageUrl but failed to load grayscale data
+    // This handles the case where imageUrl is available but binary processing isn't complete yet
+    $: if (imageUrl && imageUrl !== '/default-image.svg' && imageUrl !== null && imageUrl !== undefined && 
+          useFallback && !isProcessing && $ditherImages && urlKey) {
+        console.log(`🔄 Retrying grayscale image load for new artist: ${name}`);
+        setTimeout(() => {
+            if (imageUrl && useFallback && !isProcessing) { // Double-check conditions
+                console.log(`⏰ Retry attempt for ${name} after delay`);
+                loadGrayscaleImage();
+            }
+        }, 2000); // Retry after 2 seconds
     }
 </script>
 

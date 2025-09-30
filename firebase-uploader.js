@@ -37,6 +37,13 @@ const config = {
         uploadArtistImages: false, // Skip artist image processing for now
         uploadAlbumArt: false, // Skip album art processing for now
         dryRun: false // If true, don't actually upload
+    },
+    
+    // Filtering options
+    filtering: {
+        startLetter: null, // Filter artists starting with this letter (a-z)
+        endLetter: null, // Filter artists ending with this letter (a-z)
+        maxArtists: null // Limit number of artists to process (for testing)
     }
 };
 
@@ -310,6 +317,51 @@ async function processArtist(artistData, artistIndex, totalArtists) {
 }
 
 /**
+ * Get the sorting letter for an artist name (ignores common articles)
+ */
+function getSortingLetter(artistName) {
+    const name = artistName.toLowerCase();
+    const articles = ['the ', 'a ', 'an '];
+    
+    for (const article of articles) {
+        if (name.startsWith(article)) {
+            return name.charAt(article.length);
+        }
+    }
+    
+    return name.charAt(0);
+}
+
+/**
+ * Filter artists by letter range and/or limit count
+ */
+function filterArtists(artists) {
+    let filtered = [...artists];
+    
+    // Apply letter filtering
+    if (config.filtering.startLetter || config.filtering.endLetter) {
+        const startLetter = config.filtering.startLetter?.toLowerCase() || 'a';
+        const endLetter = config.filtering.endLetter?.toLowerCase() || 'z';
+        
+        filtered = filtered.filter(artist => {
+            const sortingChar = getSortingLetter(artist.name);
+            return sortingChar >= startLetter && sortingChar <= endLetter;
+        });
+        
+        console.log(`🔤 Filtered by letters ${startLetter.toUpperCase()}-${endLetter.toUpperCase()}: ${filtered.length}/${artists.length} artists`);
+    }
+    
+    // Apply count limit
+    if (config.filtering.maxArtists && config.filtering.maxArtists > 0) {
+        const originalCount = filtered.length;
+        filtered = filtered.slice(0, config.filtering.maxArtists);
+        console.log(`🔢 Limited to ${config.filtering.maxArtists} artists: ${filtered.length}/${originalCount} selected`);
+    }
+    
+    return filtered;
+}
+
+/**
  * Find the latest prescraped directory
  */
 async function findLatestPrescrapedDir() {
@@ -344,6 +396,14 @@ function printConfig() {
     console.log(`   Skip existing: ${config.input.skipExisting}`);
     console.log(`   Batch size: ${config.upload.batchSize}`);
     console.log(`   Dry run: ${config.processing.dryRun}`);
+    if (config.filtering.startLetter || config.filtering.endLetter) {
+        const start = config.filtering.startLetter?.toUpperCase() || 'A';
+        const end = config.filtering.endLetter?.toUpperCase() || 'Z';
+        console.log(`   Letter filter: ${start}-${end}`);
+    }
+    if (config.filtering.maxArtists) {
+        console.log(`   Max artists: ${config.filtering.maxArtists}`);
+    }
     if (config.processing.dryRun) {
         console.log('   ⚠️  DRY RUN MODE: No data will be uploaded');
     }
@@ -365,13 +425,18 @@ async function main() {
 Usage: node firebase-uploader.js [options]
 
 Options:
-  --dir <directory>    Directory containing prescraped JSON files
-  --dry-run           Don't actually upload, just show what would be done
-  --force             Upload even if artists already exist
-  --emulator          Use local Firestore emulator (requires firebase emulators:start)
-  --help, -h          Show this help message
+  --dir <directory>       Directory containing prescraped JSON files
+  --start-letter <letter> Only process artists starting with this letter (a-z)
+  --end-letter <letter>   Only process artists up to this letter (a-z)
+  --max-artists <number>  Limit number of artists to process (for testing)
+  --dry-run              Don't actually upload, just show what would be done
+  --force                Upload even if artists already exist
+  --emulator             Use local Firestore emulator (requires firebase emulators:start)
+  --help, -h             Show this help message
 
 Examples:
+  node firebase-uploader.js --start-letter n --end-letter z  # Upload artists N-Z
+  node firebase-uploader.js --start-letter n --max-artists 5 --dry-run  # Test with 5 artists starting with N
   node firebase-uploader.js --dir ./prescraped-data-2025-09-14/
   node firebase-uploader.js --dry-run  # Test run without uploading
   node firebase-uploader.js --force    # Overwrite existing artists
@@ -384,6 +449,39 @@ Examples:
         const dirIndex = process.argv.indexOf('--dir');
         if (dirIndex !== -1 && process.argv[dirIndex + 1]) {
             config.input.directory = process.argv[dirIndex + 1];
+        }
+        
+        const startLetterIndex = process.argv.indexOf('--start-letter');
+        if (startLetterIndex !== -1 && process.argv[startLetterIndex + 1]) {
+            const letter = process.argv[startLetterIndex + 1].toLowerCase();
+            if (letter.match(/^[a-z]$/)) {
+                config.filtering.startLetter = letter;
+            } else {
+                console.error('❌ --start-letter must be a single letter (a-z)');
+                process.exit(1);
+            }
+        }
+        
+        const endLetterIndex = process.argv.indexOf('--end-letter');
+        if (endLetterIndex !== -1 && process.argv[endLetterIndex + 1]) {
+            const letter = process.argv[endLetterIndex + 1].toLowerCase();
+            if (letter.match(/^[a-z]$/)) {
+                config.filtering.endLetter = letter;
+            } else {
+                console.error('❌ --end-letter must be a single letter (a-z)');
+                process.exit(1);
+            }
+        }
+        
+        const maxArtistsIndex = process.argv.indexOf('--max-artists');
+        if (maxArtistsIndex !== -1 && process.argv[maxArtistsIndex + 1]) {
+            const count = parseInt(process.argv[maxArtistsIndex + 1], 10);
+            if (count > 0) {
+                config.filtering.maxArtists = count;
+            } else {
+                console.error('❌ --max-artists must be a positive number');
+                process.exit(1);
+            }
         }
         
         if (process.argv.includes('--dry-run')) {
@@ -411,10 +509,18 @@ Examples:
         await initializeFirebase();
         
         // Load prescraped data
-        const artists = await loadPrescrapedData(config.input.directory);
+        const allArtists = await loadPrescrapedData(config.input.directory);
+        
+        if (allArtists.length === 0) {
+            console.log('⚠️  No artists found in prescraped data');
+            return;
+        }
+        
+        // Apply filtering
+        const artists = filterArtists(allArtists);
         
         if (artists.length === 0) {
-            console.log('⚠️  No artists found in prescraped data');
+            console.log('⚠️  No artists match the specified filters');
             return;
         }
         

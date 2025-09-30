@@ -95,26 +95,34 @@ export class CacheAwareQueueManager {
             this.artistUrlKey = result.queueInfo.artistUrlKey;
             this.artistData = result.artistData;
             this.songIds = result.queueInfo.songIds;
-            this.currentIndex = 0;
+            this.currentIndex = result.song.songIndex || 0;
             
             // Clear and initialize songs array with placeholders
+            // For new artists, cachedSongIds might be empty initially, so be more flexible
+            const cachedSongIds = result.artistData.cachedSongIds || [];
+            const isNewArtist = cachedSongIds.length === 0 && result.artistData.totalSongs > 0;
+            
             this.songs = this.songIds.map((id, index) => ({
                 id,
                 index,
                 loaded: false,
-                cached: result.queueInfo.cachedSongs > index, // Assume first N songs are cached
+                cached: isNewArtist ? false : cachedSongIds.includes(id), // For new artists, assume uncached initially
                 title: `Loading...`,
                 artist: artist.name
             }));
+            
+            if (isNewArtist) {
+                console.log(`🆕 New artist detected: ${artist.name} - will update cache status as songs load`);
+            }
             this.broadcast();
             
             console.log('🧱 Beginning queue build from first-page songIds (placeholders created)');
-            // Load the first song immediately
+            // Load the first song immediately at the correct index
             const firstWithExcerpt = this.ensureExcerptForSong({ ...result.song });
             this.loadedSongs.set(firstWithExcerpt.id, firstWithExcerpt);
-            this.songs[0] = {
+            this.songs[this.currentIndex] = {
                 ...firstWithExcerpt,
-                index: 0,
+                index: this.currentIndex,
                 loaded: true,
                 cached: true
             };
@@ -250,7 +258,7 @@ export class CacheAwareQueueManager {
     }
 
     /**
-     * Load a specific song by index
+     * Load a specific song by index - FIXED VERSION
      */
     async loadSongAtIndex(index) {
         if (index < 0 || index >= this.songs.length) {
@@ -259,7 +267,7 @@ export class CacheAwareQueueManager {
 
         const songId = this.songIds[index];
         
-        // Check if already loaded
+        // Check if already loaded in memory
         if (this.loadedSongs.has(songId)) {
             const loadedSong = this.loadedSongs.get(songId);
             this.songs[index] = { ...loadedSong, index, loaded: true, cached: true };
@@ -270,7 +278,15 @@ export class CacheAwareQueueManager {
         try {
             console.log(`🔄 Loading song at index ${index}: ${songId}`);
             
-            // Use the navigation loader to get this song and surrounding ones
+            // FIRST: Try to load directly from Firestore (for cached songs)
+            const directResult = await this.tryLoadSongDirectly(songId, index);
+            if (directResult) {
+                console.log(`✅ Loaded cached song directly: ${directResult.title}`);
+                return directResult;
+            }
+            
+            // FALLBACK: Use the navigation loader for uncached songs
+            console.log(`📡 Song not cached, using navigation loader...`);
             const result = await loadSongsForNavigation(songId, false, this.artistUrlKey);
             
             // Update loaded songs cache and ensure each has a 4-line excerpt
@@ -285,7 +301,9 @@ export class CacheAwareQueueManager {
                         ...withExcerpt,
                         index: songIndex,
                         loaded: true,
-                        cached: true
+                        cached: !!songData.lyrics, // Mark as cached if has lyrics
+                        scrapingStatus: songData.scrapingStatus || 'completed',
+                        hasValidLyrics: !!(songData.lyrics && songData.lyrics.trim().length > 10)
                     };
                 }
             });
@@ -296,7 +314,7 @@ export class CacheAwareQueueManager {
             return this.songs[index];
             
         } catch (error) {
-            console.error(`Error loading song at index ${index}:`, error);
+            console.error(`❌ Error loading song at index ${index}:`, error);
             
             // Mark as failed but keep placeholder
             this.songs[index] = {
@@ -312,6 +330,59 @@ export class CacheAwareQueueManager {
     }
 
     /**
+     * Try to load a song directly from Firestore (for cached songs)
+     */
+    async tryLoadSongDirectly(songId, index) {
+        try {
+            // Import Firestore functions
+            const { doc, getDoc } = await import('firebase/firestore');
+            const { db } = await import('./initFirebase.js');
+            
+            const songRef = doc(db, 'songs', songId);
+            const songDoc = await getDoc(songRef);
+            
+            if (songDoc.exists()) {
+                const songData = songDoc.data();
+                
+                // Only return if song has lyrics (is cached)
+                if (songData.lyrics && songData.lyrics.trim().length > 0) {
+                    const transformedSong = {
+                        id: songId,
+                        title: songData.title,
+                        artist: songData.primaryArtist?.name || songData.artistNames,
+                        lyrics: songData.lyrics,
+                        image: songData.songArtImageUrl,
+                        albumArtId: songData.albumArtId,
+                        url: songData.url,
+                        songId: songId,
+                        primaryArtist: songData.primaryArtist?.name,
+                        index: index,
+                        loaded: true,
+                        cached: true,
+                        scrapingStatus: songData.scrapingStatus || 'completed',
+                        hasValidLyrics: !!(songData.lyrics && songData.lyrics.trim().length > 10)
+                    };
+                    
+                    const withExcerpt = this.ensureExcerptForSong(transformedSong);
+                    
+                    // Cache in memory and update queue
+                    this.loadedSongs.set(songId, withExcerpt);
+                    this.songs[index] = withExcerpt;
+                    this.broadcast();
+                    
+                    return withExcerpt;
+                }
+            }
+            
+            return null; // Song not cached or doesn't exist
+            
+        } catch (error) {
+            console.warn(`Failed to load song directly from Firestore: ${error.message}`);
+            return null; // Fall back to navigation loader
+        }
+    }
+
+    /**
      * Preload songs around current position for smooth navigation
      * This implements the smart preloading from your plan
      */
@@ -323,13 +394,22 @@ export class CacheAwareQueueManager {
         
         console.log(`🔄 Preloading songs ${startIndex}-${endIndex} around current position ${this.currentIndex}`);
         
-        // Find songs that need loading
-        const songsToLoad = [];
+        // Find songs that need loading, prioritizing cached songs
+        const cachedSongsToLoad = [];
+        const uncachedSongsToLoad = [];
+        
         for (let i = startIndex; i <= endIndex; i++) {
             if (!this.songs[i].loaded && !this.loadedSongs.has(this.songIds[i])) {
-                songsToLoad.push(i);
+                if (this.songs[i].cached) {
+                    cachedSongsToLoad.push(i);
+                } else {
+                    uncachedSongsToLoad.push(i);
+                }
             }
         }
+        
+        // Load cached songs first (faster), then uncached songs
+        const songsToLoad = [...cachedSongsToLoad, ...uncachedSongsToLoad];
         
         if (songsToLoad.length === 0) {
             console.log('✅ All nearby songs already loaded');
