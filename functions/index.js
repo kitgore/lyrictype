@@ -471,7 +471,7 @@ export const processAlbumArtBinary = onRequest({
     }
 
     try {
-        const result = await processAndStoreAlbumArt(imageUrl, albumArtId, targetSize);
+        const result = await processAndStoreAlbumArt(imageUrl, albumArtId);
         res.json(result);
     } catch (error) {
         console.error('❌ Error in processAlbumArtBinary:', error);
@@ -1054,23 +1054,25 @@ async function populateArtistSongsCore(artistUrlKey, { onlyFirstPage = false } =
                 
                 if (artistImageUrl) {
                     try {
-                        // Process image to binary format and store immediately
-                        console.log(`🖼️  Found artist image, processing to binary format...`);
-                        await processAndStoreArtistImage(artistImageUrl, artistUrlKey, 200);
-                        console.log(`✅ Successfully processed and stored artist image binary data`);
-                        artistImageUrlExtracted = true;
-                    } catch (imageUpdateError) {
-                        console.error('Error processing/storing artist image:', imageUpdateError);
-                        // Fallback: store just the URL if binary processing fails
-                        try {
-                            await db.collection('artists').doc(artistUrlKey).update( {
+                        // IMMEDIATE UPDATE: Store the URL first for instant UI feedback
+                        await db.collection('artists').doc(artistUrlKey).update({
                             imageUrl: artistImageUrl
                         });
-                            console.log(`⚠️  Stored URL only due to processing error: ${artistImageUrl}`);
+                        console.log(`⚡ Immediately stored image URL for UI: ${artistImageUrl}`);
+                        
+                        // BACKGROUND PROCESSING: Process binary in background without blocking
+                        processAndStoreArtistImage(artistImageUrl, artistUrlKey, 200)
+                            .then(() => {
+                                console.log(`✅ Background: Successfully processed and stored artist image binary data`);
+                            })
+                            .catch(imageError => {
+                                console.error('Background image processing failed:', imageError);
+                                // URL is already stored, so this is not critical
+                            });
+                        
                         artistImageUrlExtracted = true;
-                        } catch (urlFallbackError) {
-                            console.error('Error storing artist image URL fallback:', urlFallbackError);
-                        }
+                    } catch (imageUpdateError) {
+                        console.error('Error storing artist image URL:', imageUpdateError);
                         // Don't fail the entire operation if image update fails
                     }
                 }
@@ -1253,13 +1255,34 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
         } catch (error) {
             console.error(`Error scraping song ${songId}:`, error);
             
+            // Enhanced error logging for debugging
+            const isPrimaryArtistMismatch = songData.primaryArtist && 
+                                          artistUrlKey && 
+                                          !songData.primaryArtist.name.toLowerCase().includes(artistUrlKey.toLowerCase().replace(/-/g, ' '));
+            
+            console.error(`Enhanced error details for song ${songId}:`, {
+                title: songData?.title,
+                primaryArtist: songData?.primaryArtist?.name,
+                artistUrlKey: artistUrlKey,
+                url: songData?.url,
+                isPrimaryArtistMismatch: isPrimaryArtistMismatch,
+                errorMessage: error.message
+            });
+            
             // Update song document with error
             await db.collection('songs').doc(songId).update( {
                 scrapingStatus: 'failed',
-                scrapingError: error.message
+                scrapingError: error.message,
+                scrapingAttempts: FieldValue.increment(1)
             });
             
-            results.failed.push({ songId, error: error.message });
+            results.failed.push({ 
+                songId, 
+                error: error.message,
+                songTitle: songData?.title,
+                primaryArtist: songData?.primaryArtist?.name,
+                isPrimaryArtistMismatch: isPrimaryArtistMismatch
+            });
         }
         
         // Small delay between songs

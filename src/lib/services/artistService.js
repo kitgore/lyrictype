@@ -162,8 +162,24 @@ export async function loadArtistForQueue(artist) {
             throw new Error('No song IDs available for artist');
         }
         
-        const firstSongId = songIds[0];
-        // Request only the first song initially so lyrics can show immediately
+        // Find the first song with lyrics if possible, otherwise use first song
+        const cachedSongIds = artistData.cachedSongIds || [];
+        let firstSongId = songIds[0];
+        let firstSongIndex = 0;
+        
+        // Try to find first cached song for better UX
+        if (cachedSongIds.length > 0) {
+            for (let i = 0; i < Math.min(songIds.length, 5); i++) { // Check first 5 songs
+                if (cachedSongIds.includes(songIds[i])) {
+                    firstSongId = songIds[i];
+                    firstSongIndex = i;
+                    console.log(`🎯 Using cached song at position ${i} as first song`);
+                    break;
+                }
+            }
+        }
+        
+        // Request the first song (preferably cached) so lyrics can show immediately
         const initialLoadResult = await loadSongsFromPosition(firstSongId, false, resolvedUrlKey, 1);
         
         // Extract first song from loaded songs
@@ -185,7 +201,7 @@ export async function loadArtistForQueue(artist) {
             songId: firstSong.id,
             primaryArtist: firstSong.primaryArtist?.name || artistData.name,
             artistImg: artist.imageUrl || '',
-            songIndex: 0 // Position in queue
+            songIndex: firstSongIndex // Position in queue
         };
 
         // Also transform any additional songs that were loaded by the backend call
@@ -208,9 +224,18 @@ export async function loadArtistForQueue(artist) {
         }
 
         // Background: kick off loading of the rest of the initial window (e.g., next 9)
-        // Defer to next macrotask so the first song render isn't delayed by Promise scheduling.
+        // This will help populate the queue faster for new artists
         setTimeout(() => {
-            loadSongsFromPosition(firstSongId, false, resolvedUrlKey, 10).catch(() => {});
+            console.log('🔄 Background loading initial song window for new artist...');
+            loadSongsFromPosition(firstSongId, false, resolvedUrlKey, 10)
+                .then(backgroundResult => {
+                    if (backgroundResult.loadedSongs) {
+                        console.log(`✅ Background loaded ${Object.keys(backgroundResult.loadedSongs).length} additional songs`);
+                    }
+                })
+                .catch(error => {
+                    console.warn('Background loading failed:', error);
+                });
         }, 0);
         
         return {

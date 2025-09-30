@@ -34,7 +34,8 @@
     "js-cookie": "^3.0.5",
     "normalize-text": "^2.6.0",
     "pako": "^2.1.0",
-    "textfit": "^2.4.0"
+    "textfit": "^2.4.0",
+    "unidecode": "^1.1.0"
   },
   "engines": {
     "node": ">=18"

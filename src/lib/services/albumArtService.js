@@ -159,7 +159,8 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
         return { ...result, cached: false };
         
     } catch (error) {
-        console.error('Error getting album art binary image:', error);
+        console.error(`❌ Error getting album art for ${songArtImageUrl}:`, error);
+        console.error(`🔍 Debug info:`, { albumArtId: extractGeniusImageHash(songArtImageUrl), imageUrl: songArtImageUrl });
         return {
             success: false,
             error: error.message,
@@ -195,7 +196,14 @@ async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
         });
         
         if (!response.ok) {
-            throw new Error(`Processing failed: ${response.status}`);
+            const errorText = await response.text();
+            console.error(`Firebase function error for album art ${albumArtId}:`, {
+                status: response.status,
+                statusText: response.statusText,
+                error: errorText,
+                imageUrl: imageUrl
+            });
+            throw new Error(`Processing failed: ${response.status} - ${errorText}`);
         }
         
         const result = await response.json();
@@ -218,7 +226,8 @@ async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
         };
         
     } catch (error) {
-        console.error('Error processing album art to grayscale:', error);
+        console.error(`❌ Error processing album art to grayscale for ${albumArtId}:`, error);
+        console.error(`🔍 Failed image URL:`, imageUrl);
         throw error;
     }
 }
