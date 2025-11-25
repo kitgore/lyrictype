@@ -152,7 +152,10 @@
   }
 
   function initWebGL() {
-    if (!canvas || !grayscaleData) return false;
+    if (!canvas || !grayscaleData) {
+      console.warn('⚠️ initWebGL skipped:', { hasCanvas: !!canvas, hasGrayscaleData: !!grayscaleData, hasRawBytes: !!rawGrayscaleBytes });
+      return false;
+    }
 
     try {
       gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -227,7 +230,14 @@
       }
 
       isInitialized = true;
-      console.log('✅ WebGL two-pass grayscale image renderer initialized');
+      console.log('✅ WebGL two-pass grayscale image renderer initialized', {
+        hasGl: !!gl,
+        hasProgram: !!program,
+        hasDownsampleProgram: !!downsampleProgram,
+        hasTexture: !!texture,
+        hasFramebuffer: !!framebuffer,
+        hasFramebufferTexture: !!framebufferTexture
+      });
       return true;
 
     } catch (error) {
@@ -237,7 +247,10 @@
   }
 
   function createGrayscaleTexture() {
-    if (!gl || !program || !grayscaleData) return;
+    if (!gl || !program || !grayscaleData) {
+      console.warn('⚠️ createGrayscaleTexture skipped:', { hasGl: !!gl, hasProgram: !!program, hasGrayscaleData: !!grayscaleData });
+      return;
+    }
 
     try {
       // Use raw bytes if available, otherwise convert from base64
@@ -258,6 +271,36 @@
       texture = gl.createTexture();
       gl.bindTexture(gl.TEXTURE_2D, texture);
 
+      // Validate data size BEFORE uploading to WebGL
+      const expectedSize = width * height;
+      const actualSize = luminanceData.length;
+      
+      console.log(`📊 Texture data validation:`, {
+        width,
+        height,
+        expectedSize,
+        actualSize,
+        match: expectedSize === actualSize
+      });
+      
+      if (actualSize !== expectedSize) {
+        console.error(`❌ DATA SIZE MISMATCH! Expected ${expectedSize} bytes, got ${actualSize} bytes`);
+        console.error(`This will cause WebGL texImage2D to fail!`);
+        
+        // Try to recover: pad or trim the data
+        if (actualSize < expectedSize) {
+          console.warn(`⚠️ Padding data from ${actualSize} to ${expectedSize} bytes with zeros`);
+          const paddedData = new Uint8Array(expectedSize);
+          paddedData.set(luminanceData);
+          // Fill remaining with middle gray (128) instead of black (0)
+          paddedData.fill(128, actualSize);
+          luminanceData = paddedData;
+        } else {
+          console.warn(`⚠️ Trimming data from ${actualSize} to ${expectedSize} bytes`);
+          luminanceData = luminanceData.slice(0, expectedSize);
+        }
+      }
+      
       // Upload luminance data directly
       gl.texImage2D(
         gl.TEXTURE_2D, 
@@ -277,7 +320,12 @@
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
 
-      console.log(`🖼️  Created grayscale texture: ${width}x${height}`);
+      console.log(`🖼️  Created grayscale texture: ${width}x${height} (${luminanceData.length} bytes)`);
+      
+      // Sample some values from the texture to verify
+      console.log(`🔍 First 20 luminance values:`, Array.from(luminanceData.slice(0, 20)));
+      console.log(`🔍 Middle 20 luminance values:`, Array.from(luminanceData.slice(Math.floor(luminanceData.length / 2), Math.floor(luminanceData.length / 2) + 20)));
+      console.log(`🔍 Last 20 luminance values:`, Array.from(luminanceData.slice(-20)));
 
     } catch (error) {
       console.error('Error creating grayscale texture:', error);
@@ -403,7 +451,18 @@
   }
 
   function render() {
-    if (!gl || !program || !downsampleProgram || !texture || !framebuffer || !framebufferTexture || !isInitialized) return;
+    if (!gl || !program || !downsampleProgram || !texture || !framebuffer || !framebufferTexture || !isInitialized) {
+      console.warn('❌ Render skipped - missing WebGL objects:', {
+        hasGl: !!gl,
+        hasProgram: !!program,
+        hasDownsampleProgram: !!downsampleProgram,
+        hasTexture: !!texture,
+        hasFramebuffer: !!framebuffer,
+        hasFramebufferTexture: !!framebufferTexture,
+        isInitialized
+      });
+      return;
+    }
 
     // ========== PASS 1: Render to framebuffer at 4x resolution ==========
     

@@ -39,7 +39,7 @@ function decompressGrayscaleData(compressedBase64) {
  */
 export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
     try {
-        console.log(`🔍 Looking for grayscale image data for artist: ${artistUrlKey}`);
+        console.log(`🔍 [binaryImageService] Looking for grayscale image data for artist: ${artistUrlKey}, imageUrl: ${imageUrl?.substring(0, 50)}...`);
         
         // First, check if we already have grayscale data stored
         const artistRef = doc(db, 'artists', artistUrlKey);
@@ -50,7 +50,8 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
             
             // Check if we have grayscale image data (new format)
             if (artistData.grayscaleImageData && artistData.imageWidth && artistData.imageHeight) {
-                console.log(`✅ Found cached grayscale image data for ${artistUrlKey} (${artistData.imageWidth}x${artistData.imageHeight})`);
+                console.log(`✅ [binaryImageService] Found cached grayscale image data for ${artistUrlKey} (${artistData.imageWidth}x${artistData.imageHeight})`);
+                console.log(`🔗 [binaryImageService] Cached image URL: ${artistData.originalImageUrl?.substring(0, 50)}...`);
                 
                 // Check if this is compressed data 
                 const isCompressed = artistData.processingVersion === '2.0-grayscale' || artistData.compressionMethod === 'pako-deflate';
@@ -61,7 +62,7 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
                     grayscaleData = decompressGrayscaleData(artistData.grayscaleImageData);
                 }
                 
-                return {
+                const result = {
                     success: true,
                     cached: true,
                     grayscaleData: grayscaleData,
@@ -83,6 +84,9 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
                         compressionMethod: artistData.compressionMethod
                     }
                 };
+                
+                console.log(`🎯 [binaryImageService] Returning cached result for ${artistUrlKey}`);
+                return result;
             }
             
             // Check for legacy binary data and suggest reprocessing
@@ -110,15 +114,17 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
         console.log(`❌ No image data available for artist: ${artistUrlKey}`);
         return {
             success: false,
-            error: 'No image data available',
+            error: 'No image data available - imageUrl may be missing or invalid',
             cached: false
         };
         
     } catch (error) {
         console.error('Error getting artist binary image:', error);
+        // Provide more detailed error message
+        const errorMessage = error.message || 'Unknown error occurred';
         return {
             success: false,
-            error: error.message,
+            error: errorMessage,
             cached: false
         };
     }
@@ -133,28 +139,63 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         console.log(`⚡ Processing image to grayscale format...`);
         const startTime = Date.now();
         
+        // Validate imageUrl before attempting to process
+        if (!imageUrl || typeof imageUrl !== 'string' || imageUrl.trim().length === 0) {
+            throw new Error('Invalid imageUrl: URL is empty or invalid');
+        }
+        
+        // Check if URL is valid format
+        try {
+            new URL(imageUrl);
+        } catch (urlError) {
+            throw new Error(`Invalid imageUrl format: ${imageUrl}`);
+        }
+        
         // Call our optimized Firebase Function (auto-detects environment)
         const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
             ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
             : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
             
-        const response = await fetch(functionUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                url: imageUrl,
-                artistKey: artistUrlKey
-                // No size parameter - using native resolution
-            })
-        });
+        // Add timeout to fetch request
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+        
+        let response;
+        try {
+            response = await fetch(functionUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    url: imageUrl,
+                    artistKey: artistUrlKey
+                    // No size parameter - using native resolution
+                }),
+                signal: controller.signal
+            });
+        } catch (fetchError) {
+            clearTimeout(timeoutId);
+            if (fetchError.name === 'AbortError') {
+                throw new Error('Image processing timeout: Request took longer than 15 seconds');
+            }
+            throw new Error(`Network error: ${fetchError.message}`);
+        } finally {
+            clearTimeout(timeoutId);
+        }
         
         if (!response.ok) {
-            throw new Error(`Processing failed: ${response.status}`);
+            const errorText = await response.text().catch(() => 'Unknown error');
+            throw new Error(`Processing failed (${response.status}): ${errorText}`);
         }
         
         const result = await response.json();
+        
+        // Check if result indicates an error
+        if (!result.success) {
+            throw new Error(result.error || 'Image processing failed');
+        }
+        
         const processingTime = Date.now() - startTime;
         
         console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
@@ -175,7 +216,8 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         
     } catch (error) {
         console.error('Error processing artist image to grayscale:', error);
-        throw error;
+        // Re-throw with more context
+        throw new Error(`Failed to process image: ${error.message}`);
     }
 }
 

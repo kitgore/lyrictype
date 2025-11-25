@@ -117,98 +117,100 @@ function analyzeGrayscaleData(grayscaleData, width, height) {
 /**
  * Process artist image to binary format and store in database
  * Fast response - client gets binary data ASAP
+ * Now includes retry logic for unsupported image formats
  */
 async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
-    try {
-        console.log(`🚀 Processing artist image at native resolution: ${imageUrl}`);
-        const startTime = Date.now();
+    const startTime = Date.now();
+    let lastError = null;
+    
+    // Try original URL first, then alternative formats
+    const urlsToTry = [imageUrl];
+    
+    // Add alternative format if original might be problematic
+    const altUrl = tryAlternativeImageFormat(imageUrl);
+    if (altUrl !== imageUrl) {
+        urlsToTry.push(altUrl);
+    }
+    
+    // Also try without size specification for backup
+    const simpleUrl = imageUrl.replace(/\.\d+x\d+x?\d*\./g, '.');
+    if (simpleUrl !== imageUrl && !urlsToTry.includes(simpleUrl)) {
+        urlsToTry.push(simpleUrl);
+    }
+    
+    for (let i = 0; i < urlsToTry.length; i++) {
+        const currentUrl = urlsToTry[i];
         
-        // Fetch the image
-        const imageResponse = await fetchWithTimeout(imageUrl, { timeout: 8000 });
-        if (!imageResponse.ok) {
-            throw new Error(`Failed to fetch image: ${imageResponse.status}`);
-        }
-        
-        const imageBuffer = await imageResponse.arrayBuffer();
-        console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
-
-        // Process with canvas at native resolution
-        const { createCanvas, loadImage } = await import('canvas');
-        const img = await loadImage(Buffer.from(imageBuffer));
-        
-        // Use native image dimensions
-        const nativeWidth = img.naturalWidth || img.width;
-        const nativeHeight = img.naturalHeight || img.height;
-        
-        console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
-        
-        // Create canvas with native size
-        const canvas = createCanvas(nativeWidth, nativeHeight);
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
-        
-        const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
-        
-        // Convert to 8-bit grayscale
-        const grayscaleData = convertToGrayscale(imageData);
-        const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
-        
-        console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
-        
-        // Compress with Pako
-        const compressedData = pako.deflate(grayscaleData);
-        console.log(`🗜️  Pako compressed: ${grayscaleData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1)}% reduction)`);
-        
-        // Store in artist document
-        const base64Grayscale = Buffer.from(compressedData).toString('base64');
-        const imageMetadata = {
-            grayscaleImageData: base64Grayscale,
-            imageWidth: nativeWidth,
-            imageHeight: nativeHeight,
-            originalImageUrl: imageUrl,
-            originalSize: imageBuffer.byteLength,
-            grayscaleSize: analysis.totalBytes,
-            compressedSize: compressedData.length,
-            base64Size: base64Grayscale.length,
-            compressionRatio: analysis.compressionRatio,
-            pakoCompressionRatio: compressedData.length / grayscaleData.length,
-            totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
-            averageBrightness: analysis.averageBrightness,
-            darkPercent: analysis.darkPercent,
-            lightPercent: analysis.lightPercent,
-            processedAt: new Date(),
-            processingVersion: '2.0-grayscale',
-            compressionMethod: 'pako-deflate'
-        };
-        
-        // Update or create artist document with binary data
         try {
-            await db.collection('artists').doc(artistUrlKey).update({
-                imageUrl: imageUrl,
-                ...imageMetadata
-            });
-        } catch (updateError) {
-            if (updateError.code === 'not-found') {
-                // Document doesn't exist, create it
-                console.log(`📝 Creating new artist document: ${artistUrlKey}`);
-                await db.collection('artists').doc(artistUrlKey).set({
-                    imageUrl: imageUrl,
-                    ...imageMetadata,
-                    createdAt: new Date()
-                });
-            } else {
-                throw updateError;
+            console.log(`🚀 Processing artist image at native resolution: ${currentUrl}${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
+            
+            // Fetch the image with proper headers to avoid 403 errors
+            console.log(`📡 CODE VERSION: v2.0 - Fetching with headers to avoid 403...`);
+            console.log(`📡 URL: ${currentUrl}`);
+            
+            const fetchOptions = { 
+                timeout: 8000,
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                    'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Referer': 'https://genius.com/',
+                    'Origin': 'https://genius.com',
+                    'Sec-Fetch-Dest': 'image',
+                    'Sec-Fetch-Mode': 'no-cors',
+                    'Sec-Fetch-Site': 'same-site'
+                }
+            };
+            
+            console.log(`📡 Headers being sent:`, JSON.stringify(fetchOptions.headers, null, 2));
+            
+            const imageResponse = await fetchWithTimeout(currentUrl, fetchOptions);
+            
+            console.log(`📡 Response: ${imageResponse.status} ${imageResponse.statusText}`);
+            
+            if (!imageResponse.ok) {
+                throw new Error(`Failed to fetch image: ${imageResponse.status} ${imageResponse.statusText}`);
             }
-        }
-        
-        console.log(`💾 Stored binary data for artist ${artistUrlKey} in ${Date.now() - startTime}ms total`);
-        
-        return {
-            success: true,
-            grayscaleData: base64Grayscale,
-            metadata: {
-                width: nativeWidth,
-                height: nativeHeight,
+            
+            const imageBuffer = await imageResponse.arrayBuffer();
+            console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
+
+            // Process with canvas at native resolution
+            const { createCanvas, loadImage } = await import('canvas');
+            const img = await loadImage(Buffer.from(imageBuffer));
+            
+            // Use native image dimensions
+            const nativeWidth = img.naturalWidth || img.width;
+            const nativeHeight = img.naturalHeight || img.height;
+            
+            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
+            
+            // Create canvas with native size
+            const canvas = createCanvas(nativeWidth, nativeHeight);
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
+            
+            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
+            
+            // Convert to 8-bit grayscale
+            const grayscaleData = convertToGrayscale(imageData);
+            const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
+            
+            console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
+            
+            // Compress with Pako
+            const compressedData = pako.deflate(grayscaleData);
+            console.log(`🗜️  Pako compressed: ${grayscaleData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1)}% reduction)`);
+            
+            // Store in artist document
+            const base64Grayscale = Buffer.from(compressedData).toString('base64');
+            const imageMetadata = {
+                grayscaleImageData: base64Grayscale,
+                imageWidth: nativeWidth,
+                imageHeight: nativeHeight,
+                originalImageUrl: imageUrl, // Store original URL for reference
+                processedImageUrl: currentUrl, // Store URL that actually worked
                 originalSize: imageBuffer.byteLength,
                 grayscaleSize: analysis.totalBytes,
                 compressedSize: compressedData.length,
@@ -216,21 +218,85 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
                 compressionRatio: analysis.compressionRatio,
                 pakoCompressionRatio: compressedData.length / grayscaleData.length,
                 totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
-                compressionPercent: analysis.compressionPercent,
-                pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
-                totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
                 averageBrightness: analysis.averageBrightness,
                 darkPercent: analysis.darkPercent,
                 lightPercent: analysis.lightPercent,
-                processingTimeMs: Date.now() - startTime,
+                processedAt: new Date(),
+                processingVersion: '2.0-grayscale',
                 compressionMethod: 'pako-deflate'
+            };
+            
+            // Update or create artist document with binary data
+            // Skip database writes for test-standalone to avoid errors
+            if (artistUrlKey !== 'test-standalone') {
+                try {
+                    await db.collection('artists').doc(artistUrlKey).update({
+                        imageUrl: imageUrl,
+                        ...imageMetadata
+                    });
+                } catch (updateError) {
+                    if (updateError.code === 'not-found' || updateError.code === 5) {
+                        // Document doesn't exist, create it
+                        console.log(`📝 Creating new artist document: ${artistUrlKey}`);
+                        await db.collection('artists').doc(artistUrlKey).set({
+                            imageUrl: imageUrl,
+                            ...imageMetadata,
+                            createdAt: new Date()
+                        });
+                    } else {
+                        throw updateError;
+                    }
+                }
+                console.log(`💾 Stored binary data for artist ${artistUrlKey} in ${Date.now() - startTime}ms total${i > 0 ? ` (used fallback URL)` : ''}`);
+            } else {
+                console.log(`🧪 Test mode: Skipping database write for ${artistUrlKey}`);
             }
-        };
-        
-    } catch (error) {
-        console.error(`❌ Error processing artist image:`, error);
-        throw error;
+            
+            return {
+                success: true,
+                grayscaleData: base64Grayscale,
+                metadata: {
+                    width: nativeWidth,
+                    height: nativeHeight,
+                    originalSize: imageBuffer.byteLength,
+                    grayscaleSize: analysis.totalBytes,
+                    compressedSize: compressedData.length,
+                    base64Size: base64Grayscale.length,
+                    compressionRatio: analysis.compressionRatio,
+                    pakoCompressionRatio: compressedData.length / grayscaleData.length,
+                    totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
+                    compressionPercent: analysis.compressionPercent,
+                    pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
+                    totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
+                    averageBrightness: analysis.averageBrightness,
+                    darkPercent: analysis.darkPercent,
+                    lightPercent: analysis.lightPercent,
+                    processingTimeMs: Date.now() - startTime,
+                    compressionMethod: 'pako-deflate',
+                    usedFallbackUrl: i > 0
+                }
+            };
+            
+        } catch (error) {
+            lastError = error;
+            const isUnsupportedFormat = error.message.includes('Unsupported image type');
+            const isLastAttempt = i === urlsToTry.length - 1;
+            
+            if (isUnsupportedFormat && !isLastAttempt) {
+                console.log(`⚠️  Format not supported for ${currentUrl}, trying alternative...`);
+                continue; // Try next URL
+            } else if (isLastAttempt) {
+                console.error(`❌ Error processing artist image ${artistUrlKey} (all ${urlsToTry.length} URLs failed):`, error.message);
+                break; // Give up after all attempts
+            } else {
+                console.log(`⚠️  Error with ${currentUrl}, trying alternative:`, error.message);
+                continue; // Try next URL
+            }
+        }
     }
+    
+    // If we get here, all attempts failed
+    throw lastError || new Error('All image format attempts failed');
 }
 
 // Fast Artist Image Processing - prioritizes speed for client response
@@ -331,8 +397,15 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
         try {
             console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Fetch the image
-            const imageResponse = await fetchWithTimeout(currentUrl, { timeout: 8000 });
+            // Fetch the image with proper headers to avoid 403 errors
+            const imageResponse = await fetchWithTimeout(currentUrl, { 
+                timeout: 8000,
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                    'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+                    'Referer': 'https://genius.com/'
+                }
+            });
             if (!imageResponse.ok) {
                 throw new Error(`Failed to fetch image: ${imageResponse.status}`);
             }
@@ -513,8 +586,15 @@ export const processImageBinary = onRequest({
     try {
         console.log(`🎨 Processing image: ${imageUrl} (size: ${targetSize}, binary: ${returnBinary})`);
         
-        // Fetch the image
-        const imageResponse = await fetchWithTimeout(imageUrl, { timeout: 10000 });
+        // Fetch the image with proper headers to avoid 403 errors
+        const imageResponse = await fetchWithTimeout(imageUrl, { 
+            timeout: 10000,
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+                'Referer': 'https://genius.com/'
+            }
+        });
         if (!imageResponse.ok) {
             throw new Error(`Failed to fetch image: ${imageResponse.status}`);
         }
@@ -1169,6 +1249,25 @@ export const populateArtistSongs = onCall({
 });
 
 /**
+ * Helper function to remove a song from artist's cachedSongIds array
+ * @param {string} artistUrlKey - Artist document ID
+ * @param {string} songId - Song ID to remove
+ */
+async function removeSongFromCachedList(artistUrlKey, songId) {
+    try {
+        console.log(`🗑️ Removing song ${songId} from ${artistUrlKey}'s cached songs list`);
+        await db.collection('artists').doc(artistUrlKey).update({
+            cachedSongIds: FieldValue.arrayRemove(songId),
+            lyricsScraped: FieldValue.increment(-1)
+        });
+        console.log(`✅ Successfully removed song ${songId} from cached list`);
+    } catch (error) {
+        console.error(`❌ Error removing song ${songId} from cached list:`, error);
+        // Don't throw - this is a cleanup operation
+    }
+}
+
+/**
  * Core logic for scraping song lyrics (without Firebase Functions wrapper)
  * @param {string[]} songIds - Array of song IDs to scrape
  * @param {string} artistUrlKey - Artist document ID
@@ -1196,18 +1295,39 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
             
             const songData = songDoc.data();
             
-            // Skip if already has lyrics or failed permanently
-            if (songData.lyrics || songData.scrapingStatus === 'failed') {
-                console.log(`Skipping song ${songId}: already processed`);
+            // Check if lyrics are valid (not null, not empty, has meaningful content)
+            const hasValidLyrics = songData.lyrics && 
+                                  songData.lyrics.trim().length > 0 && 
+                                  songData.lyrics !== 'null' &&
+                                  songData.lyrics !== 'undefined';
+            
+            // Skip if already has valid lyrics AND not in a failed state
+            if (hasValidLyrics && songData.scrapingStatus !== 'failed') {
+                console.log(`Skipping song ${songId}: already has valid lyrics`);
                 results.skipped.push(songId);
                 continue;
             }
             
-            // Check retry limit
-            if (songData.scrapingAttempts >= 2) {
-                console.log(`Skipping song ${songId}: max retries exceeded`);
-                results.failed.push({ songId, error: 'Max retries exceeded' });
+            // Check retry limit - if exceeded, mark as permanently failed and remove from cache
+            if (songData.scrapingAttempts >= 3) {
+                console.log(`⚠️ Song ${songId} exceeded max retries, removing from cached list`);
+                
+                // Update song to permanently failed status
+                await db.collection('songs').doc(songId).update({
+                    scrapingStatus: 'permanently_failed',
+                    scrapingError: 'Max retry attempts exceeded'
+                });
+                
+                // Remove from artist's cached songs list
+                await removeSongFromCachedList(artistUrlKey, songId);
+                
+                results.failed.push({ songId, error: 'Max retries exceeded', permanentlyFailed: true });
                 continue;
+            }
+            
+            // If song had null/invalid lyrics, log that we're attempting to fix it
+            if (!hasValidLyrics && songData.lyrics !== undefined) {
+                console.log(`🔄 Song ${songId} has null/invalid lyrics, attempting to rescrape`);
             }
             
             // Update status to 'scraping'
@@ -1255,6 +1375,11 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
         } catch (error) {
             console.error(`Error scraping song ${songId}:`, error);
             
+            // Get current song data to check retry count
+            const songDoc = await db.collection('songs').doc(songId).get();
+            const songData = songDoc.exists ? songDoc.data() : {};
+            const currentAttempts = (songData.scrapingAttempts || 0) + 1;
+            
             // Enhanced error logging for debugging
             const isPrimaryArtistMismatch = songData.primaryArtist && 
                                           artistUrlKey && 
@@ -1265,24 +1390,49 @@ async function scrapeSongLyricsCore(songIds, artistUrlKey) {
                 primaryArtist: songData?.primaryArtist?.name,
                 artistUrlKey: artistUrlKey,
                 url: songData?.url,
+                attempts: currentAttempts,
                 isPrimaryArtistMismatch: isPrimaryArtistMismatch,
                 errorMessage: error.message
             });
             
-            // Update song document with error
-            await db.collection('songs').doc(songId).update( {
-                scrapingStatus: 'failed',
-                scrapingError: error.message,
-                scrapingAttempts: FieldValue.increment(1)
-            });
-            
-            results.failed.push({ 
-                songId, 
-                error: error.message,
-                songTitle: songData?.title,
-                primaryArtist: songData?.primaryArtist?.name,
-                isPrimaryArtistMismatch: isPrimaryArtistMismatch
-            });
+            // If this was the final attempt, mark as permanently failed and remove from cache
+            if (currentAttempts >= 3) {
+                console.log(`⚠️ Song ${songId} failed after ${currentAttempts} attempts, removing from cached list`);
+                
+                await db.collection('songs').doc(songId).update({
+                    scrapingStatus: 'permanently_failed',
+                    scrapingError: error.message,
+                    scrapingAttempts: currentAttempts
+                });
+                
+                // Remove from artist's cached songs list
+                await removeSongFromCachedList(artistUrlKey, songId);
+                
+                results.failed.push({ 
+                    songId, 
+                    error: error.message,
+                    songTitle: songData?.title,
+                    primaryArtist: songData?.primaryArtist?.name,
+                    isPrimaryArtistMismatch: isPrimaryArtistMismatch,
+                    permanentlyFailed: true
+                });
+            } else {
+                // Update song document with error but allow retry
+                await db.collection('songs').doc(songId).update({
+                    scrapingStatus: 'failed',
+                    scrapingError: error.message,
+                    scrapingAttempts: currentAttempts
+                });
+                
+                results.failed.push({ 
+                    songId, 
+                    error: error.message,
+                    songTitle: songData?.title,
+                    primaryArtist: songData?.primaryArtist?.name,
+                    isPrimaryArtistMismatch: isPrimaryArtistMismatch,
+                    canRetry: true
+                });
+            }
         }
         
         // Small delay between songs

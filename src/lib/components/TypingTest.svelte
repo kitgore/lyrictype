@@ -74,13 +74,11 @@
     $: buttonSize = windowHeight * 0.06;
 
     // Reactive statements for NEW queue functionality
-    let queueStatus = queueManager.getQueueStatus();
+    // Update queue status reactively whenever queue songs or index change
+    $: queueStatus = ($queueSongs && $queueIndex !== undefined) ? queueManager.getQueueStatus() : { canGoPrevious: false, canGoNext: false, totalSongs: 0, currentIndex: 0 };
     $: canGoPrevious = queueStatus.canGoPrevious;
     $: canGoNext = queueStatus.canGoNext;
     $: futureSongsCount = Math.min(5, queueStatus.totalSongs - queueStatus.currentIndex - 1);
-    
-    // Update queue status reactively whenever queue songs or index change
-    $: queueStatus = ($queueSongs, $queueIndex, queueManager.getQueueStatus());
 
     function handleKeydown(event) {
         if (event.key === 'Enter') {
@@ -94,6 +92,7 @@
     async function handleArtistSelected(event) {
         const artist = event.detail;
         console.log('🎵 Artist selected (NEW SYSTEM):', artist);
+        console.log('🔍 Artist details - geniusId:', artist.geniusId, 'name:', artist.name, 'imageUrl:', artist.imageUrl);
         
         // Close queue display when new artist is selected
         showQueue = false;
@@ -119,18 +118,24 @@
             
             // Get the updated artist info (including newly extracted imageUrl) after song population
             // Use a delayed check to allow background image extraction to complete
+            // IMPORTANT: Capture urlKey now so it doesn't change during async operations
+            const capturedUrlKey = queueManager.artistUrlKey;
+            const capturedArtistId = artist.geniusId;
+            const capturedArtistName = artist.name;
+            
             const checkForUpdatedImageUrl = async (attempt = 1, maxAttempts = 5) => {
                 try {
                     const { getArtistInfo } = await import('$lib/services/artistService');
                     // Always bypass cache for fresh data
                     const bypassCache = true;
-                    const updatedArtistInfo = await getArtistInfo(queueManager.artistUrlKey, bypassCache);
+                    const updatedArtistInfo = await getArtistInfo(capturedUrlKey, bypassCache);
                     
                     console.log(`🔍 Attempt ${attempt} ${bypassCache ? '(bypassing cache)' : ''} - Retrieved artist info:`, {
                         name: updatedArtistInfo?.name,
                         imageUrl: updatedArtistInfo?.imageUrl,
                         originalImageUrl: artist.imageUrl,
-                        urlKey: queueManager.artistUrlKey
+                        capturedUrlKey: capturedUrlKey,
+                        currentUrlKey: queueManager.artistUrlKey
                     });
                     
                     // Check if we found a new imageUrl (comparing against null/undefined original)
@@ -140,20 +145,30 @@
                                           updatedArtistInfo.imageUrl !== undefined;
                     
                     if (hasNewImageUrl) {
-                        console.log(`🖼️ Found updated imageUrl (attempt ${attempt}):`, updatedArtistInfo.imageUrl);
+                        console.log(`🖼️ Found updated imageUrl (attempt ${attempt}):`, updatedArtistInfo.imageUrl.substring(0, 50));
+                        console.log(`🔍 About to update artist "${capturedArtistName}" with:`, {
+                            artistId: capturedArtistId,
+                            urlKey: capturedUrlKey,
+                            currentQueueUrlKey: queueManager.artistUrlKey
+                        });
+                        console.log('📋 Current list before image update:', $recentArtists.map(a => a.name));
                         
                         // Remove from loading set since we found the image
-                        loadingImageArtists.delete(artist.geniusId);
+                        loadingImageArtists.delete(capturedArtistId);
                         loadingImageArtists = loadingImageArtists; // Trigger reactivity
                         
                         // Update the recent artist with the newly extracted imageUrl
+                        // USE CAPTURED VALUES to avoid race conditions
+                        console.log('📞 Calling setNewRecentArtist with updated imageUrl (using captured urlKey)');
                         setNewRecentArtist({
-                            name: artist.name, 
+                            name: capturedArtistName, 
                             imageUrl: updatedArtistInfo.imageUrl,
-                            artistId: artist.geniusId,
-                            urlKey: queueManager.artistUrlKey,
+                            artistId: capturedArtistId,
+                            urlKey: capturedUrlKey, // Use captured value, not current queueManager value!
                             songQueue: {}
                         });
+                        
+                        console.log('✅ After image update, list:', $recentArtists.map(a => a.name));
                         return true; // Success
                     } else if (attempt < maxAttempts) {
                         // Try again if we haven't reached max attempts
@@ -162,10 +177,28 @@
                     } else {
                         console.log('🖼️ No new imageUrl found after all attempts');
                         console.log('Final check - imageUrl in DB:', updatedArtistInfo?.imageUrl);
+                        console.log('⚠️ Artist will remain in list without image:', capturedArtistName);
                         
                         // Remove from loading set since we're done trying
-                        loadingImageArtists.delete(artist.geniusId);
+                        loadingImageArtists.delete(capturedArtistId);
                         loadingImageArtists = loadingImageArtists; // Trigger reactivity
+                        
+                        // Ensure artist is still in the list (shouldn't need this but being defensive)
+                        const artistInList = $recentArtists.find(a => 
+                            (a.artistId && a.artistId === capturedArtistId) || 
+                            (a.urlKey && a.urlKey === capturedUrlKey) ||
+                            (a.name && a.name === capturedArtistName)
+                        );
+                        if (!artistInList) {
+                            console.error('🚨 Artist missing from list after imageUrl check failed! Re-adding:', capturedArtistName);
+                            setNewRecentArtist({
+                                name: capturedArtistName,
+                                imageUrl: null,
+                                artistId: capturedArtistId,
+                                urlKey: capturedUrlKey, // Use captured value!
+                                songQueue: {}
+                            });
+                        }
                     }
                 } catch (imageUpdateError) {
                     console.warn(`Could not fetch updated artist imageUrl (attempt ${attempt}):`, imageUpdateError);
@@ -179,23 +212,33 @@
             // Set initial recent artist data immediately (without waiting for imageUrl)
             // Mark this artist as loading an image if they don't have one yet
             if (!artist.imageUrl) {
+                console.log('📸 Artist has no imageUrl, marking as loading:', artist.name);
                 loadingImageArtists.add(artist.geniusId);
                 loadingImageArtists = loadingImageArtists; // Trigger reactivity
             }
             
+            console.log('📞 Calling setNewRecentArtist with initial artist data');
+            console.log('🔍 Initial artist data:', {
+                name: artist.name,
+                artistId: artist.geniusId, 
+                imageUrl: artist.imageUrl, 
+                urlKey: queueManager.artistUrlKey,
+                hasImage: !!artist.imageUrl
+            });
+            
             setNewRecentArtist({
                 name: artist.name, 
-                imageUrl: artist.imageUrl, // Use original for now
+                imageUrl: artist.imageUrl || null, // Use null instead of undefined
                 artistId: artist.geniusId,
                 urlKey: queueManager.artistUrlKey,
                 songQueue: {}
             });
-
-            // Update queue status for reactive UI updates
-            queueStatus = queueManager.getQueueStatus();
-            console.log('📊 Queue initialized:', queueStatus.totalSongs, 'songs,', queueStatus.cachedSongs, 'cached');
             
-            console.log(`📊 Queue initialized: ${queueStatus.totalSongs} songs, ${queueStatus.cachedSongs} cached`);
+            console.log('✅ After setNewRecentArtist, list length:', $recentArtists.length);
+            console.log('✅ First artist in list:', $recentArtists[0]?.name);
+
+            // Queue status will update reactively via $: statement
+            console.log(`📊 Queue initialized: ${queueManager.getQueueStatus().totalSongs} songs, ${queueManager.getQueueStatus().cachedSongs} cached`);
             
         } catch (error) {
             console.error('❌ Error loading artist (NEW SYSTEM):', error);
@@ -249,12 +292,28 @@
     }
 
     async function requeueArtist(artistId) {
-        const artist = $recentArtists.find(artist => artist.artistId === artistId);
-        if (!artist) return;
+        const artist = $recentArtists.find(a => a.artistId === artistId);
+        if (!artist) {
+            console.warn('⚠️ Artist not found in recent list:', artistId);
+            return;
+        }
         
-        console.log('🔄 Requeueing artist (NEW SYSTEM):', artist.name);
+        console.log('🔄 Requeueing artist (NEW SYSTEM):', artist.name, { artistId, urlKey: artist.urlKey });
+        console.log('📋 Current recentArtists before requeue:', $recentArtists.map(a => ({ name: a.name, artistId: a.artistId, urlKey: a.urlKey, imageUrl: a.imageUrl })));
         
-        recentArtists.set([artist, ...$recentArtists.filter(artist => artist.artistId !== artistId)]);
+        // Filter more robustly using both artistId and urlKey, with proper undefined handling
+        const filteredArtists = $recentArtists.filter(a => {
+            const matchesId = artistId && a.artistId && a.artistId === artistId;
+            const matchesKey = artist.urlKey && a.urlKey && a.urlKey === artist.urlKey;
+            const matchesName = artist.name && a.name && a.name === artist.name;
+            return !(matchesId || matchesKey || matchesName);
+        });
+        
+        const newList = [artist, ...filteredArtists];
+        
+        console.log('📋 New recentArtists after requeue:', newList.map(a => ({ name: a.name, artistId: a.artistId, urlKey: a.urlKey, imageUrl: a.imageUrl })));
+        
+        recentArtists.set(newList);
         displayedArtist = artist.name;
         showQueue = false; // Close queue display
         
@@ -262,21 +321,45 @@
             loading = true;
             lyrics = '';
             
+            // If artist doesn't have an imageUrl, try to fetch it from database
+            let artistImageUrl = artist.imageUrl;
+            if (!artistImageUrl || artistImageUrl === null || artistImageUrl === undefined) {
+                try {
+                    console.log('🖼️ Artist missing imageUrl, fetching from database...');
+                    const { getArtistInfo } = await import('$lib/services/artistService');
+                    const artistInfo = await getArtistInfo(artist.urlKey, true); // Bypass cache
+                    artistImageUrl = artistInfo?.imageUrl;
+                    console.log('🖼️ Retrieved imageUrl:', artistImageUrl);
+                    
+                    // Update recent artist with the imageUrl
+                    if (artistImageUrl) {
+                        setNewRecentArtist({
+                            name: artist.name,
+                            imageUrl: artistImageUrl,
+                            artistId: artist.artistId,
+                            urlKey: artist.urlKey,
+                            songQueue: artist.songQueue
+                        });
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Could not fetch artist imageUrl:', error);
+                }
+            }
+            
             // Use the new queue system
             const firstSong = await queueManager.initializeWithArtist({
                 name: artist.name,
                 geniusId: artist.artistId,
                 id: artist.urlKey || artist.name, // Use stored urlKey for Firestore doc id
                 urlKey: artist.urlKey,
-                imageUrl: artist.imageUrl
+                imageUrl: artistImageUrl
             });
             
             if (firstSong) {
                 currentSong = firstSong;
                 setDisplayFromDataWithoutQueue(firstSong);
                 
-                // Update queue status
-                queueStatus = queueManager.getQueueStatus();
+                // Queue status will update reactively via $: statement
                 
                 // Reset typing test
                 const restartEvent = new CustomEvent('restartTest', {
@@ -284,7 +367,7 @@
                 });
                 window.dispatchEvent(restartEvent);
                 
-                console.log(`✅ Artist requeued: ${queueStatus.totalSongs} songs available`);
+                console.log(`✅ Artist requeued: ${queueManager.getQueueStatus().totalSongs} songs available`);
             } else {
                 lyrics = "No songs found for this artist.";
             }
@@ -308,12 +391,64 @@
 
 
     function setNewRecentArtist({ name, imageUrl, seenSongs, artistId, songQueue, urlKey }){
+        console.log('🔧 setNewRecentArtist called:', { name, artistId, imageUrl, urlKey });
+        console.log('📋 Current recentArtists before update:', $recentArtists.map(a => ({ name: a.name, artistId: a.artistId, urlKey: a.urlKey, imageUrl: a.imageUrl?.substring(0, 30) })));
+        
         displayedArtist = name;
+        
+        // Filter out any existing entry with the same artist
+        // Match if ANY identifier matches (more lenient to catch all duplicates)
+        const filteredArtists = $recentArtists.filter(a => {
+            // Check each identifier separately - match if ANY match (even if one is undefined)
+            let matchReason = null;
+            
+            // Match by artistId if either has it and they're equal
+            if (artistId && a.artistId) {
+                if (a.artistId === artistId) {
+                    matchReason = 'artistId';
+                }
+            }
+            
+            // Match by urlKey if either has it and they're equal
+            if (!matchReason && urlKey && a.urlKey) {
+                if (a.urlKey === urlKey) {
+                    matchReason = 'urlKey';
+                }
+            }
+            
+            // Match by name as last resort (case-insensitive)
+            if (!matchReason && name && a.name) {
+                if (a.name.toLowerCase() === name.toLowerCase()) {
+                    matchReason = 'name';
+                }
+            }
+            
+            if (matchReason) {
+                console.log(`🗑️ Removing existing entry for: ${a.name} at position ${$recentArtists.indexOf(a)} (matched by ${matchReason})`);
+                return false; // Remove this entry
+            }
+            
+            return true; // Keep this entry
+        });
+        
+        console.log('📋 Filtered artists (removed duplicates):', filteredArtists.map(a => ({ name: a.name, artistId: a.artistId, urlKey: a.urlKey })));
+        console.log(`📊 Removed ${$recentArtists.length - filteredArtists.length} duplicate(s)`);
+        
+        // Create new artist entry and add to front
+        const newArtist = { name, imageUrl, seenSongs, artistId, songQueue, urlKey };
+        const newList = [newArtist, ...filteredArtists];
+        
+        console.log('📋 New recentArtists after update:', newList.map((a, i) => ({ 
+            position: i, 
+            name: a.name, 
+            artistId: a.artistId, 
+            urlKey: a.urlKey, 
+            hasImage: !!a.imageUrl 
+        })));
+        console.log('✅ Artist at position 0:', newList[0]?.name, '(expected:', name, ')');
+        
         // Persist the artist's Firestore URL key so we can requeue quickly later
-        recentArtists.set([
-            { name, imageUrl, seenSongs, artistId, songQueue, urlKey },
-            ...$recentArtists.filter(artist => artist.artistId !== artistId)
-        ]);
+        recentArtists.set(newList);
     }
 
     function setDisplayFromData(data){
@@ -418,8 +553,7 @@
                 currentSong = previousSong;
                 setDisplayFromDataWithoutQueue(previousSong);
                 
-                // Update queue status
-                queueStatus = queueManager.getQueueStatus();
+                // Queue status will update reactively via $: statement
                 
                 // Reset typing test state
                 const restartEvent = new CustomEvent('restartTest', {
@@ -449,8 +583,7 @@
                 currentSong = nextSong;
                 setDisplayFromDataWithoutQueue(nextSong);
                 
-                // Update queue status
-                queueStatus = queueManager.getQueueStatus();
+                // Queue status will update reactively via $: statement
                 
                 // Reset typing test state
                 const restartEvent = new CustomEvent('restartTest', {
@@ -567,8 +700,7 @@
                     currentSong = selectedSong;
                     setDisplayFromDataWithoutQueue(selectedSong);
                     
-                    // Update queue status
-                    queueStatus = queueManager.getQueueStatus();
+                    // Queue status will update reactively via $: statement
                     
                     // Reset typing test state
                     const restartEvent = new CustomEvent('restartTest', {
@@ -643,6 +775,16 @@
     });
 
     $: fullArtistList = [...$recentArtists, ...Array(7 - $recentArtists.length).fill({ name: null, imageUrl: null, artistId: null })];
+    
+    // Debug logging for fullArtistList updates
+    $: if (fullArtistList && fullArtistList.length > 0) {
+        console.log('🎨 fullArtistList updated (', fullArtistList.filter(a => a.name).length, 'artists ):');
+        fullArtistList.slice(0, 7).forEach((a, i) => {
+            if (a.name) {
+                console.log(`  ${i}: ${a.name} - artistId: ${a.artistId}, urlKey: ${a.urlKey}, hasImage: ${!!a.imageUrl}`);
+            }
+        });
+    }
 
 </script>
 
@@ -675,7 +817,7 @@
         <div class="contentLayout">
             <div class="sidebar">
                 <div class="artistList" style:gap="{windowHeight*0.01}px">
-                    {#each fullArtistList as artist, index (artist.artistId || `empty-${index}`)}
+                    {#each fullArtistList as artist, index (`${artist.urlKey || artist.artistId || 'empty'}-${index}`)}
                     <ArtistButton 
                         name={artist.name} 
                         imageUrl={artist.imageUrl} 

@@ -14,7 +14,10 @@
     "help": "node prescraper.js --help",
     "upload": "node firebase-uploader.js",
     "upload-dry": "node firebase-uploader.js --dry-run",
-    "upload-help": "node firebase-uploader.js --help"
+    "upload-help": "node firebase-uploader.js --help",
+    "fix-lyrics": "node fix-null-lyrics.js",
+    "fix-lyrics-dry": "node fix-null-lyrics.js --dry-run",
+    "fix-lyrics-cached": "node fix-null-lyrics.js --check-cached-only"
   },
   "type": "module",
   "devDependencies": {

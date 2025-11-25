@@ -165,9 +165,26 @@ export const capitalization = writable(true);
 export const punctuation = writable(true);
 export const recentArtists = writable([]);
 
+let isUpdatingRecentArtists = false;
+
 recentArtists.subscribe(artists => {
-    if (artists.length > 7) {
-        recentArtists.set(artists.slice(0, 7));
+    // Prevent infinite loops
+    if (isUpdatingRecentArtists) return;
+    
+    // Just limit to 7 artists - let TypingTest.svelte handle duplicate removal
+    // This prevents interference with rapid updates during artist selection
+    const limitedArtists = artists.slice(0, 7);
+    
+    // Only update if we need to trim
+    if (limitedArtists.length !== artists.length) {
+        console.log('📝 Store: Trimming recentArtists to 7 entries', {
+            before: artists.length,
+            after: limitedArtists.length
+        });
+        
+        isUpdatingRecentArtists = true;
+        recentArtists.set(limitedArtists);
+        isUpdatingRecentArtists = false;
     }
 });
 
