@@ -9,7 +9,7 @@
     const dispatch = createEventDispatcher();
     const maxSuggestions = 10;
     
-    // Calculate responsive dropdown offset - using very small fixed value
+    // Calculate responsive dropdown offset - using very small fixed value 
     $: dropdownOffset = windowHeight * 0.028; // Very small fixed offset
     // Use itemMinHeight directly as it's closer to actual rendered height
     $: dropdownMaxHeight = windowHeight * 0.65;
