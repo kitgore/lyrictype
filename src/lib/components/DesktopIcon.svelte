@@ -38,11 +38,11 @@
     }
     .icon-label {
         background-color: var(--secondary-color); 
-        color: var(--primary-color);; 
+        color: var(--primary-color);
         text-align: center;
         padding: 2px 3px; 
         margin-top: 8px; 
-        border: 1px solid var(--primary-color);;
+        border: var(--border-width) solid var(--primary-color);
         width: max-content;
         font-size: 1em;
     }

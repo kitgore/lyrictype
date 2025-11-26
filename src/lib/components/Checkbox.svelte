@@ -31,7 +31,7 @@
     .box {
         width: 24px;
         height: 24px;
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         border-radius: 4px;
         display: grid;
         place-items: center;

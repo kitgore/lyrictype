@@ -244,7 +244,7 @@
 
 <style>
     .artist-button, .artist-button-empty {
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         border-radius: .8rem;
         /* height: 3vh; Responsive height that scales with viewport */
         flex-shrink: 0; /* Prevent shrinking when using gap */

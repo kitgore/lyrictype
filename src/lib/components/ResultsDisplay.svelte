@@ -340,7 +340,7 @@
     .controlButton {
         font-size: 2em;
         /* padding: 0.5em 1em; */
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         background-color: var(--secondary-color);
         cursor: pointer;
         border-radius: 10px;

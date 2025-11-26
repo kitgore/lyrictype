@@ -122,7 +122,7 @@
   
     .scroll-arrow {
         width: 100%;
-        border: 2px solid var(--primary-color);;
+        border: var(--border-width) solid var(--primary-color);
         background-color: var(--secondary-color);
         aspect-ratio: 1; /* Makes the button square */
         padding: 0;
@@ -137,7 +137,7 @@
     .track {
       width: 100%; /* Full width of the scrollbar container */
       background-color: var(--secondary-color);
-      border: 2px solid var(--primary-color);;
+      border: var(--border-width) solid var(--primary-color);
       flex-grow: 1; /* Take up remaining space */
       margin: 70% 0;
       border-radius: .2em;
