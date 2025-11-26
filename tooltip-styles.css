@@ -1,0 +1,173 @@
+/* Tooltip styling matching the website's topbar design */
+
+.topbar-tooltip {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    min-width: 120px;
+    max-width: 300px;
+    padding: 8px 12px;
+    font-family: 'SysFont', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Background lines pattern */
+    background-image: 
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%),
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%),
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%),
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%),
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%),
+        linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 100%);
+    background-size: 
+        100% 1.5px,
+        100% 1.5px,
+        100% 1.5px,
+        100% 1.5px,
+        100% 1.5px,
+        100% 1.5px;
+    background-position: 
+        0 2px,
+        0 6px,
+        0 10px,
+        0 14px,
+        0 18px,
+        0 22px;
+    background-repeat: no-repeat;
+}
+
+.topbar-tooltip-text {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2px 6px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    /* White outline effect around text */
+    text-shadow: 
+        -1px -1px 0 var(--secondary-color),
+        1px -1px 0 var(--secondary-color),
+        -1px 1px 0 var(--secondary-color),
+        1px 1px 0 var(--secondary-color),
+        -2px 0 0 var(--secondary-color),
+        2px 0 0 var(--secondary-color),
+        0 -2px 0 var(--secondary-color),
+        0 2px 0 var(--secondary-color);
+    user-select: none;
+}
+
+/* Arrow pointing up (tooltip appears below cursor) */
+.topbar-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid var(--primary-color);
+    z-index: 2;
+}
+
+.topbar-tooltip::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid var(--secondary-color);
+    z-index: 3;
+}
+
+/* Alternative version with arrow pointing down (tooltip appears above cursor) */
+.topbar-tooltip.arrow-down::before {
+    top: auto;
+    bottom: -8px;
+    border-bottom: none;
+    border-top: 6px solid var(--primary-color);
+}
+
+.topbar-tooltip.arrow-down::after {
+    top: auto;
+    bottom: -6px;
+    border-bottom: none;
+    border-top: 4px solid var(--secondary-color);
+}
+
+/* Alternative version with arrow pointing left (tooltip appears to the right) */
+.topbar-tooltip.arrow-left::before {
+    top: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid var(--primary-color);
+    border-left: none;
+}
+
+.topbar-tooltip.arrow-left::after {
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-right: 4px solid var(--secondary-color);
+    border-left: none;
+}
+
+/* Alternative version with arrow pointing right (tooltip appears to the left) */
+.topbar-tooltip.arrow-right::before {
+    top: 50%;
+    right: -8px;
+    left: auto;
+    transform: translateY(-50%);
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 6px solid var(--primary-color);
+    border-right: none;
+}
+
+.topbar-tooltip.arrow-right::after {
+    top: 50%;
+    right: -6px;
+    left: auto;
+    transform: translateY(-50%);
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid var(--secondary-color);
+    border-right: none;
+}
+
+/* Fade in/out animation */
+.topbar-tooltip {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.topbar-tooltip.visible {
+    opacity: 1;
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+    .topbar-tooltip {
+        font-size: 12px;
+        padding: 6px 10px;
+        min-width: 100px;
+        max-width: 250px;
+    }
+}
+

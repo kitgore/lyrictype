@@ -89,17 +89,114 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
                 let grayscaleData = artistData.grayscaleImageData;
                 let rawGrayscaleBytes = null;
                 
+                // Validate the data before attempting to use it
+                if (!grayscaleData || typeof grayscaleData !== 'string' || grayscaleData.length === 0) {
+                    console.error(`❌ Invalid grayscale data for ${artistUrlKey}: data is null, empty, or not a string`);
+                    // Try to reprocess if we have the original URL
+                    if (artistData.imageUrl || artistData.originalImageUrl) {
+                        console.log(`🔄 Attempting to reprocess image from URL...`);
+                        return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
+                    }
+                    return {
+                        success: false,
+                        error: 'Invalid cached grayscale data',
+                        cached: false
+                    };
+                }
+                
                 if (artistData.compressionMethod === 'pako-deflate') {
                     console.log(`🗜️  Decompressing cached grayscale data (${artistData.compressionMethod})`);
                     try {
-                        grayscaleData = decompressGrayscaleData(artistData.grayscaleImageData);
-                        rawGrayscaleBytes = decompressGrayscaleData(artistData.grayscaleImageData, true); // Get raw bytes for WebGL
+                        // Decompress once and get both formats
+                        const decompressedBytes = decompressGrayscaleData(artistData.grayscaleImageData, true);
+                        
+                        // Create a fresh copy to avoid WebGL ArrayBuffer issues
+                        // Pako's inflate() may return a view into a larger buffer, causing WebGL errors
+                        rawGrayscaleBytes = new Uint8Array(decompressedBytes);
+                        
+                        // Validate decompressed size
+                        const expectedSize = artistData.imageWidth * artistData.imageHeight;
+                        if (decompressedBytes.length !== expectedSize) {
+                            console.error(`❌ Data size mismatch for ${artistUrlKey}:`, {
+                                expected: expectedSize,
+                                actual: decompressedBytes.length,
+                                dimensions: `${artistData.imageWidth}x${artistData.imageHeight}`
+                            });
+                            
+                            // Try to reprocess if we have the original URL
+                            if (artistData.imageUrl || artistData.originalImageUrl) {
+                                console.log(`🔄 Reprocessing image due to size mismatch...`);
+                                return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
+                            }
+                            
+                            return {
+                                success: false,
+                                error: 'Cached data size mismatch',
+                                cached: false
+                            };
+                        }
+                        
+                        // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
+                        let binaryString = '';
+                        const chunkSize = 8192;
+                        for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
+                            const chunk = decompressedBytes.slice(i, i + chunkSize);
+                            binaryString += String.fromCharCode(...chunk);
+                        }
+                        grayscaleData = btoa(binaryString);
                     } catch (error) {
                         console.warn(`🔄 Failed to decompress cached data, reprocessing image: ${error.message}`);
-                        if (artistData.imageUrl) {
-                            return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
+                        if (artistData.imageUrl || artistData.originalImageUrl) {
+                            return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
                         }
-                        throw error;
+                        return {
+                            success: false,
+                            error: `Decompression failed: ${error.message}`,
+                            cached: false
+                        };
+                    }
+                } else {
+                    // For uncompressed data, convert Base64 to raw bytes for WebGL
+                    console.log(`📦 Loading uncompressed grayscale data for ${artistUrlKey}`);
+                    try {
+                        const binaryString = atob(grayscaleData);
+                        rawGrayscaleBytes = new Uint8Array(binaryString.length);
+                        for (let i = 0; i < binaryString.length; i++) {
+                            rawGrayscaleBytes[i] = binaryString.charCodeAt(i);
+                        }
+                        
+                        // Validate size
+                        const expectedSize = artistData.imageWidth * artistData.imageHeight;
+                        if (rawGrayscaleBytes.length !== expectedSize) {
+                            console.error(`❌ Data size mismatch for ${artistUrlKey}:`, {
+                                expected: expectedSize,
+                                actual: rawGrayscaleBytes.length,
+                                dimensions: `${artistData.imageWidth}x${artistData.imageHeight}`
+                            });
+                            
+                            // Try to reprocess
+                            if (artistData.imageUrl || artistData.originalImageUrl) {
+                                console.log(`🔄 Reprocessing image due to size mismatch...`);
+                                return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
+                            }
+                            
+                            return {
+                                success: false,
+                                error: 'Cached data size mismatch',
+                                cached: false
+                            };
+                        }
+                    } catch (error) {
+                        console.error(`❌ Failed to decode uncompressed data for ${artistUrlKey}:`, error);
+                        if (artistData.imageUrl || artistData.originalImageUrl) {
+                            console.log(`🔄 Reprocessing image...`);
+                            return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
+                        }
+                        return {
+                            success: false,
+                            error: `Failed to decode data: ${error.message}`,
+                            cached: false
+                        };
                     }
                 }
                 

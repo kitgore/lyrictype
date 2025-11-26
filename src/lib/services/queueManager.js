@@ -291,7 +291,17 @@ export class CacheAwareQueueManager {
             
             // Update loaded songs cache and ensure each has a 4-line excerpt
             Object.entries(result.songs).forEach(([id, songData]) => {
-                const withExcerpt = this.ensureExcerptForSong({ ...songData });
+                // Check if lyrics are valid before processing
+                const hasValidLyrics = songData.lyrics && 
+                                      songData.lyrics.trim().length > 0 && 
+                                      songData.lyrics !== 'null' &&
+                                      songData.lyrics !== 'undefined';
+                
+                if (!hasValidLyrics) {
+                    console.warn(`⚠️ Song ${id} returned from navigation loader with null/invalid lyrics`);
+                }
+                
+                const withExcerpt = hasValidLyrics ? this.ensureExcerptForSong({ ...songData }) : { ...songData };
                 this.loadedSongs.set(id, withExcerpt);
                 
                 // Find and update the song in our queue
@@ -301,9 +311,9 @@ export class CacheAwareQueueManager {
                         ...withExcerpt,
                         index: songIndex,
                         loaded: true,
-                        cached: !!songData.lyrics, // Mark as cached if has lyrics
-                        scrapingStatus: songData.scrapingStatus || 'completed',
-                        hasValidLyrics: !!(songData.lyrics && songData.lyrics.trim().length > 10)
+                        cached: hasValidLyrics,
+                        scrapingStatus: songData.scrapingStatus || (hasValidLyrics ? 'completed' : 'failed'),
+                        hasValidLyrics: hasValidLyrics
                     };
                 }
             });
