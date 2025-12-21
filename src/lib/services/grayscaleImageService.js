@@ -15,14 +15,71 @@ import pako from 'pako';
 function decompressGrayscaleData(compressedBase64, returnRawBytes = false) {
     try {
         console.log(`🔍 Attempting to decompress ${compressedBase64.length} chars of Base64 data`);
+        console.log(`🔍 [DECOMPRESS DEBUG] First 100 chars of input: ${compressedBase64.substring(0, 100)}`);
         
         // Decode from Base64
         const compressedData = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
         console.log(`📦 Decoded Base64 to ${compressedData.length} bytes`);
+        console.log(`🔍 [DECOMPRESS DEBUG] First 20 compressed bytes:`, Array.from(compressedData.slice(0, 20)));
         
         // Decompress with Pako
         const decompressedData = pako.inflate(compressedData);
         console.log(`🗜️  Pako inflated to ${decompressedData.length} bytes`);
+        console.log(`🔍 [DECOMPRESS DEBUG] First 50 decompressed values:`, Array.from(decompressedData.slice(0, 50)));
+        console.log(`🔍 [DECOMPRESS DEBUG] Last 50 decompressed values:`, Array.from(decompressedData.slice(-50)));
+        
+        // ========== DETAILED GRAYSCALE ANALYSIS ==========
+        let zeroCount = 0;
+        let lowCount = 0;   // 1-63
+        let midCount = 0;   // 64-191
+        let highCount = 0;  // 192-254
+        let maxCount = 0;   // 255
+        let min = 255, max = 0, sum = 0;
+        
+        for (let i = 0; i < decompressedData.length; i++) {
+            const val = decompressedData[i];
+            sum += val;
+            if (val < min) min = val;
+            if (val > max) max = val;
+            
+            if (val === 0) zeroCount++;
+            else if (val < 64) lowCount++;
+            else if (val < 192) midCount++;
+            else if (val < 255) highCount++;
+            else maxCount++;
+        }
+        
+        const avg = sum / decompressedData.length;
+        const zeroPercent = ((zeroCount / decompressedData.length) * 100).toFixed(1);
+        const lowPercent = ((lowCount / decompressedData.length) * 100).toFixed(1);
+        const midPercent = ((midCount / decompressedData.length) * 100).toFixed(1);
+        const highPercent = ((highCount / decompressedData.length) * 100).toFixed(1);
+        const maxPercent = ((maxCount / decompressedData.length) * 100).toFixed(1);
+        
+        console.log(`📊 [DECOMPRESS DEBUG] Grayscale distribution analysis:`);
+        console.log(`   Min: ${min}, Max: ${max}, Avg: ${avg.toFixed(1)}`);
+        console.log(`   Zero (0): ${zeroCount} (${zeroPercent}%)`);
+        console.log(`   Low (1-63): ${lowCount} (${lowPercent}%)`);
+        console.log(`   Mid (64-191): ${midCount} (${midPercent}%)`);
+        console.log(`   High (192-254): ${highCount} (${highPercent}%)`);
+        console.log(`   Max (255): ${maxCount} (${maxPercent}%)`);
+        
+        // WARNING: Detect problematic data patterns
+        if (parseFloat(zeroPercent) > 95) {
+            console.error(`🚨 [DECOMPRESS DEBUG] PROBLEM DETECTED: ${zeroPercent}% of pixels are ZERO!`);
+            console.error(`🚨 [DECOMPRESS DEBUG] Image will appear as SOLID PRIMARY COLOR!`);
+            console.error(`🚨 [DECOMPRESS DEBUG] This indicates corrupted data, failed processing, or wrong image format.`);
+        }
+        if (parseFloat(maxPercent) > 95) {
+            console.warn(`⚠️ [DECOMPRESS DEBUG] NOTE: ${maxPercent}% of pixels are MAX (255). Image will appear as solid SECONDARY color.`);
+        }
+        if (max === min) {
+            console.error(`🚨 [DECOMPRESS DEBUG] CRITICAL: All pixels have the SAME value (${min})!`);
+            console.error(`🚨 [DECOMPRESS DEBUG] No grayscale variation = solid color output!`);
+        }
+        if (max - min < 10 && decompressedData.length > 100) {
+            console.warn(`⚠️ [DECOMPRESS DEBUG] Very low contrast: range is only ${min}-${max} (${max - min} levels)`);
+        }
         
         // Re-encode to Base64 for compatibility with existing WebGL code
         // Process in chunks to avoid stack overflow with large arrays
@@ -54,6 +111,7 @@ function decompressGrayscaleData(compressedBase64, returnRawBytes = false) {
         }
     } catch (error) {
         console.error('❌ Error decompressing grayscale data:', error);
+        console.error('❌ [DECOMPRESS DEBUG] Stack trace:', error.stack);
         throw error;
     }
 }
@@ -327,14 +385,30 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         
         // Decompress the grayscale data since it's now Pako compressed
         let grayscaleData = result.grayscaleData;
+        let rawGrayscaleBytes = null;
+        
         if (result.metadata.compressionMethod === 'pako-deflate') {
             console.log(`🗜️  Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
-            grayscaleData = decompressGrayscaleData(result.grayscaleData);
+            // Get raw bytes for WebGL
+            const decompressedBytes = decompressGrayscaleData(result.grayscaleData, true);
+            rawGrayscaleBytes = new Uint8Array(decompressedBytes);
+            
+            // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
+            let binaryString = '';
+            const chunkSize = 8192;
+            for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
+                const chunk = decompressedBytes.slice(i, i + chunkSize);
+                binaryString += String.fromCharCode(...chunk);
+            }
+            grayscaleData = btoa(binaryString);
+            
+            console.log(`✅ Fresh data decompressed: ${rawGrayscaleBytes.length} bytes, base64: ${grayscaleData.length} chars`);
         }
         
         return {
             ...result,
             grayscaleData: grayscaleData,
+            rawGrayscaleBytes: rawGrayscaleBytes, // Include raw bytes for WebGL!
             cached: false,
             clientProcessingTime: processingTime
         };

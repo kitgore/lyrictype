@@ -153,9 +153,19 @@
 
   function initWebGL() {
     if (!canvas || !grayscaleData) {
-      console.warn('⚠️ initWebGL skipped:', { hasCanvas: !!canvas, hasGrayscaleData: !!grayscaleData, hasRawBytes: !!rawGrayscaleBytes });
+      console.warn(`⚠️ [WEBGL DEBUG] initWebGL skipped for "${alt}":`, { hasCanvas: !!canvas, hasGrayscaleData: !!grayscaleData, hasRawBytes: !!rawGrayscaleBytes });
       return false;
     }
+    
+    console.log(`🎮 [WEBGL DEBUG] initWebGL starting for "${alt}"`, {
+      canvasWidth: canvas.width,
+      canvasHeight: canvas.height,
+      grayscaleDataLength: grayscaleData?.length,
+      rawBytesLength: rawGrayscaleBytes?.length,
+      imageWidth: width,
+      imageHeight: height,
+      expectedBytes: width * height
+    });
 
     try {
       gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
@@ -248,11 +258,24 @@
 
   function createGrayscaleTexture() {
     if (!gl || !program || !grayscaleData) {
-      console.warn('⚠️ createGrayscaleTexture skipped:', { hasGl: !!gl, hasProgram: !!program, hasGrayscaleData: !!grayscaleData });
+      console.warn(`⚠️ [TEXTURE DEBUG] createGrayscaleTexture skipped for "${alt}":`, { hasGl: !!gl, hasProgram: !!program, hasGrayscaleData: !!grayscaleData });
       return;
     }
 
     try {
+      console.log(`🔍 [TEXTURE DEBUG] Starting texture creation for "${alt}"...`);
+      console.log(`🔍 [TEXTURE DEBUG] Input data:`, {
+        grayscaleDataType: typeof grayscaleData,
+        grayscaleDataLength: grayscaleData?.length,
+        rawGrayscaleBytesType: rawGrayscaleBytes ? rawGrayscaleBytes.constructor.name : 'null',
+        rawGrayscaleBytesLength: rawGrayscaleBytes?.length,
+        imageWidth: width,
+        imageHeight: height,
+        expectedBytes: width * height,
+        hasRawBytes: !!(rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array)
+      });
+      console.log(`🔍 [TEXTURE DEBUG] First 100 chars of base64: ${grayscaleData?.substring(0, 100)}`);
+      
       // Use raw bytes if available, otherwise convert from base64
       let luminanceData;
       if (rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array) {
@@ -260,7 +283,15 @@
         luminanceData = rawGrayscaleBytes;
       } else {
         console.log(`🔄 Converting base64 grayscale data to Uint8Array`);
-        const binaryString = atob(grayscaleData);
+        let binaryString;
+        try {
+          binaryString = atob(grayscaleData);
+          console.log(`🔍 [TEXTURE DEBUG] Decoded binary string length: ${binaryString.length}`);
+        } catch (atobError) {
+          console.error(`❌ [TEXTURE DEBUG] atob() failed! Invalid base64 data:`, atobError);
+          console.error(`❌ [TEXTURE DEBUG] First 200 chars: ${grayscaleData?.substring(0, 200)}`);
+          return;
+        }
         luminanceData = new Uint8Array(binaryString.length);
         for (let i = 0; i < binaryString.length; i++) {
           luminanceData[i] = binaryString.charCodeAt(i);
@@ -270,6 +301,12 @@
       // Create texture
       texture = gl.createTexture();
       gl.bindTexture(gl.TEXTURE_2D, texture);
+      
+      // CRITICAL: Set UNPACK_ALIGNMENT to 1 for LUMINANCE textures
+      // WebGL defaults to 4-byte alignment, which causes GL_INVALID_OPERATION (1282)
+      // when texture width is not divisible by 4 (e.g., 433x433, 427x427)
+      gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
+      console.log(`🔧 [TEXTURE DEBUG] Set UNPACK_ALIGNMENT to 1 for ${width}x${height} texture (width % 4 = ${width % 4})`);
 
       // Validate data size BEFORE uploading to WebGL
       const expectedSize = width * height;
@@ -301,6 +338,53 @@
         }
       }
       
+      // ========== DETAILED LUMINANCE ANALYSIS ==========
+      let zeroCount = 0;
+      let lowCount = 0;   // 1-63
+      let midCount = 0;   // 64-191
+      let highCount = 0;  // 192-254
+      let maxCount = 0;   // 255
+      let min = 255, max = 0, sum = 0;
+      
+      for (let i = 0; i < luminanceData.length; i++) {
+        const val = luminanceData[i];
+        sum += val;
+        if (val < min) min = val;
+        if (val > max) max = val;
+        
+        if (val === 0) zeroCount++;
+        else if (val < 64) lowCount++;
+        else if (val < 192) midCount++;
+        else if (val < 255) highCount++;
+        else maxCount++;
+      }
+      
+      const avg = sum / luminanceData.length;
+      const zeroPercent = ((zeroCount / luminanceData.length) * 100).toFixed(1);
+      const maxPercent = ((maxCount / luminanceData.length) * 100).toFixed(1);
+      
+      console.log(`📊 [TEXTURE DEBUG] Luminance distribution:`);
+      console.log(`   Range: ${min} - ${max}, Average: ${avg.toFixed(1)}`);
+      console.log(`   Zero (0): ${zeroCount} (${zeroPercent}%)`);
+      console.log(`   Low (1-63): ${lowCount} (${((lowCount / luminanceData.length) * 100).toFixed(1)}%)`);
+      console.log(`   Mid (64-191): ${midCount} (${((midCount / luminanceData.length) * 100).toFixed(1)}%)`);
+      console.log(`   High (192-254): ${highCount} (${((highCount / luminanceData.length) * 100).toFixed(1)}%)`);
+      console.log(`   Max (255): ${maxCount} (${maxPercent}%)`);
+      
+      // Diagnostic warnings for problematic data
+      if (parseFloat(zeroPercent) > 95) {
+        console.error(`🚨 [TEXTURE DEBUG] PROBLEM DETECTED: ${zeroPercent}% of pixels are ZERO!`);
+        console.error(`🚨 [TEXTURE DEBUG] This will cause the image to appear as SOLID PRIMARY COLOR!`);
+        console.error(`🚨 [TEXTURE DEBUG] Likely causes: corrupted data, failed decompression, or incorrect image processing`);
+      }
+      if (max === min) {
+        console.error(`🚨 [TEXTURE DEBUG] PROBLEM DETECTED: All pixels have same value (${min})!`);
+        console.error(`🚨 [TEXTURE DEBUG] This means NO grayscale variation - image will be a solid color!`);
+      }
+      if (max - min < 10 && luminanceData.length > 100) {
+        console.warn(`⚠️ [TEXTURE DEBUG] Very low contrast: range is only ${min}-${max} (${max - min} levels)`);
+      }
+      
       // Upload luminance data directly
       gl.texImage2D(
         gl.TEXTURE_2D, 
@@ -313,6 +397,14 @@
         gl.UNSIGNED_BYTE, 
         luminanceData
       );
+      
+      // Check for WebGL errors after texture upload
+      const glError = gl.getError();
+      if (glError !== gl.NO_ERROR) {
+        console.error(`❌ [TEXTURE DEBUG] WebGL error after texImage2D: ${glError}`);
+      } else {
+        console.log(`✅ [TEXTURE DEBUG] texImage2D successful, no WebGL errors`);
+      }
 
       // Set texture parameters for smooth anti-aliasing
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
@@ -329,6 +421,7 @@
 
     } catch (error) {
       console.error('Error creating grayscale texture:', error);
+      console.error(`❌ [TEXTURE DEBUG] Stack trace:`, error.stack);
     }
   }
 
@@ -398,10 +491,22 @@
   }
 
   function updateDisplaySize() {
-    if (!canvasWrapper || !width || !height) return;
+    if (!canvasWrapper || !width || !height) {
+      console.warn(`⚠️ [SIZE DEBUG] updateDisplaySize skipped:`, { hasWrapper: !!canvasWrapper, width, height, alt });
+      return;
+    }
 
     // Get the actual displayed size of the wrapper element
     const rect = canvasWrapper.getBoundingClientRect();
+    
+    // Debug: Log container dimensions
+    console.log(`📐 [SIZE DEBUG] Container rect for "${alt}":`, {
+      rectWidth: rect.width,
+      rectHeight: rect.height,
+      imageWidth: width,
+      imageHeight: height,
+      isZeroSize: rect.width === 0 || rect.height === 0
+    });
     
     // Calculate original image aspect ratio
     const imageAspectRatio = width / height;
@@ -433,13 +538,26 @@
       displayHeight = Math.max(1, newDisplayHeight);
       renderWidth = Math.max(1, newRenderWidth);
       renderHeight = Math.max(1, newRenderHeight);
+      
+      // CRITICAL DEBUG: Detect problematic small sizes
+      if (displayWidth < 10 || displayHeight < 10) {
+        console.error(`🚨 [SIZE DEBUG] CRITICAL: Very small display size detected for "${alt}"!`, {
+          displayWidth,
+          displayHeight,
+          renderWidth,
+          renderHeight,
+          rectWidth: rect.width,
+          rectHeight: rect.height,
+          devicePixelRatio: window.devicePixelRatio
+        });
+      }
 
       if (canvas) {
         // Set canvas resolution to high-res render size for anti-aliasing
         canvas.width = renderWidth;
         canvas.height = renderHeight;
         
-        console.log(`📐 High-res rendering: Canvas ${renderWidth}x${renderHeight}, Display ${displayWidth}x${displayHeight}, Original ${width}x${height} (AR: ${imageAspectRatio.toFixed(2)})`);
+        console.log(`📐 [SIZE DEBUG] High-res rendering for "${alt}": Canvas ${renderWidth}x${renderHeight}, Display ${displayWidth}x${displayHeight}, Original ${width}x${height} (AR: ${imageAspectRatio.toFixed(2)})`);
         
         // Recreate framebuffer with new size
         if (isInitialized) {
@@ -452,7 +570,7 @@
 
   function render() {
     if (!gl || !program || !downsampleProgram || !texture || !framebuffer || !framebufferTexture || !isInitialized) {
-      console.warn('❌ Render skipped - missing WebGL objects:', {
+      console.warn(`❌ [RENDER DEBUG] Render skipped for "${alt}" - missing WebGL objects:`, {
         hasGl: !!gl,
         hasProgram: !!program,
         hasDownsampleProgram: !!downsampleProgram,
@@ -463,6 +581,18 @@
       });
       return;
     }
+    
+    // Debug: Log render dimensions
+    console.log(`🎨 [RENDER DEBUG] Rendering "${alt}":`, {
+      renderWidth,
+      renderHeight,
+      displayWidth,
+      displayHeight,
+      canvasWidth: canvas?.width,
+      canvasHeight: canvas?.height,
+      primaryColor: $imageColors.primary,
+      secondaryColor: $imageColors.secondary
+    });
 
     // ========== PASS 1: Render to framebuffer at 4x resolution ==========
     
@@ -617,14 +747,60 @@
     }
   }
 
-  // Initialize when component mounts and when grayscale data changes
-  $: if (canvas && grayscaleData) {
+  // Helper function to initialize WebGL with safeguards
+  function initializeRenderer() {
+    console.log(`🔄 [INIT DEBUG] initializeRenderer called for "${alt}"`, {
+      hasCanvas: !!canvas,
+      hasGrayscaleData: !!grayscaleData,
+      grayscaleDataLength: grayscaleData?.length,
+      hasRawBytes: !!rawGrayscaleBytes,
+      isInitialized,
+      displayWidth,
+      displayHeight
+    });
+    
     if (isInitialized) {
       stopRenderLoop();
     }
     
     // Update display size before initializing
     updateDisplaySize();
+    
+    // SAFEGUARD: If display size is too small, defer initialization
+    // This can happen if the container hasn't been laid out yet
+    if (displayWidth < 10 || displayHeight < 10) {
+      console.warn(`⚠️ [INIT DEBUG] Display size too small for "${alt}" (${displayWidth}x${displayHeight}), deferring...`);
+      // Schedule a retry after the next frame when layout should be complete
+      requestAnimationFrame(() => {
+        updateDisplaySize();
+        console.log(`🔄 [INIT DEBUG] Retry after RAF for "${alt}":`, { displayWidth, displayHeight });
+        if (displayWidth >= 10 && displayHeight >= 10) {
+          if (initWebGL()) {
+            startRenderLoop();
+          } else {
+            console.warn('🔄 WebGL failed, using Canvas 2D fallback');
+            renderFallback();
+          }
+        } else {
+          console.error(`🚨 [INIT DEBUG] Still too small after RAF for "${alt}", forcing minimum size`);
+          // Force minimum size of 50x50 for safety
+          displayWidth = 50;
+          displayHeight = 50;
+          renderWidth = 200;
+          renderHeight = 200;
+          if (canvas) {
+            canvas.width = renderWidth;
+            canvas.height = renderHeight;
+          }
+          if (initWebGL()) {
+            startRenderLoop();
+          } else {
+            renderFallback();
+          }
+        }
+      });
+      return;
+    }
     
     // Try WebGL first, fallback to Canvas 2D
     if (initWebGL()) {
@@ -642,6 +818,11 @@
         unsubscribe();
       });
     }
+  }
+
+  // Initialize when component mounts and when grayscale data changes
+  $: if (canvas && grayscaleData) {
+    initializeRenderer();
   }
 
   onMount(() => {

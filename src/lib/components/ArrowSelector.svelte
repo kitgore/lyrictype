@@ -25,7 +25,7 @@
     }
 
     .text-display {
-       border: 2px solid var(--primary-color);
+       border: var(--border-width) solid var(--primary-color);
        min-width: 8em;
        text-align: center;
        font-size: 1.3em;
@@ -38,7 +38,7 @@
         font-family: 'SysFont', sans-serif;
         background-color: var(--secondary-color);
         color: var(--primary-color);
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         border-radius: 5px;
         font-size: 1.5em; 
         width: max-content;

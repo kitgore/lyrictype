@@ -9,7 +9,7 @@
     const dispatch = createEventDispatcher();
     const maxSuggestions = 10;
     
-    // Calculate responsive dropdown offset - using very small fixed value
+    // Calculate responsive dropdown offset - using very small fixed value 
     $: dropdownOffset = windowHeight * 0.028; // Very small fixed offset
     // Use itemMinHeight directly as it's closer to actual rendered height
     $: dropdownMaxHeight = windowHeight * 0.65;
@@ -449,8 +449,8 @@
     .spinner {
         width: 16px;
         height: 16px;
-        border: 2px solid var(--primary-color, #e0e0e0);
-        border-top: 2px solid var(--secondary-color, #007acc);
+        border: var(--border-width) solid var(--primary-color, #e0e0e0);
+        border-top: var(--border-width) solid var(--secondary-color, #007acc);
         border-radius: 50%;
         animation: spin 1s linear infinite;
         opacity: 0.6;
@@ -467,7 +467,7 @@
         left: -2px;
         right: -2px;
         background: var(--secondary-color, white);
-        border: 2px solid var(--primary-color, #ccc);
+        border: var(--border-width) solid var(--primary-color, #ccc);
         border-radius: 4px;
         height: auto;
         max-height: var(--dropdown-max-height, 200px);

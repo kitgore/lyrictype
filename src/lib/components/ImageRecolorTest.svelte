@@ -169,6 +169,35 @@
                             uniqueValues,
                             isUniform: uniqueValues < 10
                         };
+                    })() : null,
+                    
+                    // Detailed distribution breakdown
+                    distribution: result.rawGrayscaleBytes ? (() => {
+                        const bytes = result.rawGrayscaleBytes;
+                        let zeroCount = 0, lowCount = 0, midCount = 0, highCount = 0, maxCount = 0;
+                        
+                        for (let i = 0; i < bytes.length; i++) {
+                            const val = bytes[i];
+                            if (val === 0) zeroCount++;
+                            else if (val < 64) lowCount++;
+                            else if (val < 192) midCount++;
+                            else if (val < 255) highCount++;
+                            else maxCount++;
+                        }
+                        
+                        const total = bytes.length;
+                        return {
+                            zeroCount,
+                            lowCount,
+                            midCount,
+                            highCount,
+                            maxCount,
+                            zeroPercent: ((zeroCount / total) * 100).toFixed(1),
+                            lowPercent: ((lowCount / total) * 100).toFixed(1),
+                            midPercent: ((midCount / total) * 100).toFixed(1),
+                            highPercent: ((highCount / total) * 100).toFixed(1),
+                            maxPercent: ((maxCount / total) * 100).toFixed(1)
+                        };
                     })() : null
                 };
                 
@@ -397,7 +426,9 @@
                         </tr>
                         <tr>
                             <td>Range:</td>
-                            <td>{debugInfo.brightnessStats.range}</td>
+                            <td class={debugInfo.brightnessStats.range < 10 ? 'error' : debugInfo.brightnessStats.range < 50 ? 'warning' : 'success'}>
+                                {debugInfo.brightnessStats.range} {debugInfo.brightnessStats.range < 10 ? '⚠️ Very low!' : ''}
+                            </td>
                         </tr>
                         <tr>
                             <td>Unique Values:</td>
@@ -412,9 +443,57 @@
                             </td>
                         </tr>
                     </table>
-                    {#if debugInfo.brightnessStats.isUniform}
+                    
+                    {#if debugInfo.distribution}
+                    <h4>Value Distribution</h4>
+                    <div class="distribution-bars">
+                        <div class="dist-bar" title="Zero (0): {debugInfo.distribution.zeroPercent}%">
+                            <div class="bar-fill zero" style="width: {Math.min(100, debugInfo.distribution.zeroPercent)}%"></div>
+                            <span class="bar-label">0: {debugInfo.distribution.zeroPercent}%</span>
+                        </div>
+                        <div class="dist-bar" title="Low (1-63): {debugInfo.distribution.lowPercent}%">
+                            <div class="bar-fill low" style="width: {Math.min(100, debugInfo.distribution.lowPercent)}%"></div>
+                            <span class="bar-label">1-63: {debugInfo.distribution.lowPercent}%</span>
+                        </div>
+                        <div class="dist-bar" title="Mid (64-191): {debugInfo.distribution.midPercent}%">
+                            <div class="bar-fill mid" style="width: {Math.min(100, debugInfo.distribution.midPercent)}%"></div>
+                            <span class="bar-label">64-191: {debugInfo.distribution.midPercent}%</span>
+                        </div>
+                        <div class="dist-bar" title="High (192-254): {debugInfo.distribution.highPercent}%">
+                            <div class="bar-fill high" style="width: {Math.min(100, debugInfo.distribution.highPercent)}%"></div>
+                            <span class="bar-label">192-254: {debugInfo.distribution.highPercent}%</span>
+                        </div>
+                        <div class="dist-bar" title="Max (255): {debugInfo.distribution.maxPercent}%">
+                            <div class="bar-fill max" style="width: {Math.min(100, debugInfo.distribution.maxPercent)}%"></div>
+                            <span class="bar-label">255: {debugInfo.distribution.maxPercent}%</span>
+                        </div>
+                    </div>
+                    {/if}
+                    
+                    {#if debugInfo.brightnessStats.isUniform || debugInfo.distribution?.zeroPercent > 90}
+                        <div class="warning-box critical">
+                            🚨 <strong>SOLID COLOR PROBLEM DETECTED!</strong><br/>
+                            {#if debugInfo.distribution?.zeroPercent > 90}
+                                {debugInfo.distribution.zeroPercent}% of pixels are value 0 (black).<br/>
+                                This will render as a solid block of the PRIMARY color.
+                            {:else}
+                                Only {debugInfo.brightnessStats.uniqueValues} unique values detected.<br/>
+                                The image has no grayscale variation.
+                            {/if}
+                            <br/><br/>
+                            <strong>Possible causes:</strong>
+                            <ul>
+                                <li>Corrupted image data in database</li>
+                                <li>Server-side processing failed</li>
+                                <li>Image URL was inaccessible during processing</li>
+                                <li>CORS or network issues during fetch</li>
+                            </ul>
+                        </div>
+                    {:else if debugInfo.brightnessStats.range < 50}
                         <div class="warning-box">
-                            ⚠️ This image has very few unique brightness values! This will cause solid color rendering.
+                            ⚠️ <strong>Low contrast detected.</strong><br/>
+                            Value range is only {debugInfo.brightnessStats.min}-{debugInfo.brightnessStats.max}.<br/>
+                            The recolored image may appear washed out or lack detail.
                         </div>
                     {/if}
                 </div>
@@ -641,6 +720,73 @@
         margin-top: 1rem;
         color: #ffb74d;
         font-weight: bold;
+    }
+    
+    .warning-box.critical {
+        background: #4d1f1f;
+        border-color: #ff4444;
+        color: #ff8888;
+    }
+    
+    .warning-box ul {
+        margin: 0.5rem 0 0 1.5rem;
+        padding: 0;
+        font-weight: normal;
+        font-size: 0.9rem;
+    }
+    
+    .warning-box li {
+        margin: 0.25rem 0;
+    }
+    
+    h4 {
+        color: #aaa;
+        margin: 1rem 0 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .distribution-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        background: #1e1e1e;
+        padding: 0.75rem;
+        border-radius: 4px;
+    }
+    
+    .dist-bar {
+        position: relative;
+        height: 24px;
+        background: #333;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    
+    .bar-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 3px;
+        transition: width 0.3s ease;
+    }
+    
+    .bar-fill.zero { background: linear-gradient(90deg, #ff4444, #cc3333); }
+    .bar-fill.low { background: linear-gradient(90deg, #ff9800, #cc7700); }
+    .bar-fill.mid { background: linear-gradient(90deg, #4caf50, #388e3c); }
+    .bar-fill.high { background: linear-gradient(90deg, #2196f3, #1976d2); }
+    .bar-fill.max { background: linear-gradient(90deg, #9c27b0, #7b1fa2); }
+    
+    .bar-label {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.75rem;
+        font-family: monospace;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        z-index: 1;
     }
     
     .results {

@@ -36,6 +36,6 @@
     .untoggledButton {
         background-color: var(--secondary-color);
         color: var(--primary-color);
-        border: var(--primary-color) 2px solid;
+        border: var(--primary-color) var(--border-width) solid;
     }
 </style>

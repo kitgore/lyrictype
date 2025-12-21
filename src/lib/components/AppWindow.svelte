@@ -22,7 +22,7 @@
     // Calculate responsive title bar dimensions based on window height, not screen height
     $: titleBarHeight = dimensions.height * 0.06; // 6% of window height
     $: closeButtonSize = dimensions.height * 0.045; // 4.5% of window height
-    $: titleBarPadding = dimensions.height * 0.006; // 0.8% of window height
+    $: titleBarPadding = dimensions.height * 0.006; // 0.6% of window height
     $: closeButtonOutlineWidth = Math.max(2, dimensions.height * 0.006); // 1% of window height, minimum 2px
     
     // Custom scrollbar sizing (from TrashDisplay)
@@ -32,7 +32,7 @@
     $: customScrollArrowFontSize = dimensions.height * 0.036;
     
     // Topbar sizing
-    $: topbarHeight = dimensions.height * 0.07; // 8% of window height
+    $: topbarHeight = dimensions.height * 0.07; // 7% of window height
     // $: topbarPadding = dimensions.height * 0.01; // 1% of window height
     $: topbarFontSize = dimensions.height * 0.025; // 2.5% of window height
     
@@ -144,6 +144,7 @@
         width: {dimensions.width}px;
         height: {dimensions.height}px;
         z-index: {windowState.zIndex || 1};
+        --border-width: 2px;
     "
 >
     <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -272,7 +273,7 @@
 .title-bar {
     position: relative;
     background-color: var(--secondary-color);
-    border: 2px solid var(--primary-color);;
+    border: var(--border-width) solid var(--primary-color);
     position: relative;
     display: flex;
     justify-content: center;
@@ -316,7 +317,7 @@
     width: 2.6vh; 
     height: 2.6vh;
     background-color: var(--secondary-color);
-    border: solid var(--primary-color) 2px;
+    border: solid var(--primary-color) var(--border-width);
     font-size: 1.5vh;
     color: var(--primary-color);
     display: flex;
@@ -330,9 +331,9 @@
 
 .topbar {
     background-color: var(--secondary-color);
-    border-left: 2px solid var(--primary-color);
-    border-right: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    border-left: var(--border-width) solid var(--primary-color);
+    border-right: var(--border-width) solid var(--primary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -343,7 +344,7 @@
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    border: 2px solid var(--primary-color);;
+    border: var(--border-width) solid var(--primary-color);
     border-top: none;
 }
 
@@ -391,7 +392,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
-    border-left: 2px solid var(--primary-color);
+    border-left: var(--border-width) solid var(--primary-color);
     margin: 0;
     padding: 0;
 }
@@ -406,8 +407,8 @@
     width: 100%;
     height: var(--custom-scroll-thumb-size);
     background-color: var(--secondary-color);
-    border-top: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+    border-top: var(--border-width) solid var(--primary-color);
+    border-bottom: var(--border-width) solid var(--primary-color);
     background-size: 2px 2px;
         background-image:
             linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
@@ -420,7 +421,7 @@
 .custom-scroll-arrow {
     height: var(--custom-scroll-arrow-size);
     background-color: var(--secondary-color);
-    border: 2px solid var(--primary-color);
+    border: var(--border-width) solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -460,7 +461,7 @@
     display: flex;
     flex-direction: row;
     background-color: var(--secondary-color);
-    border-top: 2px solid var(--primary-color);
+    border-top: var(--border-width) solid var(--primary-color);
     margin: 0;
     padding: 0;
 }
@@ -479,8 +480,8 @@
         background-image:
             linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
             linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
-    border-left: 2px solid var(--primary-color);
-    border-right: 2px solid var(--primary-color);
+    border-left: var(--border-width) solid var(--primary-color);
+    border-right: var(--border-width) solid var(--primary-color);
     position: absolute;
     left: 30%;
 }
@@ -519,8 +520,8 @@
     grid-column: 2;
     grid-row: 2;
     background-color: var(--secondary-color);
-    border-left: 2px solid var(--primary-color);
-    border-top: 2px solid var(--primary-color);
+    border-left: var(--border-width) solid var(--primary-color);
+    border-top: var(--border-width) solid var(--primary-color);
     margin: 0;
     padding: 0;
 }

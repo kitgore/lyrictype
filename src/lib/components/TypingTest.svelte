@@ -993,7 +993,7 @@
 
      .controlButton {
         font-size: 2em;
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         background-color: var(--secondary-color);
         cursor: pointer;
         border-radius: 4px;
@@ -1074,7 +1074,7 @@
         font-family: "Geneva", sans-serif;
         font-size: 11px;
         font-weight: bold;
-        border: 2px solid var(--secondary-color);
+        border: var(--border-width) solid var(--secondary-color);
         min-width: 20px;
         pointer-events: none;
     }
@@ -1184,7 +1184,7 @@
         display: flex;
         align-items: center;
         height: 100%;
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         background-color: var(--secondary-color);
         border-radius: 4px;
         /* padding: 0 12px; */
@@ -1221,7 +1221,7 @@
     }
 
     .lyricsContainer {
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         background-color: var(--secondary-color);
         height: 100%;
         border-radius: .2em;

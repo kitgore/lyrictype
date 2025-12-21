@@ -104,7 +104,7 @@ style="--bg-size: {backgroundSize}px; background-image: {pattern}"
         justify-content: left; 
         align-items: center;
         color: var(--primary-color);;
-        border-bottom: 2px solid var(--primary-color);;
+        border-bottom: var(--border-width) solid var(--primary-color);
     }
     .background {
         flex: 1;

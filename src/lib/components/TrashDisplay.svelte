@@ -479,7 +479,7 @@
     .info-panel {
         flex: 1;
         background-color: var(--secondary-color);
-        border-left: 2px solid var(--primary-color);
+        border-left: var(--border-width) solid var(--primary-color);
         padding: var(--outside-padding);
         display: flex;
         flex-direction: column;

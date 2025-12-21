@@ -174,6 +174,7 @@ style:--primary-color={$themeColors.primary}
 style:--secondary-color={$themeColors.secondary}
 style:--background-primary-color={$backgroundColors.primary}
 style:--background-secondary-color={$backgroundColors.secondary}
+style:--border-width="2px"
 >
 <Background></Background>
 <DesktopIcon label="Media Typer" onClick={() => openWindow('typingTestWindow')} position={ {x: 90.5, y: 8} }>
@@ -280,13 +281,14 @@ style:--background-secondary-color={$backgroundColors.secondary}
         display: flex;
         flex-shrink: 0;
         align-items: stretch;
+        height: 100%;
     }
 
     .view-toggle-icon {
         width: var(--topbar-button-size);
-        height: var(--topbar-button-size);
+        height: 100%;
         background-color: var(--secondary-color);
-        border: 2px solid var(--primary-color);
+        border: var(--border-width) solid var(--primary-color);
         color: var(--primary-color);
         cursor: pointer;
         display: flex;
