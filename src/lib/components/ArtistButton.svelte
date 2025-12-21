@@ -95,15 +95,36 @@
                         imageMetadata = result.metadata;
                         useFallback = false;
                         isProcessing = false; // IMPORTANT: Stop loading state NOW
-                        console.log(`✅ Grayscale image loaded for ${name} (${urlKey}):`, result.cached ? 'from cache' : 'processed');
-                        console.log(`📊 Render state after load:`, {
+                        console.log(`✅ [ARTIST DEBUG] Grayscale image loaded for ${name} (${urlKey}):`, result.cached ? 'from cache' : 'processed');
+                        console.log(`📊 [ARTIST DEBUG] Data received:`, {
                             hasGrayscaleData: !!grayscaleImageData,
+                            grayscaleDataLength: grayscaleImageData?.length,
+                            hasRawBytes: !!rawGrayscaleBytes,
+                            rawBytesLength: rawGrayscaleBytes?.length,
+                            rawBytesType: rawGrayscaleBytes ? rawGrayscaleBytes.constructor?.name : 'null',
                             hasMetadata: !!imageMetadata,
+                            metadataWidth: imageMetadata?.width,
+                            metadataHeight: imageMetadata?.height,
+                            expectedBytes: imageMetadata?.width * imageMetadata?.height,
                             useFallback,
                             isProcessing,
-                            metadataWidth: imageMetadata?.width,
-                            metadataHeight: imageMetadata?.height
+                            cached: result.cached
                         });
+                        
+                        // CRITICAL DEBUG: Check for data issues
+                        if (rawGrayscaleBytes && imageMetadata) {
+                            const expectedSize = imageMetadata.width * imageMetadata.height;
+                            if (rawGrayscaleBytes.length !== expectedSize) {
+                                console.error(`🚨 [ARTIST DEBUG] SIZE MISMATCH for ${name}:`, {
+                                    expected: expectedSize,
+                                    actual: rawGrayscaleBytes.length,
+                                    dimensions: `${imageMetadata.width}x${imageMetadata.height}`
+                                });
+                            }
+                        }
+                        if (!rawGrayscaleBytes && grayscaleImageData) {
+                            console.warn(`⚠️ [ARTIST DEBUG] rawGrayscaleBytes is NULL for ${name}! Will use base64 decoding fallback.`);
+                        }
                     } else {
                         console.warn(`⚠️ Stale image data received for ${name} - ignoring (urlKey changed from ${urlKey} to ${currentUrlKey})`);
                         isProcessing = false; // Also stop processing for stale data
@@ -217,19 +238,6 @@
             {:else if imageLoadError}
                 <div class="error-placeholder" title="Image failed to load"></div>
             {:else}
-                <!-- Debug: Why are we showing placeholder? -->
-                {#if typeof console !== 'undefined'}
-                    {console.log(`⚠️ RENDER ISSUE for ${name}:`, {
-                        hasGrayscaleData: !!grayscaleImageData,
-                        hasMetadata: !!imageMetadata,
-                        useFallback,
-                        isProcessing,
-                        isLoadingImage,
-                        hasImageUrl: !!imageUrl,
-                        imageLoadError,
-                        urlKey
-                    })}
-                {/if}
                 <div class="loading-placeholder"></div>
             {/if}
         </div>

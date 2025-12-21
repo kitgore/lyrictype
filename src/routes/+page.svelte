@@ -174,7 +174,7 @@ style:--primary-color={$themeColors.primary}
 style:--secondary-color={$themeColors.secondary}
 style:--background-primary-color={$backgroundColors.primary}
 style:--background-secondary-color={$backgroundColors.secondary}
-style:--border-width="4px"
+style:--border-width="2px"
 >
 <Background></Background>
 <DesktopIcon label="Media Typer" onClick={() => openWindow('typingTestWindow')} position={ {x: 90.5, y: 8} }>

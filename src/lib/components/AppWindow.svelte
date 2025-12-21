@@ -144,7 +144,7 @@
         width: {dimensions.width}px;
         height: {dimensions.height}px;
         z-index: {windowState.zIndex || 1};
-        --border-width: 4px;
+        --border-width: 2px;
     "
 >
     <!-- svelte-ignore a11y-no-static-element-interactions -->

@@ -406,7 +406,7 @@
     
     .search-cursor {
         display: inline-block;
-        width: 4px;
+        width: 2px;
         height: 1.2em;
         margin-left: var(--cursor-gap, 2px);
         background-color: var(--primary-color, black);
