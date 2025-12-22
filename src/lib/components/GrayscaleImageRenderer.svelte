@@ -1,6 +1,6 @@
 <!--
   Grayscale Image WebGL Renderer
-  Renders 8-bit grayscale image data with dynamic theme colors
+  Renders 8-bit grayscale image data with dynamic theme colors 
   Optimized for performance and instant theme changes
 -->
 
