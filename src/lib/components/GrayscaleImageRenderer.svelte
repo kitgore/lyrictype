@@ -1,12 +1,32 @@
 <!--
   Grayscale Image WebGL Renderer
-  Renders 8-bit grayscale image data with dynamic theme colors
-  Optimized for performance and instant theme changes
+  
+  Renders 8-bit grayscale LUMINANCE textures with dynamic theme color mapping using WebGL.
+  The reason for this component is we are not able to directly filter images from outside servers on the client (CORS restrictions)
+    and storing the images in our own database takes up too much space. We process the images to grayscale on the server
+    and store them as compressed base64 strings in our database. This component is used to render the strings
+    on the client side as grayscale "images" (WebGL textures).
+  
+  Features:
+  - Adaptive multi-sample downsampling: Automatically selects shader variant (1/4/16/36-tap box filter)
+    based on downscale ratio to ensure smooth rendering at any size
+  - Two-pass rendering: Renders to 4x framebuffer, then downsamples to screen for anti-aliasing
+  - Real-time theme color updates without regenerating textures
+  - Handles non-power-of-two textures with proper WebGL alignment
+  - Falls back to Canvas 2D if WebGL is unavailable
+  
+  Input: Base64-encoded or raw Uint8Array grayscale data (width × height bytes)
+  Output: Smooth, anti-aliased image with theme colors applied
+  
+  Set DEBUG = true in the script to enable verbose console logging.
 -->
 
 <script>
   import { onMount, onDestroy } from 'svelte';
   import { imageColors } from '$lib/services/store.js';
+
+  // Debug flag - set to true to enable detailed console logging
+  const DEBUG = false;
 
   export let grayscaleData = ''; // Base64 encoded grayscale image data
   export let rawGrayscaleBytes = null; // Raw Uint8Array for WebGL (preferred)
@@ -22,7 +42,14 @@
   let canvas;
   let canvasWrapper;
   let gl;
-  let program;
+  // Shader program variants for adaptive downsampling (selected based on downscale ratio)
+  let programs = {
+    tap1: null,   // 1-tap for 1x-2x downscale
+    tap4: null,   // 4-tap for 2x-4x downscale
+    tap16: null,  // 16-tap for 4x-8x downscale
+    tap36: null   // 36-tap for 8x+ downscale
+  };
+  let activeProgram = null; // Currently selected shader program
   let downsampleProgram;
   let texture;
   let framebuffer;
@@ -36,6 +63,8 @@
   let renderWidth = 800; // 4x resolution width for intermediate rendering
   let renderHeight = 800; // 4x resolution height for intermediate rendering
   let resizeObserver;
+  let currentDownscaleRatio = 1; // Track downscale ratio for shader selection
+  let lastLoggedRatio = -1; // For throttling debug logs
 
   // Vertex shader - simple quad
   const vertexShaderSource = `
@@ -49,24 +78,116 @@
     }
   `;
 
-  // Fragment shader - maps grayscale data to theme colors (Pass 1)
-  const fragmentShaderSource = `
+  // Fragment shader variants for adaptive multi-sample downsampling
+  // Each variant uses a box filter with different tap counts based on downscale ratio
+  // NOTE: Fixed 4x intermediate framebuffer is used; future optimization could use dynamic scaling
+
+  // 1-tap shader (standard linear, for downscale ratios 1x-2x)
+  const fragmentShader1Tap = `
     precision mediump float;
     
     uniform sampler2D u_texture;
-    uniform vec3 u_primaryColor;   // Dark pixels (low grayscale values)
-    uniform vec3 u_secondaryColor; // Light pixels (high grayscale values)
+    uniform vec3 u_primaryColor;
+    uniform vec3 u_secondaryColor;
     
     varying vec2 v_texCoord;
     
     void main() {
-      // Sample the grayscale texture (8-bit values normalized to 0.0-1.0)
       float grayscaleValue = texture2D(u_texture, v_texCoord).r;
-      
-      // Map grayscale value to theme colors
-      // 0.0 = dark (primary), 1.0 = light (secondary)
       vec3 color = mix(u_primaryColor, u_secondaryColor, grayscaleValue);
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
+
+  // 4-tap shader (2x2 box filter, for downscale ratios 2x-4x)
+  // Samples are spread across the area covered by the downscale ratio
+  const fragmentShader4Tap = `
+    precision mediump float;
+    
+    uniform sampler2D u_texture;
+    uniform vec3 u_primaryColor;
+    uniform vec3 u_secondaryColor;
+    uniform vec2 u_texelSize; // 1.0 / textureSize
+    uniform float u_downscaleRatio; // How many source pixels per output pixel
+    
+    varying vec2 v_texCoord;
+    
+    void main() {
+      // 2x2 box filter: sample 4 points spread across the downscale area
+      // Each sample is offset by ratio/2 texels to cover the full source area
+      vec2 sampleStep = u_texelSize * u_downscaleRatio * 0.5;
       
+      float g00 = texture2D(u_texture, v_texCoord + vec2(-sampleStep.x, -sampleStep.y)).r;
+      float g10 = texture2D(u_texture, v_texCoord + vec2( sampleStep.x, -sampleStep.y)).r;
+      float g01 = texture2D(u_texture, v_texCoord + vec2(-sampleStep.x,  sampleStep.y)).r;
+      float g11 = texture2D(u_texture, v_texCoord + vec2( sampleStep.x,  sampleStep.y)).r;
+      
+      float grayscaleValue = (g00 + g10 + g01 + g11) * 0.25;
+      vec3 color = mix(u_primaryColor, u_secondaryColor, grayscaleValue);
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
+
+  // 16-tap shader (4x4 box filter, for downscale ratios 4x-8x)
+  // Samples are evenly distributed across the source pixel area
+  const fragmentShader16Tap = `
+    precision mediump float;
+    
+    uniform sampler2D u_texture;
+    uniform vec3 u_primaryColor;
+    uniform vec3 u_secondaryColor;
+    uniform vec2 u_texelSize;
+    uniform float u_downscaleRatio;
+    
+    varying vec2 v_texCoord;
+    
+    void main() {
+      // 4x4 box filter: sample 16 points spread across downscale area
+      // Step size: ratio/4 texels between samples to cover full area
+      vec2 sampleStep = u_texelSize * u_downscaleRatio / 4.0;
+      float sum = 0.0;
+      
+      for (int y = -2; y < 2; y++) {
+        for (int x = -2; x < 2; x++) {
+          vec2 offset = vec2(float(x) + 0.5, float(y) + 0.5) * sampleStep;
+          sum += texture2D(u_texture, v_texCoord + offset).r;
+        }
+      }
+      
+      float grayscaleValue = sum / 16.0;
+      vec3 color = mix(u_primaryColor, u_secondaryColor, grayscaleValue);
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `;
+
+  // 36-tap shader (6x6 box filter, for downscale ratios 8x+)
+  // Maximum sampling for extreme downscaling scenarios
+  const fragmentShader36Tap = `
+    precision mediump float;
+    
+    uniform sampler2D u_texture;
+    uniform vec3 u_primaryColor;
+    uniform vec3 u_secondaryColor;
+    uniform vec2 u_texelSize;
+    uniform float u_downscaleRatio;
+    
+    varying vec2 v_texCoord;
+    
+    void main() {
+      // 6x6 box filter: sample 36 points spread across downscale area
+      // Step size: ratio/6 texels between samples to cover full area
+      vec2 sampleStep = u_texelSize * u_downscaleRatio / 6.0;
+      float sum = 0.0;
+      
+      for (int y = -3; y < 3; y++) {
+        for (int x = -3; x < 3; x++) {
+          vec2 offset = vec2(float(x) + 0.5, float(y) + 0.5) * sampleStep;
+          sum += texture2D(u_texture, v_texCoord + offset).r;
+        }
+      }
+      
+      float grayscaleValue = sum / 36.0;
+      vec3 color = mix(u_primaryColor, u_secondaryColor, grayscaleValue);
       gl_FragColor = vec4(color, 1.0);
     }
   `;
@@ -96,7 +217,7 @@
     gl.compileShader(shader);
     
     if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-      console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
+      if (DEBUG) console.error('Shader compilation error:', gl.getShaderInfoLog(shader));
       gl.deleteShader(shader);
       return null;
     }
@@ -111,7 +232,7 @@
     gl.linkProgram(program);
     
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error('Program linking error:', gl.getProgramInfoLog(program));
+      if (DEBUG) console.error('Program linking error:', gl.getProgramInfoLog(program));
       gl.deleteProgram(program);
       return null;
     }
@@ -128,6 +249,56 @@
     ] : [0, 0, 0];
   }
 
+  // Select the appropriate shader program based on downscale ratio
+  // This ensures smooth rendering by sampling enough source pixels
+  function selectShaderProgram() {
+    if (!programs.tap1) return null;
+    
+    // Calculate downscale ratio: source image size / FINAL DISPLAY size
+    // This accounts for the full downscale chain (source -> framebuffer -> display)
+    // The box filter needs to sample across the entire source area that maps to each display pixel
+    const scaleX = width / (displayWidth || 1);
+    const scaleY = height / (displayHeight || 1);
+    const ratio = Math.max(scaleX, scaleY);
+    currentDownscaleRatio = ratio;
+    
+    // Select shader based on ratio thresholds
+    let selected;
+    let tapCount;
+    
+    if (ratio <= 0.5) {
+      // Upscaling or near 1:1 - simple linear is fine
+      selected = programs.tap1;
+      tapCount = 1;
+    } else if (ratio <= 1.0) {
+      // 1x-2x downscale: 1-tap (linear sampling handles this well)
+      selected = programs.tap1;
+      tapCount = 1;
+    } else if (ratio <= 2.0) {
+      // 2x-4x downscale: 4-tap (2x2 box filter)
+      selected = programs.tap4;
+      tapCount = 4;
+    } else if (ratio <= 4.0) {
+      // 4x-8x downscale: 16-tap (4x4 box filter)
+      selected = programs.tap16;
+      tapCount = 16;
+    } else {
+      // 8x+ downscale: 36-tap (6x6 box filter)
+      selected = programs.tap36;
+      tapCount = 36;
+    }
+    
+    if (selected !== activeProgram) {
+      if (DEBUG) {
+        const coveragePerSample = tapCount === 1 ? 'N/A' : (ratio / Math.sqrt(tapCount)).toFixed(2);
+        console.log(`Shader selection: ratio=${ratio.toFixed(2)}x, ${tapCount}-tap filter, ~${coveragePerSample} texels/sample (source: ${width}x${height} -> display: ${displayWidth}x${displayHeight}, framebuffer: ${renderWidth}x${renderHeight})`);
+      }
+      activeProgram = selected;
+    }
+    
+    return selected;
+  }
+
   function grayscaleDataToImageData(grayscaleBase64, width, height) {
     try {
       // Decode base64 to grayscale data
@@ -139,7 +310,7 @@
       
       // Grayscale data is already 8-bit per pixel, just return it
       // Data should already be width * height bytes
-      if (grayscaleData.length !== width * height) {
+      if (grayscaleData.length !== width * height && DEBUG) {
         console.warn(`Grayscale data size mismatch: expected ${width * height}, got ${grayscaleData.length}`);
       }
       
@@ -153,43 +324,67 @@
 
   function initWebGL() {
     if (!canvas || !grayscaleData) {
-      console.warn(`⚠️ [WEBGL DEBUG] initWebGL skipped for "${alt}":`, { hasCanvas: !!canvas, hasGrayscaleData: !!grayscaleData, hasRawBytes: !!rawGrayscaleBytes });
+      if (DEBUG) console.warn(`⚠️ [WEBGL DEBUG] initWebGL skipped for "${alt}":`, { hasCanvas: !!canvas, hasGrayscaleData: !!grayscaleData, hasRawBytes: !!rawGrayscaleBytes });
       return false;
     }
     
-    console.log(`🎮 [WEBGL DEBUG] initWebGL starting for "${alt}"`, {
-      canvasWidth: canvas.width,
-      canvasHeight: canvas.height,
-      grayscaleDataLength: grayscaleData?.length,
-      rawBytesLength: rawGrayscaleBytes?.length,
-      imageWidth: width,
-      imageHeight: height,
-      expectedBytes: width * height
-    });
+    if (DEBUG) {
+      console.log(`🎮 [WEBGL DEBUG] initWebGL starting for "${alt}"`, {
+        canvasWidth: canvas.width,
+        canvasHeight: canvas.height,
+        grayscaleDataLength: grayscaleData?.length,
+        rawBytesLength: rawGrayscaleBytes?.length,
+        imageWidth: width,
+        imageHeight: height,
+        expectedBytes: width * height
+      });
+    }
 
     try {
       gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
       
       if (!gl) {
-        console.error('WebGL not supported');
+        if (DEBUG) console.error('WebGL not supported');
         return false;
       }
 
-      // Create shaders for both passes
+      // Create vertex shaders (shared across all programs)
       const vertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
-      const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fragmentShaderSource);
+      if (!vertexShader) return false;
+
+      // Create fragment shaders for each tap variant
+      const fragShader1 = createShader(gl, gl.FRAGMENT_SHADER, fragmentShader1Tap);
+      const fragShader4 = createShader(gl, gl.FRAGMENT_SHADER, fragmentShader4Tap);
+      const fragShader16 = createShader(gl, gl.FRAGMENT_SHADER, fragmentShader16Tap);
+      const fragShader36 = createShader(gl, gl.FRAGMENT_SHADER, fragmentShader36Tap);
+      
+      if (!fragShader1 || !fragShader4 || !fragShader16 || !fragShader36) {
+        if (DEBUG) console.error('Failed to compile one or more fragment shader variants');
+        return false;
+      }
+
+      // Create programs for each variant
+      programs.tap1 = createProgram(gl, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource), fragShader1);
+      programs.tap4 = createProgram(gl, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource), fragShader4);
+      programs.tap16 = createProgram(gl, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource), fragShader16);
+      programs.tap36 = createProgram(gl, createShader(gl, gl.VERTEX_SHADER, vertexShaderSource), fragShader36);
+      
+      if (!programs.tap1 || !programs.tap4 || !programs.tap16 || !programs.tap36) {
+        if (DEBUG) console.error('Failed to link one or more shader programs');
+        return false;
+      }
+
+      // Create downsample program
       const downsampleVertexShader = createShader(gl, gl.VERTEX_SHADER, vertexShaderSource);
       const downsampleFragmentShader = createShader(gl, gl.FRAGMENT_SHADER, downsampleFragmentShaderSource);
       
-      if (!vertexShader || !fragmentShader || !downsampleVertexShader || !downsampleFragmentShader) {
+      if (!downsampleVertexShader || !downsampleFragmentShader) {
         return false;
       }
-
-      // Create programs
-      program = createProgram(gl, vertexShader, fragmentShader);
+      
       downsampleProgram = createProgram(gl, downsampleVertexShader, downsampleFragmentShader);
       
-      if (!program || !downsampleProgram) {
+      if (!downsampleProgram) {
         return false;
       }
 
@@ -205,20 +400,28 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
       gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
 
-      // Get attribute and uniform locations for first pass
-      const positionLocation = gl.getAttribLocation(program, 'a_position');
-      const texCoordLocation = gl.getAttribLocation(program, 'a_texCoord');
-      const textureLocation = gl.getUniformLocation(program, 'u_texture');
-      const primaryColorLocation = gl.getUniformLocation(program, 'u_primaryColor');
-      const secondaryColorLocation = gl.getUniformLocation(program, 'u_secondaryColor');
+      // Set up attribute and uniform locations for all program variants
+      function setupProgramLocations(prog, hasMultiSampleUniforms = false) {
+        prog.positionLocation = gl.getAttribLocation(prog, 'a_position');
+        prog.texCoordLocation = gl.getAttribLocation(prog, 'a_texCoord');
+        prog.textureLocation = gl.getUniformLocation(prog, 'u_texture');
+        prog.primaryColorLocation = gl.getUniformLocation(prog, 'u_primaryColor');
+        prog.secondaryColorLocation = gl.getUniformLocation(prog, 'u_secondaryColor');
+        prog.positionBuffer = positionBuffer;
+        if (hasMultiSampleUniforms) {
+          prog.texelSizeLocation = gl.getUniformLocation(prog, 'u_texelSize');
+          prog.downscaleRatioLocation = gl.getUniformLocation(prog, 'u_downscaleRatio');
+        }
+      }
 
-      // Store locations for first pass
-      program.positionLocation = positionLocation;
-      program.texCoordLocation = texCoordLocation;
-      program.textureLocation = textureLocation;
-      program.primaryColorLocation = primaryColorLocation;
-      program.secondaryColorLocation = secondaryColorLocation;
-      program.positionBuffer = positionBuffer;
+      // 1-tap doesn't need multi-sample uniforms, others do
+      setupProgramLocations(programs.tap1, false);
+      setupProgramLocations(programs.tap4, true);
+      setupProgramLocations(programs.tap16, true);
+      setupProgramLocations(programs.tap36, true);
+      
+      // Default to 1-tap program initially
+      activeProgram = programs.tap1;
 
       // Get attribute and uniform locations for downsample pass
       const downsamplePositionLocation = gl.getAttribLocation(downsampleProgram, 'a_position');
@@ -240,56 +443,62 @@
       }
 
       isInitialized = true;
-      console.log('✅ WebGL two-pass grayscale image renderer initialized', {
-        hasGl: !!gl,
-        hasProgram: !!program,
-        hasDownsampleProgram: !!downsampleProgram,
-        hasTexture: !!texture,
-        hasFramebuffer: !!framebuffer,
-        hasFramebufferTexture: !!framebufferTexture
-      });
+      if (DEBUG) {
+        console.log('WebGL adaptive multi-sample renderer initialized', {
+          hasGl: !!gl,
+          programVariants: Object.keys(programs).filter(k => programs[k]).length,
+          hasDownsampleProgram: !!downsampleProgram,
+          hasTexture: !!texture,
+          hasFramebuffer: !!framebuffer,
+          hasFramebufferTexture: !!framebufferTexture
+        });
+      }
       return true;
 
     } catch (error) {
-      console.error('WebGL initialization error:', error);
+      if (DEBUG) console.error('WebGL initialization error:', error);
       return false;
     }
   }
 
   function createGrayscaleTexture() {
-    if (!gl || !program || !grayscaleData) {
-      console.warn(`⚠️ [TEXTURE DEBUG] createGrayscaleTexture skipped for "${alt}":`, { hasGl: !!gl, hasProgram: !!program, hasGrayscaleData: !!grayscaleData });
+    if (!gl || !programs.tap1 || !grayscaleData) {
+      if (DEBUG) console.warn(`[TEXTURE DEBUG] createGrayscaleTexture skipped for "${alt}":`, { hasGl: !!gl, hasPrograms: !!programs.tap1, hasGrayscaleData: !!grayscaleData });
       return;
     }
 
     try {
-      console.log(`🔍 [TEXTURE DEBUG] Starting texture creation for "${alt}"...`);
-      console.log(`🔍 [TEXTURE DEBUG] Input data:`, {
-        grayscaleDataType: typeof grayscaleData,
-        grayscaleDataLength: grayscaleData?.length,
-        rawGrayscaleBytesType: rawGrayscaleBytes ? rawGrayscaleBytes.constructor.name : 'null',
-        rawGrayscaleBytesLength: rawGrayscaleBytes?.length,
-        imageWidth: width,
-        imageHeight: height,
-        expectedBytes: width * height,
-        hasRawBytes: !!(rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array)
-      });
-      console.log(`🔍 [TEXTURE DEBUG] First 100 chars of base64: ${grayscaleData?.substring(0, 100)}`);
+      if (DEBUG) {
+        console.log(`[TEXTURE DEBUG] Starting texture creation for "${alt}"...`);
+        console.log(`[TEXTURE DEBUG] Input data:`, {
+          grayscaleDataType: typeof grayscaleData,
+          grayscaleDataLength: grayscaleData?.length,
+          rawGrayscaleBytesType: rawGrayscaleBytes ? rawGrayscaleBytes.constructor.name : 'null',
+          rawGrayscaleBytesLength: rawGrayscaleBytes?.length,
+          imageWidth: width,
+          imageHeight: height,
+          expectedBytes: width * height,
+          hasRawBytes: !!(rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array)
+        });
+        console.log(`[TEXTURE DEBUG] First 100 chars of base64: ${grayscaleData?.substring(0, 100)}`);
+      }
       
       // Use raw bytes if available, otherwise convert from base64
       let luminanceData;
       if (rawGrayscaleBytes && rawGrayscaleBytes instanceof Uint8Array) {
-        console.log(`🚀 Using raw grayscale bytes: ${rawGrayscaleBytes.length} bytes`);
+        if (DEBUG) console.log(`[TEXTURE DEBUG] Using raw grayscale bytes: ${rawGrayscaleBytes.length} bytes`);
         luminanceData = rawGrayscaleBytes;
       } else {
-        console.log(`🔄 Converting base64 grayscale data to Uint8Array`);
+        if (DEBUG) console.log(`[TEXTURE DEBUG] Converting base64 grayscale data to Uint8Array`);
         let binaryString;
         try {
           binaryString = atob(grayscaleData);
-          console.log(`🔍 [TEXTURE DEBUG] Decoded binary string length: ${binaryString.length}`);
+          if (DEBUG) console.log(`[TEXTURE DEBUG] Decoded binary string length: ${binaryString.length}`);
         } catch (atobError) {
-          console.error(`❌ [TEXTURE DEBUG] atob() failed! Invalid base64 data:`, atobError);
-          console.error(`❌ [TEXTURE DEBUG] First 200 chars: ${grayscaleData?.substring(0, 200)}`);
+          if (DEBUG) {
+            console.error(`[TEXTURE DEBUG] atob() failed! Invalid base64 data:`, atobError);
+            console.error(`[TEXTURE DEBUG] First 200 chars: ${grayscaleData?.substring(0, 200)}`);
+          }
           return;
         }
         luminanceData = new Uint8Array(binaryString.length);
@@ -306,83 +515,89 @@
       // WebGL defaults to 4-byte alignment, which causes GL_INVALID_OPERATION (1282)
       // when texture width is not divisible by 4 (e.g., 433x433, 427x427)
       gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
-      console.log(`🔧 [TEXTURE DEBUG] Set UNPACK_ALIGNMENT to 1 for ${width}x${height} texture (width % 4 = ${width % 4})`);
+      if (DEBUG) console.log(`[TEXTURE DEBUG] Set UNPACK_ALIGNMENT to 1 for ${width}x${height} texture (width % 4 = ${width % 4})`);
 
       // Validate data size BEFORE uploading to WebGL
       const expectedSize = width * height;
       const actualSize = luminanceData.length;
       
-      console.log(`📊 Texture data validation:`, {
-        width,
-        height,
-        expectedSize,
-        actualSize,
-        match: expectedSize === actualSize
-      });
+      if (DEBUG) {
+        console.log(`📊 Texture data validation:`, {
+          width,
+          height,
+          expectedSize,
+          actualSize,
+          match: expectedSize === actualSize
+        });
+      }
       
       if (actualSize !== expectedSize) {
-        console.error(`❌ DATA SIZE MISMATCH! Expected ${expectedSize} bytes, got ${actualSize} bytes`);
-        console.error(`This will cause WebGL texImage2D to fail!`);
+        if (DEBUG) {
+          console.error(`[TEXTURE DEBUG] DATA SIZE MISMATCH! Expected ${expectedSize} bytes, got ${actualSize} bytes`);
+          console.error(`This will cause WebGL texImage2D to fail!`);
+        }
         
         // Try to recover: pad or trim the data
         if (actualSize < expectedSize) {
-          console.warn(`⚠️ Padding data from ${actualSize} to ${expectedSize} bytes with zeros`);
+          if (DEBUG) console.warn(`⚠️ Padding data from ${actualSize} to ${expectedSize} bytes with zeros`);
           const paddedData = new Uint8Array(expectedSize);
           paddedData.set(luminanceData);
           // Fill remaining with middle gray (128) instead of black (0)
           paddedData.fill(128, actualSize);
           luminanceData = paddedData;
         } else {
-          console.warn(`⚠️ Trimming data from ${actualSize} to ${expectedSize} bytes`);
+          if (DEBUG) console.warn(`⚠️ Trimming data from ${actualSize} to ${expectedSize} bytes`);
           luminanceData = luminanceData.slice(0, expectedSize);
         }
       }
       
       // ========== DETAILED LUMINANCE ANALYSIS ==========
-      let zeroCount = 0;
-      let lowCount = 0;   // 1-63
-      let midCount = 0;   // 64-191
-      let highCount = 0;  // 192-254
-      let maxCount = 0;   // 255
-      let min = 255, max = 0, sum = 0;
-      
-      for (let i = 0; i < luminanceData.length; i++) {
-        const val = luminanceData[i];
-        sum += val;
-        if (val < min) min = val;
-        if (val > max) max = val;
+      if (DEBUG) {
+        let zeroCount = 0;
+        let lowCount = 0;   // 1-63
+        let midCount = 0;   // 64-191
+        let highCount = 0;  // 192-254
+        let maxCount = 0;   // 255
+        let min = 255, max = 0, sum = 0;
         
-        if (val === 0) zeroCount++;
-        else if (val < 64) lowCount++;
-        else if (val < 192) midCount++;
-        else if (val < 255) highCount++;
-        else maxCount++;
-      }
-      
-      const avg = sum / luminanceData.length;
-      const zeroPercent = ((zeroCount / luminanceData.length) * 100).toFixed(1);
-      const maxPercent = ((maxCount / luminanceData.length) * 100).toFixed(1);
-      
-      console.log(`📊 [TEXTURE DEBUG] Luminance distribution:`);
-      console.log(`   Range: ${min} - ${max}, Average: ${avg.toFixed(1)}`);
-      console.log(`   Zero (0): ${zeroCount} (${zeroPercent}%)`);
-      console.log(`   Low (1-63): ${lowCount} (${((lowCount / luminanceData.length) * 100).toFixed(1)}%)`);
-      console.log(`   Mid (64-191): ${midCount} (${((midCount / luminanceData.length) * 100).toFixed(1)}%)`);
-      console.log(`   High (192-254): ${highCount} (${((highCount / luminanceData.length) * 100).toFixed(1)}%)`);
-      console.log(`   Max (255): ${maxCount} (${maxPercent}%)`);
-      
-      // Diagnostic warnings for problematic data
-      if (parseFloat(zeroPercent) > 95) {
-        console.error(`🚨 [TEXTURE DEBUG] PROBLEM DETECTED: ${zeroPercent}% of pixels are ZERO!`);
-        console.error(`🚨 [TEXTURE DEBUG] This will cause the image to appear as SOLID PRIMARY COLOR!`);
-        console.error(`🚨 [TEXTURE DEBUG] Likely causes: corrupted data, failed decompression, or incorrect image processing`);
-      }
-      if (max === min) {
-        console.error(`🚨 [TEXTURE DEBUG] PROBLEM DETECTED: All pixels have same value (${min})!`);
-        console.error(`🚨 [TEXTURE DEBUG] This means NO grayscale variation - image will be a solid color!`);
-      }
-      if (max - min < 10 && luminanceData.length > 100) {
-        console.warn(`⚠️ [TEXTURE DEBUG] Very low contrast: range is only ${min}-${max} (${max - min} levels)`);
+        for (let i = 0; i < luminanceData.length; i++) {
+          const val = luminanceData[i];
+          sum += val;
+          if (val < min) min = val;
+          if (val > max) max = val;
+          
+          if (val === 0) zeroCount++;
+          else if (val < 64) lowCount++;
+          else if (val < 192) midCount++;
+          else if (val < 255) highCount++;
+          else maxCount++;
+        }
+        
+        const avg = sum / luminanceData.length;
+        const zeroPercent = ((zeroCount / luminanceData.length) * 100).toFixed(1);
+        const maxPercent = ((maxCount / luminanceData.length) * 100).toFixed(1);
+        
+        console.log(`📊 [TEXTURE DEBUG] Luminance distribution:`);
+        console.log(`   Range: ${min} - ${max}, Average: ${avg.toFixed(1)}`);
+        console.log(`   Zero (0): ${zeroCount} (${zeroPercent}%)`);
+        console.log(`   Low (1-63): ${lowCount} (${((lowCount / luminanceData.length) * 100).toFixed(1)}%)`);
+        console.log(`   Mid (64-191): ${midCount} (${((midCount / luminanceData.length) * 100).toFixed(1)}%)`);
+        console.log(`   High (192-254): ${highCount} (${((highCount / luminanceData.length) * 100).toFixed(1)}%)`);
+        console.log(`   Max (255): ${maxCount} (${maxPercent}%)`);
+        
+        // Diagnostic warnings for problematic data
+        if (parseFloat(zeroPercent) > 95) {
+          console.error(`[TEXTURE DEBUG] PROBLEM DETECTED: ${zeroPercent}% of pixels are ZERO!`);
+          console.error(`[TEXTURE DEBUG] This will cause the image to appear as SOLID PRIMARY COLOR!`);
+          console.error(`[TEXTURE DEBUG] Likely causes: corrupted data, failed decompression, or incorrect image processing`);
+        }
+        if (max === min) {
+          console.error(`[TEXTURE DEBUG] PROBLEM DETECTED: All pixels have same value (${min})!`);
+          console.error(`[TEXTURE DEBUG] This means NO grayscale variation - image will be a solid color!`);
+        }
+        if (max - min < 10 && luminanceData.length > 100) {
+          console.warn(`[TEXTURE DEBUG] Very low contrast: range is only ${min}-${max} (${max - min} levels)`);
+        }
       }
       
       // Upload luminance data directly
@@ -400,10 +615,12 @@
       
       // Check for WebGL errors after texture upload
       const glError = gl.getError();
-      if (glError !== gl.NO_ERROR) {
-        console.error(`❌ [TEXTURE DEBUG] WebGL error after texImage2D: ${glError}`);
-      } else {
-        console.log(`✅ [TEXTURE DEBUG] texImage2D successful, no WebGL errors`);
+      if (DEBUG) {
+        if (glError !== gl.NO_ERROR) {
+          console.error(`[TEXTURE DEBUG] WebGL error after texImage2D: ${glError}`);
+        } else {
+          console.log(`[TEXTURE DEBUG] texImage2D successful, no WebGL errors`);
+        }
       }
 
       // Set texture parameters for smooth anti-aliasing
@@ -412,16 +629,20 @@
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
 
-      console.log(`🖼️  Created grayscale texture: ${width}x${height} (${luminanceData.length} bytes)`);
-      
-      // Sample some values from the texture to verify
-      console.log(`🔍 First 20 luminance values:`, Array.from(luminanceData.slice(0, 20)));
-      console.log(`🔍 Middle 20 luminance values:`, Array.from(luminanceData.slice(Math.floor(luminanceData.length / 2), Math.floor(luminanceData.length / 2) + 20)));
-      console.log(`🔍 Last 20 luminance values:`, Array.from(luminanceData.slice(-20)));
+      if (DEBUG) {
+        console.log(`[TEXTURE DEBUG] Created grayscale texture: ${width}x${height} (${luminanceData.length} bytes)`);
+        
+        // Sample some values from the texture to verify
+        console.log(`[TEXTURE DEBUG] First 20 luminance values:`, Array.from(luminanceData.slice(0, 20)));
+        console.log(`[TEXTURE DEBUG] Middle 20 luminance values:`, Array.from(luminanceData.slice(Math.floor(luminanceData.length / 2), Math.floor(luminanceData.length / 2) + 20)));
+        console.log(`[TEXTURE DEBUG] Last 20 luminance values:`, Array.from(luminanceData.slice(-20)));
+      }
 
     } catch (error) {
-      console.error('Error creating grayscale texture:', error);
-      console.error(`❌ [TEXTURE DEBUG] Stack trace:`, error.stack);
+      if (DEBUG) {
+        console.error('[TEXTURE DEBUG] Error creating grayscale texture:', error);
+        console.error(`[TEXTURE DEBUG] Stack trace:`, error.stack);
+      }
     }
   }
 
@@ -474,25 +695,25 @@
       // Check framebuffer completeness
       const status = gl.checkFramebufferStatus(gl.FRAMEBUFFER);
       if (status !== gl.FRAMEBUFFER_COMPLETE) {
-        console.error('Framebuffer not complete:', status);
+        if (DEBUG) console.error('Framebuffer not complete:', status);
         return false;
       }
 
       // Unbind framebuffer
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
 
-      console.log(`🖼️  Created framebuffer: ${renderWidth}x${renderHeight}`);
+      if (DEBUG) console.log(`[TEXTURE DEBUG] Created framebuffer: ${renderWidth}x${renderHeight}`);
       return true;
 
     } catch (error) {
-      console.error('Error creating framebuffer:', error);
+      if (DEBUG) console.error('Error creating framebuffer:', error);
       return false;
     }
   }
 
   function updateDisplaySize() {
     if (!canvasWrapper || !width || !height) {
-      console.warn(`⚠️ [SIZE DEBUG] updateDisplaySize skipped:`, { hasWrapper: !!canvasWrapper, width, height, alt });
+      if (DEBUG) console.warn(`[SIZE DEBUG] updateDisplaySize skipped:`, { hasWrapper: !!canvasWrapper, width, height, alt });
       return;
     }
 
@@ -500,13 +721,15 @@
     const rect = canvasWrapper.getBoundingClientRect();
     
     // Debug: Log container dimensions
-    console.log(`📐 [SIZE DEBUG] Container rect for "${alt}":`, {
-      rectWidth: rect.width,
-      rectHeight: rect.height,
-      imageWidth: width,
-      imageHeight: height,
-      isZeroSize: rect.width === 0 || rect.height === 0
-    });
+    if (DEBUG) {
+      console.log(`[SIZE DEBUG] Container rect for "${alt}":`, {
+        rectWidth: rect.width,
+        rectHeight: rect.height,
+        imageWidth: width,
+        imageHeight: height,
+        isZeroSize: rect.width === 0 || rect.height === 0
+      });
+    }
     
     // Calculate original image aspect ratio
     const imageAspectRatio = width / height;
@@ -540,8 +763,8 @@
       renderHeight = Math.max(1, newRenderHeight);
       
       // CRITICAL DEBUG: Detect problematic small sizes
-      if (displayWidth < 10 || displayHeight < 10) {
-        console.error(`🚨 [SIZE DEBUG] CRITICAL: Very small display size detected for "${alt}"!`, {
+      if (DEBUG && (displayWidth < 10 || displayHeight < 10)) {
+        console.error(`[SIZE DEBUG] CRITICAL: Very small display size detected for "${alt}"!`, {
           displayWidth,
           displayHeight,
           renderWidth,
@@ -557,7 +780,7 @@
         canvas.width = renderWidth;
         canvas.height = renderHeight;
         
-        console.log(`📐 [SIZE DEBUG] High-res rendering for "${alt}": Canvas ${renderWidth}x${renderHeight}, Display ${displayWidth}x${displayHeight}, Original ${width}x${height} (AR: ${imageAspectRatio.toFixed(2)})`);
+        if (DEBUG) console.log(`[SIZE DEBUG] High-res rendering for "${alt}": Canvas ${renderWidth}x${renderHeight}, Display ${displayWidth}x${displayHeight}, Original ${width}x${height} (AR: ${imageAspectRatio.toFixed(2)})`);
         
         // Recreate framebuffer with new size
         if (isInitialized) {
@@ -569,30 +792,36 @@
   }
 
   function render() {
-    if (!gl || !program || !downsampleProgram || !texture || !framebuffer || !framebufferTexture || !isInitialized) {
-      console.warn(`❌ [RENDER DEBUG] Render skipped for "${alt}" - missing WebGL objects:`, {
-        hasGl: !!gl,
-        hasProgram: !!program,
-        hasDownsampleProgram: !!downsampleProgram,
-        hasTexture: !!texture,
-        hasFramebuffer: !!framebuffer,
-        hasFramebufferTexture: !!framebufferTexture,
-        isInitialized
-      });
+    // Select the appropriate shader based on current downscale ratio
+    const currentProgram = selectShaderProgram();
+    
+    if (!gl || !currentProgram || !downsampleProgram || !texture || !framebuffer || !framebufferTexture || !isInitialized) {
+      if (DEBUG) {
+        console.warn(`[RENDER DEBUG] Render skipped for "${alt}" - missing WebGL objects:`, {
+          hasGl: !!gl,
+          hasProgram: !!currentProgram,
+          hasDownsampleProgram: !!downsampleProgram,
+          hasTexture: !!texture,
+          hasFramebuffer: !!framebuffer,
+          hasFramebufferTexture: !!framebufferTexture,
+          isInitialized
+        });
+      }
       return;
     }
     
-    // Debug: Log render dimensions
-    console.log(`🎨 [RENDER DEBUG] Rendering "${alt}":`, {
-      renderWidth,
-      renderHeight,
-      displayWidth,
-      displayHeight,
-      canvasWidth: canvas?.width,
-      canvasHeight: canvas?.height,
-      primaryColor: $imageColors.primary,
-      secondaryColor: $imageColors.secondary
-    });
+    // Debug: Log render dimensions (reduced frequency)
+    if (DEBUG && currentDownscaleRatio !== lastLoggedRatio) {
+      console.log(`[RENDER DEBUG] Rendering "${alt}":`, {
+        renderWidth,
+        renderHeight,
+        displayWidth,
+        displayHeight,
+        sourceSize: `${width}x${height}`,
+        downscaleRatio: currentDownscaleRatio.toFixed(2)
+      });
+      lastLoggedRatio = currentDownscaleRatio;
+    }
 
     // ========== PASS 1: Render to framebuffer at 4x resolution ==========
     
@@ -604,31 +833,39 @@
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
 
-    // Use first pass program
-    gl.useProgram(program);
+    // Use selected program (based on downscale ratio)
+    gl.useProgram(currentProgram);
 
     // Bind position buffer
-    gl.bindBuffer(gl.ARRAY_BUFFER, program.positionBuffer);
+    gl.bindBuffer(gl.ARRAY_BUFFER, currentProgram.positionBuffer);
     
     // Set up position attribute
-    gl.enableVertexAttribArray(program.positionLocation);
-    gl.vertexAttribPointer(program.positionLocation, 2, gl.FLOAT, false, 16, 0);
+    gl.enableVertexAttribArray(currentProgram.positionLocation);
+    gl.vertexAttribPointer(currentProgram.positionLocation, 2, gl.FLOAT, false, 16, 0);
     
     // Set up texture coordinate attribute
-    gl.enableVertexAttribArray(program.texCoordLocation);
-    gl.vertexAttribPointer(program.texCoordLocation, 2, gl.FLOAT, false, 16, 8);
+    gl.enableVertexAttribArray(currentProgram.texCoordLocation);
+    gl.vertexAttribPointer(currentProgram.texCoordLocation, 2, gl.FLOAT, false, 16, 8);
 
-    // Bind binary texture
+    // Bind source texture
     gl.activeTexture(gl.TEXTURE0);
     gl.bindTexture(gl.TEXTURE_2D, texture);
-    gl.uniform1i(program.textureLocation, 0);
+    gl.uniform1i(currentProgram.textureLocation, 0);
 
     // Set theme colors
     const primaryRgb = hexToRgb($imageColors.primary);
     const secondaryRgb = hexToRgb($imageColors.secondary);
     
-    gl.uniform3f(program.primaryColorLocation, primaryRgb[0], primaryRgb[1], primaryRgb[2]);
-    gl.uniform3f(program.secondaryColorLocation, secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
+    gl.uniform3f(currentProgram.primaryColorLocation, primaryRgb[0], primaryRgb[1], primaryRgb[2]);
+    gl.uniform3f(currentProgram.secondaryColorLocation, secondaryRgb[0], secondaryRgb[1], secondaryRgb[2]);
+
+    // Set multi-sample uniforms for box filter shaders (if available)
+    if (currentProgram.texelSizeLocation) {
+      gl.uniform2f(currentProgram.texelSizeLocation, 1.0 / width, 1.0 / height);
+    }
+    if (currentProgram.downscaleRatioLocation) {
+      gl.uniform1f(currentProgram.downscaleRatioLocation, currentDownscaleRatio);
+    }
 
     // Draw quad to framebuffer
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
@@ -740,24 +977,26 @@
       ctx.imageSmoothingQuality = 'high';
       ctx.drawImage(tempCanvas, 0, 0, width, height, 0, 0, displayWidth, displayHeight);
 
-      console.log(`🔄 Rendered with Canvas 2D fallback at 4x: ${displayWidth}x${displayHeight}`);
+      if (DEBUG) console.log(`[INIT DEBUG] Rendered with Canvas 2D fallback at 4x: ${displayWidth}x${displayHeight}`);
 
     } catch (error) {
-      console.error('Canvas 2D fallback render error:', error);
+      if (DEBUG) console.error('Canvas 2D fallback render error:', error);
     }
   }
 
   // Helper function to initialize WebGL with safeguards
   function initializeRenderer() {
-    console.log(`🔄 [INIT DEBUG] initializeRenderer called for "${alt}"`, {
-      hasCanvas: !!canvas,
-      hasGrayscaleData: !!grayscaleData,
-      grayscaleDataLength: grayscaleData?.length,
-      hasRawBytes: !!rawGrayscaleBytes,
-      isInitialized,
-      displayWidth,
-      displayHeight
-    });
+    if (DEBUG) {
+      console.log(`[INIT DEBUG] initializeRenderer called for "${alt}"`, {
+        hasCanvas: !!canvas,
+        hasGrayscaleData: !!grayscaleData,
+        grayscaleDataLength: grayscaleData?.length,
+        hasRawBytes: !!rawGrayscaleBytes,
+        isInitialized,
+        displayWidth,
+        displayHeight
+      });
+    }
     
     if (isInitialized) {
       stopRenderLoop();
@@ -769,20 +1008,20 @@
     // SAFEGUARD: If display size is too small, defer initialization
     // This can happen if the container hasn't been laid out yet
     if (displayWidth < 10 || displayHeight < 10) {
-      console.warn(`⚠️ [INIT DEBUG] Display size too small for "${alt}" (${displayWidth}x${displayHeight}), deferring...`);
+      if (DEBUG) console.warn(`[INIT DEBUG] Display size too small for "${alt}" (${displayWidth}x${displayHeight}), deferring...`);
       // Schedule a retry after the next frame when layout should be complete
       requestAnimationFrame(() => {
         updateDisplaySize();
-        console.log(`🔄 [INIT DEBUG] Retry after RAF for "${alt}":`, { displayWidth, displayHeight });
+        if (DEBUG) console.log(`[INIT DEBUG] Retry after RAF for "${alt}":`, { displayWidth, displayHeight });
         if (displayWidth >= 10 && displayHeight >= 10) {
           if (initWebGL()) {
             startRenderLoop();
           } else {
-            console.warn('🔄 WebGL failed, using Canvas 2D fallback');
+            if (DEBUG) console.warn('[INIT DEBUG] WebGL failed, using Canvas 2D fallback');
             renderFallback();
           }
         } else {
-          console.error(`🚨 [INIT DEBUG] Still too small after RAF for "${alt}", forcing minimum size`);
+          if (DEBUG) console.error(`[INIT DEBUG] Still too small after RAF for "${alt}", forcing minimum size`);
           // Force minimum size of 50x50 for safety
           displayWidth = 50;
           displayHeight = 50;
@@ -806,7 +1045,7 @@
     if (initWebGL()) {
       startRenderLoop();
     } else {
-      console.warn('🔄 WebGL failed, using Canvas 2D fallback');
+      if (DEBUG) console.warn('[INIT DEBUG] WebGL failed, using Canvas 2D fallback');
       renderFallback();
       
       // Watch for theme changes in fallback mode
@@ -849,7 +1088,10 @@
       if (texture) gl.deleteTexture(texture);
       if (framebufferTexture) gl.deleteTexture(framebufferTexture);
       if (framebuffer) gl.deleteFramebuffer(framebuffer);
-      if (program) gl.deleteProgram(program);
+      // Delete all program variants
+      Object.values(programs).forEach(prog => {
+        if (prog) gl.deleteProgram(prog);
+      });
       if (downsampleProgram) gl.deleteProgram(downsampleProgram);
     }
   });
@@ -880,9 +1122,11 @@
   
   .grayscale-image-canvas {
     display: block;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+    /* Use smooth/auto rendering to allow browser to interpolate canvas scaling */
+    /* The box filter in the shader handles proper downsampling of the source image */
+    image-rendering: auto;
+    image-rendering: smooth;
+    image-rendering: high-quality;
+    -webkit-font-smoothing: antialiased;
   }
 </style>
