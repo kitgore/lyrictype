@@ -817,7 +817,7 @@
         <div class="contentLayout">
             <div class="sidebar">
                 <div class="artistList" style:gap="{windowHeight*0.01}px">
-                    {#each fullArtistList as artist, index (`${artist.urlKey || artist.artistId || 'empty'}-${index}`)}
+                    {#each fullArtistList as artist, index (artist.urlKey || artist.artistId || `empty-${index}`)}
                     <ArtistButton 
                         name={artist.name} 
                         imageUrl={artist.imageUrl} 
