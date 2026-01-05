@@ -54,13 +54,13 @@ Fix null lyrics for a single artist (much faster than scanning all songs):
 
 ```bash
 # Dry run for specific artist - try any of these formats!
-node fix-null-lyrics.js --artist "grace petrie" --dry-run
-node fix-null-lyrics.js --artist "Grace Petrie" --dry-run  
-node fix-null-lyrics.js --artist grace-petrie --dry-run
+node scripts/fix-null-lyrics.js --artist "grace petrie" --dry-run
+node scripts/fix-null-lyrics.js --artist "Grace Petrie" --dry-run  
+node scripts/fix-null-lyrics.js --artist grace-petrie --dry-run
 
 # Fix for specific artist
-node fix-null-lyrics.js --artist "kendrick lamar"
-node fix-null-lyrics.js --artist "Kendrick Lamar"
+node scripts/fix-null-lyrics.js --artist "kendrick lamar"
+node scripts/fix-null-lyrics.js --artist "Kendrick Lamar"
 ```
 
 **Smart artist search!** The script will find artists using:
@@ -79,22 +79,22 @@ The artist filter:
 
 Process songs in smaller batches (slower but safer):
 ```bash
-node fix-null-lyrics.js --batch-size 3
+node scripts/fix-null-lyrics.js --batch-size 3
 ```
 
 Limit how many songs to process:
 ```bash
-node fix-null-lyrics.js --max-songs 20
+node scripts/fix-null-lyrics.js --max-songs 20
 ```
 
 See detailed info about each song:
 ```bash
-node fix-null-lyrics.js --verbose
+node scripts/fix-null-lyrics.js --verbose
 ```
 
 Combine options:
 ```bash
-node fix-null-lyrics.js --artist drake --batch-size 5 --verbose
+node scripts/fix-null-lyrics.js --artist drake --batch-size 5 --verbose
 ```
 
 ## How the Automatic System Works

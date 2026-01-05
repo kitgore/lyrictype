@@ -3,7 +3,7 @@ import { getFirestore, collection, writeBatch, doc } from 'firebase/firestore';
 import fs from 'fs';
 import path from 'path';
 import unidecode from 'unidecode';
-import { firebaseConfig } from './src/lib/services/initFirebase.js';
+import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 
 // Initialize Firebase using centralized config
 const app = initializeApp(firebaseConfig);

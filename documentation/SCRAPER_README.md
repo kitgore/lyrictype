@@ -25,25 +25,25 @@ A Node.js script to scrape artist links from Genius.com artist index pages.
 #### Single Letter Scraping
 ```bash
 # Scrape artists for letter 'j' with IDs (default, slower)
-node genius-scraper.js
+node scripts/genius-scraper.js
 
 # Scrape artists for a specific letter with IDs
-node genius-scraper.js a
-node genius-scraper.js k
-node genius-scraper.js z
+node scripts/genius-scraper.js a
+node scripts/genius-scraper.js k
+node scripts/genius-scraper.js z
 
 # Fast mode: Skip ID extraction for quicker results
-node genius-scraper.js j --no-ids
-node genius-scraper.js a --no-ids
+node scripts/genius-scraper.js j --no-ids
+node scripts/genius-scraper.js a --no-ids
 ```
 
 #### Bulk Scraping (All Letters A-Z)
 ```bash
 # Scrape ALL letters with IDs (very slow - several hours!)
-node genius-scraper.js all
+node scripts/genius-scraper.js all
 
 # Bulk scrape ALL letters without IDs (much faster - ~30 minutes)
-node genius-scraper.js all --no-ids
+node scripts/genius-scraper.js all --no-ids
 ```
 
 ### Example Output (with ID extraction)

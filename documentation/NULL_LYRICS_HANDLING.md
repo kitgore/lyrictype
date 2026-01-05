@@ -99,23 +99,23 @@ This prevents them from being treated as "cached" in the future and cluttering t
 A bulk scraper utility has been created to proactively fix all songs with null lyrics across your entire database!
 
 ### Location
-- **Script**: `fix-null-lyrics.js`
+- **Script**: `scripts/fix-null-lyrics.js`
 - **Documentation**: `FIX_NULL_LYRICS_README.md`
 
 ### Quick Start
 
 ```bash
 # Dry run to see what would be fixed
-node fix-null-lyrics.js --dry-run
+node scripts/fix-null-lyrics.js --dry-run
 
 # Fix all songs with null lyrics
-node fix-null-lyrics.js
+node scripts/fix-null-lyrics.js
 
 # Fix only songs from a specific artist
-node fix-null-lyrics.js --artist baby-jey
+node scripts/fix-null-lyrics.js --artist baby-jey
 
 # Fix only songs that are supposed to be cached
-node fix-null-lyrics.js --check-cached-only
+node scripts/fix-null-lyrics.js --check-cached-only
 ```
 
 ### Features

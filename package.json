@@ -9,15 +9,15 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-    "start": "node prescraper.js",
-    "test": "node prescraper.js --test 2 --letters a",
-    "help": "node prescraper.js --help",
-    "upload": "node firebase-uploader.js",
-    "upload-dry": "node firebase-uploader.js --dry-run",
-    "upload-help": "node firebase-uploader.js --help",
-    "fix-lyrics": "node fix-null-lyrics.js",
-    "fix-lyrics-dry": "node fix-null-lyrics.js --dry-run",
-    "fix-lyrics-cached": "node fix-null-lyrics.js --check-cached-only"
+    "start": "node scripts/prescraper.js",
+    "test": "node scripts/prescraper.js --test 2 --letters a",
+    "help": "node scripts/prescraper.js --help",
+    "upload": "node scripts/firebase-uploader.js",
+    "upload-dry": "node scripts/firebase-uploader.js --dry-run",
+    "upload-help": "node scripts/firebase-uploader.js --help",
+    "fix-lyrics": "node scripts/fix-null-lyrics.js",
+    "fix-lyrics-dry": "node scripts/fix-null-lyrics.js --dry-run",
+    "fix-lyrics-cached": "node scripts/fix-null-lyrics.js --check-cached-only"
   },
   "type": "module",
   "devDependencies": {
@@ -32,7 +32,9 @@
     "vite": "^5.0.3"
   },
   "dependencies": {
+    "chalk": "^5.6.2",
     "cheerio": "^1.0.0-rc.12",
+    "cli-progress": "^3.12.0",
     "firebase": "^12.2.1",
     "firebase-admin": "^12.1.0",
     "js-cookie": "^3.0.5",
