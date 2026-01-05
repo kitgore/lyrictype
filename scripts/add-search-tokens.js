@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+//TODO: REMOVE THIS SCRIPT, PUT THE INDIVIDUAL FUNCTIONALITY INTO THE UPLOAD ARTISTS SCRIPT
+
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
