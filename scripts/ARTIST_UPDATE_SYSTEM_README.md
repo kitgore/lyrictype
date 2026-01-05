@@ -33,6 +33,7 @@ This system provides a complete workflow for:
 - ✅ **Safe by Default**: Dry-run mode, skip existing data
 - ✅ **Testing Built-In**: `--limit` option on all scripts
 - ✅ **Progress Tracking**: TUI with progress bars and ETAs
+- ✅ **Workflow Timer**: Cumulative elapsed time tracked across all scripts
 - ✅ **Error Handling**: Comprehensive error logging
 - ✅ **Manual Control**: Each step is a separate command
 - ✅ **Timestamped Data**: All data saved with timestamps
@@ -500,6 +501,29 @@ All scripts log errors to `errors.json` files:
 - Progress bars for long operations
 - Helpful CLI help messages
 - Timestamped output directories
+
+## Workflow Timer
+
+The system tracks elapsed time across all scripts using the `artist-lists` directory timestamp:
+
+- **Automatic Tracking**: Uses directory creation time from first script
+- **No Extra Files**: Leverages existing timestamped directories
+- **Live Display**: Progress bars show "Total: 2m 34s" that updates every second
+- **Per-Script Summary**: Each script displays current elapsed time upon completion
+- **Final Total**: `upload-artists.js` (last script) shows the total workflow time
+
+Example output:
+```
+Workflow Elapsed Time: 2m 34s
+────────────────────────────────────────────────────────
+TOTAL WORKFLOW TIME: 23m 47s
+────────────────────────────────────────────────────────
+```
+
+The timer helps you:
+- Track actual processing time across multiple scripts
+- Estimate how long future runs will take
+- Identify bottlenecks in the workflow
 
 ## Implementation Timeline
 

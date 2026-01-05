@@ -6,16 +6,22 @@
 
 import cliProgress from 'cli-progress';
 import chalk from 'chalk';
+import * as timestamp from './timestamp.js';
 
 /**
  * Create a new progress bar
  * @param {string} title - Title for the progress bar
  * @param {number} total - Total items
+ * @param {boolean} showWorkflowTime - Show workflow elapsed time
  * @returns {object} Progress bar instance
  */
-export function createProgressBar(title, total) {
+export function createProgressBar(title, total, showWorkflowTime = true) {
+    const format = showWorkflowTime 
+        ? `${title}: [{bar}] {percentage}% | {value}/{total} | ETA: {eta_formatted} | Total: {workflow_time}`
+        : `${title}: [{bar}] {percentage}% | {value}/{total} | ETA: {eta_formatted}`;
+    
     const bar = new cliProgress.SingleBar({
-        format: `${title}: [{bar}] {percentage}% | {value}/{total} | ETA: {eta_formatted}`,
+        format,
         barCompleteChar: '\u2588',
         barIncompleteChar: '\u2591',
         hideCursor: true,
@@ -24,8 +30,21 @@ export function createProgressBar(title, total) {
     });
     
     bar.start(total, 0, {
-        eta_formatted: 'Calculating...'
+        eta_formatted: 'Calculating...',
+        workflow_time: '0s'
     });
+    
+    // Override update to include workflow time
+    if (showWorkflowTime) {
+        const originalUpdate = bar.update.bind(bar);
+        bar.update = async function(value, payload = {}) {
+            const elapsed = await timestamp.getWorkflowElapsed();
+            if (elapsed !== null) {
+                payload.workflow_time = timestamp.formatDuration(elapsed);
+            }
+            originalUpdate(value, payload);
+        };
+    }
     
     return bar;
 }
@@ -212,5 +231,26 @@ export function printProgressInfo(label, value) {
  */
 export function clearConsole() {
     console.clear();
+}
+
+/**
+ * Print workflow elapsed time
+ * @param {number} seconds - Elapsed seconds
+ * @param {string} label - Optional label
+ */
+export function printWorkflowTime(seconds, label = 'Workflow Elapsed Time') {
+    console.log(`${label}: ${chalk.cyan(timestamp.formatDuration(seconds))}`);
+}
+
+/**
+ * Print total workflow time at completion
+ * @param {number} seconds - Total elapsed seconds
+ */
+export async function printTotalWorkflowTime(seconds) {
+    console.log('');
+    console.log(chalk.bold.cyan('─'.repeat(60)));
+    console.log(chalk.bold.cyan(`TOTAL WORKFLOW TIME: ${timestamp.formatDuration(seconds)}`));
+    console.log(chalk.bold.cyan('─'.repeat(60)));
+    console.log('');
 }
 

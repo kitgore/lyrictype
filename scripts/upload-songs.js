@@ -12,7 +12,7 @@ import unidecode from 'unidecode';
 import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 import * as tui from './utils/tui.js';
 import * as paths from './utils/paths.js';
-import { generateTimestamp, getCurrentISO } from './utils/timestamp.js';
+import { generateTimestamp, getCurrentISO, getWorkflowElapsed } from './utils/timestamp.js';
 import { createErrorLogger } from './utils/error-logger.js';
 
 class SongUploader {
@@ -444,6 +444,12 @@ async function main() {
 
         if (result) {
             uploader.displayResults();
+            
+            const workflowElapsed = await getWorkflowElapsed();
+            if (workflowElapsed !== null) {
+                tui.printWorkflowTime(workflowElapsed);
+            }
+            
             tui.printSuccess('Song upload complete!');
         } else {
             tui.printInfo('No work to do.');
