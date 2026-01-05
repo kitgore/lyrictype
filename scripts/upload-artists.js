@@ -12,7 +12,7 @@ import unidecode from 'unidecode';
 import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 import * as tui from './utils/tui.js';
 import * as paths from './utils/paths.js';
-import { generateTimestamp, getCurrentISO } from './utils/timestamp.js';
+import { generateTimestamp, getCurrentISO, getWorkflowElapsed } from './utils/timestamp.js';
 import { createErrorLogger } from './utils/error-logger.js';
 
 class ArtistUploader {
@@ -495,8 +495,13 @@ async function main() {
             uploader.displayResults();
             tui.printSuccess('Artist upload complete!');
             
+            // Display total workflow time
+            const totalElapsed = await getWorkflowElapsed();
+            if (totalElapsed !== null) {
+                await tui.printTotalWorkflowTime(totalElapsed);
+            }
+            
             if (!options.dryRun) {
-                console.log('');
                 tui.printInfo('Data gathering phase complete!');
                 tui.printInfo('Review the scraped data, then run:');
                 console.log('');

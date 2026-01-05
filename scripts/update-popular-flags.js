@@ -11,7 +11,7 @@ import { getFirestore, doc, updateDoc, deleteField } from 'firebase/firestore';
 import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 import * as tui from './utils/tui.js';
 import * as paths from './utils/paths.js';
-import { generateTimestamp, getCurrentISO } from './utils/timestamp.js';
+import { generateTimestamp, getCurrentISO, getWorkflowElapsed } from './utils/timestamp.js';
 import { createErrorLogger } from './utils/error-logger.js';
 
 class PopularFlagsUpdater {
@@ -282,6 +282,12 @@ async function main() {
 
         if (result) {
             updater.displayResults();
+            
+            const workflowElapsed = await getWorkflowElapsed();
+            if (workflowElapsed !== null) {
+                tui.printWorkflowTime(workflowElapsed);
+            }
+            
             tui.printSuccess('Popular flags update complete!');
         } else {
             tui.printInfo('No work to do.');

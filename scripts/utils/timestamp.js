@@ -3,6 +3,14 @@
  * Handles timestamp generation and parsing for directory naming
  */
 
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const WORKSPACE_ROOT = path.resolve(__dirname, '../..');
+
 /**
  * Generate a timestamp string for directory naming
  * Format: YYYY-MM-DD-HH-MM
@@ -106,5 +114,50 @@ export function calculateETA(completed, total, elapsedSeconds) {
     const etaSeconds = remaining / rate;
     
     return formatDuration(etaSeconds);
+}
+
+/**
+ * Get elapsed time from a directory's creation timestamp
+ * @param {string} dirPath - Path to the directory
+ * @returns {Promise<number|null>} Elapsed seconds, or null if directory doesn't exist
+ */
+export async function getWorkflowElapsedFromDir(dirPath) {
+    try {
+        const stats = await fs.stat(dirPath);
+        const elapsed = (Date.now() - stats.birthtimeMs) / 1000;
+        return elapsed;
+    } catch (error) {
+        return null;
+    }
+}
+
+/**
+ * Get elapsed time from the latest artist-lists directory
+ * @returns {Promise<number|null>} Elapsed seconds, or null if no directory exists
+ */
+export async function getWorkflowElapsed() {
+    try {
+        const artistListsBase = path.join(WORKSPACE_ROOT, 'scraping-data', 'artist-lists');
+        const entries = await fs.readdir(artistListsBase, { withFileTypes: true });
+        
+        // Find all timestamp directories
+        const timestampDirs = entries
+            .filter(entry => entry.isDirectory() && isValidTimestamp(entry.name))
+            .map(entry => ({
+                name: entry.name,
+                path: path.join(artistListsBase, entry.name)
+            }))
+            .sort((a, b) => b.name.localeCompare(a.name)); // Most recent first
+        
+        if (timestampDirs.length === 0) {
+            return null;
+        }
+        
+        // Use the most recent directory
+        const latestDir = timestampDirs[0];
+        return await getWorkflowElapsedFromDir(latestDir.path);
+    } catch (error) {
+        return null;
+    }
 }
 

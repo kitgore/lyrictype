@@ -10,7 +10,7 @@ import * as cheerio from 'cheerio';
 import fs from 'fs/promises';
 import * as tui from './utils/tui.js';
 import * as paths from './utils/paths.js';
-import { generateTimestamp, getCurrentISO, calculateETA } from './utils/timestamp.js';
+import { generateTimestamp, getCurrentISO, calculateETA, getWorkflowElapsed } from './utils/timestamp.js';
 import { createErrorLogger } from './utils/error-logger.js';
 
 class ArtistScraper {
@@ -388,6 +388,11 @@ async function main() {
         const { outputDir, timestamp } = await scraper.scrapeAll(options.letters);
         
         scraper.displayResults();
+        
+        const workflowElapsed = await getWorkflowElapsed();
+        if (workflowElapsed !== null) {
+            tui.printWorkflowTime(workflowElapsed);
+        }
         
         tui.printSuccess(`Scraping complete!`);
         tui.printInfo(`Output: ${outputDir}`);
