@@ -13,3 +13,4 @@ src/lib/services/initFirebase.js
 *.log
 /prescraped-data-*/
 /prescraped-*.json
+/scraping-data/
