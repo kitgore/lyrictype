@@ -8,6 +8,13 @@ import { doc, getDoc } from 'firebase/firestore';
 import pako from 'pako';
 
 /**
+ * In-memory cache to prevent duplicate processing requests
+ * Stores promises to allow concurrent requests to wait for the same result
+ */
+const processingCache = new Map();
+const CACHE_TIMEOUT = 30000; // 30 seconds - enough time for processing to complete
+
+/**
  * Decompress grayscale image data using Pako
  * @param {string} compressedBase64 - Base64 encoded compressed grayscale data
  * @returns {string} - Base64 encoded decompressed grayscale data
@@ -418,94 +425,101 @@ async function processArtistImageClientSide(imageUrl, artistUrlKey) {
 
 /**
  * Process an artist image to grayscale format via Firebase Function
- * Falls back to client-side processing if server fails (403 errors)
+ * Firebase Function now uses Cloudflare Worker proxy to avoid IP blocking
+ * Uses in-memory cache to prevent duplicate processing requests
  */
 async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
-    try {
-        console.log(`⚡ Processing image to grayscale format...`);
-        const startTime = Date.now();
-        
-        // Call our optimized Firebase Function (auto-detects environment)
-        const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-            ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
-            : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
+    // Check in-memory cache first
+    const cacheKey = `${artistUrlKey}-${imageUrl}`;
+    
+    if (processingCache.has(cacheKey)) {
+        console.log(`🔄 Waiting for existing processing request for ${artistUrlKey}...`);
+        return await processingCache.get(cacheKey);
+    }
+    
+    // Create processing promise and cache it
+    const processingPromise = (async () => {
+        try {
+            console.log(`⚡ Processing image to grayscale format...`);
+            const startTime = Date.now();
             
-        const response = await fetch(functionUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                url: imageUrl,
-                artistKey: artistUrlKey
-                // No size parameter - using native resolution
-            })
-        });
-        
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error(`Firebase function error for ${artistUrlKey}:`, {
-                status: response.status,
-                statusText: response.statusText,
-                error: errorText
+            // Call Firebase Function (which now uses Cloudflare Worker proxy)
+            const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+                ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
+                : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
+                
+            const response = await fetch(functionUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    url: imageUrl,
+                    artistKey: artistUrlKey
+                })
             });
             
-            // Check if it's a 403/500 error (server couldn't fetch the image)
-            if (response.status === 500 && errorText.includes('403')) {
-                console.log(`🔄 Server got 403 from Genius, trying client-side processing...`);
-                return await processArtistImageClientSide(imageUrl, artistUrlKey);
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error(`Firebase function error for ${artistUrlKey}:`, {
+                    status: response.status,
+                    statusText: response.statusText,
+                    error: errorText
+                });
+                throw new Error(`Processing failed: ${response.status} - ${errorText}`);
             }
             
-            throw new Error(`Processing failed: ${response.status} - ${errorText}`);
-        }
-        
-        const result = await response.json();
-        const processingTime = Date.now() - startTime;
-        
-        console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
-        
-        // Decompress the grayscale data since it's now Pako compressed
-        let grayscaleData = result.grayscaleData;
-        let rawGrayscaleBytes = null;
-        
-        if (result.metadata.compressionMethod === 'pako-deflate') {
-            console.log(`🗜️  Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
-            // Get raw bytes for WebGL
-            const decompressedBytes = decompressGrayscaleData(result.grayscaleData, true);
-            rawGrayscaleBytes = new Uint8Array(decompressedBytes);
+            const result = await response.json();
+            const processingTime = Date.now() - startTime;
             
-            // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
-            let binaryString = '';
-            const chunkSize = 8192;
-            for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
-                const chunk = decompressedBytes.slice(i, i + chunkSize);
-                binaryString += String.fromCharCode(...chunk);
+            console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
+            
+            // Decompress the grayscale data since it's now Pako compressed
+            let grayscaleData = result.grayscaleData;
+            let rawGrayscaleBytes = null;
+            
+            if (result.metadata.compressionMethod === 'pako-deflate') {
+                console.log(`🗜️  Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
+                // Get raw bytes for WebGL
+                const decompressedBytes = decompressGrayscaleData(result.grayscaleData, true);
+                rawGrayscaleBytes = new Uint8Array(decompressedBytes);
+                
+                // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
+                let binaryString = '';
+                const chunkSize = 8192;
+                for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
+                    const chunk = decompressedBytes.slice(i, i + chunkSize);
+                    binaryString += String.fromCharCode(...chunk);
+                }
+                grayscaleData = btoa(binaryString);
+                
+                console.log(`✅ Fresh data decompressed: ${rawGrayscaleBytes.length} bytes, base64: ${grayscaleData.length} chars`);
             }
-            grayscaleData = btoa(binaryString);
             
-            console.log(`✅ Fresh data decompressed: ${rawGrayscaleBytes.length} bytes, base64: ${grayscaleData.length} chars`);
-        }
-        
-        return {
-            ...result,
-            grayscaleData: grayscaleData,
-            rawGrayscaleBytes: rawGrayscaleBytes, // Include raw bytes for WebGL!
-            cached: false,
-            clientProcessingTime: processingTime
-        };
-        
-    } catch (error) {
-        console.error('Error processing artist image to grayscale:', error);
-        
-        // Last resort: try client-side processing
-        console.log(`🔄 Server processing failed, trying client-side as last resort...`);
-        try {
-            return await processArtistImageClientSide(imageUrl, artistUrlKey);
-        } catch (clientError) {
-            console.error(`❌ Client-side processing also failed:`, clientError);
+            return {
+                ...result,
+                grayscaleData: grayscaleData,
+                rawGrayscaleBytes: rawGrayscaleBytes, // Include raw bytes for WebGL!
+                cached: false,
+                clientProcessingTime: processingTime
+            };
+            
+        } catch (error) {
+            console.error('Error processing artist image to grayscale:', error);
             throw error;
+        } finally {
+            // Clean up cache after timeout
+            setTimeout(() => {
+                processingCache.delete(cacheKey);
+                console.log(`🧹 Cleaned up processing cache for ${artistUrlKey}`);
+            }, CACHE_TIMEOUT);
         }
-    }
+    })();
+    
+    // Store promise in cache
+    processingCache.set(cacheKey, processingPromise);
+    
+    return await processingPromise;
 }
 
 /**

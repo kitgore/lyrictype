@@ -300,13 +300,32 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
         try {
             console.log(`🚀 Processing artist image at native resolution: ${currentUrl}${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Use fetchImageWithFallback which tries proxy first, then direct
-            const imageBuffer = await fetchImageWithFallback(currentUrl, 15000);
+            // Cloudflare Worker proxy configuration
+            // TODO: After deploying worker, set these environment variables:
+            // firebase functions:config:set proxy.url="https://your-worker.workers.dev" proxy.key="your-auth-key"
+            const proxyUrl = process.env.PROXY_URL || 'CLOUDFLARE_WORKER_URL_HERE';
+            const proxyKey = process.env.PROXY_KEY || 'CLOUDFLARE_AUTH_KEY_HERE';
+            
+            // Use Cloudflare Worker proxy instead of direct fetch to avoid Google Cloud IP blocking
+            const proxiedUrl = `${proxyUrl}?url=${encodeURIComponent(currentUrl)}&key=${proxyKey}`;
+            console.log(`🌐 Fetching via Cloudflare Worker proxy...`);
+            
+            const imageResponse = await fetchWithTimeout(proxiedUrl, { 
+                timeout: 8000
+            });
+            
+            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
+            
+            if (!imageResponse.ok) {
+                throw new Error(`Failed to fetch image via proxy: ${imageResponse.status} ${imageResponse.statusText}`);
+            }
+            
+            const imageBuffer = await imageResponse.arrayBuffer();
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
             // Process with sharp (supports WebP, PNG, JPG, and more)
             const sharp = (await import('sharp')).default;
-            let image = sharp(Buffer.from(imageBuffer));
+            const image = sharp(Buffer.from(imageBuffer));
             
             // Get image metadata
             const metadata = await image.metadata();
@@ -314,22 +333,6 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
             const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
-            
-            // Resize if too large to fit in Firestore's 1MB field limit
-            // At 700x700: ~490KB grayscale → ~400KB compressed → ~530KB base64
-            const MAX_DIMENSION = 700;
-            let finalWidth = nativeWidth;
-            let finalHeight = nativeHeight;
-            
-            if (nativeWidth > MAX_DIMENSION || nativeHeight > MAX_DIMENSION) {
-                // Resize maintaining aspect ratio
-                const scale = MAX_DIMENSION / Math.max(nativeWidth, nativeHeight);
-                finalWidth = Math.round(nativeWidth * scale);
-                finalHeight = Math.round(nativeHeight * scale);
-                
-                console.log(`📏 Resizing from ${nativeWidth}x${nativeHeight} to ${finalWidth}x${finalHeight} (Firestore limit)`);
-                image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
-            }
             
             // Convert to raw RGBA pixels
             const { data, info } = await image
@@ -530,7 +533,7 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
 
             // Process with sharp (supports WebP, PNG, JPG, and more)
             const sharp = (await import('sharp')).default;
-            let image = sharp(Buffer.from(imageBuffer));
+            const image = sharp(Buffer.from(imageBuffer));
             
             // Get image metadata
             const metadata = await image.metadata();
@@ -538,22 +541,6 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
-            
-            // Resize if too large to fit in Firestore's 1MB field limit
-            // At 700x700: ~490KB grayscale → ~400KB compressed → ~530KB base64
-            const MAX_DIMENSION = 700;
-            let finalWidth = nativeWidth;
-            let finalHeight = nativeHeight;
-            
-            if (nativeWidth > MAX_DIMENSION || nativeHeight > MAX_DIMENSION) {
-                // Resize maintaining aspect ratio
-                const scale = MAX_DIMENSION / Math.max(nativeWidth, nativeHeight);
-                finalWidth = Math.round(nativeWidth * scale);
-                finalHeight = Math.round(nativeHeight * scale);
-                
-                console.log(`📏 Resizing from ${nativeWidth}x${nativeHeight} to ${finalWidth}x${finalHeight} (Firestore limit)`);
-                image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
-            }
             
             // Convert to raw RGBA pixels
             const { data, info } = await image

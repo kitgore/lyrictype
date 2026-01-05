@@ -1,7 +1,69 @@
 <script>
-    import { windowStore } from '$lib/services/store.js';
+    import { windowStore, ditherImages } from '$lib/services/store.js';
     import { themeColors } from '$lib/services/store.js';
     import { trashStore, getFileIcon, formatDuration, getPerformanceGrade } from '$lib/services/trashService.js';
+    import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
+    import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
+
+    // Album art recoloring state
+    let grayscaleImageData = null;
+    let imageMetadata = null;
+    let isLoadingAlbumArt = false;
+    let currentAlbumArtId = null;
+
+    // Load album art for recoloring when selection changes
+    async function loadAlbumArt(imageUrl) {
+        if (!imageUrl || !$ditherImages) {
+            grayscaleImageData = null;
+            imageMetadata = null;
+            currentAlbumArtId = null;
+            return;
+        }
+
+        // Skip if we already have this image URL loaded
+        if (imageUrl === currentAlbumArtId && grayscaleImageData) {
+            return;
+        }
+
+        // Clear old data before loading new to prevent dimension mismatch
+        grayscaleImageData = null;
+        imageMetadata = null;
+        isLoadingAlbumArt = true;
+        currentAlbumArtId = imageUrl;
+
+        try {
+            const result = await getAlbumArtBinaryImage(imageUrl);
+            // Verify we're still loading this URL (might have changed during async)
+            if (imageUrl !== currentAlbumArtId) {
+                return;
+            }
+            
+            if (result && result.success && result.grayscaleData && result.metadata) {
+                grayscaleImageData = result.grayscaleData;
+                imageMetadata = result.metadata;
+                console.log('Album art loaded for trash:', imageMetadata.width, 'x', imageMetadata.height);
+            } else {
+                console.warn('Album art loading failed:', result?.error);
+                grayscaleImageData = null;
+                imageMetadata = null;
+            }
+        } catch (error) {
+            console.warn('Failed to load album art for recoloring:', error);
+            grayscaleImageData = null;
+            imageMetadata = null;
+        }
+
+        isLoadingAlbumArt = false;
+    }
+
+    // Reactive: load album art when selection or dither setting changes
+    $: if (selectedSong?.imageUrl && $ditherImages) {
+        loadAlbumArt(selectedSong.imageUrl);
+    } else if (!$ditherImages || !selectedSong?.imageUrl) {
+        grayscaleImageData = null;
+        imageMetadata = null;
+        currentAlbumArtId = null;
+    }
 
     // Get trash window dimensions for proportional sizing
     $: trashWindowState = $windowStore.windowStates.find(w => w.id === 'trashWindow');
@@ -197,7 +259,20 @@
                     <div class="info-content">
                         <!-- Album Artwork -->
                         <div class="album-art" style:height="{iconSize * 1.5}px" style:width="{iconSize * 1.5}px">
-                            {#if selectedSong.imageUrl}
+                            {#if isLoadingAlbumArt}
+                                <div class="loading-placeholder"></div>
+                            {:else if $ditherImages && grayscaleImageData && imageMetadata && imageMetadata.width && imageMetadata.height}
+                                {#key `${currentAlbumArtId}-${imageMetadata.width}x${imageMetadata.height}`}
+                                    <GrayscaleImageRenderer
+                                        grayscaleData={grayscaleImageData}
+                                        width={imageMetadata.width}
+                                        height={imageMetadata.height}
+                                        alt={selectedSong.title || 'Album art'}
+                                        borderRadius="0"
+                                        class="album-art-image"
+                                    />
+                                {/key}
+                            {:else if selectedSong.imageUrl}
                                 <img src="{selectedSong.imageUrl}" alt="{selectedSong.title}" />
                             {:else}
                                 <!-- Default album art -->
@@ -253,6 +328,19 @@
                         <div class="completion-date" style:font-size="{iconLabelSize * 0.8}px">
                             Completed: {new Date(selectedSong.completedAt).toLocaleDateString()}
                         </div>
+                        
+                        <!-- Replay Button -->
+                        <button 
+                            class="replay-button" 
+                            style:font-size="{iconLabelSize * 0.9}px"
+                            on:click={() => handleFileDoubleClick(selectedSong)}
+                            title="Replay this song"
+                        >
+                            <svg class="replay-icon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                            </svg>
+                            Replay
+                        </button>
                     </div>
                 {:else}
                     <div class="no-selection" style:font-size="{iconLabelSize}px">
@@ -483,6 +571,18 @@
         object-fit: cover;
     }
 
+    .album-art .loading-placeholder {
+        width: 100%;
+        height: 100%;
+        background: var(--secondary-color);
+        border: var(--border-width) solid var(--primary-color);
+    }
+
+    .album-art :global(.canvas-wrapper) {
+        width: 100%;
+        height: 100%;
+    }
+
     .default-album-art {
         width: 100%;
         height: 100%;
@@ -579,8 +679,41 @@
     .completion-date {
         text-align: center;
         opacity: 0.6;
-        margin-top: auto;
         color: var(--primary-color);
+    }
+
+    .replay-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-top: auto;
+        padding: 8px 16px;
+        background-color: transparent;
+        color: var(--primary-color);
+        border: var(--border-width, 2px) solid var(--primary-color);
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .replay-button:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .replay-button:hover .replay-icon {
+        fill: var(--secondary-color);
+    }
+
+    .replay-button:active {
+        opacity: 0.8;
+    }
+
+    .replay-icon {
+        width: 1.2em;
+        height: 1.2em;
     }
 
     .no-selection {

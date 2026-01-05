@@ -1,5 +1,6 @@
 import { writable, derived } from 'svelte/store'
 import Cookies from 'js-cookie';
+import { trashStore } from './trashService.js';
 
 export const cookiesAccepted = writable(Cookies.get('cookiesAccepted') === 'true' || false)
 
@@ -228,6 +229,9 @@ cookiesAccepted.subscribe(accepted => {
         if (savedPunctuation) punctuation.set(JSON.parse(savedPunctuation));
         if (savedArtists) recentArtists.set(JSON.parse(savedArtists));
 
+        // Enable cookies for completed songs (trash)
+        trashStore.enableCookies();
+
         currentTheme.subscribe(value => {
             Cookies.set('currentTheme', JSON.stringify(value));
             themeColors.set({
@@ -289,6 +293,9 @@ cookiesAccepted.subscribe(accepted => {
         Cookies.remove('punctuation');
         Cookies.remove('recentArtists');
         Cookies.remove('cookiesAccepted');
+        
+        // Disable cookies for completed songs (trash)
+        trashStore.disableCookies();
     }
 });
 

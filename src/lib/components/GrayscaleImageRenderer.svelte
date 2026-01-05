@@ -1042,8 +1042,8 @@
     }
   }
 
-  // Initialize when component mounts and when grayscale data changes
-  $: if (canvas && grayscaleData) {
+  // Initialize when component mounts and when grayscale data or dimensions change
+  $: if (canvas && grayscaleData && width && height) {
     initializeRenderer();
   }
 
