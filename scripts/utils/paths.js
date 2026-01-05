@@ -53,16 +53,6 @@ export function getSongDataDir(timestamp = null) {
 }
 
 /**
- * Get path for upload results directory with timestamp
- * @param {string} timestamp - Optional timestamp, generates new one if not provided
- * @returns {string} Absolute path
- */
-export function getUploadDataDir(timestamp = null) {
-    const ts = timestamp || generateTimestamp();
-    return path.join(SCRAPING_DATA_BASE, 'upload-results', ts);
-}
-
-/**
  * Find the most recent timestamp directory for a given type
  * @param {string} type - Type: 'artist-lists', 'new-artists', or 'song-data'
  * @returns {Promise<string|null>} Most recent timestamp or null if none found

@@ -5,7 +5,7 @@
 
 import { initializeApp } from 'firebase/app';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
-import { firebaseConfig } from './src/lib/services/initFirebase.js';
+import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 import * as readline from 'readline';
 
 // Initialize Firebase

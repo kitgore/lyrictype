@@ -5,7 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, writeBatch, doc, getDoc, setDoc } from 'firebase/firestore';
-import { firebaseConfig } from './src/lib/services/initFirebase.js';
+import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
