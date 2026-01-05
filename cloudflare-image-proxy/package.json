@@ -1,0 +1,14 @@
+{
+  "name": "lyrictype-image-proxy",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker to proxy Genius image requests",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "keywords": ["cloudflare", "worker", "proxy", "image"],
+  "author": "",
+  "license": "MIT"
+}
+

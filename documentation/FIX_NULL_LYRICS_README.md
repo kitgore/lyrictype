@@ -40,17 +40,17 @@ npm run fix-lyrics-cached
 
 1. **Fix songs for a specific artist** (FASTEST):
 ```bash
-node fix-null-lyrics.js --artist grace-petrie --dry-run
+node scripts/fix-null-lyrics.js --artist grace-petrie --dry-run
 ```
 
 2. **Fix only cached songs** (FAST):
 ```bash
-node fix-null-lyrics.js --check-cached-only --dry-run
+node scripts/fix-null-lyrics.js --check-cached-only --dry-run
 ```
 
 3. **Scan limited songs** (SLOW):
 ```bash
-node fix-null-lyrics.js --max-songs 100 --dry-run
+node scripts/fix-null-lyrics.js --max-songs 100 --dry-run
 ```
 
 ### Filter by Artist (Recommended)
@@ -58,12 +58,12 @@ node fix-null-lyrics.js --max-songs 100 --dry-run
 Fix only songs from a specific artist - this is the fastest method:
 ```bash
 # Dry run - the script will search for the artist automatically
-node fix-null-lyrics.js --artist "grace petrie" --dry-run
-node fix-null-lyrics.js --artist "Grace Petrie" --dry-run
-node fix-null-lyrics.js --artist grace-petrie --dry-run
+node scripts/fix-null-lyrics.js --artist "grace petrie" --dry-run
+node scripts/fix-null-lyrics.js --artist "Grace Petrie" --dry-run
+node scripts/fix-null-lyrics.js --artist grace-petrie --dry-run
 
 # Actually fix
-node fix-null-lyrics.js --artist "kendrick lamar"
+node scripts/fix-null-lyrics.js --artist "kendrick lamar"
 ```
 
 **The script now smartly searches for artists!** You can use:
@@ -82,7 +82,7 @@ This method:
 
 Only process songs that are in artists' `cachedSongIds` arrays:
 ```bash
-node fix-null-lyrics.js --check-cached-only
+node scripts/fix-null-lyrics.js --check-cached-only
 ```
 
 **This is the recommended approach** as it:
@@ -95,12 +95,12 @@ node fix-null-lyrics.js --check-cached-only
 
 Process songs in smaller batches:
 ```bash
-node fix-null-lyrics.js --batch-size 5
+node scripts/fix-null-lyrics.js --batch-size 5
 ```
 
 Limit total number of songs to process:
 ```bash
-node fix-null-lyrics.js --max-songs 50
+node scripts/fix-null-lyrics.js --max-songs 50
 ```
 
 **Note:** When scanning ALL songs (without `--artist` or `--check-cached-only`), the script defaults to a maximum of 10,000 songs to prevent runaway scans. Use `--max-songs` to adjust this limit.
@@ -109,14 +109,14 @@ node fix-null-lyrics.js --max-songs 50
 
 See detailed information about each song:
 ```bash
-node fix-null-lyrics.js --verbose
+node scripts/fix-null-lyrics.js --verbose
 ```
 
 ### Combine Options
 
 ```bash
-node fix-null-lyrics.js --artist baby-jey --dry-run --verbose
-node fix-null-lyrics.js --check-cached-only --batch-size 3 --max-songs 20
+node scripts/fix-null-lyrics.js --artist baby-jey --dry-run --verbose
+node scripts/fix-null-lyrics.js --check-cached-only --batch-size 3 --max-songs 20
 ```
 
 ## What It Does
@@ -279,9 +279,9 @@ For permanently failed songs:
 **Solutions:**
 1. Try different name formats:
    ```bash
-   node fix-null-lyrics.js --artist "grace petrie" --dry-run
-   node fix-null-lyrics.js --artist "Grace Petrie" --dry-run
-   node fix-null-lyrics.js --artist grace-petrie --dry-run
+   node scripts/fix-null-lyrics.js --artist "grace petrie" --dry-run
+   node scripts/fix-null-lyrics.js --artist "Grace Petrie" --dry-run
+   node scripts/fix-null-lyrics.js --artist grace-petrie --dry-run
    ```
 
 2. The script will search using:
@@ -299,7 +299,7 @@ For permanently failed songs:
 
 **Solution:** Use the `--check-cached-only` flag:
 ```bash
-node fix-null-lyrics.js --check-cached-only --dry-run
+node scripts/fix-null-lyrics.js --check-cached-only --dry-run
 ```
 
 This targets only songs in `cachedSongIds` arrays (songs that should have lyrics) and fetches them one at a time instead of all at once, avoiding timeouts.
@@ -326,7 +326,7 @@ If you see HTTP 429 errors, the script is hitting Genius too fast. Try:
 
 ### Firebase Connection Issues
 
-The script uses the same Firebase configuration as your other scripts (`firebase-uploader.js`, etc.). If those work, this will too!
+The script uses the same Firebase configuration as your other scripts (`scripts/firebase-uploader.js`, etc.). If those work, this will too!
 
 If you encounter connection issues:
 1. Check that your Firebase config in `src/lib/services/initFirebase.js` is correct

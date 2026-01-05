@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 
+//TODO: REMOVE THIS SCRIPT, PUT THE INDIVIDUAL FUNCTIONALITY INTO THE UPLOAD ARTISTS SCRIPT
+
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, doc, getDoc, updateDoc, query, orderBy, limit, startAfter, getDocs } from 'firebase/firestore';
 import unidecode from 'unidecode';
-import { firebaseConfig } from './src/lib/services/initFirebase.js';
+import { firebaseConfig } from '../src/lib/services/initFirebase.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

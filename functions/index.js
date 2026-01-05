@@ -144,54 +144,52 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
         try {
             console.log(`🚀 Processing artist image at native resolution: ${currentUrl}${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Fetch the image with proper headers to avoid 403 errors
-            console.log(`📡 CODE VERSION: v2.0 - Fetching with headers to avoid 403...`);
-            console.log(`📡 URL: ${currentUrl}`);
+            // Cloudflare Worker proxy configuration
+            // TODO: After deploying worker, set these environment variables:
+            // firebase functions:config:set proxy.url="https://your-worker.workers.dev" proxy.key="your-auth-key"
+            const proxyUrl = process.env.PROXY_URL || 'CLOUDFLARE_WORKER_URL_HERE';
+            const proxyKey = process.env.PROXY_KEY || 'CLOUDFLARE_AUTH_KEY_HERE';
             
-            const fetchOptions = { 
-                timeout: 8000,
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                    'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-                    'Accept-Language': 'en-US,en;q=0.9',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Referer': 'https://genius.com/',
-                    'Origin': 'https://genius.com',
-                    'Sec-Fetch-Dest': 'image',
-                    'Sec-Fetch-Mode': 'no-cors',
-                    'Sec-Fetch-Site': 'same-site'
-                }
-            };
+            // Use Cloudflare Worker proxy instead of direct fetch to avoid Google Cloud IP blocking
+            const proxiedUrl = `${proxyUrl}?url=${encodeURIComponent(currentUrl)}&key=${proxyKey}`;
+            console.log(`🌐 Fetching via Cloudflare Worker proxy...`);
             
-            console.log(`📡 Headers being sent:`, JSON.stringify(fetchOptions.headers, null, 2));
+            const imageResponse = await fetchWithTimeout(proxiedUrl, { 
+                timeout: 8000
+            });
             
-            const imageResponse = await fetchWithTimeout(currentUrl, fetchOptions);
-            
-            console.log(`📡 Response: ${imageResponse.status} ${imageResponse.statusText}`);
+            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
             
             if (!imageResponse.ok) {
-                throw new Error(`Failed to fetch image: ${imageResponse.status} ${imageResponse.statusText}`);
+                throw new Error(`Failed to fetch image via proxy: ${imageResponse.status} ${imageResponse.statusText}`);
             }
             
             const imageBuffer = await imageResponse.arrayBuffer();
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
-            // Process with canvas at native resolution
-            const { createCanvas, loadImage } = await import('canvas');
-            const img = await loadImage(Buffer.from(imageBuffer));
+            // Process with sharp (supports WebP, PNG, JPG, and more)
+            const sharp = (await import('sharp')).default;
+            const image = sharp(Buffer.from(imageBuffer));
             
-            // Use native image dimensions
-            const nativeWidth = img.naturalWidth || img.width;
-            const nativeHeight = img.naturalHeight || img.height;
+            // Get image metadata
+            const metadata = await image.metadata();
+            const nativeWidth = metadata.width;
+            const nativeHeight = metadata.height;
             
-            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
+            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
             
-            // Create canvas with native size
-            const canvas = createCanvas(nativeWidth, nativeHeight);
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
+            // Convert to raw RGBA pixels
+            const { data, info } = await image
+                .raw()
+                .ensureAlpha()
+                .toBuffer({ resolveWithObject: true });
             
-            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
+            // Create ImageData-like object for convertToGrayscale
+            const imageData = {
+                data: data,
+                width: info.width,
+                height: info.height
+            };
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
@@ -413,22 +411,29 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             const imageBuffer = await imageResponse.arrayBuffer();
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
-            // Process with canvas at native resolution
-            const { createCanvas, loadImage } = await import('canvas');
-            const img = await loadImage(Buffer.from(imageBuffer));
+            // Process with sharp (supports WebP, PNG, JPG, and more)
+            const sharp = (await import('sharp')).default;
+            const image = sharp(Buffer.from(imageBuffer));
             
-            // Use native image dimensions
-            const nativeWidth = img.naturalWidth || img.width;
-            const nativeHeight = img.naturalHeight || img.height;
+            // Get image metadata
+            const metadata = await image.metadata();
+            const nativeWidth = metadata.width;
+            const nativeHeight = metadata.height;
             
-            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight}`);
+            console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
             
-            // Create canvas with native size
-            const canvas = createCanvas(nativeWidth, nativeHeight);
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
+            // Convert to raw RGBA pixels
+            const { data, info } = await image
+                .raw()
+                .ensureAlpha()
+                .toBuffer({ resolveWithObject: true });
             
-            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
+            // Create ImageData-like object for convertToGrayscale
+            const imageData = {
+                data: data,
+                width: info.width,
+                height: info.height
+            };
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
