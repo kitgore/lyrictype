@@ -1,0 +1,12 @@
+name = "lyrictype-image-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# After deploying, set this environment variable in Cloudflare dashboard
+# [vars]
+# AUTH_KEY = "your-secret-key-here"
+
+# For production deployment
+# [[env.production]]
+# name = "lyrictype-image-proxy"
+
