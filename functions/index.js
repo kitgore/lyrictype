@@ -527,8 +527,26 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
         try {
             console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Use fetchImageWithFallback which tries proxy first, then direct
-            const imageBuffer = await fetchImageWithFallback(currentUrl, 15000);
+            // Fetch the image via Cloudflare Worker proxy to avoid 403 errors
+            const proxyUrl = process.env.PROXY_URL;
+            const proxyKey = process.env.PROXY_KEY;
+
+            if (!proxyUrl || !proxyKey) {
+                throw new Error('Cloudflare Worker proxy URL or key not configured.');
+            }
+
+            const encodedImageUrl = encodeURIComponent(currentUrl);
+            const workerFetchUrl = `${proxyUrl}?url=${encodedImageUrl}&key=${proxyKey}`;
+
+            console.log(`🌐 Fetching album art via Cloudflare Worker proxy...`);
+            const imageResponse = await fetchWithTimeout(workerFetchUrl, { timeout: 15000 });
+            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
+
+            if (!imageResponse.ok) {
+                throw new Error(`Failed to fetch image: ${imageResponse.status}`);
+            }
+            
+            const imageBuffer = await imageResponse.arrayBuffer();
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
             // Process with sharp (supports WebP, PNG, JPG, and more)
@@ -575,7 +593,8 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
                 imageHeight: info.height,
                 processingVersion: '2.0-grayscale',
                 compressionMethod: 'pako-deflate',
-                processedAt: new Date()
+                processedViaProxy: true,
+                imageFormat: metadata.format
             };
             
             // Store in albumArt collection using the provided ID
