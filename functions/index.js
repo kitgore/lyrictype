@@ -395,15 +395,21 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
         try {
             console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Fetch the image with proper headers to avoid 403 errors
-            const imageResponse = await fetchWithTimeout(currentUrl, { 
-                timeout: 8000,
-                headers: {
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                    'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
-                    'Referer': 'https://genius.com/'
-                }
-            });
+            // Fetch the image via Cloudflare Worker proxy to avoid 403 errors
+            const proxyUrl = process.env.PROXY_URL;
+            const proxyKey = process.env.PROXY_KEY;
+
+            if (!proxyUrl || !proxyKey) {
+                throw new Error('Cloudflare Worker proxy URL or key not configured.');
+            }
+
+            const encodedImageUrl = encodeURIComponent(currentUrl);
+            const workerFetchUrl = `${proxyUrl}?url=${encodedImageUrl}&key=${proxyKey}`;
+
+            console.log(`🌐 Fetching album art via Cloudflare Worker proxy...`);
+            const imageResponse = await fetchWithTimeout(workerFetchUrl, { timeout: 15000 });
+            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
+
             if (!imageResponse.ok) {
                 throw new Error(`Failed to fetch image: ${imageResponse.status}`);
             }
@@ -461,7 +467,9 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
                 lightPercent: analysis.lightPercent,
                 processedAt: new Date(),
                 processingVersion: '2.0-grayscale',
-                compressionMethod: 'pako-deflate'
+                compressionMethod: 'pako-deflate',
+                processedViaProxy: true,
+                imageFormat: metadata.format
             };
             
             // Store in albumArt collection using the provided ID
