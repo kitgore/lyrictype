@@ -9,7 +9,6 @@
     export let geniusUrl;
     export let albumArtId = null; // Album art ID for grayscale rendering
     export let preloadedAlbumArt = null; // Preloaded grayscale album art data for instant display
-    import textFit from 'textfit'
     import { onMount, afterUpdate } from 'svelte';
     import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
     import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
@@ -110,8 +109,12 @@
         useFallback = true;
     }
 
+    let resizeTimeout;
     function handleResize() {
-        fitText();
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            fitText();
+        }, 100);
     }
 
     onMount(() => {
@@ -120,6 +123,7 @@
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
+            clearTimeout(resizeTimeout);
         };
     });
     
@@ -129,32 +133,110 @@
     });
 
     function fitText() {
-        if (songContainer) {
-        textFit(songContainer, {
-            multiLine: false,
-            detectMultiLine: false,
-            alignHoriz: false,
-            alignVert: true,
-            reProcess: true,
-            minFontSize: 5,
-            maxFontSize: 90,
-            multiLine: true
-
-        });
+        const songTextArea = songContainer?.parentElement;
+        
+        if (!songContainer || !artistContainer || !songTextArea) return;
+        
+        // Get parent container dimensions
+        const containerHeight = songTextArea.clientHeight;
+        const containerWidth = songTextArea.clientWidth;
+        
+        // Allocate heights: 60% for song, 20% for artist
+        const songTargetHeight = containerHeight * 0.6;
+        const artistTargetHeight = containerHeight * 0.2;
+        
+        // Clear any existing margins
+        songContainer.style.marginTop = '0';
+        songContainer.style.marginBottom = '0';
+        artistContainer.style.marginTop = '0';
+        artistContainer.style.marginBottom = '0';
+        
+        // Fit song title
+        const songFontSize = findOptimalFontSize(
+            songContainer,
+            songTitle,
+            containerWidth,
+            songTargetHeight,
+            5,
+            90
+        );
+        
+        // Fit artist name
+        const artistFontSize = findOptimalFontSize(
+            artistContainer,
+            artistName,
+            containerWidth,
+            artistTargetHeight,
+            5,
+            50
+        );
+        
+        // Apply font sizes in pixels
+        songContainer.style.fontSize = `${songFontSize}px`;
+        artistContainer.style.fontSize = `${artistFontSize}px`;
+        
+        // Ensure text content is set correctly
+        songContainer.textContent = songTitle;
+        artistContainer.textContent = artistName;
+        
+        // Force reflow to get accurate measurements
+        void songTextArea.offsetHeight;
+        
+        // Measure actual text heights
+        const songActualHeight = songContainer.scrollHeight;
+        const artistActualHeight = artistContainer.scrollHeight;
+        const totalTextHeight = songActualHeight + artistActualHeight;
+        
+        // Calculate remaining space and distribute margins: 2/5 top, 1/5 middle, 2/5 bottom
+        const remainingHeight = containerHeight - totalTextHeight;
+        
+        if (remainingHeight > 0) {
+            const topMargin = (remainingHeight * 2) / 5;
+            const middleMargin = remainingHeight / 5;
+            const bottomMargin = (remainingHeight * 2) / 5;
+            
+            songContainer.style.marginTop = `${topMargin}px`;
+            songContainer.style.marginBottom = `${middleMargin}px`;
+            artistContainer.style.marginBottom = `${bottomMargin}px`;
+        } else {
+            // If no space remaining, reset margins
+            songContainer.style.marginTop = '0';
+            songContainer.style.marginBottom = '0';
+            artistContainer.style.marginBottom = '0';
+        }
+    }
+    
+    function findOptimalFontSize(container, text, maxWidth, maxHeight, minSize, maxSize) {
+        if (!container || !text) return minSize;
+        
+        // Store original content
+        const originalContent = container.textContent;
+        
+        let low = minSize;
+        let high = maxSize;
+        let optimalSize = minSize;
+        
+        // Binary search for largest font size that fits
+        while (low <= high) {
+            const mid = Math.floor((low + high) / 2);
+            container.style.fontSize = `${mid}px`;
+            container.textContent = text;
+            
+            const fitsWidth = container.scrollWidth <= maxWidth;
+            const fitsHeight = container.scrollHeight <= maxHeight;
+            
+            if (fitsWidth && fitsHeight) {
+                optimalSize = mid;
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
         }
         
-        if (artistContainer) {
-        textFit(artistContainer, {
-            multiLine: false,
-            detectMultiLine: false,
-            alignHoriz: false,
-            alignVert: true,
-            reProcess: true,
-            minFontSize: 5,
-            maxFontSize: 50,
-            multiLine: true
-        });
-        }
+        // Restore original content
+        container.textContent = originalContent;
+        
+        return optimalSize;
     }
 
 </script>
@@ -229,17 +311,16 @@
   
     .songTextContainer, .artistTextContainer {
         width: 100%;
-        min-height: 1.5em;
         color: var(--primary-color);
+        white-space: pre-wrap;
+        word-wrap: break-word;
     }
 
     .songTextContainer{
-        margin-top: 5%;
-        height: 60%;
+        font-family: "SysFont", sans-serif;
     }
 
     .artistTextContainer{
-        height: 20%;
         font-family: "Geneva", sans-serif;
         padding-left: 1%;
     }

@@ -26,7 +26,9 @@
     "test:upload-artists": "node scripts/upload-artists.js --limit 5 --dry-run",
     "test:upload-songs": "node scripts/upload-songs.js --limit 5 --dry-run",
     "test:update-popular": "node scripts/update-popular-flags.js --dry-run",
-    "test:all": "npm run test:scrape && npm run test:compare && npm run test:prescrape && npm run test:upload-artists && npm run test:upload-songs && npm run test:update-popular"
+    "test:all": "npm run test:scrape && npm run test:compare && npm run test:prescrape && npm run test:upload-artists && npm run test:upload-songs && npm run test:update-popular",
+    "cleanup:legacy-fields": "node scripts/cleanup-legacy-image-fields.js",
+    "cleanup:legacy-fields-dry": "node scripts/cleanup-legacy-image-fields.js --dry-run"
   },
   "type": "module",
   "devDependencies": {

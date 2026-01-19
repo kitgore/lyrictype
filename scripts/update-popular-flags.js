@@ -191,7 +191,7 @@ class PopularFlagsUpdater {
 
         // Save summary
         if (!this.dryRun) {
-            const outputDir = paths.getUploadDataDir(generateTimestamp());
+            const outputDir = await paths.createTimestampedDir('upload-results', generateTimestamp());
             const summaryPath = `${outputDir}/popular-flags-update-summary.json`;
             const summary = {
                 timestamp: getCurrentISO(),

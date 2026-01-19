@@ -7,6 +7,7 @@ import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
+import { HttpsProxyAgent } from 'https-proxy-agent';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,6 +17,54 @@ const app = initializeApp();
 const db = getFirestore(app);
 
 const geniusApiKeyParam = defineString('GENIUS_KEY');
+
+// GeoNode Proxy Configuration
+// For production: Set environment variables GEONODE_USER and GEONODE_PASS
+// For local dev: Set in functions/local-config.json under "geonode" key
+function getGeoNodeConfig() {
+    // Default GeoNode settings (host/port rarely change)
+    const DEFAULT_HOST = 'proxy.geonode.io';
+    const DEFAULT_PORT = '9000';
+    
+    // Try environment variables first (production)
+    if (process.env.GEONODE_USER && process.env.GEONODE_PASS) {
+        return {
+            host: process.env.GEONODE_HOST || DEFAULT_HOST,
+            port: process.env.GEONODE_PORT || DEFAULT_PORT,
+            user: process.env.GEONODE_USER,
+            pass: process.env.GEONODE_PASS
+        };
+    }
+    
+    // Try local config file (development)
+    try {
+        const localConfigPath = path.join(__dirname, 'local-config.json');
+        const localConfig = JSON.parse(fs.readFileSync(localConfigPath, 'utf8'));
+        if (localConfig.geonode && localConfig.geonode.user && localConfig.geonode.pass) {
+            console.log('📍 Using GeoNode config from local-config.json');
+            return {
+                host: localConfig.geonode.host || DEFAULT_HOST,
+                port: localConfig.geonode.port || DEFAULT_PORT,
+                user: localConfig.geonode.user,
+                pass: localConfig.geonode.pass
+            };
+        }
+    } catch (error) {
+        // Local config not available, that's fine
+    }
+    
+    // Return empty config (proxy will be skipped)
+    return { host: '', port: '', user: '', pass: '' };
+}
+
+// Cache the config to avoid repeated file reads
+let _geoNodeConfig = null;
+function getGeoNodeConfigCached() {
+    if (!_geoNodeConfig) {
+        _geoNodeConfig = getGeoNodeConfig();
+    }
+    return _geoNodeConfig;
+}
 
 // Use the global fetch that comes with Node.js 18+ instead of node-fetch
 // This is more compatible with Firebase Functions environment
@@ -119,6 +168,113 @@ function analyzeGrayscaleData(grayscaleData, width, height) {
  * Fast response - client gets binary data ASAP
  * Now includes retry logic for unsupported image formats
  */
+
+/**
+ * Helper function to create GeoNode proxy agent
+ * Returns null if GeoNode is not configured
+ */
+function createGeoNodeProxyAgent() {
+    const config = getGeoNodeConfigCached();
+    
+    if (!config.user || !config.pass || config.user === 'YOUR_GEONODE_USERNAME') {
+        return null;
+    }
+    
+    const proxyUrl = `http://${config.user}:${config.pass}@${config.host}:${config.port}`;
+    console.log(`🔧 Creating GeoNode proxy agent: ${config.host}:${config.port}`);
+    return new HttpsProxyAgent(proxyUrl);
+}
+
+/**
+ * Helper function to fetch image with fallback strategies
+ * Strategy order:
+ * 1. GeoNode residential proxy (most reliable for bypassing blocks)
+ * 2. Cloudflare Worker proxy (if configured)
+ * 3. Direct fetch with browser headers (may be blocked)
+ */
+async function fetchImageWithFallback(imageUrl, timeout = 15000) {
+    const browserHeaders = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': 'https://genius.com/',
+        'Sec-Ch-Ua': '"Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"macOS"',
+        'Sec-Fetch-Dest': 'image',
+        'Sec-Fetch-Mode': 'no-cors',
+        'Sec-Fetch-Site': 'cross-site',
+    };
+
+    // Strategy 1: Try GeoNode residential proxy (best for bypassing blocks)
+    const proxyAgent = createGeoNodeProxyAgent();
+    if (proxyAgent) {
+        try {
+            console.log(`🏠 Trying GeoNode residential proxy...`);
+            
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), timeout);
+            
+            const proxyResponse = await fetch(imageUrl, {
+                headers: browserHeaders,
+                agent: proxyAgent,
+                signal: controller.signal
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (proxyResponse.ok) {
+                const buffer = await proxyResponse.arrayBuffer();
+                console.log(`✅ GeoNode proxy fetch successful (${buffer.byteLength} bytes)`);
+                return buffer;
+            }
+            
+            console.log(`⚠️ GeoNode proxy returned ${proxyResponse.status}, trying fallback...`);
+        } catch (proxyError) {
+            console.log(`⚠️ GeoNode proxy failed: ${proxyError.message}, trying fallback...`);
+        }
+    } else {
+        console.log(`⚠️ GeoNode proxy not configured (missing GEONODE_USER/GEONODE_PASS)`);
+    }
+    
+    // Strategy 2: Try Cloudflare Worker proxy if configured
+    const cfProxyUrl = process.env.PROXY_URL;
+    const cfProxyKey = process.env.PROXY_KEY;
+    
+    if (cfProxyUrl && cfProxyKey && cfProxyUrl !== 'CLOUDFLARE_WORKER_URL_HERE') {
+        try {
+            const proxiedUrl = `${cfProxyUrl}?url=${encodeURIComponent(imageUrl)}&key=${cfProxyKey}`;
+            console.log(`🌐 Trying Cloudflare Worker proxy...`);
+            
+            const proxyResponse = await fetchWithTimeout(proxiedUrl, { timeout: 10000 });
+            
+            if (proxyResponse.ok) {
+                console.log(`✅ Cloudflare proxy fetch successful`);
+                return await proxyResponse.arrayBuffer();
+            }
+            
+            console.log(`⚠️ Cloudflare proxy returned ${proxyResponse.status}, trying direct fetch...`);
+        } catch (proxyError) {
+            console.log(`⚠️ Cloudflare proxy failed: ${proxyError.message}, trying direct fetch...`);
+        }
+    }
+    
+    // Strategy 3: Direct fetch with browser-like headers (last resort)
+    console.log(`🌐 Trying direct fetch with browser headers...`);
+    const directResponse = await fetchWithTimeout(imageUrl, { 
+        timeout,
+        headers: browserHeaders
+    });
+    
+    if (!directResponse.ok) {
+        throw new Error(`All fetch strategies failed. Direct fetch: ${directResponse.status} ${directResponse.statusText}`);
+    }
+    
+    console.log(`✅ Direct fetch successful`);
+    return await directResponse.arrayBuffer();
+}
+
 async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
     const startTime = Date.now();
     let lastError = null;
@@ -144,32 +300,13 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
         try {
             console.log(`🚀 Processing artist image at native resolution: ${currentUrl}${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Cloudflare Worker proxy configuration
-            // TODO: After deploying worker, set these environment variables:
-            // firebase functions:config:set proxy.url="https://your-worker.workers.dev" proxy.key="your-auth-key"
-            const proxyUrl = process.env.PROXY_URL || 'CLOUDFLARE_WORKER_URL_HERE';
-            const proxyKey = process.env.PROXY_KEY || 'CLOUDFLARE_AUTH_KEY_HERE';
-            
-            // Use Cloudflare Worker proxy instead of direct fetch to avoid Google Cloud IP blocking
-            const proxiedUrl = `${proxyUrl}?url=${encodeURIComponent(currentUrl)}&key=${proxyKey}`;
-            console.log(`🌐 Fetching via Cloudflare Worker proxy...`);
-            
-            const imageResponse = await fetchWithTimeout(proxiedUrl, { 
-                timeout: 8000
-            });
-            
-            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
-            
-            if (!imageResponse.ok) {
-                throw new Error(`Failed to fetch image via proxy: ${imageResponse.status} ${imageResponse.statusText}`);
-            }
-            
-            const imageBuffer = await imageResponse.arrayBuffer();
+            // Use fetchImageWithFallback which tries proxy first, then direct
+            const imageBuffer = await fetchImageWithFallback(currentUrl, 15000);
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
             // Process with sharp (supports WebP, PNG, JPG, and more)
             const sharp = (await import('sharp')).default;
-            const image = sharp(Buffer.from(imageBuffer));
+            let image = sharp(Buffer.from(imageBuffer));
             
             // Get image metadata
             const metadata = await image.metadata();
@@ -177,6 +314,22 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
             const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
+            
+            // Resize if too large to fit in Firestore's 1MB field limit
+            // At 700x700: ~490KB grayscale → ~400KB compressed → ~530KB base64
+            const MAX_DIMENSION = 700;
+            let finalWidth = nativeWidth;
+            let finalHeight = nativeHeight;
+            
+            if (nativeWidth > MAX_DIMENSION || nativeHeight > MAX_DIMENSION) {
+                // Resize maintaining aspect ratio
+                const scale = MAX_DIMENSION / Math.max(nativeWidth, nativeHeight);
+                finalWidth = Math.round(nativeWidth * scale);
+                finalHeight = Math.round(nativeHeight * scale);
+                
+                console.log(`📏 Resizing from ${nativeWidth}x${nativeHeight} to ${finalWidth}x${finalHeight} (Firestore limit)`);
+                image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
+            }
             
             // Convert to raw RGBA pixels
             const { data, info } = await image
@@ -193,7 +346,7 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
-            const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
+            const analysis = analyzeGrayscaleData(grayscaleData, info.width, info.height);
             
             console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
             
@@ -201,27 +354,17 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
             const compressedData = pako.deflate(grayscaleData);
             console.log(`🗜️  Pako compressed: ${grayscaleData.length} → ${compressedData.length} bytes (${((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1)}% reduction)`);
             
-            // Store in artist document
+            // Store in artist document - only essential fields for rendering
             const base64Grayscale = Buffer.from(compressedData).toString('base64');
+            console.log(`📦 Base64 size: ${base64Grayscale.length} bytes`);
+            
             const imageMetadata = {
                 grayscaleImageData: base64Grayscale,
-                imageWidth: nativeWidth,
-                imageHeight: nativeHeight,
-                originalImageUrl: imageUrl, // Store original URL for reference
-                processedImageUrl: currentUrl, // Store URL that actually worked
-                originalSize: imageBuffer.byteLength,
-                grayscaleSize: analysis.totalBytes,
-                compressedSize: compressedData.length,
-                base64Size: base64Grayscale.length,
-                compressionRatio: analysis.compressionRatio,
-                pakoCompressionRatio: compressedData.length / grayscaleData.length,
-                totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
-                averageBrightness: analysis.averageBrightness,
-                darkPercent: analysis.darkPercent,
-                lightPercent: analysis.lightPercent,
-                processedAt: new Date(),
+                imageWidth: info.width,
+                imageHeight: info.height,
                 processingVersion: '2.0-grayscale',
-                compressionMethod: 'pako-deflate'
+                compressionMethod: 'pako-deflate',
+                processedAt: new Date()
             };
             
             // Update or create artist document with binary data
@@ -254,24 +397,10 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
                 success: true,
                 grayscaleData: base64Grayscale,
                 metadata: {
-                    width: nativeWidth,
-                    height: nativeHeight,
-                    originalSize: imageBuffer.byteLength,
-                    grayscaleSize: analysis.totalBytes,
-                    compressedSize: compressedData.length,
-                    base64Size: base64Grayscale.length,
-                    compressionRatio: analysis.compressionRatio,
-                    pakoCompressionRatio: compressedData.length / grayscaleData.length,
-                    totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
-                    compressionPercent: analysis.compressionPercent,
-                    pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
-                    totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
-                    averageBrightness: analysis.averageBrightness,
-                    darkPercent: analysis.darkPercent,
-                    lightPercent: analysis.lightPercent,
-                    processingTimeMs: Date.now() - startTime,
+                    width: info.width,
+                    height: info.height,
                     compressionMethod: 'pako-deflate',
-                    usedFallbackUrl: i > 0
+                    processingVersion: '2.0-grayscale'
                 }
             };
             
@@ -395,31 +524,13 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
         try {
             console.log(`🚀 FAST processing album art: ${currentUrl} (ID: ${albumArtId})${i > 0 ? ` [attempt ${i + 1}]` : ''}`);
             
-            // Fetch the image via Cloudflare Worker proxy to avoid 403 errors
-            const proxyUrl = process.env.PROXY_URL;
-            const proxyKey = process.env.PROXY_KEY;
-
-            if (!proxyUrl || !proxyKey) {
-                throw new Error('Cloudflare Worker proxy URL or key not configured.');
-            }
-
-            const encodedImageUrl = encodeURIComponent(currentUrl);
-            const workerFetchUrl = `${proxyUrl}?url=${encodedImageUrl}&key=${proxyKey}`;
-
-            console.log(`🌐 Fetching album art via Cloudflare Worker proxy...`);
-            const imageResponse = await fetchWithTimeout(workerFetchUrl, { timeout: 15000 });
-            console.log(`📡 Proxy Response: ${imageResponse.status} ${imageResponse.statusText}`);
-
-            if (!imageResponse.ok) {
-                throw new Error(`Failed to fetch image: ${imageResponse.status}`);
-            }
-            
-            const imageBuffer = await imageResponse.arrayBuffer();
+            // Use fetchImageWithFallback which tries proxy first, then direct
+            const imageBuffer = await fetchImageWithFallback(currentUrl, 15000);
             console.log(`📦 Downloaded: ${imageBuffer.byteLength} bytes in ${Date.now() - startTime}ms`);
 
             // Process with sharp (supports WebP, PNG, JPG, and more)
             const sharp = (await import('sharp')).default;
-            const image = sharp(Buffer.from(imageBuffer));
+            let image = sharp(Buffer.from(imageBuffer));
             
             // Get image metadata
             const metadata = await image.metadata();
@@ -427,6 +538,22 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
+            
+            // Resize if too large to fit in Firestore's 1MB field limit
+            // At 700x700: ~490KB grayscale → ~400KB compressed → ~530KB base64
+            const MAX_DIMENSION = 700;
+            let finalWidth = nativeWidth;
+            let finalHeight = nativeHeight;
+            
+            if (nativeWidth > MAX_DIMENSION || nativeHeight > MAX_DIMENSION) {
+                // Resize maintaining aspect ratio
+                const scale = MAX_DIMENSION / Math.max(nativeWidth, nativeHeight);
+                finalWidth = Math.round(nativeWidth * scale);
+                finalHeight = Math.round(nativeHeight * scale);
+                
+                console.log(`📏 Resizing from ${nativeWidth}x${nativeHeight} to ${finalWidth}x${finalHeight} (Firestore limit)`);
+                image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
+            }
             
             // Convert to raw RGBA pixels
             const { data, info } = await image
@@ -443,7 +570,7 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
-            const analysis = analyzeGrayscaleData(grayscaleData, nativeWidth, nativeHeight);
+            const analysis = analyzeGrayscaleData(grayscaleData, info.width, info.height);
             
             console.log(`⚡ Grayscale processed in ${Date.now() - startTime}ms: ${analysis.totalBytes} bytes (${analysis.compressionPercent}% vs RGBA)`);
             
@@ -453,23 +580,15 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             
             // Store in albumArt collection
             const base64Grayscale = Buffer.from(compressedData).toString('base64');
+            console.log(`📦 Base64 size: ${base64Grayscale.length} bytes`);
+            
             const albumArtMetadata = {
                 grayscaleImageData: base64Grayscale,
-                imageWidth: nativeWidth,
-                imageHeight: nativeHeight,
-                originalImageUrl: imageUrl, // Store original URL for reference
-                processedImageUrl: currentUrl, // Store URL that actually worked
-                originalSize: imageBuffer.byteLength,
-                grayscaleSize: analysis.totalBytes,
-                compressedSize: compressedData.length,
-                averageBrightness: analysis.averageBrightness,
-                darkPercent: analysis.darkPercent,
-                lightPercent: analysis.lightPercent,
-                processedAt: new Date(),
+                imageWidth: info.width,
+                imageHeight: info.height,
                 processingVersion: '2.0-grayscale',
                 compressionMethod: 'pako-deflate',
-                processedViaProxy: true,
-                imageFormat: metadata.format
+                processedAt: new Date()
             };
             
             // Store in albumArt collection using the provided ID
@@ -482,23 +601,10 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
                 grayscaleData: base64Grayscale,
                 metadata: {
                     albumArtId: albumArtId,
-                    width: nativeWidth,
-                    height: nativeHeight,
-                    originalSize: imageBuffer.byteLength,
-                    grayscaleSize: analysis.totalBytes,
-                    compressedSize: compressedData.length,
-                    compressionRatio: analysis.compressionRatio,
-                    pakoCompressionRatio: compressedData.length / grayscaleData.length,
-                    totalCompressionRatio: compressedData.length / imageBuffer.byteLength,
-                    compressionPercent: analysis.compressionPercent,
-                    pakoCompressionPercent: ((1 - compressedData.length / grayscaleData.length) * 100).toFixed(1),
-                    totalCompressionPercent: ((1 - compressedData.length / imageBuffer.byteLength) * 100).toFixed(1),
-                    averageBrightness: analysis.averageBrightness,
-                    darkPercent: analysis.darkPercent,
-                    lightPercent: analysis.lightPercent,
-                    processingTimeMs: Date.now() - startTime,
+                    width: info.width,
+                    height: info.height,
                     compressionMethod: 'pako-deflate',
-                    usedFallbackUrl: i > 0
+                    processingVersion: '2.0-grayscale'
                 }
             };
             
@@ -599,20 +705,8 @@ export const processImageBinary = onRequest({
     try {
         console.log(`🎨 Processing image: ${imageUrl} (size: ${targetSize}, binary: ${returnBinary})`);
         
-        // Fetch the image with proper headers to avoid 403 errors
-        const imageResponse = await fetchWithTimeout(imageUrl, { 
-            timeout: 10000,
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
-                'Referer': 'https://genius.com/'
-            }
-        });
-        if (!imageResponse.ok) {
-            throw new Error(`Failed to fetch image: ${imageResponse.status}`);
-        }
-        
-        const imageBuffer = await imageResponse.arrayBuffer();
+        // Use fetchImageWithFallback which tries proxy first, then direct
+        const imageBuffer = await fetchImageWithFallback(imageUrl, 15000);
         console.log(`📦 Downloaded image: ${imageBuffer.byteLength} bytes`);
 
         // Process with canvas
