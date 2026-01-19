@@ -334,7 +334,7 @@ class SongUploader {
 
         // Save summary
         if (!this.dryRun) {
-            const outputDir = paths.getUploadDataDir(generateTimestamp());
+            const outputDir = await paths.createTimestampedDir('upload-results', generateTimestamp());
             const summaryPath = `${outputDir}/song-upload-summary.json`;
             const summary = {
                 timestamp: getCurrentISO(),
