@@ -928,7 +928,6 @@
                                 {replaySong} 
                                 {geniusUrl}
                                 {songId}
-                                artistUrlKey={queueManager.artistUrlKey}
                                 {isPaused}
                                 capitalization={$capitalization}
                                 punctuation={$punctuation}
