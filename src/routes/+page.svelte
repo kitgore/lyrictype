@@ -54,7 +54,7 @@ import { trashStore } from '$lib/services/trashService.js';
             id: 'typingTestWindow', 
             title: 'Media Typer', 
             isOpen: false, 
-            showScrollbar: true, 
+            showScrollbar: false,
             component: TypingTest, 
             position: { x: 10, y: 15 }
         },

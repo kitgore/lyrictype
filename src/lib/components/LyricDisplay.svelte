@@ -39,12 +39,17 @@
 	// let lastPunctuation = $punctuation;
 	let cursorPosition = 0;
 	let inputElement;
-	let showResults = false;
+	export let showResults = false; // Export so parent can bind and pass to scrollbar
 	let wpm = 0;
 	let accuracy = 0;
 	let preloadedImage;
 	let normalizedLyrics;
 	let blink = false;
+	
+	// Frozen results - captured when test ends and never recalculated
+	let frozenWpm = 0;
+	let frozenAccuracy = 0;
+	let frozenTypingState = { classes: [] };
 	
 	// Live WPM tracking
 	export let liveWpm = 0;
@@ -102,6 +107,21 @@
 		console.log(`Scrolled down to line ${currentScrollLine}`);
 	}
 
+	// Scroll to a specific line (for dragging the scrollbar thumb)
+	function scrollToLine(lineNumber) {
+		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
+			// If we have 4 or fewer lines, stay at the beginning
+			currentScrollLine = 0;
+		} else {
+			// Clamp the line number to valid range
+			const maxScrollLine = Math.max(0, lyricsLines.length - VISIBLE_LINES_COUNT);
+			currentScrollLine = Math.max(0, Math.min(maxScrollLine, lineNumber));
+		}
+		updateVisibleLines();
+		resetTypingTest();
+		console.log(`Scrolled to line ${currentScrollLine}`);
+	}
+
 	// Update the visible lines based on current scroll position
 	function updateVisibleLines() {
 		console.log("updating visible lines");
@@ -136,6 +156,9 @@
 		totalPauseTime = 0;
 		pauseStartTime = null;
 		liveWpm = 0;
+		frozenWpm = 0;
+		frozenAccuracy = 0;
+		frozenTypingState = { classes: [] };
 		
 		// Stop live WPM tracking
 		stopLiveWpmTracking();
@@ -165,14 +188,28 @@
 	}
 
 	// Expose scroll functions to parent components
+	export let onScrollToLine = null;
+	
 	$: {
 		onScrollUp = scrollLyricsUp;
 		onScrollDown = scrollLyricsDown;
+		onScrollToLine = scrollToLine;
 		console.log('LyricDisplay: Exposed scroll functions', { 
 			hasScrollUp: !!onScrollUp, 
-			hasScrollDown: !!onScrollDown 
+			hasScrollDown: !!onScrollDown,
+			hasScrollToLine: !!onScrollToLine
 		});
 	}
+	
+	// Export scroll position for scrollbar thumb
+	export let scrollPosition = { currentLine: 0, totalLines: 0, visibleLines: VISIBLE_LINES_COUNT };
+	
+	// Update scroll position reactively
+	$: scrollPosition = {
+		currentLine: currentScrollLine,
+		totalLines: lyricsLines.length,
+		visibleLines: VISIBLE_LINES_COUNT
+	};
 
 	async function preloadImage(src) {
 		try {
@@ -264,6 +301,9 @@
 		userInput = '';
 		testStarted = false;
 		liveWpm = 0;
+		frozenWpm = 0;
+		frozenAccuracy = 0;
+		frozenTypingState = { classes: [] };
 		stopLiveWpmTracking();
 		setTimeout(() => { // Wait for the DOM to update before focusing the input
 			focusInput();
@@ -301,6 +341,9 @@
 			totalPauseTime = 0;
 			pauseStartTime = null;
 			liveWpm = 0;
+			frozenWpm = 0;
+			frozenAccuracy = 0;
+			frozenTypingState = { classes: [] };
 			
 			// Stop live WPM tracking
 			stopLiveWpmTracking();
@@ -393,29 +436,32 @@
 let lastCap = capitalization;
 let lastPunct = punctuation;
 
-$: if ((capitalization !== lastCap || punctuation !== lastPunct) && (userInput.length > 0 || testStarted)) {
-    // Reset test state
-    showResults = false;
-    userInput = '';
-    testStarted = false;
-    startTime = null;
-    endTime = null;
-    totalPauseTime = 0;
-    pauseStartTime = null;
-    cursorPosition = 0;
-    liveWpm = 0;
-    typingState.classes = [];
+$: if (capitalization !== lastCap || punctuation !== lastPunct) {
+    // Only reset test if we're actively typing (not on results page)
+    if ((userInput.length > 0 || testStarted) && !showResults) {
+        // Reset test state
+        showResults = false;
+        userInput = '';
+        testStarted = false;
+        startTime = null;
+        endTime = null;
+        totalPauseTime = 0;
+        pauseStartTime = null;
+        cursorPosition = 0;
+        liveWpm = 0;
+        typingState.classes = [];
 
-    // Stop live WPM tracking
-    stopLiveWpmTracking();
+        // Stop live WPM tracking
+        stopLiveWpmTracking();
 
-    // Update last known values
+        setTimeout(() => {
+            focusInput();
+        }, 0);
+    }
+    
+    // Always update last known values (even on results page)
     lastCap = capitalization;
     lastPunct = punctuation;
-
-    setTimeout(() => {
-        focusInput();
-    }, 0);
 }
 
 // Use transformedLyrics everywhere instead of lyrics
@@ -485,6 +531,11 @@ function handleInput(event) {
 
 		wpm = Math.max(wpm - (incorrectChars * 3), 0);
 		
+		// Freeze the results so toggle changes don't affect them
+		frozenWpm = wpm;
+		frozenAccuracy = accuracy;
+		frozenTypingState = JSON.parse(JSON.stringify(typingState)); // Deep copy
+		
 		showResults = true;
 
 		console.log(`WPM: ${wpm.toFixed(2)}, Accuracy: ${accuracy.toFixed(2)}%`);
@@ -520,6 +571,9 @@ function handleInput(event) {
 		testStarted = false;
 		totalPauseTime = 0;
 		pauseStartTime = null;
+		frozenWpm = 0;
+		frozenAccuracy = 0;
+		frozenTypingState = { classes: [] };
 		setTimeout(() => { // Wait for the DOM to update before focusing the input
 			focusInput();
 		}, 0);
@@ -649,53 +703,56 @@ $: typingState = {
 
 // Handle all typing-related updates in one place
 $: {
-	if (userInput && formattedLyrics.length > 0) {
-		if (!testStarted) startTest();
-		
-		const normalizedUserInput = customNormalize(userInput);
-		const normalizedLyricsChars = normalizedLyrics.split('');
-		const normalizedInputChars = normalizedUserInput.split('');
-		let inputIndex = 0;
+	// Don't recalculate typing state when showing results (frozen state is used instead)
+	if (!showResults) {
+		if (userInput && formattedLyrics.length > 0) {
+			if (!testStarted) startTest();
+			
+			const normalizedUserInput = customNormalize(userInput);
+			const normalizedLyricsChars = normalizedLyrics.split('');
+			const normalizedInputChars = normalizedUserInput.split('');
+			let inputIndex = 0;
 
-		// Update classes without modifying formattedLyrics structure
-		typingState.classes = formattedLyrics.map(item => {
-		if (item.type === 'word') {
-			return {
-			type: 'word',
-			chars: item.chars.map(charInfo => {
+			// Update classes without modifying formattedLyrics structure
+			typingState.classes = formattedLyrics.map(item => {
+			if (item.type === 'word') {
+				return {
+				type: 'word',
+				chars: item.chars.map(charInfo => {
+					const currentClass = inputIndex < normalizedUserInput.length 
+					? (normalizedInputChars[inputIndex] === normalizedLyricsChars[inputIndex] ? 'correct' : 'incorrect')
+					: '';
+					inputIndex++;
+					return currentClass;
+				})
+				};
+			} else {
 				const currentClass = inputIndex < normalizedUserInput.length 
 				? (normalizedInputChars[inputIndex] === normalizedLyricsChars[inputIndex] ? 'correct' : 'incorrect')
 				: '';
 				inputIndex++;
-				return currentClass;
-			})
-			};
-		} else {
-			const currentClass = inputIndex < normalizedUserInput.length 
-			? (normalizedInputChars[inputIndex] === normalizedLyricsChars[inputIndex] ? 'correct' : 'incorrect')
-			: '';
-			inputIndex++;
-			return {
-			type: 'space',
-			class: currentClass
-			};
-		}
-		});
+				return {
+				type: 'space',
+				class: currentClass
+				};
+			}
+			});
 
-		if (userInput.length === modifiedLyrics.length) endTest();
-	} else {
-		typingState.classes = formattedLyrics.map(item => {
-		if (item.type === 'word') {
+			if (userInput.length === modifiedLyrics.length) endTest();
+		} else {
+			typingState.classes = formattedLyrics.map(item => {
+			if (item.type === 'word') {
+				return {
+				type: 'word',
+				chars: item.chars.map(() => '')
+				};
+			}
 			return {
-			type: 'word',
-			chars: item.chars.map(() => '')
+				type: 'space',
+				class: ''
 			};
+			});
 		}
-		return {
-			type: 'space',
-			class: ''
-		};
-		});
 	}
 }
 
@@ -713,8 +770,8 @@ $: {
 
 {#if showResults && preloadedImage}
     <ResultsDisplay
-        {wpm}
-        {accuracy}
+        wpm={frozenWpm}
+        accuracy={frozenAccuracy}
         {songTitle}
         {artistName}
         imageUrl={imageUrl}
