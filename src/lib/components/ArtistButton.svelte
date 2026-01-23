@@ -280,10 +280,13 @@
     .artist-placeholder-image {
         height: calc(100%);
         aspect-ratio: 1/1;
-        background-size: 2px 2px;
+        background-size: 4px 4px;
         background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
+            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
+        background-position: 0 0, 2px 2px;
+        background-attachment: fixed;
+        image-rendering: pixelated;
         border-radius: 35%;
         margin-right: 10px;
     }
@@ -336,10 +339,13 @@
     .artist-placeholder-text {
         width: calc(70% );
         height: calc(50% );
-        background-size: 2px 2px;
+        background-size: 4px 4px;
         background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
+            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
+        background-position: 0 0, 2px 2px;
+        background-attachment: fixed;
+        image-rendering: pixelated;
         border-radius: .5em;
     }
     span {

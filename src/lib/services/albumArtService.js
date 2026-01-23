@@ -129,17 +129,6 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
                         albumArtId: albumArtId,
                         width: albumArtData.imageWidth,
                         height: albumArtData.imageHeight,
-                        originalSize: albumArtData.originalSize,
-                        grayscaleSize: albumArtData.grayscaleSize,
-                        compressedSize: albumArtData.compressedSize,
-                        compressionRatio: albumArtData.compressionRatio,
-                        pakoCompressionRatio: albumArtData.pakoCompressionRatio,
-                        totalCompressionRatio: albumArtData.totalCompressionRatio,
-                        averageBrightness: albumArtData.averageBrightness,
-                        darkPercent: albumArtData.darkPercent,
-                        lightPercent: albumArtData.lightPercent,
-                        originalImageUrl: albumArtData.originalImageUrl,
-                        processedAt: albumArtData.processedAt,
                         processingVersion: albumArtData.processingVersion,
                         compressionMethod: albumArtData.compressionMethod
                     }

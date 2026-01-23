@@ -4,4 +4,4 @@ repos:
     rev: v8.18.2 # Use the latest version of gitleaks
     hooks:
     -   id: gitleaks
-        name: Detect hardcoded secrets
+        name: Detect hardcoded secret

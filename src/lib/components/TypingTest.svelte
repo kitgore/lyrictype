@@ -12,6 +12,7 @@
     import { themeColors, getElementTabIndex, windowStore, punctuation, capitalization, songQueue, queueActions } from '$lib/services/store.js';
     import ToggleButton from './ToggleButton.svelte'
     import QueueDisplay from './QueueDisplay.svelte'
+    import LyricsScrollbar from './LyricsScrollbar.svelte'
     
     export let id; //window id
 
@@ -53,9 +54,14 @@
     // Lyrics scrolling functionality
     let lyricsScrollUp = null;
     let lyricsScrollDown = null;
+    let lyricsScrollToLine = null;
+    let lyricsScrollPosition = { currentLine: 0, totalLines: 0, visibleLines: 4 };
     
     // Live WPM from LyricDisplay component
     let liveWpm = 0;
+    
+    // Results state from LyricDisplay (to disable scrollbar on results page)
+    let showResults = false;
     
     // Debug reactive statement to monitor scroll function binding
     $: {
@@ -795,23 +801,25 @@
             <div class="sidebarTitle">
                 <h3 style:font-size="{windowHeight*0.03}px">Recently Played</h3>
             </div>
-            <div class="headerInputSection">
-                <div class="headerInputLabel" style:font-size="{windowHeight*0.035}px">Artist:</div>
-                <div class="headerInputContainer">
-                    <div class="searchDropdownWrapper">
-                        <ArtistSearchDropdown 
-                            bind:this={searchDropdown}
-                            tabIndex={inputTabIndex}
-                            fontSize="{windowHeight*0.035}px"
-                            windowHeight={windowHeight}
-                            on:artistSelected={handleArtistSelected}
-                        />
+            <div class="headerContentWrapper">
+                <div class="headerInputSection">
+                    <div class="headerInputLabel" style:font-size="{windowHeight*0.035}px">Artist:</div>
+                    <div class="headerInputContainer">
+                        <div class="searchDropdownWrapper">
+                            <ArtistSearchDropdown 
+                                bind:this={searchDropdown}
+                                tabIndex={inputTabIndex}
+                                fontSize="{windowHeight*0.035}px"
+                                windowHeight={windowHeight}
+                                on:artistSelected={handleArtistSelected}
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="typingToggleButtons" style:gap={windowHeight * 0.007 + 'px'}>
-                <ToggleButton bind:isToggled={$capitalization} displayText="Aa" buttonSize={windowHeight*.05}/>
-                <ToggleButton bind:isToggled={$punctuation} displayText="!?" buttonSize={windowHeight*.05}/>
+                <div class="typingToggleButtons" style:gap={windowHeight * 0.007 + 'px'}>
+                    <ToggleButton bind:isToggled={$capitalization} displayText="Aa" buttonSize={windowHeight*.05}/>
+                    <ToggleButton bind:isToggled={$punctuation} displayText="!?" buttonSize={windowHeight*.05}/>
+                </div>
             </div>
         </div>
         <div class="contentLayout">
@@ -835,47 +843,60 @@
                 </div>
             </div>
             <div class="mainContent">
-                <div class="lyricsContainer">
-                    {#if showQueue}
-                        <QueueDisplay 
-                            {windowHeight}
-                            isVisible={true}
-                            on:songSelected={handleQueueSongSelected}
-                            on:close={handleQueueClose}
-                            embedded={true}
-                            songs={$queueUpcomingSongs}
-                            currentIndex={queueStatus.currentIndex}
-                            totalSongs={queueStatus.totalSongs}
-                        />
-                    {:else if lyrics}
-                        <LyricDisplay 
-                            {lyrics} 
-                            {songTitle} 
-                            {artistName} 
-                            {imageUrl}
-                            {albumArtId}
-                            {preloadedAlbumArt}
-                            continueFromQueue={playNextSong}
-                            {replaySong} 
-                            {geniusUrl}
-                            {songId}
-                            {isPaused}
-                            capitalization={$capitalization}
-                            punctuation={$punctuation}
-                            fullLyrics={currentSong?.fullLyrics}
-                            bind:onScrollUp={lyricsScrollUp}
-                            bind:onScrollDown={lyricsScrollDown}
-                            bind:liveWpm={liveWpm}
-                        />
-                    {:else}
-                        {#if loading}
-                            <div class="loadingAnimationContainer">
-                                <div style="height:{windowHeight*.15}px; width: 100%; justify-content:center; display: flex;">
-                                    <LoadingAnimation className={"loadingAnimation"}/>
+                <div class="lyricsWrapper">
+                    <div class="lyricsContainer">
+                        {#if showQueue}
+                            <QueueDisplay 
+                                {windowHeight}
+                                isVisible={true}
+                                on:songSelected={handleQueueSongSelected}
+                                on:close={handleQueueClose}
+                                embedded={true}
+                                songs={$queueUpcomingSongs}
+                                currentIndex={queueStatus.currentIndex}
+                                totalSongs={queueStatus.totalSongs}
+                            />
+                        {:else if lyrics}
+                            <LyricDisplay 
+                                {lyrics} 
+                                {songTitle} 
+                                {artistName} 
+                                {imageUrl}
+                                {albumArtId}
+                                {preloadedAlbumArt}
+                                continueFromQueue={playNextSong}
+                                {replaySong} 
+                                {geniusUrl}
+                                {songId}
+                                {isPaused}
+                                capitalization={$capitalization}
+                                punctuation={$punctuation}
+                                fullLyrics={currentSong?.fullLyrics}
+                                bind:onScrollUp={lyricsScrollUp}
+                                bind:onScrollDown={lyricsScrollDown}
+                                bind:onScrollToLine={lyricsScrollToLine}
+                                bind:scrollPosition={lyricsScrollPosition}
+                                bind:liveWpm={liveWpm}
+                                bind:showResults={showResults}
+                            />
+                        {:else}
+                            {#if loading}
+                                <div class="loadingAnimationContainer">
+                                    <div style="height:{windowHeight*.15}px; width: 100%; justify-content:center; display: flex;">
+                                        <LoadingAnimation className={"loadingAnimation"}/>
+                                    </div>
                                 </div>
-                            </div>
+                            {/if}
                         {/if}
-                    {/if}
+                    </div>
+                    <LyricsScrollbar 
+                        onScrollUp={lyricsScrollUp}
+                        onScrollDown={lyricsScrollDown}
+                        onScrollToLine={lyricsScrollToLine}
+                        containerHeight={windowHeight}
+                        scrollPosition={lyricsScrollPosition}
+                        disabled={showResults}
+                    />
                 </div>
             </div>
         </div>
@@ -1097,6 +1118,14 @@
         color: var(--primary-color);
     }
 
+    .headerContentWrapper {
+        width: 75.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
     .currentArtist {
         font-family: "Geneva", sans-serif;
         line-height: 150%;
@@ -1220,13 +1249,21 @@
         height: 100%;
     }
 
-    .lyricsContainer {
+    .lyricsWrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 97%;
         border: var(--border-width) solid var(--primary-color);
+        border-radius: .2em;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .lyricsContainer {
         background-color: var(--secondary-color);
         height: 100%;
-        border-radius: .2em;
-        width: 100%;
-        max-width: 100%;
+        flex: 1;
         box-sizing: border-box;
         overflow: hidden;
     }

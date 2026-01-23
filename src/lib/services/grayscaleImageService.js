@@ -273,17 +273,6 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
                     metadata: {
                         width: artistData.imageWidth,
                         height: artistData.imageHeight,
-                        originalSize: artistData.originalSize,
-                        grayscaleSize: artistData.grayscaleSize,
-                        compressedSize: artistData.compressedSize,
-                        compressionRatio: artistData.compressionRatio,
-                        pakoCompressionRatio: artistData.pakoCompressionRatio,
-                        totalCompressionRatio: artistData.totalCompressionRatio,
-                        averageBrightness: artistData.averageBrightness,
-                        darkPercent: artistData.darkPercent,
-                        lightPercent: artistData.lightPercent,
-                        processedAt: artistData.processedAt,
-                        originalImageUrl: artistData.originalImageUrl,
                         processingVersion: artistData.processingVersion,
                         compressionMethod: artistData.compressionMethod
                     }
