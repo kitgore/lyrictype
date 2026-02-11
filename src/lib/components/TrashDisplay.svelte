@@ -1,12 +1,22 @@
 <script>
-    import { windowStore } from '$lib/services/store.js';
-    import { themeColors } from '$lib/services/store.js';
+    import { windowStore, windowActions, ditherImages, themeColors } from '$lib/services/store.js';
     import { trashStore, getFileIcon, formatDuration, getPerformanceGrade } from '$lib/services/trashService.js';
+    import { getAlbumArtGrayscaleImage } from '$lib/services/albumArtService.js';
+    import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
 
     // Get trash window dimensions for proportional sizing
     $: trashWindowState = $windowStore.windowStates.find(w => w.id === 'trashWindow');
     $: windowWidth = trashWindowState?.dimensions?.width;
     $: windowHeight = trashWindowState?.dimensions?.height;
+    
+    // Album art grayscale data for the selected song
+    let grayscaleImageData = null;
+    let imageMetadata = null;
+    let useFallback = false;
+    let isLoadingImage = false;
+    
+    // In-memory cache for instant image switching
+    const grayscaleCache = new Map();
     
     // Calculate icon dimensions based on trash window size
     $: iconSize = windowHeight * 0.16; // 16% of window height
@@ -60,6 +70,16 @@
             bubbles: true
         });
         document.dispatchEvent(event);
+        
+        // Bring the typing test window to front
+        windowActions.activateWindow('typingTestWindow');
+    }
+    
+    // Replay button click handler
+    function handleReplayClick() {
+        if (selectedSong) {
+            handleFileDoubleClick(selectedSong);
+        }
     }
     
     // Scrolling functions
@@ -96,6 +116,100 @@
     
     $: if (completedSongs.length === 0) {
         selectedSong = null;
+    }
+    
+    // Load grayscale image for selected song when ditherImages is enabled
+    async function loadGrayscaleImage(song) {
+        // Clear old data immediately when switching songs
+        grayscaleImageData = null;
+        imageMetadata = null;
+        
+        if (!song || !song.albumArtId || !song.imageUrl) {
+            useFallback = true;
+            return;
+        }
+        
+        if (!$ditherImages) {
+            useFallback = true;
+            return;
+        }
+        
+        // Check in-memory cache first for instant display
+        const cacheKey = song.imageUrl;
+        if (grayscaleCache.has(cacheKey)) {
+            const cached = grayscaleCache.get(cacheKey);
+            grayscaleImageData = cached.grayscaleData;
+            imageMetadata = cached.metadata;
+            useFallback = false;
+            return;
+        }
+        
+        isLoadingImage = true;
+        useFallback = false;
+        
+        try {
+            const result = await getAlbumArtGrayscaleImage(song.imageUrl);
+            
+            if (result.success && result.grayscaleData) {
+                // Cache for instant access next time
+                grayscaleCache.set(cacheKey, {
+                    grayscaleData: result.grayscaleData,
+                    metadata: result.metadata
+                });
+                
+                grayscaleImageData = result.grayscaleData;
+                imageMetadata = result.metadata;
+                useFallback = false;
+            } else {
+                useFallback = true;
+            }
+        } catch (error) {
+            useFallback = true;
+        } finally {
+            isLoadingImage = false;
+        }
+    }
+    
+    // Preload grayscale data for all songs when dithering is enabled
+    async function preloadAllGrayscale() {
+        if (!$ditherImages) return;
+        
+        for (const song of completedSongs) {
+            if (!song.imageUrl || grayscaleCache.has(song.imageUrl)) continue;
+            
+            try {
+                const result = await getAlbumArtGrayscaleImage(song.imageUrl);
+                if (result.success && result.grayscaleData) {
+                    grayscaleCache.set(song.imageUrl, {
+                        grayscaleData: result.grayscaleData,
+                        metadata: result.metadata
+                    });
+                }
+            } catch (error) {
+                // Silently fail - will load on demand
+            }
+        }
+    }
+    
+    // Trigger preloading when dithering is enabled and songs exist
+    $: if ($ditherImages && completedSongs.length > 0) {
+        preloadAllGrayscale();
+    }
+    
+    // Track the selected song's imageUrl to trigger reactivity when song changes
+    $: selectedImageUrl = selectedSong?.imageUrl;
+    
+    // Reactive: Load grayscale when selected song changes or dither setting changes
+    $: loadImageForSong(selectedSong, selectedImageUrl, $ditherImages);
+    
+    function loadImageForSong(song, imageUrl, ditherEnabled) {
+        if (song && imageUrl) {
+            loadGrayscaleImage(song);
+        } else {
+            grayscaleImageData = null;
+            imageMetadata = null;
+            useFallback = true;
+        }
     }
 </script>
 
@@ -219,7 +333,19 @@
                         <!-- Album Artwork -->
                         <div class="album-art" style:height="{iconSize * 1.5}px" style:width="{iconSize * 1.5}px">
                             {#if selectedSong.imageUrl}
-                                <img src="{selectedSong.imageUrl}" alt="{selectedSong.title}" />
+                                {#key selectedSong.imageUrl}
+                                    {#if $ditherImages && grayscaleImageData && imageMetadata && !useFallback}
+                                        <GrayscaleImageRenderer 
+                                            grayscaleData={grayscaleImageData}
+                                            width={imageMetadata.width}
+                                            height={imageMetadata.height}
+                                            alt={selectedSong.title}
+                                            borderRadius="0"
+                                        />
+                                    {:else}
+                                        <img src="{selectedSong.imageUrl}" alt="{selectedSong.title}" />
+                                    {/if}
+                                {/key}
                             {:else}
                                 <!-- Default album art -->
                                 <div class="default-album-art">
@@ -274,6 +400,18 @@
                         <div class="completion-date" style:font-size="{iconLabelSize * 0.8}px">
                             Completed: {new Date(selectedSong.completedAt).toLocaleDateString()}
                         </div>
+                        
+                        <!-- Replay Button -->
+                        <button 
+                            class="replay-button" 
+                            style:font-size="{iconLabelSize * 0.9}px"
+                            on:click={handleReplayClick}
+                        >
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style:width="{iconLabelSize * 1.2}px" style:height="{iconLabelSize * 1.2}px">
+                                <path d="M8 5v14l11-7L8 5z" fill="{$themeColors.primary}"/>
+                            </svg>
+                            Replay Song
+                        </button>
                     </div>
                 {:else}
                     <div class="no-selection" style:font-size="{iconLabelSize}px">
@@ -580,8 +718,31 @@
     .completion-date {
         text-align: center;
         opacity: 0.6;
-        margin-top: auto;
         color: var(--primary-color);
+    }
+
+    .replay-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-top: auto;
+        padding: 8px 16px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        cursor: pointer;
+        font-family: inherit;
+        transition: background-color 0.15s ease;
+    }
+    
+    .replay-button:hover {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+    
+    .replay-button:hover svg path {
+        fill: var(--secondary-color);
     }
 
     .no-selection {

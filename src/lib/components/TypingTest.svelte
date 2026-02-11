@@ -1,5 +1,5 @@
 <script>
-    import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue } from '$lib/services/artistService';
+    import { getArtistLyrics, searchByArtistId, fetchMultipleSongs, loadArtistForQueue, loadSpecificSong } from '$lib/services/artistService';
     import { queueManager, queueSongs, queueUpcomingSongs, queueIndex } from '$lib/services/queueManager.js';
     import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
     import TextInput from '$lib/components/TextInput.svelte';
@@ -629,49 +629,109 @@
             isPaused = false;
             showQueue = false;
             loading = true;
-
-            // Create a song object in the expected format
-            const songToLoad = {
-                title: songData.title,
-                artist: songData.artist,
-                lyrics: null, // Will need to fetch lyrics
-                image: songData.imageUrl,
-                albumArtId: songData.albumArtId,
-                url: songData.geniusUrl,
-                songId: songData.songId,
-                primaryArtist: songData.artist,
-                artistImg: songData.imageUrl
-            };
-
-            // We need to get the full song data including lyrics
-            // For now, let's use the existing system to load by artist and then find the specific song
-            console.log('🔄 Loading song from trash:', songData.title);
             
-            // Try to load the artist's songs and find the specific song
-            // This is a simplified approach - in a full implementation, we might want to store lyrics in trash
-            const artistData = {
-                name: songData.artist,
-                id: songData.songId // This might not work perfectly, but it's a start
-            };
+            console.log('🔄 Loading song from trash:', songData.title, 'by', songData.artist);
+            console.log('📋 Trash data:', { songId: songData.songId, artistUrlKey: songData.artistUrlKey });
             
-            // For now, just display the song info we have (without lyrics)
-            // In a full implementation, we'd fetch the lyrics from the API
-            currentSong = songToLoad;
-            songTitle = songData.title;
-            artistName = songData.artist;
-            imageUrl = songData.imageUrl;
-            albumArtId = songData.albumArtId;
-            geniusUrl = songData.geniusUrl;
-            songId = songData.songId;
+            // Check if we have the artistUrlKey needed to load from discography
+            if (!songData.artistUrlKey) {
+                console.warn('⚠️ No artistUrlKey in trash data - this song was saved before the feature was implemented');
+                // Fallback: show message asking user to search for artist
+                lyrics = `Unable to load "${songData.title}" - please search for "${songData.artist}" to replay this song.`;
+                songTitle = songData.title;
+                artistName = songData.artist;
+                imageUrl = songData.imageUrl;
+                albumArtId = songData.albumArtId;
+                geniusUrl = songData.geniusUrl;
+                songId = songData.songId;
+                loading = false;
+                return;
+            }
             
-            // We can't replay without lyrics, so show a message
-            lyrics = "Song selected from trash. To replay this song, please search for the artist and select it from the queue.";
+            // Load the specific song from the artist's discography
+            const result = await loadSpecificSong(songData.songId, songData.artistUrlKey);
+            
+            if (!result || !result.song) {
+                throw new Error('Failed to load song data');
+            }
+            
+            const loadedSong = result.song;
+            
+            // Check if we got lyrics
+            if (!loadedSong.lyrics || loadedSong.lyrics.trim().length === 0) {
+                console.warn('⚠️ Song loaded but has no lyrics');
+                lyrics = `Lyrics not available for "${songData.title}". The song may need to be re-cached.`;
+                songTitle = songData.title;
+                artistName = songData.artist;
+                imageUrl = songData.imageUrl;
+                albumArtId = songData.albumArtId;
+                geniusUrl = songData.geniusUrl;
+                songId = songData.songId;
+                loading = false;
+                return;
+            }
+            
+            // Initialize the queue with this artist, starting at this song
+            console.log('🎵 Initializing queue with song at index:', loadedSong.songIndex);
+            
+            // Reset the queue manager with the artist data
+            queueManager.artistUrlKey = songData.artistUrlKey;
+            queueManager.artistData = result.artistData;
+            queueManager.songIds = result.queueInfo.songIds;
+            queueManager.currentIndex = loadedSong.songIndex;
+            
+            // Clear and rebuild the queue
+            queueManager.songs = [];
+            queueManager.loadedSongs.clear();
+            
+            // Initialize songs array with placeholders
+            for (let i = 0; i < result.queueInfo.songIds.length; i++) {
+                queueManager.songs.push({
+                    id: result.queueInfo.songIds[i],
+                    title: 'Loading...',
+                    artist: result.artistData.name,
+                    lyrics: null,
+                    isPlaceholder: true
+                });
+            }
+            
+            // Add the loaded song to the cache and queue
+            queueManager.loadedSongs.set(loadedSong.id, loadedSong);
+            queueManager.songs[loadedSong.songIndex] = queueManager.ensureExcerptForSong(loadedSong);
+            
+            // Broadcast queue update
+            queueManager.broadcast();
+            
+            // Update UI state
+            currentSong = loadedSong;
+            songTitle = loadedSong.title;
+            artistName = loadedSong.artist;
+            lyrics = loadedSong.lyrics;
+            imageUrl = loadedSong.image || songData.imageUrl;
+            albumArtId = loadedSong.albumArtId || songData.albumArtId;
+            geniusUrl = loadedSong.url || songData.geniusUrl;
+            songId = loadedSong.songId || loadedSong.id;
+            displayedArtist = songData.artist;
+            
+            // Update artist input to show the artist name
+            artistInput = songData.artist;
+            
+            console.log('✅ Song loaded from trash successfully:', songTitle);
+            
+            // Trigger background preloading of nearby songs
+            setTimeout(() => {
+                queueManager.preloadAroundCurrentPosition().catch(err => {
+                    console.warn('Background preload failed:', err);
+                });
+            }, 100);
             
             loading = false;
 
         } catch (error) {
-            console.error('Error loading song from trash:', error);
-            lyrics = "Error loading song from trash.";
+            console.error('❌ Error loading song from trash:', error);
+            lyrics = `Error loading "${songData.title}": ${error.message}. Please try searching for the artist.`;
+            songTitle = songData.title;
+            artistName = songData.artist;
             loading = false;
         }
     }
@@ -868,6 +928,7 @@
                                 {replaySong} 
                                 {geniusUrl}
                                 {songId}
+                                artistUrlKey={queueManager.artistUrlKey}
                                 {isPaused}
                                 capitalization={$capitalization}
                                 punctuation={$punctuation}

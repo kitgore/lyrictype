@@ -319,6 +319,83 @@ export async function loadSongsFromPosition(songId, shouldReverse = false, artis
     }
 }
 
+/**
+ * Load a specific song by ID from an artist's discography
+ * This is used when loading a song from trash/history
+ * @param {string} songId - The Genius song ID
+ * @param {string} artistUrlKey - Artist document ID (URL slug)
+ * @returns {Promise<Object>} Song data with lyrics and queue info
+ */
+export async function loadSpecificSong(songId, artistUrlKey) {
+    try {
+        console.log(`🎯 Loading specific song ${songId} from artist ${artistUrlKey}`);
+        
+        // First, get the artist data to access the song list
+        const artistData = await getArtistWithSongs(artistUrlKey);
+        
+        if (!artistData || !artistData.songIds || artistData.songIds.length === 0) {
+            throw new Error('Artist not found or has no songs');
+        }
+        
+        // Find the song's position in the artist's song list
+        const songIndex = artistData.songIds.findIndex(id => id === songId || id === String(songId));
+        
+        if (songIndex === -1) {
+            console.warn(`Song ${songId} not found in artist's song list, loading from position 0`);
+            // Song not in list - might be a featured track. Load from start
+        }
+        
+        // Use the target song ID (or first song if not found)
+        const targetSongId = songIndex !== -1 ? songId : artistData.songIds[0];
+        
+        // Load the song with lyrics using the existing system
+        const result = await loadSongsFromPosition(String(targetSongId), false, artistUrlKey, 1);
+        
+        if (!result || !result.loadedSongs || Object.keys(result.loadedSongs).length === 0) {
+            throw new Error('Failed to load song data');
+        }
+        
+        // Get the loaded song
+        const loadedSong = result.loadedSongs[targetSongId] || Object.values(result.loadedSongs)[0];
+        
+        if (!loadedSong) {
+            throw new Error('Song data not found in response');
+        }
+        
+        // Transform to UI format
+        const transformedSong = {
+            id: loadedSong.id,
+            title: loadedSong.title,
+            artist: loadedSong.primaryArtist?.name || loadedSong.artistNames || artistData.name,
+            lyrics: loadedSong.lyrics || '',
+            fullLyrics: loadedSong.lyrics || '', // Keep full lyrics for scrolling
+            image: loadedSong.songArtImageUrl,
+            albumArtId: loadedSong.albumArtId,
+            url: loadedSong.url,
+            songId: loadedSong.id,
+            primaryArtist: loadedSong.primaryArtist?.name || artistData.name,
+            songIndex: songIndex !== -1 ? songIndex : 0
+        };
+        
+        console.log(`✅ Loaded song: "${transformedSong.title}" at index ${transformedSong.songIndex}`);
+        
+        return {
+            song: transformedSong,
+            artistData: artistData,
+            queueInfo: {
+                totalSongs: artistData.totalSongs || artistData.songIds.length,
+                cachedSongs: artistData.cachedSongs || 0,
+                songIds: artistData.songIds,
+                artistUrlKey: artistUrlKey
+            }
+        };
+        
+    } catch (error) {
+        console.error('Error loading specific song:', error);
+        throw error;
+    }
+}
+
 // LEGACY FUNCTION - Consider migrating to getArtistWithSongs
 export async function getArtistLyrics(artistName) {
     const callGetArtistLyrics = httpsCallable(functions, 'initialArtistSearch');

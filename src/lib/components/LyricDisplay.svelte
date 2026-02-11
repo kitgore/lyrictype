@@ -15,6 +15,7 @@
 	export let replaySong;
 	export let geniusUrl;
 	export let songId = null; // Song ID for trash functionality
+	export let artistUrlKey = null; // Artist URL key for loading from discography
 	export let isPaused = false;
 	export let capitalization = true;
 	export let punctuation = true;
@@ -25,7 +26,7 @@
 	export let onScrollDown = null;
 	let currentScrollLine = 0; // Track which line we're starting from
 	let lyricsLines = []; // Array of lyrics split by lines
-	let visibleLines = []; // Currently visible 4 lines
+	// visibleLines is now computed reactively from lyricsLines and currentScrollLine
 	const VISIBLE_LINES_COUNT = 4;
 	
 	let userInput = '';
@@ -60,7 +61,14 @@
 	// Process lyrics into lines and manage scrolling
 	function processLyricsIntoLines(lyricsText) {
 		if (!lyricsText) return [];
-		return lyricsText.split('\n').filter(line => line.trim() !== '');
+		const lines = lyricsText.split('\n').filter(line => line.trim() !== '');
+		// Debug: show line count and first few lines with their character counts
+		console.log(`🎵 LYRICS DEBUG: ${lines.length} total lines`);
+		console.log(`🎵 First 6 lines preview:`);
+		lines.slice(0, 6).forEach((line, i) => {
+			console.log(`  Line ${i}: "${line.substring(0, 50)}${line.length > 50 ? '...' : ''}" (${line.length} chars)`);
+		});
+		return lines;
 	}
 
 	// Check if we have full lyrics available for scrolling
@@ -123,16 +131,11 @@
 	}
 
 	// Update the visible lines based on current scroll position
+	// Note: visibleLines is now computed reactively from lyricsLines and currentScrollLine
+	// This function just logs the change - the actual update happens via reactive statement
 	function updateVisibleLines() {
 		console.log("updating visible lines");
 		const endLine = Math.min(lyricsLines.length, currentScrollLine + VISIBLE_LINES_COUNT);
-		visibleLines = lyricsLines.slice(currentScrollLine, endLine);
-		
-		// If we don't have enough lines, pad with empty lines to maintain consistent display
-		while (visibleLines.length < VISIBLE_LINES_COUNT && lyricsLines.length > 0) {
-			visibleLines.push('');
-		}
-		
 		console.log(`Displaying lines ${currentScrollLine}-${endLine-1} of ${lyricsLines.length} total lines`);
 	}
 
@@ -172,19 +175,17 @@
 		}, 0);
 	}
 
-	// Reactive statement to process lyrics when they change
-	$: {
-		// Use full lyrics for scrolling if available, otherwise use the provided lyrics
-		const lyricsToProcess = fullLyrics || lyrics;
-		if (lyricsToProcess) {
-			lyricsLines = processLyricsIntoLines(lyricsToProcess);
-			resetScrollPosition();
-			console.log(`Processed lyrics: ${lyricsLines.length} lines total`, {
-				hasFullLyrics: !!fullLyrics,
-				usingFullLyrics: !!fullLyrics,
-				firstFewLines: lyricsLines.slice(0, 3)
-			});
-		}
+	// Reactive assignment: process lyrics when they change
+	// Using reactive assignment (not block) ensures proper dependency tracking
+	$: lyricsSource = fullLyrics || lyrics;
+	$: lyricsLines = lyricsSource ? processLyricsIntoLines(lyricsSource) : [];
+	
+	// Track when lyrics source changes to reset scroll position
+	let lastLyricsSource = null;
+	$: if (lyricsSource !== lastLyricsSource) {
+		lastLyricsSource = lyricsSource;
+		currentScrollLine = 0;
+		console.log(`Processed lyrics: ${lyricsLines.length} lines total`);
 	}
 
 	// Expose scroll functions to parent components
@@ -423,10 +424,34 @@
 		return normalized;
 	}
 
+	// Compute visible lines reactively based on lyricsLines and currentScrollLine
+	// This ensures visibleLines is always in sync and doesn't rely on side effects
+	$: computedVisibleLines = (() => {
+		if (lyricsLines.length === 0) return [];
+		const endLine = Math.min(lyricsLines.length, currentScrollLine + VISIBLE_LINES_COUNT);
+		const lines = lyricsLines.slice(currentScrollLine, endLine);
+		// Pad with empty lines if needed
+		while (lines.length < VISIBLE_LINES_COUNT && lyricsLines.length > 0) {
+			lines.push('');
+		}
+		console.log(`🔍 VISIBLE LINES DEBUG: showing lines ${currentScrollLine}-${endLine-1} (${lines.length} lines)`);
+		lines.forEach((line, i) => {
+			console.log(`  Visible[${i}]: "${line.substring(0, 60)}${line.length > 60 ? '...' : ''}" (${line.length} chars)`);
+		});
+		return lines;
+	})();
+
+	// Sync visibleLines with the computed value
+	$: visibleLines = computedVisibleLines;
+
 	// Derived lyrics based on toggles and scrolling
+	// IMPORTANT: Do NOT reference 'lyrics' prop here to avoid Svelte running this
+	// before lyricsLines is populated. Only use lyricsLines/computedVisibleLines.
 	$: transformedLyrics = (() => {
-		// Use visible lines if scrolling is active, otherwise use full lyrics
-		const lyricsToUse = visibleLines.length > 0 ? visibleLines.join('\n') : lyrics;
+		// Always use computed visible lines - never fall back to raw lyrics
+		const lyricsToUse = computedVisibleLines.join('\n');
+		console.log(`📝 TRANSFORMED DEBUG: ${computedVisibleLines.length} visible lines → ${lyricsToUse.length} total chars`);
+		console.log(`📝 Full transformed text preview: "${lyricsToUse.substring(0, 200)}${lyricsToUse.length > 200 ? '...' : ''}"`);
 		let out = lyricsToUse ? (capitalization ? lyricsToUse : lyricsToUse.toLowerCase()) : '';
 		if (!punctuation) out = out.replace(/[^\p{L}\p{N}\s]/gu, '');
 		return out;
@@ -548,6 +573,7 @@ function handleInput(event) {
 				songId,
 				songTitle,
 				artistName,
+				artistUrlKey, // For loading song from artist's discography
 				imageUrl,
 				albumArtId,
 				geniusUrl,

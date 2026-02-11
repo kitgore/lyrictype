@@ -1,10 +1,15 @@
-import { writable } from 'svelte/store';
+import { writable, get } from 'svelte/store';
 import Cookies from 'js-cookie';
+import { cookiesAccepted } from '$lib/services/store.js';
 
-// Trash store to manage completed songs (max 10)
+// Track cookies accepted state for synchronous access
+let areCookiesAccepted = Cookies.get('cookiesAccepted') === 'true';
+
+// Trash store to manage completed songs (max 25)
 const createTrashStore = () => {
-    // Load from cookies on initialization
+    // Load from cookies on initialization only if cookies are accepted
     const initialTrash = (() => {
+        if (!areCookiesAccepted) return [];
         try {
             const saved = Cookies.get('completedSongs');
             return saved ? JSON.parse(saved) : [];
@@ -15,8 +20,18 @@ const createTrashStore = () => {
     })();
 
     const { subscribe, set, update } = writable(initialTrash);
+    
+    // Helper to save to cookies only if accepted
+    const saveToCookies = (songs) => {
+        if (!areCookiesAccepted) return;
+        try {
+            Cookies.set('completedSongs', JSON.stringify(songs), { expires: 365 });
+        } catch (error) {
+            console.warn('Failed to save completed songs to cookies:', error);
+        }
+    };
 
-    return {
+    const store = {
         subscribe,
         
         // Add a completed song to trash (keeps max 25, newest first)
@@ -28,6 +43,7 @@ const createTrashStore = () => {
                     songId: songData.songId,
                     title: songData.title,
                     artist: songData.artist,
+                    artistUrlKey: songData.artistUrlKey, // Artist URL key for loading from discography
                     imageUrl: songData.imageUrl,
                     albumArtId: songData.albumArtId,
                     geniusUrl: songData.geniusUrl,
@@ -51,12 +67,8 @@ const createTrashStore = () => {
                 // Add to beginning and keep only the most recent 25
                 const updatedSongs = [completedSong, ...songs.filter(s => s.id !== completedSong.id)].slice(0, 25);
                 
-                // Save to cookies
-                try {
-                    Cookies.set('completedSongs', JSON.stringify(updatedSongs), { expires: 365 });
-                } catch (error) {
-                    console.warn('Failed to save completed songs to cookies:', error);
-                }
+                // Save to cookies only if accepted
+                saveToCookies(updatedSongs);
                 
                 return updatedSongs;
             });
@@ -67,12 +79,8 @@ const createTrashStore = () => {
             update(songs => {
                 const updatedSongs = songs.filter(song => song.id !== songId);
                 
-                // Save to cookies
-                try {
-                    Cookies.set('completedSongs', JSON.stringify(updatedSongs), { expires: 365 });
-                } catch (error) {
-                    console.warn('Failed to save completed songs to cookies:', error);
-                }
+                // Save to cookies only if accepted
+                saveToCookies(updatedSongs);
                 
                 return updatedSongs;
             });
@@ -94,10 +102,34 @@ const createTrashStore = () => {
             return foundSong;
         }
     };
+    
+    return store;
 };
 
 // Export the trash store instance
 export const trashStore = createTrashStore();
+
+// Subscribe to cookiesAccepted changes
+// Only update the flag - don't clear the store immediately
+// Songs will be cleared on reload if cookies are disabled (since we won't load from cookies)
+cookiesAccepted.subscribe(accepted => {
+    areCookiesAccepted = accepted;
+    if (accepted) {
+        // When cookies are re-enabled, save the current in-memory data to cookies
+        // This preserves data even if user toggled cookies off and back on
+        const currentSongs = get(trashStore);
+        if (currentSongs && currentSongs.length > 0) {
+            try {
+                Cookies.set('completedSongs', JSON.stringify(currentSongs), { expires: 365 });
+            } catch (error) {
+                console.warn('Failed to save completed songs to cookies:', error);
+            }
+        }
+    } else {
+        // Just remove the cookie, but keep the in-memory store intact for this session
+        Cookies.remove('completedSongs');
+    }
+});
 
 // Helper function to format test results for trash
 export const formatTestResultsForTrash = (testResults) => {
@@ -105,6 +137,7 @@ export const formatTestResultsForTrash = (testResults) => {
         songId: testResults.songId,
         title: testResults.songTitle,
         artist: testResults.artistName,
+        artistUrlKey: testResults.artistUrlKey, // For loading song from artist's discography
         imageUrl: testResults.imageUrl,
         albumArtId: testResults.albumArtId,
         geniusUrl: testResults.geniusUrl,
