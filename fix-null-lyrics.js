@@ -19,7 +19,7 @@ import { getFirestore, doc, getDoc, updateDoc, arrayRemove, arrayUnion, incremen
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import * as cheerio from 'cheerio';
-import { firebaseConfig } from '../src/lib/services/initFirebase.js';
+import { firebaseConfig } from './src/lib/services/initFirebase.js';
 
 // Note: fetch is built-in for Node.js 18+, no need to import
 

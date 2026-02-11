@@ -1,0 +1,641 @@
+{
+  "timestamp": "2025-07-30T05:02:26.716Z",
+  "tests": [
+    {
+      "test": "getArtistInfo",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:26.903Z",
+      "data": {
+        "success": true,
+        "artist": {
+          "name": "0",
+          "geniusId": "38078",
+          "totalSongs": 49,
+          "cachedSongs": 22,
+          "lastUpdated": {
+            "seconds": 1753849159,
+            "nanoseconds": 850000000
+          },
+          "isFullyCached": true
+        }
+      },
+      "error": null
+    },
+    {
+      "test": "populateArtistSongs",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:27.042Z",
+      "data": {
+        "success": true,
+        "message": "Songs already up to date",
+        "totalSongs": 49,
+        "isUpToDate": true
+      },
+      "error": null
+    },
+    {
+      "test": "scrapeSongLyrics",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:27.748Z",
+      "data": {
+        "success": true,
+        "results": {
+          "successful": [],
+          "failed": [],
+          "skipped": [
+            "3789007",
+            "3667543",
+            "3681864"
+          ]
+        },
+        "scrapedCount": 0
+      },
+      "error": null
+    },
+    {
+      "test": "loadStartingFromId",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:29.062Z",
+      "data": {
+        "success": true,
+        "queuePosition": 24,
+        "loadedSongs": {
+          "4103317": {
+            "id": "4103317",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1753851565,
+              "nanoseconds": 950000000
+            },
+            "title": "​the wicked will never die!!",
+            "artistNames": "SYKI",
+            "songArtImageUrl": "https://images.genius.com/ccb1031ba9923d28120980f556a9f2f9.500x500x1.jpg",
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "scrapingError": null,
+            "lyrics": "Cause I'm bathing in desire and got hallow in my blood!\nAll the lights out, I live in the dark!\nAin't no turning back, I'm stuck where I belong!\nI've found the wicked never die after all!",
+            "primaryArtist": {
+              "id": 1288367,
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki"
+            },
+            "url": "https://genius.com/Syki-the-wicked-will-never-die-lyrics"
+          },
+          "4891360": {
+            "id": "4891360",
+            "songArtImageUrl": "https://images.genius.com/4d4c2a917baedb28381319cae75373fe.500x500x1.jpg",
+            "title": "​autumnal’s :”REVIVAL”:",
+            "lyricsScrapedAt": {
+              "seconds": 1753851573,
+              "nanoseconds": 599000000
+            },
+            "scrapingAttempts": 1,
+            "primaryArtist": {
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki",
+              "id": 1288367
+            },
+            "scrapingError": null,
+            "lyrics": "Yeah, yeah, silent\nI'm the one who knew I'm great\nWhen I came by, you laughed\nWhen I came by, you left",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "artistNames": "SYKI",
+            "scrapingStatus": "completed",
+            "url": "https://genius.com/Syki-autumnals-revival-lyrics"
+          },
+          "5127236": {
+            "id": "5127236",
+            "scrapingStatus": "completed",
+            "url": "https://genius.com/Syki-nightmares-await-im-not-sleepy-anymore-lyrics",
+            "scrapingAttempts": 1,
+            "scrapingError": null,
+            "primaryArtist": {
+              "id": 1288367,
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki"
+            },
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "lyrics": "Uh\nI don't sleep anymore\nThink I'd rather be a stumbling corpse\nYeah yeah",
+            "artistNames": "SYKI",
+            "lyricsScrapedAt": {
+              "seconds": 1753851570,
+              "nanoseconds": 504000000
+            },
+            "title": ":NIGHTMARES AWAIT.. i’m not sleepy anymore.",
+            "songArtImageUrl": "https://images.genius.com/c822e7085a19c9f5603429c2854b0f99.500x500x1.jpg"
+          },
+          "5685388": {
+            "id": "5685388",
+            "lyrics": "Uh, you said\nI can't take this anymore\nYou said\nI can't live without you here",
+            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
+            "scrapingAttempts": 1,
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "title": "​eve",
+            "primaryArtist": {
+              "id": 1288367,
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki"
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1753851574,
+              "nanoseconds": 666000000
+            },
+            "url": "https://genius.com/Syki-eve-lyrics",
+            "scrapingStatus": "completed",
+            "artistNames": "SYKI",
+            "scrapingError": null
+          },
+          "5685389": {
+            "id": "5685389",
+            "title": "​i am the one who sinks into the night.. ::evils of the night::",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/Syki",
+              "name": "SYKI",
+              "id": 1288367
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1753851577,
+              "nanoseconds": 669000000
+            },
+            "lyrics": "You sit before the one, who sinks into the night\nDeep within the night\nEvils of the night\nI await as they arise, knowing I would never die",
+            "scrapingAttempts": 1,
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "scrapingError": null,
+            "url": "https://genius.com/Syki-i-am-the-one-who-sinks-into-the-night-evils-of-the-night-lyrics",
+            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "artistNames": "SYKI"
+          },
+          "5685390": {
+            "id": "5685390",
+            "url": "https://genius.com/Syki-burn-the-city-lyrics",
+            "title": "​burn the city.",
+            "scrapingStatus": "completed",
+            "lyrics": "Deceptive? Thought I told you I would never die\nDeceptive men are who rule you\nDeception is what rules you\nYou'll get handled",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "scrapingAttempts": 1,
+            "lyricsScrapedAt": {
+              "seconds": 1753851569,
+              "nanoseconds": 147000000
+            },
+            "primaryArtist": {
+              "id": 1288367,
+              "url": "https://genius.com/artists/Syki",
+              "name": "SYKI"
+            },
+            "artistNames": "SYKI",
+            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
+            "scrapingError": null
+          },
+          "5685391": {
+            "id": "5685391",
+            "artistNames": "SYKI",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "url": "https://genius.com/Syki-satin-lyrics",
+            "scrapingAttempts": 1,
+            "lyricsScrapedAt": {
+              "seconds": 1753851579,
+              "nanoseconds": 409000000
+            },
+            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
+            "lyrics": "So dancer\nCan you make it go faster?\nI'm not coming down off this Fanta\nWith every Percocet, I'm feelin' like a phantom",
+            "title": "::::::SATIN::::::",
+            "scrapingStatus": "completed",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/Syki",
+              "name": "SYKI",
+              "id": 1288367
+            },
+            "scrapingError": null
+          },
+          "5685392": {
+            "id": "5685392",
+            "lyricsScrapedAt": {
+              "seconds": 1753851567,
+              "nanoseconds": 386000000
+            },
+            "scrapingError": null,
+            "title": "00sanctity00 =’PROTOTYPE’=",
+            "scrapingAttempts": 1,
+            "artistNames": "SYKI",
+            "url": "https://genius.com/Syki-00sanctity00-prototype-lyrics",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/Syki",
+              "id": 1288367,
+              "name": "SYKI"
+            },
+            "songArtImageUrl": "https://images.genius.com/51adb46071ec576c243c5eb94b93ab95.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "lyrics": "Made me step out in that Burberry, yeah\nAin't nobody gonna break me, yeah\nTeach the law just like the Pharisees, yeah\nYeah, ain't they tell you 'bout a prophecy? Yeah",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            }
+          },
+          "5831992": {
+            "id": "5831992",
+            "lyrics": "I'm sprayin' shit\nMake 'em exhale knowin' that I'm sprayin' shit\n(C'mon, be honest you can't even relate with us)\nPromise",
+            "title": "​veil ’",
+            "scrapingAttempts": 1,
+            "lyricsScrapedAt": {
+              "seconds": 1753851576,
+              "nanoseconds": 94000000
+            },
+            "artistNames": "SYKI",
+            "primaryArtist": {
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki",
+              "id": 1288367
+            },
+            "url": "https://genius.com/Syki-veil-lyrics",
+            "songArtImageUrl": "https://images.genius.com/d4da50954d1f2f2d1008358fe4711010.500x500x1.jpg",
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "scrapingStatus": "completed",
+            "scrapingError": null
+          },
+          "8514728": {
+            "id": "8514728",
+            "title": "​withered.",
+            "primaryArtist": {
+              "name": "SYKI",
+              "url": "https://genius.com/artists/Syki",
+              "id": 1288367
+            },
+            "addedAt": {
+              "seconds": 1753849158,
+              "nanoseconds": 99000000
+            },
+            "artistNames": "SYKI",
+            "lyricsScrapedAt": {
+              "seconds": 1753851571,
+              "nanoseconds": 900000000
+            },
+            "scrapingError": null,
+            "lyrics": "Never knew you'd ever go\nCut open and I'll leave it so\nMy dear lady, whom I'll never know\nIs driven by a withered soul",
+            "songArtImageUrl": "https://images.genius.com/1139e4b951664daf2e47432204c95ffd.500x500x1.jpg",
+            "url": "https://genius.com/Syki-withered-lyrics",
+            "scrapingStatus": "completed",
+            "scrapingAttempts": 1
+          }
+        },
+        "scrapingResults": null,
+        "targetRange": {
+          "start": 24,
+          "end": 34
+        },
+        "songsScraped": 0,
+        "songsLoaded": 10,
+        "totalTargetSongs": 10
+      },
+      "error": null
+    },
+    {
+      "test": "comprehensiveFlow",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:30.538Z",
+      "data": {
+        "success": true,
+        "testResults": {
+          "testType": "full",
+          "artistUrlKey": "0",
+          "timestamp": {},
+          "steps": [
+            {
+              "step": "populate",
+              "success": true,
+              "data": {
+                "success": true,
+                "message": "Songs already up to date",
+                "totalSongs": 49,
+                "isUpToDate": true
+              }
+            },
+            {
+              "step": "scrape",
+              "success": true,
+              "data": {
+                "success": true,
+                "results": {
+                  "successful": [],
+                  "failed": [],
+                  "skipped": [
+                    "3789007",
+                    "3667543"
+                  ]
+                },
+                "scrapedCount": 0
+              }
+            },
+            {
+              "step": "load",
+              "success": true,
+              "data": {
+                "success": true,
+                "queuePosition": 2,
+                "loadedSongs": {
+                  "3681864": {
+                    "id": "3681864",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753849165,
+                      "nanoseconds": 284000000
+                    },
+                    "artistNames": "SYKI",
+                    "scrapingError": null,
+                    "title": "​pissed off.",
+                    "scrapingStatus": "completed",
+                    "url": "https://genius.com/Syki-pissed-off-lyrics",
+                    "lyrics": "I can't say that you wanna ride, yeah\nDone, I'm done, I can't feel shit\nSaid that she can heal it\nI won't trust shorty, she just wanna seal it",
+                    "scrapingAttempts": 1,
+                    "songArtImageUrl": "https://images.genius.com/8abac3d7d3db8890351a8a336312629a.500x500x1.jpg",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    }
+                  },
+                  "3773548": {
+                    "id": "3773548",
+                    "scrapingAttempts": 1,
+                    "url": "https://genius.com/Syki-love-in-the-grave-lyrics",
+                    "lyrics": "I never claimed the bitch so I had to remove her\nHow she attached when she a mover?\nShorty a brat, she a Buford\nI deleted the thot cause she a loser",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851592,
+                      "nanoseconds": 552000000
+                    },
+                    "scrapingError": null,
+                    "scrapingStatus": "completed",
+                    "title": "​love in the grave",
+                    "artistNames": "SYKI",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "primaryArtist": {
+                      "name": "SYKI",
+                      "url": "https://genius.com/artists/Syki",
+                      "id": 1288367
+                    },
+                    "songArtImageUrl": "https://images.genius.com/a0524a3e21da46205431f944e27ea9ee.800x795x1.jpg"
+                  },
+                  "3773598": {
+                    "id": "3773598",
+                    "url": "https://genius.com/Syki-f-m-l-lyrics",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "title": "F M L",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851591,
+                      "nanoseconds": 122000000
+                    },
+                    "songArtImageUrl": "https://images.genius.com/753edd43b34164851cec24683956e609.300x300x1.jpg",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "artistNames": "SYKI",
+                    "scrapingStatus": "completed",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "lyrics": "Fucked his bitch, did the race, uh-oh\nSkrt skrt, screamin' in a Ghost\nFuck that, I'ma do the most\nPull up sprayin' out the rolls"
+                  },
+                  "3971713": {
+                    "id": "3971713",
+                    "scrapingStatus": "completed",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851594,
+                      "nanoseconds": 307000000
+                    },
+                    "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/2b7c363cc83503ad6c6a48f85221c836.500x500x1.jpg",
+                    "lyrics": "Hell in the chamber!\nCame from December!\nI don't think I'll learn to love, never ever!\nThink you're clever, huh? Well, I'm better!",
+                    "scrapingAttempts": 1,
+                    "title": "​ember",
+                    "artistNames": "SYKI",
+                    "url": "https://genius.com/Syki-ember-lyrics",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "id": 1288367,
+                      "name": "SYKI"
+                    }
+                  },
+                  "3991397": {
+                    "id": "3991397",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851585,
+                      "nanoseconds": 191000000
+                    },
+                    "scrapingAttempts": 1,
+                    "title": "​anger fills my blood..",
+                    "primaryArtist": {
+                      "id": 1288367,
+                      "name": "SYKI",
+                      "url": "https://genius.com/artists/Syki"
+                    },
+                    "songArtImageUrl": "https://images.genius.com/5fd8c30580ef37f4339bf7fc28c8bd24.500x500x1.jpg",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "artistNames": "SYKI",
+                    "lyrics": "All alone without an answer\nAnger fills my blood, it drains me slow, kill me slow\nLove is never present in my heart, cold as snow\nLike the strongest dose of venom, I can't cure, can't be cured",
+                    "scrapingError": null,
+                    "scrapingStatus": "completed",
+                    "url": "https://genius.com/Syki-anger-fills-my-blood-lyrics"
+                  },
+                  "4422813": {
+                    "id": "4422813",
+                    "lyrics": "Drivin' me mad, I can't erase you\nI’m stuck in this hell, startin’ to hate you\nThrow me away, are you afraid too?\nBreak me apart, you know you have to",
+                    "scrapingError": null,
+                    "artistNames": "SYKI",
+                    "url": "https://genius.com/Syki-im-starting-to-hate-you-lyrics",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "scrapingStatus": "completed",
+                    "scrapingAttempts": 1,
+                    "title": "​i’m starting to hate you..",
+                    "songArtImageUrl": "https://images.genius.com/3914c9eeae36d49a1c442372cced22c6.500x500x1.jpg",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851586,
+                      "nanoseconds": 725000000
+                    }
+                  },
+                  "5223021": {
+                    "id": "5223021",
+                    "title": "​don’t care​ (Demo)*",
+                    "lyrics": "'Cause I got a bitch right here, ayy\nRed beam like a reindeer, ooh\nRudolph with the new Glock, ooh\nHad rocks in the tube socks, oh",
+                    "songArtImageUrl": "https://images.genius.com/13db8a77e0f64651b018acec1ca164e0.500x500x1.jpg",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851590,
+                      "nanoseconds": 170000000
+                    },
+                    "scrapingAttempts": 1,
+                    "scrapingError": null,
+                    "scrapingStatus": "completed",
+                    "artistNames": "SYKI & Juice WRLD",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "id": 1288367,
+                      "name": "SYKI"
+                    },
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "url": "https://genius.com/Syki-and-juice-wrld-dont-care-demo-lyrics"
+                  },
+                  "5386019": {
+                    "id": "5386019",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851596,
+                      "nanoseconds": 514000000
+                    },
+                    "scrapingAttempts": 1,
+                    "title": "​lovely+",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "songArtImageUrl": "https://images.genius.com/368da16b5825f50ccf3ddeb879152917.500x500x1.jpg",
+                    "lyrics": "Lately, all the haze is feeling lovely\nI can't see in front of me\nAnd maybe I don't wanna see you\nI sing tales about my misery",
+                    "artistNames": "SYKI",
+                    "scrapingError": null,
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "url": "https://genius.com/Syki-lovely-lyrics",
+                    "scrapingStatus": "completed"
+                  },
+                  "6441136": {
+                    "id": "6441136",
+                    "artistNames": "SYKI",
+                    "scrapingStatus": "completed",
+                    "lyrics": "Feelings always tend to get the best of me\nMaybe it's better that way, better that way (Ayy)\nMy desire gets the best of me\nBut it's better that way, better that way (Ayy)",
+                    "songArtImageUrl": "https://images.genius.com/93c6c5a3056c77f25508d78d3ffa1372.1000x1000x1.png",
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "scrapingAttempts": 1,
+                    "url": "https://genius.com/Syki-hauntr-lyrics",
+                    "scrapingError": null,
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851597,
+                      "nanoseconds": 934000000
+                    },
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "title": ".:HAUNTR:.+"
+                  },
+                  "7428399": {
+                    "id": "7428399",
+                    "lyrics": "I'm the big dawg, shawty, let the G's up, it's a mob attack\nThe phantoms keep me up, don't be foolish, know that they'll protect\nIf I say the word the numbers swarming in as silhouette\nStop asking where we at if you tryna rob this new patek",
+                    "artistNames": "SYKI",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/Syki",
+                      "name": "SYKI",
+                      "id": 1288367
+                    },
+                    "scrapingAttempts": 1,
+                    "addedAt": {
+                      "seconds": 1753849158,
+                      "nanoseconds": 99000000
+                    },
+                    "scrapingStatus": "completed",
+                    "lyricsScrapedAt": {
+                      "seconds": 1753851588,
+                      "nanoseconds": 432000000
+                    },
+                    "url": "https://genius.com/Syki-dye-lyrics",
+                    "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/159a3cef889a357876602ffa38f920fa.1000x1000x1.png",
+                    "title": "D.Y.E."
+                  }
+                },
+                "scrapingResults": null,
+                "targetRange": {
+                  "start": 2,
+                  "end": 12
+                },
+                "songsScraped": 0,
+                "songsLoaded": 10,
+                "totalTargetSongs": 10
+              }
+            }
+          ]
+        },
+        "summary": {
+          "totalSteps": 3,
+          "successfulSteps": 3,
+          "failedSteps": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "test": "databaseValidation",
+      "success": true,
+      "timestamp": "2025-07-30T05:02:30.742Z",
+      "data": {
+        "artistExists": true,
+        "artistHasSongs": true,
+        "artistHasCachedSongs": true,
+        "songsCollectionExists": true,
+        "totalSongs": 49,
+        "cachedSongs": 22
+      },
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  }
+}

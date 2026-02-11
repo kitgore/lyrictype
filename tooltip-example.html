@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topbar Tooltip Example</title>
+    
+    <!-- Include your website's fonts -->
+    <style>
+        @font-face {
+            font-family: 'SysFont';
+            src: url('ChicagoFLF.ttf') format('truetype');
+        }
+        
+        /* Your website's CSS variables */
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'SysFont', sans-serif;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        
+        .demo-button {
+            padding: 10px 20px;
+            margin: 20px;
+            background-color: var(--secondary-color);
+            border: 2px solid var(--primary-color);
+            font-family: 'SysFont', sans-serif;
+            cursor: pointer;
+            position: relative;
+        }
+    </style>
+    
+    <!-- Include the tooltip styles -->
+    <link rel="stylesheet" href="tooltip-styles.css">
+</head>
+<body>
+    <h1>Topbar-Style Tooltip Examples</h1>
+    
+    <div class="demo-button" onmouseover="showTooltip(event, 'This is a tooltip with arrow up!')" onmouseout="hideTooltip()">
+        Hover for tooltip (arrow up)
+    </div>
+    
+    <div class="demo-button" onmouseover="showTooltipDown(event, 'This tooltip appears above with arrow down!')" onmouseout="hideTooltip()">
+        Hover for tooltip (arrow down)
+    </div>
+    
+    <div class="demo-button" onmouseover="showTooltipLeft(event, 'Tooltip to the right!')" onmouseout="hideTooltip()">
+        Hover for tooltip (arrow left)
+    </div>
+    
+    <div class="demo-button" onmouseover="showTooltipRight(event, 'Tooltip to the left!')" onmouseout="hideTooltip()">
+        Hover for tooltip (arrow right)
+    </div>
+
+    <!-- Tooltip element -->
+    <div id="tooltip" class="topbar-tooltip">
+        <div class="topbar-tooltip-text" id="tooltip-text"></div>
+    </div>
+
+    <script>
+        const tooltip = document.getElementById('tooltip');
+        const tooltipText = document.getElementById('tooltip-text');
+
+        function showTooltip(event, text) {
+            tooltipText.textContent = text;
+            tooltip.className = 'topbar-tooltip visible';
+            
+            // Position below cursor
+            tooltip.style.left = (event.pageX - tooltip.offsetWidth / 2) + 'px';
+            tooltip.style.top = (event.pageY + 15) + 'px';
+        }
+
+        function showTooltipDown(event, text) {
+            tooltipText.textContent = text;
+            tooltip.className = 'topbar-tooltip arrow-down visible';
+            
+            // Position above cursor
+            tooltip.style.left = (event.pageX - tooltip.offsetWidth / 2) + 'px';
+            tooltip.style.top = (event.pageY - tooltip.offsetHeight - 15) + 'px';
+        }
+
+        function showTooltipLeft(event, text) {
+            tooltipText.textContent = text;
+            tooltip.className = 'topbar-tooltip arrow-left visible';
+            
+            // Position to the right of cursor
+            tooltip.style.left = (event.pageX + 15) + 'px';
+            tooltip.style.top = (event.pageY - tooltip.offsetHeight / 2) + 'px';
+        }
+
+        function showTooltipRight(event, text) {
+            tooltipText.textContent = text;
+            tooltip.className = 'topbar-tooltip arrow-right visible';
+            
+            // Position to the left of cursor
+            tooltip.style.left = (event.pageX - tooltip.offsetWidth - 15) + 'px';
+            tooltip.style.top = (event.pageY - tooltip.offsetHeight / 2) + 'px';
+        }
+
+        function hideTooltip() {
+            tooltip.className = 'topbar-tooltip';
+        }
+
+        // Follow mouse for dynamic positioning (optional)
+        function followMouse(event, text) {
+            showTooltip(event, text);
+            
+            document.addEventListener('mousemove', function updatePosition(e) {
+                if (tooltip.classList.contains('visible')) {
+                    tooltip.style.left = (e.pageX - tooltip.offsetWidth / 2) + 'px';
+                    tooltip.style.top = (e.pageY + 15) + 'px';
+                } else {
+                    document.removeEventListener('mousemove', updatePosition);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

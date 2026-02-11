@@ -6,14 +6,14 @@ A comprehensive bulk scraping and upload system for LyricType that fetches artis
 
 The prescraper system consists of two main components:
 
-1. **`scripts/prescraper.js`** - Scrapes artist songs and lyrics from Genius API
-2. **`scripts/firebase-uploader.js`** - Uploads prescraped data to Firebase Firestore
+1. **`prescraper.js`** - Scrapes artist songs and lyrics from Genius API
+2. **`firebase-uploader.js`** - Uploads prescraped data to Firebase Firestore
 
 This system allows you to bulk-populate your database with artist data, song metadata, and lyrics for a better user experience.
 
 ## Features
 
-### 🚀 Prescraper (`scripts/prescraper.js`)
+### 🚀 Prescraper (`prescraper.js`)
 - ✅ Loads artists from existing `genius-artists-*.json` files
 - ✅ Fetches complete song lists for each artist (up to 1000 songs)
 - ✅ Scrapes lyrics for configurable number of top songs per artist
@@ -24,7 +24,7 @@ This system allows you to bulk-populate your database with artist data, song met
 - ✅ Detailed logging and statistics
 - ✅ Configurable via CLI arguments
 
-### 🔥 Firebase Uploader (`scripts/firebase-uploader.js`)
+### 🔥 Firebase Uploader (`firebase-uploader.js`)
 - ✅ Uploads artists, songs, and lyrics to Firestore
 - ✅ Batch operations for efficiency
 - ✅ Duplicate detection and skip existing data
@@ -81,7 +81,7 @@ Either:
 #### Basic Usage
 ```bash
 # Scrape 10 songs per artist for all letters
-node scripts/prescraper.js
+node prescraper.js
 
 # Or use npm script
 npm start
@@ -90,13 +90,13 @@ npm start
 #### Advanced Options
 ```bash
 # Test with limited data
-node scripts/prescraper.js --test 5 --letters a,b --songs 3
+node prescraper.js --test 5 --letters a,b --songs 3
 
 # Scrape specific letters only
-node scripts/prescraper.js --letters j,k,l --songs 15
+node prescraper.js --letters j,k,l --songs 15
 
 # Help
-node scripts/prescraper.js --help
+node prescraper.js --help
 ```
 
 #### CLI Options
@@ -110,7 +110,7 @@ node scripts/prescraper.js --help
 #### Basic Usage
 ```bash
 # Upload latest prescraped data
-node scripts/firebase-uploader.js
+node firebase-uploader.js
 
 # Or use npm script
 npm run upload
@@ -119,17 +119,17 @@ npm run upload
 #### Advanced Options
 ```bash
 # Dry run (test without uploading)
-node scripts/firebase-uploader.js --dry-run
+node firebase-uploader.js --dry-run
 npm run upload-dry
 
 # Upload specific directory
-node scripts/firebase-uploader.js --dir ./prescraped-data-2025-09-14/
+node firebase-uploader.js --dir ./prescraped-data-2025-09-14/
 
 # Force overwrite existing data
-node scripts/firebase-uploader.js --force
+node firebase-uploader.js --force
 
 # Help
-node scripts/firebase-uploader.js --help
+node firebase-uploader.js --help
 ```
 
 #### CLI Options
@@ -334,10 +334,10 @@ The prescraper creates partial files as it works. To resume:
 The uploader skips existing artists by default:
 ```bash
 # Skip existing data (default)
-node scripts/firebase-uploader.js
+node firebase-uploader.js
 
 # Or force overwrite
-node scripts/firebase-uploader.js --force
+node firebase-uploader.js --force
 ```
 
 ## Advanced Configuration

@@ -1,0 +1,641 @@
+{
+  "timestamp": "2025-08-05T09:14:26.594Z",
+  "tests": [
+    {
+      "test": "getArtistInfo",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:27.280Z",
+      "data": {
+        "success": true,
+        "artist": {
+          "name": "0 похвал (0 pohval)",
+          "geniusId": "3398874",
+          "totalSongs": 88,
+          "cachedSongs": 22,
+          "lastUpdated": {
+            "seconds": 1754085355,
+            "nanoseconds": 493000000
+          },
+          "isFullyCached": true
+        }
+      },
+      "error": null
+    },
+    {
+      "test": "populateArtistSongs",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:27.964Z",
+      "data": {
+        "success": true,
+        "message": "Songs already up to date",
+        "totalSongs": 88,
+        "isUpToDate": true
+      },
+      "error": null
+    },
+    {
+      "test": "scrapeSongLyrics",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:28.799Z",
+      "data": {
+        "success": true,
+        "results": {
+          "successful": [],
+          "failed": [],
+          "skipped": [
+            "9086519",
+            "8928399",
+            "9121403"
+          ]
+        },
+        "scrapedCount": 0
+      },
+      "error": null
+    },
+    {
+      "test": "loadStartingFromId",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:29.853Z",
+      "data": {
+        "success": true,
+        "queuePosition": 44,
+        "loadedSongs": {
+          "8890116": {
+            "id": "8890116",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "scrapingStatus": "completed",
+            "lyrics": "Захотел бб пока\nЗахотел бм — собрал\nЗахотел бф — собрал\nЗахотел байбек — прожал",
+            "scrapingAttempts": 1,
+            "scrapingError": null,
+            "url": "https://genius.com/0-0-pohval-andreyimmersion-song-about-andreyimmersion-lyrics",
+            "songArtImageUrl": "https://images.genius.com/640994eb5d66e6e216b2b35acaa2fdf0.1000x1000x1.png",
+            "lyricsScrapedAt": {
+              "seconds": 1754085370,
+              "nanoseconds": 836000000
+            },
+            "artistNames": "0 похвал (0 pohval)",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "id": 3398874,
+              "name": "0 похвал (0 pohval)"
+            },
+            "title": "Трек про andreyIMMERSION (Song about AndreyIMMERSION)"
+          },
+          "9068023": {
+            "id": "9068023",
+            "songArtImageUrl": "https://images.genius.com/9a590e08e0eb37b13c01cbc8cbe54645.892x892x1.png",
+            "title": "Сузуя Джузо (Suzuya Juuzou)",
+            "lyrics": "Я не смог тебя спасти\nТебя снова потерял, прости. Прости меня\nПомнишь прогулки? Долгие ночи?\nРуки на шее? Ты — моё украшение",
+            "artistNames": "0 похвал (0 pohval) & LikArt",
+            "lyricsScrapedAt": {
+              "seconds": 1754085369,
+              "nanoseconds": 492000000
+            },
+            "scrapingError": null,
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "scrapingStatus": "completed",
+            "scrapingAttempts": 1,
+            "url": "https://genius.com/0-0-pohval-and-likart-suzuya-juuzou-lyrics",
+            "primaryArtist": {
+              "id": 3398874,
+              "name": "0 похвал (0 pohval)",
+              "url": "https://genius.com/artists/0-0-pohval"
+            }
+          },
+          "9169658": {
+            "id": "9169658",
+            "lyrics": "Идёт минута сорок, у челов смертей под сто\nНа фоне разборок ему тащить это дерьмо\nСто gold, Refresher Orb\nHyperstone второй от нехватки слотов",
+            "songArtImageUrl": "https://images.genius.com/c316abe434dbb6cefc6e8ce0bcf07088.1000x1000x1.png",
+            "primaryArtist": {
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)"
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085372,
+              "nanoseconds": 173000000
+            },
+            "url": "https://genius.com/0-0-pohval-solo-speed-up-lyrics",
+            "scrapingError": null,
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "artistNames": "0 похвал (0 pohval)",
+            "title": "SOLO (Speed Up)",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            }
+          },
+          "9250185": {
+            "id": "9250185",
+            "title": "CSGORUN",
+            "primaryArtist": {
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)"
+            },
+            "songArtImageUrl": "https://images.genius.com/640994eb5d66e6e216b2b35acaa2fdf0.1000x1000x1.png",
+            "lyrics": "Сам поднял, просто играл, мог бы сдохнуть от голода\nПолучаю, но в день — это спидран\nЗалетаю на краш, выбиваю баш\nЯ вордил на тачку в CSGO RUN",
+            "url": "https://genius.com/0-0-pohval-csgorun-lyrics",
+            "scrapingError": null,
+            "artistNames": "0 похвал (0 pohval)",
+            "scrapingStatus": "completed",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085375,
+              "nanoseconds": 78000000
+            },
+            "scrapingAttempts": 1
+          },
+          "9498528": {
+            "id": "9498528",
+            "scrapingError": null,
+            "url": "https://genius.com/0-0-pohval-keep-it-up-lyrics",
+            "lyricsScrapedAt": {
+              "seconds": 1754085366,
+              "nanoseconds": 556000000
+            },
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "title": "KEEP IT UP",
+            "lyrics": "Life! Believe is not to dream\nSo dark as sages say\nOft a little morning rain\nForetells a pleasant day",
+            "artistNames": "0 похвал (0 pohval)",
+            "songArtImageUrl": "https://images.genius.com/b15054439be122ea4ceac4dbf812419e.1000x1000x1.png",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "primaryArtist": {
+              "name": "0 похвал (0 pohval)",
+              "url": "https://genius.com/artists/0-0-pohval",
+              "id": 3398874
+            }
+          },
+          "9756135": {
+            "id": "9756135",
+            "lyrics": "Yeah, I feel like go star\nWrite or call me\nAnd I will always be in your mind\nЗавернув на тротуар с дороги я замечаю, что знаю",
+            "scrapingStatus": "completed",
+            "artistNames": "0 похвал (0 pohval)",
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085377,
+              "nanoseconds": 807000000
+            },
+            "scrapingAttempts": 1,
+            "url": "https://genius.com/0-0-pohval-resonance-lyrics",
+            "songArtImageUrl": "https://images.genius.com/eeaeb309fede8097af4d1e79c25fc525.999x999x1.png",
+            "scrapingError": null,
+            "title": "РЕЗОНАНС (RESONANCE)",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            }
+          },
+          "10234626": {
+            "id": "10234626",
+            "scrapingError": null,
+            "artistNames": "0 похвал (0 pohval)",
+            "url": "https://genius.com/0-0-pohval-fall-asleep-lyrics",
+            "songArtImageUrl": "https://images.genius.com/a5c5e47e5de372febc1b4e1db4ef95e4.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "title": "Fall asleep",
+            "lyricsScrapedAt": {
+              "seconds": 1754085376,
+              "nanoseconds": 445000000
+            },
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
+            "scrapingAttempts": 1,
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "lyrics": "Я не могу уснуть...\nМеня не спасет повязка на глаза\nИ в одеяле я не ощущаю прелесть сна\nМой мозг ищет угрозу там, где нету зла"
+          },
+          "10255125": {
+            "id": "10255125",
+            "lyrics": "Пиздец будет, вы щас ахуеете, вы знаете о чём щас подумаете, такого уж точно я не ожидал\nБлин реально не ожидал? То что Серёга Пират возьмёт мой трек годовалой давности и ничего не поменяет в нём и прямо так зальёт на площадки, хух, горжусь-горжусь\nТут только я талант, ха, и это так\nЯ не думал год назад что мою демку спиздят",
+            "scrapingAttempts": 1,
+            "scrapingStatus": "completed",
+            "url": "https://genius.com/0-0-pohval-diss-diss-on-serega-pirat-lyrics",
+            "scrapingError": null,
+            "songArtImageUrl": "https://images.genius.com/a993edb4d6227175d39c80a7cb9abb82.706x709x1.png",
+            "artistNames": "0 похвал (0 pohval)",
+            "addedAt": {
+              "seconds": 1754085353,
+              "nanoseconds": 808000000
+            },
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            },
+            "title": "DISS на СЕРЕГУ ПИРАТА (DISS on SEREGA PIRAT)",
+            "lyricsScrapedAt": {
+              "seconds": 1754085373,
+              "nanoseconds": 549000000
+            }
+          },
+          "10557181": {
+            "id": "10557181",
+            "songArtImageUrl": "https://images.genius.com/5a8745f5b4e24cd54b9155c16f4f2525.1000x1000x1.png",
+            "scrapingStatus": "completed",
+            "lyrics": "Архангел сказал: «Не предайся греху», у-у\nНо я так не могу, у-у\nPayment to God and I'll pay to life\nСейчас деньги решают, кто в Ад, кто в Рай",
+            "title": "Payment to God",
+            "url": "https://genius.com/0-0-pohval-payment-to-god-lyrics",
+            "artistNames": "0 похвал (0 pohval)",
+            "scrapingAttempts": 1,
+            "lyricsScrapedAt": {
+              "seconds": 1754085364,
+              "nanoseconds": 993000000
+            },
+            "scrapingError": null,
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "primaryArtist": {
+              "url": "https://genius.com/artists/0-0-pohval",
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874
+            }
+          },
+          "10711068": {
+            "id": "10711068",
+            "primaryArtist": {
+              "name": "0 похвал (0 pohval)",
+              "id": 3398874,
+              "url": "https://genius.com/artists/0-0-pohval"
+            },
+            "lyricsScrapedAt": {
+              "seconds": 1754085367,
+              "nanoseconds": 997000000
+            },
+            "scrapingStatus": "completed",
+            "addedAt": {
+              "seconds": 1754085350,
+              "nanoseconds": 163000000
+            },
+            "title": "НЕДЕЛЯ (WEEK)",
+            "url": "https://genius.com/0-0-pohval-and-syzzarp-week-lyrics",
+            "lyrics": "Zero-zero\nНеделя, столько нужно чтобы сделать кэша смело\nЯ поставил сроки сам себе и сделал\nМного кэша сделал, много кэша сделал",
+            "artistNames": "0 похвал (0 pohval) & Syzzarp",
+            "scrapingError": null,
+            "songArtImageUrl": "https://images.genius.com/cd2cd3d09158e3c8e61f818c7f7c22c4.1000x1000x1.png",
+            "scrapingAttempts": 1
+          }
+        },
+        "scrapingResults": null,
+        "targetRange": {
+          "start": 44,
+          "end": 54
+        },
+        "songsScraped": 0,
+        "songsLoaded": 10,
+        "totalTargetSongs": 10
+      },
+      "error": null
+    },
+    {
+      "test": "comprehensiveFlow",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:31.159Z",
+      "data": {
+        "success": true,
+        "testResults": {
+          "testType": "full",
+          "artistUrlKey": "0-0-pohval",
+          "timestamp": {},
+          "steps": [
+            {
+              "step": "populate",
+              "success": true,
+              "data": {
+                "success": true,
+                "message": "Songs already up to date",
+                "totalSongs": 88,
+                "isUpToDate": true
+              }
+            },
+            {
+              "step": "scrape",
+              "success": true,
+              "data": {
+                "success": true,
+                "results": {
+                  "successful": [],
+                  "failed": [],
+                  "skipped": [
+                    "9086519",
+                    "8928399"
+                  ]
+                },
+                "scrapedCount": 0
+              }
+            },
+            {
+              "step": "load",
+              "success": true,
+              "data": {
+                "success": true,
+                "queuePosition": 2,
+                "loadedSongs": {
+                  "8701174": {
+                    "id": "8701174",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "artistNames": "0 похвал (0 pohval) (Ft. Kijin)",
+                    "scrapingAttempts": 1,
+                    "songArtImageUrl": "https://images.genius.com/90fed42409e47446b8b584f904c68c22.358x358x1.jpg",
+                    "scrapingError": null,
+                    "title": "Spirit Breaker",
+                    "url": "https://genius.com/0-0-pohval-spirit-breaker-lyrics",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
+                    },
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085389,
+                      "nanoseconds": 456000000
+                    },
+                    "lyrics": "Закупаю травела с фейзами\nРазгоняюсь с треском\nНе оборачивайся\nНа трон удаляющийся",
+                    "scrapingStatus": "completed"
+                  },
+                  "8701187": {
+                    "id": "8701187",
+                    "scrapingAttempts": 1,
+                    "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/0a781e9626f469914f7a5c91fec5741b.1000x1000x1.png",
+                    "title": "Антимаг pos 5 (Antimage pos 5)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085394,
+                      "nanoseconds": 609000000
+                    },
+                    "lyrics": "Когда челы не шарят (Шарят) — не люблю (Люблю)\nЯ ноунейм, меняю никнейм\nЧтобы собрать на антимага pos 5\nВарды скупаю, тима опять",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "url": "https://genius.com/0-0-pohval-pos-5-antimage-pos-5-lyrics",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "scrapingStatus": "completed"
+                  },
+                  "8705930": {
+                    "id": "8705930",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085388,
+                      "nanoseconds": 271000000
+                    },
+                    "lyrics": "Эй, парень, правило один, а так же два:\nНикому не говори, ха-ха, где стримит Пират\nСегодня проснулся рано, не опоздаю вроде\nСтрим сегодня, ха, пойду отдыхать",
+                    "primaryArtist": {
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874
+                    },
+                    "artistNames": "0 похвал (0 pohval)",
+                    "title": "Гимн Серёги пирата (Serega Pirat hymn)",
+                    "scrapingAttempts": 1,
+                    "songArtImageUrl": "https://images.genius.com/ba59a40bfb218f9603437f9a2df94fe0.1000x1000x1.png",
+                    "url": "https://genius.com/0-0-pohval-serega-pirat-hymn-lyrics",
+                    "scrapingError": null,
+                    "scrapingStatus": "completed"
+                  },
+                  "8887276": {
+                    "id": "8887276",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085385,
+                      "nanoseconds": 491000000
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "scrapingStatus": "completed",
+                    "title": "КАК ТВАРИ (LIKE CREATURES)",
+                    "lyrics": "Суки broken, они смотрят, как меня гасит мидер\nВсе в войс чате хотят с ними сраться на автомате\nОни мутят сразу пять, так быстро\nDamn, как вы заебали",
+                    "songArtImageUrl": "https://images.genius.com/054f34f40de006c1e46b477b3bbd7e73.1000x563x1.jpg",
+                    "url": "https://genius.com/0-0-pohval-like-creatures-lyrics",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "primaryArtist": {
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    }
+                  },
+                  "9101490": {
+                    "id": "9101490",
+                    "title": "ROSTY",
+                    "scrapingStatus": "completed",
+                    "url": "https://genius.com/0-0-pohval-rosty-lyrics",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
+                    },
+                    "songArtImageUrl": "https://images.genius.com/7312af6be8bccbcb394c819a53203ddb.640x640x1.jpg",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "lyrics": "Танцуй как в последний раз, ага\nТвой вайб приковывает глаз, ага\nКак будто что-то с тобой не так, да\nТы спросишь как, а я отвечу: брат, а что случилось?",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085393,
+                      "nanoseconds": 457000000
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    }
+                  },
+                  "9121403": {
+                    "id": "9121403",
+                    "songArtImageUrl": "https://images.genius.com/c316abe434dbb6cefc6e8ce0bcf07088.1000x1000x1.png",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "lyrics": "Фастом Bloodthorn, Aghanim сожрал, и в целом готов\nСоло (О-о-о-о-о)\nСоло (О-о-о-о-о)\nСоло (О-о-о-о-о)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085360,
+                      "nanoseconds": 704000000
+                    },
+                    "title": "SOLO",
+                    "url": "https://genius.com/0-0-pohval-solo-lyrics",
+                    "primaryArtist": {
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingStatus": "completed",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1
+                  },
+                  "9155887": {
+                    "id": "9155887",
+                    "scrapingError": null,
+                    "title": "Dyrachyo",
+                    "scrapingAttempts": 1,
+                    "scrapingStatus": "completed",
+                    "artistNames": "0 похвал (0 pohval) & ​phantom (RU)",
+                    "songArtImageUrl": "https://images.genius.com/d8374bd0059605f8441e621504c3d41a.1000x1000x1.png",
+                    "url": "https://genius.com/0-0-pohval-and-phantom-ru-dyrachyo-lyrics",
+                    "primaryArtist": {
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)",
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "lyrics": "О, ты знаешь лор, Рубик же по лору спеллов вор?\nДа, а что потом? Двадцать раз фидил на позор\nGG stack, easy игра\nФакаю не только в пабликах",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085387,
+                      "nanoseconds": 39000000
+                    }
+                  },
+                  "9173001": {
+                    "id": "9173001",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085392,
+                      "nanoseconds": 152000000
+                    },
+                    "title": "Barbie boy",
+                    "url": "https://genius.com/0-0-pohval-barbie-boy-lyrics",
+                    "lyrics": "Так много людей имеют тот же mindset\nЯ не в списке Forbes\nНо мне похуй — это просто\nMade in plastic",
+                    "scrapingStatus": "completed",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874
+                    },
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingAttempts": 1,
+                    "scrapingError": null,
+                    "songArtImageUrl": "https://images.genius.com/871c1381f0389383a728d8a88386b2f9.1000x1000x1.png",
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    }
+                  },
+                  "9232765": {
+                    "id": "9232765",
+                    "title": "Я не затаймил реквием (I Didn’t Time Requiem)",
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085384,
+                      "nanoseconds": 267000000
+                    },
+                    "scrapingStatus": "completed",
+                    "songArtImageUrl": "https://images.genius.com/0cb1e0f2856dd8a54a66ec397eaa196b.999x999x1.png",
+                    "scrapingError": null,
+                    "scrapingAttempts": 1,
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "url": "https://genius.com/0-0-pohval-i-didnt-time-requiem-lyrics",
+                    "lyrics": "Есть КД у амулета\nГде сейчас мой скилл? Нету\nА-а-а, простите меня\nЯ не затаймил реквием, простите",
+                    "primaryArtist": {
+                      "name": "0 похвал (0 pohval)",
+                      "id": 3398874,
+                      "url": "https://genius.com/artists/0-0-pohval"
+                    },
+                    "artistNames": "0 похвал (0 pohval)"
+                  },
+                  "9438610": {
+                    "id": "9438610",
+                    "songArtImageUrl": "https://images.genius.com/0cb1e0f2856dd8a54a66ec397eaa196b.999x999x1.png",
+                    "lyrics": "Я очень быстро учусь, не понимаю всех чувств\nВесь мир на пальце кручу, но, а на время не надо чувств\nИз своих снов я кричу, я с небоскрёба лечу\nНо, если я захочу, я целый мир захвачу",
+                    "title": "Я голоден (I’m Hungry)",
+                    "primaryArtist": {
+                      "url": "https://genius.com/artists/0-0-pohval",
+                      "id": 3398874,
+                      "name": "0 похвал (0 pohval)"
+                    },
+                    "scrapingError": null,
+                    "addedAt": {
+                      "seconds": 1754085350,
+                      "nanoseconds": 163000000
+                    },
+                    "url": "https://genius.com/0-0-pohval-im-hungry-lyrics",
+                    "scrapingStatus": "completed",
+                    "artistNames": "0 похвал (0 pohval)",
+                    "scrapingAttempts": 1,
+                    "lyricsScrapedAt": {
+                      "seconds": 1754085390,
+                      "nanoseconds": 892000000
+                    }
+                  }
+                },
+                "scrapingResults": null,
+                "targetRange": {
+                  "start": 2,
+                  "end": 12
+                },
+                "songsScraped": 0,
+                "songsLoaded": 10,
+                "totalTargetSongs": 10
+              }
+            }
+          ]
+        },
+        "summary": {
+          "totalSteps": 3,
+          "successfulSteps": 3,
+          "failedSteps": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "test": "databaseValidation",
+      "success": true,
+      "timestamp": "2025-08-05T09:14:31.364Z",
+      "data": {
+        "artistExists": true,
+        "artistHasSongs": true,
+        "artistHasCachedSongs": true,
+        "songsCollectionExists": true,
+        "totalSongs": 88,
+        "cachedSongs": 22
+      },
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  }
+}

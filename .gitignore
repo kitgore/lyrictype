@@ -13,4 +13,5 @@ src/lib/services/initFirebase.js
 *.log
 /prescraped-data-*/
 /prescraped-*.json
-/scraping-data/
+# Test files with secrets
+test-*.js
