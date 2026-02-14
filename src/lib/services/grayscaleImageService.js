@@ -332,8 +332,93 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
 }
 
 /**
+ * Process artist image client-side when server fails (403 errors from Genius)
+ * Uses canvas to convert image to grayscale
+ */
+async function processArtistImageClientSide(imageUrl, artistUrlKey) {
+    console.log(`🖥️ Processing artist image client-side for ${artistUrlKey}...`);
+    const startTime = Date.now();
+    
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        
+        img.onload = () => {
+            try {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Use original dimensions (capped at 500px for performance)
+                const maxSize = 500;
+                let width = img.width;
+                let height = img.height;
+                
+                if (width > maxSize || height > maxSize) {
+                    const scale = maxSize / Math.max(width, height);
+                    width = Math.round(width * scale);
+                    height = Math.round(height * scale);
+                }
+                
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                const imageData = ctx.getImageData(0, 0, width, height);
+                const data = imageData.data;
+                const grayscaleBytes = new Uint8Array(width * height);
+                
+                for (let i = 0; i < data.length; i += 4) {
+                    const gray = Math.round(0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]);
+                    grayscaleBytes[i / 4] = gray;
+                }
+                
+                // Create raw bytes copy for WebGL
+                const rawGrayscaleBytes = new Uint8Array(grayscaleBytes);
+                
+                // Convert to base64
+                let binaryString = '';
+                const chunkSize = 8192;
+                for (let i = 0; i < grayscaleBytes.length; i += chunkSize) {
+                    const chunk = grayscaleBytes.slice(i, i + chunkSize);
+                    binaryString += String.fromCharCode(...chunk);
+                }
+                const grayscaleData = btoa(binaryString);
+                
+                const processingTime = Date.now() - startTime;
+                console.log(`✅ Client-side artist processing complete in ${processingTime}ms (${width}x${height})`);
+                
+                resolve({
+                    success: true,
+                    grayscaleData: grayscaleData,
+                    rawGrayscaleBytes: rawGrayscaleBytes,
+                    metadata: {
+                        width: width,
+                        height: height,
+                        processingVersion: '2.0-grayscale-client',
+                        compressionMethod: 'none'
+                    },
+                    cached: false,
+                    clientProcessingTime: processingTime,
+                    processedClientSide: true
+                });
+            } catch (canvasError) {
+                console.error(`❌ Canvas processing failed:`, canvasError);
+                reject(canvasError);
+            }
+        };
+        
+        img.onerror = () => {
+            console.error(`❌ Failed to load image for client-side processing:`, imageUrl);
+            reject(new Error('Failed to load image for client-side processing'));
+        };
+        
+        img.src = imageUrl;
+    });
+}
+
+/**
  * Process an artist image to grayscale format via Firebase Function
- * This function is optimized for speed - client gets data ASAP
+ * Falls back to client-side processing if server fails (403 errors)
  */
 async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
     try {
@@ -364,6 +449,13 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
                 statusText: response.statusText,
                 error: errorText
             });
+            
+            // Check if it's a 403/500 error (server couldn't fetch the image)
+            if (response.status === 500 && errorText.includes('403')) {
+                console.log(`🔄 Server got 403 from Genius, trying client-side processing...`);
+                return await processArtistImageClientSide(imageUrl, artistUrlKey);
+            }
+            
             throw new Error(`Processing failed: ${response.status} - ${errorText}`);
         }
         
@@ -404,7 +496,15 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         
     } catch (error) {
         console.error('Error processing artist image to grayscale:', error);
-        throw error;
+        
+        // Last resort: try client-side processing
+        console.log(`🔄 Server processing failed, trying client-side as last resort...`);
+        try {
+            return await processArtistImageClientSide(imageUrl, artistUrlKey);
+        } catch (clientError) {
+            console.error(`❌ Client-side processing also failed:`, clientError);
+            throw error;
+        }
     }
 }
 

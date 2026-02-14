@@ -46,6 +46,20 @@
     // Get completed songs from trash store
     $: completedSongs = $trashStore;
     
+    // Grade colors map
+    const gradeColors = {
+        legendary: '#aa14ef',
+        gold: '#FFD700',
+        silver: '#C0C0C0',
+        bronze: '#CD7F32'
+    };
+    
+    // Helper function to get screen color based on grade
+    function getScreenColor(song, fallbackColor) {
+        const grade = getFileIcon(song);
+        return gradeColors[grade] || fallbackColor;
+    }
+    
     // Scrolling and selection state
     let scrollPosition = 0;
     let selectedSong = null;
@@ -233,35 +247,11 @@
                         <!-- MP3 file icon SVG -->
                         <svg viewBox="-4 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="0.5" width="35" height="39" rx="1.5" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
-                            <rect x="5" y="4.5" width="27" height="20" rx="1.5" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
+                            <!-- Screen filled with grade color -->
+                            <rect x="5" y="4.5" width="27" height="20" rx="1.5" fill="{getScreenColor(song, $themeColors.secondary)}" stroke="{$themeColors.primary}"/>
                             <rect x="3" y="39.5" width="31" height="6" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
                             <!-- MP3 text -->
                             <text x="18" y="34" font-family="monospace" font-size="6" text-anchor="middle" fill="{$themeColors.primary}">MP3</text>
-                            <!-- Performance indicator dots -->
-                            {#if getFileIcon(song) === 'legendary'}
-                                <circle cx="29" cy="8" r="4" fill="#aa14ef"/>
-                            {:else if getFileIcon(song) === 'gold'}
-                                <path d="M8 15 L10 13 L12 17 L14 11 L16 19 L18 9 L20 21 L22 7 L24 16 L26 12" 
-                                stroke="#FFD700" 
-                                stroke-width="1" 
-                                fill="#FFD700"/>
-                                <!-- <circle cx="29" cy="8" r="4" fill="#FFD700"/> -->
-                            {:else if getFileIcon(song) === 'silver'}
-                                <path d="M8 15 L10 13 L12 17 L14 11 L16 19 L18 9 L20 21 L22 7 L24 16 L26 12" 
-                                stroke="#C0C0C0" 
-                                stroke-width="1" 
-                                fill="#C0C0C0"/>
-                                <circle cx="29" cy="8" r="4" fill="#C0C0C0"/>
-                            {:else if getFileIcon(song) === 'bronze'}
-                                <circle cx="29" cy="8" r="4" fill="#CD7F32"/>
-                            {:else}
-                                <circle cx="29" cy="8" r="4" fill="{$themeColors.primary}"/>
-                            {/if}
-                            <!-- Audio wave pattern -->
-                            <!-- <path d="M8 15 L10 13 L12 17 L14 11 L16 19 L18 9 L20 21 L22 7 L24 16 L26 12" 
-                                  stroke="{$themeColors.primary}" 
-                                  stroke-width="1" 
-                                  fill="none"/> -->
                         </svg>
                     </div>
                     <div class="file-label" style:font-size="{iconLabelSize}px">
@@ -292,22 +282,11 @@
                         <!-- MP3 file icon SVG (smaller version) -->
                         <svg viewBox="-4 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="0.5" width="35" height="39" rx="1.5" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
-                            <rect x="5" y="4.5" width="27" height="20" rx="1.5" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
+                            <!-- Screen filled with grade color -->
+                            <rect x="5" y="4.5" width="27" height="20" rx="1.5" fill="{getScreenColor(song, $themeColors.secondary)}" stroke="{$themeColors.primary}"/>
                             <rect x="3" y="39.5" width="31" height="6" fill="{$themeColors.secondary}" stroke="{$themeColors.primary}"/>
                             <!-- MP3 text -->
                             <text x="18" y="34" font-family="monospace" font-size="6" text-anchor="middle" fill="{$themeColors.primary}">MP3</text>
-                            <!-- Performance indicator -->
-                            {#if getFileIcon(song) === 'legendary'}
-                                <circle cx="29" cy="8" r="4" fill="#aa14ef"/>
-                            {:else if getFileIcon(song) === 'gold'}
-                                <circle cx="29" cy="8" r="4" fill="#FFD700"/>
-                            {:else if getFileIcon(song) === 'silver'}
-                                <circle cx="29" cy="8" r="4" fill="#C0C0C0"/>
-                            {:else if getFileIcon(song) === 'bronze'}
-                                <circle cx="29" cy="8" r="4" fill="#CD7F32"/>
-                            {:else}
-                                <circle cx="29" cy="8" r="4" fill="{$themeColors.primary}"/>
-                            {/if}
                         </svg>
                     </div>
                     <div class="list-label" style:font-size="{iconLabelSize}px">
@@ -701,18 +680,38 @@
 
     .stat-value.grade-legendary {
         color: #aa14ef;
+        text-shadow: 
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     }
 
     .stat-value.grade-gold {
         color: #FFD700;
+        text-shadow: 
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     }
 
     .stat-value.grade-silver {
         color: #C0C0C0;
+        text-shadow: 
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     }
 
     .stat-value.grade-bronze {
         color: #CD7F32;
+        text-shadow: 
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
     }
 
     .completion-date {
