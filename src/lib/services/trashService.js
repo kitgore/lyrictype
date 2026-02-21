@@ -28,6 +28,7 @@ const createTrashStore = () => {
                     songId: songData.songId,
                     title: songData.title,
                     artist: songData.artist,
+                    artistUrlKey: songData.artistUrlKey, // Artist URL key for replay functionality
                     imageUrl: songData.imageUrl,
                     albumArtId: songData.albumArtId,
                     geniusUrl: songData.geniusUrl,
@@ -105,6 +106,7 @@ export const formatTestResultsForTrash = (testResults) => {
         songId: testResults.songId,
         title: testResults.songTitle,
         artist: testResults.artistName,
+        artistUrlKey: testResults.artistUrlKey, // Artist URL key for replay functionality
         imageUrl: testResults.imageUrl,
         albumArtId: testResults.albumArtId,
         geniusUrl: testResults.geniusUrl,

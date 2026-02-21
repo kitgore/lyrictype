@@ -15,6 +15,7 @@
 	export let replaySong;
 	export let geniusUrl;
 	export let songId = null; // Song ID for trash functionality
+	export let artistUrlKey = null; // Artist URL key for trash replay functionality
 	export let isPaused = false;
 	export let capitalization = true;
 	export let punctuation = true;
@@ -548,6 +549,7 @@ function handleInput(event) {
 				songId,
 				songTitle,
 				artistName,
+				artistUrlKey, // Include artistUrlKey for trash replay functionality
 				imageUrl,
 				albumArtId,
 				geniusUrl,
@@ -560,7 +562,7 @@ function handleInput(event) {
 			});
 			
 			trashStore.addCompletedSong(testResults);
-			console.log('Song saved to trash:', testResults.fileName);
+			console.log('Song saved to trash:', testResults.fileName, 'artistUrlKey:', artistUrlKey);
 		}
 	}
   

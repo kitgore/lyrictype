@@ -7,7 +7,7 @@ import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
-import { HttpsProxyAgent } from 'https-proxy-agent';
+import HttpsProxyAgent from 'https-proxy-agent';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -308,9 +308,10 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
             const sharp = (await import('sharp')).default;
             let image = sharp(Buffer.from(imageBuffer));
             
-            // Use native image dimensions
-            const nativeWidth = img.naturalWidth || img.width;
-            const nativeHeight = img.naturalHeight || img.height;
+            // Get image metadata
+            const metadata = await image.metadata();
+            const nativeWidth = metadata.width;
+            const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
             
@@ -330,12 +331,18 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
                 image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
             }
             
-            // Create canvas with native size
-            const canvas = createCanvas(nativeWidth, nativeHeight);
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
+            // Convert to raw RGBA pixels
+            const { data, info } = await image
+                .raw()
+                .ensureAlpha()
+                .toBuffer({ resolveWithObject: true });
             
-            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
+            // Create ImageData-like object for convertToGrayscale
+            const imageData = {
+                data: data,
+                width: info.width,
+                height: info.height
+            };
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
@@ -525,9 +532,10 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
             const sharp = (await import('sharp')).default;
             let image = sharp(Buffer.from(imageBuffer));
             
-            // Use native image dimensions
-            const nativeWidth = img.naturalWidth || img.width;
-            const nativeHeight = img.naturalHeight || img.height;
+            // Get image metadata
+            const metadata = await image.metadata();
+            const nativeWidth = metadata.width;
+            const nativeHeight = metadata.height;
             
             console.log(`📐 Native resolution: ${nativeWidth}x${nativeHeight} (${metadata.format})`);
             
@@ -547,12 +555,18 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
                 image = image.resize(finalWidth, finalHeight, { fit: 'inside' });
             }
             
-            // Create canvas with native size
-            const canvas = createCanvas(nativeWidth, nativeHeight);
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, nativeWidth, nativeHeight);
+            // Convert to raw RGBA pixels
+            const { data, info } = await image
+                .raw()
+                .ensureAlpha()
+                .toBuffer({ resolveWithObject: true });
             
-            const imageData = ctx.getImageData(0, 0, nativeWidth, nativeHeight);
+            // Create ImageData-like object for convertToGrayscale
+            const imageData = {
+                data: data,
+                width: info.width,
+                height: info.height
+            };
             
             // Convert to 8-bit grayscale
             const grayscaleData = convertToGrayscale(imageData);
