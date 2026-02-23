@@ -159,8 +159,95 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
 }
 
 /**
+ * Process album art client-side when server fails (403 errors from Genius)
+ * Uses canvas to convert image to grayscale
+ */
+async function processAlbumArtClientSide(imageUrl, albumArtId) {
+    console.log(`🖥️ Processing album art client-side for ${albumArtId}...`);
+    const startTime = Date.now();
+    
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = 'anonymous'; // Try to load with CORS
+        
+        img.onload = () => {
+            try {
+                // Create canvas to process image
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                
+                // Use original dimensions (capped at 500px for performance)
+                const maxSize = 500;
+                let width = img.width;
+                let height = img.height;
+                
+                if (width > maxSize || height > maxSize) {
+                    const scale = maxSize / Math.max(width, height);
+                    width = Math.round(width * scale);
+                    height = Math.round(height * scale);
+                }
+                
+                canvas.width = width;
+                canvas.height = height;
+                
+                // Draw image to canvas
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                // Get image data and convert to grayscale
+                const imageData = ctx.getImageData(0, 0, width, height);
+                const data = imageData.data;
+                const grayscaleBytes = new Uint8Array(width * height);
+                
+                for (let i = 0; i < data.length; i += 4) {
+                    // Convert to grayscale using luminance formula
+                    const gray = Math.round(0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]);
+                    grayscaleBytes[i / 4] = gray;
+                }
+                
+                // Convert to base64
+                let binaryString = '';
+                const chunkSize = 8192;
+                for (let i = 0; i < grayscaleBytes.length; i += chunkSize) {
+                    const chunk = grayscaleBytes.slice(i, i + chunkSize);
+                    binaryString += String.fromCharCode(...chunk);
+                }
+                const grayscaleData = btoa(binaryString);
+                
+                const processingTime = Date.now() - startTime;
+                console.log(`✅ Client-side processing complete in ${processingTime}ms (${width}x${height})`);
+                
+                resolve({
+                    success: true,
+                    grayscaleData: grayscaleData,
+                    metadata: {
+                        albumArtId: albumArtId,
+                        width: width,
+                        height: height,
+                        processingVersion: '2.0-grayscale-client',
+                        compressionMethod: 'none'
+                    },
+                    cached: false,
+                    clientProcessingTime: processingTime,
+                    processedClientSide: true
+                });
+            } catch (canvasError) {
+                console.error(`❌ Canvas processing failed:`, canvasError);
+                reject(canvasError);
+            }
+        };
+        
+        img.onerror = (error) => {
+            console.error(`❌ Failed to load image for client-side processing:`, imageUrl);
+            reject(new Error('Failed to load image for client-side processing'));
+        };
+        
+        img.src = imageUrl;
+    });
+}
+
+/**
  * Process album art to binary format via Firebase Function
- * This function is optimized for speed - client gets data ASAP
+ * Falls back to client-side processing if server fails (403 errors)
  */
 async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
     try {
@@ -192,6 +279,14 @@ async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
                 error: errorText,
                 imageUrl: imageUrl
             });
+            
+            // Check if it's a 403/500 error (server couldn't fetch the image)
+            // Try client-side processing as fallback
+            if (response.status === 500 && errorText.includes('403')) {
+                console.log(`🔄 Server got 403 from Genius, trying client-side processing...`);
+                return await processAlbumArtClientSide(imageUrl, albumArtId);
+            }
+            
             throw new Error(`Processing failed: ${response.status} - ${errorText}`);
         }
         
@@ -217,7 +312,15 @@ async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
     } catch (error) {
         console.error(`❌ Error processing album art to grayscale for ${albumArtId}:`, error);
         console.error(`🔍 Failed image URL:`, imageUrl);
-        throw error;
+        
+        // Last resort: try client-side processing
+        console.log(`🔄 Server processing failed completely, trying client-side as last resort...`);
+        try {
+            return await processAlbumArtClientSide(imageUrl, albumArtId);
+        } catch (clientError) {
+            console.error(`❌ Client-side processing also failed:`, clientError);
+            throw error; // Throw the original error
+        }
     }
 }
 

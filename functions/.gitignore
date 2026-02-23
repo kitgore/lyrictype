@@ -4,3 +4,4 @@ build
 *.log
 /prescraped-data-*/
 /prescraped-*.json
+test-*.js

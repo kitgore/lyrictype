@@ -7,6 +7,7 @@ import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
+import HttpsProxyAgent from 'https-proxy-agent';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 
 const __filename = fileURLToPath(import.meta.url);

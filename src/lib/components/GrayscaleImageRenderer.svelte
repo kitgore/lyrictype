@@ -1,24 +1,7 @@
 <!--
   Grayscale Image WebGL Renderer
-  
-  Renders 8-bit grayscale LUMINANCE textures with dynamic theme color mapping using WebGL.
-  The reason for this component is we are not able to directly filter images from outside servers on the client (CORS restrictions)
-    and storing the images in our own database takes up too much space. We process the images to grayscale on the server
-    and store them as compressed base64 strings in our database. This component is used to render the strings
-    on the client side as grayscale "images" (WebGL textures).
-  
-  Features:
-  - Adaptive multi-sample downsampling: Automatically selects shader variant (1/4/16/36-tap box filter)
-    based on downscale ratio to ensure smooth rendering at any size
-  - Two-pass rendering: Renders to 4x framebuffer, then downsamples to screen for anti-aliasing
-  - Real-time theme color updates without regenerating textures
-  - Handles non-power-of-two textures with proper WebGL alignment
-  - Falls back to Canvas 2D if WebGL is unavailable
-  
-  Input: Base64-encoded or raw Uint8Array grayscale data (width × height bytes)
-  Output: Smooth, anti-aliased image with theme colors applied
-  
-  Set DEBUG = true in the script to enable verbose console logging.
+  Renders 8-bit grayscale image data with dynamic theme colors
+  Optimized for performance and instant theme changes
 -->
 
 <script>
@@ -1059,8 +1042,8 @@
     }
   }
 
-  // Initialize when component mounts and when grayscale data changes
-  $: if (canvas && grayscaleData) {
+  // Initialize when component mounts and when grayscale data or dimensions change
+  $: if (canvas && grayscaleData && width && height) {
     initializeRenderer();
   }
 
