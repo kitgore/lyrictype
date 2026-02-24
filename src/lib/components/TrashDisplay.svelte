@@ -5,65 +5,78 @@
     import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
     import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
 
-    // Album art recoloring state
+    // Album art state (cache is handled at service level)
     let grayscaleImageData = null;
     let imageMetadata = null;
     let isLoadingAlbumArt = false;
-    let currentAlbumArtId = null;
+    let currentImageUrl = '';
 
-    // Load album art for recoloring when selection changes
-    async function loadAlbumArt(imageUrl) {
-        if (!imageUrl || !$ditherImages) {
+    async function loadAlbumArt() {
+        const imageUrl = selectedSong?.imageUrl;
+        
+        if (!imageUrl) {
             grayscaleImageData = null;
             imageMetadata = null;
-            currentAlbumArtId = null;
+            currentImageUrl = '';
+            isLoadingAlbumArt = false;
             return;
         }
 
-        // Skip if we already have this image URL loaded
-        if (imageUrl === currentAlbumArtId && grayscaleImageData) {
+        if (!$ditherImages) {
+            grayscaleImageData = null;
+            imageMetadata = null;
+            isLoadingAlbumArt = false;
             return;
         }
 
-        // Clear old data before loading new to prevent dimension mismatch
-        grayscaleImageData = null;
-        imageMetadata = null;
-        isLoadingAlbumArt = true;
-        currentAlbumArtId = imageUrl;
-
-        try {
-            const result = await getAlbumArtBinaryImage(imageUrl);
-            // Verify we're still loading this URL (might have changed during async)
-            if (imageUrl !== currentAlbumArtId) {
-                return;
-            }
+        const isNewUrl = currentImageUrl !== imageUrl;
+        
+        if (isNewUrl) {
+            currentImageUrl = imageUrl;
+            grayscaleImageData = null;
+            imageMetadata = null;
+            isLoadingAlbumArt = true;
             
-            if (result && result.success && result.grayscaleData && result.metadata) {
-                grayscaleImageData = result.grayscaleData;
-                imageMetadata = result.metadata;
-                console.log('Album art loaded for trash:', imageMetadata.width, 'x', imageMetadata.height);
-            } else {
-                console.warn('Album art loading failed:', result?.error);
-                grayscaleImageData = null;
-                imageMetadata = null;
+            try {
+                const result = await getAlbumArtBinaryImage(imageUrl);
+                
+                if (currentImageUrl !== imageUrl) return;
+                
+                if (result?.success && result.grayscaleData && result.metadata) {
+                    grayscaleImageData = result.grayscaleData;
+                    imageMetadata = result.metadata;
+                }
+            } catch (error) {
+                console.warn('Failed to load album art:', error);
+            } finally {
+                if (currentImageUrl === imageUrl) {
+                    isLoadingAlbumArt = false;
+                }
             }
-        } catch (error) {
-            console.warn('Failed to load album art for recoloring:', error);
-            grayscaleImageData = null;
-            imageMetadata = null;
+        } else if (!grayscaleImageData && !isLoadingAlbumArt) {
+            // Same URL but no data (e.g., dither just turned on) - reload
+            isLoadingAlbumArt = true;
+            try {
+                const result = await getAlbumArtBinaryImage(imageUrl);
+                if (currentImageUrl === imageUrl && result?.success) {
+                    grayscaleImageData = result.grayscaleData;
+                    imageMetadata = result.metadata;
+                }
+            } catch (error) {
+                console.warn('Failed to load album art:', error);
+            } finally {
+                if (currentImageUrl === imageUrl) {
+                    isLoadingAlbumArt = false;
+                }
+            }
         }
-
-        isLoadingAlbumArt = false;
     }
 
-    // Reactive: load album art when selection or dither setting changes
-    $: if (selectedSong?.imageUrl && $ditherImages) {
-        loadAlbumArt(selectedSong.imageUrl);
-    } else if (!$ditherImages || !selectedSong?.imageUrl) {
-        grayscaleImageData = null;
-        imageMetadata = null;
-        currentAlbumArtId = null;
-    }
+    // Trigger when selected song changes
+    $: selectedSong, loadAlbumArt();
+    
+    // Trigger when dither setting changes  
+    $: $ditherImages, loadAlbumArt();
 
     // Get trash window dimensions for proportional sizing
     $: trashWindowState = $windowStore.windowStates.find(w => w.id === 'trashWindow');
@@ -125,7 +138,6 @@
     // Handle file actions
     function handleFileClick(song) {
         selectedSong = song;
-        console.log('Selected song for details:', song.title);
     }
     
     function handleFileDoubleClick(song) {
@@ -261,8 +273,8 @@
                         <div class="album-art" style:height="{iconSize * 1.5}px" style:width="{iconSize * 1.5}px">
                             {#if isLoadingAlbumArt}
                                 <div class="loading-placeholder"></div>
-                            {:else if $ditherImages && grayscaleImageData && imageMetadata && imageMetadata.width && imageMetadata.height}
-                                {#key `${currentAlbumArtId}-${imageMetadata.width}x${imageMetadata.height}`}
+                            {:else if $ditherImages && grayscaleImageData && imageMetadata}
+                                {#key currentImageUrl}
                                     <GrayscaleImageRenderer
                                         grayscaleData={grayscaleImageData}
                                         width={imageMetadata.width}
