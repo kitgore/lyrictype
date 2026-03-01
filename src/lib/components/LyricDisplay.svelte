@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
 
 	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
@@ -180,11 +180,6 @@
 		if (lyricsToProcess) {
 			lyricsLines = processLyricsIntoLines(lyricsToProcess);
 			resetScrollPosition();
-			console.log(`Processed lyrics: ${lyricsLines.length} lines total`, {
-				hasFullLyrics: !!fullLyrics,
-				usingFullLyrics: !!fullLyrics,
-				firstFewLines: lyricsLines.slice(0, 3)
-			});
 		}
 	}
 
@@ -331,7 +326,7 @@
 		if (imageUrl) preloadImage(imageUrl);
 		
 		// Listen for restart test events
-		const handleRestartTest = (event) => {
+		const handleRestartTest = async (event) => {
 			// Reset all typing test state
 			showResults = false;
 			userInput = '';
@@ -352,10 +347,15 @@
 			// Reset typing state classes
 			typingState.classes = [];
 			
-			// Focus the input after a short delay to ensure DOM is updated
-			setTimeout(() => {
-				focusInput();
-			}, 0);
+			// Wait for Svelte to update props, then reset scroll state
+			// This ensures the reactive statement processes the NEW lyrics
+			await tick();
+			
+			// Reset scroll position to start fresh with new lyrics
+			currentScrollLine = 0;
+			
+			// Focus the input
+			focusInput();
 		};
 		
 		// Listen for unpause events

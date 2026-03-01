@@ -113,8 +113,8 @@
     
     // Grade colors map
     const gradeColors = {
-        legendary: '#aa14ef',
-        gold: '#FFD700',
+        legendary: '#8F1FC2',
+        gold: '#D4AF37',
         silver: '#C0C0C0',
         bronze: '#CD7F32'
     };
