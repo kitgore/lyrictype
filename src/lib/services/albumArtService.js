@@ -7,6 +7,11 @@ import { db, functions } from './initFirebase.js';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import pako from 'pako';
 
+// Shared in-memory cache for instant access across components
+// This persists for the session, so images loaded in ResultsDisplay
+// are instantly available in TrashDisplay
+const memoryCache = new Map();
+
 /**
  * Extract the hash/ID from a Genius image URL
  * Example: https://images.genius.com/bda1518357007cbd7ab978c4a6764e26.711x711x1.jpg
@@ -87,6 +92,12 @@ function decompressGrayscaleData(compressedBase64) {
  */
 export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
     try {
+        // Check in-memory cache first (instant, shared across components)
+        if (memoryCache.has(songArtImageUrl)) {
+            console.log(`⚡ Album art found in memory cache: ${songArtImageUrl.substring(0, 50)}`);
+            return memoryCache.get(songArtImageUrl);
+        }
+        
         console.log(`🔍 Looking for album art grayscale data: ${songArtImageUrl}`);
         
         // Extract the hash from the Genius URL to use as document ID
@@ -103,7 +114,9 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
             // Check for corrupted/legacy data first (wrong format stored in grayscaleImageData field)
             if (albumArtData.grayscaleImageData && albumArtData.processingVersion !== '2.0-grayscale') {
                 console.log(`🔄 Found corrupted/legacy data in grayscaleImageData field for ${albumArtId}, reprocessing...`);
-                return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                const result = await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                if (result.success) memoryCache.set(songArtImageUrl, result);
+                return result;
             }
             
             // Check if we have valid grayscale image data (new format)
@@ -117,11 +130,13 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
                         grayscaleData = decompressGrayscaleData(albumArtData.grayscaleImageData);
                     } catch (error) {
                         console.warn(`🔄 Failed to decompress cached album art data, reprocessing: ${error.message}`);
-                        return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                        const result = await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                        if (result.success) memoryCache.set(songArtImageUrl, result);
+                        return result;
                     }
                 }
                 
-                return {
+                const result = {
                     success: true,
                     cached: true,
                     grayscaleData: grayscaleData,
@@ -133,18 +148,25 @@ export async function getAlbumArtGrayscaleImage(songArtImageUrl) {
                         compressionMethod: albumArtData.compressionMethod
                     }
                 };
+                
+                // Store in memory cache for instant access next time
+                memoryCache.set(songArtImageUrl, result);
+                return result;
             }
             
             // Check for legacy binary data and suggest reprocessing
             if (albumArtData.binaryImageData && albumArtData.imageWidth && albumArtData.imageHeight) {
                 console.log(`🔄 Found legacy binary data for ${albumArtId}, reprocessing to grayscale...`);
-                return await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                const result = await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+                if (result.success) memoryCache.set(songArtImageUrl, result);
+                return result;
             }
         }
         
         // If not found, trigger server-side processing
         console.log(`⏳ Album art not in cache, triggering server processing for ${albumArtId}`);
         const result = await processAlbumArtToGrayscale(songArtImageUrl, albumArtId);
+        if (result.success) memoryCache.set(songArtImageUrl, result);
         return { ...result, cached: false };
         
     } catch (error) {

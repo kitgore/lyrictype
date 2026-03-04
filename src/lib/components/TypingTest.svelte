@@ -100,6 +100,11 @@
         console.log('🎵 Artist selected (NEW SYSTEM):', artist);
         console.log('🔍 Artist details - geniusId:', artist.geniusId, 'name:', artist.name, 'imageUrl:', artist.imageUrl);
         
+        // IMPORTANT: Capture the artist name from the dropdown selection BEFORE any async operations
+        // This ensures we use the name the user actually clicked on, not any potentially
+        // incorrect data from Firestore that might be loaded later
+        const selectedArtistName = artist.name;
+        
         // Close queue display when new artist is selected
         showQueue = false;
         lyrics = '';
@@ -116,6 +121,15 @@
             }
 
             console.log("✅ FIRST SONG LOADED:", firstSong);
+            
+            // Validate: Check if loaded artist data has a different name than what user selected
+            // This can happen if the Firestore document has incorrect data
+            if (queueManager.artistData?.name && queueManager.artistData.name !== selectedArtistName) {
+                console.warn('⚠️ ARTIST NAME MISMATCH DETECTED!');
+                console.warn(`   User selected: "${selectedArtistName}"`);
+                console.warn(`   Firestore has: "${queueManager.artistData.name}"`);
+                console.warn('   Using the user-selected name for recently played list');
+            }
 
             // Set currentSong and display as soon as the first song resolves
             currentSong = firstSong;
@@ -124,10 +138,10 @@
             
             // Get the updated artist info (including newly extracted imageUrl) after song population
             // Use a delayed check to allow background image extraction to complete
-            // IMPORTANT: Capture urlKey now so it doesn't change during async operations
+            // IMPORTANT: Use selectedArtistName (from dropdown) not artist.name (could be stale reference)
             const capturedUrlKey = queueManager.artistUrlKey;
             const capturedArtistId = artist.geniusId;
-            const capturedArtistName = artist.name;
+            const capturedArtistName = selectedArtistName;
             
             const checkForUpdatedImageUrl = async (attempt = 1, maxAttempts = 5) => {
                 try {
@@ -218,22 +232,24 @@
             // Set initial recent artist data immediately (without waiting for imageUrl)
             // Mark this artist as loading an image if they don't have one yet
             if (!artist.imageUrl) {
-                console.log('📸 Artist has no imageUrl, marking as loading:', artist.name);
+                console.log('📸 Artist has no imageUrl, marking as loading:', selectedArtistName);
                 loadingImageArtists.add(artist.geniusId);
                 loadingImageArtists = loadingImageArtists; // Trigger reactivity
             }
             
             console.log('📞 Calling setNewRecentArtist with initial artist data');
             console.log('🔍 Initial artist data:', {
-                name: artist.name,
+                name: selectedArtistName,
                 artistId: artist.geniusId, 
                 imageUrl: artist.imageUrl, 
                 urlKey: queueManager.artistUrlKey,
                 hasImage: !!artist.imageUrl
             });
             
+            // IMPORTANT: Use selectedArtistName (captured at start) to ensure we use
+            // the name the user clicked on, not any potentially incorrect Firestore data
             setNewRecentArtist({
-                name: artist.name, 
+                name: selectedArtistName, 
                 imageUrl: artist.imageUrl || null, // Use null instead of undefined
                 artistId: artist.geniusId,
                 urlKey: queueManager.artistUrlKey,
@@ -493,15 +509,28 @@
      * Preload album art binary data in the background
      * This runs immediately when lyrics are loaded so the image is ready for results
      */
-    async function preloadAlbumArt(imageUrl, albumArtId) {
-        if (!imageUrl || !albumArtId || imageUrl === '/default-image.svg') {
-            preloadedAlbumArt = null;
+    let currentPreloadRequestId = 0; // Track which preload request is current
+    
+    async function preloadAlbumArt(targetImageUrl, targetAlbumArtId) {
+        // Generate a unique ID for this preload request
+        const requestId = ++currentPreloadRequestId;
+        
+        // Clear previous preload immediately to prevent showing stale data
+        preloadedAlbumArt = null;
+        
+        if (!targetImageUrl || !targetAlbumArtId || targetImageUrl === '/default-image.svg') {
             return;
         }
 
         try {
-            console.log('🖼️ Preloading album art for results screen:', albumArtId);
-            const result = await getAlbumArtBinaryImage(imageUrl);
+            console.log('🖼️ Preloading album art for results screen:', targetAlbumArtId);
+            const result = await getAlbumArtBinaryImage(targetImageUrl);
+            
+            // Only update if this is still the current request (prevents race conditions)
+            if (requestId !== currentPreloadRequestId) {
+                console.log('🚫 Preload completed but a newer request exists, discarding');
+                return;
+            }
             
             if (result.success) {
                 preloadedAlbumArt = {
@@ -516,6 +545,10 @@
                 preloadedAlbumArt = null;
             }
         } catch (error) {
+            // Only update if this is still the current request
+            if (requestId !== currentPreloadRequestId) {
+                return;
+            }
             console.error('❌ Error preloading album art:', error);
             console.warn('⚠️  Album art preload failed, but song will still work with fallback image');
             preloadedAlbumArt = null;
@@ -644,7 +677,13 @@
                 albumArtId = songData.albumArtId;
                 geniusUrl = songData.geniusUrl;
                 songId = songData.songId;
+                // Clear currentSong so fullLyrics doesn't show stale data
+                currentSong = null;
                 loading = false;
+                
+                // Still need to reset the results display
+                const restartEvent = new CustomEvent('restartTest', { detail: { songData } });
+                window.dispatchEvent(restartEvent);
                 return;
             }
             
@@ -667,7 +706,13 @@
                 albumArtId = songData.albumArtId;
                 geniusUrl = songData.geniusUrl;
                 songId = songData.songId;
+                // Clear currentSong so fullLyrics doesn't show stale data
+                currentSong = null;
                 loading = false;
+                
+                // Still need to reset the results display
+                const restartEvent = new CustomEvent('restartTest', { detail: { songData: loadedSong } });
+                window.dispatchEvent(restartEvent);
                 return;
             }
             
@@ -716,7 +761,22 @@
             // Update artist input to show the artist name
             artistInput = songData.artist;
             
+            // Move artist to top of recently played list
+            setNewRecentArtist({
+                name: songData.artist,
+                imageUrl: result.artistData?.imageUrl || songData.imageUrl,
+                artistId: result.artistData?.geniusId,
+                urlKey: songData.artistUrlKey,
+                songQueue: {}
+            });
+            
             console.log('✅ Song loaded from trash successfully:', songTitle);
+            
+            // Dispatch restart event to reset the LyricDisplay (hide results, show lyrics)
+            const restartEvent = new CustomEvent('restartTest', {
+                detail: { songData: loadedSong }
+            });
+            window.dispatchEvent(restartEvent);
             
             // Trigger background preloading of nearby songs
             setTimeout(() => {
@@ -732,7 +792,14 @@
             lyrics = `Error loading "${songData.title}": ${error.message}. Please try searching for the artist.`;
             songTitle = songData.title;
             artistName = songData.artist;
+            imageUrl = songData.imageUrl;
+            // Clear currentSong so fullLyrics doesn't show stale data
+            currentSong = null;
             loading = false;
+            
+            // Still need to reset the results display
+            const restartEvent = new CustomEvent('restartTest', { detail: { songData } });
+            window.dispatchEvent(restartEvent);
         }
     }
 
@@ -928,6 +995,7 @@
                                 {replaySong} 
                                 {geniusUrl}
                                 {songId}
+                                artistUrlKey={queueManager.artistUrlKey}
                                 {isPaused}
                                 capitalization={$capitalization}
                                 punctuation={$punctuation}
