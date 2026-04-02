@@ -4,6 +4,9 @@ import { trashStore } from './trashService.js';
 
 export const cookiesAccepted = writable(Cookies.get('cookiesAccepted') === 'true' || false)
 
+// Trash list scroll position — written by TrashDisplay, read by +page.svelte → AppWindow
+export const trashScrollInfo = writable({ current: 0, total: 0, visible: 7 })
+
 const defaultCorrection = {
     correct: "#368e5e",
     incorrect: "#bd5454"

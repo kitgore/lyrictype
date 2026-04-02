@@ -12,8 +12,19 @@
     import AboutDisplay from '../lib/components/AboutDisplay.svelte';
     import SettingsDisplay from '../lib/components/SettingsDisplay.svelte';
     import TrashDisplay from '../lib/components/TrashDisplay.svelte';
-    import { themeColors, backgroundColors, windowStore, windowActions } from '$lib/services/store.js';
-import { trashStore } from '$lib/services/trashService.js';
+    import { themeColors, backgroundColors, windowStore, windowActions, trashScrollInfo } from '$lib/services/store.js';
+    import { trashStore } from '$lib/services/trashService.js';
+
+    const MIN_THUMB_PERCENT = 15; // minimum thumb height as % of track
+    $: _tsi = $trashScrollInfo;
+    $: trashNeedsThumb = _tsi.total > _tsi.visible;
+    $: trashThumbHeight = trashNeedsThumb
+        ? Math.max(MIN_THUMB_PERCENT, (_tsi.visible / _tsi.total) * 100)
+        : 0;
+    $: _maxScroll = Math.max(1, _tsi.total - _tsi.visible);
+    $: trashThumbTop = trashNeedsThumb
+        ? (_tsi.current / _maxScroll) * (100 - trashThumbHeight)
+        : 0;
 
 
     onMount(async () => {
@@ -83,6 +94,7 @@ import { trashStore } from '$lib/services/trashService.js';
             title: 'Trash', 
             showScrollbar: false, 
             showCustomScrollbars: true,
+            displayScrollThumb: true,
             showTopbar: true,
             isOpen: false, 
             component: TrashDisplay, 
@@ -202,6 +214,10 @@ style:--border-width="2px"
         onClose={() => closeWindow(window.id)}
         onScrollUp={window.id === 'trashWindow' ? () => trashDisplayRef?.handleScrollUp() : null}
         onScrollDown={window.id === 'trashWindow' ? () => trashDisplayRef?.handleScrollDown() : null}
+        verticalThumbHeight={window.id === 'trashWindow' ? trashThumbHeight : 0}
+        verticalThumbTop={window.id === 'trashWindow' ? trashThumbTop : 0}
+        verticalScrollMaxLines={window.id === 'trashWindow' ? Math.max(0, _tsi.total - _tsi.visible) : 0}
+        onScrollToLine={window.id === 'trashWindow' ? (n) => trashDisplayRef?.handleScrollToLine(n) : null}
     >
         <div slot="topbar" class="trash-topbar" 
              style="--topbar-button-size: {topbarButtonSize}px;

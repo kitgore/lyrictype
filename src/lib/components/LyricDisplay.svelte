@@ -5,6 +5,12 @@
 	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
 	import { trashStore, formatTestResultsForTrash } from '$lib/services/trashService.js';
 	import { normalizeDiacritics } from 'normalize-text';
+	import {
+		VIRTUAL_SCROLL_CHUNK,
+		virtualScrollUp,
+		virtualScrollDown,
+		clampVirtualScrollIndex
+	} from '$lib/utils/mediaTyperVirtualScroll.js';
 	export let lyrics;
 	export let songTitle;
 	export let artistName;
@@ -27,7 +33,7 @@
 	let currentScrollLine = 0; // Track which line we're starting from
 	let lyricsLines = []; // Array of lyrics split by lines
 	let visibleLines = []; // Currently visible 4 lines
-	const VISIBLE_LINES_COUNT = 4;
+	const VISIBLE_LINES_COUNT = VIRTUAL_SCROLL_CHUNK;
 	
 	let userInput = '';
 	let startTime = null;
@@ -71,18 +77,18 @@
 		return lyricsLines.length > VISIBLE_LINES_COUNT;
 	}
 
-	// Scroll up by 4 lines (or to the beginning)
+	// Scroll up by 4 lines (or to the beginning) — chunk logic shared with Trash list (mediaTyperVirtualScroll)
 	function scrollLyricsUp() {
 		console.log("scrolling up");
-		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
-			// If we have 4 or fewer lines, just show all from the beginning
+		const total = lyricsLines.length;
+		if (total <= VISIBLE_LINES_COUNT) {
 			currentScrollLine = 0;
-		} else if (currentScrollLine > 0) {
-			// Move up by 4 lines, but don't go past the beginning
-			currentScrollLine = Math.max(0, currentScrollLine - VISIBLE_LINES_COUNT);
 		} else {
-			// Already at the top, no change needed
-			return;
+			const next = virtualScrollUp(currentScrollLine, total, VISIBLE_LINES_COUNT);
+			if (next === currentScrollLine) {
+				return;
+			}
+			currentScrollLine = next;
 		}
 		updateVisibleLines();
 		resetTypingTest();
@@ -92,17 +98,15 @@
 	// Scroll down by 4 lines (or to the end)
 	function scrollLyricsDown() {
 		console.log("scrolling down");
-		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
-			// If we have 4 or fewer lines, no scrolling needed
-			return;
-		} else if (currentScrollLine + VISIBLE_LINES_COUNT < lyricsLines.length) {
-			// Move down by 4 lines, but don't go past the end
-			const maxScrollLine = Math.max(0, lyricsLines.length - VISIBLE_LINES_COUNT);
-			currentScrollLine = Math.min(maxScrollLine, currentScrollLine + VISIBLE_LINES_COUNT);
-		} else {
-			// Already at the bottom, no change needed
+		const total = lyricsLines.length;
+		if (total <= VISIBLE_LINES_COUNT) {
 			return;
 		}
+		const next = virtualScrollDown(currentScrollLine, total, VISIBLE_LINES_COUNT);
+		if (next === currentScrollLine) {
+			return;
+		}
+		currentScrollLine = next;
 		updateVisibleLines();
 		resetTypingTest();
 		console.log(`Scrolled down to line ${currentScrollLine}`);
@@ -110,14 +114,11 @@
 
 	// Scroll to a specific line (for dragging the scrollbar thumb)
 	function scrollToLine(lineNumber) {
-		if (lyricsLines.length <= VISIBLE_LINES_COUNT) {
-			// If we have 4 or fewer lines, stay at the beginning
-			currentScrollLine = 0;
-		} else {
-			// Clamp the line number to valid range
-			const maxScrollLine = Math.max(0, lyricsLines.length - VISIBLE_LINES_COUNT);
-			currentScrollLine = Math.max(0, Math.min(maxScrollLine, lineNumber));
-		}
+		const total = lyricsLines.length;
+		currentScrollLine =
+			total <= VISIBLE_LINES_COUNT
+				? 0
+				: clampVirtualScrollIndex(lineNumber, total, VISIBLE_LINES_COUNT);
 		updateVisibleLines();
 		resetTypingTest();
 		console.log(`Scrolled to line ${currentScrollLine}`);

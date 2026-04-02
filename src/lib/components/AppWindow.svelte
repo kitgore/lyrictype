@@ -9,8 +9,15 @@
     export let onScrollDown = null;
     export let lyricsMode = false;
     export let showCustomScrollbars = false;
-    export let displayScrollThumb = false;
     export let showTopbar = false;
+    // Dynamic vertical thumb — height and top as percentages (0–100).
+    // When verticalThumbHeight === 0 no thumb is shown.
+    export let verticalThumbHeight = 0;
+    export let verticalThumbTop = 0;
+    // Max lines the content can be scrolled — needed to convert drag position to line number.
+    export let verticalScrollMaxLines = 0;
+    // Called with a line number when the user drags the thumb.
+    export let onScrollToLine = null;
     
     import { windowStore, windowActions } from '$lib/services/store.js';
     import CustomScrollbar from './CustomScrollbar.svelte';
@@ -37,11 +44,19 @@
     $: topbarFontSize = dimensions.height * 0.025; // 2.5% of window height
     
     let contentElement;
+    // Window dragging state
     let isDragging = false;
     let startPos = { x: 0, y: 0 };
     let originalPos = { x: 0, y: 0 };
     let appWindow;
     let mounted = false;
+
+    // Vertical scrollbar thumb dragging state
+    let thumbDragging = false;
+    let thumbTrackElement = null;
+    // Pixel offset from the top of the thumb to where the user clicked.
+    // Subtracting this during mousemove keeps the grab point under the cursor.
+    let thumbGrabOffset = 0;
 
     // Subscribe to the window store
     let windowState = {};
@@ -50,6 +65,54 @@
     });
 
     $: setContext('windowHeight', dimensions.height);
+
+    function handleThumbMouseDown(event) {
+        event.preventDefault();
+        event.stopPropagation(); // don't trigger window drag
+
+        // Record where inside the thumb the user clicked so the thumb
+        // follows the grab point rather than jumping to align its top edge.
+        if (thumbTrackElement) {
+            const trackRect = thumbTrackElement.getBoundingClientRect();
+            const trackHeight = trackRect.height;
+            const thumbTopPx = (verticalThumbTop / 100) * trackHeight;
+            const thumbHeightPx = (verticalThumbHeight / 100) * trackHeight;
+            const rawOffset = event.clientY - trackRect.top - thumbTopPx;
+            // Clamp to [0, thumbHeightPx] so clicking outside the thumb still works sensibly
+            thumbGrabOffset = Math.max(0, Math.min(thumbHeightPx, rawOffset));
+        } else {
+            thumbGrabOffset = 0;
+        }
+
+        thumbDragging = true;
+        window.addEventListener('mousemove', handleThumbMouseMove);
+        window.addEventListener('mouseup', handleThumbMouseUp);
+    }
+
+    function handleThumbMouseMove(event) {
+        if (!thumbDragging || !thumbTrackElement || !onScrollToLine) return;
+
+        const trackRect = thumbTrackElement.getBoundingClientRect();
+        const trackHeight = trackRect.height;
+        const thumbHeightPx = (verticalThumbHeight / 100) * trackHeight;
+        // Maximum pixel position the thumb top can reach (keeps thumb inside track)
+        const maxThumbTopPx = trackHeight - thumbHeightPx;
+
+        // Desired thumb-top position: mouse minus the offset where we grabbed the thumb
+        const desiredTopPx = event.clientY - trackRect.top - thumbGrabOffset;
+        const clampedTopPx = Math.max(0, Math.min(maxThumbTopPx, desiredTopPx));
+
+        // Map [0, maxThumbTopPx] → [0, maxScrollLines]
+        const normalized = maxThumbTopPx > 0 ? clampedTopPx / maxThumbTopPx : 0;
+        const targetLine = Math.round(normalized * verticalScrollMaxLines);
+        onScrollToLine(targetLine);
+    }
+
+    function handleThumbMouseUp() {
+        thumbDragging = false;
+        window.removeEventListener('mousemove', handleThumbMouseMove);
+        window.removeEventListener('mouseup', handleThumbMouseUp);
+    }
 
     onMount(() => {
         mounted = true;
@@ -66,6 +129,9 @@
     
     onDestroy(() => {
         if (unsubscribe) unsubscribe();
+        // Clean up any dangling thumb drag listeners
+        window.removeEventListener('mousemove', handleThumbMouseMove);
+        window.removeEventListener('mouseup', handleThumbMouseUp);
     });
     
     function onWindowClick() {
@@ -196,40 +262,45 @@
                     <div class="custom-scroll-arrow custom-scroll-up" 
                          role="button" 
                          tabindex="0"
-                         on:click={onScrollUp}
-                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollUp && onScrollUp()}>
+                         on:click={() => onScrollUp?.()}
+                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollUp?.()}>
                         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
                         </svg>
                     </div>
-                    <div class="custom-scrollbar-track">
-                        {#if displayScrollThumb}
-                            <div class="custom-scrollbar-thumb"></div>
+                    <div class="custom-scrollbar-track" bind:this={thumbTrackElement}>
+                        {#if verticalThumbHeight > 0}
+                            <div class="custom-scrollbar-thumb"
+                                 class:dragging={thumbDragging}
+                                 style="height: {verticalThumbHeight}%; top: {verticalThumbTop}%;"
+                                 role="slider"
+                                 tabindex="0"
+                                 aria-label="Scroll position"
+                                 aria-valuemin="0"
+                                 aria-valuemax={verticalScrollMaxLines}
+                                 aria-valuenow={Math.round((verticalThumbTop / Math.max(1, 100 - verticalThumbHeight)) * verticalScrollMaxLines)}
+                                 on:mousedown={handleThumbMouseDown}></div>
                         {/if}
                     </div>
                     <div class="custom-scroll-arrow custom-scroll-down" 
                          role="button" 
                          tabindex="0"
-                         on:click={onScrollDown}
-                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollDown && onScrollDown()}>
+                         on:click={() => onScrollDown?.()}
+                         on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onScrollDown?.()}>
                         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
                             <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
                         </svg>
                     </div>
                 </div>
                 
-                <!-- Bottom scrollbar -->
+                <!-- Bottom scrollbar — decorative only, no thumb -->
                 <div class="custom-scrollbar-bottom">
                     <div class="custom-scroll-arrow custom-scroll-left">
                         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-90deg);">
                             <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
                         </svg>
                     </div>
-                    <div class="custom-scrollbar-track-horizontal">
-                        {#if displayScrollThumb}
-                            <div class="custom-scrollbar-thumb-horizontal"></div>
-                        {/if}
-                    </div>
+                    <div class="custom-scrollbar-track-horizontal"></div>
                     <div class="custom-scroll-arrow custom-scroll-right">
                         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
                             <path d="M21 10.6L11.2222 1L1.44444 10.6L6.33333 10.6L6.33333 17L16.1111 17L16.1111 10.6L21 10.6Z" stroke="var(--primary-color)" stroke-width="1"/>
@@ -264,6 +335,7 @@
     flex-direction: column;
     background-color: var(--secondary-color);
     transition: box-shadow 0.2s ease;
+    min-height: 0;
 }
 
 .app-window.active {
@@ -344,6 +416,8 @@
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 0;
     border: var(--border-width) solid var(--primary-color);
     border-top: none;
 }
@@ -369,6 +443,7 @@
 .custom-scrollbar-wrapper {
     width: 100%;
     height: 100%;
+    min-height: 0;
     display: grid;
     grid-template-columns: 1fr var(--custom-scrollbar-width);
     grid-template-rows: 1fr var(--custom-scrollbar-width);
@@ -383,6 +458,8 @@
     flex-direction: column;
     box-sizing: border-box;
     overflow: hidden;
+    min-height: 0;
+    min-width: 0;
 }
 
 /* Right scrollbar */
@@ -405,16 +482,22 @@
 
 .custom-scrollbar-thumb {
     width: 100%;
-    height: var(--custom-scroll-thumb-size);
+    /* height and top are set via inline style from scroll state */
     background-color: var(--secondary-color);
     border-top: var(--border-width) solid var(--primary-color);
     border-bottom: var(--border-width) solid var(--primary-color);
     background-size: 2px 2px;
-        background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
+    background-image:
+        linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
+        linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
     position: absolute;
-    top: 20%;
+    cursor: grab;
+    user-select: none;
+}
+
+.custom-scrollbar-thumb:active,
+.custom-scrollbar-thumb.dragging {
+    cursor: grabbing;
 }
 
 
@@ -472,19 +555,6 @@
     position: relative;
 }
 
-.custom-scrollbar-thumb-horizontal {
-    height: 100%;
-    width: var(--custom-scroll-thumb-size);
-    background-color: var(--secondary-color);
-    background-size: 2px 2px;
-        background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
-    border-left: var(--border-width) solid var(--primary-color);
-    border-right: var(--border-width) solid var(--primary-color);
-    position: absolute;
-    left: 30%;
-}
 
 
 .custom-scroll-left {
