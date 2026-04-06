@@ -38,7 +38,7 @@
 	let userInput = '';
 	let startTime = null;
 	let endTime = null;
-	let testStarted = false;
+	export let testStarted = false;
 	let pauseStartTime = null;
 	let totalPauseTime = 0;
 
@@ -470,7 +470,22 @@ $: if (capitalization !== lastCap || punctuation !== lastPunct) {
 $: modifiedLyrics = transformedLyrics;
 $: normalizedLyrics = customNormalize(modifiedLyrics);
 
-function handleInput(event) {
+function handleKeydown(event) {
+		// Handle arrow keys for scrolling
+		if (event.key === 'ArrowUp') {
+			event.preventDefault();
+			if (onScrollUp && typeof onScrollUp === 'function') {
+				onScrollUp();
+			}
+		} else if (event.key === 'ArrowDown') {
+			event.preventDefault();
+			if (onScrollDown && typeof onScrollDown === 'function') {
+				onScrollDown();
+			}
+		}
+	}
+
+	function handleInput(event) {
 		const newValue = event.target.value;
 		const normalizedNextChar = normalizeDiacritics(String([modifiedLyrics[userInput.length]]));
 		const normalizedLastChar = normalizeDiacritics(String([newValue[newValue.length - 1]]));
@@ -859,6 +874,7 @@ $: {
 			class="quote-input"
 			type="text"
 			on:input={handleInput}
+			on:keydown={handleKeydown}
 			bind:value={userInput}
 			on:blur={blurInput}
 			disabled={isPaused}

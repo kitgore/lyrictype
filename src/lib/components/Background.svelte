@@ -66,8 +66,8 @@
     lyrictype.com
 </div>
 <div
-class="background"
-style="--bg-size: {backgroundSize}px; background-image: {pattern}"
+class="background checkerboard-pattern"
+style="--bg-size: {backgroundSize}px; {currentPattern !== 'checkerboard' ? `background-image: ${pattern}` : ''}"
 >
 </div>
 </div>
@@ -110,12 +110,7 @@ style="--bg-size: {backgroundSize}px; background-image: {pattern}"
         flex: 1;
         width: 100%;
         background-size: var(--bg-size) var(--bg-size);
-        background-image:
-            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
-            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
         background-position: 0 0, calc(var(--bg-size) / 2) calc(var(--bg-size) / 2);
-        background-attachment: fixed; /* Keep pattern fixed during scrolling/resizing */
-        image-rendering: pixelated; /* Keep edges crisp */
         z-index: -2;
     }
 </style>
