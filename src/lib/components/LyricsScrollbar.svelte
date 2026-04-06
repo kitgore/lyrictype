@@ -99,7 +99,7 @@
     <div class="scroll-arrow scroll-up" 
          class:disabled
          role="button" 
-         tabindex={disabled ? -1 : 0}
+         tabindex="-1"
          on:click={handleScrollUp}
          on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && handleScrollUp()}>
         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,10 +108,10 @@
     </div>
     <div class="scrollbar-track" bind:this={trackElement}>
         {#if showThumb}
-            <div class="scrollbar-thumb" 
+            <div class="scrollbar-thumb checkerboard-pattern" 
                  class:disabled
                  role="slider"
-                 tabindex={disabled ? -1 : 0}
+                 tabindex="-1"
                  aria-label="Scroll position"
                  aria-valuemin="0"
                  aria-valuemax={scrollPosition.totalLines - scrollPosition.visibleLines}
@@ -124,7 +124,7 @@
     <div class="scroll-arrow scroll-down" 
          class:disabled
          role="button" 
-         tabindex={disabled ? -1 : 0}
+         tabindex="-1"
          on:click={handleScrollDown}
          on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && handleScrollDown()}>
         <svg width="100%" height="100%" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
@@ -155,13 +155,6 @@
         width: 100%;
         border-top: var(--border-width) solid var(--primary-color);
         border-bottom: var(--border-width) solid var(--primary-color);
-        background-size: 4px 4px;
-        background-image:
-            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
-            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
-        background-position: 0 0, 2px 2px;
-        background-attachment: fixed;
-        image-rendering: pixelated;
         position: absolute;
         cursor: grab;
     }
@@ -172,8 +165,7 @@
     }
     
     .scrollbar-thumb.disabled {
-        cursor: not-allowed;
-        opacity: 0.5;
+        cursor: default;
     }
     
     .scroll-arrow {
@@ -224,8 +216,7 @@
     }
     
     .scroll-arrow.disabled {
-        cursor: not-allowed;
-        opacity: 0.5;
+        cursor: default;
     }
     
     .scroll-arrow.disabled:hover {
@@ -237,7 +228,7 @@
     }
     
     .scroll-arrow.disabled:active {
-        opacity: 0.5;
+        opacity: 1;
     }
 </style>
 

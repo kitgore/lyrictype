@@ -53,10 +53,10 @@
                     if (isOpen) {
                         // Reset navigation mode when dropdown opens
                         navigationMode = 'none';
-                        selectedIndex = -1;
+                        selectedIndex = 0; // Auto-select first option
                         keyboardLocked = false;
                         clearTimeout(keyboardLockTimeout);
-                        console.log('Dropdown opened, reset navigation mode');
+                        console.log('Dropdown opened, first option auto-selected');
                     }
                 } catch (error) {
                     console.error('Search error:', error);

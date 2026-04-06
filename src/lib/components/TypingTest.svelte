@@ -63,15 +63,10 @@
     // Results state from LyricDisplay (to disable scrollbar on results page)
     let showResults = false;
     
-    // Debug reactive statement to monitor scroll function binding
-    $: {
-        console.log('TypingTest: Scroll functions updated', {
-            hasScrollUp: !!lyricsScrollUp,
-            hasScrollDown: !!lyricsScrollDown,
-            scrollUpType: typeof lyricsScrollUp,
-            scrollDownType: typeof lyricsScrollDown
-        });
-    }
+    // Track if user has started typing the current song
+    let testStarted = false;
+    
+ 
 
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'typingTestWindow')?.dimensions?.height;
     $: bottomButtonGap = windowHeight * 0.0075;
@@ -548,6 +543,13 @@
     }
 
     async function playPreviousSong() {
+        // If user has started typing, restart current song instead of going back
+        if (testStarted) {
+            console.log('User has started typing, restarting current song...');
+            restartSong();
+            return;
+        }
+        
         isPaused = false;
         showQueue = false; // Close queue display
         
@@ -784,7 +786,7 @@
     
     // Debug logging for fullArtistList updates
     $: if (fullArtistList && fullArtistList.length > 0) {
-        console.log('🎨 fullArtistList updated (', fullArtistList.filter(a => a.name).length, 'artists ):');
+        console.log('fullArtistList updated (', fullArtistList.filter(a => a.name).length, 'artists ):');
         fullArtistList.slice(0, 7).forEach((a, i) => {
             if (a.name) {
                 console.log(`  ${i}: ${a.name} - artistId: ${a.artistId}, urlKey: ${a.urlKey}, hasImage: ${!!a.imageUrl}`);
@@ -878,6 +880,7 @@
                                 bind:scrollPosition={lyricsScrollPosition}
                                 bind:liveWpm={liveWpm}
                                 bind:showResults={showResults}
+                                bind:testStarted={testStarted}
                             />
                         {:else}
                             {#if loading}
@@ -901,35 +904,32 @@
             </div>
         </div>
         <div class="bottomArtistRow">
-            <div class="musicControls" style="--bottom-button-gap: {bottomButtonGap}px;" style:gap="{windowHeight*0.007}px">
-                <button class="controlButton" on:click={playPreviousSong} disabled={!canGoPrevious} style:width="{buttonSize}px" style:height="{buttonSize}px">
-                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
-                    </svg>
-                </button>
-                <button class="controlButton" on:click={restartSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
-                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 4h2v12H6zm8-2v16l6-8z"/>
-                    </svg>
-                </button>
-                <button class="controlButton" class:paused={isPaused} on:click={togglePause} style:width="{buttonSize}px" style:height="{buttonSize}px">
-                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
-                        <path d={controlPath}/>
-                    </svg>
-                </button>
-                <button class="controlButton" on:click={playNextSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
-                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
-                    </svg>
-                </button>
-                <button class="controlButton queueButton" class:queue-active={showQueue} on:click={toggleQueue} style:width="{buttonSize}px" style:height="{buttonSize}px">
-                    <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
-                    </svg>
-                    {#if futureSongsCount > 0}
-                        <span class="queue-indicator">{futureSongsCount}</span>
-                    {/if}
-                </button>
+            <div class="musicControlsContainer">
+                <div class="musicControls" style="--bottom-button-gap: {bottomButtonGap}px;" style:gap="{windowHeight*0.007}px">
+                    <button class="controlButton" on:click={playPreviousSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
+                        <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                        </svg>
+                    </button>
+                    <button class="controlButton" class:paused={isPaused} on:click={togglePause} tabindex="-1" style:width="{buttonSize}px" style:height="{buttonSize}px">
+                        <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                            <path d={controlPath}/>
+                        </svg>
+                    </button>
+                    <button class="controlButton" on:click={playNextSong} style:width="{buttonSize}px" style:height="{buttonSize}px">
+                        <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                        </svg>
+                    </button>
+                    <button class="controlButton queueButton" class:queue-active={showQueue} on:click={toggleQueue} style:width="{buttonSize}px" style:height="{buttonSize}px">
+                        <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                        </svg>
+                        {#if futureSongsCount > 0}
+                            <span class="queue-indicator">{futureSongsCount}</span>
+                        {/if}
+                    </button>
+                </div>
             </div>
             <div class="currentArtistContainer">
                 <div class="musicIconContainer" style:width="{windowHeight*0.0425}px" style:height="{windowHeight*0.034}px" style:margin-top="-{windowHeight*0.008}px">
@@ -1002,7 +1002,14 @@
         justify-content: flex-start;
 
         height: 13%;
-        padding: 0 1.8%;
+        padding: 0 0;
+    }
+
+    .musicControlsContainer {
+        width: var(--sidebar-width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .musicControls {
@@ -1010,6 +1017,7 @@
         align-items: center;
         /* gap: var(--bottom-button-gap); */
         flex-shrink: 0;
+        padding: 0 6% 0 10%;
     }
 
      .controlButton {
@@ -1032,31 +1040,32 @@
     .controlButton:focus,
     .controlButton.paused,
     .controlButton.queue-active {
-        background-size: 2px 2px; /* Size of the checker squares */
+        background-size: 2px 2px;
         background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
-        outline: none
-    }
-
-    .controlButton:disabled {
-        opacity: 0.3;
-        cursor: not-allowed;
-    }
-
-    .controlButton:disabled:hover,
-    .controlButton:disabled:active,
-    .controlButton:disabled:focus,
-    .controlButton:disabled.paused,
-    .controlButton:disabled.queue-active {
-        background-image: none;
-        background-color: var(--secondary-color);
+            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
+            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
+        background-position: 0 0, 2px 2px;
+        background-attachment: fixed;
+        image-rendering: pixelated;
+        outline: none;
     }
 
 
      .controlIcon {
         height: 75%;
         aspect-ratio: 1/1;
+    }
+
+    .controlButton:hover .controlIcon path,
+    .controlButton:active .controlIcon path,
+    .controlButton:focus .controlIcon path,
+    .controlButton.paused .controlIcon path,
+    .controlButton.queue-active .controlIcon path {
+        stroke: var(--secondary-color);
+        stroke-width: 3px;
+        stroke-linejoin: miter;
+        stroke-linecap: square;
+        paint-order: stroke fill;
     }
 
     .queueButton {
