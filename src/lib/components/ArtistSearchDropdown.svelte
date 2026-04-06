@@ -82,6 +82,41 @@
         console.log('handleInput - searchTerm:', searchTerm, 'reset navigation mode');
         debounceSearch(searchTerm);
     }
+
+    /**
+     * Commit search on Enter: prefer explicit keyboard selection, else first dropdown hit,
+     * else one immediate Firestore search (same source as the dropdown — not Genius API).
+     * Avoids dispatching raw { name } which often doesn't match artist document IDs.
+     */
+    async function commitSearchOnEnter() {
+        const trimmed = searchTerm.trim();
+        if (!trimmed) return;
+
+        if (selectedIndex >= 0 && suggestions[selectedIndex]) {
+            selectArtist(suggestions[selectedIndex]);
+            return;
+        }
+        if (suggestions.length > 0) {
+            selectArtist(suggestions[0]);
+            return;
+        }
+
+        clearTimeout(searchTimeout);
+        searching = true;
+        try {
+            const results = await searchArtists(trimmed, maxSuggestions);
+            if (results.length > 0) {
+                selectArtist(results[0]);
+            } else {
+                dispatch('artistSelected', { name: trimmed });
+            }
+        } catch (error) {
+            console.error('Enter search failed:', error);
+            dispatch('artistSelected', { name: trimmed });
+        } finally {
+            searching = false;
+        }
+    }
     
     function handleKeydown(event) {
         if (!isOpen && event.key !== 'Enter') return;
@@ -151,12 +186,7 @@
                 
             case 'Enter':
                 event.preventDefault();
-                if (selectedIndex >= 0 && suggestions[selectedIndex]) {
-                    selectArtist(suggestions[selectedIndex]);
-                } else if (searchTerm.trim()) {
-                    // If no suggestion is selected but there's text, search for it directly
-                    dispatch('artistSelected', { name: searchTerm.trim() });
-                }
+                commitSearchOnEnter();
                 break;
             case 'Escape':
                 closeDropdown();

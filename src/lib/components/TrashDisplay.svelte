@@ -1,9 +1,13 @@
 <script>
-    import { windowStore, ditherImages } from '$lib/services/store.js';
+    import { windowStore, ditherImages, trashScrollInfo } from '$lib/services/store.js';
     import { themeColors } from '$lib/services/store.js';
     import { trashStore, getFileIcon, formatDuration, getPerformanceGrade } from '$lib/services/trashService.js';
     import { getAlbumArtBinaryImage } from '$lib/services/albumArtService.js';
     import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
+    import {
+        virtualScrollUp,
+        virtualScrollDown
+    } from '$lib/utils/mediaTyperVirtualScroll.js';
 
     // Album art state (cache is handled at service level)
     let grayscaleImageData = null;
@@ -125,15 +129,65 @@
         return gradeColors[grade] || fallbackColor;
     }
     
-    // Scrolling and selection state
+    // Scrolling and selection state (list view — same chunk size as Media Typer lyrics)
     let scrollPosition = 0;
     let selectedSong = null;
     const maxVisibleItems = 7;
     
     // Calculate visible items for list view
     $: visibleSongs = completedSongs.slice(scrollPosition, scrollPosition + maxVisibleItems);
-    $: canScrollUp = scrollPosition > 0;
-    $: canScrollDown = scrollPosition + maxVisibleItems < completedSongs.length;
+    
+    // Keep scroll index valid when the list shrinks
+    $: {
+        const maxScroll = Math.max(0, completedSongs.length - maxVisibleItems);
+        if (scrollPosition > maxScroll) {
+            scrollPosition = maxScroll;
+        }
+    }
+    
+    // Publish scroll state so AppWindow can render a live thumb
+    $: trashScrollInfo.set({ current: scrollPosition, total: completedSongs.length, visible: maxVisibleItems });
+    
+    function scrollTrashUp() {
+        const total = completedSongs.length;
+        if (total <= maxVisibleItems) {
+            scrollPosition = 0;
+            return;
+        }
+        const next = virtualScrollUp(scrollPosition, total, maxVisibleItems);
+        if (next !== scrollPosition) {
+            scrollPosition = next;
+        }
+    }
+    
+    function scrollTrashDown() {
+        const total = completedSongs.length;
+        if (total <= maxVisibleItems) {
+            return;
+        }
+        const next = virtualScrollDown(scrollPosition, total, maxVisibleItems);
+        if (next !== scrollPosition) {
+            scrollPosition = next;
+        }
+    }
+    
+    // Called from AppWindow custom scrollbar (right edge), list view only
+    export function handleScrollUp() {
+        if (viewMode === 'list') scrollTrashUp();
+    }
+    
+    export function handleScrollDown() {
+        if (viewMode === 'list') scrollTrashDown();
+    }
+
+    export function handleScrollToLine(lineNumber) {
+        if (viewMode !== 'list') return;
+        const total = completedSongs.length;
+        scrollPosition =
+            total <= maxVisibleItems
+                ? 0
+                : Math.max(0, Math.min(Math.max(0, total - maxVisibleItems), lineNumber));
+    }
     
     // Handle file actions
     function handleFileClick(song) {
@@ -148,32 +202,6 @@
             bubbles: true
         });
         document.dispatchEvent(event);
-    }
-    
-    // Scrolling functions
-    function scrollUp() {
-        if (canScrollUp) {
-            scrollPosition = Math.max(0, scrollPosition - 1);
-        }
-    }
-    
-    function scrollDown() {
-        if (canScrollDown) {
-            scrollPosition = Math.min(completedSongs.length - maxVisibleItems, scrollPosition + 1);
-        }
-    }
-    
-    // Export scroll functions to be called by parent (AppWindow scrollbar arrows)
-    export function handleScrollUp() {
-        if (viewMode === 'list') {
-            scrollUp();
-        }
-    }
-    
-    export function handleScrollDown() {
-        if (viewMode === 'list') {
-            scrollDown();
-        }
     }
     
     // Reset scroll position when switching view modes or when songs change
@@ -252,9 +280,6 @@
                     <div class="list-label" style:font-size="{iconLabelSize}px">
                         <div class="list-file-name">{song.fileName}</div>
                         <div class="file-stats">{song.wpm} WPM • {song.accuracy}% • {getPerformanceGrade(song.wpm, song.accuracy)}</div>
-                        <!-- <div class="list-file-details">
-                            {song.fileSize} • {formatDuration(song.testDuration)} • {getPerformanceGrade(song.wpm, song.accuracy)} grade
-                        </div> -->
                     </div>
                 </div>
                 {:else}
@@ -262,7 +287,7 @@
                     <p>No completed songs yet</p>
                     <p style="opacity: 0.7; font-size: {iconLabelSize}px;">Complete a typing test to see files here</p>
                 </div>
-            {/each}
+                {/each}
             </div>
             
             <!-- Info Panel -->
@@ -369,6 +394,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        min-height: 0;
     }
 
     .files-area {
@@ -383,6 +409,8 @@
         display: flex;
         flex-direction: row;
         gap: calc(var(--list-item-padding) * 2);
+        min-height: 0;
+        min-width: 0;
     }
 
     .bottom-row {
@@ -461,6 +489,8 @@
         gap: var(--list-gap, 4px);
         padding: var(--outside-padding);
         overflow: hidden;
+        min-width: 0;
+        min-height: 0;
     }
 
     .list-item {

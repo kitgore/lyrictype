@@ -662,6 +662,34 @@ export const processAlbumArtBinary = onRequest({
         return;
     }
 
+    // Security: only allow fetching album art from approved Genius image hosts
+    const ALLOWED_ALBUM_ART_HOSTS = new Set(['images.genius.com']);
+    let parsedImageUrl;
+    try {
+        parsedImageUrl = new URL(imageUrl);
+    } catch (e) {
+        res.status(400).json({ error: 'Invalid image URL format' });
+        return;
+    }
+
+    if (parsedImageUrl.protocol !== 'https:') {
+        res.status(400).json({ error: 'Invalid image URL protocol' });
+        return;
+    }
+
+    if (!ALLOWED_ALBUM_ART_HOSTS.has(parsedImageUrl.hostname)) {
+        res.status(400).json({ error: 'Image host not allowed' });
+        return;
+    }
+
+    // Extra guardrail: albumArtId should match the hash extracted from the image URL.
+    // This prevents callers from stuffing arbitrary content under arbitrary IDs.
+    const extractedId = extractGeniusImageHash(imageUrl);
+    if (extractedId && extractedId !== String(albumArtId).toLowerCase()) {
+        res.status(400).json({ error: 'albumArtId does not match image URL' });
+        return;
+    }
+
     try {
         const result = await processAndStoreAlbumArt(imageUrl, albumArtId);
         res.json(result);
@@ -2084,10 +2112,11 @@ export const getArtistInfo = onCall({
             artist: {
                 name: artistData.name,
                 geniusId: artistData.geniusId,
-                urlKey: artistUrlKey, // Add the URL key to the response
+                urlKey: artistUrlKey,
+                imageUrl: artistData.imageUrl || null,
                 totalSongs: (artistData.songIds || []).length,
                 cachedSongs: (artistData.cachedSongIds || []).length,
-                songIds: artistData.songIds || [], // Include songIds array
+                songIds: artistData.songIds || [],
                 lastUpdated: artistData.songsLastUpdated,
                 isFullyCached: artistData.isFullyCached || false
             }
