@@ -4,6 +4,7 @@
  */
 
 import { db, functions } from './initFirebase.js';
+import { httpsCallable } from 'firebase/functions';
 import { doc, getDoc } from 'firebase/firestore';
 import pako from 'pako';
 
@@ -181,74 +182,38 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
  */
 async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
     try {
-        console.log(`⚡ Processing image to grayscale format...`);
+        console.log(`Processing image to grayscale format...`);
         const startTime = Date.now();
         
-        // Validate imageUrl before attempting to process
         if (!imageUrl || typeof imageUrl !== 'string' || imageUrl.trim().length === 0) {
             throw new Error('Invalid imageUrl: URL is empty or invalid');
         }
         
-        // Check if URL is valid format
         try {
             new URL(imageUrl);
         } catch (urlError) {
             throw new Error(`Invalid imageUrl format: ${imageUrl}`);
         }
         
-        // Call our optimized Firebase Function (auto-detects environment)
-        const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-            ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
-            : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
-            
-        // Add timeout to fetch request
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+        const processArtistImage = httpsCallable(functions, 'processArtistImageBinary');
+        const response = await processArtistImage({
+            url: imageUrl,
+            artistKey: artistUrlKey
+        });
         
-        let response;
-        try {
-            response = await fetch(functionUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    url: imageUrl,
-                    artistKey: artistUrlKey
-                    // No size parameter - using native resolution
-                }),
-                signal: controller.signal
-            });
-        } catch (fetchError) {
-            clearTimeout(timeoutId);
-            if (fetchError.name === 'AbortError') {
-                throw new Error('Image processing timeout: Request took longer than 15 seconds');
-            }
-            throw new Error(`Network error: ${fetchError.message}`);
-        } finally {
-            clearTimeout(timeoutId);
-        }
+        const result = response.data;
         
-        if (!response.ok) {
-            const errorText = await response.text().catch(() => 'Unknown error');
-            throw new Error(`Processing failed (${response.status}): ${errorText}`);
-        }
-        
-        const result = await response.json();
-        
-        // Check if result indicates an error
         if (!result.success) {
             throw new Error(result.error || 'Image processing failed');
         }
         
         const processingTime = Date.now() - startTime;
         
-        console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
+        console.log(`Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
         
-        // Decompress the grayscale data since it's now Pako compressed
         let grayscaleData = result.grayscaleData;
         if (result.metadata.compressionMethod === 'pako-deflate') {
-            console.log(`🗜️  Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
+            console.log(`Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
             grayscaleData = decompressGrayscaleData(result.grayscaleData);
         }
         
@@ -261,7 +226,6 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
         
     } catch (error) {
         console.error('Error processing artist image to grayscale:', error);
-        // Re-throw with more context
         throw new Error(`Failed to process image: ${error.message}`);
     }
 }

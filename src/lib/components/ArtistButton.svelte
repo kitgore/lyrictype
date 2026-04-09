@@ -245,8 +245,8 @@
     </div>
 {:else}
     <div class="artist-button-empty" style:border-radius="{windowHeight*0.019}px" style:height="{windowHeight*0.0897}px">
-        <div class="artist-placeholder-image checkerboard-pattern"></div>
-        <div class="artist-placeholder-text checkerboard-pattern"></div>
+        <div class="artist-placeholder-image dither-lightdots"></div>
+        <div class="artist-placeholder-text dither-lightdots"></div>
     </div>
 {/if}
 

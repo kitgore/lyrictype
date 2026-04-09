@@ -1,6 +1,5 @@
 <script>
     import { themeColors } from '$lib/services/store.js';
-    import { onMount } from 'svelte';
     import { windowStore } from '$lib/services/store.js';
 
     $: screenDimensions = $windowStore.screenDimensions;
@@ -8,53 +7,14 @@
     // Calculate responsive hotbar dimensions
     $: aspectRatio = screenDimensions.width / screenDimensions.height;
     
-    // Fixed background size (no longer responsive)
-    const backgroundSize = 4; // Fixed size in pixels for checkerboard pattern
     $: hotbarHeight = aspectRatio > 1.65 ? 
         screenDimensions.height * 0.04 : 
-        screenDimensions.width * 0.024; // Smaller factor for width to prevent jump
+        screenDimensions.width * 0.024;
     $: hotbarFontSize = aspectRatio > 1.65 ? 
         screenDimensions.height * 0.022 : 
-        screenDimensions.width * 0.013; // Smaller factor for width to prevent jump
+        screenDimensions.width * 0.013;
 
     export let currentPattern = 'checkerboard';
-
-    $: pattern = {
-        // 2x2 checkerboard
-        checkerboard: `
-            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
-            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color))
-        `,
-        // Cross pattern with proper secondary color
-        cross: `
-            linear-gradient(to right,
-                var(--background-secondary-color) 25%,
-                var(--background-primary-color) 25% 75%,
-                var(--background-secondary-color) 75%
-            ),
-            linear-gradient(to bottom,
-                var(--background-secondary-color) 25%,
-                var(--background-primary-color) 25% 75%,
-                var(--background-secondary-color) 75%
-            ),
-            linear-gradient(var(--background-secondary-color) 100%, var(--background-secondary-color) 100%)
-        `,
-        // 2x2 diagonal halftone (only corner pixels)
-        corners: `
-            linear-gradient(45deg, 
-                var(--background-primary-color) 25%, 
-                var(--background-secondary-color) 25% 75%, 
-                var(--background-primary-color) 75%
-            )
-        `,
-        // Alternating dots (like inverted checkerboard)
-        dots: `
-            linear-gradient(to right, var(--background-primary-color), var(--background-secondary-color)),
-            linear-gradient(to bottom, var(--background-primary-color), var(--background-secondary-color));
-            linear-gradient(to bottom, var(--background-primary-color), var(--background-secondary-color));
-            background-size: var(--bg-size) var(calc(--bg-size * 2));
-        `
-    }[currentPattern];
 </script>
 
 <div class="container">
@@ -66,8 +26,7 @@
     lyrictype.com
 </div>
 <div
-class="background checkerboard-pattern"
-style="--bg-size: {backgroundSize}px; {currentPattern !== 'checkerboard' ? `background-image: ${pattern}` : ''}"
+class="background dither-{currentPattern}"
 >
 </div>
 </div>
@@ -109,8 +68,6 @@ style="--bg-size: {backgroundSize}px; {currentPattern !== 'checkerboard' ? `back
     .background {
         flex: 1;
         width: 100%;
-        background-size: var(--bg-size) var(--bg-size);
-        background-position: 0 0, calc(var(--bg-size) / 2) calc(var(--bg-size) / 2);
         z-index: -2;
     }
 </style>
