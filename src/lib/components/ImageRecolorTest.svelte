@@ -3,6 +3,8 @@
     import { getArtistBinaryImage } from '$lib/services/grayscaleImageService';
     import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
     import { imageColors } from '$lib/services/store.js';
+    import { functions } from '$lib/services/initFirebase.js';
+    import { httpsCallable } from 'firebase/functions';
     import pako from 'pako';
     
     let testMode = 'artist'; // 'artist' or 'url'
@@ -25,30 +27,15 @@
     }
     
     async function processStandaloneUrl(imageUrl) {
-        console.log(`🧪 TEST: Processing standalone URL: ${imageUrl}`);
+        console.log(`TEST: Processing standalone URL: ${imageUrl}`);
         
-        // Call Firebase function directly
-        const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-            ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
-            : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
-        
-        const response = await fetch(functionUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                url: imageUrl,
-                artistKey: 'test-standalone' // Dummy key for testing
-            })
+        const processArtistImage = httpsCallable(functions, 'processArtistImageBinary');
+        const response = await processArtistImage({
+            url: imageUrl,
+            artistKey: 'test-standalone'
         });
         
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`Processing failed (${response.status}): ${errorText}`);
-        }
-        
-        const result = await response.json();
+        const result = response.data;
         
         if (!result.success) {
             throw new Error(result.error || 'Image processing failed');

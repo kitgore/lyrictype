@@ -1,4 +1,4 @@
-import { onRequest, onCall, HttpsError } from 'firebase-functions/v2/https';
+import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { defineString } from 'firebase-functions/params';
 import { initializeApp } from 'firebase-admin/app';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
@@ -7,7 +7,7 @@ import pako from 'pako';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'url';
-import HttpsProxyAgent from 'https-proxy-agent';
+import { HttpsProxyAgent } from 'https-proxy-agent';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -91,12 +91,11 @@ const fetchWithTimeout = async (url, options = {}) => {
 // SSR server removed - now using pure static hosting with optimized binary image system
 // All image processing is now done via dedicated Firebase Functions with Firestore caching
 
-// Keep existing health check
-export const healthCheck = onRequest({
+export const healthCheck = onCall({
     timeoutSeconds: 10,
     region: 'us-central1'
-}, (req, res) => {
-    res.status(200).send('OK');
+}, async () => {
+    return { status: 'OK' };
 });
 
 /**
@@ -427,46 +426,27 @@ async function processAndStoreArtistImage(imageUrl, artistUrlKey) {
 }
 
 // Fast Artist Image Processing - prioritizes speed for client response
-export const processArtistImageBinary = onRequest({
+export const processArtistImageBinary = onCall({
     timeoutSeconds: 15,
     minInstances: 0,
     maxInstances: 20,
-    region: 'us-central1',
-    invoker: 'public'
-}, async (req, res) => {
-    // Enable CORS
-    res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.set('Access-Control-Allow-Headers', 'Content-Type');
-    
-    if (req.method === 'OPTIONS') {
-        res.status(200).send('');
-        return;
-    }
-
-    const imageUrl = req.query.url || req.body?.url;
-    const artistUrlKey = req.query.artistKey || req.body?.artistKey;
-    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+    region: 'us-central1'
+}, async (request) => {
+    const { url: imageUrl, artistKey: artistUrlKey } = request.data;
 
     if (!imageUrl) {
-        res.status(400).json({ error: 'No image URL provided' });
-        return;
+        throw new HttpsError('invalid-argument', 'No image URL provided');
     }
     
     if (!artistUrlKey) {
-        res.status(400).json({ error: 'No artist key provided' });
-        return;
+        throw new HttpsError('invalid-argument', 'No artist key provided');
     }
 
     try {
-        const result = await processAndStoreArtistImage(imageUrl, artistUrlKey);
-        res.json(result);
+        return await processAndStoreArtistImage(imageUrl, artistUrlKey);
     } catch (error) {
-        console.error('❌ Error in processArtistImageBinary:', error);
-        res.status(500).json({ 
-            error: 'Failed to process artist image', 
-            details: error.message 
-        });
+        console.error('Error in processArtistImageBinary:', error);
+        throw new HttpsError('internal', `Failed to process artist image: ${error.message}`);
     }
 });
 
@@ -631,35 +611,20 @@ async function processAndStoreAlbumArt(imageUrl, albumArtId) {
 }
 
 // Fast Album Art Processing - prioritizes speed for client response
-export const processAlbumArtBinary = onRequest({
+export const processAlbumArtBinary = onCall({
     timeoutSeconds: 15,
     minInstances: 0,
     maxInstances: 20,
-    region: 'us-central1',
-    invoker: 'public'
-}, async (req, res) => {
-    // Enable CORS
-    res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.set('Access-Control-Allow-Headers', 'Content-Type');
-    
-    if (req.method === 'OPTIONS') {
-        res.status(200).send('');
-        return;
-    }
-
-    const imageUrl = req.query.url || req.body?.url;
-    const albumArtId = req.query.albumArtId || req.body?.albumArtId;
-    const targetSize = parseInt(req.query.size || req.body?.size || '200');
+    region: 'us-central1'
+}, async (request) => {
+    const { url: imageUrl, albumArtId } = request.data;
 
     if (!imageUrl) {
-        res.status(400).json({ error: 'No image URL provided' });
-        return;
+        throw new HttpsError('invalid-argument', 'No image URL provided');
     }
     
     if (!albumArtId) {
-        res.status(400).json({ error: 'No album art ID provided' });
-        return;
+        throw new HttpsError('invalid-argument', 'No album art ID provided');
     }
 
     // Security: only allow fetching album art from approved Genius image hosts
@@ -668,105 +633,68 @@ export const processAlbumArtBinary = onRequest({
     try {
         parsedImageUrl = new URL(imageUrl);
     } catch (e) {
-        res.status(400).json({ error: 'Invalid image URL format' });
-        return;
+        throw new HttpsError('invalid-argument', 'Invalid image URL format');
     }
 
     if (parsedImageUrl.protocol !== 'https:') {
-        res.status(400).json({ error: 'Invalid image URL protocol' });
-        return;
+        throw new HttpsError('invalid-argument', 'Invalid image URL protocol');
     }
 
     if (!ALLOWED_ALBUM_ART_HOSTS.has(parsedImageUrl.hostname)) {
-        res.status(400).json({ error: 'Image host not allowed' });
-        return;
+        throw new HttpsError('permission-denied', 'Image host not allowed');
     }
 
     // Extra guardrail: albumArtId should match the hash extracted from the image URL.
     // This prevents callers from stuffing arbitrary content under arbitrary IDs.
     const extractedId = extractGeniusImageHash(imageUrl);
     if (extractedId && extractedId !== String(albumArtId).toLowerCase()) {
-        res.status(400).json({ error: 'albumArtId does not match image URL' });
-        return;
+        throw new HttpsError('invalid-argument', 'albumArtId does not match image URL');
     }
 
     try {
-        const result = await processAndStoreAlbumArt(imageUrl, albumArtId);
-        res.json(result);
+        return await processAndStoreAlbumArt(imageUrl, albumArtId);
     } catch (error) {
-        console.error('❌ Error in processAlbumArtBinary:', error);
-        res.status(500).json({ 
-            error: 'Failed to process album art', 
-            details: error.message 
-        });
+        console.error('Error in processAlbumArtBinary:', error);
+        throw new HttpsError('internal', `Failed to process album art: ${error.message}`);
     }
 });
 
 // Binary Image Processing Function
-export const processImageBinary = onRequest({
+export const processImageBinary = onCall({
     timeoutSeconds: 30,
     minInstances: 0,
     maxInstances: 10,
-    region: 'us-central1',
-    invoker: 'public'
-}, async (req, res) => {
-    // Enable CORS
-    res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.set('Access-Control-Allow-Headers', 'Content-Type');
-    
-    if (req.method === 'OPTIONS') {
-        res.status(200).send('');
-        return;
-    }
-
-    const imageUrl = req.query.url || req.body?.url;
-    const targetSize = parseInt(req.query.size || req.body?.size || '200');
-    const returnBinary = req.query.binary === 'true' || req.body?.binary === true;
-    const logAnalysis = req.query.log === 'true' || req.body?.log === true;
+    region: 'us-central1'
+}, async (request) => {
+    const { url: imageUrl, size, binary: returnBinary = false, log: logAnalysis = false } = request.data;
+    const targetSize = parseInt(size || '200');
 
     if (!imageUrl) {
-        res.status(400).json({ error: 'No image URL provided' });
-        return;
+        throw new HttpsError('invalid-argument', 'No image URL provided');
     }
 
     try {
-        console.log(`🎨 Processing image: ${imageUrl} (size: ${targetSize}, binary: ${returnBinary})`);
+        console.log(`Processing image: ${imageUrl} (size: ${targetSize}, binary: ${returnBinary})`);
         
-        // Use fetchImageWithFallback which tries proxy first, then direct
         const imageBuffer = await fetchImageWithFallback(imageUrl, 15000);
-        console.log(`📦 Downloaded image: ${imageBuffer.byteLength} bytes`);
+        console.log(`Downloaded image: ${imageBuffer.byteLength} bytes`);
 
-        // Process with canvas
         const { createCanvas, loadImage } = await import('canvas');
         const img = await loadImage(Buffer.from(imageBuffer));
         
-        // Create canvas with target size
         const canvas = createCanvas(targetSize, targetSize);
         const ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0, targetSize, targetSize);
         
         const imageData = ctx.getImageData(0, 0, targetSize, targetSize);
-        console.log(`🖼️  Got image data: ${imageData.width}x${imageData.height}`);
         
         if (returnBinary) {
-            // Apply dithering and get binary data
             const binaryData = atkinsonDitherToBinary(imageData);
             const analysis = analyzeBinaryData(binaryData, targetSize, targetSize);
             
-            if (logAnalysis) {
-                console.log('🔍 BINARY IMAGE ANALYSIS:');
-                console.log(`📊 Image: ${targetSize}x${targetSize} pixels`);
-                console.log(`📦 Original size: ${imageBuffer.byteLength} bytes`);
-                console.log(`🗜️  Binary size: ${analysis.totalBytes} bytes`);
-                console.log(`📉 Compression: ${analysis.compressionPercent}% reduction (${analysis.compressionRatio}x)`);
-                console.log(`⚫ White pixels: ${analysis.whitePercent}% (${analysis.setBits}/${analysis.totalPixels})`);
-            }
-            
-            // Return binary data with metadata
             const base64Binary = Buffer.from(binaryData).toString('base64');
             
-            res.json({
+            return {
                 success: true,
                 format: 'binary',
                 data: base64Binary,
@@ -779,20 +707,21 @@ export const processImageBinary = onRequest({
                     compressionPercent: analysis.compressionPercent,
                     whitePixelPercent: analysis.whitePercent
                 }
-            });
+            };
         } else {
-            // Return original or processed image
             const buffer = canvas.toBuffer('image/png');
-            res.set('Content-Type', 'image/png');
-            res.send(buffer);
+            const base64Png = buffer.toString('base64');
+            return {
+                success: true,
+                format: 'png',
+                data: base64Png,
+                metadata: { width: targetSize, height: targetSize }
+            };
         }
         
     } catch (error) {
-        console.error('❌ Error processing image:', error);
-        res.status(500).json({ 
-            error: 'Failed to process image', 
-            details: error.message 
-        });
+        console.error('Error processing image:', error);
+        throw new HttpsError('internal', `Failed to process image: ${error.message}`);
     }
 });
 

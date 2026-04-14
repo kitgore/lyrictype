@@ -4,6 +4,7 @@
  */
 
 import { db, functions } from './initFirebase.js';
+import { httpsCallable } from 'firebase/functions';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import pako from 'pako';
 
@@ -273,54 +274,23 @@ async function processAlbumArtClientSide(imageUrl, albumArtId) {
  */
 async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
     try {
-        console.log(`⚡ Processing album art to grayscale format...`);
+        console.log(`Processing album art to grayscale format...`);
         const startTime = Date.now();
         
-        // Call our optimized Firebase Function (auto-detects environment)
-        const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-            ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processAlbumArtBinary'
-            : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processAlbumArtBinary';
-            
-        const response = await fetch(functionUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                url: imageUrl,
-                albumArtId: albumArtId
-                // No size limit - use native resolution for grayscale
-            })
+        const processAlbumArt = httpsCallable(functions, 'processAlbumArtBinary');
+        const response = await processAlbumArt({
+            url: imageUrl,
+            albumArtId: albumArtId
         });
         
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error(`Firebase function error for album art ${albumArtId}:`, {
-                status: response.status,
-                statusText: response.statusText,
-                error: errorText,
-                imageUrl: imageUrl
-            });
-            
-            // Check if it's a 403/500 error (server couldn't fetch the image)
-            // Try client-side processing as fallback
-            if (response.status === 500 && errorText.includes('403')) {
-                console.log(`🔄 Server got 403 from Genius, trying client-side processing...`);
-                return await processAlbumArtClientSide(imageUrl, albumArtId);
-            }
-            
-            throw new Error(`Processing failed: ${response.status} - ${errorText}`);
-        }
-        
-        const result = await response.json();
+        const result = response.data;
         const processingTime = Date.now() - startTime;
         
-        console.log(`🚀 Album art processed in ${processingTime}ms (${result.metadata.totalCompressionRatio}% total compression)`);
+        console.log(`Album art processed in ${processingTime}ms (${result.metadata.totalCompressionRatio}% total compression)`);
         
-        // Decompress the grayscale data since it's now Pako compressed
         let grayscaleData = result.grayscaleData;
         if (result.metadata.compressionMethod === 'pako-deflate') {
-            console.log(`🗜️  Decompressing fresh album art (${result.metadata.compressionMethod})`);
+            console.log(`Decompressing fresh album art (${result.metadata.compressionMethod})`);
             grayscaleData = decompressGrayscaleData(result.grayscaleData);
         }
         
@@ -332,16 +302,23 @@ async function processAlbumArtToGrayscale(imageUrl, albumArtId) {
         };
         
     } catch (error) {
-        console.error(`❌ Error processing album art to grayscale for ${albumArtId}:`, error);
-        console.error(`🔍 Failed image URL:`, imageUrl);
+        console.error(`Error processing album art to grayscale for ${albumArtId}:`, error);
+        console.error(`Failed image URL:`, imageUrl);
+        
+        // If the server failed to fetch the image (e.g. 403 from Genius),
+        // try client-side processing as fallback
+        if (error.code === 'internal' && error.message?.includes('403')) {
+            console.log(`Server got 403 from Genius, trying client-side processing...`);
+            return await processAlbumArtClientSide(imageUrl, albumArtId);
+        }
         
         // Last resort: try client-side processing
-        console.log(`🔄 Server processing failed completely, trying client-side as last resort...`);
+        console.log(`Server processing failed, trying client-side as last resort...`);
         try {
             return await processAlbumArtClientSide(imageUrl, albumArtId);
         } catch (clientError) {
-            console.error(`❌ Client-side processing also failed:`, clientError);
-            throw error; // Throw the original error
+            console.error(`Client-side processing also failed:`, clientError);
+            throw error;
         }
     }
 }

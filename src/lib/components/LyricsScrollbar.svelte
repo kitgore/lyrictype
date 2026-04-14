@@ -108,7 +108,7 @@
     </div>
     <div class="scrollbar-track" bind:this={trackElement}>
         {#if showThumb}
-            <div class="scrollbar-thumb checkerboard-pattern" 
+            <div class="scrollbar-thumb dither-lightdots" 
                  class:disabled
                  role="slider"
                  tabindex="-1"

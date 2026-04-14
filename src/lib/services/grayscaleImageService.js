@@ -4,6 +4,7 @@
  */
 
 import { db, functions } from './initFirebase.js';
+import { httpsCallable } from 'firebase/functions';
 import { doc, getDoc } from 'firebase/firestore';
 import pako from 'pako';
 
@@ -440,36 +441,16 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
     // Create processing promise and cache it
     const processingPromise = (async () => {
         try {
-            console.log(`⚡ Processing image to grayscale format...`);
+            console.log(`Processing image to grayscale format...`);
             const startTime = Date.now();
             
-            // Call Firebase Function (which now uses Cloudflare Worker proxy)
-            const functionUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-                ? 'http://localhost:5001/lyrictype-cdf2c/us-central1/processArtistImageBinary'
-                : 'https://us-central1-lyrictype-cdf2c.cloudfunctions.net/processArtistImageBinary';
-                
-            const response = await fetch(functionUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    url: imageUrl,
-                    artistKey: artistUrlKey
-                })
+            const processArtistImage = httpsCallable(functions, 'processArtistImageBinary');
+            const response = await processArtistImage({
+                url: imageUrl,
+                artistKey: artistUrlKey
             });
             
-            if (!response.ok) {
-                const errorText = await response.text();
-                console.error(`Firebase function error for ${artistUrlKey}:`, {
-                    status: response.status,
-                    statusText: response.statusText,
-                    error: errorText
-                });
-                throw new Error(`Processing failed: ${response.status} - ${errorText}`);
-            }
-            
-            const result = await response.json();
+            const result = response.data;
             const processingTime = Date.now() - startTime;
             
             console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
