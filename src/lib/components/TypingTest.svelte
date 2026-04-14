@@ -1166,6 +1166,7 @@
         box-sizing: border-box;
         /* Enforce square aspect ratio - scales with window size without limits */
         aspect-ratio: 1 / 1;
+        outline: none;
     }
 
     .controlButton:hover,
@@ -1173,14 +1174,7 @@
     .controlButton:focus,
     .controlButton.paused,
     .controlButton.queue-active {
-        background-size: 2px 2px;
-        background-image:
-            linear-gradient(45deg, var(--background-primary-color) 25%, transparent 25%, transparent 75%, var(--background-primary-color) 75%, var(--background-primary-color)),
-            linear-gradient(45deg, var(--background-primary-color) 25%, var(--background-secondary-color) 25%, var(--background-secondary-color) 75%, var(--background-primary-color) 75%, var(--background-primary-color));
-        background-position: 0 0, 2px 2px;
-        background-attachment: fixed;
-        image-rendering: pixelated;
-        outline: none;
+        background-color: var(--primary-color);
     }
 
 
@@ -1194,11 +1188,7 @@
     .controlButton:focus .controlIcon path,
     .controlButton.paused .controlIcon path,
     .controlButton.queue-active .controlIcon path {
-        stroke: var(--secondary-color);
-        stroke-width: 3px;
-        stroke-linejoin: miter;
-        stroke-linecap: square;
-        paint-order: stroke fill;
+        fill: var(--secondary-color);
     }
 
     .queueButton {

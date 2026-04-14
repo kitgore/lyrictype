@@ -278,17 +278,17 @@
     </div>
     <div class="bottomSection">
         <div class="controlsContainer">
-            <button class="controlButton" on:click={continueFromQueue} tabindex=1>
+            <button class="controlButton dither-lightdots" on:click={continueFromQueue} tabindex=1>
                 <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
                 </svg>                    
             </button>
-            <button class="controlButton" on:click={replaySong} tabindex=2>
+            <button class="controlButton dither-lightdots" on:click={replaySong} tabindex=2>
                 <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
                 </svg>
             </button>
-            <button class="controlButton" tabindex=3 on:click={() => {window.open(geniusUrl, '_blank')}}>
+            <button class="controlButton dither-lightdots" tabindex=3 on:click={() => {window.open(geniusUrl, '_blank')}}>
                 <svg class="controlIcon" viewBox="0 0 24 24" fill="{$themeColors.primary}" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
                 </svg>
@@ -303,10 +303,6 @@
     }
     .songText {
         width: 60%;
-        /* padding-right: 5%; */
-        /* display: flex;
-        flex-direction: column;
-        gap: 0.5rem; */
     }
   
     .songTextContainer, .artistTextContainer {
@@ -430,17 +426,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        outline: none;
     }
 
-    .controlButton:hover,
-    .controlButton:active,
-    .controlButton:focus {
-        background-size: 2px 2px; /* Size of the checker squares */
-        background-image:
-            linear-gradient(45deg, var(--primary-color), 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color), 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
-        outline: none
+    .controlButton:global(.dither-lightdots):not(:hover):not(:active):not(:focus) {
+        background-image: none !important;
     }
 
     .controlIcon {
