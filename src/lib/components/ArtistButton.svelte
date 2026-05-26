@@ -1,5 +1,5 @@
 <script>
-    import { getArtistBinaryImage } from '$lib/services/grayscaleImageService';
+    import { getArtistGrayscaleImage } from '$lib/services/grayscaleImageService';
     import GrayscaleImageRenderer from './GrayscaleImageRenderer.svelte';
     import { themeColors, ditherImages, imageColors, windowStore } from '$lib/services/store.js';
     
@@ -85,7 +85,7 @@
                 console.log(`🎨 Attempting to load grayscale image for: ${name} (${urlKey})`);
                 console.log(`🔗 Image URL: ${imageUrl}`);
                 
-                const result = await getArtistBinaryImage(urlKey, imageUrl);
+                const result = await getArtistGrayscaleImage(urlKey, imageUrl);
                 
                 if (result.success) {
                     // Double-check that we're still loading this artist (prevent race conditions)

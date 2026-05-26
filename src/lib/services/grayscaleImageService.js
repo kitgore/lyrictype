@@ -246,6 +246,3 @@ async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
     processingCache.set(cacheKey, processingPromise);
     return await processingPromise;
 }
-
-// backward-compatibility alias (ArtistButton, TypingTest, ImageRecolorTest)
-export const getArtistBinaryImage = getArtistGrayscaleImage;

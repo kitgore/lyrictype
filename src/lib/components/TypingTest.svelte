@@ -771,7 +771,7 @@
             // Move the queue artist (the one that was selected) to top of recently played.
             // Use the queue artist's own name and image so they are always consistent.
             // artistData.imageUrl may be undefined (getArtistInfo callable doesn't include it),
-            // so fall back to the song's imageUrl which lets getArtistBinaryImage find cached artist data.
+            // so fall back to the song's imageUrl which lets getArtistGrayscaleImage find cached artist data.
             setNewRecentArtist({
                 name: result.artistData?.name || songData.artist,
                 imageUrl: result.artistData?.imageUrl || songData.imageUrl || '',
