@@ -188,8 +188,7 @@ function createGeoNodeProxyAgent() {
  * Helper function to fetch image with fallback strategies
  * Strategy order:
  * 1. GeoNode residential proxy (most reliable for bypassing blocks)
- * 2. Cloudflare Worker proxy (if configured)
- * 3. Direct fetch with browser headers (may be blocked)
+ * 2. Direct fetch with browser headers (may be blocked)
  */
 async function fetchImageWithFallback(imageUrl, timeout = 15000) {
     const browserHeaders = {
@@ -237,29 +236,7 @@ async function fetchImageWithFallback(imageUrl, timeout = 15000) {
         console.log(`⚠️ GeoNode proxy not configured (missing GEONODE_USER/GEONODE_PASS)`);
     }
     
-    // Strategy 2: Try Cloudflare Worker proxy if configured
-    const cfProxyUrl = process.env.PROXY_URL;
-    const cfProxyKey = process.env.PROXY_KEY;
-    
-    if (cfProxyUrl && cfProxyKey && cfProxyUrl !== 'CLOUDFLARE_WORKER_URL_HERE') {
-        try {
-            const proxiedUrl = `${cfProxyUrl}?url=${encodeURIComponent(imageUrl)}&key=${cfProxyKey}`;
-            console.log(`🌐 Trying Cloudflare Worker proxy...`);
-            
-            const proxyResponse = await fetchWithTimeout(proxiedUrl, { timeout: 10000 });
-            
-            if (proxyResponse.ok) {
-                console.log(`✅ Cloudflare proxy fetch successful`);
-                return await proxyResponse.arrayBuffer();
-            }
-            
-            console.log(`⚠️ Cloudflare proxy returned ${proxyResponse.status}, trying direct fetch...`);
-        } catch (proxyError) {
-            console.log(`⚠️ Cloudflare proxy failed: ${proxyError.message}, trying direct fetch...`);
-        }
-    }
-    
-    // Strategy 3: Direct fetch with browser-like headers (last resort)
+    // Strategy 2: Direct fetch with browser-like headers (last resort)
     console.log(`🌐 Trying direct fetch with browser headers...`);
     const directResponse = await fetchWithTimeout(imageUrl, { 
         timeout,

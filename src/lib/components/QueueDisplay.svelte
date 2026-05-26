@@ -18,7 +18,7 @@
     $: headerHeight = windowHeight * 0.03; // 3% of window height
     $: headerFontSize = windowHeight * 0.03; // 3% of window height
     $: headerPadding = windowHeight * 0.02; // 2% of window height
-    $: closeButtonSize = windowHeight * 0.06; // Square button size
+    $: closeButtonSize = windowHeight * 0.048; // Square button size
     $: closeButtonFontSize = windowHeight * 0.04; // Font size for close button
 
     // Additional responsive sizing for padding, margins, and spacing
@@ -59,7 +59,7 @@
         <div class="queue-container embedded" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px; --vert-queue-padding: {vertQueuePadding}px; --horiz-queue-padding: {horizQueuePadding}px; --list-padding: {listPadding}px; --item-padding-vert: {itemPaddingVert}px; --item-padding-horiz: {itemPaddingHoriz}px; --item-margin: {itemMargin}px; --border-radius: {borderRadius}px; --position-margin: {positionMargin}px; --position-min-width: {positionMinWidth}px; --empty-queue-margin: {emptyQueueMargin}px;">
             <div class="queue-header">
                 <h3>Up Next</h3>
-                <button class="close-button" on:click={() => dispatch('close')}>×</button>
+                <button class="close-button" on:click={() => dispatch('close')} aria-label="Close"></button>
             </div>
             
             <div class="queue-list">
@@ -90,7 +90,7 @@
             <div class="queue-container" style="--max-height: {maxHeight}px; --item-height: {itemHeight}px; --font-size: {fontSize}px; --header-height: {headerHeight}px; --header-font-size: {headerFontSize}px; --header-padding: {headerPadding}px; --close-button-size: {closeButtonSize}px; --close-button-font-size: {closeButtonFontSize}px; --vert-queue-padding: {vertQueuePadding}px; --horiz-queue-padding: {horizQueuePadding}px; --list-padding: {listPadding}px; --item-padding-vert: {itemPaddingVert}px; --item-padding-horiz: {itemPaddingHoriz}px; --item-margin: {itemMargin}px; --border-radius: {borderRadius}px; --position-margin: {positionMargin}px; --position-min-width: {positionMinWidth}px; --empty-queue-margin: {emptyQueueMargin}px;" on:click|stopPropagation>
                 <div class="queue-header">
                     <h3>Up Next</h3>
-                    <button class="close-button" on:click={() => dispatch('close')}>×</button>
+                    <button class="close-button" on:click={() => dispatch('close')} aria-label="Close"></button>
                 </div>
                 
                 <div class="queue-list">
@@ -164,11 +164,6 @@
         border-bottom: 2px solid var(--primary-color);
         height: var(--header-height, 60px);
         background: var(--secondary-color);
-        background-size: 2px 2px;
-        background-image:
-            linear-gradient(45deg, var(--primary-color) 25%, transparent 25%, transparent 75%, var(--primary-color) 75%, var(--primary-color)),
-            linear-gradient(45deg, var(--primary-color) 25%, var(--secondary-color) 25%, var(--secondary-color) 75%, var(--primary-color) 75%, var(--primary-color));
-        background-position: 0 0, 1px 1px;
         color: var(--primary-color);
     }
     

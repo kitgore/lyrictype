@@ -8,120 +8,25 @@ import { httpsCallable } from 'firebase/functions';
 import { doc, getDoc } from 'firebase/firestore';
 import pako from 'pako';
 
-/**
- * In-memory cache to prevent duplicate processing requests
- * Stores promises to allow concurrent requests to wait for the same result
- */
+// in-memory cache of in-flight server-processing promises, keyed by artist+url
+// keeps concurrent callers from issuing duplicate function invocations
 const processingCache = new Map();
-const CACHE_TIMEOUT = 30000; // 30 seconds - enough time for processing to complete
+const CACHE_TIMEOUT = 30000; // ms
 
-/**
- * Decompress grayscale image data using Pako
- * @param {string} compressedBase64 - Base64 encoded compressed grayscale data
- * @returns {string} - Base64 encoded decompressed grayscale data
- */
-function decompressGrayscaleData(compressedBase64, returnRawBytes = false) {
-    try {
-        console.log(`🔍 Attempting to decompress ${compressedBase64.length} chars of Base64 data`);
-        console.log(`🔍 [DECOMPRESS DEBUG] First 100 chars of input: ${compressedBase64.substring(0, 100)}`);
-        
-        // Decode from Base64
-        const compressedData = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
-        console.log(`📦 Decoded Base64 to ${compressedData.length} bytes`);
-        console.log(`🔍 [DECOMPRESS DEBUG] First 20 compressed bytes:`, Array.from(compressedData.slice(0, 20)));
-        
-        // Decompress with Pako
-        const decompressedData = pako.inflate(compressedData);
-        console.log(`🗜️  Pako inflated to ${decompressedData.length} bytes`);
-        console.log(`🔍 [DECOMPRESS DEBUG] First 50 decompressed values:`, Array.from(decompressedData.slice(0, 50)));
-        console.log(`🔍 [DECOMPRESS DEBUG] Last 50 decompressed values:`, Array.from(decompressedData.slice(-50)));
-        
-        // ========== DETAILED GRAYSCALE ANALYSIS ==========
-        let zeroCount = 0;
-        let lowCount = 0;   // 1-63
-        let midCount = 0;   // 64-191
-        let highCount = 0;  // 192-254
-        let maxCount = 0;   // 255
-        let min = 255, max = 0, sum = 0;
-        
-        for (let i = 0; i < decompressedData.length; i++) {
-            const val = decompressedData[i];
-            sum += val;
-            if (val < min) min = val;
-            if (val > max) max = val;
-            
-            if (val === 0) zeroCount++;
-            else if (val < 64) lowCount++;
-            else if (val < 192) midCount++;
-            else if (val < 255) highCount++;
-            else maxCount++;
-        }
-        
-        const avg = sum / decompressedData.length;
-        const zeroPercent = ((zeroCount / decompressedData.length) * 100).toFixed(1);
-        const lowPercent = ((lowCount / decompressedData.length) * 100).toFixed(1);
-        const midPercent = ((midCount / decompressedData.length) * 100).toFixed(1);
-        const highPercent = ((highCount / decompressedData.length) * 100).toFixed(1);
-        const maxPercent = ((maxCount / decompressedData.length) * 100).toFixed(1);
-        
-        console.log(`📊 [DECOMPRESS DEBUG] Grayscale distribution analysis:`);
-        console.log(`   Min: ${min}, Max: ${max}, Avg: ${avg.toFixed(1)}`);
-        console.log(`   Zero (0): ${zeroCount} (${zeroPercent}%)`);
-        console.log(`   Low (1-63): ${lowCount} (${lowPercent}%)`);
-        console.log(`   Mid (64-191): ${midCount} (${midPercent}%)`);
-        console.log(`   High (192-254): ${highCount} (${highPercent}%)`);
-        console.log(`   Max (255): ${maxCount} (${maxPercent}%)`);
-        
-        // WARNING: Detect problematic data patterns
-        if (parseFloat(zeroPercent) > 95) {
-            console.error(`🚨 [DECOMPRESS DEBUG] PROBLEM DETECTED: ${zeroPercent}% of pixels are ZERO!`);
-            console.error(`🚨 [DECOMPRESS DEBUG] Image will appear as SOLID PRIMARY COLOR!`);
-            console.error(`🚨 [DECOMPRESS DEBUG] This indicates corrupted data, failed processing, or wrong image format.`);
-        }
-        if (parseFloat(maxPercent) > 95) {
-            console.warn(`⚠️ [DECOMPRESS DEBUG] NOTE: ${maxPercent}% of pixels are MAX (255). Image will appear as solid SECONDARY color.`);
-        }
-        if (max === min) {
-            console.error(`🚨 [DECOMPRESS DEBUG] CRITICAL: All pixels have the SAME value (${min})!`);
-            console.error(`🚨 [DECOMPRESS DEBUG] No grayscale variation = solid color output!`);
-        }
-        if (max - min < 10 && decompressedData.length > 100) {
-            console.warn(`⚠️ [DECOMPRESS DEBUG] Very low contrast: range is only ${min}-${max} (${max - min} levels)`);
-        }
-        
-        // Re-encode to Base64 for compatibility with existing WebGL code
-        // Process in chunks to avoid stack overflow with large arrays
-        console.log(`🔧 Converting ${decompressedData.length} bytes to Base64 in chunks...`);
-        let binaryString = '';
-        const chunkSize = 8192; // Process 8KB at a time
-        const totalChunks = Math.ceil(decompressedData.length / chunkSize);
-        
-        for (let i = 0; i < decompressedData.length; i += chunkSize) {
-            const chunk = decompressedData.slice(i, i + chunkSize);
-            binaryString += String.fromCharCode(...chunk);
-            
-            // Log progress for large files
-            if (totalChunks > 10 && (i / chunkSize) % 20 === 0) {
-                console.log(`🔧 Processed chunk ${Math.floor(i / chunkSize) + 1}/${totalChunks}`);
-            }
-        }
-        
-        console.log(`🗜️  Pako decompressed: ${compressedData.length} → ${decompressedData.length} bytes`);
-        
-        if (returnRawBytes) {
-            // Return raw Uint8Array for WebGL
-            return decompressedData;
-        } else {
-            // Return Base64 for backward compatibility
-            console.log(`🔧 Converting binary string to Base64...`);
-            const decompressedBase64 = btoa(binaryString);
-            return decompressedBase64;
-        }
-    } catch (error) {
-        console.error('❌ Error decompressing grayscale data:', error);
-        console.error('❌ [DECOMPRESS DEBUG] Stack trace:', error.stack);
-        throw error;
+// chunked Uint8Array → base64; chunked to avoid stack overflow on large buffers
+function bytesToBase64(bytes) {
+    let binaryString = '';
+    const chunkSize = 8192;
+    for (let i = 0; i < bytes.length; i += chunkSize) {
+        binaryString += String.fromCharCode(...bytes.slice(i, i + chunkSize));
     }
+    return btoa(binaryString);
+}
+
+// pako-decompress base64 grayscale data → raw Uint8Array
+function decompressGrayscaleData(compressedBase64) {
+    const compressed = Uint8Array.from(atob(compressedBase64), c => c.charCodeAt(0));
+    return pako.inflate(compressed);
 }
 
 /**
@@ -131,146 +36,60 @@ function decompressGrayscaleData(compressedBase64, returnRawBytes = false) {
  */
 export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
     try {
-        console.log(`🔍 Looking for grayscale image data for artist: ${artistUrlKey}`);
-        
-        // First, check if we already have grayscale data stored
         const artistRef = doc(db, 'artists', artistUrlKey);
         const artistDoc = await getDoc(artistRef);
-        
+
         if (artistDoc.exists()) {
             const artistData = artistDoc.data();
-            
-            // Check for corrupted/legacy data first (wrong format stored in grayscaleImageData field)
+            const sourceUrl = artistData.imageUrl || artistData.originalImageUrl;
+
+            // legacy/corrupted: has grayscaleImageData but wrong processing version
             if (artistData.grayscaleImageData && artistData.processingVersion !== '2.0-grayscale') {
-                console.log(`🔄 Found corrupted/legacy data in grayscaleImageData field for ${artistUrlKey}, reprocessing...`);
-                if (artistData.imageUrl) {
-                    return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
-                }
+                if (sourceUrl) return await processArtistImageToGrayscale(sourceUrl, artistUrlKey);
             }
-            
-            // Check if we have valid grayscale image data (new format)
+
+            // valid cached grayscale data
             if (artistData.grayscaleImageData && artistData.imageWidth && artistData.imageHeight && artistData.processingVersion === '2.0-grayscale') {
-                console.log(`✅ Found cached grayscale image data for ${artistUrlKey} (${artistData.imageWidth}x${artistData.imageHeight})`);
-                
+                const expectedSize = artistData.imageWidth * artistData.imageHeight;
                 let grayscaleData = artistData.grayscaleImageData;
                 let rawGrayscaleBytes = null;
-                
-                // Validate the data before attempting to use it
+
                 if (!grayscaleData || typeof grayscaleData !== 'string' || grayscaleData.length === 0) {
-                    console.error(`❌ Invalid grayscale data for ${artistUrlKey}: data is null, empty, or not a string`);
-                    // Try to reprocess if we have the original URL
-                    if (artistData.imageUrl || artistData.originalImageUrl) {
-                        console.log(`🔄 Attempting to reprocess image from URL...`);
-                        return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
-                    }
-                    return {
-                        success: false,
-                        error: 'Invalid cached grayscale data',
-                        cached: false
-                    };
+                    console.warn(`Invalid cached grayscale data for ${artistUrlKey}, reprocessing`);
+                    if (sourceUrl) return await processArtistImageToGrayscale(sourceUrl, artistUrlKey);
+                    return { success: false, error: 'Invalid cached grayscale data', cached: false };
                 }
-                
-                if (artistData.compressionMethod === 'pako-deflate') {
-                    console.log(`🗜️  Decompressing cached grayscale data (${artistData.compressionMethod})`);
-                    try {
-                        // Decompress once and get both formats
-                        const decompressedBytes = decompressGrayscaleData(artistData.grayscaleImageData, true);
-                        
-                        // Create a fresh copy to avoid WebGL ArrayBuffer issues
-                        // Pako's inflate() may return a view into a larger buffer, causing WebGL errors
-                        rawGrayscaleBytes = new Uint8Array(decompressedBytes);
-                        
-                        // Validate decompressed size
-                        const expectedSize = artistData.imageWidth * artistData.imageHeight;
-                        if (decompressedBytes.length !== expectedSize) {
-                            console.error(`❌ Data size mismatch for ${artistUrlKey}:`, {
-                                expected: expectedSize,
-                                actual: decompressedBytes.length,
-                                dimensions: `${artistData.imageWidth}x${artistData.imageHeight}`
-                            });
-                            
-                            // Try to reprocess if we have the original URL
-                            if (artistData.imageUrl || artistData.originalImageUrl) {
-                                console.log(`🔄 Reprocessing image due to size mismatch...`);
-                                return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
-                            }
-                            
-                            return {
-                                success: false,
-                                error: 'Cached data size mismatch',
-                                cached: false
-                            };
-                        }
-                        
-                        // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
-                        let binaryString = '';
-                        const chunkSize = 8192;
-                        for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
-                            const chunk = decompressedBytes.slice(i, i + chunkSize);
-                            binaryString += String.fromCharCode(...chunk);
-                        }
-                        grayscaleData = btoa(binaryString);
-                    } catch (error) {
-                        console.warn(`🔄 Failed to decompress cached data, reprocessing image: ${error.message}`);
-                        if (artistData.imageUrl || artistData.originalImageUrl) {
-                            return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
-                        }
-                        return {
-                            success: false,
-                            error: `Decompression failed: ${error.message}`,
-                            cached: false
-                        };
-                    }
-                } else {
-                    // For uncompressed data, convert Base64 to raw bytes for WebGL
-                    console.log(`📦 Loading uncompressed grayscale data for ${artistUrlKey}`);
-                    try {
+
+                try {
+                    if (artistData.compressionMethod === 'pako-deflate') {
+                        // fresh copy: pako may return a view into a larger buffer, which breaks WebGL
+                        rawGrayscaleBytes = new Uint8Array(decompressGrayscaleData(grayscaleData));
+                    } else {
                         const binaryString = atob(grayscaleData);
                         rawGrayscaleBytes = new Uint8Array(binaryString.length);
                         for (let i = 0; i < binaryString.length; i++) {
                             rawGrayscaleBytes[i] = binaryString.charCodeAt(i);
                         }
-                        
-                        // Validate size
-                        const expectedSize = artistData.imageWidth * artistData.imageHeight;
-                        if (rawGrayscaleBytes.length !== expectedSize) {
-                            console.error(`❌ Data size mismatch for ${artistUrlKey}:`, {
-                                expected: expectedSize,
-                                actual: rawGrayscaleBytes.length,
-                                dimensions: `${artistData.imageWidth}x${artistData.imageHeight}`
-                            });
-                            
-                            // Try to reprocess
-                            if (artistData.imageUrl || artistData.originalImageUrl) {
-                                console.log(`🔄 Reprocessing image due to size mismatch...`);
-                                return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
-                            }
-                            
-                            return {
-                                success: false,
-                                error: 'Cached data size mismatch',
-                                cached: false
-                            };
-                        }
-                    } catch (error) {
-                        console.error(`❌ Failed to decode uncompressed data for ${artistUrlKey}:`, error);
-                        if (artistData.imageUrl || artistData.originalImageUrl) {
-                            console.log(`🔄 Reprocessing image...`);
-                            return await processArtistImageToGrayscale(artistData.imageUrl || artistData.originalImageUrl, artistUrlKey);
-                        }
-                        return {
-                            success: false,
-                            error: `Failed to decode data: ${error.message}`,
-                            cached: false
-                        };
                     }
+
+                    if (rawGrayscaleBytes.length !== expectedSize) {
+                        console.warn(`Cached grayscale size mismatch for ${artistUrlKey} (expected ${expectedSize}, got ${rawGrayscaleBytes.length}), reprocessing`);
+                        if (sourceUrl) return await processArtistImageToGrayscale(sourceUrl, artistUrlKey);
+                        return { success: false, error: 'Cached data size mismatch', cached: false };
+                    }
+
+                    grayscaleData = bytesToBase64(rawGrayscaleBytes);
+                } catch (error) {
+                    console.warn(`Failed to decode cached grayscale data for ${artistUrlKey}, reprocessing:`, error.message);
+                    if (sourceUrl) return await processArtistImageToGrayscale(sourceUrl, artistUrlKey);
+                    return { success: false, error: `Failed to decode data: ${error.message}`, cached: false };
                 }
-                
+
                 return {
                     success: true,
                     cached: true,
-                    grayscaleData: grayscaleData,
-                    rawGrayscaleBytes: rawGrayscaleBytes, // Raw bytes for WebGL
+                    grayscaleData,
+                    rawGrayscaleBytes,
                     metadata: {
                         width: artistData.imageWidth,
                         height: artistData.imageHeight,
@@ -279,129 +98,83 @@ export async function getArtistGrayscaleImage(artistUrlKey, imageUrl) {
                     }
                 };
             }
-            
-            // Check for legacy binary data and suggest reprocessing
-            if (artistData.binaryImageData && artistData.imageWidth && artistData.imageHeight) {
-                console.log(`🔄 Found legacy binary data for ${artistUrlKey}, reprocessing to grayscale...`);
-                if (artistData.imageUrl) {
-                    return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
-                }
+
+            // legacy binary data → reprocess
+            if (artistData.binaryImageData && artistData.imageWidth && artistData.imageHeight && sourceUrl) {
+                return await processArtistImageToGrayscale(sourceUrl, artistUrlKey);
             }
-            
-            // If we have an imageUrl but no grayscale data, process it
+
+            // has url but no grayscale data → process
             if (artistData.imageUrl && !artistData.grayscaleImageData) {
-                console.log(`🔄 Found image URL but no grayscale data, processing...`);
                 return await processArtistImageToGrayscale(artistData.imageUrl, artistUrlKey);
             }
         }
-        
-        // If we have an imageUrl parameter but no stored data, process it
+
+        // no stored data, but caller supplied a url
         if (imageUrl) {
-            console.log(`🆕 Processing new image URL for artist: ${artistUrlKey}`);
-            console.log(`🔗 Image URL: ${imageUrl}`);
-            
-            // For new artists, we need to be more aggressive about processing
             try {
                 const result = await processArtistImageToGrayscale(imageUrl, artistUrlKey);
-                if (result.success) {
-                    console.log(`✅ Successfully processed new artist image: ${artistUrlKey}`);
-                    return result;
-                } else {
-                    console.warn(`⚠️  Failed to process new artist image: ${artistUrlKey}`, result.error);
-                }
+                if (result.success) return result;
             } catch (processingError) {
-                console.error(`❌ Error processing new artist image: ${artistUrlKey}`, processingError);
+                console.error(`Error processing new artist image ${artistUrlKey}:`, processingError);
             }
-            
-            // If processing failed, return failure so UI can fallback
-            return {
-                success: false,
-                error: 'Failed to process new artist image',
-                cached: false
-            };
+            return { success: false, error: 'Failed to process new artist image', cached: false };
         }
-        
-        // No image data available
-        console.log(`❌ No image data available for artist: ${artistUrlKey}`);
-        return {
-            success: false,
-            error: 'No image data available',
-            cached: false
-        };
-        
+
+        return { success: false, error: 'No image data available', cached: false };
     } catch (error) {
-        console.error('Error getting artist binary image:', error);
-        return {
-            success: false,
-            error: error.message,
-            cached: false
-        };
+        console.error(`Error getting artist grayscale image for ${artistUrlKey}:`, error);
+        return { success: false, error: error.message, cached: false };
     }
 }
 
-/**
- * Process artist image client-side when server fails (403 errors from Genius)
- * Uses canvas to convert image to grayscale
- */
+// fallback path when server can't fetch (e.g. genius IP-blocks firebase)
+// loads image directly in browser, canvas-converts to grayscale
+// requires genius CDN to send CORS headers, otherwise canvas taints and getImageData throws
 async function processArtistImageClientSide(imageUrl, artistUrlKey) {
     console.log(`🖥️ Processing artist image client-side for ${artistUrlKey}...`);
     const startTime = Date.now();
-    
+
     return new Promise((resolve, reject) => {
         const img = new Image();
         img.crossOrigin = 'anonymous';
-        
+
         img.onload = () => {
             try {
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
-                
-                // Use original dimensions (capped at 500px for performance)
+
                 const maxSize = 500;
                 let width = img.width;
                 let height = img.height;
-                
                 if (width > maxSize || height > maxSize) {
                     const scale = maxSize / Math.max(width, height);
                     width = Math.round(width * scale);
                     height = Math.round(height * scale);
                 }
-                
+
                 canvas.width = width;
                 canvas.height = height;
                 ctx.drawImage(img, 0, 0, width, height);
-                
-                const imageData = ctx.getImageData(0, 0, width, height);
-                const data = imageData.data;
+
+                const { data } = ctx.getImageData(0, 0, width, height);
                 const grayscaleBytes = new Uint8Array(width * height);
-                
                 for (let i = 0; i < data.length; i += 4) {
-                    const gray = Math.round(0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]);
-                    grayscaleBytes[i / 4] = gray;
+                    grayscaleBytes[i / 4] = Math.round(0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2]);
                 }
-                
-                // Create raw bytes copy for WebGL
+
                 const rawGrayscaleBytes = new Uint8Array(grayscaleBytes);
-                
-                // Convert to base64
-                let binaryString = '';
-                const chunkSize = 8192;
-                for (let i = 0; i < grayscaleBytes.length; i += chunkSize) {
-                    const chunk = grayscaleBytes.slice(i, i + chunkSize);
-                    binaryString += String.fromCharCode(...chunk);
-                }
-                const grayscaleData = btoa(binaryString);
-                
+                const grayscaleData = bytesToBase64(grayscaleBytes);
                 const processingTime = Date.now() - startTime;
                 console.log(`✅ Client-side artist processing complete in ${processingTime}ms (${width}x${height})`);
-                
+
                 resolve({
                     success: true,
-                    grayscaleData: grayscaleData,
-                    rawGrayscaleBytes: rawGrayscaleBytes,
+                    grayscaleData,
+                    rawGrayscaleBytes,
                     metadata: {
-                        width: width,
-                        height: height,
+                        width,
+                        height,
                         processingVersion: '2.0-grayscale-client',
                         compressionMethod: 'none'
                     },
@@ -410,187 +183,69 @@ async function processArtistImageClientSide(imageUrl, artistUrlKey) {
                     processedClientSide: true
                 });
             } catch (canvasError) {
-                console.error(`❌ Canvas processing failed:`, canvasError);
+                console.error('Canvas processing failed:', canvasError);
                 reject(canvasError);
             }
         };
-        
-        img.onerror = () => {
-            console.error(`❌ Failed to load image for client-side processing:`, imageUrl);
-            reject(new Error('Failed to load image for client-side processing'));
-        };
-        
+
+        img.onerror = () => reject(new Error(`Failed to load image for client-side processing: ${imageUrl}`));
         img.src = imageUrl;
     });
 }
 
 /**
  * Process an artist image to grayscale format via Firebase Function
- * Firebase Function now uses Cloudflare Worker proxy to avoid IP blocking
- * Uses in-memory cache to prevent duplicate processing requests
+ * Falls back to client-side canvas processing if server fails
+ * Uses in-memory cache to dedupe concurrent requests for the same artist
  */
 async function processArtistImageToGrayscale(imageUrl, artistUrlKey) {
-    // Check in-memory cache first
     const cacheKey = `${artistUrlKey}-${imageUrl}`;
-    
+
     if (processingCache.has(cacheKey)) {
-        console.log(`🔄 Waiting for existing processing request for ${artistUrlKey}...`);
         return await processingCache.get(cacheKey);
     }
-    
-    // Create processing promise and cache it
+
     const processingPromise = (async () => {
         try {
-            console.log(`Processing image to grayscale format...`);
-            const startTime = Date.now();
-            
             const processArtistImage = httpsCallable(functions, 'processArtistImageBinary');
-            const response = await processArtistImage({
-                url: imageUrl,
-                artistKey: artistUrlKey
-            });
-            
+            const response = await processArtistImage({ url: imageUrl, artistKey: artistUrlKey });
             const result = response.data;
-            const processingTime = Date.now() - startTime;
-            
-            console.log(`🚀 Grayscale image processed in ${processingTime}ms at ${result.metadata.width}x${result.metadata.height} (${result.metadata.totalCompressionPercent}% total compression)`);
-            
-            // Decompress the grayscale data since it's now Pako compressed
+
             let grayscaleData = result.grayscaleData;
             let rawGrayscaleBytes = null;
-            
+
             if (result.metadata.compressionMethod === 'pako-deflate') {
-                console.log(`🗜️  Decompressing fresh grayscale data (${result.metadata.compressionMethod})`);
-                // Get raw bytes for WebGL
-                const decompressedBytes = decompressGrayscaleData(result.grayscaleData, true);
-                rawGrayscaleBytes = new Uint8Array(decompressedBytes);
-                
-                // Convert to Base64 for backward compatibility (chunked to avoid stack overflow)
-                let binaryString = '';
-                const chunkSize = 8192;
-                for (let i = 0; i < decompressedBytes.length; i += chunkSize) {
-                    const chunk = decompressedBytes.slice(i, i + chunkSize);
-                    binaryString += String.fromCharCode(...chunk);
-                }
-                grayscaleData = btoa(binaryString);
-                
-                console.log(`✅ Fresh data decompressed: ${rawGrayscaleBytes.length} bytes, base64: ${grayscaleData.length} chars`);
+                rawGrayscaleBytes = new Uint8Array(decompressGrayscaleData(result.grayscaleData));
+                grayscaleData = bytesToBase64(rawGrayscaleBytes);
             }
-            
-            return {
-                ...result,
-                grayscaleData: grayscaleData,
-                rawGrayscaleBytes: rawGrayscaleBytes, // Include raw bytes for WebGL!
-                cached: false,
-                clientProcessingTime: processingTime
-            };
-            
+
+            return { ...result, grayscaleData, rawGrayscaleBytes, cached: false };
         } catch (error) {
-            console.error('Error processing artist image to grayscale:', error);
-            throw error;
+            console.error(`Error processing artist image to grayscale for ${artistUrlKey}:`, error.message);
+
+            // genius IP-blocks firebase → 403 → try in-browser canvas as fallback
+            // also catch any other server failure as last resort
+            const is403 = error.code === 'internal' && error.message?.includes('403');
+            if (is403) {
+                console.log(`Server got 403, trying client-side artist processing...`);
+            } else {
+                console.log(`Server processing failed, trying client-side artist processing as last resort...`);
+            }
+
+            try {
+                return await processArtistImageClientSide(imageUrl, artistUrlKey);
+            } catch (clientError) {
+                console.error('Client-side artist processing also failed:', clientError.message);
+                throw error;
+            }
         } finally {
-            // Clean up cache after timeout
-            setTimeout(() => {
-                processingCache.delete(cacheKey);
-                console.log(`🧹 Cleaned up processing cache for ${artistUrlKey}`);
-            }, CACHE_TIMEOUT);
+            setTimeout(() => processingCache.delete(cacheKey), CACHE_TIMEOUT);
         }
     })();
-    
-    // Store promise in cache
+
     processingCache.set(cacheKey, processingPromise);
-    
     return await processingPromise;
 }
 
-/**
- * Convert grayscale data back to ImageData for WebGL rendering
- * This will be used by the WebGL renderer component
- * Note: This function is now mostly handled by the WebGL component itself
- */
-export function grayscaleToImageData(grayscaleBase64, width, height) {
-    try {
-        // Decode base64 to binary data
-        const binaryString = atob(binaryBase64);
-        const binaryData = new Uint8Array(binaryString.length);
-        for (let i = 0; i < binaryString.length; i++) {
-            binaryData[i] = binaryString.charCodeAt(i);
-        }
-        
-        // Create RGBA image data from binary
-        const imageData = new ImageData(width, height);
-        const data = imageData.data;
-        
-        for (let i = 0; i < width * height; i++) {
-            const byteIndex = Math.floor(i / 8);
-            const bitPosition = 7 - (i % 8);
-            const isLight = (binaryData[byteIndex] & (1 << bitPosition)) !== 0;
-            
-            const pixelIndex = i * 4;
-            const value = isLight ? 255 : 0;
-            
-            data[pixelIndex] = value;     // R
-            data[pixelIndex + 1] = value; // G  
-            data[pixelIndex + 2] = value; // B
-            data[pixelIndex + 3] = 255;   // A
-        }
-        
-        return imageData;
-        
-    } catch (error) {
-        console.error('Error converting binary to ImageData:', error);
-        throw error;
-    }
-}
-
-/**
- * Generate a data URL from binary image data with theme colors
- * Temporary solution until WebGL renderer is implemented
- */
-export function binaryToDataUrl(binaryBase64, width, height, primaryColor = '#000000', secondaryColor = '#ffffff') {
-    try {
-        const canvas = document.createElement('canvas');
-        canvas.width = width;
-        canvas.height = height;
-        const ctx = canvas.getContext('2d');
-        
-        const imageData = binaryToImageData(binaryBase64, width, height);
-        
-        // Apply theme colors
-        const data = imageData.data;
-        const primary = hexToRgb(primaryColor);
-        const secondary = hexToRgb(secondaryColor);
-        
-        for (let i = 0; i < data.length; i += 4) {
-            const isLight = data[i] === 255;
-            const color = isLight ? secondary : primary;
-            
-            data[i] = color[0];     // R
-            data[i + 1] = color[1]; // G
-            data[i + 2] = color[2]; // B
-            // Alpha stays 255
-        }
-        
-        ctx.putImageData(imageData, 0, 0);
-        return canvas.toDataURL();
-        
-    } catch (error) {
-        console.error('Error converting binary to data URL:', error);
-        throw error;
-    }
-}
-
-/**
- * Helper function to convert hex color to RGB array
- */
-function hexToRgb(hex) {
-    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? [
-        parseInt(result[1], 16),
-        parseInt(result[2], 16),
-        parseInt(result[3], 16)
-    ] : [0, 0, 0];
-}
-
-// Backward compatibility alias
+// backward-compatibility alias (ArtistButton, TypingTest, ImageRecolorTest)
 export const getArtistBinaryImage = getArtistGrayscaleImage;

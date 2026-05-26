@@ -104,6 +104,9 @@
         showQueue = false;
         lyrics = '';
         loading = true;
+        // reset bound test state so a remounted LyricDisplay doesn't inherit stale results
+        showResults = false;
+        testStarted = false;
 
         try {
             // STEP 1: Initialize queue with new caching system
