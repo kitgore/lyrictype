@@ -1,16 +1,11 @@
 <script>
-	import { onMount, tick } from 'svelte';
+	import { onMount, afterUpdate, tick } from 'svelte';
 	import ResultsDisplay from './ResultsDisplay.svelte';
 
-	import { themeColors, ditherImages, imageColors, correctionColors, windowStore } from '$lib/services/store.js';
+	import { themeColors, ditherImages, imageColors, correctionColors, windowStore, maxDisplayedLines } from '$lib/services/store.js';
 	import { trashStore, formatTestResultsForTrash } from '$lib/services/trashService.js';
 	import { normalizeDiacritics } from 'normalize-text';
-	import {
-		VIRTUAL_SCROLL_CHUNK,
-		virtualScrollUp,
-		virtualScrollDown,
-		clampVirtualScrollIndex
-	} from '$lib/utils/mediaTyperVirtualScroll.js';
+	import { parseLyricSections, pickStartAnchor } from '$lib/utils/lyricSections.js';
 	export let lyrics;
 	export let songTitle;
 	export let artistName;
@@ -25,15 +20,31 @@
 	export let isPaused = false;
 	export let capitalization = true;
 	export let punctuation = true;
-	export let fullLyrics = null; // Full lyrics for scrolling, if available
-	
+	export let fullLyrics = null; // Raw lyrics including section markers, if available
+	export let contentLyrics = null; // Marker-stripped lyrics from queueManager
+	export let startContentLineIndex = 0; // Section-anchored starting line
+
 	// Lyrics scrolling functionality
 	export let onScrollUp = null;
 	export let onScrollDown = null;
-	let currentScrollLine = 0; // Track which line we're starting from
-	let lyricsLines = []; // Array of lyrics split by lines
-	let visibleLines = []; // Currently visible 4 lines
-	const VISIBLE_LINES_COUNT = VIRTUAL_SCROLL_CHUNK;
+	let lyricsLines = []; // Content lines (markers stripped) — full song scope
+	let visibleLines = []; // The content-line window for this test (fixed by anchor + maxDisplayedLines)
+	let contentStartLine = 0; // First content-line of the test scope
+
+	// visual-line scroll state — driven by measurement of rendered DOM
+	let viewportEl;
+	let innerEl;
+	let viewportHeight = 0;
+	let visualLineTops = []; // unique offsetTop per visual line, sorted
+	let visualLineHeight = 0;
+	let totalVisualLines = 0;
+	let fitsCount = 1;
+	let cursorVisualLine = 0;
+	let currentScrollLine = 0; // top visible visual line
+	let scrollOffsetPx = 0;
+	const CURSOR_TARGET_LINE = 3; // keep cursor at the 4th visible line (zero-indexed) once scrolling kicks in
+	const DEBUG_LAYOUT = true; // temporary: log layout values to console on every measure
+	let debugLogged = 0;
 	
 	let userInput = '';
 	let startTime = null;
@@ -70,142 +81,223 @@
 		return lyricsText.split('\n').filter(line => line.trim() !== '');
 	}
 
-	// Check if we have full lyrics available for scrolling
-	function hasFullLyricsForScrolling() {
-		// Check if we have access to full lyrics through currentSong or other means
-		// For now, we'll work with whatever lyrics we have
-		return lyricsLines.length > VISIBLE_LINES_COUNT;
+	// clamp visual-line scroll to its valid range given current measurements
+	function clampVisualScrollLine(idx) {
+		const maxScroll = Math.max(0, totalVisualLines - fitsCount);
+		return Math.max(0, Math.min(maxScroll, idx));
 	}
 
-	// Scroll up by 4 lines (or to the beginning) — chunk logic shared with Trash list (mediaTyperVirtualScroll)
+	// arrow-key/scrollbar scrolling — disabled once user starts typing (until results clear)
+	function canScroll() {
+		return !testStarted && !showResults;
+	}
+
 	function scrollLyricsUp() {
-		console.log("scrolling up");
-		const total = lyricsLines.length;
-		if (total <= VISIBLE_LINES_COUNT) {
-			currentScrollLine = 0;
-		} else {
-			const next = virtualScrollUp(currentScrollLine, total, VISIBLE_LINES_COUNT);
-			if (next === currentScrollLine) {
-				return;
-			}
-			currentScrollLine = next;
-		}
-		updateVisibleLines();
-		resetTypingTest();
-		console.log(`Scrolled up to line ${currentScrollLine}`);
-	}
-
-	// Scroll down by 4 lines (or to the end)
-	function scrollLyricsDown() {
-		console.log("scrolling down");
-		const total = lyricsLines.length;
-		if (total <= VISIBLE_LINES_COUNT) {
-			return;
-		}
-		const next = virtualScrollDown(currentScrollLine, total, VISIBLE_LINES_COUNT);
-		if (next === currentScrollLine) {
-			return;
-		}
+		if (!canScroll()) return;
+		const next = clampVisualScrollLine(currentScrollLine - 1);
+		if (next === currentScrollLine) return;
 		currentScrollLine = next;
-		updateVisibleLines();
-		resetTypingTest();
-		console.log(`Scrolled down to line ${currentScrollLine}`);
+		scrollOffsetPx = currentScrollLine * visualLineHeight;
 	}
 
-	// Scroll to a specific line (for dragging the scrollbar thumb)
+	function scrollLyricsDown() {
+		if (!canScroll()) return;
+		const next = clampVisualScrollLine(currentScrollLine + 1);
+		if (next === currentScrollLine) return;
+		currentScrollLine = next;
+		scrollOffsetPx = currentScrollLine * visualLineHeight;
+	}
+
+	// scrollbar thumb drag — visual-line target
 	function scrollToLine(lineNumber) {
-		const total = lyricsLines.length;
-		currentScrollLine =
-			total <= VISIBLE_LINES_COUNT
-				? 0
-				: clampVirtualScrollIndex(lineNumber, total, VISIBLE_LINES_COUNT);
-		updateVisibleLines();
-		resetTypingTest();
-		console.log(`Scrolled to line ${currentScrollLine}`);
+		if (!canScroll()) return;
+		const next = clampVisualScrollLine(lineNumber);
+		if (next === currentScrollLine) return;
+		currentScrollLine = next;
+		scrollOffsetPx = currentScrollLine * visualLineHeight;
 	}
 
-	// Update the visible lines based on current scroll position
-	function updateVisibleLines() {
-		console.log("updating visible lines");
-		const endLine = Math.min(lyricsLines.length, currentScrollLine + VISIBLE_LINES_COUNT);
-		visibleLines = lyricsLines.slice(currentScrollLine, endLine);
-		
-		// If we don't have enough lines, pad with empty lines to maintain consistent display
-		while (visibleLines.length < VISIBLE_LINES_COUNT && lyricsLines.length > 0) {
-			visibleLines.push('');
+	// Build the fixed content-line window for this test from the section
+	// anchor + maxDisplayedLines. Called once per song/setting change; visual
+	// scroll within the rendered output is separate.
+	function rebuildVisibleLines() {
+		if (lyricsLines.length === 0) {
+			visibleLines = [];
+			return;
 		}
-		
-		console.log(`Displaying lines ${currentScrollLine}-${endLine-1} of ${lyricsLines.length} total lines`);
+		if ($maxDisplayedLines === 'full') {
+			contentStartLine = 0;
+			visibleLines = lyricsLines.slice();
+			return;
+		}
+		const start = Math.max(0, Math.min(lyricsLines.length - 1, contentStartLine));
+		const end = Math.min(lyricsLines.length, start + $maxDisplayedLines);
+		visibleLines = lyricsLines.slice(start, end);
 	}
 
-	// Reset scroll position when lyrics change
-	function resetScrollPosition() {
-		console.log("resetting scroll position");
-		currentScrollLine = 0;
-		updateVisibleLines();
+	// Measure visual line layout from the rendered word elements. Run after
+	// every DOM update; this also tracks cursor position so we can auto-scroll.
+	function measureVisualLayout() {
+		if (!innerEl || !viewportEl) return;
+
+		const words = innerEl.querySelectorAll('.word');
+		const fallbackLineHeight = windowHeight ? windowHeight * 0.06 : 24;
+
+		if (words.length === 0) {
+			visualLineTops = [];
+			visualLineHeight = fallbackLineHeight;
+			totalVisualLines = 0;
+			cursorVisualLine = 0;
+		} else {
+			const seen = new Set();
+			const tops = [];
+			words.forEach(w => {
+				const t = w.offsetTop;
+				if (!seen.has(t)) {
+					seen.add(t);
+					tops.push(t);
+				}
+			});
+			tops.sort((a, b) => a - b);
+			visualLineTops = tops;
+			totalVisualLines = tops.length;
+			visualLineHeight = tops.length >= 2 ? (tops[1] - tops[0]) : fallbackLineHeight;
+
+			// cursorInfo.wordIndex indexes into formattedLyrics (words + spaces);
+			// querySelectorAll('.word') only returns word items — translate the index
+			let wordDomIndex = 0;
+			for (let i = 0; i < cursorInfo.wordIndex && i < formattedLyrics.length; i++) {
+				if (formattedLyrics[i].type === 'word') wordDomIndex++;
+			}
+			const cw = words[wordDomIndex] || words[words.length - 1];
+			if (cw) {
+				const top = cw.offsetTop;
+				const idx = visualLineTops.indexOf(top);
+				cursorVisualLine = idx >= 0 ? idx : 0;
+			}
+		}
+
+		viewportHeight = viewportEl.clientHeight;
+		fitsCount = Math.max(1, Math.floor(viewportHeight / Math.max(1, visualLineHeight)));
+
+		// when fewer than CURSOR_TARGET_LINE+1 lines fit, clamp the target slot
+		// to the last visible line so cursor never falls off the bottom
+		const targetSlot = Math.min(CURSOR_TARGET_LINE, fitsCount - 1);
+		const target = testStarted
+			? clampVisualScrollLine(cursorVisualLine - targetSlot)
+			: clampVisualScrollLine(currentScrollLine);
+		if (target !== currentScrollLine) {
+			currentScrollLine = target;
+		}
+		const newOffset = currentScrollLine * visualLineHeight;
+		if (newOffset !== scrollOffsetPx) {
+			scrollOffsetPx = newOffset;
+		}
+
+		if (DEBUG_LAYOUT) debugLayout();
 	}
 
-	// Reset typing test state when scrolling to new lyrics section
-	function resetTypingTest() {
-		console.log("resetting typing test due to scroll");
-		// Reset all typing test state
-		showResults = false;
-		userInput = '';
-		testStarted = false;
-		startTime = null;
-		endTime = null;
-		cursorPosition = 0;
-		totalPauseTime = 0;
-		pauseStartTime = null;
-		liveWpm = 0;
-		frozenWpm = 0;
-		frozenAccuracy = 0;
-		frozenTypingState = { classes: [] };
-		
-		// Stop live WPM tracking
-		stopLiveWpmTracking();
-		
-		// Reset typing state classes
-		typingState.classes = [];
-		
-		// Focus the input after a short delay to ensure DOM is updated
-		setTimeout(() => {
-			focusInput();
-		}, 0);
+	// walk up from .lyrics-inner and print every ancestor's box metrics +
+	// resolved CSS so we can see where the height chain breaks
+	function debugLayout() {
+		// throttle: log every ~30 measures to avoid spam during typing
+		debugLogged++;
+		if (debugLogged % 30 !== 1) return;
+
+		const fmt = (el) => {
+			const cs = window.getComputedStyle(el);
+			return {
+				tag: el.tagName.toLowerCase(),
+				cls: el.className && typeof el.className === 'string' ? el.className : '',
+				clientH: el.clientHeight,
+				offsetH: el.offsetHeight,
+				scrollH: el.scrollHeight,
+				cssH: cs.height,
+				maxH: cs.maxHeight,
+				display: cs.display,
+				position: cs.position,
+				overflow: `${cs.overflowX}/${cs.overflowY}`,
+				flex: cs.flex,
+				padding: cs.padding,
+				boxSizing: cs.boxSizing
+			};
+		};
+
+		const chain = [];
+		let cur = innerEl;
+		for (let i = 0; i < 12 && cur; i++) {
+			chain.push(fmt(cur));
+			cur = cur.parentElement;
+		}
+
+		console.groupCollapsed(`[LyricDisplay debug #${debugLogged}]`);
+		console.log('windowHeight prop:', windowHeight);
+		console.log('viewport.clientHeight:', viewportEl.clientHeight, 'scrollHeight:', viewportEl.scrollHeight);
+		console.log('inner.clientHeight:', innerEl.clientHeight, 'scrollHeight:', innerEl.scrollHeight);
+		console.log('measured visualLineHeight:', visualLineHeight, '(fallback would be', windowHeight * 0.06, ')');
+		console.log('totalVisualLines:', totalVisualLines, 'fitsCount:', fitsCount);
+		console.log('currentScrollLine:', currentScrollLine, 'scrollOffsetPx:', scrollOffsetPx);
+		console.log('cursorVisualLine:', cursorVisualLine, 'cursorInfo:', { ...cursorInfo });
+		console.log('visualLineTops (first 6):', visualLineTops.slice(0, 6));
+		console.log('--- ancestor chain (inner → up) ---');
+		chain.forEach((row, i) => console.log(i, row));
+		console.groupEnd();
 	}
 
-	// Reactive statement to process lyrics when they change
+	afterUpdate(() => {
+		measureVisualLayout();
+	});
+
+
+	// build content lines for the current song. legacy paths (setDisplayFromData*)
+	// pass raw lyrics without prior section parsing, so parse defensively here
+	// when contentLyrics isn't provided.
 	$: {
-		// Use full lyrics for scrolling if available, otherwise use the provided lyrics
-		const lyricsToProcess = fullLyrics || lyrics;
-		if (lyricsToProcess) {
-			lyricsLines = processLyricsIntoLines(lyricsToProcess);
-			resetScrollPosition();
+		let newLines = [];
+		let defaultStart = 0;
+		if (contentLyrics) {
+			newLines = processLyricsIntoLines(contentLyrics);
+			defaultStart = startContentLineIndex ?? 0;
+		} else {
+			const raw = fullLyrics ?? lyrics;
+			if (raw) {
+				const { contentLines, anchors } = parseLyricSections(raw);
+				newLines = contentLines;
+				defaultStart = pickStartAnchor(contentLines.length, anchors, $maxDisplayedLines);
+			}
 		}
+		if (newLines.length > 0) {
+			const sourceChanged = newLines.join('\n') !== lyricsLines.join('\n');
+			lyricsLines = newLines;
+			if (sourceChanged) {
+				contentStartLine = Math.max(0, Math.min(newLines.length - 1, defaultStart));
+				currentScrollLine = 0;
+				rebuildVisibleLines();
+			}
+		}
+	}
+
+	// rebuild content window when max line setting changes (anchor stays)
+	$: if ($maxDisplayedLines !== undefined && lyricsLines.length > 0) {
+		rebuildVisibleLines();
 	}
 
 	// Expose scroll functions to parent components
 	export let onScrollToLine = null;
-	
+
 	$: {
 		onScrollUp = scrollLyricsUp;
 		onScrollDown = scrollLyricsDown;
 		onScrollToLine = scrollToLine;
-		console.log('LyricDisplay: Exposed scroll functions', { 
-			hasScrollUp: !!onScrollUp, 
-			hasScrollDown: !!onScrollDown,
-			hasScrollToLine: !!onScrollToLine
-		});
 	}
-	
+
 	// Export scroll position for scrollbar thumb
-	export let scrollPosition = { currentLine: 0, totalLines: 0, visibleLines: VISIBLE_LINES_COUNT };
-	
-	// Update scroll position reactively
+	export let scrollPosition = { currentLine: 0, totalLines: 0, visibleLines: 4 };
+
 	$: scrollPosition = {
 		currentLine: currentScrollLine,
-		totalLines: lyricsLines.length,
-		visibleLines: VISIBLE_LINES_COUNT
+		totalLines: totalVisualLines,
+		visibleLines: fitsCount
 	};
 
 	async function preloadImage(src) {
@@ -348,14 +440,10 @@
 			// Reset typing state classes
 			typingState.classes = [];
 			
-			// Wait for Svelte to update props, then reset scroll state
-			// This ensures the reactive statement processes the NEW lyrics
+			// wait for prop updates; the source-change reactive block then
+			// re-anchors scroll to startContentLineIndex for the new song
 			await tick();
-			
-			// Reset scroll position to start fresh with new lyrics
-			currentScrollLine = 0;
-			
-			// Focus the input
+
 			focusInput();
 		};
 		
@@ -385,6 +473,8 @@
 		'\n': ' ',
 		'ı': 'i',
 		'İ': 'I',
+		'Ł': 'L',
+		'ł': 'l',
 		'’': "'",
 		'‘': "'",
 		"—": "-",
@@ -547,7 +637,10 @@ function handleKeydown(event) {
 		accuracy = Math.max(0, Math.min(100, accuracy));
 
 		wpm = Math.max(wpm - (incorrectChars * 3), 0);
-		
+
+		// sync bottom-bar live wpm to final value so it matches results screen
+		liveWpm = wpm;
+
 		// Freeze the results so toggle changes don't affect them
 		frozenWpm = wpm;
 		frozenAccuracy = accuracy;
@@ -800,11 +893,12 @@ $: {
         {geniusUrl}
     />
 {:else}
-    <div 
-        class="quote-display" 
-        role="button" 
-        tabindex="0" 
-        on:click={focusInput} 
+    <div
+        class="quote-display"
+        bind:this={viewportEl}
+        role="button"
+        tabindex="0"
+        on:click={focusInput}
         on:keydown={focusInput}
 		on:blur={blurInput}
         style="line-height:{windowHeight*0.06}px; font-size: 0px"
@@ -818,6 +912,7 @@ $: {
                 </div>
             </div>
         {/if}
+		<div class="lyrics-inner" bind:this={innerEl} style="transform: translateY(-{scrollOffsetPx}px);">
 		{#each formattedLyrics as item, wordIndex}
 			{@const cursorAtBeginning = (cursorInfo.wordIndex === 0 && wordIndex === 0) && cursorInfo.charIndex === 0}
 			{@const cursorAtWordStart = cursorInfo.wordIndex + 1 === wordIndex}
@@ -868,7 +963,8 @@ $: {
 				</span>
 			{/if}
 		{/each}
-			
+		</div>
+
 		<input
 			bind:this={inputElement}
 			class="quote-input"
@@ -917,11 +1013,20 @@ $: {
 		max-width: 100%;
 		box-sizing: border-box;
 		width: 100%;
-		/* Flexbox for word-based wrapping */
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.lyrics-inner {
+		position: absolute;
+		top: 1.5%;
+		left: 1.5%;
+		right: 1.5%;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: flex-start;
 		align-items: baseline;
+		will-change: transform;
 		/* Safari-specific fixes */
 		-webkit-flex-wrap: wrap;
 		-webkit-align-content: flex-start;

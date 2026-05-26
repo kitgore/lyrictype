@@ -14,43 +14,49 @@
     
     // Calculate thumb size and position
     const MIN_THUMB_HEIGHT_PERCENT = 15; // Minimum thumb height as percentage of track
-    
-    $: showThumb = scrollPosition.totalLines > scrollPosition.visibleLines;
-    $: calculatedThumbHeight = showThumb 
-        ? (scrollPosition.visibleLines / scrollPosition.totalLines) * 100 
+
+    // thumb is always visible when there are lines — its size shows what
+    // fraction of the song is on screen, even in full mode where it fills 100%
+    $: showThumb = scrollPosition.totalLines > 0;
+    $: rawThumbPercent = scrollPosition.totalLines > 0
+        ? Math.min(100, (scrollPosition.visibleLines / scrollPosition.totalLines) * 100)
         : 0;
-    $: thumbHeightPercent = Math.max(MIN_THUMB_HEIGHT_PERCENT, calculatedThumbHeight);
+    $: thumbHeightPercent = rawThumbPercent >= 100
+        ? 100
+        : Math.max(MIN_THUMB_HEIGHT_PERCENT, rawThumbPercent);
     $: maxScrollLines = Math.max(0, scrollPosition.totalLines - scrollPosition.visibleLines);
-    $: thumbTopPercent = (maxScrollLines > 0 && showThumb)
+    $: isFull = scrollPosition.isFull === true || maxScrollLines === 0;
+    $: thumbTopPercent = (maxScrollLines > 0 && showThumb && !isFull)
         ? (scrollPosition.currentLine / maxScrollLines) * (100 - thumbHeightPercent)
         : 0;
+    $: thumbInteractive = !disabled && !isFull;
     
     // Drag state
     let isDragging = false;
     let trackElement = null;
     
     function handleScrollUp() {
-        if (disabled) return;
+        if (disabled || isFull) return;
         if (onScrollUp && typeof onScrollUp === 'function') {
             onScrollUp();
         }
     }
-    
+
     function handleScrollDown() {
-        if (disabled) return;
+        if (disabled || isFull) return;
         if (onScrollDown && typeof onScrollDown === 'function') {
             onScrollDown();
         }
     }
-    
+
     function handleThumbMouseDown(event) {
-        if (disabled) return;
+        if (!thumbInteractive) return;
         event.preventDefault();
         isDragging = true;
     }
-    
+
     function handleMouseMove(event) {
-        if (!isDragging || !trackElement || !onScrollToLine) return;
+        if (!isDragging || !trackElement || !onScrollToLine || isFull) return;
         
         // Get track dimensions and position
         const trackRect = trackElement.getBoundingClientRect();
@@ -96,9 +102,9 @@
      class:disabled
      style="--scrollbar-width: {scrollbarWidth}px; 
             --scroll-arrow-size: {scrollArrowSize}px;">
-    <div class="scroll-arrow scroll-up" 
-         class:disabled
-         role="button" 
+    <div class="scroll-arrow scroll-up"
+         class:disabled={disabled || isFull}
+         role="button"
          tabindex="-1"
          on:click={handleScrollUp}
          on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && handleScrollUp()}>
@@ -108,22 +114,22 @@
     </div>
     <div class="scrollbar-track" bind:this={trackElement}>
         {#if showThumb}
-            <div class="scrollbar-thumb dither-lightdots" 
-                 class:disabled
+            <div class="scrollbar-thumb dither-lightdots"
+                 class:disabled={!thumbInteractive}
                  role="slider"
                  tabindex="-1"
                  aria-label="Scroll position"
                  aria-valuemin="0"
-                 aria-valuemax={scrollPosition.totalLines - scrollPosition.visibleLines}
+                 aria-valuemax={Math.max(0, scrollPosition.totalLines - scrollPosition.visibleLines)}
                  aria-valuenow={scrollPosition.currentLine}
                  class:dragging={isDragging}
                  on:mousedown={handleThumbMouseDown}
                  style="height: {thumbHeightPercent}%; top: calc({thumbTopPercent}% - var(--border-width));"></div>
         {/if}
     </div>
-    <div class="scroll-arrow scroll-down" 
-         class:disabled
-         role="button" 
+    <div class="scroll-arrow scroll-down"
+         class:disabled={disabled || isFull}
+         role="button"
          tabindex="-1"
          on:click={handleScrollDown}
          on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && handleScrollDown()}>

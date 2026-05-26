@@ -747,7 +747,7 @@
             
             // Add the loaded song to the cache and queue
             queueManager.loadedSongs.set(loadedSong.id, loadedSong);
-            queueManager.songs[loadedSong.songIndex] = queueManager.ensureExcerptForSong(loadedSong);
+            queueManager.songs[loadedSong.songIndex] = queueManager.ensureSongDisplayData(loadedSong);
             
             // Broadcast queue update
             queueManager.broadcast();
@@ -1010,6 +1010,8 @@
                                 capitalization={$capitalization}
                                 punctuation={$punctuation}
                                 fullLyrics={currentSong?.fullLyrics}
+                                contentLyrics={currentSong?.contentLyrics}
+                                startContentLineIndex={currentSong?.startContentLineIndex ?? 0}
                                 bind:onScrollUp={lyricsScrollUp}
                                 bind:onScrollDown={lyricsScrollDown}
                                 bind:onScrollToLine={lyricsScrollToLine}
@@ -1028,13 +1030,13 @@
                             {/if}
                         {/if}
                     </div>
-                    <LyricsScrollbar 
+                    <LyricsScrollbar
                         onScrollUp={lyricsScrollUp}
                         onScrollDown={lyricsScrollDown}
                         onScrollToLine={lyricsScrollToLine}
                         containerHeight={windowHeight}
                         scrollPosition={lyricsScrollPosition}
-                        disabled={showResults}
+                        disabled={showResults || testStarted}
                     />
                 </div>
             </div>
@@ -1121,6 +1123,7 @@
         display: flex;
         flex-direction: row;
         flex: 1;
+        min-height: 0;
     }
 
     .loadingAnimationContainer {

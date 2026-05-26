@@ -1,9 +1,18 @@
 <script>
     import { onMount } from "svelte";
-    import { themeColors, ditherImages, themeChoices, currentTheme, cookiesAccepted, windowStore } from "$lib/services/store.js";
+    import { themeColors, ditherImages, themeChoices, currentTheme, cookiesAccepted, windowStore, maxDisplayedLines } from "$lib/services/store.js";
     import Checkbox from "./Checkbox.svelte";
     import ArrowSelector from "./ArrowSelector.svelte";
     let themeIndex = 0; // Initialize with 0
+
+    const maxLineChoices = [4, 8, 16, 32, 'full'];
+    const maxLineLabels = { 4: '4', 8: '8', 16: '16', 32: '32', full: 'Full' };
+    $: maxLinesIndex = Math.max(0, maxLineChoices.indexOf($maxDisplayedLines));
+
+    function cycleMaxLines(direction) {
+        const next = (maxLinesIndex + direction + maxLineChoices.length) % maxLineChoices.length;
+        maxDisplayedLines.set(maxLineChoices[next]);
+    }
     
     $: windowHeight = $windowStore.windowStates.find(w => w.id === 'settingsWindow')?.dimensions?.height;
 
@@ -38,6 +47,11 @@
     <div class="settingInline">
         <h3 style:font-size="{headingSize}px">Recolor Images</h3>
         <Checkbox bind:checked={$ditherImages} boxSize={checkboxSize}/>
+    </div>
+    <div class="settingInline">
+        <h3 style:font-size="{headingSize}px">Line Length</h3>
+        <ArrowSelector leftFunction={() => cycleMaxLines(-1)} rightFunction={() => cycleMaxLines(+1)}
+            height={themeHeight} width={8} displayText={maxLineLabels[maxLineChoices[maxLinesIndex]]}/>
     </div>
     <br/>
     <br/>

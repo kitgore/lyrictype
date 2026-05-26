@@ -167,6 +167,8 @@ export const correctionColors = writable(defaultCorrection);
 export const ditherImages = writable(true);
 export const capitalization = writable(true);
 export const punctuation = writable(true);
+// allowed values: 4, 8, 16, 32, 'full'
+export const maxDisplayedLines = writable(4);
 export const recentArtists = writable([]);
 
 let isUpdatingRecentArtists = false;
@@ -222,6 +224,7 @@ cookiesAccepted.subscribe(accepted => {
         const savedDither = Cookies.get('ditherImages');
         const savedCapitalization = Cookies.get('capitalization');
         const savedPunctuation = Cookies.get('punctuation');
+        const savedMaxLines = Cookies.get('maxDisplayedLines');
         const savedArtists = Cookies.get('recentArtists');
 
         if (savedTheme) currentTheme.set(JSON.parse(savedTheme));
@@ -230,6 +233,10 @@ cookiesAccepted.subscribe(accepted => {
         if (savedDither) ditherImages.set(JSON.parse(savedDither));
         if (savedCapitalization) capitalization.set(JSON.parse(savedCapitalization));
         if (savedPunctuation) punctuation.set(JSON.parse(savedPunctuation));
+        if (savedMaxLines) {
+            const parsed = JSON.parse(savedMaxLines);
+            if (parsed === 'full' || [4, 8, 16, 32].includes(parsed)) maxDisplayedLines.set(parsed);
+        }
         if (savedArtists) recentArtists.set(JSON.parse(savedArtists));
 
         // Enable cookies for completed songs (trash)
@@ -272,6 +279,9 @@ cookiesAccepted.subscribe(accepted => {
         punctuation.subscribe(value => {
             Cookies.set('punctuation', JSON.stringify(value));
         });
+        maxDisplayedLines.subscribe(value => {
+            Cookies.set('maxDisplayedLines', JSON.stringify(value));
+        });
         imageColors.subscribe(value => {
             Cookies.set('imageColors', JSON.stringify(value));
         });
@@ -294,6 +304,7 @@ cookiesAccepted.subscribe(accepted => {
         Cookies.remove('ditherImages');
         Cookies.remove('capitalization');
         Cookies.remove('punctuation');
+        Cookies.remove('maxDisplayedLines');
         Cookies.remove('recentArtists');
         Cookies.remove('cookiesAccepted');
         
