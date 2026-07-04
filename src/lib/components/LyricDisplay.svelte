@@ -42,6 +42,10 @@
 	let cursorVisualLine = 0;
 	let currentScrollLine = 0; // top visible visual line
 	let scrollOffsetPx = 0;
+	// per-content-line first visual-line index — maps content-line index in
+	// visibleLines (the test window) to its first visual line. used for
+	// song-relative scrollbar coordinates and for drag-target conversion.
+	let contentLineVisualStarts = [];
 	const CURSOR_TARGET_LINE = 3; // keep cursor at the 4th visible line (zero-indexed) once scrolling kicks in
 	const DEBUG_LAYOUT = true; // temporary: log layout values to console on every measure
 	let debugLogged = 0;
@@ -108,10 +112,17 @@
 		scrollOffsetPx = currentScrollLine * visualLineHeight;
 	}
 
-	// scrollbar thumb drag — visual-line target
-	function scrollToLine(lineNumber) {
+	// scrollbar thumb drag — target is a song-relative content line. convert
+	// to the corresponding visual line within the current test window, then
+	// clamp into the scrollable visual range.
+	function scrollToLine(songLine) {
+		console.log('[LyricDisplay scrollToLine]', { songLine, canScroll: canScroll(), contentStartLine, contentLineVisualStartsLen: contentLineVisualStarts.length });
 		if (!canScroll()) return;
-		const next = clampVisualScrollLine(lineNumber);
+		if (contentLineVisualStarts.length === 0) return;
+		const contentInWindow = songLine - contentStartLine;
+		const clampedContent = Math.max(0, Math.min(contentLineVisualStarts.length - 1, contentInWindow));
+		const targetVisual = contentLineVisualStarts[clampedContent] ?? 0;
+		const next = clampVisualScrollLine(targetVisual);
 		if (next === currentScrollLine) return;
 		currentScrollLine = next;
 		scrollOffsetPx = currentScrollLine * visualLineHeight;
@@ -148,6 +159,7 @@
 			visualLineHeight = fallbackLineHeight;
 			totalVisualLines = 0;
 			cursorVisualLine = 0;
+			contentLineVisualStarts = [];
 		} else {
 			const seen = new Set();
 			const tops = [];
@@ -175,6 +187,40 @@
 				const idx = visualLineTops.indexOf(top);
 				cursorVisualLine = idx >= 0 ? idx : 0;
 			}
+
+			// content-line → first-visual-line map. each newline in formattedLyrics
+			// advances the content-line index; we record the visual-line of the
+			// first word in each content line. used for song-relative thumb pos.
+			const starts = [];
+			const assigned = new Set();
+			let curContent = 0;
+			let domIdx = 0;
+			for (let i = 0; i < formattedLyrics.length; i++) {
+				const item = formattedLyrics[i];
+				if (item.type === 'space' && item.char === '\n') {
+					curContent++;
+					continue;
+				}
+				if (item.type === 'word') {
+					if (!assigned.has(curContent)) {
+						const w = words[domIdx];
+						if (w) {
+							const t = w.offsetTop;
+							const vIdx = visualLineTops.indexOf(t);
+							starts[curContent] = vIdx >= 0 ? vIdx : 0;
+							assigned.add(curContent);
+						}
+					}
+					domIdx++;
+				}
+			}
+			// content lines with no rendered words inherit the previous start
+			for (let i = 0; i < visibleLines.length; i++) {
+				if (starts[i] === undefined) {
+					starts[i] = i > 0 ? starts[i - 1] : 0;
+				}
+			}
+			contentLineVisualStarts = starts;
 		}
 
 		viewportHeight = viewportEl.clientHeight;
@@ -273,6 +319,15 @@
 				contentStartLine = Math.max(0, Math.min(newLines.length - 1, defaultStart));
 				currentScrollLine = 0;
 				rebuildVisibleLines();
+				console.log('[LyricDisplay source-change]', {
+					path: contentLyrics ? 'contentLyrics' : 'fallback',
+					totalContentLines: newLines.length,
+					defaultStart,
+					contentStartLine,
+					maxDisplayedLines: $maxDisplayedLines,
+					visibleLinesLen: visibleLines.length,
+					startContentLineIndexProp: startContentLineIndex
+				});
 			}
 		}
 	}
@@ -294,11 +349,47 @@
 	// Export scroll position for scrollbar thumb
 	export let scrollPosition = { currentLine: 0, totalLines: 0, visibleLines: 4 };
 
-	$: scrollPosition = {
-		currentLine: currentScrollLine,
-		totalLines: totalVisualLines,
-		visibleLines: fitsCount
-	};
+	// song-relative scrollbar coords: position and size reflect the entire
+	// song, not just the rendered test window. as the user scrolls visually
+	// within the window, currentLine slides through the song accordingly.
+	$: {
+		const totalSongLines = lyricsLines.length;
+		let topContentInWindow = 0;
+		for (let i = 0; i < contentLineVisualStarts.length; i++) {
+			if (contentLineVisualStarts[i] <= currentScrollLine) {
+				topContentInWindow = i;
+			} else {
+				break;
+			}
+		}
+		const bottomVisualLine = currentScrollLine + fitsCount;
+		let visibleContentCount = 0;
+		for (let i = 0; i < contentLineVisualStarts.length; i++) {
+			const start = contentLineVisualStarts[i];
+			if (start >= currentScrollLine && start < bottomVisualLine) {
+				visibleContentCount++;
+			}
+		}
+		if (visibleContentCount === 0) visibleContentCount = 1;
+		scrollPosition = {
+			currentLine: contentStartLine + topContentInWindow,
+			totalLines: totalSongLines,
+			visibleLines: visibleContentCount
+		};
+		if (DEBUG_LAYOUT && debugLogged % 30 === 1) {
+			console.log('[LyricDisplay scrollPosition]', {
+				contentStartLine,
+				topContentInWindow,
+				currentScrollLine,
+				fitsCount,
+				contentLineVisualStartsLen: contentLineVisualStarts.length,
+				firstStarts: contentLineVisualStarts.slice(0, 6),
+				totalSongLines,
+				visibleContentCount,
+				scrollPosition_out: { currentLine: contentStartLine + topContentInWindow, totalLines: totalSongLines, visibleLines: visibleContentCount }
+			});
+		}
+	}
 
 	async function preloadImage(src) {
 		try {
